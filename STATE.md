@@ -6,7 +6,7 @@ read whole. One slug per line, format `- <slug>` (optionally with
 target section and deleting from the source section.
 
 ## phase
-3:enumeration
+4:content
 
 ## cursor
 warframes: 0
