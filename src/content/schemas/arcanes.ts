@@ -1,0 +1,30 @@
+import { z } from 'astro:content';
+import {
+  dropSchema,
+  isoDateLike,
+  perRankStatSchema,
+  slug,
+  sourceSchema,
+} from './shared';
+
+export const arcaneTypeSchema = z.enum([
+  'operator',
+  'warframe',
+  'weapon',
+  'companion',
+  'kitgun',
+  'zaw',
+  'other',
+]);
+
+export const arcaneSchema = z.object({
+  slug,
+  name: z.string().min(1),
+  type: arcaneTypeSchema,
+  maxRank: z.number().int().min(0),
+  effect: z.string().min(1),
+  perRankStats: z.array(perRankStatSchema).default([]),
+  drops: z.array(dropSchema).default([]),
+  sources: z.array(sourceSchema).min(2),
+  updatedAt: isoDateLike,
+});
