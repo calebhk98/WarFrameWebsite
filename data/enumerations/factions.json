@@ -1,0 +1,221 @@
+{
+  "sources": [
+    {
+      "id": "hardcoded-fallback",
+      "description": "Canonical faction list derived from Warframe training knowledge; wiki (warframe.fandom.com/wiki/Factions) returned HTTP 403 during enumeration.",
+      "retrievedAt": "2026-05-18"
+    }
+  ],
+  "items": [
+    {
+      "slug": "acolytes",
+      "name": "Acolytes",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "amalgam",
+      "name": "Amalgam",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "cephalon",
+      "name": "Cephalon",
+      "role": "neutral",
+      "sourceId": null
+    },
+    {
+      "slug": "corpus",
+      "name": "Corpus",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "corrupted",
+      "name": "Corrupted",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "dax",
+      "name": "Dax",
+      "role": "neutral",
+      "sourceId": null
+    },
+    {
+      "slug": "entrati",
+      "name": "Entrati",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "grineer",
+      "name": "Grineer",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "holdfasts",
+      "name": "Holdfasts",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "infested",
+      "name": "Infested",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "kuva-lich",
+      "name": "Kuva Lich",
+      "role": "boss",
+      "sourceId": null
+    },
+    {
+      "slug": "lotus",
+      "name": "Lotus",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "murmur",
+      "name": "Murmur",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "narmer",
+      "name": "Narmer",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "new-loka",
+      "name": "New Loka",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "nightwave",
+      "name": "Nightwave",
+      "role": "neutral",
+      "sourceId": null
+    },
+    {
+      "slug": "orokin",
+      "name": "Orokin",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "ostron",
+      "name": "Ostron",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "perrin-sequence",
+      "name": "Perrin Sequence",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "red-veil",
+      "name": "Red Veil",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "relay-syndicates",
+      "name": "Relay Syndicates",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "scaldra",
+      "name": "Scaldra",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "sentient",
+      "name": "Sentient",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "shadow-stalker",
+      "name": "Shadow Stalker",
+      "role": "boss",
+      "sourceId": null
+    },
+    {
+      "slug": "solaris-united",
+      "name": "Solaris United",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "stalker",
+      "name": "Stalker",
+      "role": "boss",
+      "sourceId": null
+    },
+    {
+      "slug": "steel-meridian",
+      "name": "Steel Meridian",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "syndicate",
+      "name": "Syndicate",
+      "role": "neutral",
+      "sourceId": null
+    },
+    {
+      "slug": "tenno",
+      "name": "Tenno",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "tribunal",
+      "name": "Tribunal",
+      "role": "enemy",
+      "sourceId": null
+    },
+    {
+      "slug": "ventkids",
+      "name": "Ventkids",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "vox-solaris",
+      "name": "Vox Solaris",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "warframe",
+      "name": "Warframe",
+      "role": "ally",
+      "sourceId": null
+    },
+    {
+      "slug": "wild",
+      "name": "Wild",
+      "role": "neutral",
+      "sourceId": null
+    },
+    {
+      "slug": "zariman-children",
+      "name": "Zariman Children",
+      "role": "ally",
+      "sourceId": null
+    }
+  ]
+}

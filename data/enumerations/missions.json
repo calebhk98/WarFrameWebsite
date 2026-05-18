@@ -1,0 +1,2342 @@
+[
+  {
+    "slug": "abaddon-europa",
+    "name": "Abaddon",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "21-23",
+    "sourceId": "SolNode203"
+  },
+  {
+    "slug": "acheron-pluto",
+    "name": "Acheron",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "34-38",
+    "sourceId": "SolNode4"
+  },
+  {
+    "slug": "adaro-sedna",
+    "name": "Adaro",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "32-36",
+    "sourceId": "SolNode181"
+  },
+  {
+    "slug": "adrastea-jupiter",
+    "name": "Adrastea",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "18-20",
+    "sourceId": "SolNode88"
+  },
+  {
+    "slug": "akkad-eris",
+    "name": "Akkad",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "35-45",
+    "sourceId": "ClanNode18"
+  },
+  {
+    "slug": "alator-mars",
+    "name": "Alator",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "8-13",
+    "sourceId": "SolNode106"
+  },
+  {
+    "slug": "amalthea-jupiter",
+    "name": "Amalthea",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "17-19",
+    "sourceId": "SolNode97"
+  },
+  {
+    "slug": "amarna-sedna",
+    "name": "Amarna",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "35-45",
+    "sourceId": "ClanNode14"
+  },
+  {
+    "slug": "ananke-jupiter",
+    "name": "Ananke",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "16-18",
+    "sourceId": "SolNode73"
+  },
+  {
+    "slug": "ani-void",
+    "name": "Ani",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "20-25",
+    "sourceId": "SolNode405"
+  },
+  {
+    "slug": "anthe-saturn",
+    "name": "Anthe",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "22-24",
+    "sourceId": "SolNode31"
+  },
+  {
+    "slug": "aphrodite-venus",
+    "name": "Aphrodite",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "5-8",
+    "sourceId": "SolNode2"
+  },
+  {
+    "slug": "apollo-lua",
+    "name": "Apollo",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "35-40",
+    "sourceId": "SolNode308"
+  },
+  {
+    "slug": "apollodorus-mercury",
+    "name": "Apollodorus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "6-11",
+    "sourceId": "SolNode94"
+  },
+  {
+    "slug": "ara-mars",
+    "name": "Ara",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "10-12",
+    "sourceId": "SolNode45"
+  },
+  {
+    "slug": "ares-mars",
+    "name": "Ares",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "8-10",
+    "sourceId": "SolNode113"
+  },
+  {
+    "slug": "ariel-uranus",
+    "name": "Ariel",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "25-27",
+    "sourceId": "SolNode33"
+  },
+  {
+    "slug": "armaros-europa",
+    "name": "Armaros",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "18-20",
+    "sourceId": "SolNode204"
+  },
+  {
+    "slug": "armatus-deimos",
+    "name": "Armatus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "55-60",
+    "sourceId": "SolNode721"
+  },
+  {
+    "slug": "arval-mars",
+    "name": "Arval",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "9-11",
+    "sourceId": "SolNode41"
+  },
+  {
+    "slug": "assassinate-h-09-tank-hollvania",
+    "name": "Assassinate: H-09 Tank",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Höllvania",
+    "levelRange": "65-70",
+    "sourceId": "SolNode856"
+  },
+  {
+    "slug": "assur-uranus",
+    "name": "Assur",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "25-35",
+    "sourceId": "ClanNode17"
+  },
+  {
+    "slug": "aten-void",
+    "name": "Aten",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "40-45",
+    "sourceId": "SolNode410"
+  },
+  {
+    "slug": "augustus-mars",
+    "name": "Augustus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "9-11",
+    "sourceId": "SolNode16"
+  },
+  {
+    "slug": "baal-europa",
+    "name": "Baal",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "21-23",
+    "sourceId": "SolNode205"
+  },
+  {
+    "slug": "belenus-void",
+    "name": "Belenus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "30-35",
+    "sourceId": "SolNode408"
+  },
+  {
+    "slug": "berehynia-sedna",
+    "name": "Berehynia",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "30-40",
+    "sourceId": "SolNode185"
+  },
+  {
+    "slug": "bode-ceres",
+    "name": "Bode",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "12-14",
+    "sourceId": "SolNode132"
+  },
+  {
+    "slug": "boethius-mercury",
+    "name": "Boethius",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "8-10",
+    "sourceId": "SolNode223"
+  },
+  {
+    "slug": "brugia-eris",
+    "name": "Brugia",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "32-36",
+    "sourceId": "SolNode153"
+  },
+  {
+    "slug": "caelus-uranus",
+    "name": "Caelus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "24-29",
+    "sourceId": "SolNode907"
+  },
+  {
+    "slug": "caliban-uranus",
+    "name": "Caliban",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "25-27",
+    "sourceId": "SolNode60"
+  },
+  {
+    "slug": "callisto-jupiter",
+    "name": "Callisto",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "15-20",
+    "sourceId": "SolNode25"
+  },
+  {
+    "slug": "caloris-mercury",
+    "name": "Caloris",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "6-8",
+    "sourceId": "SolNode119"
+  },
+  {
+    "slug": "calypso-saturn",
+    "name": "Calypso",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "24-26",
+    "sourceId": "SolNode82"
+  },
+  {
+    "slug": "cambion-drift-deimos",
+    "name": "Cambion Drift",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "15-30",
+    "sourceId": "SolNode229"
+  },
+  {
+    "slug": "cambire-deimos",
+    "name": "Cambire",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "55-60",
+    "sourceId": "SolNode718"
+  },
+  {
+    "slug": "cambria-earth",
+    "name": "Cambria",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "3-6",
+    "sourceId": "SolNode79"
+  },
+  {
+    "slug": "cameria-jupiter",
+    "name": "Cameria",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "20-30",
+    "sourceId": "ClanNode5"
+  },
+  {
+    "slug": "caracol-saturn",
+    "name": "Caracol",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "26-36",
+    "sourceId": "ClanNode12"
+  },
+  {
+    "slug": "carme-jupiter",
+    "name": "Carme",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "16-18",
+    "sourceId": "SolNode74"
+  },
+  {
+    "slug": "carpo-jupiter",
+    "name": "Carpo",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "17-19",
+    "sourceId": "SolNode121"
+  },
+  {
+    "slug": "cassini-saturn",
+    "name": "Cassini",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "21-23",
+    "sourceId": "SolNode70"
+  },
+  {
+    "slug": "casta-ceres",
+    "name": "Casta",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "12-17",
+    "sourceId": "SolNode149"
+  },
+  {
+    "slug": "cerberus-pluto",
+    "name": "Cerberus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "30-40",
+    "sourceId": "SolNode43"
+  },
+  {
+    "slug": "cervantes-earth",
+    "name": "Cervantes",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "4-6",
+    "sourceId": "SolNode75"
+  },
+  {
+    "slug": "charybdis-sedna",
+    "name": "Charybdis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "34-38",
+    "sourceId": "SolNode196"
+  },
+  {
+    "slug": "cholistan-europa",
+    "name": "Cholistan",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "23-33",
+    "sourceId": "ClanNode7"
+  },
+  {
+    "slug": "cinxia-ceres",
+    "name": "Cinxia",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "12-17",
+    "sourceId": "SolNode147"
+  },
+  {
+    "slug": "circulus-lua",
+    "name": "Circulus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "80-100",
+    "sourceId": "SolNode310"
+  },
+  {
+    "slug": "coba-earth",
+    "name": "Coba",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "6-16",
+    "sourceId": "ClanNode2"
+  },
+  {
+    "slug": "copernicus-lua",
+    "name": "Copernicus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "25-30",
+    "sourceId": "SolNode304"
+  },
+  {
+    "slug": "cressida-uranus",
+    "name": "Cressida",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "27-29",
+    "sourceId": "SolNode83"
+  },
+  {
+    "slug": "cypress-pluto",
+    "name": "Cypress",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "34-38",
+    "sourceId": "SolNode56"
+  },
+  {
+    "slug": "cytherean-venus",
+    "name": "Cytherean",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "6-8",
+    "sourceId": "SolNode23"
+  },
+  {
+    "slug": "dakata-kuva-fortress",
+    "name": "Dakata",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Kuva Fortress",
+    "levelRange": "28-30",
+    "sourceId": "SolNode746"
+  },
+  {
+    "slug": "desdemona-uranus",
+    "name": "Desdemona",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "26-28",
+    "sourceId": "SolNode98"
+  },
+  {
+    "slug": "despina-neptune",
+    "name": "Despina",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "27-32",
+    "sourceId": "SolNode6"
+  },
+  {
+    "slug": "dione-saturn",
+    "name": "Dione",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "21-23",
+    "sourceId": "SolNode67"
+  },
+  {
+    "slug": "dirus-deimos",
+    "name": "Dirus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "15-17",
+    "sourceId": "SolNode709"
+  },
+  {
+    "slug": "draco-ceres",
+    "name": "Draco",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "12-17",
+    "sourceId": "SolNode146"
+  },
+  {
+    "slug": "e-gate-venus",
+    "name": "E Gate",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "3-5",
+    "sourceId": "SolNode128"
+  },
+  {
+    "slug": "e-prime-earth",
+    "name": "E Prime",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "1-3",
+    "sourceId": "SolNode27"
+  },
+  {
+    "slug": "effervo-deimos",
+    "name": "Effervo",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "55-60",
+    "sourceId": "SolNode715"
+  },
+  {
+    "slug": "elara-jupiter",
+    "name": "Elara",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "15-20",
+    "sourceId": "SolNode100"
+  },
+  {
+    "slug": "elion-mercury",
+    "name": "Elion",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "7-9",
+    "sourceId": "SolNode12"
+  },
+  {
+    "slug": "enceladus-saturn",
+    "name": "Enceladus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "23-25",
+    "sourceId": "SolNode19"
+  },
+  {
+    "slug": "erpo-earth",
+    "name": "Erpo",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "1-6",
+    "sourceId": "SolNode903"
+  },
+  {
+    "slug": "eurasia-earth",
+    "name": "Eurasia",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "3-6",
+    "sourceId": "SolNode59"
+  },
+  {
+    "slug": "everest-earth",
+    "name": "Everest",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "1-6",
+    "sourceId": "SolNode39"
+  },
+  {
+    "slug": "everview-arc-zariman",
+    "name": "Everview Arc",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Zariman",
+    "levelRange": "50-55",
+    "sourceId": "SolNode230"
+  },
+  {
+    "slug": "exequias-deimos",
+    "name": "Exequias",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "30-35",
+    "sourceId": "SolNode713"
+  },
+  {
+    "slug": "exta-ceres",
+    "name": "Exta",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "14-16",
+    "sourceId": "SolNode144"
+  },
+  {
+    "slug": "exterminate-scaldra-hollvania",
+    "name": "Exterminate: Scaldra",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Höllvania",
+    "levelRange": "65-70",
+    "sourceId": "SolNode853"
+  },
+  {
+    "slug": "exterminate-techrot-hollvania",
+    "name": "Exterminate: Techrot",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Höllvania",
+    "levelRange": "65-70",
+    "sourceId": "SolNode854"
+  },
+  {
+    "slug": "faceoff-single-squad-hollvania",
+    "name": "Faceoff: Single Squad",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Höllvania",
+    "levelRange": "65-70",
+    "sourceId": "SolNode857"
+  },
+  {
+    "slug": "faceoff-squad-vs-squad-hollvania",
+    "name": "Faceoff: Squad Vs Squad",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Höllvania",
+    "levelRange": "65-70",
+    "sourceId": "SolNode855"
+  },
+  {
+    "slug": "formido-deimos",
+    "name": "Formido",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "14-16",
+    "sourceId": "SolNode710"
+  },
+  {
+    "slug": "fossa-venus",
+    "name": "Fossa",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "6-8",
+    "sourceId": "SolNode104"
+  },
+  {
+    "slug": "gabii-ceres",
+    "name": "Gabii",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "15-25",
+    "sourceId": "ClanNode23"
+  },
+  {
+    "slug": "gaia-earth",
+    "name": "Gaia",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "1-6",
+    "sourceId": "SolNode85"
+  },
+  {
+    "slug": "galatea-neptune",
+    "name": "Galatea",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "27-29",
+    "sourceId": "SolNode1"
+  },
+  {
+    "slug": "galilea-jupiter",
+    "name": "Galilea",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "15-20",
+    "sourceId": "SolNode905"
+  },
+  {
+    "slug": "ganymede-jupiter",
+    "name": "Ganymede",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "30-35",
+    "sourceId": "SolNode87"
+  },
+  {
+    "slug": "garus-kuva-fortress",
+    "name": "Garus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Kuva Fortress",
+    "levelRange": "31-33",
+    "sourceId": "SolNode748"
+  },
+  {
+    "slug": "gradivus-mars",
+    "name": "Gradivus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "9-12",
+    "sourceId": "SolNode65"
+  },
+  {
+    "slug": "grimaldi-lua",
+    "name": "Grimaldi",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "25-30",
+    "sourceId": "SolNode301"
+  },
+  {
+    "slug": "gulliver-phobos",
+    "name": "Gulliver",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "10-15",
+    "sourceId": "SettlementNode11"
+  },
+  {
+    "slug": "hades-pluto",
+    "name": "Hades",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "35-45",
+    "sourceId": "SolNode51"
+  },
+  {
+    "slug": "halako-perimeter-zariman",
+    "name": "Halako Perimeter",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Zariman",
+    "levelRange": "50-55",
+    "sourceId": "SolNode231"
+  },
+  {
+    "slug": "helene-saturn",
+    "name": "Helene",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "21-26",
+    "sourceId": "SolNode42"
+  },
+  {
+    "slug": "hell-scrub-scaldra-hollvania",
+    "name": "Hell-Scrub: Scaldra",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Höllvania",
+    "levelRange": "65-70",
+    "sourceId": "SolNode851"
+  },
+  {
+    "slug": "hell-scrub-techrot-hollvania",
+    "name": "Hell-Scrub: Techrot",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Höllvania",
+    "levelRange": "65-70",
+    "sourceId": "SolNode852"
+  },
+  {
+    "slug": "hellas-mars",
+    "name": "Hellas",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "8-12",
+    "sourceId": "SolNode58"
+  },
+  {
+    "slug": "hepit-void",
+    "name": "Hepit",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "10-15",
+    "sourceId": "SolNode401"
+  },
+  {
+    "slug": "hieracon-pluto",
+    "name": "Hieracon",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "35-45",
+    "sourceId": "ClanNode25"
+  },
+  {
+    "slug": "horend-deimos",
+    "name": "Horend",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "12-14",
+    "sourceId": "SolNode706"
+  },
+  {
+    "slug": "hydra-pluto",
+    "name": "Hydra",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "30-34",
+    "sourceId": "SolNode76"
+  },
+  {
+    "slug": "hydron-sedna",
+    "name": "Hydron",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "30-40",
+    "sourceId": "SolNode195"
+  },
+  {
+    "slug": "hyf-deimos",
+    "name": "Hyf",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "15-20",
+    "sourceId": "SolNode707"
+  },
+  {
+    "slug": "iliad-phobos",
+    "name": "Iliad",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "13-15",
+    "sourceId": "SettlementNode20"
+  },
+  {
+    "slug": "io-jupiter",
+    "name": "Io",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "15-20",
+    "sourceId": "SolNode125"
+  },
+  {
+    "slug": "ishtar-venus",
+    "name": "Ishtar",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "6-8",
+    "sourceId": "SolNode61"
+  },
+  {
+    "slug": "isos-eris",
+    "name": "Isos",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "32-36",
+    "sourceId": "SolNode162"
+  },
+  {
+    "slug": "kadesh-mars",
+    "name": "Kadesh",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "10-20",
+    "sourceId": "ClanNode8"
+  },
+  {
+    "slug": "kala-azar-eris",
+    "name": "Kala-Azar",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "30-40",
+    "sourceId": "SolNode164"
+  },
+  {
+    "slug": "kappa-sedna",
+    "name": "Kappa",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "34-38",
+    "sourceId": "SolNode177"
+  },
+  {
+    "slug": "keeler-saturn",
+    "name": "Keeler",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "23-25",
+    "sourceId": "SolNode93"
+  },
+  {
+    "slug": "kelashin-neptune",
+    "name": "Kelashin",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "30-40",
+    "sourceId": "ClanNode21"
+  },
+  {
+    "slug": "kelpie-sedna",
+    "name": "Kelpie",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "35-40",
+    "sourceId": "SolNode188"
+  },
+  {
+    "slug": "kepler-phobos",
+    "name": "Kepler",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "12-14",
+    "sourceId": "SettlementNode10"
+  },
+  {
+    "slug": "ker-ceres",
+    "name": "Ker",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "14-16",
+    "sourceId": "SolNode141"
+  },
+  {
+    "slug": "kiliken-venus",
+    "name": "Kiliken",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "3-7",
+    "sourceId": "SolNode101"
+  },
+  {
+    "slug": "kiste-ceres",
+    "name": "Kiste",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "13-15",
+    "sourceId": "SolNode140"
+  },
+  {
+    "slug": "kokabiel-europa",
+    "name": "Kokabiel",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "20-22",
+    "sourceId": "SolNode220"
+  },
+  {
+    "slug": "koro-kuva-fortress",
+    "name": "Koro",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Kuva Fortress",
+    "levelRange": "29-31",
+    "sourceId": "SolNode741"
+  },
+  {
+    "slug": "laomedeia-neptune",
+    "name": "Laomedeia",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "25-30",
+    "sourceId": "SolNode118"
+  },
+  {
+    "slug": "lares-mercury",
+    "name": "Lares",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "6-11",
+    "sourceId": "SolNode130"
+  },
+  {
+    "slug": "larissa-neptune",
+    "name": "Larissa",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "29-31",
+    "sourceId": "SolNode49"
+  },
+  {
+    "slug": "larzac-europa",
+    "name": "Larzac",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "23-33",
+    "sourceId": "ClanNode6"
+  },
+  {
+    "slug": "legacyte-harvest-hollvania",
+    "name": "Legacyte Harvest",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Höllvania",
+    "levelRange": "65-70",
+    "sourceId": "SolNode850"
+  },
+  {
+    "slug": "lex-ceres",
+    "name": "Lex",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "14-16",
+    "sourceId": "SolNode139"
+  },
+  {
+    "slug": "linea-venus",
+    "name": "Linea",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "5-7",
+    "sourceId": "SolNode109"
+  },
+  {
+    "slug": "lith-earth",
+    "name": "Lith",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "2-5",
+    "sourceId": "SolNode26"
+  },
+  {
+    "slug": "ludi-ceres",
+    "name": "Ludi",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "15-17",
+    "sourceId": "SolNode138"
+  },
+  {
+    "slug": "m-prime-mercury",
+    "name": "M Prime",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "7-9",
+    "sourceId": "SolNode103"
+  },
+  {
+    "slug": "magnacidium-deimos",
+    "name": "Magnacidium",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "20-25",
+    "sourceId": "SolNode712"
+  },
+  {
+    "slug": "malva-venus",
+    "name": "Malva",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "8-18",
+    "sourceId": "ClanNode1"
+  },
+  {
+    "slug": "mantle-earth",
+    "name": "Mantle",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "2-4",
+    "sourceId": "SolNode63"
+  },
+  {
+    "slug": "marduk-void",
+    "name": "Marduk",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "40-45",
+    "sourceId": "SolNode411"
+  },
+  {
+    "slug": "mariana-earth",
+    "name": "Mariana",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "1-3",
+    "sourceId": "SolNode89"
+  },
+  {
+    "slug": "marid-sedna",
+    "name": "Marid",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "34-38",
+    "sourceId": "SolNode191"
+  },
+  {
+    "slug": "martialis-mars",
+    "name": "Martialis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "10-12",
+    "sourceId": "SolNode36"
+  },
+  {
+    "slug": "memphis-phobos",
+    "name": "Memphis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "15-25",
+    "sourceId": "ClanNode10"
+  },
+  {
+    "slug": "merrow-sedna",
+    "name": "Merrow",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "35-40",
+    "sourceId": "SolNode193"
+  },
+  {
+    "slug": "metis-jupiter",
+    "name": "Metis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "15-17",
+    "sourceId": "SolNode126"
+  },
+  {
+    "slug": "minthe-pluto",
+    "name": "Minthe",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "30-34",
+    "sourceId": "SolNode38"
+  },
+  {
+    "slug": "mithra-void",
+    "name": "Mithra",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "40-45",
+    "sourceId": "SolNode412"
+  },
+  {
+    "slug": "monolith-phobos",
+    "name": "Monolith",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "13-15",
+    "sourceId": "SettlementNode12"
+  },
+  {
+    "slug": "montes-venus",
+    "name": "Montes",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "3-8",
+    "sourceId": "SolNode902"
+  },
+  {
+    "slug": "morax-europa",
+    "name": "Morax",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "18-20",
+    "sourceId": "SolNode209"
+  },
+  {
+    "slug": "mot-void",
+    "name": "Mot",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "40-45",
+    "sourceId": "SolNode409"
+  },
+  {
+    "slug": "munio-deimos",
+    "name": "Munio",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "55-60",
+    "sourceId": "SolNode719"
+  },
+  {
+    "slug": "naamah-europa",
+    "name": "Naamah",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "21-23",
+    "sourceId": "SolNode210"
+  },
+  {
+    "slug": "nabuk-kuva-fortress",
+    "name": "Nabuk",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Kuva Fortress",
+    "levelRange": "30-32",
+    "sourceId": "SolNode742"
+  },
+  {
+    "slug": "naeglar-eris",
+    "name": "Naeglar",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "30-34",
+    "sourceId": "SolNode175"
+  },
+  {
+    "slug": "naga-sedna",
+    "name": "Naga",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "30-34",
+    "sourceId": "SolNode189"
+  },
+  {
+    "slug": "nakki-sedna",
+    "name": "Nakki",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "40-40",
+    "sourceId": "SolNode190"
+  },
+  {
+    "slug": "narcissus-pluto",
+    "name": "Narcissus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "32-36",
+    "sourceId": "SolNode21"
+  },
+  {
+    "slug": "nereid-neptune",
+    "name": "Nereid",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "30-32",
+    "sourceId": "SolNode84"
+  },
+  {
+    "slug": "neso-neptune",
+    "name": "Neso",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "29-31",
+    "sourceId": "SolNode62"
+  },
+  {
+    "slug": "nex-deimos",
+    "name": "Nex",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "55-60",
+    "sourceId": "SolNode716"
+  },
+  {
+    "slug": "nimus-eris",
+    "name": "Nimus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "30-40",
+    "sourceId": "SolNode166"
+  },
+  {
+    "slug": "numa-saturn",
+    "name": "Numa",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "22-24",
+    "sourceId": "SolNode50"
+  },
+  {
+    "slug": "nuovo-ceres",
+    "name": "Nuovo",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "13-15",
+    "sourceId": "SolNode137"
+  },
+  {
+    "slug": "oceanum-pluto",
+    "name": "Oceanum",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "32-36",
+    "sourceId": "SolNode102"
+  },
+  {
+    "slug": "odin-mercury",
+    "name": "Odin",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "6-11",
+    "sourceId": "SolNode224"
+  },
+  {
+    "slug": "oestrus-eris",
+    "name": "Oestrus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "34-38",
+    "sourceId": "SolNode167"
+  },
+  {
+    "slug": "olympus-mars",
+    "name": "Olympus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "15-20",
+    "sourceId": "SolNode30"
+  },
+  {
+    "slug": "ophelia-uranus",
+    "name": "Ophelia",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "24-29",
+    "sourceId": "SolNode69"
+  },
+  {
+    "slug": "orb-vallis-venus",
+    "name": "Orb Vallis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "10-30",
+    "sourceId": "SolNode129"
+  },
+  {
+    "slug": "orias-europa",
+    "name": "Orias",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "20-22",
+    "sourceId": "SolNode217"
+  },
+  {
+    "slug": "oro-earth",
+    "name": "Oro",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "20-25",
+    "sourceId": "SolNode24"
+  },
+  {
+    "slug": "oro-works-zariman",
+    "name": "Oro Works",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Zariman",
+    "levelRange": "50-55",
+    "sourceId": "SolNode233"
+  },
+  {
+    "slug": "ose-europa",
+    "name": "Ose",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "18-23",
+    "sourceId": "SolNode211"
+  },
+  {
+    "slug": "outer-terminus-pluto",
+    "name": "Outer Terminus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "30-40",
+    "sourceId": "SolNode72"
+  },
+  {
+    "slug": "oxomoco-void",
+    "name": "Oxomoco",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "30-35",
+    "sourceId": "SolNode407"
+  },
+  {
+    "slug": "pacific-earth",
+    "name": "Pacific",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "3-6",
+    "sourceId": "SolNode15"
+  },
+  {
+    "slug": "pago-kuva-fortress",
+    "name": "Pago",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Kuva Fortress",
+    "levelRange": "31-33",
+    "sourceId": "SolNode747"
+  },
+  {
+    "slug": "paimon-europa",
+    "name": "Paimon",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "18-23",
+    "sourceId": "SolNode212"
+  },
+  {
+    "slug": "pallas-ceres",
+    "name": "Pallas",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "12-14",
+    "sourceId": "SolNode131"
+  },
+  {
+    "slug": "palus-pluto",
+    "name": "Palus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "30-40",
+    "sourceId": "SolNode81"
+  },
+  {
+    "slug": "pandora-saturn",
+    "name": "Pandora",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "21-23",
+    "sourceId": "SolNode906"
+  },
+  {
+    "slug": "pantheon-mercury",
+    "name": "Pantheon",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "6-8",
+    "sourceId": "SolNode226"
+  },
+  {
+    "slug": "pavlov-lua",
+    "name": "Pavlov",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "25-30",
+    "sourceId": "SolNode306"
+  },
+  {
+    "slug": "persto-deimos",
+    "name": "Persto",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "55-60",
+    "sourceId": "SolNode717"
+  },
+  {
+    "slug": "phlegyas-deimos",
+    "name": "Phlegyas",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "13-15",
+    "sourceId": "SolNode708"
+  },
+  {
+    "slug": "piscinas-saturn",
+    "name": "Piscinas",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "26-36",
+    "sourceId": "ClanNode13"
+  },
+  {
+    "slug": "plains-of-eidolon-earth",
+    "name": "Plains Of Eidolon",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "10-30",
+    "sourceId": "SolNode228"
+  },
+  {
+    "slug": "plato-lua",
+    "name": "Plato",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "25-30",
+    "sourceId": "SolNode300"
+  },
+  {
+    "slug": "proteus-neptune",
+    "name": "Proteus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "27-32",
+    "sourceId": "SolNode17"
+  },
+  {
+    "slug": "psamathe-neptune",
+    "name": "Psamathe",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "30-32",
+    "sourceId": "SolNode127"
+  },
+  {
+    "slug": "puck-uranus",
+    "name": "Puck",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "27-29",
+    "sourceId": "SolNode114"
+  },
+  {
+    "slug": "regna-pluto",
+    "name": "Regna",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "34-38",
+    "sourceId": "SolNode48"
+  },
+  {
+    "slug": "rhea-saturn",
+    "name": "Rhea",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "21-26",
+    "sourceId": "SolNode18"
+  },
+  {
+    "slug": "roche-phobos",
+    "name": "Roche",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "10-12",
+    "sourceId": "SettlementNode1"
+  },
+  {
+    "slug": "romula-venus",
+    "name": "Romula",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "8-18",
+    "sourceId": "ClanNode0"
+  },
+  {
+    "slug": "rosalind-uranus",
+    "name": "Rosalind",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "27-29",
+    "sourceId": "SolNode9"
+  },
+  {
+    "slug": "rotuma-kuva-fortress",
+    "name": "Rotuma",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Kuva Fortress",
+    "levelRange": "30-32",
+    "sourceId": "SolNode743"
+  },
+  {
+    "slug": "rusalka-sedna",
+    "name": "Rusalka",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "32-36",
+    "sourceId": "SolNode184"
+  },
+  {
+    "slug": "salacia-neptune",
+    "name": "Salacia",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "27-32",
+    "sourceId": "SolNode908"
+  },
+  {
+    "slug": "sangeru-sedna",
+    "name": "Sangeru",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "35-45",
+    "sourceId": "ClanNode15"
+  },
+  {
+    "slug": "sao-neptune",
+    "name": "Sao",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "29-31",
+    "sourceId": "SolNode57"
+  },
+  {
+    "slug": "saxis-eris",
+    "name": "Saxis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "34-38",
+    "sourceId": "SolNode171"
+  },
+  {
+    "slug": "sayas-visions-earth",
+    "name": "Saya's Visions",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "5-15",
+    "sourceId": "SolNode451"
+  },
+  {
+    "slug": "sechura-pluto",
+    "name": "Sechura",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Pluto",
+    "levelRange": "35-45",
+    "sourceId": "ClanNode24"
+  },
+  {
+    "slug": "seimeni-ceres",
+    "name": "Seimeni",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "15-25",
+    "sourceId": "ClanNode22"
+  },
+  {
+    "slug": "selkie-sedna",
+    "name": "Selkie",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "30-40",
+    "sourceId": "SolNode187"
+  },
+  {
+    "slug": "sharpless-phobos",
+    "name": "Sharpless",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "11-13",
+    "sourceId": "SettlementNode15"
+  },
+  {
+    "slug": "shklovsky-phobos",
+    "name": "Shklovsky",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "11-13",
+    "sourceId": "SettlementNode14"
+  },
+  {
+    "slug": "sinai-jupiter",
+    "name": "Sinai",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "20-30",
+    "sourceId": "ClanNode4"
+  },
+  {
+    "slug": "skyresh-phobos",
+    "name": "Skyresh",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "12-14",
+    "sourceId": "SettlementNode2"
+  },
+  {
+    "slug": "solium-eris",
+    "name": "Solium",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "34-38",
+    "sourceId": "SolNode173"
+  },
+  {
+    "slug": "solstice-square-hollvania",
+    "name": "Solstice Square",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Höllvania",
+    "levelRange": "65-70",
+    "sourceId": "SolNode858"
+  },
+  {
+    "slug": "sorath-europa",
+    "name": "Sorath",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "19-21",
+    "sourceId": "SolNode214"
+  },
+  {
+    "slug": "spear-mars",
+    "name": "Spear",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "8-12",
+    "sourceId": "SolNode46"
+  },
+  {
+    "slug": "stephano-uranus",
+    "name": "Stephano",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "24-29",
+    "sourceId": "SolNode122"
+  },
+  {
+    "slug": "stickney-phobos",
+    "name": "Stickney",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "10-15",
+    "sourceId": "SettlementNode3"
+  },
+  {
+    "slug": "stofler-lua",
+    "name": "StöFler",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "25-30",
+    "sourceId": "SolNode305"
+  },
+  {
+    "slug": "stribog-void",
+    "name": "Stribog",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "20-25",
+    "sourceId": "SolNode404"
+  },
+  {
+    "slug": "suisei-mercury",
+    "name": "Suisei",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "8-10",
+    "sourceId": "SolNode225"
+  },
+  {
+    "slug": "sycorax-uranus",
+    "name": "Sycorax",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "24-26",
+    "sourceId": "SolNode34"
+  },
+  {
+    "slug": "syrtis-mars",
+    "name": "Syrtis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "8-13",
+    "sourceId": "SolNode904"
+  },
+  {
+    "slug": "tamu-kuva-fortress",
+    "name": "Tamu",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Kuva Fortress",
+    "levelRange": "35-40",
+    "sourceId": "SolNode745"
+  },
+  {
+    "slug": "taranis-void",
+    "name": "Taranis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "10-15",
+    "sourceId": "SolNode402"
+  },
+  {
+    "slug": "taveuni-kuva-fortress",
+    "name": "Taveuni",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Kuva Fortress",
+    "levelRange": "32-37",
+    "sourceId": "SolNode744"
+  },
+  {
+    "slug": "telesto-saturn",
+    "name": "Telesto",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "22-24",
+    "sourceId": "SolNode20"
+  },
+  {
+    "slug": "terminus-mercury",
+    "name": "Terminus",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "8-10",
+    "sourceId": "SolNode28"
+  },
+  {
+    "slug": "terrorem-deimos",
+    "name": "Terrorem",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Deimos",
+    "levelRange": "25-35",
+    "sourceId": "SolNode711"
+  },
+  {
+    "slug": "teshub-void",
+    "name": "Teshub",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "10-15",
+    "sourceId": "SolNode400"
+  },
+  {
+    "slug": "tessera-venus",
+    "name": "Tessera",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "3-7",
+    "sourceId": "SolNode22"
+  },
+  {
+    "slug": "tethys-saturn",
+    "name": "Tethys",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "24-26",
+    "sourceId": "SolNode32"
+  },
+  {
+    "slug": "tharsis-mars",
+    "name": "Tharsis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "9-11",
+    "sourceId": "SolNode11"
+  },
+  {
+    "slug": "the-circuit-duviri",
+    "name": "The Circuit",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Duviri",
+    "levelRange": "35-55",
+    "sourceId": "SolNode238"
+  },
+  {
+    "slug": "the-duviri-experience-duviri",
+    "name": "The Duviri Experience",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Duviri",
+    "levelRange": "20-20",
+    "sourceId": "SolNode236"
+  },
+  {
+    "slug": "the-greenway-zariman",
+    "name": "The Greenway",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Zariman",
+    "levelRange": "50-55",
+    "sourceId": "SolNode235"
+  },
+  {
+    "slug": "the-lone-story-duviri",
+    "name": "The Lone Story",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Duviri",
+    "levelRange": "20-20",
+    "sourceId": "SolNode237"
+  },
+  {
+    "slug": "the-ropalolyst-jupiter",
+    "name": "The Ropalolyst",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "40-40",
+    "sourceId": "SolNode740"
+  },
+  {
+    "slug": "thebe-jupiter",
+    "name": "Thebe",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "18-20",
+    "sourceId": "SolNode10"
+  },
+  {
+    "slug": "themisto-jupiter",
+    "name": "Themisto",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Jupiter",
+    "levelRange": "18-20",
+    "sourceId": "SolNode53"
+  },
+  {
+    "slug": "thon-ceres",
+    "name": "Thon",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Ceres",
+    "levelRange": "15-17",
+    "sourceId": "SolNode135"
+  },
+  {
+    "slug": "tikal-earth",
+    "name": "Tikal",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Earth",
+    "levelRange": "6-16",
+    "sourceId": "ClanNode3"
+  },
+  {
+    "slug": "titan-saturn",
+    "name": "Titan",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Saturn",
+    "levelRange": "21-26",
+    "sourceId": "SolNode96"
+  },
+  {
+    "slug": "titania-uranus",
+    "name": "Titania",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "27-29",
+    "sourceId": "SolNode105"
+  },
+  {
+    "slug": "tiwaz-void",
+    "name": "Tiwaz",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "20-25",
+    "sourceId": "SolNode403"
+  },
+  {
+    "slug": "tolstoj-mercury",
+    "name": "Tolstoj",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mercury",
+    "levelRange": "8-10",
+    "sourceId": "SolNode108"
+  },
+  {
+    "slug": "triton-neptune",
+    "name": "Triton",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "28-30",
+    "sourceId": "SolNode78"
+  },
+  {
+    "slug": "tuvul-commons-zariman",
+    "name": "Tuvul Commons",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Zariman",
+    "levelRange": "50-55",
+    "sourceId": "SolNode232"
+  },
+  {
+    "slug": "tyana-pass-mars",
+    "name": "Tyana Pass",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "25-30",
+    "sourceId": "SolNode450"
+  },
+  {
+    "slug": "tycho-lua",
+    "name": "Tycho",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "25-30",
+    "sourceId": "SolNode302"
+  },
+  {
+    "slug": "ukko-void",
+    "name": "Ukko",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Void",
+    "levelRange": "30-35",
+    "sourceId": "SolNode406"
+  },
+  {
+    "slug": "ultor-mars",
+    "name": "Ultor",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "11-13",
+    "sourceId": "SolNode14"
+  },
+  {
+    "slug": "umbriel-uranus",
+    "name": "Umbriel",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "24-29",
+    "sourceId": "SolNode64"
+  },
+  {
+    "slug": "unda-venus",
+    "name": "Unda",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "6-8",
+    "sourceId": "SolNode66"
+  },
+  {
+    "slug": "ur-uranus",
+    "name": "Ur",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Uranus",
+    "levelRange": "30-35",
+    "sourceId": "ClanNode16"
+  },
+  {
+    "slug": "v-prime-venus",
+    "name": "V Prime",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "6-8",
+    "sourceId": "SolNode123"
+  },
+  {
+    "slug": "valac-europa",
+    "name": "Valac",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "18-20",
+    "sourceId": "SolNode215"
+  },
+  {
+    "slug": "valefor-europa",
+    "name": "Valefor",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Europa",
+    "levelRange": "18-23",
+    "sourceId": "SolNode216"
+  },
+  {
+    "slug": "vallis-mars",
+    "name": "Vallis",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "11-13",
+    "sourceId": "SolNode68"
+  },
+  {
+    "slug": "venera-venus",
+    "name": "Venera",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Venus",
+    "levelRange": "5-7",
+    "sourceId": "SolNode107"
+  },
+  {
+    "slug": "vodyanoi-sedna",
+    "name": "Vodyanoi",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "85-85",
+    "sourceId": "SolNode183"
+  },
+  {
+    "slug": "wahiba-mars",
+    "name": "Wahiba",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "10-20",
+    "sourceId": "ClanNode9"
+  },
+  {
+    "slug": "war-mars",
+    "name": "War",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Mars",
+    "levelRange": "11-13",
+    "sourceId": "SolNode99"
+  },
+  {
+    "slug": "xini-eris",
+    "name": "Xini",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "30-40",
+    "sourceId": "SolNode172"
+  },
+  {
+    "slug": "yam-sedna",
+    "name": "Yam",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Sedna",
+    "levelRange": "60-60",
+    "sourceId": "SolNode199"
+  },
+  {
+    "slug": "yursa-neptune",
+    "name": "Yursa",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Neptune",
+    "levelRange": "30-40",
+    "sourceId": "ClanNode20"
+  },
+  {
+    "slug": "yuvarium-lua",
+    "name": "Yuvarium",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "25-30",
+    "sourceId": "SolNode309"
+  },
+  {
+    "slug": "zabala-eris",
+    "name": "Zabala",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Eris",
+    "levelRange": "35-45",
+    "sourceId": "ClanNode19"
+  },
+  {
+    "slug": "zeipel-lua",
+    "name": "Zeipel",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Lua",
+    "levelRange": "25-30",
+    "sourceId": "SolNode307"
+  },
+  {
+    "slug": "zeugma-phobos",
+    "name": "Zeugma",
+    "type": "Node",
+    "faction": "Node",
+    "planet": "Phobos",
+    "levelRange": "15-25",
+    "sourceId": "ClanNode11"
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "sources": [
+    {
+      "url": "https://warframe.fandom.com/wiki/Syndicate",
+      "accessedAt": "2026-05-18T00:00:00Z",
+      "note": "HTTP 403 returned by wiki; data derived from hardcoded training knowledge, corroborated by internal game sourceIds in data/enumerations/weapons.json"
+    }
+  ],
+  "items": [
+    {
+      "slug": "arbiters-of-hexis",
+      "name": "Arbiters of Hexis",
+      "type": "standing-tier",
+      "sourceId": "/Lotus/Weapons/Syndicates/ArbitersOfHexis"
+    },
+    {
+      "slug": "cephalon-simaris",
+      "name": "Cephalon Simaris",
+      "type": "other"
+    },
+    {
+      "slug": "cephalon-suda",
+      "name": "Cephalon Suda",
+      "type": "standing-tier",
+      "sourceId": "/Lotus/Weapons/Syndicates/CephalonSuda"
+    },
+    {
+      "slug": "conclave",
+      "name": "Conclave",
+      "type": "conclave"
+    },
+    {
+      "slug": "entrati",
+      "name": "Entrati",
+      "type": "open-world",
+      "faction": "Entrati"
+    },
+    {
+      "slug": "holdfasts",
+      "name": "Holdfasts",
+      "type": "open-world",
+      "faction": "Zariman"
+    },
+    {
+      "slug": "kahls-garrison",
+      "name": "Kahl's Garrison",
+      "type": "other",
+      "faction": "Grineer"
+    },
+    {
+      "slug": "necraloid",
+      "name": "Necraloid",
+      "type": "open-world",
+      "faction": "Entrati"
+    },
+    {
+      "slug": "new-loka",
+      "name": "New Loka",
+      "type": "standing-tier",
+      "sourceId": "/Lotus/Weapons/Syndicates/NewLoka"
+    },
+    {
+      "slug": "nightwave",
+      "name": "Nightwave",
+      "type": "nightwave"
+    },
+    {
+      "slug": "ostron",
+      "name": "Ostron",
+      "type": "open-world",
+      "faction": "Ostron"
+    },
+    {
+      "slug": "perrin-sequence",
+      "name": "Perrin Sequence",
+      "type": "standing-tier",
+      "sourceId": "/Lotus/Weapons/Syndicates/PerrinSequence"
+    },
+    {
+      "slug": "red-veil",
+      "name": "Red Veil",
+      "type": "standing-tier",
+      "sourceId": "/Lotus/Weapons/Syndicates/RedVeil"
+    },
+    {
+      "slug": "solaris-united",
+      "name": "Solaris United",
+      "type": "open-world",
+      "faction": "Solaris"
+    },
+    {
+      "slug": "steel-meridian",
+      "name": "Steel Meridian",
+      "type": "standing-tier",
+      "sourceId": "/Lotus/Weapons/Syndicates/SteelMeridian"
+    },
+    {
+      "slug": "the-hex",
+      "name": "The Hex",
+      "type": "open-world",
+      "faction": "1999"
+    },
+    {
+      "slug": "vent-kids",
+      "name": "Vent Kids",
+      "type": "open-world",
+      "faction": "Solaris"
+    },
+    {
+      "slug": "vox-solaris",
+      "name": "Vox Solaris",
+      "type": "open-world",
+      "faction": "Solaris"
+    }
+  ]
+}

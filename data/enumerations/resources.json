@@ -1,0 +1,1570 @@
+[
+  {
+    "name": "35mm Film",
+    "rarity": null,
+    "slug": "35mm-film",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/HexDogTagQuincy",
+    "type": "Resource"
+  },
+  {
+    "name": "Adramal Alloy",
+    "rarity": null,
+    "slug": "adramal-alloy",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Adramalium",
+    "rarity": null,
+    "slug": "adramalium",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Advances Debt-Bond",
+    "rarity": null,
+    "slug": "advances-debt-bond",
+    "sourceId": "/Lotus/Types/Items/Solaris/DebtTokenD",
+    "type": "Resource"
+  },
+  {
+    "name": "Aggristone",
+    "rarity": null,
+    "slug": "aggristone",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriRockItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Amarast",
+    "rarity": null,
+    "slug": "amarast",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Animo Nav Beacon",
+    "rarity": null,
+    "slug": "animo-nav-beacon",
+    "sourceId": "/Lotus/Types/Items/Events/AmbulasDataFragment",
+    "type": "Resource"
+  },
+  {
+    "name": "Argon Burger Meal",
+    "rarity": null,
+    "slug": "argon-burger-meal",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/HexDogTagUncommon",
+    "type": "Resource"
+  },
+  {
+    "name": "Asterite",
+    "rarity": null,
+    "slug": "asterite",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/AsteriteRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Atmo Systems",
+    "rarity": null,
+    "slug": "atmo-systems",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Aucrux Capacitors",
+    "rarity": null,
+    "slug": "aucrux-capacitors",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/AucruxRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Auron",
+    "rarity": null,
+    "slug": "auron",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/RareOreAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Axidite",
+    "rarity": null,
+    "slug": "axidite",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Axidrol Alloy",
+    "rarity": null,
+    "slug": "axidrol-alloy",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Azurite",
+    "rarity": null,
+    "slug": "azurite",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/CommonGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Bapholite",
+    "rarity": null,
+    "slug": "bapholite",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Beating Heartstrings",
+    "rarity": null,
+    "slug": "beating-heartstrings",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceDefense",
+    "type": "Resource"
+  },
+  {
+    "name": "Bellow Voca",
+    "rarity": null,
+    "slug": "bellow-voca",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagUncommon",
+    "type": "Resource"
+  },
+  {
+    "name": "Big Bytes Pizza",
+    "rarity": null,
+    "slug": "big-bytes-pizza",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/HexDogTagRare",
+    "type": "Resource"
+  },
+  {
+    "name": "Bioplasma",
+    "rarity": null,
+    "slug": "bioplasma",
+    "sourceId": "/Lotus/Types/Gameplay/JadeShadows/Resources/BioplasmaItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Bonewidow Capsule",
+    "rarity": null,
+    "slug": "bonewidow-capsule",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartSystemsItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Bonewidow Casing",
+    "rarity": null,
+    "slug": "bonewidow-casing",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartChassisItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Bonewidow Engine",
+    "rarity": null,
+    "slug": "bonewidow-engine",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartEngineItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Bonewidow Weapon Pod",
+    "rarity": null,
+    "slug": "bonewidow-weapon-pod",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartWeaponPodItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Bracoid",
+    "rarity": null,
+    "slug": "bracoid",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/BracoidRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Calda Toroid",
+    "rarity": null,
+    "slug": "calda-toroid",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Carbides",
+    "rarity": null,
+    "slug": "carbides",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/CarbidesRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Cephalite Resonance",
+    "rarity": null,
+    "slug": "cephalite-resonance",
+    "sourceId": "/Lotus/Types/PickUps/Nightwave/CephalonFissureTimePointItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Cerulean Fungus Extract",
+    "rarity": null,
+    "slug": "cerulean-fungus-extract",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/OroFungusAPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Cetus Wisp",
+    "rarity": null,
+    "slug": "cetus-wisp",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Cheddar Crowns Cereal",
+    "rarity": null,
+    "slug": "cheddar-crowns-cereal",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/HexDogTagLettie",
+    "type": "Resource"
+  },
+  {
+    "name": "Chuggin' Along Sixpack",
+    "rarity": null,
+    "slug": "chuggin-along-sixpack",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/HexDogTagArthur",
+    "type": "Resource"
+  },
+  {
+    "name": "Condroc Wing",
+    "rarity": null,
+    "slug": "condroc-wing",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Connla Sprout",
+    "rarity": null,
+    "slug": "connla-sprout",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemC",
+    "type": "Resource"
+  },
+  {
+    "name": "Copernics",
+    "rarity": null,
+    "slug": "copernics",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/CopernicsRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Coprun",
+    "rarity": null,
+    "slug": "coprun",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Corpus Cipher",
+    "rarity": null,
+    "slug": "corpus-cipher",
+    "sourceId": "/Lotus/Types/Items/Research/CipherPlus",
+    "type": "Resource"
+  },
+  {
+    "name": "Corpus Datamass",
+    "rarity": null,
+    "slug": "corpus-datamass",
+    "sourceId": "/Lotus/Types/Items/Research/DataMassPlus",
+    "type": "Resource"
+  },
+  {
+    "name": "Cortege Barrel",
+    "rarity": null,
+    "slug": "cortege-barrel",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechArchGunBarrelItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Cortege Receiver",
+    "rarity": null,
+    "slug": "cortege-receiver",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechArchGunReceiverItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Cortege Stock",
+    "rarity": null,
+    "slug": "cortege-stock",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechArchGunStockItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Cortichrome",
+    "rarity": null,
+    "slug": "cortichrome",
+    "sourceId": "/Lotus/Types/Gameplay/JadeShadows/Resources/JuggernautBehemothItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Crimzian",
+    "rarity": null,
+    "slug": "crimzian",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/RareGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Crisma Toroid",
+    "rarity": null,
+    "slug": "crisma-toroid",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidCamperItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Cryptographic Alu",
+    "rarity": null,
+    "slug": "cryptographic-alu",
+    "sourceId": "/Lotus/Types/Items/MiscItems/RazorbackCipherPart",
+    "type": "Resource"
+  },
+  {
+    "name": "Cubic Diodes",
+    "rarity": null,
+    "slug": "cubic-diodes",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/CubicsRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Curse Of Hearing",
+    "rarity": null,
+    "slug": "curse-of-hearing",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiEventCurseItemB",
+    "type": "Resource"
+  },
+  {
+    "name": "Curse Of Knowing",
+    "rarity": null,
+    "slug": "curse-of-knowing",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiEventCurseItemA",
+    "type": "Resource"
+  },
+  {
+    "name": "Curse Of Seeing",
+    "rarity": null,
+    "slug": "curse-of-seeing",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiEventCurseItemC",
+    "type": "Resource"
+  },
+  {
+    "name": "Dagonic",
+    "rarity": null,
+    "slug": "dagonic",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Damaged Necramech Casing",
+    "rarity": null,
+    "slug": "damaged-necramech-casing",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartChassisItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Damaged Necramech Engine",
+    "rarity": null,
+    "slug": "damaged-necramech-engine",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartEngineItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Damaged Necramech Pod",
+    "rarity": null,
+    "slug": "damaged-necramech-pod",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartSystemsItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Damaged Necramech Weapon Barrel",
+    "rarity": null,
+    "slug": "damaged-necramech-weapon-barrel",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponBarrelItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Damaged Necramech Weapon Pod",
+    "rarity": null,
+    "slug": "damaged-necramech-weapon-pod",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartWeaponPodItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Damaged Necramech Weapon Receiver",
+    "rarity": null,
+    "slug": "damaged-necramech-weapon-receiver",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponReceiverItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Damaged Necramech Weapon Stock",
+    "rarity": null,
+    "slug": "damaged-necramech-weapon-stock",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponStockItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Daughter Token",
+    "rarity": null,
+    "slug": "daughter-token",
+    "sourceId": "/Lotus/Types/Items/Deimos/EntratiFragmentCommonC",
+    "type": "Resource"
+  },
+  {
+    "name": "Detonite Ampule",
+    "rarity": null,
+    "slug": "detonite-ampule",
+    "sourceId": "/Lotus/Types/Items/Research/ChemFragment",
+    "type": "Resource"
+  },
+  {
+    "name": "Detonite Injector",
+    "rarity": null,
+    "slug": "detonite-injector",
+    "sourceId": "/Lotus/Types/Items/Research/ChemComponent",
+    "type": "Resource"
+  },
+  {
+    "name": "Devar",
+    "rarity": null,
+    "slug": "devar",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Devolved Namalon",
+    "rarity": null,
+    "slug": "devolved-namalon",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Dracroot",
+    "rarity": null,
+    "slug": "dracroot",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemF",
+    "type": "Resource"
+  },
+  {
+    "name": "Dusklight Sarracenia",
+    "rarity": null,
+    "slug": "dusklight-sarracenia",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/ZenCobraLotusPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Echo Voca",
+    "rarity": null,
+    "slug": "echo-voca",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagRare",
+    "type": "Resource"
+  },
+  {
+    "name": "Eevani",
+    "rarity": null,
+    "slug": "eevani",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemB",
+    "type": "Resource"
+  },
+  {
+    "name": "Efervon Sample",
+    "rarity": null,
+    "slug": "efervon-sample",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceCommonA",
+    "type": "Resource"
+  },
+  {
+    "name": "Embolos",
+    "rarity": null,
+    "slug": "embolos",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Enigma Gyrum",
+    "rarity": null,
+    "slug": "enigma-gyrum",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPuzzleItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Entrati Lanthorn",
+    "rarity": null,
+    "slug": "entrati-lanthorn",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLanthornBundle",
+    "type": "Resource"
+  },
+  {
+    "name": "Entrati Lanthorn",
+    "rarity": null,
+    "slug": "entrati-lanthorn",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanMiscItemB",
+    "type": "Resource"
+  },
+  {
+    "name": "Entrati Obols",
+    "rarity": null,
+    "slug": "entrati-obols",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabMiscItemA",
+    "type": "Resource"
+  },
+  {
+    "name": "Entratifragmentbase",
+    "rarity": null,
+    "slug": "entratifragmentbase",
+    "sourceId": "/Lotus/Types/Items/Deimos/EntratiFragmentBase",
+    "type": "Resource"
+  },
+  {
+    "name": "Entratilabdogtag",
+    "rarity": null,
+    "slug": "entratilabdogtag",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTag",
+    "type": "Resource"
+  },
+  {
+    "name": "Esher Devar",
+    "rarity": null,
+    "slug": "esher-devar",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Exceptional Sentient Core",
+    "rarity": null,
+    "slug": "exceptional-sentient-core",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
+    "type": "Resource"
+  },
+  {
+    "name": "Exemplar Granum Crown",
+    "rarity": null,
+    "slug": "exemplar-granum-crown",
+    "sourceId": "/Lotus/Types/Items/Tokens/GreedTokens/GreedTokenGold",
+    "type": "Resource"
+  },
+  {
+    "name": "Experimental Arc-Relay",
+    "rarity": null,
+    "slug": "experimental-arc-relay",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceUncommonB",
+    "type": "Resource"
+  },
+  {
+    "name": "Familial Debt-Bond",
+    "rarity": null,
+    "slug": "familial-debt-bond",
+    "sourceId": "/Lotus/Types/Items/Solaris/DebtTokenE",
+    "type": "Resource"
+  },
+  {
+    "name": "Father Token",
+    "rarity": null,
+    "slug": "father-token",
+    "sourceId": "/Lotus/Types/Items/Deimos/EntratiFragmentUncommonA",
+    "type": "Resource"
+  },
+  {
+    "name": "Ferros",
+    "rarity": null,
+    "slug": "ferros",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Fieldron",
+    "rarity": null,
+    "slug": "fieldron",
+    "sourceId": "/Lotus/Types/Items/Research/EnergyComponent",
+    "type": "Resource"
+  },
+  {
+    "name": "Fieldron Sample",
+    "rarity": null,
+    "slug": "fieldron-sample",
+    "sourceId": "/Lotus/Types/Items/Research/EnergyFragment",
+    "type": "Resource"
+  },
+  {
+    "name": "Flawless Sentient Core",
+    "rarity": null,
+    "slug": "flawless-sentient-core",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsRareDogTag",
+    "type": "Resource"
+  },
+  {
+    "name": "Fresnels",
+    "rarity": null,
+    "slug": "fresnels",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/FresnelsRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Frostcap",
+    "rarity": null,
+    "slug": "frostcap",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/VenusMushroomItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Frostleaf",
+    "rarity": null,
+    "slug": "frostleaf",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/WildGingerBPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Gallos Rods",
+    "rarity": null,
+    "slug": "gallos-rods",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/GallosRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Ganglion",
+    "rarity": null,
+    "slug": "ganglion",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Genericdojocolorpigment",
+    "rarity": null,
+    "slug": "genericdojocolorpigment",
+    "sourceId": "/Lotus/Types/Items/Research/DojoColors/GenericDojoColorPigment",
+    "type": "Resource"
+  },
+  {
+    "name": "Ghost Brush Extract",
+    "rarity": null,
+    "slug": "ghost-brush-extract",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/OroPorcelainBushAPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Goblite",
+    "rarity": null,
+    "slug": "goblite",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Gorgaricus Spore",
+    "rarity": null,
+    "slug": "gorgaricus-spore",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Grandmother Token",
+    "rarity": null,
+    "slug": "grandmother-token",
+    "sourceId": "/Lotus/Types/Items/Deimos/EntratiFragmentRareA",
+    "type": "Resource"
+  },
+  {
+    "name": "Granum Crown",
+    "rarity": null,
+    "slug": "granum-crown",
+    "sourceId": "/Lotus/Types/Items/Tokens/GreedTokens/GreedTokenBlue",
+    "type": "Resource"
+  },
+  {
+    "name": "Grokdrul",
+    "rarity": null,
+    "slug": "grokdrul",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Grotesque Splinter",
+    "rarity": null,
+    "slug": "grotesque-splinter",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiEventOctopedeItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Gyromag Systems",
+    "rarity": null,
+    "slug": "gyromag-systems",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Heart Nyth",
+    "rarity": null,
+    "slug": "heart-nyth",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Heciphron",
+    "rarity": null,
+    "slug": "heciphron",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Hespazym Alloy",
+    "rarity": null,
+    "slug": "hespazym-alloy",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Hesperon",
+    "rarity": null,
+    "slug": "hesperon",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Hexsyndicatedogtag",
+    "rarity": null,
+    "slug": "hexsyndicatedogtag",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/HexSyndicateDogTag",
+    "type": "Resource"
+  },
+  {
+    "name": "HöLlvanian Pitchweave Fragment",
+    "rarity": null,
+    "slug": "hollvanian-pitchweave-fragment",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceCommonB",
+    "type": "Resource"
+  },
+  {
+    "name": "Intact Sentient Core",
+    "rarity": null,
+    "slug": "intact-sentient-core",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
+    "type": "Resource"
+  },
+  {
+    "name": "Iradite",
+    "rarity": null,
+    "slug": "iradite",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Isos",
+    "rarity": null,
+    "slug": "isos",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/IsosRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Javlok Capacitor",
+    "rarity": null,
+    "slug": "javlok-capacitor",
+    "sourceId": "/Lotus/Types/Items/MiscItems/GrnFlameSpearPart",
+    "type": "Resource"
+  },
+  {
+    "name": "Kesslers",
+    "rarity": null,
+    "slug": "kesslers",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/KesslersRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Komms",
+    "rarity": null,
+    "slug": "komms",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/KommsRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Kovnik",
+    "rarity": null,
+    "slug": "kovnik",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemA",
+    "type": "Resource"
+  },
+  {
+    "name": "Kuaka Spinal Claw",
+    "rarity": null,
+    "slug": "kuaka-spinal-claw",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Kullervo's Bane",
+    "rarity": null,
+    "slug": "kullervos-bane",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriKullervoDropItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Lamentus",
+    "rarity": null,
+    "slug": "lamentus",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriEnemyDropItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Lazulite Toroid",
+    "rarity": null,
+    "slug": "lazulite-toroid",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidCamperTerraItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Lich Token",
+    "rarity": null,
+    "slug": "lich-token",
+    "sourceId": "/Lotus/Types/Game/Nemesis/KuvaLich/CapturedGrineerLichToken",
+    "type": "Resource"
+  },
+  {
+    "name": "Lua Thrax Plasm",
+    "rarity": null,
+    "slug": "lua-thrax-plasm",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/EclipseVoidWraithItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Lucent Teroglobe",
+    "rarity": null,
+    "slug": "lucent-teroglobe",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/OrbStoneItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Lunar Pitcher",
+    "rarity": null,
+    "slug": "lunar-pitcher",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/ZenPitcherPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Maprico",
+    "rarity": null,
+    "slug": "maprico",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Marquise Veridos",
+    "rarity": null,
+    "slug": "marquise-veridos",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Medical Debt-Bond",
+    "rarity": null,
+    "slug": "medical-debt-bond",
+    "sourceId": "/Lotus/Types/Items/Solaris/DebtTokenC",
+    "type": "Resource"
+  },
+  {
+    "name": "Mood Crystal",
+    "rarity": null,
+    "slug": "mood-crystal",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/HexDogTagEleanor",
+    "type": "Resource"
+  },
+  {
+    "name": "Moonlight Dragonlily",
+    "rarity": null,
+    "slug": "moonlight-dragonlily",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Moonlight Jadeleaf",
+    "rarity": null,
+    "slug": "moonlight-jadeleaf",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Moonlight Threshcone",
+    "rarity": null,
+    "slug": "moonlight-threshcone",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Morgha Barrel",
+    "rarity": null,
+    "slug": "morgha-barrel",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechGrenadeLauncherBarrelItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Morgha Receiver",
+    "rarity": null,
+    "slug": "morgha-receiver",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechGrenadeLauncherReceiverItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Morgha Stock",
+    "rarity": null,
+    "slug": "morgha-stock",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechGrenadeLauncherStockItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Mother Token",
+    "rarity": null,
+    "slug": "mother-token",
+    "sourceId": "/Lotus/Types/Items/Deimos/EntratiFragmentUncommonB",
+    "type": "Resource"
+  },
+  {
+    "name": "Mutagen Mass",
+    "rarity": null,
+    "slug": "mutagen-mass",
+    "sourceId": "/Lotus/Types/Items/Research/BioComponent",
+    "type": "Resource"
+  },
+  {
+    "name": "Mutagen Sample",
+    "rarity": null,
+    "slug": "mutagen-sample",
+    "sourceId": "/Lotus/Types/Items/Research/BioFragment",
+    "type": "Resource"
+  },
+  {
+    "name": "Mytocardia Spore",
+    "rarity": null,
+    "slug": "mytocardia-spore",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Namalon",
+    "rarity": null,
+    "slug": "namalon",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Necracoil",
+    "rarity": null,
+    "slug": "necracoil",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabMiscItemB",
+    "type": "Resource"
+  },
+  {
+    "name": "Necrathene",
+    "rarity": null,
+    "slug": "necrathene",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Nistlepod",
+    "rarity": null,
+    "slug": "nistlepod",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Noctrul",
+    "rarity": null,
+    "slug": "noctrul",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Nullstones",
+    "rarity": null,
+    "slug": "nullstones",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/NullstonesRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Nyth",
+    "rarity": null,
+    "slug": "nyth",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBItem",
+    "type": "Gem"
+  },
+  {
+    "name": "On-Lyne Cd",
+    "rarity": null,
+    "slug": "on-lyne-cd",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/HexDogTagAoi",
+    "type": "Resource"
+  },
+  {
+    "name": "Orokin Animus Matrix",
+    "rarity": null,
+    "slug": "orokin-animus-matrix",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Necraloids/NecraloidStandingRareItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Orokin Ballistics Matrix",
+    "rarity": null,
+    "slug": "orokin-ballistics-matrix",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Necraloids/NecraloidStandingUncommonItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Orokin Monitor",
+    "rarity": null,
+    "slug": "orokin-monitor",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/OrokinSensorItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Orokin Orientation Matrix",
+    "rarity": null,
+    "slug": "orokin-orientation-matrix",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Necraloids/NecraloidStandingCommonItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Otak Token",
+    "rarity": null,
+    "slug": "otak-token",
+    "sourceId": "/Lotus/Types/Items/Deimos/EntratiFragmentCommonA",
+    "type": "Resource"
+  },
+  {
+    "name": "Pathos Clamp",
+    "rarity": null,
+    "slug": "pathos-clamp",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriDragonDropItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Phasmin",
+    "rarity": null,
+    "slug": "phasmin",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Plantitem",
+    "rarity": null,
+    "slug": "plantitem",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/PlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Pustrels",
+    "rarity": null,
+    "slug": "pustrels",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/PustrelsRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Pustulite",
+    "rarity": null,
+    "slug": "pustulite",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Pyrol",
+    "rarity": null,
+    "slug": "pyrol",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Pyrus Essence",
+    "rarity": null,
+    "slug": "pyrus-essence",
+    "sourceId": "/Lotus/Types/Items/RelayRebuild/PhaseOneFireElement",
+    "type": "Resource"
+  },
+  {
+    "name": "Radian Sentirum",
+    "rarity": null,
+    "slug": "radian-sentirum",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Relay Strut Component",
+    "rarity": null,
+    "slug": "relay-strut-component",
+    "sourceId": "/Lotus/Types/Items/RelayRebuild/PhaseOneClanItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Repeller Systems",
+    "rarity": null,
+    "slug": "repeller-systems",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetCItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Riven Transmuter",
+    "rarity": null,
+    "slug": "riven-transmuter",
+    "sourceId": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientSecretItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Ruk's Claw",
+    "rarity": null,
+    "slug": "ruks-claw",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/GftPlantRuksClawMaturePlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Rune Marrow",
+    "rarity": null,
+    "slug": "rune-marrow",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriFractalItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Saggen Pearl",
+    "rarity": null,
+    "slug": "saggen-pearl",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriProcessedItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Scintillant",
+    "rarity": null,
+    "slug": "scintillant",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Sentirum",
+    "rarity": null,
+    "slug": "sentirum",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Seriglass Shard",
+    "rarity": null,
+    "slug": "seriglass-shard",
+    "sourceId": "/Lotus/Types/Items/Deimos/SeriglassShard",
+    "type": "Resource"
+  },
+  {
+    "name": "Shelter Debt-Bond",
+    "rarity": null,
+    "slug": "shelter-debt-bond",
+    "sourceId": "/Lotus/Types/Items/Solaris/DebtTokenB",
+    "type": "Resource"
+  },
+  {
+    "name": "Shrill Voca",
+    "rarity": null,
+    "slug": "shrill-voca",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagCommon",
+    "type": "Resource"
+  },
+  {
+    "name": "Silphsela",
+    "rarity": null,
+    "slug": "silphsela",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemE",
+    "type": "Resource"
+  },
+  {
+    "name": "Sister Of Parvos Token",
+    "rarity": null,
+    "slug": "sister-of-parvos-token",
+    "sourceId": "/Lotus/Types/Game/Nemesis/KuvaLich/CapturedCorpusLichToken",
+    "type": "Resource"
+  },
+  {
+    "name": "Skateweed Extract",
+    "rarity": null,
+    "slug": "skateweed-extract",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/IresPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Sola Toroid",
+    "rarity": null,
+    "slug": "sola-toroid",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Son Token",
+    "rarity": null,
+    "slug": "son-token",
+    "sourceId": "/Lotus/Types/Items/Deimos/EntratiFragmentCommonB",
+    "type": "Resource"
+  },
+  {
+    "name": "Star Crimzian",
+    "rarity": null,
+    "slug": "star-crimzian",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Steel Essence",
+    "rarity": null,
+    "slug": "steel-essence",
+    "sourceId": "/Lotus/Types/Items/MiscItems/SteelEssence",
+    "type": "Resource"
+  },
+  {
+    "name": "Steel Essence",
+    "rarity": null,
+    "slug": "steel-essence",
+    "sourceId": "/Lotus/Types/Items/MiscItems/SteelEssence20Pack",
+    "type": "Resource"
+  },
+  {
+    "name": "Stela",
+    "rarity": null,
+    "slug": "stela",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/MurmurItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Sunlight Dragonlily",
+    "rarity": null,
+    "slug": "sunlight-dragonlily",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/UnCommonDayPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Sunlight Jadeleaf",
+    "rarity": null,
+    "slug": "sunlight-jadeleaf",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/RareDayPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Sunlight Threshcone",
+    "rarity": null,
+    "slug": "sunlight-threshcone",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/CommonDayPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Tasoma Extract",
+    "rarity": null,
+    "slug": "tasoma-extract",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriMushroomItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Tasoma Spore",
+    "rarity": null,
+    "slug": "tasoma-spore",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriMushroomSeed",
+    "type": "Resource"
+  },
+  {
+    "name": "Tear Azurite",
+    "rarity": null,
+    "slug": "tear-azurite",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Technocyte Coda Token",
+    "rarity": null,
+    "slug": "technocyte-coda-token",
+    "sourceId": "/Lotus/Types/Game/Nemesis/KuvaLich/CapturedInfestedLichToken",
+    "type": "Resource"
+  },
+  {
+    "name": "Techrot Chitin",
+    "rarity": null,
+    "slug": "techrot-chitin",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceUncommonA",
+    "type": "Resource"
+  },
+  {
+    "name": "Techrot Motherboard",
+    "rarity": null,
+    "slug": "techrot-motherboard",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceRareA",
+    "type": "Resource"
+  },
+  {
+    "name": "Tempered Bapholite",
+    "rarity": null,
+    "slug": "tempered-bapholite",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Tepa Nodule",
+    "rarity": null,
+    "slug": "tepa-nodule",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Tertium",
+    "rarity": null,
+    "slug": "tertium",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriEndlessItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Thaumic Distillate",
+    "rarity": null,
+    "slug": "thaumic-distillate",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAAlloyItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Thaumica",
+    "rarity": null,
+    "slug": "thaumica",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "The Countessa Comic",
+    "rarity": null,
+    "slug": "the-countessa-comic",
+    "sourceId": "/Lotus/Types/Gameplay/1999Wf/Resources/HexDogTagAmir",
+    "type": "Resource"
+  },
+  {
+    "name": "Thermal Sludge",
+    "rarity": null,
+    "slug": "thermal-sludge",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Thrax Plasm",
+    "rarity": null,
+    "slug": "thrax-plasm",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/VoidWraithItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Thyst",
+    "rarity": null,
+    "slug": "thyst",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Tiametrite",
+    "rarity": null,
+    "slug": "tiametrite",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Ticor Plate",
+    "rarity": null,
+    "slug": "ticor-plate",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/ScrapRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Titanium",
+    "rarity": null,
+    "slug": "titanium",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/TitaniumRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Trachons",
+    "rarity": null,
+    "slug": "trachons",
+    "sourceId": "/Lotus/Types/Items/RailjackMiscItems/TrachonsRailjackItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Training Debt-Bond",
+    "rarity": null,
+    "slug": "training-debt-bond",
+    "sourceId": "/Lotus/Types/Items/Solaris/DebtTokenA",
+    "type": "Resource"
+  },
+  {
+    "name": "Travocyte Alloy",
+    "rarity": null,
+    "slug": "travocyte-alloy",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Travoride",
+    "rarity": null,
+    "slug": "travoride",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Trembera Essence",
+    "rarity": null,
+    "slug": "trembera-essence",
+    "sourceId": "/Lotus/Types/Items/RelayRebuild/PhaseThreeEarthEssence",
+    "type": "Resource"
+  },
+  {
+    "name": "Ueymag",
+    "rarity": null,
+    "slug": "ueymag",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemG",
+    "type": "Resource"
+  },
+  {
+    "name": "Vega Toroid",
+    "rarity": null,
+    "slug": "vega-toroid",
+    "sourceId": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Venerdo Alloy",
+    "rarity": null,
+    "slug": "venerdo-alloy",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Venerol",
+    "rarity": null,
+    "slug": "venerol",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Veridos",
+    "rarity": null,
+    "slug": "veridos",
+    "sourceId": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Vessel Capillaries",
+    "rarity": null,
+    "slug": "vessel-capillaries",
+    "sourceId": "/Lotus/Types/Gameplay/EntratiLab/Resources/VesselCapillaries",
+    "type": "Resource"
+  },
+  {
+    "name": "Vestan Moss",
+    "rarity": null,
+    "slug": "vestan-moss",
+    "sourceId": "/Lotus/Types/Items/Plants/MiscItems/MossGroundCoverAPlantItem",
+    "type": "Plant"
+  },
+  {
+    "name": "Vestigial Motes",
+    "rarity": null,
+    "slug": "vestigial-motes",
+    "sourceId": "/Lotus/Types/Gameplay/JadeShadows/Resources/AscensionResourceItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidgel Orb",
+    "rarity": null,
+    "slug": "voidgel-orb",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanMiscItemA",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidplume Crest",
+    "rarity": null,
+    "slug": "voidplume-crest",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanDogTagRare",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidplume Down",
+    "rarity": null,
+    "slug": "voidplume-down",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanDogTagCommon",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidplume Pinion",
+    "rarity": null,
+    "slug": "voidplume-pinion",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/VoidAngelItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidplume Quill",
+    "rarity": null,
+    "slug": "voidplume-quill",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanDogTagBounty",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidplume Vane",
+    "rarity": null,
+    "slug": "voidplume-vane",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanDogTagUncommon",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidrig Capsule",
+    "rarity": null,
+    "slug": "voidrig-capsule",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartSystemsItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidrig Casing",
+    "rarity": null,
+    "slug": "voidrig-casing",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartChassisItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidrig Engine",
+    "rarity": null,
+    "slug": "voidrig-engine",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartEngineItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Voidrig Weapon Pod",
+    "rarity": null,
+    "slug": "voidrig-weapon-pod",
+    "sourceId": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartWeaponPodItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Volatile Motes",
+    "rarity": null,
+    "slug": "volatile-motes",
+    "sourceId": "/Lotus/Types/Gameplay/JadeShadows/Resources/AscensionEventResourceItem",
+    "type": "Resource"
+  },
+  {
+    "name": "Xenorhast",
+    "rarity": null,
+    "slug": "xenorhast",
+    "sourceId": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemAItem",
+    "type": "Gem"
+  },
+  {
+    "name": "Yao Shrub",
+    "rarity": null,
+    "slug": "yao-shrub",
+    "sourceId": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemD",
+    "type": "Resource"
+  },
+  {
+    "name": "Zarimandogtag",
+    "rarity": null,
+    "slug": "zarimandogtag",
+    "sourceId": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanDogTag",
+    "type": "Resource"
+  },
+  {
+    "name": "Zenith Granum Crown",
+    "rarity": null,
+    "slug": "zenith-granum-crown",
+    "sourceId": "/Lotus/Types/Items/Tokens/GreedTokens/GreedTokenBlack",
+    "type": "Resource"
+  },
+  {
+    "name": "Zodian",
+    "rarity": null,
+    "slug": "zodian",
+    "sourceId": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemAItem",
+    "type": "Gem"
+  }
+]

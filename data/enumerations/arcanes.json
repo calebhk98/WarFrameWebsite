@@ -1,0 +1,1094 @@
+[
+  {
+    "slug": "akimbo-slip-shot",
+    "name": "Akimbo Slip Shot",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane",
+    "name": "Arcane",
+    "type": "Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-acceleration",
+    "name": "Arcane Acceleration",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-aegis",
+    "name": "Arcane Aegis",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-agility",
+    "name": "Arcane Agility",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-arachne",
+    "name": "Arcane Arachne",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-avenger",
+    "name": "Arcane Avenger",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-awakening",
+    "name": "Arcane Awakening",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-barrier",
+    "name": "Arcane Barrier",
+    "type": "Warframe Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-battery",
+    "name": "Arcane Battery",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-bellicose",
+    "name": "Arcane Bellicose",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-blade-charger",
+    "name": "Arcane Blade Charger",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-blessing",
+    "name": "Arcane Blessing",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-bodyguard",
+    "name": "Arcane Bodyguard",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-camisado",
+    "name": "Arcane Camisado",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-consequence",
+    "name": "Arcane Consequence",
+    "type": "Warframe Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-crepuscular",
+    "name": "Arcane Crepuscular",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-defense",
+    "name": "Arcane Defense",
+    "type": "Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-deflection",
+    "name": "Arcane Deflection",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-detoxifier",
+    "name": "Arcane Detoxifier",
+    "type": "Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-double-back",
+    "name": "Arcane Double Back",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-energize",
+    "name": "Arcane Energize",
+    "type": "Warframe Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-eruption",
+    "name": "Arcane Eruption",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-escapist",
+    "name": "Arcane Escapist",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-fury",
+    "name": "Arcane Fury",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-grace",
+    "name": "Arcane Grace",
+    "type": "Warframe Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-guardian",
+    "name": "Arcane Guardian",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-healing",
+    "name": "Arcane Healing",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-hot-shot",
+    "name": "Arcane Hot Shot",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-ice",
+    "name": "Arcane Ice",
+    "type": "Warframe Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-ice-storm",
+    "name": "Arcane Ice Storm",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-impetus",
+    "name": "Arcane Impetus",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-intention",
+    "name": "Arcane Intention",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-liquid",
+    "name": "Arcane Liquid",
+    "type": "Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-momentum",
+    "name": "Arcane Momentum",
+    "type": "Warframe Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-nullifier",
+    "name": "Arcane Nullifier",
+    "type": "Warframe Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-phantasm",
+    "name": "Arcane Phantasm",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-pistoleer",
+    "name": "Arcane Pistoleer",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-power-ramp",
+    "name": "Arcane Power Ramp",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-precision",
+    "name": "Arcane Precision",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-primary-charger",
+    "name": "Arcane Primary Charger",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-protection",
+    "name": "Arcane Protection",
+    "type": "Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-pulse",
+    "name": "Arcane Pulse",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-rage",
+    "name": "Arcane Rage",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-reaper",
+    "name": "Arcane Reaper",
+    "type": "Warframe Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-resistance",
+    "name": "Arcane Resistance",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-rise",
+    "name": "Arcane Rise",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-shield",
+    "name": "Arcane Shield",
+    "type": "Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-steadfast",
+    "name": "Arcane Steadfast",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-strike",
+    "name": "Arcane Strike",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-survival",
+    "name": "Arcane Survival",
+    "type": "Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-tanker",
+    "name": "Arcane Tanker",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-temperance",
+    "name": "Arcane Temperance",
+    "type": "Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-tempo",
+    "name": "Arcane Tempo",
+    "type": "Warframe Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-trickery",
+    "name": "Arcane Trickery",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-truculence",
+    "name": "Arcane Truculence",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-ultimatum",
+    "name": "Arcane Ultimatum",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-universal-fallout",
+    "name": "Arcane Universal Fallout",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-velocity",
+    "name": "Arcane Velocity",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-victory",
+    "name": "Arcane Victory",
+    "type": "Warframe Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "arcane-warmth",
+    "name": "Arcane Warmth",
+    "type": "Warframe Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "cascadia-accuracy",
+    "name": "Cascadia Accuracy",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "cascadia-empowered",
+    "name": "Cascadia Empowered",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "cascadia-flare",
+    "name": "Cascadia Flare",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "cascadia-overcharge",
+    "name": "Cascadia Overcharge",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "conjunction-voltage",
+    "name": "Conjunction Voltage",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "emergence-dissipate",
+    "name": "Emergence Dissipate",
+    "type": "Operator Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "emergence-renewed",
+    "name": "Emergence Renewed",
+    "type": "Operator Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "emergence-savior",
+    "name": "Emergence Savior",
+    "type": "Operator Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "eternal-eradicate",
+    "name": "Eternal Eradicate",
+    "type": "Amp Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "eternal-logistics",
+    "name": "Eternal Logistics",
+    "type": "Amp Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "eternal-onslaught",
+    "name": "Eternal Onslaught",
+    "type": "Amp Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "exodia-brave",
+    "name": "Exodia Brave",
+    "type": "Zaw Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "exodia-contagion",
+    "name": "Exodia Contagion",
+    "type": "Zaw Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "exodia-epidemic",
+    "name": "Exodia Epidemic",
+    "type": "Zaw Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "exodia-force",
+    "name": "Exodia Force",
+    "type": "Zaw Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "exodia-hunt",
+    "name": "Exodia Hunt",
+    "type": "Zaw Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "exodia-might",
+    "name": "Exodia Might",
+    "type": "Zaw Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "exodia-triumph",
+    "name": "Exodia Triumph",
+    "type": "Zaw Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "exodia-valor",
+    "name": "Exodia Valor",
+    "type": "Zaw Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "fractalized-reset",
+    "name": "Fractalized Reset",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "longbow-sharpshot",
+    "name": "Longbow Sharpshot",
+    "type": "Bow Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-accelerant",
+    "name": "Magus Accelerant",
+    "type": "Operator Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "magus-aggress",
+    "name": "Magus Aggress",
+    "type": "Operator Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-anomaly",
+    "name": "Magus Anomaly",
+    "type": "Operator Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "magus-cadence",
+    "name": "Magus Cadence",
+    "type": "Operator Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-cloud",
+    "name": "Magus Cloud",
+    "type": "Operator Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-destruct",
+    "name": "Magus Destruct",
+    "type": "Operator Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-drive",
+    "name": "Magus Drive",
+    "type": "Operator Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "magus-elevate",
+    "name": "Magus Elevate",
+    "type": "Operator Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-firewall",
+    "name": "Magus Firewall",
+    "type": "Operator Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "magus-glitch",
+    "name": "Magus Glitch",
+    "type": "Operator Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-husk",
+    "name": "Magus Husk",
+    "type": "Operator Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "magus-lockdown",
+    "name": "Magus Lockdown",
+    "type": "Operator Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-melt",
+    "name": "Magus Melt",
+    "type": "Operator Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-nourish",
+    "name": "Magus Nourish",
+    "type": "Operator Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-overload",
+    "name": "Magus Overload",
+    "type": "Operator Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "magus-repair",
+    "name": "Magus Repair",
+    "type": "Operator Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-replenish",
+    "name": "Magus Replenish",
+    "type": "Operator Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-revert",
+    "name": "Magus Revert",
+    "type": "Operator Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "magus-vigor",
+    "name": "Magus Vigor",
+    "type": "Operator Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "melee-afflictions",
+    "name": "Melee Afflictions",
+    "type": "Melee Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "melee-animosity",
+    "name": "Melee Animosity",
+    "type": "Melee Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "melee-crescendo",
+    "name": "Melee Crescendo",
+    "type": "Melee Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "melee-doughty",
+    "name": "Melee Doughty",
+    "type": "Melee Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "melee-duplicate",
+    "name": "Melee Duplicate",
+    "type": "Melee Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "melee-exposure",
+    "name": "Melee Exposure",
+    "type": "Melee Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "melee-fortification",
+    "name": "Melee Fortification",
+    "type": "Melee Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "melee-influence",
+    "name": "Melee Influence",
+    "type": "Melee Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "melee-retaliation",
+    "name": "Melee Retaliation",
+    "type": "Melee Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "melee-vortex",
+    "name": "Melee Vortex",
+    "type": "Melee Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "molt-augmented",
+    "name": "Molt Augmented",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "molt-efficiency",
+    "name": "Molt Efficiency",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "molt-reconstruct",
+    "name": "Molt Reconstruct",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "molt-vigor",
+    "name": "Molt Vigor",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "pax-bolt",
+    "name": "Pax Bolt",
+    "type": "Kitgun Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "pax-charge",
+    "name": "Pax Charge",
+    "type": "Kitgun Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "pax-seeker",
+    "name": "Pax Seeker",
+    "type": "Kitgun Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "pax-soar",
+    "name": "Pax Soar",
+    "type": "Kitgun Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "primary-blight",
+    "name": "Primary Blight",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "primary-crux",
+    "name": "Primary Crux",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "primary-deadhead",
+    "name": "Primary Deadhead",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "primary-dexterity",
+    "name": "Primary Dexterity",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "primary-exhilarate",
+    "name": "Primary Exhilarate",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "primary-frostbite",
+    "name": "Primary Frostbite",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "primary-merciless",
+    "name": "Primary Merciless",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "primary-obstruct",
+    "name": "Primary Obstruct",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "primary-plated-round",
+    "name": "Primary Plated Round",
+    "type": "Primary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "residual-boils",
+    "name": "Residual Boils",
+    "type": "Kitgun Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "residual-malodor",
+    "name": "Residual Malodor",
+    "type": "Kitgun Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "residual-shock",
+    "name": "Residual Shock",
+    "type": "Kitgun Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "residual-viremia",
+    "name": "Residual Viremia",
+    "type": "Kitgun Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-deadhead",
+    "name": "Secondary Deadhead",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-dexterity",
+    "name": "Secondary Dexterity",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-encumber",
+    "name": "Secondary Encumber",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-enervate",
+    "name": "Secondary Enervate",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-fortifier",
+    "name": "Secondary Fortifier",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-kinship",
+    "name": "Secondary Kinship",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-merciless",
+    "name": "Secondary Merciless",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-outburst",
+    "name": "Secondary Outburst",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-shiver",
+    "name": "Secondary Shiver",
+    "type": "Secondary Arcane",
+    "rarity": "Legendary",
+    "sourceId": null
+  },
+  {
+    "slug": "secondary-surge",
+    "name": "Secondary Surge",
+    "type": "Secondary Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "shotgun-vendetta",
+    "name": "Shotgun Vendetta",
+    "type": "Shotgun Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "theorem-contagion",
+    "name": "Theorem Contagion",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "theorem-demulcent",
+    "name": "Theorem Demulcent",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "theorem-infection",
+    "name": "Theorem Infection",
+    "type": "Warframe Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-forge",
+    "name": "Virtuos Forge",
+    "type": "Amp Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-fury",
+    "name": "Virtuos Fury",
+    "type": "Amp Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-ghost",
+    "name": "Virtuos Ghost",
+    "type": "Amp Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-null",
+    "name": "Virtuos Null",
+    "type": "Amp Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-shadow",
+    "name": "Virtuos Shadow",
+    "type": "Amp Arcane",
+    "rarity": "Rare",
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-spike",
+    "name": "Virtuos Spike",
+    "type": "Amp Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-strike",
+    "name": "Virtuos Strike",
+    "type": "Amp Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-surge",
+    "name": "Virtuos Surge",
+    "type": "Amp Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-tempo",
+    "name": "Virtuos Tempo",
+    "type": "Amp Arcane",
+    "rarity": null,
+    "sourceId": null
+  },
+  {
+    "slug": "virtuos-trojan",
+    "name": "Virtuos Trojan",
+    "type": "Amp Arcane",
+    "rarity": "Uncommon",
+    "sourceId": null
+  }
+]

@@ -1,0 +1,1594 @@
+[
+  {
+    "slug": "abating-link",
+    "name": "Abating Link",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "abundant-mutation",
+    "name": "Abundant Mutation",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "accumulating-whipclaw",
+    "name": "Accumulating Whipclaw",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "aegis-gale",
+    "name": "Aegis Gale",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "afterburn",
+    "name": "Afterburn",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "afterburner",
+    "name": "Afterburner",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Archwing Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "airburst-rounds",
+    "name": "Airburst Rounds",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "ambush",
+    "name": "Ambush",
+    "polarity": "penjaga",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "antimatter-absorb",
+    "name": "Antimatter Absorb",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "antimatter-mine",
+    "name": "Antimatter Mine",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "assimilate",
+    "name": "Assimilate",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "augmented-sonar",
+    "name": "Augmented Sonar",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "axios-javelineers",
+    "name": "Axios Javelineers",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "balefire-surge",
+    "name": "Balefire Surge",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "ballistic-bullseye",
+    "name": "Ballistic Bullseye",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "beguiling-lantern",
+    "name": "Beguiling Lantern",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "biting-frost",
+    "name": "Biting Frost",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "blazing-pillage",
+    "name": "Blazing Pillage",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "blending-talons",
+    "name": "Blending Talons",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "blinding-reave",
+    "name": "Blinding Reave",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "blood-forge",
+    "name": "Blood Forge",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "calm-frenzy",
+    "name": "Calm & Frenzy",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "capacitance",
+    "name": "Capacitance",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "cataclysmic-continuum",
+    "name": "Cataclysmic Continuum",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "cataclysmic-gate",
+    "name": "Cataclysmic Gate",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "catapult",
+    "name": "Catapult",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "cathode-current",
+    "name": "Cathode Current",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "celestial-stomp",
+    "name": "Celestial Stomp",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "champions-blessing",
+    "name": "Champion's Blessing",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "chaos-sphere",
+    "name": "Chaos Sphere",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "chilling-globe",
+    "name": "Chilling Globe",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "chromatic-blade",
+    "name": "Chromatic Blade",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "coil-recharge",
+    "name": "Coil Recharge",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "cold-snap",
+    "name": "Cold Snap",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Archwing Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "concentrated-arrow",
+    "name": "Concentrated Arrow",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "conductive-sphere",
+    "name": "Conductive Sphere",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "conductor",
+    "name": "Conductor",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "contagion-cloud",
+    "name": "Contagion Cloud",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "counter-pulse",
+    "name": "Counter Pulse",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "creeping-terrify",
+    "name": "Creeping Terrify",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "critical-surge",
+    "name": "Critical Surge",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "dark-propagation",
+    "name": "Dark Propagation",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "deceptive-bond",
+    "name": "Deceptive Bond",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "defiled-reckoning",
+    "name": "Defiled Reckoning",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "desiccations-curse",
+    "name": "Desiccation's Curse",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "despoil",
+    "name": "Despoil",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "discharge-strike",
+    "name": "Discharge Strike",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "dread-ward",
+    "name": "Dread Ward",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "duality",
+    "name": "Duality",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "elemental-sandstorm",
+    "name": "Elemental Sandstorm",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "elusive-retribution",
+    "name": "Elusive Retribution",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "empowered-quiver",
+    "name": "Empowered Quiver",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "endless-lullaby",
+    "name": "Endless Lullaby",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "energy-field",
+    "name": "Energy Field",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Archwing Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "energy-transfer",
+    "name": "Energy Transfer",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "enveloping-cloud",
+    "name": "Enveloping Cloud",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "escape-velocity",
+    "name": "Escape Velocity",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "eternal-war",
+    "name": "Eternal War",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "everlasting-ward",
+    "name": "Everlasting Ward",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "exothermic",
+    "name": "Exothermic",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "explosive-legerdemain",
+    "name": "Explosive Legerdemain",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "fireball-frenzy",
+    "name": "Fireball Frenzy",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "fracturing-crush",
+    "name": "Fracturing Crush",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "freeze-force",
+    "name": "Freeze Force",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "funnel-clouds",
+    "name": "Funnel Clouds",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "furious-javelin",
+    "name": "Furious Javelin",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "fused-crucible",
+    "name": "Fused Crucible",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "fused-reservoir",
+    "name": "Fused Reservoir",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "gastro",
+    "name": "Gastro",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "gourmand",
+    "name": "Gourmand",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "greedy-pull",
+    "name": "Greedy Pull",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "guided-effigy",
+    "name": "Guided Effigy",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "hall-of-malevolence",
+    "name": "Hall Of Malevolence",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "hallowed-eruption",
+    "name": "Hallowed Eruption",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "hallowed-reckoning",
+    "name": "Hallowed Reckoning",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "healing-flame",
+    "name": "Healing Flame",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "hearty-nourishment",
+    "name": "Hearty Nourishment",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "hushed-invisibility",
+    "name": "Hushed Invisibility",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "hysterical-assault",
+    "name": "Hysterical Assault",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "hysterical-fixation",
+    "name": "Hysterical Fixation",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "ice-wave-impedance",
+    "name": "Ice Wave Impedance",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "icy-avalanche",
+    "name": "Icy Avalanche",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "infiltrate",
+    "name": "Infiltrate",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "insatiable",
+    "name": "Insatiable",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "intrepid-stand",
+    "name": "Intrepid Stand",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "iron-shrapnel",
+    "name": "Iron Shrapnel",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "ironclad-charge",
+    "name": "Ironclad Charge",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "irradiating-disarm",
+    "name": "Irradiating Disarm",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "jet-stream",
+    "name": "Jet Stream",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "kinetic-collision",
+    "name": "Kinetic Collision",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "larva-burst",
+    "name": "Larva Burst",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "lasting-covenant",
+    "name": "Lasting Covenant",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "mach-crash",
+    "name": "Mach Crash",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "magnetized-discharge",
+    "name": "Magnetized Discharge",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "mending-splinters",
+    "name": "Mending Splinters",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "merulina-guardian",
+    "name": "Merulina Guardian",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "mesas-waltz",
+    "name": "Mesa's Waltz",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "mesmer-shield",
+    "name": "Mesmer Shield",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "mind-freak",
+    "name": "Mind Freak",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "molecular-fission",
+    "name": "Molecular Fission",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "muzzle-flash",
+    "name": "Muzzle Flash",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "negation-armor",
+    "name": "Negation Armor",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "neutron-star",
+    "name": "Neutron Star",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "omikujis-fortune",
+    "name": "Omikuji's Fortune",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "ore-gaze",
+    "name": "Ore Gaze",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "pacifying-bolts",
+    "name": "Pacifying Bolts",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "parasitic-vitality",
+    "name": "Parasitic Vitality",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "partitioned-mallet",
+    "name": "Partitioned Mallet",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "path-of-statues",
+    "name": "Path Of Statues",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "peaceful-provocation",
+    "name": "Peaceful Provocation",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "phoenix-renewal",
+    "name": "Phoenix Renewal",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "photon-repeater",
+    "name": "Photon Repeater",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "piercing-navigator",
+    "name": "Piercing Navigator",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "piercing-roar",
+    "name": "Piercing Roar",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "pilfering-strangledome",
+    "name": "Pilfering Strangledome",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "pilfering-swarm",
+    "name": "Pilfering Swarm",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "pool-of-life",
+    "name": "Pool Of Life",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "power-of-three",
+    "name": "Power Of Three",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "prey-of-dynar",
+    "name": "Prey Of Dynar",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "primal-rage",
+    "name": "Primal Rage",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "prism-guard",
+    "name": "Prism Guard",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "prolonged-paralysis",
+    "name": "Prolonged Paralysis",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "purging-slash",
+    "name": "Purging Slash",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "purifying-flames",
+    "name": "Purifying Flames",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "push-pull",
+    "name": "Push & Pull",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "pyroclastic-flow",
+    "name": "Pyroclastic Flow",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "radiant-finish",
+    "name": "Radiant Finish",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "razorwing-blitz",
+    "name": "Razorwing Blitz",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "reactive-storm",
+    "name": "Reactive Storm",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "reaping-chakram",
+    "name": "Reaping Chakram",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "recharge-barrier",
+    "name": "Recharge Barrier",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "recrystalize",
+    "name": "Recrystalize",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "regenerative-molt",
+    "name": "Regenerative Molt",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "reinforcing-stomp",
+    "name": "Reinforcing Stomp",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "repair-dispensary",
+    "name": "Repair Dispensary",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "repelling-bastille",
+    "name": "Repelling Bastille",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "resonance",
+    "name": "Resonance",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "resonating-quake",
+    "name": "Resonating Quake",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "rift-haven",
+    "name": "Rift Haven",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "rift-torrent",
+    "name": "Rift Torrent",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "rising-storm",
+    "name": "Rising Storm",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "rousing-plunder",
+    "name": "Rousing Plunder",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "rubble-heap",
+    "name": "Rubble Heap",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "rumbled",
+    "name": "Rumbled",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "safeguard",
+    "name": "Safeguard",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "safeguard-switch",
+    "name": "Safeguard Switch",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "sapping-reach",
+    "name": "Sapping Reach",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "savage-silence",
+    "name": "Savage Silence",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "savior-decoy",
+    "name": "Savior Decoy",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "seeking-shuriken",
+    "name": "Seeking Shuriken",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "shadow-haze",
+    "name": "Shadow Haze",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "shattered-storm",
+    "name": "Shattered Storm",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "shield-of-shadows",
+    "name": "Shield Of Shadows",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "shield-overload",
+    "name": "Shield Overload",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "shock-trooper",
+    "name": "Shock Trooper",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "shocking-speed",
+    "name": "Shocking Speed",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "signal-flare",
+    "name": "Signal Flare",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "singularity",
+    "name": "Singularity",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "smite-infusion",
+    "name": "Smite Infusion",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "smoke-shadow",
+    "name": "Smoke Shadow",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "sonic-fracture",
+    "name": "Sonic Fracture",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "soul-survivor",
+    "name": "Soul Survivor",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "spectral-spirit",
+    "name": "Spectral Spirit",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "spectrosiphon",
+    "name": "Spectrosiphon",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "spellbound-harvest",
+    "name": "Spellbound Harvest",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "staggering-shield",
+    "name": "Staggering Shield",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "surging-blades",
+    "name": "Surging Blades",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "surging-dash",
+    "name": "Surging Dash",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "swift-bite",
+    "name": "Swift Bite",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "swing-line",
+    "name": "Swing Line",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "target-fixation",
+    "name": "Target Fixation",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "tear-gas",
+    "name": "Tear Gas",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "tectonic-fracture",
+    "name": "Tectonic Fracture",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "teeming-virulence",
+    "name": "Teeming Virulence",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "teleport-rush",
+    "name": "Teleport Rush",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "temporal-artillery",
+    "name": "Temporal Artillery",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "temporal-erosion",
+    "name": "Temporal Erosion",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "tesla-bank",
+    "name": "Tesla Bank",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "the-relentless-lost",
+    "name": "The Relentless Lost",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "thermal-transfer",
+    "name": "Thermal Transfer",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "thrall-pact",
+    "name": "Thrall Pact",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "tidal-impunity",
+    "name": "Tidal Impunity",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "titanic-rumbler",
+    "name": "Titanic Rumbler",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "total-eclipse",
+    "name": "Total Eclipse",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "transistor-shield",
+    "name": "Transistor Shield",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "tribunal",
+    "name": "Tribunal",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "ulfruns-endurance",
+    "name": "Ulfrun's Endurance",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "valence-formation",
+    "name": "Valence Formation",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "vampire-leech",
+    "name": "Vampire Leech",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "vampiric-grasp",
+    "name": "Vampiric Grasp",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "venari-bodyguard",
+    "name": "Venari Bodyguard",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "venom-dose",
+    "name": "Venom Dose",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "vexing-retaliation",
+    "name": "Vexing Retaliation",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "viral-tempest",
+    "name": "Viral Tempest",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "ward-recovery",
+    "name": "Ward Recovery",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "warding-thurible",
+    "name": "Warding Thurible",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "warriors-rest",
+    "name": "Warrior's Rest",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "wrath-of-ukko",
+    "name": "Wrath Of Ukko",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  },
+  {
+    "slug": "wrecking-wall",
+    "name": "Wrecking Wall",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "type": "Warframe Mod",
+    "isAugment": true
+  }
+]

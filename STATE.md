@@ -8,6 +8,18 @@ target section and deleting from the source section.
 ## phase
 3:enumeration
 
+## cursor
+warframes: 0
+weapons: 0
+mods: 0
+quests: 0
+factions: 0
+syndicates: 0
+relics: 0
+arcanes: 0
+missions: 0
+resources: 0
+
 ## queue.phases
 - 2:data
 - 3:enumeration
@@ -18,28 +30,40 @@ target section and deleting from the source section.
 - 8:improvement
 
 ## queue.warframes
+enumerated: data/enumerations/warframes.json count=110 strategy=per-slug
 
 ## queue.weapons
+enumerated: data/enumerations/weapons.json count=598 strategy=per-slug
 
 ## queue.mods
+enumerated: data/enumerations/mods-featured.json count=199 strategy=featured-subset note=augments-only-others-browse-raw-json
 
 ## queue.quests
+enumerated: data/enumerations/quests.json count=43 strategy=per-slug
 
 ## queue.factions
+enumerated: data/enumerations/factions.json count=35 strategy=per-slug
 
 ## queue.syndicates
+enumerated: data/enumerations/syndicates.json count=18 strategy=per-slug
 
 ## queue.relics
+enumerated: data/enumerations/relics.json count=2682 strategy=aggregate-by-era note=5-era-pages-instead-of-per-slug
 
 ## queue.arcanes
+enumerated: data/enumerations/arcanes.json count=156 strategy=per-slug
 
 ## queue.missions
+enumerated: data/enumerations/missions.json count=260 strategy=aggregate-by-planet note=~21-planet-pages-plus-mission-type-pages
 
 ## queue.resources
+enumerated: data/enumerations/resources.json count=224 strategy=per-slug
 
 ## queue.builds
+deferred-to-phase-4 strategy=top-3-per-warframe-top-2-per-popular-weapon
 
 ## queue.guides
+deferred-to-phase-4 strategy=author-decided-during-fan-out
 
 ## done.warframes
 
