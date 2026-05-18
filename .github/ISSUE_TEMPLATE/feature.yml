@@ -1,0 +1,56 @@
+name: Feature request
+description: Propose a new capability or improvement.
+title: "feat: <short summary>"
+labels:
+  - "kind:feature"
+  - "state:queued"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for feature requests. Subagents can self-file
+        when blocked by a missing capability; include the failure
+        context in the problem field.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Short headline for the feature.
+      placeholder: Worldstate alerts page
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or subagent need is unmet today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed solution
+      description: One paragraph. Implementation sketch welcome but not required.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: P0 = critical missing, P1 = high-value, P2 = nice to have.
+      options:
+        - P0
+        - P1
+        - P2
+    validations:
+      required: true
+  - type: textarea
+    id: affected_areas
+    attributes:
+      label: Affected areas
+      description: Paths or modules touched (best guess).
+      placeholder: |
+        src/pages/worldstate.astro
+        src/lib/worldstate.ts
+    validations:
+      required: false

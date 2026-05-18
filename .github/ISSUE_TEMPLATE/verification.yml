@@ -1,0 +1,55 @@
+name: Verification failure
+description: Report a failure produced by scripts/verify-content.ts.
+title: "verify: <collection>/<slug> failed"
+labels:
+  - "kind:bug"
+  - "state:failed"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template when the verifier writes a FAIL report. The
+        manager re-queues the slug with a `retry:N` annotation and
+        attaches this issue to the tracking issue for the collection.
+  - type: dropdown
+    id: collection
+    attributes:
+      label: Collection
+      options:
+        - warframes
+        - weapons
+        - mods
+        - quests
+        - factions
+        - syndicates
+        - relics
+        - arcanes
+        - missions
+        - resources
+        - builds
+        - guides
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: Slug
+      placeholder: ash-prime
+    validations:
+      required: true
+  - type: textarea
+    id: failure_reason
+    attributes:
+      label: Failure reason
+      description: Paste the `errors[]` array from the verifier report.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: report_path
+    attributes:
+      label: Report path
+      description: Absolute path to the verifier report JSON.
+      placeholder: /home/user/WarFrameWebsite/reports/verify/warframes/ash.json
+    validations:
+      required: true

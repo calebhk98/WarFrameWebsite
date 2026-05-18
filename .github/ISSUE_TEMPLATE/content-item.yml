@@ -1,0 +1,57 @@
+name: Content item
+description: Queue a new content item (warframe, weapon, mod, etc.) for research.
+title: "content: <collection>/<slug>"
+labels:
+  - "kind:content"
+  - "state:queued"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to add a new content item to the research queue.
+        The manager picks items from `state:queued` issues, dispatches a
+        research subagent, and updates the label as work progresses.
+  - type: dropdown
+    id: collection
+    attributes:
+      label: Collection
+      description: Which content collection does this item belong to?
+      options:
+        - warframes
+        - weapons
+        - mods
+        - quests
+        - factions
+        - syndicates
+        - relics
+        - arcanes
+        - missions
+        - resources
+        - builds
+        - guides
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: Slug
+      description: Lowercase, hyphens only, no diacritics. Example "ash-prime".
+      placeholder: ash-prime
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Display name
+      description: Canonical in-game name. Example "Ash Prime".
+      placeholder: Ash Prime
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Optional. Anything the research subagent should know.
+      placeholder: Reference the Steel Path tier list for the build link.
+    validations:
+      required: false
