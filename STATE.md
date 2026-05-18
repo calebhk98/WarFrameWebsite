@@ -12,7 +12,7 @@ target section and deleting from the source section.
 warframes: 0
 weapons: 0
 mods: 0
-quests: 0
+quests: 9
 factions: 0
 syndicates: 0
 relics: 0
@@ -72,6 +72,15 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 ## done.mods
 
 ## done.quests
+- a-man-of-few-words :: src/content/quests/a-man-of-few-words.mdx
+- angels-of-the-zariman :: src/content/quests/angels-of-the-zariman.mdx
+- apostasy-prologue :: src/content/quests/apostasy-prologue.mdx
+- awakening :: src/content/quests/awakening.mdx
+- call-of-the-tempestarii :: src/content/quests/call-of-the-tempestarii.mdx
+- chains-of-harrow :: src/content/quests/chains-of-harrow.mdx
+- chimera-prologue :: src/content/quests/chimera-prologue.mdx
+- clan-key :: src/content/quests/clan-key.mdx
+- erra :: src/content/quests/erra.mdx
 
 ## done.factions
 
