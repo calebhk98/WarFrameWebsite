@@ -12,7 +12,7 @@ target section and deleting from the source section.
 warframes: 0
 weapons: 0
 mods: 0
-quests: 9
+quests: 42
 factions: 0
 syndicates: 0
 relics: 0
@@ -81,6 +81,39 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - chimera-prologue :: src/content/quests/chimera-prologue.mdx
 - clan-key :: src/content/quests/clan-key.mdx
 - erra :: src/content/quests/erra.mdx
+- heart-of-deimos :: src/content/quests/heart-of-deimos.mdx
+- hidden-messages :: src/content/quests/hidden-messages.mdx
+- howl-of-the-kubrow :: src/content/quests/howl-of-the-kubrow.mdx
+- jade-shadows :: src/content/quests/jade-shadows.mdx
+- mask-of-the-revenant :: src/content/quests/mask-of-the-revenant.mdx
+- mutalist-alad-v-assassinate :: src/content/quests/mutalist-alad-v-assassinate.mdx
+- natah :: src/content/quests/natah.mdx
+- octavias-anthem :: src/content/quests/octavias-anthem.mdx
+- once-awake :: src/content/quests/once-awake.mdx
+- patient-zero :: src/content/quests/patient-zero.mdx
+- rising-tide :: src/content/quests/rising-tide.mdx
+- sands-of-inaros :: src/content/quests/sands-of-inaros.mdx
+- sayas-vigil :: src/content/quests/sayas-vigil.mdx
+- stolen-dreams :: src/content/quests/stolen-dreams.mdx
+- the-archwing :: src/content/quests/the-archwing.mdx
+- the-deadlock-protocol :: src/content/quests/the-deadlock-protocol.mdx
+- the-duviri-paradox :: src/content/quests/the-duviri-paradox.mdx
+- the-glast-gambit :: src/content/quests/the-glast-gambit.mdx
+- the-hex :: src/content/quests/the-hex.mdx
+- the-hex-finale :: src/content/quests/the-hex-finale.mdx
+- the-jordas-precept :: src/content/quests/the-jordas-precept.mdx
+- the-limbo-theorem :: src/content/quests/the-limbo-theorem.mdx
+- the-lotus-eaters :: src/content/quests/the-lotus-eaters.mdx
+- the-new-strange :: src/content/quests/the-new-strange.mdx
+- the-new-war :: src/content/quests/the-new-war.mdx
+- the-sacrifice :: src/content/quests/the-sacrifice.mdx
+- the-second-dream :: src/content/quests/the-second-dream.mdx
+- the-silver-grove :: src/content/quests/the-silver-grove.mdx
+- the-war-within :: src/content/quests/the-war-within.mdx
+- the-waverider :: src/content/quests/the-waverider.mdx
+- veilbreaker :: src/content/quests/veilbreaker.mdx
+- vors-prize :: src/content/quests/vors-prize.mdx
+- vox-solaris :: src/content/quests/vox-solaris.mdx
 
 ## done.factions
 
