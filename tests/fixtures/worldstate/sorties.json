@@ -1,0 +1,30 @@
+{
+  "id": "sortie-2026-05-18",
+  "activation": "2026-05-18T00:00:00.000Z",
+  "expiry": "2026-05-19T00:00:00.000Z",
+  "boss": "Lieutenant Lech Kril",
+  "faction": "Grineer",
+  "expired": false,
+  "eta": "11h 59m",
+  "rewardPool": "Sortie Rewards",
+  "variants": [
+    {
+      "missionType": "Exterminate",
+      "modifier": "Augmented Enemy Armor",
+      "modifierDescription": "Enemies have stronger armor",
+      "node": "Marduk (Void)"
+    },
+    {
+      "missionType": "Survival",
+      "modifier": "Eximus Stronghold",
+      "modifierDescription": "More Eximus enemies appear",
+      "node": "Akkad (Eris)"
+    },
+    {
+      "missionType": "Assassination",
+      "modifier": "Energy Reduction",
+      "modifierDescription": "Energy regen reduced",
+      "node": "Ceres Junction"
+    }
+  ]
+}
