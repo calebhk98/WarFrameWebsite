@@ -1,0 +1,25 @@
+node_modules
+dist
+.astro
+.output
+.vite
+
+# Data caches and imports (keep .gitkeep)
+data/cache
+data/wfcd/*
+!data/wfcd/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Misc
+.DS_Store
+coverage
+*.tsbuildinfo
