@@ -1,0 +1,63 @@
+{
+  "payload": {
+    "orders": [
+      {
+        "id": "order-aaa",
+        "platinum": 120,
+        "quantity": 1,
+        "order_type": "sell",
+        "platform": "pc",
+        "region": "en",
+        "creation_date": "2026-05-15T10:00:00.000Z",
+        "last_update": "2026-05-18T11:00:00.000Z",
+        "visible": true,
+        "user": {
+          "id": "user-aaa",
+          "ingame_name": "TestSellerA",
+          "status": "ingame",
+          "region": "en",
+          "reputation": 42,
+          "last_seen": "2026-05-18T11:30:00.000Z"
+        }
+      },
+      {
+        "id": "order-bbb",
+        "platinum": 135,
+        "quantity": 2,
+        "order_type": "sell",
+        "platform": "pc",
+        "region": "en",
+        "creation_date": "2026-05-14T09:00:00.000Z",
+        "last_update": "2026-05-18T10:00:00.000Z",
+        "visible": true,
+        "user": {
+          "id": "user-bbb",
+          "ingame_name": "TestSellerB",
+          "status": "online",
+          "region": "en",
+          "reputation": 13,
+          "last_seen": "2026-05-18T10:30:00.000Z"
+        }
+      },
+      {
+        "id": "order-ccc",
+        "platinum": 100,
+        "quantity": 1,
+        "order_type": "buy",
+        "platform": "pc",
+        "region": "en",
+        "creation_date": "2026-05-13T08:00:00.000Z",
+        "last_update": "2026-05-17T18:00:00.000Z",
+        "visible": true,
+        "user": {
+          "id": "user-ccc",
+          "ingame_name": "TestBuyerA",
+          "status": "offline",
+          "region": "en",
+          "reputation": 7,
+          "last_seen": "2026-05-17T18:30:00.000Z"
+        }
+      }
+    ]
+  }
+}

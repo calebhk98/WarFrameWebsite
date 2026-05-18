@@ -1,0 +1,43 @@
+{
+  "payload": {
+    "statistics_closed": {
+      "48hours": [
+        {
+          "datetime": "2026-05-16T12:00:00.000Z",
+          "volume": 14,
+          "min_price": 95,
+          "max_price": 150,
+          "avg_price": 118.5,
+          "wa_price": 117.2,
+          "median": 115,
+          "moving_avg": 116.4,
+          "open_price": 110,
+          "closed_price": 120,
+          "donch_top": 150,
+          "donch_bot": 95,
+          "id": "stat-1",
+          "order_type": "closed"
+        },
+        {
+          "datetime": "2026-05-17T12:00:00.000Z",
+          "volume": 19,
+          "min_price": 100,
+          "max_price": 145,
+          "avg_price": 121.2,
+          "wa_price": 119.8,
+          "median": 120,
+          "moving_avg": 118.0,
+          "open_price": 115,
+          "closed_price": 122,
+          "donch_top": 145,
+          "donch_bot": 100,
+          "id": "stat-2",
+          "order_type": "closed"
+        }
+      ]
+    },
+    "statistics_live": {
+      "48hours": []
+    }
+  }
+}
