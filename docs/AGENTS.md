@@ -81,8 +81,6 @@ here, file a `kind:chore` issue rather than improvising a prompt.
 
 - `{target_path}` — MDX file with frontmatter per `docs/SCHEMAS.md` and
   body sections per `docs/STYLE.md`.
-- An appended `- {slug}` line under `## done.warframes` in
-  `/home/user/WarFrameWebsite/STATE.md`.
 
 **MUST**
 
@@ -104,8 +102,6 @@ here, file a `kind:chore` issue rather than improvising a prompt.
   code-fenced stat blocks do not count).
 - Provide >= 2 entries in `sources[]`: WFCD reference URL
   (`https://github.com/WFCD/warframe-items`) and the Fandom Wiki page.
-- Append exactly one line `- {slug}` under `## done.warframes` in
-  `STATE.md`.
 
 **MUST NOT**
 
@@ -115,7 +111,9 @@ here, file a `kind:chore` issue rather than improvising a prompt.
   words, cite the URL.
 - Use `console.log` in any helper script you write.
 - Include emojis or non-ASCII characters.
-- Write any file other than `{target_path}` and the `STATE.md` append.
+- **Do NOT modify STATE.md.** State updates are handled by the
+  `commit-batch` role to avoid concurrent-write races. Your responsibility
+  ends with writing the MDX file and replying with the slug + path.
 
 **REPLY FORMAT** — final line, exact:
 
@@ -150,9 +148,8 @@ Task:
   3. Write {target_path} with frontmatter matching the warframe Zod
      schema in docs/SCHEMAS.md and body matching docs/STYLE.md.
   4. Body >= 800 words across the required sections.
-  5. Append "- {slug}" under "## done.warframes" in
-     /home/user/WarFrameWebsite/STATE.md.
-  6. Do NOT git commit. Do NOT write any other files.
+  5. Do NOT modify STATE.md. Do NOT git commit. Do NOT write any other
+     files.
 
 Output your final line in EXACTLY this format:
 
@@ -177,7 +174,6 @@ Output your final line in EXACTLY this format:
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- One appended line `- {slug}` under `## done.weapons` in `STATE.md`.
 
 **MUST**
 
@@ -195,7 +191,10 @@ Output your final line in EXACTLY this format:
 **MUST NOT**
 
 - `git commit`. Scrape Fandom HTML. Invent stats. Emit emojis.
-  `console.log` in any helper.
+  `console.log` in any helper. **Do NOT modify STATE.md.** State updates
+  are handled by the `commit-batch` role to avoid concurrent-write races.
+  Your responsibility ends with writing the MDX file and replying with the
+  slug + path.
 
 **REPLY FORMAT**
 
@@ -227,8 +226,7 @@ Task:
      entry by name.
   2. WebFetch https://warframe.fandom.com/wiki/{name} once.
   3. Write {target_path} per the weapon Zod schema. Body >= 500 words.
-  4. Append "- {slug}" under "## done.weapons" in STATE.md.
-  5. Do NOT git commit. Do NOT touch other files.
+  4. Do NOT modify STATE.md. Do NOT git commit. Do NOT touch other files.
 
 Reply final line exactly:
 
@@ -252,7 +250,6 @@ Reply final line exactly:
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- {slug}` under `## done.mods` in `STATE.md`.
 
 **MUST**
 
@@ -278,7 +275,10 @@ Reply final line exactly:
 **MUST NOT**
 
 - `git commit`. Scrape full HTML. Invent drop chances or per-rank
-  values. Emit emojis. `console.log`.
+  values. Emit emojis. `console.log`. **Do NOT modify STATE.md.** State
+  updates are handled by the `commit-batch` role to avoid concurrent-write
+  races. Your responsibility ends with writing the MDX file and replying
+  with the slug + path.
 
 **REPLY FORMAT**
 
@@ -309,8 +309,7 @@ Task:
      (max rank), and levelStats[] for the rank table.
   2. WebFetch https://warframe.fandom.com/wiki/{name} once.
   3. Write {target_path}. Body >= 300 words. Include the rank table.
-  4. Append "- {slug}" under "## done.mods" in STATE.md.
-  5. No git operations. No other files.
+  4. Do NOT modify STATE.md. No git operations. No other files.
 
 Reply final line:
 
@@ -334,7 +333,6 @@ Reply final line:
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- {slug}` under `## done.resources` in `STATE.md`.
 
 **MUST**
 
@@ -351,7 +349,10 @@ Reply final line:
 
 **MUST NOT**
 
-- `git commit`. Invent drop chances. Emit emojis. `console.log`.
+- `git commit`. Invent drop chances. Emit emojis. `console.log`. **Do NOT
+  modify STATE.md.** State updates are handled by the `commit-batch` role
+  to avoid concurrent-write races. Your responsibility ends with writing
+  the MDX file and replying with the slug + path.
 
 **REPLY FORMAT**
 
@@ -383,8 +384,7 @@ Task:
      top 5 drop locations.
   3. WebFetch https://warframe.fandom.com/wiki/{name} once.
   4. Write {target_path}. Body >= 300 words. Include the drop table.
-  5. Append "- {slug}" under "## done.resources" in STATE.md.
-  6. No git ops, no other files.
+  5. Do NOT modify STATE.md. No git ops, no other files.
 
 Reply final line:
 
@@ -408,7 +408,6 @@ Reply final line:
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- {slug}` under `## done.arcanes` in `STATE.md`.
 
 **MUST**
 
@@ -422,6 +421,9 @@ Reply final line:
 **MUST NOT**
 
 - `git commit`. Invent trigger chances or rank values. Emit emojis.
+  **Do NOT modify STATE.md.** State updates are handled by the
+  `commit-batch` role to avoid concurrent-write races. Your responsibility
+  ends with writing the MDX file and replying with the slug + path.
 
 **REPLY FORMAT**
 
@@ -451,8 +453,7 @@ Task:
      name. Extract levelStats[] (per-rank effects).
   2. WebFetch https://warframe.fandom.com/wiki/{name} once.
   3. Write {target_path}. Body >= 300 words. Include the rank table.
-  4. Append "- {slug}" under "## done.arcanes" in STATE.md.
-  5. No git ops.
+  4. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -476,7 +477,6 @@ Reply final line:
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- {slug}` under `## done.relics` in `STATE.md`.
 
 **MUST**
 
@@ -496,7 +496,10 @@ Reply final line:
 
 **MUST NOT**
 
-- `git commit`. Invent drop chances. Emit emojis. `console.log`.
+- `git commit`. Invent drop chances. Emit emojis. `console.log`. **Do NOT
+  modify STATE.md.** State updates are handled by the `commit-batch` role
+  to avoid concurrent-write races. Your responsibility ends with writing
+  the MDX file and replying with the slug + path.
 
 **REPLY FORMAT**
 
@@ -527,8 +530,7 @@ Task:
   2. WebFetch https://warframe.fandom.com/wiki/{name} once.
   3. Write {target_path} with the Drops table and Refinement Costs
      table. Include "Where to Farm".
-  4. Append "- {slug}" under "## done.relics" in STATE.md.
-  5. No git ops.
+  4. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -552,7 +554,6 @@ Reply final line:
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- {slug}` under `## done.quests` in `STATE.md`.
 
 **MUST**
 
@@ -570,7 +571,10 @@ Reply final line:
 **MUST NOT**
 
 - `git commit`. Reveal major plot twists in `## Overview` (overview is
-  always spoiler-free). Scrape Fandom HTML. Emit emojis.
+  always spoiler-free). Scrape Fandom HTML. Emit emojis. **Do NOT modify
+  STATE.md.** State updates are handled by the `commit-batch` role to
+  avoid concurrent-write races. Your responsibility ends with writing the
+  MDX file and replying with the slug + path.
 
 **REPLY FORMAT**
 
@@ -600,8 +604,7 @@ Task:
      order and rewards.
   2. Write {target_path}. Overview MUST be spoiler-free; major-spoiler
      stage details go inside <Callout type="spoiler"> blocks.
-  3. Append "- {slug}" under "## done.quests" in STATE.md.
-  4. No git ops.
+  3. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -625,7 +628,6 @@ Reply final line:
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- {slug}` under `## done.factions` in `STATE.md`.
 
 **MUST**
 
@@ -638,7 +640,10 @@ Reply final line:
 
 **MUST NOT**
 
-- `git commit`. Invent unit stats. Emit emojis. `console.log`.
+- `git commit`. Invent unit stats. Emit emojis. `console.log`. **Do NOT
+  modify STATE.md.** State updates are handled by the `commit-batch` role
+  to avoid concurrent-write races. Your responsibility ends with writing
+  the MDX file and replying with the slug + path.
 
 **REPLY FORMAT**
 
@@ -668,8 +673,7 @@ Task:
   2. Cross-reference unit names against WFCD enemy data if available.
   3. Write {target_path} with the Units, Weaknesses, and Locations
      sections.
-  4. Append "- {slug}" under "## done.factions" in STATE.md.
-  5. No git ops.
+  4. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -693,7 +697,6 @@ Reply final line:
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- {slug}` under `## done.syndicates` in `STATE.md`.
 
 **MUST**
 
@@ -706,6 +709,9 @@ Reply final line:
 **MUST NOT**
 
 - `git commit`. Invent standing values. Emit emojis. `console.log`.
+  **Do NOT modify STATE.md.** State updates are handled by the
+  `commit-batch` role to avoid concurrent-write races. Your responsibility
+  ends with writing the MDX file and replying with the slug + path.
 
 **REPLY FORMAT**
 
@@ -734,8 +740,7 @@ Task:
   1. WebFetch https://warframe.fandom.com/wiki/{name} once.
   2. Build Standing Ranks and Offerings tables.
   3. Write {target_path}.
-  4. Append "- {slug}" under "## done.syndicates" in STATE.md.
-  5. No git ops.
+  4. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -759,7 +764,6 @@ Reply final line:
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- {slug}` under `## done.missions` in `STATE.md`.
 
 **MUST**
 
@@ -775,7 +779,10 @@ Reply final line:
 
 **MUST NOT**
 
-- `git commit`. Invent enemy levels or rotations. Emit emojis.
+- `git commit`. Invent enemy levels or rotations. Emit emojis. **Do NOT
+  modify STATE.md.** State updates are handled by the `commit-batch` role
+  to avoid concurrent-write races. Your responsibility ends with writing
+  the MDX file and replying with the slug + path.
 
 **REPLY FORMAT**
 
@@ -805,8 +812,7 @@ Task:
      mission metadata.
   2. WebFetch the Fandom page for the node or tileset once.
   3. Write {target_path}.
-  4. Append "- {slug}" under "## done.missions" in STATE.md.
-  5. No git ops.
+  4. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -833,8 +839,6 @@ verified (manager checks `## verified.<entity_type>` before dispatch).
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- {entity_slug}/{build_slug}` under `## done.builds` in
-  `STATE.md`.
 
 **MUST**
 
@@ -852,7 +856,10 @@ verified (manager checks `## verified.<entity_type>` before dispatch).
 **MUST NOT**
 
 - `git commit`. Restate base item stats (link out). Emit emojis.
-  `console.log`.
+  `console.log`. **Do NOT modify STATE.md.** State updates are handled by
+  the `commit-batch` role to avoid concurrent-write races. Your
+  responsibility ends with writing the MDX file and replying with the slug
+  + path.
 
 **REPLY FORMAT**
 
@@ -885,9 +892,7 @@ Task:
   2. Optionally WebFetch a build reference page once (overframe.gg
      /warframe/{entity_slug} or the Fandom build subpage).
   3. Write {target_path}. Body >= 400 words. Mod table required.
-  4. Append "- {entity_slug}/{build_slug}" under "## done.builds" in
-     STATE.md.
-  5. No git ops.
+  4. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -912,7 +917,6 @@ references must already be verified.
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- farming/{slug}` under `## done.guides` in `STATE.md`.
 
 **MUST**
 
@@ -925,7 +929,10 @@ references must already be verified.
 
 **MUST NOT**
 
-- `git commit`. Invent drop rates. Emit emojis. `console.log`.
+- `git commit`. Invent drop rates. Emit emojis. `console.log`. **Do NOT
+  modify STATE.md.** State updates are handled by the `commit-batch` role
+  to avoid concurrent-write races. Your responsibility ends with writing
+  the MDX file and replying with the slug + path.
 
 **REPLY FORMAT**
 
@@ -956,8 +963,7 @@ Task:
   2. WebFetch up to two reference pages (Fandom + one community link)
      through scripts/fetch.ts. Cite both.
   3. Write {target_path}. Body >= 1200 words.
-  4. Append "- farming/{slug}" under "## done.guides" in STATE.md.
-  5. No git ops.
+  4. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -982,7 +988,6 @@ items).
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- strategy/{slug}` under `## done.guides` in `STATE.md`.
 
 **MUST**
 
@@ -996,7 +1001,10 @@ items).
 **MUST NOT**
 
 - `git commit`. Present opinion as fact. Hide tier-list criteria.
-  Emit emojis. `console.log`.
+  Emit emojis. `console.log`. **Do NOT modify STATE.md.** State updates
+  are handled by the `commit-batch` role to avoid concurrent-write races.
+  Your responsibility ends with writing the MDX file and replying with the
+  slug + path.
 
 **REPLY FORMAT**
 
@@ -1024,8 +1032,7 @@ Task:
 
   1. Up to two WebFetches (community + Fandom) through scripts/fetch.ts.
   2. Write {target_path}. Body >= 1200 words. Disclose methodology.
-  3. Append "- strategy/{slug}" under "## done.guides" in STATE.md.
-  4. No git ops.
+  3. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -1050,7 +1057,6 @@ content).
 **OUTPUTS**
 
 - `{target_path}` MDX file.
-- Appended `- paths/{slug}` under `## done.guides` in `STATE.md`.
 
 **MUST**
 
@@ -1063,7 +1069,10 @@ content).
 
 **MUST NOT**
 
-- `git commit`. Restate detailed stats (link out). Emit emojis.
+- `git commit`. Restate detailed stats (link out). Emit emojis. **Do NOT
+  modify STATE.md.** State updates are handled by the `commit-batch` role
+  to avoid concurrent-write races. Your responsibility ends with writing
+  the MDX file and replying with the slug + path.
 
 **REPLY FORMAT**
 
@@ -1091,8 +1100,7 @@ Task:
 
   1. Up to two WebFetches.
   2. Write {target_path}. Body >= 1200 words. Heavy cross-linking.
-  3. Append "- paths/{slug}" under "## done.guides" in STATE.md.
-  4. No git ops.
+  3. Do NOT modify STATE.md. No git ops.
 
 Reply final line:
 
@@ -1405,6 +1413,10 @@ boundary. Exactly one commit-batch subagent at a time.
 - `git push -u origin claude/warframe-website-setup-gvaG9` with retry
   backoff 2s, 4s, 8s, 16s on network errors.
 - Capture short SHA via `git rev-parse --short HEAD` after commit.
+- After committing content files, append one line per completed slug to
+  STATE.md `## done.<collection>` in the format `- <slug> :: <relative-path>`.
+  Do this in a SEPARATE commit on top of the content commit, message
+  `chore(state): record done <collection> +<N>`.
 
 **MUST NOT**
 

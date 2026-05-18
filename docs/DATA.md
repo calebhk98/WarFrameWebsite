@@ -164,6 +164,53 @@ includes the attribution string; do not strip it.
 
 ---
 
+## 5.1 Wiki Access (use MediaWiki API)
+
+Direct wiki page fetches (`https://warframe.fandom.com/wiki/<Name>`)
+return HTTP 403 from our sandbox. Use the MediaWiki API instead:
+
+**Endpoints:**
+
+- `https://warframe.fandom.com/api.php?action=parse&page=<URL-encoded-Name>&format=json`
+  Returns parsed HTML + page title, sections, links. Best for narrative
+  content (lore, acquisition flavor).
+
+- `https://warframe.fandom.com/api.php?action=query&titles=<Name>&prop=revisions&rvprop=content&format=json`
+  Returns raw wikitext. Use when you need the source format.
+
+**Fetch protocol:**
+
+All MediaWiki API calls must go through `scripts/fetch.ts` with:
+- `bucket: 'wiki'` — rate limit 1 request per second (conservative).
+- `ttlMs: 86400000` — 24 hours cache TTL.
+
+Example:
+
+```ts
+import { fetch } from "@/scripts/fetch";
+
+const res = await fetch(
+  "https://warframe.fandom.com/api.php?action=parse&page=Ash&format=json",
+  { bucket: "wiki" }
+);
+```
+
+**Citation:**
+
+Even though the data came from the API, cite the human-readable page URL
+in MDX frontmatter:
+
+```yaml
+sources:
+  - url: https://warframe.fandom.com/wiki/Ash
+    accessedAt: 2026-05-18T12:00:00Z
+```
+
+The API is an implementation detail; the source-of-truth URL we credit is
+the human page.
+
+---
+
 ## 6. Adding a new data source
 
 If a new external source is genuinely required:
