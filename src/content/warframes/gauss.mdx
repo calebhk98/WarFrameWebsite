@@ -1,0 +1,165 @@
+---
+slug: gauss
+name: Gauss
+aliases: []
+masteryRank: 0
+health: 270
+shield: 455
+armor: 185
+energy: 175
+sprintSpeed: 1.4
+passive:
+  name: Battery Charge
+  description: >-
+    Moving generates an electrical current that fills Gauss' battery. Shield
+    recharge is accelerated (up to 80% faster) and recharge delay is reduced
+    (up to 80% shorter) based on battery level.
+abilities:
+  - name: Mach Rush
+    key: "1"
+    energyCost: 25
+    description: >-
+      Burst into a hyper-sprint that bowls over enemies and charges the battery.
+      Crashing into solid objects generates a powerful shockwave. Hold to rush
+      continuously.
+    stats: { speed: 2.0, shockwave_damage: 200 }
+  - name: Kinetic Plating
+    key: "2"
+    energyCost: 50
+    description: >-
+      Generate armor plating that converts absorbed kinetic damage (impact, heat,
+      cold, blast) into energy. Also protects Gauss from stagger and knockdown
+      effects. Damage resistance scales with battery level.
+    stats: { damage_conversion: 0.75, base_armor: 300 }
+  - name: Thermal Sunder
+    key: "3"
+    energyCost: 50
+    description: >-
+      Siphon kinetic energy from the surrounding area, charging the battery and
+      inflicting cold status on nearby enemies. Hold to reverse the process,
+      draining the battery and inflicting heat status instead.
+    stats: { range: 25, cold_damage: 200, heat_damage: 200 }
+  - name: Redline
+    key: "4"
+    energyCost: 100
+    description: >-
+      Push Gauss' battery beyond safe limits, supercharging all abilities and
+      amplifying fire rate, attack speed, reload speed, and cast speed into
+      overdrive. When deactivated, arcing electricity explodes in a massive
+      radius around Gauss.
+    stats: { fire_rate_multiplier: 1.5, cast_speed_multiplier: 1.5 }
+acquisition:
+  source: Market / Sedna Disruption (Kappa)
+  blueprintLocations:
+    - "Market (main blueprint — 325 platinum)"
+    - "Disruption Tier C on Sedna/Kappa (component blueprints — 7.84% chance each)"
+  cost:
+    credits: 25000
+    platinum: 325
+  buildTimeHours: 72
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats cross-checked against WFCD 1.756.0."
+  - url: "https://warframe.fandom.com/wiki/Gauss"
+    accessedAt: "2026-05-19"
+    title: "Gauss — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19T00:00:00Z"
+---
+
+## Overview
+
+Gauss is a speed-focused warframe introduced in Update 25.7 (August 29, 2019), embodying the principles of kinetic energy and perpetual motion. Known as the Saint of Altra, Gauss transforms constant movement into both offense and defense, representing a unique playstyle centered on velocity and momentum. Unlike warframes that reward defensive posturing or careful ability rotation, Gauss actively punishes players for standing still, making him a high-skill, high-reward frame for experienced Tenno. His design philosophy emphasizes aggression: players must maintain constant motion to access his full potential, as every second of movement directly improves his defenses and charge state. The game itself encapsulates this philosophy with the phrase, "If the battle seems out of control, Tenno, you're not going fast enough."
+
+Gauss excels in missions requiring sustained offensive pressure and high mobility. His battery system creates a feedback loop where movement generates electrical charge, which unlocks increasingly powerful damage resistance and faster shield regeneration. This mechanic rewards aggressive repositioning and encourages combat styles that would be reckless on other frames. Unlike stat-heavy frames such as Rhino or Nezha, Gauss does not stack damage reduction through armor or shields; instead, he converts absorbed kinetic damage into energy and shields, enabling sustained fighting through resourcefulness rather than raw tankiness. His four abilities form a cohesive suite for speed optimization, enemy control, and devastating finisher damage, making him particularly valuable in endless mission types and challenging content where momentum sustains survival.
+
+The frame's introduction marked a significant shift in warframe design, proving that mobility-first mechanics could rival traditional defensive approaches. Gauss has remained relevant through numerous patches and reworks, with the development team tuning his abilities to ensure his battery system scales appropriately without overshadowing other frames' strengths. His niche remains unchallenged: no other warframe offers such direct synergy between movement and defensive scaling.
+
+## Abilities
+
+<AbilityCard
+  name="Mach Rush"
+  key="1"
+  energyCost={25}
+  description="Burst into a hyper-sprint that bowls over enemies and charges the battery. Crashing into solid objects generates a powerful shockwave. Hold to rush continuously."
+/>
+
+Mach Rush is Gauss's mobility and primary damage tool rolled into one ability. When activated, Gauss enters a sustained sprint state at roughly double his normal run speed, capable of covering vast distances in seconds. Enemies caught in his path are knocked down and thrown aside, with the collision against obstacles triggering an area-of-effect shockwave that deals 200 damage. Critically, every second of sprint also charges his battery, providing a direct incentive to keep moving. Advanced players chain Mach Rush casts, canceling one sprint and immediately launching another, to maintain momentum while refreshing the ability's knockdown effect. The ability pairs exceptionally well with movement mods and sprint-speed boosting warframes like Volt in squad play.
+
+<AbilityCard
+  name="Kinetic Plating"
+  key="2"
+  energyCost={50}
+  description="Generate armor plating that converts absorbed kinetic damage (impact, heat, cold, blast) into energy. Also protects Gauss from stagger and knockdown effects. Damage resistance scales with battery level."
+/>
+
+Kinetic Plating transforms Gauss into a moving shield, actively converting the kinetic and thermal damage he absorbs into shield and energy restoration. When active, approximately 75% of incoming impact, heat, cold, and blast damage is converted, restoring his energy pool—a mechanic that enables indefinite sustain when combined with aggressive play. The frame also gains stagger and knockdown immunity, allowing him to rush through enemy fire without interruption. The conversion rate and damage resistance scale directly with his current battery level: at full charge, he achieves near-complete immunity to many common damage types. This ability reinforces the core gameplay loop: keep moving to charge the battery, which increases resistance, which allows closer aggressive engagements that further charge the battery. Kinetic Plating is less effective against slash and explosive damage, both of which bypass the conversion mechanic partially.
+
+<AbilityCard
+  name="Thermal Sunder"
+  key="3"
+  energyCost={50}
+  description="Siphon kinetic energy from the surrounding area, charging the battery and inflicting cold status on nearby enemies. Hold to reverse the process, draining the battery and inflicting heat status instead."
+/>
+
+Thermal Sunder is Gauss's crowd-control and utility ability, offering two distinct functions depending on input. When activated normally, Gauss siphons kinetic energy in a 25-meter radius around him, dealing 200 cold damage and inflicting the cold status effect on all enemies in range. This action also charges his battery, providing a low-mobility option for battery generation when Mach Rush is on cooldown or energy is limited. Holding the ability reverses the process: Gauss drains his battery to unleash an equal 200 heat damage and inflicting heat status. This toggle functionality enables tactical temperature control on enemies—cold slows them and reduces their fire rate, while heat ignites them and reduces their defensive capabilities. In endless missions, players often alternate between both modes to maintain charge while controlling enemy behavior. The ability requires direct line of effect; it cannot penetrate obstacles or walls.
+
+<AbilityCard
+  name="Redline"
+  key="4"
+  energyCost={100}
+  description="Push Gauss' battery beyond safe limits, supercharging all abilities and amplifying fire rate, attack speed, reload speed, and cast speed into overdrive. When deactivated, arcing electricity explodes in a massive radius around Gauss."
+/>
+
+Redline is Gauss's ultimate ability and his primary damage tool for high-threat situations. When activated, Gauss pushes his battery past its normal limits, entering an overdrive state that increases his and any nearby allies' fire rate, attack speed, reload speed, and cast speed by approximately 50%. While Redline is active, arcing bolts of electricity periodically emerge from Gauss's position, shocking nearby enemies. Critically, Redline only functions when the battery is fully charged or being drained; activating it below full charge provides no benefit. The player must maintain movement to build charge before entering Redline, enforcing the frame's momentum-dependent design. Upon deactivation, all accumulated electrical arcs detonate simultaneously in a massive explosion, dealing significant area damage proportional to the number of arcs accumulated. This creates a strategic decision: hold Redline active and drain the battery for sustained buff effects, or deactivate it early for a faster explosion burst. Squad members benefit from the fire rate and cast speed bonuses, making Gauss a valuable support warframe in cooperative content.
+
+## Passive
+
+Gauss' passive ability, Battery Charge, transforms movement into defensive scaling. Every second of sprinting generates electrical current that charges his battery. As the battery fills (visual indicators on Gauss's model track this), his shield regeneration accelerates up to 80% faster and his shield recharge delay (the time before shields begin recovering after damage) decreases up to 80%. These percentages are tied directly to battery level: at empty battery, the bonuses are null; at full charge, they reach maximum. This mechanic ensures that aggressive, mobile gameplay directly translates to improved survivability. Unlike warframes whose passive abilities provide flat bonuses, Gauss's passive demands active engagement with movement mechanics. Players who stand still will find their defensive scaling quickly fading, creating a unique risk-reward dynamic where repositioning is not merely tactical but mechanically essential for survival.
+
+## Stats
+
+| Stat            | Value |
+|-----------------|-------|
+| Health (rank 0) | 270   |
+| Shield (rank 0) | 455   |
+| Armor           | 185   |
+| Energy (rank 0) | 175   |
+| Sprint speed    | 1.4x  |
+| Mastery rank    | 0     |
+
+Gauss boasts above-average health and shields, along with moderate armor. His sprint speed multiplier of 1.4x is among the highest in the game, providing a baseline speed advantage before mods. His energy pool is slightly below average (Ember and Mesa have 225+), but the battery system and Kinetic Plating's energy conversion offset this limitation. His stat allocations favor mobility and sustained play over raw defensive totals, requiring players to leverage his abilities and passive to reach competitive survivability.
+
+## Acquisition
+
+Gauss's main blueprint is purchasable from the in-game market for 325 platinum. Component blueprints (neuroptics, chassis, systems) are exclusive drops from Tier C Disruption missions on Sedna's Kappa node. Each component has a 7.84% drop chance per run. The recommended approach is to farm Kappa Disruption repeatedly, which yields an average of one component every 12–13 runs. Build time is 72 hours, with optional platinum acceleration available. Completion requires 25,000 credits and one of each component. Gauss Prime does not yet exist, making the standard variant the only prime-less-requiring path to this frame.
+
+## Recommended Builds
+
+Gauss's modding priorities depend on intended mission type. For endless survival and corruption scenarios, builds emphasize efficiency (reduced energy drain), strength (ability damage), and duration (Redline uptime). The Redline build typically slots Streamline and Fleeting Expertise for cost reduction, Blind Rage for ability strength, and Transient Fortitude for cast speed—essential for amplifying ability activation and Redline's overdrive effect. In Steel Path and other high-difficulty scenarios, Adaptation becomes essential, converting Gauss's already-strong kinetic resistance into a scaling defense mechanism. For pure speed-run mobility, energy and exilus slots focus on sprint speed mods (Expedite Suffix, Merciless) and utility (Lightning Dash, Handspring). Advanced builds layer Augment Mods such as Mach Crash (which converts Mach Rush knockdown into an area slow effect) and Thermal Fracture (which causes Thermal Sunder impacts to explode). Most competitive builds pair Gauss with Zenurik focus for Void Sling energy regeneration and Arcane Energize for team-wide energy support.
+
+## Playstyle
+
+Gauss demands constant movement to unlock his full potential—standing still actively penalizes survivability as battery charge decays, shield regeneration slows, and defensive scaling collapses. The optimal playstyle maintains 60%+ battery charge at all times through continuous Mach Rush casting and repositioning. Advanced pilots chain sprint bursts seamlessly, canceling one rush mid-momentum to immediately trigger another, maintaining near-constant motion while refreshing knockdown effects and battery charge. Battery management is the core skill floor: maintain charge during low-threat phases via passive movement and Thermal Sunder toggles, then spend battery defensively when heat spikes (activate Kinetic Plating at 70%+ charge before entering damage-heavy spawn zones). Redline activation is opportunistic—only activate when battery is full and the squad has crowded the objective, deactivating early (before full drain) to execute a burst explosion during enemy spawn windows.
+
+Kinetic Plating's energy conversion creates indefinite sustain loops in aggressive positions. Cast the ability at the start of waves when battery is charged, rush forward into enemy fire using Mach Rush, absorb kinetic damage through Plating (which converts ~75% into shield/energy), then exit the position before heat damage or slash procs overwhelm conversion. Repeat the cycle 2–3 times per wave, timing Thermal Sunder toggles between rushes to maintain battery without overheating. The sweet spot is maintaining 50–70% charge: high enough for strong Plating conversion and shield regen acceleration, low enough to avoid triggering Redline accidentally when energy is precious. Squad positioning matters—stand behind teammates absorbing fire so they trigger enemy fire toward you, maximizing your Plating damage absorption opportunities.
+
+## Synergies
+
+Gauss thrives in coordinated squads and in solo endless missions where momentum can be maintained indefinitely. His synergies extend to warframes that amplify his strengths: Volt extends his speed advantage further, Trinity provides energy redistribution when Kinetic Plating is energy-starved, and Wisp grants haste and health regeneration that enable even more aggressive positioning. In weapon synergies, Gauss pairs exceptionally well with high-fire-rate weapons like the Soma Prime and Arca Plasmor, where Redline's fire rate buff reaches its full potential. Arch-melee weapons (such as the Glaive Prime) benefit from the attack speed boost, creating devastating combo potential. His role in squad composition mirrors a damage-and-support hybrid: he provides personal fire-rate amplification (crucial for burst phases), generates knockdowns and crowd control, and contributes meaningful sustained damage. Teams that enable Gauss to maintain 80%+ battery uptime gain significant DPS and mobility advantages.
+
+## Lore
+
+Gauss embodies the Saint of Altra, a figure from Warframe's lore connected to the development of advanced kinetic-energy technology. Unlike many warframes whose lore grounds them in Orokin history or void mastery, Gauss represents the Tenno's adaptation to practical, modern warfare. His design philosophy—rewarding constant motion and punishing stagnation—mirrors the tactical demands of the contemporary star chart. De has used Gauss as a narrative vehicle to explore themes of momentum and adaptation, with the frame's introduction accompanying lore entries describing Gauss as a solution to an unnamed strategic problem requiring unprecedented speed. The batteries built into his frame are not mystical constructs like void channels or void fissures; instead, they are mechanical systems converting kinetic energy into electrical power. This grounds Gauss in a different aesthetic than most warframes, positioning him as a product of post-Orokin Tenno innovation rather than ancient technology repurposed.
+
+The in-game codex entry encapsulates his philosophy: "Take charge with the Saint of Altra. Gauss is fast, deals high damage, and has strong survivability. Movement charges his powerful battery, so never stop moving." This mantra has become iconic in the community, defining Gauss's playstyle and representing a permanent shift in how developers design high-tier warframes.
+
+## Sources
+
+- **WFCD `warframe-items` repository** (accessed May 19, 2026): Canonical source for all numeric stats, including health, shield, armor, energy, sprint speed, and ability mechanics. Version 1.756.0.
+- **Warframe Fandom Wiki** (accessed May 19, 2026): Narrative context, lore, acquisition details, and playstyle guidance. Available at https://warframe.fandom.com/wiki/Gauss.

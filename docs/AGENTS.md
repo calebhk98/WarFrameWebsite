@@ -86,20 +86,27 @@ here, file a `kind:chore` issue rather than improvising a prompt.
 
 - Read `/home/user/WarFrameWebsite/data/wfcd/Warframes.json` and use the
   entry whose name matches `{name}` (case-insensitive) for **every**
-  numeric field: `masteryRank`, `health`, `shield`, `armor`, `energy`,
-  `sprintSpeed`, and per-ability stats.
+  numeric field. IMPORTANT field-name mapping: frontmatter field `energy`
+  maps to WFCD field `power` (NOT `energy`). Other mappings are 1:1:
+  `masteryRank`, `health`, `shield`, `armor`, `sprintSpeed`, and
+  per-ability stats.
 - WebFetch `https://warframe.fandom.com/wiki/{Name}` exactly **once** for
   narrative context (lore, acquisition flavor, playstyle notes). Cite the
   URL in `sources` with the current ISO `accessedAt` timestamp.
 - Use `src/lib/wfcd.ts` typed accessors when possible (Phase 4 onward; if
   the lib does not yet exist, read the JSON file directly with `fs`).
-- Body must contain these sections, in order: `## Overview`, `## Stats`,
-  `## Abilities` (one `### {Ability Name}` per ability with energy cost,
-  key, and a 2-3 sentence description), `## Acquisition`,
-  `## Playstyle`, `## Builds` (link out to
+- Body must contain these sections, in order: `## Overview`, `## Abilities`
+  (one `### {Ability Name}` per ability with energy cost, key, and a 2-3
+  sentence description), `## Passive`, `## Stats`, `## Acquisition`,
+  `## Playstyle`, one of `## Builds` / `## Recommended builds` /
+  `## Recommended Builds` (all three accepted; link out to
   `/builds/warframes/{slug}/...`), `## Lore`, `## Sources`.
-- Body MUST be **>= 800 words** of human-readable prose (frontmatter and
-  code-fenced stat blocks do not count).
+- Body MUST be **>= 800 words** of human-readable prose. Word-count
+  algorithm: drop frontmatter, fenced code blocks, table rows (lines
+  starting with `|`), headings (lines starting with `#`), JSX component
+  tags (lines starting with `<` and an uppercase letter, or `/>`, or
+  `</`), and blank lines; count remaining words. This is the same
+  algorithm the verifier uses (see the verify-content section below).
 - Provide >= 2 entries in `sources[]`: WFCD reference URL
   (`https://github.com/WFCD/warframe-items`) and the Fandom Wiki page.
 
@@ -142,12 +149,22 @@ Task:
 
   1. Open /home/user/WarFrameWebsite/data/wfcd/Warframes.json. Find the
      entry whose name matches "{name}". Extract masteryRank, health,
-     shield, armor, energy, sprintSpeed, and abilities[].
+     shield, armor, sprintSpeed, and abilities[]. IMPORTANT: the
+     frontmatter field "energy" maps to WFCD field "power" -- do NOT
+     read from a field called "energy" in WFCD.
   2. WebFetch https://warframe.fandom.com/wiki/{name} exactly once for
      narrative material. Summarize; do not copy.
   3. Write {target_path} with frontmatter matching the warframe Zod
      schema in docs/SCHEMAS.md and body matching docs/STYLE.md.
-  4. Body >= 800 words across the required sections.
+     Required sections in order: ## Overview, ## Abilities, ## Passive,
+     ## Stats, ## Acquisition, ## Playstyle, ## Builds (or
+     ## Recommended builds or ## Recommended Builds -- all three are
+     accepted; use sentence case per STYLE.md, i.e. "## Recommended
+     builds"), ## Lore, ## Sources (## Sources is required as a body
+     section, not just as a frontmatter array).
+  4. Body >= 800 words of prose. Count only lines that are not
+     frontmatter, fenced code blocks, table rows, headings, JSX
+     component tags, or blank lines.
   5. Do NOT modify STATE.md. Do NOT git commit. Do NOT write any other
      files.
 
@@ -1156,6 +1173,144 @@ verifier per slug; 12 in parallel max.
   prevent rubber-stamping. Tier-2 verifier checks this.
 - Write the report JSON regardless of pass/fail.
 - Append the slug to the correct STATE.md bucket.
+
+### Field name mappings & strictness rules
+
+These rules are canonical for all verifier logic. Implement them exactly
+as described or you will produce spurious FAIL or spurious PASS results.
+
+#### 1. WFCD field-name map for warframes
+
+When cross-referencing MDX frontmatter stats against WFCD
+`Warframes.json`, use this translation table. The left column is the
+MDX frontmatter key; the right column is the WFCD JSON field to read.
+
+| MDX frontmatter key | WFCD JSON field | Notes                                      |
+|---------------------|-----------------|--------------------------------------------|
+| `energy`            | `power`         | WFCD stores energy capacity as `power`     |
+| `health`            | `health`        | 1:1 mapping                                |
+| `shield`            | `shield`        | 1:1 mapping                                |
+| `armor`             | `armor`         | 1:1 mapping                                |
+| `sprintSpeed`       | `sprintSpeed`   | 1:1 mapping; float; tolerance +/- 0.01    |
+| `masteryRank`       | `masteryRank`   | 1:1 mapping; integer                       |
+
+Do NOT look for a field named `energy` in WFCD -- it does not exist for
+warframes. Reading a missing field will return `undefined`, which should
+never be treated as a match. Any verifier that checks MDX `energy`
+against WFCD `energy` is wrong and will produce false positives.
+
+The `sprintSpeed` comparison uses floating-point tolerance of +/- 0.01
+because WFCD stores values as long floats (e.g., `0.94999999`). A
+strict equality check on floats is a bug.
+
+#### 2. Required body sections for warframes (accepted heading variants)
+
+The verifier must accept ALL of the following as satisfying the
+"builds" section requirement. Heading-name matching is
+case-insensitive. The check strips leading `## ` before comparing.
+
+Canonical accepted section names for warframe MDX files:
+
+```
+## Overview         (required; exact)
+## Abilities        (required; exact)
+## Passive          (required; exact)
+## Stats            (required; exact)
+## Acquisition      (required; exact)
+## Playstyle        (required; exact)
+## Builds           (accepted variant 1 -- all three are equivalent)
+## Recommended builds  (accepted variant 2)
+## Recommended Builds  (accepted variant 3; STYLE.md uses sentence case,
+                        but old files may use title case -- accept both)
+## Lore             (required; exact)
+## Sources          (required; exact -- must be present as a body section)
+```
+
+Implementation note: build the list of H2 headings found in the body
+(lines matching `/^## /`) and then check set membership
+case-insensitively for each required heading. For the builds heading,
+pass if ANY of the three variants is present.
+
+The `## Sources` section IS required as a body section in warframe MDX.
+Its presence as a body heading is separate from the `sources[]`
+frontmatter array -- both are required.
+
+#### 3. Prose word-count algorithm (canonical for ALL collections)
+
+This algorithm is the single authoritative definition for "body word
+count". The verifier must implement it exactly. Research subagents must
+also use this definition when checking their own output before
+submitting.
+
+Steps, applied in order to the raw MDX file content:
+
+1. **Drop frontmatter.** Remove everything from the start of the file
+   up to and including the closing `---` line of the YAML front matter
+   block. Frontmatter is the region between the first `---` line and the
+   second `---` line (both inclusive). All content before the first
+   non-`---` line after the second `---` is frontmatter.
+
+2. **Drop fenced code blocks.** Remove all content between (and
+   including) triple-backtick fence markers (` ``` `). A fence open is a
+   line whose trimmed content starts with ` ``` `; the fence closes on
+   the next line whose trimmed content is also ` ``` `. Nested fences are
+   not supported by MDX; treat the first closing fence as the end.
+
+3. **Drop table rows.** Remove lines whose trimmed content starts with
+   `|`. This removes both data rows and the separator row (`| --- |`).
+
+4. **Drop headings.** Remove lines whose trimmed content starts with
+   `#`. This covers H1 through H6.
+
+5. **Drop JSX/component lines.** Remove lines whose trimmed content:
+   - Starts with `<` followed immediately by an uppercase ASCII letter
+     (e.g., `<StatBlock`, `<AbilityCard`, `<Callout`, `<DropTable`).
+   - Consists only of `/>` (self-closing tag close on its own line).
+   - Starts with `</` (closing tag, e.g., `</Callout>`).
+
+6. **Drop blank lines.** Remove lines that are empty or contain only
+   whitespace after trimming.
+
+7. **Count words in remaining text.** Split each surviving line on
+   whitespace and sum the token count. This is the body word count.
+
+Important notes:
+- Prose text that appears INSIDE JSX component blocks (e.g., the
+  `description` prop value or children between `<Callout>` and
+  `</Callout>`) IS included unless the line itself starts with a JSX
+  open/close tag. If an `<AbilityCard>` component is written with
+  children on separate lines, those children lines pass through and
+  are counted as prose. Only lines that begin with a JSX tag marker
+  are dropped.
+- Frontmatter values are never counted, even if they contain prose
+  strings.
+- This algorithm intentionally errs on the side of INCLUSION: only
+  clearly structural lines (headings, table rows, code blocks, blank
+  lines, JSX tag-open/close lines) are excluded. Inline MDX
+  expressions (backtick spans, bold, italic, links) are left in and
+  counted as part of their surrounding prose.
+
+Word-count floors (from CLAUDE.md, repeated here for the verifier):
+
+| Collection                         | Minimum words |
+|------------------------------------|---------------|
+| warframes                          | 800           |
+| weapons                            | 500           |
+| builds                             | 400           |
+| guides (farming / strategy / path) | 1200          |
+| mods                               | 300           |
+| resources                          | 300           |
+| arcanes                            | 300           |
+| relics                             | 300           |
+| quests                             | 500           |
+| factions                           | 500           |
+| syndicates                         | 500           |
+| missions                           | 500           |
+
+A file whose computed word count falls below its collection's floor is
+a FAIL. Record the computed count in the report JSON under
+`"word_count": N` so that debugging spurious failures is
+straightforward.
 
 **MUST NOT**
 

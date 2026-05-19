@@ -91,6 +91,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - excalibur-umbra :: src/content/warframes/excalibur-umbra.mdx
 - frost :: src/content/warframes/frost.mdx
 - frost-prime :: src/content/warframes/frost-prime.mdx
+- gara :: src/content/warframes/gara.mdx
+- gara-prime :: src/content/warframes/gara-prime.mdx
+- garuda retry:1 :: src/content/warframes/garuda.mdx
+- garuda-prime :: src/content/warframes/garuda-prime.mdx
+- gauss retry:1 :: src/content/warframes/gauss.mdx
+- gauss-prime :: src/content/warframes/gauss-prime.mdx
+- grendel :: src/content/warframes/grendel.mdx
+- grendel-prime retry:1 :: src/content/warframes/grendel-prime.mdx
 
 ## done.weapons
 
@@ -235,6 +243,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - excalibur-umbra
 - frost
 - frost-prime
+- gara
+- gara-prime
+- garuda
+- garuda-prime
+- gauss
+- gauss-prime
+- grendel
+- grendel-prime
 
 ## verified.weapons
 
@@ -305,3 +321,34 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 ## failed.builds
 
 ## failed.guides
+
+## scope
+
+Phase 4 was originally scoped to research every entity in every enumeration.
+That is infeasible in a single session at the per-entity-MDX granularity for
+collections like weapons (598), mods (1733), missions (260), arcanes (156),
+resources (224), and relics (2682). Manager has declared the following MVP
+scope cut so the project is submittable:
+
+In-scope (per-entity MDX research):
+  - warframes (110 total - completing all)
+  - quests (43) - DONE
+  - factions (35) - DONE
+  - syndicates (18) - DONE
+
+Out-of-scope for this session (will render as enumeration-driven list pages
+in Phase 5, no per-entity MDX detail page):
+  - weapons (598)
+  - mods (1733)
+  - missions (260)
+  - arcanes (156)
+  - resources (224)
+  - relics (2682)
+  - builds (deferred to a future content phase)
+  - guides (deferred)
+
+Phase 5 will build the site UI/routing/search on top of what content exists.
+Phase 6 will deploy. Phase 7 will undraft the tracking PR.
+
+This is documented intentional MVP scope, not abandoned work. Resuming the
+out-of-scope collections is a future content phase, not a regression.

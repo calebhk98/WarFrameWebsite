@@ -166,9 +166,10 @@ required ones are permitted; missing H2s or out-of-order H2s are FAIL.
 3. Passive
 4. Stats
 5. Acquisition
-6. Recommended builds
-7. Synergies
+6. Playstyle
+7. Builds (also accepted: "Recommended builds" or "Recommended Builds" -- all three are equivalent; verifier accepts any variant case-insensitively)
 8. Lore
+9. Sources (required body section; separate from the frontmatter `sources[]` array)
 
 ### weapon pages
 
