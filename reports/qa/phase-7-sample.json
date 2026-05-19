@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-05-19T00:00:00Z",
+  "phase": 7,
+  "sample_size": 7,
+  "files": {
+    "ash": {
+      "schema_fit": 3,
+      "prose_quality": 3,
+      "factual_accuracy": 3,
+      "sourcing": 3,
+      "style_compliance": 2,
+      "overall": 3,
+      "notes": "Missing required '## Sources' body section (required by STYLE.md section order for warframe pages). Missing required '## Playstyle' section -- it jumps from Acquisition to Recommended builds, skipping Playstyle. Extra '## Synergies' section inserted between Recommended builds and Lore, out of required order. Abilities described as H3 prose paragraphs instead of using the required <AbilityCard> component. Stats appear in body prose ('With 455 health and 270 shields ... armor of 105 ... energy pool of 100') violating STYLE.md rule that stats live in tables or StatBlock, never prose. Em-dashes (U+2014) used throughout prose and even in frontmatter YAML values -- STYLE.md requires ASCII '--' instead. Acquisition source described as 'Flak Bombard assassination (Mars)' -- Ash's components actually drop from Tyl Regor assassination on Uranus (Ophelia); naming the Flak Bombard as the drop source is inaccurate. Sourcing in frontmatter meets minimum (2 sources, one WFCD primary), but accessedAt is ISO date only (no time component), and the body-level Sources section is absent entirely."
+    },
+    "excalibur": {
+      "schema_fit": 4,
+      "prose_quality": 4,
+      "factual_accuracy": 2,
+      "sourcing": 3,
+      "style_compliance": 2,
+      "overall": 3,
+      "notes": "Section order is correct (Overview, Abilities, Passive, Stats, Acquisition, Playstyle, Builds, Lore, Sources). Body Sources section present but uses bare URLs ('WFCD warframe-items: https://...' and 'Warframe Wiki: https://...') without Markdown link syntax -- STYLE.md forbids bare URLs in prose. Abilities described in H3 prose instead of required <AbilityCard> component -- systemic gap across all warframe pages. Critical factual error: Acquisition states Excalibur drops from 'War assassination (Mars) -- Terminus'; Excalibur's blueprint actually drops from the Jackal (Venus, Fossa). 'War' is the Stalker boss weapon, not a mission/node designation. Stats appear in Overview prose ('With 270 health and 270 shields ... armor of 240 ... energy pool of 100 ... sprint speed of 1.0x') violating no-stats-in-prose rule. Em-dashes throughout prose and in one YAML frontmatter value. Passive name 'Bladestorm Affinity' may not match in-game text. Typo in Exalted Blade section: 'summmons' (triple-m)."
+    },
+    "koumei": {
+      "schema_fit": 4,
+      "prose_quality": 4,
+      "factual_accuracy": 4,
+      "sourcing": 3,
+      "style_compliance": 2,
+      "overall": 3,
+      "notes": "Section order correct. Abilities use H3 prose instead of <AbilityCard> component (same systemic gap). Stats in Overview prose ('With 344 health and 122 shields ... 444 armor ... energy pool of 122 ... 1.0x sprint speed') violates no-stats-in-prose rule. Em-dashes throughout (U+2014 not ASCII '--'). Body Sources section is prose-only with no hyperlinks: 'The complete information about Koumei comes from two primary sources...' -- no actual URLs in body, which makes sources untraceable without consulting frontmatter. Koumei's real-game mechanics (dice system, Kumihimo, Omikuji) are described accurately and with good detail. Minor concern: 'Update 37.0' release version for Koumei has not been confirmed via WFCD canonical data. Prose quality is strong; voice is neutral and informative. 'Leonidas' reference absent from this file."
+    },
+    "lavos": {
+      "schema_fit": 4,
+      "prose_quality": 5,
+      "factual_accuracy": 4,
+      "sourcing": 4,
+      "style_compliance": 2,
+      "overall": 4,
+      "notes": "Best-written file in the sample. Lavos's zero-energy, cooldown-based system is explained accurately, clearly, and with real mechanical depth. Stat table is correct and includes a useful additional row explaining cooldown-based nature. Sources section has proper Markdown links and describes what each source provides. Two sources minimum met with one WFCD primary. Stats appear in Overview prose ('With 540 health, 270 shields, and 575 armor') -- violates no-stats-in-prose rule. Em-dashes pervasive (systemic issue). Abilities use H3 prose instead of <AbilityCard> component. Source text in body uses em-dashes in section labels. One minor factual quibble: Ophidian Bite description says 'hold to imbue ALL abilities' but the hold-to-imbue applies to the NEXT ability cast only, not all subsequent casts indefinitely -- the body prose is slightly misleading on scope. Acquisition section correctly distinguishes Operation: Orphix Venom vs Father (Entrati) path."
+    },
+    "helminth": {
+      "schema_fit": 3,
+      "prose_quality": 3,
+      "factual_accuracy": 2,
+      "sourcing": 3,
+      "style_compliance": 2,
+      "overall": 3,
+      "notes": "Multiple confirmed factual errors: (1) Roar is listed as 'from Leonidas' -- Roar is Rhino's ability; 'Leonidas' is not a Warframe. (2) 'Healing Well (from Trinity)' -- Trinity has no ability called 'Healing Well'; its abilities are Well of Life, Energy Vampire, Link, and Blessing. (3) Warding Halo attributed to Inaros in the Defensive abilities list -- Warding Halo belongs to Nezha, not Inaros (Inaros has Sandstorm, Dessication, Scarab Armor, Scarab Swarm). (4) 'Introduced in Update 30' is incorrect -- the Helminth system launched with Update 29.10 (Heart of Deimos, August 2020). (5) Lore states 'The family's patriarch, Margulis, was infused with Void energy' -- Margulis was an Orokin Archimedean, not an Entrati family patriarch; Albrecht Entrati is the Entrati family patriarch. Em-dashes pervasive. Stats in body prose. Helminth-as-warframe page structure is a reasonable creative choice but the 'Abilities' and 'Passive' sections feel forced for a non-combat system. Sources section uses em-dashes and does not include hyperlinks."
+    },
+    "grineer": {
+      "schema_fit": 4,
+      "prose_quality": 4,
+      "factual_accuracy": 4,
+      "sourcing": 3,
+      "style_compliance": 3,
+      "overall": 4,
+      "notes": "Section order matches faction template (Overview, Units, Damage profile, Locations, Notes). No em-dashes in body prose -- only one em-dash appears in YAML frontmatter title string ('Grineer -- WARFRAME Wiki' uses two hyphens, acceptable). No stats in prose (appropriate for a faction page). Faction units list is reasonable though not exhaustive. Damage profile table is well-formatted with proper right-alignment on numeric column. One section heading mismatch: STYLE.md specifies '## Damage profile (weakness / resistance)' but file has '## Damage profile' -- the subtitle '(weakness / resistance)' is absent; a strict verifier would flag this. Sourcing: both sources present with accessedAt timestamps, WFCD listed as secondary (Fandom listed first); technically the order does not matter but the WFCD source has no 'note' or 'title' field for traceability. No body Sources section (not required by faction template). Prose is solid but the toxin/radiation commentary in the Damage Profile notes section adds information not reflected in the table (no radiation row present, which is an inconsistency). Word count well above 500 floor."
+    },
+    "whispers-in-the-walls": {
+      "schema_fit": 4,
+      "prose_quality": 3,
+      "factual_accuracy": 2,
+      "sourcing": 3,
+      "style_compliance": 3,
+      "overall": 3,
+      "notes": "Critical factual error: the entire quest description places the action aboard 'The Zariman' ship. The actual 'Whispers in the Walls' quest (Update 34, 2023) is set in the Albrecht Entrati laboratory, the Sanctum Anatomica on Deimos -- it introduces the Murmur faction and reveals Albrecht Entrati's research journals. The quest has no connection to the Zariman ship's sub-levels. The content appears to conflate or fabricate a quest around Zariman lore that does not match the real release. Prose quality in isolation is atmospheric and well-written, but quality is irrelevant when the subject matter is incorrect. Section order matches quest template (Overview, Prerequisites, Stages, Rewards, Lore) with acceptable extras (Tips, Sources). Spoiler callouts are correctly placed and use proper <Callout type=\"warn\"> component. Double-hyphen ('--') used for em-dashes throughout body prose -- this is the correct ASCII substitute per STYLE.md. Sourcing: WFCD and Fandom sources present with ISO accessedAt, WFCD listed as primary with a note field. 'Tenno' used as a third-person actor in body prose ('The Tenno proceeds...') -- not an address to the reader, so this is acceptable."
+    }
+  },
+  "aggregate": {
+    "schema_fit": 3.71,
+    "prose_quality": 3.71,
+    "factual_accuracy": 3.0,
+    "sourcing": 3.14,
+    "style_compliance": 2.29,
+    "overall": 3.14
+  },
+  "submission_assessment": "Content quality is not yet acceptable for project submission. Two systemic failures affect every warframe page: em-dashes (U+2014) are used pervasively instead of the required ASCII '--', and no page uses the mandatory <AbilityCard> component for ability descriptions. Beyond the style failures, multiple files contain confirmed factual errors of moderate-to-serious severity -- Excalibur's acquisition source is wrong, the Helminth page attributes three abilities to the wrong warframes and misstates its own update version, and the Whispers in the Walls quest describes a completely different quest than the one that exists in-game. These errors must be corrected and the em-dash and AbilityCard issues resolved before the site content meets the quality bar for public submission."
+}
