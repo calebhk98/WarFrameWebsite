@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-05-19T01:22:12.770Z",
+  "collection": "warframes",
+  "batch": "recovery-2",
+  "total_files": 3,
+  "pass_count": 3,
+  "fail_count": 0,
+  "files": {
+    "ash": {
+      "pass": true,
+      "errors": []
+    },
+    "ash-prime": {
+      "pass": true,
+      "errors": []
+    },
+    "atlas": {
+      "pass": true,
+      "errors": []
+    }
+  }
+}

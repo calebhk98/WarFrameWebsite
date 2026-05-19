@@ -66,6 +66,9 @@ deferred-to-phase-4 strategy=top-3-per-warframe-top-2-per-popular-weapon
 deferred-to-phase-4 strategy=author-decided-during-fan-out
 
 ## done.warframes
+- ash :: src/content/warframes/ash.mdx
+- ash-prime :: src/content/warframes/ash-prime.mdx
+- atlas :: src/content/warframes/atlas.mdx
 
 ## done.weapons
 
@@ -128,6 +131,28 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - kuva-lich :: src/content/factions/kuva-lich.mdx
 - lotus :: src/content/factions/lotus.mdx
 - murmur :: src/content/factions/murmur.mdx
+- narmer :: src/content/factions/narmer.mdx
+- new-loka :: src/content/factions/new-loka.mdx
+- nightwave :: src/content/factions/nightwave.mdx
+- orokin :: src/content/factions/orokin.mdx
+- ostron :: src/content/factions/ostron.mdx
+- perrin-sequence retry:1 :: src/content/factions/perrin-sequence.mdx
+- red-veil retry:1 :: src/content/factions/red-veil.mdx
+- relay-syndicates :: src/content/factions/relay-syndicates.mdx
+- scaldra :: src/content/factions/scaldra.mdx
+- sentient :: src/content/factions/sentient.mdx
+- shadow-stalker :: src/content/factions/shadow-stalker.mdx
+- solaris-united :: src/content/factions/solaris-united.mdx
+- stalker :: src/content/factions/stalker.mdx
+- steel-meridian :: src/content/factions/steel-meridian.mdx
+- syndicate :: src/content/factions/syndicate.mdx
+- tenno :: src/content/factions/tenno.mdx
+- tribunal :: src/content/factions/tribunal.mdx
+- ventkids :: src/content/factions/ventkids.mdx
+- vox-solaris :: src/content/factions/vox-solaris.mdx
+- warframe :: src/content/factions/warframe.mdx
+- wild :: src/content/factions/wild.mdx
+- zariman-children :: src/content/factions/zariman-children.mdx
 ## done.syndicates
 - arbiters-of-hexis :: src/content/syndicates/arbiters-of-hexis.mdx
 - cephalon-simaris :: src/content/syndicates/cephalon-simaris.mdx
@@ -161,6 +186,9 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 ## done.guides
 
 ## verified.warframes
+- ash
+- ash-prime
+- atlas
 
 ## verified.weapons
 
@@ -169,6 +197,28 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 ## verified.quests
 
 ## verified.factions
+- narmer
+- new-loka
+- nightwave
+- orokin
+- ostron
+- perrin-sequence
+- red-veil
+- relay-syndicates
+- scaldra
+- sentient
+- shadow-stalker
+- solaris-united
+- stalker
+- steel-meridian
+- syndicate
+- tenno
+- tribunal
+- ventkids
+- vox-solaris
+- warframe
+- wild
+- zariman-children
 
 ## verified.syndicates
 
