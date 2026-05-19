@@ -1,0 +1,176 @@
+---
+slug: nidus-prime
+name: Nidus Prime
+aliases: []
+masteryRank: 0
+health: 550
+shield: 0
+armor: 425
+energy: 140
+sprintSpeed: 1.0
+passive:
+  name: Parasitic Regeneration
+  description: >-
+    When killed with at least 4 stacks of Mutation, those stacks are consumed
+    to grant 8 seconds of invulnerability and restore 50% health.
+abilities:
+  - name: Virulence
+    key: "1"
+    energyCost: 25
+    description: >-
+      Rupture the ground with damaging fungal growth that steals energy from
+      each enemy hit. For every five enemies struck, the infection mutates,
+      multiplying its destructive force.
+    stats: { damage: 600, range: 20 }
+  - name: Larva
+    key: "2"
+    energyCost: 50
+    description: >-
+      Spawn an infested pod that erupts with tendrils, latching onto nearby
+      enemies and pulling them in. Enemies killed while held may generate a
+      Mutation stack.
+    stats: { duration: 8, range: 8 }
+  - name: Parasitic Link
+    key: "3"
+    energyCost: 50
+    description: >-
+      Bind to a target with parasitic link. When cast on an ally, both the
+      host and Nidus gain ability strength. Linked enemies redirect some damage
+      taken to Nidus.
+    stats: { strength: 0.25, duration: 30 }
+  - name: Ravenous
+    key: "4"
+    energyCost: 100
+    description: >-
+      Spawn gluttonous maggots that swarm and feast on nearby enemies until
+      hit with Virulence, then burst with infestation. Maggots benefit from
+      Mutation stacks.
+    stats: { range: 25, duration: 45 }
+acquisition:
+  source: Void Fissures (Void Cascade relic farms)
+  blueprintLocations:
+    - "Void Fissures (relic farming)"
+    - "Secondary market trades"
+  cost:
+    platinum: 350
+  buildTimeHours: 72
+  note: "Prime blueprint and components drop from specific void relics."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2021-09-08"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats cross-checked against WFCD 1.756.0 and later."
+  - url: "https://warframe.fandom.com/wiki/Nidus/Prime"
+    accessedAt: "2026-05-19"
+    title: "Nidus/Prime — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Nidus Prime is the primed variant of the infested-themed warframe Nidus, released in Update 30.7. As the plague-bearer archetype, Nidus Prime thrives on the Mutation mechanic—a stackable buff that amplifies his infestive power. With the highest base armor among primes and no shields, this warframe is built for close-quarter combat and sustained ability use. His playstyle revolves around spreading infested growth, pulling enemies into death traps, and leveraging mutation stacks for exponential damage scaling. Nidus Prime excels in endless missions where mutation stacks accumulate over time.
+
+## Abilities
+
+<AbilityCard
+  name="Virulence"
+  key="1"
+  energyCost={25}
+  description="Rupture the ground with damaging fungal growth that steals energy from each enemy hit. For every five enemies struck, the infection mutates, multiplying its destructive force."
+  stats={{ damage: 600, range: 20 }}
+/>
+
+Virulence is Nidus Prime's primary offensive ability. It creates a rupture at the targeted location that scales with ability strength and range mods. The ability generates one Mutation stack per cast and gains stacks when hitting five enemies at once, making it essential for combo building. In high-level missions, Virulence becomes a crowd-control and energy-sustain tool when modded for range and strength.
+
+<AbilityCard
+  name="Larva"
+  key="2"
+  energyCost={50}
+  description="Spawn an infested pod that erupts with tendrils, latching onto nearby enemies and pulling them in. Enemies killed while held may generate a Mutation stack."
+  stats={{ duration: 8, range: 8 }}
+/>
+
+Larva pulls enemies into a tight cluster for AoE ability synergy. It costs 50 energy and lasts 8 seconds by default. The ability benefits from range mods to grab enemies from further away and duration mods to extend the hold time. Enemies killed during the hold have a chance to contribute a Mutation stack, making Larva both a crowd-control and Mutation-farming tool.
+
+<AbilityCard
+  name="Parasitic Link"
+  key="3"
+  energyCost={50}
+  description="Bind to a target with parasitic link. When cast on an ally, both the host and Nidus gain ability strength. Linked enemies redirect some damage taken to Nidus."
+  stats={{ strength: 0.25, duration: 30 }}
+/>
+
+Parasitic Link is a dual-use ability that serves both support and offense. When cast on a squadmate, it grants both players 25% ability strength per link and can be maintained on multiple targets. When cast on an enemy, that enemy redirects a portion of incoming damage to Nidus, converting the frame's health pool into a damage multiplier. With enough armor and healing mods, this turns Nidus Prime into a damage-soaking tank.
+
+<AbilityCard
+  name="Ravenous"
+  key="4"
+  energyCost={100}
+  description="Spawn gluttonous maggots that swarm and feast on nearby enemies until hit with Virulence, then burst with infestation. Maggots benefit from Mutation stacks."
+  stats={{ range: 25, duration: 45 }}
+/>
+
+Ravenous summons a swarm of maggots that attack nearby enemies independently. The ability's duration is 45 seconds by default. Casting Virulence on the maggots causes them to burst, dealing additional infestation damage to nearby enemies and generating Mutation stacks. Ravenous synergizes heavily with Virulence and scales with ability strength and duration mods.
+
+## Passive
+
+Nidus Prime's passive ability, Parasitic Regeneration, triggers when the frame is killed with at least 4 Mutation stacks. Upon activation, the stacks are consumed to grant 8 seconds of invulnerability and restore 50% of maximum health. This mechanic rewards aggressive play and stacking mutations during combat, allowing Nidus Prime to recover from near-death situations and continue high-risk engagements.
+
+## Stats
+
+| Stat           | Value |
+|----------------|-------|
+| Health         | 550   |
+| Shield         | 0     |
+| Armor          | 425   |
+| Energy         | 140   |
+| Sprint Speed   | 1.0x  |
+| Mastery Rank   | 0     |
+
+Nidus Prime prioritizes armor over shields, providing 425 base armor—among the highest for any warframe. The lack of shields forces a playstyle centered on armor tanking and damage mitigation through Parasitic Link. With 550 health and solid armor, defensive builds using Adaptation, Steel Fiber, and Vitality are highly recommended for survival in Steel Path content.
+
+## Acquisition
+
+Nidus Prime components and blueprint drop from Void Fissures during Void Cascade events. The specific relics containing Nidus Prime parts include the Lith, Meso, Neo, and Axi tiers depending on the frame's unvaulting cycle. Each component (Chassis, Systems, Neuroptics) and the Blueprint have different rarity tiers across relics. Players farming Nidus Prime should research the current unvaulting schedule to target the correct relic missions and refine relics for higher drop chances.
+
+## Playstyle
+
+Nidus Prime thrives in sustained, endless missions where Mutation stacks can accumulate to astronomical levels. The core gameplay loop involves casting Larva to gather enemies, then using Virulence on the cluster to generate damage and Mutation stacks. As stacks build, Virulence damage scales exponentially, turning small bursts of fungal growth into massive cleaving attacks. Parasitic Link amplifies this scaling by buffing ability strength on teammates and converting ally damage into personal tanking.
+
+Effective Nidus Prime builds vary by mission type. In Survival missions, prioritize range and strength to maximize Virulence AoE and damage scaling. In Defense missions, balance duration and range to keep Larva active while covering the map with Virulence bursts. Ravenous works as a passive damage dealer and provides supplementary crowd control while Virulence charges up.
+
+Nidus Prime excels in squad play because Parasitic Link enhances teammates' ability strength, and clustered enemies are easier to control. The frame's ability to leverage allies' damage as personal tanking makes it a valuable addition to endurance teams. In solo play, Nidus Prime becomes a self-sufficient infested engine that scales infinitely with time and enemy density.
+
+## Recommended builds
+
+Build variety for Nidus Prime depends on mission context, but several core approaches dominate high-level play.
+
+**Mutation Strength Build** focuses on maximizing Virulence damage and Mutation stack generation. Stack Intensify, Augur Intensify, Power Drift, and Transient Fortitude to reach 150%+ ability strength. Pair with Stretch and Augur Reach for range to hit enemies at distance. Use Streamline or Fleeting Expertise to lower energy costs and sustain ability spam. This build turns Virulence into a room-clearing tool that scales infinitely with stacks.
+
+**Tanking Build** emphasizes Parasitic Link abuse and armor scaling. Use Steel Fiber, Umbral Vitality, Adaptation, and possibly Shield Disruption in the exilus slot. Link multiple enemies to yourself and let their damage redirect to your armor pool. With enough armor, this approach trivializes damage intake. Pair with Equilibrium and a health-orb generation build to sustain indefinitely.
+
+**Duration Control Build** balances all abilities and Mutation uptime. Use Primed Continuity and Constitution to extend Parasitic Link duration and Ravenous effectiveness. Pair with moderate strength and range to keep abilities functional across ability tiers. This build excels in mission types where spreading mutations over longer periods is beneficial, such as Void Fissures or Survival.
+
+## Synergies
+
+Nidus Prime synergizes strongly with frames that benefit from ability strength buffs. Trinity, Octavia, and Ash Prime all gain mileage from Parasitic Link's strength bonus. Energy manipulation frames like Energize Arcane or Trinity restore Nidus Prime's energy after ability spam, creating feedback loops where mutation stacks and energy sustain each other.
+
+Weapon-wise, Nidus Prime's high armor enables melee-heavy builds since redirected damage via Parasitic Link synergizes with melee heavy strikes. Weapons with innate status chance amplify Virulence's spreading infection. Kuva weapons and Zariman-tier gear pair well with mutation-scaling builds because their high damage benefits from ability strength mods.
+
+## Lore
+
+Nidus Prime emerges as a long-unseen form of the plague-bearer, seething with a primal strain of the Infestation. The Priming process elevated the warframe's already grotesque organic nature into something even more dangerous—more efficient at spreading mutation and controlling infested swarms. In the lore of Warframe's Old War era, Nidus Prime represents the Orokin's deepest experiments into weaponizing biological horror. The frame's release in Update 30.7 marked a significant moment in the Zariman storyline, tying the resurgence of prime variants to deeper cosmic threats beneath the solar system.
+
+The Mutation mechanic embedded in Nidus Prime's kit reflects the warframe's thematic identity: adaptation through repeated exposure, unstoppable growth, and the transformation of the infected into a self-sustaining engine of destruction. Every mutation stack is a layer of adaptation, each ability cast a progression toward inevitable corruption.
+
+## Sources
+
+The Fandom wiki provides comprehensive acquisition and trivia information: [Nidus/Prime on WARFRAME Wiki](https://warframe.fandom.com/wiki/Nidus/Prime).
+
+Numeric stats, ability descriptions, and acquisition sources are derived from the authoritative WFCD warframe-items database, which maintains canonical game data across all updates and patches.

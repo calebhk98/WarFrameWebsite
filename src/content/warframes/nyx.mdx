@@ -1,0 +1,186 @@
+---
+slug: nyx
+name: Nyx
+aliases: ["Nyx Prime"]
+masteryRank: 0
+health: 270
+shield: 270
+armor: 105
+energy: 175
+sprintSpeed: 1.1
+passive:
+  name: Psychic Aura
+  description: >-
+    Enemies within Nyx's presence experience reduced accuracy when targeting her,
+    granting passive defensive support in combat. This subtle psychic influence
+    bolsters her survivability without requiring active ability use.
+abilities:
+  - name: Mind Control
+    key: "1"
+    energyCost: 50
+    description: >-
+      Nyx seizes control of a single target's mind, forcing the enemy to fight
+      for the Tenno. Controlled enemies gain increased Radiation Status Chance
+      and take amplified damage from Nyx's weapons.
+    stats: { range: 40 }
+  - name: Psychic Bolts
+    key: "2"
+    energyCost: 25
+    description: >-
+      Unleashes a volley of tracking psychic projectiles that strike nearby enemies
+      with telekinetic precision. Slain enemies cause bolts to cascade to new targets.
+      Each strike weakens enemy defenses and transfers a portion of their strength to Nyx.
+    stats: { range: 40, damage: 250 }
+  - name: Chaos
+    key: "3"
+    energyCost: 75
+    description: >-
+      Releases a devastating psychic pulse that disorients all enemies in a wide
+      radius, forcing them to turn on each other regardless of faction. Confused
+      foes attack random targets indiscriminately.
+    stats: { range: 20, duration: 12 }
+  - name: Absorb
+    key: "4"
+    energyCost: 100
+    description: >-
+      Nyx draws in and contains all damage dealt to her and damage confused enemies
+      deal to each other, converting it into a devastating radial blast. She enters
+      a brief invulnerable state after detonation and gains weapon damage proportional
+      to the absorbed energy.
+    stats: { range: 20, duration: 6 }
+acquisition:
+  source: Phorid assassination during Infested Invasions
+  blueprintLocations:
+    - "Phorid boss (Infested Invasion assassination missions)"
+    - "Warframe Market blueprint"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+    platinum: 150
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2015-03-31"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats cross-checked against WFCD 1.756.0"
+  - url: "https://warframe.fandom.com/wiki/Nyx"
+    accessedAt: "2026-05-19"
+    title: "Nyx — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Nyx is the manipulator of minds, a warframe built around psychic domination and psychological warfare. Where other warframes rely on raw firepower or brute force, Nyx specializes in crowd control through mental influence and forced psychological vulnerabilities. Her arsenal turns enemies into allies, sows discord within enemy ranks, and transforms incoming damage into devastating counterattacks. With low base shields but solid health at 270, Nyx favors positioning and ability management over tanking damage directly. Her 175 base energy pool supports sustained ability usage across her four-ability kit. Nyx shines in missions requiring enemy neutralization without massive area denial, making her invaluable for interception, spy, and high-level survival content where controlling specific threats is paramount.
+
+Her psychic nature extends beyond combat utility—Nyx can drain and redirect enemy power, weaponize confusion, and seize hostile minds to multiply her squad's firepower. While she lacks defensive mechanics like Iron Skin, her passive psychic aura provides constant accuracy reduction against herself, making her harder to burst down when played with awareness of cover and positioning.
+
+## Abilities
+
+<AbilityCard
+  name="Mind Control"
+  key="1"
+  energyCost={50}
+  description="Nyx seizes control of a single target's mind, forcing the enemy to fight for the Tenno. Controlled enemies gain increased Radiation Status Chance and take amplified damage from Nyx's weapons."
+  stats={{ range: 40 }}
+/>
+
+Mind Control is Nyx's signature crowd-control ability. At 50 energy, it instantly enslaves a single target, stripping them of agency and converting them into a temporary ally. The controlled enemy gains innate Radiation Status Chance, enabling procs that disrupt nearby foes. Critically, any damage Nyx or her squad inflicts on the mind-controlled target deals amplified harm, turning the victim into a high-damage conduit. The ability scales with Ability Range, allowing reach out to 40 meters at base—extended further with Stretch or Augur Reach. Duration is permanent until the controlled enemy dies or leaves the map. This enables devastating damage burst scenarios in which a player mind controls a high-threat target (elite Bombard, Nullifier, etc.) and focuses fire through the victim to eliminate nearby allies. In solo play, mind control doubles effective firepower on a locked target.
+
+Range is the primary scaling stat; power strength affects the damage multiplier applied to the controlled enemy. Ability Duration has no effect, as control persists until death.
+
+<AbilityCard
+  name="Psychic Bolts"
+  key="2"
+  energyCost={25}
+  description="Unleashes a volley of tracking psychic projectiles that strike nearby enemies with telekinetic precision. Slain enemies cause bolts to cascade to new targets. Each strike weakens enemy defenses and transfers a portion of their strength to Nyx."
+  stats={{ range: 40, damage: 250 }}
+/>
+
+Psychic Bolts is Nyx's sustained single-target and multi-target damage ability. At 25 energy, this low-cost tool fire a volley of telekinetic projectiles that home toward nearby enemies with tracking precision. Each bolt deals 250 damage at base, and striking enemies weakens their defenses—effectively a flat armor reduction. The ability transfers a portion of enemy armor to Nyx as temporary overshield, providing self-sustain in prolonged combat. When an enemy dies from Psychic Bolts, any remaining bolts scatter to new targets, enabling chaining across crowded rooms. Ability Strength increases per-bolt damage, while Ability Range extends targeting distance to 40 meters. With heavy investment in strength and range mods, Psychic Bolts becomes a near-permanent armor-stripping tool capable of cycling enemy defenses in survival missions. This ability rewards aggressive positioning, as the damage and defense-strip apply globally to all enemies struck.
+
+<AbilityCard
+  name="Chaos"
+  key="3"
+  energyCost={75}
+  description="Releases a devastating psychic pulse that disoriants all enemies in a wide radius, forcing them to turn on each other regardless of faction. Confused foes attack random targets indiscriminately."
+  stats={{ range: 20, duration: 12 }}
+/>
+
+Chaos is Nyx's crowd-control ultimate. At 75 energy, Nyx releases a psychic pulse that disoriants all enemies within a 20-meter radius, forcing them to attack each other and allied foes at random. Unlike hard stuns, confused enemies remain active and dangerous—they simply lash out unpredictably, turning large packs into uncontrolled melee. Chaos scales with Ability Range (cap 20 meters) and Ability Duration (base 12 seconds). High-duration builds extend confusion uptime, enabling near-permanent crowd control by recasting before the effect expires. Strength does not directly boost confusion duration, making this a range-and-duration focused ability. Chaos combines powerfully with Absorb; enemies confused by Chaos deal damage to each other, and Absorb converts that inter-enemy damage into the detonation pool. In endless survival, a coordinated Chaos + Absorb cycle can trivialize room clears by weaponizing enemy damage outputs against themselves.
+
+<AbilityCard
+  name="Absorb"
+  key="4"
+  energyCost={100}
+  description="Nyx draws in and contains all damage dealt to her and damage confused enemies deal to each other, converting it into a devastating radial blast. She enters a brief invulnerable state after detonation and gains weapon damage proportional to the absorbed energy."
+  stats={{ range: 20, duration: 6 }}
+/>
+
+Absorb is Nyx's ultimate damage and survivability ability. At 100 energy, Nyx channels and draws in all incoming damage—both hits against herself and damage dealt between confused enemies. This accumulated energy is stored as a damage pool that Nyx can detonate on command via a second button press, releasing a radial blast that scales with stored energy. Following detonation, Nyx gains a brief period of invulnerability and a weapon damage boost proportional to the absorbed amount. The ability scales with Ability Strength (damage output) and Ability Range (blast radius, cap 20 meters). Duration affects the invulnerability window (base 6 seconds) and the weapon damage buff duration. Absorb's power emerges in high-level content where enemies deal significant damage; a 10-second channel in a dense spawn can absorb 5,000+ damage, converting it into an instant 5,000 damage explosion. Absorb synergizes perfectly with Chaos: enemies disoriented by Chaos attack each other, and Absorb harvests that inter-enemy damage, turning crowd control directly into offensive output. In solo play against high-level Bombards or Nullifiers, Absorb provides temporary invulnerability and damage scaling, making it invaluable for survival extensions.
+
+## Passive
+
+Nyx's passive psychic aura is subtle but potent. Enemies targeting Nyx suffer 20% reduced accuracy, granting her effective defensive support without requiring active ability usage. This manifests as hitscan projectiles and beam weapons missing more often and tracking shots becoming less effective. The passive does not protect against area-of-effect abilities, unguided explosives, or melee attacks. In practice, the accuracy reduction meaningfully reduces damage intake in ranged-heavy missions (corpus laboratories, infested hives) but provides minimal help against heavily melee-focused factions. The passive scales with no mods and applies globally, making Nyx naturally harder to burst from distance—a quality that complements her low shields and moderate health.
+
+## Stats
+
+| Stat          | Value |
+|---------------|-------|
+| Health        | 270   |
+| Shield        | 270   |
+| Armor         | 105   |
+| Energy        | 175   |
+| Sprint Speed  | 1.1x  |
+| Mastery Rank  | 0     |
+| Aura Polarity | Naramon |
+
+Nyx's stat distribution favors balance over extremes. At 270 health and 270 shield, she matches moderate tank frames like Mag and Trinity. Armor at 105 provides modest physical damage reduction but does not enable true tanking strategies. The 175 energy pool is sufficient for a full 4-ability rotation (50 + 25 + 75 + 100 = 250 energy at one cast each) with some breathing room for quick casts; high-efficiency builds enable near-permanent Chaos cycling. Her 1.1x sprint speed is standard. The Naramon aura polarity pairs naturally with Naramon-polarity aura mods like Corrosive Projection, which further boosts enemy armor stripping when combined with Psychic Bolts.
+
+## Acquisition
+
+Nyx's main blueprint is available from the in-game Warframe Market for 40,000 credits and 150 platinum. Component blueprints (Neuroptics, Chassis, Systems) drop from Phorid, a unique boss encountered during Infested Invasion missions. Phorid assassination runs take 5-10 minutes; farming all three components requires 3 successful encounters. Once blueprints are acquired, assembly takes 72 hours in the foundry. The low acquisition cost and availability through a repeatable boss encounter makes Nyx accessible to newer players. Her Prime variant, Nyx Prime, was released in March 2015 and is currently unvaulted, dropping from void fissures.
+
+## Playstyle
+
+Nyx's playstyle revolves around selective target hardening and crowd control. She excels when players identify priority threats—an armored Bombard, a Nullifier, a high-level Lich—and use Mind Control to lock them down while dealing massive damage through the victim. Psychic Bolts provides sustain and armor stripping in mid-range engagements, while Chaos serves as a panic button for room clears. Absorb bridges defense and offense, converting incoming enemy fire into outgoing damage.
+
+In practice, a typical Nyx mission cycle looks like: (1) identify a high-threat target and cast Mind Control; (2) cycle Psychic Bolts on nearby foes to strip armor and sustain shields; (3) press Chaos when surrounded to confuse the crowd; (4) channel Absorb for 8-10 seconds to harvest inter-enemy damage and detonation; (5) repeat. This playstyle demands active engagement—Nyx lacks auto-targeting or passive damage, so she requires the player to make tactical decisions every few seconds.
+
+Nyx performs best in missions with defined threats (assassination, hijack, defense waves) where controlling specific enemies is more valuable than blanket area denial. She struggles in open-world endless survival against 20+ simultaneous enemies without heavy crowd-control support, since her abilities target individuals or areas rather than guarantee total lockdown. In the right context—a Void Cascade with one or two dangerous enemies per spawn—Nyx becomes a force multiplier, taking key threats off the board while her squad clears adds.
+
+## Recommended Builds
+
+Nyx supports multiple build archetypes depending on mission context:
+
+**Control Build** (recommended for Defense/Hijack): Heavy investment in Ability Range and Ability Duration, moderate Ability Strength. Mods: Stretch, Augur Reach, Primed Continuity, Blind Rage, Umbral Intensify, Fleeting Expertise (capped at ~150% efficiency). Focus: maximize Chaos uptime and Mind Control range. This build enables 20+ second Chaos cycles and 50+ meter Mind Control range, making it trivial to control large rooms.
+
+**Damage Build** (recommended for Void Cascade/Steel Path): Balanced Range, Duration, Strength. Mods: Stretch, Primed Continuity, Blind Rage, Umbral Intensify, Umbral Vitality, Augur Message. Focus: Absorb damage scaling and Psychic Bolts armor stripping. With 180% Strength and a 15-second Absorb channel, expect 3,000+ damage detonations at level 75+.
+
+**Survival/Support Build**: Heavy Duration and Strength, moderate Range. Mods: Primed Continuity, Blind Rage, Umbral Intensify, Energized Armaments (if using allies), Augur Message, Corrosive Projection (aura). Focus: spam Chaos every 8 seconds, support squad with Psychic Bolts armor stripping. This build sacrifices Mind Control range but ensures the entire squad benefits from constant crowd control.
+
+All builds should include an energy economy mod (Streamline or Primed Flow) to sustain 4-ability cycles.
+
+## Synergies
+
+Nyx pairs synergistically with frames that amplify damage output or provide energy sustain. Trinity provides Energy Vampire and Blessing, enabling Nyx to spam high-energy abilities indefinitely while gaining survivability from Blessing's damage reduction. Rhino's Iron Skin and Roar amplify Nyx's damage output, while his stomp stacks with Chaos for near-total crowd control. Volt's Electric Shield amplifies gun damage through Nyx's Mind Control victims, and his speed buff enables Nyx to reposition faster. Oberon's Phoenix Renewal ensures squad survivability in high-level content, freeing Nyx to focus purely on crowd control.
+
+On the opposing side, Nyx's abilities do not synergize well with frames that require continuous casting (Saryn's Miasma, Mesa's Peacemaker). The energy cost of maintaining Chaos and Absorb leaves little room for supporting allies with other frames' active abilities. Nyx is best paired with passive-damage dealers (Octavia, Ember, Saryn miasma-spam) who can output threat while Nyx controls the battlefield.
+
+## Lore
+
+Nyx emerged as one of the original Tenno warframes, embodying the psychic domination of the Old War. Unlike the Orokin's physical juggernauts, Nyx represented the capacity to bend minds and weaponize consciousness itself. The Orokin engineered her to turn the tide through psychological dominance—enslaving enemy commanders, sowing confusion in troop formations, and harvesting the psychic resonance of battle itself. Her four core abilities reflect the four pillars of mental warfare: domination (Mind Control), harassment (Psychic Bolts), dislocation (Chaos), and synthesis (Absorb).
+
+In the current war against the Grineer, Corpus, and Infested, Nyx has become the frame of choice for Tenno who eschew direct combat in favor of psychological manipulation. Lore entries describe her as a "whisper in the void," a voice that commands enemy soldiers to turn on their allies. Some player communities view Nyx as the most "intelligent" frame, requiring tactical decision-making at every turn rather than simple ability spam.
+
+Nyx Prime, her gilded progenitor variant, combines her baseline psychic power with the aesthetic and stat bonuses of the Orokin era. Prime relics feature prominently in void fissure rotations, making Nyx Prime accessible to long-term players. The Prime variant increases shields to 324 (from 270) and maintains identical energy capacity, making her slightly more durable in high-level content.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) — Authoritative numeric stats and ability data. Cross-checked against WFCD 1.756.0.
+- [Nyx — WARFRAME Wiki](https://warframe.fandom.com/wiki/Nyx) — Lore, acquisition flavor, community notes.

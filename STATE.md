@@ -131,6 +131,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - nekros :: src/content/warframes/nekros.mdx
 - nekros-prime :: src/content/warframes/nekros-prime.mdx
 - nezha :: src/content/warframes/nezha.mdx
+- nezha-prime retry:1 :: src/content/warframes/nezha-prime.mdx
+- nidus :: src/content/warframes/nidus.mdx
+- nidus-prime :: src/content/warframes/nidus-prime.mdx
+- nova :: src/content/warframes/nova.mdx
+- nova-prime :: src/content/warframes/nova-prime.mdx
+- nyx :: src/content/warframes/nyx.mdx
+- nyx-prime :: src/content/warframes/nyx-prime.mdx
+- oberon :: src/content/warframes/oberon.mdx
 
 ## done.weapons
 
@@ -315,6 +323,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - nekros
 - nekros-prime
 - nezha
+- nezha-prime
+- nidus
+- nidus-prime
+- nova
+- nova-prime
+- nyx
+- nyx-prime
+- oberon
 
 ## verified.weapons
 

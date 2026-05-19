@@ -1,0 +1,162 @@
+---
+slug: nova
+name: Nova
+aliases: ["Nova Prime"]
+masteryRank: 0
+health: 270
+shield: 180
+armor: 105
+energy: 175
+sprintSpeed: 1.2
+passive:
+  name: Particle Attraction
+  description: >-
+    Enemies killed while slowed down have a chance to drop health orbs. Enemies
+    killed while sped up have a chance to drop energy orbs.
+abilities:
+  - name: Null Star
+    key: "1"
+    energyCost: 25
+    description: >-
+      Creates antimatter particles that orbit Nova, attacking nearby targets.
+      Each active particle reduces incoming damage to Nova's health and shields.
+    stats: { particles: 8, range: 15 }
+  - name: Antimatter Drop
+    key: "2"
+    energyCost: 50
+    description: >-
+      Launch a charged antimatter particle that detonates on contact, dealing
+      Blast damage. Hold the ability to charge the projectile for increased
+      damage and area of effect.
+    stats: { damage: 400, range: 30 }
+  - name: Wormhole
+    key: "3"
+    energyCost: 50
+    description: >-
+      Create a wormhole for instantaneous travel. Hold the ability to visualize
+      placement before confirming the teleport destination.
+    stats: { range: 50 }
+  - name: Molecular Prime
+    key: "4"
+    energyCost: 100
+    description: >-
+      Prime all enemies in an expanding radius with volatile antimatter. Press
+      the ability to slow movement; hold to accelerate enemies instead. Slowed
+      enemies take increased damage.
+    stats: { damage: 100, range: 40, duration: 15 }
+acquisition:
+  source: Naamah (Europa assassination)
+  blueprintLocations:
+    - "Naamah assassination on Europa"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2016-11-29"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Nova"
+    accessedAt: "2026-05-19"
+    title: "Nova — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Nova is a masterful manipulator of antimatter and fundamental forces, emerging in Update 9.0 as one of Warframe's most versatile crowd-control specialists. Her arsenal harnesses volatile antiparticles to simultaneously control battlefield momentum and amplify damage output. While her defensive profile remains modest with moderate health and shields, Nova compensates through devastating area-of-effect abilities and unparalleled speed manipulation. She excels as a glass cannon in coordinated squads, where her crowd control and damage amplification allow teammates to eliminate primed targets. Nova's playstyle rewards positioning awareness and ability timing; she thrives in carefully managed engagements where her crowd control prevents incoming fire rather than absorbing it.
+
+## Abilities
+
+<AbilityCard
+  name="Null Star"
+  key="1"
+  energyCost={25}
+  description="Creates antimatter particles that orbit Nova, attacking nearby targets. Each active particle reduces incoming damage to Nova's health and shields."
+/>
+
+Null Star generates up to eight charged particles that automatically attack enemies within range. The defensive scaling makes Null Star increasingly valuable at higher difficulties; each active particle stacks a damage reduction buff that allows Nova to operate more aggressively. Enemies that trigger the particles take damage, while Nova gains survivability scaling with particle count. This ability pairs well with duration-focused builds to maintain particle uptime for extended missions.
+
+<AbilityCard
+  name="Antimatter Drop"
+  key="2"
+  energyCost={50}
+  description="Launch a charged antimatter particle that detonates on contact, dealing Blast damage. Hold the ability to charge the projectile for increased damage and area of effect."
+/>
+
+Antimatter Drop fires a projectile that bounces until it contacts an enemy or obstacle. Charging the projectile increases both its damage output and explosion radius, creating dynamic use cases depending on available energy and tactical situation. The Blast damage type guarantees status procs, making it valuable against heavily-armored targets. In conjunction with Molecular Prime's damage amplification, charged Antimatter Drops can eliminate priority targets instantly. The projectile's bounce behavior allows for trick-shot plays and hitting enemies around cover.
+
+<AbilityCard
+  name="Wormhole"
+  key="3"
+  energyCost={50}
+  description="Create a wormhole for instantaneous travel. Hold the ability to visualize placement before confirming the teleport destination."
+/>
+
+Wormhole provides instant repositioning across large distances, enabling Nova to escape heavy fire or reposition for better ability angles. The ability supports cooperative gameplay; other squad members can traverse the wormhole for five seconds after creation. Range scaling affects the maximum distance, allowing extended mobility in open-world content. Wormhole synergizes with speed-based playstyles, enabling Nova to both engage and disengage from dangerous positions while maintaining offensive pressure.
+
+<AbilityCard
+  name="Molecular Prime"
+  key="4"
+  energyCost={100}
+  description="Prime all enemies in an expanding radius with volatile antimatter. Press the ability to slow movement; hold to accelerate enemies instead. Slowed enemies take increased damage."
+/>
+
+Molecular Prime stands as Nova's signature ability and one of the game's most impactful crowd-control tools. The ability expands outward, applying a toggle-based effect: pressing the ability slows enemy movement by up to 90%, while holding accelerates movement speed instead. Slowed enemies take significantly increased damage from all sources, making them ideal targets for coordinated squad damage. The slowdown effect is iconic in endgame content, where it transforms overwhelming enemy pressure into controlled engagement windows. The damage amplification applies multiplicatively with other buffs, creating exponential scaling in coordinated squads. Energy efficiency becomes critical; high-strength builds sacrifice range, forcing players to decide between complete area coverage or concentrated effect intensity.
+
+## Passive
+
+Particle Attraction grants conditional orb drops based on Molecular Prime's speed state. Enemies killed while slowed drop health orbs, sustaining Nova through extended survival missions. Enemies killed while sped up drop energy orbs, enabling aggressive playstyles with frequent ability casting. This passive transforms Nova's crowd-control utility into survival mechanics; a well-timed acceleration grants energy refunds that fund subsequent crowd control. Squad composition matters significantly; dedicated damage frames benefit from the slowdown while Nova maintains energy through acceleration-induced orb drops.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 270 |
+| Shield | 180 |
+| Armor | 105 |
+| Energy | 175 |
+| Sprint Speed | 1.2x |
+| Aura Polarity | Naramon |
+| Mastery Rank Required | 0 |
+
+Nova's stat distribution reflects her glass-cannon archetype. The 270 health and 180 shields remain below-average by current standards, necessitating defensive mods or careful positioning. The 105 armor provides minimal mitigation; most Nova builds prioritize ability strength and efficiency over raw durability. The 175 energy pool supports high-cost ability rotations when paired with energy-efficiency mods, particularly for Molecular Prime spam. Sprint speed of 1.2x multiplier enables rapid repositioning, synergizing with Wormhole for aggressive playstyles.
+
+## Acquisition
+
+Nova blueprints drop from Naamah, an assassination target on Europa. Naamah's boss chamber requires mastery over the node's environmental hazards and coordinated offense; most players farm the assassination with dedicated defense frames to ensure consistent part drops. The blueprint and component blueprints construct over 72 hours using credits and standard resources. Orokin Cells, found on Ceres, Saturn, and Deimos, prove the resource bottleneck for first-time crafters. Nova Prime, released in November 2016, provides superior stats with 15 additional health and increased energy capacity; her prime relics remain in rotation for indefinite availability post-unvault.
+
+## Playstyle
+
+Nova's optimal playstyle rotates around Molecular Prime usage, toggling between slowdown and acceleration based on squad needs and enemy threat level. The slowdown setting establishes her crowd-control niche: priming large enemy groups triggers multiplicative damage scaling for squad damage-dealers. Managing energy efficiency becomes paramount; a fully-optimized Nova rotates Molecular Prime every 8-10 seconds, sustaining indefinite crowd control through careful mod allocation. The acceleration toggle enables offensive farming playstyles; rapid respawning enemies drop energy orbs that fund continuous Antimatter Drop spamming. Null Star requires active management, recasting periodically to maintain particle count and defensive scaling. Wormhole enables escapes when crowd control fails or squad positioning demands repositioning; skilled players combine Wormhole usage with Antimatter Drop charging for offensive mobility.
+
+Survival-focused builds prioritize Molecular Prime range and duration, sacrificing strength for complete area coverage. Damage-focused builds concentrate strength and efficiency, creating devastating slowdown windows with minimal range but maximum impact. Coordinated squads amplify Nova's value; dedicated damage frames position themselves before Molecular Prime applications, transforming slow windows into coordinated burst phases. Solo play emphasizes Antimatter Drop charging and Null Star defensive stacking, reducing reliance on squad coordination.
+
+## Builds
+
+Nova excels in crowd-control centered builds designed around Molecular Prime. High-range variants cover complete mission areas with slowdown effects, ensuring minimal enemy damage reaches the squad. High-strength variants create devastating slowdown intensity, multiplying damage output despite reduced area coverage. Efficiency-focused builds enable continuous Molecular Prime applications, supporting indefinite survival scaling through environmental adaptation. Popular builds include control-optimized configurations emphasizing range and duration, damage-amplification variants maximizing strength at range cost, and hybrid configurations balancing all statistics.
+
+Recommended builds scale with mission difficulty progression. Early-game Nova builds prioritize range and duration for intuitive crowd control. Mid-game variants introduce efficiency scaling, enabling continuous ability casting without energy starvation. Endgame builds require careful optimization; Steel Path survival demands either extreme defensive stacking (becoming effectively impossible for Nova's frame) or maximum Molecular Prime uptime supporting squad survival through crowd control rather than personal tankiness. Helminth subsumption enables alternative playstyles; replacing Wormhole with offensive abilities like Roar or Resonator creates pure-offense configurations for coordinated squads.
+
+## Synergies
+
+Nova's crowd-control applications enable exponential scaling with dedicated damage-dealers. Frames like Saryn, Mesa, and Titania maximize damage output when Molecular Prime creates slowdown windows; the damage amplification multiplies with ability-scaling builds. Energy-based damage frames benefit from acceleration-induced orb drops, sustaining high-casting frequencies. Squad composition matters critically; pure defensive squads struggle to capitalize on crowd control, while aggressive damage-dealers require Nova's control to survive incoming fire.
+
+Weapons synergize significantly with Molecular Prime. High-damage single-target weapons like sniper rifles and crit-scaling primaries multiply the slowdown damage bonus, creating boss-execution capabilities. Area-effect weapons benefit from the complete crowd control; launched projectiles eliminate immobilized enemies without scatter. Melee weapons gain massive damage scaling; a slowed target takes all melee hits at increased multipliers, enabling weapon-based burst phases following Molecular Prime applications.
+
+## Lore
+
+Nova emerged during the scientific era of Tenno development, where researchers engineered warframes around exotic physics rather than purely martial applications. Her theme centered on antimatter manipulation and fundamental force exploitation; designers conceptualized her as a physicist-warrior, wielding weapons derived from exotic particle behavior rather than conventional metallurgy. The "wildly unpredictable" characterization reflects her chaotic playstyle; unlike disciplined fighters, Nova approaches combat through calculated application of destabilizing forces.
+
+The antiparticle theme connects Nova to the Orokin's advanced scientific heritage, suggesting her design drew inspiration from research into opposing matter states. Her Molecular Prime ability represents the peak of this concept: priming targets with volatile antimatter creates a cascade effect where destabilization propagates through enemy groups. This ability stands as one of the narrative's defining moments, where Tenno warfare transcends martial conflict and enters theoretical physics application. Her speed-toggle mechanics suggest nuanced control over antimatter states; slowing implies aggressive particle condensation, while acceleration suggests controlled particle dispersal. The distinction between health orbs (from slowed targets) and energy orbs (from accelerated targets) hints at deeper connections between antimatter behavior and metabolic sustenance.
+
+## Sources
+
+Nova's gameplay foundation draws from crowd-control mechanics pioneered in early Warframe design, evolving significantly through balance patches addressing her dominant status in endgame content. Update 32 (Veilbreaker) adjusted her specter's Molecular Prime behavior to reduce overreliance on automated crowd control, reflecting the design philosophy emphasizing active player engagement over passive area effects. Molecular Prime's iconic slowdown remains largely unchanged since her release, cementing it as the mechanic defining Nova's identity. Current balance decisions maintain her as a premiere crowd-control option without rendering her mandatory for squad success, creating interesting team-building decisions.
+
+The Fandom Wiki documents Nova's complete ability breakdown, historical balance changes, and community strategies. Her release notes from Update 9.0 emphasize the antiparticle theme and crowd-control positioning. Digital Extremes' balance notes consistently reference Nova when adjusting crowd-control mechanics, reflecting her significant impact on endgame difficulty scaling. Community discussion threads analyze Molecular Prime's multiplicative damage bonus, establishing its role as the highest-value crowd-control ability in coordinated gameplay.
