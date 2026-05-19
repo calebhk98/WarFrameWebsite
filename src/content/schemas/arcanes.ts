@@ -13,6 +13,7 @@ export const arcaneTypeSchema = z.enum([
   'companion',
   'kitgun',
   'zaw',
+  'melee',
   'other',
 ]);
 

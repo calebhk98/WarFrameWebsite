@@ -1,0 +1,81 @@
+---
+slug: theorem-induction
+name: Theorem Contagion
+type: warframe
+maxRank: 5
+effect: "Standing in a zone created by a Residual Arcane increases damage of companions and summoned allies within 90m by [stackRate]%/s stacking up to 15x. Effect persists for 20s upon leaving the zone."
+perRankStats:
+  - rank: 0
+    stats: { stackRate: 4, revives: 0 }
+  - rank: 1
+    stats: { stackRate: 8, revives: 0 }
+  - rank: 2
+    stats: { stackRate: 12, revives: 0 }
+  - rank: 3
+    stats: { stackRate: 16, revives: 1 }
+  - rank: 4
+    stats: { stackRate: 20, revives: 1 }
+  - rank: 5
+    stats: { stackRate: 24, revives: 1 }
+drops:
+  - source: "Deimos Isolation Vault (Level 30-40 Arcana, Rotation C)"
+    chance: 15
+    rarity: "uncommon"
+    note: "Per WFCD drop tables 2026-05-18"
+  - source: "Deimos Isolation Vault (Level 40-50 Arcana, Rotation C)"
+    chance: 15
+    rarity: "uncommon"
+  - source: "Deimos Isolation Vault (Level 50-60 Arcana, Rotation C)"
+    chance: 15
+    rarity: "uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-18"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Theorem_Contagion"
+    accessedAt: "2026-05-18"
+    title: "Theorem Contagion — WARFRAME Wiki"
+    publisher: "Fandom"
+    note: "Warframe arcane for companion and summoned ally damage"
+updatedAt: "2026-05-18"
+---
+
+## Overview
+
+Theorem Contagion (listed as Theorem Induction in some references) is a warframe arcane that amplifies companion and summoned ally damage within Residual Arcane zones. Unlike Theorem Demulcent which buffs the player's weapons, this arcane specializes in delegating damage to pets, sentinels, and summoned units. The 90-meter radius ensures broad coverage of squad-deployed combat units, making it invaluable for companion-focused builds and summoner-style warframes.
+
+The arcane stacks damage bonuses at 4-24% per second based on rank, allowing companions to reach 360% damage multipliers at maximum stacks within zones. The 20-second persistence mechanic matches Theorem Demulcent, allowing summoned units to maintain buffs briefly after zone exit. This design seamlessly integrates with warframes that summon allies or heavily rely on companion scaling, creating synergistic gameplay loops around zone positioning and pet management.
+
+## Effects per rank
+
+| Rank | Stack rate per second | Maximum damage | Radius | Arcane revives |
+|------|----------------------|-----------------|--------|---|
+| 0    | +4%                  | 60% (15 stacks) | 90m    | 0 |
+| 1    | +8%                  | 120% (15 stacks) | 90m   | 0 |
+| 2    | +12%                 | 180% (15 stacks) | 90m   | 0 |
+| 3    | +16%                 | 240% (15 stacks) | 90m   | 1 |
+| 4    | +20%                 | 300% (15 stacks) | 90m   | 1 |
+| 5    | +24%                 | 360% (15 stacks) | 90m   | 1 |
+
+The 90-meter radius covers most standard mission environments, ensuring companion units stay buffed throughout combat. The stacking persists outside zones for 20 seconds, allowing temporary zone exit without penalty to active companion damage. Higher ranks dramatically increase companion damage scaling, transforming pets from utility to primary damage dealers in organized squads.
+
+## Acquisition
+
+Theorem Contagion drops from Deimos Isolation Vault encounters exclusively, appearing in Rotation C drops across all difficulty tiers (30-40, 40-50, 50-60). The 15% uncommon-rarity drop rate requires multiple vault runs for rank progression. Coordinating vault farming with squad mates optimizes farm efficiency while gathering void traces and other Cambion Drift resources.
+
+Players with active companion or summoner builds should prioritize farming this arcane, as the synergy significantly amplifies squad damage output. Extended vault runs maintain zone uptime, creating consistent stacking opportunities throughout engagements.
+
+## Best on
+
+Theorem Contagion excels on warframes that summon allies or rely heavily on companion damage. Frames like Khora (Venari), Wisp (mote clones), Nekros (shadows), and Atlas Prime (rumblers) unlock dramatic damage scaling for their summoned units. Companion-heavy builds with high-scaling sentinel mods or hireable crew units benefit from the broad 90-meter radius.
+
+The arcane reward aggressive positioning within Residual Arcane zones, creating tactical decisions about maintaining pet proximity versus player survivability. Frames with teleportation or speed abilities can leverage zone repositioning to maintain both player and companion stacks throughout extended combat sequences.
+
+## Sources
+
+WFCD warframe-items documents Theorem Contagion drop rates from Deimos Isolation Vaults. The Warframe wiki cross-references companion scaling mechanics and Residual Arcane zone interactions. Community guides on summoner builds and companion optimization frequently integrate Theorem Contagion into high-damage squad compositions.
+
+---
+
+theorem-induction :: /home/user/WarFrameWebsite/src/content/arcanes/theorem-induction.mdx

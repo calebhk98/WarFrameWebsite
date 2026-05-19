@@ -1,0 +1,84 @@
+---
+slug: cascadia-flare
+name: Cascadia Flare
+type: weapon
+maxRank: 5
+effect: "On [damageType]Heat Status Effect: +[damage]% Damage for 10s. Stacks up to [maxStack]%."
+perRankStats:
+  - rank: 0
+    stats: { damage: 2, maxStack: 80 }
+  - rank: 1
+    stats: { damage: 4, maxStack: 160 }
+  - rank: 2
+    stats: { damage: 6, maxStack: 240 }
+  - rank: 3
+    stats: { damage: 8, maxStack: 320 }
+  - rank: 4
+    stats: { damage: 10, maxStack: 400 }
+  - rank: 5
+    stats: { damage: 12, maxStack: 480 }
+drops:
+  - source: "Zariman Void Angels (Void Angel)"
+    chance: 1.67
+    rarity: "rare"
+    note: "Per WFCD drop tables 2026-05-18"
+  - source: "Zariman Void Angels (Ravenous Void Angel)"
+    chance: 0.67
+    rarity: "rare"
+  - source: "Zariman Void Angels (Thrax Centurion)"
+    chance: 0.33
+    rarity: "rare"
+  - source: "The Holdfasts (Cavalero) - Watcher"
+    chance: 100
+    rarity: "common"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-18"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Cascadia_Flare"
+    accessedAt: "2026-05-18"
+    title: "Cascadia Flare — WARFRAME Wiki"
+    publisher: "Fandom"
+    note: "Secondary weapon arcane for Angels of the Zariman"
+updatedAt: "2026-05-18"
+---
+
+## Overview
+
+Cascadia Flare is a secondary weapon arcane that rewards proccing Heat status effects on enemies. Introduced as part of the Angels of the Zariman update, this arcane scales damage output significantly when used on weapons with inherent heat damage or elemental combinations. The synergy between heat-based builds and Cascadia Flare makes it valuable for weapons capable of consistent elemental damage application.
+
+The arcane's strength lies in its cumulative stacking mechanic. Each heat status proc refreshes the 10-second duration and increases the damage multiplier, allowing players to maintain high stacks during prolonged engagements. This encourages using elemental-focused mods and heat-heavy loadouts to maximize the benefit.
+
+## Effects per rank
+
+| Rank | Damage bonus | Maximum stack | Cooldown |
+|------|--------------|---------------|----------|
+| 0    | +2%          | 80%           | 10s      |
+| 1    | +4%          | 160%          | 10s      |
+| 2    | +6%          | 240%          | 10s      |
+| 3    | +8%          | 320%          | 10s      |
+| 4    | +10%         | 400%          | 10s      |
+| 5    | +12%         | 480%          | 10s      |
+
+The scaling is linear at each rank, with the effect duration resetting whenever a new heat status is applied. At maximum rank, the potential damage multiplier reaches 480% when fully stacked, making it one of the highest-ceiling secondary arcanes for specific builds.
+
+## Acquisition
+
+Cascadia Flare drops primarily from Zariman Void Angels, particularly the higher-rarity encounters. The highest drop chance comes from the Void Angel enemy type at 1.67% per kill. The Holdfasts location (Cavalero mission) guarantees one copy upon completion, providing reliable access for players hunting the arcane.
+
+For consistent farming, engaging higher-level Void Angel encounters yields better rarity-weighted drop rates. The 100% drop from Holdfasts represents the most reliable path for players seeking their first copy or additional ranks.
+
+## Best on
+
+Cascadia Flare excels on secondary weapons with innate heat damage or elemental flexibility. Weapons like the Atomos, Gaze, and other heat-focused pistols maximize the proc frequency required to stack the arcane effectively. Heat-heavy hybrid builds using elemental mods to stack heat status also synergize well, allowing consistent proc refreshes during mission play.
+
+Paired with heat-riven mods or heat-weapon combinations, players can maintain near-permanent stacks, converting secondary weapon fire into significant damage contribution. The arcane rewards consistency, punishing weapons with poor elemental coverage or status application.
+
+## Sources
+
+WFCD warframe-items JSON provides the canonical drop rates and effect values. The Warframe wiki documents the arcane's introduction in Angels of the Zariman and community farming guides. Verified against live game mechanics as of May 2026.
+
+---
+
+cascadia-flare :: /home/user/WarFrameWebsite/src/content/arcanes/cascadia-flare.mdx

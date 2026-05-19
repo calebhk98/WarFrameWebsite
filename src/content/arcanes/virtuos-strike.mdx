@@ -1,0 +1,76 @@
+---
+slug: virtuos-strike
+name: Virtuos Strike
+type: operator
+maxRank: 5
+effect: "On Critical Hit: 20% chance for +[damage]% Critical Damage for 4s."
+perRankStats:
+  - rank: 0
+    stats: { damage: 20 }
+  - rank: 1
+    stats: { damage: 40 }
+  - rank: 2
+    stats: { damage: 60 }
+  - rank: 3
+    stats: { damage: 80 }
+  - rank: 4
+    stats: { damage: 80 }
+  - rank: 5
+    stats: { damage: 80 }
+drops:
+  - source: "The Quills, Instrument"
+    chance: 100
+    note: "Purchased from The Quills vendor with Standing."
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Virtuos_Strike"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Virtuos Strike is an Operator arcane that amplifies the operator's amp damage on critical hits, stacking bonus critical damage for 4 seconds whenever the operator lands a critical shot. The 20% trigger probability means even modest critical-chance amps activate the buff regularly during sustained fire. This arcane transforms operator amp gameplay into a damage-scaling tool, particularly valuable for high-critical-chance amp builds that naturally generate hits rapidly. The bonus critical damage stacks multiplicatively with existing critical multipliers, enabling single operators to output comparable damage to coordinated squad focus fire.
+
+Strike's primary strength lies in its simplicity and reliability: operators with any level of critical stats see consistent damage increases without requiring positional setup or dependency on squad composition. The arcane pairs naturally with critical-focused amp arcanes (Virtuos Shadow) to create multiplier stacking, enabling exponential damage growth across extended eidolon or void-cascade encounters. Even novice operators benefit from Strike due to its passive trigger, making it an accessible endgame tool for developing operator damage profiles.
+
+## Effects per rank
+
+| Rank | Trigger Chance | Critical Damage Bonus | Duration | Notes |
+|------|----------------|----------------------|----------|-------|
+| 0 | 20% | +20% | 4s | Modest damage increase; early-game baseline. |
+| 1 | 20% | +40% | 4s | Doubled bonus from rank 0. |
+| 2 | 20% | +60% | 4s | Practical mid-game damage scaling. |
+| 3 | 20% | +80% | 4s | Strong endgame damage multiplier. |
+| 4 | 20% | +80% | 4s | Caps at 80% bonus; marginal improvement. |
+| 5 | 20% | +80% | 4s | Maximum damage scaling; no further cap increases. |
+
+The 20% proc chance applies per critical hit, meaning operators landing 5 critical shots per second (realistic with high fire-rate amps) trigger the buff nearly every second. Multiple overlapping buffs from sequential critical hits extend the 4-second duration, potentially maintaining permanent uptime during heavy sustained firing. Critical damage stacking works multiplicatively: an amp with 2.0 base critical multiplier gaining +80% bonus reaches 3.6x total multiplier, compounding into significant damage output.
+
+## Acquisition
+
+Virtuos Strike is purchased from The Quills, the Cetus-based operator syndicate faction based in the Plains of Eidolon. Reaching Rank 1 (Instrument) requires approximately 1,500 Standing, making Strike one of the earliest operator arcanes most players obtain. Initial Standing gains come through eidolon captures and bounty completion, placing Strike acquisition within the first few hours of endgame operator progression. Pre-ranked copies trade for 25--40 platinum on player markets, reflecting the arcane's accessibility and entry-level role in operator damage scaling.
+
+The minimal acquisition cost and universal applicability across amp types make Strike a standard first operator damage arcane.
+
+## Best on
+
+High-critical-chance amp builds (1-1-7, 2-1-7 architectures) maximize Strike's trigger frequency and scale exponentially with the damage bonus. Operators running Void Strike focus school gain damage multipliers that compound with Strike's critical bonus, enabling single operators to delete high-health targets. Eidolon-hunting teams employ Strike to enable solo-damage operators to achieve consistent phase transitions without requiring coordinated squad bursts. Zariman void-cascade builds use Strike alongside Void Mode utility arcanes to maintain damage output between CC/healing rotations.
+
+Solo void-fissure operators and damage-focused warframe builds leverage Strike to scale operator damage into a genuine threat tier rather than supplementary chip damage.
+
+## Builds that use it
+
+Eidolon-hunting builds stack Virtuos Strike alongside Virtuos Shadow to layer critical-chance and critical-damage multipliers, enabling solo or two-person squads to complete hunts efficiently. High-DPS amp builds (2-1-7 Madurai focus) employ Strike as the cornerstone damage amplification arcane, maintaining permanent uptime through high fire rates. Zariman endless void-cascade builds use Strike to enable operator phases to contribute meaningful damage during enemy-spawn cycles, preventing operator-heavy gameplay from dragging squad DPS. Solo endgame runs leverage Strike to enable operators to supplement warframe damage during ability-cooldown windows.
+
+## Notes
+
+Virtuos Strike's proc rate of 20% applies independently per critical hit, meaning fire-rate modifiers increase effective trigger frequency. The 4-second buff window refreshes whenever a new critical hit triggers the arcane, potentially maintaining permanent uptime during sustained firing against grouped enemies. Critical damage stacking applies multiplicatively to the amp's base critical multiplier, making high-base-multiplier amps (2.0--2.5x) far more efficient than low-multiplier designs. The buff has no maximum stack count, but overlapping durations reset rather than extend, preventing accidental buff waste.
+
+## Sources
+
+- WFCD warframe-items dataset documents all Virtuos Strike mechanics and critical-hit calculations.
+- Fandom wiki provides eidolon-hunting guides and amp-build recommendations for critical scaling.

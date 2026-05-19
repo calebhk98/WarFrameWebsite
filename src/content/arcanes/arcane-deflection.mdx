@@ -1,0 +1,85 @@
+---
+slug: arcane-deflection
+name: Arcane Deflection
+type: warframe
+maxRank: 3
+effect: "+[chance]% chance to resist a Slash Status effect"
+perRankStats:
+  - rank: 0
+    stats: { chance: 17 }
+  - rank: 1
+    stats: { chance: 25.5 }
+  - rank: 2
+    stats: { chance: 34 }
+  - rank: 3
+    stats: { chance: 50 }
+drops:
+  - source: "Eidolon Teralyst capture"
+    chance: 0.0602
+    note: "Per WFCD drop tables."
+  - source: "Eidolon Hydrolyst (Plains)"
+    chance: 0.0667
+    note: "Per WFCD drop tables."
+  - source: "Zariman Void Skirmish rotation C"
+    chance: 0.0563
+    note: "Per WFCD drop tables."
+  - source: "Duviri Endless Tier 1/3/9"
+    chance: 0.0067
+    note: "Rare legendary drop from Duviri Endless content."
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Deflection"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Arcane Deflection is an uncommon warframe arcane that provides situational defense against slash status effects, a core damage type in endgame enemy arsenals. The 50% proc-resistance chance at maximum rank means half of all incoming slash-triggered status procs are negated, effectively doubling effective health against slash-heavy enemy factions. Unlike universal defense arcanes, Deflection targets a specific threat vector, making it most valuable in missions dominated by slash-damage enemies: Corpus Laser Gunners, Grineer Ancients, and Infested Bombards.
+
+Deflection's primary strength lies in its simplicity and reliability: passive application without energy cost or ability interaction. The arcane provides flat status resistance rather than scaling with frame stats, making it equally effective on glass-cannon and tank-oriented builds. In open-world missions where slash status is unavoidable (Grineer Galleons, Infested Derelicts), Deflection combines with armor-based survival to create layered mitigation against cutting-edge threats.
+
+## Effect
+
+Arcane Deflection activates whenever the warframe would receive a slash status effect. Slash status creates bleeding damage over time, triggering once per hit if the attacker's status chance exceeds the defense threshold. Deflection's resistance chance allows 50% chance (at rank 3) to ignore incoming slash procs completely; triggering Deflection prevents the damage-over-time timer from initializing, negating the full status chain rather than mitigating single ticks.
+
+The status resistance is passive and permanent; unlike temporary buffs, Deflection applies continuously throughout all missions without triggering conditions or cooldowns. Multiple slash status effects hitting simultaneously each receive independent resistance rolls. A Grineer Gunner landing a 5-round burst with 50% status has 2--3 rounds proc slash; Deflection resists roughly half of those (1--2 procs negated on average).
+
+## Stats per rank
+
+| Rank | Slash Resistance Chance | Notes |
+|------|------------------------|-------|
+| 0 | +17% | Low resistance; situational against slash-heavy factions. |
+| 1 | +25.5% | Modest protection against slash-focused enemies. |
+| 2 | +34% | Noticeable reduction in slash status frequency. |
+| 3 | +50% | Maximum resistance; halves effective slash status procs. |
+
+## Acquisition
+
+Arcane Deflection drops primarily from Eidolon Teralyst encounters with roughly 6% drop chance per capture, making it the rarest primary eidolon drop. Consistent tridolon hunters farm Teralysts early-hunt to obtain Deflection within 15--20 farming sessions. Zariman Void Skirmish rotation C offers a 5.6% alternate source at significantly lower difficulty but longer mission duration. Duviri Endless provides rare legendary drops (0.67%) for extreme-difficulty farming routes.
+
+Ranking to tier 3 takes 72 hours of mastering. Deflection's niche utility and moderate drop rate keep trading post prices accessible for players building slash-resistant loadouts.
+
+## Best on
+
+Arcane Deflection excels on low-armor, low-health frames that cannot absorb slash damage through mitigation: Wisp, Saryn, Nova, and ability-focused damage dealers benefit from reducing slash proc frequency. Tank-oriented frames with high armor (Rhino, Valkyr) pair Deflection with armor mods to create compound defenses that layer armor reduction alongside status negation. Frames with limited defensive abilities (Mag, Equinox) gain significant value from passive slash protection, freeing ability slots for offensive tools.
+
+Frames with natural slash resistance (Inaros's Scarab Swarm, Oberon's passive) pair Deflection to achieve quasi-complete immunity to slash status. Conversely, frames with ability-based slash management (Trinity's Link reflecting damage, Limbo's Rift) benefit less because ability-gated solutions already address the threat.
+
+## Builds that use it
+
+Grineer-focused farming builds (Steel Path endless survival, Void Cascade) universally pair Deflection with armor-stacking mods to create layered defense against slash-heavy Grineer arsenals. Squishy ability-spam builds (Saryn, Protea, Ember) use Deflection to enable aggressive positioning without fear of slash procs resetting ability chains. Tank builds pair Deflection with Arcane Guardian and Shield Gating mechanics to create compound defensive layers. Support frames use Deflection to maintain healing ability uptime during slash-heavy encounters.
+
+Hybrid offensive-defensive builds leverage Deflection's passive application to avoid devoting ability slots to defensive tools. Raid-focused teams pair Deflection across multiple frames to distribute slash resistance coverage during slash-heavy boss fights.
+
+## Notes
+
+Arcane Deflection applies exclusively to slash status effects; it does not protect against other status types like toxin, electricity, or impact. Slash proc chance and damage are independent mechanics: Deflection prevents proc application but does not reduce base physical damage. Frames with native slash immunity (Inaros, Wukong with passive armor) gain diminishing returns from Deflection because double-counting resistance creates overhead. Multiple sources of slash resistance (frame passives, mods, Deflection arcane) stack probabilistically rather than additively; extreme combinations approach 100% resistance asymptotically but cannot exceed hard caps.
+
+## Sources
+
+- WFCD warframe-items dataset documents status resistance mechanics and proc resistance percentages.
+- Fandom wiki for Arcane Deflection provides Grineer farming strategies and niche build recommendations.

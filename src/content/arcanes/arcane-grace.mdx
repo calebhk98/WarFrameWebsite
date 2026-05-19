@@ -1,0 +1,78 @@
+---
+slug: arcane-grace
+name: Arcane Grace
+type: warframe
+maxRank: 5
+effect: "On Health Damaged: [chance]% chance for +[regen]% Health Regeneration per second for 9s."
+perRankStats:
+  - rank: 0
+    stats: { chance: 9, regen: 1 }
+  - rank: 1
+    stats: { chance: 9, regen: 2 }
+  - rank: 2
+    stats: { chance: 9, regen: 3 }
+  - rank: 3
+    stats: { chance: 9, regen: 4 }
+  - rank: 4
+    stats: { chance: 9, regen: 5 }
+  - rank: 5
+    stats: { chance: 9, regen: 6 }
+drops:
+  - source: "Eidolon Hydrolyst capture"
+    chance: 5.0
+    note: "Per WFCD drop tables."
+  - source: "Zariman Void Skirmish (rotation C)"
+    chance: 1.41
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Grace"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Arcane Grace is a legendary defensive arcane that provides passive health regeneration whenever the warframe takes damage. Unlike shields that gate incoming damage, Grace offers true healing that scales with the warframe's base health pool. This passive regeneration stacks with other healing sources (Arcane Blessing, Trinity's Blessing, health conversion mods) and triggers frequently enough in combat to provide meaningful damage mitigation through time-based recovery. The arcane is particularly valuable for low-armor, high-health warframes that trade damage reduction for raw survivability.
+
+Grace's primary strength lies in its simplicity and reliability: taking damage is inevitable in endgame content, so the trigger condition activates constantly during extended missions. Unlike Arcane Blessing (which requires active ability usage or ally healing) or Arcane Guardian (which depends on being damaged at the right moment), Grace provides continuous background healing pressure that compounds over longer encounters. This makes it especially effective in endless missions, void fissures, and survival content where consistent healing is more valuable than burst mitigation.
+
+## Effects per rank
+
+| Rank | Trigger Chance | Health Regen | Duration | Notes |
+|------|----------------|--------------|----------|-------|
+| 0 | 9% | +1%/s | 9s | Low trigger rate; minimal regen per second. |
+| 1 | 9% | +2%/s | 9s | Doubled regen output from rank 0. |
+| 2 | 9% | +3%/s | 9s | Continues health regeneration scaling. |
+| 3 | 9% | +4%/s | 9s | Doubled regen from rank 1 value. |
+| 4 | 9% | +5%/s | 9s | +1 Arcane Revive bonus unlocked at rank 3+. |
+| 5 | 9% | +6%/s | 9s | Maximum regeneration per second; +1 Arcane Revive. |
+
+The 9% trigger chance applies per instance of damage taken, not per second. In heavy combat with multiple enemy projectiles or melee hits per second, the arcane procs repeatedly, extending the regeneration timer with each new proc. A warframe with 300 maximum health regenerating at +6%/s gains 18 health per second, compounding when multiple regeneration windows overlap. The effect scales multiplicatively with additional healing sources, making it synergistic with health-conversion builds and squad healers.
+
+## Acquisition
+
+Arcane Grace shares acquisition sources with Arcane Energize: the Eidolon Hydrolyst encounter in the Plains and void skirmish rotation C in the Zariman. Both sources require significant endgame progression and squad capability. The 5% drop chance from Eidolon Hydrolyst capture missions and 1.41% chance from Zariman skirmishes make sustained farming the only practical path to acquisition for most players. Dedicated eidolon teams can realistically farm 10--20 attempts per hour, translating to one Grace every 2--3 hours of grinding with average luck.
+
+Once obtained, Grace is far more accessible to level and install than Energize because it ranks similarly and requires no platinum boost to accelerate. The arcane's status as a pure defensive tool means it remains valuable across all power-level tiers, from new endgame players to veterans, ensuring resale value on the trading post for those who obtain duplicates.
+
+## Best on
+
+Arcane Grace performs best on warframes with health pools exceeding 300 at base rank, where the percentage-based regen becomes meaningful. Oberon, Grendel, Nidus, and Inaros benefit significantly from Grace's constant healing, turning their tank-oriented stat distributions into genuine durability. High-armor tanks like Rhino and Valkyr gain supplementary healing that extends their average time-to-kill in longer engagements. Even fragile damage dealers carrying Grace for survival (Wisp, Volt, Mesa) find the arcane invaluable when kited into dangerous positioning during team-wide objectives.
+
+Warframes with innate health-based defenses (Inaros's Scarab Swarm, Nidus's Mutation stacks) pair exceptionally well with Grace, as the regeneration feeds into their mechanics. Conversely, frames that already posses strong defensive abilities (Limbo's Rift, Frost's Bubble) may deprioritize Grace in favor of offensive or utility arcanes.
+
+## Builds that use it
+
+Endgame survival and defense builds almost always pair Grace with another defensive arcane (Guardian, Aegis, Blessing) to layer mitigation. Steel Path endless survival builds frequently stack two copies of Grace on the warframe plus one on a companion for squad-wide regeneration benefits. Damage-focused builds secondary Grace to survivability, reserving other arcane slots for offensive effects like Fury or Velocity. Support builds leverage Grace as part of a broader healing suite, with Energize and Blessing creating overlapping defensive buffers.
+
+## Notes
+
+The 9% trigger chance and 9-second duration stack probabilistically, meaning in heavy combat the regeneration effect becomes nearly permanent as new procs continuously reset the timer. The health regeneration is a percentage-of-maximum, so warframes with higher health pools gain more absolute healing per tick. Arcane Grace was rebalanced in Update 31.2.0 to increase its base values, making it more viable as a primary defensive arcane rather than a supplementary tool.
+
+## Sources
+
+- WFCD warframe-items dataset documents all drop mechanics and effect scaling for Grace.
+- Fandom wiki for Arcane Grace provides acquisition guides and synergy recommendations from the community.

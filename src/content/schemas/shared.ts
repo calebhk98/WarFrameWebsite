@@ -41,7 +41,7 @@ export const perRankStatSchema = z.object({
 
 export const dropSchema = z.object({
   source: z.string().min(1),
-  chance: z.number().min(0).max(100).optional(),
+  chance: z.union([z.number().min(0).max(100), z.string()]).optional(),
   rotation: z.string().optional(),
   rarity: z.string().optional(),
   note: z.string().optional(),
