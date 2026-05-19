@@ -163,6 +163,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - valkyr-prime :: src/content/warframes/valkyr-prime.mdx
 - vauban :: src/content/warframes/vauban.mdx
 - vauban-prime :: src/content/warframes/vauban-prime.mdx
+- voidrig :: src/content/warframes/voidrig.mdx
+- volt :: src/content/warframes/volt.mdx
+- volt-prime :: src/content/warframes/volt-prime.mdx
+- voruna :: src/content/warframes/voruna.mdx
+- wisp :: src/content/warframes/wisp.mdx
+- wisp-prime :: src/content/warframes/wisp-prime.mdx
+- wukong :: src/content/warframes/wukong.mdx
+- wukong-prime :: src/content/warframes/wukong-prime.mdx
 
 ## done.weapons
 
@@ -379,6 +387,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - valkyr-prime
 - vauban
 - vauban-prime
+- voidrig
+- volt
+- volt-prime
+- voruna
+- wisp
+- wisp-prime
+- wukong
+- wukong-prime
 
 ## verified.weapons
 

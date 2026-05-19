@@ -1,0 +1,79 @@
+{
+  "pass": true,
+  "errors": [],
+  "warnings": [],
+  "checked_at": "2026-05-19T02:57:14Z",
+  "batch": "wave14",
+  "slugs_checked": [
+    {
+      "slug": "voidrig",
+      "errors": 0,
+      "warnings": 0,
+      "word_count": 1362,
+      "status": "pass",
+      "notes": "Necramech (partial WFCD data is normal per AGENTS.md)"
+    },
+    {
+      "slug": "volt",
+      "errors": 0,
+      "warnings": 0,
+      "word_count": 1736,
+      "status": "pass"
+    },
+    {
+      "slug": "volt-prime",
+      "errors": 0,
+      "warnings": 0,
+      "word_count": 1927,
+      "status": "pass"
+    },
+    {
+      "slug": "voruna",
+      "errors": 0,
+      "warnings": 0,
+      "word_count": 2051,
+      "status": "pass"
+    },
+    {
+      "slug": "wisp",
+      "errors": 0,
+      "warnings": 0,
+      "word_count": 1286,
+      "status": "pass"
+    },
+    {
+      "slug": "wisp-prime",
+      "errors": 0,
+      "warnings": 0,
+      "word_count": 2071,
+      "status": "pass"
+    },
+    {
+      "slug": "wukong",
+      "errors": 0,
+      "warnings": 0,
+      "word_count": 2076,
+      "status": "pass"
+    },
+    {
+      "slug": "wukong-prime",
+      "errors": 0,
+      "warnings": 0,
+      "word_count": 1702,
+      "status": "pass"
+    }
+  ],
+  "total_errors": 0,
+  "summary": {
+    "checked": 8,
+    "passed": 8,
+    "failed": 0
+  },
+  "verification_details": {
+    "frontmatter_schema": "passed",
+    "required_sections": "passed",
+    "word_count_floor": "passed (800 minimum for warframes)",
+    "sources_count": "passed (>=2 required)",
+    "headings_case_insensitive": "confirmed"
+  }
+}

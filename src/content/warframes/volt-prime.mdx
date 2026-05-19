@@ -1,0 +1,179 @@
+---
+slug: volt-prime
+name: Volt Prime
+aliases: []
+masteryRank: 0
+health: 270
+shield: 455
+armor: 135
+energy: 200
+sprintSpeed: 1
+passive:
+  name: Spark
+  description: >-
+    Volt generates electrical sparks when sprinting, emitting small jolts that
+    stun nearby enemies.
+abilities:
+  - name: Shock
+    key: "1"
+    energyCost: 25
+    description: >-
+      Launch a voltaic projectile that stuns and damages its target. Electricity
+      chains to nearby enemies, dealing secondary damage and stuns.
+    stats: { damage: 100, range: 25 }
+  - name: Speed
+    key: "2"
+    energyCost: 50
+    description: >-
+      Embody an electric current. Volt and his allies receive a brief movement
+      speed boost and a reload speed buff, increasing overall team mobility.
+    stats: { speed_multiplier: 1.45, reload_boost: 0.3 }
+  - name: Electric Shield
+    key: "3"
+    energyCost: 50
+    description: >-
+      Volt deploys an electric shield that blocks projectiles and reflects
+      damage back to enemies. Allies can also fire through the shield.
+    stats: { duration: 40, range: 8 }
+  - name: Discharge
+    key: "4"
+    energyCost: 100
+    description: >-
+      Volt discharges the electricity that courses through him. The shockwave
+      paralyzes and damages nearby enemies, with edge targets stunned.
+    stats: { damage: 400, range: 20 }
+acquisition:
+  source: "Void Relic farming"
+  blueprintLocations:
+    - "Volt Prime parts drop from void relics (Lith, Meso, Neo, Axi era)"
+  buildTimeHours: 72
+  note: "Volt Prime is a vaulted prime; acquisition requires farming relic drops or trading with other players."
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2015-02-03"
+  vaultedAt: "2023-11-15"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Volt_Prime"
+    accessedAt: "2026-05-19"
+    title: "Volt Prime — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Volt Prime is the primed variant of Volt, the electric-themed Warframe whose speed and electrical prowess make him a cornerstone of both offense and team support. As a prime warframe, Volt Prime boasts superior stats compared to his base variant, with higher shields and health that make him more durable in combat. His kit centers on electrical manipulation: stunning enemies with targeted shocks, granting team-wide speed buffs, deploying defensive shields, and unleashing area-of-effect discharges that paralyze foes. Volt Prime remains popular in corpus-heavy missions, speedrunning, and team compositions that value mobility and crowd control.
+
+Volt Prime's identity lies in his dual role as both an offensive frame and a team enabler. His ability to chain stuns across groups of enemies allows solo play, while Speed makes him invaluable in squad missions for increasing overall team clear speed. Electric Shield provides both personal and ally protection, reflecting projectiles and amplifying damage for allies who shoot through it. Discharge serves as his nuke ability, dealing AoE damage while stunning or paralyzing enemies depending on their distance from the epicenter.
+
+Released on February 3, 2015, Volt Prime entered the game during the second year of Prime releases. The warframe was vaulted on November 15, 2023, making new acquisitions limited to void relic farming or player-to-player trading on the market. His kit has remained largely unchanged since introduction, with minor adjustments to damage scaling and ability interactions over the years.
+
+## Abilities
+
+<AbilityCard
+  name="Shock"
+  key="1"
+  energyCost={25}
+  description="Launch a voltaic projectile that stuns and damages its target. Electricity chains to nearby enemies, dealing secondary damage and stuns."
+/>
+
+Shock is Volt's primary single-target and crowd-control ability. Firing a charged projectile that travels in a straight line, the initial target takes 100 damage and is stunned. More importantly, electricity chains from the primary target to all nearby enemies within approximately 25 meters, dealing secondary damage and applying stuns. This chain-lightning mechanic makes Shock effective against groups despite its low energy cost. The ability's utility scales with enemy density: in compact rooms, a single Shock can paralyze an entire squad. Chaining also benefits from strength mods, allowing a well-modded Volt to delete low-level enemy groups with a single cast.
+
+The projectile travels instantaneously, making it reliable against both stationary and moving targets. Shock synergizes well with Electric Shield by amplifying damage for chained targets or increasing the shield's damage output when enemies stand within its effective range.
+
+<AbilityCard
+  name="Speed"
+  key="2"
+  energyCost={50}
+  description="Embody an electric current. Volt and his allies receive a brief movement speed boost and a reload speed buff, increasing overall team mobility."
+/>
+
+Speed defines Volt Prime's role as a team enabler. Upon activation, Volt and all nearby allies gain a temporary movement speed multiplier of approximately 1.45x and a reload speed increase of roughly 30%. The buff duration is approximately 8 seconds and affects all squadmates within a certain radius, even those out of line of sight. This ability is one of the most valued team utilities in Warframe, enabling fast mission clear times and giving all teammates a significant DPS boost through faster reload cycles.
+
+Speed scales poorly with ability strength mods—the movement multiplier remains constant—but benefits tremendously from ability duration mods, which extend the buff window. A single Speed cast in a void fissure or void cascade mission can shift mission pacing dramatically. The ability's low energy cost (50) allows frequent recast, enabling Volt players to maintain near-permanent team buffs with proper mod investment.
+
+<AbilityCard
+  name="Electric Shield"
+  key="3"
+  energyCost={50}
+  description="Volt deploys an electric shield that blocks projectiles and reflects damage back to enemies. Allies can also fire through the shield."
+/>
+
+Electric Shield is Volt's primary defensive ability and damage amplifier. Upon activation, a hemispherical shield materializes in front of Volt with a duration of approximately 40 seconds and an effective range of roughly 8 meters. The shield blocks all incoming projectiles and automatically reflects them back at enemies with added electrical damage. Allies standing behind or within the shield can shoot through it unimpeded while receiving its protective benefits.
+
+The shield's offensive value emerges when teammates fire through it: bullets and projectiles gain electrical damage on exit, amplifying ally output significantly. This mechanic transforms Electric Shield from a purely defensive tool into a damage multiplier for coordinated squads. The shield persists independently of Volt, allowing him to move away and cast other abilities while maintaining the protection zone. Duration and range both scale with mods, enabling builds that extend shield uptime or increase its protective radius.
+
+<AbilityCard
+  name="Discharge"
+  key="4"
+  energyCost={100}
+  description="Volt discharges the electricity that courses through him. The shockwave paralyzes and damages nearby enemies, with edge targets stunned."
+/>
+
+Discharge is Volt's area-of-effect nuke and panic button. Channeling all his electrical energy outward, Volt damages all enemies within approximately 20 meters and applies a graduated stun: enemies at the center take full damage and are paralyzed (held in place unable to act), while enemies at the shockwave's edge receive reduced damage and a brief stun. The base damage is approximately 400, scaling with strength mods for significant endgame impact.
+
+The ability's 100 energy cost is substantial but manageable with energy economy mods or equipped arcanes. Discharge shines in dense enemy clusters where the AoE covers multiple factions simultaneously. Combined with Shock and Electric Shield, Discharge rounds out Volt Prime's electrical toolkit, ensuring he maintains crowd control across all range bands—single targets with Shock, area denial with Electric Shield, and group clearing with Discharge.
+
+## Passive
+
+Volt's innate passive, Spark, causes him to emit small electrical pulses whenever he sprints. These pulses stun nearby enemies, providing passive crowd control that rewards aggressive movement. While the stun radius is limited, the passive synergizes naturally with Speed, which encourages sprinting across the map. In low-level content, the passive alone can disable weaker enemies, and in higher-level play, it provides cumulative stuns that supplement active abilities.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 270 |
+| Shield | 455 |
+| Armor | 135 |
+| Energy | 200 |
+| Sprint Speed | 1.0x |
+| Mastery Rank | 0 |
+
+Volt Prime's stats represent a significant upgrade over base Volt. With 270 health and 455 shield, he is reasonably durable for a mobility-focused frame but remains below tank-class warframes in raw survivability. The 135 armor provides modest physical reduction (approximately 13% damage reduction). His 200 energy pool is substantial, enabling back-to-back ability casts without mods, though proper energy management becomes crucial in extended missions. A baseline sprint speed of 1.0x is standard across all warframes; Speed increases this to 1.45x.
+
+## Acquisition
+
+Volt Prime is a vaulted prime warframe, meaning Digital Extremes no longer issues new relics containing his parts. Acquisition requires one of three paths:
+
+1. **Void relic farming** — Players who still possess unvaulted Volt Prime relics can farm fissure missions to open them and obtain his components. This path is increasingly limited as fewer relics remain in circulation.
+2. **Void trader rotation** — Occasionally, Baro Ki'Teer may offer vaulted prime parts in his rotation during void fissure weekends. This is the most reliable periodic source for vaulted frames.
+3. **Player trading** — Purchasing Volt Prime blueprints or components from other players via warframe.market or direct trade is the most practical method post-vault.
+
+Once obtained, crafting Volt Prime requires 72 hours in the foundry after assembling all components (chassis, neuroptics, systems) and a blueprint from a void relic or alternate source.
+
+## Playstyle
+
+Volt Prime's playstyle divides into two modes: aggressive standalone play and supportive squad play. In solo missions, Volt functions as a self-sufficient burst-damage frame leveraging Shock chains and Discharge for crowd control while Electric Shield provides personal defense and damage amplification. A solo Volt player prioritizes strength mods to maximize Shock chain damage and Discharge AoE, allowing ability damage alone to clear rooms.
+
+In squad missions, Volt Prime's role shifts toward enablement. A squad-focused build sacrifices some personal damage output in exchange for maximizing Speed duration and uptime, ensuring the team benefits from near-permanent movement and reload buffs. Speed becomes the frame's primary contribution, while Shock chains and Discharge handle incidental crowd control. Electric Shield gains utility as a team damage amplifier rather than personal protection, with coordinated teammates positioning to fire through it for increased output.
+
+A balanced mid-game Volt build incorporates moderate strength, duration, and range, enabling him to function as both a personal DPS frame and team support. Popular mods include Intensify and Umbral Intensify for strength, Primed Continuity or Augur Message for duration, and Stretch or Augur Reach for range. Streamline or Fleeting Expertise manage energy costs, while Augur Secrets or other efficiency mods ensure sustained ability cycling. Builds for endless missions often prioritize range and duration to maximize Electric Shield effectiveness and ensure Speed covers the entire squad.
+
+Volt Prime excels in missions with dense enemy spawns—void cascades, void fissure defense, and corpus-heavy nodes benefit from his chain stuns and AoE. His speed utility makes him invaluable for timed missions and void cascade ranking, where faster completion yields better rewards. Against spread-out enemies or boss-heavy content, Volt's effectiveness diminishes as his crowd control and damage abilities struggle to impact single targets reliably.
+
+## Builds
+
+Volt Prime's flexibility enables multiple viable builds across mission types. A **speed-support build** maximizes Duration and Range while maintaining moderate Strength, allowing Speed to persist for 16+ seconds and cover the entire squad. This build prioritizes warframe ability efficiency mods like Streamline and Primed Continuity, enabling frequent casts without energy starvation. The mod layout typically features Corrosive Projection or Energy Siphon as aura, Intensify and Transient Fortitude for strength, Primed Continuity and Augur Message for duration, and Stretch for range.
+
+A **damage-focused build** inverts priorities, stacking Strength and Range to maximize Shock chain damage and Discharge AoE. This build excels in void fissure void cascades where rapid group clearing is valued. Mods include Blind Rage for strength (accepting the efficiency penalty), Augur Reach and Stretch for range, and Fleeting Expertise for energy management. Electric Shield gains utility as a damage amplifier rather than defense tool.
+
+An **Electric Shield amplification build** prioritizes range and duration on Electric Shield specifically, maximizing the damage boost allies receive when firing through the shield. This support-heavy build is less common but valuable in squad compositions featuring high-damage teammates like Saryn or Mesa who can exploit the shield's amplification. Mods include Overextended for range, Primed Continuity for duration, and Augur Message for supplemental benefit.
+
+## Lore
+
+Volt Prime is the ancient predecessor to the modern Volt warframe, built by the Orokin during the height of their civilization. Like all prime warframes, Volt Prime represents the pinnacle of Orokin biotech, engineered with superior materials and refined systems compared to his non-prime counterpart. His electrical prowess stems from Orokin nanotechnology that harnesses controlled electrical energy, allowing him to generate devastating electrical discharges and share mobility enhancements with allies.
+
+The Orokin created Volt Prime as both an offensive tool for their wars and a symbol of their dominion over natural forces. His abilities reflect Orokin philosophy: mastery over electricity mirrors mastery over life itself, with the capacity to accelerate movement suggesting dominion over time and momentum. After the Orokin's fall, the Tenno discovered Volt Prime relics within the void, and he entered the Prime Vault upon the release of newer prime warframes, eventually being sealed away in November 2023.
+
+Narratively, Volt Prime embodies the gap between Orokin technology and post-Collapse craftsmanship. His superior stats and refined abilities reflect the civilization that created him, while base Volt represents modern humanity's attempt to reverse-engineer prime power. Players who wield Volt Prime effectively command a piece of Orokin legacy, channeling electrical force and team-binding mobility that would have shaped the Old War itself.
+
+## Sources
+
+1. **WFCD warframe-items** — [https://github.com/WFCD/warframe-items](https://github.com/WFCD/warframe-items), accessed 2026-05-19. Primary source for all numeric stats including health, shield, armor, energy, and ability base values.
+
+2. **WARFRAME Wiki** — [https://warframe.fandom.com/wiki/Volt_Prime](https://warframe.fandom.com/wiki/Volt_Prime), accessed 2026-05-19. Secondary source for narrative context, acquisition details, and ability mechanic confirmation.
