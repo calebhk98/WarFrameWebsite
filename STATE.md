@@ -123,6 +123,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - loki :: src/content/warframes/loki.mdx
 - loki-prime :: src/content/warframes/loki-prime.mdx
 - mag :: src/content/warframes/mag.mdx
+- mag-prime :: src/content/warframes/mag-prime.mdx
+- mesa :: src/content/warframes/mesa.mdx
+- mesa-prime :: src/content/warframes/mesa-prime.mdx
+- mirage :: src/content/warframes/mirage.mdx
+- mirage-prime :: src/content/warframes/mirage-prime.mdx
+- nekros :: src/content/warframes/nekros.mdx
+- nekros-prime :: src/content/warframes/nekros-prime.mdx
+- nezha :: src/content/warframes/nezha.mdx
 
 ## done.weapons
 
@@ -299,6 +307,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - loki
 - loki-prime
 - mag
+- mag-prime
+- mesa
+- mesa-prime
+- mirage
+- mirage-prime
+- nekros
+- nekros-prime
+- nezha
 
 ## verified.weapons
 

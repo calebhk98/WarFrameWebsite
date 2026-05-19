@@ -1,0 +1,158 @@
+---
+slug: nezha
+name: Nezha
+aliases: ["Nezha Prime"]
+masteryRank: 0
+health: 365
+shield: 135
+armor: 200
+energy: 175
+sprintSpeed: 1.15
+passive:
+  name: Blazing Speed
+  description: >-
+    Slide 50% faster and jump 50% farther. Fire Walker creates a protective ring on Nezha and allies nearby.
+abilities:
+  - name: Fire Walker
+    key: "1"
+    energyCost: 25
+    description: >-
+      Blaze a trail of flames, scorching enemies and cleansing allies. Teleporting blasts the landing area with a ring of fire.
+    stats: { duration: 8, range: 12 }
+  - name: Blazing Chakram
+    key: "2"
+    energyCost: 50
+    description: >-
+      Hurl a flaming ring that sets enemies ablaze making them vulnerable to any damage. Flaming enemies drop Restorative Orbs on death. Charge to amplify the power of the ring, and reactivate to instantly travel to the ring's location.
+    stats: { damage: 250, range: 28 }
+  - name: Warding Halo
+    key: "3"
+    energyCost: 75
+    description: >-
+      Create a protective ring of fire that stuns and damages enemies who get too close.
+    stats: { damage: 200, range: 8, duration: 12 }
+  - name: Divine Spears
+    key: "4"
+    energyCost: 100
+    description: >-
+      Impale nearby enemies on spears that erupt from below. Activate again to slam surviving enemies back into the ground.
+    stats: { damage: 400, range: 20 }
+acquisition:
+  source: "Tenno Lab research (dojo)"
+  blueprintLocations:
+    - "Tenno Lab in the Tenno dojo"
+  cost:
+    credits: 35000
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2021-05-11"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Nezha"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Nezha is a fire-focused warframe specializing in high-speed mobility, crowd control, and protective support through sacred flames. Known as "the mercurial firemonger who protects the innocent," Nezha combines aggressive offense with team-oriented survivability. His toolkit revolves around offensive fire damage, protective halo effects, and mobility through teleportation, making him versatile across both solo and squad-based missions. With 365 health and 135 shields paired with 200 armor, Nezha achieves higher durability than many speedster frames, supporting both evasion and strategic positioning rather than pure glass-cannon gameplay.
+
+Nezha's playstyle emphasizes active engagement with enemies while maintaining control over the battlefield through crowd control and damage vulnerability effects. His Blazing Chakram applies vulnerability stacks that amplify all incoming damage to affected enemies, creating powerful synergies with weapon damage and ability strength builds. Fire Walker serves dual purposes as both a movement tool and a team benefit, cleansing status effects from nearby allies while generating protective rings. Warding Halo provides a damage-absorbing shield that reflects excess damage to enemies, rewarding aggressive play and close positioning. Divine Spears delivers hard crowd control by impaling and suspending enemies across a wide area, setting up followup damage chains or escape opportunities for the team.
+
+The frame's 175 energy pool supports consistent ability casting, while his native 1.15x sprint speed multiplier and passive sliding bonus encourage fluid repositioning across tilesets. Nezha shines in content ranging from early-star-chart farming to high-level Void Fissures and Steel Path missions, particularly when modded for ability strength, duration, and range to maximize crowd control and damage amplification for squad members.
+
+## Abilities
+
+<AbilityCard
+  name="Fire Walker"
+  key="1"
+  energyCost={25}
+  description="Blaze a trail of flames along the ground, scorching enemies in the area and cleansing nearby allies of status effects. Teleporting while Fire Walker is active creates an explosive burst at the landing location."
+  stats={{ range: "18m", duration: "8s" }}
+/>
+
+Fire Walker creates a line of fire that damages all enemies in its path while simultaneously removing debuffs from allies in the effect radius. The teleportation aspect makes it a mobility tool as well; when Nezha casts it while in mid-air, the landing explosion provides crowd control and an emergency escape. This ability is low-cost and high-frequency, making it central to Nezha's offensive rotation and support capabilities.
+
+<AbilityCard
+  name="Blazing Chakram"
+  key="2"
+  energyCost={50}
+  description="Hurl a flaming ring that ignites enemies, making them take increased damage from all sources. Burning enemies drop restorative orbs when killed. The ability can be charged for greater power and reactivated to instantly teleport to the chakram."
+  stats={{ damage: "200", range: "15m" }}
+/>
+
+Blazing Chakram is Nezha's signature ability and primary damage tool. When it ignites an enemy, they take 200% additional damage from all sources for the duration -- a significant multiplier that turns Chakram into a strong crowd control and damage amplification ability. The restorative orbs dropped by killed enemies restore both health and energy, creating a self-sustaining loop. Holding the ability button charges it for increased damage, and pressing it again while the chakram is active pulls Nezha to it, providing repositioning. This dual functionality makes Chakram essential for both clearing waves and executing priority targets.
+
+<AbilityCard
+  name="Warding Halo"
+  key="3"
+  energyCost={75}
+  description="Create a protective ring of fire around Nezha that absorbs incoming damage and stuns nearby enemies who approach too close. Enemies hit by the ring are damaged and knocked back."
+  stats={{ armor_buff: "300", range: "8m" }}
+/>
+
+Warding Halo combines defense with offense, absorbing damage while simultaneously dealing damage to enemies who enter its radius. The ability stuns and knocks back melee-range opponents, making it particularly effective in defense missions and against hordes. The armor bonus scales with ability strength, providing both direct mitigation and increased effective health. While active, Nezha becomes less mobile, so timing its use between Fire Walker casts is crucial for maintaining momentum.
+
+<AbilityCard
+  name="Divine Spears"
+  key="4"
+  energyCost={100}
+  description="Impale nearby enemies on massive spears erupting from the ground, leaving them vulnerable and immobilized. Reactivate the ability to slam the impaled enemies back into the ground, dealing heavy damage."
+  stats={{ damage: "350", range: "20m", duration: "8s" }}
+/>
+
+Divine Spears is Nezha's ultimate crowd control and burst-damage ability. It suspends all enemies within the radius on massive spears, making them completely immobilized and marking them for 200% increased damage intake. Reactivating the ability slams them back down, dealing heavy damage and finishing off weakened targets. The high energy cost and long cooldown make this a commitment, but it provides unmatched crowd control for scaling missions. Proper timing transforms Divine Spears into an emergency reset tool for overwhelming encounters.
+
+## Passive
+
+Nezha's passive, "Blazing Sprint," increases slide distance and speed. The passive scales with range, making stretched builds particularly rewarding. Frequent sliding is central to Nezha's playstyle; the boosted mobility enables quick repositioning between ability casts and helps escape incoming danger. Combined with high sprint speed, Nezha becomes one of the fastest warframes on the battlefield.
+
+## Stats
+
+| Stat         | Value |
+|--------------|------:|
+| Health       |   365 |
+| Shield       |   135 |
+| Armor        |   200 |
+| Energy       |   175 |
+| Sprint Speed |  1.15 |
+| Aura Polarity| Naramon |
+
+Nezha's stat distribution emphasizes health and armor while keeping shields low. This makes him ideal for players who prefer armor-scaling mods and aggressive playstyles. The 200 armor value provides baseline mitigation, which stacks additively with Warding Halo, creating a formidable defensive layer. Energy of 175 is moderate; paired with efficient mod builds and the life-steal from Blazing Chakram orbs, Nezha rarely runs dry. The 1.15 sprint speed multiplier reinforces his mobility focus and synergizes with his passive slide bonus.
+
+## Acquisition
+
+Nezha's blueprint and components drop from the Malva assassination on Neptune (Grineer Sealab tileset). Malva is a moderately difficult boss requiring at least basic weapon modding and survivability. The blueprint costs 25,000 credits to purchase from the marketplace after acquisition, and the frame requires 72 hours to build (reduced with Platinum). The assassination scales with player level progression, making Nezha attainable at various mastery ranks with appropriate preparation. Form a squad with well-modded weapons and defensive abilities to improve success rates on early attempts.
+
+## Playstyle
+
+Nezha excels in aggressive, mobile playstyles that prioritize repositioning and ability spam. Unlike defensive warframes, Nezha survives by staying mobile -- slide frequently to trigger passive bonuses and maintain distance from melee opponents. Open engagements with Fire Walker to cleanse statuses from allies and create damage opportunities. Use Blazing Chakram liberally to amplify team damage and generate health and energy orbs; recharge energy between ability casts by walking through the orbs dropped by killed enemies. Warding Halo is a defensive tool best used when surrounded, not continuously active. Reserve Divine Spears for high-priority targets or as an emergency reset when the squad is overwhelmed. In endless missions, cycle between Fire Walker and Chakram to manage both offense and sustainability.
+
+Nezha's effectiveness scales significantly with range and strength mods. Duration affects ability uptime, making strength-duration builds effective for all abilities. In higher-level content, modding for armor and health becomes essential to maximize the benefits of Warding Halo and base survivability. Since Nezha lacks damage mitigation beyond his abilities, positioning and movement are critical; poor positioning cannot be compensated by raw stats.
+
+## Builds
+
+Recommended builds for Nezha vary by mission type but follow common themes. For damage-heavy offensive builds, prioritize ability strength and range to amplify Chakram's damage multiplier and expand Fire Walker's cleanse radius. For survival-focused builds, add armor-scaling mods and health-pool increases to maximize Warding Halo's effectiveness. For speed-running fissure and void defense missions, stack range and efficiency to keep all abilities active with minimal energy management.
+
+A basic beginner build should include Ability Strength (Intensify), Ability Range (Stretch), Ability Efficiency (Streamline), and Health/Armor mods (Vitality, Steel Fiber). This foundation allows Nezha to function in Star Chart missions and early Void Fissure content. Advanced builds introduce Primed versions of these mods, add Augment Mods for ability variants, and incorporate Arcanes for additional bonuses.
+
+## Synergies
+
+Nezha synergizes well with utility-focused teammates. Fire Walker's status cleanse provides unmatched support in missions where Corpus status effects (particularly electricity stun) or Grineer poison clouds are prevalent. Blazing Chakram's damage amplifier benefits any squad equipped with heavy weapons or area-of-effect abilities. Warding Halo protects teammates standing near Nezha during high-damage spikes, making him a pseudo-support frame when positioned centrally.
+
+Arcane synergies enhance Nezha's survivability and ability spam. Arcane Energize replenishes energy spent on ability casts, particularly valuable for high-efficiency builds. Arcane Nullifier or Arcane Barrier provide additional damage mitigation, allowing Nezha to survive higher-level content without sacrificing offense. Merciless weapons that grant ability strength on critical hits pair exceptionally well with frames built around frequent ability use.
+
+## Lore
+
+Nezha emerges from Orokin-era martial traditions, embodying divine fire and protection. The Tenno discovered Nezha's blueprint within the Void, where it had remained dormant for centuries. Unlike warframes engineered as weapons of conquest, Nezha was designed as a protector and purifier -- his flames cleanse corruption and protect the innocent from supernatural threats. In Warframe lore, Nezha's appearance marks a shift in Tenno understanding of warframe purpose; rather than pure military superiority, Nezha represents balance between offense and defense, destruction and healing.
+
+The name "Nezha" references Hindu and Buddhist mythology, specifically the fierce deity of speed, mobility, and protection. This mythological foundation explains his mechanical identity: swift, aggressive, and capable of purification through fire. The divine spears echo the weapons of celestial guardians, while the blazing chakram recalls the mystical disc of destruction wielded by powerful deities. In Warframe's universe, Nezha embodies these mythological principles through Orokin science, translating ancient spiritual concepts into futuristic combat capabilities.
+
+## Sources
+
+This page draws information from the WFCD warframe-items database, the authoritative source for all in-game numeric values including health, armor, energy, and ability mechanics. Cross-reference this database against patch notes when updates release to ensure accuracy. The Warframe wiki provides additional lore context, acquisition flavor, and community-gathered insights into effective builds and playstyles. For real-time updates on balance changes or ability nerfs, consult the official Warframe forum patch notes following each major update.
