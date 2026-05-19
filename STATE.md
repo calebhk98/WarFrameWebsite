@@ -13,8 +13,8 @@ warframes: 0
 weapons: 0
 mods: 0
 quests: 42
-factions: 2
-syndicates: 0
+factions: 12
+syndicates: 18
 relics: 0
 arcanes: 0
 missions: 0
@@ -117,9 +117,36 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 
 ## done.factions
 - acolytes :: src/content/factions/acolytes.mdx
+- amalgam :: src/content/factions/amalgam.mdx
+- cephalon :: src/content/factions/cephalon.mdx
+- corpus :: src/content/factions/corpus.mdx
+- corrupted :: src/content/factions/corrupted.mdx
+- entrati :: src/content/factions/entrati.mdx
+- grineer :: src/content/factions/grineer.mdx
+- holdfasts :: src/content/factions/holdfasts.mdx
+- infested :: src/content/factions/infested.mdx
+- kuva-lich :: src/content/factions/kuva-lich.mdx
+- lotus :: src/content/factions/lotus.mdx
 - murmur :: src/content/factions/murmur.mdx
-
 ## done.syndicates
+- arbiters-of-hexis :: src/content/syndicates/arbiters-of-hexis.mdx
+- cephalon-simaris :: src/content/syndicates/cephalon-simaris.mdx
+- cephalon-suda :: src/content/syndicates/cephalon-suda.mdx
+- conclave :: src/content/syndicates/conclave.mdx
+- entrati :: src/content/syndicates/entrati.mdx
+- holdfasts :: src/content/syndicates/holdfasts.mdx
+- kahls-garrison :: src/content/syndicates/kahls-garrison.mdx
+- necraloid :: src/content/syndicates/necraloid.mdx
+- new-loka :: src/content/syndicates/new-loka.mdx
+- nightwave :: src/content/syndicates/nightwave.mdx
+- ostron :: src/content/syndicates/ostron.mdx
+- perrin-sequence :: src/content/syndicates/perrin-sequence.mdx
+- red-veil :: src/content/syndicates/red-veil.mdx
+- solaris-united :: src/content/syndicates/solaris-united.mdx
+- steel-meridian :: src/content/syndicates/steel-meridian.mdx
+- the-hex :: src/content/syndicates/the-hex.mdx
+- vent-kids :: src/content/syndicates/vent-kids.mdx
+- vox-solaris :: src/content/syndicates/vox-solaris.mdx
 
 ## done.relics
 
