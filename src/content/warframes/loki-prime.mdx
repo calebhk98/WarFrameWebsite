@@ -1,0 +1,203 @@
+---
+slug: loki-prime
+name: Loki Prime
+aliases: []
+masteryRank: 0
+health: 180
+shield: 180
+armor: 135
+energy: 215
+sprintSpeed: 1.25
+passive:
+  name: Teleport Evasion
+  description: >-
+    Loki automatically performs a brief teleport dodge when hit, repositioning himself
+    away from incoming damage and creating confusion among nearby enemies.
+abilities:
+  - name: Decoy
+    key: "1"
+    energyCost: 25
+    description: >-
+      Loki deploys a holographic copy of himself that draws enemy fire and absorbs
+      damage. The decoy remains active until destroyed or dismissed, making it invaluable
+      for crowd control and distraction.
+    stats: { duration: 30, range: 20 }
+  - name: Invisibility
+    key: "2"
+    energyCost: 50
+    description: >-
+      Loki camouflages himself, becoming invisible to enemies for a duration. While
+      invisible, Loki can move undetected and gain a damage bonus on his next attack,
+      making it ideal for stealth gameplay and burst damage.
+    stats: { duration: 8, power_strength: "varies by rank" }
+  - name: Switch Teleport
+    key: "3"
+    energyCost: 50
+    description: >-
+      Loki instantaneously swaps positions with a target, confusing the enemy and teleporting
+      the enemy to his former location. This ability is excellent for repositioning,
+      separating threats, and creating chaos in enemy formations.
+    stats: { range: 25, duration: 2 }
+  - name: Radial Disarm
+    key: "4"
+    energyCost: 100
+    description: >-
+      Loki lets forth a wave of energy, disrupting the projectile weapons of enemies
+      in range and forcing them to revert to melee combat. Affected enemies suffer reduced
+      damage output, making this ability devastating for survival missions.
+    stats: { range: 35, disarm_duration: 20 }
+acquisition:
+  source: "Void Fissure missions (relic farming) or Trade with other players"
+  blueprintLocations:
+    - "Axi S2 Relic (Radiant refinement) — Blueprint"
+    - "Axi L1 Relic (Radiant refinement) — Chassis"
+    - "Axi L1 Relic (Radiant refinement) — Neuroptics"
+  cost:
+    credits: 25000
+    platinum: 370
+  buildTimeHours: 72
+  note: "Prime variant requires farming void fissures for relic drops. The blueprint is most commonly found in Axi relics at higher refinement tiers."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2016-11-29"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Loki"
+    accessedAt: "2026-05-19"
+    title: "Loki — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Loki Prime is the primed variant of Loki, one of Warframe's most iconic stealth and crowd-control frames. As a master of deception and misdirection, Loki Prime excels at confusing enemies, creating openings for the squad, and enabling solo players to bypass entire enemy groups. The prime variant benefits from enhanced base stats compared to its standard counterpart, offering superior survivability while maintaining the core trickster gameplay that defines the frame. Loki Prime remains a staple choice for players seeking a balanced combination of mobility, survivability, and utility across all mission types.
+
+Introduced in Update 20, Loki Prime received a significant rework in 2024 that modernized his kit and gameplay. The rework maintained his identity as a deception specialist while improving synergies with contemporary mods and playstyles. His abilities now scale more effectively with power strength and range, making him viable at endgame levels of play without requiring niche farming strategies.
+
+## Abilities
+
+<AbilityCard
+  name="Decoy"
+  key="1"
+  energyCost={25}
+  description="Loki deploys a holographic copy of himself that draws enemy fire and absorbs damage. The decoy remains active until destroyed or dismissed, making it invaluable for crowd control and distraction."
+/>
+
+Decoy is Loki's foundation ability, serving as both a defensive tool and an offensive utility power. The decoy inherits a percentage of Loki's armor, health, and shields, scaling with power strength mods. It taunts nearby enemies, forcing them to focus fire on the copy rather than Loki or his team. This ability is particularly effective in corpus missions where ranged enemies cluster tightly. Advanced players use Decoy in combination with Invisibility to set up burst-damage windows, or deploy multiple decoys by managing their durations with strategic ability usage.
+
+The decoy can be terminated early by recasting the ability, allowing flexible cooldown management. In survival missions, decoys serve as damage sinks that extend the squad's effective durability without requiring heavy tankiness on Loki himself.
+
+<AbilityCard
+  name="Invisibility"
+  key="2"
+  energyCost={50}
+  description="Loki camouflages himself, becoming invisible to enemies for a duration. While invisible, Loki can move undetected and gain a damage bonus on his next attack, making it ideal for stealth gameplay and burst damage."
+/>
+
+Invisibility transforms Loki into a ghost, allowing him to move through enemy lines undetected and set up perfect positioning before engaging. The ability grants a substantial damage bonus (scalable with power strength) on the first attack after invisibility wears off, incentivizing hit-and-run tactics. Unlike some stealth frames, Loki can maintain offensive momentum while invisible, attacking objectives or casting other abilities without breaking invisibility—critical for mobility in timed missions.
+
+The duration scales with ability duration mods, allowing builds to extend the effect far beyond the base 8 seconds. In higher-level content, Invisibility serves as an emergency "reset" button when surrounded; players can duck out of sight, reposition, and re-engage from advantage. Its low energy cost relative to other abilities makes it spammable in extended missions.
+
+<AbilityCard
+  name="Switch Teleport"
+  key="3"
+  energyCost={50}
+  description="Loki instantaneously swaps positions with a target, confusing the enemy and teleporting the enemy to his former location. This ability is excellent for repositioning, separating threats, and creating chaos in enemy formations."
+/>
+
+Switch Teleport is the signature ability that defines Loki's playstyle in group missions. Loki instantly swaps places with a target enemy or ally, making it a game-changer for both mobility and crowd control. When used on an enemy, the target is teleported to Loki's previous location (often surrounded by other enemies or in a bad position), creating confusion and breaking enemy formations.
+
+Against tough units like Bombards or Heavy Gunners, Switch Teleport allows Loki to displace the threat away from his squad, turning a dangerous enemy into a distant problem. The ability has a short cooldown and reasonable range, enabling rapid repositioning in chaotic missions. In escort missions, Switch Teleport can pull allies out of danger instantly. The post-2024 rework improved range scaling, making it viable to teleport distant targets, and reduced cooldown penalties, allowing faster ability chains.
+
+<AbilityCard
+  name="Radial Disarm"
+  key="4"
+  energyCost={100}
+  description="Loki lets forth a wave of energy, disrupting the projectile weapons of enemies in range and forcing them to revert to melee combat. Affected enemies suffer reduced damage output, making this ability devastating for survival missions."
+/>
+
+Radial Disarm is Loki's ultimate ability and arguably one of the most powerful crowd-control tools in Warframe. A massive wave of energy emanates from Loki, stripping all ranged weapons from enemies in its radius and forcing them to rely on melee attacks. Disarmed enemies deal significantly less damage, providing squad-wide damage reduction without requiring heavy defensive mods.
+
+The ability's effectiveness scales with range mods, allowing builds to disarm entire tilesets worth of enemies. In endless missions like survival or defense, Radial Disarm allows Loki to trivialize threat levels that would overwhelm other frames; squads can camp a single room knowing that all incoming projectiles are neutralized. The 100-energy cost is offset by its extreme utility and the safety net it provides the entire team. The post-2024 rework increased the duration and ensured consistent re-disarm application when ability efficiency is high, making it an endgame-viable tool.
+
+## Passive
+
+Loki's passive ability, Teleport Evasion, grants automatic dodge responses when hit. Taking damage triggers a brief teleport that repositions Loki away from threats, providing innate survivability without requiring mod investment. This passive procs while taking unmitigated damage, making it particularly valuable in high-level content where shields and armor alone cannot absorb all incoming hits. The evasion creates small windows for repositioning and builds synergy with his mobility abilities, reinforcing Loki's identity as a frame that avoids damage through movement rather than absorption.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 180 |
+| Shield | 180 |
+| Armor | 135 |
+| Energy | 215 |
+| Sprint Speed | 1.25x |
+| Mastery Rank | 0 |
+| Aura Polarity | Naramon |
+
+Loki Prime's stat allocation emphasizes balanced survivability with a focus on energy capacity. The high energy pool (215) supports ability spam playstyles, allowing players to chain Invisibility, Decoy, and Switch Teleport without frequent downtime. The modest armor (135) and shield (180) values mean Loki cannot outlast heavy fire; instead, survivability comes from the frame's evasion and crowd-control abilities. The sprint speed multiplier of 1.25x makes Loki slightly faster than the baseline, aiding his hit-and-run playstyle.
+
+The Naramon aura polarity supports melee-focused builds through damage and crit-stacking mods, though many players opt for Exilus polarities to gain flexibility in utility slot choices.
+
+## Acquisition
+
+Loki Prime is obtained through void fissure farming and relics. The three main components—blueprint, chassis, and neuroptics—drop from different Axi-tier relics at varying refinement levels:
+
+- **Axi S2 Relic** (Loki Prime Blueprint, Uncommon)
+- **Axi L1 Relic** (Loki Prime Chassis, Uncommon)
+- **Axi L1 Relic** (Loki Prime Neuroptics, Uncommon)
+
+All three parts are available at Radiant refinement, though they also drop at lower tiers with reduced probability. Players must farm multiple void fissure missions and refine relics through void trace spending to obtain all components. Once all parts are farmed, the blueprint can be built in the foundry for 25,000 credits over 72 hours, then combined with the two components to assemble the complete frame.
+
+For players unwilling to farm relics, Loki Prime components are tradeable and frequently available on warframe.market through player-to-player trading at variable platinum prices depending on market demand and part rarity at the time.
+
+## Playstyle
+
+Loki Prime is a frame built around deception, misdirection, and calculated aggression. His playstyle rewards positioning, ability management, and timing rather than raw damage or tankiness. In squad missions, Loki's primary role is to enable the team through crowd control and threat displacement; Decoy distracts dangerous enemies, Switch Teleport isolates priority targets, and Radial Disarm strips ranged threats. This allows teammates to operate in safer conditions and deal consistent damage without interruption.
+
+In solo play, Loki becomes a surgical operator capable of bypassing entire rooms. Invisibility allows him to walk through enemy lines, set C-rotation void fissures solo by staying out of combat, or assassinate key targets (Nullifier anchors, Bombards) before alarms escalate. Decoy deployments create space to revive allies or hack objectives without interruption. The mobility provided by Switch Teleport and Sprint Speed enables rapid void fissure rotations and parkour-based movement in tileset vertical spaces.
+
+Loki Prime struggles in pure survivorship comparisons against tanky frames like Rhino or Nezha, but excels when players leverage his abilities to avoid damage rather than absorb it. His effectiveness scales dramatically with player knowledge of enemy spawns, movement patterns, and ability synergies. The post-2024 rework removed some mobility roadblocks (Switch Teleport range has improved dramatically), making it easier for newer players to succeed while maintaining ceiling-level effectiveness for veterans.
+
+## Builds
+
+Loki Prime supports multiple distinct builds depending on mission context:
+
+### Control Loki
+
+This build maximizes range and duration to create a walking crowd-control zone. Overextend and Augur Reach push Radial Disarm's radius to 50+ meters, while Primed Continuity and Augur Mod extend ability durations. Ability Efficiency is secondary; the goal is to disarm entire tilesets and keep Decoy active as a permanent distraction. This build is ideal for survival and defense missions where sustained crowd control prevents threats from escalating.
+
+### Invisible Assassin
+
+A duration and strength build that maximizes Invisibility uptime and next-hit damage bonus. Primed Flow enables spammable Invisibility, Fleeting Expertise and Blind Rage provide moderate efficiency and strength, and augment mods like Hushed Invisibility suppress the audio cue enemies hear when Loki engages. This build excels in spy missions (no alarms if you remain invisible), assassination targets (guaranteed burst damage window), and high-level corpus sorties where ranged enemies cluster tightly.
+
+### Support Disarm
+
+Focuses purely on Radial Disarm optimization. High efficiency (80%+ through Streamline and Primed Continuity) allows rapid re-disarm when cooldowns reset, effectively keeping enemies perpetually disarmed. Low power strength is acceptable because disarm duration scales with range, not ability strength. This build enables the squad to farm Steel Path and endless void fissures by neutralizing ranged threats entirely.
+
+All builds prioritize the Naramon aura slot for Corrosive Projection to strip enemy armor, synergizing with team damage scaling. Exilus builds substitute utility mods like Temporal Anchor or Power Drift depending on the squad composition.
+
+## Synergies
+
+Loki Prime's abilities synergize strongly with weapon-agnostic and mobility-focused mods. High-duration Invisible builds pair with weapons like the Kuva Bramma or Zariman that benefit from guaranteed crits on the first shot after invisibility breaks. Decoy builds scale with any mod that triggers on ability cast, such as Aura Mods like Coaction Drift. Switch Teleport gains utility from weapons like Atomos or Glaive that apply status effects on impact, since teleporting enemies into the status cloud (and your teammates) applies damage scaling.
+
+Loki Prime teams exceptionally well with Trinity for energy support, Volt for speed and damage buffs, and Limbo for complementary crowd control. Radial Disarm's strength multiplies when paired with frames that benefit from disabled enemies, like Khora (whose whip does more damage to defenseless targets) or Mirage (who benefits from crowd-control uptime to maintain momentum).
+
+## Lore
+
+Loki Prime is the primed, ancient variant of the trickster warframe Loki, one of the original Void-touched warriors awoken by the Lotus. The lore surrounding Loki is sparse in official canon; he is depicted as a master of deception and stealth, embodying the Tenno principle of precision and evasion over brute force. The Orokin designed the Warframes as perfect killing machines, and Loki's emphasis on misdirection and confusion represents an evolution of combat philosophy focused on mental disruption and tactical advantage.
+
+The "Prime" designation indicates that this is a relic from the Orokin era before the Old War. Loki Prime was vaulted for several years but returned to public relics, making him accessible to new players as well as veterans. The frame carries the aesthetic hallmarks of Orokin craftsmanship: sleek, asymmetrical armor plating and a color scheme emphasizing gold and dark tones that suggest both nobility and danger.
+
+In the broader Warframe narrative, Loki represents the Tenno's capacity to outwit threats through intelligence and manipulation rather than overwhelming force. He embodies the trickster archetype present in mythologies across cultures, a figure who survives through cleverness and adaptability. The post-2024 rework did not alter his lore significantly, but rebalanced his mechanical capabilities to reflect a more polished understanding of how stealth and crowd-control-focused frames can compete in high-level Warframe content.
+
+## Sources
+
+- WFCD warframe-items JSON database (canonical numeric stats as of 2026-05-19)
+- Warframe Wiki: Loki (https://warframe.fandom.com/wiki/Loki)

@@ -1,0 +1,162 @@
+---
+slug: limbo
+name: Limbo
+aliases: []
+masteryRank: 0
+health: 270
+shield: 60
+armor: 105
+energy: 225
+sprintSpeed: 1.0
+passive:
+  name: Rift Affinity
+  description: >-
+    Dodge rolling enters or exits the Rift plane. Each dodge leaves behind
+    a small Rift portal lasting 5 seconds. Energy slowly regenerates while
+    in the Rift, and each enemy defeated there grants 10 energy.
+abilities:
+  - name: Banish
+    key: "1"
+    energyCost: 25
+    description: >-
+      Casts a wave of Rift energy that damages hostiles while pushing enemies
+      and allies out of Limbo's current plane of existence.
+    stats: { damage: 250, range: 25 }
+  - name: Stasis
+    key: "2"
+    energyCost: 50
+    description: >-
+      Freezes all Rift-bound enemies. While active, enemy projectiles are
+      arrested in mid-air, resuming their trajectory when Stasis ends.
+    stats: { duration: 8, range: 20 }
+  - name: Rift Surge
+    key: "3"
+    energyCost: 75
+    description: >-
+      Surges nearby Rift-bound enemies with Rift energy. Killed enemies
+      transfer the surge to nearby targets. Surged enemies leaving the Rift
+      perform a radial Banish.
+    stats: { damage: 300, range: 15 }
+  - name: Cataclysm
+    key: "4"
+    energyCost: 100
+    description: >-
+      Creates a pocket dimension that tears open the Rift plane, suspending
+      nearby enemies in dimensional limbo. The bubble expands and explodes
+      in a lethal blast upon expiration.
+    stats: { damage: 500, range: 20, duration: 15 }
+acquisition:
+  source: The Limbo Theorem quest + Market
+  blueprintLocations:
+    - "The Limbo Theorem quest (blueprint blueprint from in-game market)"
+    - "Cephalon Simaris (component blueprints via Standing)"
+  cost:
+    credits: 25000
+    platinum: 200
+  buildTimeHours: 60
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats cross-checked against WFCD 2026-05-19."
+  - url: "https://warframe.fandom.com/wiki/Limbo"
+    accessedAt: "2026-05-19"
+    title: "Limbo -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Limbo is a warframe that specializes in dimensional control and crowd control through manipulation of the Rift plane. Introduced in Update 15.0 (October 2014), Limbo disrupts time-space itself to isolate threats and provide tactical advantages. His playstyle revolves around entering and exiting the Rift dimension, a mechanic unique among Warframes. Limbo masters the boundary between shadow and substance, excelling in situations where others struggle with distinguishing what is real and what is merely between worlds.
+
+Limbo stands out as a specialist in negating damage to allies through Rift manipulation. Unlike damage-mitigation frames that rely on shields or damage reduction, Limbo removes threats from normal space entirely. His kit rewards precise ability sequencing and understanding of when enemies should exist in the Rift versus the material plane.
+
+## Abilities
+
+<AbilityCard
+  name="Banish"
+  key="1"
+  energyCost={25}
+  description="Casts a wave of Rift energy that damages hostiles while pushing enemies and allies out of Limbo's current plane of existence."
+/>
+
+Banish is Limbo's primary crowd control tool. When cast, it creates a wave of energy that damages and displaces targets. The critical mechanic: enemies struck by Banish move between the Rift and the material plane depending on where they currently exist. If a target is in normal space, it is sent to the Rift; if already in the Rift, it is returned to normal space. This toggle mechanic makes Banish both an offensive and defensive ability depending on context. In the Rift, enemies cannot damage the material plane, making this effectively infinite crowd control if managed properly.
+
+<AbilityCard
+  name="Stasis"
+  key="2"
+  energyCost={50}
+  description="Freezes all Rift-bound enemies. While active, enemy projectiles are arrested in mid-air, resuming their trajectory when Stasis ends."
+/>
+
+Stasis is a powerful defense mechanism that freezes all enemies currently in the Rift plane. While active, any projectiles fired by those enemies halt mid-flight, creating a window for repositioning or energy recovery. The ability costs energy to sustain, making efficiency crucial for extended survival. Many players use Stasis as a panic button when overwhelmed; by freezing the Rift entirely, Limbo gains breathing room. The key to mastering Stasis is timing its deactivation before regenerating enough energy for the next Banish cycle.
+
+<AbilityCard
+  name="Rift Surge"
+  key="3"
+  energyCost={75}
+  description="Surges nearby Rift-bound enemies with Rift energy. Killed enemies transfer the surge to nearby targets. Surged enemies leaving the Rift perform a radial Banish."
+/>
+
+Rift Surge augments enemies already in the Rift by overcharging them with Rift energy. Surged enemies take increased damage, and when killed, the surge automatically transfers to nearby enemies. This creates a damage feedback loop where Rift-bound enemies are progressively easier to eliminate. When a surged enemy leaves the Rift (either by Limbo sending it back or another source), it performs an automatic radial Banish, potentially sending new enemies to join the growing crowd in the Rift.
+
+<AbilityCard
+  name="Cataclysm"
+  key="4"
+  energyCost={100}
+  description="Creates a pocket dimension that tears open the Rift plane, suspending nearby enemies in dimensional limbo. The bubble expands and explodes in a lethal blast upon expiration."
+/>
+
+Cataclysm is Limbo's ultimate ability and his most visually dramatic power. It creates an expanding sphere of Rift energy that suspends all enemies within it in a state of dimensional limbo--they cannot act, move, or attack while the bubble persists. The ability scales with both duration and range mods; duration determines how long enemies remain suspended, while range increases the initial radius. When Cataclysm expires, it collapses with a violent explosion that deals damage. This ability is exceptional for puzzle missions where enemies must be kept incapacitated, and for high-level content where preventing enemy actions is more valuable than killing them quickly.
+
+## Passive
+
+Limbo's passive ability, Rift Affinity, is what makes him fundamentally different from other Warframes. By dodge-rolling, Limbo can enter or exit the Rift plane at will. Each entry creates a small Rift portal that persists for 5 seconds, allowing Limbo or allies to step through it to join him. While in the Rift, Limbo's energy regenerates slowly and passively, unlike other frames that require energy orbs or ability interactions. Additionally, every enemy defeated while Limbo is in the Rift grants 10 energy, creating a sustainable energy loop for skilled players. This passive transforms Limbo's playstyle: by staying in the Rift, he becomes nearly invulnerable to ranged attacks while maintaining energy independence.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 270 |
+| Shield | 60 |
+| Armor | 105 |
+| Energy | 225 |
+| Sprint speed | 1.0x |
+| Mastery rank required | 0 |
+
+Limbo has relatively low shields (60) and average armor (105), making raw survivability unremarkable by standard metrics. However, his health pool (270) is solid for a crowd-control frame. The real defensive value comes from his Rift mechanics: damage taken while in the Rift is negated entirely, effectively multiplying his durability infinitely. His energy capacity (225) supports sustained ability casting, and with proper mods and passive income from enemies killed in the Rift, energy management becomes manageable even on long missions.
+
+## Acquisition
+
+Limbo is obtainable through two primary routes. New players or those seeking a direct path can purchase the main Blueprint from the in-game Market for 200 Platinum. Alternatively, completing the quest "The Limbo Theorem" grants the blueprint at no cost; players then collect component blueprints from Cephalon Simaris in the Sanctuary using Standing currency. Building any blueprint component requires 60 hours per component, and building the complete warframe requires credits (25,000) and an Orokin Cell, placing Limbo late-game in terms of build requirements despite his accessibility via quest.
+
+## Playstyle
+
+Limbo excels in crowd control and protection missions where preventing enemy action is the objective. His playstyle revolves around managing two states: material plane (normal space) and Rift plane (dimensional space). When enemies are in the Rift, they cannot harm allies in normal space, making Limbo invaluable for defense missions, rescue objectives, or any mission where keeping allies safe is paramount.
+
+A typical Limbo rotation consists of (1) dodging into the Rift for energy and damage mitigation, (2) using Banish to send threats into the Rift, (3) using Stasis to freeze Rift-bound enemies temporarily, and (4) using Rift Surge to weaken enemies before eliminating them. Cataclysm is reserved for moments of danger or puzzle sections requiring mass incapacitation.
+
+Limbo's biggest weakness is that his Rift status affects allies as well as enemies. Allies in the Rift cannot damage enemies outside it, potentially creating friction in team compositions if other players are not aware of this limitation. Additionally, some high-level content features enemies immune to Rift effects (certain Eximus units, Narmer forces), requiring Limbo to adapt his strategy or rely on raw ability damage rather than crowd control. Despite these limitations, Limbo remains one of the most skill-rewarding frames in Warframe, offering unparalleled survivability to players who understand the Rift's nuances.
+
+## Builds
+
+Limbo's mods split into two categories: duration/range builds for crowd control, and efficiency builds for sustained ability casting. Duration extends how long enemies remain frozen or suspended, while range increases the radius of Stasis and Cataclysm. Efficiency mods reduce energy costs, allowing Limbo to chain abilities without relying entirely on passive energy income. Strength mods boost damage but have lower priority since Limbo's role is control, not elimination.
+
+A common defensive build prioritizes duration and range, turning Cataclysm into a wide, long-lasting incapacitation field. An alternative aggressive build maximizes efficiency and strength, allowing rapid ability rotation with minimal downtime. Helminth infusions can extend Limbo's utility; Thermal Sunder or Roar subsumed from other frames provide additional crowd control or damage amplification.
+
+Recommended arcanes include Arcane Nullifier (reducing ability cooldown) and Arcane Guardian (supplementing armor). For Exilus slots, Drift mods that boost range or efficiency are standard choices.
+
+## Lore
+
+Limbo arrived in the Warframe universe during Update 15.0 with a theatrical, almost magical theme. The in-game description frames him as a master of the boundary between shadow and substance, evoking imagery of a stage magician who manipulates the fabric of reality itself. His quest, "The Limbo Theorem," involves retrieving components scattered across the solar system while exploring the nature of the Rift plane and its connection to Void energy.
+
+The Rift is heavily implied to be a dimensional space adjacent to normal reality, possibly related to the Void itself. Limbo's ability to control this space suggests a deep connection to Void mechanics, and his later patch history shows interactions with Narmer forces and other higher-tier threats treating the Rift differently, hinting at lore implications beyond simple mechanics. His character as a master of dimensional manipulation positions him as a lone scholar or performer who chose to weaponize esoteric knowledge rather than join conventional military structures.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) — Numeric stats cross-checked against WFCD 2026-05-19.
+- [Limbo — WARFRAME Wiki](https://warframe.fandom.com/wiki/Limbo) — Comprehensive ability descriptions, lore context, and quest information.

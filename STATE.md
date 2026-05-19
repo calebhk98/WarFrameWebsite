@@ -115,6 +115,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - khora :: src/content/warframes/khora.mdx
 - khora-prime :: src/content/warframes/khora-prime.mdx
 - koumei :: src/content/warframes/koumei.mdx
+- kullervo :: src/content/warframes/kullervo.mdx
+- lavos :: src/content/warframes/lavos.mdx
+- lavos-prime :: src/content/warframes/lavos-prime.mdx
+- limbo :: src/content/warframes/limbo.mdx
+- limbo-prime :: src/content/warframes/limbo-prime.mdx
+- loki :: src/content/warframes/loki.mdx
+- loki-prime :: src/content/warframes/loki-prime.mdx
+- mag :: src/content/warframes/mag.mdx
 
 ## done.weapons
 
@@ -283,6 +291,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - khora
 - khora-prime
 - koumei
+- kullervo
+- lavos
+- lavos-prime
+- limbo
+- limbo-prime
+- loki
+- loki-prime
+- mag
 
 ## verified.weapons
 
