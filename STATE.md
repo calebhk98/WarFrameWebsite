@@ -75,6 +75,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - baruuk :: src/content/warframes/baruuk.mdx
 - baruuk-prime :: src/content/warframes/baruuk-prime.mdx
 - bonewidow :: src/content/warframes/bonewidow.mdx
+- caliban :: src/content/warframes/caliban.mdx
+- chroma retry:1 :: src/content/warframes/chroma.mdx
+- chroma-prime :: src/content/warframes/chroma-prime.mdx
+- citrine retry:1 :: src/content/warframes/citrine.mdx
+- cyte-09 :: src/content/warframes/cyte-09.mdx
+- dagath retry:1 :: src/content/warframes/dagath.mdx
+- dante :: src/content/warframes/dante.mdx
+- ember retry:1 :: src/content/warframes/ember.mdx
 
 ## done.weapons
 
@@ -203,6 +211,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - baruuk
 - baruuk-prime
 - bonewidow
+- caliban
+- chroma
+- chroma-prime
+- citrine
+- cyte-09
+- dagath
+- dante
+- ember
 
 ## verified.weapons
 

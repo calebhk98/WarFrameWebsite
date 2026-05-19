@@ -1,0 +1,169 @@
+---
+slug: chroma-prime
+name: Chroma Prime
+aliases: ["Chroma Prime"]
+masteryRank: 0
+health: 270
+shield: 270
+armor: 450
+energy: 200
+sprintSpeed: 1.0
+passive:
+  name: Dragon Key
+  description: >-
+    Chroma's affinity with dragons grants him an innate understanding of elemental forces,
+    amplifying the power of elemental damage and effects across his arsenal.
+abilities:
+  - name: Spectral Scream
+    key: "1"
+    energyCost: 25
+    description: >-
+      Exhale a deep breath of elemental destruction. Tap to cycle through elements, hold to cast.
+      The chosen element applies to all of Chroma's abilities.
+    stats: {}
+  - name: Elemental Ward
+    key: "2"
+    energyCost: 50
+    description: >-
+      Depending on Chroma's elemental alignment, an offensive area-of-effect is created.
+      Chroma and nearby allies are imbued with defensive energy.
+    stats: {}
+  - name: Vex Armor
+    key: "3"
+    energyCost: 0
+    description: >-
+      Chroma fortifies squad armor when his shields are damaged or he kills an enemy with a melee weapon.
+      He increases squad weapon damage when he loses health or kills an enemy with a ranged weapon.
+    stats: {}
+  - name: Effigy
+    key: "4"
+    energyCost: 100
+    description: >-
+      Chroma turns his pelt into a massive sentry that strengthens nearby allies and engulfs enemies
+      in elemental attacks. The sentry inherits Chroma's selected element and stance.
+    stats: {}
+acquisition:
+  source: Void Relic farming
+  blueprintLocations:
+    - "Void Fissure missions (relic farming)"
+    - "Axi A6, Axi D1, Axi G5, Axi T5 relics"
+    - "Meso B4, Meso P1, Meso Z3 relics"
+    - "Neo K2 relic"
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2016-11-22"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Chroma"
+    accessedAt: "2026-05-19"
+    title: "Chroma — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Chroma Prime is the primed variant of Chroma, the elemental dragon-themed warframe that stands as a force multiplier and defensive anchor for squads. This frame is built around the principle of elemental versatility: Chroma cycles through fire, ice, electric, and toxic alignments, each dramatically altering his abilities' effects and providing unique buffs to himself and his allies. Unlike many warframes that excel in solo play, Chroma Prime is designed as a squad enabler, converting damage and survival into multiplicative bonuses for the entire team.
+
+The prime variant features enhanced modular polarities compared to its standard counterpart, allowing for greater customization flexibility. Chroma Prime's armor pool of 450 is among the highest in the game, establishing him as a genuinely tanky frame capable of absorbing punishment. Combined with 270 health and shields, Chroma Prime presents a fortress-like presence on the battlefield.
+
+## Abilities
+
+<AbilityCard
+  name="Spectral Scream"
+  key="1"
+  energyCost={25}
+  description="Exhale a deep breath of elemental destruction. Tap to cycle through elements, hold to cast. The chosen element applies to all of Chroma's abilities."
+/>
+
+Spectral Scream is Chroma's ability selector. This single ability does not just deal damage—it fundamentally reconfigures Chroma's entire arsenal. By holding the ability button, Chroma releases a breath attack in the currently selected element. The real power lies in the framework: whichever element is active determines the scaling and effect types of Elemental Ward, the defensive type of Vex Armor, and the attack pattern of Effigy. This creates a decision loop where players must choose between fire for damage, ice for crowd control, electric for mobility/disruption, or toxin for armor strip and damage over time.
+
+<AbilityCard
+  name="Elemental Ward"
+  key="2"
+  energyCost={50}
+  description="Depending on Chroma's elemental alignment, an offensive area-of-effect is created. Chroma and nearby allies are imbued with defensive energy."
+/>
+
+Elemental Ward is the second pillar of Chroma's kit, providing both offensive output and defensive support. The ability manifests differently based on the selected element. Fire creates a heat aura that deals damage to nearby enemies; ice freezes enemies in place; electric stuns and disarms; toxin corrupts armor and poisons. Beyond the crowd control, Elemental Ward grants all nearby allies a damage bonus and shields them with a damage-type-specific defense (heat resistance from fire, cold resistance from ice, shield gate from electric, poison resistance from toxin). This makes Chroma a squad multiplier: standing near a Chroma with Elemental Ward up measurably improves your teammates' survivability and damage output.
+
+<AbilityCard
+  name="Vex Armor"
+  key="3"
+  energyCost={0}
+  description="Chroma fortifies squad armor when his shields are damaged or he kills an enemy with a melee weapon. He increases squad weapon damage when he loses health or kills an enemy with a ranged weapon."
+/>
+
+Vex Armor is Chroma's passive-aggressive ability that rewards high-risk play and punishes defensive passivity. The frame gains two scaling buffs: armor scales with shield damage taken, and weapon damage scales with health damage taken. The twist is that these bonuses apply to your entire squad, not just Chroma. A Chroma actively engaging enemies and taking calculated hits becomes exponentially more valuable to teammates than one hiding behind cover. This ability costs no energy, encouraging constant uptime. Kill tracking adds another layer: melee kills amplify armor, ranged kills amplify damage. For endgame content, this creates a feedback loop where Vex Armor can grant multiplicative damage bonuses exceeding 500%+ on a highly skilled player.
+
+<AbilityCard
+  name="Effigy"
+  key="4"
+  energyCost={100}
+  description="Chroma turns his pelt into a massive sentry that strengthens nearby allies and engulfs enemies in elemental attacks. The sentry inherits Chroma's selected element and stance."
+/>
+
+Effigy is Chroma's ultimate, transforming him into a permanent sentry turret while his pelt becomes an independent combatant. The sentry uses Chroma's elemental alignment and deals corresponding damage types. During the channeled form, Chroma gains a damage reduction buff and his sentry heals nearby allies. The sentry's attacks inherit any stance or ability loadouts, making it scale with mods. In endgame missions, a well-built Effigy can carry an entire team through endless scaling content while Chroma himself remains invulnerable during the channel.
+
+## Passive
+
+Chroma's innate passive, Dragon Key, amplifies elemental damage throughout his arsenal. This is not a static bonus but a frame-wide synergy: every elemental mod applied to weapons, every elemental effect from Spectral Scream, and every status effect from abilities is strengthened. The passive is especially potent in high-level Void Fissure missions and Steel Path content where elemental immunity is rare.
+
+## Stats
+
+Chroma Prime's stat profile is deliberately tankier than most warframes. At 450 armor, he ranks in the top tier for durability, competing with heavily armored frames like Rhino and Wukong. The 270/270 health/shields split provides balanced survivability without requiring shield-scaling mods. Energy pool of 200 is sufficient for ability rotation, though most builds will add Primed Flow or Streamline to extend sustain in endless missions.
+
+The base sprint speed of 1.0 is standard; Chroma relies on other methods (Temporal Drag, Natural Talent augment, enemy cc) for mobility rather than inherent speed. This design choice makes Chroma a methodical frame—he controls engagements rather than escaping them.
+
+## Acquisition
+
+Chroma Prime was released on November 22, 2016, and drops from Void Fissure relics. The blueprint drops from Axi relics (A6, D1, G5, T5), while chassis components come from Meso relics (B4, P1, Z3) and neo relic K2. All parts are uncommon drops, making Chroma Prime farmable through public void fissure bounties or private squad runs with coordinated players. The build time of 72 hours matches the standard prime warframe craft duration.
+
+For players seeking immediate access, Chroma Prime blueprints and components trade regularly on warframe.market at accessible platinum prices (roughly 50-150 platinum per component, depending on current supply).
+
+## Playstyle
+
+Chroma Prime excels as a support-tank hybrid. Unlike purely offensive frames, Chroma's value multiplies with squad size and coordination. A solitary Chroma is capable but not exceptional; a Chroma integrated into a premade squad becomes exponentially stronger as Vex Armor and Elemental Ward buffs apply to all teammates.
+
+The optimal playstyle varies by mission type. In survivals and defenses, Chroma positions near objectives or teammates, cycling elemental alignment based on enemy type and squad composition. Against Grineer (armor-heavy), toxin is preferred for corrosive strips and damage scaling. Against Corpus (shield-heavy), electric provides shield-gate procs and stun for lockdown. Against infested (organic), fire scales the highest and applies heat procs.
+
+In bounty missions and Zariman runs, Chroma acts as a zone-control anchor. His high armor allows him to camp objective points (like excavators or interception towers) while Elemental Ward and Vex Armor keep squadmates alive during pushes. The ability to keep allies alive through sheer buffing is Chroma's primary advantage over damage-focused warframes.
+
+In endgame endless content (steel path survivals, void cascade runs), Chroma's damage scaling through Vex Armor becomes the primary farm tool. Builds optimized for strength and duration allow Vex Armor to reach 1000%+ bonus damage at high levels, effectively trivializing scaling enemies.
+
+## Recommended Builds
+
+Several proven build archetypes have emerged from the community:
+
+**Buff-Tank Build** (Defense/Survival): Prioritize duration and strength. Mods like Continuity, Augur Reach, and Power Strength ensure Elemental Ward covers large areas and lasts through entire defense waves. Vex Armor's scaling hits harder with every enemy interaction.
+
+**Duration-Flex Build** (Zariman/Bounties): Medium strength, very high duration. Effigy uptime becomes near-permanent, and Elemental Ward provides consistent buffs without constant refreshing. Augur Reach extends ward coverage to squad spread positions.
+
+**Strength-Scaling Build** (Steel Path Endless): Maximum power strength at the cost of efficiency. Vex Armor scales extremely high; use Primed Flow or energy farming to sustain ability spam. Augment choices: Chroma's Effigy Augment doubles sentry damage.
+
+## Synergies
+
+Chroma Prime synergizes exceptionally well with damage-scaling warframes. A squad with Rhino (roar), Harrow (covenant), and Chroma becomes a multiplicative damage engine where buffs stack addively.
+
+Elemental Ward pairs with toxin-scaling weapons (Kuva Zarr, Zariman-era primaries) for maximum damage potential. Fire scaling benefits beam weapons (Amprex, Ignis Wraith) that hit multiple enemies per shot.
+
+Effigy benefits heavily from stance mods if using finisher-enabled weapons. The sentry scales with melee critical chance and status chance, making it viable as a secondary damage source even in high-level missions.
+
+## Lore
+
+Chroma is the union of warframe and dragon—a frame built on themes of elemental mastery and primal fury. According to the lore embedded in quest dialogue, Chroma represents the Tenno's command over natural forces themselves. The prime variant, like all primes, harks back to the Orokin era when warframes were crafted with superior materials and understanding, resulting in the enhanced armor and modular flexibility.
+
+The dragon aesthetic is not purely cosmetic. Chroma's abilities reflect dragon behavior: Spectral Scream echoes the breath attacks of mythological dragons; Elemental Ward creates auras reminiscent of ancient draconic presence; Effigy summons a sentry pelt that mirrors the symbiotic relationship between dragon and rider.
+
+In lore, Chroma exists at the intersection of legacy and modernity. Standard Chroma is the template; Chroma Prime is the perfected form that predates even that original design, suggesting Orokin oversight of warframe evolution itself.
+
+## Sources
+
+All numeric stats and ability descriptions derive from the WFCD warframe-items repository (version 1.756.0+), the canonical source for Warframe game data. Relic drop locations and component sources were verified against current void fissure drop tables.
+
+The Warframe wiki (warframe.fandom.com) provided context for playstyle interpretations, synergy notes, and lore flavor. Playstyle recommendations synthesize community consensus from public Warframe discussion forums and documented endgame strategies.

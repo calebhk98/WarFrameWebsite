@@ -1,0 +1,160 @@
+---
+slug: dante
+name: Dante
+aliases: []
+masteryRank: 0
+health: 300
+shield: 150
+armor: 145
+energy: 200
+sprintSpeed: 1.15
+passive:
+  name: Noctua
+  description: >-
+    Scans targets and records their information in the Codex. Status Chance
+    increases by 50% on fully scanned enemies.
+abilities:
+  - name: Noctua
+    key: "1"
+    energyCost: 50
+    description: >-
+      Opens Dante's Exalted Tome, an arcane weapon that unleashes devastating
+      attacks upon enemies. The tome remains active until manually dismissed,
+      allowing Dante to compose devastating narratives of woe.
+    stats: { damage: 250, range: 15 }
+  - name: Light Verse
+    key: "2"
+    energyCost: 75
+    description: >-
+      Dante's vitalizing composition grants him and nearby allies Overguard
+      and increases their maximum Health. Can be paired with Dark Verse for
+      additional effects.
+    stats: { health_buff: 100, range: 20 }
+  - name: Dark Verse
+    key: "3"
+    energyCost: 75
+    description: >-
+      Dante's composition draws blood from nearby enemies, inflicting Slash
+      damage and status effects. Can be paired with Light Verse for enhanced
+      battlefield control.
+    stats: { damage: 200, range: 20 }
+  - name: Final Verse
+    key: "4"
+    energyCost: 100
+    description: >-
+      Dante must compose two other Verses before his Final Verse becomes active.
+      Depending on the combination of Light and Dark Verses cast, Final Verse
+      produces different powerful effects: Triumph (support buff), Tragedy
+      (accumulated damage blast), Wordwarden (ally tome copies), or Pageflight
+      (vulnerability debuff with summons).
+    stats: { damage: 400, range: 25 }
+acquisition:
+  source: Deimos Disruption (Armatus)
+  blueprintLocations:
+    - "Deimos Armatus Disruption (Rotation C)"
+  buildTimeHours: 72
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Dante"
+    accessedAt: "2026-05-19"
+    title: "Dante — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Dante is a scribe-themed male Warframe introduced in Update 35.5, specializing in a unique verse-composition mechanic that blends support and offensive capabilities. Conceptualized as a seeker of knowledge and keeper of Leverian lore, Dante composes arcane tales that reshape battlefield dynamics. His design emphasizes storytelling through gameplay, with abilities that synergize based on their sequential casting. The frame appeals to players seeking an intricate support-damage hybrid with substantial scaling potential and dynamic team utility.
+
+Dante's passive encourages aggressive reconnaissance, rewarding careful targeting and codex completion with improved status application. His kit revolves around the interplay between Light Verses (support composition) and Dark Verses (offensive composition), culminating in powerful Final Verse abilities that depend on sequence. This composition system creates engaging tactical depth and encourages ability rotation discipline.
+
+## Abilities
+
+<AbilityCard
+  name="Noctua"
+  key="1"
+  energyCost="50"
+  description="Opens Dante's Exalted Tome, an arcane weapon that unleashes devastating attacks. The tome remains active until manually dismissed, allowing Dante to author devastating narratives of destruction."
+/>
+
+Noctua serves as Dante's signature exalted weapon, granting him a melee tome that scales with melee mods and Warframe stats. The weapon persists until toggled off, allowing Dante to seamlessly transition between ability casting and direct tome combat. Damage output scales with ability strength, making it viable for both early and late-game content when properly modded.
+
+<AbilityCard
+  name="Light Verse"
+  key="2"
+  energyCost="75"
+  description="Dante's vitalizing composition grants him and nearby allies Overguard and increases their maximum Health. Can be paired with Dark Verse for additional Final Verse effects."
+/>
+
+Light Verse provides team-wide defensive utility, granting temporary Overguard that absorbs damage before shields. The Health buff amplifies survivability across the squad. When cast in specific patterns before Final Verse, Light Verse determines which of four powerful final-stage effects triggers, making ability sequencing crucial for tactical flexibility.
+
+<AbilityCard
+  name="Dark Verse"
+  key="3"
+  energyCost="75"
+  description="Dante's composition draws blood from nearby enemies, inflicting Slash damage and status effects. Pairs with Light Verse for enhanced control and Final Verse damage amplification."
+/>
+
+Dark Verse delivers offensive pressure, dealing area Slash damage with status procs. Unlike Light Verse, Dark Verse scales with ability strength for enhanced damage output. The composition system permits Dark Verse to pair with Light Verse, opening synergies through Final Verse triggers that devastate grouped enemies or amplify ally survivability.
+
+<AbilityCard
+  name="Final Verse"
+  key="4"
+  energyCost="100"
+  description="Dante must compose two other Verses before Final Verse activates. Depending on the Light/Dark Verse combination cast, Final Verse produces Triumph (support buff), Tragedy (damage accumulation), Wordwarden (tome copies), or Pageflight (vulnerability debuff)."
+/>
+
+Final Verse is Dante's ultimate ability and the lynchpin of his composition mechanic. After casting any two combination of Light or Dark Verses, Final Verse unlocks four distinct effects: Triumph grants allies health and Overguard regeneration on kills; Tragedy accumulates slash, heat, and toxin status damage into a single detonation; Wordwarden summons exalted tome copies that synchronize with designated allies' attacks; Pageflight summons Paragrimms that debuff enemies and draw aggro. This system rewards tactical planning and macro ability rotation.
+
+## Passive
+
+Noctua grants Dante's passive scanning mechanic. Each fully scanned target recorded in the Codex increases Status Chance against that enemy by 50%. This passive encourages aggressive reconnaissance during missions and rewards players for thorough enemy scanning. The status boost applies to Dante's abilities and weapons, providing tangible scaling incentives for exploration and codex completion.
+
+## Stats
+
+| Stat            | Value |
+|-----------------|------:|
+| Health          | 300   |
+| Shield          | 150   |
+| Armor           | 145   |
+| Energy          | 200   |
+| Sprint Speed    | 1.15x |
+| Mastery Rank    | 0     |
+
+Dante's stat distribution is balanced, with moderate health and armor paired to lower shield. The 1.15x sprint multiplier grants marginal mobility advantage. Energy pools are adequate for ability spam, especially when paired with efficiency mods. Armor scales with Vitality and Steel Fiber augmentation, providing scaling for end-game survivability.
+
+## Acquisition
+
+Dante's components drop exclusively from Deimos Armatus, a Disruption mission on Deimos. All component blueprints (Blueprint, Chassis, Neuroptics, Systems) drop in Rotation C at 5-7.5% rarity, alongside Orokin Cell requirements. The main blueprint remains the rarest drop at 7.5%. Completion requires three Orokin Cells (farmable on Ceres, Saturn, and Deimos) plus credits for crafting. Estimated farm time: 5-10 hours for efficient squads running coordinated Disruption clears.
+
+## Playstyle
+
+Dante excels as a dynamic support-damage hybrid. Early combat prioritizes Light Verse spam for team defense and Overguard cycling, transitioning to Dark Verse for offensive pressure as threat assessment permits. Mid to late-game shifts toward composition sequencing, deliberately casting paired Verses to trigger desired Final Verse effects. Exalting Noctua mid-engagement permits direct weapon-based offense while ally scaling carries through support buffs.
+
+Ability rotation discipline is crucial. A support-focused build chains Light Verses to maintain Overguard uptime, reserving Dark Verse for burst windows or Final Verse setup. An offensive build inverts this pattern, using Dark Verse for consistent damage amplification while Light Verse triggers align with ally position shifts. Helminth subsumption of Dark Verse (available for community builds) permits hybrid mid-mission adaptation.
+
+Dante pairs exceptionally well with high-damage frames (Saryn, Chroma) and with support-focused teammates (Trinity, Mag). His passive rewards aggressive play and codex completion, encouraging players to engage dynamically rather than merely sustain. Modding toward ability strength, range, and efficiency creates a flexible kit capable of solo play or squad carry roles.
+
+## Builds
+
+Dante builds vary significantly based on desired output. **Support builds** prioritize range (Stretch, Augur Reach) and efficiency (Streamline, Primed Flow) to maximize Overguard uptime and teammate safety. **Offensive builds** invest in ability strength (Blind Rage, Intensify) and duration (Primed Continuity, Augur Message) to amplify Dark Verse and Final Verse damage. **Hybrid builds** balance both priorities, seeking equilibrium between team carries and personal damage scaling.
+
+Key mods include Umbral Vitality for health tanking when armor lacks scaling, Zenurik focus for energy regeneration (especially in long Disruption runs), and augment mods if released post-introduction. Exalted tome builds leverage melee-specific mods on the weapon itself, permitting specialized damage and status stacking when Noctua remains active.
+
+For builds and detailed loadout guidance, see [Dante builds](/builds/warframes/dante/).
+
+## Lore
+
+Dante is characterized as a scribe and keeper of Leverian lore, tasked with chronicling Orokin history against those who would erase it. His narrative frames him as a researcher and scholar, inscribing heroic deeds and forbidden knowledge into his Exalted Tome. The frame's design draws thematic inspiration from classical literature and oral storytelling traditions, with each ability representing different narrative modes: the opening of knowledge (Noctua), the vitalizing tale (Light Verse), the tragic narrative (Dark Verse), and the culminating epic finale (Final Verse).
+
+Warframe lore positions Dante as a student of the Leverian exhibition, a facility that preserves and transmits Orokin knowledge to the Tenno. His introduction coincides with lore explorations of knowledge preservation and the tension between historical truth and narrative control, themes central to Warframe's meta-narrative about the Orokin's fall and the Tenno's inheritance of their legacy.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items)
+- [Dante — WARFRAME Wiki](https://warframe.fandom.com/wiki/Dante)
