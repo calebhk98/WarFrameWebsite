@@ -1,0 +1,201 @@
+---
+slug: trinity
+name: Trinity
+aliases: []
+masteryRank: 0
+health: 270
+shield: 270
+armor: 105
+energy: 175
+sprintSpeed: 1
+passive:
+  name: Revive Expertise
+  description: >-
+    Allies in affinity range gain health equal to a percentage of Trinity's maximum energy.
+    Additionally, Trinity revives fallen allies 25% faster and from 50% greater distance.
+abilities:
+  - name: Well of Life
+    key: "1"
+    energyCost: 25
+    description: >-
+      Create a well of life on an enemy that absorbs status effect damage intended for nearby allies.
+      Allies gain additional health when they attack the marked target. If allies die while the well
+      is active, the marked enemy dies in their stead.
+    stats: { range: 15, heal_per_hit: 500 }
+  - name: Energy Vampire
+    key: "2"
+    energyCost: 50
+    description: >-
+      Mark an enemy with Energy Vampire. All allies, including Trinity herself, gain energy over time
+      whenever the marked enemy takes damage. This ability is Trinity's cornerstone for squad energy sustain
+      in extended missions.
+    stats: { range: 50, energy_per_second: 5 }
+  - name: Link
+    key: "3"
+    energyCost: 75
+    description: >-
+      Create a link between Trinity and a nearby enemy. While active, damage taken by Trinity and nearby
+      allies is channeled to the linked enemy instead. The damage redirection scales with Trinity's power strength.
+    stats: { range: 25, damage_reduction: 0.5 }
+  - name: Blessing
+    key: "4"
+    energyCost: 100
+    description: >-
+      Restore the health and shields of all allies within affinity range. Blessing also reduces incoming
+      damage for affected allies for several seconds. Trinity's most powerful healing tool and one of the
+      strongest team survival abilities in the game.
+    stats: { range: 50, damage_reduction: 0.75 }
+acquisition:
+  source: Market or Ambulas assassination (Pluto — Hades)
+  blueprintLocations:
+    - "Market (35,000 credits)"
+    - "Ambulas boss fight on Pluto — Hades (Neuroptics, Chassis, Systems)"
+  cost:
+    credits: 35000
+    platinum: 225
+  buildTimeHours: 72
+  note: "Component blueprints drop from Ambulas with roughly equal rates. Trinity Prime is currently vaulted."
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2014-11-25"
+  vaultedAt: "2019-09-03"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Trinity"
+    accessedAt: "2026-05-19"
+    title: "Trinity — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Trinity embodies redemption and health, serving as Warframe's quintessential support frame. Her extraordinary healing and energy restoration powers make her indispensable for keeping squads alive through even the most demanding endgame content. Often called "the healer" by the community, Trinity excels in roles where team survival is paramount—endless defense missions, arbitration raids, void fissure excavations, and high-level void cascades all benefit from her presence.
+
+Unlike frames that destroy through raw damage or crowd control, Trinity operates through sustain: preventing ally deaths through preemptive healing, maintaining squad energy reserves during ability-heavy combat, and redirecting damage away from vulnerable teammates. Her playstyle requires positioning awareness and energy management, rewarding coordinated squad play and understanding enemy patterns.
+
+Trinity has been a core support option since Warframe's earliest days. Her role has remained consistently valuable across multiple combat eras, from the original starchart to Steel Path endurance runs. While balance patches have refined her abilities, her core identity as a healer and energy battery has never wavered.
+
+## Abilities
+
+<AbilityCard
+  name="Well of Life"
+  key="1"
+  energyCost="25"
+  description="Create a well of life on an enemy that absorbs status effect damage intended for nearby allies. Allies gain additional health when they attack the marked target. If allies die while the well is active, the marked enemy dies in their stead."
+/>
+
+Well of Life is Trinity's primary healing ability and her most flexible tool. The 15-meter radius allows her to protect the entire team from status effects—particularly valuable against toxin, magnetic, and viral procs. The healing-on-attack mechanic encourages aggressive play, rewarding teammates who maintain damage output on the marked enemy. The "self-sacrifice" mechanic (enemies dying instead of allies) provides emergency revival potential in clutch moments, though this effect requires careful positioning to exploit effectively.
+
+The ability's effectiveness scales well with ability strength mods, making Intensify and Umbral Intensify important considerations. Combined with natural energy efficiency, Well of Life can sustain a squad indefinitely in most mission types.
+
+<AbilityCard
+  name="Energy Vampire"
+  key="2"
+  energyCost="50"
+  description="Mark an enemy with Energy Vampire. All allies, including Trinity herself, gain energy over time whenever the marked enemy takes damage. This is Trinity's signature sustain ability."
+/>
+
+Energy Vampire is Trinity's most iconic ability and the reason squad leaders often call for her in resource-heavy missions. Marking a single enemy creates a persistent energy battery that rewards offensive play: the more damage the squad deals to the marked target, the more energy regenerates. This creates a virtuous cycle where aggressive teamwork directly translates to unlimited ability spam.
+
+In extended missions like endless survival or void fissures, Energy Vampire essentially removes energy constraints entirely for coordinated squads. Pair it with an ally that has high sustained damage and watch your squad's ability economy shift from rationed to abundant. Solo, it provides reliable personal energy sustain without draining other resources.
+
+The ability's range is generous, and multiple enemies can be marked simultaneously by recasting, creating multiple energy sources across the battlefield. This makes Trinity the go-to support frame for any mission where ability uptime matters.
+
+<AbilityCard
+  name="Link"
+  key="3"
+  energyCost="75"
+  description="Create a link between Trinity and a nearby enemy. While active, damage taken by Trinity and nearby allies is channeled to the linked enemy instead. The damage redirection scales with Trinity's power strength."
+/>
+
+Link serves as Trinity's damage mitigation tool, functioning like a protective aura that redirects incoming harm to a tethered enemy. With high power strength builds, Link can reduce effective incoming damage by half or more, making the entire squad significantly tankier during critical moments.
+
+The ability synergizes well with frames that lack natural defenses or survivability. Pair Link with squishy damage frames and watch them tank hits that would normally destroy them. The 25-meter range is sufficient for most mission scenarios, and the continuous drain of 2 energy per second is manageable with proper energy flow builds.
+
+Link's weakness lies in its requirement to maintain an active link target. If the linked enemy dies too quickly, the protection drops. In high-level content with persistent tough enemies (heavy gunners, bombards, nullifiers), Link remains reliably valuable. In lower-level missions with fast enemy turnover, Energy Vampire or Blessing often provide more utility.
+
+<AbilityCard
+  name="Blessing"
+  key="4"
+  energyCost="100"
+  description="Restore the health and shields of all allies within affinity range. Blessing also reduces incoming damage for affected allies for several seconds. Trinity's most powerful healing tool."
+/>
+
+Blessing is Trinity's ultimate ability and one of the strongest team-sustain powers in Warframe. Casting it instantly refills all nearby allies' health and shields to full, then applies damage reduction for the duration. This makes Blessing the "get out of trouble free" card for squads on the verge of wipe—one cast can reset a dangerous situation entirely.
+
+The 50-meter range covers most normal squad groupings, and the 4-second damage reduction window (scaling with duration mods) provides breathing room to reposition or burn down threats. At base power strength, Blessing reduces damage by 75%; with negative power strength builds (prioritizing efficiency and duration), even reduced damage mitigation keeps the squad safe.
+
+Unlike healing abilities in other games, Blessing's overshield component (from shield restoration) acts as effective health extension, allowing squads to survive burst damage that would otherwise kill despite healing. Pairing Blessing with Arcane Blessing significantly amplifies this effect, creating survivability that rivals dedicated tank frames.
+
+## Passive
+
+Trinity's passive grants nearby allies a percentage of her maximum energy as additional health. This passive is deceptively powerful in squad play: a rank-30 Trinity with a range mod gives every nearby ally an extra 200+ health pool at no energy cost. The bonus scales with Trinity's ability strength and range, making it natural to prioritize these stats.
+
+Additionally, Trinity revives fallen allies 25% faster and from 50% greater distance. This passive is often overlooked but invaluable in coordinated squads—Trinity can save downed teammates from positions where other frames cannot, and she does so faster. In survival and defense missions where downed allies cost time and resources, this passive utility is often underestimated.
+
+## Stats
+
+Trinity's base stat distribution reflects her support role. Her 270 health and shield at rank 0 are modest compared to tank frames, placing her at the lower end of survivability. However, her abilities provide more healing and damage mitigation than any dedicated armor value could offer, making ability uptime more important than raw stats.
+
+Her 175 energy capacity and 1.0 sprint speed are baseline, neither particularly high nor low. Energy capacity can be extended with Primed Flow or Energizing Dash if sustaining long casting rotations becomes challenging, though proper ability efficiency usually makes additional energy unnecessary.
+
+The 105 armor value provides light protection and scales well with Umbral Vitality, allowing Trinity to survive chip damage without constant heals. Many endgame Trinity builds sacrifice some defense stats in favor of efficiency and range to maximize ability uptime.
+
+## Acquisition
+
+Trinity's blueprint is available directly from the Market for 35,000 credits and 225 platinum. Component blueprints (Neuroptics, Chassis, Systems) drop from the Ambulas assassination mission on Pluto's Hades tileset. Ambulas is a relatively straightforward boss fight that can be soloed or squad-run, with all three components dropping at roughly equal rates (38.72% for Chassis and Neuroptics, 22.56% for Systems).
+
+Building Trinity requires one Orokin Cell per component set plus the usual crafting resources. The 72-hour build time is standard for warframes. Most players obtain Trinity within the first 20-30 hours of starchart progression, making her one of the earliest support options available.
+
+Trinity Prime is currently vaulted after its vault cycle ended in September 2019, though Digital Extremes occasionally rotates prime vaults. Prime relics can still drop from void fissures, and Trinity Prime parts remain tradeable on the player market for platinum—usually 50-150 platinum per component depending on market conditions.
+
+## Playstyle
+
+Trinity excels as the team's energy and healing anchor. Her playstyle revolves around positioning yourself where you can reach most or all squad members quickly, marking priority damage targets with Energy Vampire, and casting Blessing reactively when the squad's health drops below comfortable thresholds.
+
+Early in a mission, mark a weak but durable enemy with Energy Vampire and trust your squad to maintain damage on it. Monitor squad health bars and cast Blessing preemptively before anyone drops below 50% health—healing after the fact is wasteful. Use Well of Life on heavy targets that soak damage and status procs, especially in missions with hazardous auras like the Steel Path.
+
+Trinity's most challenging matchup is enemies that die too quickly to build energy stacks. In low-level missions, speed-farming runs, or against fragile infested units, Energy Vampire becomes less valuable. In these cases, emphasize Blessing and Well of Life as primary sustain tools. Link provides consistent damage reduction but requires active management of the tether.
+
+Energy management is critical. Avoid spamming all four abilities in rapid succession without recasting Energy Vampire on a fresh target. Instead, establish a primary energy source early, then use Blessing and Well of Life reactively. With proper efficiency builds (Streamline, Fleeting Expertise), a trinity can maintain full uptime indefinitely.
+
+Trinity works best with teams that embrace her strengths: frames with high ability cast rates (Saryn, Nova, Mirage), weapon-focused damage dealers (Mesa, Titania, Ash), and defensive allies that benefit from passive energy sharing and healing (Nekros, Ivara, Loki). Avoid pairing with other full-support frames unless the mission explicitly requires it.
+
+## Recommended builds
+
+Trinity's build variety depends on mission type and squad composition. Endurance survival missions reward high duration, range, and efficiency; healing rotations prioritize power strength and range; solo content emphasizes self-sustain through efficiency and personal survivability mods.
+
+A typical high-range, efficiency-focused build looks like: Corrosive Projection (aura), Vitality, Streamline, Continuity, Augur Stretch, Natural Talent, Energy Vampire augment (Vampire's Blessing), and Power Strength mods (Intensify, Augur Intensify, or Transient Fortitude). This setup maximizes ability range and efficiency, allowing constant casting with minimal energy concerns.
+
+A healing-focused variant substitutes Stretch and Vigor for additional power strength, pushing Blessing's damage reduction to extreme values. Pair with Arcane Blessing and Arcane Aegis to layer additional defenses.
+
+Solo Trinity prioritizes efficiency and survivability: add Enduring Toughness or similar defensive augments, combine with Thief's Wit or Loot Detector to farm passively, and position yourself where you can kite away from threats while maintaining support abilities.
+
+## Builds
+
+Trinity's builds are well-documented across community sites like Overframe and the official Wiki. Most builds fall into three categories: healer, support/utility, and solo farming. All three are viable in their respective contexts, and Trinity's flexibility allows skilled players to adapt her kit to almost any mission type through mod loadout adjustments.
+
+## Synergies
+
+Trinity synergizes with several common warframes and weapons. Saryn benefits from Trinity's energy sustain to spam Spores and Miasma repeatedly. Mesa relies on Trinity's healing and damage reduction to stay alive during prolonged firefights. Octavia uses Trinity's support to cast Amp and Mallet constantly. On the enemy side, Trinity synergizes with Operator amps—marking an enemy with Energy Vampire increases amp damage output indirectly by freeing up energy for Void damage bursts.
+
+Trinity's passive also synergizes with certain companion builds. Kavat Guardian and Sentinel Regen both become more effective when Trinity's passive boosts base health pools. Frame-specific augments (Vampire's Blessing, Abating Link) offer additional synergies with specific ability combos.
+
+## Lore
+
+Trinity embodies the concept of redemption and restoration. According to Warframe lore, she was designed by the Orokin as a servant of healing and protection, a counterpoint to the Warframes built for aggressive warfare. Her codex entry states: "Trinity embodies redemption and health. Her extraordinary healing powers support allies. Where others destroy, she restores."
+
+The Lotus frequently dispatches Trinity to rescue missions, siege situations, and prolonged operations where team survival is paramount. Canonically, Trinity represents hope—the knowledge that no matter how dire the situation, healing and second chances are always possible. This thematic identity as a savior and protector permeates her abilities and playstyle.
+
+Trinity has existed since Warframe's closed beta days, predating many modern warframes by years. Her relative simplicity and powerful identity made her iconic among early players. While newer support frames have been introduced (Protea, Zariman), Trinity remains the gold standard for team healing and energy sustain, a testament to her elegant design.
+
+## Sources
+
+Trinity is documented across the Warframe community. The official wiki provides comprehensive ability details and farming guides. Overframe community builds showcase optimization strategies for various mission types. Trading sites like warframe.market track Prime parts and relics pricing for players farming Trinity Prime during unvault windows.
+
+For ability mechanics and exact damage numbers, consult the WFCD warframe-items database, which provides the authoritative numeric values for all Trinity abilities. Patch notes from the official forums document changes to her kit across multiple updates, including the Range increase to Well of Life in Update 32.2 and the Railjack balance pass in Update 27.4.

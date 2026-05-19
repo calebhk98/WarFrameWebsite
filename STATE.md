@@ -155,6 +155,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - sevagoth-prime :: src/content/warframes/sevagoth-prime.mdx
 - styanax :: src/content/warframes/styanax.mdx
 - temple :: src/content/warframes/temple.mdx
+- titania :: src/content/warframes/titania.mdx
+- titania-prime :: src/content/warframes/titania-prime.mdx
+- trinity :: src/content/warframes/trinity.mdx
+- trinity-prime :: src/content/warframes/trinity-prime.mdx
+- valkyr :: src/content/warframes/valkyr.mdx
+- valkyr-prime :: src/content/warframes/valkyr-prime.mdx
+- vauban :: src/content/warframes/vauban.mdx
+- vauban-prime :: src/content/warframes/vauban-prime.mdx
 
 ## done.weapons
 
@@ -363,6 +371,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - sevagoth-prime
 - styanax
 - temple
+- titania
+- titania-prime
+- trinity
+- trinity-prime
+- valkyr
+- valkyr-prime
+- vauban
+- vauban-prime
 
 ## verified.weapons
 

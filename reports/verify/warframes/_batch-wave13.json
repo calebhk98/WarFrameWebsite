@@ -1,0 +1,47 @@
+{
+  "total": 8,
+  "passed": 8,
+  "failed": 0,
+  "results": {
+    "titania": {
+      "pass": true,
+      "errors": 0,
+      "report_path": "/home/user/WarFrameWebsite/reports/verify/warframes/titania.json"
+    },
+    "titania-prime": {
+      "pass": true,
+      "errors": 0,
+      "report_path": "/home/user/WarFrameWebsite/reports/verify/warframes/titania-prime.json"
+    },
+    "trinity": {
+      "pass": true,
+      "errors": 0,
+      "report_path": "/home/user/WarFrameWebsite/reports/verify/warframes/trinity.json"
+    },
+    "trinity-prime": {
+      "pass": true,
+      "errors": 0,
+      "report_path": "/home/user/WarFrameWebsite/reports/verify/warframes/trinity-prime.json"
+    },
+    "valkyr": {
+      "pass": true,
+      "errors": 0,
+      "report_path": "/home/user/WarFrameWebsite/reports/verify/warframes/valkyr.json"
+    },
+    "valkyr-prime": {
+      "pass": true,
+      "errors": 0,
+      "report_path": "/home/user/WarFrameWebsite/reports/verify/warframes/valkyr-prime.json"
+    },
+    "vauban": {
+      "pass": true,
+      "errors": 0,
+      "report_path": "/home/user/WarFrameWebsite/reports/verify/warframes/vauban.json"
+    },
+    "vauban-prime": {
+      "pass": true,
+      "errors": 0,
+      "report_path": "/home/user/WarFrameWebsite/reports/verify/warframes/vauban-prime.json"
+    }
+  }
+}
