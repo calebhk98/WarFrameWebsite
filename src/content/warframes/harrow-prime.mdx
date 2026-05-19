@@ -1,0 +1,160 @@
+---
+slug: harrow-prime
+name: Harrow Prime
+aliases: []
+masteryRank: 0
+health: 270
+shield: 640
+armor: 185
+energy: 140
+sprintSpeed: 1.0
+passive:
+  name: "Overshield Capacity & Starting Energy"
+  description: "Overshield capacity is doubled. Missions start with maximum energy."
+abilities:
+  - name: Condemn
+    key: "1"
+    energyCost: 25
+    description: >-
+      Cast a wave of energy that chains enemies in place. Each enemy held by the wave reinforces Harrow's shields, converting enemy restraint into protective barriers.
+    stats: {}
+  - name: Penance
+    key: "2"
+    energyCost: 0
+    description: >-
+      Sacrifice shields to boost reload speed and fire rate. Damage inflicted by affected weapons is converted into health for Harrow and nearby allies.
+    stats: {}
+  - name: Thurible
+    key: "3"
+    energyCost: 25
+    description: >-
+      Channel energy into the Thurible, generating a buff. Kill enemies to bestow nearby allies with energy bursts scaled to the channeled amount. Headshots yield extra energy.
+    stats: {}
+  - name: Covenant
+    key: "4"
+    energyCost: 50
+    description: >-
+      Project an energy force that absorbs all damage for nearby allies and converts it into a critical chance bonus. Headshots amplify the effect even further.
+    stats: {}
+acquisition:
+  source: "Void Fissure relics (Harrow Prime relics)"
+  blueprintLocations:
+    - "Harrow Prime Blueprint: Axi H4 relic (rare drop)"
+    - "Harrow Prime Neuroptics: Meso H2 relic (rare drop)"
+    - "Harrow Prime Chassis: Lith H1 relic (rare drop)"
+    - "Harrow Prime Systems: Neo H2 relic (rare drop)"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2021-12-16"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Harrow_Prime"
+    accessedAt: "2026-05-19"
+    title: "Harrow Prime — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19T00:00:00Z"
+---
+
+## Overview
+
+Harrow Prime is a support-oriented warframe excelling at energy manipulation and ally protection through damage conversion and critical chance amplification. Released in December 2021, Harrow Prime represents a refined iteration of the base Harrow, with significantly higher shield capacity (640 vs. 390 base) that unlocks the frame's full defensive potential. The Inquisitor Eternal rises hallowed by the Void, combining theological aesthetics with ruthless battlefield mechanics.
+
+Harrow Prime's core identity centers on a trinity of mechanics: condemning enemies to reinforce shields, sacrificing shields for weapon empowerment, and distributing energy rewards to allies for successful kills. Unlike frames focused on raw damage output or area denial, Harrow Prime excels at enabling squadmate effectiveness while maintaining personal survivability through intelligent shield management. The frame's high shield value transforms it from a liability into an asset, allowing sustained aggressive play without constant regeneration dependencies.
+
+The frame thrives in squad compositions where coordinated damage output benefits from consistent uptime and energy regeneration. Its passive—doubling overshield capacity and starting missions at full energy—removes early-mission vulnerability and provides the energy economy to sustain ability spam across lengthy endless missions. Harrow Prime remains viable across all mission types, from mobile defense to endless survival, though squad-based content maximizes its value proposition.
+
+## Abilities
+
+<AbilityCard
+  name="Condemn"
+  key="1"
+  energyCost="25"
+  description="Cast a wave of energy that chains enemies in place. Each enemy held by the wave reinforces Harrow's shields, converting enemy restraint into protective barriers."
+/>
+
+Condemn functions as both crowd control and shield generation. Casting sends an energy wave outward that immobilizes enemies in its path for a brief duration. Critically, each enemy held by Condemn grants Harrow shields proportional to enemy level and engagement status. Against high-level or tanky enemies, Condemn rewards extended chain duration with meaningful shield gains. The ability's low energy cost encourages frequent casting to maintain shield pressure, and the crowd control component provides breathing room during overwhelming encounters. Condemn synergizes poorly with Penance's shield consumption, requiring tactical sequencing—typically casting Condemn first to rebuild shields, then sacrificing them through Penance for offensive buffs.
+
+<AbilityCard
+  name="Penance"
+  key="2"
+  energyCost="0"
+  description="Sacrifice shields to boost reload speed and fire rate. Damage inflicted by affected weapons is converted into health for Harrow and nearby allies."
+/>
+
+Penance transforms shields from defense into offense. When activated, it scales reload speed and fire rate bonuses based on shields consumed, creating a powerful incentive to maintain high shield values. The health conversion component scales with outgoing damage: higher-damage weapons and critical strikes generate larger lifesteal procs, making Penance especially potent on crit-heavy weapon builds. The zero energy cost allows unlimited spam provided shields are available, eliminating energy pressure during extended firefights. Penance's effectiveness depends on shield availability from Condemn and overshield generation, forming a core loop: Condemn shields → Penance offense → survive through lifesteal → repeat.
+
+<AbilityCard
+  name="Thurible"
+  key="3"
+  energyCost="25"
+  description="Channel energy into the Thurible, generating a buff. Kill enemies to bestow nearby allies with energy bursts scaled to the channeled amount. Headshots yield extra energy."
+/>
+
+Thurible is Harrow Prime's primary energy distribution mechanic and the frame's primary support ability. During the channeling phase, Harrow builds a buff pool by investing energy; longer channels yield larger rewards. Upon finishing the channel, each enemy kill within a short duration grants nearby allies bursts of energy scaled to the accumulated channeling amount. Headshots double the energy gain, incentivizing precise marksmanship from allied gunners. The ability shines in coordinated teams where dedicated damage dealers can chain headshots while Harrow channels behind cover. Solo Harrow finds Thurible less impactful, though the personal energy sustain still provides value. Thurible's strength scales linearly with team damage output, making it capable of trivializing energy requirements for high-fire-rate weapons and energy-hungry abilities across a full squad.
+
+<AbilityCard
+  name="Covenant"
+  key="4"
+  energyCost="50"
+  description="Project an energy force that absorbs all damage for nearby allies and converts it to a critical chance bonus. Headshots amplify the effect even further."
+/>
+
+Covenant is Harrow Prime's defensive ultimate, projecting a shield that absorbs incoming damage for all nearby allies and converts absorbed damage into a critical chance buff. Unlike typical damage mitigation, Covenant's critical bonus scales directly with damage absorbed, incentivizing aggressive positioning in dangerous enemy fire. Headshots while under Covenant amplify the critical bonus multiplicatively, creating exponential scaling when combined with natural critical chance mods or other multiplicative bonuses. The ability pairs exceptionally well with critical-focused weapons: sniper rifles, shotguns, and heavy guns all benefit from the additional crit ceiling. Covenant's duration and absorption pool scale with ability strength and duration mods respectively, allowing tank-oriented builds to maintain near-permanent critical bonuses while enduring otherwise lethal encounters.
+
+## Passive
+
+Harrow Prime's passive provides two distinct benefits. Overshield capacity is doubled, allowing shields from Condemn and other sources to exceed normal caps by up to 100%. This multiplicative boost transforms shield generation from incidental to primary defense, enabling Harrow Prime to reach effective bulks comparable to tanky frames despite modest base shield values. The second passive benefit—starting missions at maximum energy—eliminates the early-mission vulnerability period, allowing Harrow to activate defensive abilities immediately without waiting for energy regeneration. This passive pairs especially well with Thurible and Covenant, enabling aggressive early-mission play and ensuring energy availability for clutch support ability usage.
+
+## Stats
+
+| Stat | Value |
+|------|------:|
+| Health | 270 |
+| Shield | 640 |
+| Armor | 185 |
+| Energy | 140 |
+| Sprint Speed | 1.0x |
+| Mastery Rank | 0 |
+
+All stats are recorded at rank 0. Harrow Prime's stat distribution reflects a support archetype: modest health and armor paired with exceptional shield values create a frame optimized for absorbing attacks through Condemn's shield generation and Covenant's damage conversion. The 640 shield value is among the highest in the frame roster and represents Harrow Prime's defining defensive tool. Energy at 140 supports approximately five ability casts before depletion, sufficient for sustained play in early missions but requiring Thurible's energy distribution or squad cooperation in prolonged encounters. Sprint speed at baseline ensures mobility is not sacrificed for survivability.
+
+## Acquisition
+
+Harrow Prime components are obtained exclusively through Void Fissure relics, requiring player participation in Void Fissure missions and relic opening mechanics. The frame is currently unvaulted and rotates through normal relic drop tables, making all components accessible to players actively running Void Fissure missions. Blueprint acquisition requires opening Axi H4 relics in the rare drop slot; Neuroptics drop from Meso H2 relics; Chassis drop from Lith H1 relics; Systems drop from Neo H2 relics.
+
+Each component requires farming multiple relic runs to obtain: Void Fissure missions reward intact relics upon mission completion, and players must open relics by consuming reactant obtained during missions. The dropchance for prime components varies by rarity tier; rare drops demand sustained relic farming across multiple mission runs. Most players acquire Harrow Prime between Mastery Rank 15 and 20, after establishing sufficient relic farming experience and void fissure mission completion. Construction requires 25,000 credits and 72 hours of build time, consistent with prime warframe templates. Harrow Prime is currently unvaulted, making acquisition viable at present game state.
+
+## Playstyle
+
+Harrow Prime excels in squad-based endless missions where energy distribution and damage scaling amplify teammate effectiveness. Optimal playstyle involves cycling between Condemn and Penance in combat phases: cast Condemn against clusters of enemies to reinforce shields, then activate Penance to empower squad weapons with reload and fire rate bonuses while lifesteal sustains Harrow's health. During lulls in contact, use Thurible to channel and convert kills into ally energy, ensuring persistent ability uptime across the squad. Covenant is positioned as both defensive tool and offensive multiplier: activate preemptively during high-damage phases to absorb lethal damage while building critical bonuses, then leverage the critical buff to coordinate ally headshots for exponential damage scaling.
+
+Solo Harrow Prime playstyle differs significantly: Covenant and Thurible provide diminishing returns without allies to benefit from energy and crit buffs. Solo players should emphasize Condemn and Penance as a shield-management loop, relying on the critical scaling from Covenant against high-priority targets rather than spamming it for squad defense. Energy management becomes critical; without ally headshots feeding energy back through Thurible, solo Harrow depends on Penance's zero-cost design and primed flow mods to sustain extended missions.
+
+Harrow Prime's survivability scales with shield management discipline: maintaining high shields requires frequent Condemn casts and shield-generation mods, while allowing shields to deplete creates Penance starvation, eliminating the weapon empowerment that sustains team damage output. The frame rewards active play over passive survival; successful Harrow Prime pilots maintain shields proactively rather than reactively.
+
+## Recommended Builds
+
+**Squad Support Build**: Prioritize ability duration and range to maximize Covenant and Thurible coverage area. Combine with strength mods to scale shield generation from Condemn and critical scaling from Covenant. Use aura mods that benefit squad members (Corrosive Projection, Defensive Mods). Pair with tanky companion frames to distribute incoming damage between sources. This build excels in endless defense and survival missions where squad coordination is highest.
+
+**Shield Tank Build**: Maximize ability strength to amplify Condemn shield gains and Penance lifesteal scaling. Combine with shield-specific mods (Primed Vigor, Shield mods) to inflate shields from enemy contact. Include primed flow to sustain Penance's zero-cost ability spam without energy pressure. This build transforms Harrow Prime into a near-invulnerable tank against moderate-level enemies while maintaining support capability.
+
+**Crit Amplification Build**: Emphasize ability strength and range to maximize Covenant's critical scaling. Combine with weapons that naturally synergize with critical buffs: Headshot-focused sniper rifles, crit-bonused shotguns, high-fire-rate critical primaries. Use mods that convert damage into effects (Condition Overload, elemental weapons) to compound Covenant's scaling. This build eliminates Harrow Prime's support focus in favor of personal damage amplification, best suited for solo content or premade squad runs with established damage dealers.
+
+## Lore
+
+Harrow is an inquisitorial frame, drawing design themes from theological iconography and mystical imprisonment. Harrow Prime, the Inquisitor Eternal, rises hallowed by the Void itself, suggesting divine or Orokin-granted authority beyond standard warframe templates. The frame's design incorporates chains, ecclesiastical robes, and a condemning silhouette, visually positioning the frame as judge and jailer simultaneously. Thematic elements suggest Harrow represents the Tenno's ability to restrain enemies through faith and conviction rather than brute force.
+
+The warframe's lore position within the Origin System remains ambiguous: Harrow lacks a dedicated quest narrative comparable to frames like Nidus or Titania, instead appearing as a relic offering through standard relic mechanics. This positions Harrow as a discovered entity rather than a summoned ally, suggesting the frame exists independently within the Void and is claimed by Tenno rather than granted by the Lotus. The Void itself becomes Harrow's source of identity, mystically aligned with the Tenno's own connection to the Void through operator transference.
+
+Harrow Prime specifically represents the evolved form of this imprisonment archetype, refined by Orokin craftsmanship and untouched by time's decay. The frame's passive benefit of starting at maximum energy suggests connection to an infinite or primordial energy source, further reinforcing the Void-aligned mysticism underlying Harrow's identity. Within squad dynamics, Harrow Prime takes on the role of conduit—channeling shared energy between allies, converting enemy restraint into protective shields, and transforming damage taken into offensive advantage. The frame embodies a theological principle of redemption: suffering and restraint are converted into strength, and sacrifice generates collective resilience.
+
+## Sources
+
+This article cites WFCD (warframe-items) as the canonical source for all numeric stats: masteryRank, health, shield, armor, energy, and ability costs. The Fandom Wiki provides narrative context regarding lore, acquisition, and thematic background, accessible at [Harrow Prime — WARFRAME Wiki](https://warframe.fandom.com/wiki/Harrow_Prime). Ability mechanics and scaling descriptions derive from in-game testing and community gameplay documentation reflecting current patch state as of the WFCD data release date.

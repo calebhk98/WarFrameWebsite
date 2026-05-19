@@ -99,6 +99,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - gauss-prime :: src/content/warframes/gauss-prime.mdx
 - grendel :: src/content/warframes/grendel.mdx
 - grendel-prime retry:1 :: src/content/warframes/grendel-prime.mdx
+- gyre :: src/content/warframes/gyre.mdx
+- harrow retry:1 :: src/content/warframes/harrow.mdx
+- harrow-prime :: src/content/warframes/harrow-prime.mdx
+- helminth :: src/content/warframes/helminth.mdx
+- hildryn :: src/content/warframes/hildryn.mdx
+- hildryn-prime :: src/content/warframes/hildryn-prime.mdx
+- hydroid :: src/content/warframes/hydroid.mdx
+- hydroid-prime :: src/content/warframes/hydroid-prime.mdx
 
 ## done.weapons
 
@@ -251,6 +259,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - gauss-prime
 - grendel
 - grendel-prime
+- gyre
+- harrow
+- harrow-prime
+- helminth
+- hildryn
+- hildryn-prime
+- hydroid
+- hydroid-prime
 
 ## verified.weapons
 
