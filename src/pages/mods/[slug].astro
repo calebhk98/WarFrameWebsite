@@ -1,0 +1,88 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+
+export async function getStaticPaths() {
+  const mods = await getCollection('mods');
+  return mods.map((m) => ({ params: { slug: m.slug }, props: { entry: m } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+
+const maxStats = data.perRankStats.find((r) => r.rank === data.maxRank)?.stats ?? {};
+const statParts = Object.entries(maxStats).map(([k, v]) => `${k}: ${v}`);
+
+const tags: string[] = [
+  `Type: ${data.type}`,
+  `Polarity: ${data.polarity}`,
+  `Rarity: ${data.rarity}`,
+  `Drain: ${data.drain}`,
+  `Max Rank: ${data.maxRank}`,
+];
+
+const description = statParts.length > 0
+  ? `${data.effect} (max rank: ${statParts.join(', ')})`
+  : data.effect;
+---
+
+<Entity
+  title={data.name}
+  kind="mod"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+>
+  {data.perRankStats.length > 0 && (
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-brand-cream mb-3">Stats per Rank</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="border-b border-surface-3">
+              <th class="text-left py-2 px-3 text-brand-cream/60 font-medium">Rank</th>
+              {Object.keys(data.perRankStats[0]?.stats ?? {}).map((key) => (
+                <th class="text-left py-2 px-3 text-brand-cream/60 font-medium capitalize">{key}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {data.perRankStats.map((row) => (
+              <tr class="border-b border-surface-3/50 hover:bg-surface-2/50">
+                <td class="py-2 px-3 text-brand-orange font-semibold">{row.rank}</td>
+                {Object.values(row.stats).map((val) => (
+                  <td class="py-2 px-3 text-brand-cream/80">{String(val)}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )}
+
+  {data.drops.length > 0 && (
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-brand-cream mb-3">Drop Locations</h2>
+      <ul class="space-y-2">
+        {data.drops.map((drop) => (
+          <li class="flex items-start gap-2 text-sm">
+            <span class="text-brand-orange shrink-0 mt-0.5">&#8227;</span>
+            <span class="text-brand-cream/80">
+              {drop.source}
+              {drop.chance !== undefined && (
+                <span class="text-brand-cream/50 ml-1">({drop.chance}%)</span>
+              )}
+              {drop.rotation && (
+                <span class="text-brand-cream/50 ml-1">Rotation {drop.rotation}</span>
+              )}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <Content />
+</Entity>

@@ -1,0 +1,128 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+
+export async function getStaticPaths() {
+  const weapons = await getCollection('weapons');
+  return weapons.map((w) => ({ params: { slug: w.slug }, props: { entry: w } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+
+const totalBaseDmg = data.damage.impact + data.damage.puncture + data.damage.slash;
+const elemEntries = Object.entries(data.damage.elemental ?? {});
+
+const tags: string[] = [
+  `MR ${data.masteryRank}`,
+  `Type: ${data.type}`,
+  `Category: ${data.category}`,
+  ...(data.prime?.available ? ['Has Prime'] : []),
+  ...(data.prime?.vaulted ? ['Vaulted'] : []),
+];
+
+const description = `${data.name} — Base Damage: ${totalBaseDmg.toFixed(1)}, Crit Chance: ${(data.criticalChance * 100).toFixed(0)}%, Crit Mult: ${data.criticalMultiplier}x, Status: ${(data.statusChance * 100).toFixed(0)}%`;
+---
+
+<Entity
+  title={data.name}
+  kind="weapon"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+>
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-brand-cream mb-3">Stats</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Base Damage</p>
+        <p class="text-lg font-bold text-brand-cream">{totalBaseDmg.toFixed(1)}</p>
+        <p class="text-xs text-brand-cream/40 mt-0.5">
+          I: {data.damage.impact} &nbsp;P: {data.damage.puncture} &nbsp;S: {data.damage.slash}
+        </p>
+      </div>
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Crit Chance</p>
+        <p class="text-lg font-bold text-brand-orange">{(data.criticalChance * 100).toFixed(0)}%</p>
+      </div>
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Crit Multiplier</p>
+        <p class="text-lg font-bold text-brand-cream">{data.criticalMultiplier}x</p>
+      </div>
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Status Chance</p>
+        <p class="text-lg font-bold text-brand-cream">{(data.statusChance * 100).toFixed(0)}%</p>
+      </div>
+      {data.fireRate !== undefined && (
+        <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+          <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Fire Rate</p>
+          <p class="text-lg font-bold text-brand-cream">{data.fireRate}</p>
+        </div>
+      )}
+      {data.magazine !== undefined && (
+        <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+          <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Magazine</p>
+          <p class="text-lg font-bold text-brand-cream">{data.magazine}</p>
+        </div>
+      )}
+      {data.reload !== undefined && (
+        <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+          <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Reload</p>
+          <p class="text-lg font-bold text-brand-cream">{data.reload}s</p>
+        </div>
+      )}
+      {data.accuracy !== undefined && (
+        <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+          <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Accuracy</p>
+          <p class="text-lg font-bold text-brand-cream">{data.accuracy}</p>
+        </div>
+      )}
+      {data.attackSpeed !== undefined && (
+        <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+          <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Attack Speed</p>
+          <p class="text-lg font-bold text-brand-cream">{data.attackSpeed}</p>
+        </div>
+      )}
+      {data.range !== undefined && (
+        <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+          <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Range</p>
+          <p class="text-lg font-bold text-brand-cream">{data.range}m</p>
+        </div>
+      )}
+    </div>
+
+    {elemEntries.length > 0 && (
+      <div class="mt-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-2">Elemental Damage</p>
+        <div class="flex flex-wrap gap-2">
+          {elemEntries.map(([type, val]) => (
+            <span class="text-xs px-2 py-1 rounded bg-surface-2 border border-surface-3 text-brand-cream/80">
+              {type}: {String(val)}
+            </span>
+          ))}
+        </div>
+      </div>
+    )}
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-brand-cream mb-3">Acquisition</h2>
+    <p class="text-sm text-brand-cream/80">{data.acquisition.source}</p>
+    {data.acquisition.blueprintLocations.length > 0 && (
+      <ul class="mt-2 space-y-1">
+        {data.acquisition.blueprintLocations.map((loc) => (
+          <li class="text-xs text-brand-cream/60 flex items-start gap-1">
+            <span class="text-brand-orange shrink-0">&#8227;</span>
+            {loc}
+          </li>
+        ))}
+      </ul>
+    )}
+    {data.acquisition.buildTimeHours !== undefined && data.acquisition.buildTimeHours !== null && (
+      <p class="mt-2 text-xs text-brand-cream/50">Build time: {data.acquisition.buildTimeHours}h</p>
+    )}
+  </section>
+
+  <Content />
+</Entity>

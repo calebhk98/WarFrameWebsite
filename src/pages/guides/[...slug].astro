@@ -1,0 +1,159 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((g) => ({ params: { slug: g.slug }, props: { entry: g } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+
+const kindLabels: Record<string, string> = {
+  farming: 'Farming Guide',
+  strategy: 'Strategy Guide',
+  path: 'Progression Path',
+};
+
+const tags: string[] = [kindLabels[data.kind] ?? data.kind];
+
+function buildDescription(): string {
+  if (data.kind === 'farming') {
+    return `Farming guide for ${data.target}. Covers best missions, recommended frames, and tips.`;
+  }
+  if (data.kind === 'strategy') {
+    return `Strategy guide: ${data.topic}.`;
+  }
+  // data.kind === 'path'
+  return `Progression path for ${data.audience} players. ${data.milestones.length} milestone${data.milestones.length !== 1 ? 's' : ''}.`;
+}
+
+const description = buildDescription();
+---
+
+<Entity
+  title={data.name}
+  kind="guide"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+>
+  {data.kind === 'farming' && (
+    <>
+      {data.recommendedMissions.length > 0 && (
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold text-brand-cream mb-3">Recommended Missions</h2>
+          <ul class="space-y-2">
+            {data.recommendedMissions.map((m) => (
+              <li class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+                <p class="text-sm font-semibold text-brand-cream">{m.node}</p>
+                <p class="text-xs text-brand-cream/60 mt-0.5">{m.why}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {data.recommendedFrames.length > 0 && (
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold text-brand-cream mb-3">Recommended Warframes</h2>
+          <div class="flex flex-wrap gap-2">
+            {data.recommendedFrames.map((frame) => (
+              <span class="text-sm px-3 py-1 rounded-full bg-surface-2 border border-surface-3 text-brand-cream/80">
+                {frame}
+              </span>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {data.tips.length > 0 && (
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold text-brand-cream mb-3">Tips</h2>
+          <ul class="space-y-2">
+            {data.tips.map((tip) => (
+              <li class="flex items-start gap-2 text-sm">
+                <span class="text-brand-orange shrink-0 mt-0.5">&#8227;</span>
+                <span class="text-brand-cream/80">{tip}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </>
+  )}
+
+  {data.kind === 'strategy' && (
+    <>
+      {data.prerequisites.length > 0 && (
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold text-brand-cream mb-3">Prerequisites</h2>
+          <ul class="space-y-1">
+            {data.prerequisites.map((p) => (
+              <li class="flex items-start gap-2 text-sm">
+                <span class="text-brand-orange shrink-0 mt-0.5">&#8227;</span>
+                <span class="text-brand-cream/80">{p}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-brand-cream mb-3">Steps</h2>
+        <ol class="space-y-2 list-decimal list-inside">
+          {data.steps.map((step) => (
+            <li class="text-sm text-brand-cream/80 pl-1">{step}</li>
+          ))}
+        </ol>
+      </section>
+
+      {data.commonMistakes.length > 0 && (
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold text-brand-cream mb-3">Common Mistakes</h2>
+          <ul class="space-y-1">
+            {data.commonMistakes.map((m) => (
+              <li class="flex items-start gap-2 text-sm">
+                <span class="text-red-400 shrink-0 mt-0.5">&#8227;</span>
+                <span class="text-brand-cream/80">{m}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </>
+  )}
+
+  {data.kind === 'path' && (
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-brand-cream mb-3">Milestones</h2>
+      <ol class="space-y-4">
+        {data.milestones.map((ms) => (
+          <li class="rounded-lg bg-surface-2 border border-surface-3 p-4">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-xs px-2 py-0.5 rounded-full bg-brand-orange/20 text-brand-orange font-semibold">
+                {ms.order + 1}
+              </span>
+              <h3 class="text-sm font-semibold text-brand-cream">{ms.title}</h3>
+            </div>
+            <p class="text-xs text-brand-cream/70 mb-2">{ms.description}</p>
+            {ms.recommendedActions.length > 0 && (
+              <ul class="space-y-0.5">
+                {ms.recommendedActions.map((action) => (
+                  <li class="text-xs text-brand-cream/60 flex items-start gap-1">
+                    <span class="text-brand-orange shrink-0">&#8227;</span>
+                    {action}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  <Content />
+</Entity>
