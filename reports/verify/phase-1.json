@@ -1,0 +1,179 @@
+{
+  "phase": 1,
+  "verifier_run_at": "2026-05-18T17:00:00Z",
+  "checks": [
+    {
+      "id": "claude-md",
+      "pass": true,
+      "lines": 293,
+      "missing_sections": [],
+      "notes": "Has MANAGER BOOTSTRAP, Mission, Stack, Slug rules, Commit convention, ENGINEERING GUARDRAILS, CONTENT RULES, WHEN IN DOUBT"
+    },
+    {
+      "id": "state-md",
+      "pass": true,
+      "collections_present": 12,
+      "queues_empty": true,
+      "phase": "1:docs",
+      "notes": "All 12 collections have queue, done, verified, failed sections. All queue sections confirmed empty."
+    },
+    {
+      "id": "orchestration-md",
+      "pass": true,
+      "lines": 326,
+      "sections": ["Manager Loop", "STATE.md Schema", "Phase Advancement Rules", "Subagent Dispatch", "Wave Sizes and Concurrency Caps", "Failure Recovery", "Commit-Batch Protocol", "GitHub Issue Conventions", "When in doubt"]
+    },
+    {
+      "id": "tdd-md",
+      "pass": true,
+      "lines": 282,
+      "sections": ["Scope", "Red-Green-Refactor", "Pair Detection in CI", "MDX Equivalent", "Fixtures Over Network", "Vitest Conventions", "Worked Example", "Anti-Patterns", "When in doubt"]
+    },
+    {
+      "id": "schemas-md",
+      "pass": true,
+      "lines": 1109,
+      "collections_covered": 12,
+      "collections": ["warframes", "weapons", "mods", "quests", "factions", "syndicates", "relics", "arcanes", "missions", "resources", "builds", "guides"],
+      "notes": "Each collection has Required, Optional, Example sections; Shared sub-schemas documented"
+    },
+    {
+      "id": "style-md",
+      "pass": true,
+      "lines": 342,
+      "sections": ["Voice", "Tense", "Headings", "Stats", "Abilities", "MDX component palette", "Citations", "Links", "Word-count floors", "Section order", "Tables", "Code and inline values", "Lists", "Numbers and units"]
+    },
+    {
+      "id": "agents-md",
+      "pass": true,
+      "lines": 1744,
+      "roles_count": 22,
+      "roles": [
+        "research-warframe",
+        "research-weapon",
+        "research-mod",
+        "research-resource",
+        "research-arcane",
+        "research-relic",
+        "research-quest",
+        "research-faction",
+        "research-syndicate",
+        "research-mission",
+        "research-build",
+        "research-guide-farming",
+        "research-guide-strategy",
+        "research-guide-path",
+        "verify-content",
+        "verify-verifier",
+        "qa-sample",
+        "commit-batch",
+        "data-import",
+        "feature-research",
+        "feature-implement",
+        "scaffold"
+      ],
+      "notes": "Each role has WHEN, INPUTS, OUTPUTS, MUST, MUST NOT, REPLY FORMAT, PROMPT TEMPLATE"
+    },
+    {
+      "id": "data-md",
+      "pass": true,
+      "lines": 226,
+      "sections": ["Canonical data sources", "WFCD JSON", "APIs", "Cache TTLs", "Fandom Wiki rules", "Adding a new data source", "Data integrity rules", "FAQ"]
+    },
+    {
+      "id": "local-dev-md",
+      "pass": true,
+      "lines": 257,
+      "sections": ["Prerequisites", "Clone and install", "Import data", "Run the dev server", "Tests", "Type checking", "Production build", "Preview a built site", "Verify a single content file", "Generate a content stub", "Troubleshooting", "Environment variables", "Useful one-liners", "Where to file issues"]
+    },
+    {
+      "id": "config-ts",
+      "pass": true,
+      "lines": 45,
+      "collections_exported": 12,
+      "collections": ["warframes", "weapons", "mods", "quests", "factions", "syndicates", "relics", "arcanes", "missions", "resources", "builds", "guides"],
+      "notes": "Imports all schemas from ./schemas/, re-exports via 'export *', defines collections object with all 12 defineCollection() calls"
+    },
+    {
+      "id": "schemas-modules",
+      "pass": true,
+      "module_count": 13,
+      "max_lines": 74,
+      "modules": [
+        "shared.ts (74 lines)",
+        "warframes.ts (38 lines)",
+        "weapons.ts (46 lines)",
+        "mods.ts (59 lines)",
+        "quests.ts (19 lines)",
+        "factions.ts (13 lines)",
+        "syndicates.ts (20 lines)",
+        "relics.ts (26 lines)",
+        "arcanes.ts (30 lines)",
+        "missions.ts (18 lines)",
+        "resources.ts (26 lines)",
+        "builds.ts (31 lines)",
+        "guides.ts (55 lines)"
+      ],
+      "notes": "All modules <= 250 lines; no 'any', no '@ts-ignore' found via grep"
+    },
+    {
+      "id": "issue-templates",
+      "pass": true,
+      "yaml_valid_count": 4,
+      "files": ["bug.yml", "content-item.yml", "feature.yml", "verification.yml"],
+      "notes": "All 4 YAML files validated with python3 yaml.safe_load(); each has name, description, body keys"
+    },
+    {
+      "id": "makefile",
+      "pass": true,
+      "targets": [
+        "help",
+        "install",
+        "dev",
+        "build",
+        "typecheck",
+        "test",
+        "lint",
+        "enumerate",
+        "enumerate-one",
+        "import",
+        "verify",
+        "qa",
+        "stub",
+        "commit-batch",
+        "clean"
+      ],
+      "notes": "'make help' succeeds and lists all targets"
+    },
+    {
+      "id": "typecheck",
+      "pass": true,
+      "exit": 0,
+      "output": "0 errors, 0 warnings, 0 hints from astro check and tsc --noEmit"
+    },
+    {
+      "id": "test",
+      "pass": true,
+      "exit": 0,
+      "output": "1 test passed (smoke.test.ts)"
+    },
+    {
+      "id": "build",
+      "pass": true,
+      "exit": 0,
+      "output": "1 page(s) built in 1.31s (index.astro for Phase 1 empty content)"
+    }
+  ],
+  "overall": "PASS",
+  "errors": [],
+  "warnings": [],
+  "summary": {
+    "docs_files_present": 9,
+    "schema_files_present": 13,
+    "collections_in_schema": 12,
+    "collections_in_config": 12,
+    "issue_templates_valid": 4,
+    "makefile_targets": 15,
+    "ci_status": "all green (typecheck, test, build)"
+  }
+}
