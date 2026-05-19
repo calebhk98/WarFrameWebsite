@@ -20,17 +20,18 @@ function pickRandom<T>(arr: T[], count: number): T[] {
 const featuredWarframes = pickRandom(allWarframes, 6);
 const featuredQuests = pickRandom(allQuests, 4);
 
+const base = import.meta.env.BASE_URL;
 const collections = [
-  { href: '/warframes', label: 'Warframes', desc: '110 frames — abilities, stats, builds' },
-  { href: '/weapons', label: 'Weapons', desc: '598 primary, secondary, and melee weapons' },
-  { href: '/mods', label: 'Mods', desc: 'Augments and featured mod catalogue' },
-  { href: '/quests', label: 'Quests', desc: '43 quests — walkthroughs and lore' },
-  { href: '/factions', label: 'Factions', desc: '35 factions — origins and weaknesses' },
-  { href: '/syndicates', label: 'Syndicates', desc: '18 syndicates — standing and rewards' },
-  { href: '/arcanes', label: 'Arcanes', desc: '156 arcane enhancements' },
-  { href: '/missions', label: 'Missions', desc: '260 mission nodes across the Star Chart' },
-  { href: '/resources', label: 'Resources', desc: '224 crafting materials and drops' },
-  { href: '/relics', label: 'Relics', desc: '2682 void relics for prime farming' },
+  { href: `${base}warframes`, label: 'Warframes', desc: '110 frames — abilities, stats, builds' },
+  { href: `${base}weapons`, label: 'Weapons', desc: '598 primary, secondary, and melee weapons' },
+  { href: `${base}mods`, label: 'Mods', desc: 'Augments and featured mod catalogue' },
+  { href: `${base}quests`, label: 'Quests', desc: '43 quests — walkthroughs and lore' },
+  { href: `${base}factions`, label: 'Factions', desc: '35 factions — origins and weaknesses' },
+  { href: `${base}syndicates`, label: 'Syndicates', desc: '18 syndicates — standing and rewards' },
+  { href: `${base}arcanes`, label: 'Arcanes', desc: '156 arcane enhancements' },
+  { href: `${base}missions`, label: 'Missions', desc: '260 mission nodes across the Star Chart' },
+  { href: `${base}resources`, label: 'Resources', desc: '224 crafting materials and drops' },
+  { href: `${base}relics`, label: 'Relics', desc: '2682 void relics for prime farming' },
 ];
 ---
 
@@ -60,13 +61,13 @@ const collections = [
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
         {featuredWarframes.map((w) => (
           <EntityCard
-            href={`/warframes/${w.slug}`}
+            href={`${base}warframes/${w.slug}`}
             name={w.data.name}
             tags={w.data.acquisition?.source ? [w.data.acquisition.source] : []}
           />
         ))}
       </div>
-      <a href="/warframes" class="mt-4 inline-block text-brand-orange hover:underline text-sm">
+      <a href={`${base}warframes`} class="mt-4 inline-block text-brand-orange hover:underline text-sm">
         Browse all warframes &rarr;
       </a>
     </section>
@@ -78,13 +79,13 @@ const collections = [
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {featuredQuests.map((q) => (
           <EntityCard
-            href={`/quests/${q.slug}`}
+            href={`${base}quests/${q.slug}`}
             name={q.data.name}
             tags={q.data.prerequisites?.length > 0 ? [`${q.data.prerequisites.length} prereq`] : []}
           />
         ))}
       </div>
-      <a href="/quests" class="mt-4 inline-block text-brand-orange hover:underline text-sm">
+      <a href={`${base}quests`} class="mt-4 inline-block text-brand-orange hover:underline text-sm">
         Browse all quests &rarr;
       </a>
     </section>

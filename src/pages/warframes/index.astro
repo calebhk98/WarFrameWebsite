@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import EntityCard from '../../components/EntityCard.astro';
 
+const base = import.meta.env.BASE_URL;
 const warframes = await getCollection('warframes');
 const sorted = [...warframes].sort((a, b) => a.data.name.localeCompare(b.data.name));
 
@@ -42,7 +43,7 @@ const letters = Object.keys(byLetter).sort();
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
           {byLetter[letter]!.map((w) => (
             <EntityCard
-              href={`/warframes/${w.slug}`}
+              href={`${base}warframes/${w.slug}`}
               name={w.data.name}
               tags={[
                 `MR${w.data.masteryRank}`,

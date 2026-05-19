@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import EntityCard from '../../components/EntityCard.astro';
 
+const base = import.meta.env.BASE_URL;
 const syndicates = await getCollection('syndicates');
 const sorted = [...syndicates].sort((a, b) => a.data.name.localeCompare(b.data.name));
 ---
@@ -17,7 +18,7 @@ const sorted = [...syndicates].sort((a, b) => a.data.name.localeCompare(b.data.n
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {sorted.map((s) => (
         <EntityCard
-          href={`/syndicates/${s.slug}`}
+          href={`${base}syndicates/${s.slug}`}
           name={s.data.name}
           tags={[
             s.data.type,

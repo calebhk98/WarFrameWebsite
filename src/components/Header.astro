@@ -1,27 +1,28 @@
 ---
 // Header — logo, nav links, Pagefind search input
 // Pagefind UI is wired via postbuild; the div is always rendered.
+const base = import.meta.env.BASE_URL;
 ---
 
 <header class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur border-b border-surface-3">
   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4 flex-wrap">
-    <a href="/" class="text-brand-orange font-bold text-xl tracking-wide whitespace-nowrap">
+    <a href={base} class="text-brand-orange font-bold text-xl tracking-wide whitespace-nowrap">
       Warframe Codex
     </a>
 
     <nav aria-label="Primary navigation" class="hidden md:flex flex-wrap gap-x-5 gap-y-1 text-sm">
-      <a href="/" class="nav-link">Home</a>
-      <a href="/warframes" class="nav-link">Warframes</a>
-      <a href="/weapons" class="nav-link">Weapons</a>
-      <a href="/mods" class="nav-link">Mods</a>
-      <a href="/quests" class="nav-link">Quests</a>
-      <a href="/factions" class="nav-link">Factions</a>
-      <a href="/syndicates" class="nav-link">Syndicates</a>
-      <a href="/arcanes" class="nav-link">Arcanes</a>
-      <a href="/missions" class="nav-link">Missions</a>
-      <a href="/resources" class="nav-link">Resources</a>
-      <a href="/relics" class="nav-link">Relics</a>
-      <a href="/worldstate" class="nav-link">Worldstate</a>
+      <a href={base} class="nav-link">Home</a>
+      <a href={`${base}warframes`} class="nav-link">Warframes</a>
+      <a href={`${base}weapons`} class="nav-link">Weapons</a>
+      <a href={`${base}mods`} class="nav-link">Mods</a>
+      <a href={`${base}quests`} class="nav-link">Quests</a>
+      <a href={`${base}factions`} class="nav-link">Factions</a>
+      <a href={`${base}syndicates`} class="nav-link">Syndicates</a>
+      <a href={`${base}arcanes`} class="nav-link">Arcanes</a>
+      <a href={`${base}missions`} class="nav-link">Missions</a>
+      <a href={`${base}resources`} class="nav-link">Resources</a>
+      <a href={`${base}relics`} class="nav-link">Relics</a>
+      <a href={`${base}worldstate`} class="nav-link">Worldstate</a>
     </nav>
 
     <div id="pagefind-search" class="w-48"></div>
@@ -38,7 +39,7 @@
   }
 </style>
 
-<link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+<link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
 <script>
   window.addEventListener('DOMContentLoaded', () => {
     // PagefindUI is injected by the pagefind postbuild step.
@@ -49,4 +50,8 @@
     }
   });
 </script>
-<script src="/pagefind/pagefind-ui.js" is:inline></script>
+<script define:vars={{ base }} is:inline>
+  const s = document.createElement('script');
+  s.src = base + 'pagefind/pagefind-ui.js';
+  document.head.appendChild(s);
+</script>

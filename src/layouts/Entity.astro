@@ -17,14 +17,15 @@ interface Props {
 
 const { title, kind, description, tags = [], sources = [] } = Astro.props;
 
-const collectionPath = `/${kind}s`;
+const base = import.meta.env.BASE_URL;
+const collectionPath = `${base}${kind}s`;
 const collectionLabel = kind.charAt(0).toUpperCase() + kind.slice(1) + 's';
 ---
 
 <Base title={title} description={description ?? `${title} — Warframe Codex`}>
   <div class="max-w-5xl mx-auto px-4 py-8">
     <nav aria-label="Breadcrumb" class="mb-6 text-sm text-brand-cream/50">
-      <a href="/" class="hover:text-brand-orange transition-colors">Home</a>
+      <a href={base} class="hover:text-brand-orange transition-colors">Home</a>
       <span class="mx-2">/</span>
       <a href={collectionPath} class="hover:text-brand-orange transition-colors">{collectionLabel}</a>
       <span class="mx-2">/</span>

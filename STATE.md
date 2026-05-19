@@ -6,7 +6,7 @@ read whole. One slug per line, format `- <slug>` (optionally with
 target section and deleting from the source section.
 
 ## phase
-5:pages-routes-search
+6:deploy-infrastructure
 
 ## cursor
 warframes: 0
