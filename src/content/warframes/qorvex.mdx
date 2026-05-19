@@ -1,0 +1,177 @@
+---
+slug: qorvex
+name: Qorvex
+aliases: []
+masteryRank: 0
+health: 600
+shield: 200
+armor: 875
+energy: 150
+sprintSpeed: 0.9
+passive:
+  name: Crucible Core
+  description: >-
+    Weapons wielded by Qorvex gain additional Punch Through, allowing projectiles
+    to penetrate through enemies and obstacles more easily.
+abilities:
+  - name: Chyrinka Pillar
+    key: "1"
+    energyCost: 25
+    description: >-
+      Summons a stationary Chyrinka Pillar that slows nearby enemies while
+      pulsing Radiation damage with guaranteed Status Effects.
+    stats: { damage: "varies", range: 20 }
+  - name: Containment Wall
+    key: "2"
+    energyCost: 50
+    description: >-
+      Erects walls that slam together, trapping and damaging enemies caught
+      between them while inflicting Radiation Status.
+    stats: { damage: "varies", range: 15 }
+  - name: Disometric Guard
+    key: "3"
+    energyCost: 35
+    description: >-
+      Shields Qorvex and nearby allies against Status Effects. Each time Qorvex
+      kills or assists an enemy affected by Radiation Status, the guard gains
+      capacity to prevent additional Status Effects.
+    stats: { duration: 8, range: 15 }
+  - name: Crucible Blast
+    key: "4"
+    energyCost: 100
+    description: >-
+      Releases a devastating beam of energy that strikes all enemies in its path,
+      inflicting Radiation damage with guaranteed Status Effects. Enemies already
+      affected by Radiation Status explode in a chain reaction.
+    stats: { damage: "varies", range: 30 }
+acquisition:
+  source: "Whispers in the Walls quest + Entrati Lab Bounties"
+  blueprintLocations:
+    - "Whispers in the Walls quest completion"
+    - "Albrecht's Laboratories bounties (Component blueprints)"
+    - "Cavia's Bird 3 vendor (Entrati Standing)"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+  note: "Requires completion of the Whispers in the Walls quest. Component blueprints drop from Entrati Lab Bounties or can be purchased with Entrati Standing."
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Stats sourced from WFCD 1.756.0; Qorvex introduced in Update 35.0 (Whispers in the Walls)."
+  - url: "https://warframe.fandom.com/wiki/Qorvex"
+    accessedAt: "2026-05-19"
+    title: "Qorvex — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Qorvex is a defensive Warframe designed by Albrecht Entrati as a guardian for operators conducting research in his dangerous laboratories. Introduced in Update 35.0 (Whispers in the Walls), Qorvex represents a unique archetype: a durability-focused frame that excels at crowd control through environmental hazard creation and Status Effect manipulation. The frame builds its identity around the Crucible Core, granting weapons enhanced Punch Through, and a toolkit centered entirely around Radiation damage and its status effects. Unlike aggressive DPS frames, Qorvex prioritizes survivability and area denial, making it ideal for tactical missions where controlling the battlefield proves more valuable than raw offensive output.
+
+The visual design reflects its purpose: Qorvex appears as a brutalist construct, resembling a golem made of reinforced materials studded with technological elements. This aesthetic ties directly to its mechanical identity as a wall-building, status-spreading defensive platform. The frame excels in endurance missions, defense objectives, and high-level content where surviving long enough to establish control over enemy positioning becomes the primary challenge.
+
+## Abilities
+
+<AbilityCard
+  name="Chyrinka Pillar"
+  key="1"
+  energyCost={25}
+  description="Summons a stationary Chyrinka Pillar that slows nearby enemies while pulsing Radiation damage with guaranteed Status Effects."
+/>
+
+Chyrinka Pillar serves as Qorvex's primary area control tool. Unlike most summoned entities in Warframe, these pillars persist indefinitely, making them excellent for establishing defensive positions. Enemies within range suffer both the slowing effect and periodic Radiation damage, with guaranteed Status procs that trigger the status-spreading mechanics of Qorvex's other abilities. Casting multiple pillars creates overlapping fields of control, turning entire chokepoints into hostile territory for enemies while your squad fights safely within or near the protected zone.
+
+<AbilityCard
+  name="Containment Wall"
+  key="2"
+  energyCost={50}
+  description="Erects walls that slam together, trapping and damaging enemies caught between them while inflicting Radiation Status."
+/>
+
+Containment Wall transforms the battlefield into a cage. The ability summons two walls that converge at the target location, crushing enemies caught between them. Beyond the initial impact damage and guaranteed Radiation Status proc, this ability serves dual purposes: separating enemy threats from your position and grouping enemies for follow-up attacks. The synergy with Chyrinka Pillars intensifies when walls trap enemies into pillar-heavy zones, amplifying the status effects they accumulate. Skilled positioning of successive wall casts can lock down entire waves of enemies.
+
+<AbilityCard
+  name="Disometric Guard"
+  key="3"
+  energyCost={35}
+  description="Shields Qorvex and nearby allies against Status Effects. Each time Qorvex kills or assists an enemy affected by Radiation Status, the guard gains capacity to prevent additional Status Effects."
+/>
+
+Disometric Guard is Qorvex's defensive anchor and a rare supportive ability. When active, it blocks Status Effects from affecting Qorvex and nearby allies—a critical defensive layer in high-level content where status procs can quickly overwhelm even tanky frames. The synergistic mechanic is essential: every kill or assist on a Radiation-affected enemy increases the guard's capacity to prevent additional statuses. This creates a feedback loop where Qorvex's Radiation-spreading abilities fuel the defensive growth. The longer a mission proceeds, the stronger this protection becomes, making Qorvex extremely potent in endless mission types.
+
+<AbilityCard
+  name="Crucible Blast"
+  key="4"
+  energyCost={100}
+  description="Releases a devastating beam of energy that strikes all enemies in its path, inflicting Radiation damage with guaranteed Status Effects. Enemies already affected by Radiation Status explode in a chain reaction."
+/>
+
+Crucible Blast is Qorvex's ultimate tool and the culmination of its Radiation synergy. Firing a beam that hits all enemies in its path, the ability guarantees Radiation Status on every hit. The true power emerges in crowd-control scenarios: any enemy already afflicted with Radiation Status explodes in a chain reaction, triggering explosions that spread the status to nearby enemies. This creates a cascade effect in environments saturated with Qorvex's previous abilities and pillar fields, transforming a single ultimate cast into area-wide devastation. In well-controlled scenarios, Crucible Blast can clear entire rooms of weakened Radiation-primed enemies.
+
+## Passive
+
+Crucible Core grants all weapons wielded by Qorvex additional Punch Through. This subtle enhancement increases weapon effectiveness against multiple targets and obstacles. Punch Through allows projectiles to pass through enemies and barriers, making weapons naturally more efficient in crowded situations. While not flashy, this passive ensures that Qorvex's weapons scale consistently across content, and it synergizes well with high-status weapons already equipped to trigger Radiation effects alongside the frame's abilities.
+
+## Stats
+
+| Stat               | Value           |
+|-------------------|-----------------|
+| Health            | 600             |
+| Shield            | 200             |
+| Armor             | 875             |
+| Energy            | 150             |
+| Sprint Speed      | 0.9x            |
+| Mastery Requirement | 0             |
+
+Qorvex's stat distribution prioritizes durability. The 875 armor value ranks among the highest in the game, providing substantial physical damage reduction that scales with shield-gating and armor-stripping defenses. The combined 600 health and 200 shield offer a respectable health pool, though the real defense lies in crowd control and status immunity via Disometric Guard. Energy capacity of 150 is moderate; Qorvex's abilities are moderately expensive, requiring either energy management or energy-restoration mods like Energize. The 0.9x sprint speed multiplier is notably slow, reflecting the frame's heavy, deliberate playstyle rather than hit-and-run tactics.
+
+## Acquisition
+
+Qorvex becomes available upon completing the Whispers in the Walls quest, a cinematic story mission that introduces players to Albrecht Entrati's laboratories and the mysterious experiments conducted there. The main blueprint drops as a quest reward, but players must still gather component blueprints and craft the frame from parts.
+
+Component blueprints drop from Albrecht's Laboratories bounties (Deimos, Entrati Lab tileset, Levels 55–80) at uncommon rarity in Rotation C, making repeated farming necessary. Players can accelerate acquisition by purchasing blueprints directly from Cavia's Bird 3, an Entrati NPC vendor, using Entrati Standing. This path requires Rank 2 standing for component blueprints and Rank 4 for the main blueprint.
+
+Crafting demands 25,000 Credits, one of each blueprint (Neuroptics, Chassis, Systems), and one Echo Voca, a rare Entrati resource. The 72-hour build time mirrors standard prime-era warframe construction, and the frame is not tradable, requiring each player to farm or purchase their own copy.
+
+## Playstyle
+
+Qorvex excels as a defensive support and crowd-control frame, requiring a fundamentally different playstyle from aggressive DPS builds. The frame rewards tactical positioning and ability sequencing over raw damage output. Optimal play begins by establishing Chyrinka Pillars in strategically important locations—chokepoints, capture points, objective defense areas—creating zones of persistent threat that slow and radiate enemies. Once pillars establish control, Containment Wall traps enemy reinforcements into these zones, stacking Radiation Status on multiple targets simultaneously.
+
+Crucible Blast then becomes devastatingly effective, as the chain reaction mechanic triggers only on Radiation-affected enemies. A pillar field combined with wall traps ensures near-maximum blast radius effectiveness. Disometric Guard runs continuously, scaling in strength as Qorvex and teammates secure kills on Radiation-primed enemies. The synergy between crowd control and status immunity makes Qorvex exceptional at protecting teammates in high-damage environments while maintaining aggressive area denial.
+
+Energy management is central to sustained playstyle. With 150 base energy and moderately expensive abilities, players should mod for Streamline, Fleeting Expertise, or similar efficiency mods, or ensure a reliable energy generation source like Magus Cadus (operator arcane), Energize, or squadmate support. Duration moderately matters, particularly for Disometric Guard and Chyrinka Pillar longevity. Strength scales ability effectiveness, making Power Strength valuable. Range extends pillar and wall areas of effect, improving zone control at the cost of precision.
+
+High-level content showcases Qorvex's strengths: endless survival missions, void fissures, and disruption missions where controlling the flow of enemies determines success. Solo missions benefit from Qorvex's self-sufficiency through status immunity and armor. Squads amplify Qorvex's value as a dedicated defensive anchor, freeing damage dealers to focus on offense without worrying about incoming threats.
+
+## Recommended Builds
+
+Qorvex's defensive and crowd-control nature supports several viable build archetypes:
+
+**Tanky Crowd Control:** Prioritize Umbral Vitality, Umbral Intensify, Augur Reach, and Stretch to maximize durability and ability range. Disometric Guard becomes the primary defensive layer, growing stronger as the mission progresses. Aura: Corrosive Projection for armor strip on enemies.
+
+**Duration Support:** Maximize Power Duration with Primed Flow, Constitution, and Primed Vigor to keep Disometric Guard and pillars active longer. This build shifts focus to sustained protection over burst crowd control. Streamline ensures energy doesn't become a bottleneck.
+
+**Range Control:** Stack range mods (Stretch, Augur Reach, Power Drift) to maximize Chyrinka Pillar effectiveness and Crucible Blast coverage. This makes Qorvex potent at locking down entire rooms rather than specific chokepoints.
+
+## Synergies
+
+Qorvex's Radiation-focused abilities synergize strongly with teammates running radiation-heavy weapons or frames. Trinity's Blessing amplifies Qorvex's survivability beyond Disometric Guard, while her Energy Vampire ensures the frame never runs dry casting abilities. Mag's Polarize strips armor from enemies already Radiation-primed by Qorvex, creating a devastating setup for Crucible Blast follow-ups. Mirage's Hall of Mirrors multiplies Weapon Punch Through effect, making this a powerful damage multiplier. Frames with status-heavy weapons (Ash, Nyxthe ash, Nidus) benefit from Qorvex's ability to strip armor and create controlled environments for their own mechanics.
+
+Equipment synergies are equally important: Melee weapons with inherent Radiation or status bonuses (Radiant Raze, Reaper Prime, Pathocyst) trigger additional procs when Qorvex spreads Radiation Status, enabling hybrid weapon-ability playstyles. Weapons with inherent Punch Through (Drakgoon, Phantasma) gain exponential value from the passive, becoming room-clearing forces within Qorvex's controlled zones.
+
+## Lore
+
+Qorvex represents Albrecht Entrati's most successful attempt at creating a practical warframe for laboratory defense. Unlike Nidus, whose infestation reflects Albrecht's chaotic research, or Lavos, born from transmutation experiments, Qorvex embodies calculated design: a guardian purpose-built to shield the Operator during hazardous research in Albrecht's private facilities on Deimos. The frame's lore description states plainly what Albrecht intended: "Albrecht Entrati designed Qorvex to protect a Chosen Operator from the unique hazards of his lab."
+
+The Crucible Core—the radiating heart of the frame—suggests an experimental reactor design, possibly drawing from Entrati's mastery of void energies and transmutation. The Radiation damage theme aligns with Deimos' hostile environment and the contaminated nature of void-touched experiments. Qorvex lacks the overt infestation of Nidus or the biological horror of recent warframe designs, instead presenting itself as a technological construct, almost a golem animated by Entrati ingenuity.
+
+The frame's introduction in Whispers in the Walls signals players' deeper involvement in Albrecht's schemes. While Cephalon Cy and the Zariman provided the primary narrative thrust, Qorvex's presence acknowledges that Albrecht's laboratories represent an ongoing threat and opportunity for research. The frame stands as Albrecht's gift and warning: he can create warframes tailored to specific purposes, and he chooses to arm the Operator—suggesting both trust and the expectation of continued collaboration.
+
+## Sources
+
+The details in this entry come from WFCD 1.756.0 (the canonical repository for all numeric Warframe stats) and the Warframe Fandom Wiki's comprehensive encyclopedia entries. Qorvex was introduced as part of Update 35.0: Whispers in the Walls on December 13th, 2023, expanding the roster of defensive warframes available to players pursuing high-difficulty content or playstyles centered on area control and teammate protection.

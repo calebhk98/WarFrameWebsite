@@ -1,0 +1,366 @@
+{
+  "pass": true,
+  "errors": [],
+  "warnings": [],
+  "checked_at": "2026-05-19T00:00:00Z",
+  "batch_summary": {
+    "total_files": 8,
+    "passed": 8,
+    "failed": 0
+  },
+  "files_checked": [
+    {
+      "slug": "oberon-prime",
+      "path": "src/content/warframes/oberon-prime.mdx",
+      "pass": true,
+      "word_count": 1437,
+      "sections": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Builds", "Synergies", "Lore", "Sources"],
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Oberon Prime/health",
+          "value": 365,
+          "file_line": 6,
+          "status": "match"
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Oberon Prime/shield",
+          "value": 270,
+          "file_line": 7,
+          "status": "match"
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Oberon Prime/armor",
+          "value": 240,
+          "file_line": 8,
+          "status": "match"
+        },
+        {
+          "field": "energy (power in WFCD)",
+          "wfcd_path": "Warframes.json#/Oberon Prime/power",
+          "value": 215,
+          "file_line": 9,
+          "status": "match"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Oberon Prime/sprintSpeed",
+          "value": 1.0,
+          "file_line": 10,
+          "status": "match"
+        }
+      ]
+    },
+    {
+      "slug": "octavia",
+      "path": "src/content/warframes/octavia.mdx",
+      "pass": true,
+      "word_count": 1258,
+      "sections": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Builds", "Lore", "Sources"],
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Octavia/health",
+          "value": 270,
+          "file_line": 6,
+          "status": "match"
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Octavia/shield",
+          "value": 180,
+          "file_line": 7,
+          "status": "match"
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Octavia/armor",
+          "value": 160,
+          "file_line": 8,
+          "status": "match"
+        },
+        {
+          "field": "energy (power in WFCD)",
+          "wfcd_path": "Warframes.json#/Octavia/power",
+          "value": 175,
+          "file_line": 9,
+          "status": "match"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Octavia/sprintSpeed",
+          "value": 1.05,
+          "file_line": 10,
+          "status": "match"
+        }
+      ]
+    },
+    {
+      "slug": "octavia-prime",
+      "path": "src/content/warframes/octavia-prime.mdx",
+      "pass": true,
+      "word_count": 1182,
+      "sections": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Builds", "Lore", "Sources"],
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Octavia Prime/health",
+          "value": 270,
+          "file_line": 6,
+          "status": "match"
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Octavia Prime/shield",
+          "value": 270,
+          "file_line": 7,
+          "status": "match"
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Octavia Prime/armor",
+          "value": 160,
+          "file_line": 8,
+          "status": "match"
+        },
+        {
+          "field": "energy (power in WFCD)",
+          "wfcd_path": "Warframes.json#/Octavia Prime/power",
+          "value": 215,
+          "file_line": 9,
+          "status": "match"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Octavia Prime/sprintSpeed",
+          "value": 1.05,
+          "file_line": 10,
+          "status": "match"
+        }
+      ]
+    },
+    {
+      "slug": "protea",
+      "path": "src/content/warframes/protea.mdx",
+      "pass": true,
+      "word_count": 1876,
+      "sections": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Builds", "Synergies", "Lore", "Sources"],
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Protea/health",
+          "value": 270,
+          "file_line": 6,
+          "status": "match"
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Protea/shield",
+          "value": 455,
+          "file_line": 7,
+          "status": "match"
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Protea/armor",
+          "value": 135,
+          "file_line": 8,
+          "status": "match"
+        },
+        {
+          "field": "energy (power in WFCD)",
+          "wfcd_path": "Warframes.json#/Protea/power",
+          "value": 175,
+          "file_line": 9,
+          "status": "match"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Protea/sprintSpeed",
+          "value": 1.2,
+          "file_line": 10,
+          "status": "match"
+        }
+      ]
+    },
+    {
+      "slug": "protea-prime",
+      "path": "src/content/warframes/protea-prime.mdx",
+      "pass": true,
+      "word_count": 1421,
+      "sections": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Builds", "Lore", "Sources"],
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Protea Prime/health",
+          "value": 270,
+          "file_line": 6,
+          "status": "match"
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Protea Prime/shield",
+          "value": 455,
+          "file_line": 7,
+          "status": "match"
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Protea Prime/armor",
+          "value": 185,
+          "file_line": 8,
+          "status": "match"
+        },
+        {
+          "field": "energy (power in WFCD)",
+          "wfcd_path": "Warframes.json#/Protea Prime/power",
+          "value": 200,
+          "file_line": 9,
+          "status": "match"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Protea Prime/sprintSpeed",
+          "value": 1.2,
+          "file_line": 10,
+          "status": "match"
+        }
+      ]
+    },
+    {
+      "slug": "qorvex",
+      "path": "src/content/warframes/qorvex.mdx",
+      "pass": true,
+      "word_count": 1614,
+      "sections": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Recommended Builds", "Synergies", "Lore", "Sources"],
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Qorvex/health",
+          "value": 600,
+          "file_line": 6,
+          "status": "match"
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Qorvex/shield",
+          "value": 200,
+          "file_line": 7,
+          "status": "match"
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Qorvex/armor",
+          "value": 875,
+          "file_line": 8,
+          "status": "match"
+        },
+        {
+          "field": "energy (power in WFCD)",
+          "wfcd_path": "Warframes.json#/Qorvex/power",
+          "value": 150,
+          "file_line": 9,
+          "status": "match"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Qorvex/sprintSpeed",
+          "value": 0.9,
+          "file_line": 10,
+          "status": "match"
+        }
+      ]
+    },
+    {
+      "slug": "revenant",
+      "path": "src/content/warframes/revenant.mdx",
+      "pass": true,
+      "word_count": 1447,
+      "sections": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Recommended builds", "Synergies", "Lore", "Sources"],
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Revenant/health",
+          "value": 270,
+          "file_line": 6,
+          "status": "match"
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Revenant/shield",
+          "value": 635,
+          "file_line": 7,
+          "status": "match"
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Revenant/armor",
+          "value": 135,
+          "file_line": 8,
+          "status": "match"
+        },
+        {
+          "field": "energy (power in WFCD)",
+          "wfcd_path": "Warframes.json#/Revenant/power",
+          "value": 140,
+          "file_line": 9,
+          "status": "match"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Revenant/sprintSpeed",
+          "value": 1.0,
+          "file_line": 10,
+          "status": "match"
+        }
+      ]
+    },
+    {
+      "slug": "revenant-prime",
+      "path": "src/content/warframes/revenant-prime.mdx",
+      "pass": true,
+      "word_count": 1598,
+      "sections": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Recommended builds", "Synergies", "Lore", "Sources"],
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Revenant Prime/health",
+          "value": 270,
+          "file_line": 6,
+          "status": "match"
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Revenant Prime/shield",
+          "value": 825,
+          "file_line": 7,
+          "status": "match"
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Revenant Prime/armor",
+          "value": 135,
+          "file_line": 8,
+          "status": "match"
+        },
+        {
+          "field": "energy (power in WFCD)",
+          "wfcd_path": "Warframes.json#/Revenant Prime/power",
+          "value": 175,
+          "file_line": 9,
+          "status": "match"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Revenant Prime/sprintSpeed",
+          "value": 1.1,
+          "file_line": 10,
+          "status": "match"
+        }
+      ]
+    }
+  ],
+  "validation_notes": "All 8 warframe files passed verification. Stats match WFCD canonical values. All required sections present (Overview, Abilities, Passive, Stats, Acquisition, Playstyle, Builds/Recommended Builds, Lore, Sources). Word counts all exceed 800-word floor. Sources frontmatter includes ≥2 entries with accessible URLs and ISO-8601 accessedAt timestamps. No TODO/FIXME comments detected. Energy field correctly maps to WFCD power field. Note: masteryRank for all checked items accepts factual MDX value per issue #23 override."
+}

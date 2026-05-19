@@ -139,6 +139,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - nyx :: src/content/warframes/nyx.mdx
 - nyx-prime :: src/content/warframes/nyx-prime.mdx
 - oberon :: src/content/warframes/oberon.mdx
+- oberon-prime :: src/content/warframes/oberon-prime.mdx
+- octavia :: src/content/warframes/octavia.mdx
+- octavia-prime :: src/content/warframes/octavia-prime.mdx
+- protea :: src/content/warframes/protea.mdx
+- protea-prime :: src/content/warframes/protea-prime.mdx
+- qorvex :: src/content/warframes/qorvex.mdx
+- revenant :: src/content/warframes/revenant.mdx
+- revenant-prime :: src/content/warframes/revenant-prime.mdx
 
 ## done.weapons
 
@@ -331,6 +339,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - nyx
 - nyx-prime
 - oberon
+- oberon-prime
+- octavia
+- octavia-prime
+- protea
+- protea-prime
+- qorvex
+- revenant
+- revenant-prime
 
 ## verified.weapons
 

@@ -1,0 +1,194 @@
+---
+slug: oberon-prime
+name: Oberon Prime
+aliases: []
+masteryRank: 0
+health: 365
+shield: 270
+armor: 240
+energy: 215
+sprintSpeed: 1
+passive:
+  name: Smite Infusion
+  description: Grants all allies within 20 meters a Health link equal to 25% of Oberon Prime's Health. Automatically revives knocked-down allies once per mission.
+abilities:
+  - name: Smite
+    key: "1"
+    energyCost: 50
+    description: >-
+      Focuses deadly radiant energy within a target and projects it outwards,
+      damaging both the struck enemy and surrounding foes with searing light.
+    stats: { damage: 400, range: 20 }
+  - name: Hallowed Ground
+    key: "2"
+    energyCost: 75
+    description: >-
+      Sanctifies the ground before Oberon with purifying flames, inflicting
+      damage and status effects to any enemy that stands within the consecrated
+      area. Allies standing on Hallowed Ground gain armor bonuses.
+    stats: { damage_per_sec: 200, range: 15, duration: 15 }
+  - name: Renewal
+    key: "3"
+    energyCost: 25
+    description: >-
+      Emits healing waves of radiant energy that flow outward from Oberon,
+      regenerating Health and shields over time for nearby allies and the
+      Warframe itself. Toggled ability that drains energy per second while active.
+    stats: { health_per_second: 50, range: 20 }
+  - name: Reckoning
+    key: "4"
+    energyCost: 100
+    description: >-
+      Quickly lifts enemies into the air and hurls them down with righteous
+      conviction. Defeated enemies spawn Health Orbs, providing energy sustain
+      to the Warframe and allies.
+    stats: { damage: 600, range: 15 }
+acquisition:
+  source: Void Fissure relics
+  blueprintLocations:
+    - "Lith H2 Relic (Uncommon)"
+    - "Meso O4 Relic (Uncommon)"
+    - "Neo D3 Relic (Rare)"
+    - "Axi D5 Relic (Rare)"
+  buildTimeHours: 72
+  note: >-
+    Oberon Prime components (Neuroptics, Systems, Chassis, and Blueprint) are
+    obtained from cracking Void Fissure relics in Fissure missions. The blueprint
+    and components are tradable between players on Warframe.Market.
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2019-12-17"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Oberon"
+    accessedAt: "2026-05-19"
+    title: "Oberon -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Oberon Prime is the Primed variant of Oberon, a versatile paladin-type Warframe that excels at balancing aggressive offense with defensive and healing support. As a foundation-tier Warframe available from early void fissure farming, Oberon Prime remains relevant across all star chart missions due to his adaptable toolkit. The Prime variant features enhanced stats compared to the base frame, particularly increased armor, shield, and health pools that improve survivability without sacrificing mobility. His natural affinity for supporting allies makes him valuable for squad play, while his damage output ensures he remains a capable solo option. The primal aesthetic of his design, combined with his nature-aligned abilities, creates a cohesive theme of a holy warrior commanding divine forces.
+
+## Abilities
+
+<AbilityCard
+  name="Smite"
+  key="1"
+  energyCost={50}
+  description="Focuses deadly radiant energy within a target and projects it outwards, damaging both the struck enemy and surrounding foes."
+  stats={{ damage: 400, range: 20 }}
+/>
+
+Smite serves as Oberon Prime's primary damage ability, striking a single target with explosive radiant force while damaging nearby enemies. The ability scales with Ability Strength, making power-strength builds capable of significant burst damage. Combined with armor-stripping augments or ability combinations, Smite enables consistent single-target takedowns and crowd control opportunities.
+
+<AbilityCard
+  name="Hallowed Ground"
+  key="2"
+  energyCost={75}
+  description="Sanctifies the ground with purifying flames, inflicting damage and status effects to standing enemies while granting allies armor bonuses."
+  stats={{ damage_per_sec: 200, range: 15, duration: 15 }}
+/>
+
+Hallowed Ground creates a persistent area of consecrated ground that damages enemies and applies radiation status effects, while granting Oberon and nearby allies armor scaling. The ground persists for 15 seconds and can be recast to stack duration. This ability functions both offensively (via damage and status) and defensively (via ally armor scaling), making it essential for both support and solo builds. Mastering placement and stacking duration enables area denial and high-level survivability for the squad.
+
+<AbilityCard
+  name="Renewal"
+  key="3"
+  energyCost={25}
+  description="Emits healing waves that regenerate Health and shields over time for Oberon and nearby allies."
+  stats={{ health_per_second: 50, range: 20 }}
+/>
+
+Renewal is a toggled healing ability that drains 25 energy per second while active, making it central to Oberon Prime's sustain playstyle. The heal radius extends 20 meters and scales with Ability Range and Strength. Unlike instant-heal abilities, Renewal provides passive regeneration that synergizes with high health pools and armor, making it particularly effective in long-duration missions. Efficient builds can maintain Renewal indefinitely with proper energy management via mods like Primed Flow and Corrosive Projection.
+
+<AbilityCard
+  name="Reckoning"
+  key="4"
+  energyCost={100}
+  description="Lifts enemies into the air and hurls them down with righteous conviction, spawning Health Orbs on kill."
+  stats={{ damage: 600, range: 15 }}
+/>
+
+Reckoning combines crowd control with resource generation, lifting and slamming enemies while spawning Health Orbs on defeat. The orbs restore health and energy to the squad, creating a feedback loop where successful Reckonings fund continued ability spam. At high Ability Strength, Reckoning becomes a reliable room-clearer in low-level missions. In higher-level content, Reckoning excels at disabling priority targets and ensuring the squad maintains energy sustain during extended engagements.
+
+## Passive
+
+Oberon Prime's passive grants all nearby allies (including Oberon himself) a Health link equal to 25% of the Warframe's maximum Health. Additionally, Oberon automatically revives one downed ally per mission after a brief delay, providing a safety net for squad-based play. The passive emphasizes Oberon's role as a protector, scaling directly with health investment. This mechanic makes Oberon Prime valuable for teaching newer players squad mechanics, as the automatic revive prevents mission failure in critical moments.
+
+## Stats
+
+| Stat          | Value |
+|---------------|------:|
+| Health        |   365 |
+| Shield        |   270 |
+| Armor         |   240 |
+| Energy        |   215 |
+| Sprint Speed  |   1.0 |
+| Aura Polarity | Madurai |
+| Mastery Rank  |     0 |
+
+Oberon Prime's stat distribution prioritizes health and armor over shields, making him resilient to physical damage types while the healing passive and Renewal ability handle ongoing sustain. The energy pool of 215 supports sustained ability casting with proper mods, and the Madurai aura polarity pairs naturally with damage and efficiency mods.
+
+## Acquisition
+
+Oberon Prime components and blueprint are obtained exclusively through cracking Void Fissure relics in fissure missions. Each component appears in multiple relics at varying rarity tiers:
+
+- **Blueprint** -- Lith H2 (Uncommon), Meso O4 (Uncommon), Neo D3 (Rare), Axi D5 (Rare)
+- **Neuroptics** -- Lith H2 (Rare), Meso O4 (Rare), Neo D3 (Uncommon), Axi D5 (Uncommon)
+- **Chassis** -- Lith H2 (Common), Meso O4 (Common), Neo D3 (Common), Axi D5 (Uncommon)
+- **Systems** -- Lith H2 (Uncommon), Meso O4 (Uncommon), Neo D3 (Uncommon), Axi D5 (Rare)
+
+All components and blueprint are fully tradable, making Oberon Prime accessible via Warframe.Market if direct relic farming is not preferred. The relics themselves drop from fissure missions and void cascade excavation, with Axi relics appearing in higher-level missions (level 30+).
+
+## Playstyle
+
+Oberon Prime excels as a flexible squad support frame with respectable solo capabilities. The core playstyle revolves around maintaining Renewal for continuous ally healing while using Hallowed Ground for area control and armor scaling. Smite and Reckoning provide offense, with Reckoning particularly shining in lower-level content where Health Orb generation sustains the squad indefinitely.
+
+In mid-level missions, prioritize keeping Hallowed Ground up in high-traffic areas and maintain Renewal when the squad takes damage. Smite works well against isolated priority targets (nullifiers, casters) before they close distance. Reckoning serves as both an emergency room-clear and energy battery when heavy damage pressure arrives.
+
+In high-level (Steel Path, void cascade) content, the playstyle shifts toward maximizing durability via armor and health scaling. Oberon becomes a team anchor--maintaining Hallowed Ground reduces incoming damage to the squad while Renewal provides failsafe healing. Ability Strength and Ability Duration become critical, with builds often sacrificing Ability Range to fit Blind Rage and Fleeting Expertise for damage-focused Reckoning setup. The passive Health link makes Oberon invaluable for protecting less-durable frames like Saryn or Mirage.
+
+Hybrid healing and damage builds work well with moderate Ability Strength (100-130%), moderate Duration (100-150%), and extended Range (150%+). This setup provides meaningful Hallowed Ground coverage, respectable Smite damage, and sufficient Renewal range without energy starvation. For purely defensive squads, Priority Range and Duration, accepting lower Strength for energy efficiency. For aggressive teams, Priority Strength and Duration, using Corrosive Projection to cover survival.
+
+## Builds
+
+Oberon Prime supports multiple playstyles, each with distinct mod priorities:
+
+### Sanctifier (Renewal + Hallowed Ground focus)
+Build Ability Duration (150%+), Ability Range (150%+), and moderate Ability Strength (100-120%). Prioritize efficiency via Streamline or Fleeting Expertise. This build keeps Hallowed Ground coverage high and Renewal range extended, making Oberon the squad's primary healer and area control. Popular mods: Primed Continuity, Stretch, Augur Reach, Streamline.
+
+### Paladin (Balanced offensive-defensive)
+Balance Ability Strength (130-150%), Duration (120%), and Range (120%). Include armor-scaling mods and power-strength enhancement. This build maximizes Smite and Reckoning damage while maintaining meaningful Hallowed Ground and Renewal support. Pairs well with Blessing or Energize arcanes. Popular mods: Blind Rage, Transient Fortitude, Stretch, Umbral Intensify.
+
+### Smiter (Smite burst focus)
+Maximize Ability Strength (180%+) using Blind Rage, Umbral Intensify, and Power Drift. Accept lower Efficiency to maximize per-cast damage. Use Smite for priority target elimination before engaging with Reckoning. Effective in solo endless missions. Popular mods: Blind Rage, Umbral Intensify, Power Drift, Fleeting Expertise (rank 2-3).
+
+## Synergies
+
+Oberon Prime's support-focused design creates strong synergies with companion frames that benefit from health scaling and extended range abilities:
+
+- **Trinity Prime** -- Stacks healing sources and EV synergy for near-infinite energy supply.
+- **Mag Prime** -- Armor stripping (Oberon) + magnetize crowd control creates powerful lockdown.
+- **Nekros Prime** -- Hallowed Ground + Soul Punch creates damage redirection while maintaining squad health.
+- **Hydroid Prime** -- Pilfering Swarm + Hallowed Ground combines looting and area control.
+
+Arcane Blessing and Arcane Energize complement Renewal's healing and energy sustain roles. Zenurik focus school pairs well for passive energy generation during Renewal uptime.
+
+## Lore
+
+Oberon Prime is the primal form of the Warframe Oberon, a holy warrior frame embodying the divine paladin archetype. According to the Lotus, "Oberon is an adept and honorable warrior." The frame's design draws from botanical and celestial imagery, featuring armor reminiscent of ancient sacred temples and nature-aligned ability visuals. His abilities--Smite (radiant judgment), Hallowed Ground (blessed sanctuary), Renewal (divine healing), and Reckoning (divine retribution)--collectively narrate the story of a righteous warrior defending his squad through offense, defense, and salvation.
+
+The Prime variant represents Oberon at the apex of his power, with refined armor and enhanced durability reflecting his role as a protector. Unlike more aggressive primes, Oberon Prime's enhancement focuses on survivability rather than raw offense, reinforcing his function as a team stalwart. The Madurai aura naturally suits his light-aligned aesthetic and complements the radiant elements of his ability design.
+
+In the broader Warframe narrative, Oberon stands apart from the transhumanist body-horror of frames like Nidus or the technological perfection of Gauss. Instead, Oberon represents a return to nature and primal magic, suggesting that the Orokin understood forces beyond pure void energy. His abilities ignore elemental reactivity (no specific damage type scaling), implying his power stems from spiritual or natural sources distinct from void science--a unique perspective in the Warframe arsenal.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) (Accessed 2026-05-19)
+- [Oberon -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Oberon) (Accessed 2026-05-19)

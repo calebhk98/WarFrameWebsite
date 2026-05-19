@@ -1,0 +1,166 @@
+---
+slug: octavia-prime
+name: Octavia Prime
+aliases: ["Octavia Prime"]
+masteryRank: 0
+health: 270
+shield: 270
+armor: 160
+energy: 215
+sprintSpeed: 1.05
+passive:
+  name: Passive
+  description: >-
+    Replenishes energy for Octavia and allies within range when abilities are activated.
+abilities:
+  - name: Mallet
+    key: "1"
+    energyCost: 25
+    description: >-
+      Rhythmically beats damage into nearby enemies and draws their fire.
+      Damage inflicted on the Mallet increases its lethality.
+    stats: { damage: 100, range: 8 }
+  - name: Resonator
+    key: "2"
+    energyCost: 50
+    description: >-
+      Launches a rollerball that charms foes to follow it. Combines with
+      the Mallet to create a roving ball of sonic destruction.
+    stats: { range: 25, duration: 30 }
+  - name: Metronome
+    key: "3"
+    energyCost: 75
+    description: >-
+      Grants buffs to those who consistently perform actions in time to
+      Octavia's music. Timed jumps offer speed, crouching grants cloaking,
+      firing grants multishot, and melee swings give damage buffs.
+    stats: { duration: 60 }
+  - name: Amp
+    key: "4"
+    energyCost: 100
+    description: >-
+      Draws power from sound levels in the area to amplify a damage buff
+      for Octavia and allies. Doubles the damage and range of nearby Mallets.
+    stats: { damage_multiplier: 2, range: 20 }
+acquisition:
+  source: Void Fissure missions
+  blueprintLocations:
+    - "Lith O3, Meso O5, Axi O5 Void Relics (Rare)"
+    - "Available from Void Relic Fissure missions"
+  note: "Octavia Prime is currently Vaulted but may return during Prime Resurgence."
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2017-10-31"
+  vaultedAt: "2021-08-31"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Octavia/Prime"
+    accessedAt: "2026-05-19"
+    title: "Octavia Prime — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Octavia Prime is the primed variant of the musical warframe Octavia, emphasizing crowd control and energy regeneration through rhythm-based mechanics. She stands out as one of the few frames whose abilities reward precise, synchronized timing with substantial team buffs. Her unique Mandachord system allows players to compose custom audio loops that enhance her gameplay identity. Octavia Prime improves upon the standard variant with increased armor (160 vs. 130) and altered mod polarities for greater build flexibility.
+
+The frame excels in both damage mitigation and group support, making her valuable in squad-focused content. Her learning curve is moderate—her abilities are straightforward, but mastering Metronome's timing mechanics and Mandachord composition unlocks her full potential. Octavia Prime's niche appeal lies in her rhythm-based gameplay; players who enjoy the challenge of timing actions to a beat will find her deeply rewarding.
+
+## Abilities
+
+<AbilityCard
+  name="Mallet"
+  key="1"
+  energyCost={25}
+  description="Rhythmically beats damage into nearby enemies and draws their fire. Damage inflicted on the Mallet increases its lethality."
+  stats={{ damage: 100, range: 8 }}
+/>
+
+Mallet creates a stationary orb that pulses damage in an 8-meter radius, scaling with ability strength mods. The orb's damage increases for every point of damage absorbed from enemies, making it a potent damage amplifier in high-level content. Combining Mallet with Resonator creates Octavia's signature two-ability synergy, where the rolling ball targets enemies affected by the Mallet, creating devastating crowd control.
+
+<AbilityCard
+  name="Resonator"
+  key="2"
+  energyCost={50}
+  description="Launches a rollerball that charms foes to follow it. Combines with the Mallet to create a roving ball of sonic destruction."
+  stats={{ range: 25, duration: 30 }}
+/>
+
+Resonator deploys a charming rollerball that attracts nearby enemies and causes them to follow it. When Mallet is active, the Resonator ball will absorb the Mallet's pulses and amplify its damage further, creating a mobile damage source. The interaction between these two abilities forms Octavia's primary damage combo and is essential to her playstyle in higher-level missions.
+
+<AbilityCard
+  name="Metronome"
+  key="3"
+  energyCost={75}
+  description="Grants buffs to those who consistently perform actions in time to Octavia's music. Timed jumps offer the Vivace speed buff. Crouching on the beat grants cloaking with the Nocturne buff. Firing rhythmically bestows Opera multishot buff. Timed melee swings give the Forte damage buff."
+  stats={{ duration: 60 }}
+/>
+
+Metronome is Octavia's defining ability, rewarding players for rhythmic gameplay. By performing actions—jumping, crouching, shooting, or melee attacks—in sync with the beat of Octavia's music, players and allies gain stacking buffs. Vivace grants sprint speed, Nocturne provides invisibility, Opera adds multishot, and Forte increases melee damage. Each buff stacks and persists for a brief duration, making this ability the primary source of team support. Mastering Metronome's timing is crucial to Octavia's effectiveness.
+
+<AbilityCard
+  name="Amp"
+  key="4"
+  energyCost={100}
+  description="Draws power from the decibel level of sound in the area and uses it to amplify a damage buff for Octavia and her allies. It also doubles the damage and range of nearby Mallets."
+  stats={{ damage_multiplier: 2, range: 20 }}
+/>
+
+Amp amplifies Octavia's damage output by drawing power from sound levels created by her abilities and team gunfire. When active, it doubles the damage and range of any nearby Mallets, massively scaling her damage potential in team play. Amp's scaling with sound encourages aggressive, multi-target engagements where the team's combined firepower fuels the buff.
+
+## Passive
+
+Octavia's passive replenishes energy to herself and nearby allies whenever any of her four abilities are activated. The specific energy recovery, duration, and range scale with ability strength, range, and duration mods respectively. This passive makes Octavia an excellent support frame for energy-dependent allies and helps sustain her own high ability spam.
+
+## Stats
+
+| Stat               | Value  |
+|--------------------|--------|
+| Health             | 270    |
+| Shield             | 270    |
+| Armor              | 160    |
+| Energy             | 215    |
+| Sprint Speed       | 1.05x  |
+| Aura Polarity      | Naramon|
+
+Octavia Prime's balanced health and shield distribution grants her moderate survivability. Her 160 armor exceeds the standard variant by 30 points, providing additional physical damage reduction. The 215 energy pool supports ability spam, particularly when paired with Zenurik focus or energy-efficient mods. Her standard 1.05x sprint multiplier keeps pace with most warframes.
+
+## Acquisition
+
+Octavia Prime components drop from Void Fissure missions when cracking open Void Relics of the Lith O3, Meso O5, and Axi O5 eras. The blueprint is rare in all three relic tiers, appearing in the 2% (intact), 4% (exceptional), 6% (flawless), or 10% (radiant) drop slots depending on relic refinement. Her chassis and neuroptics drop from assorted other relics. Void Traces are required to refine relics before opening them; gathering 60 traces per mission is typical in void fissure nodes.
+
+As of May 2026, Octavia Prime is vaulted and no longer drops from normal void fissure missions. However, she periodically returns during Prime Resurgence events, allowing players to farm her parts using Zariya's specialized fissure missions for a limited time.
+
+## Playstyle
+
+Octavia Prime is a rhythm-based support and crowd control frame that rewards tactical ability usage and team coordination. Her playstyle revolves around deploying Mallet and Resonator as a mobile damage engine while using Metronome to grant buffs to the entire squad for synchronized actions. Successful players establish a mental rhythm matching Octavia's music, timing jumps, crouches, melee attacks, and gunfire to trigger Metronome's four buff types.
+
+In squad play, Octavia excels by enabling her teammates through passive energy regeneration and Metronome buffs, turning even mediocre weapons into formidable tools. Solo play is viable but less rewarding; the frame shines when team members actively participate in the rhythmic gameplay. Her skill floor is moderate—using her abilities is simple—but her ceiling is high because mastering Metronome timing and ability combinations takes practice.
+
+In high-level content (Steel Path, void fissures), prioritize casting Mallet and Resonator to establish damage pressure, then maintain Metronome uptime by timing actions. Use Amp to scale Mallet's damage further when the team's firepower is high. Against light enemies, Resonator alone suffices; against tanky targets, layer Mallet for scaling damage.
+
+## Builds
+
+Octavia Prime benefits from three core mod archetypes: ability strength and range for Mallet and Amp scaling, duration for buff persistence, and efficiency for spamming low-cost abilities. Strength and duration mods are high-priority; range supplements Mallet and Resonator.
+
+A popular crowd-control build pairs Umbral Intensify and Blind Rage for maximum ability strength with Stretch and Augur Reach for range. Primed Flow and streamlined energy efficiency mods (Streamline, Fleeting Expertise) enable rapid ability rotation. Primed Continuity extends buff duration, multiplying the uptime of Metronome's effects.
+
+For solo farming or endless missions, a duration-focused build emphasizes Primed Continuity and Constitution, keeping Metronome buffs active longer while reducing ability spam. A strength-based endgame build maximizes Mallet and Amp scaling for survivable content where enemy damage is predictable and high.
+
+Consider subsume Abilities from other warframes; Pillage (Hildryn) strips armor and shields while refunding energy, or Resonance (Mirage) boosts ability strength further.
+
+## Lore
+
+Octavia Prime is the primed iteration of Octavia, the Warframe fashioned by the Orokin for musical battle. Before the Old War's collapse, the Orokin crafted Octavia as a warrior whose abilities were manifested through sound and rhythm. Her Mandachord system encoded direct control via harmonic patterns, allowing Tenno operators to compose unique audio signatures during combat. The Prime variant, sealed in ancient Void Relics, represents her peak form before the fall of Orokin civilization.
+
+After the Old War, Octavia's design was replicated by the Tenno in the Star Chart, though the prime exemplar remained lost to the Void until its recent rediscovery. Her current use by Tenno operators honors the original Orokin aesthetic—a frame that bridges art, music, and warfare into a singular harmonious existence. The Mandachord, in particular, ties to deeper Orokin philosophy about ordering chaos through sound and pattern.
+
+## Sources
+
+- [Octavia Prime — WARFRAME Wiki](https://warframe.fandom.com/wiki/Octavia/Prime)
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) — Numeric stats cross-checked against WFCD version as of 2026-05-19.

@@ -1,0 +1,211 @@
+---
+slug: protea
+name: Protea
+aliases: ["Protea Prime"]
+masteryRank: 0
+health: 270
+shield: 455
+armor: 135
+energy: 175
+sprintSpeed: 1.2
+passive:
+  name: Vortex Armor
+  description: >-
+    Protea gains a percentage damage reduction from sources she destroys.
+abilities:
+  - name: Grenade Fan
+    key: "1"
+    energyCost: 25
+    description: >-
+      Throw out grenades in an arc. Hold to switch between Shrapnel Vortex,
+      which creates a slashing swirl of shrapnel, and Shield Satellites, which
+      deploy overcharging shield generators for protection.
+    stats: { range: 15, lifetime: 12 }
+  - name: Blaze Artillery
+    key: "2"
+    energyCost: 50
+    description: >-
+      Deploy an artillery unit that blasts plasma charges at enemies. Each hit
+      increases the power of subsequent plasma attacks, scaling damage based on
+      successful strikes.
+    stats: { damage_scaling: "variable", firerate: 1 }
+  - name: Dispensary
+    key: "3"
+    energyCost: 50
+    description: >-
+      Deploy a device that generates pickups after a short delay: an empowered
+      health orb, a universal ammo pack, and an energy orb. Provides crucial
+      sustain for the team.
+    stats: { duration: 45, range: 15 }
+  - name: Temporal Anchor
+    key: "4"
+    energyCost: 75
+    description: >-
+      Drop a Temporal Anchor which, after a short duration, Protea rewinds to
+      trigger a temporal implosion. Implosion damage increases based on damage
+      dealt between anchor drop and rewind. Everything lost or expended is
+      returned. Also saves Protea from death if anchor is active.
+    stats: { damage_scaling: "variable", rewind_time: 6 }
+acquisition:
+  source: "The Deadlock Protocol quest"
+  blueprintLocations:
+    - "The Deadlock Protocol quest reward (Blueprint from Cephalon Simaris)"
+    - "Granum Void fissure mission (Neuroptics)"
+    - "Extended Granum Void rotation C (Chassis)"
+  cost:
+    credits: 25000
+    platinum: 0
+  buildTimeHours: 72
+  note: "Protea Prime released December 2021; currently vaulted as of 2026."
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2021-12-14"
+  vaultedAt: "2024-07-17"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+    title: "WFCD warframe-items: Protea"
+  - url: "https://warframe.fandom.com/wiki/Protea"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+    title: "Protea — WARFRAME Wiki"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Protea is a hybrid support and damage-dealing Warframe who excels in providing utility to both herself and her squad. She arrived in update 29.8 as a quest-locked reward with a distinctive playstyle centered on deployable devices, multi-modal abilities, and temporal manipulation. Her skill ceiling is high due to the complexity of her ability rotation and the tactical positioning required for maximum effectiveness.
+
+Protea's role is unique among Warframes: she bridges the gap between pure offense and pure support. Her damage output scales significantly when enemies hit her deployed devices, while her utility abilities generate ammo, energy, and shields for the entire team. This duality makes her valuable in endurance missions, squad-focused content, and solo farming applications alike.
+
+The defining feature of her kit is Temporal Anchor, her fourth ability. This time-manipulation ultimate grants both offensive and defensive utility in a single tool: it amplifies damage dealt during its duration, applies that amplification to the final explosion, and crucially, rewinding past death saves Protea from lethal damage with a full restore of expended resources. Few Warframes offer this level of built-in survivability.
+
+## Abilities
+
+<AbilityCard
+  name="Grenade Fan"
+  key="1"
+  energyCost={25}
+  description="Throw out grenades in an arc. Switch between Shrapnel Vortex (offensive swirl) and Shield Satellites (defensive overcharging shields)."
+  stats={{ range: "15m", grenadeCap: 8 }}
+/>
+
+Grenade Fan is Protea's primary tool for resource generation and crowd control. The ability is unique in that tapping fires grenades in a rapid arc, while holding switches between two distinct firing modes. Shrapnel Vortex grenades create a short-lived slashing vortex that deals slashing damage and staggers enemies, useful for clearing weak units and interrupting dangerous actions. Shield Satellites reconfigure grenades to orbit around Protea and her allies as overcharging shields, scaling with power strength and refreshing shield gates when they break.
+
+Resource economy is key: Protea gains charges for this ability over time, allowing sustained use without constant energy expenditure. This passive charge system makes it one of the most accessible damage tools in her arsenal.
+
+<AbilityCard
+  name="Blaze Artillery"
+  key="2"
+  energyCost={50}
+  description="Deploy an artillery unit that fires plasma charges. Each enemy hit increases damage of subsequent shots."
+  stats={{ damage: "variable", scalingPerHit: "30%" }}
+/>
+
+Blaze Artillery places a stationary turret that fires plasma rounds at enemies within its range. The turret's damage scales with each successive hit, creating an incentive to keep enemies in front of it. This ability pairs well with crowd-control abilities from squadmates or with Protea's own Grenade Fan for consistent damage stacking.
+
+The turret has a lifetime and counts toward ability density, so builds must balance turret uptime with other ability usage. Power strength scales both the initial plasma damage and the per-hit multiplier, making it a strong choice for ability-power builds.
+
+<AbilityCard
+  name="Dispensary"
+  key="3"
+  energyCost={50}
+  description="Deploy a device generating pickups: empowered health orb, universal ammo pack, and energy orb."
+  stats={{ duration: "45s", range: "15m", pickupDelay: "3s" }}
+/>
+
+Dispensary is Protea's core utility ability, making her indispensable for squad sustainability. After a short delay, the deployed device spawns one of each pickup type: a health orb that over-heals, an ammo pack that refills all weapons and ability ammo, and an energy orb. Multiple Dispensaries can be deployed simultaneously, and their combined effect often eliminates energy starvation and ammunition concerns for extended runs.
+
+This ability redefines the role of Protea in group play. A single Dispensary can sustain an entire squad, making her valuable even in content where her direct damage output is not optimal. Building for ability range and duration maximizes the radius and uptime of the pickups.
+
+<AbilityCard
+  name="Temporal Anchor"
+  key="4"
+  energyCost={75}
+  description="Drop an anchor; after delay, rewind to it with an implosion. Damage dealt during the rewind period amplifies the explosion. Also saves from death."
+  stats={{ damageScaling: "variable", rewindDuration: "6s" }}
+/>
+
+Temporal Anchor is Protea's signature ultimate and one of the most unique abilities in Warframe. It combines three distinct functions into one package: damage amplification, death avoidance, and resource recovery.
+
+When activated, Protea places an anchor at her current location. After a short duration, she rewinds to that anchor's position and triggers a temporal implosion. The damage of the implosion scales based on all the damage dealt to enemies during the time between anchor placement and rewind. All resources expended during that period are returned: energy used, ammo spent, and shields damaged are all restored. This makes the ability powerful for both aggressive and defensive play.
+
+The death-save mechanic is critical. If Protea takes lethal damage while an anchor is active, she rewinds to the anchor instead of dying, takes a knockdown, and the anchor vanishes. This grants a second chance in dangerous situations and is particularly valuable in high-difficulty content like Steel Path or endless endurance missions. The knockdown leaves her vulnerable momentarily, but surviving is the priority.
+
+Anchor placement is tactical. Placing it defensively (near cover or a revive point) prioritizes survival. Placing it offensively (in a crowd) prioritizes damage amplification for the implosion. High-duration builds extend both the rewind window and the effectiveness of the death-save window.
+
+## Passive
+
+Vortex Armor grants Protea increasing damage reduction when enemies are destroyed by her abilities or nearby sources. The reduction stacks and decays over time, encouraging aggressive ability usage and enemy elimination. This passive synergizes well with Blaze Artillery and Grenade Fan, both of which can be configured for high kill rates.
+
+## Stats
+
+| Stat          | Value |
+|---------------|-------|
+| Health        | 270   |
+| Shield        | 455   |
+| Armor         | 135   |
+| Energy        | 175   |
+| Sprint Speed  | 1.2x  |
+| Mastery Rank  | 0     |
+
+Protea's stat distribution favors shields and energy. The 455 base shields are among the highest in the game, supporting builds that prioritize survivability through shield gating and Dispensary pickups. The 175 energy pool is slightly below average but is compensated by her ability-charge passive and the energy generation from her own Dispensary device.
+
+Her armor value of 135 is moderate, placing her in the support-frame category. Combined with shields and the damage reduction from Vortex Armor, she can achieve respectable effective health without heavy armor-scaling investment. The 1.2x sprint speed multiplier is standard for agile frames, facilitating positioning around deployed devices.
+
+## Acquisition
+
+Protea requires completion of The Deadlock Protocol quest, available from Cephalon Simaris. The quest is unlocked after progressing through the starchart and introduces Protea's character and the Corpus Railjack faction. The quest reward is her main blueprint.
+
+The remaining components drop from Granum Void fissure missions, which are accessed via void fissure relics during exterminate or void fissure public missions. Neuroptics drop in standard Granum Void (Rotation C), while Chassis components drop in extended Granum Void (Rotation C). Drop rates are uncommon (approximately 11% per rotation), so farming all components takes multiple runs.
+
+Orokin Cells are required for crafting and can be found on Saturn, Ceres, or Deimos. Once all components are collected, crafting takes 72 hours and costs 25,000 credits, standard for Warframe builds.
+
+## Playstyle
+
+Protea's playstyle is adaptable and scales with mission type and squad composition. Solo players often build for self-sufficiency, prioritizing Dispensary uptime and survivability. Squad players lean into support, with Blaze Artillery and Grenade Fan providing area control while Dispensary sustains the team.
+
+A typical offensive rotation involves casting Dispensary for sustain, positioning Blaze Artillery in chokepoints, using Grenade Fan (Shrapnel Vortex mode) to clear adds and interrupt heavy units, and banking Temporal Anchor for either burst damage in a crowd or emergency survival when danger spikes. The charge-based nature of Grenade Fan means it can be spammed freely once charges are available, creating a forgiving ability curve.
+
+Defensive rotations flip the priority. Grenade Fan switches to Shield Satellites mode, overcharging shields for the squad. Dispensary remains the primary focus. Temporal Anchor becomes a panic button rather than an offensive tool, with careful placement ensuring Protea can survive any spike damage.
+
+Advanced players manipulate ability interactions. Chaining multiple Dispensaries in tight formations creates pickup clusters that fall in one spot, making them easier for squadmates to grab during hectic firefights. Positioning Blaze Artillery behind lines of sight but with line-of-sight to enemies allows it to attack while remaining safe. Anchor placement near extraction points guarantees a safe rewind route if a last-stand situation develops.
+
+Protea benefits from both ability power builds (strength for Anchor damage scaling and shield satellite overcharge) and duration builds (extending Dispensary and Temporal Anchor rewind windows). Hybrid builds balancing strength and duration are most flexible.
+
+## Builds
+
+Protea's flexibility allows multiple build archetypes, each viable in different contexts.
+
+**Support Focus** prioritizes Dispensary uptime and shield generation. Builds stack ability range and duration, with mods like Stretch, Overextend, and Primed Continuity or their equivalents. Power strength is secondary. This build makes Protea the squad's life preserver in high-difficulty endless missions.
+
+**Damage Focus** maximizes Blaze Artillery damage and Temporal Anchor implosion scaling. Builds stack power strength and duration, using mods like Umbral Intensify, Blind Rage, and Transient Fortitude. The high ability power makes Artillery hits devastating and Anchor implosions scale into late game.
+
+**Hybrid/Solo** balances all three stats (range, duration, strength) for consistent output. This playstyle is forgiving and effective in open-world missions and farming content where Protea is the primary damage dealer and sustainer.
+
+**Grenade Fan Spam** exploits the charge mechanic by building for range and efficiency, allowing rapid grenades in both modes. This build is less common but excels at lower-level content and endless void fissure farming where pickup generation matters more than raw damage.
+
+All builds benefit from primed or corpora versions of core mods, and arcane synergies (Energize for energy consistency, Blessing for survivability) enhance any configuration.
+
+## Synergies
+
+Protea fits into many team compositions. Trinity players appreciate the energy independence Protea provides, reducing pressure on Trinity to sustain the squad. Volt builds value Dispensary's ammo pickups, enabling high-firerate weapon spam. Mesa players synergize well with Blaze Artillery drawing enemy aggro, leaving Mesa free to deal damage.
+
+In endless missions, Protea + Hydroid or Nekros creates a resource-generation loop: Protea's Dispensary generates ammo, health, and energy, while Hydroid's loot or Nekros's desecration multiplies enemy drops. This combination trivializes sustain in endless runs.
+
+Protea also enables selfish-build carries. A Saryn or Excalibur Umbra player can focus purely on damage mods and augments, relying on Protea's Dispensary to handle sustainability. This allows squad members to use unconventional builds without risking resource starvation.
+
+## Lore
+
+Protea is a Warframe created by the Corpus faction, discovered during the Deadlock Protocol questline. Unlike other Warframes tied to Orokin origins or the Void, Protea represents the Corpus's attempt to reverse-engineer and clone Warframe technology. Her introduction challenged the established lore that only the Tenno could pilot Warframes effectively.
+
+The Deadlock Protocol reveals that Protea was hidden within Corpus facilities and activated by Cephalon Simaris as part of his scheme to resurrect Warframe research. Her temporal manipulation abilities hint at lost Orokin or precursor technologies repurposed by Corpus scientists. Her personality and backstory, revealed through quest dialogue, suggest she was intended as a tool for the Corpus hierarchy but became aware and allied with the Tenno.
+
+The devices she deploys (Grenade Fan, Blaze Artillery, Dispensary, Temporal Anchor) reflect her origins as a multi-role tactical platform. Each is a distinct technology: grenades represent kinetic weaponry, artillery represents heavy firepower, dispensaries represent logistics and supply, and the Temporal Anchor represents the most advanced capability, suggesting Corpus access to temporal manipulation principles.
+
+## Sources
+
+- **WFCD warframe-items repository.** The canonical Warframe database maintained by the WFCD community. Accessed 2026-05-19. https://github.com/WFCD/warframe-items
+- **Warframe Fandom Wiki.** Protea page with quest information, ability descriptions, and community build guides. Accessed 2026-05-19. https://warframe.fandom.com/wiki/Protea
