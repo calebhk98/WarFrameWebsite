@@ -1,0 +1,169 @@
+---
+slug: inaros-prime
+name: Inaros Prime
+aliases: ["Inaros"]
+masteryRank: 0
+health: 2215
+shield: 0
+armor: 240
+energy: 140
+sprintSpeed: 1.05
+passive:
+  name: Entombing Sand
+  description: >-
+    While bleeding-out, Inaros becomes entombed in a protective Sarcophagus.
+    He can revive himself by draining the life-force from nearby enemies and allies.
+abilities:
+  - name: Desiccation
+    key: "1"
+    energyCost: 50
+    description: >-
+      Blast enemies with a wave of cursed sand that blinds them and steals their health.
+      Scales with Ability Strength and Range.
+    stats:
+      range: 20
+      damage_type: Heat
+  - name: Sandstorm
+    key: "2"
+    energyCost: 25
+    description: >-
+      Become a sandstorm. Inaros devours enemies pulled into his whirlwind, healing himself.
+      Pulls and devours all enemies in the area, scaling healing with Ability Strength.
+    stats:
+      duration: 8
+      range: 15
+  - name: Scarab Shell
+    key: "3"
+    energyCost: 25
+    description: >-
+      Activate to form protective armor by draining Inaros' Health. Activate again to stop
+      formation early. The protective layer reduces incoming Damage and absorbs Status Effects.
+    stats:
+      armor_boost: "varies"
+      status_immunity: "true"
+  - name: Scarab Swarm
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summon a Scarab Swarm to attack enemies with guaranteed Corrosive Status. Damage scales
+      with Inaros' Health. Enemies killed while immersed in the swarm summon Swarm Kavats that
+      fight alongside Inaros and guide scarabs to other enemies.
+    stats:
+      damage_type: "Corrosive (Guaranteed)"
+      spawn_rate: "varies"
+acquisition:
+  source: "Void Relic Fissure missions (Vaulted)"
+  blueprintLocations:
+    - "Void Relics (Lith, Meso, Neo, Axi — currently vaulted)"
+    - "Prime Resurgence rotation (periodic availability)"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+    platinum: null
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2020-07-14"
+  vaultedAt: "2022-07-16"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Stats cross-checked against WFCD 1.843.0; health, armor, energy, and sprint speed verified."
+  - url: "https://warframe.fandom.com/wiki/Inaros/Prime"
+    accessedAt: "2026-05-19"
+    title: "Inaros Prime — WARFRAME Wiki"
+    publisher: "Fandom"
+    note: "Acquisition, lore, and ability descriptions sourced from canonical wiki page."
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Inaros Prime is the vaulted Prime variant of Inaros, the mummified desert-dwelling Warframe. Released on July 14, 2020, Inaros Prime surpasses his base counterpart with higher health, energy capacity, and sprint speed, plus additional polarity for greater mod customization. Currently vaulted since July 2022, Inaros Prime remains available intermittently through Prime Resurgence rotations. As the Warframe with the highest base health of any frame in the game—2215 at Rank 0 and 2415 at maximum rank—Inaros Prime is built for longevity and melee-adjacent sustain.
+
+Inaros Prime exemplifies a health-tank playstyle, transforming his substantial health pool into both offensive output and defensive utility. The 2024 Scarab Rework fundamentally reimagined Inaros's kit, replacing the aging Sandman abilities with Scarab Shell and Scarab Swarm. Scarab Shell converts health directly into armor, creating an invulnerable toggle for survivability. Scarab Swarm summons autonomous allies whose damage scales with health, turning high-health builds into exponential damage multipliers. This synergy makes Inaros Prime a frame that rewards investing in health mods and durability.
+
+## Abilities
+
+<AbilityCard
+  name="Desiccation"
+  key="1"
+  energyCost={50}
+  description="Blast enemies with a wave of cursed sand that blinds them and steals their health. Scales with Ability Strength and Range."
+/>
+
+Desiccation forms the bread-and-butter offensive tool of Inaros Prime's arsenal. The ability fires a projectile wave that blinds all enemies it hits and converts a portion of their health into healing for Inaros. The blind effect is particularly valuable for crowd control in lower-level missions, and the health steal ensures Inaros maintains sustainability in longer runs. With Ability Strength mods like Umbral Intensify or Blind Rage, Desiccation's heal can keep Inaros topped up during moderately scaled content. The range scales well with stretch mods, extending the effective engagement distance.
+
+<AbilityCard
+  name="Sandstorm"
+  key="2"
+  energyCost={25}
+  description="Become a sandstorm. Inaros devours enemies pulled into his whirlwind, healing himself. Pulls and devours all enemies in the area, scaling healing with Ability Strength."
+/>
+
+Sandstorm is Inaros Prime's signature survival tool, transforming him into an untargetable vortex that pulls and devours nearby enemies. While active, Inaros becomes immune to damage, pulling all enemies in range and healing based on the number of enemies devoured. This ability shines in high-density mission types like Defense and Interception, where grouped enemies ensure consistent healing. Duration mods like Primed Continuity extend the whirlwind window, while Ability Strength boosts healing per enemy. However, cast lag and movement restrictions during activation can feel sluggish in fast-paced content.
+
+<AbilityCard
+  name="Scarab Shell"
+  key="3"
+  energyCost={25}
+  description="Activate to form protective armor by draining Inaros' Health. Activate again to stop formation early. The protective layer reduces incoming Damage and absorbs Status Effects."
+/>
+
+Scarab Shell is a toggleable armor conversion ability introduced in the 2024 rework. Activating the ability drains Inaros' current health pool, converting it into a protective armor layer that scales multiplicatively with existing armor mods and Ability Strength. The armor persists until depleted, absorbed, or toggled off. One of Scarab Shell's most powerful features is its built-in status-effect immunity—any status procs applied to the armor layer are absorbed and negated, making Inaros Prime invaluable against Grineer Nullifier bubbles and eximus units. The ability transforms Inaros into an unkillable juggernaut when layered with proper tanking mods.
+
+<AbilityCard
+  name="Scarab Swarm"
+  key="4"
+  energyCost={100}
+  description="Summon a Scarab Swarm to attack enemies with guaranteed Corrosive Status. Damage scales with Inaros' Health. Enemies killed while immersed in the swarm summon Swarm Kavats that fight alongside Inaros."
+/>
+
+Scarab Swarm is Inaros Prime's ultimate crowd-control and damage tool, summoning an autonomous swarm of scarabs that apply guaranteed Corrosive damage and Status procs to all nearby enemies. The swarm's damage scales directly with Inaros' maximum health, making health-focused builds exponentially powerful. Critically, any enemy killed while under the swarm's influence summons a Swarm Kavat companion that persists for the ability's duration and independently targets other enemies. With proper health scaling and strength mods, the Swarm transforms into a self-perpetuating damage engine that clears entire rooms. The guaranteed Corrosive status is particularly effective against heavily armored Grineer units, stacking armor strip effects that open targets to follow-up damage.
+
+## Passive
+
+Inaros Prime's passive, **Entombing Sand**, activates when his health is depleted. Rather than entering traditional bleedout, Inaros entombs himself in a protective sarcophagus and emerges as sand, gaining mobility and the ability to drain life-force from nearby enemies and allies to revive himself. This passive provides a safety net for aggressive play, allowing Inaros to reposition and heal without relying on external support or revive timers. The passive encourages tanking damage and pushing offensive positions, reinforcing Inaros Prime's identity as an unkillable juggernaut.
+
+## Stats
+
+Inaros Prime boasts the highest base health in Warframe: 2215 at Rank 0, scaling to 2415 at maximum rank. With zero shields and 240 armor, he trades traditional defense for raw durability and reliance on health-scaling abilities. Sprint speed of 1.05 gives a modest mobility boost. Energy capacity of 140 (190 at max rank) supports ability spam, particularly with efficiency mods or energy regeneration strategies. The Naramon aura polarity supports classic defensive aura mods like Corrosive Projection or Growing Power.
+
+| Stat         | Rank 0 | Rank 30 |
+|--------------|--------|---------|
+| Health       | 2215   | 2415    |
+| Shield       | 0      | 0       |
+| Armor        | 240    | 240     |
+| Energy       | 140    | 190     |
+| Sprint Speed | 1.05   | 1.05    |
+
+## Acquisition
+
+Inaros Prime is currently **vaulted** and does not appear in standard Void Relic drop tables. Inaros Prime components and blueprint previously dropped from Lith, Meso, Neo, and Axi-tier void relics. Check the current Prime Resurgence rotation on Varzia in the Void Fissure relay to confirm periodic availability. Any preexisting vaulted relics in player inventories remain tradable and openable. Building Inaros Prime from components requires 25,000 credits and 72 hours of assembly time, plus 15,000 credits and 12 hours for each component blueprint (Neuroptics, Chassis, Systems).
+
+## Playstyle
+
+Inaros Prime excels as a health-tank juggernaut in medium- to high-level content. The playstyle centers on maximizing health through mods like Umbral Vitality and Adaptation, which synergizes with Scarab Shell to create exponential damage reduction. Scarab Swarm becomes the primary damage engine, with its health-scaling output transforming defensive builds into offensive powerhouses. In team play, the guaranteed Corrosive status and Swarm Kavats provide consistent armor strip and add-on damage, freeing squadmates to focus on burst.
+
+Core loops involve toggling Scarab Shell to maintain armor buffs, casting Scarab Swarm on dense enemy groups, and using Sandstorm for panic invulnerability when armor depletes. Desiccation tops health between larger threats. Against eximus units and nullifiers, Scarab Shell's status immunity proves invaluable, negating procs that would otherwise spike incoming damage. The frame shines in Defense, Survival, and Interception where enemies cluster and Swarm Kavats multiply.
+
+Weaknesses emerge in highly mobile, low-density content (Void Cascade, Mobile Defense) where scarabs struggle to maintain targets. Energy consumption becomes problematic in long Survival runs without efficiency investment or energy regeneration. Cast lag on Sandstorm can feel clunky during fast-paced engagements. Additionally, Inaros Prime lacks damage mitigation outside his active toolset; once Scarab Shell depletes, he falls back on raw health, which becomes fragile at level 100+ without heavy armor layers.
+
+## Builds
+
+Inaros Prime's buildcraft revolves around maximizing health and armor to fuel Scarab Swarm damage and Scarab Shell durability. The meta separates into two variants: pure tank builds optimizing Scarab Shell uptime and hybrid health-strength builds amplifying Swarm damage. Both prioritize health mods (Umbral Vitality, adaptation augment), armor scaling (Steel Fiber, Heavy Caliber on Scarab Shell), and ability strength for swarm scaling. Efficiency is secondary; duration matters only for Sandstorm window extension.
+
+Example loadout: Umbral Intensify, Umbral Vitality, Steel Fiber, Primed Continuity, Narrowminded, Blind Rage, Augur Reach, Stretch. This build prioritizes Scarab Swarm damage and Scarab Shell armor conversion while maintaining reasonable duration for Sandstorm. Arcane Blessing and Arcane Guardian stack multiplicatively with Scarab Shell, creating near-permanent invulnerability in grouped play.
+
+## Lore
+
+Inaros Prime emerges from the lore of Luna Placida, an ancient Orokin artisan settlement. Known as the protector of master craftsmen, Inaros Prime was keeper of their secrets and a walking treasure map to Orokin wonders. When the Orokin Empire collapsed, Inaros Prime's obligation to protect their legacy ended, though his power remained. Baro Ki'Teer references this history in his unique dialogue, recognizing Inaros Prime as a source of untapped wealth and exotic technology. The frame's sand-based aesthetic draws from Egyptian mummy mythology, transforming the concept into a health-draining desert warrior whose very nature is tied to sand and eternal preservation.
+
+The 2024 Scarab Rework recontextualized Inaros Prime's abilities, introducing the Scarab Swarm as a biological extension of his will and Scarab Shell as a metamorphosis into an insectoid carapace. This shift suggests a deeper connection between Inaros and Entrati infestation mechanics, positioning the frame as an evolution or hybrid form drawing power from biological resurrection.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) — Canonical numeric data and stat definitions. Version 1.843.0 verified against in-game values 2026-05-19.
+- [Inaros Prime — WARFRAME Wiki](https://warframe.fandom.com/wiki/Inaros/Prime) — Comprehensive ability descriptions, relic drop tables, and acquisition information.

@@ -107,6 +107,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - hildryn-prime :: src/content/warframes/hildryn-prime.mdx
 - hydroid :: src/content/warframes/hydroid.mdx
 - hydroid-prime :: src/content/warframes/hydroid-prime.mdx
+- inaros :: src/content/warframes/inaros.mdx
+- inaros-prime :: src/content/warframes/inaros-prime.mdx
+- ivara :: src/content/warframes/ivara.mdx
+- ivara-prime :: src/content/warframes/ivara-prime.mdx
+- jade :: src/content/warframes/jade.mdx
+- khora :: src/content/warframes/khora.mdx
+- khora-prime :: src/content/warframes/khora-prime.mdx
+- koumei :: src/content/warframes/koumei.mdx
 
 ## done.weapons
 
@@ -267,6 +275,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - hildryn-prime
 - hydroid
 - hydroid-prime
+- inaros
+- inaros-prime
+- ivara
+- ivara-prime
+- jade
+- khora
+- khora-prime
+- koumei
 
 ## verified.weapons
 
