@@ -1,0 +1,425 @@
+{
+  "batch_id": "wave15-xaku-xakuprime-yareli-zephyr-zephyrprime",
+  "collection": "warframes",
+  "files_verified": 5,
+  "pass": true,
+  "errors": [],
+  "warnings": [],
+  "checked_at": "2026-05-19T00:00:00Z",
+  "results": [
+    {
+      "slug": "xaku",
+      "pass": true,
+      "word_count": 1769,
+      "word_count_min": 800,
+      "frontmatter_valid": true,
+      "sections_found": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Recommended builds",
+        "Synergies",
+        "Lore",
+        "Sources"
+      ],
+      "sections_required": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Builds (or variant)",
+        "Lore",
+        "Sources"
+      ],
+      "stat_verification": {
+        "masteryRank": {
+          "mdx": 0,
+          "wfcd": 0,
+          "match": true
+        },
+        "health": {
+          "mdx": 269,
+          "wfcd": 269,
+          "match": true
+        },
+        "shield": {
+          "mdx": 239,
+          "wfcd": 239,
+          "match": true
+        },
+        "armor": {
+          "mdx": 146,
+          "wfcd": 146,
+          "match": true
+        },
+        "energy": {
+          "mdx": 160,
+          "wfcd_power": 160,
+          "match": true,
+          "note": "WFCD stores as 'power', MDX uses 'energy' per mapping rules"
+        },
+        "sprintSpeed": {
+          "mdx": 1.02,
+          "wfcd": 1.02,
+          "match": true
+        }
+      },
+      "sources": {
+        "count": 2,
+        "minimum": 2,
+        "valid": true,
+        "fandom_url": "https://warframe.fandom.com/wiki/Xaku",
+        "wfcd_url": "https://github.com/WFCD/warframe-items"
+      },
+      "hygiene_checks": {
+        "has_todo_fixme": false,
+        "has_console_log": false,
+        "has_non_ascii": false
+      },
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Xaku/health",
+          "value": 269,
+          "file_line": 6
+        },
+        {
+          "field": "energy",
+          "wfcd_path": "Warframes.json#/Xaku/power",
+          "value": 160,
+          "file_line": 9
+        },
+        {
+          "field": "masteryRank",
+          "wfcd_path": "Warframes.json#/Xaku/masteryRank",
+          "value": 0,
+          "file_line": 5
+        }
+      ]
+    },
+    {
+      "slug": "xaku-prime",
+      "pass": true,
+      "word_count": 1451,
+      "word_count_min": 800,
+      "frontmatter_valid": true,
+      "sections_found": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Recommended builds",
+        "Lore",
+        "Sources"
+      ],
+      "stat_verification": {
+        "masteryRank": {
+          "mdx": 0,
+          "wfcd": 0,
+          "match": true
+        },
+        "health": {
+          "mdx": 269,
+          "wfcd": 269,
+          "match": true
+        },
+        "shield": {
+          "mdx": 263,
+          "wfcd": 263,
+          "match": true
+        },
+        "armor": {
+          "mdx": 167,
+          "wfcd": 167,
+          "match": true
+        },
+        "energy": {
+          "mdx": 181,
+          "wfcd_power": 181,
+          "match": true
+        },
+        "sprintSpeed": {
+          "mdx": 1.07,
+          "wfcd": 1.0700001,
+          "match": true,
+          "note": "Within tolerance (+-0.01)"
+        }
+      },
+      "sources": {
+        "count": 2,
+        "minimum": 2,
+        "valid": true,
+        "fandom_url": "https://warframe.fandom.com/wiki/Xaku/Prime"
+      },
+      "hygiene_checks": {
+        "has_todo_fixme": false,
+        "has_console_log": false,
+        "has_non_ascii": false
+      },
+      "citations": [
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Xaku Prime/shield",
+          "value": 263,
+          "file_line": 7
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Xaku Prime/armor",
+          "value": 167,
+          "file_line": 8
+        }
+      ]
+    },
+    {
+      "slug": "yareli",
+      "pass": true,
+      "word_count": 1524,
+      "word_count_min": 800,
+      "frontmatter_valid": true,
+      "sections_found": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Builds",
+        "Synergies",
+        "Lore",
+        "Sources"
+      ],
+      "stat_verification": {
+        "masteryRank": {
+          "mdx": 0,
+          "wfcd": 0,
+          "match": true
+        },
+        "health": {
+          "mdx": 270,
+          "wfcd": 270,
+          "match": true
+        },
+        "shield": {
+          "mdx": 455,
+          "wfcd": 455,
+          "match": true
+        },
+        "armor": {
+          "mdx": 105,
+          "wfcd": 105,
+          "match": true
+        },
+        "energy": {
+          "mdx": 200,
+          "wfcd_power": 200,
+          "match": true
+        },
+        "sprintSpeed": {
+          "mdx": 1.0,
+          "wfcd": 1.0,
+          "match": true
+        }
+      },
+      "sources": {
+        "count": 2,
+        "minimum": 2,
+        "valid": true,
+        "fandom_url": "https://warframe.fandom.com/wiki/Yareli"
+      },
+      "hygiene_checks": {
+        "has_todo_fixme": false,
+        "has_console_log": false,
+        "has_non_ascii": false
+      },
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Yareli/health",
+          "value": 270,
+          "file_line": 6
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Yareli/shield",
+          "value": 455,
+          "file_line": 7
+        }
+      ]
+    },
+    {
+      "slug": "zephyr",
+      "pass": true,
+      "word_count": 1680,
+      "word_count_min": 800,
+      "frontmatter_valid": true,
+      "sections_found": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Recommended builds",
+        "Lore",
+        "Sources"
+      ],
+      "stat_verification": {
+        "masteryRank": {
+          "mdx": 0,
+          "wfcd": 0,
+          "match": true
+        },
+        "health": {
+          "mdx": 455,
+          "wfcd": 455,
+          "match": true
+        },
+        "shield": {
+          "mdx": 455,
+          "wfcd": 455,
+          "match": true
+        },
+        "armor": {
+          "mdx": 105,
+          "wfcd": 105,
+          "match": true
+        },
+        "energy": {
+          "mdx": 100,
+          "wfcd_power": 100,
+          "match": true
+        },
+        "sprintSpeed": {
+          "mdx": 1.1,
+          "wfcd": 1.1,
+          "match": true
+        }
+      },
+      "sources": {
+        "count": 2,
+        "minimum": 2,
+        "valid": true,
+        "fandom_url": "https://warframe.fandom.com/wiki/Zephyr"
+      },
+      "hygiene_checks": {
+        "has_todo_fixme": false,
+        "has_console_log": false,
+        "has_non_ascii": false
+      },
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Zephyr/health",
+          "value": 455,
+          "file_line": 6
+        },
+        {
+          "field": "energy",
+          "wfcd_path": "Warframes.json#/Zephyr/power",
+          "value": 100,
+          "file_line": 9
+        }
+      ]
+    },
+    {
+      "slug": "zephyr-prime",
+      "pass": true,
+      "word_count": 1546,
+      "word_count_min": 800,
+      "frontmatter_valid": true,
+      "sections_found": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Recommended builds",
+        "Lore",
+        "Sources"
+      ],
+      "stat_verification": {
+        "masteryRank": {
+          "mdx": 0,
+          "wfcd": 0,
+          "match": true
+        },
+        "health": {
+          "mdx": 455,
+          "wfcd": 455,
+          "match": true
+        },
+        "shield": {
+          "mdx": 455,
+          "wfcd": 455,
+          "match": true
+        },
+        "armor": {
+          "mdx": 135,
+          "wfcd": 135,
+          "match": true
+        },
+        "energy": {
+          "mdx": 175,
+          "wfcd_power": 175,
+          "match": true
+        },
+        "sprintSpeed": {
+          "mdx": 1.15,
+          "wfcd": 1.15,
+          "match": true
+        }
+      },
+      "sources": {
+        "count": 2,
+        "minimum": 2,
+        "valid": true,
+        "fandom_url": "https://warframe.fandom.com/wiki/Zephyr_Prime"
+      },
+      "hygiene_checks": {
+        "has_todo_fixme": false,
+        "has_console_log": false,
+        "has_non_ascii": false
+      },
+      "citations": [
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Zephyr Prime/armor",
+          "value": 135,
+          "file_line": 8
+        },
+        {
+          "field": "energy",
+          "wfcd_path": "Warframes.json#/Zephyr Prime/power",
+          "value": 175,
+          "file_line": 9
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_files": 5,
+    "passed": 5,
+    "failed": 0,
+    "verification_notes": [
+      "All 5 files passed verification",
+      "Word counts: xaku (1769), xaku-prime (1451), yareli (1524), zephyr (1680), zephyr-prime (1546) — all exceed 800-word minimum",
+      "All WFCD stat mappings verified; energy field correctly maps to WFCD power field",
+      "Case-insensitive heading detection: All required sections present (Overview, Abilities, Passive, Stats, Acquisition, Playstyle, Builds/Recommended builds, Lore, Sources)",
+      "MasteryRank discrepancy issue #23 noted in task context — all files correctly set to 0 per WFCD",
+      "Sprint speed tolerance (+-0.01) checked; xaku-prime passes (1.07 vs 1.0700001)",
+      "All sources arrays meet >= 2 requirement with valid URLs",
+      "No TODO/FIXME comments found in any file",
+      "No console.log statements in any file",
+      "No non-ASCII characters; diacritics properly transliterated"
+    ]
+  }
+}

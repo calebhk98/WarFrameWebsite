@@ -6,7 +6,7 @@ read whole. One slug per line, format `- <slug>` (optionally with
 target section and deleting from the source section.
 
 ## phase
-4:content
+4:content-warframes-complete
 
 ## cursor
 warframes: 0
@@ -171,6 +171,11 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - wisp-prime :: src/content/warframes/wisp-prime.mdx
 - wukong :: src/content/warframes/wukong.mdx
 - wukong-prime :: src/content/warframes/wukong-prime.mdx
+- xaku :: src/content/warframes/xaku.mdx
+- xaku-prime :: src/content/warframes/xaku-prime.mdx
+- yareli :: src/content/warframes/yareli.mdx
+- zephyr :: src/content/warframes/zephyr.mdx
+- zephyr-prime :: src/content/warframes/zephyr-prime.mdx
 
 ## done.weapons
 
@@ -395,6 +400,11 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - wisp-prime
 - wukong
 - wukong-prime
+- xaku
+- xaku-prime
+- yareli
+- zephyr
+- zephyr-prime
 
 ## verified.weapons
 
