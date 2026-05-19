@@ -1,0 +1,165 @@
+---
+slug: sevagoth-prime
+name: Sevagoth Prime
+aliases: []
+masteryRank: 0
+health: 270
+shield: 270
+armor: 185
+energy: 175
+sprintSpeed: 0.94999999
+passive:
+  name: Death Reborn
+  description: >-
+    On death, become Sevagoth's Shadow and fight to resurrect him by collecting
+    the souls needed to rebuild his tombstone.
+abilities:
+  - name: Reap
+    key: "1"
+    energyCost: 25
+    description: >-
+      Sevagoth's Shadow flies outward ravaging enemies in his path. Survivors are
+      damaged by Death's Harvest over time. The souls of the dead fill the Death Well.
+    stats: { damage: 100, range: 30 }
+  - name: Sow
+    key: "2"
+    energyCost: 50
+    description: >-
+      Plant a death seed in nearby targets to drain their lifeforce. Reap what has
+      been sown to detonate afflicted enemies, dealing a percentage of their health
+      as radial damage. The souls of the dead fill the Death Well.
+    stats: { drain_percentage: "varies", range: 28 }
+  - name: Gloom
+    key: "3"
+    energyCost: 75
+    description: >-
+      Summon a radial pulse wave that ensnares and slows enemies, siphoning their
+      lifeforce for the Death Well. Allies within the wave steal health with each attack.
+    stats: { damage_per_second: "varies", slow: 0.5, range: 25 }
+  - name: Exalted Shadow
+    key: "4"
+    energyCost: 100
+    description: >-
+      When the Death Well fills, Sevagoth's Shadow form is ready to be released.
+      Tear the enemy asunder with a collection of melee-focused abilities.
+    stats: { duration: "scales_with_strength" }
+acquisition:
+  source: "Void Fissures (relic farming)"
+  blueprintLocations:
+    - "Axi Z2, Neo A13 relics (Void Fissure missions)"
+    - "Axi S17, Lith S16 relics (Void Fissure missions)"
+    - "Axi G14, Meso A7, Neo T9 relics (Void Fissure missions)"
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2021-11-16"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+    note: "All numeric stats cross-referenced against WFCD Warframes.json"
+  - url: "https://warframe.fandom.com/wiki/Sevagoth_Prime"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+    note: "Lore and ability mechanics context"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Sevagoth Prime is the Orokin variant of the death-themed warframe Sevagoth, designed for players who embrace a unique mechanic where tactical death becomes a powerful combat advantage. Unlike standard warframes, Sevagoth's gameplay revolves around managing a Death Well—a resource that accumulates when enemies die, enabling transformation into Sevagoth's Shadow for explosive crowd-control and burst damage. With marginally improved shields (270 vs 235) and armor (185 vs 160) compared to the base frame, Sevagoth Prime excels in mid-to-high-level content where death management becomes a strategic tool rather than a failure state. The prime variant maintains the base frame's distinctive asymmetrical health pool and ability set while offering the refined Orokin aesthetics and stat improvements characteristic of prime variants.
+
+Sevagoth Prime's core identity centers on the Death Well mechanic. As enemies perish—whether through Sevagoth's own abilities or squadmate kills—the Death Well fills. When full, the player can toggle Exalted Shadow to unleash Sevagoth's Shadow, a separate entity capable of independent melee combat and crowd control. This design rewards aggressive play and team coordination, as kills from any source accelerate the transformation cycle. The frame's toolkit of Reap, Sow, and Gloom all synergize to accelerate Death Well accumulation, creating a feedback loop where aggressive ability usage generates the resources needed for powerful shadow transformations.
+
+## Abilities
+
+### Reap
+
+Reap launches Sevagoth's Shadow in a directional charge, ravaging enemies in a line. Survivors take additional damage over time via Death's Harvest, while slain enemies contribute souls to the Death Well. This ability serves as both damage and resource generation, making it a cornerstone of Sevagoth Prime's offensive strategy. The shadow's flight path scales with ability range, making stretch and augur reach essential mods for covering larger areas. Early in missions, Reap generates initial Death Well stacks; mid-game and onward, it becomes a crowd-control tool that procs Death's Harvest damage-over-time effects on hard targets for follow-up finishing.
+
+Reap's range and damage make it valuable against weak trash mobs that die immediately, feeding the Death Well rapidly. On tougher targets, the persistent death damage from Harvest allows Sevagoth to soften enemies for melee shadow attacks later.
+
+### Sow
+
+Sow plants death seeds on nearby targets, draining their lifeforce as a damage-over-time effect that fills the Death Well more slowly than instant kills but accumulates constantly. The critical mechanic is the harvest—once Sow is recast on seeded enemies, they detonate, dealing radial damage scaled by their remaining health. This creates a burst window where Sevagoth primes targets with drain, waits for Reap or Gloom to finish them, then detonates the corpses for area damage. Sow excels in defense-style missions where enemies arrive in waves and the frame has time to seed multiple targets before triggering harvest explosions.
+
+The health-scaling detonation incentivizes hitting tanky enemies with seeds and letting Sow drain them before forcing the harvest, as their high health multiplies the eventual radial damage. This makes Sow an elegant crowd-control tool when combined with range and ability strength mods.
+
+### Gloom
+
+Gloom projects a radius pulse that simultaneously slows enemies and siphons their health into the Death Well. Unlike Reap and Sow, Gloom provides defensive utility—slowed enemies deal reduced damage and move slowly, providing breathing room. Crucially, allies within the Gloom aura steal health with each attack, making Sevagoth Prime a team-support frame when built for duration and range. The health drain feeds the Death Well consistently, generating charge even when no enemies die, making Gloom valuable for sustaining Death Well fills in long endurance runs.
+
+Gloom scales poorly with ability strength (the slow effect is capped) but scales excellently with duration and range. A high-range, high-duration Gloom build transforms the ability into a permanent damage-mitigation tool that keeps the death meter ticking regardless of kill speed.
+
+### Exalted Shadow
+
+Exalted Shadow deploys Sevagoth's spectral form as an independent fighter. The shadow persists until recalling or until Sevagoth dies, inherits a portion of Sevagoth's mods and stats, and can charge into melee combat with crowd-control abilities unique to the shadow form. The shadow's existence is the payoff for accumulating Death Well—this phase of the fight is where raw damage and crowd control shine. The shadow's abilities include charges, knockdowns, and area sweeps, making it effective against both single-target bosses and crowd scenarios.
+
+Building Sevagoth Prime with high ability strength and melee-focused mods means the shadow phase multiplies damage output significantly. In high-level missions, alternating between main-form ability spam (Reap, Sow, Gloom) to fill the meter and shadow form aggressive melee attacks creates a dynamic combat loop that sustains indefinitely as long as enemies continue spawning.
+
+## Passive
+
+Sevagoth Prime's passive—Death Reborn—fundamentally reshapes the frame's relationship with survivability. When Sevagoth dies, he does not trigger a revive timer or automatic team-member penalty. Instead, he immediately becomes his Shadow form, able to continue fighting and accumulating souls by defeating enemies. Once enough souls are collected, Sevagoth resurrects with full health. This mechanic transforms death from a failure state into a tactical opportunity—in challenging missions, deliberately allowing Sevagoth to "die" mid-map and then fighting as the shadow to resurrect at a safer location can be advantageous.
+
+This passive requires squad awareness; if no allies remain alive to revive Sevagoth after the shadow expires, mission failure occurs. In solo play, the shadow must defeat enough enemies to rebuild the tombstone before time expires. This creates unique risk-reward dynamics where the shadow form becomes a reset mechanism, perfect for mission types with no revive limit or in squad scenarios where other players can defend while Sevagoth fights as a shadow.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 270 |
+| Shield | 270 |
+| Armor | 185 |
+| Energy | 175 |
+| Sprint Speed | 0.95x |
+| Mastery Rank | 0 |
+
+Sevagoth Prime mirrors the base frame's stat spread, with equal health and shield pools—a rarity among warframes. This balance ensures that survival builds can leverage both health restoration mods and shield-gate mechanics without sacrificing optimization. The armor value of 185 is moderate, suggesting Sevagoth Prime is neither a tanking frame nor a glass-cannon; instead, the frame relies on ability-based damage mitigation (Gloom's slow) and the passive's death-resurrection mechanic to survive high-level content.
+
+The energy pool of 175 is sufficient for extended ability spam when paired with energy-recovery mods like Primed Flow and Flow. The sprint speed of 0.95x is a minor penalty compared to baseline 1.0x, acceptable given the frame's ability-centric playstyle where sprint speed matters less than positioning and crowd control.
+
+## Acquisition
+
+Sevagoth Prime is acquired through void fissure farming across three relic series. The blueprint drops from Axi Z2 and Neo A13 relics. The neuroptics (helmet) drop from Axi G14, Meso A7, and Neo T9 relics. The chassis drops from Axi S17 and Lith S16 relics. Unlike the base Sevagoth, which may require specific quest completions, the prime variant only requires relic farming.
+
+All Sevagoth Prime components are player-tradable, making market purchases an alternative to farming. The frame was released in November 2021 and is currently unvaulted, making it a regular fixture in void fissure rotations. For players seeking the frame, farming Neo-tier relics (which drop components at a higher relative rate than lower tiers) or purchasing components from the player market are the fastest acquisition routes.
+
+Each component has specific relic sources; dedicated farmers often focus on a single relic era to optimize time-to-complete. The blueprint (most common drop) is often the last component farmed due to its frequent appearance, while the chassis (rarest drop) becomes the bottleneck on most farms.
+
+## Playstyle
+
+Sevagoth Prime's playstyle is fundamentally different from traditional ability-spam frames. The core loop is: use Reap/Sow/Gloom to damage and kill enemies, accumulate souls in the Death Well, and toggle Exalted Shadow when the meter fills to unleash a crowd-control and damage phase. The beauty of this design is flexibility—players can lean into early-game Gloom spam for defense, mid-game Reap spam for DPS, or late-game shadow form management for raw power.
+
+Early in a mission or against low-level enemies, Sevagoth Prime should maintain Gloom's persistent slow and health drain, keeping the Death Well meter rising passively. Enemies killed during Gloom contribute to the meter, accelerating shadow availability. Once the shadow is ready, toggling Exalted Shadow transforms Sevagoth into a melee-focused fighter, able to charge into crowds and apply crowd-control crowd-control abilities while the prime's shields and health sustain through enemy fire.
+
+Against high-level enemies or boss encounters, Sevagoth Prime alternates roles: Reap for long-range burst and initial Death Well charge, then shadow form for melee-focused crowd control and sustained pressure. The passive—Death Reborn—creates unique tactical options; if Sevagoth falls during the main phase, the shadow can immediately fight back without team penalty, converting what would be a wipe into a comeback opportunity.
+
+The frame excels in void fissure farming, bounty missions with staggered enemy waves, and endless missions where the ever-accumulating Death Well ensures shadow availability increases as mission time extends. Sevagoth Prime is less effective in single-target assassination-heavy content (like lich hunts) where enemies die too slowly to fill the meter, but redeems itself in team scenarios where squadmates' kills also contribute to the Death Well.
+
+## Recommended builds
+
+Sevagoth Prime's optimal builds vary by mission type. For fissure farming and wave-based content, a range and duration build maximizes Gloom uptime and Death Well generation: pair Primed Reach with Augur Reach for range, then add Primed Continuity and Augur Accord for duration. This build transforms Gloom into a mission-long damage-mitigation aura while slowly filling the Death Well, reducing reliance on kill-based resource generation.
+
+For aggressive DPS-focused content, prioritize ability strength and power efficiency. Combine Blind Rage with Transient Fortitude to maximize Reap's damage output, then add Fleeting Expertise and Streamline for energy efficiency. Cast Reap repeatedly to rapidly fill the Death Well, toggling shadow form frequently for burst phases. This build treats the shadow as a temporary power spike rather than a sustained mode.
+
+For endurance runs and solo content, balance all three stats: range for Gloom coverage, duration for Reap/Sow persistence, and strength for shadow damage. Sevagoth Prime Endurance Sustain at `/builds/warframes/sevagoth-prime/endurance-sustain` provides a complete loadout capable of surviving 60+ minute void fissure runs through intelligent Death Well management and shadow phase positioning.
+
+## Synergies
+
+Sevagoth Prime synergizes strongly with squad compositions that generate kills reliably. Trinity provides energy recovery, allowing aggressive Reap/Sow spam to feed the Death Well without energy starvation. Speedrunners like Loki or Wukong accelerate mission timers, reducing the total time before the Death Well fills and shadow becomes available. Crowd-control frames like Nyx and Grendel benefit from Sevagoth Prime's presence; while other frames control enemies, Sevagoth Prime fills the Death Well off their kills, enabling frequent shadow phases that provide additional burst windows.
+
+Arcane Grace provides healing-on-hit, synergizing with Gloom's health-stealing mechanic; enemies damaged by Gloom's slow are easier to finish with melee weapons during shadow form, proccing more arcane procs. Arcane Energize accelerates the Death Well fill by enabling more frequent ability casting. Magus Lockdown (operator arcane) freezes enemies, extending their lifespan and giving the Death Well time to accumulate before they die—useful in high-scaling content where overkill kills might waste potential meter charge.
+
+In fashion synergies, Sevagoth Prime's gold accents pair beautifully with energy colors skewing toward warm tones: rust-red, deep orange, or burnished gold. The Sevagoth Prime Syndana from the market adds visual flair while maintaining the spectral death aesthetic.
+
+## Lore
+
+Sevagoth Prime emerged from Orokin vaults as a study in unconventional frame engineering. While most Warframes are purely physical combat platforms, Sevagoth Prime's design suggests the Orokin experimented with split consciousness—separating the warrior into body and spirit, allowing tactical resurrection through spirit combat. In-universe, this likely stems from Orokin obsession with immortality and their understanding of void energy; splitting Sevagoth into material and spiritual phases may have been an attempt to achieve functional invulnerability through transcendence.
+
+The prime variant's discovery in the void implies that this experimental design was either successful enough to warrant mass production or controversial enough that prototypes were archived away from the main Tenno arsenal. Unlike primes that simply improve a design (Atlas Prime being stronger Atlas), Sevagoth Prime represents the original intent—the true form before the Orokin refined it into the contemporary base Sevagoth.
+
+Lore-wise, Sevagoth Prime serves as a reminder that Tenno powers extend beyond material existence. The Shadow's autonomy suggests the Orokin believed consciousness could be temporarily bifurcated, allowing Tenno operators to pilot two forms simultaneously. This aligns with later Operator-focused quest narratives where Tenno identity itself becomes a mystery—Sevagoth Prime might be the earliest prototype of the Operator/Warframe separation mechanic that defines modern Warframe gameplay.
+
+Culturally within the Tenno ranks, Sevagoth Prime is beloved by farmers and endurance-run enthusiasts who appreciate the frame's unique mechanic. The frame's popularity in void fissure runs stems from its passive offering a true failsafe—if Sevagoth falls, the Shadow continues the fight, making pub teams less punishing for Sevagoth players. This has made the frame a staple in squad-based endless content where revivals are limited and tactical positioning becomes secondary to pure survival.
+
+## Sources

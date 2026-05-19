@@ -1,0 +1,198 @@
+---
+slug: saryn
+name: Saryn
+aliases: []
+masteryRank: 0
+health: 365
+shield: 270
+armor: 240
+energy: 175
+sprintSpeed: 0.95
+passive:
+  name: Status Duration
+  description: Status Effects inflicted upon enemies last 30% longer.
+abilities:
+  - name: Spores
+    key: "1"
+    energyCost: 25
+    description: >-
+      Inflict a target with corrosive spores that spread to nearby enemies when
+      the host is killed. Spore damage escalates as they propagate through enemy
+      ranks, creating exponential damage scaling in dense groups.
+    stats:
+      initialDamage: 50
+      range: 25
+  - name: Molt
+    key: "2"
+    energyCost: 50
+    description: >-
+      Shed skin to leave a decoy that draws enemy fire while Saryn escapes.
+      The decoy absorbs aggro but deals no damage; used primarily for survivability
+      and tactical repositioning in dangerous encounters.
+    stats:
+      decoyDuration: 8
+  - name: Toxic Lash
+    key: "3"
+    energyCost: 25
+    description: >-
+      Toggle ability that imbues melee strikes with toxin damage, dealing double
+      the added toxin damage on melee hits. Attacking enemies afflicted by spores
+      triggers instant spore detonation, synergizing with the first ability for burst
+      damage chains.
+    stats:
+      toxinDamage: 50
+      toxinDamageMultiplier: 2
+  - name: Miasma
+    key: "4"
+    energyCost: 100
+    description: >-
+      Release a poisonous cloud dealing viral damage to all enemies in range.
+      Enemies already afflicted by spores take significantly increased damage from the mist,
+      rewarding Saryn players for maintaining spore stacks on targets.
+    stats:
+      damage: 400
+      range: 20
+      damageBonusVsSporified: 2
+acquisition:
+  source: Void Fissures (Lith, Meso, Neo, Axi relics)
+  blueprintLocations:
+    - "Void Fissure Lith A2 (blueprint, common)"
+    - "Void Fissure Meso N3 (blueprint, uncommon)"
+    - "Void Fissure Neo S9 (blueprint, rare)"
+    - "Void Fissure Axi S4 (blueprint, rare)"
+  buildTimeHours: 72
+  note: "Saryn blueprint is farmable from low-level relics; her prime variant (Saryn Prime) is more commonly used in endgame."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2015-12-22"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats and abilities cross-checked against WFCD 1.756.0."
+  - url: "https://warframe.fandom.com/wiki/Saryn"
+    accessedAt: "2026-05-19"
+    title: "Saryn — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Saryn is a toxin-based damage warframe whose core mechanic revolves around spreading corrosive spores across the battlefield. Her kit excels at area denial and exponential damage scaling in crowded encounters. Every enemy that dies while afflicted by her spores spreads them further, creating a viral cascade that rewards aggressive positioning and crowd control. Saryn has historically been one of Warframe's most popular frames for high-level endless missions, particularly void fissures and survival nodes where enemy density allows her spore chain reactions to spiral out of control.
+
+Her design emphasizes the interaction between her abilities: Spores apply the initial infection, Toxic Lash enables melee-based detonation and damage amplification, and Miasma capitalizes on already-infected enemies with a massive damage spike. Her passive, Status Duration, extends the lifecycle of toxic effects and synergizes with heavy elemental damage builds that layer Corrosive and Viral procs.
+
+## Abilities
+
+<AbilityCard
+  name="Spores"
+  key="1"
+  energyCost={25}
+  description="Inflict a target with corrosive spores that spread to nearby enemies when the host is killed or destroyed. Spore damage escalates as they propagate, creating multiplicative scaling in groups."
+/>
+
+Spores is Saryn's signature ability and the foundation of her playstyle. Each cast applies the spore status to a single enemy, with the visual effect of greenish pustules spreading across their body. When the afflicted enemy dies, nearby enemies automatically inherit the spore effect, triggering a chain reaction. The damage of spores increases per jump, meaning an enemy that catches spores from the third or fourth spreading step deals significantly more damage than the initial target. In missions with high enemy density, a single Spores cast can eventually infect dozens of enemies, each amplifying the damage of the next spore burst.
+
+The range and initial damage are modest by raw numbers, but the exponential scaling makes Spores one of the most dangerous ability casts in Warframe at sufficient enemy density. Pairing Spores with mods like Stretch, Augur Reach, or Power Strength creates different gameplay profiles: more range spreads spores faster, while more power strength increases the initial damage and the rate of escalation.
+
+<AbilityCard
+  name="Molt"
+  key="2"
+  energyCost={50}
+  description="Shed skin to leave a decoy that draws enemy fire while Saryn repositions. The decoy does not deal damage but serves as a defensive tool for survivability."
+/>
+
+Molt is a utility defensive ability rather than a damage tool. Upon activation, Saryn leaves behind a decoy while she becomes briefly invulnerable and can reposition. The decoy draws aggro and absorbs incoming fire for its duration, giving Saryn breathing room during overwhelming situations. In coordinated squads, Molt can buy time for allies to revive or reposition.
+
+While not flashy, Molt is a critical survival button in Steel Path or other high-difficulty content. Many Saryn builds rely on Molt as the only defensive layer, making it essential in dangerous nodes. The invulnerability window also permits repositioning without taking damage, enabling hit-and-run tactics with Spores.
+
+<AbilityCard
+  name="Toxic Lash"
+  key="3"
+  energyCost={25}
+  description="Toggle ability that imbues melee strikes with toxin damage, dealing double toxin damage on melee hits. Instantly detonates spores on hit, creating synergy with ability 1."
+/>
+
+Toxic Lash transforms Saryn into a melee-hybrid frame by supercharging her melee attacks with toxin scaling. While active, every melee swing adds toxin damage scaled by power strength, and the doubled damage multiplier on melee hits creates a strong incentive to use heavy melee weapons. The secondary effect—instantly detonating spores on affected enemies—creates the core feedback loop of Saryn's rotation: apply Spores with ability 1, then hit those enemies with melee to trigger burst detonation, dealing the multiplied spore damage plus the enhanced melee strike.
+
+Builds leveraging Toxic Lash typically combine Saryn with high-strength melee weapons and heavy Corrosive/Viral elemental combinations. The toggle nature means energy is consumed on activation rather than per swing, making it sustainable even on modest energy pools.
+
+<AbilityCard
+  name="Miasma"
+  key="4"
+  energyCost={100}
+  description="Release a poisonous cloud dealing viral damage to enemies in range. Targets afflicted by spores take massively increased damage from the mist."
+/>
+
+Miasma is Saryn's ultimate damage tool and the payoff for maintaining spore coverage. A short duration, wide-radius mist cloud applies viral damage to all enemies caught in it. The critical mechanic is the damage amplification bonus for spore-afflicted enemies: enemies already infected by Spores take roughly double damage from Miasma, incentivizing players to seed the map with spores before detonating them all at once with Miasma.
+
+In high-density missions, a well-positioned Miasma cast into a spore-covered enemy horde can clear an entire room. The cost is high (100 energy), so Miasma is used selectively rather than spammed. Energy efficiency mods and strong regen mechanics become necessary to sustain repeated Miasma casts in endless content.
+
+## Passive
+
+Saryn's passive, Status Duration, extends the duration of all status effects inflicted by her and her weapons by 30%. This passive is particularly powerful in elemental builds that layer Corrosive and Viral procs, as the additional duration allows more ticks of damage before the effect expires. In spore-heavy playstyles, the extended status duration does not directly affect spores (which function on hit and spread mechanics rather than timed duration), but it synergizes strongly with any secondary toxin/elemental damage the build includes.
+
+## Stats
+
+| Stat         | Value    |
+|--------------|----------|
+| Health       | 365      |
+| Shield       | 270      |
+| Armor        | 240      |
+| Energy       | 175      |
+| Sprint Speed | 0.95x    |
+| Mastery Rank | 0        |
+
+Saryn has moderate survivability without heavy investment. Her health and shield pools are middling compared to tanks like Rhino or Valkyr, while her armor is higher than many casters but still requires augmentation from mods like Steel Fiber for Steel Path viability. Players typically compensate with Molt's invulnerability window and tactical use of range to avoid close encounters.
+
+Her energy pool of 175 is sufficient for spore spam in normal star chart content but requires efficiency mods (Streamline, Fleeting Expertise) or energy recovery (Energize, Zenurik) to sustain ability spam in endgame missions. The sprint speed multiplier of 0.95 is slightly below baseline, making her a touch slower to reposition, though this is rarely the deciding factor in builds.
+
+## Acquisition
+
+Saryn's blueprint and components drop from Void Fissure relics across all tiers. Players farming Saryn typically run Lith (early star chart) or Meso/Neo relics (mid-game), with rarer variants in Axi relics. Each component has a common, uncommon, or rare rarity depending on the relic and refinement tier, making the grind relatively accessible for new players who have access to basic void fissure missions.
+
+The blueprint itself drops from common rotations, so new players can farm a full Saryn set within a handful of fissure runs. Once built, the 72-hour construction time is standard for warframe assembly.
+
+Saryn Prime, released in late 2015, is the prime variant and features improved stats and visual polish. Prime availability depends on void fissure vault rotation, but relics are regularly farmed at high tiers.
+
+## Playstyle
+
+Saryn's playstyle is fundamentally about seeding the map with Spores and triggering exponential spreading in enemy groups. In typical rotations, players cast Spores on a high-health enemy or tough unit, allowing the spore to propagate through nearby groups as they die. Aggressive Saryn players activate Toxic Lash and engage with melee weapons, detonating seeded spores via melee hits for immediate damage bursts. When facing larger groups or boss-scale enemies, Miasma is reserved as a crowd-clear or priority-target elimination tool.
+
+The frame is exceptionally forgiving in normal star chart content—spore spreading scales with enemy density, so packed mission tilesets reward Saryn players for maintaining map control and positioning in the center of enemy positions. However, low-density missions or solo endless content (where enemy count is sparse) reduce Saryn's damage output significantly, making her feel less dominant than in squad play with higher spawns.
+
+Advanced Saryn playstyles incorporate:
+
+- **Equilibrium builds:** Pairing Saryn with healing weapons (Syzergy augment, Hildryn link) and Equilibrium mod for life-steal energy recovery, enabling infinite ability spam.
+- **Spreadshot melee:** Using melee weapons with inherent range mods (Reaching Fervor, Primed Reach) to detonate multiple spore clusters simultaneously, multiplying damage output per swing.
+- **High-strength Miasma spam:** Focusing on power strength and energy recovery to spam Miasma repeatedly, treating it as the primary damage source rather than spore spreading.
+
+In Steel Path and void cascade missions, survival becomes paramount. Many Saryn builds slot Adaptation or Shield Gating mechanics to handle spike damage, using Molt strategically to reset aggro and reposition out of fire.
+
+## Builds
+
+Saryn's versatility permits several viable endgame builds:
+
+1. **Spore Spread / Crowd Control:** Prioritizes range and power strength to maximize spore propagation and initial seeding damage. Modded with Stretch, Augur Reach, and Umbral Intensify for both reach and damage. Recommended for endless missions and void fissures where density is high.
+
+2. **Toxic Lash Melee Hybrid:** Builds toward power strength and melee synergy, using heavy polearms or glaives with Corrosive/Viral mods. Toxic Lash becomes the primary damage vector, with Spores as a supporting tool. Ideal for more mobile playstyles and lower-level content where melee dominance is achievable.
+
+3. **Miasma Nuke:** Focuses on power strength and efficiency to sustain repeated Miasma casts as the primary area-damage source, relegating Spores to setup. Works well in squad play where teammates ensure high enemy density. Requires strong energy sustain via Energize or Zenurik.
+
+All builds benefit from extended duration mods (Continuity, Primed Continuity) to maximize the uptime of Toxic Lash and other status effects enabled by Saryn's passive.
+
+## Lore
+
+Saryn was introduced early in Warframe's development during Update 7, making her one of the original warframe roster. Her design draws from serpentine and toxin themes, reflecting her name and visual motif of a snake-like frame coated in pustules and venomous growths. The in-game lore suggests Saryn was engineered during the Orokin Era as a biological weapon, using disease and toxins to overwhelm enemy forces through exponential infection—a theme paralleled in her core ability, Spores, which mirrors viral contagion mechanics.
+
+The Orokin's mastery of bio-engineering is evident in Saryn's design; her abilities showcase intentional weaponization of parasitic and pathogenic systems. Unlike warframes built for direct combat or stealth, Saryn embodies biological warfare, using her body and environment as vectors for toxin spread. Her venom is not applied externally but grown from within, suggesting a deep symbiosis between Saryn and her toxic nature.
+
+The seven-year gap between Saryn's original release and the arrival of Saryn Prime (December 2015) reflects her enduring popularity in the playerbase. Her prime variant retained the core spore-spreading mechanic while delivering visual and stat refinements, cementing her place as a cornerstone of Warframe's roster.
+
+## Sources
+
+- [Saryn — WARFRAME Wiki](https://warframe.fandom.com/wiki/Saryn)
+- [WFCD warframe-items on GitHub](https://github.com/WFCD/warframe-items)

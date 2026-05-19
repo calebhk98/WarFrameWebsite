@@ -147,6 +147,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - qorvex :: src/content/warframes/qorvex.mdx
 - revenant :: src/content/warframes/revenant.mdx
 - revenant-prime :: src/content/warframes/revenant-prime.mdx
+- rhino :: src/content/warframes/rhino.mdx
+- rhino-prime :: src/content/warframes/rhino-prime.mdx
+- saryn :: src/content/warframes/saryn.mdx
+- saryn-prime :: src/content/warframes/saryn-prime.mdx
+- sevagoth :: src/content/warframes/sevagoth.mdx
+- sevagoth-prime :: src/content/warframes/sevagoth-prime.mdx
+- styanax :: src/content/warframes/styanax.mdx
+- temple :: src/content/warframes/temple.mdx
 
 ## done.weapons
 
@@ -347,6 +355,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - qorvex
 - revenant
 - revenant-prime
+- rhino
+- rhino-prime
+- saryn
+- saryn-prime
+- sevagoth
+- sevagoth-prime
+- styanax
+- temple
 
 ## verified.weapons
 
