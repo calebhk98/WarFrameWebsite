@@ -73,25 +73,45 @@ Nova Prime's core identity revolves around speed--both her own and her enemies'.
 
 ## Abilities
 
-### Null Star
+<AbilityCard
+  name="Null Star"
+  key="1"
+  energyCost={25}
+  description="Creates antimatter particles that orbit Nova and attack nearby targets. Each active particle reduces incoming damage to Nova's health and shields."
+/>
 
 Creates antimatter particles that orbit Nova and attack nearby targets. Each active particle reduces incoming damage to Nova's health and shields, functioning as both offensive and defensive tool. The particles are managed dynamically--Nova can have up to six particles orbiting simultaneously, and they automatically attack enemies who approach. As particles attack or Nova takes damage, active particles gradually decrease, requiring reactivation to maintain defensive coverage.
 
 The damage reduction per particle scales with the number of active particles, making this ability invaluable for surviveability in higher-level content. The orbiting particles deal Impact and Blast damage, with guaranteed slash procs on impact. Strength affects both the damage output and the damage reduction per particle, making this a key scaling ability for offensive builds that still provide survivability benefits.
 
-### Antimatter Drop
+<AbilityCard
+  name="Antimatter Drop"
+  key="2"
+  energyCost={75}
+  description="Launch a large particle of charged antimatter that detonates on contact. Direct the projectile by aiming; shoot it to charge further. Deals Blast damage with guaranteed status effect."
+/>
 
 Launches a charged antimatter projectile that deals massive damage on detonation. The core mechanic allows players to manipulate the projectile in flight--players can aim it toward specific targets or objects, and by shooting the projectile again while it travels, they can charge it for increased damage. This unique mechanic rewards skillful play and positioning, as a fully charged antimatter drop can eliminate high-priority targets or detonate in the middle of grouped enemies.
 
 The projectile always detonates on direct impact or after a set duration, releasing a blast of Blast damage with guaranteed status effects. The heavy energy cost and skill ceiling make this ability a signature tool for experienced Nova players who can exploit the charging mechanic for oneshot elimination of dangerous enemies. Range affects the projectile travel distance, while strength affects detonation damage and status effect application.
 
-### Wormhole
+<AbilityCard
+  name="Wormhole"
+  key="3"
+  energyCost={50}
+  description="Creates a wormhole allowing instantaneous travel. Hold the ability to visualize placement before activating the portal."
+/>
 
 Creates a wormhole allowing Nova and her squadmates to teleport instantaneously across the battlefield. By holding the ability before activation, Nova can preview the wormhole placement, enabling precision deployment in tactical locations. Once activated, any player can traverse the wormhole in either direction, creating shortcuts through obstacles, bypassing dangerous enemy positions, or rapid repositioning during high-stress moments.
 
 Wormhole's relatively low energy cost makes it spammable for mobility purposes, though the ability's strength and range don't affect it--it primarily scales with casting speed (ability duration mods). The wormhole persists for several seconds after activation, allowing multiple transits before collapsing. This ability synergizes with team-focused strategies, providing utility beyond Nova's personal survival.
 
-### Molecular Prime
+<AbilityCard
+  name="Molecular Prime"
+  key="4"
+  energyCost={100}
+  description="Primes all enemies in an expanding radius with volatile antimatter. Press to slow enemy movement; hold to speed them up. Affected enemies take increased damage."
+/>
 
 Nova's signature ability primes all enemies in an expanding radius with volatile antimatter, dramatically altering their behavior. By pressing the ability, Nova slows affected enemies to a fraction of their normal speed, restricting their movement and attack rates. Alternatively, holding the ability reverses the effect--affected enemies accelerate to superhuman speeds, effectively disabling their combat effectiveness by making them too fast to aim at or control.
 

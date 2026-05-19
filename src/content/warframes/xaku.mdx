@@ -67,20 +67,35 @@ Xaku is a uniquely fragmented warframe composed of broken pieces from multiple l
 With 269 health and 239 shields, Xaku occupies a mid-tier survivability niche, neither fragile nor bulky. The 146 armor provides modest damage mitigation, encouraging tactical positioning and ability-centric gameplay rather than sustained firefights. The passive, Pluriform, grants damage reduction against area-of-effect attacks and a chance to avoid weapon damage entirely--traits reflecting Xaku's fractured nature and distributed essence across multiple void-touched pieces. An energy pool of 160 and sprint speed of 1.02x support active ability casting, though Xaku is not built for sustained sprinting. This statistical profile positions Xaku as a highly technical frame requiring skillful ability management, void damage exploitation, and positioning awareness to reach peak performance in endgame content.
 
 ## Abilities
-
 ### Xata's Whisper
 
 Xata's Whisper (named after a player-suggested name) imbues Xaku's equipped weapons with void damage and void status effects. When activated, all weapon shots channel void energy, converting their damage type and applying void procs that ignore many enemy resistances and augment ability damage. The ability has no inherent damage stat--its power derives entirely from the weapons Xaku carries and how mods amplify void scaling. This makes Xata's Whisper deeply synergistic with high-crit weapons, multishot setups, and status-focused builds. The ability persists until recast or until The Vast Untime expires (the two interact via unique freeze mechanics).
 
-### Grasp of Lohk
+
+<AbilityCard
+  name="Grasp of Lohk"
+  key="2"
+  energyCost={50}
+  description="Void tendrils steal weapons from nearby enemies to use as autonomous floating armaments. The stolen weapons auto-target and deal increasing damage based on enemy level. Damage scales with number of weapons grabbed."
+/>
 
 Grasp of Lohk summons void tendrils that steal weapons from enemies in a radius, converting them into autonomous floating armaments that auto-target and attack nearby foes. Stolen weapons deal damage that scales with enemy level, making the ability more potent in high-level missions where enemies are more powerful. Critically, the number of weapons grabbed determines the damage multiplier applied to The Lost: Deny's void beam, creating a complex synergy loop between Xaku's second and third abilities. Each stolen weapon persists until destroyed by enemy fire or until Xaku recasts the ability. Players can strategically position and reposition to grab high-tier enemy weapons (weapons dropped by higher-level units or heavy gunners) for superior firepower.
 
-### The Lost
+<AbilityCard
+  name="The Lost"
+  key="3"
+  energyCost={75}
+  description="Cycle through three distinct lost warframe powers: Accuse corrupts enemies into allies via void fissures, Gaze immobilizes targets in void tendrils that capture and reflect damage, and Deny unleashes a void beam that erases Sentient resistances."
+/>
 
 The Lost is Xaku's signature ability, cycling through three distinct submodes, each drawing from a different broken warframe essence. **Accuse** (the first mode) manifests void fissures that corrupt nearby enemies into temporary allies, similar to Loki's mind-control but with area denial properties. **Gaze** (the second mode) grasps targets in void tendrils that immobilize them; damage dealt to Gaze-affected enemies is captured and re-applied when the target is released, enabling powerful burst combos. **Deny** (the third mode) unleashes a devastating void beam that eradicates all targets in a line and strips Sentient resistances, making it critical for Sentient-heavy missions or Void Fissure content. Cycling between submodes is instant, rewarding players who master ability rotation and read the combat state real-time.
 
-### The Vast Untime
+<AbilityCard
+  name="The Vast Untime"
+  key="4"
+  energyCost={100}
+  description="Shed Xaku's outer frame in a destructive blast, then assume a skeletal form with increased mobility. Enemies damaged by the shrapnel take amplified void damage. Other active abilities freeze in duration until transformation ends."
+/>
 
 The Vast Untime is Xaku's ultimate, shedding their outer frame in an explosive detonation while assuming a skeletal mobility form with increased sprint speed and reduced collision. Enemies hit by the frame shrapnel take amplified void damage and are weakened to void-type harm. Uniquely, any other active Xaku abilities--Xata's Whisper duration, Grasp's stolen weapons, Gaze's captured damage--pause their timers while The Vast Untime is active and resume when the transformation expires. This time-freeze mechanic creates extraordinary depth: players can set up Xata's Whisper, grab weapons with Grasp, set up Gaze traps, activate The Vast Untime to dodge danger or reposition, and all timers wait patiently for the frame to return to full form.
 

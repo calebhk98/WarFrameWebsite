@@ -62,7 +62,7 @@ sources:
   - url: "https://warframe.fandom.com/wiki/Khora"
     accessedAt: "2026-05-19"
     publisher: "Fandom"
-updatedAt: "2026-05-19T00:00:00Z"
+updatedAt: "2026-05-19"
 ---
 
 ## Overview
@@ -73,19 +73,39 @@ Khora excels in missions where crowd control and single-target burst combine int
 
 ## Abilities
 
-### Whipclaw
+<AbilityCard
+  name="Whipclaw"
+  key="1"
+  energyCost={25}
+  description="Strike enemies with a deafening whip that sends them reeling. Damage is boosted by stats on the equipped whip weapon. Cracks can damage enemies trapped in Strangledome."
+/>
 
 Whipclaw is Khora's primary weapon, a deafening melee strike that sends enemies staggering backward and applies physical damage scaling with her equipped whip weapon mods. The ability is fundamentally different from most frame abilities: its damage pool is determined entirely by weapon mods on whatever whip the player has equipped (or unarmed if no whip is present). This design creates unique itemization complexity--a Khora player must invest in whip weapons as seriously as any other weapon slot, treating the weapon mods as part of her ability arsenal. In Strangledome-trapped enemies, Whipclaw cracks propagate through the dome and damage all contained targets, creating satisfying multi-enemy damage scenarios. The 25-energy cost is trivial, encouraging liberal casting. Whipclaw benefits from melee attack speed mods and weapon-specific critical/status scaling, making it the signature mechanic that separates Khora builds from generic frames.
 
-### Ensnare
+<AbilityCard
+  name="Ensnare"
+  key="2"
+  energyCost={50}
+  description="Bind a target in living metal, entangling nearby enemies who stray close. Whipclaw refreshes the trap, allowing it to capture additional enemies. Ensnared foes take increased damage."
+/>
 
 Ensnare binds a single target in living metal, immobilizing it and pulling nearby enemies into the trap zone. Any foe within the radius becomes entangled and suffers increased damage from all sources until the ability expires. Refreshing the trap with another Whipclaw cast extends the duration indefinitely, allowing Khora to chain entangle across a group of enemies. The 50-energy cost reflects its utility; in organized squads, a dedicated Khora player can maintain Ensnare on three to five priority targets through careful ability rotations. Ensnared enemies cannot move, reload weapons, or activate abilities, making this the frame's primary crowd-control tool. Ability range mods determine the initial target acquisition range and the nearby-enemy pull radius, making efficiency vs. range optimization a core modding decision.
 
-### Venari
+<AbilityCard
+  name="Venari"
+  key="3"
+  energyCost={0}
+  description="Command the kavat Venari to switch between Attack, Protect, and Heal postures. If Venari falls in combat, this ability instantly revives her. Venari fights independently, applying status effects."
+/>
 
 Venari is not an activated ability in the traditional sense; instead, holding the ability button cycles through three stances: Attack (offensive), Protect (defensive shield generator), and Heal (support). Venari persists independently for the mission duration unless killed in combat, at which point casting the ability instantly revives her with no energy cost or cooldown. This unique mechanic makes Khora's companion exceptionally durable compared to other pet-based frames. In Attack mode, Venari aggressively hunts nearby enemies, applying status effects from her melee weapon and generating pressure on scattered targets while Khora maintains Strangledome and Whipclaw. In Protect mode, Venari follows Khora and generates a shield that absorbs damage for nearby allies, doubling overshield capacity--a powerful passive defense. In Heal mode, Venari restores health to nearby players, providing a backup sustain tool if squad energy is low. The zero-energy cost means cycling stances is free, enabling dynamic playstyle adaptation mid-mission.
 
-### Strangledome
+<AbilityCard
+  name="Strangledome"
+  key="4"
+  energyCost={100}
+  description="Weave a dome of living chain around Khora, ensnaring all enemies within and strangling them over time. Enemies outside attempt to destroy the dome by shooting trapped targets. Whipclaw cracks damage all trapped foes."
+/>
 
 Strangledome is Khora's ultimate ability, weaving a hemispherical dome of living chain around her position. Any enemy within the dome at cast time and during the duration takes slow and strangulation damage over time; importantly, enemies outside the dome attempt to destroy it by shooting trapped targets, adding tactical depth. This invites a playstyle where Khora positions the dome to protect specific objects (defense targets, excavators) or to contain dangerous high-threat enemies (Bombards, Heavy Gunners, ancient enemies). Whipclaw casts crack the dome, damaging all contained enemies simultaneously--combining this with Ensnare creates scenarios where five to ten trapped enemies all take Whipclaw damage at once, clearing packed rooms instantly. The 100-energy cost is substantial but justified by the ability's utility; ability efficiency mods (Streamline, Primed Continuity) and energy-sustain mods (Primed Flow, energy-conversion mods) are essential for sustaining repeated dome casts. In endless missions, managing energy to maintain dome uptime is the core gameplay loop.
 

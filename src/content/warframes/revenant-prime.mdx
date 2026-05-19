@@ -89,25 +89,45 @@ The frame's distinctive naramon aura polarization supports efficiency-focused bu
 
 ## Abilities
 
-### Enthrall
+<AbilityCard
+  name="Enthrall"
+  key="1"
+  energyCost={50}
+  description="Convert a target enemy into a zealous thrall under your command. Enthralled enemies turn on their allies and spread the effect through their attacks."
+/>
 
 Revenant's first ability converts a single target enemy into a thrall that turns on its allies. This is the foundation of Revenant Prime's crowd control strategy. Once enthralled, the target cannot be damaged by the player directly and instead fights alongside the warframe against its former faction. Crucially, when an enthralled enemy damages other enemies, the enthrall effect spreads to the newly damaged targets, creating chains of converted foes that multiply over time. When an enthralled enemy dies, it disintegrates into a damaging energy pillar that deals area damage to nearby enemies.
 
 Enthrall's effectiveness scales with ability range, determining how far the initial conversion can reach. With proper range mods, entire rooms of enemies can be progressively enthralled as the thrall horde spreads the effect organically. The ability's 50-energy cost makes it spammable, and the 60-second duration provides a substantial window for thralls to propagate. This ability pairs exceptionally well with Mesmer Skin, as stunned enemies from Mesmer Skin can be enthralled at zero energy cost, creating a powerful crowd-control loop.
 
-### Mesmer Skin
+<AbilityCard
+  name="Mesmer Skin"
+  key="2"
+  energyCost={25}
+  description="Become enveloped in Sentient energy, redirecting incoming damage while stunning attackers. Enemies stunned by this ability can be enthralled for free."
+/>
 
 Revenant's second ability creates a protective shield of sentient energy that redirects incoming damage while simultaneously stunning all attackers. For a 25-energy cost, Mesmer Skin provides both offense and defense--reducing incoming damage while disabling enemies temporarily. The armor bonus from this ability significantly enhances Revenant Prime's already-respectable 135 base armor, resulting in substantial damage reduction when combined with armor-scaling mods.
 
 The stun duration and frequency make stunned enemies ideal candidates for free Enthrall applications, enabling the aforementioned crowd-control loop that makes Revenant Prime uniquely efficient at preventing damage through complete battlefield control. Mesmer Skin's relatively low energy cost encourages frequent reactivation, maintaining protection uptime in dangerous situations. The ability is particularly effective against groups of enemies that focus fire, as each attacker triggers the stun effect, providing a consistent crowd-control reset.
 
-### Reave
+<AbilityCard
+  name="Reave"
+  key="3"
+  energyCost={75}
+  description="Dash through enemies as a wave of sentient force, stealing shields and health from targets encountered. Enhanced effects apply to enthralled enemies."
+/>
 
 Revenant's third ability manifests as a short dash through enemies, leaching their shields and health into Revenant Prime's reserves. Costing 75 energy, Reave serves dual purposes: offensive movement and sustenance. The health and shield leech scales with ability strength and is substantially enhanced when used against enthralled enemies, providing a survival mechanism that rewards aggressive play and strategic use of enthrallment.
 
 Reave has limited range (approximately 15 meters of dash distance) but provides high mobility through tight spaces and cover, allowing repositioning during heavy fire. Against groups of enthralled enemies, Reave becomes an instant-heal tool that fills both health and shield pools, creating a sustaining cycle when combined with Enthrall chains. The ability's short cooldown and energy cost make it a go-to survival tool in prolonged missions where passive regeneration is insufficient.
 
-### Danse Macabre
+<AbilityCard
+  name="Danse Macabre"
+  key="4"
+  energyCost={100}
+  description="Erupt with a multitude of Eidolon energy beams in a circle around Revenant. The beams adapt their damage type to exploit enemy defenses, and incoming damage is converted into beam output."
+/>
 
 Revenant's ultimate fourth ability unleashes a spinning ring of Eidolon energy beams that sweep around the warframe in a full circle. This ability stands out for its unique mechanic: incoming damage during the cast is converted directly into increased beam output and damage, incentivizing the player to stay in dangerous situations rather than hide. The ability dynamically adapts its damage type to exploit enemy defenses, maximizing effectiveness against mixed-armor targets.
 

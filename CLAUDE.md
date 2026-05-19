@@ -125,6 +125,13 @@ content. Data sources, in priority order:
 4. **warframe.fandom.com** — link out only. Cited quotes ≤ 2 sentences;
    never scrape.
 
+> **EXCEPTION for `masteryRank`:** WFCD `masteryReq`/`masteryRank` fields
+> are unreliable upstream (issue #23) — they report 0 for all warframes
+> regardless of in-game requirements. Source `masteryRank` from the Fandom
+> Wiki when WFCD reports 0 for a frame that requires non-zero mastery in-game.
+> WFCD remains canonical for all other numeric stats. See `docs/DATA.md`
+> for the full exception rule and field-name mapping.
+
 Static site, no runtime DB. Filesystem is the DB.
 
 ## Stack
@@ -240,6 +247,10 @@ Every research subagent must follow these.
   narrative explains why.
 - If you find a stat in Wiki/Fandom that contradicts WFCD, WFCD wins; note
   the discrepancy in a `notes` field, do not "fix" it.
+- **EXCEPTION for `masteryRank`:** WFCD `masteryReq`/`masteryRank` fields are
+  unreliable upstream (issue #23). Source from Fandom Wiki when WFCD reports
+  0 for a frame that requires non-zero mastery in-game. WFCD remains canonical
+  for all other numeric stats. See `docs/DATA.md` for the full rule.
 
 ### Word-count floors (frontmatter must meet or exceed)
 

@@ -3,7 +3,7 @@ slug: nekros-prime
 name: Nekros Prime
 aliases: []
 masteryRank: 0
-health: 340
+health: 270
 shield: 455
 armor: 135
 energy: 140
@@ -70,25 +70,45 @@ The prime variant features enhanced aesthetics with polished Orokin metallurgy, 
 
 ## Abilities
 
-### Soul Punch
+<AbilityCard
+  name="Soul Punch"
+  key="1"
+  energyCost={25}
+  description="A blow so powerful, it turns the enemy's very soul into a deadly projectile, damaging all in its path. Enemies that survive become Marked for Harvest."
+/>
 
 Soul Punch delivers devastating close-range damage while applying crowd control through the Mark for Harvest mechanic. Enemies struck by Soul Punch take immediate damage, and any survivor becomes marked--if a marked enemy dies, it automatically counts toward Shadows of the Dead summoning without consuming additional energy. The ability synergizes with Terrify's armor reduction, allowing a rapid Soul Punch followed by Terrify to strip enemy defenses before the follow-up swing. At 25 energy cost, Soul Punch remains accessible throughout missions and scales well with ability strength mods, dealing up to 250-300 damage at reasonable modding levels.
 
 The projectile nature of Soul Punch means it can ricochet between enemies in tight clusters, making it useful for both single-target assassination and light area-of-effect crowd control. Combined with Nekros Prime's improved armor, aggressive Soul Punch plays that position the frame closer to enemies become viable strategies in mid-tier content.
 
-### Terrify
+<AbilityCard
+  name="Terrify"
+  key="2"
+  energyCost={50}
+  description="Cast fear into the hearts of nearby enemies, causing them to run in terror and temporarily reduce their armor, making them vulnerable to further assault."
+/>
 
 Terrify induces fear in nearby enemies, causing them to flee in panic while simultaneously reducing their armor by a significant percentage. This dual-purpose ability functions as both crowd control and armor strip, making it invaluable for protecting teammates and softening heavily armored foes. The armor reduction scales with ability strength, and enemies affected by Terrify can no longer effectively defend themselves, creating windows for heavy melee or ability spam.
 
 The relatively low energy cost of 50 enables frequent Terrify casting, especially in modded builds with Streamline or Fleeting Expertise. The fear effect provides time for players to reposition, revive downed allies, or target priority enemies without taking fire. On higher-level Steel Path enemies, stacking Terrify casts with arcane support creates near-permanent armor reduction, trivializing otherwise dangerous enemies.
 
-### Desecrate
+<AbilityCard
+  name="Desecrate"
+  key="3"
+  energyCost={75}
+  description="Forces fallen enemies around you to drop additional loot, making Nekros Prime essential for efficient farming and resource gathering missions."
+/>
 
-Desecrate is Nekros Prime's signature ability and the foundation of its farming dominance. Upon activation, all fallen enemies in a large radius drop additional resources--credits, mods, relics, rare drops, and special items all see increased frequency. This ability turns every defeated enemy into a loot piñata, making Nekros Prime indispensable for efficiently farming rare components, void traces, and endgame resources. A single squad with Nekros Prime can farm three to four times more resources than an equivalent squad without it, making relic farming and resource gathering missions dramatically faster.
+Desecrate is Nekros Prime's signature ability and the foundation of its farming dominance. Upon activation, all fallen enemies in a large radius drop additional resources--credits, mods, relics, rare drops, and special items all see increased frequency. This ability turns every defeated enemy into a loot pinata, making Nekros Prime indispensable for efficiently farming rare components, void traces, and endgame resources. A single squad with Nekros Prime can farm three to four times more resources than an equivalent squad without it, making relic farming and resource gathering missions dramatically faster.
 
 The ability functions on a toggle cost model--each activation costs energy, and the buff applies to all enemies that die within the Desecrate radius until toggled off or energy expires. High-duration builds enable near-permanent uptime with low-rank mods, while high-strength builds increase the loot drop multiplier. Desecrate pairs synergistically with Pilfering Swarm (Hydroid), Pilfering Strangledome (Khora), and Pilfer (Specter Guardian), creating exponential farming multipliers when stacked.
 
-### Shadows of the Dead
+<AbilityCard
+  name="Shadows of the Dead"
+  key="4"
+  energyCost={100}
+  description="Summon shadow versions of vanquished enemies to fight alongside you, inheriting their weapons and abilities for a short period."
+/>
 
 Shadows of the Dead summons spectral clones of fallen enemies, forcing them to fight for Nekros instead of against the squad. Each shadow inherits the original enemy's weapons and abilities (within limits), creating potent allied minions that can tank damage and apply crowd control. The prime variant's shadows appear grotesquely animated with bone and spectral effects, distinguishing them visually from lesser minions. Shadows remain active for 30-40 seconds depending on duration mods, then fade away.
 

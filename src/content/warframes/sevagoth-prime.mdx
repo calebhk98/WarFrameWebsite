@@ -73,25 +73,45 @@ Sevagoth Prime's core identity centers on the Death Well mechanic. As enemies pe
 
 ## Abilities
 
-### Reap
+<AbilityCard
+  name="Reap"
+  key="1"
+  energyCost={25}
+  description="Sevagoth's Shadow flies outward ravaging enemies in his path. Survivors are damaged by Death's Harvest over time. The souls of the dead fill the Death Well."
+/>
 
 Reap launches Sevagoth's Shadow in a directional charge, ravaging enemies in a line. Survivors take additional damage over time via Death's Harvest, while slain enemies contribute souls to the Death Well. This ability serves as both damage and resource generation, making it a cornerstone of Sevagoth Prime's offensive strategy. The shadow's flight path scales with ability range, making stretch and augur reach essential mods for covering larger areas. Early in missions, Reap generates initial Death Well stacks; mid-game and onward, it becomes a crowd-control tool that procs Death's Harvest damage-over-time effects on hard targets for follow-up finishing.
 
 Reap's range and damage make it valuable against weak trash mobs that die immediately, feeding the Death Well rapidly. On tougher targets, the persistent death damage from Harvest allows Sevagoth to soften enemies for melee shadow attacks later.
 
-### Sow
+<AbilityCard
+  name="Sow"
+  key="2"
+  energyCost={50}
+  description="Plant a death seed in nearby targets to drain their lifeforce. Reap what has been sown to detonate afflicted enemies, dealing a percentage of their health as radial damage. The souls of the dead fill the Death Well."
+/>
 
 Sow plants death seeds on nearby targets, draining their lifeforce as a damage-over-time effect that fills the Death Well more slowly than instant kills but accumulates constantly. The critical mechanic is the harvest--once Sow is recast on seeded enemies, they detonate, dealing radial damage scaled by their remaining health. This creates a burst window where Sevagoth primes targets with drain, waits for Reap or Gloom to finish them, then detonates the corpses for area damage. Sow excels in defense-style missions where enemies arrive in waves and the frame has time to seed multiple targets before triggering harvest explosions.
 
 The health-scaling detonation incentivizes hitting tanky enemies with seeds and letting Sow drain them before forcing the harvest, as their high health multiplies the eventual radial damage. This makes Sow an elegant crowd-control tool when combined with range and ability strength mods.
 
-### Gloom
+<AbilityCard
+  name="Gloom"
+  key="3"
+  energyCost={75}
+  description="Summon a radial pulse wave that ensnares and slows enemies, siphoning their lifeforce for the Death Well. Allies within the wave steal health with each attack."
+/>
 
 Gloom projects a radius pulse that simultaneously slows enemies and siphons their health into the Death Well. Unlike Reap and Sow, Gloom provides defensive utility--slowed enemies deal reduced damage and move slowly, providing breathing room. Crucially, allies within the Gloom aura steal health with each attack, making Sevagoth Prime a team-support frame when built for duration and range. The health drain feeds the Death Well consistently, generating charge even when no enemies die, making Gloom valuable for sustaining Death Well fills in long endurance runs.
 
 Gloom scales poorly with ability strength (the slow effect is capped) but scales excellently with duration and range. A high-range, high-duration Gloom build transforms the ability into a permanent damage-mitigation tool that keeps the death meter ticking regardless of kill speed.
 
-### Exalted Shadow
+<AbilityCard
+  name="Exalted Shadow"
+  key="4"
+  energyCost={100}
+  description="When the Death Well fills, Sevagoth's Shadow form is ready to be released. Tear the enemy asunder with a collection of melee-focused abilities."
+/>
 
 Exalted Shadow deploys Sevagoth's spectral form as an independent fighter. The shadow persists until recalling or until Sevagoth dies, inherits a portion of Sevagoth's mods and stats, and can charge into melee combat with crowd-control abilities unique to the shadow form. The shadow's existence is the payoff for accumulating Death Well--this phase of the fight is where raw damage and crowd control shine. The shadow's abilities include charges, knockdowns, and area sweeps, making it effective against both single-target bosses and crowd scenarios.
 

@@ -70,19 +70,39 @@ Lavos excels in extended missions and endless survival or defense content where 
 
 ## Abilities
 
-### Ophidian Bite (Ability 1)
+<AbilityCard
+  name="Ophidian Bite"
+  key="1"
+  energyCost={0}
+  description="Lash out with a toxic serpentine strike, consuming the target to heal Lavos. Hold to imbue all abilities with Toxin."
+/>
 
 Lavos channels the venom within and lashes out with a toxic serpentine strike that consumes the target and heals Lavos for damage dealt. The ability is straightforward on its surface--a single-target heal-on-hit attack with Toxin innate status application. However, its power emerges when held: by pressing and holding the ability button, players imbue all subsequent ability casts (including Vial Rush, Transmutation Probe, and Catalyze) with Toxin damage and guaranteed status effects until another imbue is selected. This encourages pre-engagement planning before high-intensity firefights, allowing players to layer Toxin procs across multiple ability casts in sequence, creating cascading status chains that amplify Lavos's total damage output dramatically. The life-steal component also provides direct sustain, particularly valuable when Probiosis's orb-based immunity is unavailable.
 
-### Vial Rush (Ability 2)
+<AbilityCard
+  name="Vial Rush"
+  key="2"
+  energyCost={0}
+  description="Dash forward, crashing through enemies and leaving an icy trail of broken vials. Hold to imbue the next ability cast with Cold."
+/>
 
 Vial Rush propels Lavos forward in a dash that damages and pushes through enemies while leaving behind icy trails that can explode on detonation. Unlike many other dash abilities, Vial Rush can be canceled early by jumping, providing tactical repositioning flexibility in tight corridors or when adjusting aim mid-dash. The ability innately applies Cold status to all enemies in the trail, and holding the button before cast imbues the next ability with the player's currently selected elemental state--allowing Vial Rush itself to deal Toxin, Electricity, or Heat damage depending on preparation. Experienced players chain multiple Vial Rush casts on the same enemy group to trigger Transmutation Probe's cooldown-reduction passive (1.5 seconds per shocked foe), accelerating the entire ability rotation.
 
-### Transmutation Probe (Ability 3)
+<AbilityCard
+  name="Transmutation Probe"
+  key="3"
+  energyCost={0}
+  description="Launch a probe that converts Health and Energy Orbs into Universal Orbs that provide both, and ammo pickups into Universal Ammo Pickups. The probe shocks enemies in close proximity, reducing other ability cooldowns by 1.5s per shocked foe. Hold to imbue the next ability cast with Electricity."
+/>
 
 Transmutation Probe is Lavos's most versatile ability and the cornerstone of his orb-generation economy and cooldown acceleration. The probe converts all Health Orbs and Energy Orbs dropped by enemies or pickups into Universal Orbs that restore both health and energy equally to any player nearby, allowing Lavos to act as a resource generator for the squad. The probe also converts all ammo pickups into universal ammunition usable by any weapon type, critical for players running multiple weapon types. Offensively, the probe detonates nearby enemies with electrical shock damage, and critically, **each electrocuted foe reduces the cooldown of Lavos's other abilities by 1.5 seconds**. This creates a powerful feedback loop: cast Transmutation Probe for shock damage and cooldown reduction, then immediately cast other imbued abilities while cooldowns are shortened, creating near-permanent ability uptime in crowded fights. The probe can be imbued with Heat, Cold, or Toxin before casting to add those elements to the shock effect, opening pathways for simultaneous multi-element application.
 
-### Catalyze (Ability 4)
+<AbilityCard
+  name="Catalyze"
+  key="4"
+  energyCost={0}
+  description="Catalyst Probes erupt from Lavos and douse combatants in a fiery gel. Damage is doubled for each element afflicting an enemy. Hold to imbue the next ability cast with Heat."
+/>
 
 Catalyze erupts Catalyst Probes from Lavos that coat nearby enemies in a fiery alchemical gel. The ability's core mechanic--**doubling damage for each distinct status effect already afflicting a target**--makes it a powerful capstone ability that rewards elemental chaining. After imbuing Toxin on Ophidian Bite, Cold on Vial Rush, and Electricity on Transmutation Probe, Catalyze strikes enemies already bearing three different status effects and deals **8x base damage** compared to hitting unaffected targets. In well-modded builds with high-status-chance weapons or aggressive ability cycling, enemies can accumulate multiple stacks of each element, and Catalyze's multiplier scales to 16x, 32x, or beyond. Holding Catalyze before cast applies Heat imbue to the next ability cast, completing Lavos's four-element toolkit and allowing seamless rotation between all four elemental states.
 

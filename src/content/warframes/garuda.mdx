@@ -2,7 +2,7 @@
 slug: garuda
 name: Garuda
 aliases: []
-masteryRank: 5
+masteryRank: 0
 health: 270
 shield: 270
 armor: 315
@@ -57,7 +57,7 @@ sources:
   - url: "https://warframe.fandom.com/wiki/Garuda"
     accessedAt: "2026-05-19"
     publisher: "Fandom"
-updatedAt: "2026-05-19T00:00:00Z"
+updatedAt: "2026-05-19"
 ---
 
 ## Overview
@@ -68,25 +68,45 @@ Garuda excels in endgame content through her combination of high damage output, 
 
 ## Abilities
 
-### Dread Mirror
+<AbilityCard
+  name="Dread Mirror"
+  key="1"
+  energyCost={25}
+  description="Rips life force from a target enemy to create a damage-absorbing shield. The captured damage can be released as a charging projectile that explodes on impact, dealing massive damage to nearby enemies."
+/>
 
 Dread Mirror is Garuda's primary defensive and offensive tool, combining a damage-absorbing shield with a delayed explosive payoff. When cast, the ability rips life force from a target, creating a shield that absorbs incoming damage. The shield's strength scales with ability strength but is capped at a percentage of the target's health. The accumulated damage can be released by holding down the ability hotkey or by allowing the shield to expire naturally; either way, the shield converts absorbed damage into a projectile that deals massive impact and slash damage in an area.
 
 This ability shines in both survival and tactical scenarios. Early in a mission, Dread Mirror provides immediate survivability against burst damage. Late in endgame, the damage amplification potential of releasing a fully-charged mirror against a high-health target or elite units creates a satisfying risk-reward dynamic. The projectile ignores line of sight, allowing Garuda to damage enemies behind cover. When combined with Augur Reach or Stretch, the area-of-effect radius expands significantly, enabling crowd control against clustered enemies.
 
-### Blood Altar
+<AbilityCard
+  name="Blood Altar"
+  key="2"
+  energyCost={50}
+  description="Impales a targeted enemy on an altar of talons, siphoning health for Garuda and her allies. Sustained channeling increases the drain rate and extends the effect duration."
+/>
 
 Blood Altar channels a beam toward a single enemy, impaling them on an altar of talons and draining their health into Garuda and nearby allies. Each second of channeling heals Garuda (or the nearest ally if Garuda is at full health) and deals damage to the target. The ability scales with ability strength to boost heal per second and ability range to increase the ally heal radius. For endgame survival, Blood Altar is irreplaceable--sustaining a team through a Kuva Lich assassination or Steel Path Void Cascade becomes trivial when a dedicated player anchors the altar to a tankier enemy.
 
 The ability requires line-of-sight to the target and maintains the channel as long as Garuda holds the ability button. Recasting ends the previous channel instantly and begins a new one on a different target. In organized squads, one Garuda can sustain multiple teammates simultaneously by chaining short channels between targets. The heal scales globally with enemy health pools, making Blood Altar increasingly effective as enemy levels rise--a core reason Garuda remains relevant in arbitration and endgame farming.
 
-### Bloodletting
+<AbilityCard
+  name="Bloodletting"
+  key="3"
+  energyCost={0}
+  description="Garuda sacrifices a portion of her own health to instantly generate energy and clear all active Status Effects from her warframe. Scales with ability strength to determine health cost."
+/>
 
 Bloodletting is Garuda's signature energy generation tool and a defining mechanic that separates her from every other warframe. The ability sacrifices a flat percentage of Garuda's maximum health (typically 15-25% depending on mods) to instantly restore 50% of her maximum energy and clear all Status Effects. This creates a unique energy economy: despite her low base energy pool, Garuda can sustain continuous ability spamming by sacrificing health and then recovering it via Blood Altar or through passive life steal from melee weapons.
 
 Skilled Garuda pilots use Bloodletting reactively--when energy drops critically low, trigger the sacrifice, spend the regenerated energy on Blood Altar to heal, and re-enter the damage cycle. The ability has no energy cost and a brief cast time, making it near-instant during combat. When modded with Primed Continuity or high duration, Bloodletting's Status clearance becomes even more valuable, allowing Garuda to nullify lethal status procs (toxin, radiation) that would otherwise cripple her. In permadeath endgame modes, mastering Bloodletting's timing is the difference between survival and failure.
 
-### Seeking Talons
+<AbilityCard
+  name="Seeking Talons"
+  key="4"
+  energyCost={100}
+  description="Charges to expand a targeting area, then releases a barrage of talons that home toward all enemies in range. Surviving enemies are inflicted with Slash Status Effects and knocked prone."
+/>
 
 Seeking Talons is Garuda's ultimate crowd control and area-denial ability, firing a spread of homing talons toward all enemies in a charged area-of-effect. The charge duration determines the area size--longer charges expand the targeting radius, enabling coverage of larger enemy clusters. Upon release, the talons seek toward each target independently, applying Slash Status Effects and knocking enemies prone on impact. Enemies that survive the initial hit remain vulnerable for a brief window, allowing follow-up melee attacks to execute downed targets.
 

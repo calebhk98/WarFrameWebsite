@@ -17,6 +17,12 @@ const config: Config = {
           2: '#1a1a24',
           3: '#242430',
         },
+        tier: {
+          s: '#D4AF37',
+          a: '#9EA0A3',
+          b: '#8C6239',
+          c: '#4A4A55',
+        },
       },
       fontFamily: {
         sans: ['system-ui', '-apple-system', 'sans-serif'],

@@ -71,19 +71,39 @@ With 455 health and 350 armor but zero shields, Nidus prioritizes tanking damage
 
 ## Abilities
 
-### Virulence
+<AbilityCard
+  name="Virulence"
+  key="1"
+  energyCost={25}
+  description="Ruptures the ground with a damaging fungal growth that steals energy from each enemy it strikes. For every five enemies hit, the Infestation mutates, granting Nidus an additional Mutation stack."
+/>
 
 Virulence erupts the ground beneath Nidus, creating a damaging fungal wall that travels outward. Each enemy struck loses energy (which Nidus gains) and takes Infestation damage. The critical mechanic: for every five enemies hit in a single cast, Nidus gains one Mutation stack. This is the primary tool for Mutation generation during high-enemy-count phases and scales exceptionally with ability strength and crowd-control augments. Virulence also benefits from Mutation stacks--at higher stack counts, the ability's damage output increases, creating a positive feedback loop. The energy steal is crucial for sustaining ability spam in early-game builds lacking efficiency mods.
 
-### Larva
+<AbilityCard
+  name="Larva"
+  key="2"
+  energyCost={50}
+  description="Spawns an Infested pod that erupts with tendrils, latching onto and pulling nearby enemies together. Enemies killed while held generate Mutation stacks. This ability is exceptional for crowd control and establishing Mutation growth."
+/>
 
 Larva spawns an infested pod that bursts with parasitic tendrils, pulling nearby enemies toward the center and holding them suspended. Enemies killed while held generate one Mutation stack per kill. In Update 29.5, this mechanic was added to enable aggressive Mutation farming strategies. Larva pairs exceptionally well with Ravenous--cast Larva to consolidate enemies, then cast Ravenous to allow maggots to feast on the held group, generating stacks from each kill. Larva is both a crowd-control tool and a Mutation generator, making it essential for Mutation scaling in team play and high-level content.
 
-### Parasitic Link
+<AbilityCard
+  name="Parasitic Link"
+  key="3"
+  energyCost={0}
+  description="Binds Nidus to an ally or enemy with a parasitic link. When cast on allies, both gain increased Ability Strength. On enemies, the target takes a portion of the damage inflicted on Nidus, allowing Nidus to damage enemies through self-inflicted harm or redirected damage."
+/>
 
 Parasitic Link is a zero-cost ability that binds Nidus to an ally or enemy. Cast on allies, it grants both Nidus and the ally increased Ability Strength--stacking multiplicatively with other strength mods. This makes Nidus an exceptional support frame in squad play, buffing a Trinity's healing, a Saryn's damage, or a Harrow's survivability. Cast on enemies, the target takes a portion of damage that Nidus receives, allowing Nidus to trigger Mutation stacks through damage redirection and creating unique gameplay opportunities (e.g., using melee weapons while linked to an enemy to farm Mutation passively). The ability has 0 energy cost and no cooldown, enabling it to be recast or maintained indefinitely.
 
-### Ravenous
+<AbilityCard
+  name="Ravenous"
+  key="4"
+  energyCost={100}
+  description="Spawns ravenous maggots that swarm and feast on nearby enemies. The maggots benefit from Mutation stacks, with each enemy hit adding additional stacks. This creates an exponential Infestation cycle when chained with other abilities."
+/>
 
 Ravenous summons maggots that swarm nearby enemies and feed on them until the enemies are struck by Virulence or defeated. The maggots inherit all of Nidus's stat scaling including Ability Strength and Duration. Each enemy the maggots feast on generates one Mutation stack, and with higher Mutation counts, the maggots gain increased health and damage. Ravenous creates a biological multiplier effect--more Mutation stacks mean stronger maggots, which kill more enemies, generating more stacks. In coordinated squads or survival missions lasting 40+ minutes, Ravenous stacks can reach 50+, making Nidus nearly invincible. The ability's damage and crowd control both scale with Mutation, making it the frame's ultimate expression of exponential power growth.
 

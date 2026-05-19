@@ -70,19 +70,39 @@ With 455 health and 270 shields, Ash prioritizes mobility and positioning over r
 
 ## Abilities
 
-### Shuriken
+<AbilityCard
+  name="Shuriken"
+  key="1"
+  energyCost={25}
+  description="Launches a spinning blade of pain, dealing high slash damage and impaling enemies to nearby walls. The projectile can ricochet between multiple targets."
+/>
 
 Ash's first ability launches spinning projectiles that deal slash damage and impale enemies to walls. The shuriken travels in an arc and can ricochet between nearby targets, making it useful for clearing clusters of light enemies or applying slash procs from a distance. Each cast scales with ability strength, and ricochets can trigger additional status effects if modded for status chance.
 
-### Smoke Screen
+<AbilityCard
+  name="Smoke Screen"
+  key="2"
+  energyCost={50}
+  description="Drops a smoke bomb that stuns nearby enemies and obscures their vision, rendering Ash invisible for a short duration. Damaged enemies take increased slash damage when hit during invisibility."
+/>
 
 The second ability creates a localized smoke cloud that stuns and obscures enemy vision. During the cloud's effect, Ash becomes invisible to enemies. This invisibility is fundamentally defensive but pairs well with his passive--enemies damaged while Ash is invisible take amplified slash damage on subsequent hits. Smoke Screen is a key tool for repositioning in high-level content or breaking line of sight to escape overwhelming fire.
 
-### Teleport
+<AbilityCard
+  name="Teleport"
+  key="3"
+  energyCost={75}
+  description="Teleports to a targeted enemy and performs a finishing move. If the finisher kills the target, Ash recovers a percentage of the energy spent. Successful kills extend the invisibility duration."
+/>
 
 Teleport instantly moves Ash to a targeted enemy location and triggers a finisher animation. If the target dies from the finisher, Ash recovers energy, potentially allowing back-to-back casts against high-value targets. This ability is incredibly mobile and allows Ash to traverse large rooms quickly, especially useful in arena-style missions where spread enemies are common.
 
-### Blade Storm
+<AbilityCard
+  name="Blade Storm"
+  key="4"
+  energyCost={100}
+  description="Summons fierce shadow clones to assault distant enemy groups. The clones inherit Ash's melee weapon mods and can trigger slash procs. Casting again redirects the clones to a new target location."
+/>
 
 Ash's ultimate summons shadow clones that assault distant enemy groups autonomously. The clones inherit all weapon mods from Ash's equipped melee weapon, making them scale with weapon builds. Blade Storm synergizes with high-damage melee setups and can apply weapon procs across multiple enemies simultaneously. Recasting redirects the clones to a new area, allowing tactical repositioning during longer engagements.
 

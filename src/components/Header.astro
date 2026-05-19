@@ -2,36 +2,64 @@
 // Header — logo, nav links, Pagefind search input
 // Pagefind UI is wired via postbuild; the div is always rendered.
 const base = import.meta.env.BASE_URL;
+
+const primaryLinks = [
+  { href: `${base}warframes`, label: 'Warframes' },
+  { href: `${base}quests`, label: 'Quests' },
+  { href: `${base}factions`, label: 'Factions' },
+  { href: `${base}builds`, label: 'Builds' },
+  { href: `${base}guides`, label: 'Guides' },
+  { href: `${base}tier-list`, label: 'Tier List' },
+  { href: `${base}beginner`, label: 'Beginner' },
+  { href: `${base}worldstate`, label: 'Worldstate' },
+];
 ---
 
 <header class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur border-b border-surface-3">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4 flex-wrap">
-    <a href={base} class="text-brand-orange font-bold text-xl tracking-wide whitespace-nowrap">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+    <a href={base} class="text-brand-orange font-bold text-xl tracking-wide whitespace-nowrap shrink-0">
       Warframe Codex
     </a>
 
-    <nav aria-label="Primary navigation" class="hidden md:flex flex-wrap gap-x-5 gap-y-1 text-sm">
-      <a href={base} class="nav-link">Home</a>
-      <a href={`${base}warframes`} class="nav-link">Warframes</a>
-      <a href={`${base}weapons`} class="nav-link">Weapons</a>
-      <a href={`${base}mods`} class="nav-link">Mods</a>
-      <a href={`${base}quests`} class="nav-link">Quests</a>
-      <a href={`${base}factions`} class="nav-link">Factions</a>
-      <a href={`${base}syndicates`} class="nav-link">Syndicates</a>
-      <a href={`${base}arcanes`} class="nav-link">Arcanes</a>
-      <a href={`${base}missions`} class="nav-link">Missions</a>
-      <a href={`${base}resources`} class="nav-link">Resources</a>
-      <a href={`${base}relics`} class="nav-link">Relics</a>
-      <a href={`${base}worldstate`} class="nav-link">Worldstate</a>
+    <nav aria-label="Primary navigation" class="hidden lg:flex flex-wrap gap-x-4 gap-y-1 text-sm">
+      {primaryLinks.map((link) => (
+        <a href={link.href} class="nav-link">{link.label}</a>
+      ))}
     </nav>
 
-    <div id="pagefind-search" class="w-48"></div>
+    <div class="flex items-center gap-3">
+      <div id="pagefind-search" class="w-44 shrink-0 hidden sm:block"></div>
+      <button
+        id="mobile-menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation"
+        class="lg:hidden flex flex-col gap-1 p-2 rounded hover:bg-surface-2 transition-colors"
+      >
+        <span class="block w-5 h-0.5 bg-brand-cream/80"></span>
+        <span class="block w-5 h-0.5 bg-brand-cream/80"></span>
+        <span class="block w-5 h-0.5 bg-brand-cream/80"></span>
+      </button>
+    </div>
   </div>
+
+  <nav
+    id="mobile-menu"
+    aria-label="Mobile navigation"
+    class="lg:hidden hidden border-t border-surface-3 bg-brand-black/95"
+  >
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-1">
+      {primaryLinks.map((link) => (
+        <a href={link.href} class="nav-link py-2 border-b border-surface-3 last:border-0">{link.label}</a>
+      ))}
+      <div id="pagefind-search-mobile" class="w-full mt-2 sm:hidden"></div>
+    </div>
+  </nav>
 </header>
 
 <style>
   .nav-link {
-    color: rgb(var(--tw-color-brand-cream, 232 222 200) / 0.75);
+    color: rgb(232 222 200 / 0.75);
     transition: color 0.15s;
   }
   .nav-link:hover {
@@ -42,11 +70,22 @@ const base = import.meta.env.BASE_URL;
 <link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
 <script>
   window.addEventListener('DOMContentLoaded', () => {
-    // PagefindUI is injected by the pagefind postbuild step.
-    // It is not available during dev or before the first build.
     const win = window as Window & { PagefindUI?: new (opts: Record<string, unknown>) => void };
     if (typeof win.PagefindUI !== 'undefined') {
       new win.PagefindUI({ element: '#pagefind-search', showImages: false });
+      const mobileEl = document.getElementById('pagefind-search-mobile');
+      if (mobileEl) {
+        new win.PagefindUI({ element: '#pagefind-search-mobile', showImages: false });
+      }
+    }
+
+    const toggle = document.getElementById('mobile-menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('hidden') === false;
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
     }
   });
 </script>

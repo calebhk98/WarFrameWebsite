@@ -240,6 +240,22 @@ the verifier.
 1. **No invented numbers.** Every numeric value in MDX frontmatter or
    body MUST match WFCD when WFCD has the field. The verifier diffs
    numeric fields against `/data/wfcd/*.json`.
+   - **EXCEPTION — `masteryRank` for warframes (issue #23):** WFCD
+     `Warframes.json` reports `masteryReq: 0` and `masteryRank: 0` for
+     every warframe regardless of the actual in-game requirement. This is
+     an upstream data gap in the `warframe-items` npm package. Until WFCD
+     fixes this field, research subagents MUST source `masteryRank` from
+     the Fandom Wiki:
+     - Field-name mapping: WFCD `masteryReq` -> MDX `masteryRank` (when
+       the WFCD value is non-zero, use it; when zero, fall back to Fandom).
+     - Additional mapping context: WFCD `power` -> MDX `energy` (this is
+       unrelated to the mastery gap but documented here for completeness).
+     - If Fandom also shows 0, set `masteryRank: 0` in frontmatter; the
+       frame is genuinely MR0 in-game.
+     - The verifier MUST NOT flag a warframe MDX file as incorrect when
+       MDX `masteryRank` matches Fandom but differs from WFCD (which
+       reports 0 erroneously). The verifier must apply the Fandom override
+       for this specific field.
 2. **Minimum sources.** `sources[]` length >= 2 for content roles,
    >= 1 for builds, >= 3 for guides. See `docs/SCHEMAS.md`.
 3. **No TODO/FIXME/lorem-ipsum.** Verifier greps the body.

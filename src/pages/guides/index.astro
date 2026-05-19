@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL;
+const guides = await getCollection('guides');
+const sorted = [...guides].sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const kindLabel: Record<string, string> = {
+  farming: 'Farming',
+  strategy: 'Strategy',
+  path: 'Path',
+};
+---
+
+<Base title="Guides" description="Farming, strategy, and progression path guides for Warframe">
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Guides</h1>
+      <p class="text-brand-cream/60">
+        {sorted.length > 0
+          ? `${sorted.length} guide${sorted.length !== 1 ? 's' : ''} — farming routes, strategies, and progression paths`
+          : 'Farming routes, strategies, and progression paths'}
+      </p>
+    </header>
+
+    {sorted.length === 0 && (
+      <p class="text-brand-cream/40 text-center py-16">No guides indexed yet. Check back soon.</p>
+    )}
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {sorted.map((guide) => (
+        <a
+          href={`${base}guides/${guide.slug}`}
+          class="group rounded-lg border border-surface-3 bg-surface-2 hover:border-brand-orange/50 hover:bg-surface-3 p-5 transition-all"
+        >
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h2 class="font-semibold text-brand-cream group-hover:text-brand-orange transition-colors text-sm leading-snug">
+              {guide.data.name}
+            </h2>
+            <span class="text-xs shrink-0 px-2 py-0.5 rounded bg-surface-3 text-brand-cream/50">
+              {kindLabel[guide.data.kind] ?? guide.data.kind}
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

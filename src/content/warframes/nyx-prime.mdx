@@ -65,7 +65,7 @@ sources:
   - url: "https://warframe.fandom.com/wiki/Nyx/Prime"
     accessedAt: "2026-05-19"
     publisher: "Fandom"
-updatedAt: "2026-05-19T00:00:00Z"
+updatedAt: "2026-05-19"
 ---
 
 ## Overview
@@ -76,25 +76,45 @@ Nyx Prime's design philosophy centers on psychological warfare. Her Mind Control
 
 ## Abilities
 
-### Mind Control
+<AbilityCard
+  name="Mind Control"
+  key="1"
+  energyCost={50}
+  description="Nyx seizes control of a target's mind, compelling them to fight for the Tenno cause. Controlled enemies have increased Radiation Status Chance. When Nyx shoots controlled enemies, they take amplified damage."
+/>
 
 Mind Control seizes an enemy's consciousness, turning them into a temporary ally that fights alongside the Tenno indefinitely until slain or the target dies from external sources. Controlled enemies deal increased damage and receive enhanced radiation status effects, making them exceptional at triggering status procs on nearby foes. The ability costs 50 energy and operates at a range of up to 40 meters. A key mechanic: when Nyx shoots a controlled enemy, they take amplified damage, creating a feedback loop where Nyx's weapons become devastatingly more effective against her own mental puppets. This opens tactical opportunities--prioritize controlled high-damage enemies (Heavy Gunners, Bombards) to both neutralize them and amplify team DPS through follow-up shots.
 
 Mind Control is most effective against elite units with long healthbars: Corrupted Butchers, Kuva Liches, even Lich assassination targets benefit from the damage multiplier and the psychological advantage of fighting a fraction of the original force. In void fissure defense missions, controlling a high-level Corrupted enemy effectively removes a threat and grants a powerful guardian that scales with the frame's Power Strength. The ability does not require duration investment (controlled enemies stay until death), but ability range and strength drive the mechanic's effectiveness. Modding for range (Stretch, Augur Reach) extends the control radius, while strength increases the damage bonus applied to controlled targets.
 
-### Psychic Bolts
+<AbilityCard
+  name="Psychic Bolts"
+  key="2"
+  energyCost={75}
+  description="Unleashes a volley of psychic bolts that track and strike nearby enemies with telekinetic precision. When enemies are slain, additional bolts scatter to new targets. Striking foes weakens their defenses."
+/>
 
 Psychic Bolts is an instant-cast channeled offensive ability that fires eight telekinetic projectiles in rapid succession, each tracking nearby enemies and striking with precision. Upon detonation, slain enemies trigger scattered bolts that target new foes within range, creating a cascading damage chain effect. The ability's secondary effect weakens enemy defenses by stripping armor, transferring a portion of stripped armor to Nyx as a personal buff. This damage-to-survival conversion is powerful: in crowded rooms with multiple armored units (Corpus heavy units, Grineer armored lines), Psychic Bolts can strip 30-40% of armor from the entire pack while substantially increasing Nyx's personal durability.
 
 The ability costs 75 energy and scales with ability strength (projectile damage) and range (30 meters for scatter targeting). Psychic Bolts excels in chokepoint corridors (Corpus ship sections, Grineer underground bases) where multiple armored enemies bunch together. The armor strip is permanent until the affected enemy dies, meaning a single cast creates a scaling defense buff for Nyx that accumulates across the mission. Modding for range and strength maximizes both damage output and armor strip effectiveness; duration does not scale this ability, allowing optimization toward offensive stats.
 
-### Chaos
+<AbilityCard
+  name="Chaos"
+  key="3"
+  energyCost={100}
+  description="Releases a devastating psychic pulse, disorienting enemies in a wide radius and forcing them to turn on each other. Confused foes lash out at random factions."
+/>
 
 Chaos releases a devastating psychic pulse affecting all enemies within a 25-meter radius, forcing them into a state of disorientation and confusion. While confused, enemies attack each other indiscriminately and treat all factions as threats, causing infighting to automatically thin enemy ranks. This ability is exceptional in multi-faction missions (mixed Grineer and Corpus on Ceres or Jupiter nodes) because it exploits pre-existing faction tensions; confused enemies pummel allies at 100% effectiveness. The ability costs 100 energy and scales with ability range (affecting more enemies) and ability duration (extending the confusion timer to 12+ seconds with mods). Ability strength increases damage and crowd-control resilience, but the primary scaling concern is duration--a brief confusion window wastes the ability's potential.
 
 Chaos is particularly powerful when cast preemptively before new enemy waves spawn, creating an automatic damage window during which all present enemies damage each other rather than focusing on the Tenno. The ability stacks with Mind Control: controlled enemies remain unaffected by chaos and continue fighting for the Tenno, effectively splitting the battlefield into autonomous allies and self-destructing enemies. In high-level endless missions (Kuva Survival, Steel Path Arbitrations), a single well-timed Chaos cast during wave arrival can reduce enemy pressure by 30-50% without requiring direct player input. Proper modding for duration (Constitution, Primed Continuity) is non-negotiable for competitive endurance performance.
 
-### Absorb
+<AbilityCard
+  name="Absorb"
+  key="4"
+  energyCost={25}
+  description="Draws in and contains damage dealt to Nyx and damage from confused enemies, then converts it into a devastating radial blast. After the blast, Nyx gains temporary invulnerability and a weapon damage boost."
+/>
 
 Absorb is Nyx's signature defensive ultimate, transforming incoming damage into accumulated charges that culminate in a devastating radial explosion. During the channel, Nyx enters a protective stance and absorbs all damage dealt to her, damage dealt by confused nearby enemies, and environmental hazards. Each damage instance adds charge, scaling the eventual blast radius and damage proportionally. When the ability concludes (cast time expires or Nyx releases manually), the absorbed energy detonates in a radial explosion, followed by a brief invulnerability window and a weapon damage boost tied to the total charge absorbed. The ability costs 25 energy to initiate and scales with ability duration (extending the damage accumulation window), ability range (affecting the blast radius), and ability strength (damage multiplier on the explosion).
 

@@ -71,19 +71,39 @@ With 180 health and 180 shields, Loki prioritizes mobility and evasion over surv
 
 ## Abilities
 
-### Decoy
+<AbilityCard
+  name="Decoy"
+  key="1"
+  energyCost={50}
+  description="Loki creates a holographic decoy that draws enemy fire and confuses incoming projectiles. The decoy absorbs a portion of nearby enemy health and shields, converting them into temporary protective barriers for Loki. On destruction, the decoy can detonate and stun enemies."
+/>
 
 Loki's first ability conjures a holographic copy that instantly draws all nearby enemy attention away from the player. The decoy mimics Loki's appearance and current appearance mods, selling the illusion convincingly to enemies at range. Upon creation, the decoy absorbs a percentage of nearby enemy shields and health, granting Loki temporary overshields. When the decoy is destroyed or times out, it can detonate to stun enemies in a small radius. This ability is invaluable for bypassing security on spy missions, as the decoy will trigger alarms instead of the player, allowing careful disengagement before detonating at range. Modding for range increases the distance at which enemies notice and pursue the decoy, while duration extends the decoy's survival time.
 
-### Invisibility
+<AbilityCard
+  name="Invisibility"
+  key="2"
+  energyCost={50}
+  description="Loki cloaks himself and nearby allies, rendering them invisible to enemy detection. During invisibility, any damage taken to other players breaks the effect early. Maintains stealth while moving, allowing for silent repositioning and bypassing patrols."
+/>
 
 Loki's second ability envelops himself and nearby teammates in a cloak, rendering everyone invisible to enemy detection. During invisibility, Loki and allies can move freely without triggering alarms or enemy aggression, making this ability critical for spy vault infiltration. Any damage dealt to a squadmate breaks the invisibility effect immediately, creating risk-reward dynamics in coordinated play. Loki himself can remain invisible indefinitely if undamaged, though attacking or casting other abilities ends the cloak. This ability becomes a cornerstone of high-difficulty defense and mobile defense missions where staying undetected throughout prolonged engagements is paramount. Modding for strength increases the radius of ally protection, while duration extends the initial invisibility window before tactical repositioning.
 
-### Switch Teleport
+<AbilityCard
+  name="Switch Teleport"
+  key="3"
+  energyCost={75}
+  description="Loki instantaneously swaps positions with a targeted enemy, instantly teleporting past them and momentarily stunning both parties. The switch confuses enemies and can be chained rapidly for evasion or repositioning. Affected enemies lose their weapons on the swap."
+/>
 
 Loki's third ability performs an instantaneous position swap with a targeted enemy, teleporting Loki directly to the enemy's location while the enemy lands at Loki's original position. Both parties experience a brief stun on arrival, during which Switch Teleport can trigger finishers. The tactical value of this ability extends far beyond engagement--it allows Loki to teleport across map geometry, reach isolated objectives, and confuse enemy formations by separating high-priority targets from their squads. Enemies lose their equipped weapons upon switch, forcing them to search for new arms or rely on melee combat. Modding for range increases the maximum distance at which enemies can be targeted, while strength increases the stun duration on swap. Chaining Switch Teleport with careful aim allows traversal of entire mission areas while maintaining crowd control.
 
-### Radial Disarm
+<AbilityCard
+  name="Radial Disarm"
+  key="4"
+  energyCost={100}
+  description="Loki projects a powerful wave of energy in all directions, disarming all enemies in range of their projectile weapons. Affected enemies are forced to switch to melee combat. Heavy units take longer to rearm their weapons, allowing extended vulnerability windows."
+/>
 
 Loki's ultimate ability projects a sphere of destructive energy in all directions, stripping all enemies within range of their ranged weapons. Affected enemies revert to melee combat, removing their most dangerous damage output and forcing tactical regrouping. Heavy units like bombards and gunners take significantly longer to locate and re-equip new weapons, creating extended vulnerability windows. This ability is the primary counter to ranged enemy spam in high-level survival and defense missions, instantly defanging entire enemy waves. Modding for range increases the radius of disarm effect, potentially covering entire rooms in extended missions. Modding for strength increases the rearm delay, allowing coordinated squad takedowns of disarmed targets before weapon recovery. In coordinated play, Radial Disarm enables squad-wide damage amplification builds by removing enemy crowd-control weapons and allowing frames like Saryn or Volt to deal uninterrupted damage.
 

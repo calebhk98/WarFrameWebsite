@@ -65,25 +65,45 @@ With 270 health, 180 shield, and 160 armor, Octavia occupies the middle ground d
 
 ## Abilities
 
-### Mallet
+<AbilityCard
+  name="Mallet"
+  key="1"
+  energyCost={25}
+  description="Creates a rhythmic sound-emitting sphere that beats damage into nearby enemies while drawing aggression toward itself. Damage taken by the Mallet amplifies its output, making it grow more lethal as it absorbs incoming fire. Scales with ability strength and range."
+/>
 
 Mallet spawns a sound-generating sphere that pulses damage to nearby enemies while simultaneously drawing their aggression. The ability's signature mechanic: every point of damage the Mallet absorbs increases its outgoing damage proportionally. A Mallet left unchecked in a group of enemies becomes exponentially more lethal, turning enemy fire into fuel for the ability. This damage doubling creates a feedback loop--the more dangerous the situation, the more powerful the Mallet becomes, providing automatic scaling in high-level content.
 
 Mallet's range and damage output scale with ability strength and range mods. Octavia's passive energy regeneration keeps the frame fueled for continuous Mallet refreshes, while ability duration extends the Mallet's duration, allowing a single cast to dominate longer. The ability functions as both a crowd-control tool (by pulling enemy fire away from the squad) and a damage dealer (through its independent damage scaling).
 
-### Resonator
+<AbilityCard
+  name="Resonator"
+  key="2"
+  energyCost={50}
+  description="Launches a charming rollerball that forces nearby foes to follow it. When combined with an active Mallet, the Resonator becomes a sonic weapon of mass destruction, synergizing damage and crowd control effects."
+/>
 
 Resonator launches a rolling sphere that charms nearby enemies into following it, functioning as mobile crowd control. When a Resonator contacts an active Mallet, the two abilities merge, combining their effects into a singular roving weapon. The Resonator inherits the Mallet's accumulated damage and continues amplifying it as it moves, creating a ball of sonic destruction that bounces through enemy formations.
 
 Resonator's effectiveness depends entirely on synergy with Mallet. A Resonator without a Mallet is crowd control; a Resonator paired with a high-damage Mallet becomes a tactical nuke. The ability's range and duration determine how far it can travel and how long the effect persists, making range mods particularly valuable for Octavia builds focused on this ability combination.
 
-### Metronome
+<AbilityCard
+  name="Metronome"
+  key="3"
+  energyCost={75}
+  description="Grants musical buffs to players who perform timed actions in rhythm to Octavia's melody. Jump on the beat for Vivace speed, crouch for Nocturne invisibility, fire weapons rhythmically for Opera multishot, or swing melee in time for Forte damage amplification."
+/>
 
 Metronome is Octavia's defining mechanic and what separates skilled players from novices. The ability activates a beat (visible and audible through the Mandachord) to which players must synchronize their actions. Jumping on the beat grants Vivace, a stacking speed buff. Crouching on the beat grants Nocturne, providing invisibility to the frame and nearby allies--a defensive tool that becomes invaluable in high-level endurance. Firing weapons in rhythm grants Opera, a multishot and fire rate buff. Swinging melee weapons on beat grants Forte, a damage amplification buff.
 
 The rhythm system is skill-based and timing-sensitive. Players who consistently perform actions aligned with the beat accumulate stacking buffs that scale dramatically with ability strength and duration mods. A well-executed Metronome run in an endless mission can yield 20+ stacking buffs, transforming both Octavia and her squad into enhanced versions of themselves. The Mandachord customization (available from the mod interface) allows players to adjust the beat speed and pattern, enabling faster or slower rhythms depending on playstyle and squad coordination.
 
-### Amp
+<AbilityCard
+  name="Amp"
+  key="4"
+  energyCost={100}
+  description="Draws power from ambient sound and directs a damage buff to Octavia and allies. Simultaneously doubles the damage output and range of all active Mallets nearby, turning them into devastating area-denial tools."
+/>
 
 Amp channels ambient sound energy into a damage buff for Octavia and nearby allies. Simultaneously, it amplifies all active Mallets in the area, doubling their damage and range. This ability synergizes directly with Mallet, making it a high-value follow-up cast after deploying a Mallet into a dense enemy group. In squad play, Amp provides party-wide damage amplification, positioning Octavia as a support frame on par with Trinity or Wisp.
 

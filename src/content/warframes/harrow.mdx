@@ -56,7 +56,7 @@ sources:
   - url: "https://warframe.fandom.com/wiki/Harrow"
     accessedAt: "2026-05-19"
     publisher: "Fandom"
-updatedAt: "2026-05-19T00:00:00Z"
+updatedAt: "2026-05-19"
 ---
 
 ## Overview
@@ -67,19 +67,39 @@ Harrow excels in missions where ally support multiplies effectiveness: void fiss
 
 ## Abilities
 
-### Condemn
+<AbilityCard
+  name="Condemn"
+  key="1"
+  energyCost={25}
+  description="Casts a wave of energy that holds enemies in place. Each enemy held grants Harrow additional shields."
+/>
 
 Condemn releases a frontal wave of binding energy that immobilizes enemies in place. Each enemy caught by the wave grants Harrow a stacking shield boost, rewarding aggressive ability spam in clustered enemy groups. The ability costs 25 energy and has a brief casting time; it works exceptionally well in corridor-heavy tilesets (Corpus ship sections, Grineer bunkers) where funneling enemies is natural. Ability strength scales both the shield value and the number of enemies it can hold. The mechanic creates interesting tactical moments: pin enemies, grab shields, then use Penance to convert those shields into team fire-rate boosts before the wave wears off.
 
-### Penance
+<AbilityCard
+  name="Penance"
+  key="2"
+  energyCost={50}
+  description="Sacrifices shields to dramatically boost reload speed and fire rate for nearby allies. Damage dealt to enemies converts to healing."
+/>
 
 Penance sacrifices Harrow's accumulated shields to trigger a team-wide buff granting reload speed and fire rate. This ability uniquely converts outgoing weapon damage into healing waves for Harrow and nearby squadmates, encouraging coordinated shooting against held or slowed targets. The mechanic ties directly to Condemn--immobilize a group, cast Penance, and the resulting fire-rate boost makes the squad devastate trapped enemies while healing. Penance runs on a per-cast basis; there is no duration limit, and the healing persists as long as the fire-rate buff is active. This creates satisfying combat loops in organized squads where one player (or AI companion) triggers weapon hits on Condemned targets while Penance provides the healing.
 
-### Thurible
+<AbilityCard
+  name="Thurible"
+  key="3"
+  energyCost={75}
+  description="Channels energy into a holy thurible. Upon release, enemy kills grant nearby allies energy. Headshots grant additional energy."
+/>
 
 Thurible is Harrow's channel ability, allowing him to stockpile energy into a holy vessel. Upon release, every enemy killed while the buff is active grants all nearby allies a burst of energy, with headshots generating even larger rewards. This ability encourages both careful weapon discipline (headshot accuracy) and allies understanding the energy reward mechanic. Thurible pairs exceptionally well with high-damage single-target weapons (sniper rifles, beam weapons) where headshots are frequent, and in squads running energy-hungry frames (Mirage, Octavia, Wukong). The ability scales with ability strength (more energy per kill) and ability duration (extended buff window). Importantly, Thurible does not interrupt other actions; Harrow can move, reload, and fire freely while channeling, making it suitable for aggressive playstyles.
 
-### Covenant
+<AbilityCard
+  name="Covenant"
+  key="4"
+  energyCost={100}
+  description="Surrounds nearby allies with an energy shield that absorbs damage and grants critical chance bonus. Headshots amplify the effect."
+/>
 
 Covenant summons a protective aura that grants all nearby allies both a damage-absorbing shield and a critical chance bonus scaling with headshots landed during the buff's duration. This ultimate is team-wide; even players firing from across the map contribute their headshots to the critical bonus pool. Covenant is exceptional in squads running high-crit weapons (Fulmin, Catchmoon, Euphona Prime) because each headshot increases everyone's crit chance, dramatically amplifying total team DPS. The ability scales with ability strength (shield absorption) and duration; modding for both is essential. In solo play, Covenant is still potent (the crit bonus applies to Harrow's own shots), but it truly shines in organized squads where three or four players landing headshots can achieve near-guaranteed critical hits across all weapons.
 

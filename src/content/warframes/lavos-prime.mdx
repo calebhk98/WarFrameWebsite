@@ -70,19 +70,39 @@ The frame's high armor provides exceptional damage reduction, supporting a mid-r
 
 ## Abilities
 
-### Ophidian Bite
+<AbilityCard
+  name="Ophidian Bite"
+  key="1"
+  energyCost={0}
+  description="Lash out with a toxic serpentine strike that consumes the target to heal Lavos.  Hold to imbue all subsequent abilities with Toxin damage."
+/>
 
 Ophidian Bite is Lavos Prime's melee-focused ability, dealing initial damage while consuming the target to restore health. This single-target ability excels against isolated priority targets, boss units, or compact enemy clusters. Holding the ability button before cast imbues all subsequent ability activations with Toxin damage, stacking poison procs with each ability use. In practice, Toxin imbue is particularly effective against organic-armor foes (Infested, Corpus proxies) where corrosive status would be overkill. The healing component scales with ability strength, providing meaningful self-sustain against manageable threat levels.
 
-### Vial Rush
+<AbilityCard
+  name="Vial Rush"
+  key="2"
+  energyCost={0}
+  description="Dash forward, crashing through enemies and leaving an icy trail of broken vials.  Hold to imbue the next ability cast with Cold damage."
+/>
 
 Vial Rush propels Lavos forward in a dash, colliding with and damaging all enemies in the path while leaving an icy trail that damages enemies passing through it. This ability combines mobility with area denial, useful for repositioning while clearing light-to-medium threats. Holding before cast imbues subsequent abilities with Cold damage, freezing susceptible enemies and enabling follow-up burst damage. Vial Rush shines when used to gap-close or escape tight spaces while simultaneously dealing damage--particularly valuable in spy missions or tileset puzzle sections where mobility and light crowd control are needed simultaneously.
 
-### Transmutation Probe
+<AbilityCard
+  name="Transmutation Probe"
+  key="3"
+  energyCost={0}
+  description="Launch a probe that converts Health and Energy Orbs into Universal Orbs and ammo  pickups into Universal Ammo. The probe shocks enemies and reduces other ability  cooldowns by 1.5s per electrocuted foe. Hold to imbue with Electricity."
+/>
 
 Transmutation Probe is arguably Lavos Prime's most utility-rich ability. It deploys an autonomous probe that converts dropped Health and Energy Orbs into Universal Orbs (restoring both resource types simultaneously) and ammo pickups into Universal Ammo Pickups. Beyond orb conversion, the probe deals shock damage to nearby enemies, and each shocked unit reduces all other ability cooldowns by 1.5 seconds. This cooldown reduction is multiplicative with multiple electrocuted targets, enabling aggressive ability cycling against grouped enemies. Holding before cast imbues subsequent abilities with Electricity, synergizing with the probe's own shock application for rapid elemental stacking. Transmutation Probe exemplifies Lavos Prime's design philosophy--it functions defensively (resource conversion) while enabling offensive cycling (cooldown reduction), making it the anchor of both support and damage builds.
 
-### Catalyze
+<AbilityCard
+  name="Catalyze"
+  key="4"
+  energyCost={0}
+  description="Catalyst Probes erupt from Lavos, drenching combatants in fiery gel. Damage  doubles for each element afflicting a target. Hold to imbue with Heat damage."
+/>
 
 Catalyze is Lavos Prime's ultimate ability, summoning catalyst probes that erupt outward and coat combatants in fiery gel. Damage dealt by this ability doubles for each distinct element already afflicting targeted enemies--critical to Lavos Prime's design identity. A foe suffering Toxin, Electricity, and Cold simultaneously from previous ability casts will take 8x base damage from Catalyze's initial hit. This multiplicative scaling encourages pre-buffing enemy groups with imbued ability casts before triggering the ultimate for detonation-style burst windows. Holding before cast imbues future abilities with Heat, completing the elemental cycle and enabling rapid elemental stacking on high-priority targets.
 

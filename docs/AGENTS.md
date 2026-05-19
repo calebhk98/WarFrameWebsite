@@ -90,6 +90,12 @@ here, file a `kind:chore` issue rather than improvising a prompt.
   maps to WFCD field `power` (NOT `energy`). Other mappings are 1:1:
   `masteryRank`, `health`, `shield`, `armor`, `sprintSpeed`, and
   per-ability stats.
+- **`masteryRank` exception (issue #23):** WFCD reports 0 for all
+  warframes regardless of the actual in-game value. After reading WFCD, if
+  `masteryReq`/`masteryRank` is 0, cross-check the Fandom Wiki page
+  (already fetched in the step below) and use the Fandom value if it
+  shows non-zero. If Fandom also shows 0, keep 0. See `docs/DATA.md`
+  section 7 for the full rule.
 - WebFetch `https://warframe.fandom.com/wiki/{Name}` exactly **once** for
   narrative context (lore, acquisition flavor, playstyle notes). Cite the
   URL in `sources` with the current ISO `accessedAt` timestamp.
@@ -151,7 +157,10 @@ Task:
      entry whose name matches "{name}". Extract masteryRank, health,
      shield, armor, sprintSpeed, and abilities[]. IMPORTANT: the
      frontmatter field "energy" maps to WFCD field "power" -- do NOT
-     read from a field called "energy" in WFCD.
+     read from a field called "energy" in WFCD. NOTE: WFCD masteryReq/
+     masteryRank is unreliable (issue #23, all report 0); after step 2,
+     if Fandom shows a non-zero mastery rank, use the Fandom value --
+     see docs/DATA.md section 7 for the full masteryRank exception rule.
   2. WebFetch https://warframe.fandom.com/wiki/{name} exactly once for
      narrative material. Summarize; do not copy.
   3. Write {target_path} with frontmatter matching the warframe Zod
