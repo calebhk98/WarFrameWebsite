@@ -1,0 +1,164 @@
+---
+slug: frost-prime
+name: Frost Prime
+aliases: []
+masteryRank: 0
+health: 270
+shield: 550
+armor: 315
+energy: 100
+sprintSpeed: 0.95
+passive:
+  name: "Thermal Expansion"
+  description: >-
+    Cold Status Effects from Frost's Abilities last longer. Frost gains
+    Armor for each enemy afflicted with Cold within Affinity Range.
+abilities:
+  - name: Freeze
+    key: "1"
+    energyCost: 25
+    description: >-
+      A frigid energy blast that freezes targets in their tracks. Enemies frozen
+      by this ability become immobilized and vulnerable to follow-up attacks.
+    stats: { damage: 300, range: 30 }
+  - name: Ice Wave
+    key: "2"
+    energyCost: 75
+    description: >-
+      Sends a wave of razor-sharp, crystallized ice toward an enemy, dealing
+      heavy damage. The wave can penetrate multiple targets and freeze those in
+      its path.
+    stats: { damage: 450, range: 40 }
+  - name: Snow Globe
+    key: "3"
+    energyCost: 50
+    description: >-
+      Creates a protective sphere of frozen matter that grants invulnerability to
+      Frost and allies inside. The globe can be charged for increased durability
+      and radius.
+    stats: { radius: 10, duration: 15 }
+  - name: Avalanche
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summons a massive landslide of ice that instantly freezes and shatters
+      all enemies in its radius. Destroyed enemies release icy projectiles that
+      freeze additional foes.
+    stats: { damage: 1200, range: 25 }
+acquisition:
+  source: Relic farming (vaulted)
+  blueprintLocations:
+    - "Lith, Meso, Neo, and Axi relics (vaulted)"
+    - "Prime Resurgence rotation (limited windows)"
+  cost:
+    credits: 25000
+    platinum: 370
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2014-06-03"
+  vaultedAt: "2014-12-09"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Frost/Prime"
+    accessedAt: "2026-05-19"
+    title: "Frost Prime — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Frost Prime is the primed variant of Frost, a cryogenic warframe that dominates the battlefield through ice manipulation and crowd control. Released as part of the very first Prime vault cycle in June 2014, Frost Prime has remained a cornerstone of ice-based gameplay for over a decade. Unlike his base counterpart, Frost Prime features enhanced health, shields, and armor, alongside unique Madurai and Naramon polarities that enable more customizable mod builds. His complete toolkit revolves around freezing enemies solid, protecting allies within protective domes, and unleashing devastating ice storms that shatter frozen targets into lethal projectiles.
+
+Frost Prime excels in both defensive and offensive roles, making him exceptionally versatile across all mission types. His Snow Globe ability provides unparalleled survivability for himself and squadmates, while his damaging abilities ensure offensive pressure. The interaction between his passive, which grants stacking armor per frozen enemy, and his crowd-control abilities creates a playstyle where Frost becomes progressively tankier as he freezes more targets. This scaling makes him particularly valuable in endless missions where survival depends on sustained performance.
+
+## Abilities
+
+<AbilityCard
+  name="Freeze"
+  key="1"
+  energyCost={25}
+  description="A frigid energy blast that freezes targets in their tracks. Enemies frozen by this ability become immobilized and vulnerable to follow-up attacks."
+/>
+
+Freeze is Frost Prime's single-target crowd-control ability, ideal for locking down priority threats. The 25-energy cost makes it spammable, allowing rapid freezing chains across multiple enemies. Frozen enemies take longer to thaw compared to base Frost, thanks to the passive duration extension. The ability works on most enemy types, though heavily armored units may require Frost to strip armor first via Avalanche.
+
+<AbilityCard
+  name="Ice Wave"
+  key="2"
+  energyCost={75}
+  description="Sends a wave of razor-sharp, crystallized ice toward an enemy, dealing heavy damage. The wave can penetrate multiple targets and freeze those in its path."
+/>
+
+Ice Wave provides a mid-range damage option with crowd control. At 75 energy, it sits between Freeze and Snow Globe in resource cost. The ability's damage output scales well with Strength mods, and the wave's penetration mechanic allows it to chain through groups of enemies. Combining Ice Wave with Augur Reach extends its range significantly, making it useful in mid-range engagement scenarios.
+
+<AbilityCard
+  name="Snow Globe"
+  key="3"
+  energyCost={50}
+  description="Creates a protective sphere of frozen matter that grants invulnerability to Frost and allies inside. The globe can be charged for increased durability and radius."
+/>
+
+Snow Globe is arguably Frost Prime's most valuable ability, providing both invulnerability frames on cast and ongoing damage mitigation. The globe scales with Duration and Range mods, creating larger protective bubbles that block incoming fire. Stacking additional globes is possible, allowing Frost to lock down entire rooms. The ability's 50-energy cost is reasonable given its defensive power, though high-Duration builds may prefer to recast sparingly to manage energy consumption. Team coordination benefits from Snow Globe as allies gain full protection while inside.
+
+<AbilityCard
+  name="Avalanche"
+  key="4"
+  energyCost={100}
+  description="Summons a massive landslide of ice that instantly freezes and shatters all enemies in its radius. Destroyed enemies release icy projectiles that freeze additional foes."
+/>
+
+Avalanche is Frost Prime's ultimate crowd-control and area-damage ability. The 100-energy cost makes it less spammable than Freeze or Ice Wave, but its area-of-effect freezing and subsequent shattering mechanic provides both offense and defense simultaneously. The ability reduces armor on affected enemies by 60%, making it invaluable for breaking heavily-armored Grineer units. The projectile cascade effect from shattered enemies creates secondary freeze waves, leading to chain reactions in tight groupings.
+
+## Passive
+
+Frost Prime's passive, Thermal Expansion, grants stacking Armor for each enemy afflicted with Cold status within Affinity Range. Additionally, Cold Status Effects from his abilities last longer than on other frames. This passive incentivizes maintaining active Cold coverage across the battlefield. In coordinated teams where multiple frames apply Cold procs, Frost Prime can stack armor bonuses from allies' contributions as well. The combination of armor scaling and extended freeze duration creates a self-reinforcing playstyle where crowd control directly enhances survivability.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 270 |
+| Shield | 550 |
+| Armor | 315 |
+| Energy | 100 |
+| Sprint Speed | 0.95x |
+| Mastery Rank Required | 0 |
+
+Frost Prime's stat distribution emphasizes balanced tankiness. The 270 health and 550 shields provide solid baseline survivability, while the 315 armor value is competitive for a utility-focused frame. The armor particularly benefits from his passive, where frozen enemies stack additional protection. The 100 energy pool is modest, requiring efficient mod management in high-drain builds. Sprint speed of 0.95x is slightly below baseline, a minor tradeoff typical of bulkier warframes.
+
+## Acquisition
+
+Frost Prime is currently vaulted, meaning his relics no longer drop in standard mission rotations. However, Digital Extremes periodically unseals prime vaults through the Prime Resurgence program, temporarily offering selected vaulted primes' relics for purchase. Previously, Frost Prime relics dropped from Lith, Meso, Neo, and Axi void fissure missions across all rotation types.
+
+The Frost Prime blueprint and component blueprints require farm-run coordination in the player market. Purchase prices fluctuate based on supply and demand. Alternatively, relics obtained during Prime Resurgence windows can be opened to obtain Frost Prime components directly. Building the complete frame requires the blueprint plus Neuroptics, Chassis, and Systems blueprints, all obtained from void relic openings. The 72-hour build time applies to the frame's main blueprint; component blueprints build instantaneously upon opening their source relics.
+
+## Playstyle
+
+Frost Prime plays as a defensive anchor with offensive supplementary tools. In team-based missions, his Snow Globe provides a mobile safe zone that allies can rally behind, encouraging coordinated pushes into enemy territory. In solo play, globe placement becomes tactical—creating defensible positions within mission objectives allows Frost to control the fight entirely. The combination of Freeze and Avalanche ensures enemies rarely pose threats; crowd control is maintained through staggered ability casts rather than reliance on single ultimate cooldowns.
+
+Energy management dictates Frost Prime's engagement rhythm. With a 100-energy pool, spamming all four abilities rapidly exhausts reserves, requiring either efficient mod prioritization or energy generation via Arcane Energize, Trinity squadmates, or Pillage subsumption. Most meta builds employ Streamline or Fleeting Expertise to reduce cast costs, freeing energy for additional globe recasts and crowd control.
+
+The passive armor scaling becomes relevant in extended endurance missions where frozen enemy counts accumulate. After 10-15 minutes of sustained freezing, Frost Prime's effective tankiness rivals dedicated tank frames, creating a natural progression curve that rewards conservative playstyles. This makes Frost Prime particularly dominant in Void Fissure endless missions where relic defense phases require 20+ minute survival windows.
+
+## Builds
+
+Frost Prime's modular nature supports several distinct playstyles. A globe-spam build prioritizes Duration and Range, using Primed Continuity, Augur Reach, and Stretch to create massive, long-lasting protective domes that cover entire rooms. A crowd-control build emphasizes Strength and Range, maximizing Avalanche armor stripping and freeze propagation to lock down entire enemy teams. A hybrid tank build balances all three stats, supporting both offense and defense without overccommitting to a single axis.
+
+Check `/builds/warframes/frost-prime/` for detailed build guides covering specific mission types and playstyles.
+
+## Lore
+
+Frost Prime represents one of the earliest prime warframes, released during an era when the void fissure mythology was still being established. His design emphasizes the Orokin's mastery over environmental forces, particularly their control of extremophilic conditions. The icy aesthetic and crystalline visual effects reflect the cutting-edge technology applied to his construction. Lore-wise, Frost Prime's release as part of the initial Prime Vault rotation suggests he was among the first warframes to fall into the vault, indicative of the Orokin's cyclical approach to warframe production and deployment.
+
+The vaulting of Frost Prime in late 2014 marked a turning point in Warframe's live-service model, establishing the Prime Vault mechanic as a core progression system. Players who missed the initial availability window faced years-long waits before subsequent unsealing events granted re-access. This rarity, combined with his effective toolkit, cemented Frost Prime as a prestige frame among early-game and endgame players alike.
+
+## Sources
+
+- GitHub WFCD `warframe-items` JSON (`Warframes.json#Frost Prime`), accessed 2026-05-19. Canonical numeric stats (health, shield, armor, energy, sprint speed, ability costs and values).
+- Warframe Fandom Wiki entry for [Frost Prime](https://warframe.fandom.com/wiki/Frost/Prime), accessed 2026-05-19. Acquisition information, vaulting history, and narrative context.

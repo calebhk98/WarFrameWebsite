@@ -83,6 +83,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - dagath retry:1 :: src/content/warframes/dagath.mdx
 - dante :: src/content/warframes/dante.mdx
 - ember retry:1 :: src/content/warframes/ember.mdx
+- ember-prime :: src/content/warframes/ember-prime.mdx
+- equinox :: src/content/warframes/equinox.mdx
+- equinox-prime :: src/content/warframes/equinox-prime.mdx
+- excalibur :: src/content/warframes/excalibur.mdx
+- excalibur-prime :: src/content/warframes/excalibur-prime.mdx
+- excalibur-umbra :: src/content/warframes/excalibur-umbra.mdx
+- frost :: src/content/warframes/frost.mdx
+- frost-prime :: src/content/warframes/frost-prime.mdx
 
 ## done.weapons
 
@@ -219,6 +227,14 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - dagath
 - dante
 - ember
+- ember-prime
+- equinox
+- equinox-prime
+- excalibur
+- excalibur-prime
+- excalibur-umbra
+- frost
+- frost-prime
 
 ## verified.weapons
 

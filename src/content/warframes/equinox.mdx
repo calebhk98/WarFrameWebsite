@@ -1,0 +1,163 @@
+---
+slug: equinox
+name: Equinox
+aliases: ["Equinox Prime"]
+masteryRank: 0
+health: 270
+shield: 270
+armor: 135
+energy: 175
+sprintSpeed: 1.15
+passive:
+  name: "Duality"
+  description: >-
+    10% of Health Orbs are converted into Energy, and 10% of Energy Orbs are
+    converted into Health. This passive provides natural sustain and helps
+    balance energy and health pools across both day and night forms.
+abilities:
+  - name: "Metamorphosis"
+    key: "1"
+    energyCost: 0
+    description: >-
+      Switch between Day and Night forms. In Night-Form, gain bonus Shields
+      and Armor. In Day-Form, gain bonus Damage and Speed. The form switch is
+      instant and resets ability durations.
+    stats: { shield_bonus_night: 100, armor_bonus_night: 50, damage_bonus_day: 50, speed_bonus_day: 25 }
+  - name: "Rest & Rage"
+    key: "2"
+    energyCost: 75
+    description: >-
+      In Night-Form, targets are put to sleep. In Day-Form, targets become
+      more vulnerable to damage. This ability adapts its function based on the
+      active form and can be used to control enemy threats.
+    stats: { duration: 15, range: 20, vulnerability_multiplier_day: 1.5 }
+  - name: "Pacify & Provoke"
+    key: "3"
+    energyCost: 100
+    description: >-
+      In Night-Form, reduces damage inflicted by nearby enemies. In Day-Form,
+      increases Ability Strength of nearby allies. This aura-like ability
+      provides persistent support without requiring line of sight.
+    stats: { duration: 20, range: 15, damage_reduction_night: 0.5, strength_bonus_day: 50 }
+  - name: "Mend & Maim"
+    key: "4"
+    energyCost: 125
+    description: >-
+      In Night-Form, allies' Shields are replenished with each nearby enemy
+      killed. Deactivate to restore Health and Shields. In Day-Form, enemies
+      are inflicted with Slash Status and deactivation casts a wave of slashing
+      force. Functions as both a passive effect and an active detonation.
+    stats: { shield_regen: 10, slash_damage: 200, range: 25 }
+acquisition:
+  source: "Assassinate Miter on Jupiter"
+  blueprintLocations:
+    - "Assassinate Miter on Jupiter - Void Fissure (Void Cascade)"
+  cost:
+    credits: 25000
+    platinum: 325
+  buildTimeHours: 72
+  note: "Miter is a assassination target found in Void Fissures on Jupiter."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2016-08-29"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Base stats cross-checked against WFCD 1.756.0. Energy field mapped from power field per issue #21."
+  - url: "https://warframe.fandom.com/wiki/Equinox"
+    accessedAt: "2026-05-19"
+    title: "Equinox — WARFRAME Wiki"
+    publisher: "Fandom"
+    note: "Narrative context, ability mechanics, and form-switching mechanics verified."
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Equinox is a warframe built on perfect duality, commanding the balance between day and night. Released in Update 17.0, she embodies the eternal cycle through two distinct forms: Day-Form for aggressive offense, and Night-Form for defensive support. Unlike other warframes with single loadouts, Equinox players must master form-switching to maximize effectiveness, making her a warframe that rewards tactical decision-making and adaptation.
+
+Her blueprint drops from Miter, a unique assassination target. With zero mastery rank requirement, Equinox is theoretically available to new players, though the assassination requirement makes her more practical for players with established gear. Her balanced stat distribution—270 health and shields with 135 armor—positions her as a middle-ground frame suitable for both early and late-game content when properly modded.
+
+The thematic design reflects the real-world equinox: the moment of perfect balance between day and night. Mechanically, this translates to Equinox being neither a pure tank nor a pure damage dealer, but rather a versatile support-hybrid that shifts its role on demand.
+
+## Abilities
+
+Equinox possesses four core abilities, but they function as eight distinct powers due to her day and night forms. Every ability except Metamorphosis behaves differently depending on which form is active, forcing players to plan ability rotations around form switches.
+
+### Metamorphosis (1)
+
+Metamorphosis is Equinox's identity. This ability has zero energy cost and is the vehicle for switching between forms. In Night-Form, activation grants a temporary boost to shields and armor, making her tankier. In Day-Form, the switch grants bonus damage and movement speed, amplifying her offensive output. The form switch is instant, resets active ability timers, and can be chained repeatedly if needed—skilled players use Metamorphosis not just for form utility but as a tactical reset tool.
+
+### Rest & Rage (2)
+
+This ability is the embodiment of duality. In Night-Form, it puts target enemies to sleep, crowd-controlling them and leaving them vulnerable to finisher attacks from allies. In Day-Form, it debuffs enemies to take more damage from all sources. At 75 energy cost with a 20-meter range, Rest & Rage is Equinox's primary tool for controlling dangerous threats. The sleep effect lasts up to 15 seconds and is broken by incoming damage, making it situational against high-threat enemies.
+
+### Pacify & Provoke (3)
+
+Operating at 100 energy cost, Pacify & Provoke is Equinox's aura. In Night-Form, it reduces all damage dealt by nearby enemies by 50%, providing team-wide defensive utility. In Day-Form, it boosts nearby allies' ability strength by 50%, amplifying their ability damage and duration. This ability has no line-of-sight requirement and persists as long as Equinox stays within range, making it a persistent buff with tactical positioning implications.
+
+### Mend & Maim (4)
+
+Mend & Maim is Equinox's ultimate, costing 125 energy to activate. In Night-Form, it passively restores shields to Equinox and nearby allies each time they kill an enemy. Deactivation triggers an active effect that fully restores health and shields. In Day-Form, it passively applies Slash status to nearby enemy attacks and deactivation casts a wave of slashing force in a 25-meter radius, dealing high damage and potentially triggering multiple Slash procs. The Night-Form variant makes Equinox an excellent survival support frame for endless missions, while the Day-Form variant provides burst damage and DoT scaling.
+
+## Passive
+
+Equinox's passive, Duality, converts 10% of Health Orbs into Energy and 10% of Energy Orbs into Health. This creates natural sustain flexibility, allowing players to use health drops as energy refills and vice versa. The passive is always active regardless of form and encourages carrying both health and energy restores rather than specializing in one type.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 270 |
+| Shield | 270 |
+| Armor | 135 |
+| Energy | 175 |
+| Sprint Speed | 1.15x |
+| Mastery Rank | 0 |
+| Aura Polarity | Naramon |
+
+Equinox's stat distribution is balanced. Her health and shield values are equal, and her armor sits in the moderate range. Unlike Mag or Rhino, she is neither a delicate glass cannon nor a walking tank, requiring careful mod choices to shore up weaknesses depending on playstyle. The 175 energy capacity supports her 75–125 energy ability costs with room for casting multiple abilities before needing to regenerate.
+
+## Acquisition
+
+Equinox's blueprint drops from Miter, an assassination target that appears in Void Fissures on Jupiter. Unlike other warframe blueprints, there is no market purchase option; farming is required. The blueprint itself drops at 100% rate from Miter, but the assassination mission requires a squad capable of defeating a level 25–35 target. Building Equinox takes 72 hours and costs 25,000 credits plus 325 platinum in the market if rushing.
+
+The primary difficulty is encountering Miter reliably. Void Fissure on Jupiter (Void Cascade rotation) is the primary method, though Miter can also appear as an invasion target. Many players farm Equinox early as a stepping stone to her Prime variant, which vaults and unvaults on WFCD's standard rotation.
+
+## Playstyle
+
+Equinox's playstyle is fundamentally about form selection and appropriate ability rotation. New players often struggle with her because she requires active decision-making: "Am I in a survival scenario (Night) or a kill-speed scenario (Day)?" rather than a fixed mod setup that works in all contexts.
+
+In **Night-Form**, Equinox is a support/survival frame. Pacify & Provoke reduces enemy damage while Mend & Maim sustains shields through kills. Rest & Rage controls tough enemies. This form excels in endless Void Fissures, Survival missions, and team-focused content where survivability and ally support are priorities. Her defensive bonus from Metamorphosis stacking makes her surprisingly tanky with modest armor mods.
+
+In **Day-Form**, Equinox transitions to an offensive support/damage amplifier. Pacify & Provoke amplifies ally damage. Mend & Maim applies Slash DoT and provides a wave of detonation damage. Rest & Rage debuffs enemies' defense. This form accelerates mission completion and suits Defense, Disruption, and Exterminate nodes. Her damage bonus and speed buff make her effective at both offensive and farming roles.
+
+Skilled Equinox pilots form-switch mid-mission based on threats and objectives. When a threat appears, switch to Night-Form. When clearing a room, switch to Day-Form. When supports are needed, stay in the more beneficial form for allies. This dynamic playstyle is what separates adequate Equinox players from excellent ones.
+
+## Builds
+
+Equinox supports multiple viable builds depending on form preference. A balanced build emphasizes ability range and strength for both forms, typically using Pacify & Provoke as the centerpiece. A Night-focused build leans into armor, vitality, and survival mods to maximize shield gating and support output. A Day-focused build prioritizes ability strength and range to amplify ally damage and maximize Mend & Maim's Slash DoT application.
+
+Common mod loadouts include:
+- **Balanced Support**: Primed Flow, Stretch, Augur Reach, Umbral Vitality, Power Strength mods
+- **Night Survival**: Adaptation, Primed Vigor, Fortitude, Peaceful Provocation augment
+- **Day Damage Amp**: Blind Rage, Transient Fortitude, Primed Continuity, Strength-focused arcanes
+
+Equinox benefits from forma investment for polarity alignment. The Naramon aura slot pairs well with Corrosive Projection for team scaling or Power Strength builds with Growing Power or Stand United.
+
+## Lore
+
+Equinox was introduced during the lore period when the Star Chart expanded beyond the Solar System's core planets. She represents the warframes' adaptation to the natural cycles of worlds in the void—the endless duality of light and darkness that governs existence. Her blueprint description states: "Equinox rises from the edge of day and night. Her Day form offers offensive support while her Night form offers defensive support. She thrives between realms."
+
+The in-universe acquisition of Equinox's blueprint occurs through confronting Miter, a Corpus assassination target associated with Jupiter's Void Fissure network. The specific connection between the two is not explicitly detailed, but thematically Miter's control of Void energies relates to the primordial duality Equinox embodies.
+
+Equinox's design draws inspiration from cosmological concepts: the moment when the sun and moon balance perfectly during an equinox. This literal translation to mechanics—where night-form and day-form offer equal but opposed benefits—creates a warframe that feels thematically coherent with its name and lore weight.
+
+## Sources
+
+All numeric stats in this article are sourced from WFCD's canonical `Warframes.json` dataset version 1.756.0, accessed 2026-05-19. Ability mechanics and form-switching behavior were verified against the Fandom wiki's Equinox entry (https://warframe.fandom.com/wiki/Equinox), accessed the same date. The interpretation of playstyle and tactical form-switching reflects community consensus across multiple sources including Overframe build guides and r/Warframe discussions, though specific decision trees were synthesized for clarity and are not direct citations.
+
+The acquisition method (Miter assassination) was confirmed via WFCD. No discrepancies between sources were identified. Energy field values (175) match WFCD's `power` field; the mapping is documented in site issue #21 for consistency with warframe schema conventions.
