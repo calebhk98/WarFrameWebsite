@@ -1,5 +1,5 @@
 import { z } from 'astro:content';
-import { isoDateLike, slug, sourceSchema } from './shared';
+import { isoDateLike, sourceSchema } from './shared';
 
 export const resourceTypeSchema = z.enum([
   'common',
@@ -15,7 +15,6 @@ export const resourceTypeSchema = z.enum([
 ]);
 
 export const resourceSchema = z.object({
-  slug,
   name: z.string().min(1),
   type: resourceTypeSchema,
   planets: z.array(z.string()).default([]),

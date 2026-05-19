@@ -1,0 +1,43 @@
+---
+// EntityCard — tile for grid views across all collections
+interface Props {
+  href: string;
+  name: string;
+  tags?: string[];
+  image?: string;
+}
+
+const { href, name, tags = [], image } = Astro.props;
+---
+
+<a
+  href={href}
+  class="group block rounded-lg border border-surface-3 bg-surface-2 hover:border-brand-orange/50 hover:bg-surface-3 transition-all duration-150 overflow-hidden"
+>
+  {image && (
+    <div class="h-32 bg-surface-3 flex items-center justify-center overflow-hidden">
+      <img
+        src={image}
+        alt={name}
+        class="object-contain h-full w-full group-hover:scale-105 transition-transform duration-150"
+        loading="lazy"
+      />
+    </div>
+  )}
+
+  <div class="p-4">
+    <h3 class="text-brand-cream font-semibold text-sm group-hover:text-brand-orange transition-colors line-clamp-2">
+      {name}
+    </h3>
+
+    {tags.length > 0 && (
+      <div class="mt-2 flex flex-wrap gap-1">
+        {tags.slice(0, 3).map((tag) => (
+          <span class="text-xs px-1.5 py-0.5 rounded bg-surface-3 text-brand-cream/60">
+            {tag}
+          </span>
+        ))}
+      </div>
+    )}
+  </div>
+</a>

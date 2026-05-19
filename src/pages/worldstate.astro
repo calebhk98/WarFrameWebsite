@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import WorldstateWidget from '../components/WorldstateWidget.astro';
+---
+
+<Base title="Worldstate" description="Current Warframe worldstate — sorties, fissures, invasions">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Worldstate</h1>
+      <p class="text-brand-cream/60">
+        Current game worldstate snapshot generated at build time. Data sourced from warframestat.us.
+      </p>
+    </header>
+
+    <WorldstateWidget />
+
+    <p class="mt-6 text-xs text-brand-cream/40">
+      Worldstate data is fetched at build time and cached. Deploy a new build to refresh.
+    </p>
+  </div>
+</Base>

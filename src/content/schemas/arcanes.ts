@@ -3,7 +3,6 @@ import {
   dropSchema,
   isoDateLike,
   perRankStatSchema,
-  slug,
   sourceSchema,
 } from './shared';
 
@@ -18,7 +17,6 @@ export const arcaneTypeSchema = z.enum([
 ]);
 
 export const arcaneSchema = z.object({
-  slug,
   name: z.string().min(1),
   type: arcaneTypeSchema,
   maxRank: z.number().int().min(0),

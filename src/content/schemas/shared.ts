@@ -29,7 +29,10 @@ export const sourceSchema = z.object({
   note: z.string().optional(),
 });
 
-export const statsRecordSchema = z.record(z.string(), z.number());
+export const statsRecordSchema = z.record(
+  z.string(),
+  z.union([z.number(), z.string(), z.boolean()]),
+);
 
 export const perRankStatSchema = z.object({
   rank: z.number().int().min(0),
@@ -49,11 +52,11 @@ export const acquisitionSchema = z.object({
   blueprintLocations: z.array(z.string()).default([]),
   cost: z
     .object({
-      credits: z.number().int().nonnegative().optional(),
-      platinum: z.number().int().nonnegative().optional(),
+      credits: z.number().int().nonnegative().nullable().optional(),
+      platinum: z.number().int().nonnegative().nullable().optional(),
     })
     .optional(),
-  buildTimeHours: z.number().nonnegative().optional(),
+  buildTimeHours: z.number().nonnegative().nullable().optional(),
   note: z.string().optional(),
 });
 

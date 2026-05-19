@@ -1,0 +1,36 @@
+---
+// MarketPrice — optional plat price display for a slug.
+// Omits gracefully if slug not found or network unavailable.
+import { getItemStats } from '../lib/market';
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+
+interface PriceData {
+  median: number;
+  avgPrice: number;
+}
+
+let price: PriceData | null = null;
+
+try {
+  const stats = await getItemStats(slug);
+  const recent = stats.fortyEightHours.at(-1);
+  if (recent) {
+    price = { median: recent.median, avgPrice: recent.avgPrice };
+  }
+} catch {
+  // Omit silently if item not found on market or network unavailable.
+}
+---
+
+{price && (
+  <div class="inline-flex items-center gap-2 rounded border border-surface-3 bg-surface-2 px-3 py-1.5 text-sm">
+    <span class="text-brand-cream/60">Market price</span>
+    <span class="font-mono font-semibold text-brand-orange">{price.median}p</span>
+    <span class="text-brand-cream/40 text-xs">median (48h)</span>
+  </div>
+)}

@@ -1,0 +1,43 @@
+---
+// AbilityCard — rendered by warframe MDX pages for each ability
+interface Props {
+  name: string;
+  key: string;
+  energyCost: number;
+  description: string;
+  stats?: Record<string, number>;
+}
+
+const { name, key: abilityKey, energyCost, description, stats = {} } = Astro.props;
+const statEntries = Object.entries(stats);
+---
+
+<div class="rounded-lg border border-surface-3 bg-surface-2 p-4 space-y-2">
+  <div class="flex items-center justify-between gap-2 flex-wrap">
+    <div class="flex items-center gap-2">
+      <span
+        class="inline-block w-6 h-6 rounded text-xs font-bold bg-brand-purple text-white flex items-center justify-center"
+        aria-label={`Key ${abilityKey}`}
+      >
+        {abilityKey}
+      </span>
+      <h4 class="font-semibold text-brand-cream">{name}</h4>
+    </div>
+    <span class="text-xs px-2 py-0.5 rounded-full bg-brand-orange/20 text-brand-orange font-mono">
+      {energyCost} energy
+    </span>
+  </div>
+
+  <p class="text-brand-cream/80 text-sm leading-relaxed">{description}</p>
+
+  {statEntries.length > 0 && (
+    <dl class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1 pt-1 border-t border-surface-3 text-xs">
+      {statEntries.map(([label, value]) => (
+        <div class="flex justify-between gap-1">
+          <dt class="text-brand-cream/50">{label}</dt>
+          <dd class="text-brand-cream font-mono">{value}</dd>
+        </div>
+      ))}
+    </dl>
+  )}
+</div>

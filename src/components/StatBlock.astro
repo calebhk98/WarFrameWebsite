@@ -1,0 +1,37 @@
+---
+// StatBlock — renders a stats table from a record of label -> value pairs
+interface Props {
+  stats: Record<string, number | string>;
+  title?: string;
+}
+
+const { stats, title } = Astro.props;
+const entries = Object.entries(stats);
+---
+
+{entries.length > 0 && (
+  <div class="rounded-lg border border-surface-3 bg-surface-2 overflow-hidden">
+    {title && (
+      <div class="px-4 py-2 bg-surface-3 border-b border-surface-3">
+        <h4 class="text-sm font-semibold text-brand-cream/70 uppercase tracking-wide">{title}</h4>
+      </div>
+    )}
+    <table class="w-full text-sm">
+      <tbody>
+        {entries.map(([label, value], i) => (
+          <tr class={i % 2 === 0 ? 'bg-transparent' : 'bg-surface-3/30'}>
+            <th
+              scope="row"
+              class="px-4 py-2 text-left font-medium text-brand-cream/70 w-1/2"
+            >
+              {label}
+            </th>
+            <td class="px-4 py-2 text-right font-mono text-brand-cream">
+              {value}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}

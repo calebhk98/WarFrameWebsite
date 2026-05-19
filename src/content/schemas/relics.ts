@@ -1,5 +1,5 @@
 import { z } from 'astro:content';
-import { isoDateLike, slug, sourceSchema } from './shared';
+import { isoDateLike, sourceSchema } from './shared';
 
 export const relicEraSchema = z.enum(['lith', 'meso', 'neo', 'axi', 'requiem']);
 
@@ -16,7 +16,6 @@ export const refinementSchema = z.object({
 });
 
 export const relicSchema = z.object({
-  slug,
   name: z.string().min(1),
   era: relicEraSchema,
   drops: z.array(relicDropSchema).default([]),

@@ -3,7 +3,6 @@ import {
   acquisitionSchema,
   isoDateLike,
   primeVariantSchema,
-  slug,
   sourceSchema,
   statsRecordSchema,
 } from './shared';
@@ -24,7 +23,6 @@ export const damageSchema = z.object({
 });
 
 export const weaponSchema = z.object({
-  slug,
   name: z.string().min(1),
   type: weaponTypeSchema,
   category: z.string().min(1),

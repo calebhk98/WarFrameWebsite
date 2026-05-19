@@ -14,7 +14,6 @@ export const buildArcaneSlotSchema = z.object({
 });
 
 export const buildSchema = z.object({
-  slug,
   name: z.string().min(1),
   forEntity: slug,
   entityType: z.enum(['warframe', 'weapon']),

@@ -1,17 +1,111 @@
 ---
-const title = 'Warframe Site — scaffolded';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import EntityCard from '../components/EntityCard.astro';
+import WorldstateWidget from '../components/WorldstateWidget.astro';
+
+const allWarframes = await getCollection('warframes');
+const allQuests = await getCollection('quests');
+
+// Shuffle and take 6 featured warframes
+function pickRandom<T>(arr: T[], count: number): T[] {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j]!, copy[i]!];
+  }
+  return copy.slice(0, count);
+}
+
+const featuredWarframes = pickRandom(allWarframes, 6);
+const featuredQuests = pickRandom(allQuests, 4);
+
+const collections = [
+  { href: '/warframes', label: 'Warframes', desc: '110 frames — abilities, stats, builds' },
+  { href: '/weapons', label: 'Weapons', desc: '598 primary, secondary, and melee weapons' },
+  { href: '/mods', label: 'Mods', desc: 'Augments and featured mod catalogue' },
+  { href: '/quests', label: 'Quests', desc: '43 quests — walkthroughs and lore' },
+  { href: '/factions', label: 'Factions', desc: '35 factions — origins and weaknesses' },
+  { href: '/syndicates', label: 'Syndicates', desc: '18 syndicates — standing and rewards' },
+  { href: '/arcanes', label: 'Arcanes', desc: '156 arcane enhancements' },
+  { href: '/missions', label: 'Missions', desc: '260 mission nodes across the Star Chart' },
+  { href: '/resources', label: 'Resources', desc: '224 crafting materials and drops' },
+  { href: '/relics', label: 'Relics', desc: '2682 void relics for prime farming' },
+];
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-  </head>
-  <body>
-    <main>
-      <h1>{title}</h1>
-      <p>Phase 0 scaffold. See <code>docs/LOCAL_DEV.md</code> (Phase 1) for setup.</p>
-    </main>
-  </body>
-</html>
+<Base title="Home" description="Warframe Codex — comprehensive fan reference for Warframe">
+  <section class="relative bg-gradient-to-b from-brand-purple/20 to-transparent border-b border-surface-3 py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl sm:text-6xl font-bold text-brand-cream mb-4">
+        Warframe Codex
+      </h1>
+      <p class="text-xl text-brand-cream/70 max-w-2xl mx-auto mb-8">
+        A comprehensive, data-driven fan reference for every public in-game entity.
+        Stats sourced from WFCD. Unofficial — not affiliated with Digital Extremes.
+      </p>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 space-y-16">
+    <section aria-labelledby="worldstate-heading">
+      <h2 id="worldstate-heading" class="sr-only">Current worldstate</h2>
+      <WorldstateWidget />
+    </section>
+
+    <section aria-labelledby="featured-warframes-heading">
+      <h2 id="featured-warframes-heading" class="text-xl font-semibold text-brand-cream mb-6">
+        Featured warframes
+      </h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        {featuredWarframes.map((w) => (
+          <EntityCard
+            href={`/warframes/${w.slug}`}
+            name={w.data.name}
+            tags={w.data.acquisition?.source ? [w.data.acquisition.source] : []}
+          />
+        ))}
+      </div>
+      <a href="/warframes" class="mt-4 inline-block text-brand-orange hover:underline text-sm">
+        Browse all warframes &rarr;
+      </a>
+    </section>
+
+    <section aria-labelledby="featured-quests-heading">
+      <h2 id="featured-quests-heading" class="text-xl font-semibold text-brand-cream mb-6">
+        Featured quests
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {featuredQuests.map((q) => (
+          <EntityCard
+            href={`/quests/${q.slug}`}
+            name={q.data.name}
+            tags={q.data.prerequisites?.length > 0 ? [`${q.data.prerequisites.length} prereq`] : []}
+          />
+        ))}
+      </div>
+      <a href="/quests" class="mt-4 inline-block text-brand-orange hover:underline text-sm">
+        Browse all quests &rarr;
+      </a>
+    </section>
+
+    <section aria-labelledby="collections-heading">
+      <h2 id="collections-heading" class="text-xl font-semibold text-brand-cream mb-6">
+        Browse collections
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {collections.map((col) => (
+          <a
+            href={col.href}
+            class="group rounded-lg border border-surface-3 bg-surface-2 hover:border-brand-orange/50 hover:bg-surface-3 p-5 transition-all"
+          >
+            <h3 class="font-semibold text-brand-cream group-hover:text-brand-orange transition-colors mb-1">
+              {col.label}
+            </h3>
+            <p class="text-sm text-brand-cream/60">{col.desc}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+</Base>

@@ -4,7 +4,6 @@ import {
   isoDateLike,
   perRankStatSchema,
   raritySchema,
-  slug,
   sourceSchema,
 } from './shared';
 
@@ -44,7 +43,6 @@ export const modTypeSchema = z.enum([
 ]);
 
 export const modSchema = z.object({
-  slug,
   name: z.string().min(1),
   polarity: polaritySchema,
   drain: z.number().int(),

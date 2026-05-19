@@ -1,5 +1,5 @@
 import { z } from 'astro:content';
-import { isoDateLike, slug, sourceSchema } from './shared';
+import { isoDateLike, sourceSchema } from './shared';
 
 export const questStageSchema = z.object({
   name: z.string().min(1),
@@ -8,7 +8,6 @@ export const questStageSchema = z.object({
 });
 
 export const questSchema = z.object({
-  slug,
   name: z.string().min(1),
   prerequisites: z.array(z.string()).default([]),
   rewards: z.array(z.string()).default([]),

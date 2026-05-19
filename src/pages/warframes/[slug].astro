@@ -1,0 +1,34 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+import AbilityCard from '../../components/AbilityCard.astro';
+import Callout from '../../components/Callout.astro';
+
+export async function getStaticPaths() {
+  const warframes = await getCollection('warframes');
+  return warframes.map((w) => ({ params: { slug: w.slug }, props: { entry: w } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const components = { AbilityCard, Callout };
+
+const { data } = entry;
+const tags: string[] = [
+  `MR ${data.masteryRank}`,
+  data.prime.available ? 'Has Prime' : 'No Prime',
+  ...(data.prime.vaulted ? ['Vaulted'] : []),
+];
+
+const description = `${data.name} — Health ${data.health}, Shield ${data.shield}, Armor ${data.armor}, Energy ${data.energy}`;
+---
+
+<Entity
+  title={data.name}
+  kind="warframe"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+>
+  <Content components={components} />
+</Entity>

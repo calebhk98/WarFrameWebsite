@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EntityCard from '../../components/EntityCard.astro';
+
+const factions = await getCollection('factions');
+const sorted = [...factions].sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<Base title="Factions" description="All 35 factions in Warframe — origins, units, and weaknesses">
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Factions</h1>
+      <p class="text-brand-cream/60">{sorted.length} factions — lore, units, weaknesses, and resistances</p>
+    </header>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {sorted.map((f) => (
+        <EntityCard
+          href={`/factions/${f.slug}`}
+          name={f.data.name}
+          tags={[
+            ...(f.data.locations.length > 0 ? [f.data.locations[0]!] : []),
+            ...(f.data.units.length > 0 ? [`${f.data.units.length} unit types`] : []),
+          ]}
+        />
+      ))}
+    </div>
+  </div>
+</Base>

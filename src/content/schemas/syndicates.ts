@@ -1,5 +1,5 @@
 import { z } from 'astro:content';
-import { isoDateLike, slug, sourceSchema } from './shared';
+import { isoDateLike, sourceSchema } from './shared';
 
 export const syndicateTypeSchema = z.enum(['open-world', 'standing', 'other']);
 
@@ -9,7 +9,6 @@ export const syndicateTierSchema = z.object({
 });
 
 export const syndicateSchema = z.object({
-  slug,
   name: z.string().min(1),
   type: syndicateTypeSchema,
   faction: z.string().optional(),

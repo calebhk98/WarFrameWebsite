@@ -1,5 +1,5 @@
 import { z } from 'astro:content';
-import { isoDateLike, slug, sourceSchema } from './shared';
+import { isoDateLike, sourceSchema } from './shared';
 
 export const farmingMissionRefSchema = z.object({
   node: z.string().min(1),
@@ -7,7 +7,6 @@ export const farmingMissionRefSchema = z.object({
 });
 
 export const farmingGuideSchema = z.object({
-  slug,
   name: z.string().min(1),
   kind: z.literal('farming'),
   target: z.string().min(1),
@@ -20,7 +19,6 @@ export const farmingGuideSchema = z.object({
 });
 
 export const strategyGuideSchema = z.object({
-  slug,
   name: z.string().min(1),
   kind: z.literal('strategy'),
   topic: z.string().min(1),
@@ -39,7 +37,6 @@ export const pathMilestoneSchema = z.object({
 });
 
 export const pathGuideSchema = z.object({
-  slug,
   name: z.string().min(1),
   kind: z.literal('path'),
   audience: z.enum(['new-player', 'intermediate', 'endgame']),

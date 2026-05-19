@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+import AbilityCard from '../../components/AbilityCard.astro';
+import Callout from '../../components/Callout.astro';
+
+export async function getStaticPaths() {
+  const factions = await getCollection('factions');
+  return factions.map((f) => ({ params: { slug: f.slug }, props: { entry: f } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+const components = { AbilityCard, Callout };
+
+const tags = [
+  ...(data.locations.length > 0 ? [data.locations[0]!] : []),
+  ...(data.units.length > 0 ? [`${data.units.length} unit types`] : []),
+];
+---
+
+<Entity
+  title={data.name}
+  kind="faction"
+  tags={tags}
+  sources={data.sources}
+>
+  <Content components={components} />
+</Entity>

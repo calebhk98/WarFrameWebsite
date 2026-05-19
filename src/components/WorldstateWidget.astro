@@ -1,0 +1,77 @@
+---
+// WorldstateWidget — build-time worldstate snapshot (no client JS)
+// Falls back gracefully if network is unavailable in sandbox.
+import type { Sortie, Fissure, Invasion } from '../lib/worldstate';
+import { getSorties, getFissures, getInvasions } from '../lib/worldstate';
+
+interface WorldstateData {
+  sorties: Sortie[];
+  fissures: Fissure[];
+  invasions: Invasion[];
+}
+
+let data: WorldstateData | null = null;
+let fetchError = false;
+
+try {
+  const [sorties, fissures, invasions] = await Promise.all([
+    getSorties(),
+    getFissures(),
+    getInvasions(),
+  ]);
+  data = { sorties, fissures, invasions };
+} catch {
+  console.error('[WorldstateWidget] Could not fetch worldstate at build time; rendering placeholder.');
+  fetchError = true;
+}
+
+const activeFissures = data?.fissures.filter((f) => !f.expired) ?? [];
+const activeInvasions = data?.invasions.filter((i) => !i.completed) ?? [];
+const currentSortie = data?.sorties[0] ?? null;
+---
+
+<section
+  class="rounded-lg border border-surface-3 bg-surface-2 p-6"
+  aria-label="Current worldstate"
+>
+  <h2 class="text-lg font-semibold text-brand-orange mb-4 uppercase tracking-wide">
+    Live worldstate
+  </h2>
+
+  {fetchError && (
+    <p class="text-brand-cream/60 text-sm italic">
+      Live worldstate available in production. (Network unavailable at build time.)
+    </p>
+  )}
+
+  {data && (
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="rounded bg-surface-3 p-4">
+        <p class="text-xs uppercase tracking-widest text-brand-cream/50 mb-1">Sortie</p>
+        {currentSortie ? (
+          <div>
+            <p class="font-semibold text-brand-cream text-sm">{currentSortie.boss}</p>
+            <p class="text-brand-cream/60 text-xs">{currentSortie.faction}</p>
+            <p class="text-brand-orange text-xs mt-1">
+              {currentSortie.variants.length} stage{currentSortie.variants.length !== 1 ? 's' : ''}
+            </p>
+          </div>
+        ) : (
+          <p class="text-brand-cream/40 text-sm">No active sortie</p>
+        )}
+      </div>
+
+      <div class="rounded bg-surface-3 p-4">
+        <p class="text-xs uppercase tracking-widest text-brand-cream/50 mb-1">Active fissures</p>
+        <p class="text-3xl font-bold text-brand-cream">{activeFissures.length}</p>
+        <p class="text-brand-cream/60 text-xs mt-1">void rifts open</p>
+      </div>
+
+      <div class="rounded bg-surface-3 p-4">
+        <p class="text-xs uppercase tracking-widest text-brand-cream/50 mb-1">Active invasions</p>
+        <p class="text-3xl font-bold text-brand-cream">{activeInvasions.length}</p>
+        <p class="text-brand-cream/60 text-xs mt-1">ongoing conflicts</p>
+      </div>
+    </div>
+  )}
+</section>
