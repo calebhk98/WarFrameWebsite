@@ -13,7 +13,7 @@ warframes: 0
 weapons: 0
 mods: 0
 quests: 42
-factions: 0
+factions: 2
 syndicates: 0
 relics: 0
 arcanes: 0
@@ -116,6 +116,8 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - vox-solaris :: src/content/quests/vox-solaris.mdx
 
 ## done.factions
+- acolytes :: src/content/factions/acolytes.mdx
+- murmur :: src/content/factions/murmur.mdx
 
 ## done.syndicates
 
