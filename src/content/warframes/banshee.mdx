@@ -1,0 +1,150 @@
+---
+slug: banshee
+name: Banshee
+aliases: ["Banshee Prime"]
+masteryRank: 0
+health: 270
+shield: 270
+armor: 105
+energy: 175
+sprintSpeed: 1.1
+passive:
+  name: Silence
+  description: Weapon noises are hushed so that enemies cannot hear them, allowing for stealthier combat and reducing enemy awareness.
+abilities:
+  - name: Sonic Boom
+    key: "1"
+    energyCost: 25
+    description: >-
+      Banshee emits a sonic shockwave that pushes targets in range with enough force to incapacitate or kill attackers. Enemies are knocked back and may be stripped of armor when Sonic Boom connects with non-CC-immune targets.
+    stats: { range: 25 }
+  - name: Sonar
+    key: "2"
+    energyCost: 50
+    description: >-
+      Using acoustic location, Banshee detects enemies and exposes critical weak spots to her squad. Marked enemies take increased damage when hit in the outlined weak points, and enemies nearby the mark also take splash damage when a weak spot is hit.
+    stats: { range: 40, duration: 15 }
+  - name: Silence
+    key: "3"
+    energyCost: 75
+    description: >-
+      Banshee surrounds herself in an aura that stuns nearby enemies and dampens their tactical response. Affected enemies have reduced accuracy and cannot use many of their special abilities while under the effect.
+    stats: { range: 12, duration: 8 }
+  - name: Sound Quake
+    key: "4"
+    energyCost: 100
+    description: >-
+      Channeling her acoustic power into the ground, Banshee unleashes ultrasonic reverberations that violently shake the earth. All enemies in range are knocked down repeatedly during the channel, taking continuous damage.
+    stats: { range: 30, damage: 200 }
+acquisition:
+  source: Boss assassination
+  blueprintLocations:
+    - "Defeating Sergeant on Phobos — Iliad (Grineer assassinate mission)"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2018-08-28"
+  vaultedAt: "2022-02-15"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats cross-checked against WFCD 1.756.0. Energy field sourced from WFCD power field."
+  - url: "https://warframe.fandom.com/wiki/Banshee"
+    accessedAt: "2026-05-19"
+    title: "Banshee — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Banshee is a crowd-control and support-oriented Warframe built around sonic and acoustic mechanics. Her kit excels at identifying and exploiting enemy weak points through Sonar while simultaneously controlling the battlefield with powerful knockback and stun effects. Introduced in Update 7.0, she remains one of the earliest warframes in the game's roster and has maintained relevance through periodic balance adjustments. Banshee's passive Silence ability makes weapons quieter, reducing enemy alert levels during stealth gameplay. Her abilities scale with Power Strength, Range, and Duration depending on the build philosophy, making her adaptable to various mission types.
+
+## Abilities
+
+Banshee's sonic arsenal provides multiple approaches to crowd control and weakness exposure. Her four active abilities form a cohesive toolkit centered on sound-based attacks and detection. Each ability can be modified through augment mods and subsume mechanics for additional utility.
+
+<AbilityCard name="Sonic Boom" key="1" energyCost={25} description="Emits a sonic shockwave that knocks back enemies in range. Also strips armor from non-CC-immune enemies." />
+
+Sonic Boom is Banshee's primary crowd-control ability. The shockwave pushes all affected enemies backward and can interrupt their actions. One of the key mechanics added in later balance patches allows Sonic Boom to strip armor from enemies that are not already crowd-control immune, making it valuable for armor-heavy factions. The ability scales primarily with Range, allowing users to hit more targets across a wider area. Casting in tight corridors or closed spaces amplifies the knockback effect due to enemy clustering.
+
+<AbilityCard name="Sonar" key="2" energyCost={50} description="Detects enemies and marks weak points on them. Hits to marked weak spots deal increased damage and create splash damage for nearby enemies." />
+
+Sonar is Banshee's signature support ability and a powerful damage amplification tool. Upon cast, Banshee creates an acoustic pulse that reveals enemy positions and highlights weak spots on their bodies. Any damage dealt to these weak spots is amplified, and additionally deals area damage to enemies near the marked target. The weak spot mechanic is particularly effective against heavily armored enemies since the marked areas bypass some of their defensive scaling. Sonar's duration determines how long the marks remain active, while Range affects the initial pulse size and the splash radius of weak-spot hits. This ability transforms Banshee into a damage-amplification frame when paired with coordinated squad DPS.
+
+<AbilityCard name="Silence" key="3" energyCost={75} description="Creates a stun aura that surrounds Banshee, disabling nearby enemies and reducing their accuracy." />
+
+Silence generates a protective aura centered on Banshee that stuns all enemies within range when the ability is cast. Affected enemies have their accuracy severely reduced and cannot activate many of their special abilities, making them mostly harmless. The stun duration and range are both factors in determining Silence's effectiveness. This ability is particularly useful during defense missions or when you need breathing room to revive allies or establish a position. When built for high Duration and Range, Silence can be nearly permanent crowd control when cast frequently.
+
+<AbilityCard name="Sound Quake" key="4" energyCost={100} description="Channels ultrasonic reverberations into the ground, creating repeated shockwaves that knock down and damage all nearby enemies." />
+
+Sound Quake is Banshee's ultimate ability and a powerful channel-based crowd control tool. While channeling, Banshee sends ripples of acoustic energy outward in all directions, repeatedly knocking down every enemy in range and dealing continuous damage. The ability's damage and range both scale with Power Strength and Range respectively. Sound Quake benefits greatly from reduced channeling costs via mods like Streamline or Fleeting Expertise, allowing for longer sustain. The repeated knockdowns prevent most enemies from attacking while the channel is active, making it an excellent panic button or wave-clear tool in endless missions. However, channeling leaves Banshee vulnerable to hitscan damage from long-range enemies, so positioning is important.
+
+## Passive
+
+Banshee's passive makes all equipped weapons fire more quietly, reducing enemy alert levels when firing. This passive is valuable in stealth gameplay and helps maintain low-profile detection in certain mission types. Unlike many other warframes, Banshee's passive directly supports a sneaky playstyle, though her kit is more suited to aggressive crowd control in most scenarios.
+
+## Stats
+
+| Stat               | Value      |
+|--------------------|------------|
+| Health             | 270        |
+| Shield             | 270        |
+| Armor              | 105        |
+| Energy             | 175        |
+| Sprint Speed       | 1.1x       |
+| Aura Polarity      | Madurai    |
+
+Banshee has moderate health and shields, placing her in the middle of the warframe durability spectrum. Her 105 armor value provides some physical damage reduction but is not high enough to be relied upon as a primary defense mechanism. The 175 energy pool supports frequent ability casting with proper mod investment in Efficiency. Her 1.1x sprint speed multiplier is standard, and her Madurai aura polarity aligns well with common Madurai mods like Corrosive Projection and Power Strength mods.
+
+## Acquisition
+
+Banshee's blueprint and components drop from Sergeant, a Grineer assassinate target located on Phobos in the mission Iliad. This is one of the earliest boss fights in the Star Chart, making Banshee accessible to newer players. Sergeant has a fixed spawn location and follows a patrol path; players must find and defeat him on the tileset to trigger the boss fight.
+
+- **Blueprint**: Drops from Sergeant assassination (Iliad, Phobos)
+- **Neuroptics**: Drops from Sergeant assassination (Iliad, Phobos)
+- **Chassis**: Drops from Sergeant assassination (Iliad, Phobos)
+- **Systems**: Drops from Sergeant assassination (Iliad, Phobos)
+
+Each component has an equal drop chance, so farming for a complete set requires multiple runs. Once all four pieces are collected, construction takes 72 hours and costs 25,000 credits. She can be rushed with 50 Platinum if needed.
+
+## Playstyle
+
+Banshee excels in crowd control and damage amplification roles. Her playstyle varies significantly depending on modding choices and build philosophy. In aggressive builds prioritizing Range and Strength, she becomes a force multiplier for the entire squad, using Sonar to amplify damage and Sound Quake to keep the battlefield clear of enemies. In more defensive builds, Silence becomes her primary tool, providing consistent crowd control while Sonic Boom handles priority targets.
+
+Many Banshee players focus on supporting teammates through Sonar's weak-spot amplification, making her a team utility frame rather than a solo damage dealer. Her low armor means she should avoid taking direct fire; instead, she relies on keeping enemies disabled or knocked back. Banshee performs exceptionally well in endless missions where sustained crowd control prevents waves from overwhelming the team.
+
+The recent change making Sonic Boom strip armor from non-CC-immune enemies has increased her relevance against heavily armored factions like the Kuva Grineer, making her more self-sufficient in higher-level missions.
+
+## Recommended Builds
+
+Banshee has multiple viable build archetypes depending on mission type and squad composition.
+
+**Crowd Control Build**: Prioritize Range and Duration with Stretch, Augur Reach, and Primed Continuity. Sonic Boom and Sound Quake spam becomes the primary defense, keeping enemies perpetually knocked back or stunned. Efficiency mods like Streamline allow more frequent casting.
+
+**Weak Point Support Build**: Balance Strength and Range to maximize Sonar's weak-spot damage amplification. Use Power Strength mods like Umbral Intensify and Strength-scaling companions. This build synergizes well with high-damage teammates and eidolon hunts.
+
+**Hybrid Build**: Combine moderate investments in Strength, Range, Duration, and Efficiency to maintain flexibility. This allows Banshee to adapt to changing mission conditions without being locked into a single role.
+
+For harder content and Steel Path missions, adding survivability mods like Umbral Vitality or Umbral Fiber helps Banshee survive burst damage while still maintaining crowd control effectiveness.
+
+## Synergies
+
+Banshee pairs well with high-damage frames and weapons that can capitalize on Sonar's weak-point amplification. Coordination with Volt, Trinity, or other support frames amplifies the team's overall output. Her Sonic Boom armor stripping synergizes with frames that have armor-scaling abilities, such as Ash or Garuda. Weapon-focused teammates benefit greatly from Sonar's damage multiplier, making her valuable in premade squad compositions focused on raw damage output.
+
+Augment mods like Sonic Fracture (Augment) enhance Sonic Boom's armor-stripping capabilities, while Resonance (Sonar Augment) allows Sonar marks to chain between nearby enemies, expanding the utility further.
+
+## Lore
+
+Banshee was engineered by the Orokin as a sonic assassin and crowd-control specialist. Her design emphasizes acoustic manipulation and enemy detection, drawing from principles of advanced sound-wave technology. In the Warframe universe, Banshee represents one of the earliest frames created before the Fall of the Orokin, giving her a place of distinction in the lore despite her relatively simple power set compared to newer frames.
+
+Her kit reflects the Orokin's understanding of vulnerability and weak points—the core concept of Sonar marking critical areas for increased damage echoes Orokin precision engineering. Banshee Prime, her deluxe variant, was released in Update 24.0 and has since entered the Void Vault as of February 2022, making her unavailable for new players without relic farming of unvaulted relics during Prime Resurgence events.
+
+## Sources
+
+All numeric stats are sourced from WFCD warframe-items, the authoritative database for Warframe item statistics. Ability descriptions and mechanics are documented on the official Warframe Wiki. The weapon silence mechanic and recent balance changes are confirmed across both WFCD and patch notes from Digital Extremes.

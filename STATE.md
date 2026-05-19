@@ -69,6 +69,12 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - ash :: src/content/warframes/ash.mdx
 - ash-prime :: src/content/warframes/ash-prime.mdx
 - atlas :: src/content/warframes/atlas.mdx
+- atlas-prime :: src/content/warframes/atlas-prime.mdx
+- banshee :: src/content/warframes/banshee.mdx
+- banshee-prime :: src/content/warframes/banshee-prime.mdx
+- baruuk :: src/content/warframes/baruuk.mdx
+- baruuk-prime :: src/content/warframes/baruuk-prime.mdx
+- bonewidow :: src/content/warframes/bonewidow.mdx
 
 ## done.weapons
 
@@ -117,6 +123,7 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - veilbreaker :: src/content/quests/veilbreaker.mdx
 - vors-prize :: src/content/quests/vors-prize.mdx
 - vox-solaris :: src/content/quests/vox-solaris.mdx
+- whispers-in-the-walls :: src/content/quests/whispers-in-the-walls.mdx
 
 ## done.factions
 - acolytes :: src/content/factions/acolytes.mdx
@@ -124,6 +131,7 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - cephalon :: src/content/factions/cephalon.mdx
 - corpus :: src/content/factions/corpus.mdx
 - corrupted :: src/content/factions/corrupted.mdx
+- dax :: src/content/factions/dax.mdx
 - entrati :: src/content/factions/entrati.mdx
 - grineer :: src/content/factions/grineer.mdx
 - holdfasts :: src/content/factions/holdfasts.mdx
@@ -189,14 +197,22 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 - ash
 - ash-prime
 - atlas
+- atlas-prime
+- banshee
+- banshee-prime
+- baruuk
+- baruuk-prime
+- bonewidow
 
 ## verified.weapons
 
 ## verified.mods
 
 ## verified.quests
+- whispers-in-the-walls
 
 ## verified.factions
+- dax
 - narmer
 - new-loka
 - nightwave

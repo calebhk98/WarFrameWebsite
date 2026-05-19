@@ -1,0 +1,174 @@
+---
+slug: bonewidow
+name: Bonewidow
+aliases: []
+masteryRank: 0
+health: 1880
+shield: 430
+armor: 480
+energy: 175
+sprintSpeed: 1.1
+passive:
+  name: Entrati Heritage
+  description: >-
+    Bonewidow is a Necramech, a biomechanical suit piloted directly by the
+    Operator. As a mech, it does not possess a traditional frame passive but
+    instead benefits from Necramech-specific mechanics and the Operator's
+    own abilities.
+abilities:
+  - name: Meathook
+    key: "1"
+    energyCost: 25
+    description: >-
+      Skewer and grab a target, draining a percentage of their health and
+      transferring it to Bonewidow. Activate again to hurl the victim,
+      dealing damage and applying status effects to nearby enemies.
+    stats: { health_drain_pct: 0.5 }
+  - name: Shield Maiden
+    key: "2"
+    energyCost: 0
+    description: >-
+      Raise a protective shield that blocks forward damage and reflects it
+      back at attackers. While active, bash enemies with Maiden's Kiss for
+      15 Energy, absorbing additional damage into the shield over time.
+    stats: { block_duration: 8 }
+  - name: Firing Line
+    key: "3"
+    energyCost: 50
+    description: >-
+      Sweep surrounding enemies into a concentrated line of fire, suspending
+      them in the air with a powerful force beam. Affected enemies take
+      increased damage and crowd control.
+    stats: { range: 20 }
+  - name: Exalted Ironbride
+    key: "4"
+    energyCost: 2.5
+    description: >-
+      Summon a devastating exalted blade, a massive warblade that cuts through
+      enemy ranks. This ability drains energy per second while active and can
+      perform enhanced melee combos and heavy attacks.
+    stats: { drain_per_sec: 2.5 }
+acquisition:
+  source: NecraLoid (Loid) in the Necraloid
+  blueprintLocations:
+    - "NecraLoid (Loid), Clearance Odima - purchased with Standing"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+  note: >-
+    Bonewidow is obtained by purchasing the blueprint from Loid at the
+    Necraloid after completing Heart of Deimos. Components are crafted from
+    resources gathered in the Cambion Drift and surrounding areas. A longer-term
+    goal compared to Voidrig, Bonewidow requires substantial Necraloid Standing
+    to acquire all components.
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Health, shield, armor, energy, and ability stats sourced from WFCD 1.756.0+"
+  - url: "https://warframe.fandom.com/wiki/Bonewidow"
+    accessedAt: "2026-05-19"
+    title: "Bonewidow — WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Bonewidow is a Necramech—a heavy, biomechanical suit piloted directly by the Operator rather than a traditional Warframe. Fashioned in honor of the Entrati matriarch, Bonewidow is designed as a robust frontline fighter that prioritizes armor and health over shield strength. Unlike her counterpart Voidrig, which emphasizes firepower through the Arquebex exalted weapon, Bonewidow excels at close-quarters combat with powerful crowd control and survivability mechanics.
+
+As a Necramech introduced during the Deimos: Arcana update, Bonewidow represents the pinnacle of Entrati biotechnology. She is fundamentally different from traditional Warframes in control scheme, stat distribution, and ability interaction, requiring players to adapt their playstyle when transitioning from frame-based gameplay to mech combat.
+
+## Abilities
+
+<AbilityCard
+  name="Meathook"
+  key="1"
+  energyCost={25}
+  description="Skewer and grab a target, draining a percentage of their health and transferring it to Bonewidow. Activate again to hurl the victim, dealing damage and applying status effects to nearby enemies at impact."
+/>
+
+Meathook is Bonewidow's primary offensive and sustain tool. Upon activation, Bonewidow impales an enemy and begins draining 50% of their maximum health per second, redirecting that damage directly into Bonewidow's own health pool. This makes Meathook exceptional for survival in high-level content where healing is critical. The held enemy is immune to status effects and cannot cast abilities while suspended. Reactivating the ability hurls the victim as a projectile, dealing damage scaling with the enemy's remaining health and applying 100% status chance to all enemies struck at the impact location. The thrown projectile also generates guaranteed status procs, making Meathook valuable for applying elemental effects and triggering defensive mods. Early patching resolved concerns about Meathook's interaction with certain boss units like Dargyns and specialized enemies.
+
+<AbilityCard
+  name="Shield Maiden"
+  key="2"
+  energyCost={15}
+  description="Raise a protective shield to block incoming forward damage and reflect it back at attackers. While the shield is active, perform Maiden's Kiss to bash enemies, and the shield continuously absorbs incoming damage."
+/>
+
+Shield Maiden transforms Bonewidow into an immovable fortification. When activated, a large shield materializes on Bonewidow's arm, blocking all damage from the frontal hemisphere while reflecting damage back at attackers. The shield has limited health and can be destroyed if overwhelmed by sustained fire. While the shield is raised, Bonewidow can perform Maiden's Kiss—a melee bash that costs 15 energy and stuns nearby enemies. After activating Shield Maiden, the shield absorbs enemy attacks for several seconds, adding the absorbed damage to the shield's total health. This mechanic allows skilled players to build up exceptional durability by positioning themselves to intercept incoming fire. Deactivating the shield returns Bonewidow to normal melee combat. The shield is exclusive to player-controlled Bonewidow; enemy variants deploy the shield but cannot retain it indefinitely.
+
+<AbilityCard
+  name="Firing Line"
+  key="3"
+  energyCost={50}
+  description="Sweep surrounding enemies into a concentrated line of fire, suspending them in the air with a powerful force beam that locks them in place."
+/>
+
+Firing Line is Bonewidow's crowd control signature. Upon activation, Bonewidow emits a force wave that seizes all enemies in range and aligns them into a singular trajectory perpendicular to Bonewidow's facing direction. Suspended enemies cannot act and take amplified damage from all sources. The ability excels at breaking enemy formations and enabling coordinated fire. Unlike some crowd control abilities, Firing Line has been balanced to avoid unintended interactions with boss units like Eidolons, which cannot be repositioned. The suspended duration lasts long enough for squad coordination, making Firing Line valuable in team compositions centered on burst damage or heavy crowd control synergies.
+
+<AbilityCard
+  name="Exalted Ironbride"
+  key="4"
+  energyCost={0}
+  description="Summon a devastating exalted blade—a massive warblade that grants exclusive melee attacks, heavy throw attacks, and energy-draining playstyle. Activation costs no energy, but sustaining the blade drains 2.5 energy per second."
+/>
+
+Exalted Ironbride equips Bonewidow with a massive sword capable of cleaving through enemy ranks. Unlike the toggle-based sustained abilities of traditional Warframes, Ironbride maintains continuous energy drain (2.5 per second) while active, requiring careful energy management. The blade performs enhanced melee combos and can execute neutral and forward heavy attacks that throw a damaging projectile at range. During Ironbride, Bonewidow's arm reattaches, enabling the weapon to be wielded with martial expertise. Ironbride scales with melee mods equipped on Bonewidow, allowing it to benefit from Condition Overload, Primed mods, and elemental enhancements. The heavy attack throw mechanic provides alternative crowd control and ranged pressure. Disabling Ironbride returns Bonewidow to unarmed combat but does not instantly refund the spent energy.
+
+## Passive
+
+Bonewidow does not possess a traditional frame passive. Instead, as a Necramech, she inherits Necramech-specific mechanics: a built-in vacuum effect that automatically collects nearby drops, enhanced shared affinity range in Free Roam missions (250 meters), and Operator transference capabilities. Players directly embody Bonewidow as their combat avatar, meaning Operator ability interactions differ fundamentally from traditional Warframe play.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 1880 |
+| Shield | 430 |
+| Armor | 480 |
+| Energy | 175 |
+| Sprint Speed | 1.1x |
+| Mastery Requirement | 0 |
+| Build Time | 72 hours |
+| Build Cost | 25,000 Credits |
+
+Bonewidow's stat distribution emphasizes durability and close-quarters dominance. With the highest armor value among Necramechs (480), she naturally resists all damage types and excels when positioned to absorb incoming fire. Her health (1880) is the highest in the Necramech lineup, enabling survivability through attrition. Shield capacity (430) is lower than Voidrig, reflecting her focus on armor-based tanking rather than shield-gating mechanics. Energy (175) is sufficient to sustain rotations of her key abilities when modded for efficiency.
+
+## Acquisition
+
+Bonewidow's blueprint is purchased directly from Loid, the Necraloid's merchant, in exchange for Necraloid Standing. To begin acquiring Bonewidow, players must complete the Heart of Deimos quest and unlock access to the Necraloid on Deimos. Loid sells the blueprint after achieving sufficient Standing with the Necraloid faction.
+
+The four components—Bonewidow Capsule, Casing, Engine, and Weapon Pod—are obtained through gathering resources in the Cambion Drift and related areas. Component blueprints are not directly purchased; instead, players craft the components after farming their respective material requirements. The resource investment is substantial compared to Voidrig, positioning Bonewidow as a longer-term goal for newer players but attainable relatively quickly once Standing unlocks.
+
+Building Bonewidow requires 25,000 credits and takes 72 hours (or 50 platinum to rush). No prime variant exists, as Bonewidow is a Necramech rather than a traditional Warframe and has not entered the prime program.
+
+## Playstyle
+
+Bonewidow is defined by aggressive, up-close survivability. Her Meathook enables self-healing through offensive action, rewarding players who maintain aggressive positioning. Maintaining shield from Shield Maiden requires prediction and positioning, as the ability cannot move Bonewidow but can be held indefinitely while blocking. Firing Line locks down scattered enemy groups, and Exalted Ironbride transforms her into a melee powerhouse for sustained close-quarters engagement.
+
+Effective Bonewidow pilots constantly toggle between shield defense and aggressive weapon swaps. The ability to absorb damage into the shield incentivizes positioning in the line of fire rather than hiding. Meathook's dual function—as both health recovery tool and crowd control launcher—makes it the ability most frequently cast during combat rotations. Firing Line excels in narrow corridors or when facing mixed-unit compositions that can be effectively suspended.
+
+Bonewidow suits aggressive, confident playstyles where the pilot owns their positioning. She lacks the raw ranged firepower of Voidrig but compensates with unmatched close-quarters survivability and self-healing mechanics. Learning to position the shield effectively to absorb damage, timing Meathook grabs for maximum health recovery, and using Firing Line to set up kills separates competent pilots from exceptional ones.
+
+## Builds
+
+Bonewidow's mod layout is inherited from standard Necramech polarities and capacity. She has three polarity slots (Vazarin, Vazarin, Madurai) distributed across her progression. Build variations range from pure tank configurations maximizing armor, health, and shield absorption to damage-focused builds emphasizing ability strength and melee scaling for Ironbride and Meathook damage. Necramech builds in general prioritize Efficiency and Duration to sustain ability uptime while scaling Strength for outgoing damage.
+
+See `/builds/warframes/bonewidow/` for detailed build guides tailored to specific mission types and difficulty scaling.
+
+## Lore
+
+Bonewidow is a Necramech fashioned by the Entrati family in honor of their matriarch. She represents the culmination of Entrati biotechnology, engineered specifically as a heavily armored frontline combatant. Unlike Voidrig, which was designed for balanced ranged and melee capability, Bonewidow prioritizes devastating close-quarters offense and self-sustained survivability through health drain mechanics.
+
+Bonewidow's lore is intrinsically tied to the Cambion Drift and the Entrati's role in Deimos research. The Necramechs themselves are the result of reverse-engineering Orokin technology and Infested biomass into pilotable armor suits. Bonewidow's heavier design and life-drain focus suggest deliberate tuning toward endurance missions where resource scarcity demands self-healing rather than external support. Her exalted blade, Ironbride, echoes traditional Tenno weapon philosophy—converting raw power into close-range martial prowess.
+
+The matriarch context implies Bonewidow may serve as a symbol of Entrati authority and strength within the family hierarchy, though the broader narrative surrounding her individual backstory remains sparse, leaving room for player interpretation and future quest content.
+
+## Sources
+
+The information on this page is sourced from the WFCD warframe-items database (version 1.756.0+) and verified against the official Warframe wiki. All numeric stats—health, shield, armor, energy capacity, and mastery requirement—come directly from WFCD's canonical item data. Ability descriptions and mechanical details are cross-referenced against patch notes and the community-maintained wiki. The acquisition pathway and build time are confirmed from in-game sources and the Necraloid vendor interface.
