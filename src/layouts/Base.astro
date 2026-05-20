@@ -6,10 +6,24 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description?: string;
+  ogType?: string;
+  ogImage?: string;
 }
 
-const { title, description = 'Warframe Codex -- comprehensive fan reference' } = Astro.props;
+const {
+  title,
+  description = 'Warframe Codex -- comprehensive fan reference',
+  ogType = 'website',
+  ogImage,
+} = Astro.props;
+
 const base = import.meta.env.BASE_URL;
+const siteOrigin = import.meta.env.SITE ?? 'https://calebhk98.github.io';
+const canonicalUrl = new URL(Astro.url.pathname, siteOrigin).href;
+const defaultOgImage = `${siteOrigin}${base}og-default.svg`;
+const resolvedOgImage = ogImage ?? defaultOgImage;
+const siteName = 'Warframe Codex';
+const fullTitle = `${title} -- ${siteName}`;
 ---
 
 <!doctype html>
@@ -18,8 +32,25 @@ const base = import.meta.env.BASE_URL;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <title>{title} -- Warframe Codex</title>
+    <meta name="theme-color" content="#0d0d12" />
+    <title>{fullTitle}</title>
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="application/rss+xml" title={`${siteName} - Updates`} href={`${siteOrigin}${base}rss.xml`} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:image" content={resolvedOgImage} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={resolvedOgImage} />
   </head>
   <body class="min-h-screen flex flex-col bg-brand-black text-brand-cream">
     <Header />

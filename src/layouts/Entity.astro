@@ -13,16 +13,24 @@ interface Props {
   description?: string;
   tags?: string[];
   sources?: Source[];
+  ogImage?: string;
 }
 
-const { title, kind, description, tags = [], sources = [] } = Astro.props;
+const { title, kind, description, tags = [], sources = [], ogImage } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
 const collectionPath = `${base}${kind}s`;
 const collectionLabel = kind.charAt(0).toUpperCase() + kind.slice(1) + 's';
+const entityDescription = description ?? `${title} -- Warframe Codex`;
+const ogImageProp = ogImage !== undefined ? { ogImage } : {};
 ---
 
-<Base title={title} description={description ?? `${title} -- Warframe Codex`}>
+<Base
+  title={title}
+  description={entityDescription}
+  ogType="article"
+  {...ogImageProp}
+>
   <div class="max-w-5xl mx-auto px-4 py-8">
     <nav aria-label="Breadcrumb" class="mb-6 text-sm text-brand-cream/50">
       <a href={base} class="hover:text-brand-orange transition-colors">Home</a>
