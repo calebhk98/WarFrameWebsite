@@ -1,5 +1,5 @@
 ---
-// Entity layout — detail pages for warframes, factions, quests, syndicates
+// Entity layout -- detail pages for warframes, factions, quests, syndicates
 import Base from './Base.astro';
 
 interface Source {
@@ -22,7 +22,7 @@ const collectionPath = `${base}${kind}s`;
 const collectionLabel = kind.charAt(0).toUpperCase() + kind.slice(1) + 's';
 ---
 
-<Base title={title} description={description ?? `${title} — Warframe Codex`}>
+<Base title={title} description={description ?? `${title} -- Warframe Codex`}>
   <div class="max-w-5xl mx-auto px-4 py-8">
     <nav aria-label="Breadcrumb" class="mb-6 text-sm text-brand-cream/50">
       <a href={base} class="hover:text-brand-orange transition-colors">Home</a>

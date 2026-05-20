@@ -16,7 +16,7 @@ const startingFrames: StartingFrame[] = [
   {
     slug: 'excalibur',
     name: 'Excalibur',
-    role: 'Swordsman — balanced melee',
+    role: 'Swordsman -- balanced melee',
     summary: 'The most straightforward starter. Exalted Blade turns your melee into a beam-emitting energy sword, trivialising early missions. Radial Blind gives crowd control without complicated mechanics.',
     strength: 'Best for players who enjoy melee combat and a straightforward power fantasy.',
     fandomUrl: 'https://warframe.fandom.com/wiki/Excalibur',
@@ -24,7 +24,7 @@ const startingFrames: StartingFrame[] = [
   {
     slug: 'mag',
     name: 'Mag',
-    role: 'Magnetism — Corpus counter',
+    role: 'Magnetism -- Corpus counter',
     summary: 'Mag excels against the Corpus faction with Magnetize, which creates a bubble that multiplies magnetic damage on enemies inside. Pull and Polarize strip shields in a wide radius.',
     strength: 'Best for players willing to learn faction weaknesses and deal burst-heavy damage.',
     fandomUrl: 'https://warframe.fandom.com/wiki/Mag',
@@ -32,7 +32,7 @@ const startingFrames: StartingFrame[] = [
   {
     slug: 'volt',
     name: 'Volt',
-    role: 'Electricity — speed and versatility',
+    role: 'Electricity -- speed and versatility',
     summary: 'Speed is one of the most useful buffs in the game, permanently increasing movement and attack rate. Electric Shield supercharges firearms to devastating effect and helps the whole squad.',
     strength: 'Best for players who like fast-paced gameplay and buffing team damage.',
     fandomUrl: 'https://warframe.fandom.com/wiki/Volt',
@@ -48,64 +48,64 @@ interface MilestoneGroup {
 
 const milestones: MilestoneGroup[] = [
   {
-    range: 'MR 0–2',
+    range: 'MR 0-2',
     title: 'Get your footing',
     goals: [
       'Complete the Vor\'s Prize tutorial quest to unlock the Star Chart.',
       'Reach Earth > Mercury > Venus in order.',
-      'Collect Mods from missions — even unranked, they define your power.',
+      'Collect Mods from missions -- even unranked, they define your power.',
       'Identify your starter Warframe\'s main ability and use it constantly.',
     ],
-    tip: 'Do not sell Mods. Duplicates are used to rank up — you need three of the same Mod to max rank a basic card.',
+    tip: 'Do not sell Mods. Duplicates are used to rank up -- you need three of the same Mod to max rank a basic card.',
   },
   {
-    range: 'MR 3–5',
+    range: 'MR 3-5',
     title: 'Unlock the inner planets',
     goals: [
       'Unlock Mars, Jupiter, Saturn via Junctions.',
       'Complete "Howl of the Kubrow" to unlock your first companion.',
-      'Farm a second Warframe — Rhino from Jackal on Fossa, Venus is a popular early choice.',
+      'Farm a second Warframe -- Rhino from Jackal on Fossa, Venus is a popular early choice.',
       'Begin collecting Primed Mods from Baro Ki\'Teer trade events.',
     ],
     tip: 'Rhino\'s Iron Skin ability makes him almost invincible in early-game content. He is one of the best beginner frames to farm early.',
   },
   {
-    range: 'MR 6–8',
+    range: 'MR 6-8',
     title: 'Chase the Void',
     goals: [
-      'Unlock Void Relic cracking — this is the primary way to obtain Prime Warframes and weapons.',
-      'Complete "The Second Dream" quest — a major story milestone that unlocks Operator mode.',
+      'Unlock Void Relic cracking -- this is the primary way to obtain Prime Warframes and weapons.',
+      'Complete "The Second Dream" quest -- a major story milestone that unlocks Operator mode.',
       'Install Orokin Reactors (Potato) on your two main Warframes to double their mod capacity.',
       'Unlock the Helminth Chrysalis at MR 8 to access ability subsumes.',
     ],
     tip: 'The Second Dream contains major story spoilers that recontextualise the entire game. Many players recommend avoiding spoilers until you play it.',
   },
   {
-    range: 'MR 9–12',
+    range: 'MR 9-12',
     title: 'Open-world hubs',
     goals: [
-      'Travel to Cetus on Earth to unlock Plains of Eidolon — your first open world.',
+      'Travel to Cetus on Earth to unlock Plains of Eidolon -- your first open world.',
       'Rank up Ostron standing to access Zaw weapon crafting.',
       'Unlock Fortuna on Venus for the Solaris United syndicate and Kitgun modular weapons.',
-      'Complete "The War Within" quest — unlocks Transference combat and Operator upgrades.',
+      'Complete "The War Within" quest -- unlocks Transference combat and Operator upgrades.',
     ],
     tip: 'Open-world hubs have daily standing caps. Log in daily and run bounties to steadily rank up syndicates.',
   },
   {
-    range: 'MR 13–16',
+    range: 'MR 13-16',
     title: 'Endgame approach',
     goals: [
       'Unlock the Steel Path mode (all nodes completed) for a mastery challenge and permanent buff.',
       'Chase a meta-tier Warframe: Saryn Prime, Octavia Prime, or Mesa Prime are top choices.',
-      'Forma your main Warframe 3–5 times to fit a full endgame mod loadout.',
-      'Build an Arcane collection — Arcane Energize and Arcane Guardian dramatically increase survivability.',
+      'Forma your main Warframe 3-5 times to fit a full endgame mod loadout.',
+      'Build an Arcane collection -- Arcane Energize and Arcane Guardian dramatically increase survivability.',
     ],
     tip: 'Steel Path nodes reward exclusive cosmetics and Kuva. They are not required to progress the story but are the main challenge for veterans.',
   },
 ];
 ---
 
-<Base title="Beginner Hub" description="Starting guide for new Warframe players — choose your first frame, master the early game, and progress efficiently">
+<Base title="Beginner Hub" description="Starting guide for new Warframe players -- choose your first frame, master the early game, and progress efficiently">
   <div class="max-w-4xl mx-auto px-4 py-10">
     <header class="mb-10">
       <h1 class="text-3xl sm:text-4xl font-bold text-brand-cream mb-3">Beginner Hub</h1>
@@ -118,7 +118,7 @@ const milestones: MilestoneGroup[] = [
       <h2 id="starters-heading" class="text-2xl font-bold text-brand-cream mb-2">Choose your starter Warframe</h2>
       <p class="text-brand-cream/60 mb-6 text-sm">
         At account creation you choose one of three starter frames. All can eventually be obtained in-game for free; this is purely which you start with.
-        Source: <a href="https://warframe.fandom.com/wiki/Starter_Warframes" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:underline">Warframe wiki — Starter Warframes</a>.
+        Source: <a href="https://warframe.fandom.com/wiki/Starter_Warframes" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:underline">Warframe wiki -- Starter Warframes</a>.
       </p>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {startingFrames.map((frame) => (

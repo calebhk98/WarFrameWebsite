@@ -22,7 +22,7 @@ const tags: string[] = [
   ...(data.prime?.vaulted ? ['Vaulted'] : []),
 ];
 
-const description = `${data.name} — Base Damage: ${totalBaseDmg.toFixed(1)}, Crit Chance: ${(data.criticalChance * 100).toFixed(0)}%, Crit Mult: ${data.criticalMultiplier}x, Status: ${(data.statusChance * 100).toFixed(0)}%`;
+const description = `${data.name} -- Base Damage: ${totalBaseDmg.toFixed(1)}, Crit Chance: ${(data.criticalChance * 100).toFixed(0)}%, Crit Mult: ${data.criticalMultiplier}x, Status: ${(data.statusChance * 100).toFixed(0)}%`;
 ---
 
 <Entity
