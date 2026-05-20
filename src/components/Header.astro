@@ -9,7 +9,6 @@ const primaryLinks = [
   { href: `${base}companions`, label: 'Companions' },
   { href: `${base}archwings`, label: 'Archwings' },
   { href: `${base}liches`, label: 'Liches' },
-  { href: `${base}open-worlds`, label: 'Open Worlds' },
   { href: `${base}quests`, label: 'Quests' },
   { href: `${base}factions`, label: 'Factions' },
   { href: `${base}builds`, label: 'Builds' },
@@ -103,28 +102,28 @@ const primaryLinks = [
 
 <link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
 <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    const win = window as Window & { PagefindUI?: new (opts: Record<string, unknown>) => void };
-    if (typeof win.PagefindUI !== 'undefined') {
-      new win.PagefindUI({ element: '#pagefind-search', showImages: false });
-      const mobileEl = document.getElementById('pagefind-search-mobile');
-      if (mobileEl) {
-        new win.PagefindUI({ element: '#pagefind-search-mobile', showImages: false });
-      }
-    }
-
-    const toggle = document.getElementById('mobile-menu-toggle');
-    const menu = document.getElementById('mobile-menu');
-    if (toggle && menu) {
-      toggle.addEventListener('click', () => {
-        const isOpen = menu.classList.toggle('hidden') === false;
-        toggle.setAttribute('aria-expanded', String(isOpen));
-      });
-    }
-  });
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('hidden') === false;
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
 </script>
 <script define:vars={{ base }} is:inline>
+  function initPagefind() {
+    const win = window;
+    if (typeof win.PagefindUI === 'undefined') return;
+    new win.PagefindUI({ element: '#pagefind-search', showImages: false });
+    const mobileEl = document.getElementById('pagefind-search-mobile');
+    if (mobileEl) {
+      new win.PagefindUI({ element: '#pagefind-search-mobile', showImages: false });
+    }
+  }
+
   const s = document.createElement('script');
   s.src = base + 'pagefind/pagefind-ui.js';
+  s.addEventListener('load', initPagefind);
   document.head.appendChild(s);
 </script>
