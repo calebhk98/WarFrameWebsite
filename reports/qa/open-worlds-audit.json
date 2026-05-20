@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-05-20T13:30:00Z",
+  "files_audited": 5,
+  "files_with_errors": 5,
+  "files_fixed_in_place": 5,
+  "common_issues": [
+    "Wrong Orb Vallis cycle split: prose said '~13 min warm / ~13 min cold' (equal split); corrected to ~16:40 warm / ~6:40 cold, total 26min20s",
+    "Wrong Cambion Drift cycle: frontmatter and prose both said '~6min30s per phase' (13 min total); corrected to 100 min total (same as Plains)",
+    "Invalid quest slugs: 'warframe-1999' does not exist in quests/ (Hollvania); 'profit-taker' and 'exploiter-orb' are not quest slugs (Orb Vallis)",
+    "Ropalolyst incorrectly listed as an Orb Vallis boss -- Ropalolyst is on Jupiter, not Venus",
+    "Tusk Thumper variants incorrectly included 'Bolkor-class' -- Bolkors are aerial gunships, not Thumper variants; correct variants are Tusk Thumper / Tusk Thumper Doma / Tusk Thumper Bull",
+    "Zariman 'circuit-override' listed as a feature and 'Circuit Override' described as a mission type -- not a canonical Zariman mission (The Circuit is Duviri content)",
+    "Zariman faction_primary 'Grineer (Angel-touched)' was misleadingly narrow -- both Void-corrupted Grineer and Corpus populate the ship",
+    "Zariman Angels named 'Angel of Ambulas / Justice / Wrath' -- patrol Angels have no canonical individual names; only quest Angel (Kira) is named",
+    "Laetum incorrectly attributed to 'Entrati Labs bounty line' in Zariman -- both Laetum and Phenmor come from Holdfasts syndicate on the Zariman",
+    "the-deadlock-protocol incorrectly listed as Cambion Drift access quest -- it gates Protea, not Cambion Drift"
+  ],
+  "per_file": {
+    "plains-of-eidolon.mdx": {
+      "errors_found": 1,
+      "fixed": true,
+      "checks": {
+        "hub_city": "PASS -- Cetus correct",
+        "syndicates": "PASS -- Ostrons + Quills correct",
+        "cycle": "PASS -- 100min day/night, ~50/50 split correct",
+        "bounty_npc": "PASS -- Konzu correct",
+        "boss_content": "PASS -- Teralyst, Gantulyst, Hydrolyst named correctly",
+        "quests_associated": "PASS -- sayas-vigil slug exists",
+        "sources": "PASS -- 2 sources, warframestat.us as primary",
+        "word_count": "PASS -- ~1200 body words",
+        "ascii_only": "PASS"
+      },
+      "notes": "Fixed Tusk Thumper variant names: 'Bolkor-class' replaced with 'Tusk Thumper Bull'; clarified Bolkors are gunships not Thumper variants. Correct variants: Tusk Thumper, Tusk Thumper Doma, Tusk Thumper Bull."
+    },
+    "orb-vallis.mdx": {
+      "errors_found": 4,
+      "fixed": true,
+      "checks": {
+        "hub_city": "PASS -- Fortuna correct",
+        "syndicates": "PASS -- Solaris United + Vox Solaris correct",
+        "cycle": "FIXED -- frontmatter '26min' -> '26min20s'; prose corrected from equal 13/13 split to 16:40 warm / 6:40 cold",
+        "bounty_npc": "PASS -- Eudico correct",
+        "boss_content": "FIXED -- Ropalolyst (Jupiter boss) removed from Orb Mother list; Profit-Taker + Exploiter Orb retained",
+        "quests_associated": "FIXED -- removed 'profit-taker' and 'exploiter-orb' (not quest slugs); replaced with 'vox-solaris'",
+        "sources": "PASS -- 2 sources, warframestat.us as primary",
+        "word_count": "PASS -- ~1140 body words",
+        "ascii_only": "PASS"
+      },
+      "notes": "Four errors fixed: (1) cycle frontmatter corrected to 26min20s; (2) prose cycle split corrected from 13/13 to 16:40/6:40; (3) Ropalolyst removed (it is on Jupiter via Chimera Prologue, not on Venus); (4) quests_associated corrected to valid 'vox-solaris' slug."
+    },
+    "cambion-drift.mdx": {
+      "errors_found": 3,
+      "fixed": true,
+      "checks": {
+        "hub_city": "PASS -- Necralisk correct",
+        "syndicates": "PASS -- Entrati + Necraloid correct",
+        "cycle": "FIXED -- was 'vome-fass 6min30s'; corrected to 'vome-fass 100min'; prose updated from 6.5 min to 100 min total",
+        "bounty_npc": "PASS -- Mother correct",
+        "boss_content": "PASS -- Necramech vaults + Isolation Vault guardian (Father) referenced correctly",
+        "quests_associated": "FIXED -- removed 'the-deadlock-protocol' (Protea quest unrelated to Cambion Drift access); retained 'heart-of-deimos'",
+        "sources": "PASS -- 2 sources, warframestat.us as primary",
+        "word_count": "PASS -- ~1230 body words",
+        "ascii_only": "PASS"
+      },
+      "notes": "Three errors: (1) cycle frontmatter corrected from '6min30s' to '100min'; (2) prose incorrectly stated cycle as 6.5 min per phase -- corrected to 100min total; (3) the-deadlock-protocol removed (gates Protea from Corpus quest chain, not Deimos)."
+    },
+    "zariman-ten-zero.mdx": {
+      "errors_found": 4,
+      "fixed": true,
+      "checks": {
+        "hub_city": "PASS -- Chrysalith correct",
+        "syndicates": "PASS -- Holdfasts with Quinn as primary bounty giver correct",
+        "cycle": "PASS -- null (no environmental cycle) correct",
+        "bounty_npc": "PASS -- Quinn correct",
+        "boss_content": "FIXED -- 'circuit-override' feature removed; Circuit Override body section removed; only Void Cascade / Void Flood / Void Armageddon listed (correct Zariman mission types)",
+        "quests_associated": "PASS -- the-new-war and angels-of-the-zariman both exist as slugs",
+        "sources": "PASS -- 2 sources, warframestat.us as primary",
+        "word_count": "PASS -- ~1200 body words",
+        "ascii_only": "PASS"
+      },
+      "notes": "Four errors fixed: (1) 'circuit-override' removed from features (not a Zariman mission type; Circuit is Duviri); (2) Circuit Override section removed from body; (3) faction_primary updated to 'Void-corrupted (Grineer and Corpus)'; (4) invented named Angels ('Angel of Ambulas / Justice / Wrath') replaced with accurate unnamed-patrol description noting only Kira is named; (5) Laetum source corrected from Entrati Labs to Holdfasts syndicate."
+    },
+    "hollvania.mdx": {
+      "errors_found": 1,
+      "fixed": true,
+      "checks": {
+        "hub_city": "PASS -- Hollvania (city and zone share name; no distinct hub city name in canon)",
+        "syndicates": "PASS -- The Hex correct",
+        "cycle": "PASS -- null (no environmental cycle) correct",
+        "bounty_npc": "PASS -- Hex members named correctly",
+        "boss_content": "PASS -- Scaldra boss content and Onslaught referenced correctly",
+        "quests_associated": "FIXED -- 'warframe-1999' slug does not exist; replaced with 'the-hex' (correct slug in quests/the-hex.mdx)",
+        "sources": "PASS -- 2 sources, warframestat.us as primary",
+        "word_count": "PASS -- ~1323 body words",
+        "ascii_only": "PASS"
+      },
+      "notes": "One error: quests_associated 'warframe-1999' replaced with 'the-hex'. The Warframe: 1999 update's access quest is filed as the-hex.mdx; no slug 'warframe-1999' exists in the quests collection."
+    }
+  },
+  "build": "pass"
+}
