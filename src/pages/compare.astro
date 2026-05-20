@@ -22,8 +22,18 @@ const buildsJson = JSON.stringify(buildsIndex);
         <span class="mx-2">/</span>
         <span class="text-brand-cream/80">Compare</span>
       </nav>
-      <h1 class="text-3xl font-bold text-brand-cream mb-2">Compare Builds</h1>
-      <p class="text-brand-cream/60">Select two or three builds to view them side by side.</p>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Compare Builds</h1>
+          <p class="text-brand-cream/60">Select two or three builds to view them side by side.</p>
+        </div>
+        <a
+          href={`${base}compare-warframes`}
+          class="text-sm text-brand-orange hover:underline shrink-0"
+        >
+          Compare warframe stats instead &rarr;
+        </a>
+      </div>
     </header>
 
     <!-- Selectors row -->

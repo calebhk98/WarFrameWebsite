@@ -20,8 +20,18 @@ const letters = Object.keys(byLetter).sort();
 <Base title="Warframes" description="All 110 playable warframes with stats and abilities">
   <div class="max-w-7xl mx-auto px-4 py-8">
     <header class="mb-8">
-      <h1 class="text-3xl font-bold text-brand-cream mb-2">Warframes</h1>
-      <p class="text-brand-cream/60">{sorted.length} warframes -- abilities, stats, acquisition</p>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Warframes</h1>
+          <p class="text-brand-cream/60">{sorted.length} warframes -- abilities, stats, acquisition</p>
+        </div>
+        <a
+          href={`${base}compare-warframes`}
+          class="text-sm text-brand-orange hover:underline shrink-0"
+        >
+          Compare warframes &rarr;
+        </a>
+      </div>
     </header>
 
     <nav aria-label="Alphabetical index" class="flex flex-wrap gap-2 mb-8">
