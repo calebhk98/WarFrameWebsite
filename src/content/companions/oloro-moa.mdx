@@ -1,0 +1,104 @@
+---
+name: Oloro Moa
+type: moa
+masteryRank: 0
+health: "unknown"
+shield: "unknown"
+armor: "unknown"
+energy: "unknown"
+abilities:
+  - name: Shockwave Module
+    description: >-
+      Releases a radial shockwave that knocks down and staggers nearby enemies,
+      providing area crowd control within a radius around the MOA.
+    isPassive: false
+  - name: Security Override
+    description: >-
+      Hacks nearby security devices and cameras, neutralizing environmental
+      hazards without requiring the player to manually interact with consoles.
+    isPassive: false
+modSlots:
+  - penjaga
+acquisition:
+  source: Legs in Fortuna (Solaris United) -- MOA parts assembly
+  blueprintLocations:
+    - "Purchase MOA head, gyro, core, and bracket components from Legs in Fortuna"
+    - "Assemble modular components in the Foundry after obtaining all four parts"
+  buildTimeHours: 24
+  cost:
+    credits: 50000
+  note: >-
+    MOAs are modular companions assembled from four components: head, gyro,
+    core, and bracket. Each component is purchased from Legs in Fortuna using
+    Credits and Solaris United Standing. The Oloro MOA uses the Oloro bracket
+    and associated components. Base stats are not present in the WFCD Pets.json
+    dataset for modular MOAs -- the WFCD entry shows null for health, shield,
+    armor, and energy. Values marked unknown per project policy.
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    title: "WFCD warframe-items -- Pets.json"
+    publisher: "WFCD"
+    note: "Health, shield, armor, and energy fields null for Oloro Moa in WFCD dataset."
+  - url: "https://warframe.fandom.com/wiki/MOA_(Companion)"
+    accessedAt: "2026-05-20"
+    title: "MOA (Companion) -- WARFRAME Wiki"
+    publisher: "Fandom"
+    note: "MOA base stat values and component assembly details."
+updatedAt: "2026-05-20"
+---
+
+## Overview
+
+The Oloro MOA is a modular robotic companion assembled from Corpus-technology parts purchased from Legs in Fortuna on Venus. MOAs are bipedal Corpus machines that players can build as companions by combining four component types: a head (which determines the primary ability), a gyro (secondary ability), a core (stat bonuses), and a bracket (structural variant). The resulting companion uses the visual design and ability set determined by the chosen parts.
+
+MOA companions are unique among companion types in that they are robotic -- they do not have the organic biology of Kubrows, Kavats, Vulpaphylas, or Predasites, and they do not benefit from the Pack Leader survival mechanic. Instead, MOAs can be revived using Sentinel Revives during missions. Their robotic nature also means their mod compatibility differs slightly from organic companions, though they share the same companion mod pool for most purposes.
+
+The Oloro designation refers to the bracket component used in this MOA's assembly. The abilities available depend on the head and gyro components selected; the Shockwave Module head and Security Override gyro represent one of several possible configurations. Base health, shield, armor, and energy values are not present in the WFCD dataset for the Oloro MOA and are marked unknown per project data policy.
+
+## Abilities and precepts
+
+**Shockwave Module** fires a ground-pound shockwave from the MOA that radiates outward, hitting all enemies within the blast radius and applying a knockdown effect. The shockwave provides area crowd control that temporarily neutralizes groups of enemies who cluster near the MOA. The ability has a cooldown between activations.
+
+**Security Override** targets nearby Corpus security systems -- cameras, laser grids, and alarms -- and neutralizes them without requiring the player to manually hack a console. In Spy missions and Corpus Sabotage missions where security systems create obstacles, Security Override reduces the hacking burden and allows the player to focus on movement and enemy elimination.
+
+The modular ability selection means different head and gyro combinations produce completely different companion behaviors. Players should consult the [Warframe Wiki MOA companion page](https://warframe.fandom.com/wiki/MOA_(Companion)) for the complete component compatibility matrix.
+
+## Stats
+
+| Stat | Value |
+|------|------:|
+| Health | unknown |
+| Shield | unknown |
+| Armor | unknown |
+| Energy | unknown |
+| Mastery Rank required | 0 |
+
+Stats are not present in the WFCD dataset. Players should check in-game companion inspection or the Warframe Wiki for current values.
+
+## Acquisition
+
+MOAs are built from components purchased from Legs in Fortuna using Credits and Solaris United Standing. Four components must be acquired: a head, gyro, core, and bracket. Each component type has multiple variants available at different Standing tiers within the Solaris United rank structure. Players must reach sufficient Solaris United standing rank to unlock higher-tier components.
+
+The complete assembly requires all four components built separately in the Foundry, then combined into the final MOA companion. The build cost reflects the credit investment across all four components.
+
+## Recommended mods
+
+**Precepts:** Head and gyro components determine the companion's active abilities; these do not consume standard mod slots. All available mod slots can therefore be used for survival and utility mods.
+
+**Survivability:** Medi-Pet Kit, Link Health, and Metal Fiber provide the standard survival layer. MOAs lack the Pack Leader self-revive mechanic, making survival modding more important for mission persistence.
+
+**Utility:** Primed Animal Instinct provides enemy and loot radar. MOAs can equip the full range of companion mods, giving them a broadly equivalent modding surface to organic companions.
+
+## Playstyle and synergies
+
+MOA companions suit players who have invested in the Fortuna and Solaris United system and want a companion that integrates thematically with Corpus content. The Security Override ability is uniquely valuable in Corpus tileset missions with security objectives, reducing the frequency of hacking interactions.
+
+The Shockwave Module's crowd control rounds out the MOA's combat contribution, providing reliable knockdowns that interrupt enemy attacks and create windows for weapon fire or ability use.
+
+Players without strong investment in Solaris United standing will find the acquisition path more time-consuming than organic companion alternatives, as the Standing requirements gate access to better component options.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) -- dataset reference (stats null for this entry)
+- [MOA (Companion) -- WARFRAME Wiki](https://warframe.fandom.com/wiki/MOA_(Companion)) -- component assembly, standing requirements, and ability options

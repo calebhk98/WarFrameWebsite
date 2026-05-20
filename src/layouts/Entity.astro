@@ -15,13 +15,25 @@ interface Props {
   sources?: Source[];
   ogImage?: string;
   thumbnailUrl?: string | null;
+  collectionHref?: string;
+  collectionLabel?: string;
 }
 
-const { title, kind, description, tags = [], sources = [], ogImage, thumbnailUrl } = Astro.props;
+const {
+  title,
+  kind,
+  description,
+  tags = [],
+  sources = [],
+  ogImage,
+  thumbnailUrl,
+  collectionHref,
+  collectionLabel: collectionLabelProp,
+} = Astro.props;
 
 const base = import.meta.env.BASE_URL;
-const collectionPath = `${base}${kind}s`;
-const collectionLabel = kind.charAt(0).toUpperCase() + kind.slice(1) + 's';
+const collectionPath = collectionHref ?? `${base}${kind}s`;
+const collectionLabel = collectionLabelProp ?? (kind.charAt(0).toUpperCase() + kind.slice(1) + 's');
 const entityDescription = description ?? `${title} -- Warframe Codex`;
 const ogImageProp = ogImage !== undefined ? { ogImage } : {};
 ---

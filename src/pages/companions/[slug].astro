@@ -1,0 +1,37 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+import Callout from '../../components/Callout.astro';
+
+export async function getStaticPaths() {
+  const companions = await getCollection('companions');
+  return companions.map((c) => ({ params: { slug: c.slug }, props: { entry: c } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const components = { Callout };
+
+const { data } = entry;
+
+const healthStr = typeof data.health === 'number' ? String(data.health) : data.health;
+const shieldStr = typeof data.shield === 'number' ? String(data.shield) : data.shield;
+const armorStr = typeof data.armor === 'number' ? String(data.armor) : data.armor;
+
+const description = `${data.name} -- Health ${healthStr}, Shield ${shieldStr}, Armor ${armorStr} -- ${data.type}`;
+
+const tags: string[] = [
+  data.type,
+  `MR ${data.masteryRank}`,
+];
+---
+
+<Entity
+  title={data.name}
+  kind="companion"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+>
+  <Content components={components} />
+</Entity>

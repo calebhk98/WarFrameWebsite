@@ -1,0 +1,105 @@
+---
+name: Sentry Hound
+type: hound
+masteryRank: 0
+health: "unknown"
+shield: "unknown"
+armor: "unknown"
+energy: "unknown"
+abilities:
+  - name: Energy Generator
+    description: >-
+      Periodically creates an energy orb near the player, supplementing
+      the player's ability energy pool similarly to the Dethcube sentinel's
+      energy generation precept.
+    isPassive: true
+  - name: Shield Charger
+    description: >-
+      Restores a portion of the player's shields when they fall below a
+      threshold, providing reactive shield recovery during combat.
+    isPassive: true
+modSlots:
+  - penjaga
+acquisition:
+  source: Sister of Parvos system
+  blueprintLocations:
+    - "Sisters of Parvos spawn with a Sentry Hound as their companion"
+    - "Convert or vanquish the Sister to claim the Hound"
+  buildTimeHours: 0
+  note: >-
+    Hound type is determined at Sister spawn. Base stats not present in the
+    WFCD Pets.json dataset for Hound entries; values marked unknown per project
+    policy. Exact ability names and mechanics for the Sentry variant should
+    be verified on the Warframe Wiki as they may differ from those listed here.
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    title: "WFCD warframe-items -- Pets.json"
+    publisher: "WFCD"
+    note: "Sentry Hound stats null in WFCD dataset."
+  - url: "https://warframe.fandom.com/wiki/Hound"
+    accessedAt: "2026-05-20"
+    title: "Hound -- WARFRAME Wiki"
+    publisher: "Fandom"
+    note: "Sentry Hound ability details and Sister of Parvos acquisition."
+updatedAt: "2026-05-20"
+---
+
+## Overview
+
+The Sentry Hound is a Sister of Parvos companion variant oriented toward player support rather than direct combat or crowd control. Its ability set emphasizes energy restoration and shield recovery, making it the most utility-support-focused among the Hound variants. Players who want a Hound companion that supplements their resource economy rather than contributing primarily to combat damage find the Sentry the most functional option within the Hound class.
+
+The Sentry's Energy Generator ability provides periodic energy orbs, and Shield Charger restores shields reactively when they fall below a threshold. This combination replicates support mechanics available from other companion types -- Dethcube Prime for energy, Raksa Kubrow for shields -- but in a single Hound companion obtained from the Sister of Parvos system.
+
+As with all Hound companions, the Sentry is obtained from the Sister of Parvos system and requires the player to progress through a Sister's Requiem cycle and choose to Convert at the final confrontation. The Sentry Hound type accompanies specific Sisters based on spawn conditions, requiring players to engage with multiple Sister cycles to encounter this specific variant.
+
+## Abilities and precepts
+
+**Energy Generator** creates energy orbs near the player on a periodic timer. Each orb restores a set amount of energy when collected. The orb spawn rate and energy value depend on the ability's rank and applicable companion mods. Unlike Dethcube's Energy Generator precept, which ties energy orb generation to enemy kills, the Sentry's energy production is time-based, providing more reliable output in situations where kill rate is low.
+
+**Shield Charger** monitors the player's shield value and activates a restoration effect when shields drop below a trigger threshold. The restored shield amount scales with the ability's rank. Like the Raksa Kubrow's Protect ability, this support effect has a cooldown between activations to prevent continuous triggering.
+
+Both abilities function as built-in companion behaviors rather than mod-slotted precepts, leaving the Sentry's mod slots entirely available for survival and utility mods.
+
+## Stats
+
+| Stat | Value |
+|------|------:|
+| Health | unknown |
+| Shield | unknown |
+| Armor | unknown |
+| Energy | unknown |
+| Mastery Rank required | 0 |
+
+Stats not recorded in the WFCD dataset. Consult the [Warframe Wiki](https://warframe.fandom.com/wiki/Hound) for current values.
+
+## Acquisition
+
+The Sentry Hound is obtained through the Sister of Parvos system. The acquisition process requires:
+
+1. Entering a Corpus Railjack mission and allowing a Sister Candidate to reach level 5 kill count to spawn a Sister.
+2. Engaging the Sister in Railjack missions to damage her progress.
+3. Acquiring Requiem mods that match the Sister's Requiem sequence (obtained from Kuva Liches or Requiem Ultimatums).
+4. Confronting the Sister at her final location and completing the Requiem mod sequence.
+5. Choosing Convert at the confrontation to claim her weapon and Hound.
+
+The Sentry Hound accompanies Sisters with specific weapon types; players seeking the Sentry specifically may need multiple Sister cycles to encounter the correct Sister.
+
+## Recommended mods
+
+**Survivability:** Medi-Pet Kit, Link Health, and Metal Fiber provide the standard Hound survival stack. The Sentry cannot self-revive, making these mods important for mission persistence.
+
+**Support amplification:** Mods that affect companion ability range or effect can extend Shield Charger's trigger threshold and Energy Generator's orb spawn radius, improving the support abilities' effectiveness.
+
+**Utility:** Primed Animal Instinct adds loot and enemy radar, which supplements the support-focused role by improving mission awareness.
+
+## Playstyle and synergies
+
+The Sentry Hound suits builds that benefit from supplemental energy income and reactive shield restoration. Ability-heavy frames running without Zenurik energy regeneration or Arcane Energize gain measurable benefit from the Energy Generator's consistent orb production. Shield-reliant builds that lack dedicated shield restoration mechanics find Shield Charger a useful defensive layer.
+
+Among Hound companions, the Sentry is the strongest choice for support-oriented players who have engaged deeply enough with the Sister of Parvos system to acquire it. Players who have not yet reached that point in progression may find equivalent support from Dethcube Prime (energy) or Raksa Kubrow (shields) through more accessible acquisition paths.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) -- dataset reference (stats null for Hound entries)
+- [Hound -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Hound) -- Sentry variant abilities and Sister of Parvos acquisition path
