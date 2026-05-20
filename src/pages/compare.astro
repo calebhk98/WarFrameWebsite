@@ -1,0 +1,243 @@
+---
+// compare.astro -- client-side build comparator. Picks 2-3 builds from
+// dropdowns and renders them side-by-side using embedded JSON + vanilla JS.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { toBuildIndexEntry } from '../data/builds-index';
+import type { BuildIndexEntry } from '../data/builds-index';
+
+const base = import.meta.env.BASE_URL;
+
+const rawBuilds = await getCollection('builds');
+const sorted = [...rawBuilds].sort((a, b) => a.data.name.localeCompare(b.data.name));
+const buildsIndex: BuildIndexEntry[] = sorted.map(toBuildIndexEntry);
+const buildsJson = JSON.stringify(buildsIndex);
+---
+
+<Base title="Compare Builds" description="Compare two or three Warframe build loadouts side by side">
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <nav class="mb-4 text-sm text-brand-cream/50">
+        <a href={`${base}builds`} class="hover:text-brand-orange">Builds</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Compare</span>
+      </nav>
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Compare Builds</h1>
+      <p class="text-brand-cream/60">Select two or three builds to view them side by side.</p>
+    </header>
+
+    <!-- Selectors row -->
+    <div class="flex flex-col sm:flex-row gap-4 mb-4 items-end">
+      <div class="flex-1">
+        <label for="select-a" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">
+          Build A
+        </label>
+        <select
+          id="select-a"
+          class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="">-- Choose build --</option>
+          {sorted.map((b) => (
+            <option value={b.slug}>{b.data.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="flex-1">
+        <label for="select-b" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">
+          Build B
+        </label>
+        <select
+          id="select-b"
+          class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="">-- Choose build --</option>
+          {sorted.map((b) => (
+            <option value={b.slug}>{b.data.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="flex-1">
+        <label for="select-c" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">
+          Build C <span class="text-brand-cream/30 font-normal normal-case">(optional)</span>
+        </label>
+        <select
+          id="select-c"
+          class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="">-- None --</option>
+          {sorted.map((b) => (
+            <option value={b.slug}>{b.data.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <button
+        id="reset-btn"
+        class="shrink-0 px-5 py-2 rounded-lg border border-surface-3 text-brand-cream/60 text-sm hover:border-brand-orange/50 hover:text-brand-cream transition-colors"
+      >
+        Reset
+      </button>
+    </div>
+
+    <!-- Comparison grid -->
+    <div
+      id="compare-grid"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"
+      aria-live="polite"
+    >
+      <!-- Cards injected by JS -->
+    </div>
+
+    <p id="compare-hint" class="text-center text-brand-cream/30 text-sm py-16">
+      Choose at least two builds above to start comparing.
+    </p>
+  </div>
+</Base>
+
+<script define:vars={{ buildsJson, base }} is:inline>
+  const BUILDS = JSON.parse(buildsJson);
+
+  function findBuild(slug) {
+    return BUILDS.find((b) => b.slug === slug);
+  }
+
+  function allModSets(entries) {
+    return entries.map((e) => new Set(e.mods));
+  }
+
+  function pill(text, highlight) {
+    const base = 'text-xs px-2 py-0.5 rounded ';
+    const style = highlight
+      ? 'bg-brand-orange/20 border border-brand-orange/60 text-brand-orange'
+      : 'bg-surface-3 text-brand-cream/70';
+    return `<span class="${base}${style}">${escHtml(text)}</span>`;
+  }
+
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function renderCard(entry, siblingModSets) {
+    const modPills = entry.mods
+      .map((mod) => {
+        const unique = siblingModSets.every((s) => !s.has(mod));
+        return pill(mod, unique);
+      })
+      .join(' ');
+
+    const arcanePills = entry.arcanes.length
+      ? entry.arcanes.map((a) => pill(a, false)).join(' ')
+      : '<span class="text-brand-cream/30 text-xs">None</span>';
+
+    const focusHtml = entry.focus
+      ? `<span class="text-brand-cream/70 text-sm">${escHtml(entry.focus)}</span>`
+      : '<span class="text-brand-cream/30 text-sm">--</span>';
+
+    const helminthHtml = entry.helminth
+      ? `<span class="text-brand-cream/70 text-sm capitalize">${escHtml(entry.helminth)}</span>`
+      : '<span class="text-brand-cream/30 text-sm">--</span>';
+
+    const strengthsList = entry.strengths
+      .map((s) => `<li class="flex gap-1 text-xs text-brand-cream/70"><span class="text-green-400 shrink-0">+</span>${escHtml(s)}</li>`)
+      .join('');
+
+    const weaknessesList = entry.weaknesses
+      .map((w) => `<li class="flex gap-1 text-xs text-brand-cream/70"><span class="text-red-400 shrink-0">-</span>${escHtml(w)}</li>`)
+      .join('');
+
+    const buildUrl = `${base}builds/${escHtml(entry.slug)}`;
+
+    return `
+      <article class="rounded-lg border border-surface-3 bg-surface-2 p-5 flex flex-col gap-4">
+        <header>
+          <div class="flex items-start justify-between gap-2 mb-1">
+            <h2 class="font-semibold text-brand-cream text-base leading-snug">
+              <a href="${buildUrl}" class="hover:text-brand-orange transition-colors">${escHtml(entry.name)}</a>
+            </h2>
+            <span class="text-xs shrink-0 px-2 py-0.5 rounded bg-surface-3 text-brand-cream/50 uppercase">
+              ${escHtml(entry.entityType)}
+            </span>
+          </div>
+          <p class="text-xs text-brand-cream/40">${escHtml(entry.purpose)}</p>
+        </header>
+
+        <section>
+          <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-2">Mods</p>
+          <div class="flex flex-wrap gap-1">${modPills}</div>
+          <p class="text-xs text-brand-cream/30 mt-1">Highlighted mods differ from other selected builds.</p>
+        </section>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Focus</p>
+            ${focusHtml}
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Helminth</p>
+            ${helminthHtml}
+          </div>
+        </div>
+
+        <section>
+          <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-2">Arcanes</p>
+          <div class="flex flex-wrap gap-1">${arcanePills}</div>
+        </section>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          ${strengthsList ? `<div><p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Strengths</p><ul class="space-y-1">${strengthsList}</ul></div>` : ''}
+          ${weaknessesList ? `<div><p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Weaknesses</p><ul class="space-y-1">${weaknessesList}</ul></div>` : ''}
+        </div>
+      </article>`;
+  }
+
+  function refresh() {
+    const slugA = document.getElementById('select-a').value;
+    const slugB = document.getElementById('select-b').value;
+    const slugC = document.getElementById('select-c').value;
+
+    const selected = [slugA, slugB, slugC]
+      .filter(Boolean)
+      .map(findBuild)
+      .filter(Boolean);
+
+    const grid = document.getElementById('compare-grid');
+    const hint = document.getElementById('compare-hint');
+
+    if (selected.length < 2) {
+      grid.innerHTML = '';
+      hint.style.display = '';
+      return;
+    }
+
+    hint.style.display = 'none';
+
+    grid.className = selected.length === 3
+      ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6'
+      : 'grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6';
+
+    const modSets = allModSets(selected);
+    grid.innerHTML = selected
+      .map((entry, idx) => {
+        const others = modSets.filter((_, i) => i !== idx);
+        return renderCard(entry, others);
+      })
+      .join('');
+  }
+
+  document.getElementById('select-a').addEventListener('change', refresh);
+  document.getElementById('select-b').addEventListener('change', refresh);
+  document.getElementById('select-c').addEventListener('change', refresh);
+
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    document.getElementById('select-a').value = '';
+    document.getElementById('select-b').value = '';
+    document.getElementById('select-c').value = '';
+    refresh();
+  });
+</script>

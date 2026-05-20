@@ -15,7 +15,15 @@ const entityTypeLabel: Record<string, string> = {
 <Base title="Builds" description="Curated mod loadouts and build guides for Warframes and weapons">
   <div class="max-w-7xl mx-auto px-4 py-8">
     <header class="mb-8">
-      <h1 class="text-3xl font-bold text-brand-cream mb-2">Builds</h1>
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-2">
+        <h1 class="text-3xl font-bold text-brand-cream">Builds</h1>
+        <a
+          href={`${base}compare`}
+          class="text-sm text-brand-orange hover:underline whitespace-nowrap"
+        >
+          Compare builds side-by-side &rarr;
+        </a>
+      </div>
       <p class="text-brand-cream/60">{sorted.length} build{sorted.length !== 1 ? 's' : ''} -- optimised mod loadouts for Warframes and weapons</p>
     </header>
 
