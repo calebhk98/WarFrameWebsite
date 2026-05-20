@@ -1,0 +1,68 @@
+{
+  "sampled": 30,
+  "fixed": 30,
+  "by_collection": {
+    "mods": {
+      "sampled": 10,
+      "fixed": 10,
+      "files": [
+        "fracturing-crush", "hall-of-malevolence", "hysterical-assault", "larva-burst",
+        "freeze-force", "gourmand", "guided-effigy", "icy-avalanche", "infiltrate", "antimatter-absorb"
+      ],
+      "issues_found": [
+        "All 10 mods had type=warframe instead of type=augment",
+        "All 10 mods had generic boilerplate prose with zero specific content",
+        "All 10 mods had wrong/fabricated perRankStats values",
+        "All 10 mods had wrong section headers (Usage, Common builds) instead of required (Overview, Stats per rank, Acquisition, Builds that use it, Notes)",
+        "Several mods had Unicode em-dashes in source title fields"
+      ]
+    },
+    "weapons": {
+      "sampled": 10,
+      "fixed": 10,
+      "files": [
+        "aegrit", "akarius", "alternox", "ambassador", "angstrum",
+        "arca-titron", "balla", "bubonico", "carmine-penta", "ekwana-jai"
+      ],
+      "issues_found": [
+        "8 of 10 weapons had criticalChance=0, criticalMultiplier=1, statusChance=0 (all stats zeroed)",
+        "8 of 10 weapons had wrong category (e.g. Secondary instead of Pistol/Throwing, Melee instead of Hammer)",
+        "8 of 10 weapons had generic boilerplate prose with no weapon-specific content",
+        "3 of 10 weapons had bare URL sources not formatted as markdown links",
+        "2 of 10 weapons (balla, ekwana-jai) are Zaw components with legitimately zero stats -- content correctly documents this with explanations",
+        "bubonico had wrong acquisition (listed as Market, actually requires Dojo Infested Research)",
+        "Word counts below 500 minimum for non-Zaw weapons -- required expansion"
+      ]
+    },
+    "resources": {
+      "sampled": 10,
+      "fixed": 10,
+      "files": [
+        "voidplume-crest", "voidrig-engine", "atmo-systems", "bonewidow-engine",
+        "condroc-wing", "corpus-cipher", "cortege-receiver", "crisma-toroid",
+        "calda-toroid", "cephalite-resonance"
+      ],
+      "issues_found": [
+        "4 of 10 resources had wrong planets field (e.g. Void Cascade, Zariman for Venus-based resources)",
+        "All 10 resources had wrong/fabricated dropSources and usedFor values",
+        "All 10 resources had 'Best locations' section header instead of required 'Notes' section",
+        "All 10 resources had word counts below 300 minimum (range: 227-352 before fixes)",
+        "2 of 10 resources had Unicode em-dashes in source title fields",
+        "voidrig-engine had incorrect name (Void-Rig Engine) -- WFCD canonical name is Voidrig Engine"
+      ]
+    }
+  },
+  "common_issues": [
+    "type=warframe on all augment mods (should be augment)",
+    "criticalChance/statusChance=0 on all non-Zaw weapons (wrong canonical stats)",
+    "Wrong section headers across all collections (Best locations vs Notes; Usage/Common builds vs Builds that use it)",
+    "Generic boilerplate prose with no entity-specific content",
+    "Word counts below floor (resources most affected: 227-352 words vs 300 minimum)",
+    "Wrong factual data: planets, dropSources, usedFor fields fabricated rather than sourced from WFCD"
+  ],
+  "ci": {
+    "typecheck": "pass",
+    "build": "pass",
+    "test": "pass (53/53 tests)"
+  }
+}
