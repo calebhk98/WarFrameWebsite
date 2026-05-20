@@ -2,24 +2,34 @@
 slug: galvanized-aptitude
 name: Galvanized Aptitude
 polarity: vazarin
-drain: 7
-maxRank: 5
+drain: 2
+maxRank: 10
 rarity: rare
 type: primary
-effect: "+[accuracy]% Accuracy, +[statusChance]% Status Chance (stacks with Kills)"
+effect: "+[statusChance]% Status Chance. On Kill: +[damage]% Direct Damage per Status Type affecting the target for 20s. Stacks up to 2x."
 perRankStats:
   - rank: 0
-    stats: { accuracy: 8, statusChance: 20 }
+    stats: { statusChance: 7.3, damage: 3.6 }
   - rank: 1
-    stats: { accuracy: 16, statusChance: 40 }
+    stats: { statusChance: 14.5, damage: 7.3 }
   - rank: 2
-    stats: { accuracy: 24, statusChance: 60 }
+    stats: { statusChance: 21.8, damage: 10.9 }
   - rank: 3
-    stats: { accuracy: 32, statusChance: 80 }
+    stats: { statusChance: 29.1, damage: 14.5 }
   - rank: 4
-    stats: { accuracy: 40, statusChance: 100 }
+    stats: { statusChance: 36.4, damage: 18.2 }
   - rank: 5
-    stats: { accuracy: 48, statusChance: 120 }
+    stats: { statusChance: 43.6, damage: 21.8 }
+  - rank: 6
+    stats: { statusChance: 50.9, damage: 25.5 }
+  - rank: 7
+    stats: { statusChance: 58.2, damage: 29.1 }
+  - rank: 8
+    stats: { statusChance: 65.5, damage: 32.7 }
+  - rank: 9
+    stats: { statusChance: 72.7, damage: 36.4 }
+  - rank: 10
+    stats: { statusChance: 80, damage: 40 }
 drops:
   - source: "Void Cascade Void Fissure (Lith)"
     chance: 5.0
@@ -38,42 +48,47 @@ sources:
     accessedAt: "2026-05-19"
     publisher: "Fandom"
     title: "Galvanized Aptitude -- WARFRAME Wiki"
-updatedAt: "2026-05-19"
+updatedAt: "2026-05-20"
 ---
 
 ## Overview
 
-Galvanized Aptitude is a rare primary weapon mod offering stacking bonuses to accuracy and status chance, scaling with eliminations. This mod is tailored for status-focused builds where spreading elemental effects becomes increasingly effective as the mission progresses. The accuracy bonus helps maintain precision while the status scaling rewards players for maintaining offensive momentum.
+Galvanized Aptitude is a rare primary weapon mod providing stacking damage bonuses that scale with the number of unique status types affecting enemies. The mod offers a base status chance increase alongside an on-kill damage bonus that grows with each distinct status type already applied to the target. At maximum rank, the mod grants +80% status chance and up to +40% direct damage per status type on kill, stacking up to two times. This dual effect rewards aggressive status application strategies where multiple status types are spread before engaging a target.
 
-The dual bonuses make this mod particularly valuable for weapons with innate accuracy problems or status-heavy builds. The stacking mechanic encourages extended engagements where maintaining high hit rates and status application accumulates significant bonuses throughout the mission.
+The damage scaling mechanic makes Galvanized Aptitude particularly valuable for status-focused builds where spreading elemental effects becomes increasingly effective as the mission progresses. Spreading multiple status types to a target before the killing blow maximizes the on-kill damage bonus, rewarding coordinated elemental modding and deliberate status setup.
 
 ## Stat table
 
-| Rank | Drain | Accuracy | Status Chance |
-|------|-------|----------|---------------|
-| 0    | 7     | +8%      | +20%          |
-| 1    | 7     | +16%     | +40%          |
-| 2    | 7     | +24%     | +60%          |
-| 3    | 7     | +32%     | +80%          |
-| 4    | 7     | +40%     | +100%         |
-| 5    | 7     | +48%     | +120%         |
+| Rank | Drain | Status Chance | Damage Per Status (On Kill, up to 2x) |
+|------|-------|---------------|---------------------------------------|
+| 0    | 2     | +7.3%         | +3.6%                                 |
+| 1    | 2     | +14.5%        | +7.3%                                 |
+| 2    | 2     | +21.8%        | +10.9%                                |
+| 3    | 2     | +29.1%        | +14.5%                                |
+| 4    | 2     | +36.4%        | +18.2%                                |
+| 5    | 2     | +43.6%        | +21.8%                                |
+| 6    | 2     | +50.9%        | +25.5%                                |
+| 7    | 2     | +58.2%        | +29.1%                                |
+| 8    | 2     | +65.5%        | +32.7%                                |
+| 9    | 2     | +72.7%        | +36.4%                                |
+| 10   | 2     | +80%          | +40%                                  |
 
 ## Acquisition
 
 Galvanized Aptitude drops exclusively from Void Fissure void cascade rewards in the Zariman tileset. The mod appears in both Lith and Meso void cascade pools with drop rates around 4-5 percent. Players must run Void Fissure missions with void relics to access this reward.
 
-Farming Galvanized Aptitude requires participation in Zariman void fissure relics repeatedly. The low drop rate necessitates patience, but the status scaling and accuracy combination makes it valuable for status spreader builds targeting endgame content.
+Farming Galvanized Aptitude requires participation in Zariman void fissure relics repeatedly. The low drop rate necessitates patience, but the status scaling and damage combination makes it valuable for status spreader builds targeting endgame content.
 
-## Usage
+## Builds that use it
 
-Galvanized Aptitude excels in builds prioritizing status effect application. Pair this mod with elemental damage mods like Hellfire or Chilling Reload to spread status procs effectively. The accuracy bonus ensures projectiles land consistently, making the status chance bonus more reliable.
+Galvanized Aptitude excels in builds prioritizing status effect application. Pair this mod with elemental damage mods like Hellfire or Chilling Reload to spread status procs effectively. Weapons with naturally high fire rates benefit most, as rapid fire enables faster status accumulation. Shotguns and assault rifles pair well with Galvanized Aptitude.
 
-Weapons with naturally high fire rates benefit most from this mod, as rapid fire enables faster status accumulation. Shotguns and assault rifles pair well with Galvanized Aptitude. Combine with mods like Infected Clip or High Voltage to maximize status proc frequency as stacks increase.
-
-The stacking mechanic means status application becomes exponentially more effective as the mission progresses. Players eliminating enemies maintain high stacks, enabling rapid status spreading that trivializes armor strips and crowd control needs in higher-level missions.
+The stacking mechanic means direct damage per status type stacks twice with on-kill procs, creating significant bonus damage when maintaining status coverage across an enemy group. Players eliminating enemies maintain high stacks, enabling sustained pressure in higher-level missions.
 
 ## Notes
 
-Galvanized Aptitude fills a unique niche for status-primary builds. The combination of accuracy and status chance is relatively rare on mods, making this especially valuable for weapons struggling with either stat baseline.
+Galvanized Aptitude's on-kill damage bonus stacks up to 2x, making it most effective in high-density missions where kills happen rapidly and the bonus has time to refresh. The vazarin polarity requirement is less common on primaries than madurai but remains compatible with most rifle builds. The low base drain of 2 makes it easy to slot without forma.
 
-The vazarin polarity requirement is less common on primaries than madurai but remains compatible with most rifle and gun warframes. Consider matching polarities and using catalyst potatoes to maximize mod efficiency when building status-heavy primary loadouts.
+## Sources
+
+All sources are provided in frontmatter.
