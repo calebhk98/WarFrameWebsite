@@ -12,7 +12,7 @@ const { href, name, tags = [], image } = Astro.props;
 
 <a
   href={href}
-  class="group block rounded-lg border border-surface-3 bg-surface-2 hover:border-brand-orange/50 hover:bg-surface-3 transition-all duration-150 overflow-hidden"
+  class="group block rounded-lg border border-surface-3 bg-surface-2 hover:border-brand-orange/50 hover:bg-surface-3 transition-all duration-150 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-orange focus-visible:outline-offset-2"
 >
   {image && (
     <div class="h-32 bg-surface-3 flex items-center justify-center overflow-hidden">

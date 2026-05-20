@@ -1,0 +1,97 @@
+---
+import type { DayNightCycle, WarmColdCycle, CambionCycle, ZarimanCycle } from '../lib/worldstate';
+
+interface Props {
+  cetus: DayNightCycle | null;
+  vallis: WarmColdCycle | null;
+  cambion: CambionCycle | null;
+  zariman: ZarimanCycle | null;
+  fetchedAt: string;
+}
+
+const { cetus, vallis, cambion, zariman, fetchedAt } = Astro.props;
+
+interface CycleItem {
+  label: string;
+  location: string;
+  state: string;
+  timeLeft: string;
+  active: boolean;
+}
+
+const cycles: CycleItem[] = [];
+
+if (cetus) {
+  cycles.push({
+    label: 'Cetus Cycle',
+    location: 'Plains of Eidolon',
+    state: cetus.isDay ? 'Day' : 'Night',
+    timeLeft: cetus.shortString ?? cetus.timeLeft,
+    active: true,
+  });
+}
+
+if (vallis) {
+  cycles.push({
+    label: 'Orb Vallis Cycle',
+    location: 'Orb Vallis',
+    state: vallis.isWarm ? 'Warm' : 'Cold',
+    timeLeft: vallis.shortString ?? vallis.timeLeft,
+    active: true,
+  });
+}
+
+if (cambion) {
+  cycles.push({
+    label: 'Cambion Drift Cycle',
+    location: 'Cambion Drift',
+    state: cambion.active === 'fass' ? 'Fass (Day)' : 'Vome (Night)',
+    timeLeft: cambion.shortString ?? cambion.timeLeft,
+    active: true,
+  });
+}
+
+if (zariman) {
+  cycles.push({
+    label: 'Zariman Cycle',
+    location: 'The Zariman',
+    state: zariman.state === 'grineer' ? 'Grineer Control' : 'Corpus Control',
+    timeLeft: zariman.shortString ?? zariman.timeLeft,
+    active: true,
+  });
+}
+
+const noData = cycles.length === 0;
+---
+
+<section aria-labelledby="cycles-heading" class="rounded-lg border border-surface-3 bg-surface-2 p-6">
+  <div class="flex items-center justify-between mb-4">
+    <h2 id="cycles-heading" class="text-lg font-semibold text-brand-orange uppercase tracking-wide">
+      Open World Cycles
+    </h2>
+    <time datetime={fetchedAt} class="text-xs text-brand-cream/40">
+      Fetched {fetchedAt}
+    </time>
+  </div>
+
+  {noData && (
+    <p class="text-brand-cream/60 text-sm italic">
+      Live data unavailable. Try refreshing during a connected session.
+    </p>
+  )}
+
+  {!noData && (
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3" aria-label="Open world cycle status">
+      {cycles.map((c) => (
+        <li class="rounded bg-surface-3 px-4 py-3">
+          <p class="text-xs uppercase tracking-widest text-brand-cream/50 mb-1">{c.label}</p>
+          <p class="text-xs text-brand-cream/40 mb-2">{c.location}</p>
+          <p class="text-brand-cream font-semibold">{c.state}</p>
+          <p class="text-brand-orange text-sm mt-1">
+            Changes in: {c.timeLeft}
+          </p>
+        </li>
+      ))}
+    </ul>
+  )}
+</section>

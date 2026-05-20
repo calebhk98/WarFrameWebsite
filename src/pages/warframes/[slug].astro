@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Entity from '../../layouts/Entity.astro';
 import AbilityCard from '../../components/AbilityCard.astro';
 import Callout from '../../components/Callout.astro';
+import { getWarframe } from '../../lib/wfcd';
 
 export async function getStaticPaths() {
   const warframes = await getCollection('warframes');
@@ -14,6 +15,9 @@ const { Content } = await render(entry);
 const components = { AbilityCard, Callout };
 
 const { data } = entry;
+const wfcdEntry = getWarframe(entry.slug);
+const thumbnailUrl = wfcdEntry?.wikiaThumbnail ?? null;
+
 const tags: string[] = [
   `MR ${data.masteryRank}`,
   data.prime.available ? 'Has Prime' : 'No Prime',
@@ -29,6 +33,7 @@ const description = `${data.name} -- Health ${data.health}, Shield ${data.shield
   description={description}
   tags={tags}
   sources={data.sources}
+  thumbnailUrl={thumbnailUrl}
 >
   <Content components={components} />
 </Entity>

@@ -51,10 +51,30 @@ const fullTitle = `${title} -- ${siteName}`;
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={resolvedOgImage} />
+
+    <style>
+      /* Global focus-visible ring for all interactive elements */
+      :focus-visible {
+        outline: 2px solid #E89E3B;
+        outline-offset: 2px;
+        border-radius: 0.25rem;
+      }
+      /* Body text contrast: #E8DEC8 on #0A0A0F -- ratio ~13:1, exceeds WCAG AA */
+      /* Links: bump to #88DDFF for better contrast on dark backgrounds */
+      a:not([class]) {
+        color: #88DDFF;
+      }
+    </style>
   </head>
   <body class="min-h-screen flex flex-col bg-brand-black text-brand-cream">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded focus:bg-brand-orange focus:text-brand-black focus:font-semibold focus:outline-none"
+    >
+      Skip to main content
+    </a>
     <Header />
-    <main class="flex-1">
+    <main id="main" class="flex-1">
       <slot />
     </main>
     <Footer />

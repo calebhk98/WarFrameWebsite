@@ -1,0 +1,82 @@
+---
+import type { Nightwave } from '../lib/worldstate';
+
+interface Props {
+  nightwave: Nightwave | null;
+  fetchedAt: string;
+}
+
+const { nightwave, fetchedAt } = Astro.props;
+
+const dailyChallenges = nightwave?.activeChallenges.filter((c) => c.isDaily && c.active !== false) ?? [];
+const weeklyChallenges = nightwave?.activeChallenges.filter((c) => !c.isDaily && !c.isElite && c.active !== false) ?? [];
+const eliteChallenges = nightwave?.activeChallenges.filter((c) => c.isElite && c.active !== false) ?? [];
+---
+
+<section aria-labelledby="nightwave-heading" class="rounded-lg border border-surface-3 bg-surface-2 p-6">
+  <div class="flex items-center justify-between mb-4">
+    <h2 id="nightwave-heading" class="text-lg font-semibold text-brand-orange uppercase tracking-wide">
+      Nightwave
+    </h2>
+    <time datetime={fetchedAt} class="text-xs text-brand-cream/40">
+      Fetched {fetchedAt}
+    </time>
+  </div>
+
+  {!nightwave && (
+    <p class="text-brand-cream/60 text-sm italic">
+      Live data unavailable. Try refreshing during a connected session.
+    </p>
+  )}
+
+  {nightwave && (
+    <div class="space-y-4">
+      <p class="text-sm text-brand-cream/70">
+        Season <span class="text-brand-cream font-semibold">{nightwave.season}</span>
+        {' -- '}<span class="text-brand-cream/50">{nightwave.tag}</span>
+      </p>
+
+      {dailyChallenges.length > 0 && (
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-brand-cream/50 mb-2">Daily Acts</h3>
+          <ul class="space-y-1" aria-label="Daily acts">
+            {dailyChallenges.map((c) => (
+              <li class="rounded bg-surface-3 px-3 py-2 text-sm flex items-center justify-between gap-2">
+                <span class="text-brand-cream">{c.challenge ?? c.desc}</span>
+                <span class="text-brand-orange text-xs shrink-0">{c.reputation} rep</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {weeklyChallenges.length > 0 && (
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-brand-cream/50 mb-2">Weekly Acts</h3>
+          <ul class="space-y-1" aria-label="Weekly acts">
+            {weeklyChallenges.map((c) => (
+              <li class="rounded bg-surface-3 px-3 py-2 text-sm flex items-center justify-between gap-2">
+                <span class="text-brand-cream">{c.challenge ?? c.desc}</span>
+                <span class="text-brand-orange text-xs shrink-0">{c.reputation} rep</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {eliteChallenges.length > 0 && (
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-brand-cream/50 mb-2">Elite Weekly Acts</h3>
+          <ul class="space-y-1" aria-label="Elite weekly acts">
+            {eliteChallenges.map((c) => (
+              <li class="rounded bg-surface-3 px-3 py-2 text-sm flex items-center justify-between gap-2">
+                <span class="text-brand-cream">{c.challenge ?? c.desc}</span>
+                <span class="text-brand-orange text-xs shrink-0">{c.reputation} rep</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  )}
+</section>

@@ -37,6 +37,8 @@ export interface WfcdWarframe extends WfcdBase {
   readonly sprintSpeed?: number;
   readonly abilities?: readonly WfcdAbility[];
   readonly passiveDescription?: string;
+  readonly wikiaThumbnail?: string;
+  readonly wikiaUrl?: string;
 }
 
 export interface WfcdWeapon extends WfcdBase {
@@ -92,8 +94,17 @@ export interface WfcdFaction extends WfcdBase {}
 
 // ---------- Internals ----------------------------------------------------
 
-const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const DEFAULT_DIR = join(REPO_ROOT, 'data', 'wfcd');
+function resolveDataDir(): string {
+  // During Astro SSG, process.cwd() is the project root.
+  // Fallback to import.meta.url-based resolution for Vitest.
+  const cwd = process.cwd();
+  const fromCwd = join(cwd, 'data', 'wfcd');
+  if (existsSync(fromCwd)) return fromCwd;
+  const fromMeta = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', 'data', 'wfcd');
+  return fromMeta;
+}
+
+const DEFAULT_DIR = resolveDataDir();
 
 const cache = new Map<string, readonly WfcdBase[]>();
 const missing = new Set<string>();

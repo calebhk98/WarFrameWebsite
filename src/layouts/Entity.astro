@@ -14,9 +14,10 @@ interface Props {
   tags?: string[];
   sources?: Source[];
   ogImage?: string;
+  thumbnailUrl?: string | null;
 }
 
-const { title, kind, description, tags = [], sources = [], ogImage } = Astro.props;
+const { title, kind, description, tags = [], sources = [], ogImage, thumbnailUrl } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
 const collectionPath = `${base}${kind}s`;
@@ -42,6 +43,18 @@ const ogImageProp = ogImage !== undefined ? { ogImage } : {};
 
     <header class="mb-8 pb-6 border-b border-surface-3">
       <div class="flex items-start gap-4 flex-wrap">
+        {thumbnailUrl && (
+          <div class="shrink-0 w-24 h-24 rounded-lg bg-surface-2 border border-surface-3 overflow-hidden flex items-center justify-center">
+            <img
+              src={thumbnailUrl}
+              alt={`${title} artwork`}
+              width="96"
+              height="96"
+              loading="lazy"
+              class="object-contain w-full h-full"
+            />
+          </div>
+        )}
         <div class="flex-1 min-w-0">
           <div class="flex items-center gap-2 mb-2">
             <span class="text-xs uppercase tracking-widest text-brand-orange font-semibold">

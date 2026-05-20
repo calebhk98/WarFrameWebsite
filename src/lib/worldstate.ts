@@ -15,9 +15,11 @@ export interface NewsItem {
 
 export interface SortieVariant {
   missionType: string;
+  missionTypeKey?: string;
   modifier: string;
   modifierDescription: string;
   node: string;
+  nodeKey?: string;
 }
 
 export interface Sortie {
@@ -30,6 +32,25 @@ export interface Sortie {
   eta?: string;
   rewardPool?: string;
   variants: SortieVariant[];
+}
+
+export interface ArchonMission {
+  type: string;
+  typeKey?: string;
+  node: string;
+  nodeKey?: string;
+  modifier?: string;
+  modifierDescription?: string;
+}
+
+export interface ArchonHunt {
+  id: string;
+  activation: string;
+  expiry: string;
+  boss: string;
+  faction: string;
+  expired?: boolean;
+  missions: ArchonMission[];
 }
 
 export type FissureTier = 'Lith' | 'Meso' | 'Neo' | 'Axi' | 'Requiem' | 'Omnia';
@@ -50,7 +71,7 @@ export interface Fissure {
 
 export interface InvasionSide {
   faction: string;
-  reward: { asString: string };
+  reward: { asString?: string; countedItems?: Array<{ count: number; type: string }> };
 }
 
 export interface Invasion {
@@ -85,6 +106,47 @@ export interface WarmColdCycle {
   shortString?: string;
 }
 
+export interface CambionCycle {
+  id?: string;
+  activation?: string;
+  expiry: string;
+  active: 'vome' | 'fass' | string;
+  timeLeft: string;
+  shortString?: string;
+}
+
+export interface ZarimanCycle {
+  id?: string;
+  activation?: string;
+  expiry: string;
+  state: 'grineer' | 'corpus' | string;
+  timeLeft: string;
+  shortString?: string;
+}
+
+export interface NightwaveAct {
+  id: string;
+  activation?: string;
+  expiry?: string;
+  challenge: string;
+  desc: string;
+  reputation: number;
+  isDaily?: boolean;
+  isElite?: boolean;
+  active?: boolean;
+}
+
+export interface Nightwave {
+  id: string;
+  activation: string;
+  expiry: string;
+  season: number;
+  tag: string;
+  phase: number;
+  active: boolean;
+  activeChallenges: NightwaveAct[];
+}
+
 export interface WorldState {
   timestamp: string;
   news: NewsItem[];
@@ -114,6 +176,14 @@ export async function getSorties(): Promise<Sortie[]> {
   return Array.isArray(result) ? result : [result];
 }
 
+export async function getArchonHunt(): Promise<ArchonHunt | null> {
+  try {
+    return await fetchEndpoint<ArchonHunt>(`/pc/archonHunt`);
+  } catch {
+    return null;
+  }
+}
+
 export async function getFissures(): Promise<Fissure[]> {
   return fetchEndpoint<Fissure[]>(`/pc/fissures`);
 }
@@ -128,4 +198,28 @@ export async function getCetusCycle(): Promise<DayNightCycle> {
 
 export async function getVallisCycle(): Promise<WarmColdCycle> {
   return fetchEndpoint<WarmColdCycle>(`/pc/vallisCycle`);
+}
+
+export async function getCambionCycle(): Promise<CambionCycle | null> {
+  try {
+    return await fetchEndpoint<CambionCycle>(`/pc/cambionCycle`);
+  } catch {
+    return null;
+  }
+}
+
+export async function getZarimanCycle(): Promise<ZarimanCycle | null> {
+  try {
+    return await fetchEndpoint<ZarimanCycle>(`/pc/zarimanCycle`);
+  } catch {
+    return null;
+  }
+}
+
+export async function getNightwave(): Promise<Nightwave | null> {
+  try {
+    return await fetchEndpoint<Nightwave>(`/pc/nightwave`);
+  } catch {
+    return null;
+  }
 }
