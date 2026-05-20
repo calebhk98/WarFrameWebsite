@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-05-20T14:30:00Z",
+  "commit": "43ee2d8",
+  "fix_commit": "667e1aa",
+  "ci": {
+    "typecheck": true,
+    "build": true,
+    "tests": true,
+    "pages": 538,
+    "e2e_total": 40,
+    "e2e_passed": 40
+  },
+  "wave5_pages": {
+    "star-chart": true,
+    "market": true,
+    "helminth-planner": true,
+    "riven-planner": true
+  },
+  "wave5_detail": {
+    "star-chart": "SVG present, 18 <circle> planet nodes rendered",
+    "market": "30 item rows with 'Price unavailable' markers (API offline at build time), 90 <td> cells",
+    "helminth-planner": "HELMINTH_DATA serialized with 105 entries (\\\"subsumeAbility\\\" occurrences)",
+    "riven-planner": "7 <select> stat selector dropdowns present"
+  },
+  "smoke_checks": {
+    "/": {"status": 200},
+    "/warframes/ash/": {"status": 200, "has_img_with_alt": true},
+    "/worldstate/": {"status": 200, "has_sortie_content": true},
+    "/pagefind/pagefind.js": {"status": 200}
+  },
+  "quality_gates": {
+    "bundle": true,
+    "html_validate": true,
+    "html_validate_note": "1 error fixed: empty-heading in star-chart (JS-populated h2). Fix committed as 667e1aa."
+  },
+  "lighthouse": {
+    "/": {
+      "performance": 100,
+      "accessibility": 95,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "/warframes/saryn-prime/": {
+      "performance": 100,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "/worldstate/": {
+      "performance": 100,
+      "accessibility": 86,
+      "best-practices": 96,
+      "seo": 100,
+      "accessibility_issues": [
+        "aria-prohibited-attr: aria-label on progress <div> without role attribute",
+        "color-contrast: text-brand-cream/40 on dark background (3.11:1, needs 4.5:1)",
+        "link-in-text-block: brand-orange links in body text lack underline"
+      ]
+    }
+  },
+  "ship_verdict": "with_caveats",
+  "caveats": [
+    "worldstate accessibility: Lighthouse scores 86/100 due to aria-label on progress bars without role, insufficient color contrast on text-xs/text-brand-cream/40 timestamps, and orange links in body text lacking underline. Functional but falls short of WCAG AA for these elements.",
+    "market page: All 30 items show 'Price unavailable' because warframe.market API is unreachable at build time -- expected behavior for static build; live prices require client-side fetch or re-deploy.",
+    "html:check fix applied: star-chart empty-heading fixed in commit 667e1aa and rebuilt; html:check now passes cleanly (33 files validated).",
+    "favicon.svg: Lighthouse reports 404 for favicon.svg on worldstate page preview -- likely a preview server path issue, not present in production deployment."
+  ]
+}
