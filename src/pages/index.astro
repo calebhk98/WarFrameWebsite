@@ -16,10 +16,13 @@ const featured = featuredSlugs
 const quickLinks = [
   { href: `${base}builds`, label: 'Builds', desc: 'Optimised mod loadouts' },
   { href: `${base}companions`, label: 'Companions', desc: 'Sentinels, Kubrows, Kavats, and more' },
+  { href: `${base}archwings`, label: 'Archwings', desc: 'Space combat suits and weapons' },
+  { href: `${base}liches`, label: 'Liches', desc: 'Kuva Liches and Sisters of Parvos' },
   { href: `${base}focus`, label: 'Focus', desc: 'Operator school abilities' },
   { href: `${base}amps`, label: 'Amps', desc: 'Operator weapon builds' },
   { href: `${base}compare`, label: 'Compare builds', desc: 'View builds side by side' },
   { href: `${base}compare-warframes`, label: 'Compare warframes', desc: 'Stats side by side' },
+  { href: `${base}damage-types`, label: 'Damage types', desc: 'Effectiveness matrix and status procs' },
   { href: `${base}guides`, label: 'Guides', desc: 'Farming and strategy' },
   { href: `${base}tier-list`, label: 'Tier List', desc: 'Meta frame rankings' },
   { href: `${base}beginner`, label: 'Beginner Hub', desc: 'Start here if you are new' },
@@ -143,6 +146,7 @@ const recentUpdates = [
         {[
           { href: `${base}warframes`, label: 'Warframes', desc: '110 frames -- abilities, stats, builds' },
           { href: `${base}companions`, label: 'Companions', desc: 'Sentinels, Kubrows, Kavats, Vulpaphylas, Predasites, MOAs, Hounds' },
+          { href: `${base}archwings`, label: 'Archwings', desc: '12 Archwings, Arch-guns, and Arch-melees' },
           { href: `${base}weapons`, label: 'Weapons', desc: '598 primary, secondary, and melee weapons' },
           { href: `${base}mods`, label: 'Mods', desc: 'Augments and featured mod catalogue' },
           { href: `${base}quests`, label: 'Quests', desc: '43 quests -- walkthroughs and lore' },
@@ -154,6 +158,7 @@ const recentUpdates = [
           { href: `${base}relics`, label: 'Relics', desc: '2682 void relics for prime farming' },
           { href: `${base}focus`, label: 'Focus Schools', desc: '5 Operator schools -- nodes and Waybounds' },
           { href: `${base}amps`, label: 'Amps', desc: 'Operator weapon configurations' },
+          { href: `${base}liches`, label: 'Liches and Sisters', desc: 'Kuva Liches, Sisters of Parvos, Tenet and Kuva weapons' },
         ].map((col) => (
           <a
             href={col.href}

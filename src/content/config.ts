@@ -2,11 +2,13 @@ import { defineCollection } from 'astro:content';
 
 import { ampSchema } from './schemas/amps';
 import { arcaneSchema } from './schemas/arcanes';
+import { archwingSchema } from './schemas/archwings';
 import { buildSchema } from './schemas/builds';
 import { companionSchema } from './schemas/companions';
 import { factionSchema } from './schemas/factions';
 import { focusSchoolSchema } from './schemas/focus-schools';
 import { guideSchema } from './schemas/guides';
+import { lichSchema } from './schemas/liches';
 import { missionSchema } from './schemas/missions';
 import { modSchema } from './schemas/mods';
 import { questSchema } from './schemas/quests';
@@ -21,11 +23,13 @@ import { weaponSchema } from './schemas/weapons';
 export * from './schemas/shared';
 export * from './schemas/amps';
 export * from './schemas/arcanes';
+export * from './schemas/archwings';
 export * from './schemas/builds';
 export * from './schemas/companions';
 export * from './schemas/factions';
 export * from './schemas/focus-schools';
 export * from './schemas/guides';
+export * from './schemas/liches';
 export * from './schemas/missions';
 export * from './schemas/mods';
 export * from './schemas/quests';
@@ -50,5 +54,7 @@ export const collections = {
   guides: defineCollection({ type: 'content', schema: guideSchema }),
   'focus-schools': defineCollection({ type: 'content', schema: focusSchoolSchema }),
   amps: defineCollection({ type: 'content', schema: ampSchema }),
+  archwings: defineCollection({ type: 'content', schema: archwingSchema }),
   companions: defineCollection({ type: 'content', schema: companionSchema }),
+  liches: defineCollection({ type: 'content', schema: lichSchema }),
 };

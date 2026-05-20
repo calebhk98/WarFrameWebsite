@@ -1,0 +1,131 @@
+---
+name: Amesha
+type: archwing
+masteryRank: 0
+health: 650
+shield: 220
+armor: 195
+energy: 220
+abilities:
+  - name: Watchful Swarm
+    key: "1"
+    description: >-
+      Tiny drones orbit the Warframe or a targeted ally and intercept incoming
+      enemy fire. Each intercepted shot depletes one drone charge.
+    stats: { charges: 20 }
+  - name: Benevolent Decoy
+    key: "2"
+    description: >-
+      Creates beacon drones that draw enemy fire and convert the absorbed damage
+      into healing pulses for nearby allies.
+    stats: { healRadius: 12 }
+  - name: Warding Grace
+    key: "3"
+    description: >-
+      Renders the Warframe and nearby allies immune to Status Effects while
+      slowing all nearby enemies for the duration.
+    stats: { range: 15 }
+  - name: Vengeful Rush
+    key: "4"
+    description: >-
+      All damage taken is converted into Energy. While active, abilities gain
+      enhanced Range, Duration, and Strength for the Warframe and nearby allies.
+    stats: {}
+acquisition:
+  source: Clan Dojo -- Tenno Lab research
+  blueprintLocations:
+    - "Clan Dojo Tenno Lab (requires Specter of the Rail research)"
+  buildTimeHours: 12
+  note: "Requires Harness, Systems, and Wings components plus 4x Nitain Extract."
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    title: "WFCD warframe-items -- Archwing.json"
+    publisher: "WFCD"
+    note: "Stats sourced from Archwing.json entry for Amesha."
+  - url: "https://warframe.fandom.com/wiki/Amesha"
+    accessedAt: "2026-05-20"
+    title: "Amesha -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+
+## Overview
+
+Amesha is a support-oriented Archwing built around protecting allied Warframes and regenerating their health and energy in the harsh vacuum of space. Its ability set focuses on drones, beacons, and auras that benefit the entire squad, making it the premier choice for cooperative Archwing missions and deep-space survival. Every ability in Amesha's kit either intercepts damage, redirects fire, converts incoming harm into beneficial effects, or buffs allies outright.
+
+Introduced in Update 19 (Specters of the Rail, July 2016), Amesha was designed to fill the support gap that Odonata and Elytron left open. Where those Archwings deal or absorb damage, Amesha acts as a mobile healer and buffer. Players looking to keep a squad alive through prolonged Archwing Exterminate, Interception, or Rush missions consistently reach for Amesha when survival is paramount.
+
+Amesha has above-average health at 650 and solid armor at 195, making it reasonably durable even without active ability use. Its shield pool of 220 is modest by comparison, but the defensive abilities more than compensate when used proactively.
+
+## Abilities
+
+<AbilityCard
+  name="Watchful Swarm"
+  key="1"
+  energyCost={25}
+  description="Tiny drones orbit the Warframe or a targeted ally and intercept incoming enemy fire. Each intercepted shot depletes one drone charge."
+/>
+
+Watchful Swarm is a single-target protective shell. Casting it on an ally puts a ring of 20 interception drones around them; casting it again on yourself applies it to Amesha. The drones automatically track and neutralize incoming projectiles. This ability excels at keeping squishy squad members alive during heavy Grineer or Corpus Archwing waves where rapid missile fire would otherwise overwhelm regenerating shields.
+
+<AbilityCard
+  name="Benevolent Decoy"
+  key="2"
+  energyCost={50}
+  description="Creates beacon drones that draw enemy fire and convert absorbed damage into healing pulses that benefit nearby allies."
+/>
+
+Benevolent Decoy deploys floating beacon drones in a wide radius that attract enemy targeting. The key mechanic is the conversion: enemy damage absorbed by the beacons becomes a healing pulse that restores health to Amesha and nearby squad members. Positioning matters -- beacons placed between the squad and enemy formations maximize both the aggro draw and the resulting healing throughput.
+
+<AbilityCard
+  name="Warding Grace"
+  key="3"
+  energyCost={75}
+  description="Renders the Warframe and nearby allies immune to all Status Effects while slowing all enemies within the ability's radius."
+/>
+
+Warding Grace is Amesha's area-denial and status-cleanse ability. During the active window, every ally within range is immune to cold, heat, toxin, radiation, and all other status procs -- a significant benefit when fighting Grineer Archwing enemies that commonly apply cold and blast. Simultaneously, every enemy within the radius suffers a movement and attack speed reduction, extending the window in which allies can safely destroy them.
+
+<AbilityCard
+  name="Vengeful Rush"
+  key="4"
+  energyCost={25}
+  description="All damage taken is transformed into Energy while active. Abilities gain enhanced Range, Duration, and Strength for both Amesha and nearby allies during the effect."
+/>
+
+Vengeful Rush is the most unique of Amesha's abilities. While toggled on, every point of damage Amesha suffers refills its energy pool instead of diminishing it, creating a perverse incentive to absorb fire. The simultaneous range, duration, and strength buffs on all abilities mean that Watchful Swarm covers more drones, Benevolent Decoy heals more aggressively, and Warding Grace covers a larger area. Activating Vengeful Rush and then deliberately flying through enemy fire is a reliable way to top off energy in extended missions.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 650 |
+| Shield | 220 |
+| Armor | 195 |
+| Energy | 220 |
+| Mastery rank | 0 |
+
+## Acquisition
+
+Amesha's blueprint and three component blueprints (Harness, Systems, Wings) are researched in the Clan Dojo's Tenno Lab. All four blueprints require standard Archwing materials, plus four Nitain Extract for the Wings component. Nitain Extract is obtained from Nightwave Cred Offerings or as a rare resource from Ghoul Purge bounties on the Plains of Eidolon.
+
+Build time for the complete Amesha is 12 hours per component plus the main blueprint. Rushing all four costs platinum.
+
+## Playstyle
+
+Amesha rewards players who position themselves between allies and enemy formations. The optimal rotation is: activate Vengeful Rush before engaging, cast Benevolent Decoy to aggro incoming fire and start healing, apply Watchful Swarm to any squad member taking concentrated fire, and pop Warding Grace when status effects start landing. Because Vengeful Rush converts incoming damage into energy, an aggressive support player can sustain all other abilities indefinitely during pitched engagements.
+
+Solo players use Amesha defensively: Watchful Swarm protects Amesha itself, Warding Grace neutralizes hazardous proc combinations from mixed enemy groups, and Vengeful Rush ensures energy never runs dry when enemies are actively shooting.
+
+## Modding notes
+
+Amesha benefits primarily from Ability Strength (improves Benevolent Decoy healing), Ability Range (extends Warding Grace radius and Benevolent Decoy beacon spread), and Ability Duration (sustains Vengeful Rush and Warding Grace longer). Vazarin focus school's Protective Sling complements the support kit. Redirection is valuable to extend the effective shield pool; Vitality strengthens the base health buffer. Archwing mods such as Hyperion Thrusters improve sprint speed if repositioning speed is a priority.
+
+## Lore
+
+The Amesha was engineered as a support platform rather than a weapon. Its drone systems draw on Tenno void-tech, and the conversion of incoming damage into energy in Vengeful Rush reflects an early Orokin design philosophy: turn the enemy's aggression against itself. The frame was later refined by the Lotus's engineers to maximize squad-wide coverage, and its polarities (naramon, vazarin, madurai) reflect its hybrid offensive and protective role.
+
+## Sources
+
+Stats from WFCD warframe-items Archwing.json. Ability descriptions from WFCD and cross-checked with [Amesha on the WARFRAME Wiki](https://warframe.fandom.com/wiki/Amesha). Build requirements from in-game Clan Dojo research and WFCD component entries.

@@ -1,0 +1,37 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+import Callout from '../../components/Callout.astro';
+
+export async function getStaticPaths() {
+  const liches = await getCollection('liches');
+  return liches.map((l) => ({ params: { slug: l.slug }, props: { entry: l } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const components = { Callout };
+
+const { data } = entry;
+
+const typeLabel = data.lichType === 'kuva' ? 'Kuva Lich' : 'Sister of Parvos';
+const description = `${data.name} -- ${typeLabel} carrying a ${data.element} element weapon. Element: ${data.element}.`;
+
+const tags: string[] = [
+  typeLabel,
+  data.element,
+  ...(data.weaponSlug ? [data.weaponSlug] : []),
+];
+---
+
+<Entity
+  title={data.name}
+  kind="lich"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+  collectionHref={`${import.meta.env.BASE_URL}liches`}
+  collectionLabel="Liches and Sisters"
+>
+  <Content components={components} />
+</Entity>

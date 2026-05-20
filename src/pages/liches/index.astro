@@ -1,0 +1,131 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EntityCard from '../../components/EntityCard.astro';
+
+const base = import.meta.env.BASE_URL;
+const allLiches = await getCollection('liches');
+
+const kuva = [...allLiches]
+  .filter((l) => l.data.lichType === 'kuva')
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const sisters = [...allLiches]
+  .filter((l) => l.data.lichType === 'sister')
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<Base
+  title="Kuva Liches and Sisters of Parvos"
+  description="Complete guide to Kuva Liches and Sisters of Parvos -- Tenet and Kuva weapons, murmur farming, Requiem mods, and vanquish strategies."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+
+    <header class="mb-10">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Kuva Liches and Sisters of Parvos</h1>
+      <p class="text-brand-cream/60">
+        {allLiches.length} entries -- {kuva.length} Kuva Liches, {sisters.length} Sisters of Parvos
+      </p>
+    </header>
+
+    <section class="mb-12 rounded-lg border border-surface-3 bg-surface-2 p-6" aria-labelledby="system-primer-heading">
+      <h2 id="system-primer-heading" class="text-xl font-semibold text-brand-cream mb-4">
+        How the Lich and Sister system works
+      </h2>
+      <div class="prose prose-invert prose-sm max-w-none text-brand-cream/80 space-y-4">
+        <p>
+          Kuva Liches and Sisters of Parvos are Warframe's primary endgame nemesis systems. Each
+          creates a unique, named enemy who claims territory on the Star Chart, spawns thrall
+          minions, and carries an exclusive weapon with a randomly rolled elemental bonus between
+          25% and 60%.
+        </p>
+        <p>
+          <strong class="text-brand-cream">Spawning a Lich or Sister.</strong> Kuva Liches are created
+          by performing a Mercy kill on a Kuva Larvling in any level 20 or higher Grineer mission,
+          after completing The War Within. Sisters of Parvos are created by completing a Granum Void
+          challenge (accessed via a Granum Crown from defeating a Corpus Treasurer) after completing
+          The Deadlock Protocol. The Warframe used when a Larvling or Candidate spawns determines
+          the elemental bonus on the resulting weapon.
+        </p>
+        <p>
+          <strong class="text-brand-cream">Murmur farming.</strong> After a Lich or Sister spawns,
+          it begins occupying territory and sending Thralls -- empowered minions -- into missions
+          on those nodes. Killing Thralls fills a murmur bar for each of three Parazon Requiem mod
+          slots. Once a slot's murmur bar is full, the correct Requiem mod for that slot is revealed.
+          The process requires patience: each slot may need 50 to 100 Thrall kills to fully reveal,
+          though group play accelerates this significantly.
+        </p>
+        <p>
+          <strong class="text-brand-cream">Requiem mods and the Parazon.</strong> Eight Requiem mods
+          exist -- Ris, Lohk, Fass, Vome, Netra, Khra, Jahu, Xata. Each mod has three charges.
+          Once all three Requiem slots are identified and the mods placed in the correct order on
+          the Parazon (Warframe's built-in Mercy weapon), the player must confront the Lich or
+          Sister in their Lair -- the Kuva Fortress for Liches, and a Corpus Proxima station for
+          Sisters -- and down them three times with the correct sequence.
+        </p>
+        <p>
+          <strong class="text-brand-cream">Vanquish or convert.</strong> After successfully downing
+          the Lich or Sister three times with the correct Requiem pattern, the player chooses to
+          vanquish (kill permanently, receiving the weapon at its rolled element percentage) or
+          convert (recruit them as an ally deployable in missions). Converted enemies can also be
+          traded to other players through the Crimson Branch in any Relay.
+        </p>
+        <p>
+          <strong class="text-brand-cream">Valence Fusion.</strong> Two copies of the same Kuva or
+          Tenet weapon can be merged via Valence Fusion to increase the element percentage by 10%,
+          up to a cap of 60%. The element of the higher-percentage weapon is preserved in the result.
+        </p>
+      </div>
+    </section>
+
+    <nav aria-label="Lich type groups" class="flex flex-wrap gap-2 mb-8">
+      <a
+        href="#group-kuva"
+        class="text-xs px-2 py-1 rounded bg-surface-2 border border-surface-3 text-brand-cream/70 hover:text-brand-orange hover:border-brand-orange/50 transition-colors"
+      >
+        Kuva Liches ({kuva.length})
+      </a>
+      <a
+        href="#group-sisters"
+        class="text-xs px-2 py-1 rounded bg-surface-2 border border-surface-3 text-brand-cream/70 hover:text-brand-orange hover:border-brand-orange/50 transition-colors"
+      >
+        Sisters of Parvos ({sisters.length})
+      </a>
+    </nav>
+
+    {kuva.length > 0 && (
+      <section id="group-kuva" class="mb-12">
+        <h2 class="text-sm uppercase tracking-widest text-brand-orange font-semibold mb-4 border-b border-surface-3 pb-2">
+          Kuva Liches
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+          {kuva.map((l) => (
+            <EntityCard
+              href={`${base}liches/${l.slug}`}
+              name={l.data.name}
+              tags={[l.data.element, 'kuva']}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+
+    {sisters.length > 0 && (
+      <section id="group-sisters" class="mb-12">
+        <h2 class="text-sm uppercase tracking-widest text-brand-orange font-semibold mb-4 border-b border-surface-3 pb-2">
+          Sisters of Parvos
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+          {sisters.map((l) => (
+            <EntityCard
+              href={`${base}liches/${l.slug}`}
+              name={l.data.name}
+              tags={[l.data.element, 'sister']}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+
+  </div>
+</Base>
