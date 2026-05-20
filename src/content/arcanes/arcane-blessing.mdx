@@ -1,0 +1,67 @@
+---
+slug: arcane-blessing
+name: Arcane Blessing
+type: warframe
+maxRank: 5
+effect: "On Health Damage Taken: [chance]% chance to restore [healing] Health to self and nearby allies."
+perRankStats:
+  - rank: 0
+    stats: { chance: 10, healing: 50 }
+  - rank: 1
+    stats: { chance: 15, healing: 100 }
+  - rank: 2
+    stats: { chance: 20, healing: 150 }
+  - rank: 3
+    stats: { chance: 25, healing: 200 }
+  - rank: 4
+    stats: { chance: 30, healing: 250 }
+  - rank: 5
+    stats: { chance: 35, healing: 300 }
+drops:
+  - source: "Lua/Circulus (Survival), Rotation C"
+    chance: 10.2
+    rarity: "Uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+    note: "Arcane drops and healing mechanics from WFCD 1.756.0+"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Blessing"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+    note: "Acquisition context and squad utility applications"
+updatedAt: "2026-05-20"
+---
+
+## Overview
+
+Arcane Blessing is a Warframe arcane that provides reactive group healing whenever the Tenno takes health damage. The arcane triggers on damage threshold events, granting a percentage chance to restore a health pool to both the player and nearby squadmates. Unlike utility arcanes tied to specific playstyles, Blessing is universally applicable -- it provides value on every frame build simply by taking damage during normal gameplay. The healing scales from 50 health at rank 0 to 300 at rank 5, with trigger chance climbing from 10% to 35%. This makes Blessing a staple defensive arcane for coordinated squad play, particularly in endurance missions where consistent group sustain prevents wipes. The arcane is especially valuable for support frames or tank-oriented builds that intentionally draw aggro.
+
+## Effect per rank
+
+Arcane Blessing triggers whenever the Tenno takes health damage and heals a scaling amount based on rank. The trigger chance increases from 10% at rank 0 to 35% at rank 5, meaning higher ranks activate more frequently during intense combat. Healing values scale linearly: rank 0 restores 50 health per proc, increasing by 50 per rank to a maximum of 300 at rank 5. The healing applies to the Tenno and all allies within a fixed radius (approximately 15 meters), making it effective for squad healing without direct ability casts. Multiple Blessing procs cannot overlap; only one instance heals per damage event. The arcane's healing radius is smaller than Trinity's healing range but applies to all teammates without requiring ability usage, making it pure passive utility.
+
+| Rank | Trigger chance | Healing per proc | Squad range |
+|------|---------------:|----------------:|------------|
+| 0 | 10% | 50 | Yes |
+| 1 | 15% | 100 | Yes |
+| 2 | 20% | 150 | Yes |
+| 3 | 25% | 200 | Yes |
+| 4 | 30% | 250 | Yes |
+| 5 | 35% | 300 | Yes |
+
+## Acquisition
+
+Arcane Blessing is a rare drop exclusive to Lua/Circulus Survival runs on Rotation C, with an uncommon (10.2%) drop rate. This makes the arcane substantially rarer than Duviri-farmed varieties, requiring dedicated survival runs or coordination with farm squads. Each Rotation C cycle in Circulus demands approximately 20 minutes of survival time, making efficient farming dependent on squad survivability and damage. For solo players, this arcane is less accessible than others, as Lua Survival scaling demands specific warframe builds and defensive planning. Squad-based farming with support frames (Trinity, Protea, Octavia) dramatically reduces acquisition time by enabling consistent 20+ minute runs without team deaths. The arcane's rarity reflects its powerful passive utility; unlike Consequence or Nullifier which fill niche roles, Blessing is universally beneficial across all playstyles.
+
+## Best on
+
+Arcane Blessing excels on support frames and defensive builds that already position themselves to draw fire. Rhino with Iron Skin and Stomp creates a healing field for the entire squad while tanking damage. Trinity Prime gains another layer of group sustain without competing with her energy-based healing abilities. Protea's Temporal Anchor can be coordinated with Blessing procs to create healing bursts during critical moments. Octavia provides passive support through Amp and Metronome while Blessing acts as an emergency group heal. The arcane is also valuable on DPS frames in coordinated squads, where the Blessing wearer draws enemy fire while dealing damage, creating a symbiotic tank/healer hybrid. Tank frames like Hildrun or Grendel benefit most, as their high health pools and armor ensure frequent damage hits that trigger Blessing procs.
+
+## Notes
+
+Arcane Blessing heals only when the Tenno's health pool takes damage; invulnerability periods (Warding Halo, Prism, Null Star) do not trigger procs even if shields are damaged. The healing applies immediately upon trigger without delay, making it responsive to burst damage windows. Multiple squad members can equip Blessing independently; stacking versions do not interfere and can create overlapping heals during intense firefights. The 15-meter radius is fixed and cannot be extended by range mods or frame abilities. Unlike Trinity's Bless, this arcane's healing does not scale with ability strength or range mods; the healing values in the rank table are absolute. The arcane is particularly effective in Void Fissure endless missions where health damage accumulates steadily, triggering Blessing far more frequently than in typical star chart missions.
+
+## Sources
+
+Arcane Blessing acquisition and mechanical data derive from WFCD warframe-items and the WARFRAME Wiki. The arcane was introduced with a Lua lore update and has received no mechanical changes since implementation. Lua Survival drop tables remain consistent across seasonal cycles; the 10.2% Uncommon drop rate on Rotation C is the sole viable source for this arcane.

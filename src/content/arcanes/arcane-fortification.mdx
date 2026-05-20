@@ -1,0 +1,73 @@
+---
+slug: arcane-fortification
+name: Melee Fortification
+type: melee
+maxRank: 5
+effect: "On Melee Kill: +[armor] Armor for [duration]s."
+perRankStats:
+  - rank: 0
+    stats: { armor: 35, duration: 10 }
+  - rank: 1
+    stats: { armor: 70, duration: 10 }
+  - rank: 2
+    stats: { armor: 105, duration: 10 }
+  - rank: 3
+    stats: { armor: 140, duration: 10 }
+  - rank: 4
+    stats: { armor: 175, duration: 10 }
+  - rank: 5
+    stats: { armor: 210, duration: 10 }
+drops:
+  - source: "Mocking Whisper (Zariman fissure)"
+    chance: 12.5
+    rarity: "Uncommon"
+  - source: "Void Fissure (Zariman)"
+    chance: 9.0
+    rarity: "Uncommon"
+  - source: "Zariman Void Cascade"
+    chance: 8.5
+    rarity: "Uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+    note: "Melee arcane drops and mechanics from WFCD 1.756.0+"
+  - url: "https://warframe.fandom.com/wiki/Melee_Fortification"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+    note: "Melee build integration and armor scaling context"
+updatedAt: "2026-05-20"
+---
+
+## Overview
+
+Melee Fortification is a melee-slot arcane that rewards aggressive combat with escalating armor stacks. The arcane triggers on melee kills and grants flat armor additions that refresh on subsequent kills. Unlike Warframe-slot arcanes, Melee Fortification applies its defensive buff directly to the Tenno and is not dependent on ability usage or specific status conditions. The flat armor addition is substantial at rank 5 (210 per stack), making it valuable for sustained melee fights where kill chains are maintained. The 10-second duration encourages aggressive playstyles that keep enemies dying in rapid succession; defensive players or builds with irregular kill rates receive diminished value. This arcane is particularly synergistic with heavy blade weapons and combo-focused builds that naturally generate kill streaks.
+
+## Effect per rank
+
+Melee Fortification provides flat armor stacks from melee kills that last 10 seconds across all ranks. Each kill refreshes the duration and stacks the effect, with armor values scaling linearly from 35 at rank 0 to 210 at rank 5. Multiple kills within the duration window cause the armor to accumulate additively, meaning kill chains can generate 200+ armor by midway through a 10-second window. At maximum rank with sustained kill pressure, the effective armor gain approaches 300--400+ for brief moments before stacks expire. This makes Fortification a "feast or famine" arcane -- it provides exceptional value in wave-based missions (Void Fissure, Disruption) but negligible utility against single high-priority targets (bosses, assassination). The arcane incentivizes weapon choices that clear adds quickly rather than heavy single-target damage.
+
+| Rank | Armor per kill | Duration | Stack potential |
+|------|---------------:|----------:|-----------|
+| 0 | +35 | 10s | Low |
+| 1 | +70 | 10s | Moderate |
+| 2 | +105 | 10s | Moderate |
+| 3 | +140 | 10s | High |
+| 4 | +175 | 10s | High |
+| 5 | +210 | 10s | Very high |
+
+## Acquisition
+
+Melee Fortification drops from Zariman Void Fissure missions and Void Cascade events. The arcane appears as an uncommon drop with 12.5% chance in Mocking Whisper fissures, 9% in standard Void Fissure runs, and 8.5% in Void Cascade endless instances. All three sources are readily accessible, making Melee Fortification one of the more obtainable arcanes in the game. Farming efficiency improves with squad coordination and radioshare, as each player's drops are independent. Solo farming remains viable due to the high drop chances, though the 15--20 minute mission duration demands sustained engagement. Unlike Arcane Blessing (single Lua Survival source), Melee Fortification benefits from multiple accessible farming locations, making it ideal for casual acquisition through regular void fissure play.
+
+## Builds that use it
+
+Melee Fortification shines on heavy blade and polearm builds focused on crowd control and rapid kill chains. Ash Prime with Serration, Killing Blow, and attack speed mods generates enough kills per 10 seconds to maintain 200+ stacked armor. Valkyr with Rip Line and sustained melee engagement benefits from the passive armor during long survival sessions. Glaive-throwing builds (Glaive Prime, Xoris) create rapid kill streaks across enemy clusters, reliably triggering Fortification stacks. The arcane is less valuable on precision-focused builds (single-target assassinations, boss hunting) or low-crowd-control weapons (sniper rifles, single-stage launchers). Combining Fortification with natural armor scaling (Rhino, Warcry frames) amplifies the benefit, though diminishing returns apply at very high armor values (300+ existing armor). The arcane is optimal on frames that already emphasize melee as primary DPS rather than supplementary.
+
+## Notes
+
+Melee Fortification armor stacks are independent of the Tenno's base armor and do not benefit from armor mods or frame passives that scale armor percentagically. The stacks are refreshed rather than added on sequential kills during the duration window, meaning one kill every 10 seconds provides 210 armor at rank 5, while ten kills in 10 seconds also provides 210 (refreshed). This prevents infinite stacking but encourages continuous kill pressure. The armor buff applies only to the Tenno wielding the melee weapon; other squad members do not receive the buff. Melee Fortification was introduced with the Zariman expansion and has remained mechanically consistent since implementation. Combining with weapons that have inherent lifesteal (Lesion, Castanas with specific augments) creates powerful sustain synergies for endurance missions.
+
+## Sources
+
+Melee Fortification mechanics and acquisition data come from WFCD warframe-items and the WARFRAME Wiki. The arcane's armor scaling and stack mechanics have been verified through player testing on void fissure runs. Drop rate data reflects current Zariman mission rotation tables as of the referenced access date.

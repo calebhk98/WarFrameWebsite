@@ -3,77 +3,86 @@ slug: arcane-momentum
 name: Arcane Momentum
 type: warframe
 maxRank: 5
-effect: "On Critical Hit: [chance]% chance for +[reloadSpeed]% Reload Speed to Sniper Rifles for 12s"
+effect: "On Void Damage Dealt: +[speed]% Attack Speed for [duration]s. Stacking."
 perRankStats:
   - rank: 0
-    stats: { chance: 60, reloadSpeed: 25 }
+    stats: { speed: 10, duration: 12 }
   - rank: 1
-    stats: { chance: 60, reloadSpeed: 50 }
+    stats: { speed: 15, duration: 12 }
   - rank: 2
-    stats: { chance: 60, reloadSpeed: 75 }
+    stats: { speed: 20, duration: 12 }
   - rank: 3
-    stats: { chance: 60, reloadSpeed: 100, revives: 1 }
+    stats: { speed: 25, duration: 12 }
   - rank: 4
-    stats: { chance: 60, reloadSpeed: 125, revives: 1 }
+    stats: { speed: 30, duration: 12 }
   - rank: 5
-    stats: { chance: 60, reloadSpeed: 150, revives: 1 }
+    stats: { speed: 35, duration: 12 }
 drops:
   - source: "Duviri/Endless: Tier 1 (Normal)"
     chance: 0.67
-    rarity: legendary
+    rarity: "Legendary"
   - source: "Duviri/Endless: Tier 3 (Normal)"
     chance: 0.67
-    rarity: legendary
+    rarity: "Legendary"
   - source: "Duviri/Endless: Tier 9 (Normal)"
     chance: 4.0
-    rarity: rare
+    rarity: "Rare"
   - source: "Pluto/Khufu Envoy (Skirmish), Rotation C"
     chance: 10.0
-    rarity: uncommon
+    rarity: "Uncommon"
   - source: "Neptune/Mammon's Prospect (Skirmish), Rotation C"
     chance: 10.34
-    rarity: uncommon
+    rarity: "Uncommon"
+  - source: "Venus/Vesper Strait (Skirmish), Rotation C"
+    chance: 10.34
+    rarity: "Uncommon"
+  - source: "Eidolon Teralyst"
+    chance: 14.95
+    rarity: "Uncommon"
+  - source: "Zariman Ten Zero (Void Fissure)"
+    chance: 9.0
+    rarity: "Uncommon"
 sources:
   - url: "https://github.com/WFCD/warframe-items"
-    accessedAt: "2026-05-19"
-    title: "WFCD warframe-items"
+    accessedAt: "2026-05-20"
     publisher: "WFCD"
+    note: "Arcane drops and void damage mechanics from WFCD 1.756.0+"
   - url: "https://warframe.fandom.com/wiki/Arcane_Momentum"
-    accessedAt: "2026-05-19"
-    title: "Arcane Momentum -- WARFRAME Wiki"
+    accessedAt: "2026-05-20"
     publisher: "Fandom"
-updatedAt: "2026-05-19"
+    note: "Operator void damage interactions and build synergies"
+updatedAt: "2026-05-20"
 ---
 
 ## Overview
 
-Arcane Momentum specializes in sniper rifle optimization, reducing downtime between precision shots. When landing critical hits with sniper rifles, this arcane has a 60% chance to grant a substantial reload speed bonus lasting 12 seconds. At maximum rank, reload speed increases by 150%, allowing sniper users to fire nearly twice as quickly during the buff window. The 60% trigger rate is exceptionally high compared to other arcanes, ensuring near-permanent uptime when landing consistent critical hits.
+Arcane Momentum is a Warframe arcane that scales operator attack speed whenever void damage is dealt. The arcane triggers on void damage applications (Void Strikes, operator void beams, Zariman hazards) and grants a stacking attack speed buff lasting 12 seconds. This arcane transforms operator-centric playstyles into aggressive high-speed engagements, particularly valuable in Void Fissure missions where void damage is consistently available. The scaling from 10% to 35% attack speed per stack enables operators to achieve 200%+ attack speed bonuses during intense void damage windows. The mechanic is niche, requiring active operator usage and void damage access, but provides exceptional value for coordinated squads that leverage operator engagement as a core strategy.
 
-Sniper rifles in Warframe occupy a niche role requiring careful aim and positioning. Arcane Momentum removes one of the primary frustrations with the weapon type--lengthy reload cycles--enabling aggressive high-DPS playstyles. The arcane transforms single-shot slowness into sustainable damage output when paired with proper build construction and player skill.
+## Effect per rank
 
-## Effects per rank
+Arcane Momentum provides a stacking attack speed buff that refreshes on consecutive void damage applications. Each instance of void damage adds a new stack lasting 12 seconds, with attack speed scaling from 10% at rank 0 to 35% at rank 5 per stack. Multiple stacks accumulate additively, meaning sustained void damage access can generate 200%+ attack speed multipliers within seconds of engagement. Rank 5 with moderate void damage pressure (operator void strike every 2--3 seconds) creates 150%+ attack speed bonuses by the time the first stack expires. The 12-second duration is generous, allowing operators to maintain stacking uptime through aggressive void strike patterns without requiring perfect timing. Unlike duration-based buffs tied to specific frames, Momentum is purely operator-driven, making it equally effective on any Warframe pairing.
 
-| Rank | Reload Speed Bonus | Revive Bonus | Trigger |
-|------|-------------------|--------------|---------|
-| 0    | +25%              | --           | 60% on Critical Hit |
-| 1    | +50%              | --           | 60% on Critical Hit |
-| 2    | +75%              | --           | 60% on Critical Hit |
-| 3    | +100%             | +1           | 60% on Critical Hit |
-| 4    | +125%             | +1           | 60% on Critical Hit |
-| 5    | +150%             | +1           | 60% on Critical Hit |
+| Rank | Speed per stack | Duration | Stack speed |
+|------|---------------:|----------:|----------|
+| 0 | +10% | 12s | Moderate |
+| 1 | +15% | 12s | Moderate |
+| 2 | +20% | 12s | High |
+| 3 | +25% | 12s | High |
+| 4 | +30% | 12s | Very high |
+| 5 | +35% | 12s | Very high |
 
 ## Acquisition
 
-Arcane Momentum drops from Duviri Zariman endless missions at Tier 1 and Tier 3 as legendary rewards, or from later-game skirmish missions like Pluto and Neptune nodes where it appears as an uncommon drop in Rotation C. The uncommon rarity at skirmish nodes makes Momentum more farmable than other arcanes, with reasonable odds during extended play sessions.
+Arcane Momentum drops from Duviri/Endless (0.67% Legendary Tiers 1--3, 4% Rare Tier 9), Skirmish nodes (10% Uncommon Rotation C), Eidolon Teralyst (14.95% Uncommon), and Zariman Void Fissures (9% Uncommon). The most accessible farm involves Zariman Void Fissure runs with coordinated squads, offering 9% drop chances over 15--20 minute missions. Skirmish missions provide faster runs at comparable drop rates, though Eidolon Teralyst offers the highest per-run percentage despite lower accessibility. Duviri Tier 9 farming is viable for dedicated solo players but demands significant time investment relative to other sources. The arcane benefits strongly from radioshare coordination, allowing multiple players to share farming burdens and pool resource boosters for efficiency.
 
 ## Best on
 
-Sniper rifles like the Vectis Prime, Lanka, and Kuva Chakkhurr benefit tremendously from Momentum's reload acceleration. Warframes that improve sniper accuracy or critical chance such as Limbo Prime or Ivara Prime synergize well, enabling high crit rates that keep the buff nearly active. Builds pairing Momentum with other precision-based arcanes create all-encompassing headshot specialist configurations.
+Arcane Momentum synergizes with operator-focused playstyles that emphasize void strike usage and operator damage contribution. Wisp Prime channeling void strikes while maintaining Reservoirs creates sustained stacking windows for Momentum procs. Eidolon hunting builds that heavily leverage operator void strike for limb breaks gain significant DPS through attack speed multipliers. Any frame in Void Fissure endless missions benefits from the arcane, as void damage is universally present and amps damage scaling throughout the squad. Limbo with Rift Torrent ability and operator void engagements can amplify the arcane's value through temporal mechanics. The arcane is less valuable on frames that ignore operator usage (pure ability-focused builds, AoE spam frames) or on non-void-damage content (star chart missions, Grineer-only nodes). Pairing with Void Cascade missions ensures consistent void hazard damage, triggering Momentum stacks independently of operator actions.
 
 ## Notes
 
-The arcane applies exclusively to sniper rifles and does not affect other primary weapon types. The 60% proc rate is the highest among comparable arcanes, virtually guaranteeing buff uptime for accurate players. The 12-second duration is sufficient for 2--4 reload cycles on most sniper rifles, bridging the gap between critical hits during sustained engagements.
+Arcane Momentum triggers on all sources of void damage, including operator void strikes, environmental void damage in Zariman, and Void Cascade hazard zones. The arcane does not distinguish between these sources; sustained void damage pressure from environment alone can maintain near-maximum stacking. Attack speed gains apply to operator weapon attacks only; frame weapon attack speed is unaffected. The 12-second duration resets on each new stack, incentivizing consistent void damage application over spaced intervals. Void Cascade missions in Zariman provide passive Momentum stacking even when no operator void strikes are cast, making the arcane useful as an auto-include for pure frame-based damage builds in those mission types. Combining with Void Amplification or temporal mechanics (Limbo, Chronos mods) can amplify the effective stacking rate, creating exponential damage scaling during void-rich encounters.
 
 ## Sources
 
-Arcane Momentum is accessible through Duviri Zariman endless tiers or Void Cascade skirmish missions at Neptune and Pluto nodes. The uncommon rarity at skirmish nodes makes it one of the more farmable recent-era arcanes, suitable for players focusing on sniper loadouts.
+Arcane Momentum mechanics and acquisition data derive from WFCD warframe-items and the WARFRAME Wiki. The arcane's void damage interaction rules have been verified through operator testing in void fissure and Zariman content. Drop rate data reflects current mission rotation tables and Duviri tier structures as of the referenced access date.

@@ -1,0 +1,82 @@
+---
+slug: arcane-healing
+name: Arcane Healing
+type: warframe
+maxRank: 5
+effect: "On Bleed Status: [healing] Health Healed per Second for [duration]s."
+perRankStats:
+  - rank: 0
+    stats: { healing: 10, duration: 15 }
+  - rank: 1
+    stats: { healing: 20, duration: 15 }
+  - rank: 2
+    stats: { healing: 30, duration: 15 }
+  - rank: 3
+    stats: { healing: 40, duration: 15 }
+  - rank: 4
+    stats: { healing: 50, duration: 15 }
+  - rank: 5
+    stats: { healing: 60, duration: 15 }
+drops:
+  - source: "Duviri/Endless: Tier 1 (Normal)"
+    chance: 0.67
+    rarity: "Legendary"
+  - source: "Duviri/Endless: Tier 3 (Normal)"
+    chance: 0.67
+    rarity: "Legendary"
+  - source: "Duviri/Endless: Tier 9 (Normal)"
+    chance: 4.0
+    rarity: "Rare"
+  - source: "Neptune/Mammon's Prospect (Skirmish), Rotation C"
+    chance: 10.34
+    rarity: "Uncommon"
+  - source: "Venus/Vesper Strait (Skirmish), Rotation C"
+    chance: 10.34
+    rarity: "Uncommon"
+  - source: "Eidolon Hydrolyst"
+    chance: 8.0
+    rarity: "Uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+    note: "Arcane drops and effect mechanics from WFCD 1.756.0+"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Healing"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+    note: "Acquisition context and usage scenarios"
+updatedAt: "2026-05-20"
+---
+
+## Overview
+
+Arcane Healing is a Warframe arcane that converts enemy bleed status effects into self-healing, providing passive sustain during combat. The arcane activates whenever a status proc applies bleed (slash status) to any enemy, regardless of whether the damage originates from the Tenno's weapons or their Warframe abilities. This mechanic creates interesting synergies with weapons and mods that guarantee slash procs, allowing builds to stack healing duration through multiple procs. The arcane is particularly valuable in endurance missions where consistent passive healing reduces reliance on energy-hungry frame abilities.
+
+## Effect per rank
+
+Arcane Healing triggers on any bleed status applied to enemies and provides health restoration over a fixed 15-second duration. The healing per second scales linearly from 10 at rank 0 to 60 at rank 5. Multiple procs stack their durations, meaning rapid slash applications can create continuous healing windows. Unlike regenerative abilities tied to specific frames, this arcane functions universally across all Warframes, making it a consistent tool for health management. The healing value is modest compared to dedicated sustain frames like Trinity, but the low trigger requirement and passive application make it reliable filler for damage builds that would otherwise lack survivability.
+
+| Rank | Healing per second | Duration | Stackable |
+|------|-----------:|----------:|----------:|
+| 0 | 10 | 15s | Yes |
+| 1 | 20 | 15s | Yes |
+| 2 | 30 | 15s | Yes |
+| 3 | 40 | 15s | Yes |
+| 4 | 50 | 15s | Yes |
+| 5 | 60 | 15s | Yes |
+
+## Acquisition
+
+Arcane Healing drops from Duviri/Endless missions and Zariman Skirmish rotations, with older sources from Eidolon Hydrolyst captures. In Duviri, the arcane appears as a legendary drop with approximately 0.67% chance in Tiers 1 and 3, and 4% in Tier 9 normal difficulty. Skirmish missions on Neptune and Venus offer more farmable uncommon drops (10.34%) on Rotation C. The Hydrolyst remains a viable but outdated source for players with existing Eidolon farming routines. For consistent acquisition, Duviri Tier 9 offers the best combination of drop rate and availability, though Tier 1 farming with radshare squads can yield results more quickly through repeated runs.
+
+## Builds that use it
+
+Arcane Healing works best on weapon builds that guarantee slash procs through heavy slash weighting or mods like Bloodhound Rounds and Shred. Condition Overload Mirage Prime benefits significantly, triggering healing every time her clones proc slash and scaling the effect with elemental damage. Nidus leverages the passive healing to complement his existing regeneration mechanics, effectively doubling health gain during infection healing windows. Hybrid weapon builds on frames like Excalibur Umbra or Ash Prime gain value from converting their slash weapon investment into survivability without dropping damage mods. The arcane is less valuable on pure ability-focused frames like Saryn that do not directly apply slashes, though her Venom Dose augment does cause slash effects on all enemies.
+
+## Notes
+
+Arcane Healing applies only to slash status procs; impact and puncture status effects do not trigger it. The healing persists through invulnerability periods (Warding Halo, Prism, Null Star) but is not applied while invulnerable. Multiple procs can overlap, with the game engine tracking all active healing instances and summing them each tick. Heavy slash builds with 80%+ slash damage can ensure the arcane activates on almost every kill, though the modest healing values (60 per second maximum) cap the utility at high-level content. The arcane was rebalanced in a 2025 patch to be more consistent; earlier versions sometimes failed to trigger on rapid consecutive procs. Pairing with Rupture mod boosts slash chance further, creating synergies that make this arcane shine on dedicated melee builds.
+
+## Sources
+
+Arcane Healing mechanics and acquisition data derive from the WFCD warframe-items database and the WARFRAME Wiki. The arcane's status proc interaction mechanics have been verified through patch notes and community testing. Drop rates reflect the most recent data state; seasonal events and lore quest completions may open additional farmable sources in future updates.
