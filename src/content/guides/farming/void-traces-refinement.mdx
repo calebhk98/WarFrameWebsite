@@ -15,7 +15,7 @@ tips:
   - "Void trace cap is 1200; refine relics between sessions to avoid passive cap waste."
   - "Each corrupted enemy kill in a Fissure mission has a chance to drop 1-3 traces."
   - "Traces drop in a shared radius; squad members do not compete for trace drops."
-  - "Radiant refinement costs 100 traces; Flawless costs 25; Exceptional costs 10."
+  - "Refinement costs: Exceptional costs 15 traces, Flawless costs 25 traces, Radiant costs 100 traces."
   - "Only refine relics you plan to run within the current session to avoid sitting on refined relics that become obsolete after vault rotations."
 sources:
   - url: "https://warframe.fandom.com/wiki/Void_Traces"
@@ -26,7 +26,7 @@ sources:
     accessedAt: "2026-05-19"
     title: "WFCD warframe-items"
     publisher: "WFCD"
-updatedAt: "2026-05-19"
+updatedAt: "2026-05-20"
 ---
 
 ## Overview
@@ -46,7 +46,7 @@ Run any Void Fissure mission to collect Void Traces passively. Corrupted enemies
 
 Standard Fissure Capture missions (Hepit for Lith, Ukko for Neo) provide approximately 20-40 traces per 90-second run. This is the highest traces-per-minute rate available for most eras. Survivals provide more total traces per session but require longer commitment per rotation.
 
-Once sufficient traces are collected, refine relics before the next Fissure run. Open the Star Chart navigation, select a Fissure mission, choose the relic to run, and select refinement tier. Radiant refinement costs 100 traces and changes the rare slot probability from 2% to 10%. This represents the single most impactful action for targeted prime part farming.
+Once sufficient traces are collected, refine relics before the next Fissure run. Open the Star Chart navigation, select a Fissure mission, choose the relic to run, and select the refinement tier. The refinement tiers and their trace costs are: Exceptional (15 traces), Flawless (25 traces from Exceptional, 40 total from Intact), and Radiant (100 traces from Flawless, 140 total from Intact). Radiant refinement changes the rare slot probability from 2% to 10%, representing the single most impactful action for targeted prime part farming.
 
 Plan trace expenditure around session goals. Refining four relics to Radiant for a squad run costs 400 traces (4 x 100). Collecting 400 traces at Hepit takes approximately 10-12 runs (roughly 20 minutes). Budget trace generation against planned refinement consumption for sessions of 1-2 hours to ensure traces never sit idle at the cap.
 
@@ -58,13 +58,48 @@ Radiant refinement is not always optimal. For farming common and uncommon drops 
 
 When running relics in a squad of four where all players bring the same Radiant relic, the effective rare selection probability from the shared pool is substantially higher than individual Radiant probability. In a four-player Radiant squad, at least one rare slot is displayed for selection more than 30% of the time, and any player can select any other player's relic reward.
 
-Void Traces do not expire and have no season-based reset. Traces carried across vault cycles retain full value. However, refined relics from previous vault cycles may no longer contain desirable parts -- refine relics session-by-session rather than stockpiling.
+Void Traces do not expire and have no season-based reset. Traces carried across vault cycles retain full value. However, refined relics from previous vault cycles may no longer contain desirable parts -- refine relics session-by-session rather than stockpiling. An Exceptional relic containing a vaulted part may still be useful as a squad filler, but Radiant refinement on it wastes 100 traces that could go toward active-vault content.
+
+Exceptional refinement (15 traces) is an underused middle option. When the target part occupies an uncommon slot rather than the rare slot, Exceptional increases uncommon slot probability meaningfully without the high trace cost of Radiant. Save Radiant for rare-slot targets only.
+
+Void Fissure mission tracker: the navigation screen's Void Fissure panel shows all currently active Fissure missions by era (Lith, Meso, Neo, Axi) and mission type. Fissure missions rotate every hour, so the available Capture Fissures change across the day. Checking the Fissure panel before planning a farming session ensures the most efficient mission type is available for the intended relic era. During times when no Capture Fissure is active for the needed era, Defense or Interception Fissures serve as replacements.
 
 ## Common mistakes
 
 Running relics without collecting enough reactant before mission end invalidates the relic run. Each Fissure mission requires collecting 10 reactant items dropped by Corrupted enemies before the objective completes to unlock relic rewards at mission end. In Capture missions, this means collecting 10 reactant before capturing the target. Kill Corrupted enemies proactively as they spawn rather than rushing directly to the capture target.
 
 Spending all traces on sub-optimal relics (refining Intact relics that contain only common drops) wastes traces that could fund rare-slot Radiant upgrades. Always check the relic's drop table before refinement.
+
+Misreading the refinement costs is a common error. The per-tier cost from each preceding tier is: 15 to reach Exceptional, 25 to reach Flawless, 100 to reach Radiant. Calculating total traces needed from Intact (40 for Flawless, 140 for Radiant) helps plan farming sessions before they begin.
+
+## Refinement probabilities explained
+
+Each relic contains six possible rewards arranged in three rarity tiers. Common (bronze) slots: three items at equal probability. Uncommon (silver) slots: two items at equal probability. Rare (gold) slot: one item.
+
+At Intact (no refinement):
+- Each common slot item: approximately 25.33% each
+- Each uncommon slot item: approximately 11% each
+- Rare slot item: approximately 2% total
+
+At Exceptional (15 traces):
+- Common slot items: reduced slightly in favor of uncommon and rare
+- Rare slot item: approximately 4%
+
+At Flawless (25 additional traces, 40 total from Intact):
+- Rare slot item: approximately 6%
+
+At Radiant (100 additional traces, 140 total from Intact):
+- Rare slot item: 10%
+
+The exact probabilities shift based on relic type. Check the in-game relic preview screen which shows each reward and its rarity color before committing to refinement. The displayed rarity colors (bronze, silver, gold) directly correspond to common, uncommon, and rare probability tiers.
+
+## Squad synergy with Radiant relics
+
+When four players in a Fissure squad each open a relic, the reward selection screen shows all four players' rewards simultaneously. Each player can pick any of the rewards shown -- including rewards from other players' relics. This system means that running the same relic in a coordinated squad multiplies effective access to each relic's rare slot.
+
+If all four squad members run the same Radiant relic, the rare item from each relic is equally likely to appear in the shared selection pool. Running mixed relics (different names, different eras) in a squad still shares rewards, but reduces the probability that the specific rare desired by a player appears in the selection pool. Coordinating relics with squad members before a crack session maximizes rare item access per session.
+
+When farming for a specific rare item without a coordinated squad, running Radiant relics in a public squad still benefits from any shared selection even if other players' relics are Intact. Even one Radiant relic in the squad improves the chance of the desired rare appearing compared to all players running Intact.
 
 ## Further reading
 

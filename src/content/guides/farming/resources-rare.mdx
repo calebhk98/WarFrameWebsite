@@ -4,16 +4,16 @@ name: "Farming Rare Resources"
 kind: farming
 target: rare-resources
 recommendedMissions:
-  - { node: "Survival (Orokin Derelict or Deimos)", why: "Highest Orokin Cell drop rate from Infested enemies." }
-  - { node: "Jordas Golem Assassination (Eris)", why: "Targeted Orokin Cell drops from Golem boss." }
+  - { node: "Survival (Deimos Infested missions)", why: "Highest Orokin Cell drop rate from Infested enemies on Deimos." }
+  - { node: "Orokin Tower (Void missions)", why: "Only source for Argon Crystals; any Void Fissure or standard Void mission works." }
   - { node: "Archwing (Uranus or Eris)", why: "Tellurium drops from Archwing missions exclusively." }
-  - { node: "Mobile Defense (Europa)", why: "Best Argon Crystal source due to Europa enemy density." }
+  - { node: "Mobile Defense (Void missions)", why: "Reliable Argon Crystal source due to Void enemy density and short run time." }
 recommendedFrames:
   - nekros
   - khora-prime
   - hydroid-prime
 modsToBring:
-  - desecrate
+  - despoil
   - pilfering-strangledome
   - pilfering-swarm
 tips:
@@ -21,7 +21,7 @@ tips:
   - "Nitain Extract is obtained from Nightwave Intermission rewards and Ghoul Purge bounty rewards."
   - "Tellurium only drops in Archwing and Sharkwing missions; no surface mission drops it."
   - "Resource Boosters double all resource drop quantities for 3 or 7-day durations."
-  - "Nekros's Desecrate applies independently per enemy corpse with a 54% chance to generate additional loot."
+  - "Nekros's Desecrate ability applies independently per enemy corpse with a 54% chance to generate additional loot."
 sources:
   - url: "https://warframe.fandom.com/wiki/Resources"
     accessedAt: "2026-05-19"
@@ -31,7 +31,7 @@ sources:
     accessedAt: "2026-05-19"
     title: "WFCD warframe-items"
     publisher: "WFCD"
-updatedAt: "2026-05-19"
+updatedAt: "2026-05-20"
 ---
 
 ## Overview
@@ -48,27 +48,57 @@ This guide covers the optimal missions and methods for each of the four most com
 
 ## Steps
 
-**Orokin Cells** drop from enemies on Saturn, Orokin Derelict/Deimos, and Ceres. The highest density source is the Orokin Derelict Survival (available via Deimos mission nodes after Heart of Deimos quest completion). Infested enemies have higher per-kill Orokin Cell rates than Grineer or Corpus. Run with Nekros Prime using Desecrate to apply a 54% chance per corpse to generate additional resource drops.
+**Orokin Cells** drop from enemies on Saturn, Deimos, and Ceres. The highest density source is Deimos Infested Survival missions (available via Deimos mission nodes after Heart of Deimos quest completion). Infested enemies have higher per-kill Orokin Cell rates than Grineer or Corpus. Run with Nekros using Desecrate to apply a 54% chance per corpse to generate additional resource drops. Alternatively, General Sargas Ruk on Saturn (Tethys Assassination) drops Orokin Cells as a guaranteed boss reward.
 
-**Argon Crystals** drop exclusively from enemies in Void missions. Argon Crystal has a unique decay mechanic: each crystal decays at the rate of one per day beginning the day after the mission is completed. Stockpiling Argon Crystals is therefore inefficient -- farm Argon Crystal only when needed for an active crafting recipe. Europa Mobile Defense missions provide dense enemy counts and short mission durations, making them efficient for targeted Argon runs.
+**Argon Crystals** drop exclusively from enemies in the Void tileset. Only Void missions -- Orokin Towers and Void Fissure missions played in Void locations -- produce Argon Crystals. Void Mobile Defense missions and Void Survivals on nodes such as Oxomoco, Belenus, or Mot are the standard Argon farming sources. Argon Crystal has a unique decay mechanic: each crystal decays at the rate of one per day beginning the day after the mission is completed. Farm Argon Crystal only when needed for an active crafting recipe.
 
-**Tellurium** drops exclusively from Archwing enemies and Sharkwing enemies (underwater Archwing sections on Uranus). No surface mission drops Tellurium. Uranus Sharkwing missions and any Archwing mission on Eris or Uranus are the standard Tellurium sources. The drop rate is low per enemy; runs of 10-15 minutes accumulate the 1-5 Tellurium typically needed for single crafting recipes.
+**Tellurium** drops exclusively from Archwing enemies and Sharkwing enemies (underwater Archwing sections on Uranus). No surface ground mission drops Tellurium. Uranus Sharkwing missions and any Archwing mission on Eris or Uranus are the standard Tellurium sources. The drop rate is low per enemy; runs of 10-15 minutes accumulate the 1-5 Tellurium typically needed for single crafting recipes.
 
-**Nitain Extract** has no direct mission drop source in standard gameplay. It is obtained through Nightwave Intermission cred exchange (15 cred for 3 Nitain, repeated weekly), Ghoul Purge bounties on the Plains of Eidolon, and Ghoul Purge alerts when they are active. Plan Nitain acquisition around active Nightwave seasons rather than attempting to farm it directly.
+**Nitain Extract** has no direct mission drop source in standard gameplay. It is obtained through Nightwave Intermission cred exchange (15 cred for 3 Nitain, repeated weekly), Ghoul Purge bounties on the Plains of Eidolon, and Ghoul Purge alerts when active. Plan Nitain acquisition around active Nightwave seasons rather than attempting to farm it directly.
 
 ## Tips
 
 Resource Booster items (purchasable for platinum or occasionally given via Twitch drops and login rewards) double all resource drop quantities for their duration. Activating a Resource Booster before a scheduled rare resource farm session doubles the effective yield of all Desecrate procs, Pilfering Strangledome drops, and direct enemy drops.
 
-Nekros Prime's Desecrate ability checks each enemy corpse individually. In dense survival missions, Nekros can trigger dozens of Desecrate checks per minute, with each 54% check independently applying to each corpse in range. On a high-enemy-density Deimos survival run, a single Nekros contributes substantially more total resource drops than any other single-frame choice.
+Nekros using Desecrate can re-roll each enemy corpse independently for additional loot. In dense survival missions on Deimos, Nekros can trigger dozens of Desecrate checks per minute, with each 54% check independently applying to each corpse in range. On a high-enemy-density Deimos survival run, a single Nekros contributes substantially more total resource drops than any other single-frame choice.
 
-Khora Prime with Pilfering Strangledome adds a 65% additional resource chance per kill inside the dome. When paired with Nekros (Desecrate) in the same squad, the two systems check independently per corpse, creating expected total multipliers above 2x from the combination alone.
+Khora Prime with Pilfering Strangledome adds an additional resource chance per kill inside the dome. When paired with Nekros in the same squad, the two systems check independently per corpse, creating compounding resource multipliers from the combination. Despoil augment on Nekros allows Desecrate to cost health instead of energy, enabling infinite Desecrate uptime without energy management.
+
+Hydroid Prime with Pilfering Swarm augment on Tentacle Swarm adds another independent loot duplication layer. In a three-way stack of Nekros, Khora, and Hydroid, each enemy death is checked for loot by all three systems independently.
+
+Squad composition for resource farming: most efficient rare resource farming uses one Nekros as the dedicated looting frame and three other frames focused on enemy density and kill speed. Speed Nova (with Molecular Prime applying a mass slow or mass buff depending on power setting) can either concentrate or spread enemies for Nekros Desecrate coverage. The fourth frame can be a damage dealer (Saryn for Infested, Mesa for Corpus) to maximize kill speed and density of corpses for Nekros to process.
+
+## Secondary rare resource sources
+
+Orokin Cells also drop from assassination missions with Orokin-era bosses. General Sargas Ruk on Saturn (Tethys) drops Orokin Cells as a guaranteed drop per completion. Lech Kril on Ceres also provides Orokin Cells on assassination. For players who do not yet have Deimos access, Sargas Ruk assassination provides a reliable early-game Orokin Cell source.
+
+Nitain Extract also appears in Resource Caches in some mission types. Resource Caches are hidden storage containers that appear in certain missions (Survival, Sabotage) and require active searching to find. Resource Caches have a small chance to contain Nitain alongside other resources. This is not a reliable primary Nitain source but adds occasional Nitain outside of Nightwave cred purchases.
+
+Tellurium has no secondary source outside Archwing content. Entering any Archwing mission -- including Railjack missions' Archwing segments and Void Storm missions where Archwing sections occur -- generates Tellurium drops alongside the mission's primary rewards. Players who run Railjack content regularly passively accumulate Tellurium without dedicated Tellurium farming sessions.
 
 ## Common mistakes
 
 Farming Argon Crystal in advance and storing it wastes farm time. Argon Crystal decays daily; any surplus beyond immediate crafting needs disappears within days. Check the exact Argon Crystal requirement before starting a farm and collect only that amount.
 
+Attempting to farm Argon Crystal in non-Void missions does not produce drops. Argon Crystals are strictly a Void resource -- only enemies in Orokin Tower or Void Fissure missions in Void locations drop them. Running Europa missions or other planets yields zero Argon Crystal regardless of enemy count.
+
 Attempting to farm Tellurium on ground missions does not produce drops. Tellurium is strictly an Archwing resource -- equip the Archwing Launcher and enter an Archwing-capable mission (including Uranus Sharkwing) to access Tellurium drops.
+
+## Practical acquisition notes per resource
+
+Orokin Cells are needed for a large number of crafting recipes, particularly Prime warframe components and high-tier weapon blueprints. Each Prime warframe blueprint requires 10 Orokin Cells for the main blueprint, plus additional cells for component blueprints. Budget 30-50 Orokin Cells for each Prime warframe fully built from scratch. Deimos Survival with Nekros and a Resource Booster active is the most efficient method to build this stockpile quickly.
+
+Argon Crystals are needed primarily for Archwing components, several high-tier weapon blueprints, and some Prime components. The decay mechanic makes just-in-time farming essential. Before starting a crafting project that requires Argon Crystal, identify the exact quantity needed, then run the minimum number of Void missions to obtain that quantity and immediately begin crafting.
+
+Tellurium is required for Archwing components, Warframe components (Inaros Prime Chassis), and several weapon blueprints. Quantities per recipe are typically small (2-6 per craft). An Archwing Survival on Uranus for 10-15 minutes with Nekros and a Resource Booster usually provides the Tellurium needed for one or two recipe requirements.
+
+Nitain Extract is required for several endgame Warframe blueprints and components, most notably Vauban Prime systems, Ash Prime helmets, and similar components. Nightwave season intermissions refresh the cred offering rotation every week. Each intermission week provides 15 cred for 3 Nitain at the Nightwave shop, allowing reliable acquisition of 3 Nitain per week at minimum during active play.
+
+## Resource booster economics
+
+Resource Boosters are available for purchase from the in-game Market for platinum in 3-day and 7-day durations. The 3-day booster is more platinum-efficient for focused farming sessions that occur over a weekend. The 7-day booster is better for sustained farming spread across a week.
+
+Activating a Resource Booster during a Nekros+Khora squad on Deimos roughly doubles the expected Orokin Cell count per run compared to no booster. Combining a Resource Booster with a Resource Drop Chance Booster (a separate booster item that increases the probability of resource drops, not quantity) creates a multiplicative effect on both the likelihood and quantity of resource drops.
 
 ## Further reading
 

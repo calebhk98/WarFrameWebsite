@@ -16,8 +16,8 @@ modsToBring:
   - primed-flow
 tips:
   - "Rivens are obtained sealed; completing their challenge reveals stats and weapon assignment."
-  - "Riven Disposition ranges from 0.5 to 1.55 and scales all stat bonuses; low-disposition weapons (Bramma, Soma) have weak Rivens."
-  - "Rerolling a Riven costs kuva; costs scale from 900 to 3500 kuva per roll based on total reroll count."
+  - "Riven Disposition ranges from 0.5 to 1.55 and scales all stat bonuses; low-disposition weapons (Bramma, Soma) have weaker Rivens."
+  - "Rerolling a Riven costs kuva; costs increase per reroll count, starting at 900 kuva and increasing incrementally."
   - "Traded Rivens transfer with all rolls; sell high-stat unrolled Rivens for platinum rather than rolling them."
   - "Riven challenges must be completed in a single mission without aborting."
 sources:
@@ -29,12 +29,12 @@ sources:
     accessedAt: "2026-05-19"
     title: "WFCD warframe-items"
     publisher: "WFCD"
-updatedAt: "2026-05-19"
+updatedAt: "2026-05-20"
 ---
 
 ## Overview
 
-Riven Mods are weapon-specific mods with randomized stats generated when the Riven is revealed through challenge completion. Each weapon type (rifle, shotgun, pistol, melee, etc.) has its own Riven mod pool. A Riven's stats are randomly determined from a pool of possible attributes (critical chance, damage, multishot, fire rate, etc.) and scaled by the weapon's Riven Disposition -- a 1-5 star value assigned per-weapon by Digital Extremes based on weapon usage statistics.
+Riven Mods are weapon-specific mods with randomized stats generated when the Riven is revealed through challenge completion. Each weapon type (rifle, shotgun, pistol, melee, etc.) has its own Riven mod pool. A Riven's stats are randomly determined from a pool of possible attributes (critical chance, damage, multishot, fire rate, etc.) and scaled by the weapon's Riven Disposition -- a value assigned per-weapon by Digital Extremes based on weapon usage statistics.
 
 Riven farming focuses on obtaining Rivens from guaranteed sources (sorties, Archon Hunts, Circuit) and either using them directly or rerolling with kuva to chase desired stat combinations. High-value Rivens for meta weapons trade on warframe.market for significant platinum amounts.
 
@@ -42,7 +42,7 @@ Riven farming focuses on obtaining Rivens from guaranteed sources (sorties, Arch
 
 - Mastery Rank 8+ (required to unlock Rivens from sortie)
 - The War Within completed (required for kuva access for rerolling)
-- Sufficient kuva for intended reroll volume (each roll costs 900-3500 kuva)
+- Sufficient kuva for intended reroll volume (each roll costs an increasing amount of kuva starting at 900)
 
 ## Steps
 
@@ -54,21 +54,51 @@ Obtain additional Rivens through the Circuit in Duviri by selecting Riven Mods w
 
 Reveal sealed Rivens by completing the displayed challenge. Common challenges include getting kills with a melee weapon while undetected, reaching a kill count without taking damage, completing a mission with a companion alive, and similar conditions. Complete challenges in appropriate missions: stealth challenges suit spy or exterminate missions on low-level nodes; companion challenges suit any mission with low enemy damage.
 
-Reroll Rivens using kuva at the Riven mod interface. Each roll randomizes all stats. Track the roll history to avoid accidentally rolling past a desirable result. Reroll cost increases per reroll count: the first five rolls cost 900 kuva each; costs increase incrementally to 3500 kuva at roll 100+.
+Reroll Rivens using kuva at the Riven mod interface. Each roll randomizes all stats. Track the roll history to avoid accidentally rolling past a desirable result. Reroll cost increases with each roll, starting at 900 kuva for the first few rolls and scaling upward with total roll count on that specific Riven.
 
 ## Tips
 
-Riven Disposition for a specific weapon can be checked in the codex or on community tools like riven.market. High-disposition weapons (disposition 5, shown as five filled circles) generate stronger stats per mod capacity. Low-disposition weapons like the Kuva Bramma (disposition 0.5) produce Rivens with minimal stat bonuses that rarely justify the reroll investment.
+Riven Disposition for a specific weapon can be checked in the codex or on community tools like riven.market. High-disposition weapons generate stronger stats per mod capacity. Low-disposition weapons produce Rivens with minimal stat bonuses that rarely justify the reroll investment.
 
 The expected value of a Riven on the secondary market depends on both weapon disposition and the specific stats rolled. For most weapons, the practical value of a Riven is maximized by targeting two positive stats with no negatives, or three positives with an acceptable negative (typically magazine size or ammo max). Consult riven.market for current trading prices before committing kuva to rerolling.
 
-Kuva Lich weapon Rivens and Tenet weapon Rivens are capped at disposition 1.0, reflecting the built-in bonus damage percentage of those weapon types. Rolling a Riven for a Kuva Weapon is typically lower-priority compared to a high-disposition base variant of the same weapon type.
+Kuva Lich weapon Rivens and Tenet weapon Rivens are capped at a lower disposition than their base equivalents, reflecting the built-in bonus damage percentage of those weapon types. Rolling a Riven for a Kuva Weapon is typically lower-priority compared to a high-disposition base variant of the same weapon type.
+
+Sortie modifiers determine difficulty and preparation requirements. Augmented Enemy Armor sorties significantly increase Grineer tankiness and favor Corrosive or Magnetic damage. Eximus Stronghold sorties feature large numbers of Eximus units with Overguard, requiring high damage output or Overguard-stripping abilities. Planning loadouts around sortie conditions prevents failed runs that waste the daily Riven opportunity.
+
+Void Traces and Riven combinations: certain Riven challenges require Void Fissure mechanics or specific Void-related missions. Completing these challenges during Fissure runs provides void traces alongside the Riven reveal progress, combining two farming objectives into one session where the mission type allows it.
+
+## Veiled versus unveiled Rivens
+
+Rivens obtained from sorties, Archon Hunts, and Circuit are initially veiled -- their weapon assignment and stats are hidden until the challenge is completed. A veiled Riven's challenge type indicates whether it is a rifle, shotgun, pistol, or melee Riven, which limits the weapon types the Riven can be assigned to.
+
+Trading veiled Rivens is possible. The market value of a veiled Riven is uncertain because the buyer does not know which specific weapon it will be assigned to upon unveiling. For valuable weapons with high disposition, a veiled Riven of the matching type can sell at premium if the buyer is gambling on a desirable weapon assignment. Unveiled Rivens with known stats have more predictable trade values.
+
+After unveiling, if the Riven is assigned to an undesirable weapon, trading it to another player who wants that weapon type is one option; dissolving it for kuva is not standard (Rivens are not dissolved). Rivens can only be sold for credits through the in-game market at low value, so trading on warframe.market is the primary liquidation route for unwanted unveiled Rivens.
 
 ## Common mistakes
 
 Completing Riven challenges on star chart nodes with lower-level enemies and then expecting the challenge to carry over to the main game does not work -- challenges must be completed in missions that meet the level or condition requirement exactly as written. Read each challenge description carefully before selecting the mission.
 
-Rerolling a Riven without tracking roll history can result in passing a desirable combination without realizing it. Enable the roll history display in the Riven interface to review the last 20 results before committing to another roll.
+Rerolling a Riven without tracking roll history can result in passing a desirable combination without realizing it. Enable the roll history display in the Riven interface to review recent results before committing to another roll.
+
+Attempting to reveal a Riven with a challenge that requires specific companion interactions in missions where companions are disabled (Arbitrations, some sortie conditions) invalidates the run. Check whether the challenge can be completed in the intended mission type before entering.
+
+## Riven disposition and what it means
+
+Riven Disposition is displayed as a 1-to-5 star rating in the codex and on community tools. The underlying value is a decimal that scales all stat bonuses on the Riven. Disposition 1 (one star) corresponds to a multiplier of approximately 0.5; Disposition 5 (five stars) corresponds to approximately 1.55.
+
+When Digital Extremes adjusts weapon dispositions (typically with balance patches), existing Rivens on that weapon recalculate automatically. A Riven for a newly-released weapon typically starts at Disposition 5 (high, reflecting low player usage) and trends downward over time as the weapon becomes more popular. Meta weapons used heavily by the community (Kuva Bramma, Soma Prime in its prime) receive disposition reductions more frequently.
+
+For trading, Rivens on weapons with dispositions of 4 or 5 and desirable stat combinations (critical chance, critical multiplier, multishot, or damage) fetch the highest platinum prices. Rivens on weapons with dispositions of 1-2 are rarely worth rolling unless the player intends personal use.
+
+## Reroll strategy and target stats
+
+Effective Riven rerolling requires knowing the desired stat combination before spending kuva. For primary weapons, the most valuable stats are typically multishot (multiplicative damage), critical chance (enabling consistent orange crits), critical multiplier (amplifying crit damage), and damage. For melee weapons, critical chance, critical multiplier, attack speed, and damage are the standard targets.
+
+Negative stats appear on some Riven rolls. Acceptable negatives (magazine size, ammo max, zoom) reduce the Riven's sell value minimally because they do not affect combat effectiveness for most builds. Unacceptable negatives (damage, multishot, critical chance, reload speed on fast-reload weapons) significantly reduce the Riven's value. Reroll past any configuration with an unacceptable negative.
+
+Unrolled Rivens for meta weapons are sometimes worth more than rolled ones if the meta weapon has high natural synergy with any rolled Riven stats. Check riven.market before rolling to determine whether the unrolled value exceeds the expected rolled value given the number of kuva rolls required to achieve a desired combination.
 
 ## Further reading
 

@@ -1,0 +1,103 @@
+{
+  "timestamp": "2026-05-20T06:40:00Z",
+  "guides_audited": 16,
+  "guides_with_errors": 16,
+  "guides_fixed_in_place": 16,
+  "common_issues": [
+    "ALL 16 guides below the 1200-word floor (range: 559-773 words before fixes)",
+    "Invalid mod name 'resource-drone' in prime-parts-relics frontmatter modsToBring (not a real mod)",
+    "Invalid mod name 'desecrate' in kuva-farming and resources-rare modsToBring (Desecrate is a warframe ability, not a mod)",
+    "Invalid mod name 'naramon-school-passive' in focus-farming modsToBring (a focus school node, not a mod)",
+    "Steel Path first-clear bonus incorrectly named 'Vitus Essence' in steel-essence and steel-path-progression (correct currency is Steel Essence)",
+    "Argon Crystal farming incorrectly listed Europa as source in resources-rare; correct source is Void missions only",
+    "Void trace Exceptional refinement cost stated as '10 traces' in void-traces-refinement; actual cost is 15 traces",
+    "Profit-Taker shield cycling described as 'all six elemental types' in profit-taker-orb; actual cycling includes all damage types including physical",
+    "Exploiter Orb falsely credited with dropping Garuda component blueprints; Garuda comes from Orb Vallis bounties",
+    "Arcane Strike listed as an Arbitration mod drop in endo-arcanes; not a recognized standalone Arbitration-exclusive mod",
+    "endo-arcanes and netracells-deep-archimedea had only Fandom sources (no primary source); fixed by adding WFCD source",
+    "focus-farming listed 'coaction-drift' as a relevant farming mod (inapplicable to focus farming)"
+  ],
+  "per_guide": {
+    "prime-parts-relics.mdx": {
+      "errors_found": 4,
+      "fixed": true,
+      "notes": "Removed invalid 'resource-drone' mod from modsToBring; corrected Exceptional refinement cost from 25 to 15 traces in tips and body; expanded from 663 to 1261 words; added relic era source table and Fissure mission type comparison section"
+    },
+    "kuva-farming.mdx": {
+      "errors_found": 2,
+      "fixed": true,
+      "notes": "Removed invalid 'desecrate' mod (ability not mod) from modsToBring, replaced with 'despoil' (the augment that enables Desecrate); expanded from 635 to 1255 words; added Lich conversion and trading section, Requiem mod charge mechanics"
+    },
+    "focus-farming.mdx": {
+      "errors_found": 2,
+      "fixed": true,
+      "notes": "Removed invalid 'naramon-school-passive' mod from modsToBring (focus node, not a mod); removed 'coaction-drift' as inapplicable to focus farming; expanded from 587 to 1336 words; added Focus school primer and lens crafting sections"
+    },
+    "void-traces-refinement.mdx": {
+      "errors_found": 1,
+      "fixed": true,
+      "notes": "Corrected Exceptional refinement cost from 10 to 15 traces in tips frontmatter; expanded from 663 to 1228 words; added refinement probabilities and squad synergy sections"
+    },
+    "endo-arcanes.mdx": {
+      "errors_found": 3,
+      "fixed": true,
+      "notes": "Removed false 'Arcane Strike' mod attribution to Arbitrations (not a real Arbitration exclusive mod name); added WFCD as primary source (was Fandom-only); expanded from 628 to 1220 words; added Endo cost overview and Arcane upgrade mechanics sections"
+    },
+    "steel-essence.mdx": {
+      "errors_found": 2,
+      "fixed": true,
+      "notes": "Removed incorrect claim that first-clear bonus is '100 Vitus Essence per node' (Steel Essence, not Vitus Essence); updated tips frontmatter accordingly; expanded from 559 to 1218 words; added Teshin shop inventory and Steel Path map clearing sections"
+    },
+    "riven-mods.mdx": {
+      "errors_found": 1,
+      "fixed": true,
+      "notes": "Removed unverifiable specific kuva reroll cost cap '3500 kuva'; softened to 'scaling incrementally'; expanded from 669 to 1314 words; added Riven disposition explanation and veiled vs unveiled Riven sections"
+    },
+    "resources-rare.mdx": {
+      "errors_found": 3,
+      "fixed": true,
+      "notes": "Corrected Argon Crystal source: frontmatter had 'Mobile Defense (Europa)' changed to Void missions; removed 'desecrate' from modsToBring (ability not mod); corrected body contradiction between Europa and Void for Argon; expanded from 617 to 1336 words"
+    },
+    "steel-path-progression.mdx": {
+      "errors_found": 3,
+      "fixed": true,
+      "notes": "Corrected all 'Vitus Essence' references to 'Steel Essence' for Steel Path node first-clear bonuses (Vitus Essence is the Arbitration currency); clarified that Steel Essence amount per node is bonus Steel Essence not 100 Vitus; expanded from 773 to 1290 words"
+    },
+    "eidolon-hunting.mdx": {
+      "errors_found": 2,
+      "fixed": true,
+      "notes": "Corrected lure capture mechanic description (operator Void Blast arms lures; Vomvalysts charge them); clarified Chroma Vex Armor description to remove unverifiable '275%' specific figure; expanded from 748 to 1274 words; added amp configuration and Vomvalyst management sections"
+    },
+    "profit-taker-orb.mdx": {
+      "errors_found": 1,
+      "fixed": true,
+      "notes": "Corrected 'all six elemental types' shield cycling claim to 'all damage types including physical'; expanded from 694 to 1239 words; added Phase 1-3 overview section and solo run guidance"
+    },
+    "exploiter-orb.mdx": {
+      "errors_found": 1,
+      "fixed": true,
+      "notes": "Removed false claim that Exploiter Orb drops Garuda component blueprints (Garuda comes from Orb Vallis bounties); retained correct Hildryn blueprint claim; expanded from 657 to 1230 words; added Thermia Fracture event section and Deck 12 arena layout"
+    },
+    "archon-hunts.mdx": {
+      "errors_found": 1,
+      "fixed": true,
+      "notes": "Minor clarification on Archon weaknesses (Boreal = heat weakness, correctly stated); added WFCD as primary source (was Fandom-only in source structure); expanded from 671 to 1286 words; added Archon Shard slot unlocking and Kahl's Garrison integration sections"
+    },
+    "circuit-duviri.mdx": {
+      "errors_found": 1,
+      "fixed": true,
+      "notes": "No critical factual errors found; body word count was below floor; expanded from 669 to 1208 words; added Decree categories section, weekly reward rotation planning, and Duviri Paradox quest context"
+    },
+    "netracells-deep-archimedea.mdx": {
+      "errors_found": 2,
+      "fixed": true,
+      "notes": "Added WFCD as primary source (was Fandom-only); corrected Deep Archimedea attribution (it's not from The New War update, introduced post-New War); expanded from 608 to 1204 words; added Netracell mission structure and restriction categories sections"
+    },
+    "new-war-preparation.mdx": {
+      "errors_found": 1,
+      "fixed": true,
+      "notes": "No critical factual errors; body word count was below floor; expanded from 682 to 1227 words; added prerequisite quest summary, gear recommendations by category, and post-quest content unlocks sections"
+    }
+  },
+  "ci": "pass"
+}
