@@ -31,8 +31,8 @@ const POL_SYM: Record<string, string> = { madurai:'V', naramon:'-', vazarin:'D',
 <Base title="Build Calculator" description="Interactive Warframe mod selector with live stat computation">
   <div class="max-w-7xl mx-auto px-4 py-8">
     <header class="mb-6">
-      <nav class="mb-4 text-sm text-brand-cream/50">
-        <a href={`${base}builds`} class="hover:text-brand-orange">Builds</a>
+      <nav class="mb-4 text-sm text-brand-cream/80">
+        <a href={`${base}builds`} class="underline hover:text-brand-orange">Builds</a>
         <span class="mx-2">/</span>
         <span class="text-brand-cream/80">Build Calculator</span>
       </nav>
@@ -44,6 +44,7 @@ const POL_SYM: Record<string, string> = { madurai:'V', naramon:'-', vazarin:'D',
         <div class="flex gap-3 shrink-0">
           <a href={`${base}compare`} class="text-sm text-brand-orange hover:underline">Compare builds &rarr;</a>
           <a href={`${base}compare-warframes`} class="text-sm text-brand-orange hover:underline">Compare warframes &rarr;</a>
+          <a href={`${base}modular-builder`} class="text-sm text-brand-orange hover:underline">Modular Builder &rarr;</a>
         </div>
       </div>
     </header>
@@ -51,7 +52,7 @@ const POL_SYM: Record<string, string> = { madurai:'V', naramon:'-', vazarin:'D',
     <div class="mb-6 space-y-4">
       <div class="flex flex-col sm:flex-row gap-4 items-end">
         <div class="flex-1 max-w-xs">
-          <label for="frame-select" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Base Warframe</label>
+          <label for="frame-select" class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1">Base Warframe</label>
           <select id="frame-select" class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange">
             <option value="">-- Choose warframe --</option>
             {sortedFrames.map((w) => <option value={w.slug}>{w.data.name}</option>)}
@@ -61,32 +62,32 @@ const POL_SYM: Record<string, string> = { madurai:'V', naramon:'-', vazarin:'D',
         <button id="share-btn" class="shrink-0 px-5 py-2 rounded-lg bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-sm hover:bg-brand-orange/30 transition-colors">Share</button>
       </div>
       <div>
-        <div class="flex items-center justify-between text-xs text-brand-cream/50 mb-1">
+        <div class="flex items-center justify-between text-xs text-brand-cream/80 mb-1">
           <span class="font-semibold uppercase tracking-wide">Mod Capacity</span>
           <span id="drain-label">0 / {MAX_CAPACITY}</span>
         </div>
         <div class="h-3 rounded bg-surface-3 overflow-hidden" role="progressbar" aria-label="Mod capacity used" aria-valuemin={0} aria-valuemax={MAX_CAPACITY} aria-valuenow={0} id="drain-bar-wrap">
           <div id="drain-bar" class="h-full rounded bg-brand-orange transition-all" style="width:0%"></div>
         </div>
-        <p class="text-[11px] text-brand-cream/30 mt-1">Supercharged frame: 60 capacity. Polarity match halves drain; mismatch adds 25%.</p>
+        <p class="text-[11px] text-brand-cream/70 mt-1">Supercharged frame: 60 capacity. Polarity match halves drain; mismatch adds 25%.</p>
       </div>
     </div>
 
     <div id="base-stats" class="mb-6 rounded-lg border border-surface-3 bg-surface-2 p-4 hidden">
-      <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Base Stats</p>
+      <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">Base Stats</p>
       <div id="base-stats-grid" class="grid grid-cols-2 sm:grid-cols-5 gap-3"></div>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div class="lg:col-span-2">
-        <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Mod Slots</p>
+        <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">Mod Slots</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="slots-grid">
           {SLOT_POLARITIES.map((pol, idx) => (
             <div class="rounded-lg border border-surface-3 bg-surface-2 p-3">
               <div class="flex items-center gap-2 mb-2">
                 <span class="inline-flex items-center justify-center w-6 h-6 rounded text-xs font-bold bg-surface-3 text-brand-orange" title={pol} data-slot-polarity={pol} id={`slot-pol-${idx}`}>{POL_SYM[pol] ?? 'O'}</span>
-                <label for={`slot-${idx}`} class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Slot {idx + 1}</label>
-                <span id={`slot-drain-${idx}`} class="ml-auto text-xs text-brand-cream/30"></span>
+                <label for={`slot-${idx}`} class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide">Slot {idx + 1}</label>
+                <span id={`slot-drain-${idx}`} class="ml-auto text-xs text-brand-cream/70"></span>
               </div>
               <select id={`slot-${idx}`} data-slot={idx} class="w-full rounded-lg bg-surface-3 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange">
                 <option value="">-- Empty --</option>
@@ -97,9 +98,9 @@ const POL_SYM: Record<string, string> = { madurai:'V', naramon:'-', vazarin:'D',
         </div>
       </div>
       <div>
-        <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Computed Stats</p>
+        <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">Computed Stats</p>
         <div id="computed-stats" class="rounded-lg border border-surface-3 bg-surface-2 p-4 space-y-3" aria-live="polite" aria-label="Computed build statistics">
-          <p class="text-brand-cream/30 text-sm text-center py-4" id="computed-hint">Select a warframe and mods to see results.</p>
+          <p class="text-brand-cream/70 text-sm text-center py-4" id="computed-hint">Select a warframe and mods to see results.</p>
         </div>
       </div>
     </div>

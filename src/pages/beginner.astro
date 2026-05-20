@@ -118,7 +118,7 @@ const milestones: MilestoneGroup[] = [
       <h2 id="starters-heading" class="text-2xl font-bold text-brand-cream mb-2">Choose your starter Warframe</h2>
       <p class="text-brand-cream/60 mb-6 text-sm">
         At account creation you choose one of three starter frames. All can eventually be obtained in-game for free; this is purely which you start with.
-        Source: <a href="https://warframe.fandom.com/wiki/Starter_Warframes" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:underline">Warframe wiki -- Starter Warframes</a>.
+        Source: <a href="https://warframe.fandom.com/wiki/Starter_Warframes" target="_blank" rel="noopener noreferrer" class="text-brand-orange underline">Warframe wiki -- Starter Warframes</a>.
       </p>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {startingFrames.map((frame) => (
@@ -128,12 +128,12 @@ const milestones: MilestoneGroup[] = [
               <p class="text-xs text-brand-orange uppercase tracking-wide">{frame.role}</p>
             </div>
             <p class="text-sm text-brand-cream/70 flex-1">{frame.summary}</p>
-            <p class="text-xs text-brand-cream/50 italic">{frame.strength}</p>
+            <p class="text-xs text-brand-cream/80 italic">{frame.strength}</p>
             <div class="flex gap-3 text-sm flex-wrap">
-              <a href={`${base}warframes/${frame.slug}`} class="text-brand-orange hover:underline">
+              <a href={`${base}warframes/${frame.slug}`} class="text-brand-orange underline">
                 View frame &rarr;
               </a>
-              <a href={frame.fandomUrl} target="_blank" rel="noopener noreferrer" class="text-brand-cream/40 hover:text-brand-cream hover:underline">
+              <a href={frame.fandomUrl} target="_blank" rel="noopener noreferrer" class="text-brand-cream/80 underline hover:text-brand-cream">
                 Wiki &rarr;
               </a>
             </div>
@@ -173,27 +173,27 @@ const milestones: MilestoneGroup[] = [
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
         <a href={`${base}builds`} class="group rounded border border-surface-3 bg-surface-2 hover:border-brand-orange/50 p-4 transition-all">
           <p class="font-semibold text-brand-cream group-hover:text-brand-orange">Warframe Builds</p>
-          <p class="text-brand-cream/50 mt-1">Curated mod loadouts for top-tier frames</p>
+          <p class="text-brand-cream/80 mt-1">Curated mod loadouts for top-tier frames</p>
         </a>
         <a href={`${base}guides`} class="group rounded border border-surface-3 bg-surface-2 hover:border-brand-orange/50 p-4 transition-all">
           <p class="font-semibold text-brand-cream group-hover:text-brand-orange">Farming Guides</p>
-          <p class="text-brand-cream/50 mt-1">Best nodes and strategies for resources and Prime parts</p>
+          <p class="text-brand-cream/80 mt-1">Best nodes and strategies for resources and Prime parts</p>
         </a>
         <a href={`${base}warframes`} class="group rounded border border-surface-3 bg-surface-2 hover:border-brand-orange/50 p-4 transition-all">
           <p class="font-semibold text-brand-cream group-hover:text-brand-orange">All Warframes</p>
-          <p class="text-brand-cream/50 mt-1">Browse every frame with stats and acquisition info</p>
+          <p class="text-brand-cream/80 mt-1">Browse every frame with stats and acquisition info</p>
         </a>
         <a href={`${base}tier-list`} class="group rounded border border-surface-3 bg-surface-2 hover:border-brand-orange/50 p-4 transition-all">
           <p class="font-semibold text-brand-cream group-hover:text-brand-orange">Tier List</p>
-          <p class="text-brand-cream/50 mt-1">See which frames dominate the current meta</p>
+          <p class="text-brand-cream/80 mt-1">See which frames dominate the current meta</p>
         </a>
         <a href={`${base}damage-types`} class="group rounded border border-surface-3 bg-surface-2 hover:border-brand-orange/50 p-4 transition-all">
           <p class="font-semibold text-brand-cream group-hover:text-brand-orange">Damage Types</p>
-          <p class="text-brand-cream/50 mt-1">Effectiveness matrix -- which damage beats which enemy</p>
+          <p class="text-brand-cream/80 mt-1">Effectiveness matrix -- which damage beats which enemy</p>
         </a>
         <a href={`${base}riven-planner`} class="group rounded border border-surface-3 bg-surface-2 hover:border-brand-orange/50 p-4 transition-all">
           <p class="font-semibold text-brand-cream group-hover:text-brand-orange">Riven Roll Planner</p>
-          <p class="text-brand-cream/50 mt-1">Calculate roll probability and stat values for Riven mods</p>
+          <p class="text-brand-cream/80 mt-1">Calculate roll probability and stat values for Riven mods</p>
         </a>
       </div>
     </section>

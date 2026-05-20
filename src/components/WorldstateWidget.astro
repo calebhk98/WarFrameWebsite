@@ -47,7 +47,7 @@ const currentSortie = data?.sorties[0] ?? null;
   {data && (
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
       <div class="rounded bg-surface-3 p-4">
-        <p class="text-xs uppercase tracking-widest text-brand-cream/50 mb-1">Sortie</p>
+        <p class="text-xs uppercase tracking-widest text-brand-cream/80 mb-1">Sortie</p>
         {currentSortie ? (
           <div>
             <p class="font-semibold text-brand-cream text-sm">{currentSortie.boss}</p>
@@ -57,18 +57,18 @@ const currentSortie = data?.sorties[0] ?? null;
             </p>
           </div>
         ) : (
-          <p class="text-brand-cream/40 text-sm">No active sortie</p>
+          <p class="text-brand-cream/70 text-sm">No active sortie</p>
         )}
       </div>
 
       <div class="rounded bg-surface-3 p-4">
-        <p class="text-xs uppercase tracking-widest text-brand-cream/50 mb-1">Active fissures</p>
+        <p class="text-xs uppercase tracking-widest text-brand-cream/80 mb-1">Active fissures</p>
         <p class="text-3xl font-bold text-brand-cream">{activeFissures.length}</p>
         <p class="text-brand-cream/60 text-xs mt-1">void rifts open</p>
       </div>
 
       <div class="rounded bg-surface-3 p-4">
-        <p class="text-xs uppercase tracking-widest text-brand-cream/50 mb-1">Active invasions</p>
+        <p class="text-xs uppercase tracking-widest text-brand-cream/80 mb-1">Active invasions</p>
         <p class="text-3xl font-bold text-brand-cream">{activeInvasions.length}</p>
         <p class="text-brand-cream/60 text-xs mt-1">ongoing conflicts</p>
       </div>

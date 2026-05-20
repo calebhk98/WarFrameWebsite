@@ -67,7 +67,7 @@ const tierColors: Record<string, string> = {
   S: 'bg-tier-s/20 border-tier-s text-tier-s',
   A: 'bg-tier-a/10 border-tier-a text-tier-a',
   B: 'bg-tier-b/10 border-tier-b text-tier-b',
-  C: 'bg-tier-c/20 border-tier-c text-brand-cream/60',
+  C: 'bg-tier-c/20 border-tier-c text-brand-cream',
 };
 
 const tierBadge: Record<string, string> = {
@@ -85,18 +85,18 @@ const tierBadge: Record<string, string> = {
       <p class="text-brand-cream/60 text-lg mb-2">
         Steel Path and general-content tier ranking. Primed variants shown where applicable.
       </p>
-      <p class="text-sm text-brand-cream/40 mb-3">
-        Source: community consensus via <a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange underline">Warframe wiki</a> and high-level player discussion.
+      <p class="text-sm text-brand-cream/70 mb-3">
+        Source: community consensus via <a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki" target="_blank" rel="noopener noreferrer" class="text-brand-orange underline">Warframe wiki</a> and high-level player discussion.
         Ratings reflect the 2025 meta with Helminth subsumes available.
       </p>
-      <p class="text-sm text-brand-cream/50">
+      <p class="text-sm text-brand-cream/70">
         Understanding which damage types to bring? See the
-        <a href={`${base}damage-types`} class="text-brand-orange hover:underline">Damage Types reference</a>
+        <a href={`${base}damage-types`} class="text-brand-orange underline">Damage Types reference</a>
         for the full effectiveness matrix. Planning Riven mods? Use the
-        <a href={`${base}riven-planner`} class="text-brand-orange hover:underline">Riven Roll Planner</a>
+        <a href={`${base}riven-planner`} class="text-brand-orange underline">Riven Roll Planner</a>
         to calculate probability and stat value ranges.
         Check current trade values on the
-        <a href={`${base}market`} class="text-brand-orange hover:underline">Trade Price Ticker</a>.
+        <a href={`${base}market`} class="text-brand-orange underline">Trade Price Ticker</a>.
       </p>
     </header>
 
@@ -107,7 +107,7 @@ const tierBadge: Record<string, string> = {
             <span class={`w-9 h-9 rounded font-extrabold text-xl flex items-center justify-center shrink-0 ${tierBadge[row.tier]}`}>
               {row.tier}
             </span>
-            <p class="text-sm font-medium">{row.label}</p>
+            <p class="text-sm font-medium text-brand-cream">{row.label}</p>
           </div>
           <div class="border border-t-0 border-surface-3 rounded-b-lg divide-y divide-surface-3">
             {row.entries.map((entry) => (
@@ -141,7 +141,7 @@ const tierBadge: Record<string, string> = {
         </p>
         <p>
           This list does not represent Digital Extremes' view of balance. Game patches may shift rankings.
-          See the <a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:underline">Warframe wiki</a> and community hubs for the latest discussion.
+          See the <a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki" target="_blank" rel="noopener noreferrer" class="text-brand-orange underline">Warframe wiki</a> and community hubs for the latest discussion.
         </p>
       </div>
     </section>

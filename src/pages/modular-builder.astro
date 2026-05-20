@@ -1,0 +1,392 @@
+---
+// modular-builder.astro -- Modular Weapon Builder for Zaws, Kitguns, Hounds, and MOAs.
+// Lets players select parts and see computed stats live.
+import Base from '../layouts/Base.astro';
+import {
+  ZAW_STRIKES, ZAW_GRIPS, ZAW_LINKS,
+  KITGUN_CHAMBERS, KITGUN_GRIPS, KITGUN_LOADERS,
+  HOUND_MODELS, HOUND_BRACKETS, HOUND_STABILIZERS,
+  MOA_MODELS, MOA_CORES, MOA_BRACES, MOA_GYROS,
+  BASE_STATS, MODULAR_MASTERY_REQ,
+  ZAW_POLISH_TIPS, KITGUN_MOD_TIPS,
+} from '../data/modular-parts';
+
+const base = import.meta.env.BASE_URL;
+
+const partsJson = JSON.stringify({
+  zaw: { strikes: ZAW_STRIKES, grips: ZAW_GRIPS, links: ZAW_LINKS },
+  kitgun: { chambers: KITGUN_CHAMBERS, grips: KITGUN_GRIPS, loaders: KITGUN_LOADERS },
+  hound: { models: HOUND_MODELS, brackets: HOUND_BRACKETS, stabilizers: HOUND_STABILIZERS },
+  moa: { models: MOA_MODELS, cores: MOA_CORES, braces: MOA_BRACES, gyros: MOA_GYROS },
+});
+const baseStatsJson = JSON.stringify(BASE_STATS);
+const masteryReqJson = JSON.stringify(MODULAR_MASTERY_REQ);
+const tipsByType = JSON.stringify({ zaw: ZAW_POLISH_TIPS, kitgun: KITGUN_MOD_TIPS });
+
+const ZAW_SLOTS = [
+  { id: 'zaw-strike', label: 'Strike', key: 'strikes' },
+  { id: 'zaw-grip', label: 'Grip', key: 'grips' },
+  { id: 'zaw-link', label: 'Link', key: 'links' },
+] as const;
+const KITGUN_SLOTS = [
+  { id: 'kitgun-chamber', label: 'Chamber', key: 'chambers' },
+  { id: 'kitgun-grip', label: 'Grip', key: 'grips' },
+  { id: 'kitgun-loader', label: 'Loader', key: 'loaders' },
+] as const;
+const HOUND_SLOTS = [
+  { id: 'hound-model', label: 'Model', key: 'models' },
+  { id: 'hound-bracket', label: 'Bracket', key: 'brackets' },
+  { id: 'hound-stabilizer', label: 'Stabilizer', key: 'stabilizers' },
+] as const;
+const MOA_SLOTS = [
+  { id: 'moa-model', label: 'Model', key: 'models' },
+  { id: 'moa-core', label: 'Core', key: 'cores' },
+  { id: 'moa-brace', label: 'Brace', key: 'braces' },
+  { id: 'moa-gyro', label: 'Gyro', key: 'gyros' },
+] as const;
+
+const TABS = [
+  { id: 'zaw', label: 'Zaw', slots: ZAW_SLOTS },
+  { id: 'kitgun', label: 'Kitgun', slots: KITGUN_SLOTS },
+  { id: 'hound', label: 'Hound', slots: HOUND_SLOTS },
+  { id: 'moa', label: 'MOA', slots: MOA_SLOTS },
+] as const;
+---
+
+<Base
+  title="Modular Weapon Builder"
+  description="Build Zaws, Kitguns, Hounds, and MOAs by selecting parts and seeing computed stats live."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-6">
+      <nav class="mb-4 text-sm text-brand-cream/50">
+        <a href={`${base}weapons`} class="hover:text-brand-orange">Weapons</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Modular Builder</span>
+      </nav>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Modular Weapon Builder</h1>
+          <p class="text-brand-cream/60">Pick parts, see computed stats, and share your build instantly.</p>
+        </div>
+        <div class="flex flex-wrap gap-3 shrink-0 text-sm">
+          <a href={`${base}build-calculator`} class="text-brand-orange hover:underline">Warframe Build Calc &rarr;</a>
+          <a href={`${base}weapons`} class="text-brand-orange hover:underline">All Weapons &rarr;</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tabs -->
+    <div class="flex gap-1 mb-6 border-b border-surface-3" role="tablist" aria-label="Modular weapon type">
+      {TABS.map((tab, i) => (
+        <button
+          id={`tab-${tab.id}`}
+          role="tab"
+          aria-selected={i === 0}
+          aria-controls={`panel-${tab.id}`}
+          data-tab={tab.id}
+          class:list={[
+            'px-5 py-2.5 text-sm font-semibold rounded-t transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange',
+            i === 0
+              ? 'bg-surface-2 border border-b-0 border-surface-3 text-brand-orange'
+              : 'text-brand-cream/50 hover:text-brand-cream',
+          ]}
+        >
+          {tab.label}
+        </button>
+      ))}
+    </div>
+
+    <!-- Builder panels -->
+    {TABS.map((tab, i) => (
+      <div
+        id={`panel-${tab.id}`}
+        role="tabpanel"
+        aria-labelledby={`tab-${tab.id}`}
+        data-panel={tab.id}
+        class:list={[i !== 0 && 'hidden']}
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Part selectors -->
+          <div class="lg:col-span-2 space-y-4">
+            <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Select Parts</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {tab.slots.map((slot) => (
+                <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+                  <label
+                    for={slot.id}
+                    class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-2"
+                  >
+                    {slot.label}
+                  </label>
+                  <select
+                    id={slot.id}
+                    data-slot-key={slot.key}
+                    data-weapon-type={tab.id}
+                    class="w-full rounded-lg bg-surface-3 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+                  >
+                    <option value="">-- Choose {slot.label} --</option>
+                  </select>
+                </div>
+              ))}
+            </div>
+
+            <!-- Action buttons -->
+            <div class="flex flex-wrap gap-3 pt-2">
+              <button
+                data-reset={tab.id}
+                class="px-5 py-2 rounded-lg border border-surface-3 text-brand-cream/60 text-sm hover:border-brand-orange/50 hover:text-brand-cream transition-colors"
+              >
+                Reset
+              </button>
+              <button
+                data-save={tab.id}
+                class="px-5 py-2 rounded-lg bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-sm hover:bg-brand-orange/30 transition-colors"
+              >
+                Save Build (copy URL)
+              </button>
+            </div>
+
+            <!-- Mastery rank notice -->
+            <p class="text-xs text-brand-cream/40">
+              Minimum Mastery Rank to build:
+              <span class="text-brand-cream/70 font-semibold" data-mr-display={tab.id}>MR{MODULAR_MASTERY_REQ[tab.id]}</span>
+            </p>
+          </div>
+
+          <!-- Computed stats panel -->
+          <div>
+            <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Computed Stats</p>
+            <div
+              id={`stats-${tab.id}`}
+              class="rounded-lg border border-surface-3 bg-surface-2 p-4 space-y-3"
+              aria-live="polite"
+              aria-label={`Computed stats for ${tab.label} build`}
+            >
+              <p class="text-brand-cream/30 text-sm text-center py-4">Select all parts to see computed stats.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommendations -->
+        {(tab.id === 'zaw' || tab.id === 'kitgun') && (
+          <div class="mt-8">
+            <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">
+              {tab.id === 'zaw' ? 'Recommended Polish / Mods' : 'Recommended Mods'}
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {(tab.id === 'zaw' ? ZAW_POLISH_TIPS : KITGUN_MOD_TIPS).map((tip) => (
+                <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+                  <p class="font-semibold text-brand-cream text-sm mb-1">{tip.name}</p>
+                  <p class="text-xs text-brand-cream/60">{tip.reason}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    ))}
+
+  </div>
+</Base>
+
+<script define:vars={{ partsJson, baseStatsJson, masteryReqJson, tipsByType, base }} is:inline>
+  const PARTS = JSON.parse(partsJson);
+  const BASE_STATS = JSON.parse(baseStatsJson);
+  const MASTERY_REQ = JSON.parse(masteryReqJson);
+
+  function esc(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function pct(v) { return `${Math.round(v * 100)}%`; }
+  function round2(v) { return Math.round(v * 100) / 100; }
+
+  function getSlotIds(type) {
+    const map = {
+      zaw:    ['zaw-strike', 'zaw-grip', 'zaw-link'],
+      kitgun: ['kitgun-chamber', 'kitgun-grip', 'kitgun-loader'],
+      hound:  ['hound-model', 'hound-bracket', 'hound-stabilizer'],
+      moa:    ['moa-model', 'moa-core', 'moa-brace', 'moa-gyro'],
+    };
+    return map[type] || [];
+  }
+
+  function getPartsList(type, slotKey) {
+    const pool = PARTS[type];
+    if (!pool) return [];
+    return pool[slotKey] || [];
+  }
+
+  function findPart(type, slotKey, slug) {
+    return getPartsList(type, slotKey).find((p) => p.slug === slug) || null;
+  }
+
+  function populateSelects() {
+    document.querySelectorAll('select[data-weapon-type]').forEach((sel) => {
+      const type = sel.dataset.weaponType;
+      const key = sel.dataset.slotKey;
+      const parts = getPartsList(type, key);
+      sel.innerHTML = `<option value="">-- Choose ${key.slice(0,-1)} --</option>`;
+      parts.forEach((p) => {
+        const opt = document.createElement('option');
+        opt.value = p.slug;
+        opt.textContent = p.name;
+        sel.appendChild(opt);
+      });
+    });
+  }
+
+  function computeStats(type) {
+    const slotIds = getSlotIds(type);
+    const base = BASE_STATS[type];
+    if (!base) return;
+
+    const allSelected = slotIds.every((id) => {
+      const el = document.getElementById(id);
+      return el && el.value !== '';
+    });
+
+    const panel = document.getElementById(`stats-${type}`);
+    if (!panel) return;
+
+    if (!allSelected) {
+      panel.innerHTML = '<p class="text-brand-cream/30 text-sm text-center py-4">Select all parts to see computed stats.</p>';
+      return;
+    }
+
+    let dmMult = 1, frMult = 1, ccMult = 1, cmMult = 1, scMult = 1;
+    let rngMult = 1, shMult = 1, hpMult = 1, arMult = 1;
+
+    slotIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el || !el.value) return;
+      const slotKey = el.dataset.slotKey;
+      const part = findPart(type, slotKey, el.value);
+      if (!part) return;
+      const s = part.statModifiers;
+      dmMult  *= s.damageMult;
+      frMult  *= s.fireRateMult;
+      ccMult  *= s.critChanceMult;
+      cmMult  *= s.critMultMult;
+      scMult  *= s.statusChanceMult;
+      rngMult *= s.rangeMult;
+      shMult  *= s.shieldMult;
+      hpMult  *= s.healthMult;
+      arMult  *= s.armorMult;
+    });
+
+    const isCompanion = type === 'hound' || type === 'moa';
+    let rows;
+
+    if (isCompanion) {
+      rows = [
+        ['Health', `${Math.round(base.health * hpMult)} HP`, `Base ${base.health} HP`],
+        ['Shield', `${Math.round(base.shield * shMult)} HP`, `Base ${base.shield} HP`],
+        ['Armor',  `${Math.round(base.armor  * arMult)}`,    `Base ${base.armor}`],
+      ];
+    } else {
+      rows = [
+        ['Damage',         `${Math.round(base.damage * dmMult)}`,  `Base ${base.damage}`],
+        ['Fire Rate',      `${round2(base.fireRate * frMult)}`,     `Base ${base.fireRate}`],
+        ['Crit Chance',    pct(base.critChance * ccMult),          `Base ${pct(base.critChance)}`],
+        ['Crit Multiplier',`${round2(base.critMult * cmMult)}x`,   `Base ${base.critMult}x`],
+        ['Status Chance',  pct(base.statusChance * scMult),        `Base ${pct(base.statusChance)}`],
+        ['Range',          `${round2(base.range * rngMult)} m`,    `Base ${base.range} m`],
+      ];
+    }
+
+    panel.innerHTML = rows.map(([lbl, val, note]) =>
+      `<div class="flex flex-col gap-0.5"><div class="flex items-center justify-between gap-2">` +
+      `<span class="text-xs text-brand-cream/50">${esc(lbl)}</span>` +
+      `<span class="text-sm font-semibold text-brand-cream">${esc(val)}</span></div>` +
+      `<p class="text-[11px] text-brand-cream/30">${esc(note)}</p></div>`
+    ).join('');
+  }
+
+  function saveBuild(type) {
+    const slotIds = getSlotIds(type);
+    const slugs = slotIds.map((id) => {
+      const el = document.getElementById(id);
+      return el ? el.value : '';
+    });
+    const encoded = btoa(JSON.stringify({ type, slugs }));
+    const url = `${window.location.origin}${window.location.pathname}?build=${encoded}`;
+    navigator.clipboard.writeText(url).catch(() => {});
+    const btn = document.querySelector(`[data-save="${type}"]`);
+    if (btn) {
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.textContent = 'Save Build (copy URL)'; }, 2000);
+    }
+  }
+
+  function resetBuild(type) {
+    getSlotIds(type).forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.value = '';
+    });
+    history.replaceState(null, '', window.location.pathname);
+    computeStats(type);
+  }
+
+  function loadFromUrl() {
+    const param = new URLSearchParams(window.location.search).get('build');
+    if (!param) return;
+    try {
+      const d = JSON.parse(atob(param));
+      if (!d.type || !Array.isArray(d.slugs)) return;
+      const slotIds = getSlotIds(d.type);
+      d.slugs.forEach((slug, i) => {
+        const el = document.getElementById(slotIds[i]);
+        if (el && slug) el.value = slug;
+      });
+      switchTab(d.type);
+      computeStats(d.type);
+    } catch (_) { /* malformed -- ignore */ }
+  }
+
+  function switchTab(activeType) {
+    document.querySelectorAll('[data-tab]').forEach((btn) => {
+      const isActive = btn.dataset.tab === activeType;
+      btn.setAttribute('aria-selected', String(isActive));
+      if (isActive) {
+        btn.classList.remove('text-brand-cream/50', 'hover:text-brand-cream');
+        btn.classList.add('bg-surface-2', 'border', 'border-b-0', 'border-surface-3', 'text-brand-orange');
+      } else {
+        btn.classList.remove('bg-surface-2', 'border', 'border-b-0', 'border-surface-3', 'text-brand-orange');
+        btn.classList.add('text-brand-cream/50', 'hover:text-brand-cream');
+      }
+    });
+    document.querySelectorAll('[data-panel]').forEach((panel) => {
+      const isActive = panel.dataset.panel === activeType;
+      panel.classList.toggle('hidden', !isActive);
+    });
+  }
+
+  // Wire up tab buttons
+  document.querySelectorAll('[data-tab]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const type = btn.dataset.tab;
+      switchTab(type);
+      computeStats(type);
+    });
+  });
+
+  // Wire up selects
+  document.querySelectorAll('select[data-weapon-type]').forEach((sel) => {
+    sel.addEventListener('change', () => computeStats(sel.dataset.weaponType));
+  });
+
+  // Wire up reset buttons
+  document.querySelectorAll('[data-reset]').forEach((btn) => {
+    btn.addEventListener('click', () => resetBuild(btn.dataset.reset));
+  });
+
+  // Wire up save buttons
+  document.querySelectorAll('[data-save]').forEach((btn) => {
+    btn.addEventListener('click', () => saveBuild(btn.dataset.save));
+  });
+
+  populateSelects();
+  loadFromUrl();
+</script>

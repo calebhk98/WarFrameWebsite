@@ -25,8 +25,8 @@ const factionsJson = JSON.stringify(FACTIONS);
   <div class="max-w-7xl mx-auto px-4 py-10">
 
     <header class="mb-8">
-      <nav class="mb-4 text-sm text-brand-cream/50">
-        <a href={`${base}`} class="hover:text-brand-orange">Home</a>
+      <nav class="mb-4 text-sm text-brand-cream/80">
+        <a href={`${base}`} class="underline hover:text-brand-orange">Home</a>
         <span class="mx-2">/</span>
         <span class="text-brand-cream/80">Damage Types</span>
       </nav>
@@ -50,7 +50,7 @@ const factionsJson = JSON.stringify(FACTIONS);
             href="https://warframe.fandom.com/wiki/Damage"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-brand-orange hover:underline"
+            class="text-brand-orange underline"
           >Warframe wiki -- Damage</a>.
         </p>
       </div>
@@ -84,7 +84,7 @@ const factionsJson = JSON.stringify(FACTIONS);
     <!-- Damage effectiveness matrix -->
     <section aria-labelledby="matrix-heading" class="mb-12">
       <h2 id="matrix-heading" class="text-xl font-bold text-brand-cream mb-3">Effectiveness matrix</h2>
-      <p class="text-xs text-brand-cream/40 mb-4">
+      <p class="text-xs text-brand-cream/70 mb-4">
         Multipliers shown as percentages relative to base (e.g. +75% = x1.75; -50% = x0.50).
         Neutral cells (x1.0) show no modifier label.
       </p>
@@ -108,7 +108,7 @@ const factionsJson = JSON.stringify(FACTIONS);
     <!-- Status proc panel -->
     <section aria-labelledby="status-heading" class="mb-12">
       <h2 id="status-heading" class="text-xl font-bold text-brand-cream mb-3">Status procs</h2>
-      <p class="text-xs text-brand-cream/40 mb-4">Effect applied when that damage type triggers a status proc (30% chance by default per hit).</p>
+      <p class="text-xs text-brand-cream/70 mb-4">Effect applied when that damage type triggers a status proc (30% chance by default per hit).</p>
       <div class="overflow-x-auto rounded-lg border border-surface-3">
         <table class="w-full text-sm border-collapse">
           <thead>
@@ -137,12 +137,12 @@ const factionsJson = JSON.stringify(FACTIONS);
       <h2 id="faction-heading" class="text-xl font-bold text-brand-cream mb-3">Faction recommendations</h2>
       <p class="text-sm text-brand-cream/60 mb-4">
         Recommended damage types to prioritize against each major faction, based on their dominant health layer composition.
-        See individual <a href={`${base}factions`} class="text-brand-orange hover:underline">faction pages</a> for full unit breakdowns.
+        See individual <a href={`${base}factions`} class="text-brand-orange underline">faction pages</a> for full unit breakdowns.
       </p>
       <div id="faction-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
     </section>
 
-    <footer class="text-xs text-brand-cream/30 border-t border-surface-3 pt-4">
+    <footer class="text-xs text-brand-cream/70 border-t border-surface-3 pt-4">
       Source: <a
         href="https://warframe.fandom.com/wiki/Damage"
         target="_blank"
@@ -190,7 +190,7 @@ const factionsJson = JSON.stringify(FACTIONS);
       return '<tr class="' + bg + ' border-b border-surface-3 hover:brightness-110">'
         + '<th scope="row" class="sticky left-0 z-10 ' + bg + ' px-3 py-2 text-left text-brand-cream font-semibold whitespace-nowrap">'
         + escHtml(row.name)
-        + '<span class="ml-1 text-xs text-brand-cream/30 font-normal">(' + escHtml(row.cat) + ')</span></th>'
+        + '<span class="ml-1 text-xs text-brand-cream/70 font-normal">(' + escHtml(row.cat) + ')</span></th>'
         + cells + '</tr>';
     }).join('');
     document.getElementById('matrix-body').innerHTML = rows;
@@ -208,10 +208,10 @@ const factionsJson = JSON.stringify(FACTIONS);
     document.getElementById('combo-grid').innerHTML = COMBOS.map(function(c) {
       var pills = c.components.map(function(comp) {
         return '<span class="px-2 py-0.5 rounded bg-surface-3 text-brand-cream/80 text-xs font-medium">' + escHtml(comp) + '</span>';
-      }).join('<span class="text-brand-cream/40 mx-1 text-xs">+</span>');
+      }).join('<span class="text-brand-cream/70 mx-1 text-xs">+</span>');
       return '<div class="rounded-lg border border-surface-3 bg-surface-2 p-4">'
         + '<div class="flex items-center gap-2 mb-2 flex-wrap">' + pills
-        + '<span class="text-brand-cream/40 mx-1 text-xs">=</span>'
+        + '<span class="text-brand-cream/70 mx-1 text-xs">=</span>'
         + '<span class="px-3 py-0.5 rounded bg-brand-orange/20 border border-brand-orange/50 text-brand-orange text-sm font-bold">' + escHtml(c.result) + '</span></div>'
         + '<p class="text-xs text-brand-cream/60">' + escHtml(c.note) + '</p></div>';
     }).join('');

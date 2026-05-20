@@ -45,10 +45,10 @@ const ogImageProp = ogImage !== undefined ? { ogImage } : {};
   {...ogImageProp}
 >
   <div class="max-w-5xl mx-auto px-4 py-8">
-    <nav aria-label="Breadcrumb" class="mb-6 text-sm text-brand-cream/50">
-      <a href={base} class="hover:text-brand-orange transition-colors">Home</a>
+    <nav aria-label="Breadcrumb" class="mb-6 text-sm text-brand-cream/80">
+      <a href={base} class="underline hover:text-brand-orange transition-colors">Home</a>
       <span class="mx-2">/</span>
-      <a href={collectionPath} class="hover:text-brand-orange transition-colors">{collectionLabel}</a>
+      <a href={collectionPath} class="underline hover:text-brand-orange transition-colors">{collectionLabel}</a>
       <span class="mx-2">/</span>
       <span class="text-brand-cream/80">{title}</span>
     </nav>
@@ -113,7 +113,7 @@ const ogImageProp = ogImage !== undefined ? { ogImage } : {};
       {sources.length > 0 && (
         <aside class="lg:w-64 shrink-0">
           <div class="sticky top-20 rounded-lg border border-surface-3 bg-surface-2 p-4">
-            <h2 class="text-xs uppercase tracking-widest text-brand-cream/50 font-semibold mb-3">
+            <h2 class="text-xs uppercase tracking-widest text-brand-cream/80 font-semibold mb-3">
               Sources
             </h2>
             <ul class="space-y-2">
@@ -127,7 +127,7 @@ const ogImageProp = ogImage !== undefined ? { ogImage } : {};
                   >
                     [{i + 1}] {new URL(src.url).hostname}
                   </a>
-                  <span class="block text-brand-cream/40 mt-0.5">
+                  <span class="block text-brand-cream/70 mt-0.5">
                     {src.accessedAt.slice(0, 10)}
                   </span>
                 </li>

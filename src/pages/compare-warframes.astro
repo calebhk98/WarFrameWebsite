@@ -23,8 +23,8 @@ const warframesJson = JSON.stringify(warframesIndex);
 >
   <div class="max-w-7xl mx-auto px-4 py-8">
     <header class="mb-8">
-      <nav class="mb-4 text-sm text-brand-cream/50">
-        <a href={`${base}warframes`} class="hover:text-brand-orange">Warframes</a>
+      <nav class="mb-4 text-sm text-brand-cream/80">
+        <a href={`${base}warframes`} class="underline hover:text-brand-orange">Warframes</a>
         <span class="mx-2">/</span>
         <span class="text-brand-cream/80">Compare</span>
       </nav>
@@ -49,7 +49,7 @@ const warframesJson = JSON.stringify(warframesIndex);
       <div class="flex-1">
         <label
           for="select-a"
-          class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1"
+          class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1"
         >
           Warframe A
         </label>
@@ -67,7 +67,7 @@ const warframesJson = JSON.stringify(warframesIndex);
       <div class="flex-1">
         <label
           for="select-b"
-          class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1"
+          class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1"
         >
           Warframe B
         </label>
@@ -85,10 +85,10 @@ const warframesJson = JSON.stringify(warframesIndex);
       <div class="flex-1">
         <label
           for="select-c"
-          class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1"
+          class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1"
         >
           Warframe C
-          <span class="text-brand-cream/30 font-normal normal-case">(optional)</span>
+          <span class="text-brand-cream/70 font-normal normal-case">(optional)</span>
         </label>
         <select
           id="select-c"
@@ -117,7 +117,7 @@ const warframesJson = JSON.stringify(warframesIndex);
     >
     </div>
 
-    <p id="compare-hint" class="text-center text-brand-cream/30 text-sm py-16">
+    <p id="compare-hint" class="text-center text-brand-cream/70 text-sm py-16">
       Choose at least two warframes above to start comparing.
     </p>
   </div>
@@ -151,7 +151,7 @@ const warframesJson = JSON.stringify(warframesIndex);
     const badge = isBest ? '<span class="ml-1 text-[10px] font-bold text-brand-orange uppercase">best</span>' : '';
     return `<div class="flex flex-col gap-0.5">
       <div class="flex items-center justify-between text-xs">
-        <span class="text-brand-cream/50">${esc(label)}</span>
+        <span class="text-brand-cream/80">${esc(label)}</span>
         <span class="text-brand-cream font-medium">${esc(display)}${badge}</span>
       </div>
       <div class="h-2 rounded bg-surface-3 overflow-hidden" role="presentation" aria-hidden="true">
@@ -172,7 +172,7 @@ const warframesJson = JSON.stringify(warframesIndex);
         <span class="shrink-0 w-5 h-5 flex items-center justify-center rounded bg-surface-3 text-brand-orange font-bold text-[10px]">${esc(abilityKeys[a.key] ?? a.key)}</span>
         <span>${esc(a.name)}</span>
       </li>`).join('');
-    const mrBadge = `<span class="text-xs px-2 py-0.5 rounded bg-surface-3 text-brand-cream/50">MR${esc(String(frame.masteryRank))}</span>`;
+    const mrBadge = `<span class="text-xs px-2 py-0.5 rounded bg-surface-3 text-brand-cream/80">MR${esc(String(frame.masteryRank))}</span>`;
 
     return `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5 flex flex-col gap-4">
       <header>
@@ -184,11 +184,11 @@ const warframesJson = JSON.stringify(warframesIndex);
         </div>
       </header>
       <section aria-label="Stats for ${esc(frame.name)}">
-        <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-2">Stats</p>
+        <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-2">Stats</p>
         <div class="flex flex-col gap-2">${statsHtml}</div>
       </section>
       <section aria-label="Abilities for ${esc(frame.name)}">
-        <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-2">Abilities</p>
+        <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-2">Abilities</p>
         <ul class="space-y-1">${abilitiesHtml}</ul>
       </section>
     </article>`;

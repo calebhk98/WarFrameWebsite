@@ -42,8 +42,8 @@ const warframesJson = JSON.stringify(
 >
   <div class="max-w-7xl mx-auto px-4 py-8">
     <header class="mb-8">
-      <nav class="mb-4 text-sm text-brand-cream/50">
-        <a href={`${base}warframes`} class="hover:text-brand-orange">Warframes</a>
+      <nav class="mb-4 text-sm text-brand-cream/80">
+        <a href={`${base}warframes`} class="underline hover:text-brand-orange">Warframes</a>
         <span class="mx-2">/</span>
         <span class="text-brand-cream/80">Helminth Planner</span>
       </nav>
@@ -68,7 +68,7 @@ const warframesJson = JSON.stringify(
       <div class="flex-1">
         <label
           for="select-base"
-          class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1"
+          class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1"
         >
           Base warframe
         </label>
@@ -86,7 +86,7 @@ const warframesJson = JSON.stringify(
       <div class="flex-1">
         <label
           for="select-subsume"
-          class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1"
+          class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1"
         >
           Subsume from
         </label>
@@ -104,7 +104,7 @@ const warframesJson = JSON.stringify(
       <div class="sm:w-44">
         <label
           for="select-slot"
-          class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1"
+          class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1"
         >
           Replace slot
         </label>
@@ -136,7 +136,7 @@ const warframesJson = JSON.stringify(
       <!-- Injected by JS -->
     </div>
 
-    <p id="planner-hint" class="text-center text-brand-cream/30 text-sm py-16">
+    <p id="planner-hint" class="text-center text-brand-cream/70 text-sm py-16">
       Choose a base frame and a donor frame above to begin planning.
     </p>
   </div>
@@ -176,7 +176,7 @@ const warframesJson = JSON.stringify(
       return `<li class="flex items-center gap-2 text-xs opacity-50">
         ${slotBadge}
         <span class="line-through text-red-400">${esc(name)}</span>
-        <span class="text-brand-cream/40 text-[10px] uppercase">replaced</span>
+        <span class="text-brand-cream/80 text-[10px] uppercase">replaced</span>
       </li>`;
     }
     if (injected) {
@@ -197,11 +197,11 @@ const warframesJson = JSON.stringify(
       abilityRow(a.key, a.name, a.key === replaceSlot, false),
     ).join('');
     return `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5">
-      <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">
+      <h2 class="text-sm font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">
         Base frame: ${esc(entry.name)}
       </h2>
       <ul class="space-y-2">${rows}</ul>
-      <p class="mt-3 text-xs text-brand-cream/30">
+      <p class="mt-3 text-xs text-brand-cream/70">
         Ability ${esc(replaceSlot)} will be replaced by the subsumed ability.
       </p>
     </article>`;
@@ -217,11 +217,11 @@ const warframesJson = JSON.stringify(
       ),
     ).join('');
     return `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5">
-      <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">
+      <h2 class="text-sm font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">
         Donor frame: ${esc(entry.name)}
       </h2>
       <ul class="space-y-2">${rows}</ul>
-      <p class="mt-3 text-xs text-brand-cream/30">
+      <p class="mt-3 text-xs text-brand-cream/70">
         Highlighted ability will be subsumed into Helminth.
       </p>
     </article>`;
@@ -248,7 +248,7 @@ const warframesJson = JSON.stringify(
       .map((n) => `<li class="text-xs text-brand-cream/70 flex gap-2"><span class="text-brand-orange shrink-0">+</span>${esc(n)}</li>`)
       .join('');
     return `<section class="rounded-lg border border-surface-3 bg-surface-2 p-5">
-      <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Synergy notes</h2>
+      <h2 class="text-sm font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">Synergy notes</h2>
       <ul class="space-y-2">${items}</ul>
     </section>`;
   }
@@ -258,14 +258,14 @@ const warframesJson = JSON.stringify(
       (c) => `<div class="flex flex-col gap-0.5">
         <span class="text-xs font-semibold text-brand-cream/80">${esc(c.name)}</span>
         <span class="text-xs text-brand-orange">${esc(String(c.amount))}</span>
-        <span class="text-[10px] text-brand-cream/40">${esc(c.description)}</span>
+        <span class="text-[10px] text-brand-cream/70">${esc(c.description)}</span>
       </div>`,
     ).join('');
     return `<section class="rounded-lg border border-surface-3 bg-surface-2 p-5">
-      <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Subsume resource costs</h2>
-      <p class="text-xs text-brand-cream/40 mb-3">
+      <h2 class="text-sm font-semibold text-brand-cream/80 uppercase tracking-wide mb-1">Subsume resource costs</h2>
+      <p class="text-xs text-brand-cream/70 mb-3">
         Minimum cost at Helminth rank 0. Helminth consumes the cheapest available resource.
-        Source: <a href="https://warframe.fandom.com/wiki/Helminth" class="text-brand-orange hover:underline" target="_blank" rel="noopener noreferrer">Fandom Helminth page</a>.
+        Source: <a href="https://warframe.fandom.com/wiki/Helminth" class="text-brand-orange underline" target="_blank" rel="noopener noreferrer">Fandom Helminth page</a>.
       </p>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">${rows}</div>
     </section>`;
@@ -274,13 +274,13 @@ const warframesJson = JSON.stringify(
   function renderUncuratedNotice(slug, role) {
     const fandomSlug = FRAMES.find((f) => f.slug === slug)?.name
       .replace(/ /g, '_') ?? slug;
-    return `<p class="text-xs text-brand-cream/50 mt-2">
+    return `<p class="text-xs text-brand-cream/80 mt-2">
       ${esc(role)} ability data is not available for this frame
       (Necramechs and non-subsumable frames such as Excalibur Umbra and Temple
       cannot be subsumed into Helminth).
       <a
         href="https://warframe.fandom.com/wiki/Helminth#Subsumable_Abilities"
-        class="text-brand-orange hover:underline"
+        class="text-brand-orange underline"
         target="_blank"
         rel="noopener noreferrer"
       >View full table on Fandom &rarr;</a>
@@ -315,7 +315,7 @@ const warframesJson = JSON.stringify(
       html += renderBaseCard(baseEntry, replaceSlot);
     } else {
       html += `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5">
-        <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Base frame</h2>
+        <h2 class="text-sm font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">Base frame</h2>
         <p class="text-xs text-brand-cream/60">Ability list not curated for this frame.</p>
         ${renderUncuratedNotice(baseSlug, 'Base frame')}
       </article>`;
@@ -325,7 +325,7 @@ const warframesJson = JSON.stringify(
       html += renderSubsumeCard(subEntry);
     } else {
       html += `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5">
-        <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Donor frame</h2>
+        <h2 class="text-sm font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">Donor frame</h2>
         <p class="text-xs text-brand-cream/60">Subsumable ability not curated for this frame.</p>
         ${renderUncuratedNotice(subSlug, 'Donor frame')}
       </article>`;

@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-05-20T17:59:05.983117Z",
+  "before": {
+    "/": 95,
+    "/warframes/ash/": 96,
+    "/warframes/saryn-prime/": 97,
+    "/compare/": 95,
+    "/compare-warframes/": 95,
+    "/build-calculator/": 96,
+    "/helminth-planner/": 95,
+    "/damage-types/": 92,
+    "/tier-list/": 90,
+    "/beginner/": 91
+  },
+  "after": {
+    "/": 100,
+    "/warframes/ash/": 100,
+    "/warframes/saryn-prime/": 100,
+    "/compare/": 100,
+    "/compare-warframes/": 100,
+    "/build-calculator/": 100,
+    "/helminth-planner/": 100,
+    "/damage-types/": 100,
+    "/tier-list/": 100,
+    "/beginner/": 100
+  },
+  "fixes_by_page": {
+    "/": [
+      "text-brand-cream/50 -> /80 on quick link descs",
+      "text-brand-cream/40 -> /70 on update dates"
+    ],
+    "/warframes/ash/": [
+      "Entity.astro breadcrumb: text-brand-cream/50 -> /80 + underline",
+      "Sources h2: /50 -> /80",
+      "date span: /40 -> /70"
+    ],
+    "/warframes/saryn-prime/": [
+      "AbilityCard dt: text-brand-cream/50 -> /80",
+      "same Entity.astro breadcrumb fixes"
+    ],
+    "/compare/": [
+      "breadcrumb: /50 -> /80 + underline",
+      "all labels /50 -> /80",
+      "hint /30 -> /70",
+      "JS card text /50 /40 /30 -> /80 /70 /70"
+    ],
+    "/compare-warframes/": [
+      "breadcrumb: /50 -> /80 + underline",
+      "labels /50 -> /80",
+      "hint /30 -> /70",
+      "JS stat label /50 -> /80",
+      "MR badge /50 -> /80"
+    ],
+    "/build-calculator/": [
+      "breadcrumb: /50 -> /80 + underline",
+      "labels /50 -> /80",
+      "capacity text /50 -> /80",
+      "hint /30 -> /70",
+      "slot labels /50 -> /80"
+    ],
+    "/helminth-planner/": [
+      "breadcrumb: /50 -> /80 + underline",
+      "labels /50 -> /80",
+      "hint /30 -> /70",
+      "all JS card h2 /50 -> /80",
+      "note text /30 /40 -> /70",
+      "link underline always-on"
+    ],
+    "/damage-types/": [
+      "breadcrumb: /50 -> /80 + underline",
+      "matrix notes /40 -> /70",
+      "category span /30 -> /70",
+      "footer /30 -> /70",
+      "links: hover:underline -> underline",
+      "JS combo separators /40 -> /70"
+    ],
+    "/tier-list/": [
+      "source text /40 -> /70",
+      "links: hover:underline -> underline",
+      "C-tier label text-brand-cream",
+      "tier label p text-brand-cream explicit",
+      "methodology links always underlined"
+    ],
+    "/beginner/": [
+      "starter frame italic /50 -> /80",
+      "wiki links /40 -> /80 + underline",
+      "source link underline always-on",
+      "resource card descs /50 -> /80"
+    ]
+  },
+  "all_at_100": true
+}
