@@ -17,13 +17,21 @@ for (const w of sorted) {
   byLetter[letter]!.push(w);
 }
 const letters = Object.keys(byLetter).sort();
+const base = import.meta.env.BASE_URL;
 ---
 
 <Base title="Weapons" description="All 598 Warframe weapons -- primary, secondary, melee">
   <div class="max-w-7xl mx-auto px-4 py-8">
     <header class="mb-8">
-      <h1 class="text-3xl font-bold text-brand-cream mb-2">Weapons</h1>
-      <p class="text-brand-cream/60">{sorted.length} weapons -- {types.join(', ')}</p>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-2">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Weapons</h1>
+          <p class="text-brand-cream/60">{sorted.length} weapons -- {types.join(', ')}</p>
+        </div>
+        <a href={`${base}riven-planner`} class="text-sm text-brand-orange hover:underline shrink-0">
+          Riven Roll Planner &rarr;
+        </a>
+      </div>
     </header>
 
     <nav aria-label="Alphabetical index" class="flex flex-wrap gap-2 mb-8">

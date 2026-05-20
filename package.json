@@ -19,7 +19,9 @@
     "test:e2e:ui": "playwright test --ui",
     "test:all": "vitest run && playwright test",
     "import-wfcd": "tsx scripts/import-wfcd.ts",
-    "import": "tsx scripts/import-wfcd.ts"
+    "import": "tsx scripts/import-wfcd.ts",
+    "bundle:check": "bash scripts/check-bundle-size.sh",
+    "html:check": "bash scripts/validate-html.sh"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -40,6 +42,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "@testing-library/dom": "^10.4.0",
     "@types/node": "^22.10.6",
+    "html-validate": "^11.2.0",
     "pagefind": "^1.3.0",
     "tsx": "^4.22.2",
     "vitest": "^2.1.8"
