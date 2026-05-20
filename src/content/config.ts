@@ -1,8 +1,11 @@
 import { defineCollection } from 'astro:content';
 
+import { ampSchema } from './schemas/amps';
 import { arcaneSchema } from './schemas/arcanes';
 import { buildSchema } from './schemas/builds';
+import { companionSchema } from './schemas/companions';
 import { factionSchema } from './schemas/factions';
+import { focusSchoolSchema } from './schemas/focus-schools';
 import { guideSchema } from './schemas/guides';
 import { missionSchema } from './schemas/missions';
 import { modSchema } from './schemas/mods';
@@ -16,9 +19,12 @@ import { weaponSchema } from './schemas/weapons';
 // Re-export every named schema and shared helper so downstream callers
 // (e.g. `scripts/verify-content.ts`) have a single import surface.
 export * from './schemas/shared';
+export * from './schemas/amps';
 export * from './schemas/arcanes';
 export * from './schemas/builds';
+export * from './schemas/companions';
 export * from './schemas/factions';
+export * from './schemas/focus-schools';
 export * from './schemas/guides';
 export * from './schemas/missions';
 export * from './schemas/mods';
@@ -42,4 +48,7 @@ export const collections = {
   resources: defineCollection({ type: 'content', schema: resourceSchema }),
   builds: defineCollection({ type: 'content', schema: buildSchema }),
   guides: defineCollection({ type: 'content', schema: guideSchema }),
+  'focus-schools': defineCollection({ type: 'content', schema: focusSchoolSchema }),
+  amps: defineCollection({ type: 'content', schema: ampSchema }),
+  companions: defineCollection({ type: 'content', schema: companionSchema }),
 };
