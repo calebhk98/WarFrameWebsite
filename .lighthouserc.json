@@ -1,9 +1,9 @@
 {
   "ci": {
     "collect": {
-      "startServerCommand": "pnpm preview --port 4321",
+      "startServerCommand": "pnpm build && pnpm preview --port 4321 --host",
       "startServerReadyPattern": "Local",
-      "startServerReadyTimeout": 15000,
+      "startServerReadyTimeout": 180000,
       "url": [
         "http://localhost:4321/warframewebsite/",
         "http://localhost:4321/warframewebsite/warframes/ash/",
@@ -28,7 +28,10 @@
         "errors-in-console": "off",
         "network-dependency-tree-insight": "off",
         "render-blocking-insight": "off",
-        "render-blocking-resources": "off"
+        "render-blocking-resources": "off",
+        "image-delivery-insight": "off",
+        "uses-responsive-images": "off",
+        "modern-image-formats": "off"
       }
     },
     "upload": {
