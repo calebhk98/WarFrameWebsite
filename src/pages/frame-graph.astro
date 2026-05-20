@@ -1,0 +1,433 @@
+---
+import Base from '../layouts/Base.astro';
+import {
+  GRAPH_NODES,
+  FRAME_RELATIONSHIPS,
+  nodeLabel,
+} from '../data/frame-relationships';
+import type { RelationshipType } from '../data/frame-relationships';
+
+const base = import.meta.env.BASE_URL;
+
+// SVG layout constants
+const SVG_W = 900;
+const SVG_H = 700;
+const NODE_R = 28;
+const CENTER_X = SVG_W / 2;
+const CENTER_Y = SVG_H / 2;
+const ORBIT_R = 290;
+
+// Place nodes on a circle.
+interface NodePos {
+  slug: string;
+  label: string;
+  cx: number;
+  cy: number;
+}
+
+const nodePosArr: NodePos[] = GRAPH_NODES.map((slug, i) => {
+  const angle = (2 * Math.PI * i) / GRAPH_NODES.length - Math.PI / 2;
+  return {
+    slug,
+    label: nodeLabel(slug),
+    cx: Math.round(CENTER_X + ORBIT_R * Math.cos(angle)),
+    cy: Math.round(CENTER_Y + ORBIT_R * Math.sin(angle)),
+  };
+});
+
+const nodeBySlug = Object.fromEntries(nodePosArr.map((n) => [n.slug, n]));
+
+// Edge colors per type.
+const TYPE_COLOR: Record<RelationshipType, string> = {
+  buffs: '#f97316',
+  synergy: '#22d3ee',
+  'subsume-pair': '#a78bfa',
+  'team-comp': '#4ade80',
+};
+
+// Serialise for client script.
+const nodesJson = JSON.stringify(nodePosArr);
+const edgesJson = JSON.stringify(FRAME_RELATIONSHIPS);
+const typeColorJson = JSON.stringify(TYPE_COLOR);
+const nodeRJson = JSON.stringify(NODE_R);
+---
+
+<Base
+  title="Frame Relationship Graph"
+  description="Interactive graph showing synergy, buff, subsume, and team-comp relationships between the most popular Warframes."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-6">
+      <nav class="mb-3 text-sm text-brand-cream/50">
+        <a href={`${base}warframes`} class="hover:text-brand-orange">Warframes</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Frame Graph</span>
+      </nav>
+      <h1 class="text-3xl font-bold text-brand-cream mb-3">Frame Relationship Graph</h1>
+      <p class="text-brand-cream/70 max-w-3xl leading-relaxed text-sm">
+        Warframes rarely operate as isolated units. Their kits interact through
+        direct buffs, complementary roles, Helminth subsume pairings, and
+        established team compositions that define the game's endgame meta.
+        This graph maps the most impactful relationships across the 25
+        most-played frames. Orange edges show one frame actively buffing
+        another -- Wisp Reservoirs boosting Mesa, Rhino Roar amplifying
+        Saryn's Spore scaling. Cyan edges mark role synergy, where two
+        frames cover different parts of a mission loop, such as Khora
+        corralling enemies into Nekros's Desecrate radius. Purple edges
+        highlight top Helminth subsume pairings -- the best ability to
+        borrow and the frame most improved by receiving it. Green edges
+        denote full 4-stack team compositions used in Eidolon hunts and
+        high-efficiency farming runs. Click any node to see all its
+        relationships in the detail panel. Filter by type using the
+        chips below. Keyboard: Tab to a node, Enter or Space to select,
+        arrow keys to navigate to adjacent nodes.
+      </p>
+    </header>
+
+    <!-- Filter chips -->
+    <div
+      class="flex flex-wrap gap-2 mb-6"
+      role="group"
+      aria-label="Filter edges by relationship type"
+      id="filter-bar"
+    >
+      {(['all', 'buffs', 'synergy', 'subsume-pair', 'team-comp'] as const).map((t) => (
+        <button
+          class="filter-chip px-3 py-1 rounded-full border text-xs font-semibold transition-all"
+          data-type={t}
+          aria-pressed={t === 'all' ? 'true' : 'false'}
+          style={t !== 'all' ? `border-color:${TYPE_COLOR[t as RelationshipType]};color:${TYPE_COLOR[t as RelationshipType]}` : ''}
+        >
+          {t === 'all' ? 'All' : t === 'buffs' ? 'Buffs' : t === 'synergy' ? 'Synergy' : t === 'subsume-pair' ? 'Subsume pair' : 'Team comp'}
+        </button>
+      ))}
+    </div>
+
+    <!-- Legend -->
+    <div class="flex flex-wrap gap-5 mb-6" aria-label="Edge color legend">
+      {(Object.entries(TYPE_COLOR) as [RelationshipType, string][]).map(([t, color]) => (
+        <div class="flex items-center gap-2 text-xs text-brand-cream/70">
+          <span
+            class="inline-block w-8 h-1 rounded"
+            style={`background-color:${color}`}
+            aria-hidden="true"
+          />
+          {t === 'buffs' ? 'Buffs' : t === 'synergy' ? 'Synergy' : t === 'subsume-pair' ? 'Subsume pair' : 'Team comp'}
+        </div>
+      ))}
+    </div>
+
+    <!-- Main layout -->
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- SVG graph -->
+      <div class="flex-1 overflow-x-auto">
+        <svg
+          role="img"
+          aria-labelledby="fg-title"
+          viewBox={`0 0 ${SVG_W} ${SVG_H}`}
+          class="w-full max-w-full rounded-lg border border-surface-3 bg-surface-2"
+          style="min-width:340px"
+          id="frame-graph-svg"
+        >
+          <title id="fg-title">
+            Warframe relationship graph -- 25 nodes showing buffs, synergy, subsume pairs, and team compositions
+          </title>
+          <defs>
+            <style>{`
+              .fg-node { cursor: pointer; }
+              .fg-node:focus { outline: none; }
+              .fg-circle { opacity: 0.85; transition: opacity 0.12s, stroke-width 0.12s; }
+              .fg-node:hover .fg-circle, .fg-node:focus .fg-circle { opacity: 1; stroke-width: 3; }
+              .fg-circle.selected { opacity: 1; stroke-width: 3; }
+              .fg-edge { transition: opacity 0.12s; }
+              .fg-edge.hidden { opacity: 0; pointer-events: none; }
+              .fg-label { pointer-events: none; font-family: ui-sans-serif, system-ui, sans-serif; }
+              #tooltip {
+                position: fixed; z-index: 50;
+                background: #1a1614; border: 1px solid #3a3330;
+                color: #e8e0d0; font-size: 12px; max-width: 240px;
+                padding: 6px 10px; border-radius: 6px;
+                pointer-events: none; display: none; line-height: 1.4;
+              }
+            `}</style>
+          </defs>
+
+          <!-- Edges rendered first (behind nodes) -->
+          {FRAME_RELATIONSHIPS.map((rel, idx) => {
+            const from = nodeBySlug[rel.from];
+            const to = nodeBySlug[rel.to];
+            if (!from || !to) return null;
+            const color = TYPE_COLOR[rel.type];
+            const sw = 1 + (rel.strength - 1) * 0.4;
+            return (
+              <line
+                class="fg-edge"
+                data-idx={idx}
+                data-type={rel.type}
+                data-from={rel.from}
+                data-to={rel.to}
+                data-note={rel.note}
+                x1={from.cx}
+                y1={from.cy}
+                x2={to.cx}
+                y2={to.cy}
+                stroke={color}
+                stroke-width={sw}
+                stroke-opacity="0.65"
+                aria-hidden="true"
+              />
+            );
+          })}
+
+          <!-- Nodes -->
+          {nodePosArr.map((node) => (
+            <g
+              class="fg-node"
+              data-slug={node.slug}
+              tabindex="0"
+              role="button"
+              aria-label={`${node.label} -- click to view relationships`}
+            >
+              <circle
+                class="fg-circle"
+                cx={node.cx}
+                cy={node.cy}
+                r={NODE_R}
+                fill="#2a2320"
+                stroke="#6b5c50"
+                stroke-width="1.5"
+              />
+              <text
+                class="fg-label"
+                x={node.cx}
+                y={node.cy - 4}
+                text-anchor="middle"
+                fill="#e8e0d0"
+                font-size="9"
+                font-weight="600"
+              >
+                {node.label.split(' ')[0]}
+              </text>
+              {node.label.split(' ').length > 1 && (
+                <text
+                  class="fg-label"
+                  x={node.cx}
+                  y={node.cy + 7}
+                  text-anchor="middle"
+                  fill="#a09080"
+                  font-size="8"
+                >
+                  {node.label.split(' ').slice(1).join(' ')}
+                </text>
+              )}
+            </g>
+          ))}
+        </svg>
+      </div>
+
+      <!-- Detail panel -->
+      <aside
+        id="frame-panel"
+        class="lg:w-80 rounded-lg border border-surface-3 bg-surface-2 p-5 self-start"
+        aria-live="polite"
+        aria-label="Selected frame relationship details"
+      >
+        <p id="panel-hint" class="text-brand-cream/40 text-sm">
+          Click a frame node to see its relationships.
+        </p>
+        <div id="panel-content" class="hidden">
+          <h2 id="panel-name" class="text-lg font-bold text-brand-cream mb-3">&#8203;</h2>
+          <div id="panel-outgoing" class="mb-4"></div>
+          <div id="panel-incoming"></div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Cross-links -->
+    <nav class="mt-8 flex flex-wrap gap-4 text-sm" aria-label="Related tools">
+      <a href={`${base}helminth-planner`} class="text-brand-orange hover:underline">
+        Helminth Planner &rarr;
+      </a>
+      <a href={`${base}compare-warframes`} class="text-brand-orange hover:underline">
+        Compare Warframes &rarr;
+      </a>
+      <a href={`${base}warframes`} class="text-brand-orange hover:underline">
+        All Warframes &rarr;
+      </a>
+      <a href={`${base}tier-list`} class="text-brand-orange hover:underline">
+        Tier List &rarr;
+      </a>
+    </nav>
+  </div>
+
+  <!-- Tooltip element (outside SVG, fixed-positioned) -->
+  <div id="tooltip" role="tooltip" aria-live="off"></div>
+</Base>
+
+<script define:vars={{ nodesJson, edgesJson, typeColorJson, nodeRJson }} is:inline>
+  var NODES = JSON.parse(nodesJson);
+  var EDGES = JSON.parse(edgesJson);
+  var TYPE_COLOR = JSON.parse(typeColorJson);
+
+  var activeFilter = 'all';
+  var selectedSlug = null;
+
+  var tooltip = document.getElementById('tooltip');
+  var panelHint = document.getElementById('panel-hint');
+  var panelContent = document.getElementById('panel-content');
+  var panelName = document.getElementById('panel-name');
+  var panelOutgoing = document.getElementById('panel-outgoing');
+  var panelIncoming = document.getElementById('panel-incoming');
+
+  function escHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function typeLabel(t) {
+    var map = { buffs: 'Buffs', synergy: 'Synergy', 'subsume-pair': 'Subsume pair', 'team-comp': 'Team comp' };
+    return map[t] || t;
+  }
+
+  function nodeLabel(slug) {
+    var n = NODES.find(function(n) { return n.slug === slug; });
+    return n ? n.label : slug;
+  }
+
+  function applyFilter(type) {
+    activeFilter = type;
+    var edges = document.querySelectorAll('.fg-edge');
+    edges.forEach(function(e) {
+      var et = e.getAttribute('data-type');
+      var show = type === 'all' || et === type;
+      if (show) { e.classList.remove('hidden'); }
+      else { e.classList.add('hidden'); }
+    });
+    document.querySelectorAll('.filter-chip').forEach(function(chip) {
+      var ct = chip.getAttribute('data-type');
+      chip.setAttribute('aria-pressed', ct === type ? 'true' : 'false');
+      if (ct === type) {
+        chip.style.background = ct === 'all' ? '#4a3f38' : (TYPE_COLOR[ct] || '#888') + '33';
+        chip.style.fontWeight = '700';
+      } else {
+        chip.style.background = '';
+        chip.style.fontWeight = '';
+      }
+    });
+  }
+
+  function showPanel(slug) {
+    selectedSlug = slug;
+    var label = nodeLabel(slug);
+    panelHint.style.display = 'none';
+    panelContent.classList.remove('hidden');
+    panelName.textContent = label;
+
+    var outEdges = EDGES.filter(function(e) { return e.from === slug; });
+    var inEdges = EDGES.filter(function(e) { return e.to === slug; });
+
+    panelOutgoing.innerHTML = outEdges.length
+      ? '<h3 class="text-xs uppercase tracking-widest text-brand-cream/50 font-semibold mb-2">Outgoing</h3>'
+        + outEdges.map(function(e) {
+          var col = TYPE_COLOR[e.type] || '#888';
+          return '<div class="mb-3 border-l-2 pl-3" style="border-color:' + escHtml(col) + '">'
+            + '<p class="text-xs font-semibold" style="color:' + escHtml(col) + '">'
+            + escHtml(typeLabel(e.type)) + ' &rarr; ' + escHtml(nodeLabel(e.to)) + '</p>'
+            + '<p class="text-xs text-brand-cream/60 mt-0.5">' + escHtml(e.note) + '</p>'
+            + '</div>';
+        }).join('')
+      : '';
+
+    panelIncoming.innerHTML = inEdges.length
+      ? '<h3 class="text-xs uppercase tracking-widest text-brand-cream/50 font-semibold mb-2 mt-3">Incoming</h3>'
+        + inEdges.map(function(e) {
+          var col = TYPE_COLOR[e.type] || '#888';
+          return '<div class="mb-3 border-l-2 pl-3" style="border-color:' + escHtml(col) + '">'
+            + '<p class="text-xs font-semibold" style="color:' + escHtml(col) + '">'
+            + escHtml(nodeLabel(e.from)) + ' &rarr; ' + escHtml(typeLabel(e.type)) + '</p>'
+            + '<p class="text-xs text-brand-cream/60 mt-0.5">' + escHtml(e.note) + '</p>'
+            + '</div>';
+        }).join('')
+      : '';
+
+    document.querySelectorAll('.fg-circle').forEach(function(c) {
+      c.classList.remove('selected');
+    });
+    var group = document.querySelector('[data-slug="' + slug + '"]');
+    if (group) {
+      var circle = group.querySelector('.fg-circle');
+      if (circle) { circle.classList.add('selected'); }
+    }
+  }
+
+  function showTooltip(e, note) {
+    if (!tooltip) return;
+    tooltip.style.display = 'block';
+    tooltip.textContent = note;
+    tooltip.style.left = (e.clientX + 14) + 'px';
+    tooltip.style.top = (e.clientY - 8) + 'px';
+  }
+
+  function hideTooltip() {
+    if (tooltip) { tooltip.style.display = 'none'; }
+  }
+
+  // Node interactions
+  var nodeGroups = document.querySelectorAll('.fg-node');
+  nodeGroups.forEach(function(g) {
+    var slug = g.getAttribute('data-slug');
+    if (!slug) return;
+    g.addEventListener('click', function() { showPanel(slug); });
+    g.addEventListener('keydown', function(ev) {
+      if (ev.key === 'Enter' || ev.key === ' ') {
+        ev.preventDefault();
+        showPanel(slug);
+      }
+    });
+  });
+
+  // Arrow-key navigation between nodes
+  document.addEventListener('keydown', function(ev) {
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(ev.key)) return;
+    if (!selectedSlug) return;
+    ev.preventDefault();
+    var idx = NODES.findIndex(function(n) { return n.slug === selectedSlug; });
+    if (idx < 0) return;
+    var next = ev.key === 'ArrowRight' || ev.key === 'ArrowDown'
+      ? (idx + 1) % NODES.length
+      : (idx - 1 + NODES.length) % NODES.length;
+    var nextSlug = NODES[next].slug;
+    showPanel(nextSlug);
+    var nextGroup = document.querySelector('[data-slug="' + nextSlug + '"]');
+    if (nextGroup) { nextGroup.focus(); }
+  });
+
+  // Edge transparent hit-area + tooltip
+  var edgeLines = document.querySelectorAll('.fg-edge');
+  edgeLines.forEach(function(el) {
+    var note = el.getAttribute('data-note') || '';
+    var wrapper = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    wrapper.setAttribute('x1', el.getAttribute('x1') || '0');
+    wrapper.setAttribute('y1', el.getAttribute('y1') || '0');
+    wrapper.setAttribute('x2', el.getAttribute('x2') || '0');
+    wrapper.setAttribute('y2', el.getAttribute('y2') || '0');
+    wrapper.setAttribute('stroke', 'transparent');
+    wrapper.setAttribute('stroke-width', '12');
+    wrapper.style.cursor = 'pointer';
+    wrapper.addEventListener('mousemove', function(ev) { showTooltip(ev, note); });
+    wrapper.addEventListener('mouseleave', hideTooltip);
+    if (el.parentNode) { el.parentNode.insertBefore(wrapper, el.nextSibling); }
+  });
+
+  // Filter chips
+  document.querySelectorAll('.filter-chip').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var t = chip.getAttribute('data-type') || 'all';
+      applyFilter(t);
+    });
+  });
+
+  // Initialise filter
+  applyFilter('all');
+</script>
