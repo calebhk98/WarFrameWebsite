@@ -26,6 +26,12 @@ const planets = Object.keys(byPlanet).sort();
     <header class="mb-8">
       <h1 class="text-3xl font-bold text-brand-cream mb-2">Missions</h1>
       <p class="text-brand-cream/60">{sorted.length} mission nodes grouped by planet</p>
+      <a
+        href="/star-chart"
+        class="inline-block mt-3 text-sm text-brand-orange hover:underline"
+      >
+        View interactive Star Chart &rarr;
+      </a>
     </header>
 
     <nav aria-label="Planet index" class="flex flex-wrap gap-2 mb-8">

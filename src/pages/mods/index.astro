@@ -13,15 +13,23 @@ for (const m of sorted) {
   byLetter[letter]!.push(m);
 }
 const letters = Object.keys(byLetter).sort();
+const base = import.meta.env.BASE_URL;
 ---
 
 <Base title="Mods" description="Augment mod catalogue for Warframe">
   <div class="max-w-7xl mx-auto px-4 py-8">
     <header class="mb-8">
-      <h1 class="text-3xl font-bold text-brand-cream mb-2">Mods</h1>
-      <p class="text-brand-cream/60">
-        {sorted.length} featured mods (augments). Full mod library browsable via WFCD data.
-      </p>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-2">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Mods</h1>
+          <p class="text-brand-cream/60">
+            {sorted.length} featured mods (augments). Full mod library browsable via WFCD data.
+          </p>
+        </div>
+        <a href={`${base}market`} class="text-sm text-brand-orange hover:underline shrink-0">
+          Trade Prices &rarr;
+        </a>
+      </div>
     </header>
 
     <nav aria-label="Alphabetical index" class="flex flex-wrap gap-2 mb-8">

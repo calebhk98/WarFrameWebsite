@@ -275,13 +275,15 @@ const warframesJson = JSON.stringify(
     const fandomSlug = FRAMES.find((f) => f.slug === slug)?.name
       .replace(/ /g, '_') ?? slug;
     return `<p class="text-xs text-brand-cream/50 mt-2">
-      ${esc(role)} ability data is not yet curated for this frame.
+      ${esc(role)} ability data is not available for this frame
+      (Necramechs and non-subsumable frames such as Excalibur Umbra and Temple
+      cannot be subsumed into Helminth).
       <a
         href="https://warframe.fandom.com/wiki/Helminth#Subsumable_Abilities"
         class="text-brand-orange hover:underline"
         target="_blank"
         rel="noopener noreferrer"
-      >View on Fandom &rarr;</a>
+      >View full table on Fandom &rarr;</a>
     </p>`;
   }
 

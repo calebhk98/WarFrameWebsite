@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-05-20T00:00:00.000Z",
+  "total_frames_enumerated": 110,
+  "covered_in_helminth_data": 105,
+  "not_subsumable": [
+    "bonewidow",
+    "excalibur-umbra",
+    "helminth",
+    "temple",
+    "voidrig"
+  ],
+  "not_subsumable_reason": "These frames are either Necramechs (bonewidow, voidrig), the Helminth entity itself, or warframes confirmed absent from the Fandom Helminth Subsumable Abilities table (excalibur-umbra, temple). They cannot be subsumed and have no entry in HELMINTH_DATA.",
+  "missing": [],
+  "source": "https://warframe.fandom.com/wiki/Helminth#Subsumable_Abilities",
+  "source_accessed": "2026-05-20",
+  "fetch_method": "https://warframe.fandom.com/api.php?action=parse&page=Helminth&prop=wikitext&section=8&format=json"
+}

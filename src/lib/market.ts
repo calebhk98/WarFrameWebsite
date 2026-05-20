@@ -208,3 +208,12 @@ export async function searchItems(query: string): Promise<MarketItem[]> {
     .filter(i => i.item_name.toLowerCase().includes(needle))
     .map(mapItem);
 }
+
+export async function getItemLowestSellPrice(urlName: string): Promise<number | null> {
+  const listings = await getItemListings(urlName);
+  const onlineSell = listings.sell.filter(
+    o => o.user.status === 'ingame' || o.user.status === 'online',
+  );
+  if (onlineSell.length === 0) return null;
+  return Math.min(...onlineSell.map(o => o.platinum));
+}

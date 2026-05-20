@@ -120,9 +120,14 @@ export const SYNERGY_NOTES: readonly SynergyNote[] = [
   },
 ];
 
-// Curated Helminth subsume data for 40 frames.
+// Curated Helminth subsume data for all subsumable warframes.
 // Frames not listed here will display a "see Fandom" notice in the widget.
 // Source: https://warframe.fandom.com/wiki/Helminth#Subsumable_Abilities
+// Subsumable-ability table fetched 2026-05-20 via
+//   https://warframe.fandom.com/api.php?action=parse&page=Helminth&prop=wikitext&section=8&format=json
+// Ability kits cross-checked against /data/wfcd/Warframes.json (WFCD canonical).
+// NOTE: bonewidow, excalibur-umbra, helminth, temple, voidrig are NOT in the
+//   Helminth subsumable-abilities table and have been intentionally excluded.
 export const HELMINTH_DATA: readonly HelminthEntry[] = [
   {
     slug: 'ash',
@@ -147,6 +152,30 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     ],
     subsumeAbility: 'Shuriken',
     subsumeKey: '1',
+  },
+  {
+    slug: 'atlas',
+    name: 'Atlas',
+    abilities: [
+      { key: '1', name: 'Landslide' },
+      { key: '2', name: 'Tectonics' },
+      { key: '3', name: 'Petrify' },
+      { key: '4', name: 'Rumblers' },
+    ],
+    subsumeAbility: 'Petrify',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'atlas-prime',
+    name: 'Atlas Prime',
+    abilities: [
+      { key: '1', name: 'Landslide' },
+      { key: '2', name: 'Tectonics' },
+      { key: '3', name: 'Petrify' },
+      { key: '4', name: 'Rumblers' },
+    ],
+    subsumeAbility: 'Petrify',
+    subsumeKey: '3',
   },
   {
     slug: 'banshee',
@@ -221,6 +250,66 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     subsumeKey: '2',
   },
   {
+    slug: 'caliban',
+    name: 'Caliban',
+    abilities: [
+      { key: '1', name: 'Razor Gyre' },
+      { key: '2', name: 'Sentient Wrath' },
+      { key: '3', name: 'Lethal Progeny' },
+      { key: '4', name: 'Fusion Strike' },
+    ],
+    subsumeAbility: 'Sentient Wrath',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'citrine',
+    name: 'Citrine',
+    abilities: [
+      { key: '1', name: 'Fractured Blast' },
+      { key: '2', name: 'Preserving Shell' },
+      { key: '3', name: 'Prismatic Gem' },
+      { key: '4', name: 'Crystallize' },
+    ],
+    subsumeAbility: 'Fractured Blast',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'cyte-09',
+    name: 'Cyte-09',
+    abilities: [
+      { key: '1', name: 'Seek' },
+      { key: '2', name: 'Resupply' },
+      { key: '3', name: 'Evade' },
+      { key: '4', name: 'Neutralize' },
+    ],
+    subsumeAbility: 'Evade',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'dagath',
+    name: 'Dagath',
+    abilities: [
+      { key: '1', name: 'Wyrd Scythes' },
+      { key: '2', name: 'Doom' },
+      { key: '3', name: 'Grave Spirit' },
+      { key: '4', name: "Rakhali's Cavalry" },
+    ],
+    subsumeAbility: 'Wyrd Scythes',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'dante',
+    name: 'Dante',
+    abilities: [
+      { key: '1', name: 'Noctua' },
+      { key: '2', name: 'Light Verse' },
+      { key: '3', name: 'Dark Verse' },
+      { key: '4', name: 'Final Verse' },
+    ],
+    subsumeAbility: 'Dark Verse',
+    subsumeKey: '3',
+  },
+  {
     slug: 'ember',
     name: 'Ember',
     abilities: [
@@ -243,6 +332,30 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     ],
     subsumeAbility: 'Fire Blast',
     subsumeKey: '3',
+  },
+  {
+    slug: 'equinox',
+    name: 'Equinox',
+    abilities: [
+      { key: '1', name: 'Metamorphosis' },
+      { key: '2', name: 'Rest & Rage' },
+      { key: '3', name: 'Pacify & Provoke' },
+      { key: '4', name: 'Mend & Maim' },
+    ],
+    subsumeAbility: 'Rest & Rage',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'equinox-prime',
+    name: 'Equinox Prime',
+    abilities: [
+      { key: '1', name: 'Metamorphosis' },
+      { key: '2', name: 'Rest & Rage' },
+      { key: '3', name: 'Pacify & Provoke' },
+      { key: '4', name: 'Mend & Maim' },
+    ],
+    subsumeAbility: 'Rest & Rage',
+    subsumeKey: '2',
   },
   {
     slug: 'excalibur',
@@ -293,6 +406,30 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     subsumeKey: '2',
   },
   {
+    slug: 'gauss',
+    name: 'Gauss',
+    abilities: [
+      { key: '1', name: 'Mach Rush' },
+      { key: '2', name: 'Kinetic Plating' },
+      { key: '3', name: 'Thermal Sunder' },
+      { key: '4', name: 'Redline' },
+    ],
+    subsumeAbility: 'Thermal Sunder',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'gauss-prime',
+    name: 'Gauss Prime',
+    abilities: [
+      { key: '1', name: 'Mach Rush' },
+      { key: '2', name: 'Kinetic Plating' },
+      { key: '3', name: 'Thermal Sunder' },
+      { key: '4', name: 'Redline' },
+    ],
+    subsumeAbility: 'Thermal Sunder',
+    subsumeKey: '3',
+  },
+  {
     slug: 'gara',
     name: 'Gara',
     abilities: [
@@ -338,6 +475,42 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
       { key: '4', name: 'Seeking Talons' },
     ],
     subsumeAbility: 'Blood Altar',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'grendel',
+    name: 'Grendel',
+    abilities: [
+      { key: '1', name: 'Feast' },
+      { key: '2', name: 'Nourish' },
+      { key: '3', name: 'Pulverize' },
+      { key: '4', name: 'Regurgitate' },
+    ],
+    subsumeAbility: 'Nourish',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'grendel-prime',
+    name: 'Grendel Prime',
+    abilities: [
+      { key: '1', name: 'Feast' },
+      { key: '2', name: 'Nourish' },
+      { key: '3', name: 'Pulverize' },
+      { key: '4', name: 'Regurgitate' },
+    ],
+    subsumeAbility: 'Nourish',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'gyre',
+    name: 'Gyre',
+    abilities: [
+      { key: '1', name: 'Arcsphere' },
+      { key: '2', name: 'Coil Horizon' },
+      { key: '3', name: 'Cathode Grace' },
+      { key: '4', name: 'Rotorswell' },
+    ],
+    subsumeAbility: 'Coil Horizon',
     subsumeKey: '2',
   },
   {
@@ -461,6 +634,18 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     subsumeKey: '1',
   },
   {
+    slug: 'jade',
+    name: 'Jade',
+    abilities: [
+      { key: '1', name: "Light's Judgment" },
+      { key: '2', name: 'Symphony Of Mercy' },
+      { key: '3', name: 'Ophanim Eyes' },
+      { key: '4', name: 'Glory On High' },
+    ],
+    subsumeAbility: 'Ophanim Eyes',
+    subsumeKey: '3',
+  },
+  {
     slug: 'khora',
     name: 'Khora',
     abilities: [
@@ -483,6 +668,30 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     ],
     subsumeAbility: 'Ensnare',
     subsumeKey: '2',
+  },
+  {
+    slug: 'koumei',
+    name: 'Koumei',
+    abilities: [
+      { key: '1', name: 'Kumihimo' },
+      { key: '2', name: 'Omikuji' },
+      { key: '3', name: 'Omamori' },
+      { key: '4', name: 'Bunraku' },
+    ],
+    subsumeAbility: 'Omamori',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'kullervo',
+    name: 'Kullervo',
+    abilities: [
+      { key: '1', name: 'Wrathful Advance' },
+      { key: '2', name: 'Recompense' },
+      { key: '3', name: 'Collective Curse' },
+      { key: '4', name: 'Storm Of Ukko' },
+    ],
+    subsumeAbility: 'Wrathful Advance',
+    subsumeKey: '1',
   },
   {
     slug: 'lavos',
@@ -821,6 +1030,18 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     subsumeKey: '3',
   },
   {
+    slug: 'qorvex',
+    name: 'Qorvex',
+    abilities: [
+      { key: '1', name: 'Chyrinka Pillar' },
+      { key: '2', name: 'Containment Wall' },
+      { key: '3', name: 'Disometric Guard' },
+      { key: '4', name: 'Crucible Blast' },
+    ],
+    subsumeAbility: 'Chyrinka Pillar',
+    subsumeKey: '1',
+  },
+  {
     slug: 'revenant',
     name: 'Revenant',
     abilities: [
@@ -891,6 +1112,18 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     ],
     subsumeAbility: 'Spores',
     subsumeKey: '1',
+  },
+  {
+    slug: 'styanax',
+    name: 'Styanax',
+    abilities: [
+      { key: '1', name: 'Axios Javelin' },
+      { key: '2', name: 'Tharros Strike' },
+      { key: '3', name: 'Rally Point' },
+      { key: '4', name: 'Final Stand' },
+    ],
+    subsumeAbility: 'Tharros Strike',
+    subsumeKey: '2',
   },
   {
     slug: 'sevagoth',
@@ -1013,6 +1246,18 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     subsumeKey: '1',
   },
   {
+    slug: 'voruna',
+    name: 'Voruna',
+    abilities: [
+      { key: '1', name: 'Shroud Of Dynar' },
+      { key: '2', name: 'Fangs Of Raksh' },
+      { key: '3', name: "Lycath's Hunt" },
+      { key: '4', name: "Ulfrun's Descent" },
+    ],
+    subsumeAbility: "Lycath's Hunt",
+    subsumeKey: '3',
+  },
+  {
     slug: 'volt',
     name: 'Volt',
     abilities: [
@@ -1107,6 +1352,18 @@ export const HELMINTH_DATA: readonly HelminthEntry[] = [
     ],
     subsumeAbility: "Xata's Whisper",
     subsumeKey: '1',
+  },
+  {
+    slug: 'yareli',
+    name: 'Yareli',
+    abilities: [
+      { key: '1', name: 'Sea Snares' },
+      { key: '2', name: 'Merulina' },
+      { key: '3', name: 'Aquablades' },
+      { key: '4', name: 'Riptide' },
+    ],
+    subsumeAbility: 'Aquablades',
+    subsumeKey: '3',
   },
   {
     slug: 'zephyr',

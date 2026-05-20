@@ -1,0 +1,146 @@
+---
+import Base from '../layouts/Base.astro';
+import { getItemLowestSellPrice } from '../lib/market';
+import { MARKET_WATCHLIST } from '../data/market-watchlist';
+import type { WatchlistCategory } from '../data/market-watchlist';
+
+const base = import.meta.env.BASE_URL;
+const fetchedAt = new Date().toISOString();
+const fetchedLabel = new Date(fetchedAt).toUTCString();
+
+interface PriceResult {
+  urlName: string;
+  displayName: string;
+  category: WatchlistCategory;
+  price: number | null;
+  failed: boolean;
+}
+
+const results = await Promise.allSettled(
+  MARKET_WATCHLIST.map(item => getItemLowestSellPrice(item.urlName)),
+);
+
+const priceData: PriceResult[] = MARKET_WATCHLIST.map((item, i) => {
+  const settled = results[i]!;
+  if (settled.status === 'fulfilled') {
+    return { ...item, price: settled.value, failed: false };
+  }
+  return { ...item, price: null, failed: true };
+});
+
+const successCount = priceData.filter(r => !r.failed).length;
+
+const categories: WatchlistCategory[] = ['Primed Mods', 'Arcanes', 'Prime Sets', 'Prime Parts'];
+
+function itemsByCategory(cat: WatchlistCategory): PriceResult[] {
+  return priceData
+    .filter(r => r.category === cat)
+    .sort((a, b) => {
+      if (a.price === null && b.price === null) return 0;
+      if (a.price === null) return 1;
+      if (b.price === null) return -1;
+      return b.price - a.price;
+    });
+}
+
+function marketUrl(urlName: string): string {
+  return `https://warframe.market/items/${urlName}`;
+}
+---
+
+<Base
+  title="Trade Price Ticker"
+  description="Live warframe.market plat price leaderboard for popular tradeable items -- primed mods, arcanes, prime sets, and prime parts"
+>
+  <div class="max-w-5xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-2">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Trade Price Ticker</h1>
+          <p class="text-brand-cream/60">
+            Lowest online sell prices from
+            <a
+              href="https://warframe.market"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-brand-orange hover:underline"
+            >warframe.market</a>.
+            Prices are fetched at build time. Rebuild to refresh.
+          </p>
+        </div>
+        <nav aria-label="Related pages" class="flex flex-wrap gap-3 text-sm shrink-0">
+          <a href={`${base}mods`} class="text-brand-orange hover:underline">Mods &rarr;</a>
+          <a href={`${base}weapons`} class="text-brand-orange hover:underline">Weapons &rarr;</a>
+          <a href={`${base}tier-list`} class="text-brand-orange hover:underline">Tier List &rarr;</a>
+        </nav>
+      </div>
+      <p class="text-xs text-brand-cream/40 mt-1">
+        Last updated: <time datetime={fetchedAt}>{fetchedLabel}</time>
+        &mdash; {successCount} of {MARKET_WATCHLIST.length} items fetched successfully.
+      </p>
+    </header>
+
+    <div class="space-y-10">
+      {categories.map((cat) => {
+        const items = itemsByCategory(cat);
+        return (
+          <section aria-labelledby={`cat-${cat.replace(/\s+/g, '-').toLowerCase()}`}>
+            <h2
+              id={`cat-${cat.replace(/\s+/g, '-').toLowerCase()}`}
+              class="text-sm uppercase tracking-widest text-brand-orange font-semibold mb-4 border-b border-surface-3 pb-2"
+            >
+              {cat}
+            </h2>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="text-left text-brand-cream/40 text-xs uppercase tracking-wider">
+                    <th class="pb-2 pr-4 font-medium">Item</th>
+                    <th class="pb-2 pr-4 font-medium text-right">Lowest Sell (plat)</th>
+                    <th class="pb-2 font-medium text-right">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-surface-3">
+                  {items.map((row) => (
+                    <tr class="hover:bg-surface-2/40 transition-colors">
+                      <td class="py-3 pr-4">
+                        <a
+                          href={marketUrl(row.urlName)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-brand-cream hover:text-brand-orange transition-colors font-medium"
+                        >
+                          {row.displayName}
+                        </a>
+                      </td>
+                      <td class="py-3 pr-4 text-right font-mono">
+                        {row.price !== null
+                          ? <span class="text-brand-orange font-semibold">{row.price}p</span>
+                          : <span class="text-brand-cream/30">--</span>
+                        }
+                      </td>
+                      <td class="py-3 text-right">
+                        {row.failed
+                          ? <span class="text-xs text-red-400/70">Price unavailable</span>
+                          : row.price !== null
+                            ? <span class="text-xs text-green-400/70">Live</span>
+                            : <span class="text-xs text-brand-cream/30">No online sellers</span>
+                        }
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        );
+      })}
+    </div>
+
+    <p class="mt-10 text-xs text-brand-cream/30">
+      Prices are for online or in-game sellers only. Data is cached in
+      <code class="font-mono text-brand-cream/50">data/cache/</code> and refreshed each build.
+      Source: <a href="https://warframe.market" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:underline">warframe.market</a>.
+    </p>
+  </div>
+</Base>
