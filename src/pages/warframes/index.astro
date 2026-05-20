@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import EntityCard from '../../components/EntityCard.astro';
+import { getEntityImageUrl } from '../../lib/wfcd-images';
 
 const base = import.meta.env.BASE_URL;
 const warframes = await getCollection('warframes');
@@ -59,6 +60,7 @@ const letters = Object.keys(byLetter).sort();
                 `MR${w.data.masteryRank}`,
                 ...(w.data.prime?.available ? ['Prime'] : []),
               ]}
+              image={getEntityImageUrl(w.slug, 'warframes')}
             />
           ))}
         </div>

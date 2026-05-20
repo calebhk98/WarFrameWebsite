@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Entity from '../../layouts/Entity.astro';
+import { getEntityImageUrl } from '../../lib/wfcd-images';
 
 export async function getStaticPaths() {
   const weapons = await getCollection('weapons');
@@ -10,6 +11,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const { data } = entry;
+const thumbnailUrl = getEntityImageUrl(entry.slug, 'weapons') ?? null;
 
 const totalBaseDmg = data.damage.impact + data.damage.puncture + data.damage.slash;
 const elemEntries = Object.entries(data.damage.elemental ?? {});
@@ -31,6 +33,7 @@ const description = `${data.name} -- Base Damage: ${totalBaseDmg.toFixed(1)}, Cr
   description={description}
   tags={tags}
   sources={data.sources}
+  thumbnailUrl={thumbnailUrl}
 >
   <section class="mb-8">
     <h2 class="text-xl font-semibold text-brand-cream mb-3">Stats</h2>

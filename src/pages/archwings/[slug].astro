@@ -4,6 +4,7 @@ import Entity from '../../layouts/Entity.astro';
 import Callout from '../../components/Callout.astro';
 import AbilityCard from '../../components/AbilityCard.astro';
 import StatBlock from '../../components/StatBlock.astro';
+import { getEntityImageUrl } from '../../lib/wfcd-images';
 
 export async function getStaticPaths() {
   const archwings = await getCollection('archwings');
@@ -15,6 +16,7 @@ const { Content } = await render(entry);
 const components = { Callout, AbilityCard, StatBlock };
 
 const { data } = entry;
+const thumbnailUrl = getEntityImageUrl(entry.slug, 'archwings') ?? null;
 
 const healthStr = typeof data.health === 'number' ? String(data.health) : data.health;
 const shieldStr = typeof data.shield === 'number' ? String(data.shield) : data.shield;
@@ -34,6 +36,7 @@ const tags: string[] = [data.type, `MR ${data.masteryRank}`];
   description={description}
   tags={tags}
   sources={data.sources}
+  thumbnailUrl={thumbnailUrl}
 >
   <Content components={components} />
 </Entity>

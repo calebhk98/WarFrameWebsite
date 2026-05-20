@@ -26,3 +26,8 @@ pnpm-debug.log*
 .DS_Store
 coverage
 *.tsbuildinfo
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/

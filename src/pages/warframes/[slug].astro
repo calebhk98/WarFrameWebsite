@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Entity from '../../layouts/Entity.astro';
 import AbilityCard from '../../components/AbilityCard.astro';
 import Callout from '../../components/Callout.astro';
-import { getWarframe } from '../../lib/wfcd';
+import { getEntityImageUrl } from '../../lib/wfcd-images';
 
 export async function getStaticPaths() {
   const warframes = await getCollection('warframes');
@@ -15,8 +15,7 @@ const { Content } = await render(entry);
 const components = { AbilityCard, Callout };
 
 const { data } = entry;
-const wfcdEntry = getWarframe(entry.slug);
-const thumbnailUrl = wfcdEntry?.wikiaThumbnail ?? null;
+const thumbnailUrl = getEntityImageUrl(entry.slug, 'warframes') ?? null;
 
 const tags: string[] = [
   `MR ${data.masteryRank}`,

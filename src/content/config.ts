@@ -9,6 +9,7 @@ import { factionSchema } from './schemas/factions';
 import { focusSchoolSchema } from './schemas/focus-schools';
 import { guideSchema } from './schemas/guides';
 import { lichSchema } from './schemas/liches';
+import { openWorldSchema } from './schemas/open-worlds';
 import { missionSchema } from './schemas/missions';
 import { modSchema } from './schemas/mods';
 import { questSchema } from './schemas/quests';
@@ -30,6 +31,7 @@ export * from './schemas/factions';
 export * from './schemas/focus-schools';
 export * from './schemas/guides';
 export * from './schemas/liches';
+export * from './schemas/open-worlds';
 export * from './schemas/missions';
 export * from './schemas/mods';
 export * from './schemas/quests';
@@ -57,4 +59,5 @@ export const collections = {
   archwings: defineCollection({ type: 'content', schema: archwingSchema }),
   companions: defineCollection({ type: 'content', schema: companionSchema }),
   liches: defineCollection({ type: 'content', schema: lichSchema }),
+  'open-worlds': defineCollection({ type: 'content', schema: openWorldSchema }),
 };

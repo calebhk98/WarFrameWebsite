@@ -52,6 +52,7 @@ export interface WfcdWeapon extends WfcdBase {
   readonly reloadTime?: number;
   readonly totalDamage?: number;
   readonly weaponType: 'Primary' | 'Secondary' | 'Melee' | 'Archwing' | 'Other';
+  readonly wikiaThumbnail?: string;
 }
 
 export interface WfcdLevelStat {
@@ -104,7 +105,7 @@ function resolveDataDir(): string {
   return fromMeta;
 }
 
-const DEFAULT_DIR = resolveDataDir();
+export const DEFAULT_DIR = resolveDataDir();
 
 const cache = new Map<string, readonly WfcdBase[]>();
 const missing = new Set<string>();
@@ -113,7 +114,7 @@ function cacheKey(dir: string, file: string): string {
   return `${dir}::${file}`;
 }
 
-function loadCategory<T extends WfcdBase>(
+export function loadCategory<T extends WfcdBase>(
   filename: string,
   dataDir: string,
 ): readonly T[] {

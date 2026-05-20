@@ -15,6 +15,9 @@
     "typecheck": "astro check && tsc --noEmit",
     "lint": "astro check",
     "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:all": "vitest run && playwright test",
     "import-wfcd": "tsx scripts/import-wfcd.ts",
     "import": "tsx scripts/import-wfcd.ts"
   },
@@ -32,6 +35,8 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.3",
+    "@playwright/test": "^1.60.0",
     "@tailwindcss/typography": "^0.5.19",
     "@testing-library/dom": "^10.4.0",
     "@types/node": "^22.10.6",

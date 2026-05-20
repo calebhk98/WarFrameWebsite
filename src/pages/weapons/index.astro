@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import EntityCard from '../../components/EntityCard.astro';
 import { getWeaponEnumeration } from '../../lib/enumerations';
+import { getEntityImageUrl } from '../../lib/wfcd-images';
 
 const weapons = getWeaponEnumeration();
 const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
@@ -50,6 +51,7 @@ const letters = Object.keys(byLetter).sort();
                 w.type,
                 ...(w.masteryRank !== undefined ? [`MR${w.masteryRank}`] : []),
               ].filter((t): t is string => Boolean(t))}
+              image={getEntityImageUrl(w.slug, 'weapons')}
             />
           ))}
         </div>

@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Entity from '../../layouts/Entity.astro';
 import Callout from '../../components/Callout.astro';
+import { getEntityImageUrl } from '../../lib/wfcd-images';
 
 export async function getStaticPaths() {
   const companions = await getCollection('companions');
@@ -13,6 +14,7 @@ const { Content } = await render(entry);
 const components = { Callout };
 
 const { data } = entry;
+const thumbnailUrl = getEntityImageUrl(entry.slug, 'companions') ?? null;
 
 const healthStr = typeof data.health === 'number' ? String(data.health) : data.health;
 const shieldStr = typeof data.shield === 'number' ? String(data.shield) : data.shield;
@@ -32,6 +34,7 @@ const tags: string[] = [
   description={description}
   tags={tags}
   sources={data.sources}
+  thumbnailUrl={thumbnailUrl}
 >
   <Content components={components} />
 </Entity>

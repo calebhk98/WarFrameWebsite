@@ -23,6 +23,7 @@ const quickLinks = [
   { href: `${base}compare`, label: 'Compare builds', desc: 'View builds side by side' },
   { href: `${base}compare-warframes`, label: 'Compare warframes', desc: 'Stats side by side' },
   { href: `${base}damage-types`, label: 'Damage types', desc: 'Effectiveness matrix and status procs' },
+  { href: `${base}open-worlds`, label: 'Open Worlds', desc: 'Plains, Vallis, Deimos, Zariman, Hollvania' },
   { href: `${base}guides`, label: 'Guides', desc: 'Farming and strategy' },
   { href: `${base}tier-list`, label: 'Tier List', desc: 'Meta frame rankings' },
   { href: `${base}beginner`, label: 'Beginner Hub', desc: 'Start here if you are new' },
@@ -73,10 +74,9 @@ const recentUpdates = [
 
   <div class="max-w-7xl mx-auto px-4 py-12 space-y-16">
 
-    <section aria-labelledby="worldstate-heading">
-      <h2 id="worldstate-heading" class="sr-only">Current worldstate</h2>
+    <div>
       <WorldstateWidget />
-    </section>
+    </div>
 
     <section aria-labelledby="quick-links-heading">
       <h2 id="quick-links-heading" class="text-xl font-semibold text-brand-cream mb-6">
@@ -159,6 +159,7 @@ const recentUpdates = [
           { href: `${base}focus`, label: 'Focus Schools', desc: '5 Operator schools -- nodes and Waybounds' },
           { href: `${base}amps`, label: 'Amps', desc: 'Operator weapon configurations' },
           { href: `${base}liches`, label: 'Liches and Sisters', desc: 'Kuva Liches, Sisters of Parvos, Tenet and Kuva weapons' },
+          { href: `${base}open-worlds`, label: 'Open Worlds', desc: '5 zones -- Plains, Vallis, Deimos, Zariman, Hollvania' },
         ].map((col) => (
           <a
             href={col.href}

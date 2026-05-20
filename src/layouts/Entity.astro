@@ -54,17 +54,26 @@ const ogImageProp = ogImage !== undefined ? { ogImage } : {};
     </nav>
 
     <header class="mb-8 pb-6 border-b border-surface-3">
-      <div class="flex items-start gap-4 flex-wrap">
-        {thumbnailUrl && (
-          <div class="shrink-0 w-24 h-24 rounded-lg bg-surface-2 border border-surface-3 overflow-hidden flex items-center justify-center">
+      <div class="flex items-start gap-6 flex-wrap sm:flex-nowrap">
+        {thumbnailUrl ? (
+          <div class="shrink-0 w-32 h-32 sm:w-40 sm:h-40 max-w-xs rounded-xl bg-surface-1 border border-surface-3 overflow-hidden flex items-center justify-center shadow-lg">
             <img
               src={thumbnailUrl}
               alt={`${title} artwork`}
-              width="96"
-              height="96"
+              width="320"
+              height="320"
               loading="lazy"
               class="object-contain w-full h-full"
             />
+          </div>
+        ) : (
+          <div
+            class="shrink-0 w-32 h-32 sm:w-40 sm:h-40 max-w-xs rounded-xl bg-surface-2 border border-surface-3 flex items-center justify-center shadow-lg"
+            aria-hidden="true"
+          >
+            <span class="text-5xl sm:text-6xl font-bold text-brand-orange/60 select-none">
+              {title.charAt(0).toUpperCase()}
+            </span>
           </div>
         )}
         <div class="flex-1 min-w-0">

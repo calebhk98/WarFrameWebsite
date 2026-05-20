@@ -17,11 +17,12 @@ const statEntries = Object.entries(stats);
     <div class="flex items-center gap-2">
       <span
         class="inline-block w-6 h-6 rounded text-xs font-bold bg-brand-purple text-white flex items-center justify-center"
+        role="img"
         aria-label={`Key ${abilityKey}`}
       >
         {abilityKey}
       </span>
-      <h4 class="font-semibold text-brand-cream">{name}</h4>
+      <p class="font-semibold text-brand-cream">{name}</p>
     </div>
     <span class="text-xs px-2 py-0.5 rounded-full bg-brand-orange/20 text-brand-orange font-mono">
       {energyCost} energy

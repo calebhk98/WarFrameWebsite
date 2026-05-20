@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EntityCard from '../../components/EntityCard.astro';
+
+const base = import.meta.env.BASE_URL;
+const allWorlds = await getCollection('open-worlds');
+
+// Order by Warframe release: Cetus (2017), Vallis (2018), Necralisk (2020),
+// Zariman (2022), Hollvania (2024).
+const releaseOrder: Record<string, number> = {
+  'plains-of-eidolon': 0,
+  'orb-vallis': 1,
+  'cambion-drift': 2,
+  'zariman-ten-zero': 3,
+  hollvania: 4,
+};
+
+const sorted = [...allWorlds].sort((a, b) => {
+  const orderA = releaseOrder[a.slug] ?? 99;
+  const orderB = releaseOrder[b.slug] ?? 99;
+  return orderA - orderB;
+});
+---
+
+<Base
+  title="Open Worlds"
+  description="All 5 open-world zones in Warframe -- hubs, cycles, activities, and resources"
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Open Worlds</h1>
+      <p class="text-brand-cream/60">
+        {sorted.length} open-world zones -- bounties, syndicates, cycles, and unique mechanics
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {sorted.map((w) => (
+        <EntityCard
+          href={`${base}open-worlds/${w.slug}`}
+          name={w.data.name}
+          tags={[
+            w.data.location,
+            w.data.syndicate_hub,
+            ...(w.data.cycle ? [w.data.cycle] : ['no cycle']),
+          ]}
+        />
+      ))}
+    </div>
+  </div>
+</Base>
