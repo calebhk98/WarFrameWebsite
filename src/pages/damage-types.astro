@@ -1,0 +1,264 @@
+---
+// damage-types.astro -- interactive damage effectiveness matrix with status proc panel,
+// combination recipes, and faction recommendations.
+import Base from '../layouts/Base.astro';
+import {
+  ENEMY_TYPES,
+  DAMAGE_MATRIX,
+  STATUS_PROCS,
+  COMBOS,
+  FACTIONS,
+} from '../data/damage-data';
+
+const base = import.meta.env.BASE_URL;
+
+const matrixJson = JSON.stringify({ enemyTypes: ENEMY_TYPES, rows: DAMAGE_MATRIX });
+const statusJson = JSON.stringify(STATUS_PROCS);
+const combosJson = JSON.stringify(COMBOS);
+const factionsJson = JSON.stringify(FACTIONS);
+---
+
+<Base
+  title="Damage Types"
+  description="Warframe damage type effectiveness matrix -- multipliers vs all enemy health types, status procs, elemental combos, and faction recommendations."
+>
+  <div class="max-w-7xl mx-auto px-4 py-10">
+
+    <header class="mb-8">
+      <nav class="mb-4 text-sm text-brand-cream/50">
+        <a href={`${base}`} class="hover:text-brand-orange">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Damage Types</span>
+      </nav>
+      <h1 class="text-3xl sm:text-4xl font-bold text-brand-cream mb-4">Damage Types</h1>
+      <div class="max-w-3xl text-brand-cream/70 text-sm leading-relaxed space-y-2">
+        <p>
+          Warframe damage splits into three physical types and four base elemental types that
+          combine into six combined elements, plus Void damage.
+          Physical types -- Impact, Puncture, and Slash -- deal direct damage and proc
+          knockback, armor bypass, and bleed respectively.
+          Base elementals -- Heat, Cold, Electric, and Toxin -- each proc a status effect on
+          their own and combine in pairs to form Blast, Magnetic, Corrosive, Gas, Radiation,
+          and Viral. Void damage is unique to Operator Amps and interacts with Sentient faction
+          resistances differently from other types.
+        </p>
+        <p>
+          Each enemy health layer -- flesh, armor, shields, and special infested tissue --
+          has its own modifier table. Multipliers above 1.0 (positive) indicate an advantage;
+          multipliers below 1.0 (negative) indicate a penalty. Neutral means x1.0, no modifier.
+          Source: <a
+            href="https://warframe.fandom.com/wiki/Damage"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-brand-orange hover:underline"
+          >Warframe wiki -- Damage</a>.
+        </p>
+      </div>
+    </header>
+
+    <!-- Filter controls -->
+    <div class="mb-4 flex flex-wrap gap-2" role="group" aria-label="Filter matrix cells">
+      <button
+        id="filter-all"
+        class="filter-btn active px-4 py-1.5 rounded border border-brand-orange bg-brand-orange/20 text-brand-orange text-sm font-semibold transition-colors"
+        data-filter="all"
+      >
+        Show all
+      </button>
+      <button
+        id="filter-positive"
+        class="filter-btn px-4 py-1.5 rounded border border-surface-3 text-brand-cream/60 text-sm font-semibold hover:border-green-500/50 hover:text-green-400 transition-colors"
+        data-filter="positive"
+      >
+        Show only positive
+      </button>
+      <button
+        id="filter-negative"
+        class="filter-btn px-4 py-1.5 rounded border border-surface-3 text-brand-cream/60 text-sm font-semibold hover:border-red-500/50 hover:text-red-400 transition-colors"
+        data-filter="negative"
+      >
+        Show only negative
+      </button>
+    </div>
+
+    <!-- Damage effectiveness matrix -->
+    <section aria-labelledby="matrix-heading" class="mb-12">
+      <h2 id="matrix-heading" class="text-xl font-bold text-brand-cream mb-3">Effectiveness matrix</h2>
+      <p class="text-xs text-brand-cream/40 mb-4">
+        Multipliers shown as percentages relative to base (e.g. +75% = x1.75; -50% = x0.50).
+        Neutral cells (x1.0) show no modifier label.
+      </p>
+      <div class="overflow-x-auto rounded-lg border border-surface-3">
+        <table id="damage-matrix" class="w-full text-xs border-collapse min-w-[900px]">
+          <thead>
+            <tr class="bg-surface-2 border-b border-surface-3">
+              <th scope="col" class="sticky left-0 z-10 bg-surface-2 px-3 py-3 text-left text-brand-cream/80 font-semibold whitespace-nowrap min-w-[120px]">
+                Damage type
+              </th>
+              {ENEMY_TYPES.map((et) => (
+                <th scope="col" class="px-2 py-3 text-center text-brand-cream/60 font-semibold whitespace-nowrap">{et}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody id="matrix-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Status proc panel -->
+    <section aria-labelledby="status-heading" class="mb-12">
+      <h2 id="status-heading" class="text-xl font-bold text-brand-cream mb-3">Status procs</h2>
+      <p class="text-xs text-brand-cream/40 mb-4">Effect applied when that damage type triggers a status proc (30% chance by default per hit).</p>
+      <div class="overflow-x-auto rounded-lg border border-surface-3">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-surface-2 border-b border-surface-3">
+              <th scope="col" class="px-4 py-3 text-left text-brand-cream/80 font-semibold w-36">Damage type</th>
+              <th scope="col" class="px-4 py-3 text-left text-brand-cream/80 font-semibold">Status effect</th>
+            </tr>
+          </thead>
+          <tbody id="status-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Combination recipes -->
+    <section aria-labelledby="combo-heading" class="mb-12">
+      <h2 id="combo-heading" class="text-xl font-bold text-brand-cream mb-3">Elemental combination recipes</h2>
+      <p class="text-sm text-brand-cream/60 mb-4">
+        Combined elements are created by equipping two base elemental mods on the same weapon.
+        Mod order on the weapon determines which combination is created when three or more elementals are present.
+      </p>
+      <div id="combo-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+    </section>
+
+    <!-- Faction recommendations -->
+    <section aria-labelledby="faction-heading" class="mb-10">
+      <h2 id="faction-heading" class="text-xl font-bold text-brand-cream mb-3">Faction recommendations</h2>
+      <p class="text-sm text-brand-cream/60 mb-4">
+        Recommended damage types to prioritize against each major faction, based on their dominant health layer composition.
+        See individual <a href={`${base}factions`} class="text-brand-orange hover:underline">faction pages</a> for full unit breakdowns.
+      </p>
+      <div id="faction-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </section>
+
+    <footer class="text-xs text-brand-cream/30 border-t border-surface-3 pt-4">
+      Source: <a
+        href="https://warframe.fandom.com/wiki/Damage"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-brand-orange underline"
+      >warframe.fandom.com/wiki/Damage</a>
+      -- accessed 2026-05-20. Multipliers reflect the base game without Void damage bonuses.
+    </footer>
+  </div>
+</Base>
+
+<script define:vars={{ matrixJson, statusJson, combosJson, factionsJson }} is:inline>
+  var DATA = JSON.parse(matrixJson);
+  var STATUS = JSON.parse(statusJson);
+  var COMBOS = JSON.parse(combosJson);
+  var FACTIONS = JSON.parse(factionsJson);
+
+  function escHtml(str) {
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function modLabel(val) {
+    if (val === 1.0) return '';
+    var pct = Math.round((val - 1.0) * 100);
+    return (pct > 0 ? '+' : '') + pct + '%';
+  }
+
+  function modClass(val) {
+    if (val > 1.0) return 'mod-positive';
+    if (val < 1.0) return 'mod-negative';
+    return 'mod-neutral';
+  }
+
+  function buildMatrix() {
+    var catBg = { Physical: 'bg-yellow-900/20', Elemental: 'bg-blue-900/20', Combined: 'bg-purple-900/20', Special: 'bg-surface-2' };
+    var rows = DATA.rows.map(function(row) {
+      var cells = row.mods.map(function(val, i) {
+        var label = modLabel(val);
+        var cls = modClass(val);
+        var aria = escHtml(row.name + ' vs ' + DATA.enemyTypes[i] + ': ' + (label || 'neutral x1.0'));
+        return '<td class="' + cls + ' px-2 py-2 text-center font-mono whitespace-nowrap border-b border-surface-3/40" aria-label="' + aria + '">'
+          + '<span class="cell-label text-xs">' + escHtml(label || '--') + '</span></td>';
+      }).join('');
+      var bg = catBg[row.cat] || 'bg-surface-2';
+      return '<tr class="' + bg + ' border-b border-surface-3 hover:brightness-110">'
+        + '<th scope="row" class="sticky left-0 z-10 ' + bg + ' px-3 py-2 text-left text-brand-cream font-semibold whitespace-nowrap">'
+        + escHtml(row.name)
+        + '<span class="ml-1 text-xs text-brand-cream/30 font-normal">(' + escHtml(row.cat) + ')</span></th>'
+        + cells + '</tr>';
+    }).join('');
+    document.getElementById('matrix-body').innerHTML = rows;
+  }
+
+  function buildStatus() {
+    document.getElementById('status-body').innerHTML = STATUS.map(function(sp, i) {
+      var bg = i % 2 === 0 ? '' : 'bg-surface-2/50';
+      return '<tr class="' + bg + ' border-b border-surface-3/50"><td class="px-4 py-2 font-semibold text-brand-cream whitespace-nowrap">'
+        + escHtml(sp.name) + '</td><td class="px-4 py-2 text-brand-cream/70">' + escHtml(sp.effect) + '</td></tr>';
+    }).join('');
+  }
+
+  function buildCombos() {
+    document.getElementById('combo-grid').innerHTML = COMBOS.map(function(c) {
+      var pills = c.components.map(function(comp) {
+        return '<span class="px-2 py-0.5 rounded bg-surface-3 text-brand-cream/80 text-xs font-medium">' + escHtml(comp) + '</span>';
+      }).join('<span class="text-brand-cream/40 mx-1 text-xs">+</span>');
+      return '<div class="rounded-lg border border-surface-3 bg-surface-2 p-4">'
+        + '<div class="flex items-center gap-2 mb-2 flex-wrap">' + pills
+        + '<span class="text-brand-cream/40 mx-1 text-xs">=</span>'
+        + '<span class="px-3 py-0.5 rounded bg-brand-orange/20 border border-brand-orange/50 text-brand-orange text-sm font-bold">' + escHtml(c.result) + '</span></div>'
+        + '<p class="text-xs text-brand-cream/60">' + escHtml(c.note) + '</p></div>';
+    }).join('');
+  }
+
+  function buildFactions() {
+    document.getElementById('faction-grid').innerHTML = FACTIONS.map(function(f) {
+      var pills = f.types.map(function(t) {
+        return '<span class="px-2 py-0.5 rounded bg-surface-3 text-brand-cream/80 text-xs">' + escHtml(t) + '</span>';
+      }).join(' ');
+      return '<div class="rounded-lg border border-surface-3 bg-surface-2 p-4">'
+        + '<h3 class="font-bold text-brand-cream mb-1 text-base">' + escHtml(f.name) + '</h3>'
+        + '<div class="flex flex-wrap gap-1 mb-2">' + pills + '</div>'
+        + '<p class="text-xs text-brand-cream/60">' + escHtml(f.notes) + '</p></div>';
+    }).join('');
+  }
+
+  function applyFilter(filter) {
+    document.querySelectorAll('#damage-matrix td').forEach(function(td) {
+      if (filter === 'all') { td.style.visibility = ''; return; }
+      var show = (filter === 'positive' && td.classList.contains('mod-positive'))
+              || (filter === 'negative' && td.classList.contains('mod-negative'));
+      td.style.visibility = show ? '' : 'hidden';
+    });
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+      var active = btn.dataset.filter === filter;
+      btn.classList.toggle('active', active);
+      btn.classList.toggle('bg-brand-orange/20', active);
+      btn.classList.toggle('border-brand-orange', active);
+      btn.classList.toggle('text-brand-orange', active);
+      btn.classList.toggle('border-surface-3', !active);
+      btn.classList.toggle('text-brand-cream/60', !active);
+    });
+  }
+
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() { applyFilter(btn.dataset.filter); });
+  });
+
+  buildMatrix();
+  buildStatus();
+  buildCombos();
+  buildFactions();
+</script>
+
+<style>
+  .mod-positive .cell-label { color: #4ade80; }
+  .mod-negative .cell-label { color: #f87171; }
+  .mod-neutral  .cell-label { color: #9ca3af; }
+</style>
