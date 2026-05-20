@@ -1,0 +1,87 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+
+export async function getStaticPaths() {
+  const amps = await getCollection('amps');
+  return amps.map((a) => ({ params: { slug: a.slug }, props: { entry: a } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+
+const tags: string[] = [
+  `Damage: ${data.damage_type}`,
+  `Crit: ${(data.criticalChance * 100).toFixed(0)}%`,
+];
+
+const description = `${data.name} -- Prism: ${data.prism}, Scaffold: ${data.scaffold}, Brace: ${data.brace}`;
+---
+
+<Entity
+  title={data.name}
+  kind="amp"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+>
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-brand-cream mb-4">Components</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+        <div class="text-xs uppercase tracking-widest text-brand-orange font-semibold mb-1">
+          Prism
+        </div>
+        <div class="font-semibold text-brand-cream">{data.prism}</div>
+        <div class="text-xs text-brand-cream/50 mt-1">Primary fire</div>
+      </div>
+      <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+        <div class="text-xs uppercase tracking-widest text-brand-orange font-semibold mb-1">
+          Scaffold
+        </div>
+        <div class="font-semibold text-brand-cream">{data.scaffold}</div>
+        <div class="text-xs text-brand-cream/50 mt-1">Secondary fire</div>
+      </div>
+      <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+        <div class="text-xs uppercase tracking-widest text-brand-orange font-semibold mb-1">
+          Brace
+        </div>
+        <div class="font-semibold text-brand-cream">{data.brace}</div>
+        <div class="text-xs text-brand-cream/50 mt-1">Passive bonus</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-brand-cream mb-4">Stats</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="border-b border-surface-3">
+            <th class="text-left py-2 px-3 text-brand-cream/60 font-medium">Stat</th>
+            <th class="text-right py-2 px-3 text-brand-cream/60 font-medium">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-surface-3/50">
+            <td class="py-2 px-3 text-brand-cream/80">Damage type</td>
+            <td class="py-2 px-3 text-right text-brand-cream capitalize">{data.damage_type}</td>
+          </tr>
+          <tr class="border-b border-surface-3/50">
+            <td class="py-2 px-3 text-brand-cream/80">Status type</td>
+            <td class="py-2 px-3 text-right text-brand-cream capitalize">{data.status}</td>
+          </tr>
+          <tr class="border-b border-surface-3/50">
+            <td class="py-2 px-3 text-brand-cream/80">Critical chance</td>
+            <td class="py-2 px-3 text-right text-brand-cream">
+              {(data.criticalChance * 100).toFixed(0)}%
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <Content />
+</Entity>
