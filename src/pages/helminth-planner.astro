@@ -1,0 +1,353 @@
+---
+// helminth-planner.astro -- interactive Helminth Subsume Planner.
+// Pick a base frame + a source frame, choose which ability slot to replace,
+// and see the resulting kit with synergy notes and resource costs.
+// Source for subsume data: https://warframe.fandom.com/wiki/Helminth#Subsumable_Abilities
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { toWarframeIndexEntry } from '../data/warframes-index';
+import {
+  HELMINTH_DATA,
+  HELMINTH_SUBSUME_COST,
+  SYNERGY_NOTES,
+} from '../data/helminth-index';
+
+const base = import.meta.env.BASE_URL;
+
+const rawFrames = await getCollection('warframes');
+const sorted = [...rawFrames].sort((a, b) =>
+  a.data.name.localeCompare(b.data.name),
+);
+const warframesIndex = sorted.map(toWarframeIndexEntry);
+
+// Build a set of curated slugs for fast client-side lookup.
+const curatedSlugs = new Set(HELMINTH_DATA.map((e) => e.slug));
+
+// Serialise only what the client needs.
+const helminthJson = JSON.stringify(HELMINTH_DATA);
+const synergyJson = JSON.stringify(SYNERGY_NOTES);
+const costJson = JSON.stringify(HELMINTH_SUBSUME_COST);
+const warframesJson = JSON.stringify(
+  warframesIndex.map((w) => ({
+    slug: w.slug,
+    name: w.name,
+    curated: curatedSlugs.has(w.slug),
+  })),
+);
+---
+
+<Base
+  title="Helminth Subsume Planner"
+  description="Plan your Helminth subsume: pick a base frame and a donor frame, choose which ability slot to replace, and preview the resulting kit with synergy notes."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <nav class="mb-4 text-sm text-brand-cream/50">
+        <a href={`${base}warframes`} class="hover:text-brand-orange">Warframes</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Helminth Planner</span>
+      </nav>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Helminth Subsume Planner</h1>
+          <p class="text-brand-cream/60">
+            Choose a base frame and a donor frame to preview ability replacement and synergy notes.
+          </p>
+        </div>
+        <a
+          href={`${base}compare-warframes`}
+          class="text-sm text-brand-orange hover:underline shrink-0"
+        >
+          Compare warframe stats &rarr;
+        </a>
+      </div>
+    </header>
+
+    <!-- Selectors row -->
+    <div class="flex flex-col sm:flex-row gap-4 mb-6 items-end">
+      <div class="flex-1">
+        <label
+          for="select-base"
+          class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1"
+        >
+          Base warframe
+        </label>
+        <select
+          id="select-base"
+          class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="">-- Choose base frame --</option>
+          {sorted.map((w) => (
+            <option value={w.slug}>{w.data.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="flex-1">
+        <label
+          for="select-subsume"
+          class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1"
+        >
+          Subsume from
+        </label>
+        <select
+          id="select-subsume"
+          class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="">-- Choose donor frame --</option>
+          {sorted.map((w) => (
+            <option value={w.slug}>{w.data.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="sm:w-44">
+        <label
+          for="select-slot"
+          class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1"
+        >
+          Replace slot
+        </label>
+        <select
+          id="select-slot"
+          class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="1">Ability 1</option>
+          <option value="2">Ability 2</option>
+          <option value="3">Ability 3</option>
+          <option value="4">Ability 4</option>
+        </select>
+      </div>
+
+      <button
+        id="reset-btn"
+        class="shrink-0 px-5 py-2 rounded-lg border border-surface-3 text-brand-cream/60 text-sm hover:border-brand-orange/50 hover:text-brand-cream transition-colors"
+      >
+        Reset
+      </button>
+    </div>
+
+    <!-- Result area -->
+    <div
+      id="planner-result"
+      aria-live="polite"
+      class="space-y-6"
+    >
+      <!-- Injected by JS -->
+    </div>
+
+    <p id="planner-hint" class="text-center text-brand-cream/30 text-sm py-16">
+      Choose a base frame and a donor frame above to begin planning.
+    </p>
+  </div>
+</Base>
+
+<script define:vars={{ helminthJson, synergyJson, costJson, warframesJson, base }} is:inline>
+  const HELMINTH = JSON.parse(helminthJson);
+  const SYNERGIES = JSON.parse(synergyJson);
+  const COSTS = JSON.parse(costJson);
+  const FRAMES = JSON.parse(warframesJson);
+
+  function esc(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function findEntry(slug) {
+    return HELMINTH.find((e) => e.slug === slug);
+  }
+
+  function findSynergy(baseSlug, subSlug) {
+    return SYNERGIES.find(
+      (s) => s.baseSlug === baseSlug && s.subsumeSlug === subSlug,
+    );
+  }
+
+  function isCurated(slug) {
+    return FRAMES.find((f) => f.slug === slug)?.curated ?? false;
+  }
+
+  function abilityRow(key, name, replaced, injected) {
+    const slotBadge = `<span class="shrink-0 w-6 h-6 flex items-center justify-center rounded bg-surface-3 text-brand-orange font-bold text-xs">${esc(key)}</span>`;
+    if (replaced) {
+      return `<li class="flex items-center gap-2 text-xs opacity-50">
+        ${slotBadge}
+        <span class="line-through text-red-400">${esc(name)}</span>
+        <span class="text-brand-cream/40 text-[10px] uppercase">replaced</span>
+      </li>`;
+    }
+    if (injected) {
+      return `<li class="flex items-center gap-2 text-xs">
+        ${slotBadge}
+        <span class="text-brand-orange font-semibold">${esc(name)}</span>
+        <span class="text-brand-orange text-[10px] uppercase border border-brand-orange/50 rounded px-1">subsumed</span>
+      </li>`;
+    }
+    return `<li class="flex items-center gap-2 text-xs">
+      ${slotBadge}
+      <span class="text-brand-cream/80">${esc(name)}</span>
+    </li>`;
+  }
+
+  function renderBaseCard(entry, replaceSlot) {
+    const rows = entry.abilities.map((a) =>
+      abilityRow(a.key, a.name, a.key === replaceSlot, false),
+    ).join('');
+    return `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5">
+      <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">
+        Base frame: ${esc(entry.name)}
+      </h2>
+      <ul class="space-y-2">${rows}</ul>
+      <p class="mt-3 text-xs text-brand-cream/30">
+        Ability ${esc(replaceSlot)} will be replaced by the subsumed ability.
+      </p>
+    </article>`;
+  }
+
+  function renderSubsumeCard(entry) {
+    const rows = entry.abilities.map((a) =>
+      abilityRow(
+        a.key,
+        a.name,
+        false,
+        a.key === entry.subsumeKey,
+      ),
+    ).join('');
+    return `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5">
+      <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">
+        Donor frame: ${esc(entry.name)}
+      </h2>
+      <ul class="space-y-2">${rows}</ul>
+      <p class="mt-3 text-xs text-brand-cream/30">
+        Highlighted ability will be subsumed into Helminth.
+      </p>
+    </article>`;
+  }
+
+  function renderResultCard(baseEntry, subsumeEntry, replaceSlot) {
+    const rows = baseEntry.abilities.map((a) => {
+      const isReplaced = a.key === replaceSlot;
+      return isReplaced
+        ? abilityRow(a.key, subsumeEntry.subsumeAbility, false, true)
+        : abilityRow(a.key, a.name, false, false);
+    }).join('');
+    return `<article class="rounded-lg border border-brand-orange/40 bg-surface-2 p-5">
+      <h2 class="text-sm font-semibold text-brand-orange uppercase tracking-wide mb-3">
+        Result: ${esc(baseEntry.name)} + ${esc(subsumeEntry.subsumeAbility)}
+      </h2>
+      <ul class="space-y-2">${rows}</ul>
+    </article>`;
+  }
+
+  function renderSynergy(synergy) {
+    if (!synergy) return '';
+    const items = synergy.notes
+      .map((n) => `<li class="text-xs text-brand-cream/70 flex gap-2"><span class="text-brand-orange shrink-0">+</span>${esc(n)}</li>`)
+      .join('');
+    return `<section class="rounded-lg border border-surface-3 bg-surface-2 p-5">
+      <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Synergy notes</h2>
+      <ul class="space-y-2">${items}</ul>
+    </section>`;
+  }
+
+  function renderCosts() {
+    const rows = COSTS.map(
+      (c) => `<div class="flex flex-col gap-0.5">
+        <span class="text-xs font-semibold text-brand-cream/80">${esc(c.name)}</span>
+        <span class="text-xs text-brand-orange">${esc(String(c.amount))}</span>
+        <span class="text-[10px] text-brand-cream/40">${esc(c.description)}</span>
+      </div>`,
+    ).join('');
+    return `<section class="rounded-lg border border-surface-3 bg-surface-2 p-5">
+      <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Subsume resource costs</h2>
+      <p class="text-xs text-brand-cream/40 mb-3">
+        Minimum cost at Helminth rank 0. Helminth consumes the cheapest available resource.
+        Source: <a href="https://warframe.fandom.com/wiki/Helminth" class="text-brand-orange hover:underline" target="_blank" rel="noopener noreferrer">Fandom Helminth page</a>.
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">${rows}</div>
+    </section>`;
+  }
+
+  function renderUncuratedNotice(slug, role) {
+    const fandomSlug = FRAMES.find((f) => f.slug === slug)?.name
+      .replace(/ /g, '_') ?? slug;
+    return `<p class="text-xs text-brand-cream/50 mt-2">
+      ${esc(role)} ability data is not yet curated for this frame.
+      <a
+        href="https://warframe.fandom.com/wiki/Helminth#Subsumable_Abilities"
+        class="text-brand-orange hover:underline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >View on Fandom &rarr;</a>
+    </p>`;
+  }
+
+  function refresh() {
+    const baseSlug = document.getElementById('select-base').value;
+    const subSlug = document.getElementById('select-subsume').value;
+    const replaceSlot = document.getElementById('select-slot').value;
+    const result = document.getElementById('planner-result');
+    const hint = document.getElementById('planner-hint');
+
+    if (!baseSlug || !subSlug) {
+      result.innerHTML = '';
+      hint.style.display = '';
+      return;
+    }
+
+    hint.style.display = 'none';
+
+    const baseEntry = findEntry(baseSlug);
+    const subEntry = findEntry(subSlug);
+    const synergy = findSynergy(baseSlug, subSlug);
+
+    const baseCurated = isCurated(baseSlug);
+    const subCurated = isCurated(subSlug);
+
+    let html = '<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">';
+
+    if (baseEntry) {
+      html += renderBaseCard(baseEntry, replaceSlot);
+    } else {
+      html += `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5">
+        <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Base frame</h2>
+        <p class="text-xs text-brand-cream/60">Ability list not curated for this frame.</p>
+        ${renderUncuratedNotice(baseSlug, 'Base frame')}
+      </article>`;
+    }
+
+    if (subEntry) {
+      html += renderSubsumeCard(subEntry);
+    } else {
+      html += `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5">
+        <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Donor frame</h2>
+        <p class="text-xs text-brand-cream/60">Subsumable ability not curated for this frame.</p>
+        ${renderUncuratedNotice(subSlug, 'Donor frame')}
+      </article>`;
+    }
+
+    html += '</div>';
+
+    if (baseEntry && subEntry) {
+      html += `<div class="mt-4">${renderResultCard(baseEntry, subEntry, replaceSlot)}</div>`;
+      const synergyHtml = renderSynergy(synergy);
+      if (synergyHtml) html += `<div class="mt-4">${synergyHtml}</div>`;
+    }
+
+    html += `<div class="mt-4">${renderCosts()}</div>`;
+    result.innerHTML = html;
+  }
+
+  document.getElementById('select-base').addEventListener('change', refresh);
+  document.getElementById('select-subsume').addEventListener('change', refresh);
+  document.getElementById('select-slot').addEventListener('change', refresh);
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    document.getElementById('select-base').value = '';
+    document.getElementById('select-subsume').value = '';
+    document.getElementById('select-slot').value = '1';
+    refresh();
+  });
+</script>
