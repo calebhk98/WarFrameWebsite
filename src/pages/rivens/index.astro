@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EntityCard from '../../components/EntityCard.astro';
+
+const base = import.meta.env.BASE_URL;
+const rivens = await getCollection('rivens');
+const sorted = [...rivens].sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+type RivenCategory = 'rifle' | 'shotgun' | 'pistol' | 'melee';
+
+interface CategoryGroup {
+  label: string;
+  category: RivenCategory;
+}
+
+const groups: CategoryGroup[] = [
+  { label: 'Rifle', category: 'rifle' },
+  { label: 'Pistol', category: 'pistol' },
+  { label: 'Shotgun', category: 'shotgun' },
+  { label: 'Melee', category: 'melee' },
+];
+
+function rivensForCategory(category: RivenCategory) {
+  return sorted.filter((r) => r.data.weapon_category === category);
+}
+---
+
+<Base
+  title="Riven Mods"
+  description="Canonical Riven mod entries -- disposition, target stats, roll strategy, and trade prices"
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Riven Mods</h1>
+      <p class="text-brand-cream/60">
+        {sorted.length} Riven entries -- disposition values, priority stat combinations, and roll guidance.
+      </p>
+    </header>
+
+    <nav aria-label="Riven category groups" class="flex flex-wrap gap-2 mb-8">
+      {groups.map((g) => (
+        <a
+          href={`#group-${g.category}`}
+          class="text-xs px-2 py-1 rounded bg-surface-2 border border-surface-3 text-brand-cream/70 hover:text-brand-orange hover:border-brand-orange/50 transition-colors"
+        >
+          {g.label}
+        </a>
+      ))}
+    </nav>
+
+    {groups.map((g) => {
+      const items = rivensForCategory(g.category);
+      if (items.length === 0) return null;
+      return (
+        <section id={`group-${g.category}`} class="mb-12">
+          <h2 class="text-sm uppercase tracking-widest text-brand-orange font-semibold mb-4 border-b border-surface-3 pb-2">
+            {g.label} Rivens
+          </h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {items.map((r) => (
+              <EntityCard
+                href={`${base}rivens/${r.slug}`}
+                name={r.data.name}
+                tags={[`Disp ${r.data.disposition}`, r.data.weapon_category]}
+              />
+            ))}
+          </div>
+        </section>
+      );
+    })}
+
+    <section aria-labelledby="riven-info-heading" class="mt-4 prose prose-invert max-w-none">
+      <h2 id="riven-info-heading" class="text-xl font-semibold text-brand-cream mb-4">
+        About Riven Mods
+      </h2>
+      <p class="text-brand-cream/70">
+        Riven mods are randomized upgrades exclusive to specific weapons, obtained from Sortie rewards,
+        Arbitrations, and various endgame activities. Each Riven has a disposition value between 0.5 and
+        1.55 that controls the maximum strength of its rolled stats -- lower disposition on popular
+        weapons, higher on niche ones. Rivens can be rerolled using Kuva to chase preferred stat
+        combinations. Trade prices vary significantly based on roll quality and weapon popularity.
+      </p>
+    </section>
+  </div>
+</Base>

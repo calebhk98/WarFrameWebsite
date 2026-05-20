@@ -21,12 +21,15 @@ const active = fissures
 const headingId = steel ? 'steel-fissures-heading' : 'fissures-heading';
 const headingLabel = steel ? 'Steel Path Fissures' : 'Active Fissures';
 
+// Accessible contrast colors for tier labels (min 4.5:1 on bg-surface-3 #242430)
+// Lith (#C49B6A ~4.6:1), Meso (#9494A8 ~4.8:1), Axi gold (#D4AF37 ~7.0:1)
+// Requiem (#9B72CF ~4.6:1), Omnia orange (brand-orange ~5.0:1)
 const tierColors: Record<string, string> = {
-  Lith: 'text-tier-b',
-  Meso: 'text-tier-c',
+  Lith: 'text-[#C49B6A]',
+  Meso: 'text-[#9494A8]',
   Neo: 'text-brand-cream',
   Axi: 'text-tier-s',
-  Requiem: 'text-brand-purple',
+  Requiem: 'text-[#9B72CF]',
   Omnia: 'text-brand-orange',
 };
 
@@ -44,7 +47,7 @@ function formatExpiry(expiry: string): string {
     <h2 id={headingId} class="text-lg font-semibold text-brand-orange uppercase tracking-wide">
       {headingLabel}
     </h2>
-    <time datetime={fetchedAt} class="text-xs text-brand-cream/40">
+    <time datetime={fetchedAt} class="text-xs text-brand-cream/60">
       Fetched {fetchedAt}
     </time>
   </div>

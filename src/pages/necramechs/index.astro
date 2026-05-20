@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EntityCard from '../../components/EntityCard.astro';
+
+const base = import.meta.env.BASE_URL;
+const mechs = await getCollection('necramechs');
+const sorted = [...mechs].sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<Base
+  title="Necramechs"
+  description="Voidrig and Bonewidow -- Entrati war machines piloted by the Tenno on Deimos"
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Necramechs</h1>
+      <p class="text-brand-cream/60">
+        {sorted.length} Necramechs -- ancient Entrati war machines piloted by the Tenno.
+        Acquired through Heart of Deimos and Isolation Vault bounties.
+      </p>
+    </header>
+
+    <section aria-label="Necramech list">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+        {sorted.map((mech) => (
+          <EntityCard
+            href={`${base}necramechs/${mech.slug}`}
+            name={mech.data.name}
+            tags={[`MR ${mech.data.masteryRank}`, `HP ${mech.data.health}`]}
+          />
+        ))}
+      </div>
+    </section>
+
+    <section aria-labelledby="necramech-info-heading" class="mt-12 prose prose-invert max-w-none">
+      <h2 id="necramech-info-heading" class="text-xl font-semibold text-brand-cream mb-4">
+        About Necramechs
+      </h2>
+      <p class="text-brand-cream/70">
+        Necramechs are ancient Entrati war machines reactivated during the Heart of Deimos quest.
+        The Tenno can pilot two variants: Voidrig, a ranged-focused heavy mech with high shields,
+        and Bonewidow, a melee-focused mech with the highest health pool of any mech type.
+        Both mechs are summoned via the Necramech Summon gear item and use separate mod loadouts
+        from the pilot's Warframe. Proficiency in Necramechs is tracked through the five
+        Intrinsics trees: Gunnery, Piloting, Engineering, Tactical, and Command.
+      </p>
+    </section>
+  </div>
+</Base>

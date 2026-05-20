@@ -83,11 +83,11 @@ const steelFissures = fissures.filter((f) => f.isHard === true);
           href="https://warframestat.us"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-brand-orange hover:underline"
+          class="text-brand-orange underline underline-offset-2 hover:text-brand-orange/80"
         >warframestat.us</a>.
         Deploy a new build to refresh.
       </p>
-      <p class="text-xs text-brand-cream/40 mt-1">
+      <p class="text-xs text-brand-cream/60 mt-1">
         Data fetched: <time datetime={fetchedAt}>{fetchedLabel}</time>
       </p>
     </header>
@@ -111,10 +111,10 @@ const steelFissures = fissures.filter((f) => f.isHard === true);
       />
     </div>
 
-    <p class="mt-6 text-xs text-brand-cream/40">
+    <p class="mt-6 text-xs text-brand-cream/60">
       Worldstate data is fetched at build time and cached in
-      <code class="font-mono text-brand-cream/60">data/cache/</code>.
-      Source: <a href="https://warframestat.us" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:underline">warframestat.us</a>.
+      <code class="font-mono text-brand-cream/70">data/cache/</code>.
+      Source: <a href="https://warframestat.us" target="_blank" rel="noopener noreferrer" class="text-brand-orange underline underline-offset-2 hover:text-brand-orange/80">warframestat.us</a>.
     </p>
   </div>
 </Base>

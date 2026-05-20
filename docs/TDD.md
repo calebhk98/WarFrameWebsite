@@ -280,3 +280,44 @@ These will be flagged in review:
 | Can I skip the red commit?          | No. Even one-line bugs get a red test.  |
 | What if the test is hard to write?  | That's the design smell. Refactor.      |
 | Where do prompts reference this?    | `docs/AGENTS.md` for every code role.   |
+
+---
+
+## Visual Regression Snapshots
+
+Playwright visual snapshot tests live in `tests/e2e/visual.spec.ts`.  They
+cover 12 high-value pages and catch CSS regressions that functional smoke
+tests miss.
+
+Baselines are stored at:
+
+```
+tests/e2e/visual.spec.ts-snapshots/<name>-chromium-linux.png
+```
+
+### Running visual tests
+
+```
+# Compare against baselines (CI mode)
+pnpm exec playwright test tests/e2e/visual.spec.ts
+
+# Regenerate baselines after an intentional design change
+pnpm exec playwright test tests/e2e/visual.spec.ts --update-snapshots
+```
+
+Always commit the updated PNG baselines together with the code change so CI
+has a matching reference.
+
+### Tuning tolerance
+
+Each snapshot uses `threshold: 0.2` (per-pixel colour delta) and
+`maxDiffPixels: 500`.  If you see environment-specific flakes (font
+anti-aliasing differences between machines), increase `maxDiffPixels` or
+`threshold` in `visual.spec.ts` rather than disabling the test.
+
+### Masking dynamic content
+
+The worldstate page masks its `<time>` element (build timestamp) so the
+baseline does not drift when the site is rebuilt.  Add further selectors to
+the `maskSelectors` array in `visual.spec.ts` when new pages contain
+content that changes each build.

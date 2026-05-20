@@ -22,7 +22,7 @@ const active = invasions.filter((i) => !i.completed).slice(0, 5);
     <h2 id="invasions-heading" class="text-lg font-semibold text-brand-orange uppercase tracking-wide">
       Active Invasions
     </h2>
-    <time datetime={fetchedAt} class="text-xs text-brand-cream/40">
+    <time datetime={fetchedAt} class="text-xs text-brand-cream/60">
       Fetched {fetchedAt}
     </time>
   </div>
@@ -39,26 +39,33 @@ const active = invasions.filter((i) => !i.completed).slice(0, 5);
         <li class="rounded bg-surface-3 px-4 py-3 text-sm">
           <div class="flex flex-wrap items-center gap-2 mb-1">
             <span class="text-brand-cream font-medium">{inv.node}</span>
-            <span class="text-brand-cream/40 text-xs">{inv.desc}</span>
+            <span class="text-brand-cream/60 text-xs">{inv.desc}</span>
           </div>
           <div class="flex flex-wrap gap-4 text-xs text-brand-cream/70">
             <span>
               <span class="text-brand-orange">{inv.attacker.faction}</span>
               {' -- '}{rewardLabel(inv.attacker)}
             </span>
-            <span class="text-brand-cream/40">vs</span>
+            <span class="text-brand-cream/60" aria-hidden="true">vs</span>
             <span>
               <span class="text-brand-orange">{inv.defender.faction}</span>
               {' -- '}{rewardLabel(inv.defender)}
             </span>
           </div>
-          <div class="mt-2 h-1.5 rounded-full bg-surface-2 overflow-hidden" aria-label={`${Math.round(inv.completion)}% complete`}>
+          <div
+            role="progressbar"
+            aria-valuenow={Math.round(inv.completion)}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-label={`Invasion progress: ${Math.round(inv.completion)}% complete`}
+            class="mt-2 h-1.5 rounded-full bg-surface-2 overflow-hidden"
+          >
             <div
               class="h-full bg-brand-orange"
               style={`width:${Math.min(100, inv.completion)}%`}
             ></div>
           </div>
-          <p class="text-brand-cream/40 text-xs mt-1">{Math.round(inv.completion)}% complete</p>
+          <p class="text-brand-cream/60 text-xs mt-1" aria-hidden="true">{Math.round(inv.completion)}% complete</p>
         </li>
       ))}
     </ul>

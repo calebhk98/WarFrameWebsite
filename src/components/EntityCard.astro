@@ -14,9 +14,9 @@ const initial = name.charAt(0).toUpperCase();
 
 <a
   href={href}
-  class="group block rounded-lg border border-surface-3 bg-surface-2 hover:border-brand-orange/50 hover:bg-surface-3 transition-all duration-150 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-orange focus-visible:outline-offset-2"
+  class="group block rounded-lg border border-gray-200 dark:border-surface-3 bg-white dark:bg-surface-2 hover:border-brand-orange/50 hover:bg-gray-50 dark:hover:bg-surface-3 transition-all duration-150 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-orange focus-visible:outline-offset-2"
 >
-  <div class="h-16 bg-surface-3 flex items-center justify-center overflow-hidden">
+  <div class="h-16 bg-gray-100 dark:bg-surface-3 flex items-center justify-center overflow-hidden">
     {image ? (
       <img
         src={image}
@@ -37,14 +37,14 @@ const initial = name.charAt(0).toUpperCase();
   </div>
 
   <div class="p-3">
-    <h3 class="text-brand-cream font-semibold text-sm group-hover:text-brand-orange transition-colors line-clamp-2">
+    <h3 class="text-gray-900 dark:text-brand-cream font-semibold text-sm group-hover:text-brand-orange transition-colors line-clamp-2">
       {name}
     </h3>
 
     {tags.length > 0 && (
       <div class="mt-2 flex flex-wrap gap-1">
         {tags.slice(0, 3).map((tag) => (
-          <span class="text-xs px-1.5 py-0.5 rounded bg-surface-3 text-brand-cream/60">
+          <span class="text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-surface-3 text-gray-600 dark:text-brand-cream/60">
             {tag}
           </span>
         ))}

@@ -22,7 +22,7 @@ function formatExpiry(expiry: string): string {
     <h2 id="archon-heading" class="text-lg font-semibold text-brand-orange uppercase tracking-wide">
       Archon Hunt
     </h2>
-    <time datetime={fetchedAt} class="text-xs text-brand-cream/40">
+    <time datetime={fetchedAt} class="text-xs text-brand-cream/60">
       Fetched {fetchedAt}
     </time>
   </div>
@@ -50,9 +50,9 @@ function formatExpiry(expiry: string): string {
       <ol class="space-y-2" aria-label="Archon hunt missions">
         {archon.missions.map((m, i) => (
           <li class="rounded bg-surface-3 px-4 py-3 text-sm">
-            <span class="text-brand-cream/40 text-xs mr-2">Mission {i + 1}</span>
+            <span class="text-brand-cream/60 text-xs mr-2">Mission {i + 1}</span>
             <span class="text-brand-cream font-medium">{m.typeKey ?? m.type}</span>
-            <span class="mx-2 text-brand-cream/30">|</span>
+            <span class="mx-2 text-brand-cream/50" aria-hidden="true">|</span>
             <span class="text-brand-cream/70">{m.nodeKey ?? m.node}</span>
             {m.modifier && (
               <p class="mt-1 text-brand-orange text-xs">{m.modifier}</p>

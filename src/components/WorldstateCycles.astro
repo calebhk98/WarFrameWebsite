@@ -69,7 +69,7 @@ const noData = cycles.length === 0;
     <h2 id="cycles-heading" class="text-lg font-semibold text-brand-orange uppercase tracking-wide">
       Open World Cycles
     </h2>
-    <time datetime={fetchedAt} class="text-xs text-brand-cream/40">
+    <time datetime={fetchedAt} class="text-xs text-brand-cream/60">
       Fetched {fetchedAt}
     </time>
   </div>
@@ -84,8 +84,8 @@ const noData = cycles.length === 0;
     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3" aria-label="Open world cycle status">
       {cycles.map((c) => (
         <li class="rounded bg-surface-3 px-4 py-3">
-          <p class="text-xs uppercase tracking-widest text-brand-cream/50 mb-1">{c.label}</p>
-          <p class="text-xs text-brand-cream/40 mb-2">{c.location}</p>
+          <p class="text-xs uppercase tracking-widest text-brand-cream/70 mb-1">{c.label}</p>
+          <p class="text-xs text-brand-cream/60 mb-2">{c.location}</p>
           <p class="text-brand-cream font-semibold">{c.state}</p>
           <p class="text-brand-orange text-sm mt-1">
             Changes in: {c.timeLeft}

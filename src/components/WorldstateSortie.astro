@@ -22,7 +22,7 @@ function formatExpiry(expiry: string): string {
     <h2 id="sortie-heading" class="text-lg font-semibold text-brand-orange uppercase tracking-wide">
       Sortie
     </h2>
-    <time datetime={fetchedAt} class="text-xs text-brand-cream/40">
+    <time datetime={fetchedAt} class="text-xs text-brand-cream/60">
       Fetched {fetchedAt}
     </time>
   </div>
@@ -50,13 +50,13 @@ function formatExpiry(expiry: string): string {
       <ol class="space-y-2" aria-label="Sortie missions">
         {sortie.variants.map((v, i) => (
           <li class="rounded bg-surface-3 px-4 py-3 text-sm">
-            <span class="text-brand-cream/40 text-xs mr-2">Stage {i + 1}</span>
+            <span class="text-brand-cream/60 text-xs mr-2">Stage {i + 1}</span>
             <span class="text-brand-cream font-medium">{v.missionTypeKey ?? v.missionType}</span>
-            <span class="mx-2 text-brand-cream/30">|</span>
+            <span class="mx-2 text-brand-cream/50" aria-hidden="true">|</span>
             <span class="text-brand-cream/70">{v.nodeKey ?? v.node}</span>
             <p class="mt-1 text-brand-orange text-xs">{v.modifier}</p>
             {v.modifierDescription && (
-              <p class="mt-0.5 text-brand-cream/50 text-xs">{v.modifierDescription}</p>
+              <p class="mt-0.5 text-brand-cream/60 text-xs">{v.modifierDescription}</p>
             )}
           </li>
         ))}

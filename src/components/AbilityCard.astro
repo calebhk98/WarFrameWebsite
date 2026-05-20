@@ -12,7 +12,7 @@ const { name, key: abilityKey, energyCost, description, stats = {} } = Astro.pro
 const statEntries = Object.entries(stats);
 ---
 
-<div class="rounded-lg border border-surface-3 bg-surface-2 p-4 space-y-2">
+<div class="rounded-lg border border-gray-200 dark:border-surface-3 bg-white dark:bg-surface-2 p-4 space-y-2">
   <div class="flex items-center justify-between gap-2 flex-wrap">
     <div class="flex items-center gap-2">
       <span
@@ -22,21 +22,21 @@ const statEntries = Object.entries(stats);
       >
         {abilityKey}
       </span>
-      <p class="font-semibold text-brand-cream">{name}</p>
+      <p class="font-semibold text-gray-900 dark:text-brand-cream">{name}</p>
     </div>
     <span class="text-xs px-2 py-0.5 rounded-full bg-brand-orange/20 text-brand-orange font-mono">
       {energyCost} energy
     </span>
   </div>
 
-  <p class="text-brand-cream/80 text-sm leading-relaxed">{description}</p>
+  <p class="text-gray-700 dark:text-brand-cream/80 text-sm leading-relaxed">{description}</p>
 
   {statEntries.length > 0 && (
-    <dl class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1 pt-1 border-t border-surface-3 text-xs">
+    <dl class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1 pt-1 border-t border-gray-200 dark:border-surface-3 text-xs">
       {statEntries.map(([label, value]) => (
         <div class="flex justify-between gap-1">
-          <dt class="text-brand-cream/50">{label}</dt>
-          <dd class="text-brand-cream font-mono">{value}</dd>
+          <dt class="text-gray-500 dark:text-brand-cream/50">{label}</dt>
+          <dd class="text-gray-900 dark:text-brand-cream font-mono">{value}</dd>
         </div>
       ))}
     </dl>
