@@ -1,5 +1,5 @@
 import { z } from 'astro:content';
-import { isoDateLike, slug, sourceSchema } from './shared';
+import { isoDateLike, sourceSchema } from './shared';
 
 export const ampDamageTypeSchema = z.enum([
   'void',
@@ -12,7 +12,6 @@ export const ampDamageTypeSchema = z.enum([
 ]);
 
 export const ampSchema = z.object({
-  slug,
   name: z.string().min(1),
   prism: z.string().min(1),
   scaffold: z.string().min(1),

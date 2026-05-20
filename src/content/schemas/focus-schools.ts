@@ -1,5 +1,5 @@
 import { z } from 'astro:content';
-import { isoDateLike, slug, sourceSchema } from './shared';
+import { isoDateLike, sourceSchema } from './shared';
 
 export const focusNodeTypeSchema = z.enum(['Active', 'Passive']);
 
@@ -25,7 +25,6 @@ export const focusElementSchema = z.enum([
 ]);
 
 export const focusSchoolSchema = z.object({
-  slug,
   name: z.string().min(1),
   element: focusElementSchema,
   waybounds: z.array(focusWayboundSchema).default([]),
