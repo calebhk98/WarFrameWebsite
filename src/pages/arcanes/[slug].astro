@@ -38,9 +38,9 @@ const description = statParts.length > 0
         <table class="w-full text-sm border-collapse">
           <thead>
             <tr class="border-b border-surface-3">
-              <th class="text-left py-2 px-3 text-brand-cream/60 font-medium">Rank</th>
+              <th scope="col" class="text-left py-2 px-3 text-brand-cream/60 font-medium">Rank</th>
               {Object.keys(data.perRankStats[0]?.stats ?? {}).map((key) => (
-                <th class="text-left py-2 px-3 text-brand-cream/60 font-medium capitalize">{key}</th>
+                <th scope="col" class="text-left py-2 px-3 text-brand-cream/60 font-medium capitalize">{key}</th>
               ))}
             </tr>
           </thead>

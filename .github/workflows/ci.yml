@@ -21,7 +21,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - name: Get pnpm store directory
@@ -67,7 +67,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - name: Get pnpm store directory
@@ -106,7 +106,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - name: Get pnpm store directory
@@ -145,7 +145,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - name: Get pnpm store directory
@@ -166,6 +166,9 @@ jobs:
       - name: Install @lhci/cli
         run: pnpm add -g @lhci/cli
 
+      - name: Install Chromium for Lighthouse
+        run: pnpm exec playwright install --with-deps chromium
+
       - name: Download dist artifact
         uses: actions/download-artifact@v4
         with:
@@ -176,6 +179,7 @@ jobs:
         run: lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          CHROMIUM_FLAGS: "--no-sandbox --disable-dev-shm-usage --disable-gpu"
 
       - name: Upload Lighthouse report
         if: always()
@@ -197,7 +201,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - name: Get pnpm store directory

@@ -1,56 +1,116 @@
 ---
 import Base from '../../layouts/Base.astro';
 import EntityCard from '../../components/EntityCard.astro';
+import { getCollection } from 'astro:content';
 import { getResourceEnumeration } from '../../lib/enumerations';
 
-const resources = getResourceEnumeration();
-const sorted = [...resources].sort((a, b) => a.name.localeCompare(b.name));
+const resourceEntries = await getCollection('resources');
+const allResources = getResourceEnumeration();
 
-const byLetter: Record<string, typeof sorted> = {};
-for (const r of sorted) {
-  const letter = r.name[0]?.toUpperCase() ?? '#';
-  if (!byLetter[letter]) byLetter[letter] = [];
-  byLetter[letter]!.push(r);
+const entryBySlug = Object.fromEntries(resourceEntries.map((e) => [e.slug, e]));
+
+const RARITY_ORDER = ['common', 'uncommon', 'rare', 'component', 'currency', 'plant', 'other'] as const;
+type Rarity = typeof RARITY_ORDER[number];
+
+const RARITY_LABELS: Record<Rarity, string> = {
+  common: 'Common Materials',
+  uncommon: 'Uncommon Resources',
+  rare: 'Rare Resources',
+  component: 'Components & Upgrades',
+  currency: 'Currencies',
+  plant: 'Plants & Organic',
+  other: 'Other',
+};
+
+const base = import.meta.env.BASE_URL;
+
+const byRarity: Record<Rarity, typeof resourceEntries> = {
+  common: [],
+  uncommon: [],
+  rare: [],
+  component: [],
+  currency: [],
+  plant: [],
+  other: [],
+};
+
+for (const entry of resourceEntries) {
+  const rarity = entry.data.type as Rarity;
+  if (byRarity[rarity]) {
+    byRarity[rarity]!.push(entry);
+  } else {
+    byRarity.other.push(entry);
+  }
 }
-const letters = Object.keys(byLetter).sort();
+
+const activeTiers = RARITY_ORDER.filter((r) => byRarity[r]!.length > 0);
 ---
 
-<Base title="Resources" description="All 224 crafting resources and materials in Warframe">
+<Base title="Resources" description="Warframe crafting resources organised by rarity tier">
   <div class="max-w-7xl mx-auto px-4 py-8">
     <header class="mb-8">
       <h1 class="text-3xl font-bold text-brand-cream mb-2">Resources</h1>
-      <p class="text-brand-cream/60">{sorted.length} crafting materials, gems, and components</p>
+      <p class="text-brand-cream/60">
+        {resourceEntries.length} curated resources with detailed farming guides, organised by rarity tier.
+        Full enumeration covers {allResources.length} materials.
+      </p>
     </header>
 
-    <nav aria-label="Alphabetical index" class="flex flex-wrap gap-2 mb-8">
-      {letters.map((letter) => (
+    <nav aria-label="Rarity tier index" class="flex flex-wrap gap-2 mb-8">
+      {activeTiers.map((tier) => (
         <a
-          href={`#letter-${letter}`}
+          href={`#tier-${tier}`}
           class="text-xs px-2 py-1 rounded bg-surface-2 border border-surface-3 text-brand-cream/70 hover:text-brand-orange hover:border-brand-orange/50 transition-colors"
         >
-          {letter}
+          {RARITY_LABELS[tier]} ({byRarity[tier]!.length})
         </a>
       ))}
     </nav>
 
-    {letters.map((letter) => (
-      <section id={`letter-${letter}`} class="mb-10">
+    {activeTiers.map((tier) => (
+      <section id={`tier-${tier}`} class="mb-12">
         <h2 class="text-sm uppercase tracking-widest text-brand-orange font-semibold mb-4 border-b border-surface-3 pb-2">
-          {letter}
+          {RARITY_LABELS[tier]}
         </h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-          {byLetter[letter]!.map((r) => (
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+          {byRarity[tier]!.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((entry) => (
             <EntityCard
-              href="#"
-              name={r.name}
-              tags={[
-                ...(r.type ? [r.type] : []),
-                ...(r.rarity ? [r.rarity] : []),
-              ].filter((t): t is string => Boolean(t))}
+              href={`${base}resources/${entry.slug}`}
+              name={entry.data.name}
+              tags={[tier]}
             />
           ))}
         </div>
       </section>
     ))}
+
+    <section class="mt-12 pt-8 border-t border-surface-3">
+      <h2 class="text-sm uppercase tracking-widest text-brand-orange font-semibold mb-4">
+        All {allResources.length} Resources (Enumeration)
+      </h2>
+      <p class="text-sm text-brand-cream/50 mb-4">
+        The full enumeration of {allResources.length} resources is listed below alphabetically.
+        Detailed pages are available for the {resourceEntries.length} curated entries above.
+      </p>
+      <div class="flex flex-wrap gap-2">
+        {allResources
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((r) => {
+            const entry = entryBySlug[r.slug];
+            return entry ? (
+              <a
+                href={`${base}resources/${r.slug}`}
+                class="text-xs px-2 py-1 rounded bg-surface-2 border border-brand-orange/30 text-brand-orange hover:bg-surface-3 transition-colors"
+              >
+                {r.name}
+              </a>
+            ) : (
+              <span class="text-xs px-2 py-1 rounded bg-surface-2 border border-surface-3 text-brand-cream/50">
+                {r.name}
+              </span>
+            );
+          })}
+      </div>
+    </section>
   </div>
 </Base>

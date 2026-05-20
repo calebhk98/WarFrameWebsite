@@ -40,7 +40,8 @@ const fullTitle = `${title} -- ${siteName}`;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Security headers (inline enforcement for static hosting) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://cdn.warframestat.us https://wiki.warframe.com https://*.fandom.com data:; connect-src 'self' https://api.warframestat.us https://api.warframe.market; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';" />
+    <!-- frame-ancestors omitted here: ignored in meta CSP per spec; enforced via HTTP header in _headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://cdn.warframestat.us https://wiki.warframe.com https://*.fandom.com data:; connect-src 'self' https://api.warframestat.us https://api.warframe.market; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self';" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="description" content={description} />

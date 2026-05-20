@@ -1,0 +1,98 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+
+export async function getStaticPaths() {
+  const relics = await getCollection('relics');
+  return relics.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+
+const tags: string[] = [
+  `Era: ${data.era_letter.charAt(0).toUpperCase() + data.era_letter.slice(1)}`,
+  `${data.total_relics} relics`,
+];
+
+const description = data.description;
+---
+
+<Entity
+  title={data.name}
+  kind="relic"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+  collectionHref="/relics"
+  collectionLabel="Relics"
+>
+  {data.notable_relics.length > 0 && (
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-brand-cream mb-3">Notable Relics</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="border-b border-surface-3">
+              <th class="text-left py-2 px-3 text-brand-cream/60 font-medium">Relic</th>
+              <th class="text-left py-2 px-3 text-brand-cream/60 font-medium">Prime Part</th>
+              <th class="text-left py-2 px-3 text-brand-cream/60 font-medium">Rarity</th>
+              <th class="text-left py-2 px-3 text-brand-cream/60 font-medium">Radiant Chance</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.notable_relics.map((r) => (
+              <tr class="border-b border-surface-3/50 hover:bg-surface-2/50">
+                <td class="py-2 px-3 text-brand-orange font-semibold">{r.name}</td>
+                <td class="py-2 px-3 text-brand-cream/80">{r.drop}</td>
+                <td class="py-2 px-3 text-brand-cream/60 capitalize">{r.dropRarity}</td>
+                <td class="py-2 px-3 text-brand-cream/80">{r.dropChanceRadiant}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )}
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-brand-cream mb-3">Drop Systems</h2>
+    <ul class="space-y-2">
+      {data.drop_systems.map((sys) => (
+        <li class="flex items-start gap-2 text-sm">
+          <span class="text-brand-orange shrink-0 mt-0.5">&#8227;</span>
+          <span class="text-brand-cream/80">{sys}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-brand-cream mb-3">Refinement Costs</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Intact</p>
+        <p class="text-lg font-bold text-brand-cream">{data.refinement_costs.intact}</p>
+        <p class="text-xs text-brand-cream/40">void traces</p>
+      </div>
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Exceptional</p>
+        <p class="text-lg font-bold text-brand-cream">{data.refinement_costs.exceptional}</p>
+        <p class="text-xs text-brand-cream/40">void traces</p>
+      </div>
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Flawless</p>
+        <p class="text-lg font-bold text-brand-cream">{data.refinement_costs.flawless}</p>
+        <p class="text-xs text-brand-cream/40">void traces</p>
+      </div>
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Radiant</p>
+        <p class="text-lg font-bold text-brand-orange">{data.refinement_costs.radiant}</p>
+        <p class="text-xs text-brand-cream/40">void traces</p>
+      </div>
+    </div>
+  </section>
+
+  <Content />
+</Entity>
