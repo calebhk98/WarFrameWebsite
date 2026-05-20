@@ -5,22 +5,23 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Augment enhancement"
+type: augment
+effect: "Avalanche Augment: Allies within Affinity Range gain [overguard_per_enemy] Overguard per enemy hit, increasing by [armor_pct]% of Frost's Armor once per enemy."
 perRankStats:
   - rank: 0
-    stats: { effect_percent: 5 }
+    stats: { overguard_per_enemy: 40, armor_pct: 5 }
   - rank: 1
-    stats: { effect_percent: 10 }
+    stats: { overguard_per_enemy: 45, armor_pct: 10 }
   - rank: 2
-    stats: { effect_percent: 15 }
+    stats: { overguard_per_enemy: 50, armor_pct: 15 }
   - rank: 3
-    stats: { effect_percent: 20 }
+    stats: { overguard_per_enemy: 60, armor_pct: 20 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
     publisher: "WFCD"
+    note: "Stat values sourced from WFCD Mods.json levelStats."
   - url: "https://warframe.fandom.com/wiki/Icy_Avalanche"
     accessedAt: "2026-05-20"
     publisher: "Fandom"
@@ -29,37 +30,36 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Icy Avalanche is a specialized augment mod that enhances ability mechanics for warframe-class equipment. Its scaling properties make it valuable in mid-to-late game builds where ability synergy and tactical flexibility directly impact mission success rates. The mod's enhancement effect provides tangible benefits that compound with other ability modifications while maintaining consistent drain efficiency.
+Icy Avalanche is a Warframe augment mod for Frost's Avalanche ability. When Avalanche is cast, all allied Warframes within Affinity Range receive an Overguard coating that scales with the number of enemies hit. At rank 3, each enemy struck by Avalanche grants 60 Overguard to nearby allies, plus an additional 20% of Frost's total Armor as further Overguard per enemy. The result scales directly with both enemy density and Frost's armor investment.
+
+Overguard acts as an additional layer of protection that absorbs damage before health and shields, and it cannot be bypassed by status effects that normally ignore shields. In densely packed missions with high Frost armor builds, Icy Avalanche can apply several thousand Overguard points to the entire squad, providing meaningful survivability uplift across Steel Path content.
 
 ## Stats per rank
 
-Icy Avalanche scales from rank 0 to rank 3, providing progressive enhancement to its core effect. Each rank increases the primary stat benefit while maintaining consistent drain cost throughout the scaling spectrum. The incremental scaling enables gradual power progression as players invest ranks into their builds.
-
-| Rank | Drain | Effect |
-|------|-------|--------|
-| 0    | 6     | Base effect activated            |
-| 1    | 6     | Enhanced effect (25%)             |
-| 2    | 6     | Enhanced effect (50%)             |
-| 3    | 6     | Enhanced effect (75%)             |
+| Rank | Overguard per enemy | Frost armor converted per enemy |
+|------|---:|---:|
+| 0 | 40 | 5% |
+| 1 | 45 | 10% |
+| 2 | 50 | 15% |
+| 3 | 60 | 20% |
 
 ## Acquisition
 
-Icy Avalanche is obtained through mid-game star chart progression and enemy drops. Players encounter it on advanced planets or through relic farming in high-level missions. The mod becomes available through standard gameplay progression and marketplace trading once players reach sufficient mastery rank for its requirements.
+Icy Avalanche is available through the Arbiters of Hexis syndicate offering. Players with sufficient Arbiters of Hexis standing can purchase it directly. The mod is tradeable through in-game trade and warframe.market.
 
-## Usage
+## Builds that use it
 
-Icy Avalanche excels in ability-centric builds that leverage its enhancement for sustained performance. The mod pairs synergistically with other ability modifiers that amplify its core effect, enabling builds that prioritize consistent tactical flexibility. Integration with ability-focused warframes maximizes the value derived from its ranks while maintaining manageable drain requirements.
+Icy Avalanche is a strong choice for Frost in squad defense or survival missions where consistent Avalanche casting is part of the rotation. Pair with maximum Steel Fiber and Umbral Fiber to increase Frost's base armor, which directly raises the Overguard value granted per enemy. High Power Range ensures Avalanche catches as many enemies as possible, maximizing the total Overguard applied per cast.
 
-Squad compositions benefit from Icy Avalanche when paired with teammates who coordinate around its enhanced effect. Solo play demonstrates its value through consistent performance gains across extended endurance missions. The mod enables progression into higher difficulty content by providing incremental scaling that compounds with other ability enhancements.
-
-## Common builds
-
-Icy Avalanche appears in diverse ability-centric builds across multiple warframes. Frames emphasizing ability damage and crowd control synergize particularly well with this mod. Endgame builds leverage the mod for sustained tactical advantage across survival and endless mission formats.
+The mod rewards proactive Avalanche timing when enemy groups converge, granting peak Overguard just before waves reach defensive objectives or squad members. It is most effective in organized squads where teammates stay within Affinity Range to benefit from each cast.
 
 ## Notes
 
-The effectiveness of Icy Avalanche scales with ability usage frequency and team coordination. Optimal placement within build slots maximizes drain efficiency while maintaining sufficient energy management. Integration with ability duration and strength mods creates multiplicative benefit stacking.
+- Overguard granted by Icy Avalanche does not scale with Power Strength; only Frost's armor total and enemy count matter.
+- Affinity Range is typically the squad's shared affinity radius; Warframes outside this range do not receive the Overguard.
+- Overguard decays between casts; Avalanche must be recast when the previous Overguard expires.
+- Arbiters of Hexis and Cephalon Suda are allied syndicates; either provides access to the offering.
 
 ## Sources
 
-Icy Avalanche was introduced as an augment mod enhancing core ability mechanics. WFCD provides canonical mod stats and scaling properties. The Fandom Wiki documents ability synergies and playstyle optimization strategies that maximize Icy Avalanche effectiveness across different mission objectives and difficulty tiers.
+Stats sourced from WFCD Mods.json (levelStats fields, version accessed 2026-05-20). Overguard behavior and affinity range interactions confirmed via the Fandom wiki for Icy Avalanche.

@@ -5,22 +5,23 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Augment enhancement"
+type: augment
+effect: "Freeze Augment: Hold to cast grants all allies within [range]m an additional [cold_damage]% Cold Damage for [duration]s."
 perRankStats:
   - rank: 0
-    stats: { effect_percent: 50, duration: 28, range: 15 }
+    stats: { cold_damage: 50, duration: 28, range: 15 }
   - rank: 1
-    stats: { effect_percent: 65, duration: 32, range: 15 }
+    stats: { cold_damage: 65, duration: 32, range: 15 }
   - rank: 2
-    stats: { effect_percent: 80, duration: 36, range: 15 }
+    stats: { cold_damage: 80, duration: 36, range: 15 }
   - rank: 3
-    stats: { effect_percent: 100, duration: 40, range: 15 }
+    stats: { cold_damage: 100, duration: 40, range: 15 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
     publisher: "WFCD"
+    note: "Stat values sourced from WFCD Mods.json levelStats."
   - url: "https://warframe.fandom.com/wiki/Freeze_Force"
     accessedAt: "2026-05-20"
     publisher: "Fandom"
@@ -29,37 +30,36 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Freeze Force is a specialized augment mod that enhances ability mechanics for warframe-class equipment. Its scaling properties make it valuable in mid-to-late game builds where ability synergy and tactical flexibility directly impact mission success rates. The mod's enhancement effect provides tangible benefits that compound with other ability modifications while maintaining consistent drain efficiency.
+Freeze Force is a Warframe augment mod for Frost's Freeze ability. When held rather than tapped, Freeze coats all allies within 15 meters in a Cold damage bonus lasting up to 40 seconds at max rank. At rank 3, the buff grants 100% additional Cold damage to all allied weapons, applying to every hit and compounding with elemental combination mods. The range is fixed at 15m regardless of Power Range modding.
+
+The Cold damage bonus is particularly useful when combined with other elements to form combined damage types. Cold plus Toxin creates Viral damage, which is one of the strongest damage-type combinations against Grineer and Corpus. Cold plus Electricity creates Magnetic, effective against Corpus shields. Freeze Force turns Frost into a support frame capable of directly buffing squad damage output, not merely protecting with Snow Globe.
 
 ## Stats per rank
 
-Freeze Force scales from rank 0 to rank 3, providing progressive enhancement to its core effect. Each rank increases the primary stat benefit while maintaining consistent drain cost throughout the scaling spectrum. The incremental scaling enables gradual power progression as players invest ranks into their builds.
-
-| Rank | Drain | Effect |
-|------|-------|--------|
-| 0    | 6     | Base effect activated            |
-| 1    | 6     | Enhanced effect (25%)             |
-| 2    | 6     | Enhanced effect (50%)             |
-| 3    | 6     | Enhanced effect (75%)             |
+| Rank | Cold damage bonus | Duration | Range |
+|------|---:|---:|---:|
+| 0 | +50% | 28s | 15m |
+| 1 | +65% | 32s | 15m |
+| 2 | +80% | 36s | 15m |
+| 3 | +100% | 40s | 15m |
 
 ## Acquisition
 
-Freeze Force is obtained through mid-game star chart progression and enemy drops. Players encounter it on advanced planets or through relic farming in high-level missions. The mod becomes available through standard gameplay progression and marketplace trading once players reach sufficient mastery rank for its requirements.
+Freeze Force is available through the Steel Meridian syndicate offering. Players with sufficient Steel Meridian standing can purchase it directly. The mod is tradeable via in-game trade and warframe.market.
 
-## Usage
+## Builds that use it
 
-Freeze Force excels in ability-centric builds that leverage its enhancement for sustained performance. The mod pairs synergistically with other ability modifiers that amplify its core effect, enabling builds that prioritize consistent tactical flexibility. Integration with ability-focused warframes maximizes the value derived from its ranks while maintaining manageable drain requirements.
+Freeze Force suits Frost builds designed for squad support in Steel Path survival, defense, or interception missions. Pair it with Duration mods to extend the buff window past the base 40 seconds, reducing recast frequency in long missions. Power Efficiency mods help sustain Freeze casts, which spend energy each use.
 
-Squad compositions benefit from Freeze Force when paired with teammates who coordinate around its enhanced effect. Solo play demonstrates its value through consistent performance gains across extended endurance missions. The mod enables progression into higher difficulty content by providing incremental scaling that compounds with other ability enhancements.
-
-## Common builds
-
-Freeze Force appears in diverse ability-centric builds across multiple warframes. Frames emphasizing ability damage and crowd control synergize particularly well with this mod. Endgame builds leverage the mod for sustained tactical advantage across survival and endless mission formats.
+Squad compositions benefit most when multiple members run weapons with already-embedded Electricity or Toxin mods, enabling them to achieve combined damage type procs from the Cold buff. Trinity or Harrow can maintain energy for Frost while Freeze Force provides the elemental uplift.
 
 ## Notes
 
-The effectiveness of Freeze Force scales with ability usage frequency and team coordination. Optimal placement within build slots maximizes drain efficiency while maintaining sufficient energy management. Integration with ability duration and strength mods creates multiplicative benefit stacking.
+- The buff applies to allied Warframes, Companions, and Operator weapons within range.
+- The 15m radius is not affected by Power Range mods.
+- Holding Freeze is required to trigger the ally buff; tapping Freeze still freezes a single target normally.
+- Duration mods scale the 40-second base proportionally.
 
 ## Sources
 
-Freeze Force was introduced as an augment mod enhancing core ability mechanics. WFCD provides canonical mod stats and scaling properties. The Fandom Wiki documents ability synergies and playstyle optimization strategies that maximize Freeze Force effectiveness across different mission objectives and difficulty tiers.
+Stats sourced from WFCD Mods.json (levelStats fields, version accessed 2026-05-20). Buff range behavior and elemental interaction details confirmed via the Fandom wiki for Freeze Force.

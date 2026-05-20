@@ -5,22 +5,23 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Augment enhancement"
+type: augment
+effect: "Hall of Mirrors Augment: Each kill increases doppelganger damage by [damage_per_kill]%, stacking without limit."
 perRankStats:
   - rank: 0
-    stats: { effect_percent: 2 }
+    stats: { damage_per_kill: 2 }
   - rank: 1
-    stats: { effect_percent: 3 }
+    stats: { damage_per_kill: 3 }
   - rank: 2
-    stats: { effect_percent: 4 }
+    stats: { damage_per_kill: 4 }
   - rank: 3
-    stats: { effect_percent: 5 }
+    stats: { damage_per_kill: 5 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
     publisher: "WFCD"
+    note: "Stat values sourced from WFCD Mods.json levelStats."
   - url: "https://warframe.fandom.com/wiki/Hall_Of_Malevolence"
     accessedAt: "2026-05-20"
     publisher: "Fandom"
@@ -29,37 +30,38 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Hall Of Malevolence is a specialized augment mod that enhances ability mechanics for warframe-class equipment. Its scaling properties make it valuable in mid-to-late game builds where ability synergy and tactical flexibility directly impact mission success rates. The mod's enhancement effect provides tangible benefits that compound with other ability modifications while maintaining consistent drain efficiency.
+Hall Of Malevolence is a Warframe augment mod for Mirage's Hall of Mirrors ability. Each enemy kill increases the damage dealt by Mirage's doppelganger copies by a fixed percentage per rank, with the bonus accumulating throughout the mission without a cap. At max rank, every kill grants 5% additional doppelganger damage, making the mod exponentially more effective as a mission progresses and enemy count climbs.
+
+The mod transforms Hall of Mirrors from a static damage multiplier into a snowballing power source. In long survival or defense missions, Mirage with Hall Of Malevolence can reach doppelganger damage percentages several hundred percent above base, compounding with her native ability strength. This synergy makes Mirage one of the few frames whose damage output naturally increases the longer a mission lasts.
 
 ## Stats per rank
 
-Hall Of Malevolence scales from rank 0 to rank 3, providing progressive enhancement to its core effect. Each rank increases the primary stat benefit while maintaining consistent drain cost throughout the scaling spectrum. The incremental scaling enables gradual power progression as players invest ranks into their builds.
+| Rank | Doppelganger damage per kill |
+|------|---:|
+| 0 | +2% |
+| 1 | +3% |
+| 2 | +4% |
+| 3 | +5% |
 
-| Rank | Drain | Effect |
-|------|-------|--------|
-| 0    | 6     | Base effect activated            |
-| 1    | 6     | Enhanced effect (25%)             |
-| 2    | 6     | Enhanced effect (50%)             |
-| 3    | 6     | Enhanced effect (75%)             |
+The bonus resets when Hall of Mirrors is deactivated or expires.
 
 ## Acquisition
 
-Hall Of Malevolence is obtained through mid-game star chart progression and enemy drops. Players encounter it on advanced planets or through relic farming in high-level missions. The mod becomes available through standard gameplay progression and marketplace trading once players reach sufficient mastery rank for its requirements.
+Hall Of Malevolence is available through the Red Veil syndicate offering. Players aligned with Red Veil can purchase it once the required standing tier is reached. It is also tradeable between players through in-game trade chat or warframe.market.
 
-## Usage
+## Builds that use it
 
-Hall Of Malevolence excels in ability-centric builds that leverage its enhancement for sustained performance. The mod pairs synergistically with other ability modifiers that amplify its core effect, enabling builds that prioritize consistent tactical flexibility. Integration with ability-focused warframes maximizes the value derived from its ranks while maintaining manageable drain requirements.
+Hall Of Malevolence is a staple in Mirage endurance builds for Steel Path survival and defense. Typical builds pair it with maximum Power Strength to increase the base doppelganger damage multiplier, with Hall Of Malevolence compounding on top. Duration mods such as Primed Continuity keep the ability active for full mission segments.
 
-Squad compositions benefit from Hall Of Malevolence when paired with teammates who coordinate around its enhanced effect. Solo play demonstrates its value through consistent performance gains across extended endurance missions. The mod enables progression into higher difficulty content by providing incremental scaling that compounds with other ability enhancements.
-
-## Common builds
-
-Hall Of Malevolence appears in diverse ability-centric builds across multiple warframes. Frames emphasizing ability damage and crowd control synergize particularly well with this mod. Endgame builds leverage the mod for sustained tactical advantage across survival and endless mission formats.
+Pair Mirage with Inaros, Trinity, or another energy sustain frame in squad play to maintain Hall of Mirrors continuously. The mod is less useful in short exterminate missions where kill count does not have time to build; reserve it for endless mission formats.
 
 ## Notes
 
-The effectiveness of Hall Of Malevolence scales with ability usage frequency and team coordination. Optimal placement within build slots maximizes drain efficiency while maintaining sufficient energy management. Integration with ability duration and strength mods creates multiplicative benefit stacking.
+- Doppelganger damage bonus stacks additively with base damage multipliers from ability strength mods.
+- The stack resets if Hall of Mirrors drops, so energy management is critical to maintain momentum.
+- Red Veil and New Loka are allied syndicates; either can provide access to the offering at high standing.
+- The mod does not affect Mirage's personal damage, only the doppelganger copies.
 
 ## Sources
 
-Hall Of Malevolence was introduced as an augment mod enhancing core ability mechanics. WFCD provides canonical mod stats and scaling properties. The Fandom Wiki documents ability synergies and playstyle optimization strategies that maximize Hall Of Malevolence effectiveness across different mission objectives and difficulty tiers.
+Stats sourced from WFCD Mods.json (levelStats fields, version accessed 2026-05-20). Stacking behavior and syndicate availability confirmed via the Fandom wiki for Hall Of Malevolence.

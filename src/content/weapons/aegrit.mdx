@@ -2,29 +2,32 @@
 slug: aegrit
 name: Aegrit
 type: secondary
-category: Secondary
+category: Throwing
 masteryRank: 11
 damage:
   impact: 4.5
   puncture: 2.7
-  slash: 1.8000001
-  elemental: {}
-criticalChance: 0
-criticalMultiplier: 1
-statusChance: 0
+  slash: 1.8
+  elemental:
+    blast: 797
+criticalChance: 0.37
+criticalMultiplier: 1.9
+statusChance: 0.19
 fireRate: 2
+magazine: 2
 reload: 1.3
 accuracy: 100
 acquisition:
   source: Market
   blueprintLocations:
-    - "Market (25,000 credits)"
+    - "Market (blueprint for credits)"
   cost:
     credits: 25000
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
     publisher: "WFCD"
+    note: "All numeric stats sourced from WFCD Secondary.json."
   - url: "https://warframe.fandom.com/wiki/Aegrit"
     accessedAt: "2026-05-20"
     publisher: "Fandom"
@@ -33,45 +36,47 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Aegrit is a secondary weapon in Warframe. This weapon offers a balanced approach to combat with solid damage output and handling characteristics. The weapon is designed for players looking for reliability and versatility in their arsenal.
+The Aegrit is a Mastery Rank 11 secondary throwing weapon that launches sticky grenades. Each thrown grenade adheres to a surface or enemy and detonates after a brief delay, dealing the majority of its damage as Blast. The weapon carries two grenades per magazine and reloads quickly at 1.3 seconds, enabling a rapid two-round burst followed by immediate reload cycling. Its high Critical Chance of 37% with a 1.9x multiplier makes it effective in critical-focused builds, and its 19% Status Chance supports Blast status procs that knock down and ragdoll nearby enemies.
+
+The Aegrit is primarily used in close-to-mid range combat where grenades can be placed precisely on high-value targets or choke points. The Blast damage type is effective against machinery and light armor, though it is less effective against heavily armored Grineer. The two-round magazine encourages deliberate target selection rather than sustained fire.
 
 ## Stats
 
 | Stat | Value |
-|------|-------|
-| Damage (Impact) | 4.5 |
-| Damage (Puncture) | 2.7 |
-| Damage (Slash) | 1.8000001 |
-| Critical Chance | 0% |
-| Critical Multiplier | 1x |
-| Status Chance | 0% |
-| Mastery Rank | 11 |
-| Fire Rate | 2 rounds/sec |
-| Reload Time | 1.3s |
-
-The weapon's damage profile provides solid base damage with room for modding to scale into endgame content. With proper mod builds focusing on damage multipliers and status application, this weapon becomes a formidable tool in a player's arsenal. The crit and status stats allow for flexible build approaches tailored to different playstyles and mission requirements.
+|------|---:|
+| Blast damage | 797 |
+| Impact | 4.5 |
+| Puncture | 2.7 |
+| Slash | 1.8 |
+| Critical chance | 37% |
+| Critical multiplier | 1.9x |
+| Status chance | 19% |
+| Fire rate | 2 rounds/s |
+| Magazine | 2 |
+| Reload | 1.3s |
+| Mastery rank | 11 |
 
 ## Acquisition
 
-This weapon can be obtained through the Market for credits. The blueprint is available for purchase, allowing players to craft their own copy once they have the necessary resources and building time. Additional variants may be available through special relics or events depending on the weapon's rarity and release schedule.
+The Aegrit blueprint is available from the in-game Market for credits. Components are crafted in the Foundry. The weapon does not require any special prerequisite missions beyond Mastery Rank 11.
 
 ## Variants
 
-Many weapons in Warframe have prime, kuva, or other enhanced variants. Check the wiki for full variant listings and acquisition methods for specialized versions of this weapon.
+The Aegrit does not have a Prime, Kuva, or Tenet variant as of this writing. Check the [Aegrit wiki page](https://warframe.fandom.com/wiki/Aegrit) for any updates.
 
 ## Recommended builds
 
-Recommended mods for this weapon depend on your desired playstyle. For pure damage output, focus on base damage multipliers, elemental damage, and critical chance scaling. For status-based builds, prioritize status chance and harmful elemental combinations like Corrosive or Magnetic. Hybrid builds combining both damage types offer flexibility for varied mission content.
+Critical builds leverage the 37% base Critical Chance with Primed Pistol Gambit and Hollow Point to reach near-guaranteed crits with orange-tier multipliers on each throw. Pair with Pistol Gambit and Target Cracker for consistent critical output.
 
-When modding, always consider your frame's synergies and the enemy composition you'll face. Weapons can be adapted for different content tiers from early star chart to Steel Path endgame with proper mod selection and polarization.
+Status builds invest in Pistol Pestilence and Pathogen Rounds to add Toxin to the Blast base, creating a Gas combination. Blast status itself knocks down enemies; adding Gas enables poison stacking for sustained damage over time.
 
 ## Notes
 
-This weapon balances multiple damage types and proc mechanics, making it suitable for various playstyles. Like all weapons, its effectiveness scales with both mods and the frame synergies available. Veterans often use this weapon in specialized builds that exploit its unique characteristics for specific farming routes or challenging content.
-
-Mastery rank requirements gate access to higher-tier versions. Players working toward mastery progression should prioritize leveling diverse weapons to maximize their overall progression speed.
+- Grenades stick to enemies and surfaces; they will not detonate on contact.
+- The Blast status proc ragdolls enemies, useful for crowd control in narrow corridors.
+- Avoid using the Aegrit in close proximity; the blast radius can damage the user.
+- At 37% base crit chance, Argon Scope provides a meaningful crit chance spike when aiming.
 
 ## Sources
 
-- WFCD warframe-items: https://github.com/WFCD/warframe-items
-- Warframe Wiki: https://warframe.fandom.com/wiki/{name.replace(' ', '_')}
+All numeric stats from [WFCD warframe-items](https://github.com/WFCD/warframe-items) (Secondary.json, accessed 2026-05-20). Weapon behavior and acquisition confirmed via the [Aegrit Fandom wiki page](https://warframe.fandom.com/wiki/Aegrit).

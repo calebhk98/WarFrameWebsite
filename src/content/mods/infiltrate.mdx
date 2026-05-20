@@ -5,22 +5,23 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Augment enhancement"
+type: augment
+effect: "Prowl Augment: Ivara bypasses laser barriers. Grants +[movement_speed]% Movement Speed while in Prowl."
 perRankStats:
   - rank: 0
-    stats: { effect_percent: 10 }
+    stats: { movement_speed: 10 }
   - rank: 1
-    stats: { effect_percent: 15 }
+    stats: { movement_speed: 15 }
   - rank: 2
-    stats: { effect_percent: 20 }
+    stats: { movement_speed: 20 }
   - rank: 3
-    stats: { effect_percent: 25 }
+    stats: { movement_speed: 25 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
     publisher: "WFCD"
+    note: "Stat values sourced from WFCD Mods.json levelStats."
   - url: "https://warframe.fandom.com/wiki/Infiltrate"
     accessedAt: "2026-05-20"
     publisher: "Fandom"
@@ -29,37 +30,36 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Infiltrate is a specialized augment mod that enhances ability mechanics for warframe-class equipment. Its scaling properties make it valuable in mid-to-late game builds where ability synergy and tactical flexibility directly impact mission success rates. The mod's enhancement effect provides tangible benefits that compound with other ability modifications while maintaining consistent drain efficiency.
+Infiltrate is a Warframe augment mod for Ivara's Prowl ability. With the mod equipped, Ivara can move through laser barriers without triggering them while in Prowl. Additionally, she gains a flat movement speed bonus of up to 25% at rank 3. Together these effects transform Ivara into an unrestricted infiltration frame capable of completing Spy missions without disabling a single alarm, regardless of vault layout.
+
+The ability to pass through laser barriers is categorically unique. No other frame or ability in the game can traverse active lasers without triggering vault alarms. Infiltrate makes Ivara the primary recommendation for solo flawless Spy vault completions, including Lua Spy vaults with complex laser grids that other stealth options cannot bypass.
 
 ## Stats per rank
 
-Infiltrate scales from rank 0 to rank 3, providing progressive enhancement to its core effect. Each rank increases the primary stat benefit while maintaining consistent drain cost throughout the scaling spectrum. The incremental scaling enables gradual power progression as players invest ranks into their builds.
-
-| Rank | Drain | Effect |
-|------|-------|--------|
-| 0    | 6     | Base effect activated            |
-| 1    | 6     | Enhanced effect (25%)             |
-| 2    | 6     | Enhanced effect (50%)             |
-| 3    | 6     | Enhanced effect (75%)             |
+| Rank | Movement speed in Prowl |
+|------|---:|
+| 0 | +10% |
+| 1 | +15% |
+| 2 | +20% |
+| 3 | +25% |
 
 ## Acquisition
 
-Infiltrate is obtained through mid-game star chart progression and enemy drops. Players encounter it on advanced planets or through relic farming in high-level missions. The mod becomes available through standard gameplay progression and marketplace trading once players reach sufficient mastery rank for its requirements.
+Infiltrate is available through the Perrin Sequence syndicate offering. Players with sufficient Perrin Sequence standing can purchase it directly. The mod is tradeable through in-game trade and warframe.market.
 
-## Usage
+## Builds that use it
 
-Infiltrate excels in ability-centric builds that leverage its enhancement for sustained performance. The mod pairs synergistically with other ability modifiers that amplify its core effect, enabling builds that prioritize consistent tactical flexibility. Integration with ability-focused warframes maximizes the value derived from its ranks while maintaining manageable drain requirements.
+Infiltrate is nearly universal on Ivara Spy builds. Pair it with high Duration mods (Primed Continuity, Constitution) to sustain Prowl for full vault completion without recasting. Power Efficiency mods reduce the per-second energy drain of Prowl, making sustained infiltration more manageable through long vaults.
 
-Squad compositions benefit from Infiltrate when paired with teammates who coordinate around its enhanced effect. Solo play demonstrates its value through consistent performance gains across extended endurance missions. The mod enables progression into higher difficulty content by providing incremental scaling that compounds with other ability enhancements.
-
-## Common builds
-
-Infiltrate appears in diverse ability-centric builds across multiple warframes. Frames emphasizing ability damage and crowd control synergize particularly well with this mod. Endgame builds leverage the mod for sustained tactical advantage across survival and endless mission formats.
+Sprint Speed mods and Arcane Agility combine with Infiltrate's movement speed bonus to make Ivara's Prowl movement noticeably faster, reducing mission completion time. Some builds also slot Primed Sure Footed to prevent knockdowns that would break Prowl during combat transitions.
 
 ## Notes
 
-The effectiveness of Infiltrate scales with ability usage frequency and team coordination. Optimal placement within build slots maximizes drain efficiency while maintaining sufficient energy management. Integration with ability duration and strength mods creates multiplicative benefit stacking.
+- Infiltrate does not make Ivara immune to other detection systems such as cameras or sensor bars; only laser barriers are bypassed.
+- The movement speed bonus applies only while Prowl is active; it does not carry over when Prowl is toggled off.
+- Laser bypass works in all Spy vault types, including the laser grids in Lua Spy vaults.
+- Perrin Sequence and New Loka are opposing syndicates; players cannot earn standing with both simultaneously.
 
 ## Sources
 
-Infiltrate was introduced as an augment mod enhancing core ability mechanics. WFCD provides canonical mod stats and scaling properties. The Fandom Wiki documents ability synergies and playstyle optimization strategies that maximize Infiltrate effectiveness across different mission objectives and difficulty tiers.
+Stats sourced from WFCD Mods.json (levelStats fields, version accessed 2026-05-20). Laser barrier interaction and vault compatibility confirmed via the Fandom wiki for Infiltrate.

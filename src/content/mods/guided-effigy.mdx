@@ -5,22 +5,23 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Augment enhancement"
+type: augment
+effect: "Effigy Augment: Hold to direct Effigy to your aim point, dealing [damage_per_s] Damage/s and restoring [energy_per_enemy] Energy per enemy in its path. Roars on arrival, stunning nearby enemies."
 perRankStats:
   - rank: 0
-    stats: { effect: 1 }
+    stats: { damage_per_s: 1000, energy_per_enemy: 2 }
   - rank: 1
-    stats: { effect: 1 }
+    stats: { damage_per_s: 2000, energy_per_enemy: 3 }
   - rank: 2
-    stats: { effect: 1 }
+    stats: { damage_per_s: 3000, energy_per_enemy: 4 }
   - rank: 3
-    stats: { effect: 1 }
+    stats: { damage_per_s: 4000, energy_per_enemy: 5 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
     publisher: "WFCD"
+    note: "Stat values sourced from WFCD Mods.json levelStats."
   - url: "https://warframe.fandom.com/wiki/Guided_Effigy"
     accessedAt: "2026-05-20"
     publisher: "Fandom"
@@ -29,37 +30,36 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Guided Effigy is a specialized augment mod that enhances ability mechanics for warframe-class equipment. Its scaling properties make it valuable in mid-to-late game builds where ability synergy and tactical flexibility directly impact mission success rates. The mod's enhancement effect provides tangible benefits that compound with other ability modifications while maintaining consistent drain efficiency.
+Guided Effigy is a Warframe augment mod for Chroma's Effigy ability. While Effigy is active and positioned, holding the ability key directs the Effigy to travel toward Chroma's aim point, dealing damage to every enemy it passes through. At rank 3, the Effigy deals 4,000 damage per second during transit and restores 5 Energy for each enemy it passes through. On arrival at the destination, the Effigy roars, stunning nearby enemies.
+
+Without this mod, Effigy is a stationary turret that Chroma must reposition manually by casting the ability again. Guided Effigy transforms it into a mobile offensive tool, enabling Chroma to redirect his Effigy mid-mission without the full cost of deactivating and recasting. The energy return per enemy passed scales the ability's sustainability in dense missions.
 
 ## Stats per rank
 
-Guided Effigy scales from rank 0 to rank 3, providing progressive enhancement to its core effect. Each rank increases the primary stat benefit while maintaining consistent drain cost throughout the scaling spectrum. The incremental scaling enables gradual power progression as players invest ranks into their builds.
-
-| Rank | Drain | Effect |
-|------|-------|--------|
-| 0    | 6     | Base effect activated            |
-| 1    | 6     | Enhanced effect (25%)             |
-| 2    | 6     | Enhanced effect (50%)             |
-| 3    | 6     | Enhanced effect (75%)             |
+| Rank | Damage per second in transit | Energy per enemy |
+|------|---:|---:|
+| 0 | 1,000 | 2 |
+| 1 | 2,000 | 3 |
+| 2 | 3,000 | 4 |
+| 3 | 4,000 | 5 |
 
 ## Acquisition
 
-Guided Effigy is obtained through mid-game star chart progression and enemy drops. Players encounter it on advanced planets or through relic farming in high-level missions. The mod becomes available through standard gameplay progression and marketplace trading once players reach sufficient mastery rank for its requirements.
+Guided Effigy is available through the Cephalon Suda syndicate offering. Players with sufficient standing can purchase it. The mod is tradeable through in-game trade and warframe.market.
 
-## Usage
+## Builds that use it
 
-Guided Effigy excels in ability-centric builds that leverage its enhancement for sustained performance. The mod pairs synergistically with other ability modifiers that amplify its core effect, enabling builds that prioritize consistent tactical flexibility. Integration with ability-focused warframes maximizes the value derived from its ranks while maintaining manageable drain requirements.
+Guided Effigy suits Chroma builds in open-world areas and Defense missions where enemy positions shift throughout the encounter. Standard Chroma builds that invest heavily in Duration to sustain Vex Armor benefit from Guided Effigy's ability to reposition Effigy without breaking the sustained buff cycle.
 
-Squad compositions benefit from Guided Effigy when paired with teammates who coordinate around its enhanced effect. Solo play demonstrates its value through consistent performance gains across extended endurance missions. The mod enables progression into higher difficulty content by providing incremental scaling that compounds with other ability enhancements.
-
-## Common builds
-
-Guided Effigy appears in diverse ability-centric builds across multiple warframes. Frames emphasizing ability damage and crowd control synergize particularly well with this mod. Endgame builds leverage the mod for sustained tactical advantage across survival and endless mission formats.
+Energy economy builds pair Guided Effigy with Arcane Energize or Trinity support to offset Effigy's ongoing energy drain, while using the energy return per enemy to partially sustain the repositioning cost. Power Strength investment raises the transit damage, which becomes meaningful against armored Sortie-level enemies during transit.
 
 ## Notes
 
-The effectiveness of Guided Effigy scales with ability usage frequency and team coordination. Optimal placement within build slots maximizes drain efficiency while maintaining sufficient energy management. Integration with ability duration and strength mods creates multiplicative benefit stacking.
+- The Effigy's arrival roar stun radius is fixed and not affected by Power Range mods.
+- Transit damage type is not documented in WFCD levelStats; refer to the Fandom wiki for elemental type details.
+- The Effigy resumes its stationary turret behavior after arriving at the aim point.
+- Effigy must already be deployed; Guided Effigy does not function on initial cast.
 
 ## Sources
 
-Guided Effigy was introduced as an augment mod enhancing core ability mechanics. WFCD provides canonical mod stats and scaling properties. The Fandom Wiki documents ability synergies and playstyle optimization strategies that maximize Guided Effigy effectiveness across different mission objectives and difficulty tiers.
+Stats sourced from WFCD Mods.json (levelStats fields, version accessed 2026-05-20). Transit behavior and stun radius notes confirmed via the Fandom wiki for Guided Effigy.

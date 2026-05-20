@@ -5,22 +5,23 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Augment enhancement"
+type: augment
+effect: "Crush Augment: Crush gains +50% casting speed. Surviving enemies lose [armor_strip]% armor and are immobilized for [duration]s."
 perRankStats:
   - rank: 0
-    stats: { effect_percent: 50, duration: 4 }
+    stats: { casting_speed: 50, armor_strip: 30, duration: 4 }
   - rank: 1
-    stats: { effect_percent: 50, duration: 5 }
+    stats: { casting_speed: 50, armor_strip: 45, duration: 5 }
   - rank: 2
-    stats: { effect_percent: 50, duration: 6 }
+    stats: { casting_speed: 50, armor_strip: 60, duration: 6 }
   - rank: 3
-    stats: { effect_percent: 50, duration: 7 }
+    stats: { casting_speed: 50, armor_strip: 75, duration: 7 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
     publisher: "WFCD"
+    note: "Stat values sourced from WFCD Mods.json levelStats."
   - url: "https://warframe.fandom.com/wiki/Fracturing_Crush"
     accessedAt: "2026-05-20"
     publisher: "Fandom"
@@ -29,37 +30,38 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Fracturing Crush is a specialized augment mod that enhances ability mechanics for warframe-class equipment. Its scaling properties make it valuable in mid-to-late game builds where ability synergy and tactical flexibility directly impact mission success rates. The mod's enhancement effect provides tangible benefits that compound with other ability modifications while maintaining consistent drain efficiency.
+Fracturing Crush is a Warframe augment mod for Mag's Crush ability. When equipped, Crush gains a 50% increase to casting speed, and surviving enemies have their armor permanently reduced by up to 75% at max rank while being immobilized for up to 7 seconds. The armor strip is a flat percentage reduction applied directly, making it highly effective against heavily armored Grineer and Corrupted units regardless of their base armor value.
+
+The mod is particularly valuable on Mag in Steel Path content, where armor scaling makes standard damage builds ineffective. Pairing Crush's armor strip with a Corrosive or Viral damage primary amplifies the value considerably. The immobilization effect also provides crowd control, keeping stripped enemies in place for follow-up attacks.
 
 ## Stats per rank
 
-Fracturing Crush scales from rank 0 to rank 3, providing progressive enhancement to its core effect. Each rank increases the primary stat benefit while maintaining consistent drain cost throughout the scaling spectrum. The incremental scaling enables gradual power progression as players invest ranks into their builds.
+Fracturing Crush scales from rank 0 to rank 3. The casting speed bonus is fixed at 50% across all ranks. Armor strip and immobilization duration increase with each rank.
 
-| Rank | Drain | Effect |
-|------|-------|--------|
-| 0    | 6     | Base effect activated            |
-| 1    | 6     | Enhanced effect (25%)             |
-| 2    | 6     | Enhanced effect (50%)             |
-| 3    | 6     | Enhanced effect (75%)             |
+| Rank | Casting speed | Armor strip | Immobilization |
+|------|---:|---:|---:|
+| 0 | +50% | 30% | 4s |
+| 1 | +50% | 45% | 5s |
+| 2 | +50% | 60% | 6s |
+| 3 | +50% | 75% | 7s |
 
 ## Acquisition
 
-Fracturing Crush is obtained through mid-game star chart progression and enemy drops. Players encounter it on advanced planets or through relic farming in high-level missions. The mod becomes available through standard gameplay progression and marketplace trading once players reach sufficient mastery rank for its requirements.
+Fracturing Crush is available through the Steel Meridian syndicate offering. It can also be traded between players via the in-game trade chat or warframe.market. The mod requires reaching a sufficient standing tier with Steel Meridian to purchase it directly.
 
-## Usage
+## Builds that use it
 
-Fracturing Crush excels in ability-centric builds that leverage its enhancement for sustained performance. The mod pairs synergistically with other ability modifiers that amplify its core effect, enabling builds that prioritize consistent tactical flexibility. Integration with ability-focused warframes maximizes the value derived from its ranks while maintaining manageable drain requirements.
+Fracturing Crush appears in armor-strip-focused Mag builds for Steel Path survival and defense missions. It is most commonly slotted alongside Power Strength mods such as Umbral Intensify and Blind Rage to maximize range for Crush. Some builds replace heavy range investment with Fracturing Crush's immobilization to compensate for shorter reach.
 
-Squad compositions benefit from Fracturing Crush when paired with teammates who coordinate around its enhanced effect. Solo play demonstrates its value through consistent performance gains across extended endurance missions. The mod enables progression into higher difficulty content by providing incremental scaling that compounds with other ability enhancements.
-
-## Common builds
-
-Fracturing Crush appears in diverse ability-centric builds across multiple warframes. Frames emphasizing ability damage and crowd control synergize particularly well with this mod. Endgame builds leverage the mod for sustained tactical advantage across survival and endless mission formats.
+Status-based squad builds bring Fracturing Crush so that Crush's armor strip enables teammates with slash or toxin procs to deal full damage without needing Corrosive themselves. The fixed 50% casting speed bonus makes Crush safe to use even in tight corridors.
 
 ## Notes
 
-The effectiveness of Fracturing Crush scales with ability usage frequency and team coordination. Optimal placement within build slots maximizes drain efficiency while maintaining sufficient energy management. Integration with ability duration and strength mods creates multiplicative benefit stacking.
+- The armor reduction stacks with Corrosive status and Corrosive Projection aura but does not exceed 100% total reduction.
+- Immobilization prevents enemies from moving but does not stop them from attacking or using ranged abilities.
+- The casting speed bonus applies to the full Crush animation, not just the initial windup.
+- Steel Meridian alignment is required to purchase; New Loka and Arbiters of Hexis are opposing syndicates.
 
 ## Sources
 
-Fracturing Crush was introduced as an augment mod enhancing core ability mechanics. WFCD provides canonical mod stats and scaling properties. The Fandom Wiki documents ability synergies and playstyle optimization strategies that maximize Fracturing Crush effectiveness across different mission objectives and difficulty tiers.
+Stats sourced from WFCD Mods.json (levelStats fields, version accessed 2026-05-20). Ability interaction notes drawn from the Fandom wiki page for Fracturing Crush.
