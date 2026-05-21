@@ -2,7 +2,7 @@
 slug: zarr
 name: "Zarr"
 type: primary
-category: "Rifle"
+category: "Launcher"
 masteryRank: 7
 damage:
   impact: 25
@@ -10,7 +10,6 @@ damage:
   slash: 0
   elemental:
     blast: 175
-
 criticalChance: 0.17
 criticalMultiplier: 2.5
 statusChance: 0.28999996
@@ -21,13 +20,14 @@ accuracy: 100
 acquisition:
   source: "Market"
   blueprintLocations:
-    - "Market"
-  credits: 30000
+    - "Market (credits)"
+  cost: { credits: 30000 }
   buildTimeHours: 24
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-21"
     publisher: "WFCD"
+    note: "Damage, crit, and status values sourced from WFCD Primary.json"
   - url: "https://warframe.fandom.com/wiki/Zarr"
     accessedAt: "2026-05-21"
     publisher: "Fandom"
@@ -36,17 +36,53 @@ updatedAt: "2026-05-21"
 
 ## Overview
 
-The Zarr stands as a formidable rifle choice within Warframe's extensive weaponry ecosystem and arsenal options. Available to Tenno operatives throughout the vast solar system, this primary represents a tested and proven selection for players seeking consistent, reliable performance across varied mission types. With 200 total damage per shot, the Zarr delivers meaningful and measurable destructive output across diverse mission contexts, enemy compositions, and difficulty scaling.
+Zarr is a Grineer-designed cannon that fires explosive rounds with a large blast-damage component. At 175 blast damage per projectile, it deals the majority of its damage as an elemental type from the moment it fires, bypassing the need to combine two elemental mods to achieve blast. This makes it efficient at applying Blast procs, which knock down enemies and provide crowd-control utility alongside raw damage.
 
-The weapon's critical characteristics present 17% critical chance combined strategically with a 2.5x critical multiplier, fundamentally rewarding skilled players who develop and maintain precise aiming habits and master tactical positioning throughout extended combat encounters. Supporting this critical potential, the weapon features 28% status chance, creating direct opportunities for elemental synergy and crowd control through thoughtful, strategic mod selection and loadout customization. This combination of critical probability and status likelihood enables flexible, adaptable build philosophy, granting players the freedom to customize their tactical approach to match specific, unique mission requirements and squad composition needs.
+The 3-round magazine and 2.25-second reload create a measured fire pace. Each shot is weighty, rewarding players who aim at tight enemy groups to maximize the area-of-effect damage. The 100-accuracy rating means projectiles land exactly on target when aiming down sights, unlike some launchers that arc or have significant drop.
 
-The Zarr exemplifies Tenno engineering and craftsmanship at its finest: combining exceptional durability with tactical adaptability and lethal, proven effectiveness in combat situations. Whether you employ it as your primary combat tool or as a specialized support weapon option, the Zarr demonstrates remarkable versatility across various playstyles and mission types. Novice players find it immediately welcoming and forgiving during their early progression through the star chart, while highly experienced operatives appreciate the meaningful optimization depth available through deliberate, strategic mod selection and synergistic build construction.
+Zarr also has an alternate fire mode: switching to canister mode fires a bouncing projectile that explodes into multiple submunitions on contact with a surface. This secondary mode trades single-target focused damage for wider area coverage, useful when enemies scatter across a large area or when bouncing submunitions around cover is tactically relevant.
 
-Mastery with the Zarr emerges through dedicated, consistent practice and experimentation across varied mission types, distinct enemy factions, and cooperative squadmates with different abilities. The true power and potential of the Zarr reveals itself when modding choices align perfectly with your chosen warframe, assigned squad roles, and specific tactical objectives.
+The 29% status chance supports status proc builds, and the 2.5x critical multiplier makes moderate-crit builds competitive once the 17% crit chance is pushed higher with mods. At Mastery Rank 7, Zarr is accessible to mid-game players and provides meaningful area damage output without requiring high-tier resources.
 
 ## Stats
 
-The Zarr exhibits these performance characteristics when equipped at maximum rank, before any modifications are applied or installed:
-
 | Stat | Value |
-| 
+|---|---:|
+| Impact | 25.0 |
+| Puncture | 0.0 |
+| Slash | 0.0 |
+| Blast (elemental) | 175.0 |
+| Critical chance | 17% |
+| Critical multiplier | 2.5x |
+| Status chance | 29% |
+| Fire rate | 1.67 shots/s |
+| Magazine | 3 |
+| Reload | 2.25 s |
+| Accuracy | 100 |
+| Mastery rank | 7 |
+
+## Acquisition
+
+The Zarr blueprint is available from the in-game Market for 30,000 credits. Build time in the Foundry is 24 hours. Component resources needed are standard Grineer-tier materials obtainable from mid-game planets.
+
+## Variants
+
+Zarr has no prime variant as of the current game version.
+
+## Recommended builds
+
+**Blast-status build:** The built-in 175 blast damage already maximizes the primary elemental type. Adding Wildfire (Heat) and Malignant Force (Toxin) provides two additional status types alongside blast, maximizing proc variety for Condition Overload on a companion melee. Reaching 60-70% status chance per shot triggers consistent procs on direct hits. Firestorm extends the blast radius for wider area coverage.
+
+**Crowd-control canister build:** Use the canister alternate fire with Firestorm to expand blast radius and increase area coverage. This build converts Zarr into a room-clearing tool in low-to-mid Steel Path content. The tradeoff is higher self-damage risk if enemies are engaged at close range, though self-damage was removed globally in an earlier update.
+
+**Moderate crit build:** Point Strike and Vital Sense push crit chance from 17% to approximately 50%, reaching reliable yellow-crit territory. Combined with the 2.5x multiplier and Heavy Caliber for raw damage amplification, this build deals strong burst damage per shot against single targets. Best suited to assassination missions where area-of-effect is less relevant.
+
+Avoid dedicating more than two mod slots to crit without a Riven -- the 17% base crit chance requires significant investment before consistent crits emerge.
+
+## Notes
+
+- Zarr's alternate fire (canister mode) is toggled with the alternate-fire key. Each canister bounces once before splitting into submunitions, effective in interior environments where ceiling height is sufficient.
+- Blast status (knockdown) applies crowd control that briefly interrupts enemy attacks, providing safety value in addition to damage.
+- The weapon cannot equip bow-only mods such as Thunderbolt, but launcher-compatible mods work normally.
+- Self-damage from Zarr's explosions was removed in the update that eliminated self-damage globally, making aggressive close-range use safe.
+- The 3-round magazine cycles quickly given the short reload, enabling maintained suppression of chokepoints with careful reload timing.

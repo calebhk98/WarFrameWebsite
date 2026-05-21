@@ -10,7 +10,6 @@ damage:
   slash: 13.8
   elemental:
     toxin: 61
-
 criticalChance: 0.050000001
 criticalMultiplier: 2.3
 statusChance: 0.30000001
@@ -21,13 +20,14 @@ accuracy: 9.7560978
 acquisition:
   source: "Market"
   blueprintLocations:
-    - "Market"
-  credits: 20000
+    - "Market (credits)"
+  cost: { credits: 20000 }
   buildTimeHours: 12
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-21"
     publisher: "WFCD"
+    note: "Damage, crit, and status values sourced from WFCD Secondary.json"
   - url: "https://warframe.fandom.com/wiki/Zymos"
     accessedAt: "2026-05-21"
     publisher: "Fandom"
@@ -36,17 +36,51 @@ updatedAt: "2026-05-21"
 
 ## Overview
 
-The Zymos stands as a formidable pistol choice within Warframe's extensive weaponry ecosystem and arsenal options. Available to Tenno operatives throughout the vast solar system, this secondary represents a tested and proven selection for players seeking consistent, reliable performance across varied mission types. With 84 total damage per shot, the Zymos delivers meaningful and measurable destructive output across diverse mission contexts, enemy compositions, and difficulty scaling.
+Zymos is a Helminth-design pistol introduced with the Deimos expansion. The weapon fires spores that latch onto enemies and detonate into a cloud of spores on kill, spreading toxic damage to nearby targets. This propagation mechanic makes Zymos distinct from conventional secondaries and gives it unique value in dense enemy scenarios where one kill generates secondary damage to surrounding enemies.
 
-The weapon's critical characteristics present 5% critical chance combined strategically with a 2.3x critical multiplier, fundamentally rewarding skilled players who develop and maintain precise aiming habits and master tactical positioning throughout extended combat encounters. Supporting this critical potential, the weapon features 30% status chance, creating direct opportunities for elemental synergy and crowd control through thoughtful, strategic mod selection and loadout customization. This combination of critical probability and status likelihood enables flexible, adaptable build philosophy, granting players the freedom to customize their tactical approach to match specific, unique mission requirements and squad composition needs.
+The base damage profile centers on the built-in 61 toxin damage, with minimal impact (9.2) and slash (13.8) components. The toxin is a native damage type, meaning it deals toxin damage directly and combines with Cold to form Viral or with Heat to form Gas. Gas damage generates a cloud that deals toxin damage in an area of effect, synergizing with Zymos's spore-propagation mechanic. Gas clouds spread additional toxic damage, compounding the on-kill spread effect.
 
-The Zymos exemplifies Tenno engineering and craftsmanship at its finest: combining exceptional durability with tactical adaptability and lethal, proven effectiveness in combat situations. Whether you employ it as your primary combat tool or as a specialized support weapon option, the Zymos demonstrates remarkable versatility across various playstyles and mission types. Novice players find it immediately welcoming and forgiving during their early progression through the star chart, while highly experienced operatives appreciate the meaningful optimization depth available through deliberate, strategic mod selection and synergistic build construction.
+The 30% status chance enables reliable proc application, and toxin procs deal damage over time that bypasses shields. Against Corpus targets, the toxin damage reaches health pools directly, making Zymos particularly effective against shield-reliant enemies without requiring separate shield-stripping. The spore-spread mechanic also applies the weapon's elemental damage type to the secondary targets, allowing procs to chain through densely packed groups.
 
-Mastery with the Zymos emerges through dedicated, consistent practice and experimentation across varied mission types, distinct enemy factions, and cooperative squadmates with different abilities. The true power and potential of the Zymos reveals itself when modding choices align perfectly with your chosen warframe, assigned squad roles, and specific tactical objectives.
+Zymos's 5% critical chance effectively eliminates crit builds as a viable option. The 2.3x multiplier is wasted at 5% base chance. Status and elemental damage strategies are the only build directions that extract meaningful value from this weapon.
 
 ## Stats
 
-The Zymos exhibits these performance characteristics when equipped at maximum rank, before any modifications are applied or installed:
-
 | Stat | Value |
-| 
+|---|---:|
+| Impact | 9.2 |
+| Puncture | 0.0 |
+| Slash | 13.8 |
+| Toxin (elemental) | 61.0 |
+| Critical chance | 5% |
+| Critical multiplier | 2.3x |
+| Status chance | 30% |
+| Fire rate | 1.33 shots/s |
+| Magazine | 17 |
+| Reload | 3.2 s |
+| Accuracy | 9.8 |
+| Mastery rank | 11 |
+
+## Acquisition
+
+The Zymos blueprint is available from the in-game Market for 20,000 credits. Build time is 12 hours. Resources required are standard mid-game materials, and no rare components are needed.
+
+## Variants
+
+Zymos has no prime variant as of the current game version.
+
+## Recommended builds
+
+**Gas-spread build:** Equip Thermite Rounds (Heat) to combine with the built-in toxin, creating Gas damage. Gas procs generate clouds on proc application, and each cloud deals toxin damage per second to enemies within range. Combined with the Zymos on-kill spore spread, this creates cascading damage zones as enemies die. Add Barrel Diffusion and Lethal Torrent for multishot, doubling effective proc frequency. This build excels in crowd-dense missions such as Survival and Defense.
+
+**Viral-toxin build:** Equip Frostbite (Cold) to combine with toxin for Viral. Viral halves enemy effective health pools, then subsequent toxin procs from Zymos shots deal full damage to the reduced health pool. At 30% status chance with multishot, maintaining Viral stacks on priority targets takes 4-6 shots. This primer role synergizes with a high-damage melee that benefits from the 200% health vulnerability Viral provides against non-boss enemies.
+
+Because Zymos fires at 1.33 shots per second, it functions better as a proc applicator and secondary support tool than a primary damage dealer. Pair it with a high-damage primary or melee to exploit the debuffs Zymos applies.
+
+## Notes
+
+- The accuracy value of 9.8 is extremely low, indicating significant spread. Zymos is designed for close-range engagements where the spore spread compensates for imprecise targeting.
+- Toxin damage bypasses shields, making Zymos effective against Corpus enemies without requiring specific anti-shield mods.
+- The on-kill spore propagation mechanic scales with weapon mods -- higher damage Zymos shots yield proportionally larger spore clouds on kill.
+- The 3.2-second reload is slow for a 17-round magazine; players should reload during movement between objectives rather than mid-combat where possible.
+- Zymos's Helminth design aesthetic connects it thematically to the Infested and Deimos content where the weapon was introduced, matching the Infested visual language of the Necraloid syndicate.
