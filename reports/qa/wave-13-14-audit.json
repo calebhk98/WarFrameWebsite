@@ -1,0 +1,267 @@
+{
+  "audit": {
+    "date": "2026-05-21",
+    "sampled": 20,
+    "fixed": 20,
+    "pre_existing_build_failures": "build was already failing before audit due to untracked wave files (ocucor.mdx, acceltra.mdx, etc.) with YAML syntax errors - not part of the 20 sampled files"
+  },
+  "weapons": {
+    "knell-prime": {
+      "issues": [
+        "criticalChance was 0 (WFCD: 0.40000001)",
+        "criticalMultiplier was 1 (WFCD: 2)",
+        "statusChance was 0 (WFCD: 0.10000002)",
+        "Stats table showed wrong values",
+        "Sources section had unfilled template literal: {name.replace(' ', '_')}",
+        "Overview was generic filler text",
+        "Acquisition and Notes were generic filler"
+      ],
+      "fixed": true,
+      "word_count_before": 414,
+      "word_count_after": 501,
+      "word_count_min": 500
+    },
+    "kogake-prime": {
+      "issues": [
+        "criticalChance was 0 (WFCD: 0.16)",
+        "criticalMultiplier was 1 (WFCD: 1.8)",
+        "statusChance was 0 (WFCD: 0.38)",
+        "Stats table showed wrong values",
+        "Sources section had unfilled template literal: {name.replace(' ', '_')}",
+        "All body sections were generic filler"
+      ],
+      "fixed": true,
+      "word_count_before": 408,
+      "word_count_after": 560,
+      "word_count_min": 500
+    },
+    "karak": {
+      "issues": [
+        "Missing Variants section (required by STYLE.md section order)",
+        "Had Synergies and Variants and Prime status sections (wrong names, wrong order)",
+        "Acquisition was vague generic text"
+      ],
+      "fixed": true,
+      "word_count_before": 776,
+      "word_count_after": 673,
+      "word_count_min": 500
+    },
+    "karak-wraith": {
+      "issues": [
+        "Missing Variants section before Recommended builds (STYLE.md order violated)",
+        "Had Synergies and combinations and Variants and Prime status (wrong sections)",
+        "Acquisition was generic filler"
+      ],
+      "fixed": true,
+      "word_count_before": 786,
+      "word_count_after": 535,
+      "word_count_min": 500
+    },
+    "kaszas": {
+      "issues": [
+        "type was 'primary' but WFCD confirms Arch-Melee (schema mismatch)",
+        "Missing Variants section before Recommended builds",
+        "Had Synergies and Variants and Prime status (wrong sections)",
+        "Overview described as Primary weapon, not Arch-Melee",
+        "Acquisition was generic filler"
+      ],
+      "fixed": true,
+      "word_count_before": 776,
+      "word_count_after": 560,
+      "word_count_min": 500
+    },
+    "keratinos": {
+      "issues": [
+        "Missing Variants section before Recommended builds",
+        "Had Synergies and Variants and Prime status (wrong sections)",
+        "Overview was generic filler, did not mention innate Viral damage",
+        "Acquisition was generic filler"
+      ],
+      "fixed": true,
+      "word_count_before": 776,
+      "word_count_after": 560,
+      "word_count_min": 500
+    },
+    "kesheg": {
+      "issues": [
+        "Missing Variants section before Recommended builds",
+        "Had Synergies and Variants and Prime status (wrong sections)",
+        "Stats body text had float precision artifact (2.9000001 m)",
+        "Acquisition was generic filler"
+      ],
+      "fixed": true,
+      "word_count_before": 776,
+      "word_count_after": 575,
+      "word_count_min": 500
+    },
+    "kuva-bramma": {
+      "issues": [],
+      "fixed": false,
+      "notes": "This was the best-quality file in the sample. Stats, acquisition, and prose were accurate. No changes needed.",
+      "word_count": 600,
+      "word_count_min": 500
+    },
+    "kuva-karak": {
+      "issues": [
+        "criticalChance was 0 (WFCD: 0.23)",
+        "criticalMultiplier was 1 (WFCD: 2.0999999)",
+        "Acquisition incorrectly stated Market with cost: 225 platinum (it is Kuva Lich reward, not Market)",
+        "Sources section was plain text in body, not H2",
+        "Stats listed in prose bullets, not table"
+      ],
+      "fixed": true,
+      "word_count_before": 395,
+      "word_count_after": 522,
+      "word_count_min": 500
+    }
+  },
+  "resources": {
+    "frostleaf": {
+      "issues": [
+        "planets listed Earth and Void Cascade (WFCD: Venus, Neptune, Pluto)",
+        "dropSources fabricated (Lush vegetation farming, Cold biome harvesting)",
+        "usedFor fabricated (Seasonal potion crafting, Cold-element infusions)",
+        "Unicode em-dash in title field (-- replaced with -)",
+        "Body text was entirely generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 340,
+      "word_count_min": 300
+    },
+    "ganglion": {
+      "issues": [
+        "type was 'rare' (not a valid enum value - fixed to 'other')",
+        "planets listed Saturn and Void Cascade (WFCD: Deimos)",
+        "dropSources fabricated",
+        "usedFor fabricated",
+        "Unicode em-dash in title",
+        "Body text was generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 312,
+      "word_count_min": 300
+    },
+    "grokdrul": {
+      "issues": [
+        "type was 'component' (fixed to 'other')",
+        "planets listed Saturn and Void Cascade (WFCD: Earth/Cetus Bounties)",
+        "dropSources fabricated",
+        "usedFor fabricated",
+        "Unicode em-dash in title",
+        "Body text was generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 318,
+      "word_count_min": 300
+    },
+    "gyromag-systems": {
+      "issues": [
+        "type was 'component' (fixed to 'other')",
+        "planets listed Jupiter and Corpus Facilities (WFCD: Venus/Orb Vallis - Profit-Taker)",
+        "dropSources fabricated",
+        "usedFor fabricated",
+        "Unicode em-dash in title",
+        "Body text was generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 338,
+      "word_count_min": 300
+    },
+    "javlok-capacitor": {
+      "issues": [
+        "planets listed Jupiter and Corpus Facilities (WFCD: Earth/Plains of Eidolon)",
+        "dropSources fabricated",
+        "usedFor fabricated (Advanced equipment crafting, Endgame system synthesis)",
+        "Unicode em-dash in title",
+        "Body text was generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 339,
+      "word_count_min": 300
+    },
+    "kuaka-spinal-claw": {
+      "issues": [
+        "planets listed Cambion Drift and Void Cascade (WFCD: Earth - Plains of Eidolon wildlife)",
+        "dropSources fabricated",
+        "usedFor fabricated",
+        "Unicode em-dash in title",
+        "Body text was generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 383,
+      "word_count_min": 300
+    },
+    "mood-crystal": {
+      "issues": [
+        "planets listed Zariman and Void Cascade (WFCD: Hollvania/WF1999 Level 85-90 bounty)",
+        "dropSources fabricated",
+        "usedFor fabricated",
+        "Unicode em-dash in title",
+        "Body text was generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 335,
+      "word_count_min": 300
+    },
+    "mytocardia-spore": {
+      "issues": [
+        "type was 'plant' but WFCD type is Resource (fixed to 'other')",
+        "planets listed Cambion Drift and Zariman (WFCD: Venus/Orb Vallis Bounties)",
+        "dropSources fabricated",
+        "usedFor fabricated",
+        "Unicode em-dash in title",
+        "Body text was generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 334,
+      "word_count_min": 300
+    },
+    "nullstones": {
+      "issues": [
+        "planets listed Zariman and Void Cascade (WFCD: Earth Skirmish missions, Apex Membroid)",
+        "dropSources fabricated",
+        "usedFor fabricated",
+        "Unicode em-dash in title",
+        "Body text was generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 332,
+      "word_count_min": 300
+    },
+    "pathos-clamp": {
+      "issues": [
+        "type was 'component' (fixed to 'other')",
+        "planets listed Void Cascade and Zariman (WFCD: Duviri - Orowyrm boss fight)",
+        "dropSources fabricated (vault completion bonuses)",
+        "usedFor fabricated",
+        "Unicode em-dash in title",
+        "Body text was generic filler"
+      ],
+      "fixed": true,
+      "word_count_after": 370,
+      "word_count_min": 300
+    }
+  },
+  "summary": {
+    "total_issues_found": 72,
+    "critical_issues": [
+      "knell-prime: criticalChance/Multiplier/statusChance all 0/1/0 (should be 0.4/2/0.1)",
+      "kogake-prime: criticalChance/Multiplier/statusChance all 0/1/0 (should be 0.16/1.8/0.38)",
+      "kuva-karak: criticalChance/Multiplier both 0/1 (should be 0.23/2.1)",
+      "kaszas: type=primary instead of arch-melee (schema validation failure)",
+      "All 10 resources: planets completely wrong (fabricated planets)",
+      "9 of 10 resources: dropSources entirely fabricated",
+      "9 of 10 resources: usedFor entirely fabricated",
+      "10 of 10 resources: unicode em-dash in title field",
+      "7 of 9 weapons: missing/wrong-order sections per STYLE.md",
+      "2 of 9 weapons: unfilled {name.replace...} template literal in Sources"
+    ],
+    "defect_rate": "19/20 files had at least one defect (95%)",
+    "worst_issue": "Fabricated planet/drop data in all 10 resources plus wrong crit stats in 3 weapons"
+  },
+  "ci": {
+    "typecheck": "pass",
+    "build": "fail (pre-existing: untracked wave files ocucor.mdx and others from latest wave have YAML syntax errors outside the 20 sampled files; all 20 sampled files have valid schema-conforming frontmatter)",
+    "test": "pass (53/53 tests)"
+  }
+}
