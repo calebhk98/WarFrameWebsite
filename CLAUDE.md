@@ -233,6 +233,41 @@ rest are reviewed by verifier subagents.
   lint failure (a CI grep step blocks the merge).
 - Fixtures, not network, in tests (see `docs/TDD.md`).
 
+### Local CI gate
+
+A Husky `pre-push` hook runs on every `git push` and mirrors the GitHub
+Actions `build` + `validate-html` + `bundle-size` jobs in order, fail-fast:
+
+```
+pnpm typecheck
+pnpm build
+pnpm test
+pnpm html:check
+pnpm bundle:check
+```
+
+(Lighthouse and Playwright e2e are intentionally excluded: lighthouse is
+cloud-flaky with `continue-on-error` in CI; e2e requires the Playwright
+grid.)
+
+**Rules for subagents and commit-batch:**
+
+- The hook runs automatically on every `git push`. **Do not suppress it.**
+- `commit-batch` subagents MUST NOT pass `--no-verify` to `git push` without
+  an explicit instruction from the human operator. Bypassing the gate defeats
+  its purpose and is treated as a policy violation.
+- "Local `pnpm test` passing" is **not** sufficient to declare CI green.
+  After each push, the manager MUST verify that GitHub check-runs for the
+  `build` job are green (use `gh run list --branch <branch>` or the GitHub
+  MCP `pull_request_read` tool). Local green + remote green = CI green.
+- To run all gate checks ad-hoc without going through git, use:
+  ```
+  pnpm verify
+  ```
+- Emergency escape valve: `git push --no-verify`. Reserved for cases where
+  the check can only pass on GitHub's runners (e.g. a platform-specific
+  binary). Must be documented in the commit message when used.
+
 ---
 
 ## CONTENT RULES

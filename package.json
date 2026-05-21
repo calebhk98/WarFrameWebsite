@@ -21,7 +21,9 @@
     "import-wfcd": "tsx scripts/import-wfcd.ts",
     "import": "tsx scripts/import-wfcd.ts",
     "bundle:check": "bash scripts/check-bundle-size.sh",
-    "html:check": "bash scripts/validate-html.sh"
+    "html:check": "bash scripts/validate-html.sh",
+    "verify": "pnpm typecheck && pnpm build && pnpm test && pnpm html:check && pnpm bundle:check",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -43,6 +45,7 @@
     "@testing-library/dom": "^10.4.0",
     "@types/node": "^22.10.6",
     "html-validate": "^11.2.0",
+    "husky": "^9.1.7",
     "pagefind": "^1.3.0",
     "tsx": "^4.22.2",
     "vitest": "^2.1.8"

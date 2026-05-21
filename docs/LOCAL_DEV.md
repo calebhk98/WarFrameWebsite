@@ -136,7 +136,48 @@ This is the closest local equivalent of a production deploy.
 
 ---
 
-## 9. Verify a single content file
+## 9. Local CI gate (pre-push hook)
+
+A Husky `pre-push` hook fires automatically on every `git push` and runs the
+same checks that GitHub Actions `build`, `validate-html`, and `bundle-size`
+jobs run. This catches failures locally before they burn cloud minutes.
+
+The hook runs in order, fail-fast:
+
+```
+pnpm typecheck   # astro check + tsc --noEmit
+pnpm build       # astro build + pagefind indexing
+pnpm test        # vitest run
+pnpm html:check  # html-validate against dist/
+pnpm bundle:check # bundle size assertion
+```
+
+**Run the full gate manually** (without going through git):
+
+```
+pnpm verify
+```
+
+This is identical to what the hook runs. Use it to pre-flight before pushing,
+or after pulling changes to confirm nothing broke.
+
+**Emergency skip** (rare — document in commit message when used):
+
+```
+git push --no-verify
+```
+
+Reserved for situations where only GitHub's runners can complete the check.
+Subagents must not use `--no-verify` without explicit instruction from the
+human operator.
+
+The hook is set up automatically by `pnpm install` via the `prepare` script.
+If you cloned the repo and the hook is missing, run `pnpm install` again (or
+`pnpm exec husky`).
+
+---
+
+## 10. Verify a single content file
 
 ```
 make verify COLLECTION=warframes SLUG=ash
@@ -150,7 +191,7 @@ fail.
 
 ---
 
-## 10. Generate a content stub
+## 11. Generate a content stub
 
 ```
 make stub COLLECTION=warframes SLUG=ash
@@ -163,7 +204,7 @@ Writes an MDX skeleton with frontmatter pre-filled from WFCD plus
 
 ---
 
-## 11. Troubleshooting
+## 12. Troubleshooting
 
 **`pnpm: command not found`** — corepack is not enabled. Run
 `corepack enable && corepack prepare pnpm@latest --activate`.
@@ -206,7 +247,7 @@ re-apply, and dispatch a `commit-batch` subagent.
 
 ---
 
-## 12. Environment variables
+## 13. Environment variables
 
 The site needs no secrets to build or run locally. The following
 optional variables exist:
@@ -222,7 +263,7 @@ Never commit `.env`; the `.gitignore` excludes it.
 
 ---
 
-## 13. Useful one-liners
+## 14. Useful one-liners
 
 ```
 # List queued slugs across all collections:
@@ -242,7 +283,7 @@ rm -rf data/cache
 
 ---
 
-## 14. Where to file issues
+## 15. Where to file issues
 
 - **Bug?** Open `kind:bug` via the issue template
   `.github/ISSUE_TEMPLATE/bug.yml`.
