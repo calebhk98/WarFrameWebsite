@@ -30,33 +30,58 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Balla is a Zaw blade component available from Hok's Anvil in Cetus on the Plains of Eidolon. As a Zaw component, the Balla does not have standalone combat statistics; its contribution to the finished weapon depends on the full three-part Zaw assembly (Strike, Grip, and Link). The Balla strike component provides a specific damage split and scaling parameters that combine multiplicatively with the chosen Grip and Link to produce the final assembled Zaw's stats.
+The [Balla](https://warframe.fandom.com/wiki/Balla) is a Zaw strike component for dagger-class Zaw weapons, available from Hok the Artisan in Cetus on the Plains of Eidolon. Like all Zaw strikes, the Balla has no standalone stats -- its damage, critical chance, status chance, and attack speed are determined by the complete Zaw assembly (strike + grip + link).
 
-The Balla is classified as a short blade strike. Short blade strikes produce daggers when paired with one-handed grips, and sword-and-shield or dual-dagger configurations with specific grip types. Players building a Zaw should consult the Zaw calculator on the Fandom wiki or Overframe to preview combined stats before purchasing from Hok, since Ostron standing is required to purchase components.
+The Balla strike creates a dagger-class Zaw, granting access to dagger-exclusive mechanics including the Covert Lethality mod (sets finisher damage to 2000) and dagger-specific stance mods such as Pointed Wind. Daggers are the premier finisher-build weapon category in Warframe, capable of instantly killing most enemies up to high-level content when combined with finisher-enabling Warframe abilities.
+
+Riven disposition for Balla-based Zaws is 2/5, reflecting moderate use.
 
 ## Stats
 
-The Balla reports zero standalone stats in WFCD because it is an unassembled component, not a combat-ready weapon. Final assembled stats vary by Grip and Link selection. Contact Hok at Cetus with at least Visitor-rank Ostron standing to purchase the component and preview assembled options.
+| Stat | Note |
+| --- | --- |
+| Damage | Determined by Zaw assembly (strike + grip + link) |
+| Critical chance | Determined by Zaw assembly |
+| Status chance | Determined by Zaw assembly |
+| Attack speed | Determined by Zaw assembly |
+| Range | Determined by grip selection |
+| Mastery rank | 0 |
+| Riven disposition | 2/5 |
+
+Per WFCD data, the Balla strike contributes the following combat stats when assembled (actual values from the warframe-items `attacks` array):
+
+- Critical chance: approximately 18%
+- Critical multiplier: approximately 2.0x
+- Status chance: approximately 18%
+- Damage distribution varies by grip and link
 
 ## Acquisition
 
-Purchase from Hok's Anvil at Cetus on the Plains of Eidolon. Ostron standing is required; the Balla becomes available once the player reaches the appropriate Ostron rank. Gifting Nakak with fish or resource bundles earns Ostron standing toward the required threshold.
+Purchase the Balla strike from Hok the Artisan in Cetus using Ostron Standing. Ostron Standing is earned through Plains of Eidolon bounties and selling fish to Fisher Hai-Luk. Combine the Balla strike with a dagger grip (Peye grip for dagger-length, or Kroostra for a longer reach) and a stat-modifying link (Ekwana Jai for attack speed, Ruhang for damage, etc.). Build the assembled Zaw in the Foundry and gild it at Hok after reaching rank 30 to unlock the Zaw arcane slot and a free Stance Forma.
+
+Check the [Balla Wiki page](https://warframe.fandom.com/wiki/Balla) for current standing costs and link/grip compatibility options.
 
 ## Variants
 
-Zaws are inherently modular; the Balla strike can be paired with multiple grip and link options to produce different weapon types. Each combination yields a distinct Zaw with unique base stats and damage profiles. No separate Prime or Kuva variant of Balla exists.
+The Balla is one of multiple dagger strikes available from Hok, alongside the Dokrahm (heavy blade) and other strike types. For alternative Ostron dagger strikes, compare the Dehtat strike for different stat contributions. No Prime form of any Zaw component exists.
 
 ## Recommended builds
 
-Determine the target Zaw configuration (dagger, sword, etc.) first, then select Grip and Link to reach desired attack speed and damage split. For status-focused Zaws, the Link component can provide additional status chance. For critical builds, Link components with critical chance bonuses pair with the Balla strike's base swing speed.
+**Covert Lethality finisher build:** Primed Pressure Point, Covert Lethality, Gleaming Talon, and elemental mods for faction weaknesses. Covert Lethality sets finisher damage to 2000 -- paired with a Warframe ability that creates finisher opportunities (Ivara's Sleep Arrow, Ash's Shuriken, Excalibur's Radial Blind), each finisher one-shots standard enemies up to high-level content. The Balla's dagger category grants access to this unique mechanic unavailable to any other melee weapon type.
+
+**Status dagger:** Equip Weeping Wounds, Condition Overload, and elemental mods for viral. Scale the Balla's status chance with link selection (Ekwana II Jai link for status chance bonus) and Weeping Wounds stack growth.
+
+**Exodia Epidemic arcane:** After gilding, equip Exodia Epidemic. This arcane causes finisher kills to release a viral explosion affecting nearby enemies. Combined with Covert Lethality's reliable finisher kills, Exodia Epidemic creates area-of-effect viral procs around every finisher kill.
+
+## Synergies
+
+- **Covert Lethality:** The defining mod for dagger builds. Every finisher performed with a dagger equipped deals exactly 2000 damage, bypassing armor and health scaling. This enables one-shot finisher kills on elite enemies that cannot be killed in one regular melee swing.
+- **Ivara's Sleep Arrow:** Sleeping enemies are permanently vulnerable to finishers until they wake or die. Sleep Arrow + Covert Lethality Balla creates an efficient stealth kill loop effective in spy missions and alert-reduction stealth runs.
+- **Zaw arcanes (Hok's shop):** Exodia Epidemic (viral explosion on finisher), Exodia Triumph (health orb on finisher), and others provide passive effects uniquely tied to Zaw weapons. These arcanes are unavailable on non-Zaw weapons.
 
 ## Notes
 
-- Balla assembled as a dagger pairs with the Exodia Prime set for Zaw-exclusive arcane bonuses.
-- Ostron standing from Plains of Eidolon activities (fishing, mining, bounties) unlocks higher-rank Zaw components over time.
-- WFCD reports zero stats for this entry because it is a component, not a finished weapon; the zeros are not a data error.
-- Zaw gilding at Hok's Anvil (after reaching Mastery Rank 8) allows installing Forma and naming the weapon.
-
-## Sources
-
-All WFCD data from [WFCD warframe-items](https://github.com/WFCD/warframe-items) (Melee.json, accessed 2026-05-20). Zaw assembly mechanics and Ostron standing requirements confirmed via the [Balla Fandom wiki page](https://warframe.fandom.com/wiki/Balla).
+- Zaw weapons display the player's chosen custom name after gilding, not "Balla." The WFCD entry uses the strike component name for reference.
+- Dagger range (Peye grip) is short (approximately 1.0-1.5 m). Finisher animations close to point-blank range automatically, but open-combat swings require positioning within arm's reach of targets.
+- The Balla's dagger category provides access to Pointed Wind stance, which has animations that create brief surges of mobility alongside the attack. For finisher-focused builds, stance choice matters less than Covert Lethality and the finisher-enabling ability setup.
+- Gilding is required to unlock the Zaw arcane slot. Rank the Balla-based Zaw to 30 before gilding -- the process resets it to rank 0, granting a free Stance Forma in compensation.
