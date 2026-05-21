@@ -147,9 +147,9 @@ not count).
 | arcanes               | 300           |
 | quests                | 500           |
 | factions              | 500           |
-| syndicates            | 400           |
+| syndicates            | 500           |
 | relics                | 300           |
-| missions              | 400           |
+| missions              | 500           |
 
 Falling below the floor is a FAIL; padding with filler is also a FAIL caught
 by Tier-2 QA. Add real information.
