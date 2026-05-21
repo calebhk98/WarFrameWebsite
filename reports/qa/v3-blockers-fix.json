@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "fix_date": "2026-05-21",
+    "fixer": "v3-blockers-fix",
+    "source_audit": "reports/qa/wide-audit-final-v3.json",
+    "ci_result": "pass",
+    "shippable": "yes"
+  },
+  "items_fixed": "7/7",
+  "bulk_weapon_tables_regenerated": 104,
+  "fix_detail": {
+    "1_vectis": {
+      "file": "src/content/weapons/vectis.mdx",
+      "action": "Rewrote truncated body. Body was ending mid-table after '## Stats'. Completed Stats table with WFCD values (Impact 90, Puncture 78.75, Slash 56.25, total 225, crit 25%, mult 2.0x, status 30%), added Acquisition, Variants (Vectis Prime details from WFCD: MR14, 350 damage, 30% crit/status, 2-round magazine), Recommended builds, Notes sections. Category corrected to 'Sniper Rifle'.",
+      "word_count": 754,
+      "word_count_pass": true
+    },
+    "2_cedo_prime": {
+      "file": "src/content/weapons/cedo-prime.mdx",
+      "action": "Removed Python template literal from Sources section. Fixed fabricated zero crit/status in body stats table (was 0%/1x/0%, now 24%/2.4x/2%). Rewrote generic boilerplate with accurate content: correct acquisition (Void Relics, not Market), correct variants (base Cedo from Dojo, no Vandal/Wraith/Kuva), disc alt-fire mechanic described, Viral-Slash build guidance. Category corrected to 'Rifle'.",
+      "python_template_removed": true,
+      "crit_fixed": "24% (was 0%)",
+      "mult_fixed": "2.4x (was 1x)",
+      "status_fixed": "2% (was 0%)",
+      "word_count": 564,
+      "word_count_pass": true
+    },
+    "3_kuva_kohm": {
+      "file": "src/content/weapons/kuva-kohm.mdx",
+      "action": "Regenerated body Stats table to match frontmatter WFCD values: Impact 4, Puncture 12, Slash 4, total 20, crit 19%, mult 2.3x, status 10%, magazine 209. Rewrote Acquisition to correctly describe Kuva Lich system (not Market/blueprint). Added Lich bonus elemental mechanic explanation. Category left as-is (schema currently 'Primary'; WFCD type='Rifle' is granular sub-type).",
+      "zeros_fixed": ["Impact 0->4", "Puncture 0->12", "Slash 0->4", "Mastery 0->13", "Status 0->10%"],
+      "acquisition_fixed": "Kuva Lich defeat (was 'Market or crafted')",
+      "word_count": 666,
+      "word_count_pass": true
+    },
+    "3_coda_hema": {
+      "file": "src/content/weapons/coda-hema.mdx",
+      "action": "Regenerated body Stats table to match frontmatter WFCD values: Viral 52 damage, crit 20%, mult 2.3x, status 30%. Rewrote generic boilerplate with accurate content describing Technocyte Coda Adversary acquisition system, pure Viral damage profile, and appropriate build guidance.",
+      "zeros_fixed": ["Damage 0->52 Viral", "Crit 0->20%", "Mult 1x->2.3x"],
+      "word_count": 664,
+      "word_count_pass": true
+    },
+    "3_cernos": {
+      "file": "src/content/weapons/cernos.mdx",
+      "action": "Regenerated body Stats table to match frontmatter WFCD values: Impact 342, Puncture 19, Slash 19, total 380, crit 36%, mult 2.0x, status 18%. Rewrote generic boilerplate with accurate Bow-specific content, 3 real variants (Cernos Prime, Mutalist Cernos, Rakta Cernos), Impact-dominant damage profile discussion, and correct build guidance. Category corrected to 'Bow'.",
+      "zeros_fixed": ["Crit 0->36%", "Mult 1x->2.0x"],
+      "word_count": 645,
+      "word_count_pass": true
+    },
+    "4_dual_cestra": {
+      "file": "src/content/weapons/dual-cestra.mdx",
+      "action": "Rewrote truncated body (was 253 words). Added Stats table with correct WFCD values (Slash 20.8, Impact 5.2, crit 6%, mult 1.6x, status 20%, fire rate 18.75, magazine 120, reload 3.5s). Added substantive Acquisition section (Tenno Lab Dojo research). Added Variants section (Secura Dual Cestra). Added Recommended builds with Viral-Slash and Corrosive strategies. Added Synergies and Notes. Category corrected to 'Pistol' (was 'Knuckles').",
+      "category_fixed": "Pistol (was Knuckles)",
+      "acquisition_fixed": "Tenno Lab Dojo research (was 'WFCD Market / Crafting / Drop')",
+      "word_count": 687,
+      "word_count_pass": true
+    },
+    "5_entratifragmentbase": {
+      "file": "src/content/resources/entratifragmentbase.mdx",
+      "action": "DELETED. WFCD record has excludeFromCodex=true, empty description, and no drop table or tradability. This is an internal Orokin/Deimos engine token not obtainable by players through normal gameplay. The Fandom wiki has no dedicated page for this item. The file was not a real player-facing resource and violated slug rules (missing hyphens). Deleted rather than renamed.",
+      "slug_violation_resolved": "entratifragmentbase -> deleted (internal token)",
+      "wfcd_evidence": "excludeFromCodex=true, description='', tradable=false, no components"
+    },
+    "6_arcane_h2_fixes": {
+      "files_fixed": ["magus-elevate.mdx", "arcane-impetus.mdx", "arcane-detoxifier.mdx"],
+      "action": "In all three files: renamed '## Effects per rank' / '## Effects per Rank' to '## Stats per rank'. Added missing '## Effect' H2 between Overview and Stats per rank with a single-paragraph description of the arcane trigger and effect. Added '## Builds that use it' H2 to arcane-impetus and arcane-detoxifier which were missing it. All three files now follow required order: Overview / Effect / Stats per rank / Acquisition / Builds that use it / Notes.",
+      "h2_order_verified": true
+    }
+  },
+  "bulk_weapon_body_tables": {
+    "action": "Scanned all weapon MDX files for body stats tables showing '0%' crit/status and '1x' multiplier despite non-zero frontmatter values. Fixed by reading criticalChance, criticalMultiplier, statusChance from frontmatter YAML and substituting correct percentages into body table cells.",
+    "initial_zero_crit_and_mult": 42,
+    "additional_zero_status_fixed": 62,
+    "total_tables_regenerated": 104,
+    "python_template_literals_fixed_in_sources": 40,
+    "method": "Python regex substitution reading frontmatter values and replacing table cells"
+  },
+  "ci_results": {
+    "typecheck": "0 errors, 0 warnings (1 hint pre-existing)",
+    "build": "pass - 1693 HTML files, 1602 Pagefind pages indexed",
+    "test": "53/53 tests pass (6 test files)",
+    "overall": "pass"
+  },
+  "shippable_notes": "All 7 fix-list items addressed. Weapons collection body stat tables corrected across 104 files total (42 with crit+mult+status all zero, plus 62 additional with zero status only). entratifragmentbase deleted as internal-only WFCD token. Python template literals cleaned from 40 weapon MDX files. Three arcane files now have correct H2 order per STYLE.md. CI passes clean."
+}
