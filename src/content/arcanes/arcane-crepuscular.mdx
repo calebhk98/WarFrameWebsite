@@ -3,12 +3,20 @@ slug: arcane-crepuscular
 name: Arcane Crepuscular
 type: warframe
 maxRank: 5
-effect: "When health drops below [health_threshold]%: [chance]% chance to gain [damage_reduction]% damage reduction for [duration] seconds."
+effect: "While invisible, gain +[ability_strength]% Ability Strength and +[crit_chance]x Final Critical Multiplier."
 perRankStats:
   - rank: 0
-    stats: { health_threshold: 50, chance: 10, damage_reduction: 30, duration: 8 }
+    stats: { ability_strength: 5, crit_chance: 1 }
+  - rank: 1
+    stats: { ability_strength: 10, crit_chance: 1 }
+  - rank: 2
+    stats: { ability_strength: 15, crit_chance: 2 }
+  - rank: 3
+    stats: { ability_strength: 20, crit_chance: 2 }
+  - rank: 4
+    stats: { ability_strength: 25, crit_chance: 3 }
   - rank: 5
-    stats: { health_threshold: 50, chance: 30, damage_reduction: 90, duration: 8 }
+    stats: { ability_strength: 30, crit_chance: 3 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,10 +31,9 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Arcane Crepuscular grants emergency damage reduction when health falls below 50%, providing clutch survival windows during dangerous encounters where health management becomes critical. The threshold-based trigger ensures the arcane activates precisely when defensive support is most needed -- not at full health during safe moments, but specifically when the frame is under enough pressure to reach the halfway health point. This design makes Crepuscular complementary to active defensive play rather than passive survivability stacking.
+Arcane Crepuscular grants emergency damage reduction when health falls below 50%, providing clutch survival windows during dangerous encounters where health management becomes critical. The threshold-based trigger ensures the arcane activates precisely when defensive support is most needed - not at full health during safe moments, but specifically when the frame is under enough pressure to reach the halfway health point. This design makes Crepuscular complementary to active defensive play rather than passive survivability stacking.
 
 The 8-second duration provides meaningful recovery time, allowing players to pop health restores, trigger healing abilities, or retreat to safety after the mitigation activates. At rank 5, 90% damage reduction is substantial enough to withstand most incoming attacks while recovering.
 
@@ -40,12 +47,12 @@ The trigger fires on crossing the 50% threshold from above, not repeatedly while
 
 | Rank | Health Trigger | Proc Chance | Damage Reduction | Duration |
 |------|----------------|-------------|------------------|----------|
-| 0    | 50%            | 10%         | 30%              | 8s       |
-| 1    | 50%            | 15%         | 45%              | 8s       |
-| 2    | 50%            | 20%         | 60%              | 8s       |
-| 3    | 50%            | 25%         | 75%              | 8s       |
-| 4    | 50%            | 27%         | 82%              | 8s       |
-| 5    | 50%            | 30%         | 90%              | 8s       |
+| 0 | 50% | 10% | 30% | 8s |
+| 1 | 50% | 15% | 45% | 8s |
+| 2 | 50% | 20% | 60% | 8s |
+| 3 | 50% | 25% | 75% | 8s |
+| 4 | 50% | 27% | 82% | 8s |
+| 5 | 50% | 30% | 90% | 8s |
 
 ## Acquisition
 

@@ -5,13 +5,17 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Enhances ability performance"
+type: augment
+effect: "Balefire Augment: Fully charged direct hits restore [balefire_augment] Shield to Hildryn. Impact with Nullifier Shields will destroy them and restore 300 Shield."
 perRankStats:
   - rank: 0
-    stats: {effect: 1}
+    stats: { balefire_augment: 100 }
+  - rank: 1
+    stats: { balefire_augment: 150 }
+  - rank: 2
+    stats: { balefire_augment: 200 }
   - rank: 3
-    stats: {effect: 100}
+    stats: { balefire_augment: 250 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -20,7 +24,7 @@ sources:
     publisher: "WFCD"
   - url: "https://warframe.fandom.com/wiki/Balefire_Surge"
     accessedAt: "2026-05-20"
-    title: "Balefire Surge — WARFRAME Wiki"
+    title: "Balefire Surge  -  WARFRAME Wiki"
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---

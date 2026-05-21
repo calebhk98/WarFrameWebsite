@@ -3,12 +3,20 @@ slug: conjunction-voltage
 name: Conjunction Voltage
 type: weapon
 maxRank: 5
-effect: "On Electric Status Proc: [chance]% chance to grant [damage]% damage and chain projectiles to [targets] additional targets."
+effect: "On Electricity Status Effect: +[reload_speed]% Reload Speed and +[multishot]% Multishot for 12s. Stacks up to 40x."
 perRankStats:
   - rank: 0
-    stats: { chance: 15, damage: 30, targets: 3 }
+    stats: { reload_speed: 0.25, multishot: 0.5 }
+  - rank: 1
+    stats: { reload_speed: 0.5, multishot: 1 }
+  - rank: 2
+    stats: { reload_speed: 0.75, multishot: 1.5 }
+  - rank: 3
+    stats: { reload_speed: 1, multishot: 2 }
+  - rank: 4
+    stats: { reload_speed: 1.25, multishot: 2.5 }
   - rank: 5
-    stats: { chance: 45, damage: 90, targets: 6 }
+    stats: { reload_speed: 1.5, multishot: 3 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,12 +31,11 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Conjunction Voltage chains damage through enemies on electrical status procs, making it one of the few weapon arcanes that converts a single-target proc into group damage. Electric status in Warframe already shocks the primary target and one nearby enemy; Conjunction Voltage extends this by chaining the proc to multiple additional targets when the trigger activates. At rank 5, each electric proc reaches up to six additional targets for a 90% damage bonus, enabling electrically-focused secondary builds to clear groups without relying solely on AoE weapon mechanics.
 
-The arcane suits secondaries that apply electric status quickly -- through high status chance on electric-damage weapons or through elemental combination builds. Because electric status triggers from any two elemental mods producing Electric damage, Conjunction Voltage works with a range of status-focused modding approaches rather than requiring a dedicated electric weapon.
+The arcane suits secondaries that apply electric status quickly - through high status chance on electric-damage weapons or through elemental combination builds. Because electric status triggers from any two elemental mods producing Electric damage, Conjunction Voltage works with a range of status-focused modding approaches rather than requiring a dedicated electric weapon.
 
 ## Effect
 
@@ -40,12 +47,12 @@ The chaining distinguishes Conjunction Voltage from simple damage-boost arcanes:
 
 | Rank | Trigger Chance | Damage Bonus | Chain Targets |
 |------|----------------|--------------|---------------|
-| 0    | 15%            | +30%         | 3             |
-| 1    | 22%            | +45%         | 3.6           |
-| 2    | 30%            | +60%         | 4.2           |
-| 3    | 37%            | +75%         | 4.8           |
-| 4    | 41%            | +82%         | 5.4           |
-| 5    | 45%            | +90%         | 6             |
+| 0 | 15% | +30% | 3 |
+| 1 | 22% | +45% | 3.6 |
+| 2 | 30% | +60% | 4.2 |
+| 3 | 37% | +75% | 4.8 |
+| 4 | 41% | +82% | 5.4 |
+| 5 | 45% | +90% | 6 |
 
 ## Acquisition
 

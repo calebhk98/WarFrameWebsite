@@ -3,12 +3,20 @@ slug: arcane-universal-fallout
 name: Arcane Universal Fallout
 type: warframe
 maxRank: 5
-effect: "On Any Status Proc: [chance]% chance to trigger a random status effect on all enemies in [radius]m."
+effect: "Each Radiation Status Effect inflicted on enemies by Abilities gives a [chance]% chance to drop a Universal Orb on enemy death."
 perRankStats:
   - rank: 0
-    stats: { chance: 10, radius: 15 }
+    stats: { chance: 1 }
+  - rank: 1
+    stats: { chance: 2 }
+  - rank: 2
+    stats: { chance: 3 }
+  - rank: 3
+    stats: { chance: 4 }
+  - rank: 4
+    stats: { chance: 5 }
   - rank: 5
-    stats: { chance: 30, radius: 15 }
+    stats: { chance: 6 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,10 +31,9 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Arcane Universal Fallout spreads random status effects to all enemies within a 15-meter radius when any status proc triggers on the warframe. This makes it one of the most broadly applicable crowd-control arcanes available, converting single-target status procs from abilities or weapons into area-wide debuff events. The random status type means the effect varies per trigger -- it may proc viral, corrosive, cold, heat, or any other status effect -- creating unpredictable but consistently disruptive outcomes across enemy groups.
+Arcane Universal Fallout spreads random status effects to all enemies within a 15-meter radius when any status proc triggers on the warframe. This makes it one of the most broadly applicable crowd-control arcanes available, converting single-target status procs from abilities or weapons into area-wide debuff events. The random status type means the effect varies per trigger - it may proc viral, corrosive, cold, heat, or any other status effect - creating unpredictable but consistently disruptive outcomes across enemy groups.
 
 The 15-meter radius is substantial enough to cover most room interiors and defense objectives, making Universal Fallout highly effective during stationary combat scenarios. Status-heavy frames that frequently proc effects through abilities or weapon fire trigger the arcane often, building up varied status stacks across multiple enemies simultaneously.
 
@@ -40,12 +47,12 @@ The 15-meter radius is measured from the warframe position and does not require 
 
 | Rank | Trigger Chance | AOE Radius | Notes |
 |------|----------------|-----------|-------|
-| 0    | 10%            | 15m       | 1-in-10 proc spread |
-| 1    | 15%            | 15m       | Increasing area coverage |
-| 2    | 20%            | 15m       | Reliable room-wide spread |
-| 3    | 25%            | 15m       | Frequent multi-enemy debuffing |
-| 4    | 27%            | 15m       | High-uptime area status |
-| 5    | 30%            | 15m       | Maximum trigger rate |
+| 0 | 10% | 15m | 1-in-10 proc spread |
+| 1 | 15% | 15m | Increasing area coverage |
+| 2 | 20% | 15m | Reliable room-wide spread |
+| 3 | 25% | 15m | Frequent multi-enemy debuffing |
+| 4 | 27% | 15m | High-uptime area status |
+| 5 | 30% | 15m | Maximum trigger rate |
 
 ## Acquisition
 

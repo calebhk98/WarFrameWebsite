@@ -5,13 +5,17 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Enhances ability performance"
+type: augment
+effect: "Airburst Augment: Each enemy hit by Airburst increases secondary damage by [damage]% for 5s."
 perRankStats:
   - rank: 0
-    stats: {effect: 1}
+    stats: { damage: 10 }
+  - rank: 1
+    stats: { damage: 20 }
+  - rank: 2
+    stats: { damage: 30 }
   - rank: 3
-    stats: {effect: 100}
+    stats: { damage: 40 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -20,7 +24,7 @@ sources:
     publisher: "WFCD"
   - url: "https://warframe.fandom.com/wiki/Airburst_Rounds"
     accessedAt: "2026-05-20"
-    title: "Airburst Rounds — WARFRAME Wiki"
+    title: "Airburst Rounds  -  WARFRAME Wiki"
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---

@@ -3,20 +3,20 @@ slug: secondary-fortifier
 name: Secondary Fortifier
 type: weapon
 maxRank: 5
-effect: 'On Kill: Grant nearby allies +[armor]% Armor for [duration]s.'
+effect: "Gain 1 Overguard for every 100 Damage dealt to an enemy's Overguard. Deals x[damage] Extra Damage to Overguard."
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { damage: 3 }
+  - rank: 1
+    stats: { damage: 4 }
+  - rank: 2
+    stats: { damage: 5 }
+  - rank: 3
+    stats: { damage: 6 }
+  - rank: 4
+    stats: { damage: 7 }
+  - rank: 5
+    stats: { damage: 8 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,7 +30,6 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
 Secondary Fortifier grants armor to the player and nearby allies on secondary weapon kills. The armor bonus applies as a flat percentage increase to existing armor values, making it more effective on frames with high base armor. Unlike shield-based defensive arcanes, Secondary Fortifier strengthens the armor layer that persists through shield depletion, providing meaningful protection in sustained engagements where shield cycling is impractical. The kill-based trigger ensures consistent activation in combat-heavy missions where secondary weapons are the primary kill tool.
@@ -39,18 +38,18 @@ The support radius encompasses squadmates within a moderate distance, making Sec
 
 ## Effect
 
-Each kill with the secondary weapon grants the armor bonus to the player and nearby allies for a fixed duration. The bonus is additive with other armor buffs -- Rhino's Iron Skin, Steel Fiber mods, and Secondary Fortifier all contribute to total armor independently. At rank 5, the 100% armor bonus effectively doubles base armor for the buff duration, providing substantial damage reduction against physical-damage-dealing enemies. Frames with low base armor receive proportionally smaller absolute armor values, though the percentage improvement remains consistent across all frame types.
+Each kill with the secondary weapon grants the armor bonus to the player and nearby allies for a fixed duration. The bonus is additive with other armor buffs - Rhino's Iron Skin, Steel Fiber mods, and Secondary Fortifier all contribute to total armor independently. At rank 5, the 100% armor bonus effectively doubles base armor for the buff duration, providing substantial damage reduction against physical-damage-dealing enemies. Frames with low base armor receive proportionally smaller absolute armor values, though the percentage improvement remains consistent across all frame types.
 
 ## Stats per rank
 
 | Rank | Armor Bonus | Notes |
 |------|-------------|-------|
-| 0    | +20%        | Minimal reduction improvement |
-| 1    | +40%        | Moderate armor enhancement |
-| 2    | +60%        | Solid armor buffer |
-| 3    | +75%        | Strong defensive window |
-| 4    | +90%        | Near-maximum armor scaling |
-| 5    | +100%       | Doubles base armor temporarily |
+| 0 | +20% | Minimal reduction improvement |
+| 1 | +40% | Moderate armor enhancement |
+| 2 | +60% | Solid armor buffer |
+| 3 | +75% | Strong defensive window |
+| 4 | +90% | Near-maximum armor scaling |
+| 5 | +100% | Doubles base armor temporarily |
 
 ## Acquisition
 
@@ -58,7 +57,7 @@ Secondary Fortifier drops from Zariman Ten-Zero missions and Void Cascade rotati
 
 ## Builds that use it
 
-Secondary Fortifier suits squad support builds centered on maintaining team survivability through armor stacking. Frames paired with high-kill-rate secondaries -- pistols with rapid fire, full-auto secondaries -- trigger the arcane frequently enough to maintain near-permanent uptime during active combat. High-armor frames like Valkyr and Inaros benefit most from the percentage bonus due to their elevated base armor values. Squad compositions running Steel Path defense or survival content appreciate consistent armor coverage during enemy escalation phases. Pairing with secondary weapons that apply status effects extends defensive value through proc debuffs alongside the armor buff.
+Secondary Fortifier suits squad support builds centered on maintaining team survivability through armor stacking. Frames paired with high-kill-rate secondaries - pistols with rapid fire, full-auto secondaries - trigger the arcane frequently enough to maintain near-permanent uptime during active combat. High-armor frames like Valkyr and Inaros benefit most from the percentage bonus due to their elevated base armor values. Squad compositions running Steel Path defense or survival content appreciate consistent armor coverage during enemy escalation phases. Pairing with secondary weapons that apply status effects extends defensive value through proc debuffs alongside the armor buff.
 
 ## Notes
 

@@ -3,12 +3,20 @@ slug: melee-exposure
 name: Melee Exposure
 type: melee
 maxRank: 5
-effect: "On Slash Proc: [chance]% chance to strip [armor_strip]% armor from the target for [duration] seconds."
+effect: "On Ability Cast: Gain [damage]% Corrosive Damage on Melee strikes for 25s. Stacks up to 240%."
 perRankStats:
   - rank: 0
-    stats: { chance: 15, armor_strip: 25, duration: 10 }
+    stats: { damage: 10 }
+  - rank: 1
+    stats: { damage: 20 }
+  - rank: 2
+    stats: { damage: 30 }
+  - rank: 3
+    stats: { damage: 40 }
+  - rank: 4
+    stats: { damage: 50 }
   - rank: 5
-    stats: { chance: 45, armor_strip: 75, duration: 10 }
+    stats: { damage: 60 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Melee Exposure strips enemy armor on slash status procs, converting one of the most common melee proc types into an offensive armor reduction mechanic. Slash procs are broadly applicable across most melee weapon types and become more valuable through Melee Exposure because each proc now contributes to armor reduction alongside the standard slash damage-over-time. Armor reduction in Warframe directly increases the damage dealt by all subsequent attacks against that enemy, creating a compounding DPS benefit.
@@ -40,12 +47,12 @@ The armor reduction persists for 10 seconds from each successful trigger, refres
 
 | Rank | Proc Chance | Armor Strip | Duration | Notes |
 |------|-------------|-------------|----------|-------|
-| 0    | 15%         | -25%        | 10s      | Minor armor reduction |
-| 1    | 22%         | -35%        | 10s      | Moderate vulnerability |
-| 2    | 30%         | -45%        | 10s      | Meaningful armor reduction |
-| 3    | 37%         | -55%        | 10s      | Strong armor stripping |
-| 4    | 41%         | -65%        | 10s      | High vulnerability exposure |
-| 5    | 45%         | -75%        | 10s      | Near-full armor removal |
+| 0 | 15% | -25% | 10s | Minor armor reduction |
+| 1 | 22% | -35% | 10s | Moderate vulnerability |
+| 2 | 30% | -45% | 10s | Meaningful armor reduction |
+| 3 | 37% | -55% | 10s | Strong armor stripping |
+| 4 | 41% | -65% | 10s | High vulnerability exposure |
+| 5 | 45% | -75% | 10s | Near-full armor removal |
 
 ## Acquisition
 
@@ -57,7 +64,7 @@ Melee Exposure excels on slash-focused melee weapons with high status chance. Sc
 
 ## Notes
 
-The armor strip is temporary and reverts to full armor after the 10-second duration if not refreshed by additional procs. Multiple Exposure triggers on the same enemy compound the reduction additively up to 100% total armor strip. Enemies immune to armor reduction (certain eximus units, specific faction elites) resist the Exposure strip regardless of proc success. The slash proc must be applied by the melee weapon -- slash bleeds from projectile weapons do not trigger melee arcanes. Slash procs from multi-hit swing patterns each check the trigger independently, enabling rapid strip buildup from rapid-hitting melee weapons.
+The armor strip is temporary and reverts to full armor after the 10-second duration if not refreshed by additional procs. Multiple Exposure triggers on the same enemy compound the reduction additively up to 100% total armor strip. Enemies immune to armor reduction (certain eximus units, specific faction elites) resist the Exposure strip regardless of proc success. The slash proc must be applied by the melee weapon - slash bleeds from projectile weapons do not trigger melee arcanes. Slash procs from multi-hit swing patterns each check the trigger independently, enabling rapid strip buildup from rapid-hitting melee weapons.
 
 ## Sources
 

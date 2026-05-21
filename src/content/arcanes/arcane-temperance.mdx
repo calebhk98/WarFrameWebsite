@@ -3,12 +3,20 @@ slug: arcane-temperance
 name: Arcane Temperance
 type: warframe
 maxRank: 5
-effect: "When Status-Resistant: [chance]% chance to reduce all status duration by [reduction]%."
+effect: "[damage]% Damage Taken During Revive"
 perRankStats:
   - rank: 0
-    stats: { chance: 15, reduction: 25 }
+    stats: { damage: -15 }
+  - rank: 1
+    stats: { damage: -30 }
+  - rank: 2
+    stats: { damage: -45 }
+  - rank: 3
+    stats: { damage: -60 }
+  - rank: 4
+    stats: { damage: -75 }
   - rank: 5
-    stats: { chance: 45, reduction: 75 }
+    stats: { damage: -90 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Arcane Temperance reduces the duration of status effects applied to the warframe, providing passive resistance to enemy crowd control and damage-over-time procs. Status effects like slash bleeds, heat burns, and toxic damage-over-time effects deal damage across their full duration; shortening that duration directly reduces the total damage taken from proc chains. Magnetic and cold procs that reduce shields or slow movement become much less impactful when their durations are cut significantly.
@@ -40,12 +47,12 @@ The reduction applies at the moment of proc application; existing active procs a
 
 | Rank | Trigger Chance | Status Duration Reduction | Notes |
 |------|----------------|--------------------------|-------|
-| 0    | 15%            | 25%                      | Moderate proc shortening |
-| 1    | 22%            | 35%                      | Meaningful DoT reduction |
-| 2    | 30%            | 45%                      | Strong status mitigation |
-| 3    | 37%            | 55%                      | Significant proc duration cut |
-| 4    | 41%            | 65%                      | High-effectiveness mitigation |
-| 5    | 45%            | 75%                      | Near-maximum proc duration cut |
+| 0 | 15% | 25% | Moderate proc shortening |
+| 1 | 22% | 35% | Meaningful DoT reduction |
+| 2 | 30% | 45% | Strong status mitigation |
+| 3 | 37% | 55% | Significant proc duration cut |
+| 4 | 41% | 65% | High-effectiveness mitigation |
+| 5 | 45% | 75% | Near-maximum proc duration cut |
 
 ## Acquisition
 
@@ -53,7 +60,7 @@ Arcane Temperance drops from Zariman Void Fissure at 4% and Void Cascade rotatio
 
 ## Builds that use it
 
-Arcane Temperance benefits frames that lack innate status resistance and operate in status-heavy environments. Squishier frames (Volt, Ash, Ember) that take damage through their shields quickly and accumulate proc chains benefit from shorter proc durations during recovery periods. Solo Steel Path content where enemy density creates constant proc pressure rewards Temperance's passive mitigation. Frames that rely on mobility-dependent combat (rolling to trigger Rolling Guard, bullet jumping to escape proc buildup) find Temperance reduces the urgency of aggressive status management. Pairing with Rolling Guard mod provides complementary proc-removal mechanics -- Temperance shortens proc duration while Rolling Guard eliminates active procs on roll.
+Arcane Temperance benefits frames that lack innate status resistance and operate in status-heavy environments. Squishier frames (Volt, Ash, Ember) that take damage through their shields quickly and accumulate proc chains benefit from shorter proc durations during recovery periods. Solo Steel Path content where enemy density creates constant proc pressure rewards Temperance's passive mitigation. Frames that rely on mobility-dependent combat (rolling to trigger Rolling Guard, bullet jumping to escape proc buildup) find Temperance reduces the urgency of aggressive status management. Pairing with Rolling Guard mod provides complementary proc-removal mechanics - Temperance shortens proc duration while Rolling Guard eliminates active procs on roll.
 
 ## Notes
 

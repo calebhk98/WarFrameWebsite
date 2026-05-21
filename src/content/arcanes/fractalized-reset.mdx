@@ -3,12 +3,20 @@ slug: fractalized-reset
 name: Fractalized Reset
 type: weapon
 maxRank: 5
-effect: "On Magazine Empty: [chance]% chance to instantly reload and grant [fire_rate]% Fire Rate for [duration] seconds."
+effect: "On Ability Cast: +[reload_speed]% Reload Speed for 5s"
 perRankStats:
   - rank: 0
-    stats: { chance: 15, fire_rate: 25, duration: 8 }
+    stats: { reload_speed: 40 }
+  - rank: 1
+    stats: { reload_speed: 80 }
+  - rank: 2
+    stats: { reload_speed: 120 }
+  - rank: 3
+    stats: { reload_speed: 160 }
+  - rank: 4
+    stats: { reload_speed: 200 }
   - rank: 5
-    stats: { chance: 45, fire_rate: 75, duration: 8 }
+    stats: { reload_speed: 240 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Fractalized Reset eliminates reload downtime on magazine depletion while simultaneously granting a fire rate boost for the subsequent magazine. This primary weapon arcane enables sustained-fire primary builds to maintain offensive momentum without the damage-per-second gap that reload animations introduce. The instant reload removes what is typically a vulnerable period in firefights, while the fire rate bonus makes the refilled magazine more potent than the previous one.
@@ -38,12 +45,12 @@ When the primary weapon's magazine reaches empty, Fractalized Reset checks the t
 
 | Rank | Trigger Chance | Fire Rate Boost | Duration |
 |------|----------------|-----------------|----------|
-| 0    | 15%            | +25%            | 8s       |
-| 1    | 22%            | +35%            | 8s       |
-| 2    | 30%            | +45%            | 8s       |
-| 3    | 37%            | +55%            | 8s       |
-| 4    | 41%            | +65%            | 8s       |
-| 5    | 45%            | +75%            | 8s       |
+| 0 | 15% | +25% | 8s |
+| 1 | 22% | +35% | 8s |
+| 2 | 30% | +45% | 8s |
+| 3 | 37% | +55% | 8s |
+| 4 | 41% | +65% | 8s |
+| 5 | 45% | +75% | 8s |
 
 ## Acquisition
 

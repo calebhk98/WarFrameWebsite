@@ -3,12 +3,20 @@ slug: longbow-sharpshot
 name: Longbow Sharpshot
 type: weapon
 maxRank: 5
-effect: "On Charged Shot: [chance]% chance to grant [critical_chance]% Critical Chance and [critical_multiplier]x Critical Multiplier for [duration] seconds."
+effect: "On Headshot: Gain +[damage]% damage on your next shot."
 perRankStats:
   - rank: 0
-    stats: { chance: 10, critical_chance: 50, critical_multiplier: 1.5, duration: 10 }
+    stats: { damage: 50 }
+  - rank: 1
+    stats: { damage: 100 }
+  - rank: 2
+    stats: { damage: 150 }
+  - rank: 3
+    stats: { damage: 200 }
+  - rank: 4
+    stats: { damage: 250 }
   - rank: 5
-    stats: { chance: 30, critical_chance: 150, critical_multiplier: 3.0, duration: 10 }
+    stats: { damage: 300 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 5.0
@@ -23,12 +31,11 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Longbow Sharpshot is a legendary bow-specific arcane that grants massive critical chance and critical multiplier bonuses on charged shots. The dual bonus transforms moderate-crit bows into extreme damage dealers during the 10-second buff window, with both crit chance and multiplier scaling simultaneously. At rank 5, the +150% crit chance and x3.0 multiplier bonus enable even bows with 25% base crit to reach near-certain red crit territory during the window.
 
-The charged shot trigger is inherent to bow mechanics -- all bows require holding fire to reach maximum power -- making Sharpshot compatible with any bow without requiring playstyle adjustments. Players who already aim for precise charged shots naturally activate Sharpshot's trigger on every well-timed release.
+The charged shot trigger is inherent to bow mechanics - all bows require holding fire to reach maximum power - making Sharpshot compatible with any bow without requiring playstyle adjustments. Players who already aim for precise charged shots naturally activate Sharpshot's trigger on every well-timed release.
 
 ## Effect
 
@@ -40,12 +47,12 @@ The 10-second buff duration covers multiple charged shots at standard charge spe
 
 | Rank | Trigger Chance | Crit Chance Bonus | Crit Multiplier Bonus | Duration |
 |------|----------------|-------------------|-----------------------|----------|
-| 0    | 10%            | +50%              | x1.5                  | 10s      |
-| 1    | 15%            | +75%              | x1.75                 | 10s      |
-| 2    | 20%            | +100%             | x2.0                  | 10s      |
-| 3    | 25%            | +125%             | x2.25                 | 10s      |
-| 4    | 27%            | +137%             | x2.625                | 10s      |
-| 5    | 30%            | +150%             | x3.0                  | 10s      |
+| 0 | 10% | +50% | x1.5 | 10s |
+| 1 | 15% | +75% | x1.75 | 10s |
+| 2 | 20% | +100% | x2.0 | 10s |
+| 3 | 25% | +125% | x2.25 | 10s |
+| 4 | 27% | +137% | x2.625 | 10s |
+| 5 | 30% | +150% | x3.0 | 10s |
 
 ## Acquisition
 

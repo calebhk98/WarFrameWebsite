@@ -3,20 +3,20 @@ slug: secondary-shiver
 name: Secondary Shiver
 type: weapon
 maxRank: 5
-effect: 'On Cold Proc: Slow nearby enemies by [slow]% for [duration]s.'
+effect: "Enemies take +[damage]% damage per Cold Status"
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { damage: 7.5 }
+  - rank: 1
+    stats: { damage: 15 }
+  - rank: 2
+    stats: { damage: 22.5 }
+  - rank: 3
+    stats: { damage: 30 }
+  - rank: 4
+    stats: { damage: 37.5 }
+  - rank: 5
+    stats: { damage: 45 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,7 +30,6 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
 Secondary Shiver applies area slowdown around enemies affected by cold status procs from secondary weapons. Unlike the base cold proc that slows only the single target hit, Shiver broadcasts a slow aura from that enemy to nearby targets, extending the crowd control radius beyond the weapon's actual hit zone. This makes cold-focused secondary builds disproportionately effective at controlling dense enemy groups even with weapons that lack innate AoE capability.
@@ -45,12 +44,12 @@ Each cold status proc applied by the secondary weapon creates a slow aura center
 
 | Rank | Slow Amount | Duration | Notes |
 |------|-------------|----------|-------|
-| 0    | 30%         | 6s       | Moderate crowd control coverage |
-| 1    | 42%         | 6s       | Meaningful advance suppression |
-| 2    | 54%         | 6s       | Substantial enemy slowdown |
-| 3    | 63%         | 6s       | Strong area control |
-| 4    | 70%         | 6s       | Near-maximum slow effectiveness |
-| 5    | 75%         | 6s       | Maximum area slow per proc |
+| 0 | 30% | 6s | Moderate crowd control coverage |
+| 1 | 42% | 6s | Meaningful advance suppression |
+| 2 | 54% | 6s | Substantial enemy slowdown |
+| 3 | 63% | 6s | Strong area control |
+| 4 | 70% | 6s | Near-maximum slow effectiveness |
+| 5 | 75% | 6s | Maximum area slow per proc |
 
 ## Acquisition
 

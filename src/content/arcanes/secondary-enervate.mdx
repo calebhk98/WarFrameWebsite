@@ -3,20 +3,20 @@ slug: secondary-enervate
 name: Secondary Enervate
 type: weapon
 maxRank: 5
-effect: 'On Status Proc: Reduce enemy [power] by [value]% for [duration]s.'
+effect: "On Hit: Increase Critical Chance by 10%. Resets after [crit_chance] Big Critical Hit."
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { crit_chance: 1 }
+  - rank: 1
+    stats: { crit_chance: 2 }
+  - rank: 2
+    stats: { crit_chance: 3 }
+  - rank: 3
+    stats: { crit_chance: 4 }
+  - rank: 4
+    stats: { crit_chance: 5 }
+  - rank: 5
+    stats: { crit_chance: 6 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,10 +30,9 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
-Secondary Enervate reduces enemy offensive effectiveness when secondary weapon status procs trigger, providing a debuff mechanic that extends beyond raw damage into team utility. Enemies affected by the power reduction deal less damage and apply weaker effects, benefiting all squadmates in range of the debuffed target. Status-heavy secondary builds that apply procs at high frequency maintain near-constant debuff uptime on priority targets, particularly bosses and elite enemies with powerful attacks. The arcane converts any status type on the secondary -- corrosive, viral, heat, electric, slash -- into an opportunity for the power reduction debuff.
+Secondary Enervate reduces enemy offensive effectiveness when secondary weapon status procs trigger, providing a debuff mechanic that extends beyond raw damage into team utility. Enemies affected by the power reduction deal less damage and apply weaker effects, benefiting all squadmates in range of the debuffed target. Status-heavy secondary builds that apply procs at high frequency maintain near-constant debuff uptime on priority targets, particularly bosses and elite enemies with powerful attacks. The arcane converts any status type on the secondary - corrosive, viral, heat, electric, slash - into an opportunity for the power reduction debuff.
 
 This utility-focused arcane contrasts with damage-boosting secondaries by reducing incoming threat rather than increasing outgoing damage. Players building for squad support or survivability-focused content find Secondary Enervate complementary to healing and mitigation tools already in their toolkit.
 
@@ -45,12 +44,12 @@ Each status proc applied by the secondary weapon triggers the power reduction ch
 
 | Rank | Power Reduction | Notes |
 |------|-----------------|-------|
-| 0    | 20%             | Modest mitigation against elites |
-| 1    | 40%             | Meaningful reduction in damage intake |
-| 2    | 60%             | Substantial elite threat reduction |
-| 3    | 75%             | Strong debuff for group survivability |
-| 4    | 90%             | Near-complete power suppression |
-| 5    | 100%            | Full power neutralization during window |
+| 0 | 20% | Modest mitigation against elites |
+| 1 | 40% | Meaningful reduction in damage intake |
+| 2 | 60% | Substantial elite threat reduction |
+| 3 | 75% | Strong debuff for group survivability |
+| 4 | 90% | Near-complete power suppression |
+| 5 | 100% | Full power neutralization during window |
 
 ## Acquisition
 

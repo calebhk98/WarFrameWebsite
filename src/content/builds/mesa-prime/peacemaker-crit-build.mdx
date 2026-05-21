@@ -1,0 +1,96 @@
+---
+slug: peacemaker-crit-build
+name: "Mesa Prime -- Peacemaker Crit"
+forEntity: mesa-prime
+entityType: warframe
+purpose: steel-path-dps
+mods:
+  - { slot: aura, modSlug: corrosive-projection, rank: 5 }
+  - { slot: exilus, modSlug: power-drift, rank: 5 }
+  - { slot: slot-1, modSlug: umbral-intensify, rank: 10 }
+  - { slot: slot-2, modSlug: umbral-vitality, rank: 10 }
+  - { slot: slot-3, modSlug: stretch, rank: 5 }
+  - { slot: slot-4, modSlug: streamline, rank: 5 }
+  - { slot: slot-5, modSlug: primed-flow, rank: 10 }
+  - { slot: slot-6, modSlug: fleeting-expertise, rank: 4 }
+  - { slot: slot-7, modSlug: transient-fortitude, rank: 10 }
+  - { slot: slot-8, modSlug: constitution, rank: 10 }
+arcanes:
+  - { slot: arcane-1, slug: arcane-energize, rank: 5 }
+  - { slot: arcane-2, slug: arcane-avenger, rank: 5 }
+focus: Zenurik
+playstyle: >-
+  Activate Shooting Gallery before entering Peacemaker to secure the damage
+  buff and crowd-control on nearby enemies. Peacemaker auto-targets enemies
+  within the cone; aim manually at high-priority units. Arcane Avenger
+  triggers on damage received and provides a 45% critical chance buff that
+  elevates Peacemaker into guaranteed orange-crit territory.
+strengths:
+  - "Peacemaker hits are unaffected by weapon choice -- scales purely with power strength"
+  - "Arcane Avenger pushes critical chance above the 100% threshold for guaranteed orange crits"
+  - "Shatter Shield provides 95% bullet damage reduction at full power strength"
+  - "Crowd control from Shooting Gallery prevents focus on Mesa during Peacemaker"
+weaknesses:
+  - "Peacemaker requires Mesa to remain stationary, limiting repositioning"
+  - "Vulnerable to melee units that can bypass Shatter Shield's ranged mitigation"
+  - "Energy-intensive; Peacemaker drains energy per kill and per second while active"
+sources:
+  - url: "https://overframe.gg/build/mesa-prime"
+    accessedAt: "2026-05-21"
+    title: "Mesa Prime Builds -- Overframe"
+    publisher: "Overframe"
+  - url: "https://warframe.fandom.com/wiki/Mesa/Prime"
+    accessedAt: "2026-05-21"
+    title: "Mesa Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-21"
+---
+
+## Overview
+
+Mesa Prime's Peacemaker fires rapidly at enemies within a cone of vision, with each shot's damage scaling directly with Mesa's power strength stat. This build maximizes power strength through the Umbral set and Transient Fortitude while keeping efficiency high enough to sustain Peacemaker through full wave or rotation windows. Arcane Avenger converts incoming damage into a critical chance bonus that pushes Peacemaker shots above the 100% critical chance threshold, producing consistent orange-crit hits whose multiplier is set by the shots' innate critical damage value.
+
+Shatter Shield scales its incoming bullet-damage reduction with power strength. At the configuration's power strength values, Shatter Shield absorbs approximately 95% of projectile damage dealt to Mesa, making her effectively immune to Corpus and Grineer ranged fire during Peacemaker. Melee units that breach this coverage are addressed through Shooting Gallery's crowd-control jamming effect.
+
+Corrosive Projection in the aura slot reduces enemy armor by 30% per Mesa in the squad. In a solo run this provides 30% armor reduction that compounds with Peacemaker's Slash damage component and any Corrosive status procs from equipped weapons between Peacemaker cycles.
+
+## Loadout
+
+Umbral Intensify at rank 10 and Umbral Vitality at rank 10 together activate the Umbral set two-piece bonus. Combined with Transient Fortitude at rank 10, total power strength reaches approximately 215% to 225% of base before Arcane Avenger's critical proc contributes. At this strength level, Peacemaker's fire rate and damage per shot are both elevated above their base values -- fire rate scales with a formula capped by the ability's engine implementation, which plateaus around 200% strength.
+
+Primed Flow at rank 10 raises Mesa's maximum energy pool to approximately 1,562, providing a substantial reserve for extended Peacemaker duration. Fleeting Expertise at rank 4 reduces ability cost by 40% without excessively cutting duration, which matters for Shooting Gallery's duration in combat windows between Peacemaker casts.
+
+Constitution at rank 10 adds ability duration, which directly extends Shooting Gallery's crowd-control interval and Mesa's Waltz passive (Mesa's Waltz is a mod in the mods collection; Constitution extends the interval between ability end and re-activation). The combination of Primed Flow's large energy pool and Constitution's duration means Shooting Gallery does not need frequent recasting during a standard rotation.
+
+Arcane Avenger at rank 5 grants a 45% critical chance increase for 12 seconds on taking damage. Since Mesa takes some incidental damage even with Shatter Shield active -- particularly from melee units and status procs -- Arcane Avenger procs frequently enough to maintain near-continuous uptime in Steel Path encounters. The 45% additional critical chance applied to Peacemaker's base critical chance pushes most shots into orange-crit territory.
+
+## Playstyle
+
+Open each engagement by casting Shatter Shield, then Shooting Gallery, then activating Peacemaker. This sequence ensures all defensive layers are active before the high-energy drain of Peacemaker begins. Shatter Shield has a base duration independent of power strength scaling, so it must be recast during extended Peacemaker sessions -- watch the duration timer and cancel Peacemaker briefly to refresh Shatter Shield when it approaches expiry.
+
+During Peacemaker, prioritize targets by size: Noxes, Heavy Gunners, Bombards, and Sortie bosses appear as larger circles in the targeting cone and should receive initial shots to deplete their health before lighter units respawn behind them. Peacemaker auto-prioritizes the closest valid targets, so manually steering the reticle toward heavies overrides auto-targeting.
+
+Energy management is critical during long Peacemaker windows. Arcane Energize's chance to grant 150 energy on orb pickup only activates while Peacemaker is not channeling -- Peacemaker consumes energy per kill rather than per second, so each kill reduces the energy pool. Between Peacemaker activations, collect energy orbs to restore the pool and trigger Arcane Energize procs.
+
+## Strengths and weaknesses
+
+Peacemaker's damage output in this configuration clears standard Steel Path enemy waves within a few seconds of activation because the auto-targeting handles all aiming overhead. Mesa does not need to manually track individual enemies during the ability. Combined with Shatter Shield's 95% bullet damage reduction, she sustains this output with minimal health loss.
+
+The build becomes less effective in open-world Eidolon hunts or boss encounters where a single large target is the objective rather than wave clearing. Peacemaker's single-shot damage against Eidolon synovias is not the intended application and the Eidolon-hunt build for Mesa (see the `wisp-prime` Eidolon build for the complementary support role) uses different strength parameters.
+
+## Alternatives
+
+Replacing Constitution with Augur Message contributes to the Augur set bonus while adding similar duration. If a second Augur mod is present elsewhere in the build, the overshield conversion bonus activates. Augur Message at rank 5 provides slightly less duration than Constitution at rank 10 but requires fewer mod slots to slot into a polarity-matched frame.
+
+Rolling Guard replaces Fleeting Expertise for players who prefer active defensive tools over energy economy. Rolling Guard grants 3 seconds of invulnerability and clears status effects on roll, which provides a hard counter to Toxin status bypassing Shatter Shield's damage mitigation.
+
+## Notes
+
+Mesa's Waltz is a separate augment mod (listed in the mods collection under `mesas-waltz`) that allows movement during Peacemaker. This build does not include Mesa's Waltz, as the stationary Peacemaker stance is intentional for maximizing the aiming cone's sustained focus on enemy clusters. Players who prefer the Waltz variant should replace Constitution with Mesa's Waltz and adjust energy management accordingly.
+
+Transient Fortitude reduces ability duration by 27.5% at rank 10. This reduction is offset by Constitution in this build, and the net duration for Shooting Gallery and Shatter Shield remains above base. Peacemaker's duration is irrelevant to this penalty as Peacemaker has no duration cap -- it drains energy until deactivated or energy depletes.
+
+## Sources
+
+- [Mesa Prime on the WARFRAME Wiki](https://warframe.fandom.com/wiki/Mesa/Prime)
+- [Overframe build database for Mesa Prime](https://overframe.gg/build/mesa-prime)

@@ -3,12 +3,20 @@ slug: arcane-ice-storm
 name: Arcane Ice Storm
 type: warframe
 maxRank: 5
-effect: "When Cold Status is Active: [chance]% chance to create an ice wave dealing [damage] damage and slowing enemies."
+effect: "On Enemy Frozen: Gain +2% Ability Strength and +2% Ability Duration for 15s. Stacks up to [max_stacks]x."
 perRankStats:
   - rank: 0
-    stats: { chance: 10, damage: 100 }
+    stats: { max_stacks: 10 }
+  - rank: 1
+    stats: { max_stacks: 12 }
+  - rank: 2
+    stats: { max_stacks: 14 }
+  - rank: 3
+    stats: { max_stacks: 16 }
+  - rank: 4
+    stats: { max_stacks: 18 }
   - rank: 5
-    stats: { chance: 30, damage: 300 }
+    stats: { max_stacks: 20 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Arcane Ice Storm triggers area freeze waves when cold status effects are active on the warframe or surrounding enemies, providing crowd control and direct damage through proc-based mechanics. Cold status builds that apply freeze effects quickly benefit from repeated ice wave triggers that expand the crowd control radius beyond initial single-target procs. The combined damage and slowdown output enables ice-focused warframes to maintain battlefield control during dense enemy waves without relying exclusively on ability-based crowd control.
@@ -40,12 +47,12 @@ Ice wave damage counts as cold damage and benefits from cold damage bonuses from
 
 | Rank | Trigger Chance | Ice Wave Damage | Notes |
 |------|----------------|-----------------|-------|
-| 0    | 10%            | 100             | Moderate single-wave damage |
-| 1    | 15%            | 140             | Increasing area damage |
-| 2    | 20%            | 180             | Solid crowd control coverage |
-| 3    | 25%            | 220             | Strong area cold damage |
-| 4    | 27%            | 260             | High-impact wave |
-| 5    | 30%            | 300             | Maximum cold wave output |
+| 0 | 10% | 100 | Moderate single-wave damage |
+| 1 | 15% | 140 | Increasing area damage |
+| 2 | 20% | 180 | Solid crowd control coverage |
+| 3 | 25% | 220 | Strong area cold damage |
+| 4 | 27% | 260 | High-impact wave |
+| 5 | 30% | 300 | Maximum cold wave output |
 
 ## Acquisition
 

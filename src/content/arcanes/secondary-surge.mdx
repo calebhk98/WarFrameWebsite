@@ -3,20 +3,20 @@ slug: secondary-surge
 name: Secondary Surge
 type: weapon
 maxRank: 5
-effect: 'On Electric Proc: Gain +[power]% Attack Speed for [duration]s. Stacks up to 4x.'
+effect: "On Ability Cast: Next shot gains a Damage Multiplier for every 200 current Energy, up to x[energy]."
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { energy: 3 }
+  - rank: 1
+    stats: { energy: 4 }
+  - rank: 2
+    stats: { energy: 5 }
+  - rank: 3
+    stats: { energy: 6 }
+  - rank: 4
+    stats: { energy: 7 }
+  - rank: 5
+    stats: { energy: 8 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,10 +30,9 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
-Secondary Surge provides stacking attack speed bonuses on electric status procs from secondary weapons, creating an escalating fire rate multiplier during electric-focused engagements. The stacking mechanic rewards builds that maintain rapid electric proc application -- each proc adds a stack, and maintaining all four stacks simultaneously delivers the maximum fire rate multiplier. Electric secondaries with high status chance apply procs quickly enough to build stacks during the opening shots of an engagement.
+Secondary Surge provides stacking attack speed bonuses on electric status procs from secondary weapons, creating an escalating fire rate multiplier during electric-focused engagements. The stacking mechanic rewards builds that maintain rapid electric proc application - each proc adds a stack, and maintaining all four stacks simultaneously delivers the maximum fire rate multiplier. Electric secondaries with high status chance apply procs quickly enough to build stacks during the opening shots of an engagement.
 
 Attack speed in Warframe translates directly to fire rate for secondary weapons, meaning all four stacks effectively quadruple the per-stack bonus on top of existing speed mods. For full-auto secondaries, this translates to a substantial increase in rounds downrange per second during the stacked state.
 
@@ -47,12 +46,12 @@ Individual stack durations reset on each new proc trigger, meaning sustained ele
 
 | Rank | Attack Speed per Stack | Max Stacks | Max Total Bonus | Notes |
 |------|----------------------|-----------|-----------------|-------|
-| 0    | +20%                 | 4         | +80%            | Moderate speed boost |
-| 1    | +40%                 | 4         | +160%           | Good attack acceleration |
-| 2    | +60%                 | 4         | +240%           | Strong fire rate increase |
-| 3    | +80%                 | 4         | +320%           | Very high speed boost |
-| 4    | +90%                 | 4         | +360%           | Near-maximum acceleration |
-| 5    | +100%                | 4         | +400%           | Maximum speed multiplier |
+| 0 | +20% | 4 | +80% | Moderate speed boost |
+| 1 | +40% | 4 | +160% | Good attack acceleration |
+| 2 | +60% | 4 | +240% | Strong fire rate increase |
+| 3 | +80% | 4 | +320% | Very high speed boost |
+| 4 | +90% | 4 | +360% | Near-maximum acceleration |
+| 5 | +100% | 4 | +400% | Maximum speed multiplier |
 
 ## Acquisition
 

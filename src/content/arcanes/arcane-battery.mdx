@@ -3,12 +3,20 @@ slug: arcane-battery
 name: Arcane Battery
 type: warframe
 maxRank: 5
-effect: "On Energy Pickup: [chance]% chance to grant [energy_max]% max Energy for [duration] seconds."
+effect: "Gain [energy] maximum Energy per Armor point, up to 1000 Energy."
 perRankStats:
   - rank: 0
-    stats: { chance: 15, energy_max: 30, duration: 12 }
+    stats: { energy: 0.05 }
+  - rank: 1
+    stats: { energy: 0.1 }
+  - rank: 2
+    stats: { energy: 0.15 }
+  - rank: 3
+    stats: { energy: 0.2 }
+  - rank: 4
+    stats: { energy: 0.25 }
   - rank: 5
-    stats: { chance: 45, energy_max: 90, duration: 12 }
+    stats: { energy: 0.3 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,12 +31,11 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Arcane Battery increases maximum energy capacity on energy orb pickups, enabling energy-hungry frames to store and deploy more energy during combat. The maximum energy increase does not directly restore energy but expands the ceiling of how much energy the frame can hold, allowing subsequent energy restoration mechanics (orbs, abilities, Zenurik focus) to fill a larger pool. This makes Battery particularly valuable for frames that spike-cast expensive abilities and need large energy reserves rather than rapid small regeneration.
 
-The 12-second duration is sufficient to cover most ability rotation windows. Frames that pick up energy orbs regularly through combat -- particularly in orb-dense missions or with Equilibrium mod active -- trigger Battery frequently enough to maintain a near-permanent energy cap increase throughout extended missions.
+The 12-second duration is sufficient to cover most ability rotation windows. Frames that pick up energy orbs regularly through combat - particularly in orb-dense missions or with Equilibrium mod active - trigger Battery frequently enough to maintain a near-permanent energy cap increase throughout extended missions.
 
 ## Effect
 
@@ -40,12 +47,12 @@ The energy increase applies immediately on trigger and allows energy above the n
 
 | Rank | Trigger Chance | Max Energy Increase | Duration | Notes |
 |------|----------------|---------------------|----------|-------|
-| 0    | 15%            | +30%                | 12s      | Modest energy expansion |
-| 1    | 22%            | +45%                | 12s      | Moderate capacity boost |
-| 2    | 30%            | +60%                | 12s      | Solid energy buffer |
-| 3    | 37%            | +75%                | 12s      | Strong capacity increase |
-| 4    | 41%            | +82%                | 12s      | High energy reserve |
-| 5    | 45%            | +90%                | 12s      | Near-double energy cap |
+| 0 | 15% | +30% | 12s | Modest energy expansion |
+| 1 | 22% | +45% | 12s | Moderate capacity boost |
+| 2 | 30% | +60% | 12s | Solid energy buffer |
+| 3 | 37% | +75% | 12s | Strong capacity increase |
+| 4 | 41% | +82% | 12s | High energy reserve |
+| 5 | 45% | +90% | 12s | Near-double energy cap |
 
 ## Acquisition
 

@@ -1,0 +1,30 @@
+{
+  "total_files": 229,
+  "files_with_defects": 226,
+  "files_fixed": 226,
+  "defect_rate_pct": 98.7,
+  "defect_categories": {
+    "wrong_polarity": 35,
+    "wrong_drain": 19,
+    "wrong_maxRank": 8,
+    "wrong_type": 133,
+    "wrong_effect": 213,
+    "wrong_rarity": 0,
+    "wrong_per_rank_values": 226,
+    "wrong_per_rank_count": 0,
+    "body_below_word_floor": 31,
+    "em_dash_found": 0,
+    "no_wfcd_match": 2,
+    "augment_type_wrong": 0
+  },
+  "summary": {
+    "typecheck": "pass",
+    "build": "pass",
+    "test": "pass",
+    "mod_pages_indexed": 229,
+    "no_wfcd_match_mods": [
+      "thermal-sunder-augment",
+      "tribute-power-donation"
+    ]
+  }
+}

@@ -2,13 +2,17 @@
 slug: virtuos-surge
 name: Virtuos Surge
 type: operator
-maxRank: 5
-effect: "On Energy Pickup: +[energy]% Energy to Amp for [duration]s"
+maxRank: 3
+effect: "On Hit: Converts [damage]% Void Damage to Electricity Damage."
 perRankStats:
   - rank: 0
-    stats: { energy: 50, duration: 10 }
-  - rank: 5
-    stats: { energy: 250, duration: 10 }
+    stats: { damage: 24 }
+  - rank: 1
+    stats: { damage: 48 }
+  - rank: 2
+    stats: { damage: 72 }
+  - rank: 3
+    stats: { damage: 98 }
 drops:
   - source: "Zariman void cascade"
     chance: 2.5
@@ -22,7 +26,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Virtuos Surge generates amp energy bonuses when the operator or nearby warframe picks up an energy orb, converting the common energy pickup resource into a burst of operator amp capacity. Energy orbs drop regularly during combat from killed enemies and certain environmental sources, making the trigger frequent in missions with active enemy engagement. Operators who coordinate orb pickups with active amp combat maintain elevated energy reserves without relying solely on natural regeneration or Focus school energy abilities.
@@ -39,12 +42,12 @@ The 10-second duration means the energy bonus extends for a window beyond the im
 
 | Rank | Energy Bonus | Duration | Notes |
 |------|--------------|----------|-------|
-| 0    | +50%         | 10s      | Moderate energy extension |
-| 1    | +100%        | 10s      | Meaningful amp sustain |
-| 2    | +150%        | 10s      | Strong per-pickup boost |
-| 3    | +200%        | 10s      | High-value energy management |
-| 4    | +225%        | 10s      | Near-maximum sustain |
-| 5    | +250%        | 10s      | Maximum amp energy per orb |
+| 0 | +50% | 10s | Moderate energy extension |
+| 1 | +100% | 10s | Meaningful amp sustain |
+| 2 | +150% | 10s | Strong per-pickup boost |
+| 3 | +200% | 10s | High-value energy management |
+| 4 | +225% | 10s | Near-maximum sustain |
+| 5 | +250% | 10s | Maximum amp energy per orb |
 
 ## Acquisition
 
@@ -52,13 +55,13 @@ Virtuos Surge drops as an uncommon reward from Zariman Void Cascade missions. Th
 
 ## Builds that use it
 
-Virtuos Surge suits operator builds in missions with regular energy orb availability -- survival missions, mobile defense, and active combat scenarios where enemies drop orbs consistently. Operators in squad play benefit when Harrow or Zenurik-school warframes generate energy orbs through their abilities, providing additional amp energy from the orbs that squadmates produce. Zariman Void Cascade operators who frequently enter operator mode to interact with Void Manifestations use orb pickups between encounters to maintain amp readiness.
+Virtuos Surge suits operator builds in missions with regular energy orb availability - survival missions, mobile defense, and active combat scenarios where enemies drop orbs consistently. Operators in squad play benefit when Harrow or Zenurik-school warframes generate energy orbs through their abilities, providing additional amp energy from the orbs that squadmates produce. Zariman Void Cascade operators who frequently enter operator mode to interact with Void Manifestations use orb pickups between encounters to maintain amp readiness.
 
 Amp builds with large energy pools benefit proportionally more from the 250% bonus at rank 5, as the percentage translates to a larger absolute energy restoration value on high-capacity configurations.
 
 ## Notes
 
-The energy bonus applies to the amp energy pool, not the warframe energy pool. Orbs picked up by the warframe during operator mode are credited to the operator for this arcane's trigger. The 10-second duration starts at the moment of pickup. Multiple orb pickups within the 10-second window do not stack energy beyond the listed percentage; each pickup resets the timer. Missions with sparse energy orb drops -- such as some Railjack or Deimos environments -- provide fewer trigger opportunities per minute, reducing average uptime compared to high-orb-density missions.
+The energy bonus applies to the amp energy pool, not the warframe energy pool. Orbs picked up by the warframe during operator mode are credited to the operator for this arcane's trigger. The 10-second duration starts at the moment of pickup. Multiple orb pickups within the 10-second window do not stack energy beyond the listed percentage; each pickup resets the timer. Missions with sparse energy orb drops - such as some Railjack or Deimos environments - provide fewer trigger opportunities per minute, reducing average uptime compared to high-orb-density missions.
 
 ## Sources
 

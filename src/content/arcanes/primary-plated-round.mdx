@@ -3,20 +3,20 @@ slug: primary-plated-round
 name: Primary Plated Round
 type: weapon
 maxRank: 5
-effect: 'On Impact: Gain +[shield]% Shield for 10s. Stacks up to 6x.'
+effect: "On Reload: Deal increased damage per round loaded based on max magazine size. Lasts for [stat_0]s."
 perRankStats:
-- rank: 0
-  stats: { shield: 12 }
-- rank: 1
-  stats: { shield: 18 }
-- rank: 2
-  stats: { shield: 24 }
-- rank: 3
-  stats: { shield: 30 }
-- rank: 4
-  stats: { shield: 36 }
-- rank: 5
-  stats: { shield: 72 }
+  - rank: 0
+    stats: { stat_0: 3 }
+  - rank: 1
+    stats: { stat_0: 4 }
+  - rank: 2
+    stats: { stat_0: 5 }
+  - rank: 3
+    stats: { stat_0: 6 }
+  - rank: 4
+    stats: { stat_0: 8 }
+  - rank: 5
+    stats: { stat_0: 10 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,29 +30,28 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
 Primary Plated Round converts impact status procs from primary weapons into stacking shield bonuses, bridging the gap between physical damage application and the warframe's shield defense layer. Each impact proc triggers a shield buff that refreshes and stacks up to six times, allowing high-impact-chance weapons to rapidly accumulate a substantial shield bonus during sustained fire. The 10-second duration per stack means that weapons with consistent impact proc rates can maintain near-permanent uptime at maximum stacks.
 
-Impact status procs are common on primary weapons with base impact damage -- shotguns, high-caliber rifles, and burst weapons frequently apply impact procs without dedicated status chance builds. Primary Plated Round benefits from this natural proc rate rather than requiring a specialized elemental build, making it accessible to a wide variety of primary weapon configurations. Frames that rely on shield-based survivability gain an additional defensive layer that scales with primary weapon activity.
+Impact status procs are common on primary weapons with base impact damage - shotguns, high-caliber rifles, and burst weapons frequently apply impact procs without dedicated status chance builds. Primary Plated Round benefits from this natural proc rate rather than requiring a specialized elemental build, making it accessible to a wide variety of primary weapon configurations. Frames that rely on shield-based survivability gain an additional defensive layer that scales with primary weapon activity.
 
 ## Effect
 
 Each impact status proc applied by the primary weapon grants a shield bonus for 10 seconds. Stacks accumulate up to six times, with each new proc refreshing the timer on existing stacks. At rank 0, each stack provides 12% shield bonus; at maximum stacks, that totals 72% bonus shields. At rank 5, each stack provides 72% shield bonus for a theoretical maximum of 432% total bonus shields at six stacks. The bonus applies to the warframe's base shield value, making it proportionally effective on high-shield frames like Mag and Volt that already have elevated shield pools.
 
-The shield bonus is temporary and resets when stacks expire. Weapons with high-frequency impact procs -- semi-auto rifles, burst fire weapons -- maintain stacks more reliably than slow-firing primaries with occasional impact triggers.
+The shield bonus is temporary and resets when stacks expire. Weapons with high-frequency impact procs - semi-auto rifles, burst fire weapons - maintain stacks more reliably than slow-firing primaries with occasional impact triggers.
 
 ## Stats per rank
 
 | Rank | Shield per Stack | Max Stacks | Max Total Shield Bonus | Notes |
 |------|-----------------|-----------|------------------------|-------|
-| 0    | +12%            | 6         | +72%                   | Base defensive boost |
-| 1    | +18%            | 6         | +108%                  | Moderate improvement |
-| 2    | +24%            | 6         | +144%                  | Solid shield scaling |
-| 3    | +30%            | 6         | +180%                  | Strong defensive build |
-| 4    | +36%            | 6         | +216%                  | Near-maximum |
-| 5    | +72%            | 6         | +432%                  | Maximum shield coverage |
+| 0 | +12% | 6 | +72% | Base defensive boost |
+| 1 | +18% | 6 | +108% | Moderate improvement |
+| 2 | +24% | 6 | +144% | Solid shield scaling |
+| 3 | +30% | 6 | +180% | Strong defensive build |
+| 4 | +36% | 6 | +216% | Near-maximum |
+| 5 | +72% | 6 | +432% | Maximum shield coverage |
 
 ## Acquisition
 
@@ -66,7 +65,7 @@ Frames with low base shield values receive smaller absolute shield gains from th
 
 ## Notes
 
-The shield bonus stacks independently from shield capacity mods -- percentage bonuses from both sources apply to the base shield value. Impact procs from primary weapon fire trigger the arcane; impact procs from companion weapons or warframe abilities do not. The 10-second timer on each stack counts down independently -- stacks added at different times expire at different intervals. Maintaining maximum stacks requires sustaining a reliable impact proc rate, which favors weapons with both high status chance and high impact damage percentages. Shield-gated builds should note that the bonus shields do not inherently reset the shield gate; only fully depleting and replenishing shields triggers the gate timing.
+The shield bonus stacks independently from shield capacity mods - percentage bonuses from both sources apply to the base shield value. Impact procs from primary weapon fire trigger the arcane; impact procs from companion weapons or warframe abilities do not. The 10-second timer on each stack counts down independently - stacks added at different times expire at different intervals. Maintaining maximum stacks requires sustaining a reliable impact proc rate, which favors weapons with both high status chance and high impact damage percentages. Shield-gated builds should note that the bonus shields do not inherently reset the shield gate; only fully depleting and replenishing shields triggers the gate timing.
 
 ## Sources
 

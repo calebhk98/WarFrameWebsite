@@ -3,20 +3,20 @@ slug: secondary-kinship
 name: Secondary Kinship
 type: weapon
 maxRank: 5
-effect: 'On Reload: Grant self and nearby allies +[power]% all resistances for [duration]s.'
+effect: "While Buffing Ally Warframes: +[crit_chance]% Critical Chance per buff"
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { crit_chance: 3 }
+  - rank: 1
+    stats: { crit_chance: 6 }
+  - rank: 2
+    stats: { crit_chance: 10 }
+  - rank: 3
+    stats: { crit_chance: 13 }
+  - rank: 4
+    stats: { crit_chance: 17 }
+  - rank: 5
+    stats: { crit_chance: 20 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,7 +30,6 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
 Secondary Kinship provides team-wide resistance buffs triggered by secondary weapon reloads. The resistance increase applies to all damage types simultaneously, making it one of the broader defensive arcanes available for secondary weapons. Each reload action from the secondary weapon buffs the player and squadmates in range, meaning high-frequency reload builds maintain consistent resistance uptime across extended missions.
@@ -45,12 +44,12 @@ Each secondary weapon reload triggers the resistance buff check. On success, the
 
 | Rank | Resistance Bonus | Duration | Notes |
 |------|-----------------|----------|-------|
-| 0    | +15%            | 8s       | Mild universal reduction |
-| 1    | +30%            | 8s       | Moderate multi-type mitigation |
-| 2    | +45%            | 8s       | Strong resistance baseline |
-| 3    | +60%            | 8s       | Substantial damage reduction |
-| 4    | +70%            | 8s       | Near-maximum for most builds |
-| 5    | +75%            | 8s       | Maximum resistance coverage |
+| 0 | +15% | 8s | Mild universal reduction |
+| 1 | +30% | 8s | Moderate multi-type mitigation |
+| 2 | +45% | 8s | Strong resistance baseline |
+| 3 | +60% | 8s | Substantial damage reduction |
+| 4 | +70% | 8s | Near-maximum for most builds |
+| 5 | +75% | 8s | Maximum resistance coverage |
 
 ## Acquisition
 
@@ -58,7 +57,7 @@ Secondary Kinship drops from Zariman Ten-Zero missions and Void Cascade content 
 
 ## Builds that use it
 
-Secondary Kinship suits support-oriented builds that prioritize team survivability over individual damage output. Frames that frequently reload -- sentinel-synced secondaries, high-ammo-capacity pistols with fast reload mods -- trigger Kinship often enough to maintain near-constant team resistance buffs during active combat. Defensive squad compositions running Inaros, Nidus, or Rhino as front-line tanks alongside support frames benefit from layered defensive contributions. The reload trigger is particularly efficient in squad play because each player reloading their secondary independently checks for the buff, creating multiple opportunities per rotation cycle for resistance uptime across the team.
+Secondary Kinship suits support-oriented builds that prioritize team survivability over individual damage output. Frames that frequently reload - sentinel-synced secondaries, high-ammo-capacity pistols with fast reload mods - trigger Kinship often enough to maintain near-constant team resistance buffs during active combat. Defensive squad compositions running Inaros, Nidus, or Rhino as front-line tanks alongside support frames benefit from layered defensive contributions. The reload trigger is particularly efficient in squad play because each player reloading their secondary independently checks for the buff, creating multiple opportunities per rotation cycle for resistance uptime across the team.
 
 ## Notes
 

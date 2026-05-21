@@ -6,16 +6,16 @@ drain: 6
 maxRank: 3
 rarity: rare
 type: augment
-effect: "Crush Augment: Crush gains +50% casting speed. Surviving enemies lose [armor_strip]% armor and are immobilized for [duration]s."
+effect: "Crush Augment: Crush gains +[armor]% casting speed. The armor of surviving enemies decreases by 30% and they are unable to move for 4s."
 perRankStats:
   - rank: 0
-    stats: { casting_speed: 50, armor_strip: 30, duration: 4 }
+    stats: { armor: 50 }
   - rank: 1
-    stats: { casting_speed: 50, armor_strip: 45, duration: 5 }
+    stats: { armor: 50 }
   - rank: 2
-    stats: { casting_speed: 50, armor_strip: 60, duration: 6 }
+    stats: { armor: 50 }
   - rank: 3
-    stats: { casting_speed: 50, armor_strip: 75, duration: 7 }
+    stats: { armor: 50 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"

@@ -3,20 +3,20 @@ slug: primary-exhilarate
 name: Primary Exhilarate
 type: weapon
 maxRank: 5
-effect: "On Reload: Gain +[power]% Damage for 15s. Stacks up to 3x."
+effect: "On Weapon Impact Status Effect: +[energy_regen] Energy Regen/s for 10s. Stacks up to 3x."
 perRankStats:
   - rank: 0
-    stats: { power: 10 }
+    stats: { energy_regen: 0.2 }
   - rank: 1
-    stats: { power: 20 }
+    stats: { energy_regen: 0.4 }
   - rank: 2
-    stats: { power: 30 }
+    stats: { energy_regen: 0.6 }
   - rank: 3
-    stats: { power: 40 }
+    stats: { energy_regen: 0.8 }
   - rank: 4
-    stats: { power: 50 }
+    stats: { energy_regen: 1 }
   - rank: 5
-    stats: { power: 60 }
+    stats: { energy_regen: 1.2 }
 drops:
   - source: "Void Cascade Skirmish missions"
     chance: 2.0
@@ -30,16 +30,15 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Primary Exhilarate rewards magazine discipline by stacking a damage bonus on each reload action, accumulating up to three stacks over repeated reload cycles. Unlike reload speed arcanes that accelerate ammunition economy, Exhilarate converts the reload vulnerability window into a damage investment -- each reload pause builds toward a larger damage output on the next magazine dump. The 15-second stack duration is generous, allowing aggressive players to maintain full stacks through rapid sequential reloads without losing progress between engagements.
+Primary Exhilarate rewards magazine discipline by stacking a damage bonus on each reload action, accumulating up to three stacks over repeated reload cycles. Unlike reload speed arcanes that accelerate ammunition economy, Exhilarate converts the reload vulnerability window into a damage investment - each reload pause builds toward a larger damage output on the next magazine dump. The 15-second stack duration is generous, allowing aggressive players to maintain full stacks through rapid sequential reloads without losing progress between engagements.
 
 Stacking damage arcanes that scale across multiple reloads reward sustained combat over extended engagement windows rather than burst-cycle play. Primary Exhilarate's three-stack limit is achievable within the first three magazines of any mission, after which the player maintains full stacks through continued reloading activity. This makes the arcane most effective in missions with continuous enemy engagement where magazines deplete and reload at consistent intervals.
 
 ## Effect
 
-Each reload adds one damage stack lasting 15 seconds. Stacks accumulate up to three times, each refreshing independently. At rank 0, each stack provides 10% damage for a maximum of 30% at three stacks. At rank 5, each stack provides 60% damage for a maximum of 180% at three stacks -- nearly doubling the weapon's output damage at full stacks.
+Each reload adds one damage stack lasting 15 seconds. Stacks accumulate up to three times, each refreshing independently. At rank 0, each stack provides 10% damage for a maximum of 30% at three stacks. At rank 5, each stack provides 60% damage for a maximum of 180% at three stacks - nearly doubling the weapon's output damage at full stacks.
 
 The 15-second timer per stack is independent, meaning early stacks can expire if reload cycles are slow. Fast-reloading weapons maintain all three stacks more reliably than slow-reloading primaries.
 
@@ -47,12 +46,12 @@ The 15-second timer per stack is independent, meaning early stacks can expire if
 
 | Rank | Damage per Stack | Max Stacks | Max Total Damage | Stack Duration |
 |------|-----------------|-----------|-----------------|----------------|
-| 0    | +10%            | 3         | +30%            | 15s            |
-| 1    | +20%            | 3         | +60%            | 15s            |
-| 2    | +30%            | 3         | +90%            | 15s            |
-| 3    | +40%            | 3         | +120%           | 15s            |
-| 4    | +50%            | 3         | +150%           | 15s            |
-| 5    | +60%            | 3         | +180%           | 15s            |
+| 0 | +10% | 3 | +30% | 15s |
+| 1 | +20% | 3 | +60% | 15s |
+| 2 | +30% | 3 | +90% | 15s |
+| 3 | +40% | 3 | +120% | 15s |
+| 4 | +50% | 3 | +150% | 15s |
+| 5 | +60% | 3 | +180% | 15s |
 
 ## Acquisition
 
@@ -62,11 +61,11 @@ Primary Exhilarate drops from Void Cascade Skirmish missions in the Zariman tile
 
 Primary Exhilarate excels on rapid-fire primary weapons that deplete magazines quickly and reload frequently. Soma Prime builds that cycle through magazines at high fire rates reach maximum stacks within the first few engagement windows of a mission and maintain three stacks throughout active combat. High-fire-rate rifles and full-auto primaries with moderate magazine sizes provide the reload frequency needed to sustain maximum stack counts without dedicated reload management.
 
-Builds using reload-speed mods alongside Exhilarate reduce the downtime between stacks, ensuring that each stack is added quickly and that the 15-second window is refreshed before expiration. Frames with reload-boosting abilities -- Wisp's Haste Mote, Trinity's Link synergy with reload speed -- complement Exhilarate's stack maintenance.
+Builds using reload-speed mods alongside Exhilarate reduce the downtime between stacks, ensuring that each stack is added quickly and that the 15-second window is refreshed before expiration. Frames with reload-boosting abilities - Wisp's Haste Mote, Trinity's Link synergy with reload speed - complement Exhilarate's stack maintenance.
 
 ## Notes
 
-Each stack has its own independent 15-second timer. Adding a second stack does not reset the first stack's timer -- both timers run concurrently. If the first stack expires before a fourth reload adds a replacement, the stack count temporarily drops from three to two until the next reload restores it. Weapons with small magazines that reload very frequently maintain more consistent stack uptime than large-magazine weapons with infrequent reload cycles. The damage bonus is additive with base damage mods like Serration, providing a straightforward damage multiplication during full-stack windows.
+Each stack has its own independent 15-second timer. Adding a second stack does not reset the first stack's timer - both timers run concurrently. If the first stack expires before a fourth reload adds a replacement, the stack count temporarily drops from three to two until the next reload restores it. Weapons with small magazines that reload very frequently maintain more consistent stack uptime than large-magazine weapons with infrequent reload cycles. The damage bonus is additive with base damage mods like Serration, providing a straightforward damage multiplication during full-stack windows.
 
 ## Sources
 

@@ -1,13 +1,17 @@
 ---
 name: Virtuos Fury
 type: operator
-maxRank: 5
-effect: "On Void Damage Hit: +[damage]% Amp Damage for [duration]s"
+maxRank: 3
+effect: "On Status Effect: 20% chance for +[damage]% Damage for 4s"
 perRankStats:
   - rank: 0
-    stats: { damage: 30, duration: 8 }
-  - rank: 5
-    stats: { damage: 150, duration: 8 }
+    stats: { damage: 7.5 }
+  - rank: 1
+    stats: { damage: 15 }
+  - rank: 2
+    stats: { damage: 22.5 }
+  - rank: 3
+    stats: { damage: 30 }
 drops:
   - source: "Eidolon Teralyst capture (Void Fissure)"
     chance: 3.0
@@ -22,12 +26,11 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Virtuos Fury is an Operator arcane that amplifies the damage output of the Operator's Amp weapon when the Amp successfully deals Void damage. It is installed in the Virtuos arcane slot and is primarily valued for Eidolon hunt content, where the Operator's Amp is the primary damage source against Eidolon synapses and Eidolon shields. At maximum rank, Virtuos Fury adds +150% damage to all Amp hits for 8 seconds following any successful Void damage contact, effectively tripling Amp output from a single hit onward.
 
-The arcane's proc condition -- a successful Void damage hit -- is trivially met in any content where the Operator shoots the Amp at enemies. Once the initial hit lands and the buff activates, the 8-second window refreshes with each subsequent hit, creating near-permanent uptime during sustained Amp fire. This makes Virtuos Fury one of the highest-value offensive Operator arcanes available.
+The arcane's proc condition - a successful Void damage hit - is trivially met in any content where the Operator shoots the Amp at enemies. Once the initial hit lands and the buff activates, the 8-second window refreshes with each subsequent hit, creating near-permanent uptime during sustained Amp fire. This makes Virtuos Fury one of the highest-value offensive Operator arcanes available.
 
 ## Effect
 
@@ -39,12 +42,12 @@ The damage bonus is additive with other Amp damage modifiers from Focus Schools 
 
 | Rank | Damage Bonus | Duration |
 |------|-------------:|---------:|
-| 0    | +30%         | 8s       |
-| 1    | +60%         | 8s       |
-| 2    | +90%         | 8s       |
-| 3    | +120%        | 8s       |
-| 4    | +135%        | 8s       |
-| 5    | +150%        | 8s       |
+| 0 | +30% | 8s |
+| 1 | +60% | 8s |
+| 2 | +90% | 8s |
+| 3 | +120% | 8s |
+| 4 | +135% | 8s |
+| 5 | +150% | 8s |
 
 ## Acquisition
 
@@ -66,5 +69,5 @@ The 8-second buff timer means a brief pause in firing will not drop the buff imm
 
 ## Sources
 
-- [WFCD warframe-items](https://github.com/WFCD/warframe-items) -- arcane stats and effect data
-- [Virtuos Fury -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Virtuos_Fury) -- acquisition, effect details, and community usage
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) - arcane stats and effect data
+- [Virtuos Fury - WARFRAME Wiki](https://warframe.fandom.com/wiki/Virtuos_Fury) - acquisition, effect details, and community usage

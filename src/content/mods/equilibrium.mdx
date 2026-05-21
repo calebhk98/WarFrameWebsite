@@ -2,24 +2,34 @@
 slug: equilibrium
 name: Equilibrium
 polarity: naramon
-drain: 6
-maxRank: 5
-rarity: rare
+drain: 4
+maxRank: 10
+rarity: uncommon
 type: warframe
-effect: "On energy pickup: convert [energy]% to health, on health pickup: convert [health]% to energy"
+effect: "Health pickups give +[health_pickups]% Energy. Energy pickups give +10% Health."
 perRankStats:
   - rank: 0
-    stats: { energy: 40, health: 40 }
+    stats: { health_pickups: 10 }
   - rank: 1
-    stats: { energy: 50, health: 50 }
+    stats: { health_pickups: 20 }
   - rank: 2
-    stats: { energy: 60, health: 60 }
+    stats: { health_pickups: 30 }
   - rank: 3
-    stats: { energy: 70, health: 70 }
+    stats: { health_pickups: 40 }
   - rank: 4
-    stats: { energy: 80, health: 80 }
+    stats: { health_pickups: 50 }
   - rank: 5
-    stats: { energy: 100, health: 100 }
+    stats: { health_pickups: 60 }
+  - rank: 6
+    stats: { health_pickups: 70 }
+  - rank: 7
+    stats: { health_pickups: 80 }
+  - rank: 8
+    stats: { health_pickups: 90 }
+  - rank: 9
+    stats: { health_pickups: 100 }
+  - rank: 10
+    stats: { health_pickups: 110 }
 drops:
   - source: "Void Fissure - Void Relic"
     chance: "unknown"

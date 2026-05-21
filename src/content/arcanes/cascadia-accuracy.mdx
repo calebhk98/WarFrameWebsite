@@ -3,12 +3,20 @@ slug: cascadia-accuracy
 name: Cascadia Accuracy
 type: weapon
 maxRank: 5
-effect: "On Critical Hit: [chance]% chance to grant [accuracy]% Accuracy and [fire_rate]% Fire Rate for [duration] seconds."
+effect: "On Roll: +[crit_chance]% Critical Chance on Weakpoint Hits for 4s"
 perRankStats:
   - rank: 0
-    stats: { chance: 15, accuracy: 20, fire_rate: 15, duration: 10 }
+    stats: { crit_chance: 50 }
+  - rank: 1
+    stats: { crit_chance: 100 }
+  - rank: 2
+    stats: { crit_chance: 150 }
+  - rank: 3
+    stats: { crit_chance: 200 }
+  - rank: 4
+    stats: { crit_chance: 250 }
   - rank: 5
-    stats: { chance: 45, accuracy: 60, fire_rate: 45, duration: 10 }
+    stats: { crit_chance: 300 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Cascadia Accuracy boosts accuracy and fire rate on critical hits from secondary weapons. The dual buff rewards crit-optimized secondary builds by converting every critical proc into a short but meaningful DPS window. Accuracy improvements reduce projectile spread during sustained full-auto fire, tightening shot grouping on automatic pistols and machine pistols that experience bloom after the first few rounds. Fire rate scaling compounds this by increasing rounds landing in the tighter spread window per second, making subsequent shots during the buff more reliable and more frequent.
@@ -38,12 +45,12 @@ Cascadia Accuracy activates on any critical hit from the secondary weapon. Both 
 
 | Rank | Trigger Chance | Accuracy | Fire Rate | Duration |
 |------|----------------|----------|-----------|----------|
-| 0    | 15%            | +20%     | +15%      | 10s      |
-| 1    | 22%            | +30%     | +25%      | 10s      |
-| 2    | 30%            | +40%     | +35%      | 10s      |
-| 3    | 37%            | +50%     | +40%      | 10s      |
-| 4    | 41%            | +55%     | +42%      | 10s      |
-| 5    | 45%            | +60%     | +45%      | 10s      |
+| 0 | 15% | +20% | +15% | 10s |
+| 1 | 22% | +30% | +25% | 10s |
+| 2 | 30% | +40% | +35% | 10s |
+| 3 | 37% | +50% | +40% | 10s |
+| 4 | 41% | +55% | +42% | 10s |
+| 5 | 45% | +60% | +45% | 10s |
 
 ## Acquisition
 

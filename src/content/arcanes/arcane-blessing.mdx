@@ -3,20 +3,20 @@ slug: arcane-blessing
 name: Arcane Blessing
 type: warframe
 maxRank: 5
-effect: "On Health Damage Taken: [chance]% chance to restore [healing] Health to self and nearby allies."
+effect: "On Health Pickup: +[health] Max Health. Stacks up to 50x."
 perRankStats:
   - rank: 0
-    stats: { chance: 10, healing: 50 }
+    stats: { health: 4 }
   - rank: 1
-    stats: { chance: 15, healing: 100 }
+    stats: { health: 8 }
   - rank: 2
-    stats: { chance: 20, healing: 150 }
+    stats: { health: 12 }
   - rank: 3
-    stats: { chance: 25, healing: 200 }
+    stats: { health: 16 }
   - rank: 4
-    stats: { chance: 30, healing: 250 }
+    stats: { health: 20 }
   - rank: 5
-    stats: { chance: 35, healing: 300 }
+    stats: { health: 24 }
 drops:
   - source: "Lua/Circulus (Survival), Rotation C"
     chance: 10.2
@@ -32,10 +32,9 @@ sources:
     note: "Acquisition context and squad utility applications"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Arcane Blessing is a Warframe arcane that provides reactive group healing whenever the Tenno takes health damage. The arcane triggers on damage threshold events, granting a percentage chance to restore a health pool to both the player and nearby squadmates. Unlike utility arcanes tied to specific playstyles, Blessing is universally applicable -- it provides value on every frame build simply by taking damage during normal gameplay. The healing scales from 50 health at rank 0 to 300 at rank 5, with trigger chance climbing from 10% to 35%. This makes Blessing a staple defensive arcane for coordinated squad play, particularly in endurance missions where consistent group sustain prevents wipes. The arcane is especially valuable for support frames or tank-oriented builds that intentionally draw aggro.
+Arcane Blessing is a Warframe arcane that provides reactive group healing whenever the Tenno takes health damage. The arcane triggers on damage threshold events, granting a percentage chance to restore a health pool to both the player and nearby squadmates. Unlike utility arcanes tied to specific playstyles, Blessing is universally applicable - it provides value on every frame build simply by taking damage during normal gameplay. The healing scales from 50 health at rank 0 to 300 at rank 5, with trigger chance climbing from 10% to 35%. This makes Blessing a staple defensive arcane for coordinated squad play, particularly in endurance missions where consistent group sustain prevents wipes. The arcane is especially valuable for support frames or tank-oriented builds that intentionally draw aggro.
 
 ## Effect per rank
 

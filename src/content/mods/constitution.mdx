@@ -6,16 +6,16 @@ drain: 10
 maxRank: 3
 rarity: rare
 type: warframe
-effect: "+[recovery]% Faster Knockdown Recovery, +[duration]% Ability Duration"
+effect: "+[faster_knockdown]% Faster Knockdown Recovery, +[power_duration]% Ability Duration"
 perRankStats:
   - rank: 0
-    stats: { recovery: 10, duration: 7 }
+    stats: { faster_knockdown: 10, power_duration: 7 }
   - rank: 1
-    stats: { recovery: 20, duration: 14 }
+    stats: { faster_knockdown: 20, power_duration: 14 }
   - rank: 2
-    stats: { recovery: 30, duration: 21 }
+    stats: { faster_knockdown: 30, power_duration: 21 }
   - rank: 3
-    stats: { recovery: 40, duration: 28 }
+    stats: { faster_knockdown: 40, power_duration: 28 }
 drops:
   - source: "Enemy drops (Grineer)"
     chance: "unknown"
@@ -57,5 +57,5 @@ Constitution appears in duration-scaling builds for frames with ability uptime c
 
 ## Notes
 
-Knockdown recovery speed reduces the duration of the knockdown animation by the listed percentage. Even at 40% recovery, knockdowns remain interruptions—the bonus merely shortens the window. Combining Constitution with Sure Footed creates redundancy, as both address knockdown problems; most builds choose one or the other, not both.
+Knockdown recovery speed reduces the duration of the knockdown animation by the listed percentage. Even at 40% recovery, knockdowns remain interruptions - the bonus merely shortens the window. Combining Constitution with Sure Footed creates redundancy, as both address knockdown problems; most builds choose one or the other, not both.
 

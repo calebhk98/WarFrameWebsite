@@ -3,12 +3,20 @@ slug: eternal-onslaught
 name: Eternal Onslaught
 type: other
 maxRank: 5
-effect: "Amp attacks: [chance]% chance to grant [power_strength]% Power Strength for [duration] seconds."
+effect: "On Energy Depleted: [crit_chance]% Critical Chance for 8s"
 perRankStats:
   - rank: 0
-    stats: { chance: 15, power_strength: 30, duration: 8 }
+    stats: { crit_chance: 30 }
+  - rank: 1
+    stats: { crit_chance: 60 }
+  - rank: 2
+    stats: { crit_chance: 90 }
+  - rank: 3
+    stats: { crit_chance: 120 }
+  - rank: 4
+    stats: { crit_chance: 150 }
   - rank: 5
-    stats: { chance: 45, power_strength: 90, duration: 8 }
+    stats: { crit_chance: 180 }
 drops:
   - source: "Zariman Void Cascade rewards"
     chance: 4.0
@@ -23,16 +31,15 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Eternal Onslaught is an amp arcane that grants Power Strength to the warframe when the operator lands amp attacks. This creates a link between operator combat effectiveness and warframe ability power -- players who actively engage enemies in operator mode using their amp build up a Power Strength bonus that carries back to the warframe on transference return. Operator-active builds that regularly cycle between amp combat and warframe ability usage can sustain meaningful Power Strength uptime throughout a mission.
+Eternal Onslaught is an amp arcane that grants Power Strength to the warframe when the operator lands amp attacks. This creates a link between operator combat effectiveness and warframe ability power - players who actively engage enemies in operator mode using their amp build up a Power Strength bonus that carries back to the warframe on transference return. Operator-active builds that regularly cycle between amp combat and warframe ability usage can sustain meaningful Power Strength uptime throughout a mission.
 
 Amp attacks include any damage event from the amp weapon fired in operator mode. Primary fire beam attacks, alternate fire blasts, and amp-based void attacks all count toward the trigger check. High-fire-rate amps with continuous beam attacks generate trigger checks at high frequency, while slower burst-fire amps generate fewer checks per second but each check at the same chance.
 
 ## Effect
 
-Each amp attack in operator mode triggers a chance check. On success, the warframe gains a Power Strength bonus for 8 seconds. At rank 0, a 15% trigger chance grants 30% Power Strength -- roughly one in six amp hits produces an ability strength boost. At rank 5, a 45% trigger chance grants 90% Power Strength -- nearly half of all amp hits trigger the bonus, and 90% Power Strength amplifies ability outputs to values approaching those achieved with dedicated strength mods.
+Each amp attack in operator mode triggers a chance check. On success, the warframe gains a Power Strength bonus for 8 seconds. At rank 0, a 15% trigger chance grants 30% Power Strength - roughly one in six amp hits produces an ability strength boost. At rank 5, a 45% trigger chance grants 90% Power Strength - nearly half of all amp hits trigger the bonus, and 90% Power Strength amplifies ability outputs to values approaching those achieved with dedicated strength mods.
 
 The 8-second duration is sufficient to cover the return to warframe and several ability casts before expiring. Players who switch back to warframe mode immediately after triggering Onslaught extract the full duration for ability usage, rather than consuming the buff window in continued operator combat.
 
@@ -40,26 +47,26 @@ The 8-second duration is sufficient to cover the return to warframe and several 
 
 | Rank | Trigger Chance | Power Strength Boost | Duration | Notes |
 |------|----------------|----------------------|----------|-------|
-| 0    | 15%            | +30%                 | 8s       | Occasional strength window |
-| 1    | 22%            | +45%                 | 8s       | Moderate ability scaling |
-| 2    | 30%            | +60%                 | 8s       | Reliable strength boost |
-| 3    | 37%            | +75%                 | 8s       | Strong ability amplification |
-| 4    | 41%            | +82%                 | 8s       | Near-maximum uptime |
-| 5    | 45%            | +90%                 | 8s       | Maximum strength coverage |
+| 0 | 15% | +30% | 8s | Occasional strength window |
+| 1 | 22% | +45% | 8s | Moderate ability scaling |
+| 2 | 30% | +60% | 8s | Reliable strength boost |
+| 3 | 37% | +75% | 8s | Strong ability amplification |
+| 4 | 41% | +82% | 8s | Near-maximum uptime |
+| 5 | 45% | +90% | 8s | Maximum strength coverage |
 
 ## Acquisition
 
-Eternal Onslaught drops from Zariman Void Cascade at 4% and Void Fissure rotation B at 2%. Both sources are part of Zariman Ten-Zero content, accessible after completing Angels of the Zariman. Void Cascade at 4% provides the primary farming route -- extended Void Cascade runs naturally accumulate Onslaught copies over multiple sessions. Warframe.market provides an alternative for players who prefer to purchase rather than run multiple Zariman sessions.
+Eternal Onslaught drops from Zariman Void Cascade at 4% and Void Fissure rotation B at 2%. Both sources are part of Zariman Ten-Zero content, accessible after completing Angels of the Zariman. Void Cascade at 4% provides the primary farming route - extended Void Cascade runs naturally accumulate Onslaught copies over multiple sessions. Warframe.market provides an alternative for players who prefer to purchase rather than run multiple Zariman sessions.
 
 ## Builds that use it
 
 Eternal Onslaught fits operator-active builds where the player regularly engages enemies in operator mode before returning to the warframe for ability usage. Madurai school builds that use the Void Sling for void damage and then return to warframe for damage abilities benefit from the strength amplification window. Unairu builds that strip armor in operator mode and then return to warframe for ability damage gain amplified damage output during the Onslaught buff window.
 
-Frames with high-scaling damage abilities -- Saryn's Spores, Equinox's Maim, Mesa's Peacemaker -- benefit most from the temporary Power Strength boost because their abilities scale strongly with strength values. Pairing Eternal Onslaught with an amp that fires quickly maximizes trigger frequency, accumulating the buff more reliably per combat cycle than slow-fire amps.
+Frames with high-scaling damage abilities - Saryn's Spores, Equinox's Maim, Mesa's Peacemaker - benefit most from the temporary Power Strength boost because their abilities scale strongly with strength values. Pairing Eternal Onslaught with an amp that fires quickly maximizes trigger frequency, accumulating the buff more reliably per combat cycle than slow-fire amps.
 
 ## Notes
 
-The Power Strength bonus applies to warframe abilities and does not directly increase amp damage. The buff persists through transference -- triggering the arcane in operator mode and immediately returning to warframe mode carries the buff into the warframe phase. The 8-second window begins when the arcane procs, not when transference occurs. Operator combat that extends beyond the 8-second window before returning to warframe may waste part of the buff duration if the window expires before the warframe casts its abilities. The buff does not stack -- a second proc while the first is active refreshes the timer without adding additional Power Strength.
+The Power Strength bonus applies to warframe abilities and does not directly increase amp damage. The buff persists through transference - triggering the arcane in operator mode and immediately returning to warframe mode carries the buff into the warframe phase. The 8-second window begins when the arcane procs, not when transference occurs. Operator combat that extends beyond the 8-second window before returning to warframe may waste part of the buff duration if the window expires before the warframe casts its abilities. The buff does not stack - a second proc while the first is active refreshes the timer without adding additional Power Strength.
 
 ## Sources
 

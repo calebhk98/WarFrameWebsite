@@ -3,12 +3,20 @@ slug: emergence-savior
 name: Emergence Savior
 type: operator
 maxRank: 5
-effect: "On Critical Health: [chance]% chance to grant the warframe [overshield] overshield and instantly revive it."
+effect: "On Lethal Damage: Become invulnerable for 5s and recover [health]% Health. Cooldown: 90s"
 perRankStats:
   - rank: 0
-    stats: { chance: 25, overshield: 200 }
+    stats: { health: 10 }
+  - rank: 1
+    stats: { health: 20 }
+  - rank: 2
+    stats: { health: 30 }
+  - rank: 3
+    stats: { health: 40 }
+  - rank: 4
+    stats: { health: 50 }
   - rank: 5
-    stats: { chance: 75, overshield: 600 }
+    stats: { health: 60 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Emergence Savior provides a last-resort survival mechanism that activates when the warframe reaches critical health thresholds. When triggered, the arcane restores the warframe with an overshield buffer, preventing immediate death during high-damage encounters. This makes it one of the few operator arcanes that directly influences warframe survivability rather than affecting operator combat effectiveness, bridging the gap between the two playstyles.
@@ -34,18 +41,18 @@ The overshield granted by Emergence Savior acts as an additional buffer beyond t
 
 Emergence Savior checks its trigger chance when the warframe's health drops to a critical level. On success, the warframe receives an overshield grant equal to the arcane's listed value and is immediately revived if it had already fallen. At rank 0, a 25% trigger chance with 200 overshield provides occasional emergency protection. At rank 5, the 75% trigger chance activates reliably during most near-death events, and the 600 overshield absorbs significant follow-up damage.
 
-The revive component means the arcane can effectively function as a cheat-death mechanic for the warframe -- similar to arcanes like Arcane Guardian providing passive armor, but Savior provides an active save condition. The overshield and revive trigger simultaneously, ensuring the frame re-enters combat with an effective buffer rather than just base health values.
+The revive component means the arcane can effectively function as a cheat-death mechanic for the warframe - similar to arcanes like Arcane Guardian providing passive armor, but Savior provides an active save condition. The overshield and revive trigger simultaneously, ensuring the frame re-enters combat with an effective buffer rather than just base health values.
 
 ## Stats per rank
 
 | Rank | Trigger Chance | Overshield | Notes |
 |------|----------------|-----------|-------|
-| 0    | 25%            | 200       | Occasional last-stand save |
-| 1    | 37%            | 300       | Moderate save reliability |
-| 2    | 50%            | 400       | Equal odds of triggering |
-| 3    | 62%            | 500       | Reliable emergency response |
-| 4    | 70%            | 550       | High-probability save |
-| 5    | 75%            | 600       | Near-guaranteed last-stand |
+| 0 | 25% | 200 | Occasional last-stand save |
+| 1 | 37% | 300 | Moderate save reliability |
+| 2 | 50% | 400 | Equal odds of triggering |
+| 3 | 62% | 500 | Reliable emergency response |
+| 4 | 70% | 550 | High-probability save |
+| 5 | 75% | 600 | Near-guaranteed last-stand |
 
 ## Acquisition
 
@@ -53,13 +60,13 @@ Emergence Savior drops from Zariman Void Fissure at 4% and Void Flood rotation A
 
 ## Builds that use it
 
-Emergence Savior suits builds that regularly push into dangerous content where the warframe health frequently reaches critical levels. Solo Steel Path players benefit from the passive safety net during high-density encounters. Shield-gated builds using frames like Hildryn or Harrow gain additional benefit from the overshield component -- the overshield grant resets the shield gate timing, extending invulnerability windows during critical health events. Operator-heavy builds that frequently return to the warframe at low health due to operator damage or natural combat damage cycles trigger the check more often.
+Emergence Savior suits builds that regularly push into dangerous content where the warframe health frequently reaches critical levels. Solo Steel Path players benefit from the passive safety net during high-density encounters. Shield-gated builds using frames like Hildryn or Harrow gain additional benefit from the overshield component - the overshield grant resets the shield gate timing, extending invulnerability windows during critical health events. Operator-heavy builds that frequently return to the warframe at low health due to operator damage or natural combat damage cycles trigger the check more often.
 
 High-health frames like Inaros and Nidus rarely reach critical health thresholds, making Savior less valuable for those frames. The arcane is most effective on frames with moderate to low health pools that routinely face burst damage events in endgame content.
 
 ## Notes
 
-The trigger fires at critical health, not at death. "Critical health" thresholds can vary by the game's internal definition, so the arcane may activate before the health bar fully depletes. The overshield does not stack beyond a single Savior application -- if the arcane triggers a second time before the first overshield depletes, the timer refreshes but values do not stack. The revive component functions even if the warframe technically reaches 0 health, making Savior effective against one-shot kill scenarios that would otherwise bypass standard survivability tools.
+The trigger fires at critical health, not at death. "Critical health" thresholds can vary by the game's internal definition, so the arcane may activate before the health bar fully depletes. The overshield does not stack beyond a single Savior application - if the arcane triggers a second time before the first overshield depletes, the timer refreshes but values do not stack. The revive component functions even if the warframe technically reaches 0 health, making Savior effective against one-shot kill scenarios that would otherwise bypass standard survivability tools.
 
 ## Sources
 

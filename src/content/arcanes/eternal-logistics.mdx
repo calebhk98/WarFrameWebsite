@@ -3,12 +3,20 @@ slug: eternal-logistics
 name: Eternal Logistics
 type: other
 maxRank: 5
-effect: "Amp attacks: [chance]% chance to grant [energy_restore] energy to the operator."
+effect: "On Void Sling: +[ammo_efficiency]% Amp Ammo Efficiency for 8s"
 perRankStats:
   - rank: 0
-    stats: { chance: 15, energy_restore: 20 }
+    stats: { ammo_efficiency: 12 }
+  - rank: 1
+    stats: { ammo_efficiency: 24 }
+  - rank: 2
+    stats: { ammo_efficiency: 36 }
+  - rank: 3
+    stats: { ammo_efficiency: 48 }
+  - rank: 4
+    stats: { ammo_efficiency: 60 }
   - rank: 5
-    stats: { chance: 45, energy_restore: 60 }
+    stats: { ammo_efficiency: 72 }
 drops:
   - source: "Zariman Void Cascade rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Eternal Logistics provides operator energy sustain by converting amp attacks into energy restoration events. Each amp hit in operator mode checks for a chance to restore energy directly to the operator, allowing sustained amp fire during extended operator engagements without needing external energy sources or natural energy regeneration timers. Operators in full combat mode who would otherwise deplete their energy pool and lose amp functionality benefit from Logistics's passive energy income.
@@ -32,7 +39,7 @@ Operator energy limits the duration of abilities and amp firing in extended oper
 
 ## Effect
 
-Each amp attack in operator mode triggers a chance check. On success, the operator gains the listed energy value. At rank 0, a 15% trigger chance restores 20 energy per hit -- effective for high-fire-rate amps that hit multiple times per second. At rank 5, a 45% trigger chance restores 60 energy per hit -- nearly half of all amp attacks restore a meaningful energy chunk, substantially extending the operator's ability to maintain combat before requiring energy management.
+Each amp attack in operator mode triggers a chance check. On success, the operator gains the listed energy value. At rank 0, a 15% trigger chance restores 20 energy per hit - effective for high-fire-rate amps that hit multiple times per second. At rank 5, a 45% trigger chance restores 60 energy per hit - nearly half of all amp attacks restore a meaningful energy chunk, substantially extending the operator's ability to maintain combat before requiring energy management.
 
 For continuous-beam amps that fire effectively as a stream of hits, Logistics can provide near-continuous energy income that offsets the energy drain of sustained beam fire, creating a self-sustaining loop in some configurations.
 
@@ -40,12 +47,12 @@ For continuous-beam amps that fire effectively as a stream of hits, Logistics ca
 
 | Rank | Trigger Chance | Energy Restore | Notes |
 |------|----------------|----------------|-------|
-| 0    | 15%            | 20             | Modest periodic restore |
-| 1    | 22%            | 30             | Moderate energy sustain |
-| 2    | 30%            | 40             | Reliable per-hit income |
-| 3    | 37%            | 50             | Strong energy cycling |
-| 4    | 41%            | 55             | Near-continuous sustain |
-| 5    | 45%            | 60             | Maximum energy per proc |
+| 0 | 15% | 20 | Modest periodic restore |
+| 1 | 22% | 30 | Moderate energy sustain |
+| 2 | 30% | 40 | Reliable per-hit income |
+| 3 | 37% | 50 | Strong energy cycling |
+| 4 | 41% | 55 | Near-continuous sustain |
+| 5 | 45% | 60 | Maximum energy per proc |
 
 ## Acquisition
 
@@ -55,11 +62,11 @@ Eternal Logistics drops from Zariman Void Cascade at 4% and Void Fissure rotatio
 
 Eternal Logistics benefits operator-heavy builds that rely on extended operator-mode combat rather than brief transference cycles. Operators using damage-focused builds against Eidolon-like targets or Void Fissure Manifestations that require sustained amp fire to defeat benefit from the energy sustain during long engagement windows. Madurai-school operators that use Void Sling and amp bursts in rapid cycles generate trigger checks frequently, maintaining energy through active combat.
 
-Solo Zariman content, where external support from squadmates is unavailable, makes Eternal Logistics particularly valuable -- the arcane functions as a self-contained energy economy that keeps the operator viable without requiring coordination or energy pickups from allies.
+Solo Zariman content, where external support from squadmates is unavailable, makes Eternal Logistics particularly valuable - the arcane functions as a self-contained energy economy that keeps the operator viable without requiring coordination or energy pickups from allies.
 
 ## Notes
 
-The energy restore applies directly to the operator's energy pool, not to the warframe's energy. Energy restored by Logistics does not affect warframe ability casting -- it solely supports continued amp fire and operator ability usage in operator mode. Amps with higher effective fire rates generate more trigger opportunities per second, making beam amps more efficient Logistics generators than single-shot amps at the same trigger chance. The arcane does not interact with Warframe Energy Conversion or energy-related mods; it functions as an isolated operator energy source.
+The energy restore applies directly to the operator's energy pool, not to the warframe's energy. Energy restored by Logistics does not affect warframe ability casting - it solely supports continued amp fire and operator ability usage in operator mode. Amps with higher effective fire rates generate more trigger opportunities per second, making beam amps more efficient Logistics generators than single-shot amps at the same trigger chance. The arcane does not interact with Warframe Energy Conversion or energy-related mods; it functions as an isolated operator energy source.
 
 ## Sources
 

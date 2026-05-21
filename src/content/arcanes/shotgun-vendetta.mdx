@@ -3,20 +3,20 @@ slug: shotgun-vendetta
 name: Shotgun Vendetta
 type: weapon
 maxRank: 5
-effect: 'On Kill: Gain +[power]% Reload Speed for [duration]s. Stacks up to 3x.'
+effect: "On shotgun kill within 5m of target: +[multishot]% Multishot and +[reload_speed]% Reload Speed for 15s."
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { multishot: 30, reload_speed: 12.5 }
+  - rank: 1
+    stats: { multishot: 60, reload_speed: 25 }
+  - rank: 2
+    stats: { multishot: 90, reload_speed: 37.5 }
+  - rank: 3
+    stats: { multishot: 120, reload_speed: 50 }
+  - rank: 4
+    stats: { multishot: 150, reload_speed: 62.5 }
+  - rank: 5
+    stats: { multishot: 180, reload_speed: 75 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,10 +30,9 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
-Shotgun Vendetta grants stacking reload speed bonuses on shotgun kills, rewarding consecutive kills with progressively faster reload cycles. The stacking mechanic creates a momentum system where early kills in an engagement enable faster reload during subsequent shots, reducing the total time lost to reloading as the combat sequence progresses. Shotguns with slow base reload speeds -- which are typically the highest-damage variants -- benefit the most from Vendetta's reload reduction during active combat.
+Shotgun Vendetta grants stacking reload speed bonuses on shotgun kills, rewarding consecutive kills with progressively faster reload cycles. The stacking mechanic creates a momentum system where early kills in an engagement enable faster reload during subsequent shots, reducing the total time lost to reloading as the combat sequence progresses. Shotguns with slow base reload speeds - which are typically the highest-damage variants - benefit the most from Vendetta's reload reduction during active combat.
 
 Shotguns in Warframe typically deal high per-shot damage at the cost of slow reload animations and small magazine sizes. Vendetta directly addresses the primary weakness of high-damage shotguns by reducing the time between shots when kills are being maintained, enabling sustained fire rates that approach those of faster-loading but lower-damage alternatives.
 
@@ -45,12 +44,12 @@ Each shotgun kill checks and applies a reload speed stack. Up to three stacks ac
 
 | Rank | Reload Speed per Stack | Max Stacks | Max Total Bonus | Notes |
 |------|----------------------|-----------|-----------------|-------|
-| 0    | +25%                 | 3         | +75%            | Mild reload improvement |
-| 1    | +50%                 | 3         | +150%           | Moderate improvement |
-| 2    | +75%                 | 3         | +225%           | Strong reload reduction |
-| 3    | +100%                | 3         | +300%           | Very fast reload |
-| 4    | +112%                | 3         | +336%           | Near-instant at max |
-| 5    | +125%                | 3         | +375%           | Near-instant reload |
+| 0 | +25% | 3 | +75% | Mild reload improvement |
+| 1 | +50% | 3 | +150% | Moderate improvement |
+| 2 | +75% | 3 | +225% | Strong reload reduction |
+| 3 | +100% | 3 | +300% | Very fast reload |
+| 4 | +112% | 3 | +336% | Near-instant at max |
+| 5 | +125% | 3 | +375% | Near-instant reload |
 
 ## Acquisition
 
@@ -62,7 +61,7 @@ Shotgun Vendetta excels on high-damage, slow-reloading shotguns like the Tigris 
 
 ## Notes
 
-Reload speed bonus is additive with Primed Fast Hands and other reload speed mods. The stacking works independently per stack, meaning the first stack triggers from one kill, the second from a subsequent kill, and the third from a third kill -- maintaining three stacks requires three separate kills within each stack's individual duration. If kill pace drops below the stack refresh rate, stacks expire and DPS returns to base. Vendetta does not affect weapon switch speed or holster speed; only the actual reload animation is accelerated.
+Reload speed bonus is additive with Primed Fast Hands and other reload speed mods. The stacking works independently per stack, meaning the first stack triggers from one kill, the second from a subsequent kill, and the third from a third kill - maintaining three stacks requires three separate kills within each stack's individual duration. If kill pace drops below the stack refresh rate, stacks expire and DPS returns to base. Vendetta does not affect weapon switch speed or holster speed; only the actual reload animation is accelerated.
 
 ## Sources
 

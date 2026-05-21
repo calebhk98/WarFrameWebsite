@@ -3,12 +3,20 @@ slug: arcane-magus-vigor
 name: Magus Vigor
 type: operator
 maxRank: 5
-effect: "On Void Sling: +[health]% Health to nearby allies for [duration]s"
+effect: "On Transference Out: +[health] Health"
 perRankStats:
   - rank: 0
-    stats: { health: 50, duration: 12 }
+    stats: { health: 100 }
+  - rank: 1
+    stats: { health: 200 }
+  - rank: 2
+    stats: { health: 300 }
+  - rank: 3
+    stats: { health: 400 }
+  - rank: 4
+    stats: { health: 500 }
   - rank: 5
-    stats: { health: 250, duration: 12 }
+    stats: { health: 600 }
 drops:
   - source: "Void Cascade on Zariman"
     chance: 2.5
@@ -22,16 +30,15 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Magus Vigor grants temporary maximum health bonuses to nearby warframes whenever the operator uses Void Sling, temporarily expanding the effective health pool of the squad. The health bonus operates as an additive percentage increase to the warframe's maximum health, rather than direct healing -- it increases the ceiling of what health the frame can hold, which is valuable in conjunction with health-restore abilities or arcanes that fill the frame back to maximum. An operator frequently sling-moving through Zariman content continuously tops up the squad's effective health capacity.
+Magus Vigor grants temporary maximum health bonuses to nearby warframes whenever the operator uses Void Sling, temporarily expanding the effective health pool of the squad. The health bonus operates as an additive percentage increase to the warframe's maximum health, rather than direct healing - it increases the ceiling of what health the frame can hold, which is valuable in conjunction with health-restore abilities or arcanes that fill the frame back to maximum. An operator frequently sling-moving through Zariman content continuously tops up the squad's effective health capacity.
 
-Unlike healing arcanes that restore existing health points, Vigor's maximum health increase provides a buffer that allows the frame to absorb more total damage before reaching critical health thresholds. For frames with high maximum health -- Inaros at over 5000 effective health, Nidus with adaptation stacks -- the percentage bonus translates to substantial absolute health additions during the buff window.
+Unlike healing arcanes that restore existing health points, Vigor's maximum health increase provides a buffer that allows the frame to absorb more total damage before reaching critical health thresholds. For frames with high maximum health - Inaros at over 5000 effective health, Nidus with adaptation stacks - the percentage bonus translates to substantial absolute health additions during the buff window.
 
 ## Effect
 
-Each Void Sling activates the health bonus on nearby warframes for 12 seconds. At rank 0, +50% health bonus provides a meaningful increase to the frame's maximum health capacity during the buff window. At rank 5, +250% health bonus nearly triples the effective maximum health for 12 seconds -- a substantial buffer during high-damage encounter phases.
+Each Void Sling activates the health bonus on nearby warframes for 12 seconds. At rank 0, +50% health bonus provides a meaningful increase to the frame's maximum health capacity during the buff window. At rank 5, +250% health bonus nearly triples the effective maximum health for 12 seconds - a substantial buffer during high-damage encounter phases.
 
 The 12-second duration allows for multiple ability casts, positioning changes, or enemy engagements under the increased health capacity before the buff expires. Repeated Void Slings within the window refresh the timer.
 
@@ -39,12 +46,12 @@ The 12-second duration allows for multiple ability casts, positioning changes, o
 
 | Rank | Health Bonus | Duration | Notes |
 |------|--------------|----------|-------|
-| 0    | +50%         | 12s      | Moderate health expansion |
-| 1    | +100%        | 12s      | Doubles health pool |
-| 2    | +150%        | 12s      | Strong capacity increase |
-| 3    | +200%        | 12s      | Tripled health cap |
-| 4    | +225%        | 12s      | Near-maximum bulk |
-| 5    | +250%        | 12s      | Maximum health expansion |
+| 0 | +50% | 12s | Moderate health expansion |
+| 1 | +100% | 12s | Doubles health pool |
+| 2 | +150% | 12s | Strong capacity increase |
+| 3 | +200% | 12s | Tripled health cap |
+| 4 | +225% | 12s | Near-maximum bulk |
+| 5 | +250% | 12s | Maximum health expansion |
 
 ## Acquisition
 
@@ -52,13 +59,13 @@ Magus Vigor drops as an uncommon reward from Void Cascade missions on Zariman Te
 
 ## Builds that use it
 
-Magus Vigor suits support operator builds that prioritize squad health durability during extended Zariman Void Cascade waves. Operators running Void Sling-heavy mobility builds naturally trigger Vigor's health expansion as part of their movement pattern, distributing the bonus to nearby squadmates without dedicated support actions. High-health frames -- Inaros, Nidus, Grendel -- receive the largest absolute health additions from the percentage bonus, while lower-health frames receive smaller absolute values but still benefit from the proportional increase.
+Magus Vigor suits support operator builds that prioritize squad health durability during extended Zariman Void Cascade waves. Operators running Void Sling-heavy mobility builds naturally trigger Vigor's health expansion as part of their movement pattern, distributing the bonus to nearby squadmates without dedicated support actions. High-health frames - Inaros, Nidus, Grendel - receive the largest absolute health additions from the percentage bonus, while lower-health frames receive smaller absolute values but still benefit from the proportional increase.
 
 Zariman Defense and Survival content where enemy damage escalates over time benefits from the sustained health capacity from repeated Vigor procs, as the operator actively moves between enemy clusters using Void Sling.
 
 ## Notes
 
-The health bonus increases maximum health but does not automatically fill the health bar to the new maximum -- the frame's current health remains unchanged unless a separate healing source restores it to the expanded cap. When the buff expires, maximum health drops back to the base value, and any current health above the new maximum is reduced accordingly. The health bonus is not affected by Warframe health mods (Vitality, Primed Vigor) in a multiplicative fashion -- they apply independently to the base health value. The operator's own warframe benefits from Vigor if the warframe is nearby when Void Sling triggers.
+The health bonus increases maximum health but does not automatically fill the health bar to the new maximum - the frame's current health remains unchanged unless a separate healing source restores it to the expanded cap. When the buff expires, maximum health drops back to the base value, and any current health above the new maximum is reduced accordingly. The health bonus is not affected by Warframe health mods (Vitality, Primed Vigor) in a multiplicative fashion - they apply independently to the base health value. The operator's own warframe benefits from Vigor if the warframe is nearby when Void Sling triggers.
 
 ## Sources
 

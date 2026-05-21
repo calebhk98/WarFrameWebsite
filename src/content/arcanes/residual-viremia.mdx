@@ -2,21 +2,17 @@
 slug: residual-viremia
 name: Residual Viremia
 type: companion
-maxRank: 5
-effect: 'On Viral Proc: Create +[stack]% Viral infection aura for [duration]s. Range: [range]m.'
+maxRank: 3
+effect: "On Kitgun Kill: 20% chance to create pool of toxic blood for [damage]s, dealing 40 Toxin Damage/s. Standing in the area applies the Toxin Damage to Theorem Arcanes."
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { damage: 3 }
+  - rank: 1
+    stats: { damage: 6 }
+  - rank: 2
+    stats: { damage: 9 }
+  - rank: 3
+    stats: { damage: 12 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,7 +26,6 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
 Residual Viremia creates viral infection aura zones when companion viral status procs trigger, extending the impact of companion-applied viral procs beyond the single targeted enemy. Viral status in Warframe halves the maximum health of affected enemies for 6 seconds, making it one of the highest-value status types for increasing effective damage across all weapon types. Residual Viremia broadcasts this effect to nearby enemies through an aura, converting each companion viral proc into a zone where surrounding enemies take the health reduction debuff.
@@ -45,12 +40,12 @@ Each viral status proc applied by the companion creates a viral infection aura c
 
 | Rank | Viral Boost | Duration | Notes |
 |------|-------------|----------|-------|
-| 0    | +50%        | 8s       | Small viral spread zone |
-| 1    | +100%       | 8s       | Moderate aura coverage |
-| 2    | +150%       | 8s       | Good group viral application |
-| 3    | +200%       | 8s       | Strong viral zone |
-| 4    | +225%       | 8s       | High-effectiveness viral field |
-| 5    | +250%       | 8s       | Maximum viral spread |
+| 0 | +50% | 8s | Small viral spread zone |
+| 1 | +100% | 8s | Moderate aura coverage |
+| 2 | +150% | 8s | Good group viral application |
+| 3 | +200% | 8s | Strong viral zone |
+| 4 | +225% | 8s | High-effectiveness viral field |
+| 5 | +250% | 8s | Maximum viral spread |
 
 ## Acquisition
 

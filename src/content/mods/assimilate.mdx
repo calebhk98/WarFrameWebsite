@@ -5,13 +5,17 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Enhances ability performance"
+type: augment
+effect: "Absorb Augment: Nyx can use weapons during Absorb and its duration is infinite, but it consumes [duration] Energy/s and its area of effect is halved."
 perRankStats:
   - rank: 0
-    stats: {effect: 1}
+    stats: { duration: 11 }
+  - rank: 1
+    stats: { duration: 9.5 }
+  - rank: 2
+    stats: { duration: 8 }
   - rank: 3
-    stats: {effect: 100}
+    stats: { duration: 6.5 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -20,7 +24,7 @@ sources:
     publisher: "WFCD"
   - url: "https://warframe.fandom.com/wiki/Assimilate"
     accessedAt: "2026-05-20"
-    title: "Assimilate — WARFRAME Wiki"
+    title: "Assimilate  -  WARFRAME Wiki"
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---

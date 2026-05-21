@@ -3,12 +3,20 @@ slug: arcane-bellicose
 name: Arcane Bellicose
 type: warframe
 maxRank: 5
-effect: "On Headshot: [chance]% chance to grant [critical_chance]% Critical Chance for [duration] seconds."
+effect: "Gain [ability_strength]% Ability Strength for every 250 Max Health up to [health]%."
 perRankStats:
   - rank: 0
-    stats: { chance: 15, critical_chance: 25, duration: 10 }
+    stats: { ability_strength: 1, health: 12 }
+  - rank: 1
+    stats: { ability_strength: 2, health: 24 }
+  - rank: 2
+    stats: { ability_strength: 3, health: 36 }
+  - rank: 3
+    stats: { ability_strength: 4, health: 48 }
+  - rank: 4
+    stats: { ability_strength: 5, health: 60 }
   - rank: 5
-    stats: { chance: 45, critical_chance: 75, duration: 10 }
+    stats: { ability_strength: 6, health: 72 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,10 +31,9 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Arcane Bellicose boosts critical chance on successful headshots, rewarding precision marksmanship with a critical chance buff that feeds back into further critical hits. The headshot trigger aligns the buff with the exact moment high-value damage outputs occur -- headshots already deal bonus damage through the game's headshot multiplier, and Bellicose further amplifies those moments by increasing the chance that subsequent shots are critical hits.
+Arcane Bellicose boosts critical chance on successful headshots, rewarding precision marksmanship with a critical chance buff that feeds back into further critical hits. The headshot trigger aligns the buff with the exact moment high-value damage outputs occur - headshots already deal bonus damage through the game's headshot multiplier, and Bellicose further amplifies those moments by increasing the chance that subsequent shots are critical hits.
 
 For weapons with moderate critical chance, Bellicose can push them from yellow crits into orange crit territory during the buff window. For weapons already above 50% crit, Bellicose can sustain red crit threshold consistency. The 10-second window provides sufficient duration for extended headshot chains without requiring constant uptime from every shot.
 
@@ -38,12 +45,12 @@ Each headshot from any weapon checks the Bellicose trigger chance. On success, t
 
 | Rank | Headshot Trigger | Crit Chance Bonus | Duration |
 |------|-----------------|-------------------|----------|
-| 0    | 15%             | +25%              | 10s      |
-| 1    | 22%             | +35%              | 10s      |
-| 2    | 30%             | +45%              | 10s      |
-| 3    | 37%             | +55%              | 10s      |
-| 4    | 41%             | +65%              | 10s      |
-| 5    | 45%             | +75%              | 10s      |
+| 0 | 15% | +25% | 10s |
+| 1 | 22% | +35% | 10s |
+| 2 | 30% | +45% | 10s |
+| 3 | 37% | +55% | 10s |
+| 4 | 41% | +65% | 10s |
+| 5 | 45% | +75% | 10s |
 
 ## Acquisition
 

@@ -3,20 +3,20 @@ slug: secondary-outburst
 name: Secondary Outburst
 type: weapon
 maxRank: 5
-effect: 'On Weak Point Hit: Create explosion. Damage: [power]% weapon damage. Range: [range]m.'
+effect: "On swapping to Secondary Weapon, consume all Combo Multipliers to increase Secondary Weapon Critical Chance and Critical Damage by [combo]% per Combo consumed for 30s."
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { combo: 5 }
+  - rank: 1
+    stats: { combo: 7 }
+  - rank: 2
+    stats: { combo: 9 }
+  - rank: 3
+    stats: { combo: 12 }
+  - rank: 4
+    stats: { combo: 16 }
+  - rank: 5
+    stats: { combo: 20 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,10 +30,9 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
-Secondary Outburst creates AoE explosions when secondary weapon shots hit enemy weak points, converting precision targeting into area-damage events. Weak points in Warframe are defined hitboxes that deal bonus damage -- most commonly the head -- meaning Secondary Outburst inherently rewards accurate fire by adding area splash to precision shots. Every well-aimed shot becomes both a high-damage single-target hit and an area-damage event affecting nearby enemies.
+Secondary Outburst creates AoE explosions when secondary weapon shots hit enemy weak points, converting precision targeting into area-damage events. Weak points in Warframe are defined hitboxes that deal bonus damage - most commonly the head - meaning Secondary Outburst inherently rewards accurate fire by adding area splash to precision shots. Every well-aimed shot becomes both a high-damage single-target hit and an area-damage event affecting nearby enemies.
 
 The explosion mechanics enable secondary weapons without inherent AoE capabilities to contribute area damage during precision engagements. High-crit pistols that reward aimed headshots gain a complementary area output, making precision builds more effective in dense enemy groups without requiring weapon changes.
 
@@ -47,12 +46,12 @@ The explosion damage uses the same damage type as the weapon's primary damage ty
 
 | Rank | Explosion Damage | Explosion Range | Notes |
 |------|-----------------|-----------------|-------|
-| 0    | 50%             | 6m              | Minor area coverage |
-| 1    | 100%            | 7m              | Matching damage in small area |
-| 2    | 150%            | 8m              | Solid area output |
-| 3    | 200%            | 10m             | Strong group damage |
-| 4    | 225%            | 11m             | Very high area coverage |
-| 5    | 250%            | 12m             | Maximum explosion reach |
+| 0 | 50% | 6m | Minor area coverage |
+| 1 | 100% | 7m | Matching damage in small area |
+| 2 | 150% | 8m | Solid area output |
+| 3 | 200% | 10m | Strong group damage |
+| 4 | 225% | 11m | Very high area coverage |
+| 5 | 250% | 12m | Maximum explosion reach |
 
 ## Acquisition
 

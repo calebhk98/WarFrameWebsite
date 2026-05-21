@@ -3,12 +3,20 @@ slug: arcane-hot-shot
 name: Arcane Hot Shot
 type: warframe
 maxRank: 5
-effect: "On Status Proc: [chance]% chance to grant [flat_damage] flat damage for [duration] seconds."
+effect: "Gain [crit_chance]% weapon Critical Chance for 10s, when using abilities to inflict Heat Status effect on enemies. Maximum 50x stacks."
 perRankStats:
   - rank: 0
-    stats: { chance: 15, flat_damage: 20, duration: 10 }
+    stats: { crit_chance: 1 }
+  - rank: 1
+    stats: { crit_chance: 2 }
+  - rank: 2
+    stats: { crit_chance: 3 }
+  - rank: 3
+    stats: { crit_chance: 4 }
+  - rank: 4
+    stats: { crit_chance: 5 }
   - rank: 5
-    stats: { chance: 45, flat_damage: 60, duration: 10 }
+    stats: { crit_chance: 6 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Arcane Hot Shot boosts flat damage output on status procs, rewarding status-heavy playstyles with consistent damage multipliers. The flat damage bonus adds directly to weapon damage output for the duration, stacking with percentage-based damage mods to increase total output. Status-heavy builds that maintain frequent proc application keep the bonus active throughout combat, transforming status chance investment into dual-purpose value (proc effects plus damage boost).
@@ -40,12 +47,12 @@ Flat damage applies before enemy armor and damage resistance calculations, meani
 
 | Rank | Trigger Chance | Flat Damage | Duration |
 |------|----------------|-------------|----------|
-| 0    | 15%            | +20         | 10s      |
-| 1    | 22%            | +30         | 10s      |
-| 2    | 30%            | +40         | 10s      |
-| 3    | 37%            | +50         | 10s      |
-| 4    | 41%            | +55         | 10s      |
-| 5    | 45%            | +60         | 10s      |
+| 0 | 15% | +20 | 10s |
+| 1 | 22% | +30 | 10s |
+| 2 | 30% | +40 | 10s |
+| 3 | 37% | +50 | 10s |
+| 4 | 41% | +55 | 10s |
+| 5 | 45% | +60 | 10s |
 
 ## Acquisition
 

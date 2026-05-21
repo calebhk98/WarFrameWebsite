@@ -5,13 +5,17 @@ polarity: zenurik
 drain: 6
 maxRank: 3
 rarity: rare
-type: warframe
-effect: "Enhances ability performance"
+type: augment
+effect: "Ballistic Battery Augment: The shot gains a +[crit_chance]% Final Critical Chance bonus, based on the amount charged."
 perRankStats:
   - rank: 0
-    stats: {effect: 1}
+    stats: { crit_chance: 20 }
+  - rank: 1
+    stats: { crit_chance: 30 }
+  - rank: 2
+    stats: { crit_chance: 40 }
   - rank: 3
-    stats: {effect: 100}
+    stats: { crit_chance: 50 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -20,7 +24,7 @@ sources:
     publisher: "WFCD"
   - url: "https://warframe.fandom.com/wiki/Ballistic_Bullseye"
     accessedAt: "2026-05-20"
-    title: "Ballistic Bullseye — WARFRAME Wiki"
+    title: "Ballistic Bullseye  -  WARFRAME Wiki"
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---

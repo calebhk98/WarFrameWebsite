@@ -3,12 +3,20 @@ slug: melee-doughty
 name: Melee Doughty
 type: melee
 maxRank: 5
-effect: "On Block: [chance]% chance to grant [armor]% Armor for [duration] seconds."
+effect: "Gain [crit_multiplier]x Critical Multiplier for every 10% Puncture Status chance on your Melee Weapon."
 perRankStats:
   - rank: 0
-    stats: { chance: 15, armor: 30, duration: 8 }
+    stats: { crit_multiplier: 0.5 }
+  - rank: 1
+    stats: { crit_multiplier: 0.6 }
+  - rank: 2
+    stats: { crit_multiplier: 0.7 }
+  - rank: 3
+    stats: { crit_multiplier: 0.8 }
+  - rank: 4
+    stats: { crit_multiplier: 0.9 }
   - rank: 5
-    stats: { chance: 45, armor: 90, duration: 8 }
+    stats: { crit_multiplier: 1 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,29 +31,28 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Melee Doughty rewards defensive melee engagement by converting successful blocks into temporary armor bonuses. When an attack is blocked using a melee weapon, the arcane has a chance to grant a significant armor percentage buff for eight seconds. This makes it specifically valuable for sword-and-shield melee weapons and weapons with high blocking angles, where the player regularly blocks incoming attacks as part of their combat pattern.
 
-Armor in Warframe reduces physical and elemental damage through the damage resistance formula -- higher armor values push damage reduction toward higher percentages, but the relationship is non-linear. The percentage armor boost from Melee Doughty adds directly to the frame's existing armor value before the resistance calculation, making it most effective on frames with substantial base armor where each percentage point adds a larger absolute armor value. Frames like Inaros, Valkyr, and Rhino extract greater absolute damage reduction from the same percentage bonus than low-armor frames.
+Armor in Warframe reduces physical and elemental damage through the damage resistance formula - higher armor values push damage reduction toward higher percentages, but the relationship is non-linear. The percentage armor boost from Melee Doughty adds directly to the frame's existing armor value before the resistance calculation, making it most effective on frames with substantial base armor where each percentage point adds a larger absolute armor value. Frames like Inaros, Valkyr, and Rhino extract greater absolute damage reduction from the same percentage bonus than low-armor frames.
 
 ## Effect
 
-Each successful melee block triggers a trigger chance check. On success, the warframe gains an armor percentage bonus for 8 seconds. At rank 0, a 15% chance grants 30% armor for 8 seconds -- a moderate defensive spike during aggressive block sequences. At rank 5, the 45% trigger chance activates nearly every other block, and the 90% armor bonus nearly doubles the armor value on high-armor frames for the duration.
+Each successful melee block triggers a trigger chance check. On success, the warframe gains an armor percentage bonus for 8 seconds. At rank 0, a 15% chance grants 30% armor for 8 seconds - a moderate defensive spike during aggressive block sequences. At rank 5, the 45% trigger chance activates nearly every other block, and the 90% armor bonus nearly doubles the armor value on high-armor frames for the duration.
 
-The 8-second duration is long enough to cover most engaged combat sequences, particularly in melee-range fighting where blocking and striking alternate rapidly. The arcane does not require blocking full damage -- even partial blocks that reduce incoming damage count for the trigger check.
+The 8-second duration is long enough to cover most engaged combat sequences, particularly in melee-range fighting where blocking and striking alternate rapidly. The arcane does not require blocking full damage - even partial blocks that reduce incoming damage count for the trigger check.
 
 ## Stats per rank
 
 | Rank | Block Chance | Armor Boost | Duration | Notes |
 |------|--------------|-------------|----------|-------|
-| 0    | 15%          | +30%        | 8s       | Occasional defensive burst |
-| 1    | 22%          | +45%        | 8s       | Moderate armor uptime |
-| 2    | 30%          | +60%        | 8s       | Reliable block-based defense |
-| 3    | 37%          | +75%        | 8s       | Strong block reward |
-| 4    | 41%          | +82%        | 8s       | High-value armor window |
-| 5    | 45%          | +90%        | 8s       | Near-doubling high-armor frames |
+| 0 | 15% | +30% | 8s | Occasional defensive burst |
+| 1 | 22% | +45% | 8s | Moderate armor uptime |
+| 2 | 30% | +60% | 8s | Reliable block-based defense |
+| 3 | 37% | +75% | 8s | Strong block reward |
+| 4 | 41% | +82% | 8s | High-value armor window |
+| 5 | 45% | +90% | 8s | Near-doubling high-armor frames |
 
 ## Acquisition
 
@@ -53,13 +60,13 @@ Melee Doughty drops from Zariman Void Fissure at 4% and Void Cascade rotation B 
 
 ## Builds that use it
 
-Melee Doughty fits block-centric melee builds using sword-and-shield weapons, which have some of the highest block angles and most reliable block mechanics in the melee weapon class. Ack and Brunt, Silva and Aegis Prime, and Korrudo paired with Doughty create builds that actively reward blocking enemy attacks with defensive bonuses. High-armor warframes running melee-focused loadouts -- Valkyr, Inaros, Atlas -- benefit most from the armor percentage increase due to their elevated base armor values.
+Melee Doughty fits block-centric melee builds using sword-and-shield weapons, which have some of the highest block angles and most reliable block mechanics in the melee weapon class. Ack and Brunt, Silva and Aegis Prime, and Korrudo paired with Doughty create builds that actively reward blocking enemy attacks with defensive bonuses. High-armor warframes running melee-focused loadouts - Valkyr, Inaros, Atlas - benefit most from the armor percentage increase due to their elevated base armor values.
 
 Tanky melee builds in Steel Path content where enemy damage is substantially elevated benefit from the sustained armor uptime during block sequences. The arcane also fits builds in Void Cascade where melee engagement with Void Manifestations benefits from the additional defensive layer during close-range fights.
 
 ## Notes
 
-The block trigger fires on any successful melee block, not only blocks that fully negate damage. Partial blocks -- where the player is outside the blocking angle -- do not trigger the check; only attacks within the blocking angle count. The armor bonus is temporary and does not stack with repeated triggers -- each successful check refreshes the 8-second duration rather than adding another armor buff layer. The bonus applies before the armor-to-damage-reduction formula, benefiting from the full armor scaling calculation. Low-armor frames receive proportionally smaller absolute armor gains from the same percentage boost, making Doughty significantly less effective on frames like Banshee or Nova with minimal base armor.
+The block trigger fires on any successful melee block, not only blocks that fully negate damage. Partial blocks - where the player is outside the blocking angle - do not trigger the check; only attacks within the blocking angle count. The armor bonus is temporary and does not stack with repeated triggers - each successful check refreshes the 8-second duration rather than adding another armor buff layer. The bonus applies before the armor-to-damage-reduction formula, benefiting from the full armor scaling calculation. Low-armor frames receive proportionally smaller absolute armor gains from the same percentage boost, making Doughty significantly less effective on frames like Banshee or Nova with minimal base armor.
 
 ## Sources
 

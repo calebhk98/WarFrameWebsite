@@ -3,12 +3,20 @@ slug: emergence-renewed
 name: Emergence Renewed
 type: operator
 maxRank: 5
-effect: "On Transference: [chance]% chance to restore [health_restore]% health to the warframe."
+effect: "On Energy Depleted: Increase Energy Regeneration by [cooldown]% over 5s. Cooldown: 30s"
 perRankStats:
   - rank: 0
-    stats: { chance: 15, health_restore: 30 }
+    stats: { cooldown: 50 }
+  - rank: 1
+    stats: { cooldown: 100 }
+  - rank: 2
+    stats: { cooldown: 150 }
+  - rank: 3
+    stats: { cooldown: 200 }
+  - rank: 4
+    stats: { cooldown: 250 }
   - rank: 5
-    stats: { chance: 45, health_restore: 90 }
+    stats: { cooldown: 300 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Emergence Renewed restores warframe health when the operator returns to the warframe via transference. This operator arcane provides passive healing support by converting the standard operator-to-warframe transition into an opportunity for health recovery. Frames that cycle into operator mode for Void Dash, amp usage, or Madurai school abilities naturally trigger Renewed's heal without requiring additional actions beyond the normal transference return.
@@ -40,12 +47,12 @@ The restoration is unconditional within the trigger chance: there is no health-t
 
 | Rank | Trigger Chance | Health Restore | Notes |
 |------|----------------|----------------|-------|
-| 0    | 15%            | 30%            | Meaningful mid-fight recovery |
-| 1    | 22%            | 45%            | Solid heal for moderate damage |
-| 2    | 30%            | 60%            | Strong recovery burst |
-| 3    | 37%            | 75%            | Near-full health from half-health |
-| 4    | 41%            | 82%            | High-value health burst |
-| 5    | 45%            | 90%            | Near-complete health restoration |
+| 0 | 15% | 30% | Meaningful mid-fight recovery |
+| 1 | 22% | 45% | Solid heal for moderate damage |
+| 2 | 30% | 60% | Strong recovery burst |
+| 3 | 37% | 75% | Near-full health from half-health |
+| 4 | 41% | 82% | High-value health burst |
+| 5 | 45% | 90% | Near-complete health restoration |
 
 ## Acquisition
 

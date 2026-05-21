@@ -3,12 +3,20 @@ slug: arcane-camisado
 name: Arcane Camisado
 type: warframe
 maxRank: 5
-effect: "On Finisher: [chance]% chance to restore [health_restore] health to the frame."
+effect: "Attacks from summoned minions increase Ability Strength by [ability_strength]% up to [ability_strength_2]% on the next Ability Cast."
 perRankStats:
   - rank: 0
-    stats: { chance: 15, health_restore: 50 }
+    stats: { ability_strength: 1, ability_strength_2: 10 }
+  - rank: 1
+    stats: { ability_strength: 2, ability_strength_2: 20 }
+  - rank: 2
+    stats: { ability_strength: 3, ability_strength_2: 30 }
+  - rank: 3
+    stats: { ability_strength: 4, ability_strength_2: 40 }
+  - rank: 4
+    stats: { ability_strength: 5, ability_strength_2: 50 }
   - rank: 5
-    stats: { chance: 45, health_restore: 150 }
+    stats: { ability_strength: 6, ability_strength_2: 60 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,16 +31,15 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Arcane Camisado restores health on finisher attacks, enabling melee-focused frames to maintain health sustain through execution mechanics during combat. Finisher attacks in Warframe are triggered by approaching downed enemies (ground finisher) or sneaking up on unalerted targets (stealth finisher). Camisado converts these deliberate attacks into health recovery opportunities, linking offensive melee execution to defensive sustainability.
 
-The finisher-based trigger suits playstyles that intentionally set up execution conditions -- stealth builds that approach enemies from behind, melee builds with high knockdown rate that frequently access ground finishers, or frames with abilities that force finisher-eligible states (Ash's Blade Storm, Banshee's Silence). Regular high-finisher-rate combat maintains sufficient heal frequency to significantly offset incoming damage in low-to-mid difficulty content.
+The finisher-based trigger suits playstyles that intentionally set up execution conditions - stealth builds that approach enemies from behind, melee builds with high knockdown rate that frequently access ground finishers, or frames with abilities that force finisher-eligible states (Ash's Blade Storm, Banshee's Silence). Regular high-finisher-rate combat maintains sufficient heal frequency to significantly offset incoming damage in low-to-mid difficulty content.
 
 ## Effect
 
-Each finisher attack checks the Camisado trigger chance. On success, flat health is restored to the warframe immediately. At rank 0, 50 health restore per finisher provides minor sustain in light combat scenarios; at rank 5, 150 health restore per finisher is substantial for frames with 300-600 total health. Builds that perform multiple finishers per combat sequence -- particularly stealth builds performing consecutive undetected kills -- stack healing across rapid execution chains.
+Each finisher attack checks the Camisado trigger chance. On success, flat health is restored to the warframe immediately. At rank 0, 50 health restore per finisher provides minor sustain in light combat scenarios; at rank 5, 150 health restore per finisher is substantial for frames with 300-600 total health. Builds that perform multiple finishers per combat sequence - particularly stealth builds performing consecutive undetected kills - stack healing across rapid execution chains.
 
 Flat health restoration does not scale with Power Strength but benefits frames with higher total health through a larger effective health pool to replenish.
 
@@ -40,12 +47,12 @@ Flat health restoration does not scale with Power Strength but benefits frames w
 
 | Rank | Trigger Chance | Health Restore | Notes |
 |------|----------------|----------------|-------|
-| 0    | 15%            | 50             | Minor heal per finisher |
-| 1    | 22%            | 75             | Moderate recovery |
-| 2    | 30%            | 100            | Solid finisher heal |
-| 3    | 37%            | 125            | Strong execution sustain |
-| 4    | 41%            | 137            | High-value finisher heal |
-| 5    | 45%            | 150            | Maximum finisher restoration |
+| 0 | 15% | 50 | Minor heal per finisher |
+| 1 | 22% | 75 | Moderate recovery |
+| 2 | 30% | 100 | Solid finisher heal |
+| 3 | 37% | 125 | Strong execution sustain |
+| 4 | 41% | 137 | High-value finisher heal |
+| 5 | 45% | 150 | Maximum finisher restoration |
 
 ## Acquisition
 

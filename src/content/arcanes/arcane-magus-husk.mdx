@@ -3,12 +3,20 @@ slug: arcane-magus-husk
 name: Magus Husk
 type: operator
 maxRank: 5
-effect: "On Void Sling: +[armor]% Armor to nearby allies for [duration]s"
+effect: "On Transference Out: +[armor] Armor"
 perRankStats:
   - rank: 0
-    stats: { armor: 50, duration: 12 }
+    stats: { armor: 50 }
+  - rank: 1
+    stats: { armor: 100 }
+  - rank: 2
+    stats: { armor: 150 }
+  - rank: 3
+    stats: { armor: 200 }
+  - rank: 4
+    stats: { armor: 250 }
   - rank: 5
-    stats: { armor: 250, duration: 12 }
+    stats: { armor: 300 }
 drops:
   - source: "Void Cascade on Zariman"
     chance: 2.5
@@ -22,16 +30,15 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Magus Husk (Zariman variant) grants a percentage armor bonus to nearby warframe allies whenever the operator uses Void Sling. Unlike the solo-focused armor restore on Transference Out provided by the non-Zariman Magus Husk, this variant provides armor as a squad-wide buff applied as a percentage increase rather than a flat value. Each Void Sling distributes the armor bonus to all warframes within range, making the operator a mobile armor-support unit during Zariman void cascade missions.
 
-Armor reduces physical damage intake by converting incoming hits according to the armor-to-damage-reduction formula. A percentage armor bonus scales with the warframe's existing armor value -- frames with naturally high armor or armor mods receive larger absolute armor values from the percentage buff. The 12-second duration is long enough to cover extended combat phases when refreshed by repeated Void Slings.
+Armor reduces physical damage intake by converting incoming hits according to the armor-to-damage-reduction formula. A percentage armor bonus scales with the warframe's existing armor value - frames with naturally high armor or armor mods receive larger absolute armor values from the percentage buff. The 12-second duration is long enough to cover extended combat phases when refreshed by repeated Void Slings.
 
 ## Effect
 
-Each Void Sling applies a percentage armor bonus to nearby warframes for 12 seconds. At rank 0, +50% armor for 12 seconds provides a meaningful defensive layer to allied frames. At rank 5, +250% armor for 12 seconds significantly multiplies the effective armor of all nearby warframes -- a frame with 200 base armor gains 500 additional armor from the buff, raising total armor to 700 for the 12-second window and substantially increasing physical damage reduction.
+Each Void Sling applies a percentage armor bonus to nearby warframes for 12 seconds. At rank 0, +50% armor for 12 seconds provides a meaningful defensive layer to allied frames. At rank 5, +250% armor for 12 seconds significantly multiplies the effective armor of all nearby warframes - a frame with 200 base armor gains 500 additional armor from the buff, raising total armor to 700 for the 12-second window and substantially increasing physical damage reduction.
 
 The 12-second duration refreshes on subsequent Void Slings within the window, allowing an operator who Slings regularly to maintain near-permanent armor uptime on the squad.
 
@@ -39,12 +46,12 @@ The 12-second duration refreshes on subsequent Void Slings within the window, al
 
 | Rank | Armor Bonus | Duration | Notes |
 |------|-------------|----------|-------|
-| 0    | +50%        | 12s      | Moderate protection |
-| 1    | +100%       | 12s      | Doubles armor |
-| 2    | +150%       | 12s      | Strong defense |
-| 3    | +200%       | 12s      | Tripled base armor |
-| 4    | +225%       | 12s      | High buff value |
-| 5    | +250%       | 12s      | Maximum armor bonus |
+| 0 | +50% | 12s | Moderate protection |
+| 1 | +100% | 12s | Doubles armor |
+| 2 | +150% | 12s | Strong defense |
+| 3 | +200% | 12s | Tripled base armor |
+| 4 | +225% | 12s | High buff value |
+| 5 | +250% | 12s | Maximum armor bonus |
 
 ## Acquisition
 
@@ -54,11 +61,11 @@ Magus Husk (Zariman) drops as an uncommon reward from Void Cascade missions on Z
 
 Magus Husk suits support operator builds running alongside tanky warframe allies in Zariman Void Cascade and Steel Path content where armor provides meaningful damage reduction. Operators who Sling frequently during repositioning and combat naturally apply the armor buff as a byproduct of their movement, distributing the bonus to allies without dedicating time to support actions.
 
-Squad compositions running Adaptation builds -- where armor value directly affects the adaptive damage reduction from Adaptation mod -- see compounding benefit from the Husk buff. A frame with high base armor running Adaptation gains elevated damage reduction on both systems simultaneously when Magus Husk's percentage bonus is active. Defensive missions like Zariman Defense where allies cluster together provide ideal overlap for the armor aura range.
+Squad compositions running Adaptation builds - where armor value directly affects the adaptive damage reduction from Adaptation mod - see compounding benefit from the Husk buff. A frame with high base armor running Adaptation gains elevated damage reduction on both systems simultaneously when Magus Husk's percentage bonus is active. Defensive missions like Zariman Defense where allies cluster together provide ideal overlap for the armor aura range.
 
 ## Notes
 
-The armor bonus applies to the warframe's base armor pool -- it is a percentage of the frame's current maximum armor, multiplied by whatever armor mods are active. This makes Magus Husk more effective on armored frames than on frames with low base armor. Frames with 0 base armor gain nothing from a percentage armor bonus. The buff does not stack from multiple Slings within the active window -- each Sling refreshes the duration rather than adding additional armor stacks. Allies outside the operator's range when the Sling fires do not receive the buff for that Sling event.
+The armor bonus applies to the warframe's base armor pool - it is a percentage of the frame's current maximum armor, multiplied by whatever armor mods are active. This makes Magus Husk more effective on armored frames than on frames with low base armor. Frames with 0 base armor gain nothing from a percentage armor bonus. The buff does not stack from multiple Slings within the active window - each Sling refreshes the duration rather than adding additional armor stacks. Allies outside the operator's range when the Sling fires do not receive the buff for that Sling event.
 
 ## Sources
 

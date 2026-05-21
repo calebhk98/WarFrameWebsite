@@ -3,20 +3,20 @@ slug: primary-obstruct
 name: Primary Obstruct
 type: weapon
 maxRank: 5
-effect: 'On Headshot: Gain +[armor]% Armor for 18s. Stacks up to 4x.'
+effect: "On Weapon Magnetic Status Effect: Enemy weapons jam within 15m of target. Cooldown [cooldown]s."
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { cooldown: 60 }
+  - rank: 1
+    stats: { cooldown: 50 }
+  - rank: 2
+    stats: { cooldown: 40 }
+  - rank: 3
+    stats: { cooldown: 30 }
+  - rank: 4
+    stats: { cooldown: 20 }
+  - rank: 5
+    stats: { cooldown: 10 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,7 +30,6 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
 Primary Obstruct rewards precision headshots with stacking armor bonuses, creating a feedback loop where accurate fire builds defensive survivability. The stacking mechanic means that each headshot contributes to increasing total defense, incentivizing continuous aimed fire rather than sporadic headshots. At maximum four stacks, the armor bonus is substantial enough to significantly increase physical damage mitigation, particularly for frames with moderate-to-high base armor values.
@@ -47,12 +46,12 @@ The 18-second duration per stack allows comfortable uptime maintenance during st
 
 | Rank | Armor per Stack | Max Stacks | Max Armor Bonus | Duration |
 |------|----------------|-----------|-----------------|----------|
-| 0    | +20%           | 4         | +80%            | 18s      |
-| 1    | +40%           | 4         | +160%           | 18s      |
-| 2    | +60%           | 4         | +240%           | 18s      |
-| 3    | +80%           | 4         | +320%           | 18s      |
-| 4    | +90%           | 4         | +360%           | 18s      |
-| 5    | +100%          | 4         | +400%           | 18s      |
+| 0 | +20% | 4 | +80% | 18s |
+| 1 | +40% | 4 | +160% | 18s |
+| 2 | +60% | 4 | +240% | 18s |
+| 3 | +80% | 4 | +320% | 18s |
+| 4 | +90% | 4 | +360% | 18s |
+| 5 | +100% | 4 | +400% | 18s |
 
 ## Acquisition
 
@@ -60,7 +59,7 @@ Primary Obstruct drops from Zariman Ten-Zero missions and Void Cascade content. 
 
 ## Builds that use it
 
-Primary Obstruct benefits precision-primary frames with high-armor builds. Sniper rifles and semi-auto primaries that naturally aim for headshots (the optimal shot placement for damage on most enemies) generate stacks without changing playstyle. High-armor frames like Valkyr, Inaros, and Atlas gain the greatest absolute armor value from each stack's percentage bonus. Builds using Covert Lethality in tandem with precision primary fire create dual defensive contributions -- the mod stacks with Obstruct's armor bonus. Steel Path farming where physical damage from Grineer enemies relies heavily on armor mitigation extracts the most defensive value from maximum Obstruct stacks.
+Primary Obstruct benefits precision-primary frames with high-armor builds. Sniper rifles and semi-auto primaries that naturally aim for headshots (the optimal shot placement for damage on most enemies) generate stacks without changing playstyle. High-armor frames like Valkyr, Inaros, and Atlas gain the greatest absolute armor value from each stack's percentage bonus. Builds using Covert Lethality in tandem with precision primary fire create dual defensive contributions - the mod stacks with Obstruct's armor bonus. Steel Path farming where physical damage from Grineer enemies relies heavily on armor mitigation extracts the most defensive value from maximum Obstruct stacks.
 
 ## Notes
 

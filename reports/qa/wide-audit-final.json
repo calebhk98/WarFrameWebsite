@@ -1,0 +1,456 @@
+{
+  "meta": {
+    "audit_date": "2026-05-21",
+    "auditor": "qa-wide-audit-subagent",
+    "seed": 42,
+    "total_sampled": 60,
+    "sampling_plan": {
+      "weapons": 15,
+      "mods": 10,
+      "resources": 10,
+      "arcanes": 8,
+      "warframes": 6,
+      "quests": 4,
+      "missions": 4,
+      "relics": 3,
+      "syndicates": 1,
+      "relics_sample_note": "5 relics sampled due to only 5 total files existing; 1 syndicate"
+    }
+  },
+  "sampled_files": {
+    "weapons": [
+      "corinth-prime", "akstiletto-prime", "kuva-kohm", "keratinos", "hikou",
+      "dual-cestra", "coda-hema", "vectis", "cedo-prime", "sancti-castanas",
+      "ambassador", "alternox", "cernos", "heliocor", "jai"
+    ],
+    "mods": [
+      "irradiating-disarm", "ore-gaze", "afterburn", "mind-freak",
+      "condition-overload", "primed-cryo-rounds", "piercing-hit",
+      "primal-rage", "mending-splinters", "hammer-shot"
+    ],
+    "resources": [
+      "damaged-necramech-weapon-stock", "lich-token", "pyrol",
+      "entratifragmentbase", "voidplume-crest", "adramal-alloy",
+      "training-debt-bond", "voidgel-orb", "cortege-stock", "technocyte-coda-token"
+    ],
+    "arcanes": [
+      "magus-elevate", "emergence-savior", "arcane-trickery", "arcane-impetus",
+      "arcane-power-ramp", "emergence-renewed", "arcane-detoxifier", "arcane-crepuscular"
+    ],
+    "warframes": [
+      "koumei", "citrine", "jade", "zephyr-prime", "ivara", "protea"
+    ],
+    "quests": [
+      "octavias-anthem", "apostasy-prologue", "the-jordas-precept", "the-sacrifice"
+    ],
+    "missions": [
+      "casta-ceres", "profit-taker-fortuna", "archon-hunt", "veil-proxima"
+    ],
+    "relics_syndicates": [
+      "relics/meso", "relics/neo", "relics/lith", "relics/axi", "relics/requiem",
+      "syndicates/cephalon-simaris"
+    ]
+  },
+  "summary": {
+    "total_files_sampled": 60,
+    "files_with_critical_or_major_defects": 31,
+    "files_with_minor_only_defects": 17,
+    "clean_files": 15,
+    "defect_rate_critical_major": "51.7%",
+    "defect_rate_any_defect": "80.0%",
+    "defects_critical": 23,
+    "defects_major": 32,
+    "defects_minor": 30
+  },
+  "per_collection_defect_rates": {
+    "weapons": {
+      "files_sampled": 15,
+      "files_defective": 9,
+      "defect_rate": "60%",
+      "severity": "high"
+    },
+    "mods": {
+      "files_sampled": 10,
+      "files_defective": 4,
+      "defect_rate": "40%",
+      "severity": "medium"
+    },
+    "resources": {
+      "files_sampled": 10,
+      "files_defective": 6,
+      "defect_rate": "60%",
+      "severity": "high"
+    },
+    "arcanes": {
+      "files_sampled": 8,
+      "files_defective": 4,
+      "defect_rate": "50%",
+      "severity": "high - 3 files have completely fabricated effects"
+    },
+    "warframes": {
+      "files_sampled": 6,
+      "files_defective": 1,
+      "defect_rate": "17%",
+      "severity": "low - content quality is high; masteryRank=0 across all is systematic (WFCD issue #23)"
+    },
+    "quests": {
+      "files_sampled": 4,
+      "files_defective": 0,
+      "defect_rate": "0%",
+      "severity": "none - best collection"
+    },
+    "missions": {
+      "files_sampled": 4,
+      "files_defective": 2,
+      "defect_rate": "50%",
+      "severity": "medium"
+    },
+    "relics": {
+      "files_sampled": 5,
+      "files_defective": 5,
+      "defect_rate": "100%",
+      "severity": "critical - all files use completely non-standard schema"
+    },
+    "syndicates": {
+      "files_sampled": 1,
+      "files_defective": 0,
+      "defect_rate": "0%",
+      "severity": "low"
+    }
+  },
+  "top_5_worst_files": {
+    "weapons": [
+      {
+        "slug": "kuva-kohm",
+        "path": "src/content/weapons/kuva-kohm.mdx",
+        "defects": [
+          "CRITICAL: masteryRank=0 vs WFCD masteryReq=13",
+          "CRITICAL: magazine missing (WFCD=209)",
+          "CRITICAL: category='Primary' wrong (should be Shotgun)",
+          "MAJOR: acquisition info fabricated (credits=0, buildTime=0)",
+          "MAJOR: H2 order wrong (has synergies/lore, missing variants)"
+        ]
+      },
+      {
+        "slug": "dual-cestra",
+        "path": "src/content/weapons/dual-cestra.mdx",
+        "defects": [
+          "CRITICAL: criticalMultiplier=0.0 vs WFCD=1.6",
+          "CRITICAL: criticalChance=0.00 vs WFCD=0.06",
+          "MAJOR: category='Knuckles' incorrect (WFCD=Secondary)",
+          "MAJOR: word count 253/500 (FAIL)"
+        ]
+      },
+      {
+        "slug": "sancti-castanas",
+        "path": "src/content/weapons/sancti-castanas.mdx",
+        "defects": [
+          "CRITICAL: empty body (0 words / 500 required)"
+        ]
+      },
+      {
+        "slug": "corinth-prime",
+        "path": "src/content/weapons/corinth-prime.mdx",
+        "defects": [
+          "MAJOR: stats written in prose body (violates STYLE.md)",
+          "MAJOR: generic acquisition/variants text fabricated",
+          "MINOR: em-dash in body",
+          "MINOR: generic filler in Variants and Notes sections"
+        ]
+      },
+      {
+        "slug": "coda-hema",
+        "path": "src/content/weapons/coda-hema.mdx",
+        "defects": [
+          "MAJOR: template-boilerplate content ('Primary class weapon...specific combat scenarios')",
+          "MAJOR: word count 395/500 (FAIL)"
+        ]
+      }
+    ],
+    "mods": [
+      {
+        "slug": "irradiating-disarm",
+        "path": "src/content/mods/irradiating-disarm.mdx",
+        "defects": [
+          "CRITICAL: effect='Augment enhancement' (generic, not the real Radiation-Disarm effect)",
+          "MAJOR: body describes no specific frame mechanics",
+          "MAJOR: H2 uses 'usage'/'common builds' instead of required 'stats per rank'/'builds that use it'"
+        ]
+      },
+      {
+        "slug": "hammer-shot",
+        "path": "src/content/mods/hammer-shot.mdx",
+        "defects": [
+          "CRITICAL: effect completely wrong - MDX says accuracy+knockdown, WFCD says +Critical Damage +Status Chance"
+        ]
+      },
+      {
+        "slug": "mending-splinters",
+        "path": "src/content/mods/mending-splinters.mdx",
+        "defects": [
+          "CRITICAL: polarity=madurai vs WFCD polarity=zenurik",
+          "MINOR: generic content, does not explain what the mod actually does for Citrine"
+        ]
+      },
+      {
+        "slug": "piercing-hit",
+        "path": "src/content/mods/piercing-hit.mdx",
+        "defects": [
+          "CRITICAL: word count 81/300 (near-empty body)"
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "slug": "training-debt-bond",
+        "path": "src/content/resources/training-debt-bond.mdx",
+        "defects": [
+          "CRITICAL: falsely claims 'cannot be traded' (Debt Bonds ARE tradeable on warframe.market)",
+          "MAJOR: planets='Multiple locations' (should be Fortuna/Orb Vallis bounties)",
+          "MAJOR: dropSources are generic filler"
+        ]
+      },
+      {
+        "slug": "entratifragmentbase",
+        "path": "src/content/resources/entratifragmentbase.mdx",
+        "defects": [
+          "MAJOR: word count 175/300 (FAIL)",
+          "MAJOR: slug 'entratifragmentbase' missing hyphens (should be 'entrati-fragment-base')",
+          "MINOR: usedFor contains 'Experimental warframe augments' (fabricated)"
+        ]
+      },
+      {
+        "slug": "pyrol",
+        "path": "src/content/resources/pyrol.mdx",
+        "defects": [
+          "MAJOR: planets='Multiple locations' (Pyrol drops on Mars/Cetus area)",
+          "MAJOR: dropSources generic filler (no specific node/enemy names)"
+        ]
+      },
+      {
+        "slug": "lich-token",
+        "path": "src/content/resources/lich-token.mdx",
+        "defects": [
+          "MAJOR: planets field vague ('Multiple', 'Void Cascade')",
+          "MAJOR: dropSources fabricated ('Enemy drops from specialized encounters')"
+        ]
+      },
+      {
+        "slug": "damaged-necramech-weapon-stock",
+        "path": "src/content/resources/damaged-necramech-weapon-stock.mdx",
+        "defects": [
+          "MAJOR: word count 235/300 (FAIL)"
+        ]
+      }
+    ],
+    "arcanes": [
+      {
+        "slug": "arcane-crepuscular",
+        "path": "src/content/arcanes/arcane-crepuscular.mdx",
+        "defects": [
+          "CRITICAL: completely wrong effect - MDX describes health-threshold damage reduction; WFCD says it grants Ability Strength + Critical Multiplier while invisible",
+          "CRITICAL: all perRankStats fabricated (describe wrong arcane entirely)"
+        ]
+      },
+      {
+        "slug": "arcane-power-ramp",
+        "path": "src/content/arcanes/arcane-power-ramp.mdx",
+        "defects": [
+          "CRITICAL: trigger wrong ('On Ability Hit' vs WFCD 'On Ability Cast')",
+          "CRITICAL: max stacks wrong (MDX=5 vs WFCD=4)",
+          "CRITICAL: perRankStats missing ranks 1-4 (only rank 0 and 5 present)"
+        ]
+      },
+      {
+        "slug": "emergence-savior",
+        "path": "src/content/arcanes/emergence-savior.mdx",
+        "defects": [
+          "CRITICAL: effect fabricated - MDX says chance to grant overshield+revive; WFCD says 'On Lethal Damage: invulnerable 5s + recover X% Health, 90s cooldown'",
+          "CRITICAL: perRankStats incomplete (missing ranks 1-4)"
+        ]
+      },
+      {
+        "slug": "arcane-impetus",
+        "path": "src/content/arcanes/arcane-impetus.mdx",
+        "defects": [
+          "MAJOR: missing 'slug' field in frontmatter (schema violation)",
+          "MINOR: H2 'effects per rank' instead of 'stats per rank'"
+        ]
+      }
+    ],
+    "warframes": [
+      {
+        "slug": "zephyr-prime",
+        "path": "src/content/warframes/zephyr-prime.mdx",
+        "defects": [
+          "MAJOR: masteryRank=0 but Zephyr Prime requires MR6 in-game (WFCD exception applies but Fandom source not cited)"
+        ]
+      }
+    ],
+    "quests": [],
+    "missions": [
+      {
+        "slug": "profit-taker-fortuna",
+        "path": "src/content/missions/profit-taker-fortuna.mdx",
+        "defects": [
+          "MAJOR: H2 'Mission Type Notes' not 'Mission details' (schema order mismatch)",
+          "MAJOR: rewards section lists 'Garuda Blueprint' incorrectly (mission drops components, not the main blueprint directly)"
+        ]
+      },
+      {
+        "slug": "archon-hunt",
+        "path": "src/content/missions/archon-hunt.mdx",
+        "defects": [
+          "MAJOR: H2 structure non-standard ('mission structure and distribution' vs required 'mission details')",
+          "MINOR: Archon Shards described as 'parazon mod currency' (they upgrade warframe stats, not parazon mods)"
+        ]
+      }
+    ],
+    "relics": [
+      {
+        "slug": "meso",
+        "path": "src/content/relics/meso.mdx",
+        "defects": [
+          "CRITICAL: missing required 'era' field (has non-standard 'era_letter')",
+          "CRITICAL: missing required 'drops' and 'refinement' fields (entire schema rebuilt as custom)",
+          "CRITICAL: missing 'slug' field",
+          "MAJOR: H2 order non-standard"
+        ]
+      },
+      {
+        "slug": "neo",
+        "path": "src/content/relics/neo.mdx",
+        "defects": [
+          "CRITICAL: same schema issues as meso (era/drops/refinement/slug all missing)"
+        ]
+      },
+      {
+        "slug": "lith",
+        "path": "src/content/relics/lith.mdx",
+        "defects": [
+          "CRITICAL: same schema issues as meso"
+        ]
+      },
+      {
+        "slug": "axi",
+        "path": "src/content/relics/axi.mdx",
+        "defects": [
+          "CRITICAL: same schema issues as meso"
+        ]
+      },
+      {
+        "slug": "requiem",
+        "path": "src/content/relics/requiem.mdx",
+        "defects": [
+          "CRITICAL: same schema issues as meso"
+        ]
+      }
+    ]
+  },
+  "top_10_systemic_issues": [
+    {
+      "rank": 1,
+      "issue": "Relics collection uses completely custom schema (era_letter, total_relics, drop_systems, notable_relics, refinement_costs) instead of the required Zod schema fields (era, drops, refinement, slug). All 5 relic files fail schema validation.",
+      "severity": "critical",
+      "collections_affected": ["relics"],
+      "estimated_files_affected": "5/5 (100%)"
+    },
+    {
+      "rank": 2,
+      "issue": "Arcane effects fabricated: arcane-crepuscular describes a completely different arcane (health-threshold damage reduction instead of Ability Strength while invisible). At least 3/8 sampled arcanes (38%) have wrong effect descriptions vs WFCD.",
+      "severity": "critical",
+      "collections_affected": ["arcanes"],
+      "estimated_files_affected": "3-4/8 sampled; extrapolates to ~40-50% of 179 total arcane files"
+    },
+    {
+      "rank": 3,
+      "issue": "Mod effect fields describe wrong mechanics: hammer-shot says accuracy+knockdown but WFCD says critDamage+statusChance; irradiating-disarm uses 'Augment enhancement' instead of real Radiation proc description. Pattern suggests many mod effects were invented.",
+      "severity": "critical",
+      "collections_affected": ["mods"],
+      "estimated_files_affected": "~30-40% of 229 total mod files based on sample"
+    },
+    {
+      "rank": 4,
+      "issue": "masteryRank=0 universally across all warframe files (confirmed on all 6 sampled). This is the documented WFCD exception (issue #23) but the fix requires sourcing Fandom Wiki per DATA.md. None of the sampled files show evidence of the Fandom override being applied.",
+      "severity": "major",
+      "collections_affected": ["warframes"],
+      "estimated_files_affected": "110/110 warframe files"
+    },
+    {
+      "rank": 5,
+      "issue": "Resource files use vague/fabricated drop locations: planets='Multiple locations', dropSources='Mission rewards','Enemy drops' rather than specific nodes. 6/10 sampled resources have this problem. Some make false factual claims (training-debt-bond says non-tradeable when Debt Bonds are tradeable).",
+      "severity": "major",
+      "collections_affected": ["resources"],
+      "estimated_files_affected": "~60% of 222 total resource files"
+    },
+    {
+      "rank": 6,
+      "issue": "Word count failures are widespread in weapons: 9/15 sampled weapons either fail the 500-word floor or barely pass. sancti-castanas has zero body content. Weapons appear to be a mix of high-quality and stub files.",
+      "severity": "major",
+      "collections_affected": ["weapons"],
+      "estimated_files_affected": "~50-60% of 589 weapon files estimated to be under-floor"
+    },
+    {
+      "rank": 7,
+      "issue": "Generic template content leaked into final files: phrases like 'This weapon combines effective damage output with unique handling characteristics', 'many variants or upgraded versions may exist', 'depends heavily on proper modding' appear verbatim in multiple weapon files. Likely from a template that was never properly filled.",
+      "severity": "major",
+      "collections_affected": ["weapons"],
+      "estimated_files_affected": "~20-30% of weapons; possibly other collections"
+    },
+    {
+      "rank": 8,
+      "issue": "H2 section ordering violations: mods use 'stat table' or 'usage' instead of the required 'stats per rank' and 'builds that use it'; missions use non-standard headers; arcanes use 'effects per rank' or 'best on'. The verifier's section-order check would fail ~30-40% of files.",
+      "severity": "major",
+      "collections_affected": ["weapons", "mods", "arcanes", "missions"],
+      "estimated_files_affected": "30-40% across these four collections"
+    },
+    {
+      "rank": 9,
+      "issue": "Em-dash characters (U+2014) present in body text of multiple files violating STYLE.md ASCII-only requirement. Found in weapons/corinth-prime, weapons/kuva-kohm, weapons/dual-cestra, weapons/heliocor, resources/adramal-alloy, resources/training-debt-bond.",
+      "severity": "minor",
+      "collections_affected": ["weapons", "resources"],
+      "estimated_files_affected": "~15-20% of all content files"
+    },
+    {
+      "rank": 10,
+      "issue": "Weapon stat errors: dual-cestra has criticalMultiplier=0.0 and criticalChance=0.00 (both wrong per WFCD); kuva-kohm has masteryRank=0 vs WFCD masteryReq=13 and is missing magazine field. Critical stat accuracy cannot be trusted without full WFCD re-verification pass.",
+      "severity": "critical",
+      "collections_affected": ["weapons"],
+      "estimated_files_affected": "Unknown; at least 2/15 sampled weapons have wrong numeric stats"
+    }
+  ],
+  "checks_performed": {
+    "schema_fit": "Checked required frontmatter fields against SCHEMAS.md for weapons, mods, arcanes, warframes, relics. Multiple failures found.",
+    "wfcd_stat_accuracy": "Cross-checked criticalChance, criticalMultiplier, statusChance, masteryRank, magazine, health, shield, armor, energy, sprint against WFCD JSON files. Failures: kuva-kohm masteryRank, dual-cestra crit stats, mending-splinters polarity, hammer-shot/irradiating-disarm effects, 3 arcane effects.",
+    "source_urls": "Verified 2+ sources present in frontmatter for all sampled files. All files have >= 2 sources. No live URL reachability check performed (capped at 20 fetches per instructions).",
+    "word_count": "Checked all 60 files against collection floors. Failures: sancti-castanas (0), dual-cestra (253), entratifragmentbase (175), piercing-hit (81), keratinos (351), coda-hema (395), vectis (317), cedo-prime (353), alternox (457), cortege-stock (230), damaged-necramech-weapon-stock (235).",
+    "ascii_only": "Checked for em-dash, en-dash, smart quotes, unicode ellipsis. Em-dash found in 6 files.",
+    "drop_location_plausibility": "Checked 5 critical resources/arcanes against WFCD and expected game knowledge. Found fabricated claim in training-debt-bond (non-tradeable) and vague locations in pyrol, lich-token, adramal-alloy.",
+    "section_h2_order": "Checked H2 order against STYLE.md templates for warframes, weapons, mods, arcanes, missions, resources, quests. Failures in: kuva-kohm, condition-overload, magus-elevate, profit-taker-fortuna, archon-hunt.",
+    "fabricated_lore": "Checked for template literals, TODO, lorem-ipsum, generic filler phrases. Fabricated content found in: corinth-prime, kuva-kohm, coda-hema, vectis, cernos, cedo-prime, irradiating-disarm."
+  },
+  "quality_leaders": {
+    "best_files": [
+      "quests/the-sacrifice (clean - excellent narrative quality, proper spoiler callouts)",
+      "quests/apostasy-prologue (clean - well-cited, proper stage structure)",
+      "arcanes/emergence-renewed (clean - accurate stats, proper section structure)",
+      "arcanes/arcane-trickery (clean)",
+      "resources/voidplume-crest (clean - specific drop rates cited from WFCD, accurate)",
+      "warframes/koumei (high quality - all stats verified against WFCD, rich narrative)",
+      "warframes/ivara (high quality)",
+      "syndicates/cephalon-simaris (high quality - comprehensive, accurate)"
+    ],
+    "quality_pattern": "Quests and warframes are the highest-quality collections. Quest files show evidence of careful authorship with proper spoiler handling, WFCD citations, and narrative depth. Warframe files have correct stats but universally fail masteryRank (systematic WFCD gap). Relics, weapons, and arcanes are the weakest collections."
+  },
+  "estimated_effort_to_ship_quality": {
+    "relics_collection": "Complete rewrite of all 5 relic files to use the Zod schema (era, drops, refinement, slug fields). The current files are good reference content trapped in wrong schema. ~4-6 hours.",
+    "arcanes_effect_audit": "Full WFCD cross-check of all 179 arcane effect fields. At least 3 confirmed wrong, likely 20-40% have issues. Manual review + correction pass: ~8-12 hours.",
+    "weapons_word_count_stubs": "Re-run content pass on ~280-350 weapons estimated below 500-word floor. The stub files need complete body rewrites, not just padding: ~20-30 hours.",
+    "weapons_stat_accuracy": "Run automated WFCD diff on all 589 weapon files for masteryRank, magazine, critMult, critChance. Fix mismatches: ~4-6 hours (mostly automated).",
+    "mods_effect_accuracy": "WFCD cross-check of effect fields for all 229 mods. Likely ~30% have wrong or generic effects: ~10-15 hours.",
+    "resources_drop_locations": "Re-source specific drop locations for ~130-150 resource files with vague/fabricated planets/dropSources fields: ~8-12 hours.",
+    "masteryRank_warframes": "Apply Fandom Wiki lookup for all 110 warframe files per DATA.md exception rule: ~2-3 hours (automated with wiki API).",
+    "ascii_cleanup": "Automated sed replacement of em-dash with -- across all files: ~0.5 hours.",
+    "total_estimate": "50-85 developer-hours to reach ship quality across all collections. Relics and arcanes are blocking (schema violations = CI failures). Weapons are the largest volume effort. Quests and syndicates are already close to ship quality."
+  }
+}

@@ -3,12 +3,20 @@ slug: emergence-dissipate
 name: Emergence Dissipate
 type: operator
 maxRank: 5
-effect: "On Transference: [chance]% chance to dispel all active status effects and grant [duration] seconds of status immunity."
+effect: "WHILE IN VOID SLING: Press to dissipate the endpoint in a 10m radius. Enemies hit create a short lived Void Mote that replenishes [energy] Energy on pick up."
 perRankStats:
   - rank: 0
-    stats: { chance: 15, duration: 4 }
+    stats: { energy: 5 }
+  - rank: 1
+    stats: { energy: 6 }
+  - rank: 2
+    stats: { energy: 7 }
+  - rank: 3
+    stats: { energy: 8 }
+  - rank: 4
+    stats: { energy: 9 }
   - rank: 5
-    stats: { chance: 45, duration: 8 }
+    stats: { energy: 10 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,10 +31,9 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Emergence Dissipate cleanses status effects on transference, providing emergency status removal when exiting the warframe to operator mode. This operator arcane delivers useful survivability in content where enemy status procs accumulate quickly -- particularly viral, corrosive, and magnetic procs that reduce health, armor, and shields. By entering operator mode and returning, players using Dissipate cleanse accumulated debuffs and gain a brief immunity window to reposition or heal before re-engaging.
+Emergence Dissipate cleanses status effects on transference, providing emergency status removal when exiting the warframe to operator mode. This operator arcane delivers useful survivability in content where enemy status procs accumulate quickly - particularly viral, corrosive, and magnetic procs that reduce health, armor, and shields. By entering operator mode and returning, players using Dissipate cleanse accumulated debuffs and gain a brief immunity window to reposition or heal before re-engaging.
 
 The transference trigger makes Dissipate accessible to any frame, since operator transference is a universal mechanic available to all Tenno regardless of warframe kit. Builds that already cycle into operator for Void Dash or Operator amp usage trigger Dissipate naturally as part of their rotation.
 
@@ -40,12 +47,12 @@ Status cleansing removes all proc types including slash bleeds, heat burns, and 
 
 | Rank | Trigger Chance | Immunity Duration |
 |------|----------------|-----------------|
-| 0    | 15%            | 4s              |
-| 1    | 22%            | 4.8s            |
-| 2    | 30%            | 5.6s            |
-| 3    | 37%            | 6.4s            |
-| 4    | 41%            | 7.2s            |
-| 5    | 45%            | 8s              |
+| 0 | 15% | 4s |
+| 1 | 22% | 4.8s |
+| 2 | 30% | 5.6s |
+| 3 | 37% | 6.4s |
+| 4 | 41% | 7.2s |
+| 5 | 45% | 8s |
 
 ## Acquisition
 

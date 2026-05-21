@@ -3,12 +3,20 @@ slug: arcane-liquid
 name: "Arcane Liquid"
 type: other
 maxRank: 5
-effect: "Passive: +[chance]% chance to resist a Gas Status effect. At max rank, grants +1 Arcane Revive."
+effect: "+[chance]% chance to resist a Gas Status effect."
 perRankStats:
   - rank: 0
-    stats: { resistance_chance: 17 }
+    stats: { chance: 17 }
+  - rank: 1
+    stats: { chance: 34 }
+  - rank: 2
+    stats: { chance: 51 }
+  - rank: 3
+    stats: { chance: 68 }
+  - rank: 4
+    stats: { chance: 85 }
   - rank: 5
-    stats: { resistance_chance: 102 }
+    stats: { chance: 102 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,12 +27,11 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Arcane Liquid provides passive resistance against gas status effects, reducing the chance that gas procs affect the warframe when applied by enemy attacks or environmental hazards. Gas status in Warframe deals toxin damage in a small area around the affected target -- the status creates a poison cloud at the proc location that damages nearby enemies and the warframe itself. The resistance chance reduces how often gas procs successfully apply to the warframe, limiting the frequency of gas-sourced health damage during Infested and certain Corpus content encounters.
+Arcane Liquid provides passive resistance against gas status effects, reducing the chance that gas procs affect the warframe when applied by enemy attacks or environmental hazards. Gas status in Warframe deals toxin damage in a small area around the affected target - the status creates a poison cloud at the proc location that damages nearby enemies and the warframe itself. The resistance chance reduces how often gas procs successfully apply to the warframe, limiting the frequency of gas-sourced health damage during Infested and certain Corpus content encounters.
 
-At maximum rank, the 102% resistance chance exceeds the normal cap, which functions as a guarantee -- gas status procs from enemy sources cannot affect the warframe reliably. This effectively makes the frame immune to gas proc application from external sources at rank 5. The bonus Arcane Revive granted at maximum rank additionally provides an emergency self-revive charge.
+At maximum rank, the 102% resistance chance exceeds the normal cap, which functions as a guarantee - gas status procs from enemy sources cannot affect the warframe reliably. This effectively makes the frame immune to gas proc application from external sources at rank 5. The bonus Arcane Revive granted at maximum rank additionally provides an emergency self-revive charge.
 
 ## Effect
 
@@ -36,12 +43,12 @@ The Arcane Revive functions identically to the consumable Arcane Revive item, gr
 
 | Rank | Gas Resistance Chance | Bonus | Notes |
 |------|----------------------|-------|-------|
-| 0    | 17%                  | --    | Partial resistance |
-| 1    | 34%                  | --    | Meaningful proc reduction |
-| 2    | 51%                  | --    | Majority of procs resisted |
-| 3    | 68%                  | --    | Near-full resistance |
-| 4    | 85%                  | --    | Very high resistance |
-| 5    | 102%                 | +1 Arcane Revive | Complete immunity + revive |
+| 0 | 17% | - | Partial resistance |
+| 1 | 34% | - | Meaningful proc reduction |
+| 2 | 51% | - | Majority of procs resisted |
+| 3 | 68% | - | Near-full resistance |
+| 4 | 85% | - | Very high resistance |
+| 5 | 102% | +1 Arcane Revive | Complete immunity + revive |
 
 ## Acquisition
 
@@ -49,11 +56,11 @@ Arcane Liquid is listed in the WFCD warframe-items dataset with no current drop 
 
 ## Builds that use it
 
-Arcane Liquid suits builds running Infested content where gas procs from Mutalist enemies and Toxic Ancient auras create persistent gas clouds. Frames vulnerable to gas proc health damage -- those with low health or no toxin resistance -- benefit from passive gas resistance during Deimos open world content and Infested survival missions. The bonus Arcane Revive at rank 5 adds solo-play safety, particularly in Infested content where getting downed without squad support is otherwise mission-ending.
+Arcane Liquid suits builds running Infested content where gas procs from Mutalist enemies and Toxic Ancient auras create persistent gas clouds. Frames vulnerable to gas proc health damage - those with low health or no toxin resistance - benefit from passive gas resistance during Deimos open world content and Infested survival missions. The bonus Arcane Revive at rank 5 adds solo-play safety, particularly in Infested content where getting downed without squad support is otherwise mission-ending.
 
 ## Notes
 
-Gas resistance does not protect against toxin status or corrosive status -- only the gas damage type specifically. Gas procs from the warframe's own weapons or abilities are not affected by the resistance. The Arcane Revive charges do not stack with consumable Arcane Revive items beyond the total available charges. The passive resistance applies automatically without player input and does not consume energy or resources when it prevents a gas proc.
+Gas resistance does not protect against toxin status or corrosive status - only the gas damage type specifically. Gas procs from the warframe's own weapons or abilities are not affected by the resistance. The Arcane Revive charges do not stack with consumable Arcane Revive items beyond the total available charges. The passive resistance applies automatically without player input and does not consume energy or resources when it prevents a gas proc.
 
 ## Sources
 

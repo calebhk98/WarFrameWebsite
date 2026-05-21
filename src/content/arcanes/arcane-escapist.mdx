@@ -3,12 +3,20 @@ slug: arcane-escapist
 name: Arcane Escapist
 type: warframe
 maxRank: 5
-effect: "On Last Health Point: [chance]% chance to teleport a short distance and become temporarily invisible."
+effect: "On Mercy Kill: Gain a stack of Escapist, up to 9x. On taking fatal damage, consume 3 stacks to avoid death and become invulnerable for [duration]s."
 perRankStats:
   - rank: 0
-    stats: { chance: 15, invisibility_duration: 3 }
+    stats: { duration: 2 }
+  - rank: 1
+    stats: { duration: 4 }
+  - rank: 2
+    stats: { duration: 6 }
+  - rank: 3
+    stats: { duration: 8 }
+  - rank: 4
+    stats: { duration: 10 }
   - rank: 5
-    stats: { chance: 45, invisibility_duration: 6 }
+    stats: { duration: 12 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Arcane Escapist provides emergency escape mechanics when health reaches critical levels. This warframe arcane enables clutch survivability through repositioning and temporary stealth, crucial for aggressive playstyles that push into dangerous territory. The combination of teleport displacement and invisibility window gives frames a second chance to survive encounters that would otherwise result in a down state, making Escapist particularly valuable in solo content where revives are unavailable.
@@ -40,12 +47,12 @@ At rank 0, the 3-second window is sufficient for basic repositioning but may not
 
 | Rank | Trigger Chance | Invisibility Duration |
 |------|----------------|----------------------|
-| 0    | 15%            | 3s                   |
-| 1    | 22%            | 3.6s                 |
-| 2    | 30%            | 4.2s                 |
-| 3    | 37%            | 4.8s                 |
-| 4    | 41%            | 5.4s                 |
-| 5    | 45%            | 6s                   |
+| 0 | 15% | 3s |
+| 1 | 22% | 3.6s |
+| 2 | 30% | 4.2s |
+| 3 | 37% | 4.8s |
+| 4 | 41% | 5.4s |
+| 5 | 45% | 6s |
 
 ## Acquisition
 
@@ -53,7 +60,7 @@ Arcane Escapist drops from Zariman Void Fissure at 4% and Void Cascade rotation 
 
 ## Builds that use it
 
-Arcane Escapist excels on mobile, hit-and-run playstyle frames that operate at low health thresholds. Frames with no innate escape mechanics -- Excalibur, Volt, Ember -- benefit from the added safety net during aggressive pushes. Solo Steel Path content where enemy density and damage output is high rewards the insurance value of Escapist. Frames that rely on finishers or close-range combat and frequently take damage in melee range extract the most value because the trigger fires more regularly under sustained incoming damage. Pairing with burst-heal abilities (Harrow's Thurible, Nezha's Warding Halo heal on strip) maximizes the recovery value of the escape window.
+Arcane Escapist excels on mobile, hit-and-run playstyle frames that operate at low health thresholds. Frames with no innate escape mechanics - Excalibur, Volt, Ember - benefit from the added safety net during aggressive pushes. Solo Steel Path content where enemy density and damage output is high rewards the insurance value of Escapist. Frames that rely on finishers or close-range combat and frequently take damage in melee range extract the most value because the trigger fires more regularly under sustained incoming damage. Pairing with burst-heal abilities (Harrow's Thurible, Nezha's Warding Halo heal on strip) maximizes the recovery value of the escape window.
 
 ## Notes
 

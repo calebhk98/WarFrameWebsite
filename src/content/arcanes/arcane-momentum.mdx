@@ -3,20 +3,20 @@ slug: arcane-momentum
 name: Arcane Momentum
 type: warframe
 maxRank: 5
-effect: "On Void Damage Dealt: +[speed]% Attack Speed for [duration]s. Stacking."
+effect: "On Critical Hit: 60% chance for +[reload_speed]% Reload Speed to Sniper Rifles for 12s"
 perRankStats:
   - rank: 0
-    stats: { speed: 10, duration: 12 }
+    stats: { reload_speed: 25 }
   - rank: 1
-    stats: { speed: 15, duration: 12 }
+    stats: { reload_speed: 50 }
   - rank: 2
-    stats: { speed: 20, duration: 12 }
+    stats: { reload_speed: 75 }
   - rank: 3
-    stats: { speed: 25, duration: 12 }
+    stats: { reload_speed: 100 }
   - rank: 4
-    stats: { speed: 30, duration: 12 }
+    stats: { reload_speed: 125 }
   - rank: 5
-    stats: { speed: 35, duration: 12 }
+    stats: { reload_speed: 150 }
 drops:
   - source: "Duviri/Endless: Tier 1 (Normal)"
     chance: 0.67
@@ -53,7 +53,6 @@ sources:
     note: "Operator void damage interactions and build synergies"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Arcane Momentum is a Warframe arcane that scales operator attack speed whenever void damage is dealt. The arcane triggers on void damage applications (Void Strikes, operator void beams, Zariman hazards) and grants a stacking attack speed buff lasting 12 seconds. This arcane transforms operator-centric playstyles into aggressive high-speed engagements, particularly valuable in Void Fissure missions where void damage is consistently available. The scaling from 10% to 35% attack speed per stack enables operators to achieve 200%+ attack speed bonuses during intense void damage windows. The mechanic is niche, requiring active operator usage and void damage access, but provides exceptional value for coordinated squads that leverage operator engagement as a core strategy.

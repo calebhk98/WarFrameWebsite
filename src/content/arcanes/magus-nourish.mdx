@@ -3,12 +3,20 @@ slug: magus-nourish
 name: Magus Nourish
 type: operator
 maxRank: 5
-effect: "On Transference: [chance]% chance to grant [healing]% of missing health to nearby allies."
+effect: "While An Operator: Restores [health_regen] Health/s to Warframe."
 perRankStats:
   - rank: 0
-    stats: { chance: 10, healing: 25 }
+    stats: { health_regen: 10 }
+  - rank: 1
+    stats: { health_regen: 15 }
+  - rank: 2
+    stats: { health_regen: 20 }
+  - rank: 3
+    stats: { health_regen: 25 }
+  - rank: 4
+    stats: { health_regen: 30 }
   - rank: 5
-    stats: { chance: 30, healing: 75 }
+    stats: { health_regen: 35 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 3.0
@@ -23,16 +31,15 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Magus Nourish converts transference -- the action of returning from operator mode to warframe mode -- into a chance to heal nearby allied warframes based on the proportion of health they are missing. The percentage-of-missing-health heal model means the arcane's value scales with how damaged allies are: fully healthy squadmates receive no benefit, while severely damaged allies receive the largest absolute health values from a single trigger. This self-regulating design makes Nourish most effective during the moments when healing is most needed.
+Magus Nourish converts transference - the action of returning from operator mode to warframe mode - into a chance to heal nearby allied warframes based on the proportion of health they are missing. The percentage-of-missing-health heal model means the arcane's value scales with how damaged allies are: fully healthy squadmates receive no benefit, while severely damaged allies receive the largest absolute health values from a single trigger. This self-regulating design makes Nourish most effective during the moments when healing is most needed.
 
-Transference events are frequent in operator-active builds -- players cycling between operator and warframe modes for Void Dash repositioning, amp usage, or Focus school ability activation create multiple trigger opportunities per minute. Each return to warframe mode checks Magus Nourish, transforming routine transference into potential squad healing without requiring dedicated healing ability casts.
+Transference events are frequent in operator-active builds - players cycling between operator and warframe modes for Void Dash repositioning, amp usage, or Focus school ability activation create multiple trigger opportunities per minute. Each return to warframe mode checks Magus Nourish, transforming routine transference into potential squad healing without requiring dedicated healing ability casts.
 
 ## Effect
 
-Each transference event (returning from operator to warframe mode) triggers the heal chance. On success, nearby allies receive healing equal to the listed percentage of their missing health. At rank 0, a 10% trigger chance heals 25% of missing health -- meaningful recovery for heavily damaged allies when the proc fires. At rank 5, a 30% trigger chance heals 75% of missing health -- nearly three-quarters of a damaged ally's missing health restored in a single trigger.
+Each transference event (returning from operator to warframe mode) triggers the heal chance. On success, nearby allies receive healing equal to the listed percentage of their missing health. At rank 0, a 10% trigger chance heals 25% of missing health - meaningful recovery for heavily damaged allies when the proc fires. At rank 5, a 30% trigger chance heals 75% of missing health - nearly three-quarters of a damaged ally's missing health restored in a single trigger.
 
 The missing-health scaling means the healing is self-balancing: allies near death receive near-maximum absolute healing, while allies with minor damage receive proportionally smaller values.
 
@@ -40,12 +47,12 @@ The missing-health scaling means the healing is self-balancing: allies near deat
 
 | Rank | Trigger Chance | Heal (% Missing Health) | Notes |
 |------|----------------|-------------------------|-------|
-| 0    | 10%            | 25%                     | Occasional significant heal |
-| 1    | 15%            | 35%                     | Increasing squad sustain |
-| 2    | 20%            | 45%                     | Reliable support windows |
-| 3    | 25%            | 55%                     | Strong recovery bursts |
-| 4    | 27%            | 65%                     | Near-maximum healing |
-| 5    | 30%            | 75%                     | Major missing-health restore |
+| 0 | 10% | 25% | Occasional significant heal |
+| 1 | 15% | 35% | Increasing squad sustain |
+| 2 | 20% | 45% | Reliable support windows |
+| 3 | 25% | 55% | Strong recovery bursts |
+| 4 | 27% | 65% | Near-maximum healing |
+| 5 | 30% | 75% | Major missing-health restore |
 
 ## Acquisition
 
@@ -53,13 +60,13 @@ Magus Nourish drops from Zariman Void Fissure missions at 3% and Archon Hunt voi
 
 ## Builds that use it
 
-Magus Nourish fits operator builds designed for squad support roles in Zariman content where squadmates face sustained damage during Void Cascade waves. Operators who frequently transition between operator and warframe mode -- Madurai Void Sling builds, Unairu armor-strip operators -- trigger Nourish on each return, distributing healing across multiple transference cycles per rotation. Support-oriented squad compositions in Steel Path survival content, where sustained damage across long mission durations depletes ally health pools, benefit from the consistent healing events that Nourish provides without requiring a dedicated healer warframe.
+Magus Nourish fits operator builds designed for squad support roles in Zariman content where squadmates face sustained damage during Void Cascade waves. Operators who frequently transition between operator and warframe mode - Madurai Void Sling builds, Unairu armor-strip operators - trigger Nourish on each return, distributing healing across multiple transference cycles per rotation. Support-oriented squad compositions in Steel Path survival content, where sustained damage across long mission durations depletes ally health pools, benefit from the consistent healing events that Nourish provides without requiring a dedicated healer warframe.
 
 The missing-health scaling makes Nourish particularly valuable in high-difficulty content where allies take burst damage from elite enemies that drops health pools sharply in short windows.
 
 ## Notes
 
-The heal applies to warframe health, not operator health. Shields are not restored by Nourish -- only base health benefits. Allies at full health do not receive any healing from a Nourish trigger. The heal area is centered on the transference return point, so the player must be within range of allied warframes for the healing to distribute. The 30% trigger chance at rank 5 means roughly one in three transference events produces a heal -- operators cycling between modes multiple times per minute generate several healing opportunities per combat rotation.
+The heal applies to warframe health, not operator health. Shields are not restored by Nourish - only base health benefits. Allies at full health do not receive any healing from a Nourish trigger. The heal area is centered on the transference return point, so the player must be within range of allied warframes for the healing to distribute. The 30% trigger chance at rank 5 means roughly one in three transference events produces a heal - operators cycling between modes multiple times per minute generate several healing opportunities per combat rotation.
 
 ## Sources
 

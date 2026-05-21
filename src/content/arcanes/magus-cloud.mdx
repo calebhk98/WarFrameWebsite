@@ -3,12 +3,20 @@ slug: magus-cloud
 name: Magus Cloud
 type: operator
 maxRank: 5
-effect: "Void Blast: [chance]% chance to become invisible for [duration] seconds."
+effect: "On Void Mode: +[range]% Void Sling Radius for 6s"
 perRankStats:
   - rank: 0
-    stats: { chance: 10, duration: 4 }
+    stats: { range: 50 }
+  - rank: 1
+    stats: { range: 100 }
+  - rank: 2
+    stats: { range: 150 }
+  - rank: 3
+    stats: { range: 200 }
+  - rank: 4
+    stats: { range: 250 }
   - rank: 5
-    stats: { chance: 30, duration: 6 }
+    stats: { range: 300 }
 drops:
   - source: "Eidolon Hydrolyst capture"
     chance: 4.0
@@ -23,16 +31,15 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Magus Cloud grants brief operator invisibility following Void Blast attacks, converting the melee-range void strike into a potential escape or repositioning tool. Operator invisibility prevents enemy targeting while active, allowing the operator to break line of sight after a Void Blast and reposition without drawing fire. In high-difficulty content where operator health pools are limited and direct operator engagement is dangerous, Cloud provides the window needed to withdraw to safety or close distance without taking damage.
 
-The Void Blast is naturally a close-range action that positions the operator near enemies. Magus Cloud turns this proximity requirement into a defensive opportunity -- blasting an enemy at close range has a chance to immediately render the operator invisible, allowing instant disengagement from the same position where the attack was delivered.
+The Void Blast is naturally a close-range action that positions the operator near enemies. Magus Cloud turns this proximity requirement into a defensive opportunity - blasting an enemy at close range has a chance to immediately render the operator invisible, allowing instant disengagement from the same position where the attack was delivered.
 
 ## Effect
 
-Each Void Blast triggers a chance check. On success, the operator becomes invisible for the listed duration. At rank 0, a 10% trigger chance grants 4 seconds of invisibility -- sufficient for a quick reposition or distance-closing movement to cover. At rank 5, a 30% trigger chance grants 6 seconds -- roughly one in three Void Blasts generates an invisibility window, providing reliable cover during sustained operator combat.
+Each Void Blast triggers a chance check. On success, the operator becomes invisible for the listed duration. At rank 0, a 10% trigger chance grants 4 seconds of invisibility - sufficient for a quick reposition or distance-closing movement to cover. At rank 5, a 30% trigger chance grants 6 seconds - roughly one in three Void Blasts generates an invisibility window, providing reliable cover during sustained operator combat.
 
 Operator invisibility prevents enemy targeting from most standard enemy types. Attacks during the invisibility window may break the effect; repositioning and amp fire discipline during the invisibility duration preserves its full length.
 
@@ -40,16 +47,16 @@ Operator invisibility prevents enemy targeting from most standard enemy types. A
 
 | Rank | Trigger Chance | Invisibility Duration | Notes |
 |------|----------------|-----------------------|-------|
-| 0    | 10%            | 4s                    | Occasional escape window |
-| 1    | 15%            | 4.4s                  | Moderate invisibility uptime |
-| 2    | 20%            | 4.8s                  | Reliable repositioning |
-| 3    | 25%            | 5.2s                  | Strong defensive window |
-| 4    | 27%            | 5.6s                  | Near-maximum cover |
-| 5    | 30%            | 6s                    | Maximum invisibility duration |
+| 0 | 10% | 4s | Occasional escape window |
+| 1 | 15% | 4.4s | Moderate invisibility uptime |
+| 2 | 20% | 4.8s | Reliable repositioning |
+| 3 | 25% | 5.2s | Strong defensive window |
+| 4 | 27% | 5.6s | Near-maximum cover |
+| 5 | 30% | 6s | Maximum invisibility duration |
 
 ## Acquisition
 
-Magus Cloud drops from Eidolon Hydrolyst capture at 4% and Zariman Void Fissure missions at 2%. The Hydrolyst drop source requires completing full Eidolon hunts on Plains of Eidolon -- capturing (not killing) the Eidolon Hydrolyst during Teralyst-Gantulyst-Hydrolyst chains provides the 4% drop. Zariman Void Fissure provides a lower-rate alternative accessible through standard Zariman content after Angels of the Zariman. Warframe.market offers purchase options for players who prefer platinum acquisition.
+Magus Cloud drops from Eidolon Hydrolyst capture at 4% and Zariman Void Fissure missions at 2%. The Hydrolyst drop source requires completing full Eidolon hunts on Plains of Eidolon - capturing (not killing) the Eidolon Hydrolyst during Teralyst-Gantulyst-Hydrolyst chains provides the 4% drop. Zariman Void Fissure provides a lower-rate alternative accessible through standard Zariman content after Angels of the Zariman. Warframe.market offers purchase options for players who prefer platinum acquisition.
 
 ## Builds that use it
 
@@ -59,7 +66,7 @@ Unairu school operators that rely on Void Blast for armor stripping against Sent
 
 ## Notes
 
-Operator invisibility from Magus Cloud prevents targeting from standard enemy types but may not affect all enemy categories -- certain endgame enemies with special detection or area denial abilities may still locate the operator. Using the amp while invisible may break the invisibility depending on the weapon and attack type. Combining Cloud with Magus Lockdown (which immobilizes enemies on Void Blast) creates a combination that simultaneously disables enemies and grants the operator safe reposition time. The invisibility duration is measured from the moment of proc, not from the Void Blast animation completion.
+Operator invisibility from Magus Cloud prevents targeting from standard enemy types but may not affect all enemy categories - certain endgame enemies with special detection or area denial abilities may still locate the operator. Using the amp while invisible may break the invisibility depending on the weapon and attack type. Combining Cloud with Magus Lockdown (which immobilizes enemies on Void Blast) creates a combination that simultaneously disables enemies and grants the operator safe reposition time. The invisibility duration is measured from the moment of proc, not from the Void Blast animation completion.
 
 ## Sources
 

@@ -2,21 +2,17 @@
 slug: virtuos-forge
 name: Virtuos Forge
 type: operator
-maxRank: 5
-effect: 'On Void Dash: Gain +[power]% Fire Rate for [duration]s.'
+maxRank: 3
+effect: "On Hit: Converts [damage]% Void Damage to Heat Damage."
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { damage: 24 }
+  - rank: 1
+    stats: { damage: 48 }
+  - rank: 2
+    stats: { damage: 72 }
+  - rank: 3
+    stats: { damage: 98 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,7 +26,6 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
 Virtuos Forge grants fire rate bonuses after void dashing in operator mode, creating a synergy between operator mobility and warframe weapon performance. Void Dash is the operator's primary traversal ability, triggered by dashing in midair to propel the operator at high speed. By converting each void dash into a fire rate buff upon returning to the warframe, Forge rewards players who actively use operator mode for repositioning rather than remaining exclusively in their warframe.
@@ -47,12 +42,12 @@ The fire rate bonus stacks additively with Speed Trigger, Lethal Torrent, and ot
 
 | Rank | Fire Rate Bonus | Duration | Notes |
 |------|-----------------|----------|-------|
-| 0    | +20%            | 10s      | Modest acceleration |
-| 1    | +40%            | 11s      | Moderate fire rate improvement |
-| 2    | +60%            | 12s      | Substantial firing speed boost |
-| 3    | +80%            | 13s      | Strong DPS increase window |
-| 4    | +90%            | 14s      | Near-maximum rate |
-| 5    | +100%           | 15s      | Double fire rate for full window |
+| 0 | +20% | 10s | Modest acceleration |
+| 1 | +40% | 11s | Moderate fire rate improvement |
+| 2 | +60% | 12s | Substantial firing speed boost |
+| 3 | +80% | 13s | Strong DPS increase window |
+| 4 | +90% | 14s | Near-maximum rate |
+| 5 | +100% | 15s | Double fire rate for full window |
 
 ## Acquisition
 

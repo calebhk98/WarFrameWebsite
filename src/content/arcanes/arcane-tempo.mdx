@@ -3,20 +3,20 @@ slug: arcane-tempo
 name: Arcane Tempo
 type: warframe
 maxRank: 5
-effect: "On Energy Drain: +[attackSpeed]% Attack Speed for [duration]s."
+effect: "On Critical Hit: 15% chance for +[fire_rate]% Fire Rate to Shotguns for 12s"
 perRankStats:
   - rank: 0
-    stats: { attackSpeed: 15, duration: 10 }
+    stats: { fire_rate: 15 }
   - rank: 1
-    stats: { attackSpeed: 25, duration: 10 }
+    stats: { fire_rate: 30 }
   - rank: 2
-    stats: { attackSpeed: 35, duration: 10 }
+    stats: { fire_rate: 45 }
   - rank: 3
-    stats: { attackSpeed: 45, duration: 10 }
+    stats: { fire_rate: 60 }
   - rank: 4
-    stats: { attackSpeed: 55, duration: 10 }
+    stats: { fire_rate: 75 }
   - rank: 5
-    stats: { attackSpeed: 65, duration: 10 }
+    stats: { fire_rate: 90 }
 drops:
   - source: "Duviri/Endless: Tier 1 (Normal)"
     chance: 0.67
@@ -53,7 +53,6 @@ sources:
     note: "Energy management mechanics and attack speed interactions"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Arcane Tempo is a Warframe arcane that converts energy expenditure into attack speed bonuses. The arcane triggers whenever the Warframe's energy pool is drained by any source (ability casts, channeled abilities, Helminth subsumption drain, environmental energy damage) and provides scaling attack speed boosts. At maximum rank, the arcane grants 65% attack speed for 10 seconds per energy drain event. This mechanic creates powerful synergies with high-energy-cost ability builds and channel-oriented playstyles, transforming defensive energy management into offensive damage scaling. The arcane is particularly valuable on frames that maintain sustained channeled abilities or cast high-cost ultimates repeatedly, effectively rewarding aggressive ability usage with melee and weapon DPS scaling.

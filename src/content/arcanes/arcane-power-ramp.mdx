@@ -3,12 +3,20 @@ slug: arcane-power-ramp
 name: Arcane Power Ramp
 type: warframe
 maxRank: 5
-effect: "On Ability Hit: [chance]% chance to grant [power_strength]% Power Strength for [duration] seconds, stacking up to [stacks] times."
+effect: "On Ability Cast: Next Ability cast gains +[ability_strength]% Ability Strength, stacking up to 4x. Resets when the same ability is recast consecutively."
 perRankStats:
   - rank: 0
-    stats: { chance: 10, power_strength: 15, duration: 8, stacks: 5 }
+    stats: { ability_strength: 2 }
+  - rank: 1
+    stats: { ability_strength: 3 }
+  - rank: 2
+    stats: { ability_strength: 4.5 }
+  - rank: 3
+    stats: { ability_strength: 6 }
+  - rank: 4
+    stats: { ability_strength: 7.5 }
   - rank: 5
-    stats: { chance: 30, power_strength: 45, duration: 8, stacks: 5 }
+    stats: { ability_strength: 9 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,7 +31,6 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Arcane Power Ramp provides stacking power strength during ability usage, enabling ability-spam builds to scale damage output progressively throughout a combat encounter. Each ability hit that successfully triggers Power Ramp adds a stack that compounds with existing stacks, creating a ramp-up period where the first few ability casts are weaker and subsequent casts become progressively stronger. At full five stacks, the total power strength bonus is multiplicative with existing Transient Fortitude, Blind Rage, and other Power Strength mods, potentially reaching extreme total values.
@@ -40,12 +47,12 @@ Each stack's 8-second timer resets independently on re-trigger, so active abilit
 
 | Rank | Trigger Chance | Per Stack | Max Stacks | Max Bonus | Duration |
 |------|----------------|-----------|-----------|-----------|----------|
-| 0    | 10%            | +15%      | 5         | +75%      | 8s       |
-| 1    | 15%            | +22%      | 5         | +110%     | 8s       |
-| 2    | 20%            | +30%      | 5         | +150%     | 8s       |
-| 3    | 25%            | +37%      | 5         | +185%     | 8s       |
-| 4    | 27%            | +41%      | 5         | +205%     | 8s       |
-| 5    | 30%            | +45%      | 5         | +225%     | 8s       |
+| 0 | 10% | +15% | 5 | +75% | 8s |
+| 1 | 15% | +22% | 5 | +110% | 8s |
+| 2 | 20% | +30% | 5 | +150% | 8s |
+| 3 | 25% | +37% | 5 | +185% | 8s |
+| 4 | 27% | +41% | 5 | +205% | 8s |
+| 5 | 30% | +45% | 5 | +225% | 8s |
 
 ## Acquisition
 

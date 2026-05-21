@@ -3,12 +3,20 @@ slug: arcane-magus-glitch
 name: Magus Glitch
 type: operator
 maxRank: 5
-effect: "On Void Sling: +[duration]s Void Cloak to nearby allies"
+effect: "On Transference Static: [chance]% chance to negate Transference Static."
 perRankStats:
   - rank: 0
-    stats: { duration: 4 }
+    stats: { chance: 17 }
+  - rank: 1
+    stats: { chance: 34 }
+  - rank: 2
+    stats: { chance: 51 }
+  - rank: 3
+    stats: { chance: 68 }
+  - rank: 4
+    stats: { chance: 85 }
   - rank: 5
-    stats: { duration: 8 }
+    stats: { chance: 102 }
 drops:
   - source: "Void Cascade on Zariman"
     chance: 2.5
@@ -22,29 +30,28 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Magus Glitch applies Void Cloak -- a form of temporary invisibility -- to nearby warframes when the operator uses Void Sling. The Void Sling action propels the operator forward, and Glitch's trigger converts this movement action into a team stealth event, granting all nearby allied warframes an invisibility window simultaneously. Unlike targeted healing or damage support arcanes that affect one parameter, Glitch provides crowd-level evasion by making all nearby frames invisible at the same time, allowing the squad to break enemy targeting simultaneously.
+Magus Glitch applies Void Cloak - a form of temporary invisibility - to nearby warframes when the operator uses Void Sling. The Void Sling action propels the operator forward, and Glitch's trigger converts this movement action into a team stealth event, granting all nearby allied warframes an invisibility window simultaneously. Unlike targeted healing or damage support arcanes that affect one parameter, Glitch provides crowd-level evasion by making all nearby frames invisible at the same time, allowing the squad to break enemy targeting simultaneously.
 
-Team-wide stealth events are relatively rare in Warframe -- most invisibility sources are single-target (the casting frame or a specific targeted ally). Magus Glitch provides this rare group stealth through a naturally-occurring operator action, enabling squad compositions that benefit from coordinated stealth without requiring all members to run their own invisibility abilities.
+Team-wide stealth events are relatively rare in Warframe - most invisibility sources are single-target (the casting frame or a specific targeted ally). Magus Glitch provides this rare group stealth through a naturally-occurring operator action, enabling squad compositions that benefit from coordinated stealth without requiring all members to run their own invisibility abilities.
 
 ## Effect
 
-Each Void Sling activates Void Cloak on nearby warframes for the listed duration. At rank 0, 4 seconds of Void Cloak provides a brief stealth window for repositioning or breaking enemy line of sight. At rank 5, 8 seconds of Void Cloak provides a more substantial evasion window -- enough for the squad to reposition, revive a downed ally, or wait for a dangerous enemy attack to resolve.
+Each Void Sling activates Void Cloak on nearby warframes for the listed duration. At rank 0, 4 seconds of Void Cloak provides a brief stealth window for repositioning or breaking enemy line of sight. At rank 5, 8 seconds of Void Cloak provides a more substantial evasion window - enough for the squad to reposition, revive a downed ally, or wait for a dangerous enemy attack to resolve.
 
-Void Cloak functions as a form of invisibility that prevents enemy targeting while active. Standard stealth break conditions apply -- warframes that attack while cloaked break stealth for their own frame without affecting squadmates' cloak status.
+Void Cloak functions as a form of invisibility that prevents enemy targeting while active. Standard stealth break conditions apply - warframes that attack while cloaked break stealth for their own frame without affecting squadmates' cloak status.
 
 ## Stats per rank
 
 | Rank | Cloak Duration | Notes |
 |------|----------------|-------|
-| 0    | 4s             | Brief repositioning window |
-| 1    | 5.3s           | Moderate stealth coverage |
-| 2    | 6.6s           | Useful evasion time |
-| 3    | 7.2s           | Strong cloak window |
-| 4    | 7.6s           | Near-maximum duration |
-| 5    | 8s             | Maximum cloak per Sling |
+| 0 | 4s | Brief repositioning window |
+| 1 | 5.3s | Moderate stealth coverage |
+| 2 | 6.6s | Useful evasion time |
+| 3 | 7.2s | Strong cloak window |
+| 4 | 7.6s | Near-maximum duration |
+| 5 | 8s | Maximum cloak per Sling |
 
 ## Acquisition
 
@@ -54,11 +61,11 @@ Magus Glitch drops as an uncommon reward from Void Cascade missions on Zariman T
 
 Magus Glitch suits operator support builds in squad missions where team evasion provides survivability during dangerous encounter windows. Spy-mission void fissure runs where stealth is necessary for alarm-avoidance benefit from synchronized squad invisibility triggered by operator Void Sling. Void Cascade squad compositions where the operator actively moves between Void Manifestation locations using Void Sling naturally trigger Glitch's cloak on nearby squadmates during those transitions.
 
-Stealth-dependent warframe builds -- Ash, Ivara, Octavia -- can use Glitch to refresh their stealth windows in scenarios where their own abilities are on cooldown or energy-depleted, relying on the operator's Void Sling to maintain stealth coverage for the team.
+Stealth-dependent warframe builds - Ash, Ivara, Octavia - can use Glitch to refresh their stealth windows in scenarios where their own abilities are on cooldown or energy-depleted, relying on the operator's Void Sling to maintain stealth coverage for the team.
 
 ## Notes
 
-The Void Cloak applies to all warframes within the Glitch range, not only the operator's own warframe. The duration is fixed and does not scale with any ability range or duration mods. Each squadmate's Void Cloak breaks independently on that player's actions -- one player attacking does not break other players' cloak. Multiple operators each running Magus Glitch can stack their separate Void Sling triggers to extend overall team cloak coverage beyond the single-arcane window. The operator itself is not cloaked by Glitch -- only nearby warframes receive the Void Cloak effect.
+The Void Cloak applies to all warframes within the Glitch range, not only the operator's own warframe. The duration is fixed and does not scale with any ability range or duration mods. Each squadmate's Void Cloak breaks independently on that player's actions - one player attacking does not break other players' cloak. Multiple operators each running Magus Glitch can stack their separate Void Sling triggers to extend overall team cloak coverage beyond the single-arcane window. The operator itself is not cloaked by Glitch - only nearby warframes receive the Void Cloak effect.
 
 ## Sources
 

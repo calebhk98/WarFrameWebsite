@@ -2,13 +2,17 @@
 slug: virtuos-ghost
 name: Virtuos Ghost
 type: operator
-maxRank: 5
-effect: "On Void Damage Hit: [chance]% chance for invisibility"
+maxRank: 3
+effect: "On Headshot: 40% chance for +[status_chance]% Status Chance for 12s"
 perRankStats:
   - rank: 0
-    stats: { chance: 15, duration: 4 }
-  - rank: 5
-    stats: { chance: 75, duration: 5 }
+    stats: { status_chance: 15 }
+  - rank: 1
+    stats: { status_chance: 30 }
+  - rank: 2
+    stats: { status_chance: 45 }
+  - rank: 3
+    stats: { status_chance: 60 }
 drops:
   - source: "Eidolon Gantulyst capture (Void Fissure)"
     chance: 3.0
@@ -22,16 +26,15 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
 Virtuos Ghost grants the operator a chance to become invisible when their amp lands void damage hits, turning the damage output of the amp into a concurrent defensive tool. High-fire-rate amps that land multiple hits per second generate invisibility checks at corresponding rates, creating near-continuous stealth uptime during sustained amp fire at maximum rank. Operators who would otherwise be exposed to enemy fire during extended amp sequences benefit from the defensive coverage without altering their damage routine.
 
-Operator mode places the player in a lower-health state compared to the warframe -- operator health pools are substantially smaller than warframe health. Invisibility from Virtuos Ghost prevents enemy targeting during operator combat, reducing the damage the operator takes during the periods where amp fire is the primary engagement. This makes Ghost valuable for solo operator play against enemy groups that would otherwise target the operator directly.
+Operator mode places the player in a lower-health state compared to the warframe - operator health pools are substantially smaller than warframe health. Invisibility from Virtuos Ghost prevents enemy targeting during operator combat, reducing the damage the operator takes during the periods where amp fire is the primary engagement. This makes Ghost valuable for solo operator play against enemy groups that would otherwise target the operator directly.
 
 ## Effect
 
-Each void damage hit from the amp checks the invisibility trigger chance. On success, the operator becomes invisible for the listed duration. At rank 0, a 15% trigger chance grants 4 seconds of invisibility -- rare but covering when it procs during sustained fire. At rank 5, a 75% trigger chance grants 5 seconds per proc -- nearly every other amp hit triggers invisibility, creating near-continuous stealth coverage during active fire.
+Each void damage hit from the amp checks the invisibility trigger chance. On success, the operator becomes invisible for the listed duration. At rank 0, a 15% trigger chance grants 4 seconds of invisibility - rare but covering when it procs during sustained fire. At rank 5, a 75% trigger chance grants 5 seconds per proc - nearly every other amp hit triggers invisibility, creating near-continuous stealth coverage during active fire.
 
 Invisibility may break when the operator attacks or takes damage, requiring disciplined play to extend each window.
 
@@ -39,26 +42,26 @@ Invisibility may break when the operator attacks or takes damage, requiring disc
 
 | Rank | Trigger Chance | Invisibility Duration | Notes |
 |------|----------------|-----------------------|-------|
-| 0    | 15%            | 4s                    | Occasional defensive window |
-| 1    | 30%            | 4.2s                  | Increasing stealth uptime |
-| 2    | 45%            | 4.4s                  | Frequent evasion coverage |
-| 3    | 60%            | 4.6s                  | Reliable stealth |
-| 4    | 68%            | 4.8s                  | Near-constant coverage |
-| 5    | 75%            | 5s                    | Consistent invisible combat |
+| 0 | 15% | 4s | Occasional defensive window |
+| 1 | 30% | 4.2s | Increasing stealth uptime |
+| 2 | 45% | 4.4s | Frequent evasion coverage |
+| 3 | 60% | 4.6s | Reliable stealth |
+| 4 | 68% | 4.8s | Near-constant coverage |
+| 5 | 75% | 5s | Consistent invisible combat |
 
 ## Acquisition
 
-Virtuos Ghost drops as a rare reward from Eidolon Gantulyst captures during Void Fissure Eidolon hunts on Plains of Eidolon. Capturing the Gantulyst -- the second Eidolon in the Tridolon chain -- provides Ghost at a 3% chance. The rare designation and Gantulyst-specific drop make Ghost one of the harder Virtuos arcanes to acquire through normal play. Warframe.market provides a purchase alternative.
+Virtuos Ghost drops as a rare reward from Eidolon Gantulyst captures during Void Fissure Eidolon hunts on Plains of Eidolon. Capturing the Gantulyst - the second Eidolon in the Tridolon chain - provides Ghost at a 3% chance. The rare designation and Gantulyst-specific drop make Ghost one of the harder Virtuos arcanes to acquire through normal play. Warframe.market provides a purchase alternative.
 
 ## Builds that use it
 
 Virtuos Ghost suits solo operator builds and builds where the operator engages enemies directly in combat without warframe support. Eidolon hunt operators that cycle between Teralyst, Gantulyst, and Hydrolyst encounters benefit from Ghost's continuous stealth coverage during the unprotected operator combat phases between spawns. Zariman Ten-Zero operators who engage Void Manifestations directly in operator mode use Ghost to minimize damage intake during sustained amp combat.
 
-High-fire-rate amp configurations -- the Klamora prism, for example -- generate the most trigger attempts per second, maximizing Ghost's uptime at any given rank through sheer frequency of hit checks.
+High-fire-rate amp configurations - the Klamora prism, for example - generate the most trigger attempts per second, maximizing Ghost's uptime at any given rank through sheer frequency of hit checks.
 
 ## Notes
 
-Invisibility breaks on amp fire depending on the specific interaction; beam-type amps may maintain invisibility during sustained fire while burst amps break stealth on each shot. Operators should test their specific amp configuration to understand break conditions. The trigger chance applies per hit, not per second, making hit-rate the primary factor in uptime calculation. Operator ability casts in Focus schools may or may not break the invisibility depending on the ability type -- passive abilities do not break stealth while active offensive casts typically do.
+Invisibility breaks on amp fire depending on the specific interaction; beam-type amps may maintain invisibility during sustained fire while burst amps break stealth on each shot. Operators should test their specific amp configuration to understand break conditions. The trigger chance applies per hit, not per second, making hit-rate the primary factor in uptime calculation. Operator ability casts in Focus schools may or may not break the invisibility depending on the ability type - passive abilities do not break stealth while active offensive casts typically do.
 
 ## Sources
 

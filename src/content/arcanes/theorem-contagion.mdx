@@ -3,20 +3,20 @@ slug: theorem-contagion
 name: Theorem Contagion
 type: operator
 maxRank: 5
-effect: 'On Void Blast: Spread toxin to [enemies] nearby enemies. Damage: [power]% void damage.'
+effect: "Standing in a zone created by a Residual Arcane creates a globe that orbits the player every 2s. The globes will strike the nearest enemy within 15m dealing 150 damage increasing their vulnerability to the globe's damage type by [damage]% for 6s. Globes will persist for 30s upon leaving the zone."
 perRankStats:
-- rank: 0
-  stats: {}
-- rank: 1
-  stats: {}
-- rank: 2
-  stats: {}
-- rank: 3
-  stats: {}
-- rank: 4
-  stats: {}
-- rank: 5
-  stats: {}
+  - rank: 0
+    stats: { damage: 25 }
+  - rank: 1
+    stats: { damage: 50 }
+  - rank: 2
+    stats: { damage: 75 }
+  - rank: 3
+    stats: { damage: 100 }
+  - rank: 4
+    stats: { damage: 150 }
+  - rank: 5
+    stats: { damage: 200 }
 drops:
 - source: Various
   chance: 1.0
@@ -30,7 +30,6 @@ sources:
   publisher: Fandom
 updatedAt: '2026-05-20'
 ---
-
 ## Overview
 
 Theorem Contagion spreads toxin contamination from operator void blasts to nearby enemies, converting the operator's Void Blast ability into a combined damage and status tool. Void Blast is triggered by the operator sliding into enemies or using the designated void ability key; Contagion converts each blast into a toxin proc broadcast that affects multiple targets simultaneously rather than relying on individual hit detection.
@@ -47,12 +46,12 @@ Operator void damage scales with Focus school bonuses and amp modding, making st
 
 | Rank | Enemies Affected | Void Damage | Notes |
 |------|-----------------|-------------|-------|
-| 0    | 4               | 50%         | Small group coverage |
-| 1    | 5               | 100%        | Moderate spread |
-| 2    | 6               | 150%        | Good area coverage |
-| 3    | 7               | 200%        | Strong group toxin |
-| 4    | 7               | 225%        | High-damage spread |
-| 5    | 8               | 250%        | Maximum coverage |
+| 0 | 4 | 50% | Small group coverage |
+| 1 | 5 | 100% | Moderate spread |
+| 2 | 6 | 150% | Good area coverage |
+| 3 | 7 | 200% | Strong group toxin |
+| 4 | 7 | 225% | High-damage spread |
+| 5 | 8 | 250% | Maximum coverage |
 
 ## Acquisition
 

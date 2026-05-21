@@ -3,12 +3,20 @@ slug: melee-animosity
 name: Melee Animosity
 type: melee
 maxRank: 5
-effect: "On Kill: [chance]% chance to grant [power_strength]% Power Strength for [duration] seconds."
+effect: "On Melee Hit: Gain [crit_chance]% Critical Chance on your next Heavy Attack, up to [stat_1]%"
 perRankStats:
   - rank: 0
-    stats: { chance: 15, power_strength: 30, duration: 10 }
+    stats: { crit_chance: 7, stat_1: 70 }
+  - rank: 1
+    stats: { crit_chance: 14, stat_1: 140 }
+  - rank: 2
+    stats: { crit_chance: 21, stat_1: 210 }
+  - rank: 3
+    stats: { crit_chance: 28, stat_1: 280 }
+  - rank: 4
+    stats: { crit_chance: 35, stat_1: 350 }
   - rank: 5
-    stats: { chance: 45, power_strength: 90, duration: 10 }
+    stats: { crit_chance: 42, stat_1: 420 }
 drops:
   - source: "Zariman Void Fissure rewards"
     chance: 4.0
@@ -23,16 +31,15 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
-
 ## Overview
 
-Melee Animosity generates Power Strength bonuses from melee kills, creating a feedback loop where aggressive melee combat directly amplifies ability effectiveness. The kill-based trigger means the arcane rewards offensive momentum -- frames that maintain high kill rates through melee combat sustain elevated ability strength throughout the mission, while frames that disengage from melee see the buff expire during combat breaks.
+Melee Animosity generates Power Strength bonuses from melee kills, creating a feedback loop where aggressive melee combat directly amplifies ability effectiveness. The kill-based trigger means the arcane rewards offensive momentum - frames that maintain high kill rates through melee combat sustain elevated ability strength throughout the mission, while frames that disengage from melee see the buff expire during combat breaks.
 
 Power Strength in Warframe multiplies the numeric values of most warframe abilities: damage outputs, healing values, crowd control durations, and buff percentages all scale with the strength modifier. A 90% Power Strength bonus from Melee Animosity at rank 5 effectively adds the equivalent of multiple strength-increasing mods, pushing ability outputs to values normally achievable only through specialized ability-focused builds.
 
 ## Effect
 
-Each melee kill triggers a chance check. On success, the warframe gains a Power Strength percentage bonus for 10 seconds. At rank 0, a 15% chance grants 30% Power Strength -- activating roughly once every six melee kills and providing a moderate ability boost window. At rank 5, the 45% chance grants 90% Power Strength -- activating nearly every other kill group and providing a near-doubling of base ability strength for the duration.
+Each melee kill triggers a chance check. On success, the warframe gains a Power Strength percentage bonus for 10 seconds. At rank 0, a 15% chance grants 30% Power Strength - activating roughly once every six melee kills and providing a moderate ability boost window. At rank 5, the 45% chance grants 90% Power Strength - activating nearly every other kill group and providing a near-doubling of base ability strength for the duration.
 
 The 10-second window is long enough to cover multiple ability casts following a kill burst. The bonus is multiplicative with existing Power Strength from mods, meaning frames that already run high-strength builds amplify Animosity's bonus into larger absolute ability values.
 
@@ -40,12 +47,12 @@ The 10-second window is long enough to cover multiple ability casts following a 
 
 | Rank | Trigger Chance | Power Strength Boost | Duration | Notes |
 |------|----------------|----------------------|----------|-------|
-| 0    | 15%            | +30%                 | 10s      | Moderate ability boost window |
-| 1    | 22%            | +45%                 | 10s      | Increasing strength uptime |
-| 2    | 30%            | +60%                 | 10s      | Reliable ability scaling |
-| 3    | 37%            | +75%                 | 10s      | Strong kill-reward cycle |
-| 4    | 41%            | +82%                 | 10s      | Near-constant uptime possible |
-| 5    | 45%            | +90%                 | 10s      | Maximum strength cycling |
+| 0 | 15% | +30% | 10s | Moderate ability boost window |
+| 1 | 22% | +45% | 10s | Increasing strength uptime |
+| 2 | 30% | +60% | 10s | Reliable ability scaling |
+| 3 | 37% | +75% | 10s | Strong kill-reward cycle |
+| 4 | 41% | +82% | 10s | Near-constant uptime possible |
+| 5 | 45% | +90% | 10s | Maximum strength cycling |
 
 ## Acquisition
 
@@ -53,13 +60,13 @@ Melee Animosity drops from Zariman Void Fissure at 4% and Void Cascade rotation 
 
 ## Builds that use it
 
-Melee Animosity fits ability-focused frames that use melee combat as their primary kill method. Ash builds using Fatal Teleport perform frequent melee finisher kills that trigger Animosity, directly boosting Blade Storm's damage output. Atlas builds whose Landslide scales with Power Strength benefit from Animosity's kill-to-strength feedback -- each Landslide kill boosts the next Landslide cast. Exalted weapon builds on Valkyr (Hysteria), Wukong (Primal Fury), and Baruuk (Desert Wind) apply kill triggers to the exalted weapon hits, stacking the bonus during sustained exalted weapon combat.
+Melee Animosity fits ability-focused frames that use melee combat as their primary kill method. Ash builds using Fatal Teleport perform frequent melee finisher kills that trigger Animosity, directly boosting Blade Storm's damage output. Atlas builds whose Landslide scales with Power Strength benefit from Animosity's kill-to-strength feedback - each Landslide kill boosts the next Landslide cast. Exalted weapon builds on Valkyr (Hysteria), Wukong (Primal Fury), and Baruuk (Desert Wind) apply kill triggers to the exalted weapon hits, stacking the bonus during sustained exalted weapon combat.
 
-High-kill-rate melee weapons -- spin-attack polearms, aoe-swing heavy blades -- generate kills in rapid clusters that maximize the trigger frequency and sustain the Power Strength window between buff refreshes.
+High-kill-rate melee weapons - spin-attack polearms, aoe-swing heavy blades - generate kills in rapid clusters that maximize the trigger frequency and sustain the Power Strength window between buff refreshes.
 
 ## Notes
 
-The Power Strength bonus from Melee Animosity does not stack beyond a single application -- triggering while the buff is active refreshes the timer rather than adding a second layer. The boost applies to all ability values that scale with Power Strength, including beneficial effects like healing values and buff durations, not only damage. Melee kills from companion weapons or warframe abilities do not trigger the arcane -- only direct melee weapon kills from the player's equipped melee count. Frames that use melee combat only incidentally alongside primary or secondary weapons trigger Animosity less frequently and may find the uptime insufficient for reliable ability scaling.
+The Power Strength bonus from Melee Animosity does not stack beyond a single application - triggering while the buff is active refreshes the timer rather than adding a second layer. The boost applies to all ability values that scale with Power Strength, including beneficial effects like healing values and buff durations, not only damage. Melee kills from companion weapons or warframe abilities do not trigger the arcane - only direct melee weapon kills from the player's equipped melee count. Frames that use melee combat only incidentally alongside primary or secondary weapons trigger Animosity less frequently and may find the uptime insufficient for reliable ability scaling.
 
 ## Sources
 

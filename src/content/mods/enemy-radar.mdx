@@ -6,20 +6,20 @@ drain: -2
 maxRank: 5
 rarity: uncommon
 type: aura
-effect: "Displays enemies on radar within [range] meters"
+effect: "Squad receives +[squad_receives] Enemy Radar"
 perRankStats:
   - rank: 0
-    stats: { range: 25 }
+    stats: { squad_receives: 5 }
   - rank: 1
-    stats: { range: 40 }
+    stats: { squad_receives: 10 }
   - rank: 2
-    stats: { range: 55 }
+    stats: { squad_receives: 15 }
   - rank: 3
-    stats: { range: 70 }
+    stats: { squad_receives: 20 }
   - rank: 4
-    stats: { range: 85 }
+    stats: { squad_receives: 25 }
   - rank: 5
-    stats: { range: 100 }
+    stats: { squad_receives: 30 }
 drops:
   - source: "Enemy drops (universal)"
     chance: 1.0
