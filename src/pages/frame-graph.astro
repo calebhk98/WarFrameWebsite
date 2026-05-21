@@ -1,55 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
 import {
-  GRAPH_NODES,
-  FRAME_RELATIONSHIPS,
-  nodeLabel,
-} from '../data/frame-relationships';
+  nodePosArr,
+  nodeBySlug,
+  TYPE_COLOR,
+  EDGES,
+  SVG_W,
+  SVG_H,
+  NODE_R,
+} from '../lib/frame-graph-layout';
 import type { RelationshipType } from '../data/frame-relationships';
 
 const base = import.meta.env.BASE_URL;
 
-// SVG layout constants
-const SVG_W = 900;
-const SVG_H = 700;
-const NODE_R = 28;
-const CENTER_X = SVG_W / 2;
-const CENTER_Y = SVG_H / 2;
-const ORBIT_R = 290;
-
-// Place nodes on a circle.
-interface NodePos {
-  slug: string;
-  label: string;
-  cx: number;
-  cy: number;
-}
-
-const nodePosArr: NodePos[] = GRAPH_NODES.map((slug, i) => {
-  const angle = (2 * Math.PI * i) / GRAPH_NODES.length - Math.PI / 2;
-  return {
-    slug,
-    label: nodeLabel(slug),
-    cx: Math.round(CENTER_X + ORBIT_R * Math.cos(angle)),
-    cy: Math.round(CENTER_Y + ORBIT_R * Math.sin(angle)),
-  };
-});
-
-const nodeBySlug = Object.fromEntries(nodePosArr.map((n) => [n.slug, n]));
-
-// Edge colors per type.
-const TYPE_COLOR: Record<RelationshipType, string> = {
-  buffs: '#f97316',
-  synergy: '#22d3ee',
-  'subsume-pair': '#a78bfa',
-  'team-comp': '#4ade80',
-};
-
 // Serialise for client script.
 const nodesJson = JSON.stringify(nodePosArr);
-const edgesJson = JSON.stringify(FRAME_RELATIONSHIPS);
+const edgesJson = JSON.stringify(EDGES);
 const typeColorJson = JSON.stringify(TYPE_COLOR);
-const nodeRJson = JSON.stringify(NODE_R);
 ---
 
 <Base
@@ -153,7 +120,7 @@ const nodeRJson = JSON.stringify(NODE_R);
           </defs>
 
           <!-- Edges rendered first (behind nodes) -->
-          {FRAME_RELATIONSHIPS.map((rel, idx) => {
+          {EDGES.map((rel, idx) => {
             const from = nodeBySlug[rel.from];
             const to = nodeBySlug[rel.to];
             if (!from || !to) return null;
@@ -264,170 +231,13 @@ const nodeRJson = JSON.stringify(NODE_R);
   <div id="tooltip" role="tooltip" aria-live="off"></div>
 </Base>
 
-<script define:vars={{ nodesJson, edgesJson, typeColorJson, nodeRJson }} is:inline>
-  var NODES = JSON.parse(nodesJson);
-  var EDGES = JSON.parse(edgesJson);
-  var TYPE_COLOR = JSON.parse(typeColorJson);
-
-  var activeFilter = 'all';
-  var selectedSlug = null;
-
-  var tooltip = document.getElementById('tooltip');
-  var panelHint = document.getElementById('panel-hint');
-  var panelContent = document.getElementById('panel-content');
-  var panelName = document.getElementById('panel-name');
-  var panelOutgoing = document.getElementById('panel-outgoing');
-  var panelIncoming = document.getElementById('panel-incoming');
-
-  function escHtml(s) {
-    return String(s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  }
-
-  function typeLabel(t) {
-    var map = { buffs: 'Buffs', synergy: 'Synergy', 'subsume-pair': 'Subsume pair', 'team-comp': 'Team comp' };
-    return map[t] || t;
-  }
-
-  function nodeLabel(slug) {
-    var n = NODES.find(function(n) { return n.slug === slug; });
-    return n ? n.label : slug;
-  }
-
-  function applyFilter(type) {
-    activeFilter = type;
-    var edges = document.querySelectorAll('.fg-edge');
-    edges.forEach(function(e) {
-      var et = e.getAttribute('data-type');
-      var show = type === 'all' || et === type;
-      if (show) { e.classList.remove('hidden'); }
-      else { e.classList.add('hidden'); }
-    });
-    document.querySelectorAll('.filter-chip').forEach(function(chip) {
-      var ct = chip.getAttribute('data-type');
-      chip.setAttribute('aria-pressed', ct === type ? 'true' : 'false');
-      if (ct === type) {
-        chip.style.background = ct === 'all' ? '#4a3f38' : (TYPE_COLOR[ct] || '#888') + '33';
-        chip.style.fontWeight = '700';
-      } else {
-        chip.style.background = '';
-        chip.style.fontWeight = '';
-      }
-    });
-  }
-
-  function showPanel(slug) {
-    selectedSlug = slug;
-    var label = nodeLabel(slug);
-    panelHint.style.display = 'none';
-    panelContent.classList.remove('hidden');
-    panelName.textContent = label;
-
-    var outEdges = EDGES.filter(function(e) { return e.from === slug; });
-    var inEdges = EDGES.filter(function(e) { return e.to === slug; });
-
-    panelOutgoing.innerHTML = outEdges.length
-      ? '<h3 class="text-xs uppercase tracking-widest text-brand-cream/50 font-semibold mb-2">Outgoing</h3>'
-        + outEdges.map(function(e) {
-          var col = TYPE_COLOR[e.type] || '#888';
-          return '<div class="mb-3 border-l-2 pl-3" style="border-color:' + escHtml(col) + '">'
-            + '<p class="text-xs font-semibold" style="color:' + escHtml(col) + '">'
-            + escHtml(typeLabel(e.type)) + ' &rarr; ' + escHtml(nodeLabel(e.to)) + '</p>'
-            + '<p class="text-xs text-brand-cream/60 mt-0.5">' + escHtml(e.note) + '</p>'
-            + '</div>';
-        }).join('')
-      : '';
-
-    panelIncoming.innerHTML = inEdges.length
-      ? '<h3 class="text-xs uppercase tracking-widest text-brand-cream/50 font-semibold mb-2 mt-3">Incoming</h3>'
-        + inEdges.map(function(e) {
-          var col = TYPE_COLOR[e.type] || '#888';
-          return '<div class="mb-3 border-l-2 pl-3" style="border-color:' + escHtml(col) + '">'
-            + '<p class="text-xs font-semibold" style="color:' + escHtml(col) + '">'
-            + escHtml(nodeLabel(e.from)) + ' &rarr; ' + escHtml(typeLabel(e.type)) + '</p>'
-            + '<p class="text-xs text-brand-cream/60 mt-0.5">' + escHtml(e.note) + '</p>'
-            + '</div>';
-        }).join('')
-      : '';
-
-    document.querySelectorAll('.fg-circle').forEach(function(c) {
-      c.classList.remove('selected');
-    });
-    var group = document.querySelector('[data-slug="' + slug + '"]');
-    if (group) {
-      var circle = group.querySelector('.fg-circle');
-      if (circle) { circle.classList.add('selected'); }
-    }
-  }
-
-  function showTooltip(e, note) {
-    if (!tooltip) return;
-    tooltip.style.display = 'block';
-    tooltip.textContent = note;
-    tooltip.style.left = (e.clientX + 14) + 'px';
-    tooltip.style.top = (e.clientY - 8) + 'px';
-  }
-
-  function hideTooltip() {
-    if (tooltip) { tooltip.style.display = 'none'; }
-  }
-
-  // Node interactions
-  var nodeGroups = document.querySelectorAll('.fg-node');
-  nodeGroups.forEach(function(g) {
-    var slug = g.getAttribute('data-slug');
-    if (!slug) return;
-    g.addEventListener('click', function() { showPanel(slug); });
-    g.addEventListener('keydown', function(ev) {
-      if (ev.key === 'Enter' || ev.key === ' ') {
-        ev.preventDefault();
-        showPanel(slug);
-      }
-    });
-  });
-
-  // Arrow-key navigation between nodes
-  document.addEventListener('keydown', function(ev) {
-    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(ev.key)) return;
-    if (!selectedSlug) return;
-    ev.preventDefault();
-    var idx = NODES.findIndex(function(n) { return n.slug === selectedSlug; });
-    if (idx < 0) return;
-    var next = ev.key === 'ArrowRight' || ev.key === 'ArrowDown'
-      ? (idx + 1) % NODES.length
-      : (idx - 1 + NODES.length) % NODES.length;
-    var nextSlug = NODES[next].slug;
-    showPanel(nextSlug);
-    var nextGroup = document.querySelector('[data-slug="' + nextSlug + '"]');
-    if (nextGroup) { nextGroup.focus(); }
-  });
-
-  // Edge transparent hit-area + tooltip
-  var edgeLines = document.querySelectorAll('.fg-edge');
-  edgeLines.forEach(function(el) {
-    var note = el.getAttribute('data-note') || '';
-    var wrapper = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-    wrapper.setAttribute('x1', el.getAttribute('x1') || '0');
-    wrapper.setAttribute('y1', el.getAttribute('y1') || '0');
-    wrapper.setAttribute('x2', el.getAttribute('x2') || '0');
-    wrapper.setAttribute('y2', el.getAttribute('y2') || '0');
-    wrapper.setAttribute('stroke', 'transparent');
-    wrapper.setAttribute('stroke-width', '12');
-    wrapper.style.cursor = 'pointer';
-    wrapper.addEventListener('mousemove', function(ev) { showTooltip(ev, note); });
-    wrapper.addEventListener('mouseleave', hideTooltip);
-    if (el.parentNode) { el.parentNode.insertBefore(wrapper, el.nextSibling); }
-  });
-
-  // Filter chips
-  document.querySelectorAll('.filter-chip').forEach(function(chip) {
-    chip.addEventListener('click', function() {
-      var t = chip.getAttribute('data-type') || 'all';
-      applyFilter(t);
-    });
-  });
-
-  // Initialise filter
-  applyFilter('all');
+<!-- Inject server data as window globals for the client module -->
+<script define:vars={{ nodesJson, edgesJson, typeColorJson }} is:inline>
+  window.NODES = JSON.parse(nodesJson);
+  window.EDGES = JSON.parse(edgesJson);
+  window.TYPE_COLOR = JSON.parse(typeColorJson);
+</script>
+<!-- Client interaction logic (separate module, processed by Vite) -->
+<script>
+  import '../scripts/frame-graph-client';
 </script>

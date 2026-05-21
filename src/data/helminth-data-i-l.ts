@@ -1,0 +1,236 @@
+// helminth-data-i-l.ts -- Helminth subsume data: Hildryn through Loki Prime.
+// Source: https://warframe.fandom.com/wiki/Helminth#Subsumable_Abilities
+// Accessed: 2026-05-20
+
+import type { HelminthEntry } from './helminth-types';
+
+export const HELMINTH_DATA_I_L: readonly HelminthEntry[] = [
+  {
+    slug: 'hildryn',
+    name: 'Hildryn',
+    abilities: [
+      { key: '1', name: 'Balefire' },
+      { key: '2', name: 'Shield Pillage' },
+      { key: '3', name: 'Haven' },
+      { key: '4', name: 'Aegis Storm' },
+    ],
+    subsumeAbility: 'Haven',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'hildryn-prime',
+    name: 'Hildryn Prime',
+    abilities: [
+      { key: '1', name: 'Balefire' },
+      { key: '2', name: 'Shield Pillage' },
+      { key: '3', name: 'Haven' },
+      { key: '4', name: 'Aegis Storm' },
+    ],
+    subsumeAbility: 'Haven',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'hydroid',
+    name: 'Hydroid',
+    abilities: [
+      { key: '1', name: 'Tempest Barrage' },
+      { key: '2', name: 'Tidal Surge' },
+      { key: '3', name: 'Undertow' },
+      { key: '4', name: 'Tentacle Swarm' },
+    ],
+    subsumeAbility: 'Tempest Barrage',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'hydroid-prime',
+    name: 'Hydroid Prime',
+    abilities: [
+      { key: '1', name: 'Tempest Barrage' },
+      { key: '2', name: 'Tidal Surge' },
+      { key: '3', name: 'Undertow' },
+      { key: '4', name: 'Tentacle Swarm' },
+    ],
+    subsumeAbility: 'Tempest Barrage',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'inaros',
+    name: 'Inaros',
+    abilities: [
+      { key: '1', name: 'Desiccation' },
+      { key: '2', name: 'Devour' },
+      { key: '3', name: 'Sandstorm' },
+      { key: '4', name: 'Scarab Swarm' },
+    ],
+    subsumeAbility: 'Desiccation',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'inaros-prime',
+    name: 'Inaros Prime',
+    abilities: [
+      { key: '1', name: 'Desiccation' },
+      { key: '2', name: 'Devour' },
+      { key: '3', name: 'Sandstorm' },
+      { key: '4', name: 'Scarab Swarm' },
+    ],
+    subsumeAbility: 'Desiccation',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'ivara',
+    name: 'Ivara',
+    abilities: [
+      { key: '1', name: 'Quiver' },
+      { key: '2', name: 'Navigator' },
+      { key: '3', name: 'Prowl' },
+      { key: '4', name: 'Artemis Bow' },
+    ],
+    subsumeAbility: 'Quiver',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'ivara-prime',
+    name: 'Ivara Prime',
+    abilities: [
+      { key: '1', name: 'Quiver' },
+      { key: '2', name: 'Navigator' },
+      { key: '3', name: 'Prowl' },
+      { key: '4', name: 'Artemis Bow' },
+    ],
+    subsumeAbility: 'Quiver',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'jade',
+    name: 'Jade',
+    abilities: [
+      { key: '1', name: "Light's Judgment" },
+      { key: '2', name: 'Symphony Of Mercy' },
+      { key: '3', name: 'Ophanim Eyes' },
+      { key: '4', name: 'Glory On High' },
+    ],
+    subsumeAbility: 'Ophanim Eyes',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'khora',
+    name: 'Khora',
+    abilities: [
+      { key: '1', name: 'Whipclaw' },
+      { key: '2', name: 'Ensnare' },
+      { key: '3', name: 'Venari' },
+      { key: '4', name: 'Strangledome' },
+    ],
+    subsumeAbility: 'Ensnare',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'khora-prime',
+    name: 'Khora Prime',
+    abilities: [
+      { key: '1', name: 'Whipclaw' },
+      { key: '2', name: 'Ensnare' },
+      { key: '3', name: 'Venari' },
+      { key: '4', name: 'Strangledome' },
+    ],
+    subsumeAbility: 'Ensnare',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'koumei',
+    name: 'Koumei',
+    abilities: [
+      { key: '1', name: 'Kumihimo' },
+      { key: '2', name: 'Omikuji' },
+      { key: '3', name: 'Omamori' },
+      { key: '4', name: 'Bunraku' },
+    ],
+    subsumeAbility: 'Omamori',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'kullervo',
+    name: 'Kullervo',
+    abilities: [
+      { key: '1', name: 'Wrathful Advance' },
+      { key: '2', name: 'Recompense' },
+      { key: '3', name: 'Collective Curse' },
+      { key: '4', name: 'Storm Of Ukko' },
+    ],
+    subsumeAbility: 'Wrathful Advance',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'lavos',
+    name: 'Lavos',
+    abilities: [
+      { key: '1', name: 'Vial Rush' },
+      { key: '2', name: 'Ophidian Bite' },
+      { key: '3', name: 'Transmutation Probe' },
+      { key: '4', name: 'Catalyze' },
+    ],
+    subsumeAbility: 'Ophidian Bite',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'lavos-prime',
+    name: 'Lavos Prime',
+    abilities: [
+      { key: '1', name: 'Vial Rush' },
+      { key: '2', name: 'Ophidian Bite' },
+      { key: '3', name: 'Transmutation Probe' },
+      { key: '4', name: 'Catalyze' },
+    ],
+    subsumeAbility: 'Ophidian Bite',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'limbo',
+    name: 'Limbo',
+    abilities: [
+      { key: '1', name: 'Banish' },
+      { key: '2', name: 'Stasis' },
+      { key: '3', name: 'Rift Surge' },
+      { key: '4', name: 'Cataclysm' },
+    ],
+    subsumeAbility: 'Banish',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'limbo-prime',
+    name: 'Limbo Prime',
+    abilities: [
+      { key: '1', name: 'Banish' },
+      { key: '2', name: 'Stasis' },
+      { key: '3', name: 'Rift Surge' },
+      { key: '4', name: 'Cataclysm' },
+    ],
+    subsumeAbility: 'Banish',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'loki',
+    name: 'Loki',
+    abilities: [
+      { key: '1', name: 'Decoy' },
+      { key: '2', name: 'Invisibility' },
+      { key: '3', name: 'Switch Teleport' },
+      { key: '4', name: 'Radial Disarm' },
+    ],
+    subsumeAbility: 'Decoy',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'loki-prime',
+    name: 'Loki Prime',
+    abilities: [
+      { key: '1', name: 'Decoy' },
+      { key: '2', name: 'Invisibility' },
+      { key: '3', name: 'Switch Teleport' },
+      { key: '4', name: 'Radial Disarm' },
+    ],
+    subsumeAbility: 'Decoy',
+    subsumeKey: '1',
+  },
+];

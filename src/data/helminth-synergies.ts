@@ -74,3 +74,13 @@ export const SYNERGY_NOTES: readonly SynergyNote[] = [
     ],
   },
 ];
+
+export function findSynergyNotes(
+  baseSlug: string,
+  subsumeSlug: string,
+): readonly string[] {
+  const match = SYNERGY_NOTES.find(
+    (s) => s.baseSlug === baseSlug && s.subsumeSlug === subsumeSlug,
+  );
+  return match?.notes ?? [];
+}
