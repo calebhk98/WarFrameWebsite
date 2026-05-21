@@ -2,29 +2,29 @@
 slug: wolf-sledge
 name: "Wolf Sledge"
 type: melee
-category: "Melee"
+category: "Hammer"
 masteryRank: 7
 damage:
   impact: 132.09
   puncture: 119.14001
   slash: 7.77
-  elemental:
-    {}
+  elemental: {}
 criticalChance: 0.17
 criticalMultiplier: 1.9
 statusChance: 0.33000004
-fireRate: 1
+attackSpeed: 1.0
 range: 3.0999999
 acquisition:
   source: "Market"
   blueprintLocations:
-    - "Market"
-  credits: 30000
+    - "Market (credits)"
+  cost: { credits: 30000 }
   buildTimeHours: 12
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-21"
     publisher: "WFCD"
+    note: "Damage, crit, and status values sourced from WFCD Melee.json"
   - url: "https://warframe.fandom.com/wiki/Wolf_Sledge"
     accessedAt: "2026-05-21"
     publisher: "Fandom"
@@ -33,17 +33,47 @@ updatedAt: "2026-05-21"
 
 ## Overview
 
-The Wolf Sledge stands as a formidable melee choice within Warframe's extensive weaponry ecosystem and arsenal options. Available to Tenno operatives throughout the vast solar system, this melee represents a tested and proven selection for players seeking consistent, reliable performance across varied mission types. With 259 total damage per shot, the Wolf Sledge delivers meaningful and measurable destructive output across diverse mission contexts, enemy compositions, and difficulty scaling.
+Wolf Sledge is a Grineer hammer that leans heavily into impact and puncture damage, making it effective against the shield-dependent Corpus and armored Grineer units respectively. The weapon's 259 combined base damage places it among the top-tier hammers at Mastery Rank 7. Its 3.1-meter range, high for a hammer, and a 33% status chance make it a reliable status-focused option for mid-game and Steel Path content.
 
-The weapon's critical characteristics present 17% critical chance combined strategically with a 1.9x critical multiplier, fundamentally rewarding skilled players who develop and maintain precise aiming habits and master tactical positioning throughout extended combat encounters. Supporting this critical potential, the weapon features 33% status chance, creating direct opportunities for elemental synergy and crowd control through thoughtful, strategic mod selection and loadout customization. This combination of critical probability and status likelihood enables flexible, adaptable build philosophy, granting players the freedom to customize their tactical approach to match specific, unique mission requirements and squad composition needs.
+The Wolf Sledge was introduced as a signature weapon of the Wolf of Saturn Six boss encounter and later became available through the Market. Its Grineer industrial aesthetic -- a heavy alloy head on a reinforced haft -- conveys purpose-built brutality consistent with the faction's design philosophy.
 
-The Wolf Sledge exemplifies Tenno engineering and craftsmanship at its finest: combining exceptional durability with tactical adaptability and lethal, proven effectiveness in combat situations. Whether you employ it as your primary combat tool or as a specialized support weapon option, the Wolf Sledge demonstrates remarkable versatility across various playstyles and mission types. Novice players find it immediately welcoming and forgiving during their early progression through the star chart, while highly experienced operatives appreciate the meaningful optimization depth available through deliberate, strategic mod selection and synergistic build construction.
+As a hammer, Wolf Sledge benefits from stance mods that include ground-slam attacks. These slams radiate shockwaves dealing impact damage in an area, which synergizes with the weapon's already-high impact component. The 33% status chance makes Corrosive or Viral procs feasible within a small number of hits, providing armor-stripping utility that extends the weapon's effective damage output at higher enemy levels.
 
-Mastery with the Wolf Sledge emerges through dedicated, consistent practice and experimentation across varied mission types, distinct enemy factions, and cooperative squadmates with different abilities. The true power and potential of the Wolf Sledge reveals itself when modding choices align perfectly with your chosen warframe, assigned squad roles, and specific tactical objectives.
+The 17% critical chance is relatively modest for a crit build, making this weapon better suited to status and hybrid builds than pure crit stacking. The 1.9x critical multiplier is below the threshold where critical builds truly outperform other approaches at MR 7, reinforcing the status-first philosophy.
 
 ## Stats
 
-The Wolf Sledge exhibits these performance characteristics when equipped at maximum rank, before any modifications are applied or installed:
-
 | Stat | Value |
-| 
+|---|---:|
+| Impact | 132.1 |
+| Puncture | 119.1 |
+| Slash | 7.8 |
+| Critical chance | 17% |
+| Critical multiplier | 1.9x |
+| Status chance | 33% |
+| Attack speed | 1.0 |
+| Range | 3.1 m |
+| Mastery rank | 7 |
+
+## Acquisition
+
+The Wolf Sledge blueprint is available from the in-game Market for 30,000 credits. Foundry build time is 12 hours. No uncommon crafting materials are required. For players who encountered the Wolf of Saturn Six event, the weapon may have been obtained as a direct drop during that limited-time encounter.
+
+## Variants
+
+Wolf Sledge has no prime variant as of the current game version.
+
+## Recommended builds
+
+**Status build:** Status chance of 33% scales effectively with Condition Overload. Combine Corrosive (Electric + Toxin) mods with Volcanic Edge or Thermite Rounds for a dual-proc setup. Apply Weeping Wounds to ramp status chance during combos. At 2x combo multiplier, status chance exceeds 60%, making each swing likely to land at least one proc. This build handles armored Grineer reliably at mid-tier Steel Path.
+
+**Viral-slash approach:** Though Wolf Sledge's slash damage is low (7.8), adding two slash damage mods increases the raw slash component. Viral (Cold + Toxin) amplifies health damage by a factor that makes even modest slash bleeds punishing at scale. Condition Overload multiplies with each unique proc type, so maintaining viral and slash procs simultaneously generates strong sustained DPS. This build is more complex but competitive in extended Survival missions.
+
+Combine either approach with Amalgam Organ Shatter for a minor speed buff, helping counteract the inherent slowness of hammer attacks and enabling faster combo buildup.
+
+## Notes
+
+- Wolf Sledge's best stance mod is Crushing Ruin, which provides wide horizontal swings and heavy slam attacks that use the weapon's range effectively.
+- Ground slams from hammer stances also benefit from Seismic Wave arcane, which amplifies heavy attack radial damage.
+- The floating decimal values in WFCD (e.g., 119.14001 puncture) are artifacts of floating-point storage in the data export and round to whole numbers in-game.
+- Wolf Sledge was notably wielded by the Wolf of Saturn Six NPC, making it a thematic trophy weapon for players who completed the associated Nightwave season content.

@@ -2,28 +2,28 @@
 slug: xoris
 name: "Xoris"
 type: melee
-category: "Melee"
+category: "Glaive"
 masteryRank: 4
 damage:
   impact: 24
   puncture: 55.199997
   slash: 40.799999
-  elemental:
-    {}
+  elemental: {}
 criticalChance: 0.2
 criticalMultiplier: 2.4000001
 statusChance: 0.18000001
-fireRate: 1.1666667
+attackSpeed: 1.1666667
 range: 1.3
 acquisition:
   source: "Market"
   blueprintLocations:
-    - "Market"
-  credits: 15000
+    - "Market (credits)"
+  cost: { credits: 15000 }
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-21"
     publisher: "WFCD"
+    note: "Damage, crit, and status values sourced from WFCD Melee.json"
   - url: "https://warframe.fandom.com/wiki/Xoris"
     accessedAt: "2026-05-21"
     publisher: "Fandom"
@@ -32,17 +32,46 @@ updatedAt: "2026-05-21"
 
 ## Overview
 
-The Xoris stands as a formidable melee choice within Warframe's extensive weaponry ecosystem and arsenal options. Available to Tenno operatives throughout the vast solar system, this melee represents a tested and proven selection for players seeking consistent, reliable performance across varied mission types. With 120 total damage per shot, the Xoris delivers meaningful and measurable destructive output across diverse mission contexts, enemy compositions, and difficulty scaling.
+Xoris is a Corpus-designed glaive introduced alongside the Deadlock Protocol quest. It occupies an unusual position in the Warframe arsenal: the weapon was specifically designed without a finite combo counter, meaning its melee combo never expires. This property has significant build implications -- Xoris cannot build infinite combo stacks with Garuda's Talons interaction or similar infinite-scaling mechanics, but it does maintain consistent combo count throughout a mission without requiring active upkeep.
 
-The weapon's critical characteristics present 20% critical chance combined strategically with a 2.4000001x critical multiplier, fundamentally rewarding skilled players who develop and maintain precise aiming habits and master tactical positioning throughout extended combat encounters. Supporting this critical potential, the weapon features 18% status chance, creating direct opportunities for elemental synergy and crowd control through thoughtful, strategic mod selection and loadout customization. This combination of critical probability and status likelihood enables flexible, adaptable build philosophy, granting players the freedom to customize their tactical approach to match specific, unique mission requirements and squad composition needs.
+The damage profile combines 55 puncture with 41 slash, making it effective against medium-armor targets while still generating slash bleed procs on direct hits. The 20% critical chance and 2.4x multiplier give it credibility as a crit platform, particularly when paired with Blood Rush, which scales crit chance with combo count.
 
-The Xoris exemplifies Tenno engineering and craftsmanship at its finest: combining exceptional durability with tactical adaptability and lethal, proven effectiveness in combat situations. Whether you employ it as your primary combat tool or as a specialized support weapon option, the Xoris demonstrates remarkable versatility across various playstyles and mission types. Novice players find it immediately welcoming and forgiving during their early progression through the star chart, while highly experienced operatives appreciate the meaningful optimization depth available through deliberate, strategic mod selection and synergistic build construction.
-
-Mastery with the Xoris emerges through dedicated, consistent practice and experimentation across varied mission types, distinct enemy factions, and cooperative squadmates with different abilities. The true power and potential of the Xoris reveals itself when modding choices align perfectly with your chosen warframe, assigned squad roles, and specific tactical objectives.
+Glaives can be thrown at enemies for ranged melee attacks and detonate on heavy attack, dealing area damage to groups. Xoris's throw mechanics make it useful in corridors and enclosed spaces where enemies cluster within the detonation radius. The 1.3-meter ground range understates its true effective range since thrown glaives travel considerable distances before returning.
 
 ## Stats
 
-The Xoris exhibits these performance characteristics when equipped at maximum rank, before any modifications are applied or installed:
-
 | Stat | Value |
-| 
+|---|---:|
+| Impact | 24.0 |
+| Puncture | 55.2 |
+| Slash | 40.8 |
+| Critical chance | 20% |
+| Critical multiplier | 2.4x |
+| Status chance | 18% |
+| Attack speed | 1.17 |
+| Range | 1.3 m |
+| Mastery rank | 4 |
+
+## Acquisition
+
+The Xoris blueprint is obtained by completing the Deadlock Protocol quest, which also drops the Protea Warframe components. Players who missed the quest can purchase the blueprint from the Market for 15,000 credits. No rare resources are required for crafting.
+
+## Variants
+
+Xoris has no prime variant.
+
+## Recommended builds
+
+**Crit-throw build:** Pairing Xoris with Blood Rush, Organ Shatter, and Primed Pressure Point creates a crit-focused glaive setup that scales with the permanent combo count. Because Xoris's combo never resets, Blood Rush's scaling applies continuously throughout a mission, reaching reliable orange-crit territory after the first few kills. Add Volatile Quick Return for faster detonation timing.
+
+**Area-control build:** Equip Volatile Quick Return with Amalgam Organ Shatter and focus on heavy-attack detonations. The detonation radius benefits from range-increasing mods (Reach), and Melee Arcane Fury on kill accelerates heavy attack charge rate. This build clears tightly packed enemy groups efficiently in Defense and Interception missions.
+
+Players who want to preserve Xoris's infinite-combo property should avoid swapping to a different melee mid-mission, as the combo counter resets on sheathing in some configurations.
+
+## Notes
+
+- Xoris's infinite combo counter is a design choice by Digital Extremes to prevent the weapon from trivializing certain Helminth mechanics. Players who seek infinite-scaling combo strategies use other glaives.
+- Glaive-class weapons equip the Gleaming Talon or Xata's Whisper stance, both of which include throw combos.
+- The floating decimal values in WFCD (55.199997 puncture, 40.799999 slash) are floating-point artifacts from the data export; effective in-game values are 55.2 and 40.8 respectively.
+- Xoris can trigger elemental procs on throw, making status mods situationally useful even at 18% base status chance when paired with a multi-hit combo.
+- The Deadlock Protocol quest is a prerequisite for obtaining Xoris through the quest reward path. Players who skip the quest can still purchase the blueprint from the Market.

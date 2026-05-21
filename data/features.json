@@ -92,39 +92,39 @@
     "title": "Frame Relationship Graph",
     "priority": "P1",
     "description": "Interactive graph visualizing synergies between warframes — e.g. which frames pair well for disruption, ESO, or endurance runs. Nodes are frames, edges are synergy tags.",
-    "status": "queued",
-    "evidence": null
+    "status": "shipped",
+    "evidence": "src/pages/frame-graph.astro"
   },
   {
     "id": "F-013",
     "title": "What To Do At MR X Recommender",
     "priority": "P1",
     "description": "Personalized progression recommender that takes a mastery rank input and surfaces the most impactful quests, weapons, and frames to unlock next. Driven by WFCD masteryReq data.",
-    "status": "queued",
-    "evidence": null
+    "status": "shipped",
+    "evidence": "src/pages/progression.astro"
   },
   {
     "id": "F-014",
     "title": "Fashion-Frame Gallery",
     "priority": "P2",
     "description": "Community-facing gallery of colour-palette and skin combinations for each warframe. Submissions stored as static JSON; no server-side rendering required.",
-    "status": "queued",
-    "evidence": null
+    "status": "shipped",
+    "evidence": "src/pages/fashion.astro"
   },
   {
     "id": "F-015",
     "title": "Clan Dojo Planner",
     "priority": "P2",
     "description": "Tool for planning dojo room layouts and tracking research resource costs. Renders room adjacency as an editable graph with running material totals.",
-    "status": "queued",
-    "evidence": null
+    "status": "shipped",
+    "evidence": "src/pages/dojo-planner.astro"
   },
   {
     "id": "F-016",
     "title": "Drop Chance Monte Carlo (Relic Refinement Sim)",
     "priority": "P2",
     "description": "Statistical simulator for relic refinement drop probabilities. Runs Monte Carlo trials to show expected runs to obtain a given prime part at each refinement tier.",
-    "status": "queued",
-    "evidence": null
+    "status": "shipped",
+    "evidence": "src/pages/drop-sim.astro"
   }
 ]

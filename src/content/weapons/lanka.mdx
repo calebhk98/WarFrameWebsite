@@ -16,8 +16,10 @@ magazine: 10
 reload: 2.0
 accuracy: 100.0
 acquisition:
-  source: "WFCD Market / Crafting / Drop"
-  blueprintLocations: []
+  source: "In-game Market (blueprint)"
+  blueprintLocations:
+    - "Market (blueprint, credit purchase)"
+  note: "Blueprint purchased from Market; components require standard resources."
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
@@ -25,22 +27,61 @@ sources:
     publisher: "WFCD"
   - url: "https://warframe.fandom.com/wiki/Lanka"
     accessedAt: "2026-05-20"
-    title: "Lanka  -  WARFRAME Wiki"
+    title: "Lanka - WARFRAME Wiki"
     publisher: "Fandom"
-updatedAt: "2026-05-20"
+updatedAt: "2026-05-21"
 ---
 ## Overview
 
-The Lanka is a Corpus charge-type beam sniper that fires a concentrated energy beam with devastating impact. Despite missing fire rate documentation in WFCD database, it is well-known in-game for efficient charge mechanics and high single-shot damage output. The weapon specializes in precise, long-range engagements and serves excellently for anti-armor applications.
+Lanka is a Corpus-designed sniper rifle that fires a fully charged electromagnetic beam rather than a conventional projectile. The weapon requires the player to hold the trigger to accumulate charge before releasing a single high-damage shot. All damage is delivered as electricity, making Lanka one of the rare primary weapons with a pure elemental damage profile -- 525 electricity with zero physical damage components. This base electricity damage combines with a second elemental mod to form a combined damage type, such as Radiation (Electricity + Heat) for use against Alloy Armor or Magnetic (Electricity + Cold) for Corpus shields.
 
-The Lanka's 25% status chance supports hybrid builds combining raw damage with elemental effects for diverse applications. The weapon's core identity revolves around charge mechanics: holding down the trigger accumulates energy before releasing a devastatingly powerful shot. This mechanic encourages planning and positioning rather than continuous trigger pulling. Players must wait for charge completion before firing, creating distinct gameplay rhythm compared to traditional rapid-fire weapons.
+Lanka is closely associated with Eidolon hunting on the Plains of Eidolon. Sentient units and Eidolons are vulnerable to Radiation damage and have reduced effectiveness against Void damage, making Lanka's electricity base an efficient starting point for constructing Radiation builds. For this reason, Lanka is frequently cited as the preferred Eidolon-hunting primary weapon alongside Corinth and Rubico Prime alternatives.
 
-Building the Lanka emphasizes raw damage through mods like Serration, Heavy Caliber, and Cosmetic to maximize each charged shot. The weapon's 10 mastery requirement provides accessibility early in player progression. Experienced players recognize the Lanka's potential in high-level content when built properly and used by players with precise aim. The charge mechanic rewards patience and map awareness, allowing players to prepare powerful shots while sheltered from direct fire.
+The charge mechanic distinguishes Lanka's gameplay from bolt-action sniper rifles like Rubico or Vectis. Players must anticipate enemy movement, time the charge release, and commit to the shot before the enemy repositions. This creates a deliberate, positioning-focused cadence that rewards map awareness and target prediction over reaction speed.
 
-The Lanka rewards mastery of charge mechanics and careful timing. Players must anticipate enemy movement and ensure clear sightlines before committing to charged shots. The weapon's unique gameplay loop makes it appealing to veterans seeking alternatives to traditional hitscan weapons.
+## Stats
 
-The weapon's pure beam nature without projectile travel time distinguishes it from other snipers. Beams fire instantly upon release, eliminating projectile travel time calculations and enabling snap-shooting when enemies appear. This instant-hit nature pairs well with frame abilities that disable or slow enemies, maximizing charge-shot consistency.
+All values sourced from WFCD warframe-items.
 
-Despite lower fire rate making it demanding in fast-paced missions, the Lanka excels in controlled engagements.
+| Stat | Value |
+|---|---|
+| Damage (Electricity) | 525 |
+| Total damage | 525 |
+| Critical chance | 20% |
+| Critical multiplier | 2.0x |
+| Status chance | 25% |
+| Magazine | 10 rounds |
+| Reload time | 2.0 s |
+| Accuracy | 100.0 |
+| Mastery rank | 10 |
+
+Lanka has no fire rate entry in WFCD because its output is charge-dependent rather than a repeating cycle. The effective fire rate is determined by how quickly a player completes the charge animation, which scales with Charged Chamber mods rather than fire rate mods.
+
+The 525 electricity base damage is substantial for a single-shot weapon, and adding a Heat mod produces Radiation damage at the full combined total. With Serration, Split Chamber, and a critical chance mod, Lanka can deliver very high single-shot damage values at full charge. The 20% critical chance is reliable with critical-focused builds and scales to consistent crits under Primed Sniper Scavenger's bonus.
+
+## Acquisition
+
+The Lanka blueprint is available from the in-game Market for credits. Components use standard resources obtainable through mid-tier star chart progression. Mastery Rank 10 is required to equip Lanka. No Void Relic farming is required; the weapon is fully accessible through solo play and credit accumulation. Construction takes place in the Foundry and requires standard build time.
+
+## Variants
+
+No Prime, Vandal, or Kuva variant of the Lanka has been released. Lanka exists in a single version. The Arca Plasmor and Opticor are thematically similar charge-type primary weapons but function differently and occupy different statistical niches.
+
+## Recommended builds
+
+An Eidolon hunting build centers on Primed Cryo Rounds or Primed Charged Shell combined with Hellfire to produce Radiation damage. Serration, Split Chamber, and Vigilante Armaments add base damage and multishot. Critical Delay boosts critical chance at the cost of fire rate -- which is largely irrelevant on a charge weapon -- providing a net positive trade. A scope zoom mod like Ambush Optics extends effective engagement range for distant Eidolon synovias.
+
+A general-purpose sniper build for star chart content replaces Radiation mods with Corrosive (Electricity + Toxin) to penetrate Grineer armor. Argon Scope provides substantial critical chance on headshots, rewarding precise aim against stationary or slow-moving targets.
+
+Players running Lanka in squad Eidolon hunts should coordinate elemental damage types with squadmates to maximize damage against specific Eidolon limb types.
+
+## Notes
+
+Lanka's charge-type mechanic means that fire rate mods have no effect on its shooting rhythm. Charged Chamber reduces the time required to reach full charge, effectively increasing practical fire rate and rewarding its use over standard fire rate mods. Zoom level affects both critical chance and headshot multiplier on Lanka through the sniper zoom mechanic, incentivizing players to engage from maximum effective range.
+
+Because Lanka's damage is purely electrical, it does not benefit from physical damage type interactions such as slash bleed procs. Builds relying on Slash for damage-over-time against armored targets should use a different platform.
 
 ## Sources
+
+- [Lanka -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Lanka)
+- WFCD warframe-items database: https://github.com/WFCD/warframe-items
