@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Emergence Renewed restores warframe health during transference entry. This operator arcane enables operators to provide passive healing to frames during extended void fissure farming.
+Emergence Renewed restores warframe health when the operator returns to the warframe via transference. This operator arcane provides passive healing support by converting the standard operator-to-warframe transition into an opportunity for health recovery. Frames that cycle into operator mode for Void Dash, amp usage, or Madurai school abilities naturally trigger Renewed's heal without requiring additional actions beyond the normal transference return.
 
-## Effects per rank
+The health restoration percentage scales from the warframe's maximum health pool, making it proportionally effective across frames with different health values. Frames with high maximum health (Inaros, Nidus, Rhino) receive larger absolute health values per proc, while low-health frames still benefit from the percentage-based restoration during recovery phases.
 
-| Rank | Trigger Chance | Health Restoration |
-|------|----------------|-------------------|
-| 0    | 15%            | 30%               |
-| 1    | 22%            | 45%               |
-| 2    | 30%            | 60%               |
-| 3    | 37%            | 75%               |
-| 4    | 41%            | 82%               |
-| 5    | 45%            | 90%               |
+## Effect
 
-Health restoration enables operators to function as emergency healers during frame sustainability phases.
+Emergence Renewed activates when returning from operator mode to warframe mode. The trigger chance checks at the moment of re-entry; on success, the warframe's health bar increases by the restoration percentage of its maximum health. At rank 0, 30% health restore provides significant recovery from moderate damage; at rank 5, 90% restoration nearly fully heals the warframe in a single transference return. The heal applies before combat resumes, giving the frame a full health advantage as it re-enters the engagement.
+
+The restoration is unconditional within the trigger chance: there is no health-threshold requirement. Fully healthy frames that trigger the arcane see no visible benefit; frames at low health gain the greatest value from the percentage-based system.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Health Restore | Notes |
+|------|----------------|----------------|-------|
+| 0    | 15%            | 30%            | Meaningful mid-fight recovery |
+| 1    | 22%            | 45%            | Solid heal for moderate damage |
+| 2    | 30%            | 60%            | Strong recovery burst |
+| 3    | 37%            | 75%            | Near-full health from half-health |
+| 4    | 41%            | 82%            | High-value health burst |
+| 5    | 45%            | 90%            | Near-complete health restoration |
 
 ## Acquisition
 
-Emergence Renewed drops from Zariman Void Fissure (4%) and Void Cascade rotation B (2%). Regular zariman void farming yields this arcane naturally.
+Emergence Renewed drops from Zariman Void Fissure at 4% and Void Cascade rotation B at 2%. The arcane is tied to Zariman Ten-Zero content accessible after completing Angels of the Zariman. Rotation B in Void Cascade provides periodic drops; farming specifically for rotation B rewards through extended Void Cascade runs is the most efficient approach. Warframe.market provides direct purchase options for players who prefer to bypass farming.
 
-## Best on
+## Builds that use it
 
-Emergence Renewed is ideal for operators supporting frames in damage-heavy scenarios. The health restoration enables reduced dependency on external healing.
+Emergence Renewed fits builds that incorporate frequent transference cycling as part of their combat rotation. Operator-active builds using Madurai Void Sling for repositioning, Unairu for armor stripping, or Vazarin for protective dash trigger Renewed naturally as part of their ability sequences. Survival-focused frames on solo Steel Path or Arbitration content, where health recovery between large damage spikes is critical, benefit from the passive percentage heal. High-health frames (Inaros, Nidus) maximize the absolute health value restored per trigger due to their elevated maximum health pools.
+
+## Notes
+
+The trigger fires on re-entering the warframe, not on entering operator mode. Operator death (reduced to 0 operator health, forcing return to warframe) also counts as a transference event and triggers Renewed's check. The health restore applies to the warframe's current health pool, not shields; shield-gated builds should not count on Renewed for defensive shield restoration. Multiple transference cycles per mission provide multiple opportunities for the heal, making Renewed more valuable in extended operator-heavy combat than in brief transference-only builds.
 
 ## Sources
 
-Zariman void fissure farming provides renewed drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers health restore percentages and trigger conditions for Emergence Renewed.
+- Fandom wiki entry for Emergence Renewed provides additional context on transference healing and operator build integration.

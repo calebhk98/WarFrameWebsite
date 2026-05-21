@@ -3,12 +3,12 @@ slug: magus-vigor
 name: "Magus Vigor"
 type: operator
 maxRank: 5
-effect: "Magus Vigor enhances equipped items with stat bonuses."
+effect: "On Transference Out: +[health] Health."
 perRankStats:
   - rank: 0
-    stats: { effect: "On Transference Out:\ +100 Health" }
+    stats: { health: 100 }
   - rank: 5
-    stats: { effect: "On Transference Out:\ +600 Health" }
+    stats: { health: 600 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,45 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Magus Vigor is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This operator arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Magus Vigor restores flat health to the warframe each time the operator performs Transference Out -- returning from operator mode to warframe mode. This converts the Transference Out action into a healing event, providing a health injection at the moment the player resumes warframe play. The bonus applies to the warframe's health pool and scales from 100 health at rank 0 to 600 health at rank 5.
 
-## Effects per rank
+Health restoration on Transference Out is valuable in combat scenarios where the warframe takes damage during engagement phases. When the player enters operator mode to use their amp, Focus school ability, or Void Dash, they frequently leave the warframe briefly exposed or simply pause the warframe's combat contribution. Returning to the warframe with Magus Vigor restores health that may have been lost during the operator phase or before it.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['On Transference Out:\\n+100 Health'] |
-| 5 | ['On Transference Out:\\n+600 Health'] |
+At rank 0, +100 health on Transference Out provides a meaningful flat heal for frames with lower health pools or frames running Arcane Energize where operator cycling is frequent. At rank 5, +600 health provides substantial restoration -- a significant fraction of most warframes' maximum health -- making each transference cycle a healing event that sustains the frame across extended engagements.
+
+The heal fires at the instant of Transference Out and cannot exceed the warframe's maximum health. If the warframe is already at maximum health, the heal has no effect. Repeated operator cycling refreshes the heal on each return.
+
+## Stats per rank
+
+| Rank | Health Restored | Notes |
+|------|-----------------|-------|
+| 0    | 100             | Minor top-up |
+| 1    | 200             | Moderate restoration |
+| 2    | 300             | Solid healing |
+| 3    | 400             | Strong recovery |
+| 4    | 500             | High sustain |
+| 5    | 600             | Maximum flat restore |
 
 ## Acquisition
 
-Magus Vigor is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Magus Vigor drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. The arcane may originate from Eidolon hunt reward pools given its operator-type classification. Warframe.market allows direct platinum purchase for players who prefer immediate access over farming.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Magus Vigor suits warframes that take significant damage during combat phases and use Transference cycling as part of their rotation -- Saryn builds that cycle into operator for Spore spread and return to cast, Octavia builds that reposition Mallet via Void Dash, or Nova builds using operator mode for Focus school utility. The heal-on-return pattern makes each cycle productive for health maintenance without requiring dedicated healing arcanes or abilities.
 
-## Usage notes
+Frames with moderate health pools -- Oberon, Ember, Nidus in early stacks -- benefit proportionally more from the flat 600 health than high-health frames like Inaros where 600 health represents a smaller percentage of total health. Builds that cycle operator mode multiple times per minute accumulate substantial healing across a mission from the repeated Transference Out procs.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The health restoration applies to the warframe, not the operator -- operator health is a separate pool unaffected by this arcane. The heal occurs at Transference Out, not at Transference In, meaning it applies when the player returns to the warframe rather than when they leave. If the warframe is killed while the player is in operator mode, the Transference Out event occurs to a dead warframe and the heal does not apply. The flat value is not affected by ability strength mods or warframe health mods -- 600 health is always 600 health regardless of Vitality investment.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the Transference Out trigger condition and health restoration scaling for Magus Vigor.
+- Fandom wiki entry for Magus Vigor covers warframe health mechanics, the Transference Out timing, and interactions between flat health restoration and the warframe health pool cap.

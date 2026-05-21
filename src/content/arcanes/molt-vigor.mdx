@@ -3,12 +3,12 @@ slug: molt-vigor
 name: "Molt Vigor"
 type: warframe
 maxRank: 5
-effect: "Molt Vigor enhances equipped items with stat bonuses."
+effect: "On Operator Ability: [strength]% Ability Strength on next Warframe Ability Cast. At max rank: +1 Arcane Revive."
 perRankStats:
   - rank: 0
-    stats: { effect: "On Operator Ability:\ 15% Ability Strength on next Warframe Ability Cast" }
+    stats: { strength: 15 }
   - rank: 5
-    stats: { effect: "On Operator Ability:\ 45% Ability Strength on next Warframe Ability Cast\ +1 Arcane Revive; +1 Arcane Revive" }
+    stats: { strength: 45 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,47 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Molt Vigor is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This warframe arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Molt Vigor grants a temporary Ability Strength boost to the next warframe ability cast following any Operator Ability use. An Operator Ability includes Focus school active abilities -- Void Dash, Void Blast, Unairu's Void Shadow, Madurai's Phoenix Talons, Zenurik's Wellspring, and other school-specific active skills. Using any of these in operator mode primes the warframe's next ability cast with a strength bonus, then consumes that primer on the first ability activation after returning to warframe mode.
 
-## Effects per rank
+The mechanic creates a synergy loop between the operator's Focus school combat and the warframe's ability output: the operator ability applies the primer, the player returns to warframe mode, and the first ability cast benefits from the Ability Strength bonus. Players who regularly cycle between operator Focus abilities and warframe abilities can sustain this primer on every other warframe cast, effectively maintaining the bonus during active transference cycling.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+At maximum rank, the arcane also provides one Arcane Revive charge per mission.
 
-| Rank | stats |
-|------|------|
-| 0 | ['On Operator Ability:\\n15% Ability Strength on next Warframe Ability Cast'] |
-| 5 | ['On Operator Ability:\\n45% Ability Strength on next Warframe Ability Cast\\n+1 Arcane Revive', '+1 Arcane Revive'] |
+## Effect
+
+At rank 0, +15% Ability Strength on the next warframe ability applies to the first cast after an operator ability. At rank 5, +45% Ability Strength boosts the next warframe cast significantly -- for abilities with linear damage or heal scaling, this represents a 45% output increase on that cast.
+
+The bonus is consumed by the first warframe ability cast after the operator ability trigger. Subsequent casts in the same warframe phase do not benefit unless the player returns to operator mode, uses another operator ability, and then casts again.
+
+## Stats per rank
+
+| Rank | Ability Strength Bonus | Notes |
+|------|------------------------|-------|
+| 0    | +15%                   | Moderate primer |
+| 1    | +22%                   | Solid bonus |
+| 2    | +30%                   | Strong scaling |
+| 3    | +37%                   | High output boost |
+| 4    | +42%                   | Near maximum |
+| 5    | +45% + Arcane Revive   | Maximum strength bonus |
 
 ## Acquisition
 
-Molt Vigor is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Molt Vigor drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. Warframe.market provides direct platinum purchase for players who prefer immediate access.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Molt Vigor suits ability-damage builds on frames that regularly use both operator Focus abilities and high-impact warframe abilities in the same combat rotation. Nova builds that cycle into operator for Void Dash repositioning and then return to cast Molecular Prime benefit from the +45% Strength bonus applying to Prime's damage and slow -- increasing the Molecular Prime output on the first post-return cast. Limbo builds using operator mode and then casting Banish or Cataclysm gain the strength bonus on the ability that defines the Limbo zone's utility.
 
-## Usage notes
+Frames paired with Zenurik school that cast Wellspring in operator mode then return to warframe to begin ability casting receive the Molt Vigor bonus on their first cast while also benefiting from Wellspring's energy regeneration -- combining operator utility with warframe output efficiently.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The bonus is consumed on the first warframe ability cast after the operator ability event. Using multiple operator abilities before returning to warframe does not stack multiple Molt Vigor primes -- only one primer is active at a time. The Arcane Revive at rank 5 provides a mission-safe insurance charge. The strength bonus is additive with other Ability Strength sources -- Intensify, Umbral Intensify, Power Drift, and the Molt Vigor bonus all add together before the total multiplier applies to ability output.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the Operator Ability trigger condition and Ability Strength scaling for Molt Vigor.
+- Fandom wiki entry for Molt Vigor covers operator ability definitions, the consume-on-first-cast behavior, and the Arcane Revive bonus at rank 5.

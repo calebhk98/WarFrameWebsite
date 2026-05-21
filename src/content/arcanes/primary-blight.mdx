@@ -3,12 +3,12 @@ slug: primary-blight
 name: "Primary Blight"
 type: weapon
 maxRank: 5
-effect: "Primary Blight enhances equipped items with stat bonuses."
+effect: "On Toxin Status Effect: +[crit_damage]% Critical Damage and +[multishot]% Multishot for 12s. Stacks up to 40x."
 perRankStats:
   - rank: 0
-    stats: { effect: "On <DT_POISON_COLOR>Toxin Status Effect:\ +0.6% Critical Damage and +0.3% Multishot for 12s. Stacks up to 40x." }
+    stats: { crit_damage: 0.6, multishot: 0.3 }
   - rank: 5
-    stats: { effect: "On <DT_POISON_COLOR>Toxin Status Effect:\ +3.6% Critical Damage and +1.8% Multishot for 12s. Stacks up to 40x." }
+    stats: { crit_damage: 3.6, multishot: 1.8 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,45 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Primary Blight is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This primary arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Primary Blight builds Critical Damage and Multishot bonuses each time the equipped primary weapon applies a Toxin status effect to an enemy. Each toxin proc adds one stack of the combined bonus, with each stack lasting 12 seconds independently. Up to 40 stacks can accumulate simultaneously -- at rank 5, 40 stacks provide +144% Critical Damage and +72% Multishot, a substantial compound bonus that grows as more toxin procs occur during sustained combat.
 
-## Effects per rank
+Toxin status is applied by weapons with toxin damage, the Viral combination element, and Gas. Primary weapons built around toxin proc application -- Ignis Wraith with toxin mods, corrosive-hybrid primaries, or Gas-element primaries -- can stack Blight rapidly during heavy-fire combat phases, compounding critical output and multishot chance simultaneously.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['On Toxin Status Effect:\\n+0.6% Critical Damage and +0.3% Multishot for 12s. Stacks up to 40x.'] |
-| 5 | ['On Toxin Status Effect:\\n+3.6% Critical Damage and +1.8% Multishot for 12s. Stacks up to 40x.'] |
+Each toxin proc on an enemy adds one stack of +3.6% Critical Damage and +1.8% Multishot at rank 5, lasting 12 seconds from when that specific proc occurred. At 40 stacks, the total bonus reaches +144% Critical Damage and +72% Multishot. Stacks decay independently, so maintaining 40 stacks requires roughly 3-4 toxin procs per 12-second window to replace expiring stacks.
+
+At rank 0, 40 stacks provide +24% Critical Damage and +12% Multishot -- meaningful but significantly lower than the rank 5 ceiling.
+
+## Stats per rank
+
+| Rank | Crit Damage per Stack | Multishot per Stack | Max Stacks | Max Crit Damage | Max Multishot |
+|------|-----------------------|---------------------|------------|-----------------|---------------|
+| 0    | +0.6%                 | +0.3%               | 40x        | +24%            | +12%          |
+| 1    | +1.2%                 | +0.6%               | 40x        | +48%            | +24%          |
+| 2    | +1.8%                 | +0.9%               | 40x        | +72%            | +36%          |
+| 3    | +2.4%                 | +1.2%               | 40x        | +96%            | +48%          |
+| 4    | +3.0%                 | +1.5%               | 40x        | +120%           | +60%          |
+| 5    | +3.6%                 | +1.8%               | 40x        | +144%           | +72%          |
 
 ## Acquisition
 
-Primary Blight is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Primary Blight drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. Warframe.market provides direct platinum purchase for players who prefer not to farm this arcane.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Primary Blight suits high-fire-rate or multi-projectile primaries that apply toxin status frequently -- Ignis Wraith with toxin or gas mods, Kuva Bramma with toxin-element builds, or Amprex builds applying toxin via elemental combination. Weapons that deal consistent status procs per shot maintain stack count more reliably than weapons with low status chance, where toxin procs occur infrequently.
 
-## Usage notes
+Critical primary weapons running Blood Rush, Argon Scope, and Primary Blight simultaneously can reach extremely high effective critical damage during sustained combat phases where all three arcanes and mods are active at maximum stacks. Saryn builds where the player fires a primary weapon during Spore spread phases also apply toxin procs from Spore damage that may trigger Blight -- though Saryn's own toxin comes from abilities rather than the weapon directly.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The Critical Damage bonus multiplies critical hit values -- not critical hit chance. This means Blight is most effective on high-critical-chance builds where crits occur frequently enough to benefit from the multiplied damage ceiling. Multishot adds additional projectiles per shot, each dealing independent damage -- at +72% Multishot from 40 stacks, a single-projectile weapon fires effectively 1.72 shots per trigger pull on average. Both bonuses scale independently and are additive with mod-based Critical Damage and Multishot values. Stack count is per-arcane, not per-enemy -- any toxin proc regardless of which enemy was affected adds to the arcane's stack pool.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the toxin status trigger, per-stack Critical Damage and Multishot scaling, and 40-stack cap for Primary Blight.
+- Fandom wiki entry for Primary Blight covers toxin status proc mechanics and the 12-second per-stack duration behavior.

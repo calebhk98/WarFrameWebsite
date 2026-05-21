@@ -6,17 +6,17 @@ maxRank: 5
 effect: 'On Impact: Gain +[shield]% Shield for 10s. Stacks up to 6x.'
 perRankStats:
 - rank: 0
-  stats: {}
+  stats: { shield: 12 }
 - rank: 1
-  stats: {}
+  stats: { shield: 18 }
 - rank: 2
-  stats: {}
+  stats: { shield: 24 }
 - rank: 3
-  stats: {}
+  stats: { shield: 30 }
 - rank: 4
-  stats: {}
+  stats: { shield: 36 }
 - rank: 5
-  stats: {}
+  stats: { shield: 72 }
 drops:
 - source: Various
   chance: 1.0
@@ -33,31 +33,43 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Primary Plated Round provides shield regeneration based on impact procs. On every impact status effect from the primary weapon, the arcane grants a shield buff stacking up to six times. This arcane works well with impact-heavy weapons. Early ranks provide 12% shield scaling; maximum rank yields 72% shield per stack for 432% total bonus at six stacks.
+Primary Plated Round converts impact status procs from primary weapons into stacking shield bonuses, bridging the gap between physical damage application and the warframe's shield defense layer. Each impact proc triggers a shield buff that refreshes and stacks up to six times, allowing high-impact-chance weapons to rapidly accumulate a substantial shield bonus during sustained fire. The 10-second duration per stack means that weapons with consistent impact proc rates can maintain near-permanent uptime at maximum stacks.
 
-## Effects per rank
+Impact status procs are common on primary weapons with base impact damage -- shotguns, high-caliber rifles, and burst weapons frequently apply impact procs without dedicated status chance builds. Primary Plated Round benefits from this natural proc rate rather than requiring a specialized elemental build, making it accessible to a wide variety of primary weapon configurations. Frames that rely on shield-based survivability gain an additional defensive layer that scales with primary weapon activity.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each impact status proc applied by the primary weapon grants a shield bonus for 10 seconds. Stacks accumulate up to six times, with each new proc refreshing the timer on existing stacks. At rank 0, each stack provides 12% shield bonus; at maximum stacks, that totals 72% bonus shields. At rank 5, each stack provides 72% shield bonus for a theoretical maximum of 432% total bonus shields at six stacks. The bonus applies to the warframe's base shield value, making it proportionally effective on high-shield frames like Mag and Volt that already have elevated shield pools.
+
+The shield bonus is temporary and resets when stacks expire. Weapons with high-frequency impact procs -- semi-auto rifles, burst fire weapons -- maintain stacks more reliably than slow-firing primaries with occasional impact triggers.
+
+## Stats per rank
+
+| Rank | Shield per Stack | Max Stacks | Max Total Shield Bonus | Notes |
+|------|-----------------|-----------|------------------------|-------|
+| 0    | +12%            | 6         | +72%                   | Base defensive boost |
+| 1    | +18%            | 6         | +108%                  | Moderate improvement |
+| 2    | +24%            | 6         | +144%                  | Solid shield scaling |
+| 3    | +30%            | 6         | +180%                  | Strong defensive build |
+| 4    | +36%            | 6         | +216%                  | Near-maximum |
+| 5    | +72%            | 6         | +432%                  | Maximum shield coverage |
 
 ## Acquisition
 
-Primary Plated Round drops from various Zariman and Void Cascade missions.
+Primary Plated Round drops from various Zariman Ten-Zero mission rotations and Void Cascade content. The arcane is accessible after completing Angels of the Zariman. Multiple rotation sources in Zariman content mean players regularly encounter Plated Round drops during standard Zariman progression. Warframe.market provides an alternative for players preferring direct platinum acquisition.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
+Primary Plated Round fits shield-tank primary weapon builds on frames with substantial base shield values. Mag builds using Magnetize frequently apply impact procs through high-impact-damage primary weapons, stacking the shield bonus rapidly during ability use. Volt builds that rely on shield gating as a survivability mechanic benefit from the additional shield percentage, which extends the effective health pool protected by the shield gate. Shotgun builds with multiple pellets per shot trigger impact procs at high rates, accelerating stack accumulation.
 
-## Usage
-
-Primary Plated Round activates automatically when its trigger condition is met during combat.
+Frames with low base shield values receive smaller absolute shield gains from the percentage-based bonus. The arcane is most effective when paired with shield-capacity-increasing mods like Redirection, which amplify the percentage bonus into larger absolute shield pools.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+The shield bonus stacks independently from shield capacity mods -- percentage bonuses from both sources apply to the base shield value. Impact procs from primary weapon fire trigger the arcane; impact procs from companion weapons or warframe abilities do not. The 10-second timer on each stack counts down independently -- stacks added at different times expire at different intervals. Maintaining maximum stacks requires sustaining a reliable impact proc rate, which favors weapons with both high status chance and high impact damage percentages. Shield-gated builds should note that the bonus shields do not inherently reset the shield gate; only fully depleting and replenishing shields triggers the gate timing.
 
 ## Sources
 
-Primary Plated Round is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset covers impact proc scaling and shield bonus values for Primary Plated Round.
+- Fandom wiki entry for Primary Plated Round provides notes on stack accumulation timing and shield-gating interactions.
+

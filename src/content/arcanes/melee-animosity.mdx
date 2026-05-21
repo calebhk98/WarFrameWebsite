@@ -26,29 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Melee Animosity boosts Power Strength on kills, rewarding aggressive melee playstyles. This arcane enables momentum-based damage scaling during void fissure content where frequent enemy eliminations maintain sustained power scaling.
+Melee Animosity generates Power Strength bonuses from melee kills, creating a feedback loop where aggressive melee combat directly amplifies ability effectiveness. The kill-based trigger means the arcane rewards offensive momentum -- frames that maintain high kill rates through melee combat sustain elevated ability strength throughout the mission, while frames that disengage from melee see the buff expire during combat breaks.
 
-## Effects per rank
+Power Strength in Warframe multiplies the numeric values of most warframe abilities: damage outputs, healing values, crowd control durations, and buff percentages all scale with the strength modifier. A 90% Power Strength bonus from Melee Animosity at rank 5 effectively adds the equivalent of multiple strength-increasing mods, pushing ability outputs to values normally achievable only through specialized ability-focused builds.
 
-| Rank | Trigger Chance | Power Strength Boost | Duration |
-|------|----------------|----------------------|----------|
-| 0    | 15%            | +30%                 | 10s      |
-| 1    | 22%            | +45%                 | 10s      |
-| 2    | 30%            | +60%                 | 10s      |
-| 3    | 37%            | +75%                 | 10s      |
-| 4    | 41%            | +82%                 | 10s      |
-| 5    | 45%            | +90%                 | 10s      |
+## Effect
 
-Power Strength scaling extends ability effectiveness and damage output, enabling melee-focused frames to scale combat efficiency throughout extended void fissure void waves.
+Each melee kill triggers a chance check. On success, the warframe gains a Power Strength percentage bonus for 10 seconds. At rank 0, a 15% chance grants 30% Power Strength -- activating roughly once every six melee kills and providing a moderate ability boost window. At rank 5, the 45% chance grants 90% Power Strength -- activating nearly every other kill group and providing a near-doubling of base ability strength for the duration.
+
+The 10-second window is long enough to cover multiple ability casts following a kill burst. The bonus is multiplicative with existing Power Strength from mods, meaning frames that already run high-strength builds amplify Animosity's bonus into larger absolute ability values.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Power Strength Boost | Duration | Notes |
+|------|----------------|----------------------|----------|-------|
+| 0    | 15%            | +30%                 | 10s      | Moderate ability boost window |
+| 1    | 22%            | +45%                 | 10s      | Increasing strength uptime |
+| 2    | 30%            | +60%                 | 10s      | Reliable ability scaling |
+| 3    | 37%            | +75%                 | 10s      | Strong kill-reward cycle |
+| 4    | 41%            | +82%                 | 10s      | Near-constant uptime possible |
+| 5    | 45%            | +90%                 | 10s      | Maximum strength cycling |
 
 ## Acquisition
 
-Melee Animosity drops from Zariman Void Fissure (4%) and Void Cascade rotation A (2%). Regular zariman void farming yields this arcane through natural progression.
+Melee Animosity drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Both sources are accessible after completing Angels of the Zariman. Rotation A in Void Cascade is the first rotation reached during runs, making it one of the more accessible drop locations for Zariman melee arcanes. Warframe.market provides a direct purchase option for players who prefer platinum acquisition over farming sessions.
 
-## Best on
+## Builds that use it
 
-Melee Animosity is ideal for melee-focused warframes paired with high-crit melee weapons. The kill-based damage scaling rewards aggressive playstyles during void fissure content with sustained power boosts.
+Melee Animosity fits ability-focused frames that use melee combat as their primary kill method. Ash builds using Fatal Teleport perform frequent melee finisher kills that trigger Animosity, directly boosting Blade Storm's damage output. Atlas builds whose Landslide scales with Power Strength benefit from Animosity's kill-to-strength feedback -- each Landslide kill boosts the next Landslide cast. Exalted weapon builds on Valkyr (Hysteria), Wukong (Primal Fury), and Baruuk (Desert Wind) apply kill triggers to the exalted weapon hits, stacking the bonus during sustained exalted weapon combat.
+
+High-kill-rate melee weapons -- spin-attack polearms, aoe-swing heavy blades -- generate kills in rapid clusters that maximize the trigger frequency and sustain the Power Strength window between buff refreshes.
+
+## Notes
+
+The Power Strength bonus from Melee Animosity does not stack beyond a single application -- triggering while the buff is active refreshes the timer rather than adding a second layer. The boost applies to all ability values that scale with Power Strength, including beneficial effects like healing values and buff durations, not only damage. Melee kills from companion weapons or warframe abilities do not trigger the arcane -- only direct melee weapon kills from the player's equipped melee count. Frames that use melee combat only incidentally alongside primary or secondary weapons trigger Animosity less frequently and may find the uptime insufficient for reliable ability scaling.
 
 ## Sources
 
-Zariman void fissure farming provides consistent melee animosity drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers kill trigger conditions and Power Strength scaling for Melee Animosity.
+- Fandom wiki entry for Melee Animosity documents ability interaction notes and melee kill definition for arcane trigger purposes.
+

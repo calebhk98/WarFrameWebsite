@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Battery increases maximum energy capacity on energy orb pickups. This warframe arcane enables energy-hungry frames to achieve sustainable ability spam during void fissure content.
+Arcane Battery increases maximum energy capacity on energy orb pickups, enabling energy-hungry frames to store and deploy more energy during combat. The maximum energy increase does not directly restore energy but expands the ceiling of how much energy the frame can hold, allowing subsequent energy restoration mechanics (orbs, abilities, Zenurik focus) to fill a larger pool. This makes Battery particularly valuable for frames that spike-cast expensive abilities and need large energy reserves rather than rapid small regeneration.
 
-## Effects per rank
+The 12-second duration is sufficient to cover most ability rotation windows. Frames that pick up energy orbs regularly through combat -- particularly in orb-dense missions or with Equilibrium mod active -- trigger Battery frequently enough to maintain a near-permanent energy cap increase throughout extended missions.
 
-| Rank | Proc Chance | Energy Pool Increase | Duration |
-|------|-------------|----------------------|----------|
-| 0    | 15%         | +30%                 | 12s      |
-| 1    | 22%         | +45%                 | 12s      |
-| 2    | 30%         | +60%                 | 12s      |
-| 3    | 37%         | +75%                 | 12s      |
-| 4    | 41%         | +82%                 | 12s      |
-| 5    | 45%         | +90%                 | 12s      |
+## Effect
 
-Energy pool scaling stacks with existing mods and enables high-cost ability frameworks to achieve reliable power spam during extended void fissure engagements.
+Picking up an energy orb checks the Battery trigger chance. On success, the frame's maximum energy increases by the rank-dependent percentage for 12 seconds. At rank 0, 30% additional max energy is meaningful for high-cost frames; a frame with 200 base energy gains 60 additional energy capacity. At rank 5, 90% additional max energy nearly doubles energy capacity, allowing a 200-energy frame to hold 380 energy during the window. This expanded capacity benefits frames that stack multiple high-cost abilities in sequence.
+
+The energy increase applies immediately on trigger and allows energy above the normal maximum to be held for the buff duration.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Max Energy Increase | Duration | Notes |
+|------|----------------|---------------------|----------|-------|
+| 0    | 15%            | +30%                | 12s      | Modest energy expansion |
+| 1    | 22%            | +45%                | 12s      | Moderate capacity boost |
+| 2    | 30%            | +60%                | 12s      | Solid energy buffer |
+| 3    | 37%            | +75%                | 12s      | Strong capacity increase |
+| 4    | 41%            | +82%                | 12s      | High energy reserve |
+| 5    | 45%            | +90%                | 12s      | Near-double energy cap |
 
 ## Acquisition
 
-Arcane Battery drops from Zariman Void Fissure (4%) and Void Cascade rotation A (2%). Regular zariman void farming yields this arcane through natural progression.
+Arcane Battery drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Both sources are accessible through standard Zariman Ten-Zero content after completing Angels of the Zariman. Rotation A drops occur early and frequently in Void Cascade run cycles. Warframe.market provides direct purchase options for players seeking immediate access.
 
-## Best on
+## Builds that use it
 
-Arcane Battery excels on ability-spam-focused frames that consume high energy budgets. The energy pool boost enables efficient ability-rotation management during prolonged void fissure waves.
+Arcane Battery excels on ability-spam-focused frames that consume large energy budgets. Saryn's Spores-Miasma combination consumes substantial energy per cast; Battery's expanded capacity allows queuing more casts before exhausting the pool. Trinity casting a full ability rotation (Blessing, Well of Life, Energy Vampire) within a single Battery window benefits from storing enough energy for the complete sequence. Frames running high-cost augments (Nekros Desecrate, Octavia Mallet augment) that already have elevated ability costs extract the most from expanded energy capacity. Equipping Arcane Battery alongside Arcane Energize creates compound energy management where Battery expands capacity and Energize refills it.
+
+## Notes
+
+Maximum energy increase is temporary; the cap returns to base when the 12-second buff expires. Any energy above the normal maximum that was held during the buff window drains to the normal cap after expiry. Zenurik Wellspring and other energy regeneration effects benefit from Battery's expanded cap by having more room to fill. Picking up additional energy orbs during an active Battery window refreshes the buff duration if the trigger activates again. Energy siphon aura and similar passive regeneration effects fill the expanded pool during the buff window.
 
 ## Sources
 
-Zariman void fissure farming provides battery drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers energy cap scaling and trigger conditions for Arcane Battery.
+- Fandom wiki entry for Arcane Battery provides context on energy management mechanics and ability-spam build applications.

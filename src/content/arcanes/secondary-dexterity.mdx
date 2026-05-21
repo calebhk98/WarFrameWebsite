@@ -33,31 +33,40 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Secondary Dexterity rewards headshots with damage scaling on secondary weapons. On every headshot with pistols or secondary weapons, the arcane grants a damage buff stacking up to five times. This arcane synergizes with accurate secondary weapons and critical-focused builds. Early ranks provide 15% damage; maximum rank yields 75% per stack for 375% total bonus.
+Secondary Dexterity rewards headshots with stacking damage bonuses on secondary weapons, creating a precision-momentum system where each accurate headshot builds toward a higher damage multiplier. The stacking mechanic incentivizes consistent headshot placement over random body shot fire, rewarding player skill with progressively higher damage output. At maximum five stacks, Secondary Dexterity provides one of the highest single-arcane damage bonuses available for secondaries.
 
-## Effects per rank
+The 16-second stack duration is generous compared to many combat arcanes, allowing players to maintain stacks through brief non-combat intervals such as reloading, objective completion, or brief repositioning phases without losing accumulated bonuses.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each headshot from the secondary weapon applies one damage stack. Up to five stacks accumulate with 16-second independent timers. At rank 0, each stack provides 15% damage (maximum 75% at five stacks); at rank 5, each stack provides 75% damage (maximum 375% at five stacks). Five stacks at rank 5 more than quadruple the weapon's base damage output, compounding with existing damage mods to enable extremely high per-shot values.
+
+The 16-second timer per stack means five-stack uptime is achievable and maintainable during sustained headshot-focused combat without requiring every single shot to be a headshot.
+
+## Stats per rank
+
+| Rank | Damage per Stack | Max Stacks | Max Total Bonus | Stack Duration |
+|------|-----------------|-----------|-----------------|----------------|
+| 0    | +15%            | 5         | +75%            | 16s            |
+| 1    | +30%            | 5         | +150%           | 16s            |
+| 2    | +45%            | 5         | +225%           | 16s            |
+| 3    | +60%            | 5         | +300%           | 16s            |
+| 4    | +67%            | 5         | +335%           | 16s            |
+| 5    | +75%            | 5         | +375%           | 16s            |
 
 ## Acquisition
 
-Secondary Dexterity drops from various Zariman and Void Cascade missions.
+Secondary Dexterity drops from Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade rotation rewards include Dexterity as part of the precision-secondary arcane pool. Players running precision secondary builds farm Zariman content for Dexterity and complementary headshot arcanes. Warframe.market provides direct purchase options for targeted acquisition.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Secondary Dexterity activates automatically when its trigger condition is met during combat.
+Secondary Dexterity excels on accurate semi-auto or burst-fire secondaries that naturally target head hitboxes. Sniper-secondary crossover builds (Knell Prime, Pyrana Prime) with high crit chance and accuracy maintain five-stack headshot chains during focused combat phases. Builds combining Dexterity with Arcane Bellicose (crit on headshot) create dual headshot reward systems where each accurate shot both builds the damage stack and refreshes the crit buff. Mesa's Shatter Shield ability combined with secondary DPS builds benefits from full five-stack Dexterity during the defensive ability's active window. High-accuracy automatic pistols that fire controlled bursts at head level generate stacks quickly without sacrificing full-auto DPS.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+Headshot detection requires projectile contact with the designated head hitbox. Explosive weapons and AoE do not count as headshots regardless of origin. The five-stack cap prevents infinite accumulation; after five stacks, headshots only refresh individual stack timers rather than adding new stacks. Each stack's 16-second timer counts independently, so the first stack acquired may expire while the fifth stack is still accumulating. Maintaining headshot-focused fire prevents this by refreshing all stacks before they individually expire. The damage bonus type is the same as the weapon's modded damage type, subject to normal enemy mitigation.
 
 ## Sources
 
-Secondary Dexterity is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset covers stacking damage values and headshot trigger conditions for Secondary Dexterity.
+- Fandom wiki entry for Secondary Dexterity documents precision secondary build integration and stack maintenance strategies.

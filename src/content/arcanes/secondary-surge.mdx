@@ -3,8 +3,7 @@ slug: secondary-surge
 name: Secondary Surge
 type: weapon
 maxRank: 5
-effect: 'On Electric Proc: Gain +[power]% Attack Speed for [duration]s. Stacks up
-  to 4x.'
+effect: 'On Electric Proc: Gain +[power]% Attack Speed for [duration]s. Stacks up to 4x.'
 perRankStats:
 - rank: 0
   stats: {}
@@ -34,31 +33,40 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Secondary Surge increases attack speed when secondary electric procs trigger. On every electric status effect from secondary weapons, the arcane grants attack speed buff stacking up to four times. This arcane synergizes with rapid-fire secondaries. Early ranks grant 20% attack speed; maximum rank grants 100% attack speed per stack.
+Secondary Surge provides stacking attack speed bonuses on electric status procs from secondary weapons, creating an escalating fire rate multiplier during electric-focused engagements. The stacking mechanic rewards builds that maintain rapid electric proc application -- each proc adds a stack, and maintaining all four stacks simultaneously delivers the maximum fire rate multiplier. Electric secondaries with high status chance apply procs quickly enough to build stacks during the opening shots of an engagement.
 
-## Effects per rank
+Attack speed in Warframe translates directly to fire rate for secondary weapons, meaning all four stacks effectively quadruple the per-stack bonus on top of existing speed mods. For full-auto secondaries, this translates to a substantial increase in rounds downrange per second during the stacked state.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each electric status proc from the secondary weapon applies one attack speed stack. Up to four stacks accumulate independently, each providing the per-rank bonus for a fixed duration. At rank 0, each stack grants 20% attack speed (maximum 80% at four stacks); at rank 5, each stack grants 100% attack speed (maximum 400% at four stacks). Four stacks at rank 5 effectively increases secondary fire rate to five times the base rate combined with existing fire rate mods.
+
+Individual stack durations reset on each new proc trigger, meaning sustained electric proc application maintains maximum four-stack uptime throughout extended engagements.
+
+## Stats per rank
+
+| Rank | Attack Speed per Stack | Max Stacks | Max Total Bonus | Notes |
+|------|----------------------|-----------|-----------------|-------|
+| 0    | +20%                 | 4         | +80%            | Moderate speed boost |
+| 1    | +40%                 | 4         | +160%           | Good attack acceleration |
+| 2    | +60%                 | 4         | +240%           | Strong fire rate increase |
+| 3    | +80%                 | 4         | +320%           | Very high speed boost |
+| 4    | +90%                 | 4         | +360%           | Near-maximum acceleration |
+| 5    | +100%                | 4         | +400%           | Maximum speed multiplier |
 
 ## Acquisition
 
-Secondary Surge drops from various Zariman and Void Cascade missions.
+Secondary Surge drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is accessible through standard Zariman content after completing Angels of the Zariman. Regular Void Cascade runs generate Surge as part of the electric-focused secondary arcane series. Players building electric secondary builds often farm Zariman content as it provides multiple relevant arcanes simultaneously. Warframe.market provides direct purchase options for targeted acquisition.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Secondary Surge activates automatically when its trigger condition is met during combat.
+Secondary Surge excels on full-auto electric secondaries with high status chance. The Staticor (electric weapon), Furis with electric modding, and any secondary with 60% or higher status chance apply electric procs rapidly enough to build all four stacks within the first few seconds of combat. Builds combining Lethal Torrent (fire rate mod) with Secondary Surge create extreme fire rate values at four stacks that can briefly saturate enemy groups with projectiles. High-status-chance electric secondaries that combine Surge with other electric proc arcanes (Conjunction Voltage) create layered electric proc synergies.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+The stacking requires electric status specifically; other elemental procs do not trigger Secondary Surge. Weapons with combined elements (Magnetic = Cold + Electric, Corrosive = Toxin + Electric) still proc electric separately if Electric damage exists in the combination. The four-stack cap prevents unlimited acceleration; builds must balance attack speed with the magazine size and reload speed to maintain effective DPS. Stack timers are individual; a rapid succession of procs builds stacks, but slow proc rates between stacks allow early stacks to expire before new ones accumulate.
 
 ## Sources
 
-Secondary Surge is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset covers stacking behavior and attack speed scaling for Secondary Surge.
+- Fandom wiki entry for Secondary Surge documents electric proc requirements and secondary weapon compatibility.

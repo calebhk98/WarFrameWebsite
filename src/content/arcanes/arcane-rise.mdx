@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Rise provides damage scaling while airborne. This warframe arcane rewards mobile, parkour-focused playstyles by incentivizing jump attack usage during void fissure content.
+Arcane Rise provides flat damage scaling while the warframe is airborne, rewarding mobile, parkour-focused playstyles that spend significant time off the ground. Jump attacks, aerial melee, bullet jump slides, and any other actions performed while airborne benefit from the damage boost. Warframe's movement system naturally creates airborne moments during parkour sequences, making Rise compatible with any frame that moves dynamically through mission maps.
 
-## Effects per rank
+The flat damage bonus applies during the airborne state, meaning frames do not need to perform aerial attacks specifically -- any weapon or ability dealing damage while the frame is in the air contributes. Sustained aerial builds that use Arcane Momentum or bullet jump damage mods pair naturally with Rise's airborne-state trigger.
 
-| Rank | Trigger Chance | Airborne Damage |
-|------|----------------|-----------------|
-| 0    | 15%            | +25             |
-| 1    | 22%            | +35             |
-| 2    | 30%            | +45             |
-| 3    | 37%            | +55             |
-| 4    | 41%            | +60             |
-| 5    | 45%            | +75             |
+## Effect
 
-Consistent airborne damage enables momentum-based gameplay where jump attacks generate continuous damage bonuses.
+The arcane activates during airborne states and checks the trigger chance. On success, flat damage is added to the frame's active weapon output for as long as the airborne state persists. At rank 0, 25 flat damage is noticeable on weapons with lower base values; at rank 5, 75 flat damage provides meaningful contribution across most weapon tiers. The bonus applies to both weapon shots and melee strikes performed while airborne.
+
+Warframe's bullet jump and aim glide mechanics create extended airborne windows that allow sustained damage bonuses during traversal segments between enemy groups.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Airborne Damage Bonus |
+|------|----------------|----------------------|
+| 0    | 15%            | +25                  |
+| 1    | 22%            | +35                  |
+| 2    | 30%            | +45                  |
+| 3    | 37%            | +55                  |
+| 4    | 41%            | +60                  |
+| 5    | 45%            | +75                  |
 
 ## Acquisition
 
-Arcane Rise drops from Zariman Void Fissure (4%) and Void Cascade rotation A (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Rise drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Access requires completing Angels of the Zariman to unlock Zariman Ten-Zero content. Rotation A in Void Cascade runs provides frequent drop opportunities as it is reached first in each rotation cycle. Warframe.market offers Rise at accessible plat values for players preferring direct purchase.
 
-## Best on
+## Builds that use it
 
-Arcane Rise excels on parkour-focused warframes with high jump attack rate. The aerial damage boost complements slide attack and bullet jump builds.
+Arcane Rise excels on parkour-focused warframes with high jump attack rates. Frames with mobility-enhancing passives or abilities (Volt's Speed, Loki's parkour bonuses, Zephyr's Tailwind) spend more time airborne and extract greater Rise value. Bullet jump slam attack builds that return to airborne state between enemies maintain near-constant trigger uptime. Primary weapons with continuous fire used during aim glide maintain the buff through extended airborne segments. Slide attack chains that launch enemies allow aerial follow-up attacks benefiting from the damage bonus simultaneously.
+
+## Notes
+
+The airborne state requires the frame to not be touching the ground. Ledge grabs and wall latches count as airborne for Rise's purposes. Landing does not instantly remove the buff; there may be a brief persistence window depending on frame. The flat damage type matches the weapon's primary damage type and is subject to enemy armor and resistance calculations. At high-difficulty content (Steel Path, Arbitrations), the flat damage contribution provides less proportional value against heavily armored enemies compared to percentage-based amplification.
 
 ## Sources
 
-Zariman void fissure farming provides rise drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset provides airborne damage values and trigger conditions for Arcane Rise.
+- Fandom wiki entry for Arcane Rise documents airborne state definitions and parkour build synergies.

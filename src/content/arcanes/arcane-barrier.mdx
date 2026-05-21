@@ -26,29 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Barrier restores shields on shield breaks. This warframe arcane enables shield-tank builds to maintain defensive sustain during extended void fissure combat without external Trinity support.
+Arcane Barrier triggers a shield restoration event when the warframe's shields are fully depleted. Rather than preventing shield loss, the arcane responds to the moment of shield break by checking for a restoration proc that partially refills shields after a brief delay. This mechanism turns shield depletion events -- which in many game modes trigger the vulnerable health phase -- into potential recovery points that restore a flat shield value before the next incoming hit.
 
-## Effects per rank
+The two-second delay between shield break and restoration is a critical element of the arcane's behavior. Enemies that deal high burst damage can inflict health damage during this window before the restored shields reactivate. However, for enemies dealing lower sustained damage, the restoration refills shields quickly enough to prevent significant health damage. Arcane Barrier is most effective in scenarios where individual enemy hits are moderate and the player has brief windows to reposition during the restoration delay.
 
-| Rank | Trigger Chance | Shield Restore | Recovery Delay |
-|------|----------------|----------------|----------------|
-| 0    | 10%            | 100            | 2s             |
-| 1    | 15%            | 140            | 2s             |
-| 2    | 20%            | 180            | 2s             |
-| 3    | 25%            | 220            | 2s             |
-| 4    | 27%            | 260            | 2s             |
-| 5    | 30%            | 300            | 2s             |
+## Effect
 
-Shield restoration timing allows momentary invulnerability windows before recharge activation, enabling tactical repositioning during dangerous void fissure engagements.
+When the warframe's shields drop to zero, the arcane checks its trigger chance. On a successful check, shields are restored to the listed shield point value after a two-second delay. At rank 0, a 10% chance restores 100 shield points -- a minor safety net that occasionally restores a small shield buffer. At rank 5, the 30% chance restores 300 shield points -- activating roughly once every three shield breaks and providing a more substantial buffer.
+
+The restored shields function as normal shields and are subject to shield recharge mechanics. After the two-second restoration, natural shield recharge continues from the restored value, effectively giving the arcane two benefits: the immediate flat restoration and the earlier base for natural recharge.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Shield Restore | Delay | Notes |
+|------|----------------|----------------|-------|-------|
+| 0    | 10%            | 100            | 2s    | Occasional minimal restore |
+| 1    | 15%            | 140            | 2s    | Moderate improvement |
+| 2    | 20%            | 180            | 2s    | Reliable periodic restore |
+| 3    | 25%            | 220            | 2s    | Consistent shield recovery |
+| 4    | 27%            | 260            | 2s    | Near-maximum trigger rate |
+| 5    | 30%            | 300            | 2s    | Maximum restore value |
 
 ## Acquisition
 
-Arcane Barrier is a legendary warframe arcane dropping from Zariman Void Fissure (5%) and Void Cascade rotation C (2%). The high drop rate makes it relatively accessible for shield-tank builds.
+Arcane Barrier drops from Zariman Void Fissure at 5% and Void Cascade rotation C at 2%. The higher 5% drop rate from Void Fissure makes it one of the more accessible Zariman warframe arcanes for players actively running fissures. Zariman Ten-Zero content becomes available after completing Angels of the Zariman. Warframe.market provides an alternative for players preferring direct acquisition over farming multiple runs.
 
-## Best on
+## Builds that use it
 
-Arcane Barrier is ideal for shield-focused warframes like Volt and Mag. The reliable shield restoration enables solo void fissure farming with minimal external sustain requirements.
+Arcane Barrier fits shield-focused warframe builds that regularly experience shield cycling in combat. Mag builds that deplete shields intentionally through Magnetize pulls and then rely on passive shield recharge benefit from Barrier's occasional restoration proc. Volt builds using Electric Shield frequently reenter combat with depleted personal shields, making the periodic restoration relevant during re-engagement windows. Frames with moderate base shield pools -- Excalibur, Ash, Nyx -- benefit from the flat restoration more than frames with very high or very low shields, as the 300-point max restore represents a significant fraction of moderate shield pools.
+
+Shield-gating builds that rely on the invulnerability window during shield depletion may not benefit as much from Barrier, since those builds intentionally cycle shields for protection rather than seeking to maintain high shield values between damage events.
+
+## Notes
+
+The trigger activates only at full shield depletion to zero -- partial shield damage does not check the proc. The two-second delay is fixed across all ranks and cannot be reduced by ability range, duration mods, or other modifiers. If shields are depleted a second time during the two-second restoration delay, the timer resets -- the arcane does not queue multiple restoration events. The restored shields are flat points, not percentage-based, making the arcane more valuable proportionally on frames with lower maximum shield pools where 300 points represents a larger fraction of total shields.
 
 ## Sources
 
-Zariman void fissure farming provides consistent barrier drops. Players regularly completing void cascade events naturally accumulate this arcane quickly.
+- WFCD warframe-items dataset documents the trigger timing and shield restore values for Arcane Barrier.
+- Fandom wiki entry for Arcane Barrier covers the two-second delay mechanic and shield-gating interaction notes.
+

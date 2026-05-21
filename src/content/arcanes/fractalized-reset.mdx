@@ -26,9 +26,15 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Fractalized Reset eliminates reload downtime on magazine depletion. This primary weapon arcane enables sustained fire primary builds to maintain offensive momentum during void fissure content.
+Fractalized Reset eliminates reload downtime on magazine depletion while simultaneously granting a fire rate boost for the subsequent magazine. This primary weapon arcane enables sustained-fire primary builds to maintain offensive momentum without the damage-per-second gap that reload animations introduce. The instant reload removes what is typically a vulnerable period in firefights, while the fire rate bonus makes the refilled magazine more potent than the previous one.
 
-## Effects per rank
+The arcane is particularly valuable for primary weapons with slow base reload speeds. Weapons that take 3 or more seconds to reload lose substantial DPS to reload gaps during extended combat; Fractalized Reset converts those gaps into bonus fire rate windows instead. High-capacity weapons benefit from less frequent procs (emptying a large magazine takes longer) but gain larger absolute fire rate bonuses during the buff window due to base fire rate interactions.
+
+## Effect
+
+When the primary weapon's magazine reaches empty, Fractalized Reset checks the trigger chance. On success, the weapon instantly completes its reload animation and the fire rate bonus activates for 8 seconds. The instant reload maintains momentum as if no reload occurred, allowing continuous fire through transitions that would normally force a pause. At rank 0, 25% fire rate for 8 seconds is a meaningful DPS window; at rank 5, 75% fire rate effectively adds three-quarters of the base fire rate on top of existing mods for the duration.
+
+## Stats per rank
 
 | Rank | Trigger Chance | Fire Rate Boost | Duration |
 |------|----------------|-----------------|----------|
@@ -39,16 +45,19 @@ Fractalized Reset eliminates reload downtime on magazine depletion. This primary
 | 4    | 41%            | +65%            | 8s       |
 | 5    | 45%            | +75%            | 8s       |
 
-Instant reload mechanics eliminate traditional reload delays while fire rate scaling maintains damage momentum.
-
 ## Acquisition
 
-Fractalized Reset drops from Zariman Void Fissure (4%) and Void Cascade rotation A (2%). Regular zariman void farming yields this arcane naturally.
+Fractalized Reset drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Both sources are available through standard Zariman Ten-Zero progression after completing Angels of the Zariman. The arcane is accessible through regular Zariman bounty farming; rotation A drops occur frequently in Void Cascade run sequences. Warframe.market provides direct purchase options for players seeking to bypass farming.
 
-## Best on
+## Builds that use it
 
-Fractalized Reset excels on high-ammo-capacity primary weapons. The instant reload enables uninterrupted fire cycles during void fissure content.
+Fractalized Reset benefits primary weapons with slow reloads and moderate-to-large magazine sizes. Shotguns (Tigris Prime, Drakgoon) that take extended time to reload gain the most from eliminated reload gaps during combat. High-damage-per-shot primaries benefit from the fire rate bonus during the buff window as it enables faster follow-up shots without the usual gap. Builds that already run Vigilante Supplies or comparable magazine-extension mods pair well because larger magazines create more dramatic impact when the instant reload saves the reload animation. Mobile builds that must dodge during reloads find instant reload particularly valuable since it eliminates the movement penalty.
+
+## Notes
+
+Instant reload only triggers on complete magazine depletion, not on manual reload performed mid-magazine. Players who manually reload before emptying do not trigger Fractalized Reset. The fire rate bonus is additive with fire rate mods already equipped. The 8-second duration begins when the instant reload fires, not when the weapon fires the last round. Weapons with different reload phases (pump-action shotguns that reload shell-by-shell) interact differently with the instant reload mechanic; individual weapon behavior determines how the arcane interfaces with partial reload animations.
 
 ## Sources
 
-Zariman void fissure farming provides reset drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset provides trigger mechanics and fire rate scaling for Fractalized Reset.
+- Fandom wiki entry for Fractalized Reset documents acquisition sources and instant reload interaction notes.

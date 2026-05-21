@@ -3,12 +3,12 @@ slug: magus-revert
 name: "Magus Revert"
 type: operator
 maxRank: 5
-effect: "Magus Revert enhances equipped items with stat bonuses."
+effect: "On Void Sling: Use again within 3s to return the Operator to their original position at no energy cost. Restores [health] Health. 3s cooldown."
 perRankStats:
   - rank: 0
-    stats: { effect: "On Void Sling:\ Use again within 3s, to return the Operator to their original position at no energy cost. Restores 10 Health. 3s cooldown." }
+    stats: { health: 10 }
   - rank: 5
-    stats: { effect: "On Void Sling:\ Use again within 3s, to return the Operator to their original position at no energy cost. Restores 60 Health. 3s cooldown." }
+    stats: { health: 60 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,45 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Magus Revert is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This operator arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Magus Revert enables the operator to instantly return to their pre-Sling position by activating Void Sling a second time within a 3-second window after the initial Sling. This reverse-dash mechanic allows the operator to Sling into range for an amp shot or ability application and then immediately pull back to their starting position without spending energy on the return movement. The return also restores a flat amount of operator health -- scaling from 10 at rank 0 to 60 at rank 5 -- adding a minor healing component to each successful revert.
 
-## Effects per rank
+The strategic value lies in positioning: the operator can advance into hazard positions, fire the amp, and retract in under 3 seconds without investing additional Sling charges or energy. This is particularly useful in Eidolon hunt scenarios where the operator needs to close range on Eidolon limbs briefly and then retreat from the proximity danger zone before taking damage.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['On Void Sling:\\nUse again within 3s, to return the Operator to their original position at no energy cost. Restores 10 Health. 3s cooldown.'] |
-| 5 | ['On Void Sling:\\nUse again within 3s, to return the Operator to their original position at no energy cost. Restores 60 Health. 3s cooldown.'] |
+The first Void Sling establishes a revert point. If the operator casts Void Sling again within 3 seconds, instead of sling-traveling forward, the operator returns to the original position at no energy cost and heals the listed health amount. A 3-second cooldown follows each successful revert before the mechanic is available again.
+
+At rank 0, 10 health restored on revert provides minor sustain during the advance-and-retreat pattern. At rank 5, 60 health restored provides meaningful recovery per cycle, helping the operator maintain health across multiple advance-fire-revert rotations.
+
+## Stats per rank
+
+| Rank | Health Restored on Revert | Cooldown | Notes |
+|------|--------------------------|----------|-------|
+| 0    | 10                       | 3s       | Minor healing |
+| 1    | 20                       | 3s       | Moderate recovery |
+| 2    | 30                       | 3s       | Solid sustain |
+| 3    | 40                       | 3s       | Strong healing |
+| 4    | 50                       | 3s       | High recovery |
+| 5    | 60                       | 3s       | Maximum health restore |
 
 ## Acquisition
 
-Magus Revert is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Magus Revert drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. The arcane may originate from Eidolon hunt reward pools or Zariman void fissure drops. Warframe.market provides direct platinum purchase for players who prefer not to farm.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Magus Revert suits operators who use Void Sling for precise engagement positioning rather than sustained repositioning. Eidolon hunters who need to close range on limb targets briefly -- landing within amp effective range, firing, and retreating before the Eidolon recovers -- benefit from the revert allowing a single-movement round trip rather than two separate Slings. The no-energy-cost return conserves operator energy for additional advance cycles during the same Eidolon limb phase.
 
-## Usage notes
+Operators in Zariman Void Cascade who enter high-density enemy zones for Void Blast applications then need to exit quickly benefit from Revert as an immediate retreat mechanism. The health restoration on each revert contributes to sustain during these aggressive close-range patterns.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The revert window is 3 seconds from the initial Sling -- the second Sling within this window triggers the return; a second Sling after the window functions as a normal Sling forward. The 3-second cooldown between reverts limits the advance-fire-retreat pattern to one revert per 3 seconds, requiring the operator to wait before the mechanic refreshes for the next approach. The return travel is instantaneous -- the operator appears at the origin position rather than sliding back along the Sling path. If the operator's original position is no longer accessible (geometry changed, occupied by an enemy), the return behavior may be affected.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the Void Sling trigger condition, revert window timing, and health restoration scaling for Magus Revert.
+- Fandom wiki entry for Magus Revert covers the revert mechanic timing, cooldown behavior, and the no-energy-cost return interaction with Void Sling energy expenditure.

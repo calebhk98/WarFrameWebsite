@@ -3,8 +3,7 @@ slug: residual-viremia
 name: Residual Viremia
 type: companion
 maxRank: 5
-effect: 'On Viral Proc: Create +[stack]% Viral infection aura for [duration]s. Range:
-  [range]m.'
+effect: 'On Viral Proc: Create +[stack]% Viral infection aura for [duration]s. Range: [range]m.'
 perRankStats:
 - rank: 0
   stats: {}
@@ -34,31 +33,38 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Residual Viremia creates viral infection auras when companion viral procs trigger. On every viral status effect from companion weapons, a temporary aura zone forms that spreads viral damage to nearby enemies. Kavats with viral weapons gain stacking infection zones. Early ranks create small auras; maximum rank expands to larger areas affecting many enemies simultaneously.
+Residual Viremia creates viral infection aura zones when companion viral status procs trigger, extending the impact of companion-applied viral procs beyond the single targeted enemy. Viral status in Warframe halves the maximum health of affected enemies for 6 seconds, making it one of the highest-value status types for increasing effective damage across all weapon types. Residual Viremia broadcasts this effect to nearby enemies through an aura, converting each companion viral proc into a zone where surrounding enemies take the health reduction debuff.
 
-## Effects per rank
+The aura-based mechanic differs from other proc spread arcanes because viral's value is multiplicative with all subsequent damage rather than a damage-over-time effect. Spreading viral to groups multiplies the effective damage dealt by all players and companions in the area for the debuff duration.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each viral status proc applied by the companion creates a viral infection aura centered on the proc'd enemy. Nearby enemies within the range enter the aura zone and receive the viral health reduction debuff. At rank 0, a small aura affects nearby enemies with a 50% increase in viral spread effectiveness; at rank 5, the aura expands to a larger range and affects more enemies with a 250% effectiveness boost. The infection aura persists for the duration and refreshes with each new companion viral proc in the zone.
+
+## Stats per rank
+
+| Rank | Viral Boost | Duration | Notes |
+|------|-------------|----------|-------|
+| 0    | +50%        | 8s       | Small viral spread zone |
+| 1    | +100%       | 8s       | Moderate aura coverage |
+| 2    | +150%       | 8s       | Good group viral application |
+| 3    | +200%       | 8s       | Strong viral zone |
+| 4    | +225%       | 8s       | High-effectiveness viral field |
+| 5    | +250%       | 8s       | Maximum viral spread |
 
 ## Acquisition
 
-Residual Viremia drops from various Zariman and Void Cascade missions.
+Residual Viremia drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is accessible through standard Zariman content after completing Angels of the Zariman. Players building companion-focused builds with viral-modded companions farm Zariman content for Viremia alongside other Residual series arcanes. Void Cascade rewards include Viremia across multiple rotation tiers. Warframe.market provides direct purchase for targeted acquisition.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Residual Viremia activates automatically when its trigger condition is met during combat.
+Residual Viremia excels on builds where companions deal viral damage through dedicated weapon modding. Kavats with Viral combination mods (Toxin + Cold) apply viral procs through melee attacks against groups. Sentinels equipped with viral-modded sidearms trigger Viremia on every successful viral status hit. Syndicate companions (Inaros, Titania) with viral-modded weapons in squad play contribute Viremia auras that benefit all nearby players. The arcane pairs particularly well with Residual Boils (toxin spread) and Residual Shock (electric chain) for comprehensive companion proc spread coverage.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+The viral infection aura requires the companion to apply the initial viral proc; the arcane does not independently generate viral status. Companions with slow attack rates produce fewer initial procs and therefore fewer aura opportunities per minute. Viral status caps at 10 stacks of 5.9% health reduction per stack (maximum 59% health reduction); the aura spreads the proc but does not independently add stacks beyond what companions apply directly. Enemies immune to viral status do not receive the health reduction from the Viremia aura even within range.
 
 ## Sources
 
-Residual Viremia is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset documents spread range and viral boost scaling for Residual Viremia.
+- Fandom wiki entry for Residual Viremia covers the Residual arcane series and companion viral proc mechanics.

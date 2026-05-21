@@ -26,39 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Steadfast is a rare Warframe arcane providing defensive scaling tied to knockdown mechanics. This arcane transforms knockdown vulnerability into survivability by granting armor scaling when the Warframe is knocked down, rewarding aggressive positioning in high-damage endgame content.
+Arcane Steadfast converts the knockdown condition -- typically a vulnerability state -- into a defensive empowerment event. When the warframe is knocked down, the arcane grants a flat armor bonus for 6 seconds, rewarding frames that absorb knockdowns during aggressive close-range combat rather than entirely avoiding them. This creates a unique defensive feedback loop where being knocked down briefly actually improves the frame's survivability window immediately following recovery.
+
+Knockdowns occur frequently in melee-range engagement with enemies that use slam attacks, charge attacks, or knockdown-inducing status effects. Frames without knockdown immunity from Handspring or similar mods experience these events regularly in content where enemies have knockdown-inducing attacks. Arcane Steadfast gives those frames a reason not to invest heavily in knockdown immunity -- instead accepting knockdowns as periodic armor buff opportunities.
 
 ## Effect
 
-When a Warframe is knocked down, Arcane Steadfast grants a stacking armor buff lasting 6 seconds. The buff scales from +50 flat armor at rank 0 to +250 at rank 5. Multiple knockdowns can stack the buffs, enabling exponential armor scaling during chaotic late-rotation void fissures.
+Each knockdown event triggers the armor bonus for 6 seconds. At rank 0, +50 flat armor provides a modest improvement to the armor-based damage reduction calculation during the 6-second window. At rank 5, +250 flat armor provides a substantial buffer that significantly improves damage resistance during the post-knockdown recovery frames and the active combat that immediately follows.
+
+The flat armor bonus stacks with percentage armor mods from the warframe's configuration. On high-base-armor frames, the additional 250 flat armor pushes the total armor value to thresholds that provide meaningful damage reduction improvements.
 
 ## Stats per rank
 
 | Rank | Armor Bonus | Duration | Notes |
 |------|-------------|----------|-------|
-| 0    | +50         | 6s       | Starter armor |
-| 1    | +100        | 6s       | Doubles baseline |
-| 2    | +150        | 6s       | |
-| 3    | +200        | 6s       | |
-| 4    | +225        | 6s       | |
-| 5    | +250        | 6s       | High armor stack |
+| 0    | +50         | 6s       | Modest post-knockdown buffer |
+| 1    | +100        | 6s       | Meaningful armor boost |
+| 2    | +150        | 6s       | Solid damage mitigation |
+| 3    | +200        | 6s       | Strong recovery window |
+| 4    | +225        | 6s       | Near-maximum protection |
+| 5    | +250        | 6s       | Maximum armor per knockdown |
 
 ## Acquisition
 
-Arcane Steadfast drops as a rare reward from Void Fissure endless missions, specifically from rotation C (at 20+ minutes). Void Fissure farming is the primary acquisition method.
+Arcane Steadfast drops as a rare reward from Void Fissure endless rotation C -- the deepest rotation in endless Void Fissure missions that requires extended mission time to reach. The rare designation and rotation depth make it one of the harder Void Fissure arcanes to farm through normal play. Warframe.market provides a purchase option for players who prefer platinum acquisition over committing to extended endless Fissure sessions.
 
-## Best on
+## Builds that use it
 
-Arcane Steadfast is ideal for disruptive, crowd-control-heavy Warframes:
+Arcane Steadfast suits tank-oriented frames that regularly take hits in close-range melee combat where knockdowns are common but not fatal. Grendel builds that engage enemies in melee range using Feast and Pulverize encounter knockdown sources from enemy attacks, triggering the armor bonus during those combat phases. Atlas builds that expect regular knockdowns from heavy Grineer or Infested enemies use Steadfast's armor window to survive the follow-up attacks that occur during the recovery animation.
 
-- **Heavy crowd-control frames** (Grendel, Atlas, Frost) that expect knockdowns.
-- **Tank-focused builds** that leverage knockdown frames for armor stacking.
-- **Endless void fissures** — stacking knockdowns maintain high armor throughout runs.
+Inaros and Nidus builds in high-health configurations accept knockdowns in Steel Path content where avoiding all knockdowns requires constant attention, instead using Steadfast to convert the events into brief armor buffs that extend survivability during the recovery phase.
 
 ## Notes
 
-The arcane incentivizes taking knockdowns as a survivability trade-off. Knockdown-immunity builds nullify the benefit. Works well with status-immune builds that allow safe knockdown exposure. Stacks additively with armor mods.
+The armor bonus applies immediately when the knockdown begins, not after recovery -- the frame gains armor during the knockdown animation itself, which provides protection against damage taken while downed. Knockdown immunity from Handspring or certain warframe passives prevents the arcane from triggering, since no knockdown event fires. Frames that use augments or abilities that cause controlled self-knockdown may be able to intentionally trigger Steadfast for the armor bonus, though this interaction depends on whether those self-knockdowns register as knockdown events.
 
 ## Sources
 
-WFCD arcane data and Fandom wiki void fissure endless rotation.
+- WFCD warframe-items dataset documents knockdown trigger conditions and flat armor scaling for Arcane Steadfast.
+- Fandom wiki entry for Arcane Steadfast covers knockdown immunity interaction notes and high-armor frame synergy.
+

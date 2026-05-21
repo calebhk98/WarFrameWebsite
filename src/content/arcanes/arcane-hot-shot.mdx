@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Hot Shot boosts damage output on status procs. This warframe arcane rewards status-heavy playstyles by providing consistent damage multipliers during void fissure content.
+Arcane Hot Shot boosts flat damage output on status procs, rewarding status-heavy playstyles with consistent damage multipliers. The flat damage bonus adds directly to weapon damage output for the duration, stacking with percentage-based damage mods to increase total output. Status-heavy builds that maintain frequent proc application keep the bonus active throughout combat, transforming status chance investment into dual-purpose value (proc effects plus damage boost).
 
-## Effects per rank
+The flat damage structure distinguishes Hot Shot from crit-focused arcanes: it benefits all weapon types equally regardless of critical chance, making it useful on status builds that do not invest heavily in crit modding. Weapons with mixed status-crit builds gain value from both damage sources, but pure status weapons without crit scaling gain proportionally more from Hot Shot's flat contribution.
 
-| Rank | Trigger Chance | Damage Bonus | Duration |
-|------|----------------|--------------|----------|
-| 0    | 15%            | +20          | 10s      |
-| 1    | 22%            | +30          | 10s      |
-| 2    | 30%            | +40          | 10s      |
-| 3    | 37%            | +50          | 10s      |
-| 4    | 41%            | +55          | 10s      |
-| 5    | 45%            | +60          | 10s      |
+## Effect
 
-Flat damage stacking enables rapid scaling through consecutive status procs during high-status-chance builds.
+Any status proc triggered through abilities or weapons checks the Hot Shot trigger chance. On success, flat damage is added to the warframe's active weapon damage for the duration. Multiple procs in quick succession can maintain near-permanent buff uptime at rank 5, as each new proc refreshes the 10-second window. At rank 0, 20 flat damage is most noticeable on weapons with lower base damage; at rank 5, 60 flat damage becomes proportionally significant against enemies at standard content levels.
+
+Flat damage applies before enemy armor and damage resistance calculations, meaning the actual reduction depends on enemy armor values and the damage type of the applied flat bonus.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Flat Damage | Duration |
+|------|----------------|-------------|----------|
+| 0    | 15%            | +20         | 10s      |
+| 1    | 22%            | +30         | 10s      |
+| 2    | 30%            | +40         | 10s      |
+| 3    | 37%            | +50         | 10s      |
+| 4    | 41%            | +55         | 10s      |
+| 5    | 45%            | +60         | 10s      |
 
 ## Acquisition
 
-Arcane Hot Shot drops from Zariman Void Fissure (4%) and Void Cascade rotation C (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Hot Shot drops from Zariman Void Fissure at 4% and Void Cascade rotation C at 2%. Zariman Ten-Zero content is accessible after completing Angels of the Zariman. Rotation C drops occur at the third rotation of Void Cascade runs, requiring longer sustained runs. Standard Zariman Void Fissure farming provides the higher drop rate. Warframe.market offers Hot Shot for direct purchase for players who prioritize efficiency over farming.
 
-## Best on
+## Builds that use it
 
-Arcane Hot Shot excels on high-status-chance builds that maintain proc momentum. The damage scaling complements status-heavy warframes and weapons.
+Arcane Hot Shot excels on high-status-chance builds that maintain proc momentum through rapid application. Status-focused weapons with 80% or higher status chance keep the buff active through continuous proc generation. Primary builds using Hunter Munitions (slash proc on crit) generate status procs alongside crit hits, enabling dual-trigger systems with Hot Shot. Heat or corrosive elemental builds apply procs consistently against most enemies, keeping the damage bonus active across faction types. Saryn or Equinox paired with Hot Shot extend the damage bonus through ability-based status applications.
+
+## Notes
+
+The flat damage type applied by Hot Shot matches the weapon's primary damage type, not the status proc type. The buff applies to all damage from the active weapon including multishot pellets and burst fire. Status procs from companions or squad members do not trigger Hot Shot; only procs originating from the Tenno's own weapons or abilities apply. The 10-second buff duration provides sufficient window for status builds to maintain perpetual uptime through consistent fire. At higher content levels, the flat damage contribution diminishes proportionally compared to percentage-based damage amplification from mods.
 
 ## Sources
 
-Zariman void fissure farming provides hot shot drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers flat damage values and trigger conditions for Arcane Hot Shot.
+- Fandom wiki entry for Arcane Hot Shot provides context on status proc sources and build integration.

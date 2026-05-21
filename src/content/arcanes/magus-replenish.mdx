@@ -3,12 +3,12 @@ slug: magus-replenish
 name: "Magus Replenish"
 type: operator
 maxRank: 5
-effect: "Magus Replenish enhances equipped items with stat bonuses."
+effect: "On Void Sling: Heal [heal]% Health."
 perRankStats:
   - rank: 0
-    stats: { effect: "On Void Sling:\ Heal 5% Health" }
+    stats: { heal: 5 }
   - rank: 5
-    stats: { effect: "On Void Sling:\ Heal 30% Health" }
+    stats: { heal: 30 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,45 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Magus Replenish is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This operator arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Magus Replenish restores operator health as a percentage of maximum health on each Void Sling. The operator's health pool is separate from the warframe's -- the operator has its own limited health value that does not benefit from warframe health mods. Sustaining operator health during extended combat phases requires either avoiding hits or finding a healing source. Magus Replenish provides passive self-healing tied directly to the operator's primary movement action, allowing the operator to recover health during repositioning between amp fire windows.
 
-## Effects per rank
+The percentage-based heal scales with the operator's maximum health pool. Operators who invest in Vazarin school passives or Unairu school bonuses that raise operator survivability receive proportionally larger absolute heals from each Sling at higher health totals. At rank 5, each Void Sling heals 30% of operator maximum health -- meaning the operator can fully restore from near-death to full health with as few as four Slings, making this arcane a strong self-sustain option for solo operator play.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['On Void Sling:\\nHeal 5% Health'] |
-| 5 | ['On Void Sling:\\nHeal 30% Health'] |
+Each Void Sling triggers a heal equal to a percentage of the operator's current maximum health. At rank 0, 5% per Sling provides minor trickle healing during active operator combat. At rank 5, 30% per Sling allows the operator to sustain through significant incoming damage by healing back over a short sequence of Sling movements.
+
+The heal fires immediately on Void Sling activation, before the Sling completes its travel -- each Sling provides the heal regardless of landing position or enemy proximity.
+
+## Stats per rank
+
+| Rank | Health Heal (% of Max) | Notes |
+|------|------------------------|-------|
+| 0    | 5%                     | Minor trickle |
+| 1    | 10%                    | Moderate recovery |
+| 2    | 15%                    | Solid sustain |
+| 3    | 20%                    | Strong healing |
+| 4    | 25%                    | High sustain |
+| 5    | 30%                    | Significant per-Sling restore |
 
 ## Acquisition
 
-Magus Replenish is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Magus Replenish drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. The arcane may originate from Eidolon hunt reward pools or Zariman void fissure drops. Warframe.market provides direct platinum purchase for players who prefer immediate access.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Magus Replenish suits operators who engage in extended melee-range combat or operate in areas with frequent operator health damage -- Zariman void cascade rotations, Eidolon arenas during limb shoot phases, or Void Cascade missions in Zariman where Void Angels and enemy Void entities frequently target the operator. At rank 5, the 30% heal per Sling allows aggressive play patterns where the operator takes hits during amp fire and recovers health through the Sling movement used to reposition.
 
-## Usage notes
+Unairu school operators who use Void Blast for armor stripping -- an ability that requires close range and puts the operator in hazard zones -- benefit from Replenish's healing restoring the health spent closing distance to targets.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The heal is based on the operator's maximum health, not the warframe's health pool. Warframe health mods have no effect on the heal amount. Operator maximum health can be increased through Vazarin school upgrades and certain operator suits -- investing in higher operator maximum health increases the absolute healing per Sling. The heal does not overheal beyond the operator's maximum health. Multiple Slings in rapid succession provide multiple separate heals as each Sling independently triggers the effect.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the Void Sling trigger condition and health percentage scaling for Magus Replenish.
+- Fandom wiki entry for Magus Replenish covers operator health mechanics, the percentage calculation basis, and Void Sling frequency considerations.

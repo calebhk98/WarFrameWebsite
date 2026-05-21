@@ -3,8 +3,7 @@ slug: secondary-outburst
 name: Secondary Outburst
 type: weapon
 maxRank: 5
-effect: 'On Weak Point Hit: Create explosion. Damage: [power]% weapon damage. Range:
-  [range]m.'
+effect: 'On Weak Point Hit: Create explosion. Damage: [power]% weapon damage. Range: [range]m.'
 perRankStats:
 - rank: 0
   stats: {}
@@ -34,31 +33,40 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Secondary Outburst creates explosions on secondary weapon weak point hits. On every weak point critical hit with a secondary weapon, an area explosion triggers dealing weapon damage. This arcane rewards precision secondary play. Early ranks deal 50% weapon damage in 6m radius; maximum rank deals 250% damage in 12m radius.
+Secondary Outburst creates AoE explosions when secondary weapon shots hit enemy weak points, converting precision targeting into area-damage events. Weak points in Warframe are defined hitboxes that deal bonus damage -- most commonly the head -- meaning Secondary Outburst inherently rewards accurate fire by adding area splash to precision shots. Every well-aimed shot becomes both a high-damage single-target hit and an area-damage event affecting nearby enemies.
 
-## Effects per rank
+The explosion mechanics enable secondary weapons without inherent AoE capabilities to contribute area damage during precision engagements. High-crit pistols that reward aimed headshots gain a complementary area output, making precision builds more effective in dense enemy groups without requiring weapon changes.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Hitting an enemy weak point with the secondary weapon triggers the explosion. The blast deals a percentage of the weapon's damage in an area radius around the weak point impact. At rank 0, 50% weapon damage in a 6-meter radius is sufficient to damage nearby light and medium enemies; at rank 5, 250% weapon damage in a 12-meter radius can severely damage or eliminate clustered enemies simultaneously with the primary target hit.
+
+The explosion damage uses the same damage type as the weapon's primary damage type, meaning weapons modded for specific elemental combos apply those procs to the area explosion as well.
+
+## Stats per rank
+
+| Rank | Explosion Damage | Explosion Range | Notes |
+|------|-----------------|-----------------|-------|
+| 0    | 50%             | 6m              | Minor area coverage |
+| 1    | 100%            | 7m              | Matching damage in small area |
+| 2    | 150%            | 8m              | Solid area output |
+| 3    | 200%            | 10m             | Strong group damage |
+| 4    | 225%            | 11m             | Very high area coverage |
+| 5    | 250%            | 12m             | Maximum explosion reach |
 
 ## Acquisition
 
-Secondary Outburst drops from various Zariman and Void Cascade missions.
+Secondary Outburst drops from Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade runs generate Outburst as part of the secondary-focused arcane pool. Players running precision secondary builds often farm Zariman for Outburst and complementary secondary arcanes simultaneously. Warframe.market provides direct purchase options for targeted acquisition.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Secondary Outburst activates automatically when its trigger condition is met during combat.
+Secondary Outburst excels on high-accuracy precision secondaries that frequently hit enemy head hitboxes. Sniper-class secondaries (Knell Prime, Magnus Prime) with aim-focused mechanics and high crit chance naturally produce consistent weak point hits, triggering Outburst explosions on each accurate shot. Builds combining headshot-focused mods with Outburst convert single-target precision into area clearing without switching to AoE weapons. Mesa with Peacemaker fired at head level generates automatic explosion triggers while the ability maintains fire, benefiting from the area output across enemy wave scenarios.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+Weak point detection requires the projectile to contact the designated hitbox. Explosions from Outburst respect standard AoE damage rules including line-of-sight attenuation against enemies behind cover within the radius. Self-damage from Outburst explosions is subject to standard self-damage rules. The explosion damage type matches the weapon's primary damage type after modding, so elemental combos apply their combined type to the explosion. Critical hits on the initial weak point shot do not affect the explosion damage calculation; the explosion scales from base weapon damage.
 
 ## Sources
 
-Secondary Outburst is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset documents explosion damage percentages and radius scaling for Secondary Outburst.
+- Fandom wiki entry for Secondary Outburst provides context on weak point mechanics and precision build integration.

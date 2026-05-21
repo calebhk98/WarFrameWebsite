@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Crepuscular grants emergency damage reduction at low health. This warframe arcane provides clutch survival windows during dangerous void fissure content where health management becomes critical.
+Arcane Crepuscular grants emergency damage reduction when health falls below 50%, providing clutch survival windows during dangerous encounters where health management becomes critical. The threshold-based trigger ensures the arcane activates precisely when defensive support is most needed -- not at full health during safe moments, but specifically when the frame is under enough pressure to reach the halfway health point. This design makes Crepuscular complementary to active defensive play rather than passive survivability stacking.
 
-## Effects per rank
+The 8-second duration provides meaningful recovery time, allowing players to pop health restores, trigger healing abilities, or retreat to safety after the mitigation activates. At rank 5, 90% damage reduction is substantial enough to withstand most incoming attacks while recovering.
 
-| Rank | Health Trigger | Proc Chance | Reduction | Duration |
-|------|----------------|-------------|-----------|----------|
-| 0    | 50%            | 10%         | 30%       | 8s       |
-| 1    | 50%            | 15%         | 45%       | 8s       |
-| 2    | 50%            | 20%         | 60%       | 8s       |
-| 3    | 50%            | 25%         | 75%       | 8s       |
-| 4    | 50%            | 27%         | 82%       | 8s       |
-| 5    | 50%            | 30%         | 90%       | 8s       |
+## Effect
 
-Damage reduction triggers immediately at health thresholds, providing emergency mitigation during burst damage encounters.
+When health drops below 50% of maximum health, Arcane Crepuscular checks the trigger chance. On success, damage reduction activates for 8 seconds. At rank 0, 30% damage reduction provides minor mitigation against moderate burst damage; at rank 5, 90% damage reduction essentially halves all incoming damage by multiplicative stacking, enabling sustained survival against attacks that would otherwise be lethal within a few hits. The reduction applies to all damage types including elemental and physical.
+
+The trigger fires on crossing the 50% threshold from above, not repeatedly while already below 50%. Players at 30% health do not continuously trigger Crepuscular; they must recover above 50% and drop back below again for a new trigger opportunity.
+
+## Stats per rank
+
+| Rank | Health Trigger | Proc Chance | Damage Reduction | Duration |
+|------|----------------|-------------|------------------|----------|
+| 0    | 50%            | 10%         | 30%              | 8s       |
+| 1    | 50%            | 15%         | 45%              | 8s       |
+| 2    | 50%            | 20%         | 60%              | 8s       |
+| 3    | 50%            | 25%         | 75%              | 8s       |
+| 4    | 50%            | 27%         | 82%              | 8s       |
+| 5    | 50%            | 30%         | 90%              | 8s       |
 
 ## Acquisition
 
-Arcane Crepuscular drops from Zariman Void Fissure (4%) and Void Cascade rotation A (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Crepuscular drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Both sources are accessible through standard Zariman Ten-Zero content after completing Angels of the Zariman. Rotation A drops occur consistently in Void Cascade runs. Warframe.market offers direct purchase for players who prefer platinum-based acquisition.
 
-## Best on
+## Builds that use it
 
-Arcane Crepuscular excels on balanced tank builds that occasionally dip to critical health. The emergency mitigation enables recovery windows during sustained void fissure combat.
+Arcane Crepuscular excels on balanced tank builds that sustain damage but have healing tools to recover above the 50% threshold between trigger events. Frames with moderate health pools that recover health through abilities (Inaros Devour, Nidus Mutation, Trinity Well of Life healing self) cycle through the 50% threshold regularly, triggering Crepuscular consistently. Solo Steel Path survival builds where burst damage spikes from elite enemies are dangerous benefit from the emergency mitigation during spike events. Pairing with Life Strike melee (health on heavy attack) provides the healing needed to reset the trigger condition efficiently.
+
+## Notes
+
+The threshold trigger fires once on crossing below 50% health; remaining below 50% does not continuously activate the arcane. Recovering above 50% health resets the trigger condition, allowing subsequent drops below 50% to trigger Crepuscular again. The 8-second mitigation window starts immediately on trigger and does not extend beyond 8 seconds regardless of continued damage. The proc chance at rank 5 is 30%; the remaining 70% of threshold crossings do not trigger mitigation. Shield depletion does not count toward the 50% health threshold; only actual health reduction triggers the check.
 
 ## Sources
 
-Zariman void fissure farming provides crepuscular drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers damage reduction values and trigger conditions for Arcane Crepuscular.
+- Fandom wiki entry for Arcane Crepuscular provides context on health threshold mechanics and tank build applications.

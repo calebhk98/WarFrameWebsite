@@ -1,14 +1,14 @@
 ---
 slug: arcane-ice
 name: "Arcane Ice"
-type: warframe
+type: other
 maxRank: 5
-effect: "Arcane Ice enhances equipped items with stat bonuses."
+effect: "Passive: +[chance]% chance to resist a Heat Status effect. At max rank, grants +1 Arcane Revive."
 perRankStats:
   - rank: 0
-    stats: { effect: "+17% chance to resist a <DT_FIRE_COLOR>Heat Status effect." }
+    stats: { resistance_chance: 17 }
   - rank: 5
-    stats: { effect: "+102% chance to resist a <DT_FIRE_COLOR>Heat Status effect.; +1 Arcane Revive" }
+    stats: { resistance_chance: 102 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,44 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Arcane Ice is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This warframe arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Arcane Ice provides passive resistance to heat status effects, reducing the frequency at which fire procs successfully apply to the warframe. Heat status causes a panic reaction that forces the affected target to stop and pat out flames, briefly interrupting all actions including movement, attacking, and ability casting. In high-difficulty content where heat procs from Scorches, fire Eximus enemies, or Corpus electrical-heat units occur frequently, heat panic interrupts can compromise defensive ability uptime and offensive momentum.
 
-## Effects per rank
+At rank 5, the 102% resistance chance provides complete immunity to heat status from external sources, eliminating the panic interruption from enemy attacks. Frames that rely on maintaining ability casts without interruption -- channeled abilities, sustained ability sequences -- particularly benefit from heat immunity in content where enemies apply heat status at high rates. The bonus Arcane Revive at maximum rank provides an emergency self-revive charge alongside the heat protection.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['+17% chance to resist a Heat Status effect.'] |
-| 5 | ['+102% chance to resist a Heat Status effect.', '+1 Arcane Revive'] |
+Arcane Ice passively resists heat status application each time a heat proc attempt occurs against the warframe. At rank 0, a 17% resistance chance prevents roughly one in six heat procs. At rank 5, 102% resistance provides complete immunity to heat status from external sources, plus one Arcane Revive charge for self-revival during missions.
+
+The heat panic prevention is particularly valuable for melee-range combat where Grineer Scorches and fire Eximus units apply heat procs on contact.
+
+## Stats per rank
+
+| Rank | Heat Resistance | Bonus | Notes |
+|------|----------------|-------|-------|
+| 0    | 17%            | --    | Occasional panic prevention |
+| 1    | 34%            | --    | Meaningful interrupt reduction |
+| 2    | 51%            | --    | Majority of procs resisted |
+| 3    | 68%            | --    | Near-complete heat immunity |
+| 4    | 85%            | --    | Very high resistance |
+| 5    | 102%           | +1 Arcane Revive | Full immunity + revive |
 
 ## Acquisition
 
-Arcane Ice is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Arcane Ice has no listed drop source in the WFCD dataset. Trading through warframe.market provides the most reliable acquisition path. Legacy event and special content sources may have historically provided the arcane; community resources document historical availability.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Arcane Ice suits builds in content featuring high-frequency heat proc sources -- Grineer Scorches in Kuva Fortress missions, fire Eximus enemies in endgame survival, Corpus Hyena Pack enemies that apply heat. Frames casting channeled abilities during melee-range engagement benefit from heat panic immunity, allowing uninterrupted ability usage during close-range combat.
 
-## Usage notes
+## Notes
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+Heat resistance prevents the panic interrupt and heat damage-over-time from status application. It does not prevent damage from heat damage type weapons -- only the status proc component is resisted. The arcane provides no protection against blast, radiation, or other combined elemental statuses that involve heat as a component. Heat procs from the warframe's own weapons or abilities are unaffected by the resistance.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the heat resistance chance scaling for Arcane Ice.
+- Fandom wiki entry for Arcane Ice covers heat panic mechanic interruption and immunity behavior at maximum rank.
+

@@ -26,29 +26,38 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Bellicose boosts critical chance on successful headshots. This warframe arcane rewards precision marksmanship with sustained damage scaling during void fissure content.
+Arcane Bellicose boosts critical chance on successful headshots, rewarding precision marksmanship with a critical chance buff that feeds back into further critical hits. The headshot trigger aligns the buff with the exact moment high-value damage outputs occur -- headshots already deal bonus damage through the game's headshot multiplier, and Bellicose further amplifies those moments by increasing the chance that subsequent shots are critical hits.
 
-## Effects per rank
+For weapons with moderate critical chance, Bellicose can push them from yellow crits into orange crit territory during the buff window. For weapons already above 50% crit, Bellicose can sustain red crit threshold consistency. The 10-second window provides sufficient duration for extended headshot chains without requiring constant uptime from every shot.
 
-| Rank | Headshot Chance | Crit Bonus | Duration |
-|------|-----------------|-----------|----------|
-| 0    | 15%             | +25%      | 10s      |
-| 1    | 22%             | +35%      | 10s      |
-| 2    | 30%             | +45%      | 10s      |
-| 3    | 37%             | +55%      | 10s      |
-| 4    | 41%             | +65%      | 10s      |
-| 5    | 45%             | +75%      | 10s      |
+## Effect
 
-Critical chance scaling stacks multiplicatively with existing crit mods and crit-scaling abilities, enabling explosive damage output during extended void fissure waves.
+Each headshot from any weapon checks the Bellicose trigger chance. On success, the critical chance bonus activates for 10 seconds. The bonus is additive with weapon critical chance mods: a weapon with 20% base crit + Arcane Bellicose rank 5 (+75%) = 95% critical chance during the buff window, enabling near-guaranteed crits. The buff applies to all weapon shots during the window, not just subsequent headshots, making off-headshot shots during the buff window benefit from increased crit probability.
+
+## Stats per rank
+
+| Rank | Headshot Trigger | Crit Chance Bonus | Duration |
+|------|-----------------|-------------------|----------|
+| 0    | 15%             | +25%              | 10s      |
+| 1    | 22%             | +35%              | 10s      |
+| 2    | 30%             | +45%              | 10s      |
+| 3    | 37%             | +55%              | 10s      |
+| 4    | 41%             | +65%              | 10s      |
+| 5    | 45%             | +75%              | 10s      |
 
 ## Acquisition
 
-Arcane Bellicose drops from Zariman Void Fissure (4%) and Void Cascade rotation B (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Bellicose drops from Zariman Void Fissure at 4% and Void Cascade rotation B at 2%. Both sources are accessible through standard Zariman Ten-Zero content after completing Angels of the Zariman. Rotation B drops occur frequently during Void Cascade runs. Warframe.market provides direct purchase options for players seeking immediate access without farming.
 
-## Best on
+## Builds that use it
 
-Arcane Bellicose excels on precision-focused frames with high-crit primary weapons. The bonus damage enables headshot-farming builds to achieve sustained DPS scaling.
+Arcane Bellicose excels on precision-focused frames with high-crit primary weapons. Sniper rifles with 30-40% base critical chance reach guaranteed crit territory during Bellicose windows, enabling consistent orange and red critical hits at extreme range. Semi-auto primaries that require deliberate aiming generate frequent headshots during aimed engagement, triggering Bellicose consistently. Builds pairing Bellicose with Point Strike and Vital Sense push total crit multiplier values to extreme levels during headshot-heavy combat. Mesa with Peacemaker fired at enemy head level benefits from Bellicose's consistency across rapid pistol fire at headshot angles.
+
+## Notes
+
+Headshot detection requires projectiles or hitscan to connect with the head hitbox, not merely proximity to the head. AoE damage does not trigger headshot bonuses regardless of impact location. The 10-second buff duration refreshes on each new headshot trigger, maintaining indefinite uptime during sustained accurate fire. Bellicose's critical chance bonus applies to the global critical chance, affecting all damage sources that use the weapon's crit stat during the window. Companion weapons and ability-spawned weapons do not benefit from the warframe's Bellicose buff.
 
 ## Sources
 
-Zariman void fissure farming provides bellicose drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers trigger conditions and critical chance values for Arcane Bellicose.
+- Fandom wiki entry for Arcane Bellicose documents headshot detection mechanics and crit build synergies.

@@ -3,12 +3,12 @@ slug: akimbo-slip-shot
 name: "Akimbo Slip Shot"
 type: weapon
 maxRank: 5
-effect: "Akimbo Slip Shot enhances equipped items with stat bonuses."
+effect: "While sliding or aim gliding: Gain [efficiency]% ammo efficiency with Dual Pistols."
 perRankStats:
   - rank: 0
-    stats: { effect: "While sliding or aim gliding: Gain 15% ammo efficiency with Dual Pistols." }
+    stats: { efficiency: 15 }
   - rank: 5
-    stats: { effect: "While sliding or aim gliding: Gain 65% ammo efficiency with Dual Pistols." }
+    stats: { efficiency: 65 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,45 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Akimbo Slip Shot is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This secondary arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Akimbo Slip Shot grants ammo efficiency to Dual Pistol secondary weapons while the player is sliding or aim gliding. Ammo efficiency reduces the ammunition consumed per shot -- at 65% efficiency, shots consume approximately 35% of their normal ammo cost, effectively extending the magazine duration and reducing the frequency of reloads or ammo pickups needed. This bonus is active throughout the sliding and aim glide states, both of which are common in Warframe's fast-movement combat style.
 
-## Effects per rank
+Dual Pistols are paired secondary weapons that fire simultaneously or in alternation from both hands -- Akstiletto, Aksomati, Akjagara, Akvasto, and other "Ak-" prefixed weapons, as well as Stubba and similar paired secondaries. The ammo efficiency bonus applies to the combined fire of both pistols, making it effective on high-fire-rate dual pistol configurations that drain ammo rapidly during sustained fire.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['While sliding or aim gliding: Gain 15% ammo efficiency with Dual Pistols.'] |
-| 5 | ['While sliding or aim gliding: Gain 65% ammo efficiency with Dual Pistols.'] |
+At rank 0, 15% ammo efficiency while sliding or aim gliding provides a minor extension of effective magazine size during movement. At rank 5, 65% ammo efficiency reduces ammo expenditure to approximately 35% of the base rate -- roughly tripling effective magazine longevity during active sliding or aim glide phases.
+
+The bonus is active throughout the sliding and aim gliding states and deactivates when the player transitions to standing, sprinting, or other movement states.
+
+## Stats per rank
+
+| Rank | Ammo Efficiency | Notes |
+|------|-----------------|-------|
+| 0    | 15%             | Minor conservation |
+| 1    | 25%             | Moderate reduction |
+| 2    | 35%             | Solid efficiency |
+| 3    | 45%             | Strong ammo savings |
+| 4    | 55%             | High efficiency |
+| 5    | 65%             | Near-triple magazine longevity |
 
 ## Acquisition
 
-Akimbo Slip Shot is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Akimbo Slip Shot drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. The arcane may originate from Zariman void fissure drops or trading. Warframe.market allows direct platinum purchase from other players.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Akimbo Slip Shot suits Dual Pistol builds that combine high-fire-rate secondaries with a slide-based combat style. Aksomati Prime builds that sustain continuous fire while sliding through enemy groups benefit from the 65% ammo efficiency extending the effective ammo pool before reload or ammo pickup is needed. Akjagara Prime builds that fire rapidly on approach benefit during the slide-fire sequences that define close-range Dual Pistol gameplay.
 
-## Usage notes
+Players who bullet-jump and slide continuously through corridors as their primary movement pattern maintain Slip Shot's efficiency bonus throughout large portions of the mission. Slide-attack melee builds that also use their secondary weapon during or between slides find Slip Shot reduces ammo anxiety during the frequent slide-state fire windows.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The ammo efficiency specifically requires the player to be in a slide or aim glide state -- standing, crouching, or sprinting fire does not benefit. Slide combat is a standard technique in Warframe where players slide through enemies to deal area damage with melee weapons; Slip Shot converts these already-common slides into efficiency windows for the secondary weapon. Aim glide activates during the peak of a bullet jump when aiming -- a brief window that combines with Slip Shot's bonus for precision shots during airborne movement. The bonus does not affect ammunition pickup rates or magazine size -- it reduces consumption during the active state.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the ammo efficiency scaling and the slide or aim glide state requirement for Akimbo Slip Shot.
+- Fandom wiki entry for Akimbo Slip Shot covers Dual Pistol eligibility criteria and ammo efficiency mechanic definitions for secondary arcanes.

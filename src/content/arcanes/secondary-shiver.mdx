@@ -33,31 +33,38 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Secondary Shiver applies cold-based slowdown when secondary cold procs trigger. On every cold status effect from secondary weapons, nearby enemies experience movement slowing. This arcane enables crowd control through secondary weapons. Early ranks slow enemies by 30%; maximum rank slows by 75%.
+Secondary Shiver applies area slowdown around enemies affected by cold status procs from secondary weapons. Unlike the base cold proc that slows only the single target hit, Shiver broadcasts a slow aura from that enemy to nearby targets, extending the crowd control radius beyond the weapon's actual hit zone. This makes cold-focused secondary builds disproportionately effective at controlling dense enemy groups even with weapons that lack innate AoE capability.
 
-## Effects per rank
+Cold status in Warframe reduces movement speed and attack speed of the affected enemy. Secondary Shiver amplifies this by extending the slow to surrounding targets, creating zone-control around each cold-proc hit that limits enemy mobility across a wider area. In objective-based missions (defense, interception, excavation), this crowd control substantially reduces enemy threat while defending targets.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each cold status proc applied by the secondary weapon creates a slow aura centered on the proc'd target. Nearby enemies within the aura radius experience the movement and attack speed reduction for the duration. At rank 0, 30% slowdown noticeably reduces enemy advance speed; at rank 5, 75% slowdown nearly halves enemy movement capability, giving players substantial reaction time and reducing incoming damage from melee-range enemies. The slow does not freeze enemies but significantly limits their threat potential in enclosed areas.
+
+## Stats per rank
+
+| Rank | Slow Amount | Duration | Notes |
+|------|-------------|----------|-------|
+| 0    | 30%         | 6s       | Moderate crowd control coverage |
+| 1    | 42%         | 6s       | Meaningful advance suppression |
+| 2    | 54%         | 6s       | Substantial enemy slowdown |
+| 3    | 63%         | 6s       | Strong area control |
+| 4    | 70%         | 6s       | Near-maximum slow effectiveness |
+| 5    | 75%         | 6s       | Maximum area slow per proc |
 
 ## Acquisition
 
-Secondary Shiver drops from various Zariman and Void Cascade missions.
+Secondary Shiver drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is obtainable through standard Zariman content accessible after completing Angels of the Zariman. Void Cascade runs across all rotation tiers encounter Shiver as a potential reward. Players building cold-focused secondary weapon builds often farm Zariman content because the proc-based arcanes available there synergize well with elemental secondary builds. Warframe.market provides direct purchase options for players who prefer platinum-based acquisition.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Secondary Shiver activates automatically when its trigger condition is met during combat.
+Secondary Shiver excels on cold-focused or combined elemental secondary builds. Weapons with Blast (Heat + Cold) or Magnetic (Cold + Electric) modding still generate cold procs individually, allowing Shiver to trigger even without a pure cold damage build. High-status-chance secondaries that apply cold at rapid rates maintain near-constant slow coverage across enemy groups. Defense mission builds specifically benefit from the area slow because enemies advancing toward an objective experience reduced mobility across the wave. Pairing with cold-augmenting mods increases the frequency and coverage of the slow aura.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+The slow aura radius is fixed and not affected by Ability Range mods. Multiple cold procs on different enemies create overlapping aura zones, extending total coverage across larger areas. The cold slow is additive with other movement-speed debuffs but capped at in-game slow limits. Enemies immune to cold or crowd control (Overguard, certain heavy units) resist or ignore the slow effect. The slow applies to movement speed and attack animation speed but does not affect enemy ability usage or projectile speed for ranged-attack enemies.
 
 ## Sources
 
-Secondary Shiver is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset covers the slow scaling and proc trigger conditions for Secondary Shiver.
+- Fandom wiki entry for Secondary Shiver documents aura behavior and cold proc interaction mechanics.

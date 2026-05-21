@@ -3,12 +3,12 @@ slug: arcane-shield
 name: "Arcane Shield"
 type: other
 maxRank: 5
-effect: "Arcane Shield enhances equipped items with stat bonuses."
+effect: "Passive: +[chance]% chance to resist an Impact Status effect. At max rank, grants +1 Arcane Revive."
 perRankStats:
   - rank: 0
-    stats: { effect: "+17% chance to resist an <DT_IMPACT_COLOR>Impact Status effect." }
+    stats: { resistance_chance: 17 }
   - rank: 5
-    stats: { effect: "+102% chance to resist an <DT_IMPACT_COLOR>Impact Status effect.; +1 Arcane Revive" }
+    stats: { resistance_chance: 102 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,44 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Arcane Shield is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Arcane Shield provides passive resistance to impact status effects, reducing how often impact procs successfully apply to the warframe. Impact status staggers the affected target, briefly interrupting movement and animation -- in high-difficulty content, repeated impact stagger interrupts ability casting, weapon firing, and movement in ways that can be lethal. The passive resistance prevents stagger application without requiring the player to run Handspring or similar anti-knockback mods.
 
-## Effects per rank
+At rank 5, the 102% resistance chance provides complete immunity to impact status application from external enemy sources. Impact procs are common from Grineer heavy weapons, Corpus projectile units, and Sentient attacks, making impact immunity broadly relevant across factions in Steel Path and Arbitration content. The bonus Arcane Revive at maximum rank provides an emergency self-revive charge in addition to the impact protection.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['+17% chance to resist an Impact Status effect.'] |
-| 5 | ['+102% chance to resist an Impact Status effect.', '+1 Arcane Revive'] |
+Arcane Shield passively resists impact status application each time an impact proc attempt occurs. At rank 0, a 17% resistance chance prevents roughly one in six impact procs. At rank 5, 102% resistance provides complete immunity to impact status from external sources, while the Arcane Revive provides a self-revive charge.
+
+The stagger prevention is particularly valuable during ability cast windows where interruption from impact stagger would otherwise cancel or delay ability usage.
+
+## Stats per rank
+
+| Rank | Impact Resistance | Bonus | Notes |
+|------|-----------------|-------|-------|
+| 0    | 17%             | --    | Occasional stagger prevention |
+| 1    | 34%             | --    | Meaningful interrupt reduction |
+| 2    | 51%             | --    | Most impact procs resisted |
+| 3    | 68%             | --    | Near-complete prevention |
+| 4    | 85%             | --    | Very high resistance |
+| 5    | 102%            | +1 Arcane Revive | Full immunity + revive |
 
 ## Acquisition
 
-Arcane Shield is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Arcane Shield has no listed drop source in the WFCD dataset. Acquisition routes include trading through warframe.market where players list available copies, or through legacy content drops that may have been updated since dataset compilation. Community drop tables provide current location data.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Arcane Shield suits caster frames that rely on uninterrupted ability cast sequences during combat. Frames with channeled abilities -- Volt's Discharge, Nidus's Virulence, Saryn's Miasma -- that can be interrupted by impact stagger maintain ability uptime more consistently with impact immunity. In Steel Path content where Grineer heavy unit volleys apply frequent impact procs, impact immunity prevents the stagger cycle that breaks offensive momentum.
 
-## Usage notes
+## Notes
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+Impact resistance prevents the stagger or knockdown component of the impact status, not the physical damage from impact-damage weapons. Weapons dealing impact damage still deal their full physical damage; only the status proc application is resisted. The Arcane Revive at rank 5 is consumed on use and does not regenerate within a mission.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the impact resistance chance scaling for Arcane Shield.
+- Fandom wiki entry for Arcane Shield covers impact stagger mechanics and ability interrupt interactions.
+

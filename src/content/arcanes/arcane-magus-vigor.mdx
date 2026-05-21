@@ -25,39 +25,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Magus Vigor is a team-support Operator arcane that grants health bonuses to nearby Warframes when Void Sling is cast. This arcane shifts the operator into a sustain role, providing emergency healing and extended bulk to squad members during intense void cascade encounters.
+Magus Vigor grants temporary maximum health bonuses to nearby warframes whenever the operator uses Void Sling, temporarily expanding the effective health pool of the squad. The health bonus operates as an additive percentage increase to the warframe's maximum health, rather than direct healing -- it increases the ceiling of what health the frame can hold, which is valuable in conjunction with health-restore abilities or arcanes that fill the frame back to maximum. An operator frequently sling-moving through Zariman content continuously tops up the squad's effective health capacity.
+
+Unlike healing arcanes that restore existing health points, Vigor's maximum health increase provides a buffer that allows the frame to absorb more total damage before reaching critical health thresholds. For frames with high maximum health -- Inaros at over 5000 effective health, Nidus with adaptation stacks -- the percentage bonus translates to substantial absolute health additions during the buff window.
 
 ## Effect
 
-Upon each Void Sling cast, nearby Warframes gain a temporary health percentage bonus ranging from +50% at rank 0 to +250% at rank 5. The effect lasts 12 seconds and can be refreshed by recasting Void Sling, enabling sustained health augmentation throughout combat.
+Each Void Sling activates the health bonus on nearby warframes for 12 seconds. At rank 0, +50% health bonus provides a meaningful increase to the frame's maximum health capacity during the buff window. At rank 5, +250% health bonus nearly triples the effective maximum health for 12 seconds -- a substantial buffer during high-damage encounter phases.
+
+The 12-second duration allows for multiple ability casts, positioning changes, or enemy engagements under the increased health capacity before the buff expires. Repeated Void Slings within the window refresh the timer.
 
 ## Stats per rank
 
 | Rank | Health Bonus | Duration | Notes |
 |------|--------------|----------|-------|
-| 0    | +50%         | 12s      | Baseline buffer |
-| 1    | +100%        | 12s      | Doubles HP pool |
-| 2    | +150%        | 12s      | |
-| 3    | +200%        | 12s      | |
-| 4    | +225%        | 12s      | |
-| 5    | +250%        | 12s      | Triples HP pool |
+| 0    | +50%         | 12s      | Moderate health expansion |
+| 1    | +100%        | 12s      | Doubles health pool |
+| 2    | +150%        | 12s      | Strong capacity increase |
+| 3    | +200%        | 12s      | Tripled health cap |
+| 4    | +225%        | 12s      | Near-maximum bulk |
+| 5    | +250%        | 12s      | Maximum health expansion |
 
 ## Acquisition
 
-Magus Vigor drops as an uncommon reward from Void Cascade missions on Zariman. The arcane becomes available early in void fissure progression and pairs well with other support-focused operator builds.
+Magus Vigor drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero. The arcane is accessible after completing Angels of the Zariman and entering Zariman content. Regular Void Cascade participation accumulates Vigor copies over time without requiring specific rotation targeting. Warframe.market provides a purchase alternative for players who prefer platinum acquisition.
 
-## Best on
+## Builds that use it
 
-Magus Vigor is essential for defensive squad builds:
+Magus Vigor suits support operator builds that prioritize squad health durability during extended Zariman Void Cascade waves. Operators running Void Sling-heavy mobility builds naturally trigger Vigor's health expansion as part of their movement pattern, distributing the bonus to nearby squadmates without dedicated support actions. High-health frames -- Inaros, Nidus, Grendel -- receive the largest absolute health additions from the percentage bonus, while lower-health frames receive smaller absolute values but still benefit from the proportional increase.
 
-- **Squishy Warframe support** — operators enhance low-armor frames like Frost or Mag.
-- **Extended void cascades** — sustained health buffs keep squads alive through long runs.
-- **Eidolon hunts** — provides emergency survivability when Warframe shields fail.
+Zariman Defense and Survival content where enemy damage escalates over time benefits from the sustained health capacity from repeated Vigor procs, as the operator actively moves between enemy clusters using Void Sling.
 
 ## Notes
 
-The health bonus applies as a temporary buffer that stacks multiplicatively with existing Warframe health. It does not heal—only increases maximum effective pool. The operator's Warframe is included in the area effect, allowing self-buff.
+The health bonus increases maximum health but does not automatically fill the health bar to the new maximum -- the frame's current health remains unchanged unless a separate healing source restores it to the expanded cap. When the buff expires, maximum health drops back to the base value, and any current health above the new maximum is reduced accordingly. The health bonus is not affected by Warframe health mods (Vitality, Primed Vigor) in a multiplicative fashion -- they apply independently to the base health value. The operator's own warframe benefits from Vigor if the warframe is nearby when Void Sling triggers.
 
 ## Sources
 
-WFCD arcane data and Fandom wiki Zariman location verification.
+- WFCD warframe-items dataset documents Void Sling triggers and health percentage scaling for Magus Vigor.
+- Fandom wiki entry for Magus Vigor covers maximum health buff mechanics and the interaction between health expansion and current health values.
+

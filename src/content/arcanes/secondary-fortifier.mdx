@@ -33,31 +33,38 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Secondary Fortifier boosts allied armor when secondary weapon kills occur. On every secondary weapon kill, nearby teammates receive a temporary armor buff. This arcane enables support-focused secondary builds. Early ranks grant 20% armor; maximum rank grants 100% armor to allies.
+Secondary Fortifier grants armor to the player and nearby allies on secondary weapon kills. The armor bonus applies as a flat percentage increase to existing armor values, making it more effective on frames with high base armor. Unlike shield-based defensive arcanes, Secondary Fortifier strengthens the armor layer that persists through shield depletion, providing meaningful protection in sustained engagements where shield cycling is impractical. The kill-based trigger ensures consistent activation in combat-heavy missions where secondary weapons are the primary kill tool.
 
-## Effects per rank
+The support radius encompasses squadmates within a moderate distance, making Secondary Fortifier useful in squad content where armor-focused frames anchor a defensive position. Allies who frequently break position beyond the support radius receive reduced benefit, so the arcane rewards coordinated team positioning in objective-based missions.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each kill with the secondary weapon grants the armor bonus to the player and nearby allies for a fixed duration. The bonus is additive with other armor buffs -- Rhino's Iron Skin, Steel Fiber mods, and Secondary Fortifier all contribute to total armor independently. At rank 5, the 100% armor bonus effectively doubles base armor for the buff duration, providing substantial damage reduction against physical-damage-dealing enemies. Frames with low base armor receive proportionally smaller absolute armor values, though the percentage improvement remains consistent across all frame types.
+
+## Stats per rank
+
+| Rank | Armor Bonus | Notes |
+|------|-------------|-------|
+| 0    | +20%        | Minimal reduction improvement |
+| 1    | +40%        | Moderate armor enhancement |
+| 2    | +60%        | Solid armor buffer |
+| 3    | +75%        | Strong defensive window |
+| 4    | +90%        | Near-maximum armor scaling |
+| 5    | +100%       | Doubles base armor temporarily |
 
 ## Acquisition
 
-Secondary Fortifier drops from various Zariman and Void Cascade missions.
+Secondary Fortifier drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is available through standard Zariman content progression, accessible after completing Angels of the Zariman. Consistent secondary weapon kill pacing during Void Cascade runs generates frequent drops over multiple sessions. Players seeking faster acquisition can check warframe.market for listings; the arcane trades at moderate plat values given its support-role niche.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Secondary Fortifier activates automatically when its trigger condition is met during combat.
+Secondary Fortifier suits squad support builds centered on maintaining team survivability through armor stacking. Frames paired with high-kill-rate secondaries -- pistols with rapid fire, full-auto secondaries -- trigger the arcane frequently enough to maintain near-permanent uptime during active combat. High-armor frames like Valkyr and Inaros benefit most from the percentage bonus due to their elevated base armor values. Squad compositions running Steel Path defense or survival content appreciate consistent armor coverage during enemy escalation phases. Pairing with secondary weapons that apply status effects extends defensive value through proc debuffs alongside the armor buff.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+The armor bonus duration is temporary; players must maintain secondary weapon kill pace to sustain uptime in longer missions. The support radius is fixed and not affected by Ability Range mods. Multiple squad members each equipping Secondary Fortifier do not stack the bonus beyond a single application per kill. The armor bonus affects all damage types that armor mitigates, including Physical and most elemental types, but does not protect against True damage or percentage-based health reduction. On low-armor frames, the absolute armor gain may be modest even at rank 5; high-armor frames extract the greatest defensive return.
 
 ## Sources
 
-Secondary Fortifier is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset documents the trigger condition and armor scaling for Secondary Fortifier.
+- Fandom wiki entry for Secondary Fortifier provides acquisition route details and team support interaction notes.

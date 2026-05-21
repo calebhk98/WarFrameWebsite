@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Emergence Dissipate cleanses status effects on transference. This operator arcane provides emergency utility when exiting warframes during dangerous void fissure content.
+Emergence Dissipate cleanses status effects on transference, providing emergency status removal when exiting the warframe to operator mode. This operator arcane delivers useful survivability in content where enemy status procs accumulate quickly -- particularly viral, corrosive, and magnetic procs that reduce health, armor, and shields. By entering operator mode and returning, players using Dissipate cleanse accumulated debuffs and gain a brief immunity window to reposition or heal before re-engaging.
 
-## Effects per rank
+The transference trigger makes Dissipate accessible to any frame, since operator transference is a universal mechanic available to all Tenno regardless of warframe kit. Builds that already cycle into operator for Void Dash or Operator amp usage trigger Dissipate naturally as part of their rotation.
+
+## Effect
+
+Entering operator mode from warframe mode triggers the Dissipate check. On success, all active status effects on the warframe are removed and a status immunity window activates immediately. The immunity prevents new status procs from applying during the window, which persists even after returning to warframe mode. At rank 0, 4 seconds of immunity is sufficient to clear a dangerous proc chain and reposition; at rank 5, the 8-second window covers most re-engagement scenarios without requiring additional defensive actions.
+
+Status cleansing removes all proc types including slash bleeds, heat burns, and magnetic disruption. The immunity window that follows prevents proc re-application during recovery, providing a clean defensive interval that other cleanse mechanics typically lack.
+
+## Stats per rank
 
 | Rank | Trigger Chance | Immunity Duration |
-|------|----------------|------------------|
-| 0    | 15%            | 4s               |
-| 1    | 22%            | 4.8s             |
-| 2    | 30%            | 5.6s             |
-| 3    | 37%            | 6.4s             |
-| 4    | 41%            | 7.2s             |
-| 5    | 45%            | 8s               |
-
-Status cleansing enables clean transferences during dangerous void fissure content where frames accumulate multiple procs.
+|------|----------------|-----------------|
+| 0    | 15%            | 4s              |
+| 1    | 22%            | 4.8s            |
+| 2    | 30%            | 5.6s            |
+| 3    | 37%            | 6.4s            |
+| 4    | 41%            | 7.2s            |
+| 5    | 45%            | 8s              |
 
 ## Acquisition
 
-Emergence Dissipate drops from Zariman Void Fissure (4%) and Void Cascade rotation A (2%). Regular zariman void farming yields this arcane naturally.
+Emergence Dissipate drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Zariman Ten-Zero content provides consistent access; players running daily Void Cascade runs encounter Dissipate through rotation A drops at a steady rate. The arcane is accessible to all players who have completed Angels of the Zariman and unlocked Zariman content. Standard farming runs targeting rotation A rotations are the most efficient source for accumulating Dissipate copies for ranking.
 
-## Best on
+## Builds that use it
 
-Emergence Dissipate is ideal for operators supporting frames in heavy crowd control scenarios. The immunity window provides safe operator repositioning.
+Emergence Dissipate benefits frames that operate in high-status environments where proc accumulation threatens survivability. Zariman Void Cascade itself exposes players to frequent enemy proc application, making Dissipate particularly well-suited to its own farming source. Builds on low-armor frames susceptible to slash bleed or viral reduction find Dissipate's cleanse more valuable than high-armor frames that weather status procs through damage mitigation. Operator-heavy builds (Madurai school users, amp-focused frames) naturally trigger Dissipate often through regular transference cycling, maintaining near-consistent uptime on the proc and immunity benefit.
+
+## Notes
+
+Dissipate fires on entering operator mode, not on exiting. The immunity window persists through the return to warframe mode, providing the cleanse benefit directly during re-engagement. The trigger chance applies per transference event; rapid cycling does not guarantee activation even at rank 5. Status effects applied during the immunity window are negated entirely, not just shortened. The arcane does not protect against damage; only status proc application is blocked during the immunity window. Operator abilities and void mode remain fully functional during the immunity window.
 
 ## Sources
 
-Zariman void fissure farming provides dissipate drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers trigger mechanics and immunity duration per rank for Emergence Dissipate.
+- Fandom wiki entry for Emergence Dissipate provides context on transference-based status cleanse interactions.

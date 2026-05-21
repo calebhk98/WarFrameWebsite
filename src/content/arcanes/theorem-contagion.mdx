@@ -3,8 +3,7 @@ slug: theorem-contagion
 name: Theorem Contagion
 type: operator
 maxRank: 5
-effect: 'On Void Blast: Spread toxin to [enemies] nearby enemies. Damage: [power]%
-  void damage.'
+effect: 'On Void Blast: Spread toxin to [enemies] nearby enemies. Damage: [power]% void damage.'
 perRankStats:
 - rank: 0
   stats: {}
@@ -34,31 +33,40 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Theorem Contagion spreads toxin contagion from operator void abilities. On every void blast ability cast, toxin spreads to nearby enemies dealing void damage. This arcane synergizes with Zariman void-focused builds. Early ranks infect 4 enemies at 50% void damage; maximum rank infects 8 enemies at 250% void damage.
+Theorem Contagion spreads toxin contamination from operator void blasts to nearby enemies, converting the operator's Void Blast ability into a combined damage and status tool. Void Blast is triggered by the operator sliding into enemies or using the designated void ability key; Contagion converts each blast into a toxin proc broadcast that affects multiple targets simultaneously rather than relying on individual hit detection.
 
-## Effects per rank
+Toxin damage bypasses shields and deals damage directly to enemy health, making Theorem Contagion particularly effective against Corpus enemies and shielded elite units. The operator's Void Blast originates from a mobile, difficult-to-target entity, allowing players to apply toxin procs from positioning that warframe attacks might not reach.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each Void Blast from the operator triggers the contagion spread. Nearby enemies within a fixed radius receive toxin status procs along with void damage calculated as a percentage of the operator's base void damage. At rank 0, 4 enemies at 50% void damage receive procs; at rank 5, 8 enemies at 250% void damage are affected. The toxin proc duration follows standard toxin mechanics and stacks with additional procs from subsequent void blasts.
+
+Operator void damage scales with Focus school bonuses and amp modding, making stronger operators deal more absolute toxin damage through Contagion than weaker operators using the same arcane.
+
+## Stats per rank
+
+| Rank | Enemies Affected | Void Damage | Notes |
+|------|-----------------|-------------|-------|
+| 0    | 4               | 50%         | Small group coverage |
+| 1    | 5               | 100%        | Moderate spread |
+| 2    | 6               | 150%        | Good area coverage |
+| 3    | 7               | 200%        | Strong group toxin |
+| 4    | 7               | 225%        | High-damage spread |
+| 5    | 8               | 250%        | Maximum coverage |
 
 ## Acquisition
 
-Theorem Contagion drops from various Zariman and Void Cascade missions.
+Theorem Contagion drops from Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade runs encounter Contagion as part of the Theorem arcane series. The Theorem series arcanes (Contagion, Infection, Demulcent) are often farmed together as they share Zariman drop sources. Warframe.market provides direct purchase options for targeted acquisition.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Theorem Contagion activates automatically when its trigger condition is met during combat.
+Theorem Contagion benefits operator-active builds where Void Blast is used intentionally rather than incidentally. Unairu school builds that use void blast for armor stripping (Caustic Strike) apply Contagion procs during the same action without additional effort. Madurai school builds that void sling into enemy groups can trigger Contagion through blast contact with multiple enemies simultaneously. Zenurik builds focused on energy restoration can trigger Contagion through incidental void blasts during energy restoration dashes. High-amp-damage builds amplify Contagion's 250% void damage multiplier through operator-specific amp upgrades.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+Void Blast contact requires the operator to physically intersect with enemies during the slide attack or void ability activation. Void Blast has limited range; Contagion spreads from the blast point outward, not from the operator position. The spread radius is fixed and does not benefit from warframe or operator Range mods. Toxin procs from Contagion stack with toxin procs from weapon or companion sources on the same target. Void damage from Contagion bypasses enemy armor calculations, making it consistently effective against armored units.
 
 ## Sources
 
-Theorem Contagion is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset documents spread targets and void damage multipliers for Theorem Contagion.
+- Fandom wiki entry for Theorem Contagion provides context on void blast mechanics and the Theorem arcane series.

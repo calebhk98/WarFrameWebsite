@@ -3,12 +3,12 @@ slug: arcane-protection
 name: "Arcane Protection"
 type: other
 maxRank: 5
-effect: "Arcane Protection enhances equipped items with stat bonuses."
+effect: "Passive: +[chance]% chance to resist a Corrosive Status effect. At max rank, grants +1 Arcane Revive."
 perRankStats:
   - rank: 0
-    stats: { effect: "+17% chance to resist a <DT_CORROSIVE_COLOR>Corrosive Status effect." }
+    stats: { resistance_chance: 17 }
   - rank: 5
-    stats: { effect: "+102% chance to resist a <DT_CORROSIVE_COLOR>Corrosive Status effect.; +1 Arcane Revive" }
+    stats: { resistance_chance: 102 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,44 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Arcane Protection is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Arcane Protection provides passive resistance to corrosive status effects, reducing the frequency at which corrosive procs successfully apply to the warframe. Corrosive status stacks armor reduction with each application -- up to 26% per stack -- making it one of the most threatening status effects for armor-dependent frames in high-level Grineer and Orokin content. Each corrosive proc that is resisted prevents an armor reduction stack, preserving the warframe's damage mitigation across the encounter.
 
-## Effects per rank
+At rank 5, the 102% resistance chance provides complete immunity to corrosive proc application from external sources. This is particularly impactful for armor-tanking builds -- frames like Valkyr, Inaros, and Rhino rely on their armor values for damage reduction, and corrosive stacks from Grineer enemies can strip this mitigation rapidly in Steel Path content. The bonus Arcane Revive at maximum rank provides an additional emergency self-revive.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['+17% chance to resist a Corrosive Status effect.'] |
-| 5 | ['+102% chance to resist a Corrosive Status effect.', '+1 Arcane Revive'] |
+Arcane Protection is a passive resistance that activates automatically when corrosive status is attempted against the warframe. At rank 0, a 17% resistance chance prevents one in six corrosive procs. At rank 5, 102% resistance provides full immunity to corrosive status from external sources, while the bonus Arcane Revive provides an emergency revive charge.
+
+Corrosive resistance is especially valuable against Grineer Ballista and Bombard units whose weaponry applies corrosive stacks at high frequency.
+
+## Stats per rank
+
+| Rank | Corrosive Resistance | Bonus | Notes |
+|------|---------------------|-------|-------|
+| 0    | 17%                 | --    | Partial armor protection |
+| 1    | 34%                 | --    | Meaningful stack reduction |
+| 2    | 51%                 | --    | Majority of procs resisted |
+| 3    | 68%                 | --    | Near-complete protection |
+| 4    | 85%                 | --    | Very high immunity |
+| 5    | 102%                | +1 Arcane Revive | Full immunity + revive |
 
 ## Acquisition
 
-Arcane Protection is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Arcane Protection has no listed drop source in the WFCD dataset, suggesting acquisition through legacy events, trading, or special content. Warframe.market provides the most reliable path to obtaining available copies. Community resources and official drop tables document current and historical sources.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Arcane Protection benefits armor-dependent frames in Grineer content, Orokin Void missions, and Steel Path where corrosive application is frequent and each stack meaningfully reduces damage mitigation. High-armor builds that would otherwise need to manage corrosive strip through other mechanics gain passive protection from the status without dedicating mod slots or ability casts to counteracting the debuff. Solo Steel Path operators facing Grineer units with corrosive weapons particularly benefit from the immunity at rank 5.
 
-## Usage notes
+## Notes
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+Corrosive resistance only prevents external enemy sources from applying corrosive status. The player's own weapons and abilities applying corrosive are unaffected. Corrosive immunity does not remove existing corrosive stacks -- only prevents new stacks from applying. Combined with Arcane Guardian or other armor-preservation arcanes, Protection extends the value of armor-based builds in prolonged engagements.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the corrosive resistance chance scaling for Arcane Protection.
+- Fandom wiki entry for Arcane Protection covers corrosive proc mechanics and armor interaction notes.
+

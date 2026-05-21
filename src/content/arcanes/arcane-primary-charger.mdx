@@ -26,29 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Primary Charger boosts primary weapon fire rate on reload. This weapon arcane rewards aggressive reload discipline and maintains offensive momentum during prolonged void fissure void engagements.
+Arcane Primary Charger links the reload action of a primary weapon to a temporary fire rate bonus, rewarding disciplined magazine management with a burst of attack speed at the start of each fresh magazine. Each reload triggers a chance check, and on success, the warframe fires faster for 8 seconds. This creates a natural rhythm for sustained-fire builds: drain the magazine, reload under cover or during a brief engagement pause, then re-enter combat with elevated fire rate during the next engagement window.
 
-## Effects per rank
+The reload trigger is one of the most predictable arcane conditions in Warframe. Unlike proc-based or kill-based triggers that depend on combat outcomes, every reload cycle creates a trigger opportunity. Weapons with frequent magazine depletion -- high fire rate rifles, burst-fire weapons -- generate reload triggers consistently throughout a mission, giving Arcane Primary Charger high natural uptime in active combat.
 
-| Rank | Trigger Chance | Fire Rate Boost | Duration |
-|------|----------------|-----------------|----------|
-| 0    | 15%            | +20%            | 8s       |
-| 1    | 22%            | +30%            | 8s       |
-| 2    | 30%            | +40%            | 8s       |
-| 3    | 37%            | +50%            | 8s       |
-| 4    | 41%            | +55%            | 8s       |
-| 5    | 45%            | +60%            | 8s       |
+## Effect
 
-Fire rate scaling stacks multiplicatively with existing fire rate modifications, enabling primary weapons to achieve significant DPS increases during extended void fissure farming sessions.
+Each primary weapon reload triggers a fire rate check. On success, fire rate increases by the listed percentage for 8 seconds. At rank 0, a 15% chance grants 20% fire rate -- one in seven reloads produces a fire rate boost that lasts through most of the next magazine dump. At rank 5, the 45% chance grants 60% fire rate -- nearly half of all reloads trigger the bonus, and a 60% fire rate increase substantially changes the feel of sustained-fire primary weapons.
+
+The 8-second duration is long enough to cover a full magazine dump for most primary weapon classes. Fast-reloading primaries that cycle magazines quickly maintain higher arcane uptime than slow-reloading weapons with small magazines, since rapid reload cycles generate more trigger opportunities per minute.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Fire Rate Boost | Duration | Notes |
+|------|----------------|-----------------|----------|-------|
+| 0    | 15%            | +20%            | 8s       | Occasional speed burst |
+| 1    | 22%            | +30%            | 8s       | Moderate uptime |
+| 2    | 30%            | +40%            | 8s       | Reliable fire rate bonus |
+| 3    | 37%            | +50%            | 8s       | Strong per-mag boost |
+| 4    | 41%            | +55%            | 8s       | High-uptime fire rate buff |
+| 5    | 45%            | +60%            | 8s       | Maximum sustained fire |
 
 ## Acquisition
 
-Arcane Primary Charger drops from Zariman Void Fissure rewards (3%) and Void Cascade rotation A (1.5%). Regular zariman void content participation yields this arcane naturally.
+Arcane Primary Charger drops from Zariman Void Fissure at 3% and Void Cascade rotation A at 1.5%. Void Cascade rotation A is the most frequently accessed rotation, making the arcane available in most extended Void Cascade sessions. The arcane is part of the Zariman content pool, accessible after completing Angels of the Zariman. Warframe.market provides an alternative for players preferring to purchase rather than farm through Zariman rotations.
 
-## Best on
+## Builds that use it
 
-Arcane Primary Charger is ideal for sustained-fire primary weapons like rifles and shotguns. The fire rate buff enables high-ammo-capacity primaries to leverage increased magazine throughput during void fissure content.
+Arcane Primary Charger fits rapid-fire primary weapon builds that empty magazines quickly and reload frequently. Soma Prime with high fire rate mods generates reload triggers at high frequency during sustained combat -- the brief reload pause triggers the arcane, and the fire rate boost then amplifies the next magazine dump. Phage and other full-auto primaries with large magazine capacities pair well with Charger because the 8-second duration covers a full magazine at elevated fire rate.
+
+Frames that boost fire rate through abilities -- Wisp's Haste Mote, Nova's Speed augment for allies -- stack the Charger bonus with ability-based fire rate, pushing total rounds-per-second to extreme values. Banshee's Silence augment encourages frequent reload mechanics, giving Charger consistent trigger windows during stealth engagements.
+
+## Notes
+
+The trigger activates at the moment reload completes, not when reload begins. Canceling a reload before completion does not trigger the check. The fire rate bonus applies immediately after the trigger and functions through the start of the next magazine until the 8-second timer expires. The bonus does not stack across multiple reloads -- triggering a second reload while the bonus is active refreshes the timer rather than increasing fire rate further. Primary weapons with very large magazines that take long periods between reloads -- snipers, Opticor -- generate fewer trigger opportunities per combat window, reducing average uptime compared to high-cycle-rate weapons.
 
 ## Sources
 
-Zariman void fissure farming provides the most accessible source. Players regularly completing void fissures naturally accumulate primary charger copies.
+- WFCD warframe-items dataset documents reload trigger conditions and fire rate scaling for Arcane Primary Charger.
+- Fandom wiki entry for Arcane Primary Charger covers timing interactions and magazine cycle synergy notes.
+

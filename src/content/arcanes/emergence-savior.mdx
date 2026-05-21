@@ -3,17 +3,17 @@ slug: emergence-savior
 name: Emergence Savior
 type: operator
 maxRank: 5
-effect: "When Warframe Health is Critical: [chance]% chance to grant [overshield]% overshields and revive downed allies."
+effect: "On Critical Health: [chance]% chance to grant the warframe [overshield] overshield and instantly revive it."
 perRankStats:
   - rank: 0
-    stats: { chance: 10, overshield: 50 }
+    stats: { chance: 25, overshield: 200 }
   - rank: 5
-    stats: { chance: 30, overshield: 150 }
+    stats: { chance: 75, overshield: 600 }
 drops:
   - source: "Zariman Void Fissure rewards"
-    chance: 3.0
-  - source: "Void Cascade rotation C"
-    chance: 1.5
+    chance: 4.0
+  - source: "Void Flood rotation A"
+    chance: 2.0
 sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
@@ -26,29 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Emergence Savior provides emergency protection and squad revival at critical moments. This operator arcane enables operators to act as last-resort squad support during dangerous void fissure content.
+Emergence Savior provides a last-resort survival mechanism that activates when the warframe reaches critical health thresholds. When triggered, the arcane restores the warframe with an overshield buffer, preventing immediate death during high-damage encounters. This makes it one of the few operator arcanes that directly influences warframe survivability rather than affecting operator combat effectiveness, bridging the gap between the two playstyles.
 
-## Effects per rank
+The overshield granted by Emergence Savior acts as an additional buffer beyond the warframe's maximum shield capacity. Overshields do not regenerate naturally like standard shields but provide an effective additional health layer that absorbs incoming damage. For shield-dependent frames that rely on shield gating mechanics, the overshield injection at the critical moment can reset the shield gate and give the player time to recover.
 
-| Rank | Trigger Chance | Overshield |
-|------|----------------|-----------|
-| 0    | 10%            | 50%       |
-| 1    | 15%            | 70%       |
-| 2    | 20%            | 90%       |
-| 3    | 25%            | 110%      |
-| 4    | 27%            | 130%      |
-| 5    | 30%            | 150%      |
+## Effect
 
-Emergency overshields and squad revival provide clutch squad recovery mechanisms during dangerous void fissure engagements.
+Emergence Savior checks its trigger chance when the warframe's health drops to a critical level. On success, the warframe receives an overshield grant equal to the arcane's listed value and is immediately revived if it had already fallen. At rank 0, a 25% trigger chance with 200 overshield provides occasional emergency protection. At rank 5, the 75% trigger chance activates reliably during most near-death events, and the 600 overshield absorbs significant follow-up damage.
+
+The revive component means the arcane can effectively function as a cheat-death mechanic for the warframe -- similar to arcanes like Arcane Guardian providing passive armor, but Savior provides an active save condition. The overshield and revive trigger simultaneously, ensuring the frame re-enters combat with an effective buffer rather than just base health values.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Overshield | Notes |
+|------|----------------|-----------|-------|
+| 0    | 25%            | 200       | Occasional last-stand save |
+| 1    | 37%            | 300       | Moderate save reliability |
+| 2    | 50%            | 400       | Equal odds of triggering |
+| 3    | 62%            | 500       | Reliable emergency response |
+| 4    | 70%            | 550       | High-probability save |
+| 5    | 75%            | 600       | Near-guaranteed last-stand |
 
 ## Acquisition
 
-Emergence Savior is a rare operator arcane dropping from Zariman Void Fissure (3%) and Void Cascade rotation C (1.5%). Regular zariman void farming yields this arcane through progression.
+Emergence Savior drops from Zariman Void Fissure at 4% and Void Flood rotation A at 2%. Zariman Ten-Zero content is accessible after completing the Angels of the Zariman quest. Void Flood rotation A is the earliest rotation reached during Void Flood runs, making Savior one of the more accessible Zariman operator arcanes to farm through regular play. Warframe.market provides an alternative acquisition path for players preferring platinum-based acquisition over farming.
 
-## Best on
+## Builds that use it
 
-Emergence Savior is ideal for operators in squad-support roles. The emergency revival and overshield enable operators to save squad wipes during dangerous content.
+Emergence Savior suits builds that regularly push into dangerous content where the warframe health frequently reaches critical levels. Solo Steel Path players benefit from the passive safety net during high-density encounters. Shield-gated builds using frames like Hildryn or Harrow gain additional benefit from the overshield component -- the overshield grant resets the shield gate timing, extending invulnerability windows during critical health events. Operator-heavy builds that frequently return to the warframe at low health due to operator damage or natural combat damage cycles trigger the check more often.
+
+High-health frames like Inaros and Nidus rarely reach critical health thresholds, making Savior less valuable for those frames. The arcane is most effective on frames with moderate to low health pools that routinely face burst damage events in endgame content.
+
+## Notes
+
+The trigger fires at critical health, not at death. "Critical health" thresholds can vary by the game's internal definition, so the arcane may activate before the health bar fully depletes. The overshield does not stack beyond a single Savior application -- if the arcane triggers a second time before the first overshield depletes, the timer refreshes but values do not stack. The revive component functions even if the warframe technically reaches 0 health, making Savior effective against one-shot kill scenarios that would otherwise bypass standard survivability tools.
 
 ## Sources
 
-Zariman void fissure farming provides savior drops. Players regularly completing void cascade events naturally accumulate this arcane over extended playtime.
+- WFCD warframe-items dataset documents the trigger conditions and overshield values for Emergence Savior.
+- Fandom wiki entry for Emergence Savior covers the revive interaction and shield gate synergy notes.
+

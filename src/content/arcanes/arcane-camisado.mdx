@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Camisado restores health on finisher attacks. This warframe arcane enables melee-focused frames to maintain health sustain through execution mechanics during void fissure combat.
+Arcane Camisado restores health on finisher attacks, enabling melee-focused frames to maintain health sustain through execution mechanics during combat. Finisher attacks in Warframe are triggered by approaching downed enemies (ground finisher) or sneaking up on unalerted targets (stealth finisher). Camisado converts these deliberate attacks into health recovery opportunities, linking offensive melee execution to defensive sustainability.
 
-## Effects per rank
+The finisher-based trigger suits playstyles that intentionally set up execution conditions -- stealth builds that approach enemies from behind, melee builds with high knockdown rate that frequently access ground finishers, or frames with abilities that force finisher-eligible states (Ash's Blade Storm, Banshee's Silence). Regular high-finisher-rate combat maintains sufficient heal frequency to significantly offset incoming damage in low-to-mid difficulty content.
 
-| Rank | Trigger Chance | Health Restore |
-|------|----------------|----------------|
-| 0    | 15%            | 50             |
-| 1    | 22%            | 75             |
-| 2    | 30%            | 100            |
-| 3    | 37%            | 125            |
-| 4    | 41%            | 137            |
-| 5    | 45%            | 150            |
+## Effect
 
-Health restoration triggers consistently during high-finisher-rate combat, enabling aggressive melee playstyles to sustain through void fissure encounters.
+Each finisher attack checks the Camisado trigger chance. On success, flat health is restored to the warframe immediately. At rank 0, 50 health restore per finisher provides minor sustain in light combat scenarios; at rank 5, 150 health restore per finisher is substantial for frames with 300-600 total health. Builds that perform multiple finishers per combat sequence -- particularly stealth builds performing consecutive undetected kills -- stack healing across rapid execution chains.
+
+Flat health restoration does not scale with Power Strength but benefits frames with higher total health through a larger effective health pool to replenish.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Health Restore | Notes |
+|------|----------------|----------------|-------|
+| 0    | 15%            | 50             | Minor heal per finisher |
+| 1    | 22%            | 75             | Moderate recovery |
+| 2    | 30%            | 100            | Solid finisher heal |
+| 3    | 37%            | 125            | Strong execution sustain |
+| 4    | 41%            | 137            | High-value finisher heal |
+| 5    | 45%            | 150            | Maximum finisher restoration |
 
 ## Acquisition
 
-Arcane Camisado drops from Zariman Void Fissure (4%) and Void Cascade rotation C (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Camisado drops from Zariman Void Fissure at 4% and Void Cascade rotation C at 2%. Zariman Ten-Zero content provides consistent access after completing Angels of the Zariman. Rotation C requires sustained Void Cascade runs; combining Camisado farming with Void Fissure sessions provides the best acquisition rate. Warframe.market lists Camisado for direct purchase at moderate plat values for players prioritizing immediate access.
 
-## Best on
+## Builds that use it
 
-Arcane Camisado excels on melee-focused frames with high-execution-rate weapons. The health sustain enables solo void fissure runs without external healing support.
+Arcane Camisado excels on melee-focused frames with high finisher access. Ash with Blade Storm paired with finisher-enabling mods generates guaranteed finisher access. Banshee using Silence to stun enemies enables repeat stealth finishers in close proximity. Ivara with Artemis Bow prowl-mode walking allows stealth finishers on every enemy in a squad. Ground finisher builds that pair high-knockdown melee weapons (Quiver, Ack and Brunt) with Covert Lethality ensure every knockdown leads to a finisher and potential Camisado heal. Frames with moderate health pools (200-400 HP) benefit proportionally more from 150 health restore than high-HP frames that need larger absolute values.
+
+## Notes
+
+Finisher attacks require the enemy to be in a finisher-eligible state: downed from knockback, ragdolled, staggered from stealth approach, or specifically vulnerable from ability effects. Ground finishers (on downed enemies) are the most accessible finisher type in standard combat. Stealth finishers require unalerted enemy state. The trigger chance applies per finisher attack; multiple finisher attacks in a sequence check independently. Health restore applies immediately upon finisher completion, allowing quick recovery during multi-enemy finisher chains.
 
 ## Sources
 
-Zariman void fissure farming provides camisado drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers finisher health restore values and trigger conditions for Arcane Camisado.
+- Fandom wiki entry for Arcane Camisado documents finisher types and melee build integration notes.

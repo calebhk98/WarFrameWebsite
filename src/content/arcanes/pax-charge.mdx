@@ -3,12 +3,12 @@ slug: pax-charge
 name: "Pax Charge"
 type: kitgun
 maxRank: 3
-effect: "Pax Charge enhances equipped items with stat bonuses."
+effect: "Battery Recharge Delay is reduced by +[reduction]%."
 perRankStats:
   - rank: 0
-    stats: { effect: "Battery Recharge Delay is reduced by +12.5%" }
+    stats: { reduction: 12.5 }
   - rank: 3
-    stats: { effect: "Battery Recharge Delay is reduced by +50%" }
+    stats: { reduction: 50 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,43 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Pax Charge is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This kitgun arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Pax Charge reduces the Battery Recharge Delay on Kitguns that use a battery-type magazine system. Battery Kitguns -- those built with battery-type loaders -- draw from a regenerating battery rather than a conventional ammo pool. After the battery is depleted or the player stops firing, a recharge delay period begins before regeneration starts. Pax Charge shortens this delay by a percentage, reducing downtime between firing windows.
 
-## Effects per rank
+Kitguns are modular secondary weapons built through the Ventkid market on Orb Vallis. The loader component determines the magazine type -- battery loaders create the regenerating battery mechanic that Pax Charge targets. Kitgun configurations using conventional magazine loaders do not have a Battery Recharge Delay and therefore do not benefit from this arcane.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['Battery Recharge Delay is reduced by +12.5%'] |
-| 3 | ['Battery Recharge Delay is reduced by +50%'] |
+At rank 0, the 12.5% reduction provides a minor decrease in recharge delay -- a Kitgun with a 2-second base recharge delay would see approximately 0.25 seconds cut from the delay start. At rank 3, the 50% reduction halves the recharge delay -- a 2-second base delay becomes approximately 1 second, significantly reducing the downtime period before battery regeneration begins.
+
+Shorter recharge delay means the battery starts filling sooner after fire ceases or battery depletes, improving sustained damage output on battery Kitguns during extended engagements.
+
+## Stats per rank
+
+| Rank | Recharge Delay Reduction | Notes |
+|------|--------------------------|-------|
+| 0    | 12.5%                    | Minor improvement |
+| 1    | 25%                      | Moderate reduction |
+| 2    | 37.5%                    | Solid delay cut |
+| 3    | 50%                      | Half the base delay |
 
 ## Acquisition
 
-Pax Charge is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Pax Charge is obtained through Ventkid-related content on the Orb Vallis, Venus. The Ventkid syndicate provides access to Kitgun components and Pax arcanes through standing rewards and blueprints. The WFCD dataset does not document specific drop tables for this arcane. Community drop tables and the in-game Ventkid market offer current sourcing information. Warframe.market provides direct platinum purchase for players who prefer trading.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Pax Charge suits battery Kitgun builds where the Battery Recharge Delay is a meaningful bottleneck in sustained fire performance. Catchmoon and Tombfinger Kitgun configurations built with battery loaders that create natural firing gaps benefit from Pax Charge's reduced delay between bursts. Players who use battery Kitguns as their primary damage source in extended combat scenarios -- Disruption runs, Survival, or Steel Path farming -- see the most benefit from eliminating delay-based downtime.
 
-## Usage notes
+The arcane is particularly relevant on battery Kitguns with short battery capacity and high fire rate, where the battery depletes quickly and the recharge delay period represents a significant fraction of the overall fire cycle. A 50% delay reduction at rank 3 meaningfully increases the effective fire availability across a sustained engagement.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+Pax Charge specifically targets the Battery Recharge Delay -- the pause before regeneration begins -- not the regeneration rate itself. Faster recharge rate would fill the battery faster once regeneration starts, while Pax Charge makes regeneration start sooner. The combined effect of starting sooner and filling at the standard rate reduces total downtime effectively but does not accelerate the fill speed. Battery Kitgun builds that pair Pax Charge with Primed Fast Hands (affecting the conventional reload analog on applicable configurations) can further minimize downtime. The arcane has no effect on Kitguns built with conventional magazine loaders that use standard ammo pickups.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the Battery Recharge Delay reduction scaling for Pax Charge.
+- Fandom wiki entry for Pax Charge covers Kitgun battery mechanics, recharge delay definitions, and the distinction between recharge delay reduction and recharge rate acceleration.

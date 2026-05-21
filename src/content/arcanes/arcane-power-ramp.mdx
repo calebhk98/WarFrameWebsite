@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Power Ramp provides stacking power strength during ability usage. This warframe arcane enables ability-spam builds to achieve exponential damage scaling during extended void fissure encounters.
+Arcane Power Ramp provides stacking power strength during ability usage, enabling ability-spam builds to scale damage output progressively throughout a combat encounter. Each ability hit that successfully triggers Power Ramp adds a stack that compounds with existing stacks, creating a ramp-up period where the first few ability casts are weaker and subsequent casts become progressively stronger. At full five stacks, the total power strength bonus is multiplicative with existing Transient Fortitude, Blind Rage, and other Power Strength mods, potentially reaching extreme total values.
 
-## Effects per rank
+The stacking structure rewards sustained ability-heavy play over burst windows. Frames that cast frequently and hit consistently (Octavia, Saryn, Mirage) reach maximum stacks quickly and maintain them through continuous ability activity, while frames with infrequent cast patterns reach maximum stacks more slowly.
 
-| Rank | Trigger Chance | Per Stack | Max Stacks | Duration |
-|------|----------------|-----------|-----------|----------|
-| 0    | 10%            | +15%      | 5         | 8s       |
-| 1    | 15%            | +22%      | 5         | 8s       |
-| 2    | 20%            | +30%      | 5         | 8s       |
-| 3    | 25%            | +37%      | 5         | 8s       |
-| 4    | 27%            | +41%      | 5         | 8s       |
-| 5    | 30%            | +45%      | 5         | 8s       |
+## Effect
 
-Stacking mechanics enable rapid power scaling when maintaining consistent ability usage during void fissure waves.
+Each ability hit from warframe abilities checks the trigger chance. On success, a power strength stack is applied for 8 seconds. Up to 5 stacks accumulate independently with overlapping durations. At rank 0, each stack provides 15% power strength (maximum 75% at five stacks); at rank 5, each stack provides 45% (maximum 225% at five stacks). At five stacks, Power Ramp contributes more than any single Power Strength mod slot, enabling builds to reach effective strength values far beyond normal mod caps.
+
+Each stack's 8-second timer resets independently on re-trigger, so active ability spammers maintain all five stacks simultaneously with continuous ability usage.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Per Stack | Max Stacks | Max Bonus | Duration |
+|------|----------------|-----------|-----------|-----------|----------|
+| 0    | 10%            | +15%      | 5         | +75%      | 8s       |
+| 1    | 15%            | +22%      | 5         | +110%     | 8s       |
+| 2    | 20%            | +30%      | 5         | +150%     | 8s       |
+| 3    | 25%            | +37%      | 5         | +185%     | 8s       |
+| 4    | 27%            | +41%      | 5         | +205%     | 8s       |
+| 5    | 30%            | +45%      | 5         | +225%     | 8s       |
 
 ## Acquisition
 
-Arcane Power Ramp drops from Zariman Void Fissure (4%) and Void Cascade rotation C (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Power Ramp drops from Zariman Void Fissure at 4% and Void Cascade rotation C at 2%. Zariman Ten-Zero content is accessible after completing Angels of the Zariman. Rotation C drops require extended Void Cascade runs; combining Power Ramp farming with Void Fissure sessions maximizes acquisition rate. Warframe.market provides direct purchase options for players prioritizing immediate access over farming efficiency.
 
-## Best on
+## Builds that use it
 
-Arcane Power Ramp excels on high-ability-cast-rate frames. The stacking power strength enables massive damage scaling during sustained ability spam builds.
+Arcane Power Ramp excels on high-cast-rate warframes where ability hits are frequent and reliable. Octavia's Resonator and Mallet apply ability hits continuously against enemies within range, building stacks rapidly. Saryn's Spores spread toxin procs that each count as ability hits, generating multiple stack applications per cast cycle. Equinox's Mend and Maim apply ability damage to all surrounding enemies simultaneously, triggering multiple stack procs with each ability pulse. Frames running Ability Efficiency mods (Fleeting Expertise, Streamline) cast more frequently and trigger Power Ramp more often, reaching maximum stacks faster.
+
+## Notes
+
+The trigger requires ability damage to connect with an enemy, not merely the ability activation. Abilities that miss or target empty space do not trigger Power Ramp. The 30% trigger chance at rank 5 means approximately one in three ability hits adds a stack; against many enemies simultaneously, multiple stacks can be gained from a single cast. The 8-second stack duration requires continuous ability activity to maintain all five stacks; pausing ability usage during reload or repositioning phases causes stacks to expire. Power Ramp's bonus is multiplicative with Transient Fortitude and additive with Intensify-type mods based on standard Power Strength calculation rules.
 
 ## Sources
 
-Zariman void fissure farming provides power ramp drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers trigger conditions and power strength scaling for Arcane Power Ramp.
+- Fandom wiki entry for Arcane Power Ramp documents stacking behavior and ability hit definitions.

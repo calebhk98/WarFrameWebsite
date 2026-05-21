@@ -3,12 +3,12 @@ slug: arcane-survival
 name: "Arcane Survival"
 type: other
 maxRank: 5
-effect: "Arcane Survival enhances equipped items with stat bonuses."
+effect: "On Predeath: [chance]% chance to reduce Bleedout Rate by [rate]%. At max rank, grants +1 Arcane Revive."
 perRankStats:
   - rank: 0
-    stats: { effect: "On Predeath:\ 10% chance for -25% Bleedout Rate" }
+    stats: { chance: 10, rate: 25 }
   - rank: 5
-    stats: { effect: "On Predeath:\ 60% chance for -150% Bleedout Rate\ +1 Arcane Revive; +1 Arcane Revive" }
+    stats: { chance: 60, rate: 150 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,42 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Arcane Survival is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Arcane Survival extends the bleedout timer when the warframe is downed, giving the player and squadmates more time to perform a revive before mission failure. When the warframe reaches zero health and enters the bleedout state, Arcane Survival checks its trigger chance and on success applies a reduction to the bleedout rate -- slowing how quickly the bleedout timer depletes. At rank 5, the 150% bleedout rate reduction effectively freezes or reverses the bleedout timer, providing significantly extended down time before the warframe fully expires.
 
-## Effects per rank
+Bleedout timer management is particularly relevant in solo content where no squadmates are available to revive quickly, and in squad content where the team is engaged and cannot reach the downed player immediately. Arcane Survival's extension provides the additional seconds needed to break off from combat and perform the revive.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['On Predeath:\\n10% chance for -25% Bleedout Rate'] |
-| 5 | ['On Predeath:\\n60% chance for -150% Bleedout Rate\\n+1 Arcane Revive', '+1 Arcane Revive'] |
+When the warframe enters the bleedout state, the arcane checks its trigger chance. On success, the bleedout rate reduction applies immediately, extending the remaining time in the downed state. At rank 0, a 10% chance reduces the bleedout rate by 25% -- modest extension that adds seconds to the countdown. At rank 5, a 60% trigger chance reduces bleedout rate by 150% -- effectively stopping or reversing the timer on proc, dramatically extending survival time. The bonus Arcane Revive at rank 5 provides one additional self-revive per mission.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Bleedout Rate Reduction | Bonus | Notes |
+|------|----------------|------------------------|-------|-------|
+| 0    | 10%            | -25%                   | --    | Modest extension |
+| 1    | 20%            | -50%                   | --    | Meaningful extra time |
+| 2    | 30%            | -75%                   | --    | Substantial bleedout delay |
+| 3    | 40%            | -100%                  | --    | Timer frozen on proc |
+| 4    | 50%            | -125%                  | --    | Extended revive window |
+| 5    | 60%            | -150%                  | +1 Arcane Revive | Maximum survival time |
 
 ## Acquisition
 
-Arcane Survival is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Arcane Survival has no listed drop source in the WFCD dataset. Acquisition is most reliable through warframe.market trading, where players list available copies. Legacy event and special content drops may have historically provided the arcane; community resources document historical sources.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Arcane Survival suits solo and low-coordination-squad builds where getting revived quickly is not guaranteed. Solo Steel Path players who occasionally make positioning errors benefit from the extended bleedout window that allows them to reorient and survive using solo revive mechanics. New players in difficult content benefit from the additional time while learning to avoid lethal scenarios.
 
-## Usage notes
+## Notes
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+The bleedout rate reduction interacts with the base bleedout timer length. A -150% rate reduction at rank 5 means the timer effectively halts on a successful proc. The Arcane Revive at rank 5 provides a self-revive regardless of the bleedout trigger chance -- it is always available once per mission. The bleedout trigger is separate from the Arcane Revive; both can contribute to survival in the same downed event.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the bleedout rate scaling and trigger chance for Arcane Survival.
+- Fandom wiki entry for Arcane Survival covers bleedout timer mechanics and Arcane Revive interaction at maximum rank.
+

@@ -33,31 +33,40 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Residual Malodor creates area denial clouds when companion poison procs trigger. On every poison status effect from companion weapons, a temporary toxic zone forms that damages nearby enemies. Kavats and Sentinels with poison weapons create layered toxin damage zones. Early ranks create small clouds affecting 4 enemies; maximum rank expands range to affect 8 enemies.
+Residual Malodor creates persistent toxic cloud zones when companion poison status procs trigger, generating area denial effects from companion attacks. Unlike Residual Boils which spreads toxin directly to nearby enemies, Malodor creates a stationary cloud that damages any enemy entering the area for the duration. This area denial capability makes Malodor more effective in defensive scenarios where enemies approach through predictable paths, as the cloud works passively without requiring additional companion attacks.
 
-## Effects per rank
+Poison/toxin status deals damage directly to health, bypassing shields. Malodor's toxic cloud inherits this property, making it effective against Corpus enemies who rely on shields for defense. In enclosed mission areas, the clouds accumulate in doorways and chokepoints, creating effective damage zones.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each poison status proc applied by the companion creates a toxic cloud at the location of the initial hit. Enemies within the cloud radius take toxin damage per second for the cloud's duration. At rank 0, the cloud affects 4 enemies in a small area; at rank 5, the cloud expands to affect 8 enemies across a larger radius. Multiple clouds from repeated companion procs stack and overlap, creating areas of compound toxin damage in high-traffic enemy paths.
+
+The cloud damage scales with the companion weapon's base toxin proc damage, so higher-damage companion weapons create more lethal clouds through Malodor.
+
+## Stats per rank
+
+| Rank | Enemies Affected | Notes |
+|------|-----------------|-------|
+| 0    | 4               | Small cloud coverage |
+| 1    | 5               | Moderate area expansion |
+| 2    | 5               | Slight coverage increase |
+| 3    | 6               | Good group coverage |
+| 4    | 7               | High-capacity cloud |
+| 5    | 8               | Maximum cloud coverage |
 
 ## Acquisition
 
-Residual Malodor drops from various Zariman and Void Cascade missions.
+Residual Malodor drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Players building companion-focused poison builds farm Zariman content for Malodor as part of the Residual arcane series. Regular Void Cascade runs include Malodor in companion arcane rewards. Warframe.market provides direct purchase for targeted acquisition.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Residual Malodor activates automatically when its trigger condition is met during combat.
+Residual Malodor benefits builds where companions deal consistent poison damage through dedicated weapon modding. Kavats with Viral modding (Toxin + Cold) produce toxin component procs that trigger Malodor. Sentinels with Sweeper Prime equipped and toxin mods generate frequent proc opportunities in close-range combat. Defense mission builds benefit most from Malodor's area denial as enemies approach fixed objectives through corridors, walking through accumulated toxic clouds without requiring companion repositioning. Survival builds where enemies cluster around life support capsules benefit from clouds placed near capsule defense perimeters.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+The toxic cloud is a stationary effect at the companion's attack location; it does not follow enemies or the warframe. Mobile enemies that move through the cloud receive damage during the time they spend inside the radius but escape when they exit. The cloud duration is fixed and does not extend with companion activity or Ability Duration mods. Multiple clouds placed by repeated procs accumulate in the same area, increasing damage density in targeted zones. Enemies immune to toxin damage receive no effect from Malodor clouds regardless of exposure time.
 
 ## Sources
 
-Residual Malodor is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset documents cloud coverage and trigger conditions for Residual Malodor.
+- Fandom wiki entry for Residual Malodor provides context on the Residual arcane series and toxic cloud behavior.

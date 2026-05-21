@@ -25,39 +25,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Magus Firewall is a team-defense arcane that grants Void barrier absorption to nearby Warframes when Void Sling is cast. This arcane specializes in sustained damage mitigation through temporary shield absorption, complementing shield-focused Warframes and defensive squad builds.
+Magus Firewall generates a Void damage absorption barrier on nearby warframes each time the operator uses Void Sling. The barrier absorbs incoming damage up to the listed absorption percentage before warframe health or shields take damage, functioning as a temporary buffer that the operator can refresh through active Void Sling usage. This makes the operator an active defensive asset during squad missions, rather than a passive support role -- each Void Sling repositioning action also applies a protective layer to nearby allies.
+
+The Void Sling mechanic involves the operator propelling forward in operator mode, covering distance quickly while in the void state. Operators who use Void Sling for mobility in Zariman content naturally trigger Firewall as part of their movement pattern, distributing barrier coverage without requiring dedicated support actions.
 
 ## Effect
 
-Each Void Sling cast creates a temporary void barrier on nearby Warframes, absorbing incoming damage. The absorption capacity scales from +25% of Warframe health at rank 0 to +125% at rank 5, persisting for 12 seconds. Multiple layers stack, enabling sustained barrier maintenance.
+Each Void Sling activates the absorption barrier on nearby warframes for 12 seconds. The absorption value scales as a percentage, representing the proportion of warframe health the barrier can absorb before breaking. At rank 0, 25% absorption provides a modest damage buffer before the warframe's actual health pool is exposed. At rank 5, 125% absorption provides a barrier exceeding the warframe's maximum health, absorbing a full health bar's worth of damage before expiring.
+
+The 12-second duration allows for coverage throughout most active engagements. Repeated Void Sling casts within the 12-second window refresh the timer, allowing continuous barrier uptime during mobile operator play.
 
 ## Stats per rank
 
 | Rank | Absorption | Duration | Notes |
 |------|------------|----------|-------|
-| 0    | +25%       | 12s      | Starter barrier |
-| 1    | +50%       | 12s      | Doubles baseline |
-| 2    | +75%       | 12s      | |
-| 3    | +100%      | 12s      | Equals Warframe health |
-| 4    | +112%      | 12s      | |
-| 5    | +125%      | 12s      | Exceeds Warframe health |
+| 0    | +25%       | 12s      | Starter protection layer |
+| 1    | +50%       | 12s      | Meaningful damage buffer |
+| 2    | +75%       | 12s      | Strong absorption |
+| 3    | +100%      | 12s      | Full health pool absorbed |
+| 4    | +112%      | 12s      | Exceeds full health |
+| 5    | +125%      | 12s      | Maximum absorption coverage |
 
 ## Acquisition
 
-Magus Firewall drops as an uncommon reward from Void Cascade missions on Zariman. Early progression unlocks access to this reliable defensive tool.
+Magus Firewall drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero. The arcane is accessible after completing Angels of the Zariman. Regular Void Cascade participation naturally accumulates Firewall copies over multiple sessions. Warframe.market provides an alternative purchase route for players who prefer platinum acquisition.
 
-## Best on
+## Builds that use it
 
-Magus Firewall excels in shield-focused squad compositions:
+Magus Firewall suits operator builds in squad missions where the operator's Void Sling mobility provides both repositioning and defensive support simultaneously. Operators using Void Sling for rapid movement between Void Cascade objectives distribute barrier coverage to squadmates along the movement path. High-health warframes like Inaros and Nidus extract larger absolute absorption values from the percentage-based barrier due to their elevated maximum health, though the percentage applies equally to any frame's health pool.
 
-- **Shield-tank Warframes** (Trinity, Hildryn, Gyre) scale absorption effectively.
-- **Extended void cascades** — sustained barrier maintains protection through long runs.
-- **Steel Path void fissures** — emergency absorption saves squads from lethal hits.
+Squad compositions that rely on maintaining health pools during extended Void Cascade waves -- where enemy damage escalates over time -- benefit from the consistent barrier refreshes provided by an operator active in Void Sling mobility.
 
 ## Notes
 
-Void barrier absorption is temporary and depletes when damaged. Reapplying Void Sling before expiration extends protection. The operator's own Warframe benefits from the barrier when nearby.
+The absorption barrier is a temporary buffer that takes priority over warframe shields and health -- incoming damage depletes the barrier first before reaching the frame's own defensive layers. The barrier does not regenerate once depleted; only a new Void Sling cast refreshes it. The percentage is calculated from the warframe's maximum health at the moment of barrier application, making it proportional to the frame's current maximum. Multiple operators each running Magus Firewall in the same squad generate separate barrier applications per Void Sling, potentially overlapping their coverage windows on shared nearby allies.
 
 ## Sources
 
-WFCD arcane data and Fandom wiki Zariman void cascade location.
+- WFCD warframe-items dataset documents Void Sling triggers and absorption scaling for Magus Firewall.
+- Fandom wiki entry for Magus Firewall covers barrier mechanics and percentage-based absorption behavior.
+

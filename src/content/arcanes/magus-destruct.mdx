@@ -26,31 +26,41 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Magus Destruct enhances Void Blast with a chance to trigger secondary explosions. This operator arcane converts single-target void beam attacks into area-of-effect clearing tools, making it invaluable for operators who need to handle grouped enemies efficiently.
+Magus Destruct adds secondary explosions to Void Blast hits, converting the melee-range operator attack into an area-of-effect burst that damages nearby enemies. Void Blast -- the close-range void melee strike in operator mode -- hits single targets at its base range, but Destruct's triggered explosions extend the damage zone to a 10-meter radius around each blast hit. This allows operators using Void Blast for armor stripping or crowd control purposes to simultaneously damage clustered enemies within the radius.
+
+Void Blast has use cases beyond the combat tool -- Unairu school operators use it for armor stripping, and its hit generates various arcane trigger checks. Destruct adds damage output to these utility uses, enabling the operator to contribute area damage while performing the Void Blast for other purposes without requiring dedicated area attack inputs.
 
 ## Effects per rank
 
 | Rank | Trigger Chance | Explosion Damage | Area Radius |
-|------|----------------|------------------|------------|
-| 0    | 10%            | 100               | 10m        |
-| 1    | 15%            | 140               | 10m        |
-| 2    | 20%            | 180               | 10m        |
-| 3    | 25%            | 220               | 10m        |
-| 4    | 27%            | 260               | 10m        |
-| 5    | 30%            | 300               | 10m        |
+|------|----------------|-----------------|------------|
+| 0    | 10%            | 100             | 10m        |
+| 1    | 15%            | 140             | 10m        |
+| 2    | 20%            | 180             | 10m        |
+| 3    | 25%            | 220             | 10m        |
+| 4    | 27%            | 260             | 10m        |
+| 5    | 30%            | 300             | 10m        |
 
-Each void blast has an independent roll for triggering the secondary explosion, allowing skilled void beam operators to generate consistent area damage when hitting enemies in succession.
+## Effect
+
+Each Void Blast hit triggers a chance check. On success, a secondary explosion fires centered on the hit point, dealing void damage to all enemies within 10 meters. At rank 0, a 10% chance with 100 damage provides occasional area damage during Void Blast sequences. At rank 5, a 30% chance with 300 damage activates roughly once every three blasts, providing consistent area clearing during sustained Void Blast usage.
+
+The 10-meter radius is fixed and does not scale with ability range mods or Focus school upgrades.
 
 ## Acquisition
 
-Magus Destruct drops from Eidolon Hydrolyst with an 8% chance, making it one of the more frequently available operator arcanes from plains farming. Zariman Void Fissure missions also reward this arcane with lower frequency, providing an alternative path for players who prefer fissure content.
+Magus Destruct drops from Eidolon Hydrolyst capture at 8% and Zariman Void Fissure rewards at 2%. The 8% drop rate from Hydrolyst capture makes Destruct one of the more accessible Eidolon-source operator arcanes. Capturing (not killing) the Hydrolyst at the end of a Tridolon hunt provides the drop. Warframe.market provides an alternative for players who prefer platinum acquisition.
 
-To obtain this arcane, operators need access to Plains of Eidolon and either a squad for eidolon hunting or participation in void fissure excavations. The 8% drop rate makes this one of the more obtainable specialized operator arcanes.
+## Builds that use it
 
-## Best on
+Magus Destruct suits operator builds that use Void Blast for utility purposes -- Unairu school armor stripping, Magus-arcane synergy triggers -- and want to extract additional damage value from each blast without changing their combat pattern. Operators fighting grouped Void Manifestations in Zariman content who use Void Blast in melee range can trigger Destruct's explosion to damage surrounding manifestations during the blast. The area damage supplements the operator's amp fire, particularly in content where multiple close-range enemies cluster around a central target.
 
-Magus Destruct excels on operators using void beam focus builds during fissure missions where crowd control becomes critical. The area damage enables soloists and squads to clear void manifestations efficiently while farming relic drops, making it essential for endgame operator farming strategies.
+## Notes
+
+The explosion is void damage type, which benefits from void damage bonuses active on the operator. The explosion is centered on the hit target, not on the operator -- enemies within 10 meters of the hit target receive the damage, not enemies within 10 meters of the operator's position. The Void Blast must successfully connect with a target to trigger Destruct's check; misses do not generate explosion checks. The 10-meter radius provides meaningful coverage in indoor Zariman environments where enemies cluster in corridors and rooms.
 
 ## Sources
 
-Eidolon captures remain the primary farming route, with Zariman fissures providing supplementary drops. Regular void fissure participation yields this arcane naturally over time, making it a reliable choice for operators transitioning into endgame content.
+- WFCD warframe-items dataset documents the Void Blast trigger chance and explosion damage scaling for Magus Destruct.
+- Fandom wiki entry for Magus Destruct covers void damage type behavior and Eidolon Hydrolyst acquisition notes.
+

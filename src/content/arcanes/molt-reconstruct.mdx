@@ -3,12 +3,12 @@ slug: molt-reconstruct
 name: "Molt Reconstruct"
 type: warframe
 maxRank: 5
-effect: "Molt Reconstruct enhances equipped items with stat bonuses."
+effect: "Heal yourself and allies within Affinity Range [heal] Health for each Energy point spent on the initial casting cost of abilities. At max rank: +1 Arcane Revive."
 perRankStats:
   - rank: 0
-    stats: { effect: "Heal yourself and allies within Affinity Range 1 Health for each Energy point spent on the initial casting cost of abilities." }
+    stats: { heal: 1 }
   - rank: 5
-    stats: { effect: "Heal yourself and allies within Affinity Range 6 Health for each Energy point spent on the initial casting cost of abilities.; +1 Arcane Revive" }
+    stats: { heal: 6 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,47 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Molt Reconstruct is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This warframe arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Molt Reconstruct heals the warframe and all allies within Affinity Range proportional to the energy cost of each ability cast. Each energy point spent on the initial cast cost of an ability returns health to the caster and nearby allies -- 1 health per energy at rank 0, 6 health per energy at rank 5. Sustained ability casters on energy-rich builds generate significant cumulative healing across a mission as a byproduct of normal ability use, converting energy expenditure into a passive heal that supports both the player and squadmates.
 
-## Effects per rank
+The Affinity Range -- the standard radius used for affinity sharing and many area-of-effect mechanics in Warframe -- defines the distribution zone. Allies within this radius receive the healing simultaneously with the caster. This makes Molt Reconstruct a passive team support arcane that scales with the caster's ability rotation frequency.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+At maximum rank, the arcane also grants one Arcane Revive charge per mission.
 
-| Rank | stats |
-|------|------|
-| 0 | ['Heal yourself and allies within Affinity Range 1 Health for each Energy point spent on the initial casting cost of abilities.'] |
-| 5 | ['Heal yourself and allies within Affinity Range 6 Health for each Energy point spent on the initial casting cost of abilities.', '+1 Arcane Revive'] |
+## Effect
+
+The heal fires on the initial cast cost of each ability -- not on toggle drain, but on the upfront energy payment when the ability is first activated. An ability costing 75 energy generates 75 health at rank 1, or 450 health at rank 5, distributed to all nearby allies simultaneously. Abilities with high base energy costs provide larger heals per cast.
+
+At rank 5, a warframe casting a 100-energy ability heals 600 health to everyone in range. Frames that cast multiple high-cost abilities per minute can generate several thousand health in healing over a 5-minute mission segment.
+
+## Stats per rank
+
+| Rank | Health per Energy Spent | Notes |
+|------|------------------------|-------|
+| 0    | 1                       | Minimal heal |
+| 1    | 2                       | Moderate scaling |
+| 2    | 3                       | Solid output |
+| 3    | 4                       | Strong sustain |
+| 4    | 5                       | High healing |
+| 5    | 6 + Arcane Revive       | Maximum output |
 
 ## Acquisition
 
-Molt Reconstruct is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Molt Reconstruct drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. Warframe.market provides direct platinum purchase for players who prefer not to farm this arcane.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Molt Reconstruct suits high-energy-expenditure frames that cast abilities frequently and are played in squad content where allies benefit from passive healing. Saryn builds that cast Spore, Molt, Miasma, and Contagion regularly generate healing from each ability cast. Octavia builds casting Mallet, Resonator, and Metronome provide healing pulses to squadmates each time an ability activates. Hildryn, whose abilities convert shields to energy-equivalent costs, may interact with Reconstruct differently depending on implementation.
 
-## Usage notes
+Support frames like Wisp or Trinity that cast multiple buffing abilities throughout a mission contribute healing as a byproduct of their support rotation -- each buff cast heals nearby allies without the caster dedicating attention to healing.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The heal scales with the initial casting cost of the ability -- this is the base energy cost before efficiency mods reduce it. High efficiency builds that reduce ability costs to minimal values also reduce the per-cast healing, as less energy is technically spent. This means Molt Reconstruct performs better on builds with moderate efficiency rather than maximum efficiency reduction. The heal does not apply to the channel drain of toggle abilities -- only the initial activation payment counts. Multiple squadmates each running Molt Reconstruct provide independent healing events per ability cast by each individual, potentially stacking significant total healing in ability-heavy groups.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the per-energy heal scaling and Affinity Range distribution for Molt Reconstruct.
+- Fandom wiki entry for Molt Reconstruct covers ability casting cost definitions, the initial-cast-only trigger rule, and Arcane Revive behavior at rank 5.

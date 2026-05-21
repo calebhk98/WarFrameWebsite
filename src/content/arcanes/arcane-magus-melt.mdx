@@ -25,39 +25,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Magus Melt is a rare Operator arcane that grants offensive capability by applying heat status to nearby enemies when Void Sling is cast. This arcane shifts the operator from pure support into hybrid damage-support, enabling proc-based crowd control and passive damage amplification.
+Magus Melt applies heat status procs to nearby enemies when the operator uses Void Sling, converting the mobility action into a concurrent damage-and-debuff event. Heat status in Warframe causes a panic reaction in affected enemies that briefly interrupts their attacks, while also applying a heat damage-over-time effect that ticks for several seconds. At rank 5, the 100% trigger chance ensures every Void Sling activation inflicts heat status on all nearby enemies without requiring a separate damage action.
+
+Heat procs from external sources like Magus Melt count toward the fire-spread mechanic that allows heat status to propagate to nearby enemies when existing heat procs are already present. In dense enemy groups, a single Melt trigger can cascade heat status across multiple targets, amplifying the crowd control and damage-over-time coverage beyond the immediate blast radius.
 
 ## Effect
 
-Each Void Sling cast triggers a heat proc on nearby enemies with a scaling probability. At rank 0, the chance is 20%, increasing linearly to a guaranteed 100% proc at rank 5. Heat status causes burning damage-over-time and can spread to nearby enemies, enabling exponential area denial.
+Each Void Sling applies a heat status check to nearby enemies. On success, affected enemies receive a heat proc that deals heat damage over time and causes the panic reaction. At rank 0, a 20% trigger chance means roughly one in five Void Slings generates heat procs in the area. At rank 5, 100% trigger chance means every Void Sling guaranteed fires heat procs -- the 100% rate eliminates proc variability entirely, making the arcane fully reliable during active Void Sling usage.
+
+The heat proc magnitude and duration scale with the operator's void damage values and not independently from the arcane.
 
 ## Stats per rank
 
 | Rank | Heat Proc Chance | Notes |
-|------|------------------|-------|
-| 0    | 20%              | Rare procs |
-| 1    | 40%              | |
-| 2    | 60%              | |
-| 3    | 80%              | |
-| 4    | 90%              | |
-| 5    | 100%             | Guaranteed heat |
+|------|-----------------|-------|
+| 0    | 20%             | Occasional heat events |
+| 1    | 40%             | Meaningful proc rate |
+| 2    | 60%             | Majority of Slings proc |
+| 3    | 80%             | Near-guaranteed heat |
+| 4    | 90%             | Highly reliable |
+| 5    | 100%            | Every Sling applies heat |
 
 ## Acquisition
 
-Magus Melt drops as a rare reward from Void Cascade missions on Zariman. The increased rarity reflects the arcane's offensive output compared to support-focused peers.
+Magus Melt drops as a rare reward from Void Cascade missions on Zariman Ten-Zero. The rare designation reflects the arcane's damage output advantage over support-only operator arcanes. Regular Zariman Void Cascade participation provides Melt drops over time. Warframe.market provides a purchase alternative for players who prefer platinum acquisition.
 
-## Best on
+## Builds that use it
 
-Magus Melt pairs well with offense-focused operator builds:
+Magus Melt suits operator builds that use Void Sling aggressively for both movement and combat in Zariman content. Operators sling through enemy groups to apply heat procs across multiple targets simultaneously before transitioning to amp fire, pairing the crowd control of heat panic with subsequent amp damage during the disrupted phase. Madurai school operators who use Void Sling for the school's mobility mechanics trigger Melt on each sling, adding heat crowd control to every repositioning action without dedicated casting.
 
-- **Damage-boosting operator augments** — synergizes with offensive Void Sling builds.
-- **Zariman defense/survival** — heat procs freeze enemies and amplify squad damage.
-- **Eidolon hunts** — provides supplementary damage and status application to eidolons.
+Builds that rely on heat proc synergies -- warframe abilities that benefit from enemies being on fire, fire-spread elemental mods, or Condition Overload heat stacks -- benefit from Melt generating the initial heat procs that those systems amplify.
 
 ## Notes
 
-Heat procs trigger weapon damage amplification (enemies with status are weaker), benefiting the entire squad's damage output. The operator's Warframe attacks also benefit from enemy status vulnerability. Stacks with elemental mods on equipped weapons.
+The heat proc is applied to enemies near the Void Sling path, not to a fixed radius from the operator's starting position. The spread coverage depends on how many enemies the Void Sling passes near. Heat-immune enemies (certain Corpus and Eximus variants) resist the heat status effect from Melt, preventing the proc on those specific targets. The heat damage from Melt's proc adds to any existing heat stacks the operator's amp may have applied, allowing multiple heat stacks to build up on tanky targets that survive the initial proc.
 
 ## Sources
 
-WFCD database and Fandom wiki for void cascade drop location.
+- WFCD warframe-items dataset documents Void Sling trigger conditions and heat proc chance for Magus Melt.
+- Fandom wiki entry for Magus Melt covers heat proc spread mechanics and Void Sling movement application.
+

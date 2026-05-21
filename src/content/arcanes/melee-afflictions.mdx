@@ -26,29 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Melee Afflictions grants powerful status synergies by applying all damage types on proc. This melee arcane enables status-focused builds to achieve multiplicative status coverage, devastating enemy defenses during void fissure combat.
+Melee Afflictions converts any status proc from a melee weapon into a full-spectrum status event, simultaneously applying every status type to the target when the arcane triggers. A single slash proc, heat proc, or viral proc can therefore cascade into a target being afflicted with cold, toxin, electricity, radiation, magnetic, blast, gas, and corrosive simultaneously. This transforms melee status weapons from selective proc tools into universal debuff applicators with no elemental build restrictions.
 
-## Effects per rank
+The simultaneous application of multiple status types is particularly powerful against enemies with layered defenses. Corrosive strips armor while viral halves health. Cold reduces movement speed while heat panics and deals damage over time. A single Afflictions trigger creates an overlapping debuff field that leaves the target compromised across multiple defensive layers at once, regardless of which status type initially triggered the arcane.
 
-| Rank | Proc Chance | Status Duration |
-|------|-------------|-----------------|
-| 0    | 10%         | 6s              |
-| 1    | 15%         | 7s              |
-| 2    | 20%         | 8s              |
-| 3    | 25%         | 9s              |
-| 4    | 27%         | 9.5s            |
-| 5    | 30%         | 10s             |
+## Effect
 
-Simultaneous status applications enable status-duration extensions and combine all elemental effects on single targets, creating devastating crowd control and armor-stripping opportunities.
+Any status proc from the melee weapon triggers a chance check for Afflictions. On success, the target receives all status types simultaneously for the listed duration. At rank 0, a 10% trigger chance applies all statuses for 6 seconds -- a rare but devastating event during high-status melee engagements. At rank 5, a 30% trigger chance with a 10-second duration activates roughly once in three status procs, providing frequent full-spectrum debuffing during sustained melee combat.
+
+The duration applies to all simultaneously applied statuses equally -- they share the trigger duration rather than each running on its individual proc timer.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Status Duration | Notes |
+|------|----------------|-----------------|-------|
+| 0    | 10%            | 6s              | Occasional full-debuff event |
+| 1    | 15%            | 7s              | Increasing proc frequency |
+| 2    | 20%            | 8s              | Reliable combat disruption |
+| 3    | 25%            | 9s              | Strong status saturation |
+| 4    | 27%            | 9.5s            | Near-maximum coverage |
+| 5    | 30%            | 10s             | Maximum debuff uptime |
 
 ## Acquisition
 
-Melee Afflictions drops from Zariman Void Fissure (4%) and Void Cascade rotation C (2%). Regular zariman void farming yields this arcane through natural progression.
+Melee Afflictions drops from Zariman Void Fissure at 4% and Void Cascade rotation C at 2%. Rotation C is the deepest rotation in Void Cascade runs and requires extended farming sessions to reach consistently. The combination of rotation depth and moderate drop rate makes Afflictions one of the rarer melee arcanes in the Zariman pool. Warframe.market provides a purchase route for players who prefer platinum acquisition over extended farming.
 
-## Best on
+## Builds that use it
 
-Melee Afflictions excels on high-status melee weapons paired with status-scaling warframes. The comprehensive status coverage enables hybrid damage builds to maximize crowd control and armor stripping during void fissure content.
+Melee Afflictions pairs best with high-status-chance melee weapons that apply procs frequently. Condition Overload builds benefit significantly from Afflictions because the arcane's trigger inflates the status count across all types simultaneously, amplifying the per-status multiplier of Condition Overload to extreme values within a single trigger event. Any melee weapon with 80%+ status chance and a fast attack speed generates trigger checks at a high rate during sustained combat.
+
+Status-focused warframes that already debuff enemies through abilities -- Saryn's Spores applying viral and toxin, Nidus's Virulence applying impact -- set up combination stacks that Melee Afflictions then extends across all status types. The synergy between frame debuffs and the arcane's full-spectrum application creates layered debuff scenarios that compound across the melee weapon's damage calculation.
+
+## Notes
+
+The "all status types" application includes status effects that behave differently on different enemy types -- magnetic affects shields, corrosive affects armor, and toxin bypasses shields. The combined application means the arcane is effective against any faction regardless of their defensive profile. The simultaneous application counts as separate status events for arcanes or mods that trigger on specific status types (on-heat, on-cold), potentially chaining into additional arcane triggers. Enemies immune to specific status types resist those particular applications from Afflictions but still receive the remaining status types.
 
 ## Sources
 
-Zariman void fissure farming provides consistent melee afflictions drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset documents trigger chance and duration scaling for Melee Afflictions.
+- Fandom wiki entry for Melee Afflictions covers multi-status simultaneous application and Condition Overload interaction mechanics.
+

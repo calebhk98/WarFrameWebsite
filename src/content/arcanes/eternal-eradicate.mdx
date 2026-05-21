@@ -26,29 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Eternal Eradicate enhances amp attacks with void explosion triggers. This amp arcane converts single-target beam attacks into area clearing tools, allowing operators to handle grouped void manifestations during zariman void fissure content.
+Eternal Eradicate adds area-of-effect void explosion damage to amp attacks, expanding the operator's single-target beam weapon into a tool capable of clearing grouped enemies in operator mode. Each amp hit checks for a chance to trigger a void explosion centered on the hit target, dealing damage to all enemies within a 5-meter radius. This allows operators to handle enemy clusters without requiring a fundamentally different combat approach -- the explosion events are automatic byproducts of standard amp fire.
 
-## Effects per rank
+The void explosion damage type is relevant against Sentients, Eidolons, and Void-affected enemies that take bonus damage from void-type attacks. Operators fighting these enemy types with Eradicate gain both single-target amp damage and splash void damage from each trigger, making the arcane particularly effective in the specific enemy categories that operators are typically fielded against in endgame content.
 
-| Rank | Trigger Chance | Explosion Damage | Area Radius |
-|------|----------------|------------------|------------|
-| 0    | 15%            | 50               | 5m         |
-| 1    | 22%            | 75               | 5m         |
-| 2    | 30%            | 100              | 5m         |
-| 3    | 37%            | 125              | 5m         |
-| 4    | 41%            | 137              | 5m         |
-| 5    | 45%            | 150              | 5m         |
+## Effect
 
-Independent trigger rolls per amp hit enable consistent area damage output when operators maintain sustained fire against enemy clusters during void fissure excavations.
+Each amp hit triggers a chance check. On success, a void explosion fires centered on the hit location, dealing the listed damage to all enemies within 5 meters. At rank 0, a 15% chance deals 50 void damage per explosion -- occasional AoE events that supplement single-target amp fire. At rank 5, a 45% chance deals 150 void damage -- nearly half of all amp hits generate explosions, providing consistent area damage during sustained fire sequences.
+
+The fixed 5-meter radius covers a small but meaningful area around most enemy clusters. Tight group formations benefit significantly from Eradicate, as a single amp beam hit against one target can damage several others simultaneously through the explosion trigger.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Explosion Damage | Radius | Notes |
+|------|----------------|------------------|--------|-------|
+| 0    | 15%            | 50               | 5m     | Occasional area burst |
+| 1    | 22%            | 75               | 5m     | Moderate AoE addition |
+| 2    | 30%            | 100              | 5m     | Reliable splash damage |
+| 3    | 37%            | 125              | 5m     | Strong group coverage |
+| 4    | 41%            | 137              | 5m     | Near-maximum proc rate |
+| 5    | 45%            | 150              | 5m     | Maximum explosion output |
 
 ## Acquisition
 
-Eternal Eradicate is primarily obtained from Zariman Void Cascade reward pools with 4% frequency and void fissure rotation C completions. Regular zariman void farming yields this arcane naturally over extended participation.
+Eternal Eradicate drops from Zariman Void Cascade at 4% and Void Fissure rotation C at 2%. Rotation C in Void Fissure requires extended runs to reach, making Eradicate one of the rarer amp arcanes in the Zariman pool. Void Cascade at 4% is the more accessible farming path, generating Eradicate drops in shorter sessions. Warframe.market provides a direct purchase alternative for players who prefer platinum acquisition.
 
-## Best on
+## Builds that use it
 
-Eternal Eradicate is essential for amp-focused operators during wave-based void fissure content. The consistent area damage procs enable soloists and squads to handle void manifestation spawns efficiently while maintaining offensive damage output.
+Eternal Eradicate suits operator builds intended for enemy group clearing in Zariman content where multiple Void Manifestations spawn simultaneously. Continuous-beam amp configurations maximize trigger frequency by generating multiple hit checks per second, producing Eradicate explosions at higher rates than single-shot amps. Madurai-school operators that prioritize void damage output on their amp builds benefit from the additional void damage type of the explosion, which may interact with school-specific damage bonuses.
+
+Operators supporting warframes in defense objectives with multiple enemy approach vectors benefit from the AoE clearing capability, allowing them to suppress incoming threats from grouped enemies without returning to warframe mode for area abilities.
+
+## Notes
+
+The explosion damage is void-type and benefits from any operator or void damage bonuses active at the time of the trigger. The 5-meter radius is not affected by ability range modifiers or Focus school upgrades -- it is fixed at all ranks. The explosion applies as a separate damage event from the amp hit and can trigger on-hit effects independently. Enemies at the edge of the blast radius receive the full listed damage -- there is no damage falloff within the 5-meter zone. The explosion can potentially trigger additional on-hit arcane checks if paired with other amp arcanes that respond to damage events.
 
 ## Sources
 
-Zariman void fissure farming remains the most reliable source. Players regularly participating in void cascade events and rotation-based fissure content naturally accumulate eternal eradicate copies.
+- WFCD warframe-items dataset documents trigger conditions and explosion damage scaling for Eternal Eradicate.
+- Fandom wiki entry for Eternal Eradicate covers void damage type interactions and grouped-enemy clearing applications.
+

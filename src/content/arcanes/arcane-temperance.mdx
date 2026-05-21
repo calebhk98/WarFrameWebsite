@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Temperance reduces status duration to minimize crowd control vulnerability. This warframe arcane enables frames with low status resistance to mitigate enemy status effects during void fissure content.
+Arcane Temperance reduces the duration of status effects applied to the warframe, providing passive resistance to enemy crowd control and damage-over-time procs. Status effects like slash bleeds, heat burns, and toxic damage-over-time effects deal damage across their full duration; shortening that duration directly reduces the total damage taken from proc chains. Magnetic and cold procs that reduce shields or slow movement become much less impactful when their durations are cut significantly.
 
-## Effects per rank
+The reduction applies broadly to all status types rather than specific elements, making Temperance useful against any enemy faction without requiring builds tailored to specific proc vulnerabilities. This universality contrasts with faction-specific resistance arcanes that only apply against targeted enemy groups.
 
-| Rank | Trigger Chance | Status Reduction |
-|------|----------------|-----------------|
-| 0    | 15%            | 25%             |
-| 1    | 22%            | 35%             |
-| 2    | 30%            | 45%             |
-| 3    | 37%            | 55%             |
-| 4    | 41%            | 65%             |
-| 5    | 45%            | 75%             |
+## Effect
 
-Status reduction enables fragile frames to remain functional during heavy status application scenarios.
+When a status effect successfully applies to the warframe, Arcane Temperance checks the trigger chance. On success, the applied status's duration is reduced by the rank-dependent percentage. At rank 0, 25% reduction cuts a 6-second slash bleed to 4.5 seconds, reducing total bleed damage noticeably. At rank 5, 75% reduction cuts the same bleed to 1.5 seconds, reducing bleed damage to roughly one-quarter of its original output. This extends directly to heat, toxin, cold, magnetic, and other duration-based status effects simultaneously.
+
+The reduction applies at the moment of proc application; existing active procs are unaffected by the Temperance trigger.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Status Duration Reduction | Notes |
+|------|----------------|--------------------------|-------|
+| 0    | 15%            | 25%                      | Moderate proc shortening |
+| 1    | 22%            | 35%                      | Meaningful DoT reduction |
+| 2    | 30%            | 45%                      | Strong status mitigation |
+| 3    | 37%            | 55%                      | Significant proc duration cut |
+| 4    | 41%            | 65%                      | High-effectiveness mitigation |
+| 5    | 45%            | 75%                      | Near-maximum proc duration cut |
 
 ## Acquisition
 
-Arcane Temperance drops from Zariman Void Fissure (4%) and Void Cascade rotation C (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Temperance drops from Zariman Void Fissure at 4% and Void Cascade rotation C at 2%. The arcane is accessible through standard Zariman Ten-Zero content after completing Angels of the Zariman. Rotation C drops require sustained Void Cascade runs to reach; pairing Temperance farming with Void Fissure sessions maximizes acquisition efficiency. Warframe.market provides a direct purchase route for players preferring platinum-based acquisition.
 
-## Best on
+## Builds that use it
 
-Arcane Temperance excels on frames vulnerable to status procs. The duration reduction enables survival of heavy crowd control chains.
+Arcane Temperance benefits frames that lack innate status resistance and operate in status-heavy environments. Squishier frames (Volt, Ash, Ember) that take damage through their shields quickly and accumulate proc chains benefit from shorter proc durations during recovery periods. Solo Steel Path content where enemy density creates constant proc pressure rewards Temperance's passive mitigation. Frames that rely on mobility-dependent combat (rolling to trigger Rolling Guard, bullet jumping to escape proc buildup) find Temperance reduces the urgency of aggressive status management. Pairing with Rolling Guard mod provides complementary proc-removal mechanics -- Temperance shortens proc duration while Rolling Guard eliminates active procs on roll.
+
+## Notes
+
+The 45% trigger chance at rank 5 means most but not all applied status procs are shortened. The 75% reduction does not eliminate procs entirely; the proc still applies at reduced duration. The trigger is per proc application event; multiple simultaneous status applications (from multishot weapons or AoE attacks) each check independently. Status procs from scripted sources (mission modifiers, specific boss attacks) may not respect the duration reduction based on implementation. The arcane does not affect status procs applied to companions or squadmates.
 
 ## Sources
 
-Zariman void fissure farming provides temperance drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers trigger conditions and reduction scaling for Arcane Temperance.
+- Fandom wiki entry for Arcane Temperance provides context on status duration mechanics and build applications.

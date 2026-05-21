@@ -3,12 +3,12 @@ slug: molt-efficiency
 name: "Molt Efficiency"
 type: warframe
 maxRank: 5
-effect: "Molt Efficiency enhances equipped items with stat bonuses."
+effect: "While Shields are Active: Gain [duration]% Ability Duration per second, up to a maximum of [max_duration]%. At max rank: +1 Arcane Revive."
 perRankStats:
   - rank: 0
-    stats: { effect: "While Shields are Active: Gain 1% Ability Duration per second, up to a maximum of 6%   " }
+    stats: { duration: 1, max_duration: 6 }
   - rank: 5
-    stats: { effect: "While Shields are Active: Gain 6% Ability Duration per second, up to a maximum of 36%   ; +1 Arcane Revive" }
+    stats: { duration: 6, max_duration: 36 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,47 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Molt Efficiency is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This warframe arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Molt Efficiency passively accumulates Ability Duration bonus while the warframe has active shields -- the standard energy shield that absorbs incoming damage before it reaches health. Every second with shields active adds duration bonus up to the rank-determined cap: a maximum of 6% at rank 0, scaling to 36% at rank 5. The bonus persists as long as shields remain active, but the accumulation pauses when shields are fully depleted.
 
-## Effects per rank
+This design rewards shield preservation: frames that maintain their shields throughout combat continuously accumulate and sustain the maximum duration bonus. Frames that frequently lose their shields -- through combat damage, intentional Shield Gate cycling, or Shield Break builds -- see interrupted accumulation and may not reach the maximum cap during depleted phases.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+At maximum rank, the arcane also grants one Arcane Revive charge per mission.
 
-| Rank | stats |
-|------|------|
-| 0 | ['While Shields are Active: Gain 1% Ability Duration per second, up to a maximum of 6%   '] |
-| 5 | ['While Shields are Active: Gain 6% Ability Duration per second, up to a maximum of 36%   ', '+1 Arcane Revive'] |
+## Effect
+
+At rank 0, the arcane generates +1% Ability Duration per second while shields are active, capped at +6% -- reached after 6 seconds of uninterrupted shield coverage. At rank 5, +6% per second caps at +36% -- reached after 6 seconds of uninterrupted shields. Both ranks reach their cap at 6 seconds of continuous shields, but the rank 5 cap is six times higher in absolute bonus.
+
+The Ability Duration bonus reduces how quickly ability timers count down, extending toggle abilities, buff durations, and temporary effects. At +36%, an ability with a 30-second base duration extends to approximately 41 seconds under the Molt Efficiency bonus.
+
+## Stats per rank
+
+| Rank | Duration per Second | Maximum Bonus | Seconds to Cap | Notes |
+|------|---------------------|---------------|----------------|-------|
+| 0    | +1%/s               | +6%           | 6s             | Low ceiling |
+| 1    | +2%/s               | +12%          | 6s             | Moderate bonus |
+| 2    | +3%/s               | +18%          | 6s             | Solid duration |
+| 3    | +4%/s               | +24%          | 6s             | Strong extension |
+| 4    | +5%/s               | +30%          | 6s             | High bonus |
+| 5    | +6%/s               | +36% + Arcane Revive | 6s    | Maximum |
 
 ## Acquisition
 
-Molt Efficiency is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Molt Efficiency drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. The arcane may originate from late-game content drops or trading. Warframe.market provides direct platinum purchase for players who prefer not to farm.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Molt Efficiency suits shield-preserving warframe builds that use toggle or duration-based abilities where extended ability time provides clear value. Harrow builds that maintain shields between Covenant casts sustain the full +36% bonus while their abilities remain active. Protea's kit -- which includes shield-generation mechanics -- maintains continuous shield coverage that keeps Molt Efficiency's accumulation uninterrupted.
 
-## Usage notes
+Frames running Shield Gate strategies who deliberately allow shields to strip and regenerate see reduced efficiency from Molt compared to frames that passively sustain shields. Shield-tank builds on Revenant or Hildryn sustain shields continuously, making Molt Efficiency more reliable than on frames where combat routinely depletes shields.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The accumulation pauses at zero shields -- no bonus is generated while shields are completely depleted. As shields recover from regeneration, accumulation resumes. The +36% at rank 5 is additive with Continuity and Primed Continuity mods, making the total Ability Duration potentially very high on duration-stacking builds. The Arcane Revive at rank 5 functions identically to the consumable item and does not stack with additional Arcane Revive charges beyond total available charges. The bonus does not interact with overshields differently -- overshields count as having active shields for accumulation purposes.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the per-second duration accumulation and maximum cap scaling for Molt Efficiency.
+- Fandom wiki entry for Molt Efficiency covers shield activity detection, accumulation pause behavior when shields deplete, and the Arcane Revive bonus at rank 5.

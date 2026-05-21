@@ -25,39 +25,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Virtuos Forte is a rare utility arcane that grants attack speed bonuses when the operator's Amp reloads. This cycling-focused arcane rewards players who manage reload timing effectively, enabling burst-phase DPS amplification during Eidolon hunts and other endgame void fissure content.
+Virtuos Forte rewards disciplined amp reload management by granting attack speed bonuses each time the operator completes an amp reload cycle. Amp reloads occur naturally when the amp's energy runs out or when the player manually initiates a reload between engagements. Forte converts this action -- which is normally a brief vulnerability period -- into a damage-acceleration event, allowing the next magazine dump to fire at elevated attack speed immediately after reload completion.
+
+Amps with smaller energy capacities reload more frequently, generating more Forte trigger opportunities per combat window. High-fire-rate amps that drain their energy rapidly cycle through reload events at a pace that can maintain near-constant Forte uptime, while amps with large energy reserves reload less often and trigger the arcane less frequently per minute.
 
 ## Effect
 
-When the operator reloads their Amp, they gain a temporary attack speed buff lasting 6 seconds. The buff scales from +20% at rank 0 to +100% at rank 5, directly doubling the Amp's fire rate at maximum rank. Strategic reload management enables near-permanent uptime.
+Each completed amp reload triggers the attack speed bonus for 6 seconds. At rank 0, +20% attack speed provides a noticeable increase in amp fire rate during the buff window. At rank 5, +100% attack speed doubles the amp's fire speed, enabling a burst-phase immediately after each reload where the amp fires at twice its normal rate.
+
+The 6-second duration is calibrated to cover a substantial portion of the next amp's energy capacity for most amp configurations, ensuring the bonus applies during the primary damage window following a reload.
 
 ## Stats per rank
 
-| Rank | Attack Speed Bonus | Duration | Notes |
-|------|-------------------|----------|-------|
-| 0    | +20%              | 6s       | Modest increase |
-| 1    | +40%              | 6s       | |
-| 2    | +60%              | 6s       | |
-| 3    | +80%              | 6s       | |
-| 4    | +90%              | 6s       | |
-| 5    | +100%             | 6s       | Doubles fire rate |
+| Rank | Attack Speed | Duration | Notes |
+|------|--------------|----------|-------|
+| 0    | +20%         | 6s       | Modest post-reload speed |
+| 1    | +40%         | 6s       | Meaningful fire rate boost |
+| 2    | +60%         | 6s       | Strong burst phase |
+| 3    | +80%         | 6s       | Near-doubling of fire speed |
+| 4    | +90%         | 6s       | High-value burst window |
+| 5    | +100%        | 6s       | Doubled attack speed |
 
 ## Acquisition
 
-Virtuos Forte drops as a rare reward from Eidolon Hydrolyst captures during void fissure hunts. The arcane requires progression through all three Eidolons (Teralyst, Gantulyst, Hydrolyst) to farm reliably.
+Virtuos Forte drops as a rare reward from Eidolon Hydrolyst captures during Void Fissure Eidolon hunt sessions on Plains of Eidolon. Capturing the Hydrolyst -- the third and final Eidolon in the Tridolon chain -- provides Forte as a rare drop. The Hydrolyst drop source requires completing a full Tridolon chain (Teralyst, then Gantulyst, then Hydrolyst), making Forte one of the harder Virtuos arcanes to acquire. Warframe.market provides an alternative for players who prefer platinum purchase over committing to Tridolon runs.
 
-## Best on
+## Builds that use it
 
-Virtuos Forte pairs with sustained-damage amp builds:
+Virtuos Forte suits amp builds optimized for Eidolon hunts where the burst-phase damage after each reload is the primary damage window. Tridolon hunts use amp fire to break Eidolon shields and damage synovias during specific vulnerability windows -- the doubled attack speed from Forte during post-reload phases allows operators to deal maximum damage during those windows. High-crit-chance amp builds pair well with Forte because the doubled fire rate doubles the crit proc frequency alongside the raw damage per second.
 
-- **Tridolon hunts** — reload timing optimizes burst phase damage windows.
-- **Zariman void cascades** — constant reload cycles maintain attack speed buff.
-- **Endless void fissures** — cycling uptime extends survival through attrition fights.
+Solo Eidolon operators who must handle all Eidolon phases independently benefit from Forte's acceleration in the damage windows where speed of shield-break directly affects whether the Eidolon is captured before the night cycle ends.
 
 ## Notes
 
-The reload must complete successfully to trigger the buff—interrupted reloads do not grant the bonus. High-reload-speed amps benefit most from this arcane's mechanics. Stacks multiplicatively with other fire-rate modifiers.
+The attack speed bonus applies only to amp attacks -- it does not affect warframe weapon speed during transference return. The reload must complete fully to trigger the bonus; interrupted reloads do not fire the check. The 6-second timer starts at reload completion, not at the beginning of the reload animation. Amps with very large energy pools may drain the 6-second bonus before the energy runs out, leaving a non-buffed period at the end of each magazine. Amps configured with energy-reduction Focus upgrades that speed energy drain cycle through the buffed phase more efficiently.
 
 ## Sources
 
-WFCD data and Fandom wiki Eidolon Hydrolyst void fissure.
+- WFCD warframe-items dataset documents amp reload triggers and attack speed scaling for Virtuos Forte.
+- Fandom wiki entry for Virtuos Forte covers Hydrolyst acquisition requirements and Tridolon hunt burst-phase application.
+

@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Ice Storm triggers area freeze effects during cold status application. This warframe arcane synergizes with cold-focused builds by providing crowd control and area damage.
+Arcane Ice Storm triggers area freeze waves when cold status effects are active on the warframe or surrounding enemies, providing crowd control and direct damage through proc-based mechanics. Cold status builds that apply freeze effects quickly benefit from repeated ice wave triggers that expand the crowd control radius beyond initial single-target procs. The combined damage and slowdown output enables ice-focused warframes to maintain battlefield control during dense enemy waves without relying exclusively on ability-based crowd control.
 
-## Effects per rank
+The wave-based mechanic differs from simple proc amplifiers: it creates an outward expanding projectile that passes through multiple enemies rather than targeting a single entity. This makes Ice Storm particularly effective in tight corridors and small rooms where the wave contacts every enemy in line.
 
-| Rank | Trigger Chance | Wave Damage |
-|------|----------------|-------------|
-| 0    | 10%            | 100         |
-| 1    | 15%            | 140         |
-| 2    | 20%            | 180         |
-| 3    | 25%            | 220         |
-| 4    | 27%            | 260         |
-| 5    | 30%            | 300         |
+## Effect
 
-Ice wave triggering enables area denial during cold-status-heavy combat while providing continuous CC opportunities.
+When a cold status effect is active on or near the warframe, Ice Storm checks the trigger chance. On success, an ice wave radiates outward from the warframe position, dealing damage and applying a slow to all enemies it contacts. At rank 0, 100 cold damage is meaningful against light and medium enemies; at rank 5, 300 cold damage is sufficient to contribute to elite enemy damage alongside primary weapon fire. The slow effect from the wave compounds with existing cold procs, extending debuff duration on enemies already affected.
+
+Ice wave damage counts as cold damage and benefits from cold damage bonuses from cold-focused mods or abilities.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Ice Wave Damage | Notes |
+|------|----------------|-----------------|-------|
+| 0    | 10%            | 100             | Moderate single-wave damage |
+| 1    | 15%            | 140             | Increasing area damage |
+| 2    | 20%            | 180             | Solid crowd control coverage |
+| 3    | 25%            | 220             | Strong area cold damage |
+| 4    | 27%            | 260             | High-impact wave |
+| 5    | 30%            | 300             | Maximum cold wave output |
 
 ## Acquisition
 
-Arcane Ice Storm drops from Zariman Void Fissure (4%) and Void Cascade rotation A (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Ice Storm drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Access requires completing Angels of the Zariman to unlock Zariman Ten-Zero content. Rotation A in Void Cascade provides frequent drop opportunities within regular farming rotations. Cold-build players naturally seek Ice Storm through Zariman farming as part of building a complete cold-focused loadout. Warframe.market provides direct purchase options for players who prefer targeted acquisition.
 
-## Best on
+## Builds that use it
 
-Arcane Ice Storm excels on cold-heavy warframes and freeze-focused builds. The consistent crowd control complements ice-based damage scaling.
+Arcane Ice Storm excels on cold-focused or blast-element warframes that apply cold status through abilities or weapons. Frost using abilities that generate cold auras triggers Ice Storm constantly during combat without relying on weapon status. Volt builds with cold-modded weapons apply procs during weapon fire that activate the ice wave. Builds using Cryogenic Grenades mod on primary weapons generate frequent cold procs that keep Ice Storm active throughout engagements. Squad builds where one frame provides cold status while teammates deal damage benefit from Ice Storm extending the crowd control footprint.
+
+## Notes
+
+The ice wave originates from the warframe position and expands outward in all directions. Enemies behind cover may be unaffected if the wave cannot reach them through geometry. Cold status required to trigger Ice Storm can come from any source including weapons, abilities, or companion procs. The slow applied by the ice wave is additive with existing cold slow from standard cold status procs. At higher enemy levels (Steel Path), the 300 damage from Ice Storm is primarily valuable for the slow effect rather than direct damage contribution.
 
 ## Sources
 
-Zariman void fissure farming provides ice storm drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers wave damage values and trigger conditions for Arcane Ice Storm.
+- Fandom wiki entry for Arcane Ice Storm provides context on cold status sources and wave mechanic behavior.

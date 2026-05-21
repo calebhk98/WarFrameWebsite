@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Melee Exposure strips enemy armor on slash status procs. This melee arcane synergizes with slash-focused builds by converting proc mechanics into armor vulnerability stacking.
+Melee Exposure strips enemy armor on slash status procs, converting one of the most common melee proc types into an offensive armor reduction mechanic. Slash procs are broadly applicable across most melee weapon types and become more valuable through Melee Exposure because each proc now contributes to armor reduction alongside the standard slash damage-over-time. Armor reduction in Warframe directly increases the damage dealt by all subsequent attacks against that enemy, creating a compounding DPS benefit.
 
-## Effects per rank
+Armor stripping is a priority mechanic in high-difficulty content where enemy armor significantly reduces incoming damage from all sources. At 75% armor reduction at rank 5, Melee Exposure can nearly neutralize enemy armor with sustained slash proc application, enabling any follow-up damage type to deal near-full value.
 
-| Rank | Proc Chance | Armor Reduction | Duration |
-|------|-------------|-----------------|----------|
-| 0    | 15%         | -25%            | 10s      |
-| 1    | 22%         | -35%            | 10s      |
-| 2    | 30%         | -45%            | 10s      |
-| 3    | 37%         | -55%            | 10s      |
-| 4    | 41%         | -65%            | 10s      |
-| 5    | 45%         | -75%            | 10s      |
+## Effect
 
-Armor stripping stacks independently, enabling rapid enemy vulnerability scaling during sustained melee engagements with high-slash-chance weapons.
+Each slash status proc from the melee weapon checks the Exposure trigger chance. On success, the affected enemy loses armor equal to the percentage reduction for the duration. At rank 0, 25% armor strip is noticeable on moderately armored enemies; at rank 5, 75% armor strip dramatically reduces the effectiveness of enemy armor across most unit types. Multiple proc applications on the same enemy stack the reduction up to the cap, enabling full armor strip with repeated high-proc-rate melee engagement.
+
+The armor reduction persists for 10 seconds from each successful trigger, refreshing on new procs to maintain the reduced armor state during sustained melee combat.
+
+## Stats per rank
+
+| Rank | Proc Chance | Armor Strip | Duration | Notes |
+|------|-------------|-------------|----------|-------|
+| 0    | 15%         | -25%        | 10s      | Minor armor reduction |
+| 1    | 22%         | -35%        | 10s      | Moderate vulnerability |
+| 2    | 30%         | -45%        | 10s      | Meaningful armor reduction |
+| 3    | 37%         | -55%        | 10s      | Strong armor stripping |
+| 4    | 41%         | -65%        | 10s      | High vulnerability exposure |
+| 5    | 45%         | -75%        | 10s      | Near-full armor removal |
 
 ## Acquisition
 
-Melee Exposure drops from Zariman Void Fissure (4%) and Void Cascade rotation A (2%). Regular zariman void farming yields this arcane through natural progression.
+Melee Exposure drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Both sources are accessible through standard Zariman Ten-Zero content after completing Angels of the Zariman. Rotation A drops occur frequently in Void Cascade runs, making Exposure consistently available through regular Zariman farming. Warframe.market provides direct purchase options for players seeking targeted acquisition.
 
-## Best on
+## Builds that use it
 
-Melee Exposure is ideal for slash-focused melee weapons like scythes paired with armor-scaling warframes. The armor reduction enables hybrid damage builds to maximize enemy vulnerability.
+Melee Exposure excels on slash-focused melee weapons with high status chance. Scythes, whips, and nikanas with high slash damage distribution generate frequent slash procs through normal combat. Hunter Munitions (primary weapon mod) paired with Melee Exposure creates a dual-stripping approach where both primary and melee contribute armor reduction simultaneously. Steel Path endurance builds where Grineer and Corpus units have extreme armor values benefit most from the near-total armor removal at rank 5. Pairing with Condition Overload (bonus damage per unique status) creates compound damage increases where the slash proc triggers both Condition Overload damage and Melee Exposure armor strip.
+
+## Notes
+
+The armor strip is temporary and reverts to full armor after the 10-second duration if not refreshed by additional procs. Multiple Exposure triggers on the same enemy compound the reduction additively up to 100% total armor strip. Enemies immune to armor reduction (certain eximus units, specific faction elites) resist the Exposure strip regardless of proc success. The slash proc must be applied by the melee weapon -- slash bleeds from projectile weapons do not trigger melee arcanes. Slash procs from multi-hit swing patterns each check the trigger independently, enabling rapid strip buildup from rapid-hitting melee weapons.
 
 ## Sources
 
-Zariman void fissure farming provides melee exposure drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset covers armor strip percentages and trigger conditions for Melee Exposure.
+- Fandom wiki entry for Melee Exposure documents slash proc mechanics and armor reduction stacking behavior.

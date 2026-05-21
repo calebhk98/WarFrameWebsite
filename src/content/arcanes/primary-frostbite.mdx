@@ -6,17 +6,17 @@ maxRank: 5
 effect: 'On Cold Proc: Gain +[power]% Fire Rate for 12s. Stacks up to 5x.'
 perRankStats:
 - rank: 0
-  stats: {}
+  stats: { power: 15 }
 - rank: 1
-  stats: {}
+  stats: { power: 22 }
 - rank: 2
-  stats: {}
+  stats: { power: 30 }
 - rank: 3
-  stats: {}
+  stats: { power: 37 }
 - rank: 4
-  stats: {}
+  stats: { power: 41 }
 - rank: 5
-  stats: {}
+  stats: { power: 75 }
 drops:
 - source: Various
   chance: 1.0
@@ -33,31 +33,43 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Primary Frostbite scales fire rate based on cold status application. On every cold proc applied by the primary weapon, the arcane grants a fire rate buff that stacks up to five times. This arcane synergizes with cold-element build Soma Prime and Zariman rifles. Early ranks provide 15% scaling per stack; maximum rank yields 75% fire rate per stack for 375% total bonus at maximum stacks.
+Primary Frostbite converts cold status procs from primary weapons into stacking fire rate bonuses. Each cold proc applied by the primary weapon adds a fire rate buff stack that lasts 12 seconds, stacking up to five times. The extended 12-second duration per stack makes it easier to maintain full stacks than arcanes with shorter windows -- a single weapon burst that applies multiple cold procs can bring Frostbite to maximum stacks rapidly, where it then sustains at full bonus through regular cold proc application.
 
-## Effects per rank
+Cold procs are accessible on many primary weapon builds through either innate cold damage or combined elemental pairings. Magnetic (Cold + Electric) and Blast (Cold + Heat) mods maintain cold proc generation even without a dedicated cold damage build. This flexibility means Primary Frostbite works across a broad range of primary weapon configurations without requiring specialized elemental setups.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each cold proc applied by the primary weapon adds one fire rate buff stack. Stacks accumulate up to five times over 12 seconds each. At rank 0, each stack provides 15% fire rate, reaching 75% maximum at five stacks. At rank 5, each stack provides 75% fire rate for a maximum of 375% fire rate bonus at five stacks. The 12-second duration is generous -- maintaining five stacks requires applying one cold proc roughly every 12 seconds, which most cold-element primary weapons achieve during active combat.
+
+Fire rate bonuses from Frostbite are additive with fire rate mods on the weapon and multiplicative with certain other bonuses, depending on the damage calculation order. The practical effect is a substantial increase in rounds downrange per second when Frostbite stacks are at maximum.
+
+## Stats per rank
+
+| Rank | Fire Rate per Stack | Max Stacks | Max Total Fire Rate | Stack Duration |
+|------|---------------------|-----------|---------------------|----------------|
+| 0    | +15%                | 5         | +75%                | 12s            |
+| 1    | +22%                | 5         | +110%               | 12s            |
+| 2    | +30%                | 5         | +150%               | 12s            |
+| 3    | +37%                | 5         | +185%               | 12s            |
+| 4    | +41%                | 5         | +205%               | 12s            |
+| 5    | +75%                | 5         | +375%               | 12s            |
 
 ## Acquisition
 
-Primary Frostbite drops from various Zariman and Void Cascade missions.
+Primary Frostbite drops from various Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Multiple drop sources across Zariman content mean the arcane accumulates naturally over regular play without requiring targeted farming. Warframe.market provides an alternative acquisition path for players who prefer platinum-based purchase over time-based farming.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
+Primary Frostbite excels on cold-element primary weapon builds that naturally apply cold procs at high frequency. Soma Prime with cold and toxin elemental mods generates cold procs on nearly every burst, stacking Frostbite rapidly. Mutalist Quanta and other primary rifles with high status chance apply cold procs consistently through mag dumps. Arca Plasmor and shotguns with cold-element damage apply multiple procs per shot, potentially stacking Frostbite to maximum within a single burst engagement.
 
-## Usage
-
-Primary Frostbite activates automatically when its trigger condition is met during combat.
+Frames that boost fire rate through abilities -- Wisp's Haste Mote, Speed Nova's effect -- stack multiplicatively with Frostbite's fire rate bonus, pushing total fire rate to extreme values on already-fast-firing weapons. Cold-focused status builds that pair Primary Frostbite with Secondary Shiver create dual-weapon synergy where both weapons benefit from cold proc mechanics in different ways.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+Cold procs from companion weapons or warframe abilities do not trigger Primary Frostbite -- only the equipped primary weapon's cold procs count. Combined elemental damage that includes cold (Magnetic, Blast) still generates cold procs individually and triggers the arcane. The stack timer refreshes on each new proc -- applying a cold proc at 11 seconds on an existing stack resets that stack's timer to 12 seconds without adding a new stack beyond the cap. Weapons with cold innate damage benefit from higher natural cold proc rates than weapons using cold through combined elementals, which may prioritize the combined element proc over the individual cold component.
 
 ## Sources
 
-Primary Frostbite is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset covers the fire rate scaling and cold proc trigger mechanics for Primary Frostbite.
+- Fandom wiki entry for Primary Frostbite documents stack accumulation behavior and elemental synergy notes.
+

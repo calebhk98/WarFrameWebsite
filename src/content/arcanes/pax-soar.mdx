@@ -3,12 +3,12 @@ slug: pax-soar
 name: "Pax Soar"
 type: kitgun
 maxRank: 3
-effect: "Pax Soar enhances equipped items with stat bonuses."
+effect: "+[accuracy]% Accuracy while Airborne; -[recoil]% Weapon Recoil while Airborne; +[aim_glide]s Aim Glide/Wall Latch Duration."
 perRankStats:
   - rank: 0
-    stats: { effect: "+12.5% Accuracy while Airborne; -12.5% Weapon Recoil while Airborne; +1.3s Aim Glide/Wall Latch Duration" }
+    stats: { accuracy: 12.5, recoil: 12.5, aim_glide: 1.3 }
   - rank: 3
-    stats: { effect: "+50% Accuracy while Airborne; -50% Weapon Recoil while Airborne; +5s Aim Glide/Wall Latch Duration" }
+    stats: { accuracy: 50, recoil: 50, aim_glide: 5 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,43 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Pax Soar is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This kitgun arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Pax Soar improves three interconnected aerial combat stats simultaneously: accuracy while airborne, recoil reduction while airborne, and aim glide duration. Together these three bonuses support a mobile, airborne combat style where the player uses aim glide windows for precision shooting with the Kitgun. The extended aim glide duration provides more time to take accurate shots from an elevated or airborne position, while the accuracy and recoil bonuses ensure the shots placed during that window land precisely.
 
-## Effects per rank
+Kitguns are modular secondary weapons built through the Ventkid market on Orb Vallis. Pax arcanes are exclusive to the Kitgun slot and are installed directly on the completed weapon rather than in the typical secondary arcane slot. Pax Soar is one of four Pax arcane options and targets aerial engagement rather than kill-triggered procs or battery performance.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['+12.5% Accuracy while Airborne', '-12.5% Weapon Recoil while Airborne', '+1.3s Aim Glide/Wall Latch Duration'] |
-| 3 | ['+50% Accuracy while Airborne', '-50% Weapon Recoil while Airborne', '+5s Aim Glide/Wall Latch Duration'] |
+At rank 0: +12.5% accuracy while airborne, -12.5% weapon recoil while airborne, and +1.3 seconds aim glide/wall latch duration. At rank 3: +50% accuracy while airborne, -50% weapon recoil while airborne, and +5 seconds aim glide/wall latch duration.
+
+The +5-second aim glide extension at rank 3 is particularly impactful -- base Warframe aim glide duration is approximately 3 seconds, so Pax Soar nearly triples the available aim glide window, allowing extended mid-air targeting sequences before landing. Wall latch duration also extends by the same amount, enabling longer wall-mounted shooting positions.
+
+## Stats per rank
+
+| Rank | Airborne Accuracy | Airborne Recoil | Aim Glide/Wall Latch | Notes |
+|------|-------------------|-----------------|---------------------|-------|
+| 0    | +12.5%            | -12.5%          | +1.3s               | Minor aerial bonuses |
+| 1    | +25%              | -25%            | +2.5s               | Moderate improvement |
+| 2    | +37.5%            | -37.5%          | +3.75s               | Strong aerial combat |
+| 3    | +50%              | -50%            | +5s                 | Maximum bonuses |
 
 ## Acquisition
 
-Pax Soar is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Pax Soar is obtained through Ventkid-related content on the Orb Vallis, Venus, through standing rewards, blueprint crafting, or trading. The WFCD dataset does not document specific drop tables. Community resources and the in-game Ventkid market offer current sourcing information. Warframe.market provides direct platinum purchase from other players.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Pax Soar suits Kitgun builds focused on aerial gunplay -- bullet-jumping into position, activating aim glide, and firing precisely during the extended float window. Frames with strong aerial ability synergies -- Zephyr's Tailwind that extends airborne time, Titania's Razorwing for permanent flight, or Garuda's Seeking Talons for gap closing -- benefit from Pax Soar's extended aim glide as part of their movement pattern.
 
-## Usage notes
+Parkour-heavy playstyles that use vertical movement and wall-running through mission environments benefit from both the extended wall latch duration (allowing longer wall-mounted shooting positions) and the improved airborne accuracy during movement sequences. High-accuracy Kitgun chambers like Rattleguts or Catchmoon aim builds see the 50% accuracy bonus reduce projectile spread further, tightening effective range during airborne fire.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The accuracy and recoil bonuses apply specifically while airborne -- including both the natural fall phase after a jump and the aim glide phase. Ground-based fire does not benefit from these modifiers. The aim glide extension applies to all weapons while the Kitgun with Pax Soar is equipped in the secondary slot, not just to the Kitgun itself -- this means primary weapon users who switch to aim glide also benefit from the extended window. Wall latch duration similarly extends regardless of which weapon the player is aiming during the wall mount.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the accuracy, recoil, and aim glide scaling for Pax Soar.
+- Fandom wiki entry for Pax Soar covers airborne accuracy definitions, aim glide mechanics, and wall latch duration behavior.

@@ -26,29 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Magus Overload provides energy sustain for squads during void fissure content. Operators equipping this arcane become mobile energy batteries, distributing void-powered restoration to teammates engaged in prolonged fissure excavations and wave-based missions.
+Magus Overload converts Void Blast attacks from operators into energy restoration events for nearby allied warframes, positioning the operator as an active energy support during squad missions. Void Blast -- the melee-range void attack executed in operator mode -- triggers an energy restoration check that distributes warframe energy to allies within range on success. Operators who mix Void Blast into their combat rotation with amp fire can periodically refresh squad energy pools without the squad needing to find energy pickups or rely on Trinity/Zenurik for sustain.
 
-## Effects per rank
+Energy sustain is a persistent challenge in extended mission content where ability-spam builds drain energy reserves faster than natural regeneration replenishes them. Magus Overload provides an operator-side solution that does not require a dedicated energy-support warframe in the squad, allowing more flexible squad compositions in Zariman content or other endgame missions where operator play is natural.
 
-| Rank | Proc Chance | Energy per Hit |
-|------|-------------|----------------|
-| 0    | 10%         | +25            |
-| 1    | 15%         | +35            |
-| 2    | 20%         | +45            |
-| 3    | 25%         | +55            |
-| 4    | 27%         | +65            |
-| 5    | 30%         | +75            |
+## Effect
 
-The energy restoration applies to all nearby allies, synergizing with operator squad roles that focus on defensive support and sustain during prolonged void fissure operations.
+Each Void Blast in operator mode checks the trigger chance. On success, all nearby warframes receive the listed energy restoration value. At rank 0, a 10% trigger chance restores 25 energy per proc -- effective during high-frequency Void Blast sequences. At rank 5, a 30% trigger chance restores 75 energy -- activating roughly once every three Void Blasts and providing substantial energy restoration to allies who are below their maximum energy capacity.
+
+The energy restoration applies to the warframe energy pool, not the operator energy pool. Squadmates within the range receive the bonus regardless of their own energy management state.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Energy Restore | Notes |
+|------|----------------|----------------|-------|
+| 0    | 10%            | 25             | Occasional energy pulse |
+| 1    | 15%            | 35             | Moderate squad sustain |
+| 2    | 20%            | 45             | Reliable energy input |
+| 3    | 25%            | 55             | Strong squad support |
+| 4    | 27%            | 65             | Near-maximum support |
+| 5    | 30%            | 75             | Maximum energy per proc |
 
 ## Acquisition
 
-Magus Overload is primarily obtained from Zariman Void Fissure mission rewards and Void Cascade bonus rotations. This arcane requires regular participation in zariman void content, making it most accessible to players with moderate void ranking progression.
+Magus Overload drops from Zariman Void Fissure missions at 3% and Void Cascade bonus rewards at 2%. Both sources are available after completing Angels of the Zariman. The 3% primary drop rate makes Overload accessible through regular Zariman fissure participation. Warframe.market provides a direct purchase path for players who prefer platinum acquisition over farming multiple Zariman sessions.
 
-## Best on
+## Builds that use it
 
-Magus Overload is essential for Operators in support-focused squad compositions. Void-focused operators can maintain group energy sustainability while contributing offensive void damage, creating a hybrid damage-support playstyle for endgame fissure farming.
+Magus Overload suits operator support builds designed to supplement the squad's resource economy during extended runs. Operators running Void Blast-heavy melee combinations -- entering operator mode to Blast and then returning to warframe -- trigger Overload frequently during these transference cycles. Squad compositions relying on high-cost abilities -- Nidus's Ravenous, Wisp's Wil-O-Wisp, Volt's Discharge -- benefit from the supplemental energy that extends ability uptime without requiring mod investment in Primed Flow or energy efficiency.
+
+Zariman Void Cascade squad runs, where multiple players regularly cycle operator mode to interact with Void Manifestations, create natural Void Blast opportunities that trigger Overload's proc and distribute energy to warframes holding positions on defense objectives.
+
+## Notes
+
+The energy restoration distributes to warframes, not operators -- the energy does not refill the operator's own energy pool. Allies at maximum energy do not benefit from the restore; the proc is wasted if all nearby allies are fully charged. Void Blast range is melee-range in operator mode, requiring the operator to be in close proximity to enemies to trigger the arcane. The energy restoration does not scale with any mods or companion abilities -- it is a flat value determined by arcane rank only. Multiple squad members using Magus Overload do not stack restorations from a single blast; each member independently triggers their own check per Void Blast.
 
 ## Sources
 
-Zariman Void Fissure content provides the most reliable farming source. Players grinding void relic refinement naturally accumulate this arcane, making it ideal for operators transitioning into dedicated void support roles.
+- WFCD warframe-items dataset documents the trigger chance and energy restore values for Magus Overload.
+- Fandom wiki entry for Magus Overload covers squad energy distribution mechanics and Void Blast trigger behavior.
+

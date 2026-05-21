@@ -3,12 +3,12 @@ slug: magus-drive
 name: "Magus Drive"
 type: operator
 maxRank: 5
-effect: "Magus Drive enhances equipped items with stat bonuses."
+effect: "On Transference In: Increase K-Drive Speed by [speed]% for 30s."
 perRankStats:
   - rank: 0
-    stats: { effect: "On Transference In:\ Increase K-Drive Speed by 25% for 30s." }
+    stats: { speed: 25 }
   - rank: 5
-    stats: { effect: "On Transference In:\ Increase K-Drive Speed by 150% for 30s." }
+    stats: { speed: 150 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,45 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Magus Drive is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This operator arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Magus Drive increases K-Drive board speed for 30 seconds whenever the operator performs Transference In -- the action of entering operator mode from warframe mode. This creates an unusual interaction where the operator transition buffs K-Drive performance in the subsequent warframe phase. Players who switch to operator briefly and then return to warframe while mounted on a K-Drive benefit from the buffed top speed during the 30-second window.
 
-## Effects per rank
+K-Drives are hoverboard-type vehicles used in open world zones -- the Plains of Eidolon, Orb Vallis, and Cambion Drift. Speed is the primary performance metric for K-Drives in traversal, racing, and trick-scoring contexts. Magus Drive targets this specific vehicle type, making it a niche arcane suited for players who use K-Drives extensively in open world content.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['On Transference In:\\nIncrease K-Drive Speed by 25% for 30s.'] |
-| 5 | ['On Transference In:\\nIncrease K-Drive Speed by 150% for 30s.'] |
+Each Transference In activates the K-Drive speed bonus for 30 seconds. At rank 0, a 25% speed increase provides a meaningful pace improvement during open world traversal. At rank 5, a 150% speed increase more than doubles the K-Drive's effective travel speed for the 30-second window -- allowing rapid traversal of Plains or Orb Vallis distances that would normally require multiple minutes of riding.
+
+The 30-second duration is generous -- it covers substantial open world distances at elevated speeds, and the buff resets each time the player enters operator mode again.
+
+## Stats per rank
+
+| Rank | K-Drive Speed Bonus | Duration | Notes |
+|------|---------------------|----------|-------|
+| 0    | +25%                | 30s      | Moderate pace increase |
+| 1    | +50%                | 30s      | Doubles baseline |
+| 2    | +75%                | 30s      | Strong traversal speed |
+| 3    | +100%               | 30s      | Doubles K-Drive speed |
+| 4    | +125%               | 30s      | High speed |
+| 5    | +150%               | 30s      | Maximum speed buff |
 
 ## Acquisition
 
-Magus Drive is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Magus Drive drop sources are not documented in the current WFCD dataset. Community drop tables and the in-game Codex provide current sourcing information. The arcane may originate from Ventkid standing rewards, Eidolon hunt drops, or trading via Warframe.market. Players who prefer platinum acquisition can check Warframe.market for current availability and pricing.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Magus Drive suits players who prioritize open world traversal speed and use K-Drives as their primary movement option across Plains of Eidolon and Orb Vallis. Operators running K-Drive racing missions benefit directly -- entering operator mode before mounting or during a race to activate the buff, then exiting to receive the speed-boosted ride. Bounty runners who traverse large distances between mission waypoints on K-Drives use Magus Drive to shorten travel times between objectives.
 
-## Usage notes
+Ventkid reputation farmers who participate in trick scoring while traveling can combine the elevated speed with trick inputs for higher-scoring runs during the buff window.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+The speed bonus applies specifically to K-Drives -- it does not affect Archwing, Velocipod, or standard sprint speeds. The buff activates on Transference In, meaning the player must enter operator mode and then return to warframe while near a K-Drive or already mounted. The 30-second window begins at the Transference In event, not when K-Drive mounting occurs -- players who take time to mount after the transition may lose some of the available window. The buff does not apply in standard tile-set missions where K-Drives cannot be deployed.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the Transference In trigger condition and K-Drive speed scaling for Magus Drive.
+- Fandom wiki entry for Magus Drive covers K-Drive speed modifier mechanics and the 30-second buff window behavior in open world zones.

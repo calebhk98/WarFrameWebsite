@@ -3,12 +3,12 @@ slug: magus-firewall
 name: "Magus Firewall"
 type: operator
 maxRank: 5
-effect: "Magus Firewall enhances equipped items with stat bonuses."
+effect: "On Void Mode: Generate Void Particles every 1s up to 6 particles, each granting 12.5% Damage Reduction for [duration]s. Taking damage consumes a particle."
 perRankStats:
   - rank: 0
-    stats: { effect: "On Void Mode:\ Generate Void Particles every 1s up to 6 particles, each granting 12.5% Damage Reduction for 10s. Taking damage consumes a particle." }
+    stats: { particle_duration: 10 }
   - rank: 5
-    stats: { effect: "On Void Mode:\ Generate Void Particles every 1s up to 6 particles, each granting 12.5% Damage Reduction for 60s. Taking damage consumes a particle." }
+    stats: { particle_duration: 60 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,45 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Magus Firewall is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This operator arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Magus Firewall generates Void Particles while the operator holds Void Mode (the operator's invisible, energy-draining stealth state). Each particle lasts for a duration that scales with rank -- from 10 seconds at rank 0 to 60 seconds at rank 5 -- and grants 12.5% damage reduction while active. Up to 6 particles can accumulate simultaneously, providing a maximum of 75% damage reduction when all are active. Each hit that strikes the operator consumes one particle, reducing the stack and the associated damage reduction.
 
-## Effects per rank
+This creates an absorptive defense layer: the operator soaks hits with particle charges rather than taking raw damage. The longer particle duration at higher ranks allows the operator to hold accumulated charges across longer engagements without the stack decaying from time alone -- only incoming damage depletes the charges.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['On Void Mode:\\nGenerate Void Particles every 1s up to 6 particles, each granting 12.5% Damage Reduction for 10s. Taking damage consumes a particle.'] |
-| 5 | ['On Void Mode:\\nGenerate Void Particles every 1s up to 6 particles, each granting 12.5% Damage Reduction for 60s. Taking damage consumes a particle.'] |
+While Void Mode is active, the operator generates one Void Particle per second until reaching the 6-particle cap. Each particle independently provides 12.5% damage reduction, so the full 6-stack grants 75% damage reduction to operator health. When the operator takes a hit, one particle is consumed, dropping the stack by one charge and the reduction by 12.5%.
+
+At rank 0, particles last 10 seconds -- limiting how long the operator can maintain charges outside of active Void Mode generation. At rank 5, the 60-second duration means accumulated charges persist long after exiting Void Mode, allowing the operator to build up a full 6-particle stack in Void Mode and then fight at full charge for up to a minute before the charges expire from duration rather than hits.
+
+## Stats per rank
+
+| Rank | Particle Duration | Max Particles | Max Damage Reduction | Notes |
+|------|-------------------|---------------|---------------------|-------|
+| 0    | 10s               | 6             | 75%                 | Short window |
+| 1    | 20s               | 6             | 75%                 | Extended hold |
+| 2    | 30s               | 6             | 75%                 | Solid duration |
+| 3    | 40s               | 6             | 75%                 | Long carry time |
+| 4    | 50s               | 6             | 75%                 | Near maximum |
+| 5    | 60s               | 6             | 75%                 | Full minute carry |
 
 ## Acquisition
 
-Magus Firewall is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Magus Firewall drop sources are not documented in the current WFCD dataset. Community resources, the in-game Codex, and Warframe.market provide current sourcing information. The arcane may originate from Eidolon hunt reward pools, Zariman void fissure drops, or trading. Warframe.market allows direct platinum purchase from other players when farming is not preferred.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Magus Firewall suits operators who spend regular time in Void Mode as part of their combat rotation -- Unairu school operators, operators managing Eidolon limb phases where incoming fire is frequent, or operators in Zariman Void Cascade who enter Void Mode between amp fire windows. The particle generation during Void Mode makes the invisibility phase productive for defense buildup rather than just evasion.
 
-## Usage notes
+Operators in high-incoming-damage content like Eidolon arenas -- where errant Teralyst beams or Vomvalyst swarms strike the operator -- benefit from the 75% reduction at full stack, allowing the operator to sustain more hits before being forced to retreat. Building to full 6 particles before a high-damage engagement phase provides a buffer that reduces the operator's need to manage health through other arcanes.
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+## Notes
+
+Particles are consumed one per hit rather than per damage packet -- a single attack consumes one particle regardless of how much damage it would deal. This means many fast low-damage hits deplete the stack quickly, while slow hard hits are more efficient to absorb per-charge. Void Mode costs operator energy to sustain -- the charge buildup phase requires ongoing energy investment. The particle count and duration are separate mechanics: duration tracks how long each individual particle lives, while count tracks how many are currently active. An operator can have particles at varying remaining durations simultaneously.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the Void Mode trigger condition, particle generation rate, and duration scaling for Magus Firewall.
+- Fandom wiki entry for Magus Firewall covers the particle consumption mechanic and 75% damage reduction cap behavior.

@@ -26,29 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Eternal Onslaught boosts amp damage output through Power Strength buffs. This arcane enables operators to achieve significant damage scaling during zariman void fissure content, supporting aggressive void beam playstyles.
+Eternal Onslaught is an amp arcane that grants Power Strength to the warframe when the operator lands amp attacks. This creates a link between operator combat effectiveness and warframe ability power -- players who actively engage enemies in operator mode using their amp build up a Power Strength bonus that carries back to the warframe on transference return. Operator-active builds that regularly cycle between amp combat and warframe ability usage can sustain meaningful Power Strength uptime throughout a mission.
 
-## Effects per rank
+Amp attacks include any damage event from the amp weapon fired in operator mode. Primary fire beam attacks, alternate fire blasts, and amp-based void attacks all count toward the trigger check. High-fire-rate amps with continuous beam attacks generate trigger checks at high frequency, while slower burst-fire amps generate fewer checks per second but each check at the same chance.
 
-| Rank | Trigger Chance | Power Strength Boost | Duration |
-|------|----------------|----------------------|----------|
-| 0    | 15%            | +30%                 | 8s       |
-| 1    | 22%            | +45%                 | 8s       |
-| 2    | 30%            | +60%                 | 8s       |
-| 3    | 37%            | +75%                 | 8s       |
-| 4    | 41%            | +82%                 | 8s       |
-| 5    | 45%            | +90%                 | 8s       |
+## Effect
 
-Power Strength scaling amplifies void amp damage and ability effect potency, enabling operators to eliminate priority void manifestations more efficiently during extended fissure content.
+Each amp attack in operator mode triggers a chance check. On success, the warframe gains a Power Strength bonus for 8 seconds. At rank 0, a 15% trigger chance grants 30% Power Strength -- roughly one in six amp hits produces an ability strength boost. At rank 5, a 45% trigger chance grants 90% Power Strength -- nearly half of all amp hits trigger the bonus, and 90% Power Strength amplifies ability outputs to values approaching those achieved with dedicated strength mods.
+
+The 8-second duration is sufficient to cover the return to warframe and several ability casts before expiring. Players who switch back to warframe mode immediately after triggering Onslaught extract the full duration for ability usage, rather than consuming the buff window in continued operator combat.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Power Strength Boost | Duration | Notes |
+|------|----------------|----------------------|----------|-------|
+| 0    | 15%            | +30%                 | 8s       | Occasional strength window |
+| 1    | 22%            | +45%                 | 8s       | Moderate ability scaling |
+| 2    | 30%            | +60%                 | 8s       | Reliable strength boost |
+| 3    | 37%            | +75%                 | 8s       | Strong ability amplification |
+| 4    | 41%            | +82%                 | 8s       | Near-maximum uptime |
+| 5    | 45%            | +90%                 | 8s       | Maximum strength coverage |
 
 ## Acquisition
 
-Eternal Onslaught drops from Zariman Void Cascade (4%) and void fissure rotation B (2%). Regular zariman participation yields this arcane through normal void farming progression.
+Eternal Onslaught drops from Zariman Void Cascade at 4% and Void Fissure rotation B at 2%. Both sources are part of Zariman Ten-Zero content, accessible after completing Angels of the Zariman. Void Cascade at 4% provides the primary farming route -- extended Void Cascade runs naturally accumulate Onslaught copies over multiple sessions. Warframe.market provides an alternative for players who prefer to purchase rather than run multiple Zariman sessions.
 
-## Best on
+## Builds that use it
 
-Eternal Onslaught is essential for damage-focused operators seeking to maximize void beam output during endgame zariman void fissure content. The substantial power strength boost enables competitive damage scaling.
+Eternal Onslaught fits operator-active builds where the player regularly engages enemies in operator mode before returning to the warframe for ability usage. Madurai school builds that use the Void Sling for void damage and then return to warframe for damage abilities benefit from the strength amplification window. Unairu builds that strip armor in operator mode and then return to warframe for ability damage gain amplified damage output during the Onslaught buff window.
+
+Frames with high-scaling damage abilities -- Saryn's Spores, Equinox's Maim, Mesa's Peacemaker -- benefit most from the temporary Power Strength boost because their abilities scale strongly with strength values. Pairing Eternal Onslaught with an amp that fires quickly maximizes trigger frequency, accumulating the buff more reliably per combat cycle than slow-fire amps.
+
+## Notes
+
+The Power Strength bonus applies to warframe abilities and does not directly increase amp damage. The buff persists through transference -- triggering the arcane in operator mode and immediately returning to warframe mode carries the buff into the warframe phase. The 8-second window begins when the arcane procs, not when transference occurs. Operator combat that extends beyond the 8-second window before returning to warframe may waste part of the buff duration if the window expires before the warframe casts its abilities. The buff does not stack -- a second proc while the first is active refreshes the timer without adding additional Power Strength.
 
 ## Sources
 
-Zariman void fissure farming provides consistent eternal onslaught drops. Operators regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset documents amp attack triggers and Power Strength scaling for Eternal Onslaught.
+- Fandom wiki entry for Eternal Onslaught covers transference timing behavior and school-specific synergy notes.
+

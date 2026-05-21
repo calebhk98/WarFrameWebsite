@@ -26,7 +26,9 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Magus Aggress is an Operator Arcane that provides temporary Power Strength bonuses upon Transference entry. The arcane is particularly valued by Operators who rely on ability augmentations and strategic stat boosts during squad support phases.
+Magus Aggress boosts warframe Power Strength when the player enters operator mode via transference, linking the transition to operator combat with a buff that benefits the warframe's ability output when returning to warframe mode. Each transference into operator mode checks the trigger chance, and on success grants Power Strength for 10 seconds -- a window that persists through the operator phase and into the warframe's next ability casts after returning.
+
+The buff design rewards builds that actively cycle between warframe and operator modes rather than treating transference as an occasional utility. Operators who enter and exit operator mode frequently -- Void Dash repositioning, amp fire against priority targets, Focus school abilities -- generate multiple Aggress proc opportunities per minute, sustaining elevated Power Strength windows across the mission.
 
 ## Effects per rank
 
@@ -39,18 +41,24 @@ Magus Aggress is an Operator Arcane that provides temporary Power Strength bonus
 | 4    | 27%         | +55%           | 10s      |
 | 5    | 30%         | +60%           | 10s      |
 
-The buff applies when transitioning from Warframe to Operator mode via Transference. This works well in squad scenarios where operators frequently switch between void damage and support roles during fissure missions.
+## Effect
+
+The buff is checked on transference entry (warframe to operator) rather than exit. The 10-second window begins immediately on proc and persists through the operator phase into the warframe phase. Frames with high Power Strength from mods amplify the bonus into larger absolute ability outputs. At rank 5, 60% Power Strength from a 30% chance proc provides meaningful ability scaling during the post-return ability casting window.
 
 ## Acquisition
 
-Magus Aggress is obtained from Eidolon Hydrolyst captures in the Plains of Eidolon and from Void Fissure mission rewards in Zariman. To consistently farm this arcane, players should have a competent amp (minimum 2-1-2 configuration) and reliable squad composition for Eidolon hunts.
+Magus Aggress drops from Eidolon Hydrolyst capture at 6% and Zariman Void Fissure rewards at 2%. The Hydrolyst drop source requires completing full Tridolon hunts (capturing all three Eidolons). The 6% drop rate makes Aggress moderately accessible through regular Eidolon farming. Warframe.market provides a direct purchase option for players who prefer platinum acquisition.
 
-The drop chance from Hydrolyst is approximately 6.0%, making this one of the moderately rare operator arcanes. Zariman rewards provide an alternative farming method for players who prefer void fissure content over plains hunting.
+## Builds that use it
 
-## Best on
+Magus Aggress suits operator-active ability builds where transference cycling is a regular part of combat. Saryn builds that use Void Dash to reposition Spore spread and then cast Miasma on return benefit from Aggress boosting Miasma's damage during the window. Octavia builds using transference to reposition Mallet and then returning to ability casting gain ability range and damage amplification from the Aggress proc. High-strength ability frames -- Mesa, Equinox -- that cycle operators during combat phases benefit from the consistent strength bonus on each return.
 
-Magus Aggress is most effective on Operators equipped with high-damage void beam configurations, where the bonus power strength amplifies both damage output and ability proc rates. It complements operator builds focused on void blast and void spikes synergy during extended eidolon sequences or void fissure excavations.
+## Notes
+
+The trigger fires on transference into operator mode, not on return to warframe mode. The 10-second timer begins at the moment of proc, so the window covers both the remaining operator phase and the early warframe phase. If the operator phase lasts longer than the buff window, the Power Strength expires before the warframe phase begins -- rapid transference cycles maximize the warframe-phase duration of the buff. The bonus does not stack with additional Aggress procs from the same transference event.
 
 ## Sources
 
-Eidolon captures provide the primary source, rewarding players who master void-based combat mechanics. The consistent stat bonus makes this arcane a staple choice for endgame Operator optimization during tenno progression through Plains content.
+- WFCD warframe-items dataset documents transference trigger conditions and Power Strength scaling for Magus Aggress.
+- Fandom wiki entry for Magus Aggress covers the transference-entry timing and ability buff window behavior.
+

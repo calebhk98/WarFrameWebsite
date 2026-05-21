@@ -3,12 +3,12 @@ slug: arcane-liquid
 name: "Arcane Liquid"
 type: other
 maxRank: 5
-effect: "Arcane Liquid enhances equipped items with stat bonuses."
+effect: "Passive: +[chance]% chance to resist a Gas Status effect. At max rank, grants +1 Arcane Revive."
 perRankStats:
   - rank: 0
-    stats: { effect: "+17% chance to resist a <DT_GAS_COLOR>Gas Status effect." }
+    stats: { resistance_chance: 17 }
   - rank: 5
-    stats: { effect: "+102% chance to resist a <DT_GAS_COLOR>Gas Status effect.; +1 Arcane Revive" }
+    stats: { resistance_chance: 102 }
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
@@ -19,33 +19,44 @@ sources:
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
+
 ## Overview
 
-Arcane Liquid is a valuable arcane enhancement that grants powerful bonuses to equipped gear. This arcane enhances combat effectiveness and is essential for optimized builds in endgame content. Players pursue this arcane for its unique mechanics and stat boosts that synergize with specific playstyles and loadout combinations.
+Arcane Liquid provides passive resistance against gas status effects, reducing the chance that gas procs affect the warframe when applied by enemy attacks or environmental hazards. Gas status in Warframe deals toxin damage in a small area around the affected target -- the status creates a poison cloud at the proc location that damages nearby enemies and the warframe itself. The resistance chance reduces how often gas procs successfully apply to the warframe, limiting the frequency of gas-sourced health damage during Infested and certain Corpus content encounters.
 
-## Effects per rank
+At maximum rank, the 102% resistance chance exceeds the normal cap, which functions as a guarantee -- gas status procs from enemy sources cannot affect the warframe reliably. This effectively makes the frame immune to gas proc application from external sources at rank 5. The bonus Arcane Revive granted at maximum rank additionally provides an emergency self-revive charge.
 
-Rank progression enhances the potency of the base effect, with the maximum rank providing the most significant boost:
+## Effect
 
-| Rank | stats |
-|------|------|
-| 0 | ['+17% chance to resist a Gas Status effect.'] |
-| 5 | ['+102% chance to resist a Gas Status effect.', '+1 Arcane Revive'] |
+Arcane Liquid is a passive resistance that activates automatically when gas status application is attempted against the warframe. At rank 0, a 17% resistance chance prevents roughly one in six gas procs from applying. At rank 5, the 102% resistance chance provides complete immunity to gas status, combined with one Arcane Revive charge that allows the player to recover from a downed state once per mission.
+
+The Arcane Revive functions identically to the consumable Arcane Revive item, granting a revive without team assistance.
+
+## Stats per rank
+
+| Rank | Gas Resistance Chance | Bonus | Notes |
+|------|----------------------|-------|-------|
+| 0    | 17%                  | --    | Partial resistance |
+| 1    | 34%                  | --    | Meaningful proc reduction |
+| 2    | 51%                  | --    | Majority of procs resisted |
+| 3    | 68%                  | --    | Near-full resistance |
+| 4    | 85%                  | --    | Very high resistance |
+| 5    | 102%                 | +1 Arcane Revive | Complete immunity + revive |
 
 ## Acquisition
 
-Arcane Liquid is obtained from various in-game activities and drop sources. Consult the Warframe wiki and community resources for current farming locations, drop rates, and trading availability. Check the Fandom wiki page for detailed drop source information and location guidance.
+Arcane Liquid is listed in the WFCD warframe-items dataset with no current drop location, suggesting it may be acquired through events, legacy content, or trading. Warframe.market provides a reliable acquisition route where players can purchase available copies directly from other players. Community drop tables and the in-game codex may list current drop sources as the game updates.
 
-## Best on
+## Builds that use it
 
-This arcane pairs well with builds emphasizing specific playstyles. Consider your loadout's focus when determining optimal arcane placement. Research comprehensive build guides to confirm synergy with your preferred equipment and playstyle combinations.
+Arcane Liquid suits builds running Infested content where gas procs from Mutalist enemies and Toxic Ancient auras create persistent gas clouds. Frames vulnerable to gas proc health damage -- those with low health or no toxin resistance -- benefit from passive gas resistance during Deimos open world content and Infested survival missions. The bonus Arcane Revive at rank 5 adds solo-play safety, particularly in Infested content where getting downed without squad support is otherwise mission-ending.
 
-## Usage notes
+## Notes
 
-Apply this arcane to the appropriate gear slot to activate its bonuses. Arcane effects typically trigger under specific conditions such as energy pickup, ability activation, or damage infliction. Plan your mod layout and equipment choices to maximize synergy with this arcane's unique mechanics. Test combinations with different warframes and weapons to discover optimal configurations.
+Gas resistance does not protect against toxin status or corrosive status -- only the gas damage type specifically. Gas procs from the warframe's own weapons or abilities are not affected by the resistance. The Arcane Revive charges do not stack with consumable Arcane Revive items beyond the total available charges. The passive resistance applies automatically without player input and does not consume energy or resources when it prevents a gas proc.
 
 ## Sources
 
-- WFCD warframe-items database maintains accurate effect descriptions and rank statistics
-- Warframe Fandom Wiki provides comprehensive acquisition guides and drop source tables
-- Community resources and farming guides offer strategic insights for efficient farming
+- WFCD warframe-items dataset documents the gas resistance chance scaling for Arcane Liquid.
+- Fandom wiki entry for Arcane Liquid covers gas status mechanics and Arcane Revive behavior at maximum rank.
+

@@ -33,31 +33,38 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Secondary Kinship provides defensive buffing when secondary weapons reload. On every reload action, the arcane grants all resistances to the player and nearby allies. This arcane works well on tactical secondaries. Early ranks grant 15% resistances; maximum rank grants 75% all resistances.
+Secondary Kinship provides team-wide resistance buffs triggered by secondary weapon reloads. The resistance increase applies to all damage types simultaneously, making it one of the broader defensive arcanes available for secondary weapons. Each reload action from the secondary weapon buffs the player and squadmates in range, meaning high-frequency reload builds maintain consistent resistance uptime across extended missions.
 
-## Effects per rank
+Unlike armor-based arcanes that only benefit frames with substantial base armor, resistance buffs scale universally across all frame types. Whether the frame relies on shields, health, or armor as its primary defense layer, the all-resistance bonus provides meaningful damage reduction without requiring specific frame stats.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each secondary weapon reload triggers the resistance buff check. On success, the player and nearby allies gain resistance to all incoming damage types for the buff duration. At rank 0, 15% resistance provides a noticeable reduction in damage intake; at rank 5, 75% resistance substantially reduces burst damage from elite enemies. The all-resistances tag means the buff applies to physical damage types (slash, puncture, impact), elemental damage types (heat, cold, electric, toxin), and combined elemental types (corrosive, viral, radiation, magnetic, blast, gas). This breadth makes the buff consistently useful against any enemy faction without requiring knowledge of specific enemy damage profiles.
+
+## Stats per rank
+
+| Rank | Resistance Bonus | Duration | Notes |
+|------|-----------------|----------|-------|
+| 0    | +15%            | 8s       | Mild universal reduction |
+| 1    | +30%            | 8s       | Moderate multi-type mitigation |
+| 2    | +45%            | 8s       | Strong resistance baseline |
+| 3    | +60%            | 8s       | Substantial damage reduction |
+| 4    | +70%            | 8s       | Near-maximum for most builds |
+| 5    | +75%            | 8s       | Maximum resistance coverage |
 
 ## Acquisition
 
-Secondary Kinship drops from various Zariman and Void Cascade missions.
+Secondary Kinship drops from Zariman Ten-Zero missions and Void Cascade content across rotation tiers. The arcane is available through standard progression in Zariman content after completing Angels of the Zariman. Regular Void Cascade runs naturally accumulate Kinship copies over multiple sessions. Warframe.market provides an alternative acquisition path through direct trading for players who prefer to invest platinum rather than farm directly.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Secondary Kinship activates automatically when its trigger condition is met during combat.
+Secondary Kinship suits support-oriented builds that prioritize team survivability over individual damage output. Frames that frequently reload -- sentinel-synced secondaries, high-ammo-capacity pistols with fast reload mods -- trigger Kinship often enough to maintain near-constant team resistance buffs during active combat. Defensive squad compositions running Inaros, Nidus, or Rhino as front-line tanks alongside support frames benefit from layered defensive contributions. The reload trigger is particularly efficient in squad play because each player reloading their secondary independently checks for the buff, creating multiple opportunities per rotation cycle for resistance uptime across the team.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+The resistance bonus is a percentage reduction of incoming damage after other mitigation calculations. It does not interact with armor in a multiplicative fashion; both operate as independent damage reduction layers. The support range is fixed and not affected by Ability Range mods. Allies beyond the support radius do not receive the buff. Multiple squad members equipping Secondary Kinship provide overlapping windows that effectively maintain near-permanent resistance coverage during active firefights. The buff does not stack beyond a single application per player; only duration refreshes on re-trigger.
 
 ## Sources
 
-Secondary Kinship is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset documents the trigger mechanic and resistance scaling for Secondary Kinship.
+- Fandom wiki entry for Secondary Kinship provides notes on team buffing radius and multi-player interaction.

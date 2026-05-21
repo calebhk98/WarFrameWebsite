@@ -3,8 +3,7 @@ slug: residual-shock
 name: Residual Shock
 type: companion
 maxRank: 5
-effect: 'On Electric Proc: Chain electricity to [enemies] nearby enemies. Damage:
-  [power]% weapon damage.'
+effect: 'On Electric Proc: Chain electricity to [enemies] nearby enemies. Damage: [power]% weapon damage.'
 perRankStats:
 - rank: 0
   stats: {}
@@ -34,31 +33,40 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Residual Shock chains electric damage between enemies via companion electric procs. On every electric status application, the arcane jumps electricity to nearby targets, creating multiplicative damage chains. Sentinels with electric weapons excel with this arcane. Early ranks chain to 2 enemies at 25% weapon damage; maximum rank chains to 5 enemies at 125% weapon damage.
+Residual Shock chains electric damage between enemies via companion electric procs, creating a propagating damage network from each companion electric status hit. Standard electric status in Warframe shocks the initial target and one nearby enemy; Residual Shock extends this chaining behavior to reach additional enemies at a percentage of the companion weapon's base damage. At rank 5, each companion electric proc can chain to five additional enemies at 125% weapon damage, enabling a single companion attack to effectively damage a group of six enemies simultaneously.
 
-## Effects per rank
+Electric chains provide the stagger effect to chained targets, briefly disrupting enemy attack animations and movement. This crowd control contribution complements the damage output, making Residual Shock valuable in dense combat scenarios beyond pure damage contribution.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each electric status proc from the companion triggers the chain. At rank 0, electricity jumps to 2 additional enemies at 25% weapon damage; at rank 5, chains reach 5 additional enemies at 125% weapon damage. Chained enemies each receive the electric stagger, and the full damage value is applied to each chained target rather than splitting damage across them. Companions with higher base weapon damage produce more lethal chains through Residual Shock.
+
+The chain range follows standard electric chain behavior, reaching nearby enemies in line-of-sight within the game's standard chain distance.
+
+## Stats per rank
+
+| Rank | Chain Targets | Damage Per Chain | Notes |
+|------|--------------|-----------------|-------|
+| 0    | 2            | 25%             | Small chain, limited damage |
+| 1    | 3            | 50%             | Moderate chain coverage |
+| 2    | 3            | 75%             | Good chain damage |
+| 3    | 4            | 100%            | Full damage to wider group |
+| 4    | 4            | 112%            | Above-base chain damage |
+| 5    | 5            | 125%            | Maximum chain coverage |
 
 ## Acquisition
 
-Residual Shock drops from various Zariman and Void Cascade missions.
+Residual Shock drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade runs include Shock as part of the Residual companion arcane series. Players building electric companion builds often farm Zariman content for Shock alongside other Residual arcanes. Warframe.market provides direct purchase options for targeted acquisition.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Residual Shock activates automatically when its trigger condition is met during combat.
+Residual Shock excels on builds where companions deal electric damage through dedicated weapon modding. Sentinels with Verglas (cryo weapon) combined with electric mods create Magnetic procs alongside electric procs, enabling Shock chains. Kavats with Bite and electric-modded melee weapons generate electric procs through rapid melee attacks. High-density content (defense, survival) where enemies cluster together maximizes chain target availability per proc. Pairing with Residual Viremia (viral spread) and Residual Boils (toxin spread) creates a comprehensive companion proc system where each element type triggers its respective area effect.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+Electric chains require the initial target to have a nearby enemy within chain range. Isolated enemies receiving the initial proc do not produce chains if no other enemies are within chain distance. The 125% chain damage at rank 5 can exceed the initial proc damage on the primary target, making Residual Shock's secondary chain hits the primary value contribution against groups. Chained enemies receive the electric stagger animation but not necessarily the full status proc if their status resistance prevents application. Multiple companion electric procs in quick succession create overlapping chain events that cover wide enemy groups efficiently.
 
 ## Sources
 
-Residual Shock is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset covers chain targets and damage multipliers for Residual Shock.
+- Fandom wiki entry for Residual Shock documents electric chain behavior and companion electric build integration.

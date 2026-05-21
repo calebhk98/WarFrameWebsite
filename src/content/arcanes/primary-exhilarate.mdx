@@ -33,37 +33,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Primary Exhilarate is a weapon arcane that rewards tactical reloading. On every reload action, the arcane grants a temporary damage buff that stacks up to three times. This synergizes well with magazine-based primary weapons that benefit from aggressive reload patterns. Early ranks provide moderate scaling; maximum rank yields 60% damage per stack, enabling 180% total damage multiplier at maximum stacks.
+Primary Exhilarate rewards magazine discipline by stacking a damage bonus on each reload action, accumulating up to three stacks over repeated reload cycles. Unlike reload speed arcanes that accelerate ammunition economy, Exhilarate converts the reload vulnerability window into a damage investment -- each reload pause builds toward a larger damage output on the next magazine dump. The 15-second stack duration is generous, allowing aggressive players to maintain full stacks through rapid sequential reloads without losing progress between engagements.
 
-The arcane works best with weapons featuring rapid reload animations and frequent reload triggers during combat rotations. Soma Prime, Zariman-era rifles, and auto rifles gain significant value from sustained stacking during extended firefights.
+Stacking damage arcanes that scale across multiple reloads reward sustained combat over extended engagement windows rather than burst-cycle play. Primary Exhilarate's three-stack limit is achievable within the first three magazines of any mission, after which the player maintains full stacks through continued reloading activity. This makes the arcane most effective in missions with continuous enemy engagement where magazines deplete and reload at consistent intervals.
 
-## Effects per rank
+## Effect
 
-| Rank | Damage/Stack | Max Stacks | Duration |
-|------|--------------|------------|----------|
-| 0    | +10%         | 3x         | 15s      |
-| 1    | +20%         | 3x         | 15s      |
-| 2    | +30%         | 3x         | 15s      |
-| 3    | +40%         | 3x         | 15s      |
-| 4    | +50%         | 3x         | 15s      |
-| 5    | +60%         | 3x         | 15s      |
+Each reload adds one damage stack lasting 15 seconds. Stacks accumulate up to three times, each refreshing independently. At rank 0, each stack provides 10% damage for a maximum of 30% at three stacks. At rank 5, each stack provides 60% damage for a maximum of 180% at three stacks -- nearly doubling the weapon's output damage at full stacks.
+
+The 15-second timer per stack is independent, meaning early stacks can expire if reload cycles are slow. Fast-reloading weapons maintain all three stacks more reliably than slow-reloading primaries.
+
+## Stats per rank
+
+| Rank | Damage per Stack | Max Stacks | Max Total Damage | Stack Duration |
+|------|-----------------|-----------|-----------------|----------------|
+| 0    | +10%            | 3         | +30%            | 15s            |
+| 1    | +20%            | 3         | +60%            | 15s            |
+| 2    | +30%            | 3         | +90%            | 15s            |
+| 3    | +40%            | 3         | +120%           | 15s            |
+| 4    | +50%            | 3         | +150%           | 15s            |
+| 5    | +60%            | 3         | +180%           | 15s            |
 
 ## Acquisition
 
-Primary Exhilarate drops from Void Cascade skirmish missions in the Zariman tileset at uncommon rarity. Players should prioritize extended endless runs to accumulate multiple copies for ranking.
+Primary Exhilarate drops from Void Cascade Skirmish missions in the Zariman tileset at uncommon rarity. Zariman Ten-Zero content is accessible after completing Angels of the Zariman. Regular Skirmish participation yields Exhilarate drops over multiple sessions. Warframe.market provides an alternative for players who prefer direct platinum purchase over running multiple Zariman skirmishes.
 
-## Best on
+## Builds that use it
 
-High-capacity magazine weapons benefit most from this arcane, particularly rifles with fast reload animations.
+Primary Exhilarate excels on rapid-fire primary weapons that deplete magazines quickly and reload frequently. Soma Prime builds that cycle through magazines at high fire rates reach maximum stacks within the first few engagement windows of a mission and maintain three stacks throughout active combat. High-fire-rate rifles and full-auto primaries with moderate magazine sizes provide the reload frequency needed to sustain maximum stack counts without dedicated reload management.
 
-## Usage
-
-The arcane activates automatically on every reload, stacking up to three times with each new buff refreshing the 15-second timer.
+Builds using reload-speed mods alongside Exhilarate reduce the downtime between stacks, ensuring that each stack is added quickly and that the 15-second window is refreshed before expiration. Frames with reload-boosting abilities -- Wisp's Haste Mote, Trinity's Link synergy with reload speed -- complement Exhilarate's stack maintenance.
 
 ## Notes
 
-Ammunition efficiency and reload speed mods extend the buff uptime through faster reload cycles. The arcane provides consistent damage scaling throughout extended missions.
+Each stack has its own independent 15-second timer. Adding a second stack does not reset the first stack's timer -- both timers run concurrently. If the first stack expires before a fourth reload adds a replacement, the stack count temporarily drops from three to two until the next reload restores it. Weapons with small magazines that reload very frequently maintain more consistent stack uptime than large-magazine weapons with infrequent reload cycles. The damage bonus is additive with base damage mods like Serration, providing a straightforward damage multiplication during full-stack windows.
 
 ## Sources
 
-Primary Exhilarate is restricted to Zariman void cascade content for acquisition.
+- WFCD warframe-items dataset covers damage per stack scaling and reload trigger conditions for Primary Exhilarate.
+- Fandom wiki entry for Primary Exhilarate documents independent stack timer behavior and reload frequency interaction notes.
+

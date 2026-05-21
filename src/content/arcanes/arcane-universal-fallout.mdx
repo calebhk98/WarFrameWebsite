@@ -26,29 +26,40 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Universal Fallout spreads status effects to nearby enemies. This warframe arcane enables status-heavy builds to convert single-target procs into area crowd control.
+Arcane Universal Fallout spreads random status effects to all enemies within a 15-meter radius when any status proc triggers on the warframe. This makes it one of the most broadly applicable crowd-control arcanes available, converting single-target status procs from abilities or weapons into area-wide debuff events. The random status type means the effect varies per trigger -- it may proc viral, corrosive, cold, heat, or any other status effect -- creating unpredictable but consistently disruptive outcomes across enemy groups.
 
-## Effects per rank
+The 15-meter radius is substantial enough to cover most room interiors and defense objectives, making Universal Fallout highly effective during stationary combat scenarios. Status-heavy frames that frequently proc effects through abilities or weapon fire trigger the arcane often, building up varied status stacks across multiple enemies simultaneously.
 
-| Rank | Trigger Chance | AOE Radius |
-|------|----------------|-----------|
-| 0    | 10%            | 15m       |
-| 1    | 15%            | 15m       |
-| 2    | 20%            | 15m       |
-| 3    | 25%            | 15m       |
-| 4    | 27%            | 15m       |
-| 5    | 30%            | 15m       |
+## Effect
 
-Area status spreading enables rapid crowd control during groups of void manifestations.
+Any status proc on the warframe (from ability effects, status-applying weapons, or passive status generation) checks the trigger chance. On success, all enemies within 15 meters receive a randomly selected status proc. The random nature means each trigger has an equal chance of applying any in-game status effect, including high-value options like viral (50% health reduction for 6 seconds), corrosive (26% armor reduction per stack), or cold (movement and attack speed reduction). Over repeated triggers, the spread covers varied status types across the enemy group.
+
+The 15-meter radius is measured from the warframe position and does not require line-of-sight to reach enemies behind cover within range.
+
+## Stats per rank
+
+| Rank | Trigger Chance | AOE Radius | Notes |
+|------|----------------|-----------|-------|
+| 0    | 10%            | 15m       | 1-in-10 proc spread |
+| 1    | 15%            | 15m       | Increasing area coverage |
+| 2    | 20%            | 15m       | Reliable room-wide spread |
+| 3    | 25%            | 15m       | Frequent multi-enemy debuffing |
+| 4    | 27%            | 15m       | High-uptime area status |
+| 5    | 30%            | 15m       | Maximum trigger rate |
 
 ## Acquisition
 
-Arcane Universal Fallout drops from Zariman Void Fissure (4%) and Void Cascade rotation A (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Universal Fallout drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Zariman Ten-Zero content is accessible after completing Angels of the Zariman. The arcane drops from rotation A, which is the most frequently reached rotation in Void Cascade runs, making it one of the more accessible Zariman arcanes in terms of farming frequency. Warframe.market provides an alternative acquisition path for players preferring to purchase rather than farm.
 
-## Best on
+## Builds that use it
 
-Arcane Universal Fallout excels on status-focused frames handling multiple enemies. The area effect enhances crowd control during void fissure waves.
+Status-proc-heavy frames that generate frequent status effects through abilities or weapons trigger Universal Fallout most consistently. Frames like Saryn (Spores status spread), Equinox (Mend and Maim procs), and Nidus (Virulence status) naturally apply status effects at high rates and benefit from converting those procs into area debuffs. Builds relying on weapon-based status application paired with high-status-chance weapons maximize trigger frequency. Defense and survival builds benefit most from the area coverage because grouped enemies cluster within the 15-meter radius during objective assaults.
+
+## Notes
+
+The status type applied by Universal Fallout is random and cannot be controlled or predicted. Repeated triggers may apply the same status multiple times, stacking corrosive armor reduction or refreshing heat procs across enemies. Status immunity in certain enemy types (Heavy units, Overguard enemies) negates the fallout proc on those specific targets. The trigger requires an initial status proc on the warframe itself, not from companion or squad member status application. Frames with passive status generation trigger Fallout more consistently than frames relying entirely on weapon-based status application.
 
 ## Sources
 
-Zariman void fissure farming provides universal fallout drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset documents trigger mechanics and radius values for Arcane Universal Fallout.
+- Fandom wiki entry for Arcane Universal Fallout covers random status proc behavior and frame synergy notes.

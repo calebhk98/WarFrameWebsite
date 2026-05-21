@@ -26,29 +26,43 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Melee Duplicate triggers bonus heavy attacks on successful heavy strike activation. This melee arcane enables heavy-attack-focused builds to achieve multiplicative damage output through automatic attack chains during void fissure combat.
+Melee Duplicate adds a chance to trigger an automatic bonus heavy attack immediately after the player's heavy attack lands. The duplicate attack fires at a percentage of the original's effectiveness, creating a secondary hit without additional player input. This makes it one of the few melee arcanes that multiplies output without requiring altered weapon or ability builds -- the bonus attack inherits the base heavy attack properties and benefits from the same mods, crits, and status effects that apply to the primary heavy attack.
 
-## Effects per rank
+Heavy attack builds in Warframe use the windowed attack as the primary damage source, often building around Amalgam Organ Shatter or combo-multiplier mods to amplify each individual swing's output. Melee Duplicate multiplies this already high per-swing damage output by triggering a second attack at a fraction of effectiveness, pushing per-engagement damage above what the weapon base stats suggest.
 
-| Rank | Trigger Chance | Duplicate Effectiveness |
-|------|----------------|------------------------|
-| 0    | 10%            | 50%                    |
-| 1    | 15%            | 70%                    |
-| 2    | 20%            | 90%                    |
-| 3    | 25%            | 110%                   |
-| 4    | 27%            | 130%                   |
-| 5    | 30%            | 150%                   |
+## Effect
 
-Bonus heavy attacks consume stamina independently, enabling chain attacks during extended void fissure void waves with proper stamina management.
+Each heavy attack triggers a check against the trigger chance. On success, a duplicate heavy attack fires automatically at the listed effectiveness percentage. At rank 0, 10% chance with 50% effectiveness means roughly one in ten heavy attacks produces a bonus hit at half power. At rank 5, 30% chance with 150% effectiveness means nearly one in three heavy attacks produces a bonus hit that exceeds the original in damage. The 150% effectiveness value at max rank means the duplicate can outperform the original attack, making the arcane's proc a net positive regardless of which attack registers.
+
+The effectiveness percentage applies to the base heavy attack damage before mods are factored in, or after -- the interaction with the damage calculation pipeline affects the final numeric output. Both the original and duplicate attacks are considered separate hit events for status proc and critical hit calculations.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Duplicate Effectiveness | Notes |
+|------|----------------|------------------------|-------|
+| 0    | 10%            | 50%                    | Occasional half-power bonus hit |
+| 1    | 15%            | 70%                    | Increasing damage multiplication |
+| 2    | 20%            | 90%                    | Near-equivalent bonus attack |
+| 3    | 25%            | 110%                   | Bonus exceeds original |
+| 4    | 27%            | 130%                   | Consistent high-value duplication |
+| 5    | 30%            | 150%                   | High-odds overpowered duplicate |
 
 ## Acquisition
 
-Melee Duplicate drops from Zariman Void Fissure (3%) and Void Cascade rotation C (1.5%). Regular zariman void farming yields this rare arcane through progression.
+Melee Duplicate drops from Zariman Void Fissure at 3% and Void Cascade rotation C at 1.5%. Rotation C in Void Cascade is the least frequently reached rotation, requiring longer runs to access. The lower drop rates across both sources make Duplicate one of the rarer Zariman melee arcanes, often requiring extended farming sessions or warframe.market purchase. Players specifically targeting Melee Duplicate should plan for Void Cascade runs that extend through multiple rotations to reach rotation C rewards.
 
-## Best on
+## Builds that use it
 
-Melee Duplicate excels on heavy-attack-focused melee weapons like polearms paired with heavy-attack-scaling warframes. The bonus attacks enable explosive damage scaling during void fissure content.
+Melee Duplicate benefits heavy attack builds that rely on high per-swing damage rather than rapid auto-attack sequences. Exodia-Contagion builds on zaws, Sacrificial Steel plus Amalgam Organ Shatter setups on polearms, and high-combo-multiplier configurations on heavy blades all amplify the value of each heavy attack and therefore the value of Duplicate's bonus hit. Frames that boost melee damage through abilities -- Rhino's Roar, Wisp's Haste Mote, or Saryn's Toxic Lash -- increase the absolute damage of both the original and duplicate attacks proportionally.
+
+Builds that use heavy attacks as finishers or opening strikes in mixed heavy-light sequences benefit from Duplicate as a passive damage multiplier without altering the attack cadence. The arcane does not require changing weapon or ability configurations to add value.
+
+## Notes
+
+The duplicate attack counts as a separate hit event for purposes of status proc rolling. Both hits can independently proc critical hits, which means the duplicate contributes to on-crit arcane triggers in the same way the primary heavy attack does. The duplicate does not cost additional combo multiplier -- it fires as a bonus effect without consuming the combo count. The trigger check fires after the heavy attack lands, not on activation, so blocked or missed heavy attacks do not generate duplicate checks. Enemies killed by the primary heavy attack before the duplicate fires prevent the duplicate from hitting -- the bonus attack targets the same enemy.
 
 ## Sources
 
-Zariman void fissure farming provides melee duplicate drops. Players regularly engaging in void cascade content naturally accumulate this arcane over time.
+- WFCD warframe-items dataset documents trigger conditions and effectiveness scaling for Melee Duplicate.
+- Fandom wiki entry for Melee Duplicate covers the status proc independence of the duplicate hit and heavy attack build synergy.
+

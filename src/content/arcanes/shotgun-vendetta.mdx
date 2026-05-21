@@ -33,31 +33,38 @@ updatedAt: '2026-05-20'
 
 ## Overview
 
-Shotgun Vendetta boosts reload speed on shotgun kills. On every shotgun kill, the arcane grants a reload speed buff stacking up to three times. This arcane rewards consecutive shotgun kills. Early ranks grant 25% reload speed; maximum rank grants 125% reload speed per stack for rapid consecutive kills.
+Shotgun Vendetta grants stacking reload speed bonuses on shotgun kills, rewarding consecutive kills with progressively faster reload cycles. The stacking mechanic creates a momentum system where early kills in an engagement enable faster reload during subsequent shots, reducing the total time lost to reloading as the combat sequence progresses. Shotguns with slow base reload speeds -- which are typically the highest-damage variants -- benefit the most from Vendetta's reload reduction during active combat.
 
-## Effects per rank
+Shotguns in Warframe typically deal high per-shot damage at the cost of slow reload animations and small magazine sizes. Vendetta directly addresses the primary weakness of high-damage shotguns by reducing the time between shots when kills are being maintained, enabling sustained fire rates that approach those of faster-loading but lower-damage alternatives.
 
-| Rank | Effect |
-|------|--------|
-| 0    | Base effect |
-| 5    | Maximum effect |
+## Effect
+
+Each shotgun kill checks and applies a reload speed stack. Up to three stacks accumulate independently, with each providing the per-rank reload speed bonus. At rank 0, each stack grants 25% reload speed (maximum 75% at three stacks); at rank 5, each stack grants 125% reload speed (maximum 375% at three stacks). Three active stacks at rank 5 enable near-instant reloads on even the slowest shotguns. Stacks persist for a fixed duration from each individual stack's trigger time; maintaining kill pace keeps all three stacks active throughout extended combat.
+
+## Stats per rank
+
+| Rank | Reload Speed per Stack | Max Stacks | Max Total Bonus | Notes |
+|------|----------------------|-----------|-----------------|-------|
+| 0    | +25%                 | 3         | +75%            | Mild reload improvement |
+| 1    | +50%                 | 3         | +150%           | Moderate improvement |
+| 2    | +75%                 | 3         | +225%           | Strong reload reduction |
+| 3    | +100%                | 3         | +300%           | Very fast reload |
+| 4    | +112%                | 3         | +336%           | Near-instant at max |
+| 5    | +125%                | 3         | +375%           | Near-instant reload |
 
 ## Acquisition
 
-Shotgun Vendetta drops from various Zariman and Void Cascade missions.
+Shotgun Vendetta drops from Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade rotation rewards include Vendetta as a shotgun-focused arcane. Players running shotgun-primary builds often farm Zariman content because it offers multiple shotgun arcanes simultaneously. Warframe.market lists Vendetta at accessible plat values for direct purchase.
 
-## Best on
+## Builds that use it
 
-This arcane works best on builds that exploit its triggering condition frequently.
-
-## Usage
-
-Shotgun Vendetta activates automatically when its trigger condition is met during combat.
+Shotgun Vendetta excels on high-damage, slow-reloading shotguns like the Tigris Prime and Astilla Prime where reload speed is the primary DPS bottleneck. Kill-focused shotgun builds in mobile missions (extermination, capture) maintain constant kill pace and maximize three-stack uptime throughout the run. Defense and survival builds benefit from rapid stack building during initial enemy waves, entering later waves with maximum reload speed already sustained. Pairing with Primed Fast Hands (reload speed mod) creates compound reload reduction that effectively eliminates reload gaps at three stacks.
 
 ## Notes
 
-This arcane provides consistent value scaling throughout extended missions.
+Reload speed bonus is additive with Primed Fast Hands and other reload speed mods. The stacking works independently per stack, meaning the first stack triggers from one kill, the second from a subsequent kill, and the third from a third kill -- maintaining three stacks requires three separate kills within each stack's individual duration. If kill pace drops below the stack refresh rate, stacks expire and DPS returns to base. Vendetta does not affect weapon switch speed or holster speed; only the actual reload animation is accelerated.
 
 ## Sources
 
-Shotgun Vendetta is available through endgame Zariman void cascade content.
+- WFCD warframe-items dataset covers the stacking mechanic and reload speed scaling for Shotgun Vendetta.
+- Fandom wiki entry for Shotgun Vendetta documents kill pace requirements and reload interaction notes.

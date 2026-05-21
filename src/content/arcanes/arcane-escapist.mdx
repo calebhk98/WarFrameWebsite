@@ -26,9 +26,17 @@ updatedAt: "2026-05-20"
 
 ## Overview
 
-Arcane Escapist provides escape mechanics on critical health moments. This warframe arcane enables clutch survivability through repositioning and temporary stealth, crucial for aggressive playstyles.
+Arcane Escapist provides emergency escape mechanics when health reaches critical levels. This warframe arcane enables clutch survivability through repositioning and temporary stealth, crucial for aggressive playstyles that push into dangerous territory. The combination of teleport displacement and invisibility window gives frames a second chance to survive encounters that would otherwise result in a down state, making Escapist particularly valuable in solo content where revives are unavailable.
 
-## Effects per rank
+The trigger fires at the last health point, functioning as a last-resort mechanic rather than a proactive tool. At rank 5, the 45% trigger chance means nearly half of all near-death situations provide an escape opportunity. The 6-second invisibility duration provides enough time to reload, heal, or reposition before re-engaging.
+
+## Effect
+
+When the warframe's health reaches zero or the last-hit threshold, Arcane Escapist checks its trigger chance. On success, the frame teleports a short fixed distance in a random direction and enters an invisibility state for the duration. The teleport ignores normal movement blockers, allowing escape through nearby walls or obstacles. The invisibility functions identically to other stealth mechanics: enemies cannot track the frame by sight during the window, though audio-based tracking or AoE attacks still reach the frame.
+
+At rank 0, the 3-second window is sufficient for basic repositioning but may not allow full health recovery without external heals. At rank 5, 6 seconds provides meaningful recovery time alongside healing abilities, health restores, or Trinity Link support. The escape window allows use of abilities during invisibility, enabling frames to cast defensive or healing abilities before the window expires.
+
+## Stats per rank
 
 | Rank | Trigger Chance | Invisibility Duration |
 |------|----------------|----------------------|
@@ -39,16 +47,19 @@ Arcane Escapist provides escape mechanics on critical health moments. This warfr
 | 4    | 41%            | 5.4s                 |
 | 5    | 45%            | 6s                   |
 
-Teleport distance allows meaningful escape positioning while invisibility provides recovery windows before re-engagement.
-
 ## Acquisition
 
-Arcane Escapist drops from Zariman Void Fissure (4%) and Void Cascade rotation B (2%). Regular zariman void farming yields this arcane naturally.
+Arcane Escapist drops from Zariman Void Fissure at 4% and Void Cascade rotation B at 2%. Both sources provide access through standard Zariman Ten-Zero content, which becomes available after completing Angels of the Zariman. The 4% drop rate from Void Fissure runs means players accumulate copies over a moderate number of runs. Warframe.market offers direct purchase for players who prefer trading over farming.
 
-## Best on
+## Builds that use it
 
-Arcane Escapist excels on mobile, hit-and-run playstyle frames. The emergency escape enables aggressive offense strategies while maintaining safety margins.
+Arcane Escapist excels on mobile, hit-and-run playstyle frames that operate at low health thresholds. Frames with no innate escape mechanics -- Excalibur, Volt, Ember -- benefit from the added safety net during aggressive pushes. Solo Steel Path content where enemy density and damage output is high rewards the insurance value of Escapist. Frames that rely on finishers or close-range combat and frequently take damage in melee range extract the most value because the trigger fires more regularly under sustained incoming damage. Pairing with burst-heal abilities (Harrow's Thurible, Nezha's Warding Halo heal on strip) maximizes the recovery value of the escape window.
+
+## Notes
+
+The teleport direction is random and cannot be aimed. In enclosed corridors or small rooms, the teleport may not provide substantial displacement. Enemies that use area-of-effect attacks continue damaging the frame through the invisibility window if the frame remains within the AoE radius. The trigger only fires once per health drop event; rapid consecutive hits that reduce health to zero without Escapist firing do not chain-trigger. The arcane does not protect against instant-kill or execution mechanics in certain mission types.
 
 ## Sources
 
-Zariman void fissure farming provides escapist drops. Players regularly completing void cascade events naturally accumulate this arcane.
+- WFCD warframe-items dataset documents trigger conditions and invisibility duration scaling for Arcane Escapist.
+- Fandom wiki entry for Arcane Escapist provides additional context on teleport behavior and solo play applications.
