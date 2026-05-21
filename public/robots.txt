@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://calebhk98.github.io/warframewebsite/sitemap-index.xml
-
