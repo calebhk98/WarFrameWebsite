@@ -14,54 +14,54 @@ perRankStats:
   - rank: 3
     stats: { damage: 12 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Residual_Boils
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Residual_Boils
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Residual Boils spreads toxin status effects from companion attacks to nearby enemies, amplifying the area impact of companion-inflicted toxin procs. When the companion applies a toxin proc to a target, the arcane extends the toxin effect to surrounding enemies within range, creating a contamination zone that damages multiple targets without requiring individual companion attacks on each enemy. This makes toxin-modded companions disproportionately effective at applying damage-over-time across dense enemy groups.
+Residual Boils is a companion arcane from the Residual-Theorem set that spawns volatile hives when a Kitgun kill is secured. On each Kitgun kill, there is a 20% chance that a cluster of volatile hives spawns at the kill location. These hives persist for the rank-dependent duration and explode when an enemy approaches within range, dealing 80 Heat Damage in a 10-meter radius. Additionally, the warframe standing in the Boils area applies Heat Damage type to Theorem Arcanes, synergizing with Theorem arcanes that scale based on nearby elemental damage types.
 
-Toxin damage in Warframe bypasses shields and deals damage directly to health, making it effective against Corpus enemies whose shields would otherwise reduce incoming damage. Residual Boils extends this bypass benefit to area coverage, allowing a single companion proc to apply shield-bypassing toxin damage to multiple nearby enemies simultaneously.
+At rank 3, the volatile hives persist for 12 seconds -- long enough to act as area denial against subsequent waves of enemies approaching through the kill location.
 
 ## Effect
 
-Each toxin status proc applied by the companion triggers the spread effect. The proc radiates outward from the initially affected enemy, applying toxin damage and status to additional targets within the range. At rank 0, 3 enemies within a smaller radius receive the spread; at rank 5, up to 6 enemies within an expanded radius take the spread toxin proc. The spread proc damage matches the companion weapon's toxin proc damage, not a reduced value.
+On a Kitgun kill, each kill checks the 20% proc chance. On success, volatile hives appear at the kill location and persist for the listed duration. Enemies that approach the hives trigger an explosion dealing 80 Heat Damage in a 10-meter radius from the hive. The explosion is trigger-based -- hives only detonate when an enemy physically approaches, making them persistent area denial that activates when enemies arrive rather than immediately. Standing in the Boils zone applies Heat Damage type to Theorem Arcanes, enabling Theorem arcanes that amplify based on elemental damage type to benefit from the Heat typing.
 
-Companions with dedicated toxin damage builds (Kavats with toxin mods, Sentinels with toxin-modded weapons) generate higher base proc damage, which Residual Boils then spreads at full value to surrounding targets.
+At rank 0, hives persist 3 seconds. At rank 3, hives persist 12 seconds, providing a longer denial window before expiring.
 
 ## Stats per rank
 
-| Rank | Spread Targets | Notes |
-|------|---------------|-------|
-| 0 | 3 | Small area toxin spread |
-| 1 | 3.6 | Slight coverage expansion |
-| 2 | 4.2 | Moderate spread improvement |
-| 3 | 4.8 | Strong group coverage |
-| 4 | 5.4 | High-density enemy coverage |
-| 5 | 6 | Maximum enemy spread per proc |
+| Rank | Hive Duration | Explosion Damage | Explosion Radius |
+|------|--------------|-----------------|-----------------|
+| 0 | 3s | 80 Heat | 10m |
+| 1 | 6s | 80 Heat | 10m |
+| 2 | 9s | 80 Heat | 10m |
+| 3 | 12s | 80 Heat | 10m |
 
 ## Acquisition
 
-Residual Boils drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is available through standard Zariman content after completing Angels of the Zariman. Regular Void Cascade runs encounter Boils as a potential companion arcane reward. Players investing in companion-focused builds often farm Zariman content as it provides multiple companion arcanes in the Residual series simultaneously. Warframe.market provides direct purchase options for targeted acquisition.
+Residual Boils drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Players building Residual-Theorem arcane sets farm Zariman content for all Residual and Theorem arcanes simultaneously, as the full set synergizes most effectively. Warframe.market provides direct purchase for targeted acquisition.
 
 ## Builds that use it
 
-Residual Boils excels on builds centered on companion toxin damage application. Kavats with Viral modding (Toxin + Cold) generate toxin procs as part of the combined element, allowing Boils to spread toxin independently of the primary element. Sentinels with Verglas (cryo weapon) or toxin-modded sidearms trigger Boils on every successful toxin proc against enemy groups. High-enemy-density content (survival missions, defense waves) provides the most targets for each spread event. Pairing with other Residual arcanes (Residual Viremia, Residual Malodor) creates compound companion proc synergies where each element type triggers its respective spread arcane.
+Residual Boils is designed for the Residual-Theorem arcane pairing system. Kitgun-primary builds that kill enemies at high rates generate 20% hive-spawn procs frequently throughout combat, placing volatile hives across the battlefield. Standing in the hive zones activates the Heat Damage type for Theorem Arcanes, enabling any equipped Theorem arcanes to scale with or receive bonuses based on Heat Damage type. The 10-meter explosion radius covers a meaningful area, making hives effective against grouped enemies approaching through choke points.
+
+Builds combining Residual Boils with Theorem Contagion or other Theorem arcanes receive the Heat type activation needed for the Theorem set's elemental interaction mechanics. Kitgun builds with high kill rates maximize the frequency of hive spawns, ensuring the Boils area is consistently maintained near the player's position.
 
 ## Notes
 
-The spread requires the companion to land the initial toxin proc; the arcane does not independently generate toxin damage. Companions with slow attack rates benefit less from Boils due to fewer initial procs per minute. Enemies immune to toxin damage (some Infested variants, Alloy Armor heavy units with toxin resistance) resist both the initial proc and the spread. The spread range is fixed and not modified by companion or warframe Range mods. Multiple simultaneous companions in a squad do not stack Boils spread on the same enemy; each companion's spread triggers independently.
+The 20% trigger chance is fixed across all ranks; only the hive duration scales with rank. Multiple hive clusters can exist simultaneously from multiple Kitgun kills, creating overlapping explosion zones in high-traffic areas. The explosion from each hive triggers once when an enemy approaches and does not regenerate after detonation. The Heat Damage type applied to Theorem Arcanes by standing in the area is the set mechanic that links the Residual series to the Theorem series -- this interaction only applies while the warframe physically stands within the hive zone.
 
 ## Sources
 
-- WFCD warframe-items dataset documents spread targets and trigger conditions for Residual Boils.
-- Fandom wiki entry for Residual Boils provides context on companion toxin mechanics and the Residual arcane series.
+- WFCD warframe-items dataset provides hive duration values per rank and the 20% trigger chance for Residual Boils.
+- Fandom wiki entry for [Residual Boils](https://warframe.fandom.com/wiki/Residual_Boils) covers volatile hive explosion mechanics and the Theorem Arcane Heat type interaction.

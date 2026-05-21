@@ -18,52 +18,56 @@ perRankStats:
   - rank: 5
     stats: { crit_chance: 20 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Secondary_Kinship
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Secondary_Kinship
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Secondary Kinship provides team-wide resistance buffs triggered by secondary weapon reloads. The resistance increase applies to all damage types simultaneously, making it one of the broader defensive arcanes available for secondary weapons. Each reload action from the secondary weapon buffs the player and squadmates in range, meaning high-frequency reload builds maintain consistent resistance uptime across extended missions.
+Secondary Kinship grants Critical Chance to the secondary weapon based on the number of ally warframes the player is actively buffing. While ability buffs from the player's warframe are active on allied warframes, the secondary weapon's Critical Chance increases by the listed amount per ally buff maintained. Frames that cast persistent team buffs -- Wisp's Reservoirs, Oberon's Hallowed Ground, Rhino's Roar across squadmates -- benefit from the Critical Chance bonus on their secondary weapon simultaneously.
 
-Unlike armor-based arcanes that only benefit frames with substantial base armor, resistance buffs scale universally across all frame types. Whether the frame relies on shields, health, or armor as its primary defense layer, the all-resistance bonus provides meaningful damage reduction without requiring specific frame stats.
+At rank 5, each actively buffed ally adds +20% Critical Chance to the secondary weapon. In a squad of 4 players, buffing all 3 allies adds +60% Critical Chance, significantly boosting the secondary weapon's crit performance during the buff window.
 
 ## Effect
 
-Each secondary weapon reload triggers the resistance buff check. On success, the player and nearby allies gain resistance to all incoming damage types for the buff duration. At rank 0, 15% resistance provides a noticeable reduction in damage intake; at rank 5, 75% resistance substantially reduces burst damage from elite enemies. The all-resistances tag means the buff applies to physical damage types (slash, puncture, impact), elemental damage types (heat, cold, electric, toxin), and combined elemental types (corrosive, viral, radiation, magnetic, blast, gas). This breadth makes the buff consistently useful against any enemy faction without requiring knowledge of specific enemy damage profiles.
+While the player's warframe is actively buffing one or more allied warframes with ability-based buffs, the secondary weapon gains the listed Critical Chance bonus per buffed ally. At rank 0, each buffed ally adds +3% Critical Chance. At rank 5, each buffed ally adds +20% Critical Chance. The bonus is active only while buffs are maintained -- if ability buffs expire or allies leave range, the Critical Chance bonus decreases correspondingly.
+
+The bonus is concurrent with the buff -- both the team buff and the secondary weapon bonus are active at the same time, rewarding the player for being in a buff-active support role.
 
 ## Stats per rank
 
-| Rank | Resistance Bonus | Duration | Notes |
-|------|-----------------|----------|-------|
-| 0 | +15% | 8s | Mild universal reduction |
-| 1 | +30% | 8s | Moderate multi-type mitigation |
-| 2 | +45% | 8s | Strong resistance baseline |
-| 3 | +60% | 8s | Substantial damage reduction |
-| 4 | +70% | 8s | Near-maximum for most builds |
-| 5 | +75% | 8s | Maximum resistance coverage |
+| Rank | Critical Chance per Buffed Ally |
+|------|-------------------------------|
+| 0 | +3% |
+| 1 | +6% |
+| 2 | +10% |
+| 3 | +13% |
+| 4 | +17% |
+| 5 | +20% |
 
 ## Acquisition
 
-Secondary Kinship drops from Zariman Ten-Zero missions and Void Cascade content across rotation tiers. The arcane is available through standard progression in Zariman content after completing Angels of the Zariman. Regular Void Cascade runs naturally accumulate Kinship copies over multiple sessions. Warframe.market provides an alternative acquisition path through direct trading for players who prefer to invest platinum rather than farm directly.
+Secondary Kinship drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase for targeted acquisition.
 
 ## Builds that use it
 
-Secondary Kinship suits support-oriented builds that prioritize team survivability over individual damage output. Frames that frequently reload - sentinel-synced secondaries, high-ammo-capacity pistols with fast reload mods - trigger Kinship often enough to maintain near-constant team resistance buffs during active combat. Defensive squad compositions running Inaros, Nidus, or Rhino as front-line tanks alongside support frames benefit from layered defensive contributions. The reload trigger is particularly efficient in squad play because each player reloading their secondary independently checks for the buff, creating multiple opportunities per rotation cycle for resistance uptime across the team.
+Secondary Kinship is designed for support-role warframes that maintain persistent team buffs. Wisp running Reservoirs of Haste, Breach, and Mend simultaneously buffs nearby allies with multiple buff types, potentially counting as multiple active buffs per ally for Critical Chance accumulation. Rhino's Roar buff applied to squadmates maintains the bonus for Roar's full duration. Harrow's Covenant, Oberon's Renewal, and Hildryn's Haven all apply persistent buffs to allies that maintain the Secondary Kinship bonus while active.
+
+The arcane is most effective in full 4-player squads where 3 allies can all receive buffs, maximizing the Critical Chance bonus. Solo play provides no benefit since no ally warframes are present to buff.
 
 ## Notes
 
-The resistance bonus is a percentage reduction of incoming damage after other mitigation calculations. It does not interact with armor in a multiplicative fashion; both operate as independent damage reduction layers. The support range is fixed and not affected by Ability Range mods. Allies beyond the support radius do not receive the buff. Multiple squad members equipping Secondary Kinship provide overlapping windows that effectively maintain near-permanent resistance coverage during active firefights. The buff does not stack beyond a single application per player; only duration refreshes on re-trigger.
+The definition of "buffing ally warframes" follows the game's ability buff detection -- abilities that apply a tracked status buff to ally warframes count. Temporary buffs that expire quickly may not maintain consistent Critical Chance bonus unless recast. The bonus is per buffed ally, not per buff type -- if one ally receives multiple buffs from the same ability, it may still count as one ally for the per-buff calculation, depending on implementation. Secondary Kinship has no benefit in solo play where no ally warframes are available to be buffed.
 
 ## Sources
 
-- WFCD warframe-items dataset documents the trigger mechanic and resistance scaling for Secondary Kinship.
-- Fandom wiki entry for Secondary Kinship provides notes on team buffing radius and multi-player interaction.
+- WFCD warframe-items dataset provides Critical Chance per buffed ally values per rank for Secondary Kinship.
+- Fandom wiki entry for [Secondary Kinship](https://warframe.fandom.com/wiki/Secondary_Kinship) covers ally buff detection conditions and Critical Chance application behavior.

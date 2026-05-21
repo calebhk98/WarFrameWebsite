@@ -46,42 +46,49 @@ sources:
   - url: "https://github.com/WFCD/warframe-items"
     accessedAt: "2026-05-20"
     publisher: "WFCD"
-    note: "Arcane drops and mechanic data from WFCD 1.756.0+"
   - url: "https://warframe.fandom.com/wiki/Arcane_Nullifier"
     accessedAt: "2026-05-20"
     publisher: "Fandom"
-    note: "Enemy mechanics and strategic applications"
 updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Nullifier is a Warframe arcane that grants a passive chance to strip enemy shields upon contact with Nullifier Crewman shield domes. The arcane activates when the Tenno physically enters or attacks through a Nullifier bubble, providing a powerful tool against Corpus defensive units. Unlike other shield-stripping mechanics that require ability casts or specific mod combinations, this arcane triggers automatically on engagement, making it ideal for aggressive playstyles. The mechanism provides strong utility in Corpus-heavy missions (Void Fissures, Zariman, Void Cascade) without requiring frame-specific abilities or significant mod slots.
+Arcane Nullifier provides a passive chance to resist Magnetic Status effects applied to the warframe. Magnetic status drains shields and reduces maximum shields, making it a dangerous debuff in Corpus-heavy content where Magnetic is commonly applied. Each Magnetic proc application triggers the arcane's resistance check, and on success, the proc is negated before it can apply shield damage or the shield-reduction debuff.
 
-## Effect per rank
+At rank 5, the 102% resistance chance provides functional immunity -- Magnetic Status cannot apply to the warframe. Players who regularly run Corpus missions, Void Fissures on Corpus nodes, or Profit-Taker encounters where Magnetic procs appear frequently benefit most from consistent Nullifier coverage.
 
-Arcane Nullifier builds up a dispel chance from 10% at rank 0 to 60% at rank 5, with the number of shield layers stripped increasing at rank 3 from one to two. The arcane does not have a cooldown between triggers, meaning rapid successive contacts with shield bubbles can stack multiple dispels. At maximum rank, the arcane achieves a 60% chance per contact to strip up to 2 shield layers per trigger event. The mechanic applies to all Nullifier-type enemies across the star chart, including Corpus MOAs, Combas, and elite variants. This arcane scales in value as enemy levels increase, since higher-level Nullifiers spawn with additional shield layers that are more challenging to remove through conventional means.
+## Effect
 
-| Rank | Dispel chance | Max shields stripped | Effective |
-|------|------------:|-------------------:|----------|
-| 0 | 10% | 1 | Low |
-| 1 | 20% | 1 | Low |
-| 2 | 30% | 1 | Moderate |
-| 3 | 40% | 2 | Moderate |
-| 4 | 50% | 2 | High |
-| 5 | 60% | 2 | High |
+Each incoming Magnetic Status application checks against the Nullifier resistance chance. On success, the Magnetic proc is negated and does not drain shields or apply the shield reduction debuff. At rank 0, 17% resistance negates roughly one in six Magnetic procs -- a modest reduction in proc frequency. At rank 5, 102% resistance functions as complete immunity; Magnetic Status from enemy sources cannot apply to the warframe.
+
+The resistance operates passively without any player input. No activation or upkeep is required. The negation occurs at the point of application, meaning no partial proc lands before being cleared.
+
+## Stats per rank
+
+| Rank | Magnetic Status Resistance |
+|------|--------------------------|
+| 0 | 17% |
+| 1 | 34% |
+| 2 | 51% |
+| 3 | 68% |
+| 4 | 85% |
+| 5 | 102% (immune) |
 
 ## Acquisition
 
-Arcane Nullifier drops from Duviri/Endless missions at Legendary rarity (0.67% Tiers 1--3, 4% Tier 9), Zariman Skirmish nodes at uncommon rarity (10% Rotation C), and legacy Eidolon Hydrolyst sources (8%). The most accessible farm involves running Zariman Void Cascade on Rotation C with squad resource boosters, which offer 12.5% drop chance. Duviri Tier 9 provides reliable drops for dedicated solo farmers, though the low drop rate demands significant time investment. For players with strong Eidolon execution, the Hydrolyst remains farmable but is considered obsolete as a primary source given Duviri and Zariman availability. Nullifier arcane acquisition benefits from radioshare squads, as each player's drops are independent.
+Arcane Nullifier drops from Duviri/Endless at Legendary rarity (0.67% Tiers 1 and 3, 4% Tier 9), Skirmish nodes on Pluto, Neptune, and Venus at Uncommon Rotation C (10-10.34%), Eidolon Hydrolyst (8%), and Zariman Ten Zero Void Cascade (12.5%). Zariman Void Cascade provides the highest listed drop chance at 12.5% and is accessible after completing Angels of the Zariman. Eidolon Hydrolyst is available nightly during Eidolon hunting phases for players with established capture squads. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Arcane Nullifier shines on aggressive Corpus farming builds, particularly Void Fissure endless runs where Nullifiers spawn in escalating waves. Volt Prime benefits most, combining this arcane with Overcharge and Shield Polarize for overwhelming shield removal. Mag Prime naturally synergizes through her Magnetize and Polarize abilities, making the arcane a quality-of-life upgrade rather than a core mechanic. Limbo can use Arcane Nullifier to safely farm Void Fissures without risking ability-based shield stripping, relying on passive contact to weaken enemies before Banish. The arcane is less valuable on Grineer-focused missions (void fissures over level 30 tend to be Corpus), making it situational rather than universal. Pairing with weapons that have high attack speed ensures frequent shield bubbles are triggered in rapid succession, maximizing dispel proc chances.
+Arcane Nullifier benefits any warframe build that operates in Corpus-heavy content where Magnetic procs appear frequently. Shield-reliant frames -- Hildryn with her shield-based ability costs, Harrow with Condemn generating shields, Mesa with Shatter Shield -- take the most direct benefit from eliminating the shield drain and reduction that Magnetic Status applies. The arcane's value increases with shield pool size, since larger shield pools suffer proportionally greater depletion from unresisted Magnetic procs.
+
+Frames with no significant shield investment in standard health-tank configurations gain less direct benefit from Nullifier since Magnetic primarily affects shields. Operators running Zariman content where enemy Magnetic application is less common than Void Cascade hazards will find the arcane's situational coverage less critical than in dedicated Corpus missions.
 
 ## Notes
 
-Arcane Nullifier only triggers on contact with active Nullifier shield bubbles; it does not provide any benefit against passive Corpus defenses (Comba drones without shields, shielded MOAs). The arcane stacks in effectiveness when multiple squad members equip it, as each player's proc can independently strip additional layers. Unlike Mag's Polarize, Nullifier arcane dispels do not redirect projectiles or grant overshields - they purely remove shield layers. The arcane's effectiveness scales with enemy level; high-level Nullifiers may spawn with 3+ shield layers, meaning full removal still requires conventional stripping or multiple arcane procs. At endgame levels (170+), this arcane is most effective as a quality-of-life tool rather than a primary damage/defense layer.
+Arcane Nullifier specifically covers Magnetic Status only -- it provides no resistance to other status effects such as Cold, Heat, or Electricity. The 102% at rank 5 exceeds the normal 100% cap by design; values above 100% guarantee resistance against all incoming Magnetic procs. The resistance check is per-proc -- each incoming Magnetic application is checked independently. In sustained Corpus combat where multiple Magnetic procs fire simultaneously (from Moa swarms with magnetic weaponry), higher resistance ranks reduce the probability of any single proc landing. The arcane does not affect Magnetic damage dealt by enemies before the proc component -- only the status effect application itself is resisted.
 
 ## Sources
 
-Arcane Nullifier mechanics and drop table information derive from WFCD warframe-items database and the WARFRAME Wiki. Acquisition data has been cross-referenced with Duviri tier structure and Zariman mission rotations. The arcane was introduced with Zariman Ten Zero and received mechanical refinements in patch 2025-02; older descriptions may reflect outdated interaction models.
+- WFCD warframe-items dataset provides Magnetic Status resistance chance per rank for Arcane Nullifier.
+- Fandom wiki entry for [Arcane Nullifier](https://warframe.fandom.com/wiki/Arcane_Nullifier) covers Magnetic Status proc mechanics and shield interaction behavior.

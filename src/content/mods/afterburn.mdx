@@ -19,36 +19,43 @@ perRankStats:
 drops: []
 sources:
   - url: "https://github.com/WFCD/warframe-items"
-    accessedAt: "2026-05-20"
+    accessedAt: "2026-05-20T00:00:00Z"
     title: "WFCD warframe-items"
     publisher: "WFCD"
   - url: "https://warframe.fandom.com/wiki/Afterburn"
-    accessedAt: "2026-05-20"
-    title: "Afterburn  -  WARFRAME Wiki"
+    accessedAt: "2026-05-20T00:00:00Z"
+    title: "Afterburn -- WARFRAME Wiki"
     publisher: "Fandom"
 updatedAt: "2026-05-20"
 ---
 
-Enhanced warframe augmentation modifying ability mechanics. Designed to create synergistic scaling with existing ability strength builds.
+## Overview
 
-## Effects per Rank
+Afterburn is a Warframe augment mod for Chroma's first ability, Spectral Scream. When Spectral Scream is deactivated, Chroma launches an elemental projectile that deals damage equal to 25 damage per second the ability was active at rank 0, scaling to 100 damage per second at rank 3. The total damage is capped -- the cap increases per rank, reaching a maximum of 200 damage at rank 0 up to 500 at rank 3 per WFCD level data. The projectile inherits the elemental type of Chroma's active elemental alignment (set by Chroma's passive or energy color).
 
-The mod's strength scales progressively through ranks, with each rank providing incremental improvements to ability performance and effectiveness. The exact scaling depends on ability strength mods in your loadout and the specific warframe you have equipped. Strategic ranking decisions significantly impact overall build efficiency and mission performance in both finite and endless mission types.
+This augment incentivizes holding Spectral Scream active for longer before deactivating, converting the animation time into burst damage output on release. The projectile's element matches whatever elemental aura Chroma has equipped, enabling the mod to align with a broader Chroma build focused on a specific elemental damage type.
 
-Rank progression provides cumulative benefits that enhance the mod's core functionality throughout your build. Early ranks unlock base effects, while higher ranks provide substantial power gains. Efficient modding requires understanding which ranks provide critical breakpoints for specific build objectives and mission challenges.
+## Stats per rank
+
+| Rank | Drain | Damage per second active |
+|------|-------|--------------------------|
+| 0    | 6     | 25                       |
+| 1    | 6     | 50                       |
+| 2    | 6     | 75                       |
+| 3    | 6     | 100                      |
 
 ## Acquisition
 
-This mod drops from specific mission types and activities that reward warframe augmentations to tenno who have progressed sufficiently in star chart exploration. The acquisition method depends on the warframe ability it augments and the current in-game event schedule. Players typically obtain this mod through participation in endgame mission variants, boss assassination runs, and challenging endurance activities.
+Afterburn is acquired from the four Arbiters of Hexis, New Loka, Cephalon Suda, or Steel Meridian syndicates as an augment offering. Syndicate augment mods are purchased using syndicate standing earned through daily syndicate missions and medallion collection. Players must reach sufficient standing rank with the syndicate offering Afterburn before it becomes available in the syndicate store.
 
-Some acquisition methods involve void fissure missions or relic farming, while others come from direct boss drops or void cascade rewards. Consult the official Warframe wiki for the most current drop location information and current acquisition pathways.
+Afterburn also appears on warframe.market as a player trade item, providing a platinum-based alternative for players who have not reached the required syndicate standing tier.
 
-## Usage
+## Builds that use it
 
-Apply this augment to unlock enhanced ability mechanics on compatible warframes. The mod works best when combined with ability strength increasing mods such as Umbral Intensify, Intensify, or Augur Secrets. Team composition and mission modifiers influence the practical effectiveness during squad play across different endgame content tiers.
+Afterburn suits Chroma builds oriented around burst elemental damage rather than pure Vex Armor buffing. Pair with high ability-strength mods (Umbral Intensify, Transient Fortitude) to increase the base damage of Spectral Scream's elemental aura, which also feeds into the Afterburn projectile's damage calculation. Builds using Chroma's heat or electric elemental alignment gain the most benefit from the projectile against enemy types with matching elemental weaknesses.
 
-Synergistic combinations with other mods amplify the augment's effectiveness exponentially. Building around this mod creates specialized build variants tailored to specific mission challenges and squad compositions. Experimentation with different mod combinations yields optimal configurations for individual playstyles.
+This augment is most useful in content where Spectral Scream would be run for extended durations before deactivation, such as mission scenarios where sustained elemental hazard is valuable. It is less common in pure Vex Armor buffing builds where Spectral Scream is rarely activated at all.
 
-## Sources
+## Notes
 
-This mod is available through WFCD warframe-items canonical database as a documented warframe augment. The Warframe Wiki provides updated information on drop locations, acquisition strategies, and optimal usage patterns. Community resources like Overframe and warframe.market track price trends and availability across trading platforms. Recent patch notes from Digital Extremes may affect mod availability and balance.
+Afterburn replaces the standard passive deactivation behavior of Spectral Scream with the elemental projectile launch. WFCD confirms `drops: []`, indicating no standard mission drop table entries; acquisition is through syndicate stores or player trading. The mod interacts only with Chroma and its Spectral Scream ability.

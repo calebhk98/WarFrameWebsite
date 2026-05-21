@@ -33,40 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Camisado restores health on finisher attacks, enabling melee-focused frames to maintain health sustain through execution mechanics during combat. Finisher attacks in Warframe are triggered by approaching downed enemies (ground finisher) or sneaking up on unalerted targets (stealth finisher). Camisado converts these deliberate attacks into health recovery opportunities, linking offensive melee execution to defensive sustainability.
+Arcane Camisado builds stacking Ability Strength from summoned minion attacks, then delivers that bonus to the next ability cast. Each attack from a summoned minion adds +ability_strength% Ability Strength up to the rank-dependent cap. When the player casts an ability, all accumulated stacks are consumed and the bonus applies to that cast. The mechanic rewards frames that actively field minions -- the minions generate Ability Strength while attacking, and the player can time ability casts to use the accumulated bonus.
 
-The finisher-based trigger suits playstyles that intentionally set up execution conditions - stealth builds that approach enemies from behind, melee builds with high knockdown rate that frequently access ground finishers, or frames with abilities that force finisher-eligible states (Ash's Blade Storm, Banshee's Silence). Regular high-finisher-rate combat maintains sufficient heal frequency to significantly offset incoming damage in low-to-mid difficulty content.
+At rank 5, each minion attack adds +6% Ability Strength up to a cap of +60%. Building to the cap requires 10 minion attacks. Frames running multiple minions simultaneously accumulate stacks faster than frames with a single summoned unit.
 
 ## Effect
 
-Each finisher attack checks the Camisado trigger chance. On success, flat health is restored to the warframe immediately. At rank 0, 50 health restore per finisher provides minor sustain in light combat scenarios; at rank 5, 150 health restore per finisher is substantial for frames with 300-600 total health. Builds that perform multiple finishers per combat sequence - particularly stealth builds performing consecutive undetected kills - stack healing across rapid execution chains.
+Each attack landed by a summoned minion (Nekros Shadows of the Dead, Nidus Larva with enemy grab, Khora Venari, pet companions with attack commands) adds one increment of Ability Strength. Stacks accumulate silently until the player casts a warframe ability, at which point all stacks are consumed and the bonus fires. The stacks are visible in the buff display as a counter. After consumption the counter resets to zero and minion attacks begin rebuilding it.
 
-Flat health restoration does not scale with Power Strength but benefits frames with higher total health through a larger effective health pool to replenish.
+At rank 0, each attack adds +1% up to +10% cap -- a small bonus. At rank 5, each attack adds +6% up to +60% cap, providing a meaningful Ability Strength boost on priority ability casts. The bonus applies to the ability's damage, healing, buff magnitude, and area scaling.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Health Restore | Notes |
-|------|----------------|----------------|-------|
-| 0 | 15% | 50 | Minor heal per finisher |
-| 1 | 22% | 75 | Moderate recovery |
-| 2 | 30% | 100 | Solid finisher heal |
-| 3 | 37% | 125 | Strong execution sustain |
-| 4 | 41% | 137 | High-value finisher heal |
-| 5 | 45% | 150 | Maximum finisher restoration |
+| Rank | Ability Strength per Minion Attack | Maximum Bonus |
+|------|-----------------------------------|--------------|
+| 0 | +1% | +10% |
+| 1 | +2% | +20% |
+| 2 | +3% | +30% |
+| 3 | +4% | +40% |
+| 4 | +5% | +50% |
+| 5 | +6% | +60% |
 
 ## Acquisition
 
-Arcane Camisado drops from Zariman Void Fissure at 4% and Void Cascade rotation C at 2%. Zariman Ten-Zero content provides consistent access after completing Angels of the Zariman. Rotation C requires sustained Void Cascade runs; combining Camisado farming with Void Fissure sessions provides the best acquisition rate. Warframe.market lists Camisado for direct purchase at moderate plat values for players prioritizing immediate access.
+Arcane Camisado drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation C at 2%. Both sources are available after completing Angels of the Zariman. Void Cascade rotation C requires extended runs. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Arcane Camisado excels on melee-focused frames with high finisher access. Ash with Blade Storm paired with finisher-enabling mods generates guaranteed finisher access. Banshee using Silence to stun enemies enables repeat stealth finishers in close proximity. Ivara with Artemis Bow prowl-mode walking allows stealth finishers on every enemy in a squad. Ground finisher builds that pair high-knockdown melee weapons (Quiver, Ack and Brunt) with Covert Lethality ensure every knockdown leads to a finisher and potential Camisado heal. Frames with moderate health pools (200-400 HP) benefit proportionally more from 150 health restore than high-HP frames that need larger absolute values.
+Arcane Camisado is purpose-built for summoner-caster hybrid builds. Nekros using Shadows of the Dead to field multiple shadow copies gets continuous minion attack procs that build Camisado stacks rapidly during sustained combat, providing a Ability Strength bonus on the next Desecrate or Terrify cast. Nidus builds using Ravenous to spawn Maggots field persistent minion attackers that accumulate stacks between Virulence casts. Khora builds with Venari in attack mode get constant Venari attack procs building toward the cap before casting Strangledome.
+
+The arcane is least useful on frames without summoning abilities and on frames that cast abilities faster than minions can accumulate stacks.
 
 ## Notes
 
-Finisher attacks require the enemy to be in a finisher-eligible state: downed from knockback, ragdolled, staggered from stealth approach, or specifically vulnerable from ability effects. Ground finishers (on downed enemies) are the most accessible finisher type in standard combat. Stealth finishers require unalerted enemy state. The trigger chance applies per finisher attack; multiple finisher attacks in a sequence check independently. Health restore applies immediately upon finisher completion, allowing quick recovery during multi-enemy finisher chains.
+Companion pets (Kavat, Kubrow, Robotic companions) in attack mode are not categorized as summoned minions for Camisado's trigger -- only abilities that specifically summon temporary combat units qualify. Stacks persist between ability casts until consumed; the player can build stacks over multiple minion attack rounds before consuming them on a single high-priority ability. The bonus does not extend beyond the consuming cast; after the ability fires, the buff ends and stack accumulation restarts. The cap of +60% at rank 5 is the maximum possible even with continued minion attacks beyond 10.
 
 ## Sources
 
-- WFCD warframe-items dataset covers finisher health restore values and trigger conditions for Arcane Camisado.
-- Fandom wiki entry for Arcane Camisado documents finisher types and melee build integration notes.
+- WFCD warframe-items dataset provides Ability Strength per minion attack and cap values per rank for Arcane Camisado.
+- Fandom wiki entry for [Arcane Camisado](https://warframe.fandom.com/wiki/Arcane_Camisado) covers minion qualification rules and summoner build interactions.

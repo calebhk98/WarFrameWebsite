@@ -33,43 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Eternal Onslaught is an amp arcane that grants Power Strength to the warframe when the operator lands amp attacks. This creates a link between operator combat effectiveness and warframe ability power - players who actively engage enemies in operator mode using their amp build up a Power Strength bonus that carries back to the warframe on transference return. Operator-active builds that regularly cycle between amp combat and warframe ability usage can sustain meaningful Power Strength uptime throughout a mission.
+Eternal Onslaught is an operator arcane that grants Critical Chance when the operator's energy is fully depleted. Running the operator's energy pool to zero triggers the arcane, providing a critical chance bonus for 8 seconds -- converting an energy crisis into a temporary offensive advantage. Operators who intentionally drain their energy through sustained ability use or amp fire trigger the bonus consistently, creating a playstyle that cycles from full energy to depletion for each bonus activation.
 
-Amp attacks include any damage event from the amp weapon fired in operator mode. Primary fire beam attacks, alternate fire blasts, and amp-based void attacks all count toward the trigger check. High-fire-rate amps with continuous beam attacks generate trigger checks at high frequency, while slower burst-fire amps generate fewer checks per second but each check at the same chance.
+At rank 5, Energy Depleted triggers +180% Critical Chance for 8 seconds. On an amp with 15% base critical chance, this bonus adds 180 percentage points to reach 195% critical chance -- exceeding the first tier of orange crits and approaching consistent orange critical hits on amp fire during the window.
 
 ## Effect
 
-Each amp attack in operator mode triggers a chance check. On success, the warframe gains a Power Strength bonus for 8 seconds. At rank 0, a 15% trigger chance grants 30% Power Strength - roughly one in six amp hits produces an ability strength boost. At rank 5, a 45% trigger chance grants 90% Power Strength - nearly half of all amp hits trigger the bonus, and 90% Power Strength amplifies ability outputs to values approaching those achieved with dedicated strength mods.
+When the operator's energy pool reaches zero from depletion, Eternal Onslaught activates and applies the listed Critical Chance bonus for 8 seconds. At rank 0, +30% Critical Chance provides a small improvement to amp critical output. At rank 5, +180% Critical Chance dramatically shifts amp critical performance for the 8-second window, turning most amp shots into critical hits.
 
-The 8-second duration is sufficient to cover the return to warframe and several ability casts before expiring. Players who switch back to warframe mode immediately after triggering Onslaught extract the full duration for ability usage, rather than consuming the buff window in continued operator combat.
+The energy depletion trigger is specific: energy must be depleted from active use (ability drain, amp fire cost) rather than reaching zero from initial entry into operator mode. Operators who enter with full energy must actively spend it down to zero to trigger Onslaught. After triggering, the energy pool begins natural regeneration; depleting to zero again during the window can reset the buff timer.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Power Strength Boost | Duration | Notes |
-|------|----------------|----------------------|----------|-------|
-| 0 | 15% | +30% | 8s | Occasional strength window |
-| 1 | 22% | +45% | 8s | Moderate ability scaling |
-| 2 | 30% | +60% | 8s | Reliable strength boost |
-| 3 | 37% | +75% | 8s | Strong ability amplification |
-| 4 | 41% | +82% | 8s | Near-maximum uptime |
-| 5 | 45% | +90% | 8s | Maximum strength coverage |
+| Rank | Critical Chance Bonus | Duration |
+|------|--------------------- |----------|
+| 0 | +30% | 8s |
+| 1 | +60% | 8s |
+| 2 | +90% | 8s |
+| 3 | +120% | 8s |
+| 4 | +150% | 8s |
+| 5 | +180% | 8s |
 
 ## Acquisition
 
-Eternal Onslaught drops from Zariman Void Cascade at 4% and Void Fissure rotation B at 2%. Both sources are part of Zariman Ten-Zero content, accessible after completing Angels of the Zariman. Void Cascade at 4% provides the primary farming route - extended Void Cascade runs naturally accumulate Onslaught copies over multiple sessions. Warframe.market provides an alternative for players who prefer to purchase rather than run multiple Zariman sessions.
+Eternal Onslaught drops from Zariman Void Cascade rewards at 4% and Void Fissure rotation B at 2%. Both sources are part of Zariman Ten-Zero content, accessible after completing Angels of the Zariman. Void Cascade at 4% is the primary farming route -- extended Void Cascade runs naturally accumulate Onslaught copies over multiple sessions. Warframe.market provides an alternative for players who prefer to purchase rather than run multiple Zariman sessions.
 
 ## Builds that use it
 
-Eternal Onslaught fits operator-active builds where the player regularly engages enemies in operator mode before returning to the warframe for ability usage. Madurai school builds that use the Void Sling for void damage and then return to warframe for damage abilities benefit from the strength amplification window. Unairu builds that strip armor in operator mode and then return to warframe for ability damage gain amplified damage output during the Onslaught buff window.
+Eternal Onslaught fits operator builds designed around energy expenditure cycles. Operators who chain Void Slings, activate Focus abilities, and fire amp bursts deplete energy quickly, triggering Onslaught frequently if the cycle reaches zero. The bonus Critical Chance amplifies amp damage during the depletion window -- coupling high-crit-damage amp configurations with Onslaught's crit chance boost produces elevated critical hit damage during the 8-second activation.
 
-Frames with high-scaling damage abilities - Saryn's Spores, Equinox's Maim, Mesa's Peacemaker - benefit most from the temporary Power Strength boost because their abilities scale strongly with strength values. Pairing Eternal Onslaught with an amp that fires quickly maximizes trigger frequency, accumulating the buff more reliably per combat cycle than slow-fire amps.
+Madurai school operators using Void Radiance drain energy quickly through ability activation, pushing toward depletion faster than passive energy use alone. Combining Onslaught with an amp that already has meaningful base critical chance ensures the bonus pushes into red crit territory at rank 5.
 
 ## Notes
 
-The Power Strength bonus applies to warframe abilities and does not directly increase amp damage. The buff persists through transference - triggering the arcane in operator mode and immediately returning to warframe mode carries the buff into the warframe phase. The 8-second window begins when the arcane procs, not when transference occurs. Operator combat that extends beyond the 8-second window before returning to warframe may waste part of the buff duration if the window expires before the warframe casts its abilities. The buff does not stack - a second proc while the first is active refreshes the timer without adding additional Power Strength.
+The trigger fires at the moment energy reaches exactly zero from active depletion -- not when energy is low, but specifically at the depletion event. Operators who stop spending energy just above zero without depleting do not trigger Onslaught. Natural energy regeneration during operator mode restores energy without preventing the trigger; the trigger is tied to the depletion event, not to the energy level sustained afterward. The critical chance bonus applies to all amp fire during the 8-second window. Re-depleting energy within the active window resets the timer, allowing extended windows during sustained combat that repeatedly drains to zero.
 
 ## Sources
 
-- WFCD warframe-items dataset documents amp attack triggers and Power Strength scaling for Eternal Onslaught.
-- Fandom wiki entry for Eternal Onslaught covers transference timing behavior and school-specific synergy notes.
-
+- WFCD warframe-items dataset provides Critical Chance values per rank and the Energy Depleted trigger for Eternal Onslaught.
+- Fandom wiki entry for [Eternal Onslaught](https://warframe.fandom.com/wiki/Eternal_Onslaught) covers energy depletion trigger conditions and critical chance application to amp fire.

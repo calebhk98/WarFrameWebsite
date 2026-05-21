@@ -21,6 +21,8 @@ export const warframeSchema = z.object({
   name: z.string().min(1),
   aliases: z.array(z.string()).default([]),
   masteryRank: z.number().int().min(0).max(30),
+  /** Annotation field for sourcing notes (e.g. WFCD issue #23 Fandom override). */
+  notes: z.string().optional(),
   health: numOrUnknown,
   shield: numOrUnknown,
   armor: numOrUnknown,

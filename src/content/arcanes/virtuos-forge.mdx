@@ -28,40 +28,40 @@ updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Virtuos Forge grants fire rate bonuses after void dashing in operator mode, creating a synergy between operator mobility and warframe weapon performance. Void Dash is the operator's primary traversal ability, triggered by dashing in midair to propel the operator at high speed. By converting each void dash into a fire rate buff upon returning to the warframe, Forge rewards players who actively use operator mode for repositioning rather than remaining exclusively in their warframe.
+Virtuos Forge converts a percentage of the operator amp's Void Damage output into Heat Damage on each hit. Rather than adding a separate damage component, the arcane shifts a portion of the existing Void Damage into the Heat element, changing the damage type distribution of each amp shot. At rank 3, 98% of Void Damage converts to Heat Damage -- at near-maximum conversion, the amp's output is almost entirely Heat rather than Void.
 
-The arcane suits operator-active playstyles that cycle between warframe and operator mode frequently. Builds using Madurai school for Void Sling damage or Zenurik for energy regen already perform regular void dashes; Virtuos Forge adds weapon performance value to those same traversal actions.
+This conversion matters for content where Heat Damage is advantageous or where Void Damage is less effective. Heat status effects apply a burning damage-over-time and a panic reaction that briefly interrupts enemy actions. Virtuos Forge enables the operator to deliver consistent Heat procs through their amp without relying on a specific amp configuration that natively generates Heat output.
 
 ## Effect
 
-Performing a void dash in operator mode triggers the fire rate buff, which activates when returning to the warframe. At rank 0, 20% fire rate for 10 seconds is sufficient to noticeably accelerate weapon cycling; at rank 5, 100% fire rate for 15 seconds effectively doubles firing speed for the entire duration. The buff applies to the active weapon at the time of re-entry into the warframe and refreshes the duration on each subsequent void dash return.
+On each amp hit, Virtuos Forge converts the listed percentage of that shot's Void Damage into Heat Damage. At rank 0, 24% of Void Damage becomes Heat Damage. At rank 3, 98% of Void Damage becomes Heat Damage -- effectively converting the amp's primary damage type. The unconverted remainder (2% at rank 3) stays as Void Damage.
 
-The fire rate bonus stacks additively with Speed Trigger, Lethal Torrent, and other fire rate mods installed on the weapon, compounding with existing fire rate investments.
+Heat Damage converted from Void Damage can apply Heat status procs on enemies, following standard status chance rules from the amp's stats. Enemy armor class interactions apply to the converted Heat Damage as they would to any Heat-type hit.
 
 ## Stats per rank
 
-| Rank | Fire Rate Bonus | Duration | Notes |
-|------|-----------------|----------|-------|
-| 0 | +20% | 10s | Modest acceleration |
-| 1 | +40% | 11s | Moderate fire rate improvement |
-| 2 | +60% | 12s | Substantial firing speed boost |
-| 3 | +80% | 13s | Strong DPS increase window |
-| 4 | +90% | 14s | Near-maximum rate |
-| 5 | +100% | 15s | Double fire rate for full window |
+| Rank | Void to Heat Conversion |
+|------|------------------------|
+| 0 | 24% |
+| 1 | 48% |
+| 2 | 72% |
+| 3 | 98% |
 
 ## Acquisition
 
-Virtuos Forge drops from Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade runs accumulate Forge copies through rotation rewards. Warframe.market provides direct purchase options for players seeking targeted acquisition without extended farming.
+Virtuos Forge drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
 
 ## Builds that use it
 
-Virtuos Forge benefits builds where operator void dashing is a regular part of the combat cycle. Madurai school builds that use Void Sling for damage proc void dashes frequently, activating Forge consistently. Full-auto primary weapons with high fire rate caps benefit most from doubling their effective firing speed during the buff window. Builds that use transference for energy management (Zenurik Void Sling for energy restore) already perform dashes often, converting those dashes into fire rate bonuses without additional effort. The arcane pairs well with secondary fire rate arcanes to create compound fire rate stacking during active buff windows.
+Virtuos Forge fits operator builds aiming to apply Heat status procs through amp fire. The conversion to Heat enables the operator to soften enemies for follow-up attacks from the warframe's primary weapon or abilities that exploit Heat-affected targets. Builds using Residual Boils (which creates Heat zones from Kitgun kills) pair with Virtuos Forge to extend Heat coverage through operator fire as well.
+
+High-status-chance amp configurations generate Heat procs more frequently with the Void-to-Heat conversion active. The arcane is useful in Void Cascade missions where the operator actively engages enemies and wants elemental procs beyond raw Void Damage.
 
 ## Notes
 
-Void Dash must be performed in operator mode to trigger the buff; warframe rolls, slides, or sprint-boosts do not activate Forge. The buff activates on returning to the warframe, not on performing the void dash in operator mode. Operators who use void sling for combat without returning to the warframe do not benefit from the fire rate bonus during that combat phase. The 15-second duration at rank 5 covers multiple weapon reload cycles, making Forge particularly efficient for weapons with standard 2-3 second reload speeds.
+The damage conversion is a direct percentage shift from Void to Heat -- it does not create extra damage, only changes the type composition of each hit. Enemies with innate resistance to Heat Damage will find the converted output less effective than pure Void Damage would be. The remaining Void Damage (2% at rank 3) still applies as Void type. Multiple hits per second from high-fire-rate amp prisms generate more status proc attempts from the converted Heat Damage component per unit time.
 
 ## Sources
 
-- WFCD warframe-items dataset covers fire rate scaling and trigger conditions for Virtuos Forge.
-- Fandom wiki entry for Virtuos Forge provides context on void dash mechanics and operator build integration.
+- WFCD warframe-items dataset provides conversion percentage values per rank for Virtuos Forge.
+- Fandom wiki entry for [Virtuos Forge](https://warframe.fandom.com/wiki/Virtuos_Forge) covers Heat Damage conversion mechanics and elemental interaction behavior.

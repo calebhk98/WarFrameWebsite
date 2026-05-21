@@ -14,54 +14,54 @@ perRankStats:
   - rank: 3
     stats: { damage: 12 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Residual_Shock
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Residual_Shock
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Residual Shock chains electric damage between enemies via companion electric procs, creating a propagating damage network from each companion electric status hit. Standard electric status in Warframe shocks the initial target and one nearby enemy; Residual Shock extends this chaining behavior to reach additional enemies at a percentage of the companion weapon's base damage. At rank 5, each companion electric proc can chain to five additional enemies at 125% weapon damage, enabling a single companion attack to effectively damage a group of six enemies simultaneously.
+Residual Shock is a companion arcane from the Residual-Theorem set that spawns an electrified spike on Kitgun kills. When a Kitgun kill is secured, there is a 20% chance that an electrified spike appears at the kill location. The spike deals 200 Electricity Damage to all enemies within 10 meters for the rank-dependent duration. Standing in the spike area activates Electricity Damage type for Theorem Arcanes, enabling the Theorem set mechanic based on elemental type proximity.
 
-Electric chains provide the stagger effect to chained targets, briefly disrupting enemy attack animations and movement. This crowd control contribution complements the damage output, making Residual Shock valuable in dense combat scenarios beyond pure damage contribution.
+At rank 3, the electrified spike persists for 12 seconds, providing sustained area Electricity Damage and Theorem Arcane activation for that duration.
 
 ## Effect
 
-Each electric status proc from the companion triggers the chain. At rank 0, electricity jumps to 2 additional enemies at 25% weapon damage; at rank 5, chains reach 5 additional enemies at 125% weapon damage. Chained enemies each receive the electric stagger, and the full damage value is applied to each chained target rather than splitting damage across them. Companions with higher base weapon damage produce more lethal chains through Residual Shock.
+On each Kitgun kill, the 20% trigger chance is checked. On success, an electrified spike spawns at the kill location. The spike deals 200 Electricity Damage to all enemies within 10 meters continuously while it persists. Electricity Damage applies Electricity status procs (chain electricity to nearby targets) on proc, adding additional area chain damage beyond the spike's direct output. Standing in the spike zone activates Electricity Damage type for Theorem Arcanes -- this is the set link between Residual Shock and Theorem arcanes that use elemental damage type as an activation condition.
 
-The chain range follows standard electric chain behavior, reaching nearby enemies in line-of-sight within the game's standard chain distance.
+At rank 0, spikes last 3 seconds. At rank 3, spikes last 12 seconds, providing a longer denial and Theorem activation window per trigger.
 
 ## Stats per rank
 
-| Rank | Chain Targets | Damage Per Chain | Notes |
-|------|--------------|-----------------|-------|
-| 0 | 2 | 25% | Small chain, limited damage |
-| 1 | 3 | 50% | Moderate chain coverage |
-| 2 | 3 | 75% | Good chain damage |
-| 3 | 4 | 100% | Full damage to wider group |
-| 4 | 4 | 112% | Above-base chain damage |
-| 5 | 5 | 125% | Maximum chain coverage |
+| Rank | Spike Duration | Electricity Damage | Spike Radius |
+|------|--------------|-------------------|------------|
+| 0 | 3s | 200 | 10m |
+| 1 | 6s | 200 | 10m |
+| 2 | 9s | 200 | 10m |
+| 3 | 12s | 200 | 10m |
 
 ## Acquisition
 
-Residual Shock drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade runs include Shock as part of the Residual companion arcane series. Players building electric companion builds often farm Zariman content for Shock alongside other Residual arcanes. Warframe.market provides direct purchase options for targeted acquisition.
+Residual Shock drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Players building Residual-Theorem arcane sets farm Zariman content for all Residual series arcanes together. Warframe.market provides direct purchase for targeted acquisition.
 
 ## Builds that use it
 
-Residual Shock excels on builds where companions deal electric damage through dedicated weapon modding. Sentinels with Verglas (cryo weapon) combined with electric mods create Magnetic procs alongside electric procs, enabling Shock chains. Kavats with Bite and electric-modded melee weapons generate electric procs through rapid melee attacks. High-density content (defense, survival) where enemies cluster together maximizes chain target availability per proc. Pairing with Residual Viremia (viral spread) and Residual Boils (toxin spread) creates a comprehensive companion proc system where each element type triggers its respective area effect.
+Residual Shock is designed for the Residual-Theorem arcane pairing system. Kitgun-primary builds with high kill rates trigger the 20% spike spawn frequently, placing electrified zones throughout active combat areas. Standing in the spike zones activates Electricity Damage type for any equipped Theorem Arcanes, enabling Theorem arcane interactions that respond to Electricity Damage type.
+
+The 200 Electricity Damage in a 10-meter radius complements Kitgun combat by providing persistent area damage around kill locations, dealing additional Electricity to enemies moving through prior kill zones. Electricity's chain proc behavior -- shocking the initial target and chaining to nearby enemies -- adds further area coverage beyond the direct spike radius.
 
 ## Notes
 
-Electric chains require the initial target to have a nearby enemy within chain range. Isolated enemies receiving the initial proc do not produce chains if no other enemies are within chain distance. The 125% chain damage at rank 5 can exceed the initial proc damage on the primary target, making Residual Shock's secondary chain hits the primary value contribution against groups. Chained enemies receive the electric stagger animation but not necessarily the full status proc if their status resistance prevents application. Multiple companion electric procs in quick succession create overlapping chain events that cover wide enemy groups efficiently.
+The 20% trigger chance is fixed across all ranks; only the spike duration scales with rank. Multiple spikes from different Kitgun kills can exist simultaneously, creating overlapping damage zones in active combat areas. The 200 Electricity Damage value is fixed and does not scale with weapon stats, companion mods, or player stats -- it is a flat zone damage value per tick. The Electricity Damage type activation for Theorem Arcanes requires the warframe to physically stand within the 10-meter spike radius; moving outside the zone deactivates the Electricity type for Theorem purposes.
 
 ## Sources
 
-- WFCD warframe-items dataset covers chain targets and damage multipliers for Residual Shock.
-- Fandom wiki entry for Residual Shock documents electric chain behavior and companion electric build integration.
+- WFCD warframe-items dataset provides spike duration values per rank and the 20% trigger chance for Residual Shock.
+- Fandom wiki entry for [Residual Shock](https://warframe.fandom.com/wiki/Residual_Shock) covers electrified spike mechanics and the Theorem Arcane Electricity type interaction.

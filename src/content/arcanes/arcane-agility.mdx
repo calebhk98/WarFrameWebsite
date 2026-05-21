@@ -33,40 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Agility grants sprint speed boosts on kills, rewarding aggressive combat playstyles by enabling frames to cover map distance efficiently between enemy engagements. The kill-based trigger creates a momentum mechanic where active combat generates movement speed, allowing frames to quickly reposition between groups, sprint to objectives, or chase down fleeing enemies without relying on ability-based speed buffs.
+Arcane Agility grants Parkour Velocity on taking damage, providing a reactive mobility boost during dangerous encounters. Parkour Velocity affects bullet jump speed, aim glide velocity, and wall latch movement rather than sprint speed. The damage trigger means the arcane activates precisely when enemies are actively hitting the frame -- rewarding aggressive forward movement by making the frame harder to pin down after sustaining hits.
 
-Sprint speed is one of the most universally useful stats in Warframe across all content types. Faster frames complete objectives more quickly, reach extraction faster in time-limited missions, and reposition between threats more effectively. Arcane Agility provides this benefit as a kill reward, aligning the speed bonus with exactly the situations where mobility matters most - after successfully eliminating an enemy and needing to move to the next.
+At rank 5, the arcane provides a 60% chance for +60% Parkour Velocity lasting 18 seconds when damaged. The 18-second duration is generous, sustaining the movement bonus through extended engagements without requiring continuous damage to maintain the effect.
 
 ## Effect
 
-Each enemy kill checks the Agility trigger chance. On success, sprint speed increases by the rank-dependent percentage for 10 seconds. At rank 0, 20% sprint speed is a noticeable improvement over base movement; at rank 5, 60% sprint speed significantly accelerates frame mobility, exceeding the effect of Rush and Speed Drift mods individually. Multiple triggers within the 10-second window refresh the duration rather than stacking the bonus beyond the rank 5 value.
+Each damage event triggers a 60% chance check. On success, Parkour Velocity increases by the rank-dependent percentage for 18 seconds. Multiple damage events during an active Agility window refresh the duration rather than stacking the velocity beyond the rank value. The trigger fires on any damage source -- enemy projectiles, melee hits, Damage-over-Time ticks, and environmental hazards all qualify.
 
-Sprint speed bonus is multiplicative with base sprint speed, meaning faster frames (Volt, Titania, Nezha) gain larger absolute speed increases from the same percentage bonus.
+At rank 0, +10% Parkour Velocity is a minor improvement to movement agility. At rank 5, +60% Parkour Velocity produces noticeably longer bullet jump arcs and faster aim glide traversal. The bonus enhances the frame's ability to evade follow-up attacks, reposition between cover points, and maintain kinetic combat at range from enemies.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Sprint Speed Boost | Duration |
-|------|----------------|---------------------|----------|
-| 0 | 10% | +20% | 10s |
-| 1 | 15% | +30% | 10s |
-| 2 | 20% | +40% | 10s |
-| 3 | 25% | +50% | 10s |
-| 4 | 27% | +55% | 10s |
-| 5 | 30% | +60% | 10s |
+| Rank | Trigger Chance | Parkour Velocity | Duration |
+|------|----------------|-----------------|---------|
+| 0 | 60% | +10% | 18s |
+| 1 | 60% | +20% | 18s |
+| 2 | 60% | +30% | 18s |
+| 3 | 60% | +40% | 18s |
+| 4 | 60% | +50% | 18s |
+| 5 | 60% | +60% | 18s |
 
 ## Acquisition
 
-Arcane Agility drops from Zariman Void Fissure at 3% and Void Cascade rotation B at 1.5%. The slightly lower drop rates compared to other Zariman arcanes reflect its general-utility nature. Regular Zariman Ten-Zero farming accumulates Agility through sustained runs. Players completing daily Zariman bounties encounter Agility through rotation B drops. Warframe.market provides direct purchase options for players who prefer targeted acquisition.
+Arcane Agility drops from Zariman Void Fissure rewards at 3% and from Void Cascade rotation B at 1.5%. Both sources are available after completing Angels of the Zariman. Void Cascade rotation B drops are accessible in moderate-length runs. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Arcane Agility benefits all frame types but excels on builds where map traversal is a priority. Capture mission builds that maximize mission completion speed benefit from consistent post-kill sprint boosts that maintain momentum between capture targets. Mobile Defense builds that move between terminals frequently find Agility's boost reduces time between objectives substantially. Speed-focused frames that already invest in sprint speed mods (Rush, Speed Drift) compound Agility's bonus on top of existing speed investments for extreme movement values.
+Arcane Agility suits builds that engage enemies at close range and take regular hits during combat. Melee-focused frames that rush into enemy groups, tanking frames that absorb damage to trigger Agility consistently, and aggressive steel path builds that face constant incoming damage all trigger the arcane frequently. The Parkour Velocity bonus complements close-combat frames by making repositioning between enemies faster and bullet jump engagements more dynamic.
+
+Builds that pair Agility with Rush or other Parkour Velocity mods compound the bonus on top of existing mobility investments. Frames running Arcane Agility alongside bullet-jump-damage mods (Motus Impact, Fortitude) gain both the damage bonus on bullet jump and the extended jump range from elevated Parkour Velocity.
 
 ## Notes
 
-Sprint speed bonus applies during sprint state; walking speed is unaffected. The bonus does not stack with itself from multiple triggers within the 10-second window; subsequent kills during an active buff only extend the duration. Agility does not affect bullet jump or dodge roll distance, only linear sprint speed. The 30% trigger chance at rank 5 ensures most kills in continuous combat provide the speed bonus, maintaining near-constant sprint enhancement during active engagements. The bonus interacts multiplicatively with Rush and other sprint-speed mods, compounding with existing speed investments.
+Parkour Velocity specifically affects bullet jump and aim glide speed, not sprint speed. Players who primarily sprint between engagements rather than using parkour movement gain less value from Agility than players who bullet jump and wall run regularly. The 60% trigger chance at rank 5 is fixed across all ranks -- only the Parkour Velocity value scales with rank. Shield damage that reduces only shields does not count as health damage; the trigger fires on health damage events specifically.
 
 ## Sources
 
-- WFCD warframe-items dataset covers trigger conditions and sprint speed values for Arcane Agility.
-- Fandom wiki entry for Arcane Agility documents kill-trigger mobility mechanics and build integration notes.
+- WFCD warframe-items dataset covers trigger chance, Parkour Velocity values, and duration for Arcane Agility.
+- Fandom wiki entry for [Arcane Agility](https://warframe.fandom.com/wiki/Arcane_Agility) covers bullet jump interaction and parkour movement classification.

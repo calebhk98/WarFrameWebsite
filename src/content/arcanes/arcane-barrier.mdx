@@ -33,43 +33,43 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Barrier triggers a shield restoration event when the warframe's shields are fully depleted. Rather than preventing shield loss, the arcane responds to the moment of shield break by checking for a restoration proc that partially refills shields after a brief delay. This mechanism turns shield depletion events - which in many game modes trigger the vulnerable health phase - into potential recovery points that restore a flat shield value before the next incoming hit.
+Arcane Barrier instantly restores all shields when the warframe's shields take damage, providing an on-hit defensive reset rather than a post-depletion recovery. Each shield-damage event triggers a chance check, and on success, shields refill entirely. The cooldown between triggers scales with rank, ranging from 1 second at rank 0 to 6 seconds at rank 5. Lower-rank copies trigger more frequently but have a lower success chance per hit.
 
-The two-second delay between shield break and restoration is a critical element of the arcane's behavior. Enemies that deal high burst damage can inflict health damage during this window before the restored shields reactivate. However, for enemies dealing lower sustained damage, the restoration refills shields quickly enough to prevent significant health damage. Arcane Barrier is most effective in scenarios where individual enemy hits are moderate and the player has brief windows to reposition during the restoration delay.
+The instant full-shield restoration is the distinguishing characteristic: this is not a partial restore or a delayed heal, but a complete reset to maximum shields the moment a hit lands. Against moderate damage sources, a successful trigger absorbs the hit before shields deplete, effectively negating the hit entirely in shield terms.
 
 ## Effect
 
-When the warframe's shields drop to zero, the arcane checks its trigger chance. On a successful check, shields are restored to the listed shield point value after a two-second delay. At rank 0, a 10% chance restores 100 shield points - a minor safety net that occasionally restores a small shield buffer. At rank 5, the 30% chance restores 300 shield points - activating roughly once every three shield breaks and providing a more substantial buffer.
+Each shield-damage hit checks the trigger chance. On success, all shields restore to their maximum value instantly and the cooldown begins. During the cooldown, additional shield hits do not trigger the restoration. At rank 0, a 1% chance with 1-second cooldown fires rarely and would stack dozens of hits before triggering. At rank 5, a 6% chance with 6-second cooldown fires approximately once per minute during sustained combat at minimum.
 
-The restored shields function as normal shields and are subject to shield recharge mechanics. After the two-second restoration, natural shield recharge continues from the restored value, effectively giving the arcane two benefits: the immediate flat restoration and the earlier base for natural recharge.
+The instant full restore means a successful trigger before shields deplete entirely negates the hit -- shields return to maximum rather than absorbing the hit amount and leaving a reduced value. Combined with shield-gating mechanics, a triggered Barrier restore during a shield-gate event can reset the gate timer and buy additional invulnerability.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Shield Restore | Delay | Notes |
-|------|----------------|----------------|-------|-------|
-| 0 | 10% | 100 | 2s | Occasional minimal restore |
-| 1 | 15% | 140 | 2s | Moderate improvement |
-| 2 | 20% | 180 | 2s | Reliable periodic restore |
-| 3 | 25% | 220 | 2s | Consistent shield recovery |
-| 4 | 27% | 260 | 2s | Near-maximum trigger rate |
-| 5 | 30% | 300 | 2s | Maximum restore value |
+| Rank | Trigger Chance | Cooldown |
+|------|---------------|---------|
+| 0 | 1% | 1s |
+| 1 | 2% | 2s |
+| 2 | 3% | 3s |
+| 3 | 4% | 4s |
+| 4 | 5% | 5s |
+| 5 | 6% | 6s |
 
 ## Acquisition
 
-Arcane Barrier drops from Zariman Void Fissure at 5% and Void Cascade rotation C at 2%. The higher 5% drop rate from Void Fissure makes it one of the more accessible Zariman warframe arcanes for players actively running fissures. Zariman Ten-Zero content becomes available after completing Angels of the Zariman. Warframe.market provides an alternative for players preferring direct acquisition over farming multiple runs.
+Arcane Barrier drops from Zariman Void Fissure rewards at 5% and from Void Cascade rotation C at 2%. Both sources are available after completing Angels of the Zariman. The 5% Void Fissure drop rate is among the higher rates for Zariman warframe arcanes. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Arcane Barrier fits shield-focused warframe builds that regularly experience shield cycling in combat. Mag builds that deplete shields intentionally through Magnetize pulls and then rely on passive shield recharge benefit from Barrier's occasional restoration proc. Volt builds using Electric Shield frequently reenter combat with depleted personal shields, making the periodic restoration relevant during re-engagement windows. Frames with moderate base shield pools - Excalibur, Ash, Nyx - benefit from the flat restoration more than frames with very high or very low shields, as the 300-point max restore represents a significant fraction of moderate shield pools.
+Arcane Barrier suits shield-reliant builds that take regular shield hits during combat. Frames with high base shields (Mag, Volt, Ember) get proportionally more value from instant full restoration than low-shield frames. Shield-gating builds that use the invulnerability window from shield depletion benefit from Barrier resetting shield values before depletion, extending the time between gate windows. Builds combining Barrier with high shield-recharge mods (Augur Secrets, Vigilante Pursuit) recover the shield pool rapidly between Barrier triggers.
 
-Shield-gating builds that rely on the invulnerability window during shield depletion may not benefit as much from Barrier, since those builds intentionally cycle shields for protection rather than seeking to maintain high shield values between damage events.
+The low per-hit chance means Barrier is primarily valuable under sustained fire that generates many shield-hit events per second, rather than in encounters where single large hits deplete shields entirely.
 
 ## Notes
 
-The trigger activates only at full shield depletion to zero - partial shield damage does not check the proc. The two-second delay is fixed across all ranks and cannot be reduced by ability range, duration mods, or other modifiers. If shields are depleted a second time during the two-second restoration delay, the timer resets - the arcane does not queue multiple restoration events. The restored shields are flat points, not percentage-based, making the arcane more valuable proportionally on frames with lower maximum shield pools where 300 points represents a larger fraction of total shields.
+The trigger fires on shield damage, not on shield depletion. Hits that reduce shield from any value to any other value (including zero) check the chance. The cooldown prevents multiple triggers within the cooldown window; a successful trigger locks Barrier for the cooldown duration regardless of how many additional hits land. Full shield restore applies across all shield types including standard shields and recharge-based shields. The arcane does not restore Overshields -- it restores to maximum base shield capacity.
 
 ## Sources
 
-- WFCD warframe-items dataset documents the trigger timing and shield restore values for Arcane Barrier.
-- Fandom wiki entry for Arcane Barrier covers the two-second delay mechanic and shield-gating interaction notes.
+- WFCD warframe-items dataset provides trigger chance and cooldown values per rank for Arcane Barrier.
+- Fandom wiki entry for [Arcane Barrier](https://warframe.fandom.com/wiki/Arcane_Barrier) covers shield damage trigger timing and shield-gate interaction notes.
 

@@ -32,43 +32,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Magus Vigor grants temporary maximum health bonuses to nearby warframes whenever the operator uses Void Sling, temporarily expanding the effective health pool of the squad. The health bonus operates as an additive percentage increase to the warframe's maximum health, rather than direct healing - it increases the ceiling of what health the frame can hold, which is valuable in conjunction with health-restore abilities or arcanes that fill the frame back to maximum. An operator frequently sling-moving through Zariman content continuously tops up the squad's effective health capacity.
+Magus Vigor grants a flat maximum health bonus to the warframe each time the operator exits operator mode via Transference Out. Each return from operator mode applies the rank-dependent health bonus, expanding the warframe's maximum health pool for the duration of the buff. At rank 5, each Transference Out event adds +600 flat maximum health.
 
-Unlike healing arcanes that restore existing health points, Vigor's maximum health increase provides a buffer that allows the frame to absorb more total damage before reaching critical health thresholds. For frames with high maximum health - Inaros at over 5000 effective health, Nidus with adaptation stacks - the percentage bonus translates to substantial absolute health additions during the buff window.
+The flat health bonus persists for a fixed duration after the Transference Out event. Operators who cycle frequently between operator mode and warframe mode refresh the bonus at each Transference Out, maintaining elevated maximum health throughout combat. Unlike healing arcanes that restore existing health, Vigor increases the maximum health ceiling, providing room to absorb additional damage before reaching critical thresholds.
 
 ## Effect
 
-Each Void Sling activates the health bonus on nearby warframes for 12 seconds. At rank 0, +50% health bonus provides a meaningful increase to the frame's maximum health capacity during the buff window. At rank 5, +250% health bonus nearly triples the effective maximum health for 12 seconds - a substantial buffer during high-damage encounter phases.
+Transference Out -- pressing the transference key to return from operator mode to warframe mode -- triggers the Magus Vigor bonus. Each activation adds flat maximum health to the warframe. At rank 0, +100 health provides a minor expansion to the health pool. At rank 5, +600 health is a significant addition for most frames: a frame with 300 base health nearly doubles its effective maximum during active operator cycling.
 
-The 12-second duration allows for multiple ability casts, positioning changes, or enemy engagements under the increased health capacity before the buff expires. Repeated Void Slings within the window refresh the timer.
+The maximum health bonus applies immediately at the Transference Out moment. When the buff expires, maximum health returns to the base value; any current health above the new maximum is capped accordingly. Frames that engage in frequent operator cycling -- entering operator mode for ability use, amp attacks, or Focus school activations, then returning to warframe -- maintain the bonus more consistently than frames that spend extended time in warframe mode without transference cycling.
 
 ## Stats per rank
 
-| Rank | Health Bonus | Duration | Notes |
-|------|--------------|----------|-------|
-| 0 | +50% | 12s | Moderate health expansion |
-| 1 | +100% | 12s | Doubles health pool |
-| 2 | +150% | 12s | Strong capacity increase |
-| 3 | +200% | 12s | Tripled health cap |
-| 4 | +225% | 12s | Near-maximum bulk |
-| 5 | +250% | 12s | Maximum health expansion |
+| Rank | Max Health Bonus on Transference Out |
+|------|-------------------------------------|
+| 0 | +100 |
+| 1 | +200 |
+| 2 | +300 |
+| 3 | +400 |
+| 4 | +500 |
+| 5 | +600 |
 
 ## Acquisition
 
-Magus Vigor drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero. The arcane is accessible after completing Angels of the Zariman and entering Zariman content. Regular Void Cascade participation accumulates Vigor copies over time without requiring specific rotation targeting. Warframe.market provides a purchase alternative for players who prefer platinum acquisition.
+Magus Vigor drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero at 2.5%. The arcane becomes accessible after completing Angels of the Zariman. Regular Void Cascade participation accumulates Vigor copies over multiple sessions without requiring specific rotation targeting. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Magus Vigor suits support operator builds that prioritize squad health durability during extended Zariman Void Cascade waves. Operators running Void Sling-heavy mobility builds naturally trigger Vigor's health expansion as part of their movement pattern, distributing the bonus to nearby squadmates without dedicated support actions. High-health frames - Inaros, Nidus, Grendel - receive the largest absolute health additions from the percentage bonus, while lower-health frames receive smaller absolute values but still benefit from the proportional increase.
+Magus Vigor fits operator-active builds that cycle through transference regularly. Builds that enter operator mode for Void Strike charging (Madurai), amp combat against Eidolons or Orphix, or Unairu passive armor strip all generate multiple Transference Out events per mission, refreshing the health bonus at each return to warframe mode. Frames that pair Vigor with Magus Elevate or Magus Nourish use the Transference Out cycle to simultaneously restore health and expand the health ceiling.
 
-Zariman Defense and Survival content where enemy damage escalates over time benefits from the sustained health capacity from repeated Vigor procs, as the operator actively moves between enemy clusters using Void Sling.
+High-base-health frames benefit most in absolute terms: a frame with 1000 maximum health gains 60% additional capacity from +600 Vigor at rank 5, while a frame with 200 base health gains 300% additional capacity from the same bonus. Frames with no natural health recovery paired with Vigor gain a larger effective health pool to sustain incoming damage between healing events.
 
 ## Notes
 
-The health bonus increases maximum health but does not automatically fill the health bar to the new maximum - the frame's current health remains unchanged unless a separate healing source restores it to the expanded cap. When the buff expires, maximum health drops back to the base value, and any current health above the new maximum is reduced accordingly. The health bonus is not affected by Warframe health mods (Vitality, Primed Vigor) in a multiplicative fashion - they apply independently to the base health value. The operator's own warframe benefits from Vigor if the warframe is nearby when Void Sling triggers.
+Transference Out specifically means returning from operator mode to the warframe by pressing the transference key. Entering operator mode does not trigger the bonus. The health bonus is applied additively alongside Vitality and other maximum health sources. The bonus duration is fixed; extended warframe combat phases without transference cycling allow the buff to expire. Frames that briefly enter operator mode then immediately return trigger the bonus with minimal time in operator mode. Magus Vigor stacks with Arcane Intention if both arcanes are equipped, with Intention scaling by channeled ability count and Vigor scaling by Transference Out frequency.
 
 ## Sources
 
-- WFCD warframe-items dataset documents Void Sling triggers and health percentage scaling for Magus Vigor.
-- Fandom wiki entry for Magus Vigor covers maximum health buff mechanics and the interaction between health expansion and current health values.
-
+- WFCD warframe-items dataset provides flat health values per rank for Magus Vigor on Transference Out.
+- Fandom wiki entry for [Magus Vigor](https://warframe.fandom.com/wiki/Magus_Vigor) covers Transference Out trigger timing and maximum health buff behavior.

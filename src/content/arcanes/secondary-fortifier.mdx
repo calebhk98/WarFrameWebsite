@@ -18,52 +18,56 @@ perRankStats:
   - rank: 5
     stats: { damage: 8 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Secondary_Fortifier
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Secondary_Fortifier
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Secondary Fortifier grants armor to the player and nearby allies on secondary weapon kills. The armor bonus applies as a flat percentage increase to existing armor values, making it more effective on frames with high base armor. Unlike shield-based defensive arcanes, Secondary Fortifier strengthens the armor layer that persists through shield depletion, providing meaningful protection in sustained engagements where shield cycling is impractical. The kill-based trigger ensures consistent activation in combat-heavy missions where secondary weapons are the primary kill tool.
+Secondary Fortifier grants two simultaneous benefits against Overguard enemies: it deals multiplied Extra Damage to Overguard and converts that damage into Overguard for the player. Every 100 damage dealt to an enemy's Overguard layer generates 1 Overguard for the player, and all Overguard damage from the secondary weapon is multiplied by the rank-dependent factor. The result is a self-sustaining system where attacking Overguard enemies builds the player's own Overguard while also stripping enemy Overguard faster through the damage multiplier.
 
-The support radius encompasses squadmates within a moderate distance, making Secondary Fortifier useful in squad content where armor-focused frames anchor a defensive position. Allies who frequently break position beyond the support radius receive reduced benefit, so the arcane rewards coordinated team positioning in objective-based missions.
+At rank 5, the secondary weapon deals 8x Extra Damage to enemy Overguard, and every 100 of that damage generates 1 Overguard for the player. Attacking a heavily Overguarded enemy quickly generates substantial player Overguard as a defensive resource.
 
 ## Effect
 
-Each kill with the secondary weapon grants the armor bonus to the player and nearby allies for a fixed duration. The bonus is additive with other armor buffs - Rhino's Iron Skin, Steel Fiber mods, and Secondary Fortifier all contribute to total armor independently. At rank 5, the 100% armor bonus effectively doubles base armor for the buff duration, providing substantial damage reduction against physical-damage-dealing enemies. Frames with low base armor receive proportionally smaller absolute armor values, though the percentage improvement remains consistent across all frame types.
+When the secondary weapon damages an enemy's Overguard layer, two effects trigger simultaneously: the damage dealt is multiplied by the rank-dependent factor (at rank 5, x8 Extra Damage), and 1 Overguard is added to the player's pool for every 100 damage dealt to the enemy's Overguard. At rank 0, the secondary deals x3 Extra Damage to enemy Overguard, generating 1 player Overguard per 100 Overguard damage. At rank 5, x8 damage multiplied means more total Overguard damaged per shot, which generates more player Overguard per attack.
+
+Player Overguard functions as an additional buffer beyond shields and health, providing an extra layer that must be depleted before other defensive layers are attacked.
 
 ## Stats per rank
 
-| Rank | Armor Bonus | Notes |
-|------|-------------|-------|
-| 0 | +20% | Minimal reduction improvement |
-| 1 | +40% | Moderate armor enhancement |
-| 2 | +60% | Solid armor buffer |
-| 3 | +75% | Strong defensive window |
-| 4 | +90% | Near-maximum armor scaling |
-| 5 | +100% | Doubles base armor temporarily |
+| Rank | Extra Damage Multiplier to Overguard | Player Overguard per 100 Damage |
+|------|-------------------------------------|--------------------------------|
+| 0 | x3 | 1 |
+| 1 | x4 | 1 |
+| 2 | x5 | 1 |
+| 3 | x6 | 1 |
+| 4 | x7 | 1 |
+| 5 | x8 | 1 |
 
 ## Acquisition
 
-Secondary Fortifier drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is available through standard Zariman content progression, accessible after completing Angels of the Zariman. Consistent secondary weapon kill pacing during Void Cascade runs generates frequent drops over multiple sessions. Players seeking faster acquisition can check warframe.market for listings; the arcane trades at moderate plat values given its support-role niche.
+Secondary Fortifier drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
 
 ## Builds that use it
 
-Secondary Fortifier suits squad support builds centered on maintaining team survivability through armor stacking. Frames paired with high-kill-rate secondaries - pistols with rapid fire, full-auto secondaries - trigger the arcane frequently enough to maintain near-permanent uptime during active combat. High-armor frames like Valkyr and Inaros benefit most from the percentage bonus due to their elevated base armor values. Squad compositions running Steel Path defense or survival content appreciate consistent armor coverage during enemy escalation phases. Pairing with secondary weapons that apply status effects extends defensive value through proc debuffs alongside the armor buff.
+Secondary Fortifier is specialized for content where Overguard enemies appear in significant numbers. Eximus units in Steel Path, high-level Arbitrations, and late-game Void Cascade waves all feature Overguarded Eximus units. Secondary weapons with high damage output against Overguard -- Overguard is not reduced by armor, making it simpler to calculate damage -- strip Eximus Overguard quickly while simultaneously building the player's own Overguard pool.
+
+High-fire-rate secondary weapons that deal consistent damage against Overguard generate player Overguard quickly through the 1-per-100-damage conversion. A secondary dealing 1000 damage per shot to Overguard generates 10 player Overguard per shot, which can accumulate into a meaningful defensive buffer against subsequent enemy attacks.
 
 ## Notes
 
-The armor bonus duration is temporary; players must maintain secondary weapon kill pace to sustain uptime in longer missions. The support radius is fixed and not affected by Ability Range mods. Multiple squad members each equipping Secondary Fortifier do not stack the bonus beyond a single application per kill. The armor bonus affects all damage types that armor mitigates, including Physical and most elemental types, but does not protect against True damage or percentage-based health reduction. On low-armor frames, the absolute armor gain may be modest even at rank 5; high-armor frames extract the greatest defensive return.
+The Extra Damage multiplier applies specifically to damage dealt against an enemy's Overguard layer -- once Overguard is depleted and the weapon hits shields or health directly, the multiplier no longer applies. The player Overguard generation rate is tied to the raw damage dealt to Overguard (after the multiplier) -- the multiplier also increases the rate of player Overguard generation. Player Overguard generated by Secondary Fortifier does not scale with frame stats or mods; it is a flat 1-per-100-Overguard-damage conversion. The secondary weapon must physically damage the Overguard layer; area-of-effect shots that partially damage Overguard still count for generation calculations.
 
 ## Sources
 
-- WFCD warframe-items dataset documents the trigger condition and armor scaling for Secondary Fortifier.
-- Fandom wiki entry for Secondary Fortifier provides acquisition route details and team support interaction notes.
+- WFCD warframe-items dataset provides damage multiplier values per rank and the Overguard-to-player-Overguard conversion rate for Secondary Fortifier.
+- Fandom wiki entry for [Secondary Fortifier](https://warframe.fandom.com/wiki/Secondary_Fortifier) covers Overguard damage mechanics and player Overguard generation behavior.

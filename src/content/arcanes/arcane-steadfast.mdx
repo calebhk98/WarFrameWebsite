@@ -33,43 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Steadfast converts the knockdown condition - typically a vulnerability state - into a defensive empowerment event. When the warframe is knocked down, the arcane grants a flat armor bonus for 6 seconds, rewarding frames that absorb knockdowns during aggressive close-range combat rather than entirely avoiding them. This creates a unique defensive feedback loop where being knocked down briefly actually improves the frame's survivability window immediately following recovery.
+Arcane Steadfast grants a chance on each ability cast for the next three abilities to cost no Energy. When the trigger fires, the next three ability activations -- whether casting, toggling on, or activating any ability -- consume zero energy, providing three free casts regardless of ability cost. This can cover high-cost abilities like Absorb, Exalted Blade activations, or expensive ultimates without drawing on the energy pool.
 
-Knockdowns occur frequently in melee-range engagement with enemies that use slam attacks, charge attacks, or knockdown-inducing status effects. Frames without knockdown immunity from Handspring or similar mods experience these events regularly in content where enemies have knockdown-inducing attacks. Arcane Steadfast gives those frames a reason not to invest heavily in knockdown immunity - instead accepting knockdowns as periodic armor buff opportunities.
+At rank 5, a 20% trigger chance means one in five ability casts activates the free-ability window. In a high-ability-cast mission, this can provide dozens of free energy saves throughout the run, reducing energy drain substantially for active ability builds.
 
 ## Effect
 
-Each knockdown event triggers the armor bonus for 6 seconds. At rank 0, +50 flat armor provides a modest improvement to the armor-based damage reduction calculation during the 6-second window. At rank 5, +250 flat armor provides a substantial buffer that significantly improves damage resistance during the post-knockdown recovery frames and the active combat that immediately follows.
+Each ability cast checks the Steadfast trigger chance. On success, the following three ability activations cost zero energy. The three free casts can be any combination of abilities; the warframe does not need to cast specific abilities to consume the free charges. At rank 0, 5% trigger chance means the window activates rarely -- roughly one in twenty casts. At rank 5, 20% trigger chance provides a free-ability window on one in five casts, noticeably reducing total energy expenditure across sustained combat.
 
-The flat armor bonus stacks with percentage armor mods from the warframe's configuration. On high-base-armor frames, the additional 250 flat armor pushes the total armor value to thresholds that provide meaningful damage reduction improvements.
+The free-ability charges carry over between casts; if two free casts remain when the player repositions or pauses, those charges remain available until used. Casting a channeled ability that activates on a free charge still consumes energy for its ongoing drain; only the initial activation cost is waived.
 
 ## Stats per rank
 
-| Rank | Armor Bonus | Duration | Notes |
-|------|-------------|----------|-------|
-| 0 | +50 | 6s | Modest post-knockdown buffer |
-| 1 | +100 | 6s | Meaningful armor boost |
-| 2 | +150 | 6s | Solid damage mitigation |
-| 3 | +200 | 6s | Strong recovery window |
-| 4 | +225 | 6s | Near-maximum protection |
-| 5 | +250 | 6s | Maximum armor per knockdown |
+| Rank | Trigger Chance | Free Ability Casts |
+|------|--------------|-------------------|
+| 0 | 5% | 3 |
+| 1 | 8% | 3 |
+| 2 | 11% | 3 |
+| 3 | 14% | 3 |
+| 4 | 17% | 3 |
+| 5 | 20% | 3 |
 
 ## Acquisition
 
-Arcane Steadfast drops as a rare reward from Void Fissure endless rotation C - the deepest rotation in endless Void Fissure missions that requires extended mission time to reach. The rare designation and rotation depth make it one of the harder Void Fissure arcanes to farm through normal play. Warframe.market provides a purchase option for players who prefer platinum acquisition over committing to extended endless Fissure sessions.
+Arcane Steadfast drops as a rare reward from Void Fissure endless rotation C. Reaching rotation C requires extended time in endless Void Fissure missions -- Survival or Defense missions that cycle through A, B, and C rotations over multiple reward intervals. The rare designation and rotation depth make Steadfast one of the more time-intensive Zariman arcanes to farm through normal play. Warframe.market provides a purchase option for players who prefer platinum acquisition over committing to extended endless Fissure sessions.
 
 ## Builds that use it
 
-Arcane Steadfast suits tank-oriented frames that regularly take hits in close-range melee combat where knockdowns are common but not fatal. Grendel builds that engage enemies in melee range using Feast and Pulverize encounter knockdown sources from enemy attacks, triggering the armor bonus during those combat phases. Atlas builds that expect regular knockdowns from heavy Grineer or Infested enemies use Steadfast's armor window to survive the follow-up attacks that occur during the recovery animation.
+Arcane Steadfast benefits high-ability-cast builds that frequently activate abilities and encounter energy limitations. Frames with expensive ultimates -- Mirage's Total Eclipse (requires sustained casts), Octavia's Mallet and Resonator combo, Nova's Molecular Prime chain casting -- benefit from free-cast windows covering their costliest activations. Energy Siphon and energy restore pads cover sustained energy recovery; Steadfast provides burst free casts that offset the biggest single-cast expenses.
 
-Inaros and Nidus builds in high-health configurations accept knockdowns in Steel Path content where avoiding all knockdowns requires constant attention, instead using Steadfast to convert the events into brief armor buffs that extend survivability during the recovery phase.
+Builds that rely on rapid ability cycling rather than channeled ability maintenance gain the most from Steadfast. Each cast in a rotation is a Steadfast trigger check, and with 20% trigger chance at rank 5, a four-ability rotation cycling every few seconds accumulates free windows that noticeably offset total energy consumption over a mission.
 
 ## Notes
 
-The armor bonus applies immediately when the knockdown begins, not after recovery - the frame gains armor during the knockdown animation itself, which provides protection against damage taken while downed. Knockdown immunity from Handspring or certain warframe passives prevents the arcane from triggering, since no knockdown event fires. Frames that use augments or abilities that cause controlled self-knockdown may be able to intentionally trigger Steadfast for the armor bonus, though this interaction depends on whether those self-knockdowns register as knockdown events.
+The free-cast window applies to the next three casts after the trigger, regardless of ability type. Channeled abilities receive a free activation cost on the initial toggle but continue to drain energy for their sustained component. The trigger is per ability cast, not per ability type -- the same ability cast repeatedly counts as new trigger checks each time. At rank 5, 20% trigger chance is relatively low compared to other arcane trigger rates; builds relying on Steadfast for significant energy management should supplement with traditional energy economy options (Fleeting Expertise, Primed Flow, energy restore pads). The arcane is a supplemental energy tool, not a replacement for energy management mods.
 
 ## Sources
 
-- WFCD warframe-items dataset documents knockdown trigger conditions and flat armor scaling for Arcane Steadfast.
-- Fandom wiki entry for Arcane Steadfast covers knockdown immunity interaction notes and high-armor frame synergy.
-
+- WFCD warframe-items dataset provides trigger chance per rank and the three-free-cast window for Arcane Steadfast.
+- Fandom wiki entry for [Arcane Steadfast](https://warframe.fandom.com/wiki/Arcane_Steadfast) covers ability cast trigger conditions and free-cast charge behavior.

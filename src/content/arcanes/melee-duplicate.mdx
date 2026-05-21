@@ -33,43 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Melee Duplicate adds a chance to trigger an automatic bonus heavy attack immediately after the player's heavy attack lands. The duplicate attack fires at a percentage of the original's effectiveness, creating a secondary hit without additional player input. This makes it one of the few melee arcanes that multiplies output without requiring altered weapon or ability builds - the bonus attack inherits the base heavy attack properties and benefits from the same mods, crits, and status effects that apply to the primary heavy attack.
+Melee Duplicate gives melee attacks a chance to strike a second time on Base Critical Hits. When a melee attack scores a base yellow critical hit -- not an orange or red crit, specifically the first tier of critical hit -- the attack has the listed chance to immediately strike again, applying another full hit to the target. At rank 5, every Base Critical Hit guarantees a second strike, effectively doubling the attack count on all yellow critical hits.
 
-Heavy attack builds in Warframe use the windowed attack as the primary damage source, often building around Amalgam Organ Shatter or combo-multiplier mods to amplify each individual swing's output. Melee Duplicate multiplies this already high per-swing damage output by triggering a second attack at a fraction of effectiveness, pushing per-engagement damage above what the weapon base stats suggest.
+The trigger applies to any Base Critical Hit, meaning any melee attack (light attack, heavy attack, slam) that scores a yellow crit can trigger the duplicate. The second strike is a full repeat of the attack -- it can also independently critical hit, apply status procs, and trigger other on-hit effects.
 
 ## Effect
 
-Each heavy attack triggers a check against the trigger chance. On success, a duplicate heavy attack fires automatically at the listed effectiveness percentage. At rank 0, 10% chance with 50% effectiveness means roughly one in ten heavy attacks produces a bonus hit at half power. At rank 5, 30% chance with 150% effectiveness means nearly one in three heavy attacks produces a bonus hit that exceeds the original in damage. The 150% effectiveness value at max rank means the duplicate can outperform the original attack, making the arcane's proc a net positive regardless of which attack registers.
+Each Base Critical Hit checks the Melee Duplicate trigger chance. On success, the attack strikes a second time against the same target. At rank 0, a 25% chance means one in four Base Critical Hits generates a second strike. At rank 5, 100% chance means every Base Critical Hit always generates a second strike with no check required -- every yellow crit automatically doubles the hit count.
 
-The effectiveness percentage applies to the base heavy attack damage before mods are factored in, or after - the interaction with the damage calculation pipeline affects the final numeric output. Both the original and duplicate attacks are considered separate hit events for status proc and critical hit calculations.
+The second strike is an independent hit event. It checks for critical hits, status procs, and on-hit triggers separately from the first strike. The second strike can itself be a critical hit (potentially a higher-tier crit due to crit chance from Blood Rush or similar), creating chains where the Duplicate proc generates additional critical events.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Duplicate Effectiveness | Notes |
-|------|----------------|------------------------|-------|
-| 0 | 10% | 50% | Occasional half-power bonus hit |
-| 1 | 15% | 70% | Increasing damage multiplication |
-| 2 | 20% | 90% | Near-equivalent bonus attack |
-| 3 | 25% | 110% | Bonus exceeds original |
-| 4 | 27% | 130% | Consistent high-value duplication |
-| 5 | 30% | 150% | High-odds overpowered duplicate |
+| Rank | Duplicate Chance on Base Critical Hit |
+|------|--------------------------------------|
+| 0 | 25% |
+| 1 | 40% |
+| 2 | 55% |
+| 3 | 70% |
+| 4 | 85% |
+| 5 | 100% |
 
 ## Acquisition
 
-Melee Duplicate drops from Zariman Void Fissure at 3% and Void Cascade rotation C at 1.5%. Rotation C in Void Cascade is the least frequently reached rotation, requiring longer runs to access. The lower drop rates across both sources make Duplicate one of the rarer Zariman melee arcanes, often requiring extended farming sessions or warframe.market purchase. Players specifically targeting Melee Duplicate should plan for Void Cascade runs that extend through multiple rotations to reach rotation C rewards.
+Melee Duplicate drops from Zariman Void Fissure rewards at 3% and Void Cascade rotation C at 1.5%. Rotation C in Void Cascade is the least frequently reached rotation, requiring longer runs to access. Warframe.market provides a direct purchase route for players who prefer platinum acquisition over extended farming.
 
 ## Builds that use it
 
-Melee Duplicate benefits heavy attack builds that rely on high per-swing damage rather than rapid auto-attack sequences. Exodia-Contagion builds on zaws, Sacrificial Steel plus Amalgam Organ Shatter setups on polearms, and high-combo-multiplier configurations on heavy blades all amplify the value of each heavy attack and therefore the value of Duplicate's bonus hit. Frames that boost melee damage through abilities - Rhino's Roar, Wisp's Haste Mote, or Saryn's Toxic Lash - increase the absolute damage of both the original and duplicate attacks proportionally.
+Melee Duplicate is strongest on builds where Base Critical Hits occur frequently -- weapons with 25-50% critical chance that regularly score yellow crits without reaching consistent orange or red crit territory without Blood Rush stacking. At 100% trigger rate at rank 5, every yellow crit produces a free second hit, doubling melee throughput during the yellow crit windows.
 
-Builds that use heavy attacks as finishers or opening strikes in mixed heavy-light sequences benefit from Duplicate as a passive damage multiplier without altering the attack cadence. The arcane does not require changing weapon or ability configurations to add value.
+Builds using Blood Rush that ramp from yellow to orange to red crits during sustained combat benefit from Duplicate during the early combat phase (before Blood Rush fully stacks) where yellow crits are the predominant crit tier. Spin attack builds on wide-sweeping melee weapons that generate many hits per swing trigger frequent crit checks, increasing the absolute number of Duplicate procs per second.
 
 ## Notes
 
-The duplicate attack counts as a separate hit event for purposes of status proc rolling. Both hits can independently proc critical hits, which means the duplicate contributes to on-crit arcane triggers in the same way the primary heavy attack does. The duplicate does not cost additional combo multiplier - it fires as a bonus effect without consuming the combo count. The trigger check fires after the heavy attack lands, not on activation, so blocked or missed heavy attacks do not generate duplicate checks. Enemies killed by the primary heavy attack before the duplicate fires prevent the duplicate from hitting - the bonus attack targets the same enemy.
+"Base Critical Hits" specifically refers to yellow (tier 1) critical hits -- the first level of critical hit above a non-crit. Orange crits (tier 2) and red crits (tier 3) are not Base Critical Hits for Melee Duplicate's trigger. The second strike applies the weapon's full damage, including all mods, elemental damage, and status. The second strike does not consume combo counter -- it fires as a free additional attack. The second strike's crit check uses the same critical chance as the primary attack at the moment it fires.
 
 ## Sources
 
-- WFCD warframe-items dataset documents trigger conditions and effectiveness scaling for Melee Duplicate.
-- Fandom wiki entry for Melee Duplicate covers the status proc independence of the duplicate hit and heavy attack build synergy.
-
+- WFCD warframe-items dataset provides duplicate trigger chance values per rank for Base Critical Hits on Melee Duplicate.
+- Fandom wiki entry for [Melee Duplicate](https://warframe.fandom.com/wiki/Melee_Duplicate) covers Base Critical Hit definition and the second strike's independent status/crit behavior.

@@ -33,43 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Magus Overload converts Void Blast attacks from operators into energy restoration events for nearby allied warframes, positioning the operator as an active energy support during squad missions. Void Blast - the melee-range void attack executed in operator mode - triggers an energy restoration check that distributes warframe energy to allies within range on success. Operators who mix Void Blast into their combat rotation with amp fire can periodically refresh squad energy pools without the squad needing to find energy pickups or rely on Trinity/Zenurik for sustain.
+Magus Overload stuns robotic enemies on Void Sling and then forces those stunned robots to discharge Electricity Damage in a 25-meter radius. Each stunned robot becomes a mobile electricity source, dealing percentage-of-max-health Electricity damage to any enemy within 25 meters of the robot during the 3-second stun window. Against Corpus robot clusters, this creates cascading area damage as multiple robots simultaneously discharge into the surrounding enemy group.
 
-Energy sustain is a persistent challenge in extended mission content where ability-spam builds drain energy reserves faster than natural regeneration replenishes them. Magus Overload provides an operator-side solution that does not require a dedicated energy-support warframe in the squad, allowing more flexible squad compositions in Zariman content or other endgame missions where operator play is natural.
+At rank 5, each affected robot discharges Electricity dealing 80% of the robot's Max Health as damage to anything within 25 meters. A robot with 5000 Max Health discharges 4000 Electricity damage to all enemies in range during the stun -- turning the robot itself into a high-damage area weapon for 3 seconds.
 
 ## Effect
 
-Each Void Blast in operator mode checks the trigger chance. On success, all nearby warframes receive the listed energy restoration value. At rank 0, a 10% trigger chance restores 25 energy per proc - effective during high-frequency Void Blast sequences. At rank 5, a 30% trigger chance restores 75 energy - activating roughly once every three Void Blasts and providing substantial energy restoration to allies who are below their maximum energy capacity.
+Void Sling through or near robotic enemies stuns them for 3 seconds. Each stunned robot immediately begins discharging Electricity Damage equal to the listed percentage of the robot's Max Health to all enemies (and potentially players) within 25 meters of the robot. The discharge is Electricity damage type, which applies Electricity status procs (chain electricity to nearby targets) alongside the direct damage.
 
-The energy restoration applies to the warframe energy pool, not the operator energy pool. Squadmates within the range receive the bonus regardless of their own energy management state.
+At rank 0, robots discharge 15% of their Max Health as Electricity. At rank 5, robots discharge 80% of Max Health. The 25-meter radius is large -- robotic enemies in a cluster all discharge simultaneously into each other and into nearby non-robotic enemies, creating explosive area denial in Corpus robot-heavy environments.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Energy Restore | Notes |
-|------|----------------|----------------|-------|
-| 0 | 10% | 25 | Occasional energy pulse |
-| 1 | 15% | 35 | Moderate squad sustain |
-| 2 | 20% | 45 | Reliable energy input |
-| 3 | 25% | 55 | Strong squad support |
-| 4 | 27% | 65 | Near-maximum support |
-| 5 | 30% | 75 | Maximum energy per proc |
+| Rank | Electricity Damage (% of Robot Max Health) | Stun Duration | Discharge Radius |
+|------|------------------------------------------|--------------|-----------------|
+| 0 | 15% | 3s | 25m |
+| 1 | 30% | 3s | 25m |
+| 2 | 45% | 3s | 25m |
+| 3 | 60% | 3s | 25m |
+| 4 | 75% | 3s | 25m |
+| 5 | 80% | 3s | 25m |
 
 ## Acquisition
 
-Magus Overload drops from Zariman Void Fissure missions at 3% and Void Cascade bonus rewards at 2%. Both sources are available after completing Angels of the Zariman. The 3% primary drop rate makes Overload accessible through regular Zariman fissure participation. Warframe.market provides a direct purchase path for players who prefer platinum acquisition over farming multiple Zariman sessions.
+Magus Overload drops from Zariman Void Fissure missions at 3% and Void Cascade bonus rewards at 2%. Both sources are available after completing Angels of the Zariman. Warframe.market provides a direct purchase path for players who prefer platinum acquisition over farming multiple Zariman sessions.
 
 ## Builds that use it
 
-Magus Overload suits operator support builds designed to supplement the squad's resource economy during extended runs. Operators running Void Blast-heavy melee combinations - entering operator mode to Blast and then returning to warframe - trigger Overload frequently during these transference cycles. Squad compositions relying on high-cost abilities - Nidus's Ravenous, Wisp's Wil-O-Wisp, Volt's Discharge - benefit from the supplemental energy that extends ability uptime without requiring mod investment in Primed Flow or energy efficiency.
+Magus Overload is specialized for Corpus content where robotic enemy types are present in high density. Void Cascade on Zariman features Corpus robotic enemies including MOAs and Coildrives, making the arcane particularly effective in its own farming environment. Corpus Void Fissures on planets like Europa, Pluto, and Eris feature dense robot spawns that Magus Overload can chain into catastrophic Electricity discharges across the enemy group.
 
-Zariman Void Cascade squad runs, where multiple players regularly cycle operator mode to interact with Void Manifestations, create natural Void Blast opportunities that trigger Overload's proc and distribute energy to warframes holding positions on defense objectives.
+Operators who Void Sling aggressively through enemy clusters generate stuns across multiple robots simultaneously, triggering overlapping 25-meter discharge zones that deal percentage-of-max-health Electricity to all enemies in range. Since the damage is percentage-based on the robot's Max Health rather than a flat value, Magus Overload scales automatically to higher-level content where robotic enemies have larger health pools.
 
 ## Notes
 
-The energy restoration distributes to warframes, not operators - the energy does not refill the operator's own energy pool. Allies at maximum energy do not benefit from the restore; the proc is wasted if all nearby allies are fully charged. Void Blast range is melee-range in operator mode, requiring the operator to be in close proximity to enemies to trigger the arcane. The energy restoration does not scale with any mods or companion abilities - it is a flat value determined by arcane rank only. Multiple squad members using Magus Overload do not stack restorations from a single blast; each member independently triggers their own check per Void Blast.
+The discharge affects enemies within 25 meters of each stunned robot, not within 25 meters of the operator or the Void Sling endpoint. Multiple stunned robots discharge independently, creating overlapping damage zones when several robots are stunned simultaneously. The Electricity damage type can apply Electricity status procs to non-robotic enemies in range, chaining electricity to additional targets beyond the primary zone. The discharge potentially deals damage to the operator and warframe if they are within 25 meters of a stunned robot, though this typically only matters in enclosed spaces where the discharge radius is large relative to room size.
 
 ## Sources
 
-- WFCD warframe-items dataset documents the trigger chance and energy restore values for Magus Overload.
-- Fandom wiki entry for Magus Overload covers squad energy distribution mechanics and Void Blast trigger behavior.
-
+- WFCD warframe-items dataset provides Electricity damage percentage values per rank and the Void Sling trigger for Magus Overload.
+- Fandom wiki entry for [Magus Overload](https://warframe.fandom.com/wiki/Magus_Overload) covers robotic enemy stun mechanics and Electricity discharge radius behavior.

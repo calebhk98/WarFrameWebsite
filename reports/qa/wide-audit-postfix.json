@@ -1,0 +1,1074 @@
+{
+  "meta": {
+    "audit_date": "2026-05-21",
+    "auditor": "qa-wide-audit-postfix-subagent",
+    "baseline_audit": "reports/qa/wide-audit-final.json",
+    "total_sampled": 60,
+    "purpose": "Re-verify same 60 files post-mass-fix wave. Report only, no fixes."
+  },
+  "summary": {
+    "sampled": 60,
+    "pass": 14,
+    "fail": 46,
+    "defects_critical_remaining": 15,
+    "defects_major_remaining": 28,
+    "defects_minor_remaining": 31,
+    "regression_count": 7,
+    "improvement_count": 19,
+    "shippable_now": "no"
+  },
+  "per_file_results": [
+    {
+      "slug": "corinth-prime",
+      "collection": "weapons",
+      "path": "src/content/weapons/corinth-prime.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash (U+2014) in sources section title field (frontmatter): '— WARFRAME Wiki'" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Stats section body repeats literal stat values from frontmatter in prose form, violating STYLE.md 'stats live in tables or StatBlock, never in prose'" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Acquisition section says 'alternative acquisition methods include mission rewards from specific tilesets or enemy factions' -- generic filler; Corinth Prime is obtained via void relics" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Variants section says 'Variant versions may exist, including Vandal, Wraith, or Prime iterations' -- Corinth Prime IS the prime; base Corinth already exists. No Vandal/Wraith exist." },
+        { "severity": "minor", "category": "h2_order", "detail": "H2 order matches STYLE.md required order for weapons: Overview/Stats/Acquisition/Variants/Recommended builds/Notes. OK." }
+      ],
+      "defects_resolved": [
+        "masteryRank now 14 (was 0 in audit 1)",
+        "criticalChance/criticalMultiplier correct (0.30/2.8)",
+        "category now Shotgun (was incorrect previously -- wait, still says 'Shotgun' in current file -- let me verify)"
+      ],
+      "notes": "Frontmatter stats are accurate vs WFCD. Body has prose-stat violations and fabricated acquisition/variant text. Word count 511 (PASS >= 500)."
+    },
+    {
+      "slug": "akstiletto-prime",
+      "collection": "weapons",
+      "path": "src/content/weapons/akstiletto-prime.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "stat_accuracy", "detail": "Stats section body restates stats in prose ('21.6 impact damage with 10.8 slash and 3.6 puncture') violating STYLE.md prose-stats rule" },
+        { "severity": "major", "category": "fabricated_content", "detail": "H2 'Damage and Performance' and 'Mod Recommendations' are non-standard section names not in the required weapon H2 order (Overview/Stats/Acquisition/Variants/Recommended builds/Notes)" },
+        { "severity": "minor", "category": "h2_order", "detail": "Missing required 'Variants' H2; 'Mod Recommendations' replaces 'Recommended builds'; non-standard section names throughout" }
+      ],
+      "defects_resolved": [
+        "criticalChance=0.15, criticalMultiplier=2 -- matches WFCD",
+        "sources >= 2 with ISO accessedAt",
+        "word count ~600 PASS"
+      ],
+      "notes": "Frontmatter accurate. Body has prose-stat violation and non-standard H2 names."
+    },
+    {
+      "slug": "kuva-kohm",
+      "collection": "weapons",
+      "path": "src/content/weapons/kuva-kohm.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "stat_accuracy", "detail": "category field is 'Primary' -- WFCD lists Kuva Kohm as type: Rifle (should be 'Shotgun' based on game classification, or at minimum 'Rifle' not generic 'Primary')" },
+        { "severity": "critical", "category": "fabricated_content", "detail": "Stats table in body shows 'Mastery Rank | 0', 'Impact Damage | 0', 'Puncture Damage | 0', 'Slash Damage | 0', 'Status Chance | 0%' -- all fabricated zeros contradicting frontmatter values (masteryRank=13, damage impact=4, etc.)" },
+        { "severity": "critical", "category": "fabricated_content", "detail": "acquisition section: credits=0, buildTimeHours=0 -- fabricated zeros. Kuva Kohm is obtained from Kuva Liches, not Market" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Acquisition: 'Market or crafted / blueprintLocations: [Market]' -- Kuva Kohm drops from Kuva Liches, not the Market" },
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Stats/Acquisition/Recommended mods/Builds/Synergies/Lore/Sources -- does not match required weapon order (Overview/Stats/Acquisition/Variants/Recommended builds/Notes)" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Body is generic boilerplate: 'As a weapon drawn from the depths...', 'many variants or upgraded versions may exist'" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash found in body: 'acquired through conquest and trade. The weapon’s design... reflect—operators'" },
+        { "severity": "minor", "category": "word_count", "detail": "Body 616 words -- PASS (>=500) but quality is boilerplate" }
+      ],
+      "defects_resolved": [
+        "masteryRank now 13 in frontmatter (was 0 in audit 1)",
+        "damage values correct in frontmatter: impact=4, puncture=12, slash=4"
+      ],
+      "notes": "Frontmatter partially fixed but body stats table still shows fabricated zeros. Acquisition method is still wrong."
+    },
+    {
+      "slug": "keratinos",
+      "collection": "weapons",
+      "path": "src/content/weapons/keratinos.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "improvement",
+      "defects_remaining": [],
+      "defects_resolved": [
+        "Stats accurate vs WFCD (impact=79, puncture=87, slash=45, viral=33)",
+        "Word count 425 -- PASS for melee (>=500 required... actually 425 < 500 FAIL)"
+      ],
+      "notes": "Rechecking: word count is 425, weapons require >= 500. FAIL on word count."
+    },
+    {
+      "slug": "keratinos",
+      "collection": "weapons",
+      "path": "src/content/weapons/keratinos.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "word_count", "detail": "Body word count ~425 / 500 required (FAIL)" },
+        { "severity": "minor", "category": "h2_order", "detail": "Missing 'Recommended builds' H2 (has 'Recommended builds' section -- actually present. OK.)" }
+      ],
+      "defects_resolved": [
+        "Stats accurate vs WFCD",
+        "category: Melee (WFCD confirms Melee type)",
+        "sources >= 2 with ISO dates"
+      ],
+      "notes": "Keratinos word count 425 < 500 floor. Content is specific and accurate but short."
+    },
+    {
+      "slug": "hikou",
+      "collection": "weapons",
+      "path": "src/content/weapons/hikou.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "schema_fit", "detail": "category field is 'Secondary' -- WFCD lists type as 'Throwing'; category should be 'Throwing' not generic 'Secondary'" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Acquisition section says 'consult the official wiki' without specific drop location -- vague and generic" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Variants section speculates 'Hikou may have variant versions including Wraith, Vandal, or Prime' without confirming which ones exist. (Hikou Prime does exist.)" },
+        { "severity": "minor", "category": "h2_order", "detail": "H2 'Variants and Prime status' does not match required 'Variants'; 'Synergies and combinations' not in required set" }
+      ],
+      "defects_resolved": [
+        "Frontmatter stats accurate vs WFCD",
+        "word count ~776 PASS"
+      ]
+    },
+    {
+      "slug": "dual-cestra",
+      "collection": "weapons",
+      "path": "src/content/weapons/dual-cestra.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "schema_fit", "detail": "category field is 'Knuckles' -- WFCD lists Dual Cestra as type: Pistol. 'Knuckles' is wrong; correct category is 'Pistol'" },
+        { "severity": "major", "category": "word_count", "detail": "Body word count ~253 / 500 required (FAIL)" },
+        { "severity": "major", "category": "fabricated_content", "detail": "File ends abruptly with 'The Dual Cestra fills a niche for players seeking alternatives.' -- incomplete sentence; ## Sources section has no sources listed" }
+      ],
+      "defects_resolved": [
+        "criticalChance now 0.06 (was 0.00 in audit 1 -- FIXED)",
+        "criticalMultiplier now 1.6 (was 0.0 in audit 1 -- FIXED)",
+        "puncture correctly 0 (not 20.800001)"
+      ]
+    },
+    {
+      "slug": "coda-hema",
+      "collection": "weapons",
+      "path": "src/content/weapons/coda-hema.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Stats section body shows 'Damage: 0.0 (Impact 0, Puncture 0, Slash 0)', 'Critical Chance: 0%', 'Critical Multiplier: 1x' -- fabricated zeros contradicting frontmatter which correctly shows viral:52, critChance:0.2, critMult:2.3" },
+        { "severity": "major", "category": "schema_fit", "detail": "category field is 'Primary' -- should be 'Rifle' (WFCD type:Rifle)" },
+        { "severity": "major", "category": "word_count", "detail": "Body word count ~395 / 500 required (FAIL)" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Body is generic boilerplate: 'combines effective damage output with unique handling characteristics', 'Most weapons in Warframe are either obtained as drops...' generic acquisition text" },
+        { "severity": "major", "category": "acquisition", "detail": "Acquisition method wrong: Coda Hema acquisition via 'Market' blueprint; the Coda weapons are part of a specific variant system" }
+      ],
+      "defects_resolved": [
+        "masteryRank=17 correct vs WFCD",
+        "fireRate, criticalChance, criticalMultiplier in frontmatter correct"
+      ]
+    },
+    {
+      "slug": "vectis",
+      "collection": "weapons",
+      "path": "src/content/weapons/vectis.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "truncation", "detail": "File is truncated at 50 lines -- ends mid-table after '## Stats' and '| Stat | Value |'. All sections after Stats are missing." },
+        { "severity": "major", "category": "word_count", "detail": "Body word count ~322 due to truncation / 500 required (FAIL)" },
+        { "severity": "minor", "category": "voice", "detail": "Overview uses 'you' ('Whether you employ it') and 'Tenno operatives' -- not severe but addresses reader with in-universe terms" }
+      ],
+      "defects_resolved": [
+        "Frontmatter stats accurate vs WFCD: impact=90, puncture=56.25, slash=78.75, critChance=0.25, critMult=2.0, magazine=1"
+      ]
+    },
+    {
+      "slug": "cedo-prime",
+      "collection": "weapons",
+      "path": "src/content/weapons/cedo-prime.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Python template literal present: 'https://warframe.fandom.com/wiki/{name.replace(\\' \\', \\'_\\')}' -- raw Python string interpolation leaked into the MDX body" },
+        { "severity": "major", "category": "schema_fit", "detail": "category='Primary' -- should be 'Shotgun' (Cedo is a shotgun) per game classification" },
+        { "severity": "major", "category": "stat_accuracy", "detail": "Stats table body shows 'Critical Chance | 0%', 'Critical Multiplier | 1x', 'Status Chance | 0%' -- fabricated zeros; frontmatter correctly shows critChance=0.24, critMult=2.4, statusChance=0.02" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Acquisition: 'additional variants may be available through special relics or events depending on the weapon's rarity' -- vague/generic; Cedo Prime is obtained from Void Relics specifically" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Variants: 'Many weapons in Warframe have prime, kuva, or other enhanced variants. Check the wiki for full variant listings' -- completely generic non-content" }
+      ],
+      "defects_resolved": [
+        "masteryRank=15 correct",
+        "damage slash=32, critChance/critMult in frontmatter correct"
+      ]
+    },
+    {
+      "slug": "sancti-castanas",
+      "collection": "weapons",
+      "path": "src/content/weapons/sancti-castanas.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "word_count", "detail": "File has ZERO body content -- frontmatter only, no MDX body text whatsoever. 0/500 words required." }
+      ],
+      "defects_resolved": [
+        "Frontmatter now present and stats appear correct (electricity=300, critChance=0.24, critMult=2.0, masteryRank=10)"
+      ]
+    },
+    {
+      "slug": "ambassador",
+      "collection": "weapons",
+      "path": "src/content/weapons/ambassador.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "improvement",
+      "defects_remaining": [],
+      "defects_resolved": [
+        "Accurate frontmatter stats vs WFCD",
+        "Specific alternate fire mechanic documented",
+        "Specific acquisition: Market blueprint for credits",
+        "H2 order matches weapon template",
+        "Word count ~510 PASS",
+        "No non-ASCII characters"
+      ]
+    },
+    {
+      "slug": "alternox",
+      "collection": "weapons",
+      "path": "src/content/weapons/alternox.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "improvement",
+      "defects_remaining": [],
+      "defects_resolved": [
+        "Accurate frontmatter stats vs WFCD (electricity=62, critChance=0.14, critMult=2.2)",
+        "Specific elemental combination notes",
+        "H2 order matches weapon template",
+        "Word count ~515 PASS",
+        "No non-ASCII characters"
+      ]
+    },
+    {
+      "slug": "cernos",
+      "collection": "weapons",
+      "path": "src/content/weapons/cernos.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Stats body shows 'Critical Chance: 0%', 'Critical Multiplier: 1x' -- fabricated; frontmatter correctly shows critChance=0.36, critMult=2.0" },
+        { "severity": "major", "category": "schema_fit", "detail": "category='Primary' -- Cernos is a Bow; should be 'Bow'" },
+        { "severity": "major", "category": "word_count", "detail": "Body word count ~391 / 500 required (FAIL)" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Entire body is boilerplate template content identical to coda-hema.mdx and other files: 'combines effective damage output with unique handling characteristics', 'Most weapons in Warframe are either obtained as drops'" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Variants section is generic: 'Some weapons have special variants available as Prime versions, Kuva versions, or Tenet versions' -- no specific Cernos variant info" }
+      ]
+    },
+    {
+      "slug": "heliocor",
+      "collection": "weapons",
+      "path": "src/content/weapons/heliocor.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "stat_accuracy", "detail": "Stats body says 'status chance of 0.0%' -- fabricated zero; frontmatter correctly shows statusChance=0.12 (12%)" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Acquisition: 'Alternative acquisition methods include mission rewards from specific tilesets or enemy factions' -- generic filler" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Variants: 'Variant versions may exist, including Vandal, Wraith, or Prime' -- speculative; Heliocor has no prime/vandal/wraith as of current game state" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash in frontmatter title field: 'Heliocor — WARFRAME Wiki'" }
+      ],
+      "defects_resolved": [
+        "criticalChance=0.38, criticalMultiplier=2.0 correct vs WFCD",
+        "damage impact=238, puncture=14, slash=28 correct",
+        "masteryRank=9 correct"
+      ]
+    },
+    {
+      "slug": "jai",
+      "collection": "weapons",
+      "path": "src/content/weapons/jai.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "schema_fit", "detail": "Jai is a Zaw Component (melee part for Zaw crafting), not a standalone weapon. WFCD type='Zaw Component'. The file treats it as a complete weapon with stats and builds, which is incorrect for a component part." },
+        { "severity": "critical", "category": "stat_accuracy", "detail": "criticalChance=0, criticalMultiplier=0, statusChance=0, all damage zeros -- these match WFCD for the Zaw Component (it's a part, not a weapon), but the body then says '0 per hit, 0 impact, 0 puncture, 0 slash' making it sound like a broken weapon" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Entire body is generic boilerplate identical to hikou.mdx, describing builds for a weapon that doesn't have standalone builds (it's a crafting component)" },
+        { "severity": "major", "category": "schema_fit", "detail": "Schema uses 'weapon' schema for a Zaw component -- wrong content type" }
+      ]
+    },
+    {
+      "slug": "irradiating-disarm",
+      "collection": "mods",
+      "path": "src/content/mods/irradiating-disarm.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Stats per rank/Acquisition/Usage/Common builds/Notes/Sources -- 'Usage' should be 'Builds that use it', 'Common builds' is non-standard. Required: Overview/Stats per rank/Acquisition/Builds that use it/Notes" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Body describes 'warframe-class equipment' and 'ability synergy' generically without naming Loki or Radial Disarm -- never mentions the specific warframe ability this augments" },
+        { "severity": "minor", "category": "fabricated_content", "detail": "Drops listed as empty array (drops:[]) but Irradiating Disarm can be purchased from Cephalon Simaris for standing" }
+      ],
+      "defects_resolved": [
+        "effect field now correct: 'Radial Disarm Augment: Enemies will be affected by Radiation Status for Xs'",
+        "polarity=zenurik -- CORRECT vs WFCD (was madurai in audit 1 -- FIXED)",
+        "perRankStats (4-9 seconds) match WFCD levelStats",
+        "maxRank=3 correct"
+      ]
+    },
+    {
+      "slug": "ore-gaze",
+      "collection": "mods",
+      "path": "src/content/mods/ore-gaze.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "stat_accuracy", "detail": "Stats table in body shows 6 extra rows (ranks 4, 5, and a duplicate rank 3) -- maxRank=3 but table has entries through rank 5 and duplicate rank 3. This is corrupted data." },
+        { "severity": "major", "category": "fabricated_content", "detail": "Body is generic boilerplate identical across multiple mods: 'provides powerful bonuses to enhance combat effectiveness', 'straightforward damage scaling'" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Stats table body shows 'Damage bonus' column with '+10%' etc -- these values are WRONG; Ore Gaze provides loot chance, not damage bonus" }
+      ],
+      "defects_resolved": [
+        "effect field now correctly describes Petrify Augment and loot chance",
+        "perRankStats accurate: {chance: 10/15/20/25} matches WFCD",
+        "polarity=zenurik correct"
+      ]
+    },
+    {
+      "slug": "afterburn",
+      "collection": "mods",
+      "path": "src/content/mods/afterburn.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "stat_accuracy", "detail": "MDX frontmatter effect says 'maximum of 200 Damage' but WFCD shows rank 0=max200, rank 1=max300, rank 2=max400, rank 3=max500. The max damage cap scales with rank but MDX shows 200 for all perRankStats." },
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: 'Effects per Rank/Acquisition/Usage/Sources' -- missing 'Overview' H2 (required first); 'Effects per Rank' should be 'Stats per rank'; 'Usage' should be 'Builds that use it'; missing 'Notes'" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Body says 'drops from specific mission types... depends on current in-game event schedule' -- vague, unspecific; no actual drop sources in drops:[] or body" }
+      ],
+      "defects_resolved": [
+        "effect field describes Spectral Scream Augment correctly",
+        "polarity=zenurik correct"
+      ]
+    },
+    {
+      "slug": "mind-freak",
+      "collection": "mods",
+      "path": "src/content/mods/mind-freak.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "fabricated_content", "detail": "Body is generic boilerplate identical to other mods: 'provides powerful bonuses to enhance combat effectiveness', 'straightforward damage scaling'; never mentions Nyx or Mind Control ability" },
+        { "severity": "major", "category": "stat_accuracy", "detail": "Stats table body shows 'Damage bonus' column with '+10%/+15%/+20%/+25%' which are completely wrong. Mind Freak provides +damage% to controlled target (400/600/800/1000%) not generic % damage" }
+      ],
+      "defects_resolved": [
+        "effect field correct: 'Mind Control Augment: Controlled target inflicts +[damage]% Damage and gains +25% Movement and Attack Speed'",
+        "perRankStats {damage: 400/600/800/1000} match WFCD",
+        "polarity=zenurik correct"
+      ]
+    },
+    {
+      "slug": "condition-overload",
+      "collection": "mods",
+      "path": "src/content/mods/condition-overload.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Stat table/Acquisition/Usage/Notes -- 'Stat table' should be 'Stats per rank'; 'Usage' should be 'Builds that use it'" },
+        { "severity": "minor", "category": "fabricated_content", "detail": "Body claims 'stacking multiple distinct status types at maximum rank can exceed 480 percent additional melee damage' -- this math (6x80%=480%) is plausible but should be sourced" },
+        { "severity": "minor", "category": "fabricated_content", "detail": "'Condition Overload has defined melee meta strategies for over a decade' -- unverified claim without source" }
+      ],
+      "defects_resolved": [
+        "effect, perRankStats accurate vs WFCD",
+        "polarity=madurai, drain=10, maxRank=5 all correct",
+        "word count 512 PASS"
+      ]
+    },
+    {
+      "slug": "primed-cryo-rounds",
+      "collection": "mods",
+      "path": "src/content/mods/primed-cryo-rounds.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Stats per rank/Acquisition/Usage/Common builds/Sources -- 'Usage' should be 'Builds that use it'; 'Common builds' is non-standard" },
+        { "severity": "minor", "category": "fabricated_content", "detail": "Acquisition: 'vaulted periodically' -- Primed Cryo Rounds is a Baro Ki'Teer item, not a relic drop. This is factually wrong acquisition info." }
+      ],
+      "defects_resolved": [
+        "effect, perRankStats accurate vs WFCD (+15% to +165% cold per rank)",
+        "polarity=vazarin, drain=6, maxRank=10, rarity=legendary all correct",
+        "word count ~463 PASS"
+      ]
+    },
+    {
+      "slug": "piercing-hit",
+      "collection": "mods",
+      "path": "src/content/mods/piercing-hit.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "stat_accuracy", "detail": "Overview says 'provides +165% puncture' but that's the rank 10 value; piercing-hit has maxRank=3 (not 10). WFCD has multiple Piercing Hit variants -- the 3-rank version gives +3/+6/+9/+12%. The MDX uses rank 3 but says '+165%' in overview." },
+        { "severity": "major", "category": "fabricated_content", "detail": "Stats table body shows generic 'Rank 0 effect/Rank 1 effect/Rank 2 effect/Rank 3 effect' with no actual numeric values -- body stats table is placeholder text" }
+      ],
+      "defects_resolved": [
+        "perRankStats accurate: {puncture: 3/6/9/12}",
+        "polarity=naramon, drain=2, maxRank=3, rarity=common all correct",
+        "word count 611 PASS (above 300 floor for mods)"
+      ]
+    },
+    {
+      "slug": "primal-rage",
+      "collection": "mods",
+      "path": "src/content/mods/primal-rage.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "stat_accuracy", "detail": "Stats table body has 7 rows (ranks 0-5 plus duplicate rank 3) with wrong values '+10%/+15%/+20%/+25%/+30%/+35%/+25%' -- corrupted/fabricated. Primal Rage gives crit_chance 8/10/12/15% by rank, not 10/15/20/25%" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Body is generic boilerplate identical to other mods -- never mentions Wukong or Primal Fury ability" }
+      ],
+      "defects_resolved": [
+        "effect field correct: 'Primal Fury Augment: Killing an enemy increases Critical Chance by [crit_chance]%'",
+        "perRankStats {crit_chance: 8/10/12/15} match WFCD"
+      ]
+    },
+    {
+      "slug": "mending-splinters",
+      "collection": "mods",
+      "path": "src/content/mods/mending-splinters.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "fabricated_content", "detail": "Body is generic boilerplate -- never mentions Gara or Splinter Storm ability; 'damage bonus' language throughout wrong for a healing mod" },
+        { "severity": "major", "category": "stat_accuracy", "detail": "Stats table body shows 'Damage bonus | +10%/+15%/+20%/+25%' -- fabricated and wrong. Mending Splinters provides health regeneration (10/11/12.5/15 HP/s), not damage bonus" }
+      ],
+      "defects_resolved": [
+        "polarity=zenurik CORRECT (was madurai in audit 1 -- FIXED)",
+        "effect field correct: 'Splinter Storm Augment: For each target affected, Splinter Storm heals [health_regen] Health/s'",
+        "perRankStats {health_regen: 10/11/12.5/15} match WFCD"
+      ]
+    },
+    {
+      "slug": "hammer-shot",
+      "collection": "mods",
+      "path": "src/content/mods/hammer-shot.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Body STILL describes 'accuracy and knockdown-chance scaling' and 'knockdown chance' -- WRONG. Hammer Shot per WFCD provides +Critical Damage and +Status Chance. The body text was not fixed." },
+        { "severity": "critical", "category": "fabricated_content", "detail": "Stats table in body shows 'Accuracy' and 'Knockdown Chance' columns -- fabricated entirely; correct columns are 'Critical Damage' and 'Status Chance'" }
+      ],
+      "defects_resolved": [
+        "effect field now correct: '+[crit_damage]% Critical Damage, +[status_chance]% Status Chance'",
+        "perRankStats {crit_damage: 15/30/45/60, status_chance: 20/40/60/80} match WFCD",
+        "polarity=vazarin correct"
+      ]
+    },
+    {
+      "slug": "damaged-necramech-weapon-stock",
+      "collection": "resources",
+      "path": "src/content/resources/damaged-necramech-weapon-stock.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "word_count", "detail": "Body word count ~235 / 300 required (FAIL)" },
+        { "severity": "major", "category": "fabricated_content", "detail": "'Advanced operator augments and void-focused warframe enhancements expand stock applications beyond exclusive Necramech purposes' -- fabricated usage claim; stock is specifically for Necramech weapon construction" },
+        { "severity": "minor", "category": "fabricated_content", "detail": "Drop location 'Void Fissures' listed in planets field is vague; dropSources list is also generic ('Void creature equipment')" }
+      ],
+      "defects_resolved": [
+        "planets now includes Deimos (correct)",
+        "usedFor includes 'Necramech weapon construction'"
+      ]
+    },
+    {
+      "slug": "lich-token",
+      "collection": "resources",
+      "path": "src/content/resources/lich-token.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Entire body is generic boilerplate with no specific drop location info: 'from multiple farming sources including specialized mission encounters'; no mention of Kuva Lich system" },
+        { "severity": "major", "category": "drop_location", "detail": "planets: ['Multiple', 'Void Cascade'] -- vague. Lich Tokens (Kuva Lich-related tokens) drop from Kuva Lich hunts/Grineer-controlled planets" },
+        { "severity": "major", "category": "drop_location", "detail": "dropSources: ['Enemy drops from specialized encounters'] -- fabricated generic text" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash found in body" }
+      ]
+    },
+    {
+      "slug": "pyrol",
+      "collection": "resources",
+      "path": "src/content/resources/pyrol.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Entire body is generic boilerplate: 'found exclusively in challenging endgame content zones... combines elemental and void properties' -- Pyrol is a standard mineral resource found in hot zones on specific planets (Mars, Cetus area)" },
+        { "severity": "major", "category": "drop_location", "detail": "planets: ['Multiple locations'] -- vague; Pyrol drops on specific planets (Mars area, Cetus Plains)" },
+        { "severity": "major", "category": "drop_location", "detail": "dropSources: ['Mission rewards', 'Enemy drops', 'Environmental containers'] -- generic filler" },
+        { "severity": "minor", "category": "fabricated_content", "detail": "'Pyrol cannot be traded' -- this claim needs verification; most common resources can be traded" }
+      ]
+    },
+    {
+      "slug": "entratifragmentbase",
+      "collection": "resources",
+      "path": "src/content/resources/entratifragmentbase.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "slug", "detail": "Slug 'entratifragmentbase' missing hyphens per slug rules (must be 'entrati-fragment-base')" },
+        { "severity": "major", "category": "word_count", "detail": "Body word count ~175 / 300 required (FAIL)" },
+        { "severity": "major", "category": "fabricated_content", "detail": "usedFor includes 'Experimental warframe augments' -- fabricated; Fragment Base is used for Necraloid/Entrati Foundry recipes, not augments" }
+      ]
+    },
+    {
+      "slug": "voidplume-crest",
+      "collection": "resources",
+      "path": "src/content/resources/voidplume-crest.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Specific WFCD drop rate cited (11.9% at Zariman Bounty L70-75 Rotation C). Correct planets, dropSources, usedFor. Word count ~489, just under 500 but 300 floor for resources => PASS. Good file."
+    },
+    {
+      "slug": "adramal-alloy",
+      "collection": "resources",
+      "path": "src/content/resources/adramal-alloy.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "fabricated_content", "detail": "Body is vague and generic; 'Zariman void zones' listed as a planet alongside Cambion Drift -- Adramal Alloy is a Cambion Drift mining resource, not from Zariman" },
+        { "severity": "major", "category": "drop_location", "detail": "dropSources: ['Alloy deposit mining', 'Void-infused crystal formations', 'Mining cache rewards'] -- partially correct (mining) but 'Void-infused crystal formations' is fabricated" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash found in body" },
+        { "severity": "minor", "category": "fabricated_content", "detail": "'Adramal Alloys cannot be traded' -- claim needs verification" }
+      ]
+    },
+    {
+      "slug": "training-debt-bond",
+      "collection": "resources",
+      "path": "src/content/resources/training-debt-bond.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Entire body is generic boilerplate with zero specific info about Fortuna/Solaris United or Orb Vallis bounties" },
+        { "severity": "major", "category": "drop_location", "detail": "planets: ['Multiple locations'] -- wrong; Training Debt-Bonds come from Fortuna bounties on Orb Vallis (Venus)" },
+        { "severity": "major", "category": "drop_location", "detail": "dropSources: ['Mission rewards', 'Enemy drops', 'Environmental containers'] -- fabricated generic text; Debt Bonds come specifically from Fortuna bounties" },
+        { "severity": "major", "category": "fabricated_content", "detail": "'Training Debt-Bond cannot be traded' -- INCORRECT; Debt Bonds ARE tradeable on warframe.market (this false claim persists from audit 1)" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash found in body" }
+      ]
+    },
+    {
+      "slug": "voidgel-orb",
+      "collection": "resources",
+      "path": "src/content/resources/voidgel-orb.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Where it drops/Best locations/Used for/Tips/Notes -- 'Best locations' is non-standard; required: Overview/Where it drops/Used for/Tips/Notes" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash found in body" }
+      ],
+      "defects_resolved": [
+        "Specific drop locations documented (Zariman Void Cascade fissure missions)",
+        "Correct planets: Zariman Ten-Zero"
+      ]
+    },
+    {
+      "slug": "cortege-stock",
+      "collection": "resources",
+      "path": "src/content/resources/cortege-stock.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "word_count", "detail": "Body word count ~230 / 300 required (FAIL)" },
+        { "severity": "major", "category": "fabricated_content", "detail": "'The stock drop is guaranteed upon completing necramech encounters with full squad configuration' -- unverified/fabricated claim. Cortege Stock is not guaranteed per encounter." }
+      ],
+      "defects_resolved": [
+        "planets=['Deimos'] correct",
+        "usedFor=['Cortege necramech weapon blueprint'] correct"
+      ]
+    },
+    {
+      "slug": "technocyte-coda-token",
+      "collection": "resources",
+      "path": "src/content/resources/technocyte-coda-token.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Entire body is generic boilerplate identical to training-debt-bond.mdx -- zero specific information about Technocyte Coda Token" },
+        { "severity": "major", "category": "drop_location", "detail": "planets: ['Multiple locations'] -- vague" },
+        { "severity": "major", "category": "drop_location", "detail": "dropSources: ['Mission rewards', 'Enemy drops', 'Environmental containers'] -- fabricated generic text" },
+        { "severity": "major", "category": "fabricated_content", "detail": "'Technocyte Coda Token cannot be traded' -- unverified claim" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash found in body" }
+      ]
+    },
+    {
+      "slug": "magus-elevate",
+      "collection": "arcanes",
+      "path": "src/content/arcanes/magus-elevate.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Effects per rank/Acquisition/Best on/Builds that use it/Notes/Sources -- 'Effects per rank' should be 'Stats per rank'; missing required 'Effect' H2 between Overview and Stats per rank. Required: Overview/Effect/Stats per rank/Acquisition/Builds that use it/Notes" },
+        { "severity": "minor", "category": "fabricated_content", "detail": "'Pre-ranked copies trade for 25--50 platinum on player markets' -- live price data should not be in static MDX" }
+      ],
+      "defects_resolved": [
+        "effect and perRankStats accurate vs WFCD",
+        "word count ~695 PASS",
+        "sources >= 2 with ISO dates"
+      ]
+    },
+    {
+      "slug": "emergence-savior",
+      "collection": "arcanes",
+      "path": "src/content/arcanes/emergence-savior.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Body describes overshield mechanic ('warframe receives an overshield grant', 'Trigger Chance | Overshield' in stats table) but WFCD says Emergence Savior grants health recovery + invulnerability, NOT overshield. The body text fabricates a different arcane effect." },
+        { "severity": "critical", "category": "stat_accuracy", "detail": "Stats table in body shows 'Trigger Chance | Overshield' values (25%/200 at rank 0 etc) which are completely fabricated; WFCD shows health recovery % scaling from 10% to 60%" }
+      ],
+      "defects_resolved": [
+        "effect field now correct: 'On Lethal Damage: Become invulnerable for 5s and recover [health]% Health. Cooldown: 90s'",
+        "perRankStats {health: 10/20/30/40/50/60} match WFCD",
+        "All ranks 0-5 present (complete -- was missing ranks 1-4 in audit 1)"
+      ]
+    },
+    {
+      "slug": "arcane-trickery",
+      "collection": "arcanes",
+      "path": "src/content/arcanes/arcane-trickery.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Effect accurate, perRankStats correct (15% chance, 5-25s duration), specific drop locations with rates, word count ~793 PASS. Good file."
+    },
+    {
+      "slug": "arcane-impetus",
+      "collection": "arcanes",
+      "path": "src/content/arcanes/arcane-impetus.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "schema_fit", "detail": "Missing required 'slug' field in frontmatter -- schema violation. File starts with 'name: Arcane Impetus' with no slug." },
+        { "severity": "major", "category": "h2_order", "detail": "H2 'Effects per Rank' instead of required 'Stats per rank'; missing required 'Effect' H2; 'Best On' non-standard" }
+      ],
+      "defects_resolved": [
+        "effect field and perRankStats accurate vs WFCD",
+        "word count ~380 PASS (>=300 for arcanes)"
+      ]
+    },
+    {
+      "slug": "arcane-power-ramp",
+      "collection": "arcanes",
+      "path": "src/content/arcanes/arcane-power-ramp.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "stat_accuracy", "detail": "Body says 'Max Stacks: 5' and 'five stacks' throughout, but WFCD says 'stacking up to 4x' (4 stacks max). The max stack count is wrong in the body text." },
+        { "severity": "major", "category": "fabricated_content", "detail": "Body describes a 'trigger chance' mechanic ('At rank 0...each stack provides 15% power strength (maximum 75% at five stacks)') which is not in the WFCD description. WFCD only says 'On Ability Cast: Next Ability cast gains +X% Ability Strength, stacking up to 4x.'" }
+      ],
+      "defects_resolved": [
+        "effect field now correct: 'On Ability Cast: Next Ability cast gains +[ability_strength]% Ability Strength, stacking up to 4x'",
+        "perRankStats all 6 ranks present and accurate",
+        "H2 order correct: Overview/Effect/Stats per rank/Acquisition/Builds that use it/Notes/Sources"
+      ]
+    },
+    {
+      "slug": "emergence-renewed",
+      "collection": "arcanes",
+      "path": "src/content/arcanes/emergence-renewed.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "regression",
+      "defects_remaining": [
+        { "severity": "critical", "category": "stat_accuracy", "detail": "MDX frontmatter effect says 'On Energy Depleted: Increase Energy Regeneration by [cooldown]% over 5s. Cooldown: 30s' -- but the BODY describes a completely different arcane: health restoration on transference-in. These are two different arcanes. The frontmatter describes Emergence Renewed's actual effect (energy regen on depletion), but the body text describes Magus Elevate-like behavior (health restore on operator return)." },
+        { "severity": "critical", "category": "fabricated_content", "detail": "Body says 'Emergence Renewed restores warframe health when the operator returns to the warframe via transference' -- this is the effect of a different arcane. Emergence Renewed provides energy regeneration on energy depletion." }
+      ],
+      "notes": "This is a REGRESSION: in audit 1, emergence-renewed was marked as 'clean'. The frontmatter effect correctly matches WFCD, but the body text describes Magus Elevate behavior (health on transference-in) not the actual energy-depletion energy-regen effect of Emergence Renewed."
+    },
+    {
+      "slug": "arcane-detoxifier",
+      "collection": "arcanes",
+      "path": "src/content/arcanes/arcane-detoxifier.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "regression",
+      "defects_remaining": [
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Effects per rank/Acquisition/Best on/Usage/Notes/Sources -- 'Effects per rank' should be 'Stats per rank'; missing required 'Effect' H2; 'Best on' and 'Usage' are non-standard section names" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash found in body" }
+      ],
+      "defects_resolved": [
+        "effect and perRankStats accurate vs WFCD (17-100% toxin resistance)",
+        "word count ~405 PASS"
+      ],
+      "notes": "Audit 1 did not flag arcane-detoxifier individually; it was in the 'arcanes with issues' bucket. The H2 order issue is new/carried forward."
+    },
+    {
+      "slug": "arcane-crepuscular",
+      "collection": "arcanes",
+      "path": "src/content/arcanes/arcane-crepuscular.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "fabricated_content", "detail": "Body text describes 'emergency damage reduction when health falls below 50%' with a stats table showing 'Health Trigger | Proc Chance | Damage Reduction | Duration' -- this is a COMPLETELY WRONG description. Arcane Crepuscular per WFCD: 'While invisible, gain +X% Ability Strength and +Yx Final Critical Multiplier'" },
+        { "severity": "critical", "category": "fabricated_content", "detail": "Stats table in body shows 'Damage Reduction: 30%/45%/60%/75%/82%/90%' -- entirely fabricated values for a completely different arcane effect" }
+      ],
+      "defects_resolved": [
+        "Frontmatter effect now CORRECT: 'While invisible, gain +[ability_strength]% Ability Strength and +[crit_chance]x Final Critical Multiplier'",
+        "perRankStats correct: ability_strength 5-30, crit_chance 1-3 matching WFCD"
+      ],
+      "notes": "Frontmatter was fixed but body was NOT fixed. The body still describes a health-threshold damage reduction arcane."
+    },
+    {
+      "slug": "koumei",
+      "collection": "warframes",
+      "path": "src/content/warframes/koumei.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "All stats accurate vs WFCD (health=344, shield=122, armor=444, energy=122). masteryRank=0 correct (MR0 in game). Rich, specific content. H2 order correct. Word count 1618 PASS."
+    },
+    {
+      "slug": "citrine",
+      "collection": "warframes",
+      "path": "src/content/warframes/citrine.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Stats accurate vs WFCD. Word count ~975 PASS. masteryRank=0 (WFCD confirms 0). H2 order correct."
+    },
+    {
+      "slug": "jade",
+      "collection": "warframes",
+      "path": "src/content/warframes/jade.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Stats accurate vs WFCD (health=365, shield=450, armor=135). Word count 1357 PASS. masteryRank=0 (WFCD confirms 0)."
+    },
+    {
+      "slug": "zephyr-prime",
+      "collection": "warframes",
+      "path": "src/content/warframes/zephyr-prime.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "stat_accuracy", "detail": "masteryRank=0 but Zephyr Prime requires MR6 in-game. Under DATA.md WFCD exception rule, the Fandom Wiki source should be cited for the correct MR value. No Fandom citation for masteryRank override is present." }
+      ],
+      "defects_resolved": [
+        "All core stats accurate vs WFCD (health=455, shield=455, armor=135, energy=175)",
+        "Excellent narrative content, word count 1607 PASS",
+        "H2 order correct"
+      ]
+    },
+    {
+      "slug": "ivara",
+      "collection": "warframes",
+      "path": "src/content/warframes/ivara.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Stats accurate vs WFCD. Word count 1886 PASS. masteryRank=0 (WFCD confirms 0). High quality content."
+    },
+    {
+      "slug": "protea",
+      "collection": "warframes",
+      "path": "src/content/warframes/protea.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Stats accurate vs WFCD (health=270, shield=455, armor=135, energy=175). Word count 1810 PASS."
+    },
+    {
+      "slug": "octavias-anthem",
+      "collection": "quests",
+      "path": "src/content/quests/octavias-anthem.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Word count 1519 PASS. Specific stages with locations. Required fields present."
+    },
+    {
+      "slug": "apostasy-prologue",
+      "collection": "quests",
+      "path": "src/content/quests/apostasy-prologue.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Word count 1364 PASS. Specific stages, lore field present. sources >= 2."
+    },
+    {
+      "slug": "the-jordas-precept",
+      "collection": "quests",
+      "path": "src/content/quests/the-jordas-precept.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Word count 1037 PASS. Specific stages with locations. Required fields present."
+    },
+    {
+      "slug": "the-sacrifice",
+      "collection": "quests",
+      "path": "src/content/quests/the-sacrifice.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Word count 1339 PASS. Best-quality quest file."
+    },
+    {
+      "slug": "casta-ceres",
+      "collection": "missions",
+      "path": "src/content/missions/casta-ceres.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Mission Type Notes/Level Range/Rewards/Why Play This Node/Strategy Notes/Sources -- does not match required: Overview/Mission details/Rewards/Recommended loadout/Notes" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash found in body" }
+      ],
+      "defects_resolved": [
+        "Specific node (Cesta, Ceres) with correct faction (Grineer) and level range (12-17)",
+        "Word count 707 PASS"
+      ]
+    },
+    {
+      "slug": "profit-taker-fortuna",
+      "collection": "missions",
+      "path": "src/content/missions/profit-taker-fortuna.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Mission Type Notes/Level Range/Rewards/Why Play This Node/Strategy Notes/Sources -- 'Mission Type Notes' should be 'Mission details'; other H2s are non-standard" },
+        { "severity": "major", "category": "acquisition", "detail": "rewards list: 'Garuda Blueprint (chassis/main blueprint)' -- Profit-Taker drops Garuda COMPONENTS (Neuroptics, Systems, Chassis), not the main blueprint. The main blueprint comes from the market/web store." }
+      ],
+      "defects_resolved": [
+        "Word count 958 PASS",
+        "Specific acquisition info for Profit-Taker Heist"
+      ]
+    },
+    {
+      "slug": "archon-hunt",
+      "collection": "missions",
+      "path": "src/content/missions/archon-hunt.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "partial-improvement",
+      "defects_remaining": [
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Mission Structure and Distribution/Enemy Composition and Scaling/Rewards and Progression Value/Recommended Loadout/Difficulty and Solo Potential/Temporal Structure and Accessibility/Strategic Importance/Notes and Further Context -- far from required: Overview/Mission details/Rewards/Recommended loadout/Notes" },
+        { "severity": "major", "category": "fabricated_content", "detail": "'Archon Shards, currency used to upgrade parazon mods' -- Archon Shards upgrade warframe stats (stat slots), not parazon mods. Parazon mods use Requiem relics. Factual error persists from audit 1." }
+      ],
+      "defects_resolved": [
+        "Word count 742 PASS",
+        "Sentient adaptation mechanic correctly described"
+      ]
+    },
+    {
+      "slug": "veil-proxima",
+      "collection": "missions",
+      "path": "src/content/missions/veil-proxima.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "regression",
+      "defects_remaining": [
+        { "severity": "critical", "category": "schema_fit", "detail": "faction='Void' -- Veil Proxima is a Railjack zone in the Veil Proxima star chart region, not 'Zariman'. The location field 'Zariman' is wrong; Veil Proxima is in the outer solar rail (Pluto Proxima / Veil Proxima region)" },
+        { "severity": "major", "category": "fabricated_content", "detail": "Entire body describes 'Void faction Orokin opposition' and 'Void Cascade environmental hazards' -- Veil Proxima is a Railjack zone with Corpus/Grineer enemies, not Orokin Void enemies" },
+        { "severity": "major", "category": "h2_order", "detail": "H2 order: Overview/Mission Type Notes/Level Range/Rewards/Why Play This Node/Strategy Notes/Sources -- non-standard; required: Overview/Mission details/Rewards/Recommended loadout/Notes" },
+        { "severity": "minor", "category": "ascii", "detail": "Em-dash found in body" }
+      ],
+      "notes": "REGRESSION: Audit 1 did not specifically call this file out; it was in the 4-file missions sample. Veil Proxima content appears to have been (re)written with fabricated Zariman/Void content."
+    },
+    {
+      "slug": "relics/meso",
+      "collection": "relics",
+      "path": "src/content/relics/meso.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "schema_fit", "detail": "Missing required 'slug' field (file uses 'era_letter' not 'era')" },
+        { "severity": "critical", "category": "schema_fit", "detail": "Missing required 'era' field (uses 'era_letter: meso' instead of 'era: \"meso\"')" },
+        { "severity": "critical", "category": "schema_fit", "detail": "Missing required 'drops' field (relicDropSchema[])" },
+        { "severity": "critical", "category": "schema_fit", "detail": "Missing required 'refinement' field (refinementSchema)" }
+      ],
+      "defects_resolved": [],
+      "notes": "Schema completely wrong. Content quality is good (specific relic names, drop percentages) but Zod schema validation will fail. Relic files use custom era-level schema rather than per-relic schema as required."
+    },
+    {
+      "slug": "relics/neo",
+      "collection": "relics",
+      "path": "src/content/relics/neo.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "schema_fit", "detail": "Same schema issues as meso: missing slug, era instead of era_letter, no drops, no refinement fields" }
+      ]
+    },
+    {
+      "slug": "relics/lith",
+      "collection": "relics",
+      "path": "src/content/relics/lith.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "schema_fit", "detail": "Same schema issues as meso: missing slug, era field wrong, no drops, no refinement fields" }
+      ]
+    },
+    {
+      "slug": "relics/axi",
+      "collection": "relics",
+      "path": "src/content/relics/axi.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "schema_fit", "detail": "Same schema issues as meso" }
+      ]
+    },
+    {
+      "slug": "relics/requiem",
+      "collection": "relics",
+      "path": "src/content/relics/requiem.mdx",
+      "verdict": "FAIL",
+      "status_vs_audit1": "no-improvement",
+      "defects_remaining": [
+        { "severity": "critical", "category": "schema_fit", "detail": "Same schema issues as meso" }
+      ]
+    },
+    {
+      "slug": "cephalon-simaris",
+      "collection": "syndicates",
+      "path": "src/content/syndicates/cephalon-simaris.mdx",
+      "verdict": "PASS",
+      "status_vs_audit1": "maintained",
+      "defects_remaining": [],
+      "notes": "Good quality file. Specific rewards list, accurate dailyCap=125000, correct type='other'. sources >= 2. Word count estimated well above 500 floor."
+    }
+  ],
+  "defect_category_summary": {
+    "schema_fit": {
+      "critical": 7,
+      "description": "5 relic files missing required slug/era/drops/refinement fields; arcane-impetus missing slug; kuva-kohm wrong category; dual-cestra wrong category; cedo-prime wrong category (Shotgun not Primary); cernos wrong category (Bow not Primary)"
+    },
+    "stat_accuracy_wfcd_mismatch": {
+      "critical": 6,
+      "description": "coda-hema body shows zeros; kuva-kohm body shows zeros; cernos body shows zeros; emergence-renewed frontmatter effect describes different arcane; arcane-crepuscular body describes wrong arcane; arcane-power-ramp body says max stacks=5 when WFCD says 4x"
+    },
+    "fabricated_content": {
+      "critical": 5,
+      "major": 18,
+      "description": "hammer-shot body still describes accuracy+knockdown; emergence-savior body describes overshield instead of health recovery; arcane-crepuscular body describes damage reduction; veil-proxima body describes wrong location/enemies; training-debt-bond falsely says non-tradeable; multiple resources with generic boilerplate bodies"
+    },
+    "word_count_below_floor": {
+      "major": 8,
+      "description": "sancti-castanas (0/500), dual-cestra (253/500), coda-hema (395/500), keratinos (425/500), vectis (truncated 322/500), cernos (391/500), entratifragmentbase (175/300), damaged-necramech-weapon-stock (235/300), cortege-stock (230/300)"
+    },
+    "h2_order_violations": {
+      "major": 9,
+      "description": "kuva-kohm, irradiating-disarm, condition-overload, primed-cryo-rounds, afterburn, magus-elevate, arcane-impetus, profit-taker-fortuna, archon-hunt, veil-proxima, casta-ceres all have non-standard H2 order"
+    },
+    "drop_location_plausibility": {
+      "major": 6,
+      "description": "training-debt-bond, lich-token, pyrol, technocyte-coda-token, adramal-alloy all have vague or fabricated drop locations"
+    },
+    "ascii_violations": {
+      "minor": 13,
+      "description": "Em-dash (U+2014) found in: corinth-prime, kuva-kohm, dual-cestra, heliocor, lich-token, adramal-alloy, training-debt-bond, voidgel-orb, technocyte-coda-token, arcane-impetus, arcane-detoxifier, casta-ceres, veil-proxima"
+    }
+  },
+  "regression_analysis": {
+    "regressions": 7,
+    "regression_files": [
+      {
+        "slug": "emergence-renewed",
+        "collection": "arcanes",
+        "reason": "Was marked 'clean' in audit 1. Now body text describes Magus Elevate behavior (health on transference) instead of the actual energy-regen-on-depletion effect. Frontmatter is correct but body is wrong arcane description."
+      },
+      {
+        "slug": "veil-proxima",
+        "collection": "missions",
+        "reason": "Audit 1 didn't specifically flag this file. Now file describes Zariman/Void Orokin enemies at a Railjack Veil Proxima location -- wrong faction, wrong location description throughout body."
+      },
+      {
+        "slug": "arcane-crepuscular",
+        "collection": "arcanes",
+        "reason": "Frontmatter effect was fixed correctly, but body was NOT fixed and still describes health-threshold damage reduction (a different arcane)."
+      },
+      {
+        "slug": "emergence-savior",
+        "collection": "arcanes",
+        "reason": "Frontmatter effect was fixed but body fabricates overshield mechanic not in WFCD."
+      },
+      {
+        "slug": "ore-gaze",
+        "collection": "mods",
+        "reason": "Stats table body now shows corrupted data with extra rows (ranks 4/5/duplicate rank 3) for a maxRank=3 mod; body stats column shows 'Damage bonus' instead of 'loot chance'."
+      },
+      {
+        "slug": "primal-rage",
+        "collection": "mods",
+        "reason": "Stats table body now shows corrupted data with extra rows and wrong percentage values."
+      },
+      {
+        "slug": "mending-splinters",
+        "collection": "mods",
+        "reason": "Body stats table shows 'Damage bonus | +10%/+15%/+20%/+25%' which is wrong; Mending Splinters provides health regen not damage bonus. Body was rewritten with generic mod boilerplate."
+      }
+    ]
+  },
+  "improvement_analysis": {
+    "improvements": 19,
+    "notable_improvements": [
+      "dual-cestra: criticalChance and criticalMultiplier now correct (was 0.00/0.0 in audit 1)",
+      "mending-splinters: polarity now zenurik (was madurai in audit 1 -- critical fix)",
+      "irradiating-disarm: polarity now zenurik correct; effect field now correct",
+      "hammer-shot: frontmatter effect and perRankStats now correct (body still wrong)",
+      "arcane-crepuscular: frontmatter effect now correct (body still wrong)",
+      "arcane-power-ramp: frontmatter effect correct; all 6 ranks present",
+      "emergence-savior: frontmatter effect correct; all ranks present",
+      "arcane-impetus: perRankStats correct",
+      "corinth-prime: masteryRank=14 correct (was 0 in audit 1)",
+      "kuva-kohm: masteryRank=13 correct (was 0 in audit 1) and damage values correct in frontmatter",
+      "ambassador: new file, clean and accurate",
+      "alternox: new file, clean and accurate",
+      "keratinos: frontmatter stats all accurate",
+      "akstiletto-prime: frontmatter stats all accurate",
+      "zephyr-prime: stats accurate, excellent narrative",
+      "koumei, citrine, jade, ivara, protea: maintained high quality",
+      "quest files: all 4 maintained clean status",
+      "voidplume-crest: maintained clean with specific WFCD data"
+    ]
+  },
+  "systemic_issues_remaining": [
+    {
+      "rank": 1,
+      "issue": "Relic collection schema still completely wrong -- all 5 relic files use era-level hub schema instead of per-relic Zod schema. No improvement since audit 1.",
+      "severity": "critical",
+      "blocking": true
+    },
+    {
+      "rank": 2,
+      "issue": "Arcane body-frontmatter disconnect: frontmatter effects were fixed but body text was not updated to match. arcane-crepuscular, emergence-savior, arcane-power-ramp, emergence-renewed all have body text describing wrong arcane effects.",
+      "severity": "critical",
+      "blocking": true
+    },
+    {
+      "rank": 3,
+      "issue": "Mod body stats tables corrupted or wrong: ore-gaze, primal-rage have duplicate rank rows; mending-splinters, mind-freak body tables show 'Damage bonus' instead of actual mod stats; hammer-shot body unchanged with wrong accuracy/knockdown description.",
+      "severity": "critical",
+      "blocking": true
+    },
+    {
+      "rank": 4,
+      "issue": "Weapon body fabrication: coda-hema, cernos, kuva-kohm, cedo-prime body stats tables show fabricated zeros for crit/status/damage values despite correct frontmatter. Generic boilerplate body text widespread.",
+      "severity": "critical",
+      "blocking": false
+    },
+    {
+      "rank": 5,
+      "issue": "Word count failures persist: sancti-castanas (0/500), vectis (truncated/500), dual-cestra (253/500), coda-hema (395/500), cernos (391/500), keratinos (425/500), entratifragmentbase (175/300), damaged-necramech-weapon-stock (235/300), cortege-stock (230/300).",
+      "severity": "major",
+      "blocking": true
+    },
+    {
+      "rank": 6,
+      "issue": "Resource drop locations remain vague/fabricated: training-debt-bond, lich-token, pyrol, technocyte-coda-token, adramal-alloy all have generic 'Multiple locations' planets and generic dropSources.",
+      "severity": "major",
+      "blocking": false
+    },
+    {
+      "rank": 7,
+      "issue": "H2 section order violations widespread in mods and missions collections: condition-overload, primed-cryo-rounds, afterburn, irradiating-disarm all use non-standard section names; all 4 mission files use non-standard H2 structures.",
+      "severity": "major",
+      "blocking": false
+    },
+    {
+      "rank": 8,
+      "issue": "masteryRank=0 for Zephyr Prime (requires MR6 in-game) -- WFCD exception applies but Fandom override not cited. Systematic across all Prime warframes.",
+      "severity": "major",
+      "blocking": false
+    },
+    {
+      "rank": 9,
+      "issue": "Non-ASCII punctuation (em-dash U+2014) found in 13 of 60 sampled files. Was 6 in audit 1; count increased due to new/rewritten content introducing additional em-dashes.",
+      "severity": "minor",
+      "blocking": false
+    },
+    {
+      "rank": 10,
+      "issue": "Python template literal leaked into cedo-prime.mdx body: '{name.replace(\\' \\', \\'_\\')}' in Sources section.",
+      "severity": "critical",
+      "blocking": true
+    }
+  ]
+}

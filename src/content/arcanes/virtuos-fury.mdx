@@ -28,46 +28,40 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Virtuos Fury is an Operator arcane that amplifies the damage output of the Operator's Amp weapon when the Amp successfully deals Void damage. It is installed in the Virtuos arcane slot and is primarily valued for Eidolon hunt content, where the Operator's Amp is the primary damage source against Eidolon synapses and Eidolon shields. At maximum rank, Virtuos Fury adds +150% damage to all Amp hits for 8 seconds following any successful Void damage contact, effectively tripling Amp output from a single hit onward.
+Virtuos Fury grants the operator's amp a 20% chance to increase damage for 4 seconds each time the amp applies a Status Effect to an enemy. The trigger is the Status Effect proc itself, not the hit -- the amp must successfully apply a status effect (such as Heat, Cold, Toxin, Electricity, or Viral procs) for the 4-second damage bonus to activate. At rank 3, the damage increase is +30% for 4 seconds.
 
-The arcane's proc condition - a successful Void damage hit - is trivially met in any content where the Operator shoots the Amp at enemies. Once the initial hit lands and the buff activates, the 8-second window refreshes with each subsequent hit, creating near-permanent uptime during sustained Amp fire. This makes Virtuos Fury one of the highest-value offensive Operator arcanes available.
+Because the 4-second window is short, consistent status proc generation is required to maintain the buff with any regularity. Amp configurations with high status chance on the amp prism applied to susceptible enemies generate status procs frequently enough to give Virtuos Fury meaningful uptime during sustained combat.
 
 ## Effect
 
-When the Operator's Amp deals Void damage to an enemy, Virtuos Fury activates a damage-amplifying buff on all subsequent Amp attacks. At rank 0 the buff provides +30% Amp damage. At maximum rank 5 the buff reaches +150% Amp damage. The buff lasts 8 seconds at all ranks. Each successful Void damage hit refreshes the 8-second window, so continuous Amp fire on enemies maintains the buff without interruption.
+Each time the operator's amp successfully applies a Status Effect to an enemy, Virtuos Fury checks a 20% trigger chance. On success, the operator's amp gains +damage% bonus to all subsequent amp hits for 4 seconds. At rank 0, the bonus is +7.5% damage. At rank 3, the bonus is +30% damage.
 
-The damage bonus is additive with other Amp damage modifiers from Focus Schools and Amp arcane slots, contributing a large flat percentage bonus to the total damage formula.
+The 20% trigger chance is fixed across all ranks. Only the damage bonus percentage scales with rank. The buff activates on successful status procs -- missing shots or shots that deal damage but fail to apply a status proc do not trigger the chance roll.
 
 ## Stats per rank
 
-| Rank | Damage Bonus | Duration |
-|------|-------------:|---------:|
-| 0 | +30% | 8s |
-| 1 | +60% | 8s |
-| 2 | +90% | 8s |
-| 3 | +120% | 8s |
-| 4 | +135% | 8s |
-| 5 | +150% | 8s |
+| Rank | Damage Bonus | Duration | Trigger Chance |
+|------|-------------|----------|----------------|
+| 0 | +7.5% | 4s | 20% on Status Effect |
+| 1 | +15% | 4s | 20% on Status Effect |
+| 2 | +22.5% | 4s | 20% on Status Effect |
+| 3 | +30% | 4s | 20% on Status Effect |
 
 ## Acquisition
 
-Virtuos Fury drops from Eidolon Teralyst captures during Void Fissure hunts on the Plains of Eidolon. Players who run Eidolon hunts while a Void Fissure is active on the Plains receive arcane drops from the Eidolon capture at the end of each Teralyst kill. The approximate drop chance is 3% per Teralyst capture in this context. The arcane can also be traded with other players through standard trade channels.
-
-Consistent Eidolon farming over multiple night cycles is the fastest path to acquiring Virtuos Fury at rank 0. Ranking the arcane to 5 requires multiple copies. Each copy of Virtuos Fury increases the rank when combined at the Mod Station, following the same arcane upgrade process as all other Warframe arcanes.
+Virtuos Fury drops from Eidolon Teralyst captures during Void Fissure hunts on the Plains of Eidolon. Players who run Eidolon hunts while a Void Fissure is active on the Plains receive arcane drops from the Eidolon capture at the end of each Teralyst kill. The arcane can also be traded with other players through standard trade channels or purchased from Warframe.market.
 
 ## Builds that use it
 
-Virtuos Fury is a core arcane for any Operator build focused on Eidolon takedowns or Amp-heavy damage output.
+Virtuos Fury suits operator builds that pair amp use with elemental damage arcanes. Virtuos Forge or Virtuos Trojan convert Void Damage to elemental damage types that generate status procs more readily, providing more proc opportunities per second for Virtuos Fury's trigger. Amps with high status chance prisms in combination with elemental conversion arcanes generate consistent status proc opportunities.
 
-Eidolon hunt builds treat Virtuos Fury as near-mandatory. The Eidolon's synapses require sustained Amp damage to break, and the +150% bonus at rank 5 directly halves the time needed to destroy each synapse compared to a build without the arcane. Hunt squad coordination revolves around managing the Eidolon shield cycle, and faster synapse breaks reduce the number of shield cycles required.
-
-Void Cascade mission builds benefit from Virtuos Fury when the Operator is tasked with eliminating Void Angel targets, which require Amp damage. The damage bonus reduces the time spent in Operator form per Angel kill, improving overall mission pace.
+The +30% damage at rank 3 is modest compared to higher-tier operator arcanes, making Virtuos Fury most useful when paired with other status-generating arcanes or builds that convert amp damage types. In content where the operator engages groups of enemies with high-status-chance amps, the proc frequency gives the buff reasonable uptime for a minor damage amplification.
 
 ## Notes
 
-The 8-second buff timer means a brief pause in firing will not drop the buff immediately. Operators who need to dodge or reposition between shots maintain the Virtuos Fury bonus as long as the gap between shots stays under 8 seconds. At rank 5, the damage bonus is large enough that the Amp's effective damage output is substantially different before and after the first proc, so initiating engagement with the Amp as early as possible establishes the buff before the high-priority phase of the fight begins.
+The 20% trigger chance is per status proc, not per hit. A single amp shot that applies multiple status types simultaneously provides multiple independent trigger checks. The 4-second duration is brief relative to combat timelines, so the buff functions as a short burst bonus rather than a sustained damage multiplier. The damage bonus applies to the amp's damage output during the active window, not to the warframe's weapons. Void Cascade and Eidolon hunt operators who land regular elemental procs through converted Void Damage benefit from the trigger most consistently.
 
 ## Sources
 
-- [WFCD warframe-items](https://github.com/WFCD/warframe-items) - arcane stats and effect data
-- [Virtuos Fury - WARFRAME Wiki](https://warframe.fandom.com/wiki/Virtuos_Fury) - acquisition, effect details, and community usage
+- WFCD warframe-items dataset provides damage bonus values per rank and the 20% trigger chance for Virtuos Fury.
+- Fandom wiki entry for [Virtuos Fury](https://warframe.fandom.com/wiki/Virtuos_Fury) covers status proc trigger conditions and amp damage interaction.

@@ -18,52 +18,56 @@ perRankStats:
   - rank: 5
     stats: { crit_chance: 6 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Secondary_Enervate
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Secondary_Enervate
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Secondary Enervate reduces enemy offensive effectiveness when secondary weapon status procs trigger, providing a debuff mechanic that extends beyond raw damage into team utility. Enemies affected by the power reduction deal less damage and apply weaker effects, benefiting all squadmates in range of the debuffed target. Status-heavy secondary builds that apply procs at high frequency maintain near-constant debuff uptime on priority targets, particularly bosses and elite enemies with powerful attacks. The arcane converts any status type on the secondary - corrosive, viral, heat, electric, slash - into an opportunity for the power reduction debuff.
+Secondary Enervate builds Critical Chance on every hit with the secondary weapon, stacking until a "Big Critical Hit" (orange or red crit) is scored, at which point the accumulated bonus resets and the cycle begins again. Each non-big-crit hit adds 10% Critical Chance to the secondary weapon's current critical chance, allowing rapid accumulation toward orange and red crit territory. The reset condition on Big Critical Hits creates a natural rhythm: build up crit chance through regular hits, cash out as a high-tier critical, reset, repeat.
 
-This utility-focused arcane contrasts with damage-boosting secondaries by reducing incoming threat rather than increasing outgoing damage. Players building for squad support or survivability-focused content find Secondary Enervate complementary to healing and mitigation tools already in their toolkit.
+At rank 5, the Critical Chance resets after 6 Big Critical Hits. Weapons that score Big Critical Hits frequently accumulate and reset more often, maintaining high average critical chance throughout sustained combat.
 
 ## Effect
 
-Each status proc applied by the secondary weapon triggers the power reduction check. On success, the affected enemy has its effective output reduced for the debuff duration. At rank 0, the 20% reduction noticeably lessens damage spikes from elite enemies; at rank 5, 100% reduction effectively neutralizes enemy offensive power for the buff duration. The debuff does not stack from multiple procs of the same type but refreshes duration on new successful triggers. Multiple different status types applied simultaneously each check the trigger independently, increasing overall debuff uptime.
+Each hit from the secondary weapon increases the weapon's Critical Chance by a flat 10%. This stacks continuously with every subsequent hit until a Big Critical Hit (an orange-tier or higher critical) lands, at which point the Critical Chance bonus resets to zero. At rank 0, the bonus resets after 1 Big Critical Hit -- one orange crit per accumulation cycle. At rank 5, the bonus resets after 6 Big Critical Hits -- the weapon sustains the accumulated Critical Chance bonus through 6 big crits before resetting, maintaining higher average crit tiers for longer periods between resets.
+
+The 10% per hit accumulation is fixed across all ranks; only the number of Big Critical Hits before reset scales with rank.
 
 ## Stats per rank
 
-| Rank | Power Reduction | Notes |
-|------|-----------------|-------|
-| 0 | 20% | Modest mitigation against elites |
-| 1 | 40% | Meaningful reduction in damage intake |
-| 2 | 60% | Substantial elite threat reduction |
-| 3 | 75% | Strong debuff for group survivability |
-| 4 | 90% | Near-complete power suppression |
-| 5 | 100% | Full power neutralization during window |
+| Rank | Big Crits Before Reset | Critical Chance per Hit |
+|------|----------------------|------------------------|
+| 0 | 1 | +10% |
+| 1 | 2 | +10% |
+| 2 | 3 | +10% |
+| 3 | 4 | +10% |
+| 4 | 5 | +10% |
+| 5 | 6 | +10% |
 
 ## Acquisition
 
-Secondary Enervate drops from Zariman Ten-Zero missions and Void Cascade content. The arcane appears in rotation rewards across Void Cascade A through C, making it broadly available through standard Zariman farming. Players consistently completing daily Zariman bounties encounter Secondary Enervate through natural rotation accumulation. Warframe.market provides a secondary acquisition route for players prioritizing speed over farming.
+Secondary Enervate drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
 
 ## Builds that use it
 
-High-status secondary builds pairing Secondary Enervate with multi-element modding generate frequent procs to maintain debuff uptime. Status-focused pistols with 80% or higher status chance after modding apply procs quickly enough to sustain the power reduction throughout extended encounters. Support-oriented frames (Trinity, Wisp, Harrow) that already contribute team utility through abilities pair well because Secondary Enervate extends defensive contribution into secondary weapon usage. Steel Path content where elite enemies deal significantly amplified damage benefits most from the power reduction mechanic.
+Secondary Enervate suits secondary weapons that fire multiple hits per second, accelerating Critical Chance accumulation rapidly before scoring a Big Critical Hit. Full-auto secondaries with moderate base critical chance -- Cycron, Atomos, Spira Prime -- fire many hits per second, building the +10% per hit stack toward the Big Critical Hit threshold quickly. At rank 5, the weapon sustains 6 Big Critical Hits before resetting, meaning the accumulated crit bonus remains active for a meaningful burst window before cycling back to zero.
+
+Builds with Blood Rush equivalents for secondaries (if available) or high base critical multiplier compound with the elevated Critical Chance during the accumulated stack window, pushing orange and red crits to high damage values during the active bonus phase.
 
 ## Notes
 
-The power reduction applies to the specific enemy hit by the status proc, not to all enemies in an area. Multi-targeting secondaries that apply status to several enemies simultaneously trigger the debuff on each target independently. The debuff does not affect enemy armor or resistances, only their effective offensive output. Combined with armor-stripping mods (Corrosive stacking) the arcane provides both offensive and defensive contributions from a single secondary weapon slot.
+"Big Critical Hit" refers to an orange-tier or higher critical -- any critical hit where the critical tier exceeds the base yellow crit. The reset occurs after the specified number of Big Critical Hits, not on the next non-big crit. Weapons with base critical chance below 25% may never score orange crits naturally; Enervate's accumulation enables them to reach orange crit territory through the stacking bonus. The 10% per hit is additive with base critical chance from mods, not multiplicative -- a weapon with 30% base crit gains flat +10% per hit from Enervate toward its total critical chance.
 
 ## Sources
 
-- WFCD warframe-items dataset documents the trigger condition and power reduction scaling for Secondary Enervate.
-- Fandom wiki entry for Secondary Enervate provides context on status proc interactions and squad utility applications.
+- WFCD warframe-items dataset provides Big Critical Hit reset counts per rank and the 10% per hit accumulation for Secondary Enervate.
+- Fandom wiki entry for [Secondary Enervate](https://warframe.fandom.com/wiki/Secondary_Enervate) covers Big Critical Hit definitions and accumulation reset behavior.

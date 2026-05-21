@@ -32,43 +32,43 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Magus Glitch applies Void Cloak - a form of temporary invisibility - to nearby warframes when the operator uses Void Sling. The Void Sling action propels the operator forward, and Glitch's trigger converts this movement action into a team stealth event, granting all nearby allied warframes an invisibility window simultaneously. Unlike targeted healing or damage support arcanes that affect one parameter, Glitch provides crowd-level evasion by making all nearby frames invisible at the same time, allowing the squad to break enemy targeting simultaneously.
+Magus Glitch negates Transference Static when it would affect the operator. Transference Static is a debuff applied by certain enemies (notably Sentient units) that disrupts operator transference, forcing a cooldown before the operator can return to their warframe or switch to operator mode. Magus Glitch provides a passive chance to resist each Transference Static application, reducing how often this mechanic disrupts operator-warframe cycling.
 
-Team-wide stealth events are relatively rare in Warframe - most invisibility sources are single-target (the casting frame or a specific targeted ally). Magus Glitch provides this rare group stealth through a naturally-occurring operator action, enabling squad compositions that benefit from coordinated stealth without requiring all members to run their own invisibility abilities.
+At rank 5, the 102% resistance chance provides effective immunity to Transference Static from external sources. Players who frequently use operator mode in Sentient-heavy content (Eidolon hunts, Orphix missions, Sentient invasions) benefit from uninterrupted transference cycling.
 
 ## Effect
 
-Each Void Sling activates Void Cloak on nearby warframes for the listed duration. At rank 0, 4 seconds of Void Cloak provides a brief stealth window for repositioning or breaking enemy line of sight. At rank 5, 8 seconds of Void Cloak provides a more substantial evasion window - enough for the squad to reposition, revive a downed ally, or wait for a dangerous enemy attack to resolve.
+Each Transference Static application checks against the Magus Glitch resistance chance. On success, the proc is negated and does not apply the Static debuff. At rank 0, 17% resistance negates roughly one in six Static applications -- reducing disruption frequency modestly. At rank 5, 102% is functionally 100% immunity; Transference Static from enemy sources cannot apply to the operator.
 
-Void Cloak functions as a form of invisibility that prevents enemy targeting while active. Standard stealth break conditions apply - warframes that attack while cloaked break stealth for their own frame without affecting squadmates' cloak status.
+The resistance functions passively without any trigger input from the player. No action is required to activate or maintain the negation chance.
 
 ## Stats per rank
 
-| Rank | Cloak Duration | Notes |
-|------|----------------|-------|
-| 0 | 4s | Brief repositioning window |
-| 1 | 5.3s | Moderate stealth coverage |
-| 2 | 6.6s | Useful evasion time |
-| 3 | 7.2s | Strong cloak window |
-| 4 | 7.6s | Near-maximum duration |
-| 5 | 8s | Maximum cloak per Sling |
+| Rank | Transference Static Resistance |
+|------|-----------------------------:|
+| 0 | 17% |
+| 1 | 34% |
+| 2 | 51% |
+| 3 | 68% |
+| 4 | 85% |
+| 5 | 102% (immune) |
 
 ## Acquisition
 
-Magus Glitch drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero. The arcane is accessible after completing Angels of the Zariman. Regular Void Cascade runs naturally generate Glitch drops over time. Warframe.market provides a direct purchase route for players who prefer platinum acquisition over farming multiple Zariman sessions.
+Magus Glitch drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero at 2.5%. The arcane is accessible after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Magus Glitch suits operator support builds in squad missions where team evasion provides survivability during dangerous encounter windows. Spy-mission void fissure runs where stealth is necessary for alarm-avoidance benefit from synchronized squad invisibility triggered by operator Void Sling. Void Cascade squad compositions where the operator actively moves between Void Manifestation locations using Void Sling naturally trigger Glitch's cloak on nearby squadmates during those transitions.
+Magus Glitch is most valuable in content where Transference Static occurs frequently. Eidolon hunts involve Sentient units that apply Static to disrupt operator engagement with Eidolon synovias; rank 5 Glitch provides complete immunity during the hunt. Orphix missions with Sentient enemies applying Static benefit from Glitch preventing the cycling disruption that limits operator combat time. Players who run Madurai Void Strike and rely on rapid operator transference timing find Glitch preserves that timing against Static-applying enemies.
 
-Stealth-dependent warframe builds - Ash, Ivara, Octavia - can use Glitch to refresh their stealth windows in scenarios where their own abilities are on cooldown or energy-depleted, relying on the operator's Void Sling to maintain stealth coverage for the team.
+The arcane has negligible value in content without Sentient or Static-applying enemies, such as standard Grineer, Corpus, or Infested missions.
 
 ## Notes
 
-The Void Cloak applies to all warframes within the Glitch range, not only the operator's own warframe. The duration is fixed and does not scale with any ability range or duration mods. Each squadmate's Void Cloak breaks independently on that player's actions - one player attacking does not break other players' cloak. Multiple operators each running Magus Glitch can stack their separate Void Sling triggers to extend overall team cloak coverage beyond the single-arcane window. The operator itself is not cloaked by Glitch - only nearby warframes receive the Void Cloak effect.
+Transference Static specifically prevents the operator from entering or exiting operator mode for its duration. Magus Glitch negates the proc before it applies, not after -- a successfully negated Static leaves no debuff to clear. The 102% at rank 5 exceeds the normal 100% cap by design; values above 100% effectively guarantee resistance against all incoming procs of the covered type. Magus Glitch only covers Transference Static, not other operator debuffs or enemy abilities that interact with operator mode.
 
 ## Sources
 
-- WFCD warframe-items dataset documents Void Sling triggers and Void Cloak duration for Magus Glitch.
-- Fandom wiki entry for Magus Glitch covers team stealth application mechanics and cloak break conditions.
+- WFCD warframe-items dataset provides Transference Static resistance chance per rank for Magus Glitch.
+- Fandom wiki entry for [Magus Glitch](https://warframe.fandom.com/wiki/Magus_Glitch) covers Transference Static mechanics and Sentient encounter context.
 

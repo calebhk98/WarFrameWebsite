@@ -33,43 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Magus Cloud grants brief operator invisibility following Void Blast attacks, converting the melee-range void strike into a potential escape or repositioning tool. Operator invisibility prevents enemy targeting while active, allowing the operator to break line of sight after a Void Blast and reposition without drawing fire. In high-difficulty content where operator health pools are limited and direct operator engagement is dangerous, Cloud provides the window needed to withdraw to safety or close distance without taking damage.
+Magus Cloud increases the Void Sling Radius when the operator enters Void Mode. Void Mode is the operator's stealth state accessed by holding the Void Mode input. When Void Mode activates, the subsequent Void Sling gains an expanded radius for 6 seconds -- the distance the operator travels per Void Sling is extended during this window, allowing longer single-sling movements for repositioning, traversal, or closing distance.
 
-The Void Blast is naturally a close-range action that positions the operator near enemies. Magus Cloud turns this proximity requirement into a defensive opportunity - blasting an enemy at close range has a chance to immediately render the operator invisible, allowing instant disengagement from the same position where the attack was delivered.
+At rank 5, entering Void Mode grants +300% Void Sling Radius for 6 seconds. This triples the base Void Sling travel distance, enabling the operator to cover substantially more ground per Void Sling during the Void Mode window.
 
 ## Effect
 
-Each Void Blast triggers a chance check. On success, the operator becomes invisible for the listed duration. At rank 0, a 10% trigger chance grants 4 seconds of invisibility - sufficient for a quick reposition or distance-closing movement to cover. At rank 5, a 30% trigger chance grants 6 seconds - roughly one in three Void Blasts generates an invisibility window, providing reliable cover during sustained operator combat.
+Activating Void Mode triggers the Magus Cloud bonus, applying the listed Void Sling Radius increase for 6 seconds. Any Void Slings performed during this window travel farther than the base radius allows. At rank 0, +50% Void Sling Radius modestly extends single-sling coverage. At rank 5, +300% Void Sling Radius allows the operator to traverse areas in fewer slings, reaching distant objectives or enemies more rapidly.
 
-Operator invisibility prevents enemy targeting from most standard enemy types. Attacks during the invisibility window may break the effect; repositioning and amp fire discipline during the invisibility duration preserves its full length.
+The 6-second window is limited; operators who enter Void Mode and immediately Void Sling extract the full radius bonus on that sling and any remaining slings within the 6-second timer. Void Mode entry that is maintained without immediately Void Slinging reduces the time available for enhanced-radius slings.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Invisibility Duration | Notes |
-|------|----------------|-----------------------|-------|
-| 0 | 10% | 4s | Occasional escape window |
-| 1 | 15% | 4.4s | Moderate invisibility uptime |
-| 2 | 20% | 4.8s | Reliable repositioning |
-| 3 | 25% | 5.2s | Strong defensive window |
-| 4 | 27% | 5.6s | Near-maximum cover |
-| 5 | 30% | 6s | Maximum invisibility duration |
+| Rank | Void Sling Radius Bonus | Duration |
+|------|------------------------|----------|
+| 0 | +50% | 6s |
+| 1 | +100% | 6s |
+| 2 | +150% | 6s |
+| 3 | +200% | 6s |
+| 4 | +250% | 6s |
+| 5 | +300% | 6s |
 
 ## Acquisition
 
-Magus Cloud drops from Eidolon Hydrolyst capture at 4% and Zariman Void Fissure missions at 2%. The Hydrolyst drop source requires completing full Eidolon hunts on Plains of Eidolon - capturing (not killing) the Eidolon Hydrolyst during Teralyst-Gantulyst-Hydrolyst chains provides the 4% drop. Zariman Void Fissure provides a lower-rate alternative accessible through standard Zariman content after Angels of the Zariman. Warframe.market offers purchase options for players who prefer platinum acquisition.
+Magus Cloud drops from Eidolon Hydrolyst capture at 4% and Zariman Void Fissure missions at 2%. The Hydrolyst source requires completing full Eidolon hunts -- capturing (not killing) the Eidolon Hydrolyst during Tridolon chains provides the 4% drop. Zariman Void Fissure provides a lower-rate alternative accessible after Angels of the Zariman. Warframe.market offers purchase options for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Magus Cloud suits defensive operator builds that use Void Blast as part of their combat rotation rather than pure amp fire. Operators in solo Zariman content where enemy fire can overwhelm operator health pools benefit from the periodic invisibility as a damage-avoidance tool. Eidolon hunt operators who use Void Blast for shield stripping benefit from the occasional invisibility as cover during the vulnerable post-blast moments before returning to amp fire.
+Magus Cloud is primarily a mobility arcane for operators who rely on Void Sling for rapid traversal. Operators in open-world environments (Plains of Eidolon, Cambion Drift, Zariman) where large distances must be covered between objectives benefit from the extended sling radius reducing the number of slings required to cross terrain. Eidolon hunt operators who need to reposition quickly between Eidolon limb positions use the extended radius to close distance in fewer actions, saving time during the hunt phases.
 
-Unairu school operators that rely on Void Blast for armor stripping against Sentient targets combine the utility of the blast with Cloud's defensive invisibility, enabling sustained close-range engagement without requiring continuous evasion.
+Focus school builds using Madurai's Void Sling-based damage (Void Strike charges, sling-impact interactions) benefit from the extended radius if the sling radius affects damage area or enemy collision during the sling trajectory.
 
 ## Notes
 
-Operator invisibility from Magus Cloud prevents targeting from standard enemy types but may not affect all enemy categories - certain endgame enemies with special detection or area denial abilities may still locate the operator. Using the amp while invisible may break the invisibility depending on the weapon and attack type. Combining Cloud with Magus Lockdown (which immobilizes enemies on Void Blast) creates a combination that simultaneously disables enemies and grants the operator safe reposition time. The invisibility duration is measured from the moment of proc, not from the Void Blast animation completion.
+Void Sling Radius refers to the travel distance of the Void Sling action, not the impact area at the endpoint. The +300% radius at rank 5 extends how far the operator travels per sling input, not how large the destination impact zone is. Void Mode must be actively entered (held input) to trigger Magus Cloud -- the operator must be in Void Mode stealth state, not simply drifting in standard operator movement. The 6-second window begins when Void Mode activates; the timer runs regardless of whether Void Slings are performed during the window.
 
 ## Sources
 
-- WFCD warframe-items dataset documents trigger conditions and invisibility duration for Magus Cloud.
-- Fandom wiki entry for Magus Cloud covers Eidolon hunt application and Void Blast close-range defensive mechanics.
-
+- WFCD warframe-items dataset provides Void Sling Radius values per rank and the Void Mode trigger for Magus Cloud.
+- Fandom wiki entry for [Magus_Cloud](https://warframe.fandom.com/wiki/Magus_Cloud) covers Void Mode activation conditions and Void Sling radius interaction behavior.

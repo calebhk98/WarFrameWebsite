@@ -32,42 +32,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Magus Husk (Zariman variant) grants a percentage armor bonus to nearby warframe allies whenever the operator uses Void Sling. Unlike the solo-focused armor restore on Transference Out provided by the non-Zariman Magus Husk, this variant provides armor as a squad-wide buff applied as a percentage increase rather than a flat value. Each Void Sling distributes the armor bonus to all warframes within range, making the operator a mobile armor-support unit during Zariman void cascade missions.
+Magus Husk grants a flat armor bonus to the warframe when the operator exits operator mode via Transference Out. Each return from operator mode to warframe mode applies the rank-dependent armor bonus. The timing of the bonus means it activates precisely when the warframe re-enters combat after an operator engagement -- providing a brief defensive layer as the player resumes warframe play.
 
-Armor reduces physical damage intake by converting incoming hits according to the armor-to-damage-reduction formula. A percentage armor bonus scales with the warframe's existing armor value - frames with naturally high armor or armor mods receive larger absolute armor values from the percentage buff. The 12-second duration is long enough to cover extended combat phases when refreshed by repeated Void Slings.
+At rank 5, Transference Out grants +300 flat armor. This armor bonus persists for a fixed duration after the transference event and then expires, requiring another Transference Out cycle to refresh it.
 
 ## Effect
 
-Each Void Sling applies a percentage armor bonus to nearby warframes for 12 seconds. At rank 0, +50% armor for 12 seconds provides a meaningful defensive layer to allied frames. At rank 5, +250% armor for 12 seconds significantly multiplies the effective armor of all nearby warframes - a frame with 200 base armor gains 500 additional armor from the buff, raising total armor to 700 for the 12-second window and substantially increasing physical damage reduction.
+Transference Out is the action of pressing the transference key to return from operator mode back to the warframe. Each such event applies +armor to the warframe. At rank 0, +50 armor provides a minor defensive increment. At rank 5, +300 armor is substantial -- for a frame with 150 base armor, Magus Husk adds double the base armor value for the duration.
 
-The 12-second duration refreshes on subsequent Void Slings within the window, allowing an operator who Slings regularly to maintain near-permanent armor uptime on the squad.
+The armor bonus duration is not explicitly listed in WFCD perRankStats for the current data; the bonus follows standard temporary armor buff conventions and expires after a fixed window. Frames that cycle in and out of operator mode frequently maintain the armor bonus more consistently than frames that remain in warframe mode for extended periods.
 
 ## Stats per rank
 
-| Rank | Armor Bonus | Duration | Notes |
-|------|-------------|----------|-------|
-| 0 | +50% | 12s | Moderate protection |
-| 1 | +100% | 12s | Doubles armor |
-| 2 | +150% | 12s | Strong defense |
-| 3 | +200% | 12s | Tripled base armor |
-| 4 | +225% | 12s | High buff value |
-| 5 | +250% | 12s | Maximum armor bonus |
+| Rank | Armor Bonus on Transference Out |
+|------|--------------------------------|
+| 0 | +50 |
+| 1 | +100 |
+| 2 | +150 |
+| 3 | +200 |
+| 4 | +250 |
+| 5 | +300 |
 
 ## Acquisition
 
-Magus Husk (Zariman) drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero at approximately 2.5% chance. Zariman content becomes accessible after completing the Angels of the Zariman quest. Regular Void Cascade participation accumulates copies without requiring specific rotation targeting. Warframe.market provides a direct purchase route for players who prefer platinum acquisition.
+Magus Husk drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero at 2.5%. The arcane is accessible after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Magus Husk suits support operator builds running alongside tanky warframe allies in Zariman Void Cascade and Steel Path content where armor provides meaningful damage reduction. Operators who Sling frequently during repositioning and combat naturally apply the armor buff as a byproduct of their movement, distributing the bonus to allies without dedicating time to support actions.
+Magus Husk benefits builds that cycle between operator and warframe mode regularly. Operator-active builds using Focus school abilities, Void Strike charging, or amp combat naturally perform multiple Transference Out events per mission, refreshing the armor bonus at each return to warframe. The arcane is most valuable on frames with moderate base armor where the +300 flat bonus represents a significant proportional increase to total armor and resulting damage reduction.
 
-Squad compositions running Adaptation builds - where armor value directly affects the adaptive damage reduction from Adaptation mod - see compounding benefit from the Husk buff. A frame with high base armor running Adaptation gains elevated damage reduction on both systems simultaneously when Magus Husk's percentage bonus is active. Defensive missions like Zariman Defense where allies cluster together provide ideal overlap for the armor aura range.
+Frames with zero base armor (Banshee, Nyx) gain no additional benefit from flat armor additions through the armor-to-DR formula compared to armored frames. Tanky frames with existing high armor compound the Husk bonus with existing Adaptation or Steel Fiber investments.
 
 ## Notes
 
-The armor bonus applies to the warframe's base armor pool - it is a percentage of the frame's current maximum armor, multiplied by whatever armor mods are active. This makes Magus Husk more effective on armored frames than on frames with low base armor. Frames with 0 base armor gain nothing from a percentage armor bonus. The buff does not stack from multiple Slings within the active window - each Sling refreshes the duration rather than adding additional armor stacks. Allies outside the operator's range when the Sling fires do not receive the buff for that Sling event.
+Transference Out specifically means exiting operator mode back to the warframe. Entering operator mode does not trigger the bonus. The timing of the armor application is at the Transference Out moment, not a delayed buff. The flat +armor from Magus Husk applies additively with other armor bonuses from mods and temporary buff sources. Players who avoid frequent operator usage will refresh the bonus infrequently and may lose the defensive benefit during extended warframe combat phases.
 
 ## Sources
 
-- WFCD warframe-items dataset documents the Void Sling trigger condition, percentage armor scaling, and 12-second duration for Magus Husk (Zariman).
-- Fandom wiki entry for Magus Husk covers armor percentage calculation mechanics and the Zariman void cascade drop source.
+- WFCD warframe-items dataset provides flat armor values per rank on Transference Out for Magus Husk.
+- Fandom wiki entry for [Magus Husk](https://warframe.fandom.com/wiki/Magus_Husk) covers Transference Out trigger timing and armor bonus duration.

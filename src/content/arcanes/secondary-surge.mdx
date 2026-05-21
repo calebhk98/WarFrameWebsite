@@ -18,54 +18,56 @@ perRankStats:
   - rank: 5
     stats: { energy: 8 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Secondary_Surge
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Secondary_Surge
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Secondary Surge provides stacking attack speed bonuses on electric status procs from secondary weapons, creating an escalating fire rate multiplier during electric-focused engagements. The stacking mechanic rewards builds that maintain rapid electric proc application - each proc adds a stack, and maintaining all four stacks simultaneously delivers the maximum fire rate multiplier. Electric secondaries with high status chance apply procs quickly enough to build stacks during the opening shots of an engagement.
+Secondary Surge converts current Energy into a single-shot Damage Multiplier for the secondary weapon on Ability Cast. When an ability is cast, the next secondary weapon shot gains a multiplier that scales with the amount of Energy the warframe has at the time of the cast -- the more energy available when the ability fires, the stronger the next shot. The multiplier scales at 1x per 200 Energy, capped at the rank-dependent maximum.
 
-Attack speed in Warframe translates directly to fire rate for secondary weapons, meaning all four stacks effectively quadruple the per-stack bonus on top of existing speed mods. For full-auto secondaries, this translates to a substantial increase in rounds downrange per second during the stacked state.
+At rank 5, the multiplier caps at x8 -- a warframe with 1600 or more Energy at cast time charges the next secondary shot to x8 total damage multiplier. The bonus applies to a single shot, then resets until the next ability cast.
 
 ## Effect
 
-Each electric status proc from the secondary weapon applies one attack speed stack. Up to four stacks accumulate independently, each providing the per-rank bonus for a fixed duration. At rank 0, each stack grants 20% attack speed (maximum 80% at four stacks); at rank 5, each stack grants 100% attack speed (maximum 400% at four stacks). Four stacks at rank 5 effectively increases secondary fire rate to five times the base rate combined with existing fire rate mods.
+Each ability cast charges the next secondary weapon shot with a Damage Multiplier based on current Energy / 200 at the time of cast, up to the rank-dependent cap. At rank 0, the multiplier caps at x3 -- 600 Energy at cast yields x3 on the next shot. At rank 5, the multiplier caps at x8 -- 1600 Energy at cast yields x8 on the next shot. The charged shot applies to the next trigger pull on the secondary weapon, then the charge is consumed. If the player does not fire the secondary before the next ability cast, a new charge replaces the old one.
 
-Individual stack durations reset on each new proc trigger, meaning sustained electric proc application maintains maximum four-stack uptime throughout extended engagements.
+The damage multiplier scales the secondary weapon's full modded output by the multiplier value, making high-base-damage secondaries receive the greatest absolute benefit from a full x8 charge.
 
 ## Stats per rank
 
-| Rank | Attack Speed per Stack | Max Stacks | Max Total Bonus | Notes |
-|------|----------------------|-----------|-----------------|-------|
-| 0 | +20% | 4 | +80% | Moderate speed boost |
-| 1 | +40% | 4 | +160% | Good attack acceleration |
-| 2 | +60% | 4 | +240% | Strong fire rate increase |
-| 3 | +80% | 4 | +320% | Very high speed boost |
-| 4 | +90% | 4 | +360% | Near-maximum acceleration |
-| 5 | +100% | 4 | +400% | Maximum speed multiplier |
+| Rank | Maximum Damage Multiplier | Energy Required for Max |
+|------|--------------------------|------------------------|
+| 0 | x3 | 600 Energy |
+| 1 | x4 | 800 Energy |
+| 2 | x5 | 1000 Energy |
+| 3 | x6 | 1200 Energy |
+| 4 | x7 | 1400 Energy |
+| 5 | x8 | 1600 Energy |
 
 ## Acquisition
 
-Secondary Surge drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is accessible through standard Zariman content after completing Angels of the Zariman. Regular Void Cascade runs generate Surge as part of the electric-focused secondary arcane series. Players building electric secondary builds often farm Zariman content as it provides multiple relevant arcanes simultaneously. Warframe.market provides direct purchase options for targeted acquisition.
+Secondary Surge drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
 
 ## Builds that use it
 
-Secondary Surge excels on full-auto electric secondaries with high status chance. The Staticor (electric weapon), Furis with electric modding, and any secondary with 60% or higher status chance apply electric procs rapidly enough to build all four stacks within the first few seconds of combat. Builds combining Lethal Torrent (fire rate mod) with Secondary Surge create extreme fire rate values at four stacks that can briefly saturate enemy groups with projectiles. High-status-chance electric secondaries that combine Surge with other electric proc arcanes (Conjunction Voltage) create layered electric proc synergies.
+Secondary Surge is designed for high-energy builds that maintain large energy pools before ability casts. Frames with Primed Flow and high energy capacity (Nidus, Trinity, Wisp with large energy pools) can reach 1600+ Energy with energy management, enabling x8 charges on the next secondary shot consistently. The arcane rewards casting abilities while at high energy -- the trigger is the cast itself, not the energy spent, so expensive-ability builds that cast from full energy pools maximize the Secondary Surge multiplier.
+
+High-damage single-shot secondaries benefit most from the x8 multiplier per shot. Pandero Prime, Pyrana Prime, and Opticor Vandal (if secondary) firing with an x8 charge deal extremely high burst damage on the charged shot. The single-shot charge mechanic makes Secondary Surge a burst tool rather than a sustained damage modifier.
 
 ## Notes
 
-The stacking requires electric status specifically; other elemental procs do not trigger Secondary Surge. Weapons with combined elements (Magnetic = Cold + Electric, Corrosive = Toxin + Electric) still proc electric separately if Electric damage exists in the combination. The four-stack cap prevents unlimited acceleration; builds must balance attack speed with the magazine size and reload speed to maintain effective DPS. Stack timers are individual; a rapid succession of procs builds stacks, but slow proc rates between stacks allow early stacks to expire before new ones accumulate.
+The current Energy at the moment of ability cast determines the multiplier -- the energy spent on the cast itself reduces the pool after the multiplier is calculated, not before. High-efficiency builds that spend less energy per cast retain more energy for subsequent charges. The multiplier applies to the next single secondary shot after the cast; the charge is consumed on the first trigger pull regardless of whether the shot hits an enemy. Multiple ability casts before firing the secondary reset the charge -- only the most recent cast's charge is active at any time.
 
 ## Sources
 
-- WFCD warframe-items dataset covers stacking behavior and attack speed scaling for Secondary Surge.
-- Fandom wiki entry for Secondary Surge documents electric proc requirements and secondary weapon compatibility.
+- WFCD warframe-items dataset provides maximum damage multiplier values per rank and the Energy-to-multiplier scaling for Secondary Surge.
+- Fandom wiki entry for [Secondary Surge](https://warframe.fandom.com/wiki/Secondary_Surge) covers energy calculation timing and single-shot charge consumption behavior.

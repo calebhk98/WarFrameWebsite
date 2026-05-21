@@ -33,38 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Bellicose boosts critical chance on successful headshots, rewarding precision marksmanship with a critical chance buff that feeds back into further critical hits. The headshot trigger aligns the buff with the exact moment high-value damage outputs occur - headshots already deal bonus damage through the game's headshot multiplier, and Bellicose further amplifies those moments by increasing the chance that subsequent shots are critical hits.
+Arcane Bellicose converts the warframe's maximum health stat into Ability Strength, linking the tank-oriented defensive stat to offensive ability scaling. Each 250 maximum health grants a percentage bonus to Ability Strength up to the rank-dependent cap. Frames that invest in health mods -- Vitality, Umbral Vitality, Health Conversion -- simultaneously push Bellicose's Ability Strength higher without requiring dedicated strength mods.
 
-For weapons with moderate critical chance, Bellicose can push them from yellow crits into orange crit territory during the buff window. For weapons already above 50% crit, Bellicose can sustain red crit threshold consistency. The 10-second window provides sufficient duration for extended headshot chains without requiring constant uptime from every shot.
+At rank 5, each 250 maximum health grants +6% Ability Strength up to a cap of +72%. Reaching the cap requires 3000 maximum health. High-health frames like Inaros (over 5000 health with mods), Nidus, and Grendel can approach or exceed this threshold, gaining the maximum 72% bonus entirely from their health investment.
 
 ## Effect
 
-Each headshot from any weapon checks the Bellicose trigger chance. On success, the critical chance bonus activates for 10 seconds. The bonus is additive with weapon critical chance mods: a weapon with 20% base crit + Arcane Bellicose rank 5 (+75%) = 95% critical chance during the buff window, enabling near-guaranteed crits. The buff applies to all weapon shots during the window, not just subsequent headshots, making off-headshot shots during the buff window benefit from increased crit probability.
+The Ability Strength bonus from Arcane Bellicose applies passively and scales continuously with current maximum health. As health increases through Adaptation, Nidus mutation stacks, or temporary health bonuses, the Ability Strength bonus scales up proportionally until the cap is reached. The conversion is: Ability Strength bonus = (max health / 250) x ability_strength per rank, capped at the health value from perRankStats.
+
+At rank 0, 1% Ability Strength per 250 health provides a small bonus. A frame with 2500 health gains +10% Ability Strength at rank 0. At rank 5, 6% per 250 health with a +72% cap means a frame with 3000 health gains the full +72%. This bonus stacks additively with Intensify, Blind Rage, and other Ability Strength mods.
 
 ## Stats per rank
 
-| Rank | Headshot Trigger | Crit Chance Bonus | Duration |
-|------|-----------------|-------------------|----------|
-| 0 | 15% | +25% | 10s |
-| 1 | 22% | +35% | 10s |
-| 2 | 30% | +45% | 10s |
-| 3 | 37% | +55% | 10s |
-| 4 | 41% | +65% | 10s |
-| 5 | 45% | +75% | 10s |
+| Rank | Ability Strength per 250 Health | Maximum Bonus |
+|------|-------------------------------|--------------|
+| 0 | +1% | +12% |
+| 1 | +2% | +24% |
+| 2 | +3% | +36% |
+| 3 | +4% | +48% |
+| 4 | +5% | +60% |
+| 5 | +6% | +72% |
 
 ## Acquisition
 
-Arcane Bellicose drops from Zariman Void Fissure at 4% and Void Cascade rotation B at 2%. Both sources are accessible through standard Zariman Ten-Zero content after completing Angels of the Zariman. Rotation B drops occur frequently during Void Cascade runs. Warframe.market provides direct purchase options for players seeking immediate access without farming.
+Arcane Bellicose drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation B at 2%. Both sources are available after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Arcane Bellicose excels on precision-focused frames with high-crit primary weapons. Sniper rifles with 30-40% base critical chance reach guaranteed crit territory during Bellicose windows, enabling consistent orange and red critical hits at extreme range. Semi-auto primaries that require deliberate aiming generate frequent headshots during aimed engagement, triggering Bellicose consistently. Builds pairing Bellicose with Point Strike and Vital Sense push total crit multiplier values to extreme levels during headshot-heavy combat. Mesa with Peacemaker fired at enemy head level benefits from Bellicose's consistency across rapid pistol fire at headshot angles.
+Arcane Bellicose is purpose-built for high-health caster hybrids -- frames that invest in both health and Ability Strength to serve as self-sustaining damage dealers. Inaros builds using Devour and Sandstorm naturally accumulate health above 3000 with Vitality and Umbral Vitality mods, reaching Bellicose's +72% cap while also benefiting from the Ability Strength on Scarab Swarm and crowd-control abilities. Nidus builds that stack mutation levels temporarily increase effective max health and Bellicose bonus. Grendel builds using Feast and Pulverize get Ability Strength amplification that scales the damage of their abilities proportionally.
+
+Pairing Bellicose with Arcane Energize creates a dual-slot arcane setup covering both energy sustain and Ability Strength, freeing mod slots from strength mods toward survivability or utility.
 
 ## Notes
 
-Headshot detection requires projectiles or hitscan to connect with the head hitbox, not merely proximity to the head. AoE damage does not trigger headshot bonuses regardless of impact location. The 10-second buff duration refreshes on each new headshot trigger, maintaining indefinite uptime during sustained accurate fire. Bellicose's critical chance bonus applies to the global critical chance, affecting all damage sources that use the weapon's crit stat during the window. Companion weapons and ability-spawned weapons do not benefit from the warframe's Bellicose buff.
+The Ability Strength bonus responds dynamically to current maximum health. Temporary health losses or reductions from Magnetic procs do not change maximum health and do not affect Bellicose. Corrosive armor strips do not affect health and do not reduce the Bellicose bonus. The cap means health above 3000 at rank 5 provides no additional Ability Strength -- investing in health beyond the cap threshold yields survivability benefits but no further Bellicose scaling. The bonus is additive with all other Ability Strength sources including Focus school passives.
 
 ## Sources
 
-- WFCD warframe-items dataset covers trigger conditions and critical chance values for Arcane Bellicose.
-- Fandom wiki entry for Arcane Bellicose documents headshot detection mechanics and crit build synergies.
+- WFCD warframe-items dataset provides Ability Strength per 250 health and cap values per rank for Arcane Bellicose.
+- Fandom wiki entry for [Arcane Bellicose](https://warframe.fandom.com/wiki/Arcane_Bellicose) covers health-to-strength conversion mechanics and tank-caster build integration.

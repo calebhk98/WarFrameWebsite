@@ -33,38 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Cascadia Accuracy boosts accuracy and fire rate on critical hits from secondary weapons. The dual buff rewards crit-optimized secondary builds by converting every critical proc into a short but meaningful DPS window. Accuracy improvements reduce projectile spread during sustained full-auto fire, tightening shot grouping on automatic pistols and machine pistols that experience bloom after the first few rounds. Fire rate scaling compounds this by increasing rounds landing in the tighter spread window per second, making subsequent shots during the buff more reliable and more frequent.
+Cascadia Accuracy is a weapon arcane that grants a Critical Chance bonus specifically to Weakpoint Hits after performing a Roll. Executing a roll (dodge roll) activates the bonus for 4 seconds, during which all hits that land on enemy weakpoints have elevated Critical Chance. The 4-second window is tight -- the player must quickly aim and land weakpoint shots after rolling to benefit from the boost.
 
-The critical-hit trigger means builds that already invest heavily in crit chance maintain near-constant uptime on the buff. A secondary with 50% or higher critical chance effectively maintains the accuracy and fire rate bonuses through most of a firefight, reducing dependency on the trigger chance at rank 5.
+At rank 5, rolling activates +300% Critical Chance on Weakpoint Hits for 4 seconds. A weapon with 30% base critical chance reaches 330% critical chance on weakpoints during the window, guaranteeing orange and red crits on every weakpoint contact.
 
 ## Effect
 
-Cascadia Accuracy activates on any critical hit from the secondary weapon. Both accuracy and fire rate bonuses activate simultaneously for 10 seconds. The accuracy improvement applies to projectile spread during continuous fire, not to weapon sway or hipfire penalty. The fire rate bonus is multiplicative with fire rate mods, so weapons already running Gunslinger or Lethal Torrent benefit from strong compounding. At rank 5, plus 60% accuracy and plus 45% fire rate create a substantial output window that heavy-hitting automatic secondaries exploit during dense enemy encounters. The 10-second window refreshes on each new critical hit, maintaining perpetual uptime when crit chance is sufficiently high.
+Each roll (evasive dodge) triggers the Cascadia Accuracy bonus, applying the listed Critical Chance bonus to any shots or strikes that land on enemy weakpoints for 4 seconds. The bonus applies only to weakpoint hits -- shots that miss weakpoints or land on body armor do not receive the critical chance increase during the window. At rank 0, +50% Critical Chance on Weakpoint Hits provides a significant boost for weapons in the 20-50% base crit range, pushing them into reliable crit territory on weakpoints. At rank 5, +300% Critical Chance adds three times the weapon's base crit chance to weakpoint hits, generating consistent red crits on any weapon with moderate base crit.
+
+The 4-second window requires targeting discipline. Sniper Rifles, semi-auto weapons, and other precision weapons that consistently aim for weakpoints extract more value than spray weapons where weakpoint contact is inconsistent.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Accuracy | Fire Rate | Duration |
-|------|----------------|----------|-----------|----------|
-| 0 | 15% | +20% | +15% | 10s |
-| 1 | 22% | +30% | +25% | 10s |
-| 2 | 30% | +40% | +35% | 10s |
-| 3 | 37% | +50% | +40% | 10s |
-| 4 | 41% | +55% | +42% | 10s |
-| 5 | 45% | +60% | +45% | 10s |
+| Rank | Critical Chance on Weakpoint Hits | Duration |
+|------|---------------------------------|----------|
+| 0 | +50% | 4s |
+| 1 | +100% | 4s |
+| 2 | +150% | 4s |
+| 3 | +200% | 4s |
+| 4 | +250% | 4s |
+| 5 | +300% | 4s |
 
 ## Acquisition
 
-Cascadia Accuracy drops from Zariman Void Fissure at 4% and Void Cascade rotation B at 2%. Standard Zariman Ten-Zero content drops this arcane naturally through regular mission completion. Players farming Zariman Void Fissure as their primary source collect Cascadia Accuracy at a steady pace alongside other Zariman arcanes. The arcane trades at moderate plat values on warframe.market for players preferring direct purchase over extended farming sessions.
+Cascadia Accuracy drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation B at 2%. Access requires completing Angels of the Zariman. Rotation B in Void Cascade provides drop opportunities mid-run, making the arcane available in standard Zariman Void Cascade sessions without requiring extreme endurance. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Crit-stacked secondaries with automatic fire patterns extract the most value from Cascadia Accuracy. Full-auto or burst-fire secondaries with high crit stats benefit from both accuracy tightening and fire rate increase during the buff window. Builds combining Point Strike, Primed Pistol Gambit, and Hollow Point with Cascadia Accuracy push effective DPS well beyond what individual crit mods provide alone. Mesa's Peacemaker paired with crit-scaled pistols benefits particularly well because the rapid automatic fire generates frequent crit procs to keep the buff window refreshed throughout combat.
+Cascadia Accuracy suits precision weapon builds that aim for weakpoints consistently. Sniper Rifle builds on Zariman or Eidolon content roll to reposition between shots, generating Cascadia Accuracy windows that pair with high critical damage mods for maximum burst on weakpoints. Lanka builds for Eidolon limb shots benefit strongly -- roll to a new position, then deliver the fully charged shot to the exposed limb during the crit bonus window.
+
+Secondary precision weapons (Knell, Rubico Secondary builds) used in active dodge-and-shoot combat can maintain the roll cadence needed to keep Cascadia Accuracy refreshed. Frames with innate dodge speed or parkour bonuses roll more quickly, increasing the frequency at which the Cascadia Accuracy bonus window activates.
 
 ## Notes
 
-Fire rate scaling applies to weapon fire rate only, not reload speed or holster speed. Accuracy improvement reduces spread during sustained fire on weapons with bloom mechanics; hitscan weapons benefit most from this component. Projectile weapons with fixed trajectories receive less value from the accuracy bonus. The 10-second buff duration resets on each new critical hit, so consistent crits maintain near-perpetual uptime during active engagements. Building toward 100% crit chance effectively removes dependency on the trigger chance and ensures the buff never lapses mid-fight.
+The roll must be a player-executed dodge roll, not a knockdown recovery animation. The 4-second duration is short; the window begins at roll completion and requires immediate targeting of weakpoints to benefit. The crit chance bonus is additive with other crit chance sources from mods -- it does not multiply the result of other crit multipliers. At very high base critical chance values (60%+), the +300% bonus at rank 5 consistently produces red crits on weakpoints, shifting the value proposition entirely toward maximizing critical multiplier mods rather than adding more crit chance.
 
 ## Sources
 
-- WFCD warframe-items dataset provides stat values and trigger conditions for Cascadia Accuracy.
-- Fandom wiki entry for Cascadia Accuracy documents build interactions and secondary weapon compatibility.
+- WFCD warframe-items dataset provides Critical Chance bonus values per rank on Roll for Cascadia Accuracy.
+- Fandom wiki entry for [Cascadia Accuracy](https://warframe.fandom.com/wiki/Cascadia_Accuracy) covers roll trigger conditions and weakpoint hit detection behavior.

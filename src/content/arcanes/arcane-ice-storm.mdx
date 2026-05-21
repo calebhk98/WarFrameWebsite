@@ -33,40 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Ice Storm triggers area freeze waves when cold status effects are active on the warframe or surrounding enemies, providing crowd control and direct damage through proc-based mechanics. Cold status builds that apply freeze effects quickly benefit from repeated ice wave triggers that expand the crowd control radius beyond initial single-target procs. The combined damage and slowdown output enables ice-focused warframes to maintain battlefield control during dense enemy waves without relying exclusively on ability-based crowd control.
+Arcane Ice Storm provides stacking Ability Strength and Ability Duration each time the warframe freezes an enemy. Every enemy frozen by a Cold status effect triggers one stack, with each stack contributing +2% Ability Strength and +2% Ability Duration lasting 15 seconds. The stack cap scales with rank from 10 at rank 0 to 20 at rank 5. Frames that freeze enemies frequently through Cold-damage abilities or Cold-modded weapons build stacks rapidly and sustain them through continuous freeze application.
 
-The wave-based mechanic differs from simple proc amplifiers: it creates an outward expanding projectile that passes through multiple enemies rather than targeting a single entity. This makes Ice Storm particularly effective in tight corridors and small rooms where the wave contacts every enemy in line.
+At rank 5 with 20 stacks, the arcane provides +40% Ability Strength and +40% Ability Duration simultaneously. Both bonuses are significant for ability-centric builds, improving damage output and the time abilities remain active at once.
 
 ## Effect
 
-When a cold status effect is active on or near the warframe, Ice Storm checks the trigger chance. On success, an ice wave radiates outward from the warframe position, dealing damage and applying a slow to all enemies it contacts. At rank 0, 100 cold damage is meaningful against light and medium enemies; at rank 5, 300 cold damage is sufficient to contribute to elite enemy damage alongside primary weapon fire. The slow effect from the wave compounds with existing cold procs, extending debuff duration on enemies already affected.
+Each enemy frozen by a Cold status proc (applied through weapons or abilities) adds one stack of Ice Storm's bonus, refreshing the 15-second timer on that stack. Stacks build independently with overlapping timers. As long as new freezes occur within 15-second windows, stacks remain active and accumulate toward the cap. When all stacks are active at the cap, both Ability Strength and Ability Duration are at their maximum bonus from Ice Storm.
 
-Ice wave damage counts as cold damage and benefits from cold damage bonuses from cold-focused mods or abilities.
+The bonus is +2% per stack at all ranks -- rank only affects the maximum number of stacks that can accumulate. At rank 0 with 10 stacks maximum, the bonuses cap at +20% Ability Strength and +20% Ability Duration. At rank 5 with 20 stacks, both cap at +40%.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Ice Wave Damage | Notes |
-|------|----------------|-----------------|-------|
-| 0 | 10% | 100 | Moderate single-wave damage |
-| 1 | 15% | 140 | Increasing area damage |
-| 2 | 20% | 180 | Solid crowd control coverage |
-| 3 | 25% | 220 | Strong area cold damage |
-| 4 | 27% | 260 | High-impact wave |
-| 5 | 30% | 300 | Maximum cold wave output |
+| Rank | Bonus per Stack | Max Stacks | Max Ability Strength | Max Ability Duration |
+|------|----------------|-----------|---------------------|---------------------|
+| 0 | +2% / +2% | 10 | +20% | +20% |
+| 1 | +2% / +2% | 12 | +24% | +24% |
+| 2 | +2% / +2% | 14 | +28% | +28% |
+| 3 | +2% / +2% | 16 | +32% | +32% |
+| 4 | +2% / +2% | 18 | +36% | +36% |
+| 5 | +2% / +2% | 20 | +40% | +40% |
 
 ## Acquisition
 
-Arcane Ice Storm drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Access requires completing Angels of the Zariman to unlock Zariman Ten-Zero content. Rotation A in Void Cascade provides frequent drop opportunities within regular farming rotations. Cold-build players naturally seek Ice Storm through Zariman farming as part of building a complete cold-focused loadout. Warframe.market provides direct purchase options for players who prefer targeted acquisition.
+Arcane Ice Storm drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation A at 2%. Both sources are available after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Arcane Ice Storm excels on cold-focused or blast-element warframes that apply cold status through abilities or weapons. Frost using abilities that generate cold auras triggers Ice Storm constantly during combat without relying on weapon status. Volt builds with cold-modded weapons apply procs during weapon fire that activate the ice wave. Builds using Cryogenic Grenades mod on primary weapons generate frequent cold procs that keep Ice Storm active throughout engagements. Squad builds where one frame provides cold status while teammates deal damage benefit from Ice Storm extending the crowd control footprint.
+Arcane Ice Storm is most valuable on frames that apply Cold status consistently through abilities. Frost using Snow Globe and Freeze freezes enemies continuously during defense objective holding, building stacks without weapon interaction. Revenant using Mesmer Skin freeze-proc (when enemies with Sentient shards interact with cold ability damage) can maintain stacks. Volt with Cold-elemental modded weapons applies Cold procs on each shot hit, building stacks during sustained fire.
+
+Any frame that applies Cold damage in area during ability rotations benefits from the passive Ability Strength and Duration scaling as stack counts accumulate through normal play.
 
 ## Notes
 
-The ice wave originates from the warframe position and expands outward in all directions. Enemies behind cover may be unaffected if the wave cannot reach them through geometry. Cold status required to trigger Ice Storm can come from any source including weapons, abilities, or companion procs. The slow applied by the ice wave is additive with existing cold slow from standard cold status procs. At higher enemy levels (Steel Path), the 300 damage from Ice Storm is primarily valuable for the slow effect rather than direct damage contribution.
+Only enemies fully frozen by Cold status (the freeze proc) contribute stacks -- Cold-slowed enemies that have not fully frozen do not count. The full freeze state requires Cold status proc saturation past the slow threshold. Ability freeze effects from Frost's Freeze ability apply an instant freeze that does count. The 15-second stack duration per individual stack means pausing freeze application for 15 seconds causes stacks to expire one by one rather than all at once. The +2% per stack values are fixed at all ranks; only the max stack count scales.
 
 ## Sources
 
-- WFCD warframe-items dataset covers wave damage values and trigger conditions for Arcane Ice Storm.
-- Fandom wiki entry for Arcane Ice Storm provides context on cold status sources and wave mechanic behavior.
+- WFCD warframe-items dataset provides the max stacks per rank and the +2%/+2% per-stack bonus for Arcane Ice Storm.
+- Fandom wiki entry for [Arcane Ice Storm](https://warframe.fandom.com/wiki/Arcane_Ice_Storm) covers enemy freeze qualification and ability buff stacking behavior.

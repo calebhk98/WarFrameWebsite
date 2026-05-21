@@ -33,40 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Battery increases maximum energy capacity on energy orb pickups, enabling energy-hungry frames to store and deploy more energy during combat. The maximum energy increase does not directly restore energy but expands the ceiling of how much energy the frame can hold, allowing subsequent energy restoration mechanics (orbs, abilities, Zenurik focus) to fill a larger pool. This makes Battery particularly valuable for frames that spike-cast expensive abilities and need large energy reserves rather than rapid small regeneration.
+Arcane Battery converts the warframe's armor value into additional maximum energy, linking defensive and energy stats into a single scaling relationship. Each armor point contributes a fractional maximum energy bonus, up to a hard cap of 1000 bonus energy. Frames with high armor values benefit most from this arcane, as they gain the largest energy pool expansion from their existing armor investment.
 
-The 12-second duration is sufficient to cover most ability rotation windows. Frames that pick up energy orbs regularly through combat - particularly in orb-dense missions or with Equilibrium mod active - trigger Battery frequently enough to maintain a near-permanent energy cap increase throughout extended missions.
+At rank 5, the conversion rate is 0.3 energy per armor point. A frame with 500 armor gains 150 bonus maximum energy; a frame with 1000 armor gains 300 bonus energy; a frame with 3333 or more armor reaches the 1000 energy cap. The bonus energy is permanent for as long as the arcane is equipped -- there is no trigger condition or duration.
 
 ## Effect
 
-Picking up an energy orb checks the Battery trigger chance. On success, the frame's maximum energy increases by the rank-dependent percentage for 12 seconds. At rank 0, 30% additional max energy is meaningful for high-cost frames; a frame with 200 base energy gains 60 additional energy capacity. At rank 5, 90% additional max energy nearly doubles energy capacity, allowing a 200-energy frame to hold 380 energy during the window. This expanded capacity benefits frames that stack multiple high-cost abilities in sequence.
+The energy bonus from Arcane Battery applies passively based on the warframe's current armor stat. As armor increases through Adaptation stacks, arcane buffs, or other temporary armor sources, the energy bonus increases proportionally up to the 1000 cap. If armor decreases from corrosive status strips, the energy bonus decreases accordingly.
 
-The energy increase applies immediately on trigger and allows energy above the normal maximum to be held for the buff duration.
+At rank 0, 0.05 energy per armor point yields 5 bonus energy on 100 armor -- minimal benefit at low armor values. At rank 5, 0.3 energy per armor point yields 30 energy on 100 armor, 150 energy on 500 armor, and caps at 1000 energy bonus on 3333+ armor. The cap prevents the arcane from becoming disproportionate on extreme tank builds, but most high-armor frames will see 200-600 energy expansion from their natural armor investment.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Max Energy Increase | Duration | Notes |
-|------|----------------|---------------------|----------|-------|
-| 0 | 15% | +30% | 12s | Modest energy expansion |
-| 1 | 22% | +45% | 12s | Moderate capacity boost |
-| 2 | 30% | +60% | 12s | Solid energy buffer |
-| 3 | 37% | +75% | 12s | Strong capacity increase |
-| 4 | 41% | +82% | 12s | High energy reserve |
-| 5 | 45% | +90% | 12s | Near-double energy cap |
+| Rank | Energy per Armor Point | Max Energy Cap |
+|------|----------------------|---------------|
+| 0 | 0.05 | 1000 |
+| 1 | 0.10 | 1000 |
+| 2 | 0.15 | 1000 |
+| 3 | 0.20 | 1000 |
+| 4 | 0.25 | 1000 |
+| 5 | 0.30 | 1000 |
 
 ## Acquisition
 
-Arcane Battery drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Both sources are accessible through standard Zariman Ten-Zero content after completing Angels of the Zariman. Rotation A drops occur early and frequently in Void Cascade run cycles. Warframe.market provides direct purchase options for players seeking immediate access.
+Arcane Battery drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation A at 2%. Both sources are available after completing Angels of the Zariman. Void Cascade rotation A occurs at the first rotation interval. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Arcane Battery excels on ability-spam-focused frames that consume large energy budgets. Saryn's Spores-Miasma combination consumes substantial energy per cast; Battery's expanded capacity allows queuing more casts before exhausting the pool. Trinity casting a full ability rotation (Blessing, Well of Life, Energy Vampire) within a single Battery window benefits from storing enough energy for the complete sequence. Frames running high-cost augments (Nekros Desecrate, Octavia Mallet augment) that already have elevated ability costs extract the most from expanded energy capacity. Equipping Arcane Battery alongside Arcane Energize creates compound energy management where Battery expands capacity and Energize refills it.
+Arcane Battery fits armor-tank builds that want to expand their energy pools without sacrificing mod slots to Primed Flow or Fleeting Expertise. Valkyr at high armor values with Warcry active can reach 3000+ armor, pushing Battery toward its 1000 energy cap. Inaros builds running Adaptation stack high armor during combat and benefit from the passive energy expansion as armor grows. Rhino Iron Skin builds that invest in Ironclad Charge augment to accumulate iron skin armor see the energy bonus scale with their iron skin armor stacks up to the cap.
+
+Arcane Battery complements Arcane Energize effectively -- Battery expands how much energy can be stored, while Energize restores energy frequently. Together they enable sustained high-cost ability usage on tank frames that naturally accumulate armor.
 
 ## Notes
 
-Maximum energy increase is temporary; the cap returns to base when the 12-second buff expires. Any energy above the normal maximum that was held during the buff window drains to the normal cap after expiry. Zenurik Wellspring and other energy regeneration effects benefit from Battery's expanded cap by having more room to fill. Picking up additional energy orbs during an active Battery window refreshes the buff duration if the trigger activates again. Energy siphon aura and similar passive regeneration effects fill the expanded pool during the buff window.
+The energy bonus from Arcane Battery is not free energy -- it increases the maximum capacity, not the current energy value. Frames must still refill the expanded pool through energy orbs, Zenurik focus, or ability-based energy recovery. The 1000 bonus energy cap is separate from the warframe's base maximum energy; total maximum energy can exceed 1000. The bonus is dynamic and responds to armor changes in real time. Corrosive status procs that reduce armor temporarily decrease the energy cap, which may cause current energy to exceed the new cap -- any excess energy above the new cap is not lost but cannot be regenerated past the current cap until armor recovers.
 
 ## Sources
 
-- WFCD warframe-items dataset covers energy cap scaling and trigger conditions for Arcane Battery.
-- Fandom wiki entry for Arcane Battery provides context on energy management mechanics and ability-spam build applications.
+- WFCD warframe-items dataset provides the energy-per-armor-point ratio and cap values per rank for Arcane Battery.
+- Fandom wiki entry for [Arcane Battery](https://warframe.fandom.com/wiki/Arcane_Battery) covers armor-to-energy conversion mechanics and the 1000-cap interaction.

@@ -28,43 +28,40 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Virtuos Surge generates amp energy bonuses when the operator or nearby warframe picks up an energy orb, converting the common energy pickup resource into a burst of operator amp capacity. Energy orbs drop regularly during combat from killed enemies and certain environmental sources, making the trigger frequent in missions with active enemy engagement. Operators who coordinate orb pickups with active amp combat maintain elevated energy reserves without relying solely on natural regeneration or Focus school energy abilities.
+Virtuos Surge converts a percentage of the operator amp's Void Damage output into Electricity Damage on each hit. The conversion shifts the damage type composition of the amp, replacing Void Damage with Electricity Damage at the listed percentage. At rank 3, 98% of Void Damage converts to Electricity -- effectively making the amp deal Electricity rather than Void Damage at near-total conversion.
 
-Amp energy determines how long the operator can fire their amp before requiring energy recovery. The additional energy from Surge extends the operational window before the amp runs dry, which is particularly relevant during extended Void Manifestation fights in Zariman content or during Eidolon synovia-break phases where continuous amp fire is critical to time-sensitive damage windows.
+Electricity Damage generates Electricity status procs on enemies, which chain electricity to additional nearby targets. This chain effect makes Virtuos Surge valuable in group enemy scenarios where a single amp hit can spread Electricity procs to surrounding enemies without requiring direct hits on each target.
 
 ## Effect
 
-Each energy orb pickup triggers an amp energy restoration bonus for 10 seconds. At rank 0, +50% energy to the amp provides a meaningful extension of amp operational time per pickup. At rank 5, +250% energy is a substantial injection that, combined with the base energy restoration from the orb, can fully replenish the amp's energy pool and then some, providing extended fire windows after each pickup.
+On each amp hit, Virtuos Surge converts the listed percentage of that shot's Void Damage into Electricity Damage. At rank 0, 24% of Void Damage becomes Electricity Damage. At rank 3, 98% of Void Damage becomes Electricity Damage, leaving only 2% as Void type. The converted Electricity Damage follows standard Electricity damage rules including status procs and enemy vulnerability interactions.
 
-The 10-second duration means the energy bonus extends for a window beyond the immediate pickup, allowing the operator to exploit orb pickups as pre-engagement preparation before entering sustained amp fire phases.
+Electricity status procs from the converted damage chain to up to 3 nearby enemies within a short radius of the target, dealing Electricity Damage to each chained target. High-status-chance amp configurations combined with the Electricity conversion generate Electricity chains frequently during sustained amp fire.
 
 ## Stats per rank
 
-| Rank | Energy Bonus | Duration | Notes |
-|------|--------------|----------|-------|
-| 0 | +50% | 10s | Moderate energy extension |
-| 1 | +100% | 10s | Meaningful amp sustain |
-| 2 | +150% | 10s | Strong per-pickup boost |
-| 3 | +200% | 10s | High-value energy management |
-| 4 | +225% | 10s | Near-maximum sustain |
-| 5 | +250% | 10s | Maximum amp energy per orb |
+| Rank | Void to Electricity Conversion |
+|------|-------------------------------|
+| 0 | 24% |
+| 1 | 48% |
+| 2 | 72% |
+| 3 | 98% |
 
 ## Acquisition
 
-Virtuos Surge drops as an uncommon reward from Zariman Void Cascade missions. The arcane is accessible after completing Angels of the Zariman. Regular Void Cascade participation provides Surge drops naturally over time. Warframe.market provides a purchase option for players who prefer platinum acquisition over farming.
+Virtuos Surge drops as an uncommon reward from Zariman Void Cascade missions. The arcane is accessible after completing Angels of the Zariman. Regular Void Cascade participation provides Surge drops naturally over time. Warframe.market provides a purchase option for players who prefer direct platinum acquisition over farming.
 
 ## Builds that use it
 
-Virtuos Surge suits operator builds in missions with regular energy orb availability - survival missions, mobile defense, and active combat scenarios where enemies drop orbs consistently. Operators in squad play benefit when Harrow or Zenurik-school warframes generate energy orbs through their abilities, providing additional amp energy from the orbs that squadmates produce. Zariman Void Cascade operators who frequently enter operator mode to interact with Void Manifestations use orb pickups between encounters to maintain amp readiness.
+Virtuos Surge suits operator builds aimed at generating Electricity status procs through amp fire. The Electricity chain from status procs allows a single high-status-chance amp shot to spread Electricity damage and procs across multiple nearby enemies, amplifying the effective area covered per shot. Builds using Residual Shock (which creates Electricity zones from Kitgun kills) pair with Virtuos Surge to extend Electricity coverage through operator amp fire.
 
-Amp builds with large energy pools benefit proportionally more from the 250% bonus at rank 5, as the percentage translates to a larger absolute energy restoration value on high-capacity configurations.
+Operators in Zariman Void Cascade who engage groups of enemies during zone maintenance benefit from the chain Electricity procs, which apply multiple simultaneous debuffs from each amp hit. High-fire-rate amp prisms sustain continuous Electricity proc attempts against packed enemy groups.
 
 ## Notes
 
-The energy bonus applies to the amp energy pool, not the warframe energy pool. Orbs picked up by the warframe during operator mode are credited to the operator for this arcane's trigger. The 10-second duration starts at the moment of pickup. Multiple orb pickups within the 10-second window do not stack energy beyond the listed percentage; each pickup resets the timer. Missions with sparse energy orb drops - such as some Railjack or Deimos environments - provide fewer trigger opportunities per minute, reducing average uptime compared to high-orb-density missions.
+Virtuos Surge and Virtuos Forge perform the same function with different target elements -- Surge converts Void to Electricity; Forge converts Void to Heat. Both operate identically in terms of percentage conversion mechanics. The remaining Void Damage at rank 3 (2%) still interacts as Void type and does not chain like Electricity. Enemies with innate resistance to Electricity receive reduced effective output from the converted component. The Electricity chain from status procs can be blocked by walls and physical obstacles between enemies.
 
 ## Sources
 
-- WFCD warframe-items dataset documents energy pickup triggers and amp energy scaling for Virtuos Surge.
-- Fandom wiki entry for Virtuos Surge covers amp energy pool mechanics and energy orb pickup interaction notes.
-
+- WFCD warframe-items dataset provides conversion percentage values per rank for Virtuos Surge.
+- Fandom wiki entry for [Virtuos Surge](https://warframe.fandom.com/wiki/Virtuos_Surge) covers Electricity Damage conversion mechanics and status chain behavior.

@@ -33,40 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Temperance reduces the duration of status effects applied to the warframe, providing passive resistance to enemy crowd control and damage-over-time procs. Status effects like slash bleeds, heat burns, and toxic damage-over-time effects deal damage across their full duration; shortening that duration directly reduces the total damage taken from proc chains. Magnetic and cold procs that reduce shields or slow movement become much less impactful when their durations are cut significantly.
+Arcane Temperance reduces the damage the warframe takes while being revived by a squadmate. Revive animations leave the warframe completely vulnerable to enemy fire -- the frame is immobile and cannot use abilities during the revive channel. Temperance directly mitigates incoming damage during this window, increasing the odds the revive completes before the frame is downed again.
 
-The reduction applies broadly to all status types rather than specific elements, making Temperance useful against any enemy faction without requiring builds tailored to specific proc vulnerabilities. This universality contrasts with faction-specific resistance arcanes that only apply against targeted enemy groups.
+At rank 5, Arcane Temperance provides -90% Damage Taken During Revive, reducing almost all incoming damage to negligible levels for the duration of the revive animation. This makes successful revives far more likely in high-damage environments such as Steel Path or endurance missions.
 
 ## Effect
 
-When a status effect successfully applies to the warframe, Arcane Temperance checks the trigger chance. On success, the applied status's duration is reduced by the rank-dependent percentage. At rank 0, 25% reduction cuts a 6-second slash bleed to 4.5 seconds, reducing total bleed damage noticeably. At rank 5, 75% reduction cuts the same bleed to 1.5 seconds, reducing bleed damage to roughly one-quarter of its original output. This extends directly to heat, toxin, cold, magnetic, and other duration-based status effects simultaneously.
+While a squadmate is actively reviving the warframe, all incoming damage is reduced by the listed percentage. At rank 0, -15% damage reduction during revive provides a modest defensive improvement. At rank 5, -90% damage reduction means an enemy attack that would deal 1000 damage instead deals only 100 during the revive window. This allows revives to complete successfully in combat situations where the unprotected frame would normally be killed again before the revive finishes.
 
-The reduction applies at the moment of proc application; existing active procs are unaffected by the Temperance trigger.
+The damage reduction applies only during the revive animation itself -- from when a squadmate begins the revive channel until it completes or is interrupted. Normal combat outside revive windows is unaffected.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Status Duration Reduction | Notes |
-|------|----------------|--------------------------|-------|
-| 0 | 15% | 25% | Moderate proc shortening |
-| 1 | 22% | 35% | Meaningful DoT reduction |
-| 2 | 30% | 45% | Strong status mitigation |
-| 3 | 37% | 55% | Significant proc duration cut |
-| 4 | 41% | 65% | High-effectiveness mitigation |
-| 5 | 45% | 75% | Near-maximum proc duration cut |
+| Rank | Damage Reduction During Revive |
+|------|-------------------------------|
+| 0 | -15% |
+| 1 | -30% |
+| 2 | -45% |
+| 3 | -60% |
+| 4 | -75% |
+| 5 | -90% |
 
 ## Acquisition
 
-Arcane Temperance drops from Zariman Void Fissure at 4% and Void Cascade rotation C at 2%. The arcane is accessible through standard Zariman Ten-Zero content after completing Angels of the Zariman. Rotation C drops require sustained Void Cascade runs to reach; pairing Temperance farming with Void Fissure sessions maximizes acquisition efficiency. Warframe.market provides a direct purchase route for players preferring platinum-based acquisition.
+Arcane Temperance drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation C at 2%. Access requires completing Angels of the Zariman. Rotation C drops require sustained Void Cascade runs to reach; pairing Temperance farming with Void Fissure sessions provides more frequent drop opportunities. Warframe.market provides a direct purchase route for players preferring platinum-based acquisition.
 
 ## Builds that use it
 
-Arcane Temperance benefits frames that lack innate status resistance and operate in status-heavy environments. Squishier frames (Volt, Ash, Ember) that take damage through their shields quickly and accumulate proc chains benefit from shorter proc durations during recovery periods. Solo Steel Path content where enemy density creates constant proc pressure rewards Temperance's passive mitigation. Frames that rely on mobility-dependent combat (rolling to trigger Rolling Guard, bullet jumping to escape proc buildup) find Temperance reduces the urgency of aggressive status management. Pairing with Rolling Guard mod provides complementary proc-removal mechanics - Temperance shortens proc duration while Rolling Guard eliminates active procs on roll.
+Arcane Temperance benefits any squad-based build where getting revived is a realistic occurrence. Frames that engage in high-risk combat -- aggressive melee frames, low-health caster frames in Steel Path -- may be downed during sustained content. With Temperance equipped, squadmates can safely complete revive channels even while enemies continue to attack the downed frame. This is especially relevant in endless content where losing a revive attempt wastes time and can cascade into a failed run.
+
+The arcane has no value in solo play where revives are self-revives, or for frames with invulnerability-on-down mechanics. In coordinated squads running endurance Steel Path, Temperance extends each player's effective survival by making revives reliable rather than risky.
 
 ## Notes
 
-The 45% trigger chance at rank 5 means most but not all applied status procs are shortened. The 75% reduction does not eliminate procs entirely; the proc still applies at reduced duration. The trigger is per proc application event; multiple simultaneous status applications (from multishot weapons or AoE attacks) each check independently. Status procs from scripted sources (mission modifiers, specific boss attacks) may not respect the duration reduction based on implementation. The arcane does not affect status procs applied to companions or squadmates.
+The damage reduction applies during the squadmate's revive channel, not during the brief invulnerability window after standing up. If the revive is interrupted (squadmate moves away, enemy interrupt), the damage reduction window ends. Self-revives via tokens do not count as the revive-from-squadmate trigger. Arcane Temperance is a support-oriented defensive arcane with very narrow activation conditions -- it provides no benefit outside of the specific revive window. The -90% at rank 5 does not fully negate all damage; high-damage enemy attacks can still deal residual damage during revive. Frames with high base armor and high max health survive revive windows better than glass-cannon frames even with Temperance, since the reduction is proportional.
 
 ## Sources
 
-- WFCD warframe-items dataset covers trigger conditions and reduction scaling for Arcane Temperance.
-- Fandom wiki entry for Arcane Temperance provides context on status duration mechanics and build applications.
+- WFCD warframe-items dataset provides damage reduction percentages per rank during revive for Arcane Temperance.
+- Fandom wiki entry for [Arcane Temperance](https://warframe.fandom.com/wiki/Arcane_Temperance) covers revive window mechanics and damage reduction behavior.

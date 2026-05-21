@@ -14,54 +14,54 @@ perRankStats:
   - rank: 3
     stats: { damage: 12 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Residual_Malodor
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Residual_Malodor
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Residual Malodor creates persistent toxic cloud zones when companion poison status procs trigger, generating area denial effects from companion attacks. Unlike Residual Boils which spreads toxin directly to nearby enemies, Malodor creates a stationary cloud that damages any enemy entering the area for the duration. This area denial capability makes Malodor more effective in defensive scenarios where enemies approach through predictable paths, as the cloud works passively without requiring additional companion attacks.
+Residual Malodor is a companion arcane from the Residual-Theorem set that creates a frigid mist zone on Kitgun kills. On each Kitgun kill, there is a 20% chance that a Cold mist appears at the kill location. The mist deals 40 Cold Damage per second to all enemies within the area for the rank-dependent duration. Standing in the mist zone activates Cold Damage type for Theorem Arcanes, synergizing with Theorem arcanes that respond to specific elemental damage types.
 
-Poison/toxin status deals damage directly to health, bypassing shields. Malodor's toxic cloud inherits this property, making it effective against Corpus enemies who rely on shields for defense. In enclosed mission areas, the clouds accumulate in doorways and chokepoints, creating effective damage zones.
+At rank 3, the frigid mist persists for 12 seconds, providing sustained Cold Damage area denial and Cold type activation for Theorem arcanes for the full duration.
 
 ## Effect
 
-Each poison status proc applied by the companion creates a toxic cloud at the location of the initial hit. Enemies within the cloud radius take toxin damage per second for the cloud's duration. At rank 0, the cloud affects 4 enemies in a small area; at rank 5, the cloud expands to affect 8 enemies across a larger radius. Multiple clouds from repeated companion procs stack and overlap, creating areas of compound toxin damage in high-traffic enemy paths.
+On each Kitgun kill, the arcane checks the 20% trigger chance. On success, a frigid mist zone spawns at the kill location. All enemies in the mist take 40 Cold Damage per second throughout the zone's duration. Cold Damage applies Cold status effect on procs, which reduces enemy movement and attack speed. Standing in the mist activates Cold Damage type for Theorem Arcanes -- this is the set link between Residual Malodor and Theorem arcanes that amplify or trigger based on elemental damage types in the area.
 
-The cloud damage scales with the companion weapon's base toxin proc damage, so higher-damage companion weapons create more lethal clouds through Malodor.
+At rank 0, the mist lasts 3 seconds. At rank 3, the mist lasts 12 seconds, covering a longer period of area denial and Theorem type activation per trigger.
 
 ## Stats per rank
 
-| Rank | Enemies Affected | Notes |
-|------|-----------------|-------|
-| 0 | 4 | Small cloud coverage |
-| 1 | 5 | Moderate area expansion |
-| 2 | 5 | Slight coverage increase |
-| 3 | 6 | Good group coverage |
-| 4 | 7 | High-capacity cloud |
-| 5 | 8 | Maximum cloud coverage |
+| Rank | Mist Duration | Cold Damage Rate | Theorem Type Activation |
+|------|--------------|----------------|------------------------|
+| 0 | 3s | 40 Cold/s | Cold Damage |
+| 1 | 6s | 40 Cold/s | Cold Damage |
+| 2 | 9s | 40 Cold/s | Cold Damage |
+| 3 | 12s | 40 Cold/s | Cold Damage |
 
 ## Acquisition
 
-Residual Malodor drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Players building companion-focused poison builds farm Zariman content for Malodor as part of the Residual arcane series. Regular Void Cascade runs include Malodor in companion arcane rewards. Warframe.market provides direct purchase for targeted acquisition.
+Residual Malodor drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Players building Residual-Theorem set combinations farm Zariman content for all Residual and Theorem arcanes simultaneously as the set synergizes most effectively when multiple Residual types are active. Warframe.market provides direct purchase for targeted acquisition.
 
 ## Builds that use it
 
-Residual Malodor benefits builds where companions deal consistent poison damage through dedicated weapon modding. Kavats with Viral modding (Toxin + Cold) produce toxin component procs that trigger Malodor. Sentinels with Sweeper Prime equipped and toxin mods generate frequent proc opportunities in close-range combat. Defense mission builds benefit most from Malodor's area denial as enemies approach fixed objectives through corridors, walking through accumulated toxic clouds without requiring companion repositioning. Survival builds where enemies cluster around life support capsules benefit from clouds placed near capsule defense perimeters.
+Residual Malodor is part of the Residual-Theorem arcane pairing system. Kitgun-primary builds with high kill rates trigger the 20% mist spawn frequently, placing Cold mist zones throughout active combat areas. Standing in the mist zones activates Cold Damage type for any equipped Theorem Arcanes, enabling the Theorem set mechanics that use elemental damage type as an activation condition.
+
+Builds combining Residual Malodor with Theorem Contagion or other Theorem arcanes use the Cold type activation for the elemental damage type interaction. Cold Damage from the mist also applies Cold status effect procs to enemies standing in the zone, reducing their movement speed and making them easier to target for subsequent Kitgun shots. Defensive mission builds in survival or interception benefit from the area denial that frigid mist provides in chokepoints near defense objectives.
 
 ## Notes
 
-The toxic cloud is a stationary effect at the companion's attack location; it does not follow enemies or the warframe. Mobile enemies that move through the cloud receive damage during the time they spend inside the radius but escape when they exit. The cloud duration is fixed and does not extend with companion activity or Ability Duration mods. Multiple clouds placed by repeated procs accumulate in the same area, increasing damage density in targeted zones. Enemies immune to toxin damage receive no effect from Malodor clouds regardless of exposure time.
+The 20% trigger chance is fixed across all ranks; only the mist duration scales with rank. Multiple mist zones from different Kitgun kills can overlap, creating areas of compounding Cold Damage per second. The 40 Cold Damage/s is fixed and does not scale with weapon damage, companion mods, or player stats -- it is a flat area damage value per rank. The Cold type activation for Theorem Arcanes requires the warframe to physically stand within the mist zone; moving outside the zone immediately deactivates the Cold type for Theorem purposes.
 
 ## Sources
 
-- WFCD warframe-items dataset documents cloud coverage and trigger conditions for Residual Malodor.
-- Fandom wiki entry for Residual Malodor provides context on the Residual arcane series and toxic cloud behavior.
+- WFCD warframe-items dataset provides mist duration values per rank and the 20% trigger chance for Residual Malodor.
+- Fandom wiki entry for [Residual Malodor](https://warframe.fandom.com/wiki/Residual_Malodor) covers frigid mist mechanics and the Theorem Arcane Cold type interaction.

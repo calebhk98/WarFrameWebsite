@@ -33,40 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Conjunction Voltage chains damage through enemies on electrical status procs, making it one of the few weapon arcanes that converts a single-target proc into group damage. Electric status in Warframe already shocks the primary target and one nearby enemy; Conjunction Voltage extends this by chaining the proc to multiple additional targets when the trigger activates. At rank 5, each electric proc reaches up to six additional targets for a 90% damage bonus, enabling electrically-focused secondary builds to clear groups without relying solely on AoE weapon mechanics.
+Conjunction Voltage provides stacking Reload Speed and Multishot bonuses that accumulate each time the weapon inflicts an Electricity Status effect. Each Electric proc adds one stack lasting 12 seconds, up to a maximum of 40 stacks. With 40 stacks maintained at rank 5, the total bonus reaches +60% Reload Speed and +120% Multishot -- a substantial combined output increase that fundamentally changes the weapon's firing rhythm.
 
-The arcane suits secondaries that apply electric status quickly - through high status chance on electric-damage weapons or through elemental combination builds. Because electric status triggers from any two elemental mods producing Electric damage, Conjunction Voltage works with a range of status-focused modding approaches rather than requiring a dedicated electric weapon.
+The stacking mechanic rewards sustained Electricity proc generation. Weapons with high status chance and Electric or combined-Electric element (Corrosive, Magnetic, Radiation) apply Electricity procs frequently, building stacks rapidly and maintaining them throughout active combat.
 
 ## Effect
 
-Each electric status proc from the secondary weapon checks the trigger chance. On success, the proc chains to additional targets within range, applying damage and electric stagger to each chained enemy. The damage value is a percentage of the original proc damage, not a flat value, so higher base damage weapons produce stronger chain hits. At maximum rank, six additional targets take 90% of the original electric proc damage. Chain range is fixed and not modified by Power Range or weapon range mods.
+Each Electricity Status proc applied by the weapon adds one stack of Conjunction Voltage, refreshing the 12-second stack timer. At rank 0, each stack provides +0.25% Reload Speed and +0.5% Multishot. At rank 5, each stack provides +1.5% Reload Speed and +3% Multishot. At maximum 40 stacks at rank 5, total bonuses reach +60% Reload Speed and +120% Multishot. The 12-second stack duration means each individual stack expires 12 seconds after its last application; sustained Electricity proc application keeps stacks refreshed and at or near the 40-stack cap.
 
-The chaining distinguishes Conjunction Voltage from simple damage-boost arcanes: it adds target coverage rather than increasing per-enemy damage. Against single isolated targets the arcane provides no benefit; grouped enemies in void fissure corridors or mobile defense clusters maximize chain value.
+Multishot adds additional projectiles per trigger pull -- each additional projectile fires independently, applying damage and status effects. At +120% Multishot, the weapon fires more than double the base projectile count per shot, multiplying all per-projectile effects including status application probability.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Damage Bonus | Chain Targets |
-|------|----------------|--------------|---------------|
-| 0 | 15% | +30% | 3 |
-| 1 | 22% | +45% | 3.6 |
-| 2 | 30% | +60% | 4.2 |
-| 3 | 37% | +75% | 4.8 |
-| 4 | 41% | +82% | 5.4 |
-| 5 | 45% | +90% | 6 |
+| Rank | Reload Speed per Stack | Multishot per Stack | Max Stacks | Max Reload Speed | Max Multishot |
+|------|-----------------------|--------------------|-----------:|-----------------|--------------|
+| 0 | +0.25% | +0.5% | 40 | +10% | +20% |
+| 1 | +0.5% | +1% | 40 | +20% | +40% |
+| 2 | +0.75% | +1.5% | 40 | +30% | +60% |
+| 3 | +1% | +2% | 40 | +40% | +80% |
+| 4 | +1.25% | +2.5% | 40 | +50% | +100% |
+| 5 | +1.5% | +3% | 40 | +60% | +120% |
 
 ## Acquisition
 
-Conjunction Voltage drops from Zariman Void Fissure missions at 4% and Void Cascade rotation C at 2%. Zariman content is the primary farming source; players running daily Void Cascade completions encounter this arcane through rotation C drops. The 4% Void Fissure rate places it alongside other Zariman arcanes of similar tier. Warframe.market listings provide direct acquisition for players prioritizing time efficiency over plat conservation.
+Conjunction Voltage drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation C at 2%. Access requires completing Angels of the Zariman. Rotation C in Void Cascade requires extended runs to reach; supplementing with Void Fissure sessions targeting Conjunction Voltage drops improves overall acquisition rate. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Secondaries with high electric status application gain the most from Conjunction Voltage. Weapons with electric elemental combinations apply procs quickly enough to trigger Conjunction Voltage consistently in dense enemy groups. Builds pairing the arcane with status-chance mods (Pistol Pestilence, Pathogen Rounds combined with electric) reach reliable proc rates in mid-tier content. The arcane works alongside speed-enhancing arcanes to maintain fire rate between chain procs. Squad play benefits from chain coverage extending reach into areas other players are not targeting.
+Conjunction Voltage is designed for high-status weapons that apply Electricity procs consistently. Weapons that combine Electricity elements (Corrosive = Electricity + Toxin, Magnetic = Electricity + Cold) apply Electricity procs along with their combined element procs, generating stacks from regular fire. High-status-chance rifles, shotguns, and secondaries with Electric element mods apply many Electricity procs per magazine, building stacks quickly.
+
+The Multishot bonus at 40 stacks provides the greatest practical benefit on weapons where additional projectiles multiply damage output -- shotguns with pellet spread, multi-shot rifles, and bows that benefit from additional arrows. The Reload Speed bonus provides the most value on weapons with slow base reload times, reducing magazine downtime during sustained combat.
 
 ## Notes
 
-Conjunction Voltage only triggers on electric status procs, not on other elemental procs even if the weapon also deals electric damage. The chain radius is approximate and may not reach enemies behind cover or at significant elevation differences. Chained targets receive the electric stagger effect, helping control enemy movement in open areas. The damage percentage scales from base proc damage before other multipliers apply; critical hits on the initial proc do not affect chain damage directly.
+Stacks expire 12 seconds after the last application, not 12 seconds after the buff was triggered. In active combat with regular Electricity proc application, stacks maintain themselves indefinitely up to the 40-stack cap. Each individual Electricity proc from a single shot that hits multiple pellets counts as separate proc events if the status checks pass independently per pellet. Stacks from Conjunction Voltage are weapon-specific to the weapon that applied the procs; switching weapons does not transfer stacks.
 
 ## Sources
 
-- WFCD warframe-items dataset provides drop chance values and per-rank stat tables for Conjunction Voltage.
-- Fandom wiki entry for Conjunction Voltage covers chain mechanic behavior and secondary weapon compatibility notes.
+- WFCD warframe-items dataset provides Reload Speed and Multishot values per stack per rank and the 40-stack maximum for Conjunction Voltage.
+- Fandom wiki entry for [Conjunction Voltage](https://warframe.fandom.com/wiki/Conjunction_Voltage) covers Electricity Status proc stacking mechanics and weapon compatibility notes.

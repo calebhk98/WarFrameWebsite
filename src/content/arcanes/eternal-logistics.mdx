@@ -33,43 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Eternal Logistics provides operator energy sustain by converting amp attacks into energy restoration events. Each amp hit in operator mode checks for a chance to restore energy directly to the operator, allowing sustained amp fire during extended operator engagements without needing external energy sources or natural energy regeneration timers. Operators in full combat mode who would otherwise deplete their energy pool and lose amp functionality benefit from Logistics's passive energy income.
+Eternal Logistics boosts Amp Ammo Efficiency after each Void Sling. Every time the operator performs a Void Sling, amp fire gains the listed Ammo Efficiency bonus for 8 seconds. Higher Ammo Efficiency means each amp shot consumes less ammo -- at sufficient efficiency values, the amp can sustain longer fire sequences before depleting its ammo pool and entering the recharge cycle.
 
-Operator energy limits the duration of abilities and amp firing in extended operator-mode sequences. Without energy sustain, operators must either rely on natural regeneration (which pauses during combat), energy orb pickups, or returning to warframe mode to reset. Eternal Logistics bypasses these constraints by generating energy directly from the combat action most likely to be consuming it.
+At rank 5, Void Sling activates +72% Amp Ammo Efficiency for 8 seconds. Operators who Void Sling frequently -- using it for both movement and damage positioning -- activate Eternal Logistics as a natural consequence of their movement pattern, maintaining elevated ammo efficiency throughout active operator engagements.
 
 ## Effect
 
-Each amp attack in operator mode triggers a chance check. On success, the operator gains the listed energy value. At rank 0, a 15% trigger chance restores 20 energy per hit - effective for high-fire-rate amps that hit multiple times per second. At rank 5, a 45% trigger chance restores 60 energy per hit - nearly half of all amp attacks restore a meaningful energy chunk, substantially extending the operator's ability to maintain combat before requiring energy management.
+Each Void Sling triggers the Eternal Logistics bonus, applying the listed Ammo Efficiency increase to the amp for 8 seconds. At rank 0, +12% Ammo Efficiency modestly extends the amp's firing duration before ammo depletion. At rank 5, +72% Ammo Efficiency substantially reduces ammo cost per shot, allowing sustained amp fire for significantly longer before the recharge cycle begins.
 
-For continuous-beam amps that fire effectively as a stream of hits, Logistics can provide near-continuous energy income that offsets the energy drain of sustained beam fire, creating a self-sustaining loop in some configurations.
+Ammo Efficiency interacts with amp firing mechanics by reducing the ammo cost of each shot proportionally. An amp with 100 ammo capacity at +72% efficiency effectively sustains the firepower of a much larger ammo pool. Void Slings performed during combat keep the 8-second window refreshed, maintaining the efficiency bonus throughout operator combat phases.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Energy Restore | Notes |
-|------|----------------|----------------|-------|
-| 0 | 15% | 20 | Modest periodic restore |
-| 1 | 22% | 30 | Moderate energy sustain |
-| 2 | 30% | 40 | Reliable per-hit income |
-| 3 | 37% | 50 | Strong energy cycling |
-| 4 | 41% | 55 | Near-continuous sustain |
-| 5 | 45% | 60 | Maximum energy per proc |
+| Rank | Ammo Efficiency Bonus | Duration |
+|------|--------------------- |----------|
+| 0 | +12% | 8s |
+| 1 | +24% | 8s |
+| 2 | +36% | 8s |
+| 3 | +48% | 8s |
+| 4 | +60% | 8s |
+| 5 | +72% | 8s |
 
 ## Acquisition
 
-Eternal Logistics drops from Zariman Void Cascade at 4% and Void Fissure rotation A at 2%. Rotation A is the most frequently reached rotation in Void Fissure runs, making Logistics accessible in short to medium-length Zariman content sessions. Both sources are part of the Zariman Ten-Zero content accessible after completing Angels of the Zariman. Warframe.market offers an alternative purchase route for players who prefer direct acquisition.
+Eternal Logistics drops from Zariman Void Cascade rewards at 4% and Void Fissure rotation A at 2%. Void Fissure rotation A is the most frequently reached rotation in Void Fissure runs, making Logistics accessible in short to medium-length Zariman content sessions. Both sources are accessible after completing Angels of the Zariman. Warframe.market offers an alternative purchase route for players who prefer direct acquisition.
 
 ## Builds that use it
 
-Eternal Logistics benefits operator-heavy builds that rely on extended operator-mode combat rather than brief transference cycles. Operators using damage-focused builds against Eidolon-like targets or Void Fissure Manifestations that require sustained amp fire to defeat benefit from the energy sustain during long engagement windows. Madurai-school operators that use Void Sling and amp bursts in rapid cycles generate trigger checks frequently, maintaining energy through active combat.
+Eternal Logistics benefits operator builds that use Void Sling actively for both movement and combat positioning. Operators who Void Sling to reach elevated positions, dodge enemy projectiles, or close distance on targets generate Logistics triggers as a byproduct of active movement, maintaining ammo efficiency without dedicated effort. Continuous-beam amp configurations that deplete ammo quickly benefit most from the efficiency bonus, extending the sustainable fire window before the recharge state begins.
 
-Solo Zariman content, where external support from squadmates is unavailable, makes Eternal Logistics particularly valuable - the arcane functions as a self-contained energy economy that keeps the operator viable without requiring coordination or energy pickups from allies.
+Eidolon hunt operators benefit from Logistics during extended limb-break sequences where sustained amp fire is required across multiple energy shard phases. Void Slings between Eidolon positions keep the efficiency bonus active, allowing more continuous amp fire during the damage windows between Eidolon movements.
 
 ## Notes
 
-The energy restore applies directly to the operator's energy pool, not to the warframe's energy. Energy restored by Logistics does not affect warframe ability casting - it solely supports continued amp fire and operator ability usage in operator mode. Amps with higher effective fire rates generate more trigger opportunities per second, making beam amps more efficient Logistics generators than single-shot amps at the same trigger chance. The arcane does not interact with Warframe Energy Conversion or energy-related mods; it functions as an isolated operator energy source.
+The ammo efficiency bonus applies from the moment of Void Sling activation and persists for 8 seconds. Multiple Void Slings within the 8-second window refresh the timer rather than stacking additional efficiency. The bonus applies to the primary amp fire mode; alternate fire mechanics may have independent ammo pools that are affected separately depending on the amp configuration. Void Sling distance and direction do not affect the trigger -- any Void Sling input activates Logistics regardless of trajectory. The efficiency bonus does not affect amp recharge rate; only the ammo consumption rate during active fire is reduced.
 
 ## Sources
 
-- WFCD warframe-items dataset documents trigger conditions and energy restore scaling for Eternal Logistics.
-- Fandom wiki entry for Eternal Logistics covers operator energy mechanics and sustained amp fire interaction notes.
-
+- WFCD warframe-items dataset provides Ammo Efficiency values per rank and the Void Sling trigger for Eternal Logistics.
+- Fandom wiki entry for [Eternal Logistics](https://warframe.fandom.com/wiki/Eternal_Logistics) covers Void Sling trigger conditions and amp ammo efficiency behavior.

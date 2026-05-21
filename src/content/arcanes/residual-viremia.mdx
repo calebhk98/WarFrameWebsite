@@ -14,52 +14,54 @@ perRankStats:
   - rank: 3
     stats: { damage: 12 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Residual_Viremia
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Residual_Viremia
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Residual Viremia creates viral infection aura zones when companion viral status procs trigger, extending the impact of companion-applied viral procs beyond the single targeted enemy. Viral status in Warframe halves the maximum health of affected enemies for 6 seconds, making it one of the highest-value status types for increasing effective damage across all weapon types. Residual Viremia broadcasts this effect to nearby enemies through an aura, converting each companion viral proc into a zone where surrounding enemies take the health reduction debuff.
+Residual Viremia is a companion arcane from the Residual-Theorem set that creates a pool of toxic blood on Kitgun kills. When a Kitgun kill is secured, there is a 20% chance that a toxic blood pool spawns at the kill location. The pool deals 40 Toxin Damage per second to all enemies in contact with it for the rank-dependent duration. Standing in the pool activates Toxin Damage type for Theorem Arcanes, synergizing with the Theorem arcane set mechanic based on elemental type proximity.
 
-The aura-based mechanic differs from other proc spread arcanes because viral's value is multiplicative with all subsequent damage rather than a damage-over-time effect. Spreading viral to groups multiplies the effective damage dealt by all players and companions in the area for the debuff duration.
+At rank 3, the toxic pool persists for 12 seconds, providing sustained area Toxin Damage and Theorem Arcane activation for that duration.
 
 ## Effect
 
-Each viral status proc applied by the companion creates a viral infection aura centered on the proc'd enemy. Nearby enemies within the range enter the aura zone and receive the viral health reduction debuff. At rank 0, a small aura affects nearby enemies with a 50% increase in viral spread effectiveness; at rank 5, the aura expands to a larger range and affects more enemies with a 250% effectiveness boost. The infection aura persists for the duration and refreshes with each new companion viral proc in the zone.
+On each Kitgun kill, the 20% trigger chance is checked. On success, a toxic blood pool spawns at the kill location. The pool deals 40 Toxin Damage per second to all enemies within the pool area continuously for the duration. Toxin Damage bypasses shields and deals direct health damage -- enemies with shields still take the full 40 Toxin/s to their health pool. Standing in the pool activates Toxin Damage type for Theorem Arcanes, enabling the set link between Residual Viremia and Theorem arcanes that use elemental damage type as an activation condition.
+
+At rank 0, pools last 3 seconds. At rank 3, pools last 12 seconds, providing a longer area denial and Theorem activation window per trigger.
 
 ## Stats per rank
 
-| Rank | Viral Boost | Duration | Notes |
-|------|-------------|----------|-------|
-| 0 | +50% | 8s | Small viral spread zone |
-| 1 | +100% | 8s | Moderate aura coverage |
-| 2 | +150% | 8s | Good group viral application |
-| 3 | +200% | 8s | Strong viral zone |
-| 4 | +225% | 8s | High-effectiveness viral field |
-| 5 | +250% | 8s | Maximum viral spread |
+| Rank | Pool Duration | Toxin Damage Rate | Theorem Type Activation |
+|------|-------------|------------------|------------------------|
+| 0 | 3s | 40 Toxin/s | Toxin Damage |
+| 1 | 6s | 40 Toxin/s | Toxin Damage |
+| 2 | 9s | 40 Toxin/s | Toxin Damage |
+| 3 | 12s | 40 Toxin/s | Toxin Damage |
 
 ## Acquisition
 
-Residual Viremia drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is accessible through standard Zariman content after completing Angels of the Zariman. Players building companion-focused builds with viral-modded companions farm Zariman content for Viremia alongside other Residual series arcanes. Void Cascade rewards include Viremia across multiple rotation tiers. Warframe.market provides direct purchase for targeted acquisition.
+Residual Viremia drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Players building Residual-Theorem arcane sets farm Zariman content for all Residual series arcanes together, as the full set synergizes most effectively when multiple Residual types are active. Warframe.market provides direct purchase for targeted acquisition.
 
 ## Builds that use it
 
-Residual Viremia excels on builds where companions deal viral damage through dedicated weapon modding. Kavats with Viral combination mods (Toxin + Cold) apply viral procs through melee attacks against groups. Sentinels equipped with viral-modded sidearms trigger Viremia on every successful viral status hit. Syndicate companions (Inaros, Titania) with viral-modded weapons in squad play contribute Viremia auras that benefit all nearby players. The arcane pairs particularly well with Residual Boils (toxin spread) and Residual Shock (electric chain) for comprehensive companion proc spread coverage.
+Residual Viremia is designed for the Residual-Theorem arcane pairing system. Kitgun-primary builds with high kill rates trigger the 20% pool spawn frequently, placing toxic zones across active combat areas. Standing in the pool zones activates Toxin Damage type for any equipped Theorem Arcanes, enabling the Theorem arcane interaction that uses elemental damage type as a condition.
+
+The 40 Toxin Damage/s from the pool bypasses shields, making it effective against Corpus enemies who rely heavily on shields for defense. Pools placed in choke points or objective areas deal consistent Toxin to enemies who pass through, adding damage over time to standard weapon fire without requiring additional player action.
 
 ## Notes
 
-The viral infection aura requires the companion to apply the initial viral proc; the arcane does not independently generate viral status. Companions with slow attack rates produce fewer initial procs and therefore fewer aura opportunities per minute. Viral status caps at 10 stacks of 5.9% health reduction per stack (maximum 59% health reduction); the aura spreads the proc but does not independently add stacks beyond what companions apply directly. Enemies immune to viral status do not receive the health reduction from the Viremia aura even within range.
+The 20% trigger chance is fixed across all ranks; only the pool duration scales with rank. Multiple pools from different Kitgun kills can overlap, creating areas of compounding 40 Toxin/s per overlapping pool. The 40 Toxin Damage/s is fixed and does not scale with weapon stats, companion mods, or player ability modifiers -- it is a flat zone damage rate. The Toxin Damage type activation for Theorem Arcanes requires the warframe to physically stand within the pool area; moving outside deactivates the Toxin type for Theorem purposes. Toxin Damage bypasses all enemy shields when dealing damage through the pool area.
 
 ## Sources
 
-- WFCD warframe-items dataset documents spread range and viral boost scaling for Residual Viremia.
-- Fandom wiki entry for Residual Viremia covers the Residual arcane series and companion viral proc mechanics.
+- WFCD warframe-items dataset provides pool duration values per rank and the 20% trigger chance for Residual Viremia.
+- Fandom wiki entry for [Residual Viremia](https://warframe.fandom.com/wiki/Residual_Viremia) covers toxic blood pool mechanics and the Theorem Arcane Toxin type interaction.

@@ -18,57 +18,56 @@ perRankStats:
   - rank: 5
     stats: { stat_0: 10 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Primary_Plated_Round
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Primary_Plated_Round
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Primary Plated Round converts impact status procs from primary weapons into stacking shield bonuses, bridging the gap between physical damage application and the warframe's shield defense layer. Each impact proc triggers a shield buff that refreshes and stacks up to six times, allowing high-impact-chance weapons to rapidly accumulate a substantial shield bonus during sustained fire. The 10-second duration per stack means that weapons with consistent impact proc rates can maintain near-permanent uptime at maximum stacks.
+Primary Plated Round grants increased damage per round loaded based on the weapon's maximum magazine size after each Reload. The more rounds a weapon holds at maximum capacity, the higher the damage bonus per loaded round during the buff window. The buff lasts for a set duration after the reload completes, covering the next magazine dump with elevated damage output.
 
-Impact status procs are common on primary weapons with base impact damage - shotguns, high-caliber rifles, and burst weapons frequently apply impact procs without dedicated status chance builds. Primary Plated Round benefits from this natural proc rate rather than requiring a specialized elemental build, making it accessible to a wide variety of primary weapon configurations. Frames that rely on shield-based survivability gain an additional defensive layer that scales with primary weapon activity.
+At rank 5, the buff lasts 10 seconds after each reload. Weapons with large magazines that are fired within the 10-second buff window deal increased damage for every round remaining in the chamber, making high-capacity primaries particularly effective with this arcane.
 
 ## Effect
 
-Each impact status proc applied by the primary weapon grants a shield bonus for 10 seconds. Stacks accumulate up to six times, with each new proc refreshing the timer on existing stacks. At rank 0, each stack provides 12% shield bonus; at maximum stacks, that totals 72% bonus shields. At rank 5, each stack provides 72% shield bonus for a theoretical maximum of 432% total bonus shields at six stacks. The bonus applies to the warframe's base shield value, making it proportionally effective on high-shield frames like Mag and Volt that already have elevated shield pools.
+On reload completion, Primary Plated Round activates a damage bonus that scales with the weapon's maximum magazine size and persists for the listed duration. The per-round damage increase means weapons with larger magazines receive larger total benefit -- a 60-round magazine weapon receives 60 stacks of the per-round bonus versus a 6-round weapon receiving only 6 stacks. At rank 0, the buff lasts 3 seconds -- sufficient for a few shots. At rank 5, the buff lasts 10 seconds, covering most of the next magazine dump for moderate fire rate weapons.
 
-The shield bonus is temporary and resets when stacks expire. Weapons with high-frequency impact procs - semi-auto rifles, burst fire weapons - maintain stacks more reliably than slow-firing primaries with occasional impact triggers.
+Weapons with large magazine sizes gain the most damage benefit, while weapons with very small magazines (sniper rifles, low-capacity shotguns) gain less total bonus per trigger.
 
 ## Stats per rank
 
-| Rank | Shield per Stack | Max Stacks | Max Total Shield Bonus | Notes |
-|------|-----------------|-----------|------------------------|-------|
-| 0 | +12% | 6 | +72% | Base defensive boost |
-| 1 | +18% | 6 | +108% | Moderate improvement |
-| 2 | +24% | 6 | +144% | Solid shield scaling |
-| 3 | +30% | 6 | +180% | Strong defensive build |
-| 4 | +36% | 6 | +216% | Near-maximum |
-| 5 | +72% | 6 | +432% | Maximum shield coverage |
+| Rank | Buff Duration |
+|------|-------------|
+| 0 | 3s |
+| 1 | 4s |
+| 2 | 5s |
+| 3 | 6s |
+| 4 | 8s |
+| 5 | 10s |
 
 ## Acquisition
 
-Primary Plated Round drops from various Zariman Ten-Zero mission rotations and Void Cascade content. The arcane is accessible after completing Angels of the Zariman. Multiple rotation sources in Zariman content mean players regularly encounter Plated Round drops during standard Zariman progression. Warframe.market provides an alternative for players preferring direct platinum acquisition.
+Primary Plated Round drops from various Zariman Ten-Zero mission rotations and Void Cascade content at uncommon rarity. The arcane is accessible after completing Angels of the Zariman. Warframe.market provides an alternative for players preferring direct platinum acquisition.
 
 ## Builds that use it
 
-Primary Plated Round fits shield-tank primary weapon builds on frames with substantial base shield values. Mag builds using Magnetize frequently apply impact procs through high-impact-damage primary weapons, stacking the shield bonus rapidly during ability use. Volt builds that rely on shield gating as a survivability mechanic benefit from the additional shield percentage, which extends the effective health pool protected by the shield gate. Shotgun builds with multiple pellets per shot trigger impact procs at high rates, accelerating stack accumulation.
+Primary Plated Round is most effective on high-magazine-capacity primary weapons. Large-magazine assault rifles and SMG-type weapons with 50-100+ round capacity receive the maximum per-round damage bonus accumulation, and with 10-second buff durations at rank 5, can fire through much of the magazine during the boosted window. Builds that pair Primary Plated Round with Vigilante Supplies (larger effective ammo pool through ammo conversion) or magazine extension mods maximize the magazine capacity that feeds the per-round damage scaling.
 
-Frames with low base shield values receive smaller absolute shield gains from the percentage-based bonus. The arcane is most effective when paired with shield-capacity-increasing mods like Redirection, which amplify the percentage bonus into larger absolute shield pools.
+Reload speed mods and arcanes pair naturally with Primary Plated Round by reducing the time spent reloading, minimizing the gap between buff windows and allowing faster re-entry into the boosted damage phase after each reload.
 
 ## Notes
 
-The shield bonus stacks independently from shield capacity mods - percentage bonuses from both sources apply to the base shield value. Impact procs from primary weapon fire trigger the arcane; impact procs from companion weapons or warframe abilities do not. The 10-second timer on each stack counts down independently - stacks added at different times expire at different intervals. Maintaining maximum stacks requires sustaining a reliable impact proc rate, which favors weapons with both high status chance and high impact damage percentages. Shield-gated builds should note that the bonus shields do not inherently reset the shield gate; only fully depleting and replenishing shields triggers the gate timing.
+The buff triggers on reload completion, not when reload begins. Partial reloads that complete early (using emergency reload mechanics or reload cancel) still trigger the buff on completion. The damage bonus scales with the weapon's maximum magazine size, not the current ammo count being loaded -- a weapon that reloads with fewer rounds than maximum still receives the full magazine-size-based bonus. The buff duration is fixed per rank; the arcane's value comes from using the boosted window efficiently by firing during the active duration.
 
 ## Sources
 
-- WFCD warframe-items dataset covers impact proc scaling and shield bonus values for Primary Plated Round.
-- Fandom wiki entry for Primary Plated Round provides notes on stack accumulation timing and shield-gating interactions.
-
+- WFCD warframe-items dataset provides buff duration values per rank and the magazine-size scaling mechanic for Primary Plated Round.
+- Fandom wiki entry for [Primary Plated Round](https://warframe.fandom.com/wiki/Primary_Plated_Round) covers reload trigger conditions and per-round damage scaling behavior.

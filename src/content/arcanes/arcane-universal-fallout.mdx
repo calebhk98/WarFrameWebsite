@@ -33,40 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Universal Fallout spreads random status effects to all enemies within a 15-meter radius when any status proc triggers on the warframe. This makes it one of the most broadly applicable crowd-control arcanes available, converting single-target status procs from abilities or weapons into area-wide debuff events. The random status type means the effect varies per trigger - it may proc viral, corrosive, cold, heat, or any other status effect - creating unpredictable but consistently disruptive outcomes across enemy groups.
+Arcane Universal Fallout generates Universal Orbs when enemies die after being afflicted with Radiation Status by a warframe ability. Each Radiation status applied by an ability gives that enemy a per-rank chance to drop a Universal Orb on death. Universal Orbs restore both Health and Energy, making them broadly useful regardless of the player's current resource state.
 
-The 15-meter radius is substantial enough to cover most room interiors and defense objectives, making Universal Fallout highly effective during stationary combat scenarios. Status-heavy frames that frequently proc effects through abilities or weapon fire trigger the arcane often, building up varied status stacks across multiple enemies simultaneously.
+Abilities that inflict Radiation status -- whether through direct elemental damage or proc mechanics -- feed into the Fallout orb generation. Frames with Radiation-applying abilities benefit most, as each Radiation proc on each enemy becomes an independent orb-drop chance when that enemy dies.
 
 ## Effect
 
-Any status proc on the warframe (from ability effects, status-applying weapons, or passive status generation) checks the trigger chance. On success, all enemies within 15 meters receive a randomly selected status proc. The random nature means each trigger has an equal chance of applying any in-game status effect, including high-value options like viral (50% health reduction for 6 seconds), corrosive (26% armor reduction per stack), or cold (movement and attack speed reduction). Over repeated triggers, the spread covers varied status types across the enemy group.
+When an ability inflicts Radiation Status on an enemy, that enemy gains a chance to drop a Universal Orb upon death. At rank 0, each Radiation proc gives a 1% orb drop chance per affected enemy. At rank 5, each proc gives a 6% chance. Enemies with multiple Radiation stacks from repeated ability hits accumulate more chances, since each separate proc application adds an independent 6% chance per stack on death. Frames that apply Radiation rapidly across many enemies generate a steady stream of Universal Orbs from killed enemies throughout combat.
 
-The 15-meter radius is measured from the warframe position and does not require line-of-sight to reach enemies behind cover within range.
+Universal Orbs restore both Health and Energy on pickup, making each orb doubly valuable compared to single-type orb drops. The orbs appear at the enemy's death location and are picked up by proximity.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | AOE Radius | Notes |
-|------|----------------|-----------|-------|
-| 0 | 10% | 15m | 1-in-10 proc spread |
-| 1 | 15% | 15m | Increasing area coverage |
-| 2 | 20% | 15m | Reliable room-wide spread |
-| 3 | 25% | 15m | Frequent multi-enemy debuffing |
-| 4 | 27% | 15m | High-uptime area status |
-| 5 | 30% | 15m | Maximum trigger rate |
+| Rank | Orb Drop Chance per Radiation Proc |
+|------|----------------------------------|
+| 0 | 1% |
+| 1 | 2% |
+| 2 | 3% |
+| 3 | 4% |
+| 4 | 5% |
+| 5 | 6% |
 
 ## Acquisition
 
-Arcane Universal Fallout drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Zariman Ten-Zero content is accessible after completing Angels of the Zariman. The arcane drops from rotation A, which is the most frequently reached rotation in Void Cascade runs, making it one of the more accessible Zariman arcanes in terms of farming frequency. Warframe.market provides an alternative acquisition path for players preferring to purchase rather than farm.
+Arcane Universal Fallout drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation A at 2%. Access requires completing Angels of the Zariman. Void Cascade rotation A is reached frequently in standard runs, making the arcane accessible through regular Zariman content participation. Warframe.market provides an alternative acquisition path for players preferring to purchase rather than farm.
 
 ## Builds that use it
 
-Status-proc-heavy frames that generate frequent status effects through abilities or weapons trigger Universal Fallout most consistently. Frames like Saryn (Spores status spread), Equinox (Mend and Maim procs), and Nidus (Virulence status) naturally apply status effects at high rates and benefit from converting those procs into area debuffs. Builds relying on weapon-based status application paired with high-status-chance weapons maximize trigger frequency. Defense and survival builds benefit most from the area coverage because grouped enemies cluster within the 15-meter radius during objective assaults.
+Arcane Universal Fallout benefits Radiation-ability builds where multiple enemies receive Radiation procs from abilities before dying. Saryn using Spores with added Radiation element, Nidus applying Radiation through Virulence, and frames using Helminth-subsumed abilities that deal Radiation damage apply Radiation procs at high frequency during combat, setting up multiple enemies with orb-drop potential simultaneously. Ember's World on Fire with Radiation element additions and Equinox builds with Radiation damage injection provide sustained Radiation proc fields that prime large enemy groups.
+
+At 6% per proc, the arcane provides consistent but not dominant orb generation -- it supplements rather than replaces active energy orb recovery from Trinity, Zenurik Focus, and Energy Siphon. The value compounds in situations with dense enemy populations where many Radiation-proced enemies die in rapid succession.
 
 ## Notes
 
-The status type applied by Universal Fallout is random and cannot be controlled or predicted. Repeated triggers may apply the same status multiple times, stacking corrosive armor reduction or refreshing heat procs across enemies. Status immunity in certain enemy types (Heavy units, Overguard enemies) negates the fallout proc on those specific targets. The trigger requires an initial status proc on the warframe itself, not from companion or squad member status application. Frames with passive status generation trigger Fallout more consistently than frames relying entirely on weapon-based status application.
+The Radiation Status must be applied specifically by abilities, not by weapons. Weapon Radiation procs do not trigger the Fallout orb-drop chance. Each individual Radiation proc application on an enemy is an independent chance -- if an ability applies 3 Radiation procs to one enemy, that enemy has three separate 6% checks on death at rank 5 (roughly 17% cumulative chance for at least one orb). The orb-drop chance checks occur at the moment of enemy death, not at proc application. Enemies that die without the Radiation proc reaching its full duration still trigger the orb check if the proc was active at death.
 
 ## Sources
 
-- WFCD warframe-items dataset documents trigger mechanics and radius values for Arcane Universal Fallout.
-- Fandom wiki entry for Arcane Universal Fallout covers random status proc behavior and frame synergy notes.
+- WFCD warframe-items dataset provides orb drop chance per rank and Radiation Status trigger conditions for Arcane Universal Fallout.
+- Fandom wiki entry for [Arcane Universal Fallout](https://warframe.fandom.com/wiki/Arcane_Universal_Fallout) covers ability-sourced Radiation proc requirements and Universal Orb behavior.

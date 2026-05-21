@@ -33,43 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Melee Animosity generates Power Strength bonuses from melee kills, creating a feedback loop where aggressive melee combat directly amplifies ability effectiveness. The kill-based trigger means the arcane rewards offensive momentum - frames that maintain high kill rates through melee combat sustain elevated ability strength throughout the mission, while frames that disengage from melee see the buff expire during combat breaks.
+Melee Animosity builds Critical Chance for the next Heavy Attack through regular melee hits. Each normal melee hit adds a stacking Critical Chance bonus that accumulates toward the next Heavy Attack, up to a cap. When the Heavy Attack is performed, all stacked Critical Chance applies to that single attack, delivering a charged critical hit. The arcane rewards the gameplay loop of building up through light attacks then unleashing a powered Heavy Attack.
 
-Power Strength in Warframe multiplies the numeric values of most warframe abilities: damage outputs, healing values, crowd control durations, and buff percentages all scale with the strength modifier. A 90% Power Strength bonus from Melee Animosity at rank 5 effectively adds the equivalent of multiple strength-increasing mods, pushing ability outputs to values normally achievable only through specialized ability-focused builds.
+At rank 5, each melee hit adds +42% Critical Chance to the next Heavy Attack, stacking up to +420%. With 10 hits accumulated, the Heavy Attack fires with 420% additional critical chance on top of the weapon's base critical chance, guaranteeing red crits on virtually any weapon configuration.
 
 ## Effect
 
-Each melee kill triggers a chance check. On success, the warframe gains a Power Strength percentage bonus for 10 seconds. At rank 0, a 15% chance grants 30% Power Strength - activating roughly once every six melee kills and providing a moderate ability boost window. At rank 5, the 45% chance grants 90% Power Strength - activating nearly every other kill group and providing a near-doubling of base ability strength for the duration.
+Each melee hit adds the listed Critical Chance bonus to a pending counter for the next Heavy Attack. The counter accumulates up to the listed maximum. When a Heavy Attack is performed, all accumulated Critical Chance applies to that Heavy Attack only, then the counter resets to zero. At rank 0, each hit adds +7% up to a cap of +70% -- 10 hits reach the maximum. At rank 5, each hit adds +42% up to +420% -- the cap is reached in 10 hits.
 
-The 10-second window is long enough to cover multiple ability casts following a kill burst. The bonus is multiplicative with existing Power Strength from mods, meaning frames that already run high-strength builds amplify Animosity's bonus into larger absolute ability values.
+The Heavy Attack consumes all stacked charges at once, delivering the accumulated Critical Chance as a one-time bonus. The player must build the stack again through normal hits before the next Heavy Attack receives the bonus.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Power Strength Boost | Duration | Notes |
-|------|----------------|----------------------|----------|-------|
-| 0 | 15% | +30% | 10s | Moderate ability boost window |
-| 1 | 22% | +45% | 10s | Increasing strength uptime |
-| 2 | 30% | +60% | 10s | Reliable ability scaling |
-| 3 | 37% | +75% | 10s | Strong kill-reward cycle |
-| 4 | 41% | +82% | 10s | Near-constant uptime possible |
-| 5 | 45% | +90% | 10s | Maximum strength cycling |
+| Rank | Critical Chance per Hit | Maximum Critical Chance |
+|------|------------------------|------------------------|
+| 0 | +7% | +70% |
+| 1 | +14% | +140% |
+| 2 | +21% | +210% |
+| 3 | +28% | +280% |
+| 4 | +35% | +350% |
+| 5 | +42% | +420% |
 
 ## Acquisition
 
-Melee Animosity drops from Zariman Void Fissure at 4% and Void Cascade rotation A at 2%. Both sources are accessible after completing Angels of the Zariman. Rotation A in Void Cascade is the first rotation reached during runs, making it one of the more accessible drop locations for Zariman melee arcanes. Warframe.market provides a direct purchase option for players who prefer platinum acquisition over farming sessions.
+Melee Animosity drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation A at 2%. Both sources are accessible after completing Angels of the Zariman. Rotation A in Void Cascade is the first rotation reached, making Animosity available in relatively short Void Cascade sessions. Warframe.market provides a direct purchase option for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Melee Animosity fits ability-focused frames that use melee combat as their primary kill method. Ash builds using Fatal Teleport perform frequent melee finisher kills that trigger Animosity, directly boosting Blade Storm's damage output. Atlas builds whose Landslide scales with Power Strength benefit from Animosity's kill-to-strength feedback - each Landslide kill boosts the next Landslide cast. Exalted weapon builds on Valkyr (Hysteria), Wukong (Primal Fury), and Baruuk (Desert Wind) apply kill triggers to the exalted weapon hits, stacking the bonus during sustained exalted weapon combat.
+Melee Animosity is purpose-built for Heavy Attack builds that follow a light-attack buildup pattern. Spin attack combos that hit multiple times rapidly build the Animosity counter quickly before the Heavy Attack is released. Polearm builds using Shimmering Blight or similar high-hit-count combos reach the 10-hit cap in seconds, then deliver a fully charged Heavy Attack with +420% Critical Chance at rank 5.
 
-High-kill-rate melee weapons - spin-attack polearms, aoe-swing heavy blades - generate kills in rapid clusters that maximize the trigger frequency and sustain the Power Strength window between buff refreshes.
+Heavy Attack builds using Organ Shatter and Amalgam Organ Shatter for critical multiplier combine strongly with Animosity -- the guaranteed high critical chance from the stack translates directly into guaranteed high-multiplier red crits on the Heavy Attack. Builds on Valkyr, Atlas, or any frame with heavy melee investment use the buildup cycle as a consistent combat rhythm.
 
 ## Notes
 
-The Power Strength bonus from Melee Animosity does not stack beyond a single application - triggering while the buff is active refreshes the timer rather than adding a second layer. The boost applies to all ability values that scale with Power Strength, including beneficial effects like healing values and buff durations, not only damage. Melee kills from companion weapons or warframe abilities do not trigger the arcane - only direct melee weapon kills from the player's equipped melee count. Frames that use melee combat only incidentally alongside primary or secondary weapons trigger Animosity less frequently and may find the uptime insufficient for reliable ability scaling.
+The counter resets to zero after the Heavy Attack regardless of whether the Heavy Attack itself lands or connects. The counter persists between enemies -- building 8 stacks on one enemy and then performing the Heavy Attack against a different enemy still applies the full stack. The stack cap is fixed per rank; building additional hits beyond the cap does not increase the bonus beyond the listed maximum. The Critical Chance bonus applies to the Heavy Attack's base critical chance calculation before other multipliers; it does not multiply existing crit chance from mods.
 
 ## Sources
 
-- WFCD warframe-items dataset covers kill trigger conditions and Power Strength scaling for Melee Animosity.
-- Fandom wiki entry for Melee Animosity documents ability interaction notes and melee kill definition for arcane trigger purposes.
-
+- WFCD warframe-items dataset provides Critical Chance per hit and maximum cap values per rank for Melee Animosity.
+- Fandom wiki entry for [Melee Animosity](https://warframe.fandom.com/wiki/Melee_Animosity) covers Heavy Attack consume mechanics and light-attack stack building behavior.

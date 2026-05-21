@@ -33,43 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Eternal Eradicate adds area-of-effect void explosion damage to amp attacks, expanding the operator's single-target beam weapon into a tool capable of clearing grouped enemies in operator mode. Each amp hit checks for a chance to trigger a void explosion centered on the hit target, dealing damage to all enemies within a 5-meter radius. This allows operators to handle enemy clusters without requiring a fundamentally different combat approach - the explosion events are automatic byproducts of standard amp fire.
+Eternal Eradicate is an operator arcane that boosts Amp Damage when the operator uses an Operator Ability. Activating any Focus school ability -- Madurai's Void Radiance, Unairu's Void Shadow, Zenurik's Energizing Dash, Naramon's Void Snare, or Vazarin's Guardian Shell -- triggers the damage bonus to the operator's Amp for 8 seconds. This creates a natural synergy between ability usage and amp combat: activating a Focus ability at the start of an operator engagement sets up an elevated damage window for the amp shots that follow.
 
-The void explosion damage type is relevant against Sentients, Eidolons, and Void-affected enemies that take bonus damage from void-type attacks. Operators fighting these enemy types with Eradicate gain both single-target amp damage and splash void damage from each trigger, making the arcane particularly effective in the specific enemy categories that operators are typically fielded against in endgame content.
+At rank 5, using an Operator Ability grants +60% Amp Damage for 8 seconds. Operators who activate their Focus ability at the beginning of each operator engagement maintain consistent high-damage amp windows throughout missions involving frequent transference cycling.
 
 ## Effect
 
-Each amp hit triggers a chance check. On success, a void explosion fires centered on the hit location, dealing the listed damage to all enemies within 5 meters. At rank 0, a 15% chance deals 50 void damage per explosion - occasional AoE events that supplement single-target amp fire. At rank 5, a 45% chance deals 150 void damage - nearly half of all amp hits generate explosions, providing consistent area damage during sustained fire sequences.
+Each Operator Ability activation triggers the Eternal Eradicate bonus, applying the listed damage increase to all Amp shots for 8 seconds. At rank 0, +10% Amp Damage is a modest bonus. At rank 5, +60% Amp Damage significantly increases amp output during the window -- an amp that normally deals 1000 damage per shot deals 1600 during the Eradicate buff. The 8-second window covers multiple amp fire sequences before expiring, making it worth activating a Focus ability as the first action upon entering operator mode.
 
-The fixed 5-meter radius covers a small but meaningful area around most enemy clusters. Tight group formations benefit significantly from Eradicate, as a single amp beam hit against one target can damage several others simultaneously through the explosion trigger.
+If the same operator ability has a cooldown longer than 8 seconds, there will be gaps between Eradicate windows. Abilities with shorter cooldowns or multiple charges maintain higher uptime.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Explosion Damage | Radius | Notes |
-|------|----------------|------------------|--------|-------|
-| 0 | 15% | 50 | 5m | Occasional area burst |
-| 1 | 22% | 75 | 5m | Moderate AoE addition |
-| 2 | 30% | 100 | 5m | Reliable splash damage |
-| 3 | 37% | 125 | 5m | Strong group coverage |
-| 4 | 41% | 137 | 5m | Near-maximum proc rate |
-| 5 | 45% | 150 | 5m | Maximum explosion output |
+| Rank | Amp Damage Bonus | Duration |
+|------|----------------|----------|
+| 0 | +10% | 8s |
+| 1 | +20% | 8s |
+| 2 | +30% | 8s |
+| 3 | +40% | 8s |
+| 4 | +50% | 8s |
+| 5 | +60% | 8s |
 
 ## Acquisition
 
-Eternal Eradicate drops from Zariman Void Cascade at 4% and Void Fissure rotation C at 2%. Rotation C in Void Fissure requires extended runs to reach, making Eradicate one of the rarer amp arcanes in the Zariman pool. Void Cascade at 4% is the more accessible farming path, generating Eradicate drops in shorter sessions. Warframe.market provides a direct purchase alternative for players who prefer platinum acquisition.
+Eternal Eradicate drops from Zariman Void Cascade rewards at 4% and Void Fissure rotation C at 2%. Rotation C in Void Fissure requires extended runs to reach, making Eradicate one of the rarer amp arcanes in the Zariman pool. Void Cascade at 4% is the more accessible primary farming path. Warframe.market provides a direct purchase alternative for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Eternal Eradicate suits operator builds intended for enemy group clearing in Zariman content where multiple Void Manifestations spawn simultaneously. Continuous-beam amp configurations maximize trigger frequency by generating multiple hit checks per second, producing Eradicate explosions at higher rates than single-shot amps. Madurai-school operators that prioritize void damage output on their amp builds benefit from the additional void damage type of the explosion, which may interact with school-specific damage bonuses.
+Eternal Eradicate benefits operator builds that use Focus abilities actively during combat. Madurai school operators who activate Void Radiance for the initial damage burst before sustained amp fire naturally trigger Eradicate's damage window. Unairu operators who activate abilities for armor stripping then follow up with amp fire against stripped enemies benefit from both effects simultaneously -- the armor strip increases effective amp damage further while Eradicate adds a flat damage boost on top.
 
-Operators supporting warframes in defense objectives with multiple enemy approach vectors benefit from the AoE clearing capability, allowing them to suppress incoming threats from grouped enemies without returning to warframe mode for area abilities.
+Eidolon hunt operators who follow a strict ability-then-amp rotation for Teralyst, Gantulyst, and Hydrolyst limb breaks gain the most concentrated benefit: activating the Focus ability activates Eradicate, then all limb-break amp shots land during the damage window.
 
 ## Notes
 
-The explosion damage is void-type and benefits from any operator or void damage bonuses active at the time of the trigger. The 5-meter radius is not affected by ability range modifiers or Focus school upgrades - it is fixed at all ranks. The explosion applies as a separate damage event from the amp hit and can trigger on-hit effects independently. Enemies at the edge of the blast radius receive the full listed damage - there is no damage falloff within the 5-meter zone. The explosion can potentially trigger additional on-hit arcane checks if paired with other amp arcanes that respond to damage events.
+The trigger requires an active Operator Ability input -- passive Focus school bonuses that are always active do not trigger Eradicate. The 8-second buff begins at ability activation, not at the end of the ability's effect duration. For abilities with instantaneous effects (Void Radiance burst), the amp damage window begins immediately. The damage bonus applies to all amp fire during the 8-second window, not just the next shot. Activating a second Focus ability while the buff is active refreshes the 8-second timer rather than stacking additional damage bonuses.
 
 ## Sources
 
-- WFCD warframe-items dataset documents trigger conditions and explosion damage scaling for Eternal Eradicate.
-- Fandom wiki entry for Eternal Eradicate covers void damage type interactions and grouped-enemy clearing applications.
-
+- WFCD warframe-items dataset provides Amp Damage values per rank and the Operator Ability trigger for Eternal Eradicate.
+- Fandom wiki entry for [Eternal Eradicate](https://warframe.fandom.com/wiki/Eternal_Eradicate) covers Focus ability trigger conditions and amp damage window behavior.

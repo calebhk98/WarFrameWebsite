@@ -18,54 +18,56 @@ perRankStats:
   - rank: 5
     stats: { combo: 20 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Secondary_Outburst
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Secondary_Outburst
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Secondary Outburst creates AoE explosions when secondary weapon shots hit enemy weak points, converting precision targeting into area-damage events. Weak points in Warframe are defined hitboxes that deal bonus damage - most commonly the head - meaning Secondary Outburst inherently rewards accurate fire by adding area splash to precision shots. Every well-aimed shot becomes both a high-damage single-target hit and an area-damage event affecting nearby enemies.
+Secondary Outburst converts the melee Combo Multiplier into Critical Chance and Critical Damage bonuses on the secondary weapon when the player switches from melee to secondary. On weapon swap, all accumulated Combo Multipliers are consumed and each consumed Combo unit provides the listed bonus to both Critical Chance and Critical Damage for 30 seconds. This creates a powerful melee-to-secondary handoff: build high melee combo, then swap to the secondary weapon to deliver amplified critical hits with the accumulated combo investment.
 
-The explosion mechanics enable secondary weapons without inherent AoE capabilities to contribute area damage during precision engagements. High-crit pistols that reward aimed headshots gain a complementary area output, making precision builds more effective in dense enemy groups without requiring weapon changes.
+At rank 5, each consumed Combo Multiplier provides +20% Critical Chance and +20% Critical Damage to the secondary weapon for 30 seconds. With a high melee combo of 12x (12 combo units consumed), the secondary gains +240% Critical Chance and +240% Critical Damage -- a massive boost that dramatically shifts critical hit performance for the 30-second window.
 
 ## Effect
 
-Hitting an enemy weak point with the secondary weapon triggers the explosion. The blast deals a percentage of the weapon's damage in an area radius around the weak point impact. At rank 0, 50% weapon damage in a 6-meter radius is sufficient to damage nearby light and medium enemies; at rank 5, 250% weapon damage in a 12-meter radius can severely damage or eliminate clustered enemies simultaneously with the primary target hit.
+When the player swaps to the secondary weapon from melee (or from any weapon with an active melee combo), the current Combo Multiplier count is consumed entirely. Each consumed combo unit adds the listed bonus to both Critical Chance and Critical Damage for 30 seconds. At rank 0, each combo unit adds +5% to both stats. At rank 5, each combo unit adds +20% to both stats. The 30-second window is long enough to use the secondary weapon extensively before the buff expires, and the melee combo must be rebuilt before the next swap can apply a fresh boost.
 
-The explosion damage uses the same damage type as the weapon's primary damage type, meaning weapons modded for specific elemental combos apply those procs to the area explosion as well.
+Higher melee combo counts at the time of swap yield higher total bonuses. Builds that drive melee combo high (Blood Rush, Drifting Contact, spin attack combos) before swapping maximize the Secondary Outburst conversion.
 
 ## Stats per rank
 
-| Rank | Explosion Damage | Explosion Range | Notes |
-|------|-----------------|-----------------|-------|
-| 0 | 50% | 6m | Minor area coverage |
-| 1 | 100% | 7m | Matching damage in small area |
-| 2 | 150% | 8m | Solid area output |
-| 3 | 200% | 10m | Strong group damage |
-| 4 | 225% | 11m | Very high area coverage |
-| 5 | 250% | 12m | Maximum explosion reach |
+| Rank | Critical Chance and Damage per Combo Unit | Duration |
+|------|------------------------------------------|----------|
+| 0 | +5% each | 30s |
+| 1 | +7% each | 30s |
+| 2 | +9% each | 30s |
+| 3 | +12% each | 30s |
+| 4 | +16% each | 30s |
+| 5 | +20% each | 30s |
 
 ## Acquisition
 
-Secondary Outburst drops from Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade runs generate Outburst as part of the secondary-focused arcane pool. Players running precision secondary builds often farm Zariman for Outburst and complementary secondary arcanes simultaneously. Warframe.market provides direct purchase options for targeted acquisition.
+Secondary Outburst drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
 
 ## Builds that use it
 
-Secondary Outburst excels on high-accuracy precision secondaries that frequently hit enemy head hitboxes. Sniper-class secondaries (Knell Prime, Magnus Prime) with aim-focused mechanics and high crit chance naturally produce consistent weak point hits, triggering Outburst explosions on each accurate shot. Builds combining headshot-focused mods with Outburst convert single-target precision into area clearing without switching to AoE weapons. Mesa with Peacemaker fired at head level generates automatic explosion triggers while the ability maintains fire, benefiting from the area output across enemy wave scenarios.
+Secondary Outburst is purpose-built for melee-to-secondary hybrid builds. Melee builds using Drifting Contact and Blood Rush build high combo quickly during initial melee engagement, then swap to the secondary weapon at peak combo to apply the converted Critical Chance and Damage bonus. A combo of 10x at rank 5 provides +200% Critical Chance and +200% Critical Damage on the secondary -- enough to guarantee red crits on most secondary weapons with moderate base critical chance.
+
+The 30-second window allows extensive secondary weapon use after the swap. Precision secondaries (Pyrana Prime, Pandero, Knell) that deal high damage per shot benefit most from the amplified critical multiplier, delivering concentrated burst damage during the converted-combo window.
 
 ## Notes
 
-Weak point detection requires the projectile to contact the designated hitbox. Explosions from Outburst respect standard AoE damage rules including line-of-sight attenuation against enemies behind cover within the radius. Self-damage from Outburst explosions is subject to standard self-damage rules. The explosion damage type matches the weapon's primary damage type after modding, so elemental combos apply their combined type to the explosion. Critical hits on the initial weak point shot do not affect the explosion damage calculation; the explosion scales from base weapon damage.
+The conversion consumes all Combo Multiplier at the moment of weapon swap -- the melee combo counter resets to zero. The player must rebuild melee combo through melee combat before another swap can apply a fresh Secondary Outburst bonus. The buff applies to the secondary weapon's critical stats for the full 30-second duration regardless of whether the player switches back to melee during that window. Each swap event checks the current combo count at that moment; swapping at low combo yields low bonus, so timing the swap to peak combo maximizes the Secondary Outburst benefit.
 
 ## Sources
 
-- WFCD warframe-items dataset documents explosion damage percentages and radius scaling for Secondary Outburst.
-- Fandom wiki entry for Secondary Outburst provides context on weak point mechanics and precision build integration.
+- WFCD warframe-items dataset provides bonus per Combo unit values per rank and the 30-second duration for Secondary Outburst.
+- Fandom wiki entry for [Secondary Outburst](https://warframe.fandom.com/wiki/Secondary_Outburst) covers combo consumption mechanics and critical stat conversion behavior.

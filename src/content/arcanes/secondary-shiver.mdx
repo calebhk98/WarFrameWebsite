@@ -18,52 +18,56 @@ perRankStats:
   - rank: 5
     stats: { damage: 45 }
 drops:
-- source: Various
-  chance: 1.0
-  rarity: uncommon
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
 sources:
-- url: https://github.com/WFCD/warframe-items
-  accessedAt: '2026-05-20'
-  publisher: WFCD
-- url: https://warframe.fandom.com/wiki/Secondary_Shiver
-  accessedAt: '2026-05-20'
-  publisher: Fandom
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Secondary_Shiver
+    accessedAt: '2026-05-20'
+    publisher: Fandom
 updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Secondary Shiver applies area slowdown around enemies affected by cold status procs from secondary weapons. Unlike the base cold proc that slows only the single target hit, Shiver broadcasts a slow aura from that enemy to nearby targets, extending the crowd control radius beyond the weapon's actual hit zone. This makes cold-focused secondary builds disproportionately effective at controlling dense enemy groups even with weapons that lack innate AoE capability.
+Secondary Shiver increases the damage that enemies with Cold Status take from any source. Each Cold Status stack on an enemy makes them take additional damage per hit, stacking as Cold Status stacks accumulate. The more Cold Status stacks an enemy has, the more damage they take from all subsequent attacks while those stacks are active. This makes Secondary Shiver a damage amplification arcane rather than a direct damage arcane -- it debuffs the enemy to take more damage from everything, not just from the secondary weapon.
 
-Cold status in Warframe reduces movement speed and attack speed of the affected enemy. Secondary Shiver amplifies this by extending the slow to surrounding targets, creating zone-control around each cold-proc hit that limits enemy mobility across a wider area. In objective-based missions (defense, interception, excavation), this crowd control substantially reduces enemy threat while defending targets.
+At rank 5, each Cold Status stack on an enemy causes them to take +45% additional damage. With multiple Cold Status stacks active, the damage amplification becomes substantial.
 
 ## Effect
 
-Each cold status proc applied by the secondary weapon creates a slow aura centered on the proc'd target. Nearby enemies within the aura radius experience the movement and attack speed reduction for the duration. At rank 0, 30% slowdown noticeably reduces enemy advance speed; at rank 5, 75% slowdown nearly halves enemy movement capability, giving players substantial reaction time and reducing incoming damage from melee-range enemies. The slow does not freeze enemies but significantly limits their threat potential in enclosed areas.
+Each Cold Status stack applied to an enemy increases the damage that enemy receives by the listed percentage per stack. At rank 0, each Cold Status stack makes the enemy take +7.5% additional damage from all sources. At rank 5, each Cold Status stack makes the enemy take +45% additional damage. An enemy with 4 Cold Status stacks at rank 5 takes 180% additional damage from all attacks -- nearly tripling effective incoming damage before other modifiers.
+
+The bonus damage amplification applies to all damage sources while Cold Status stacks are active -- secondary weapon fire, primary weapon shots, melee attacks, ability damage, and companion damage all deal amplified damage to the Cold-afflicted enemy.
 
 ## Stats per rank
 
-| Rank | Slow Amount | Duration | Notes |
-|------|-------------|----------|-------|
-| 0 | 30% | 6s | Moderate crowd control coverage |
-| 1 | 42% | 6s | Meaningful advance suppression |
-| 2 | 54% | 6s | Substantial enemy slowdown |
-| 3 | 63% | 6s | Strong area control |
-| 4 | 70% | 6s | Near-maximum slow effectiveness |
-| 5 | 75% | 6s | Maximum area slow per proc |
+| Rank | Additional Damage per Cold Status Stack |
+|------|-----------------------------------------|
+| 0 | +7.5% |
+| 1 | +15% |
+| 2 | +22.5% |
+| 3 | +30% |
+| 4 | +37.5% |
+| 5 | +45% |
 
 ## Acquisition
 
-Secondary Shiver drops from Zariman Ten-Zero missions and Void Cascade rotations. The arcane is obtainable through standard Zariman content accessible after completing Angels of the Zariman. Void Cascade runs across all rotation tiers encounter Shiver as a potential reward. Players building cold-focused secondary weapon builds often farm Zariman content because the proc-based arcanes available there synergize well with elemental secondary builds. Warframe.market provides direct purchase options for players who prefer platinum-based acquisition.
+Secondary Shiver drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
 
 ## Builds that use it
 
-Secondary Shiver excels on cold-focused or combined elemental secondary builds. Weapons with Blast (Heat + Cold) or Magnetic (Cold + Electric) modding still generate cold procs individually, allowing Shiver to trigger even without a pure cold damage build. High-status-chance secondaries that apply cold at rapid rates maintain near-constant slow coverage across enemy groups. Defense mission builds specifically benefit from the area slow because enemies advancing toward an objective experience reduced mobility across the wave. Pairing with cold-augmenting mods increases the frequency and coverage of the slow aura.
+Secondary Shiver is designed for Cold-element secondary weapon builds paired with high-damage primary, melee, or ability follow-up attacks that exploit the damage amplification. The secondary weapon applies Cold Status stacks to the target, and then the player switches to primary weapons, melee, or ability usage to take advantage of the damage bonus. Weapons with high-rate Cold Status application -- secondaries with Cold element modding and high status chance -- build Cold stacks quickly on targets.
+
+The arcane pairs with abilities that apply Cold status (Vauban's Vortex pulling enemies together while Cold stacks accumulate, Frost's Freeze or Snow Globe slowing enemies with Cold procs) to prime enemies before follow-up weapon damage. Builds focused on maximizing Cold Status accumulation through ability and weapon combinations compound Secondary Shiver's per-stack bonus.
 
 ## Notes
 
-The slow aura radius is fixed and not affected by Ability Range mods. Multiple cold procs on different enemies create overlapping aura zones, extending total coverage across larger areas. The cold slow is additive with other movement-speed debuffs but capped at in-game slow limits. Enemies immune to cold or crowd control (Overguard, certain heavy units) resist or ignore the slow effect. The slow applies to movement speed and attack animation speed but does not affect enemy ability usage or projectile speed for ranged-attack enemies.
+Secondary Shiver amplifies damage taken by the enemy based on how many Cold Status stacks they carry at the time of the hit. The amplification is not a damage-to-the-player bonus -- it is a vulnerability debuff on the enemy. Multiple Cold Status sources stacking on the same target (from both the secondary weapon and from ability Cold procs) increase the Cold Status stack count and therefore increase the damage vulnerability multiplier. The bonus applies to all damage dealt to the Cold-affected enemy while the status is active; when Cold Status expires, the vulnerability is removed until Cold is reapplied.
 
 ## Sources
 
-- WFCD warframe-items dataset covers the slow scaling and proc trigger conditions for Secondary Shiver.
-- Fandom wiki entry for Secondary Shiver documents aura behavior and cold proc interaction mechanics.
+- WFCD warframe-items dataset provides additional damage values per Cold Status stack per rank for Secondary Shiver.
+- Fandom wiki entry for [Secondary Shiver](https://warframe.fandom.com/wiki/Secondary_Shiver) covers Cold Status stack counting and damage vulnerability mechanics.

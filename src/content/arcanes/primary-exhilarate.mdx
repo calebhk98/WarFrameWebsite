@@ -32,43 +32,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Primary Exhilarate rewards magazine discipline by stacking a damage bonus on each reload action, accumulating up to three stacks over repeated reload cycles. Unlike reload speed arcanes that accelerate ammunition economy, Exhilarate converts the reload vulnerability window into a damage investment - each reload pause builds toward a larger damage output on the next magazine dump. The 15-second stack duration is generous, allowing aggressive players to maintain full stacks through rapid sequential reloads without losing progress between engagements.
+Primary Exhilarate generates Energy Regeneration stacks when the primary weapon inflicts Impact Status Effects. Each Impact proc adds one Energy Regen stack lasting 10 seconds, accumulating up to 3 stacks. With 3 stacks active, the warframe recovers energy continuously at the combined rate, supplementing energy economy during active primary weapon combat.
 
-Stacking damage arcanes that scale across multiple reloads reward sustained combat over extended engagement windows rather than burst-cycle play. Primary Exhilarate's three-stack limit is achievable within the first three magazines of any mission, after which the player maintains full stacks through continued reloading activity. This makes the arcane most effective in missions with continuous enemy engagement where magazines deplete and reload at consistent intervals.
+At rank 5, each Impact Status proc adds +1.2 Energy/s for 10 seconds, up to 3 stacks for a total of +3.6 Energy/s at full stacks. Over 10 seconds at full stacks, this generates 36 Energy -- a meaningful supplemental income that reduces dependency on energy pads and Zenurik Focus for builds that apply Impact status consistently.
 
 ## Effect
 
-Each reload adds one damage stack lasting 15 seconds. Stacks accumulate up to three times, each refreshing independently. At rank 0, each stack provides 10% damage for a maximum of 30% at three stacks. At rank 5, each stack provides 60% damage for a maximum of 180% at three stacks - nearly doubling the weapon's output damage at full stacks.
+Each Impact Status Effect applied by the primary weapon adds one Energy Regen stack. Stacks last 10 seconds each and accumulate to a maximum of 3. At rank 0, each stack provides +0.2 Energy/s -- 3 stacks provide +0.6 Energy/s. At rank 5, each stack provides +1.2 Energy/s -- 3 stacks provide +3.6 Energy/s. The stacks are independent; each has its own 10-second timer and each new Impact proc refreshes or adds a stack as available.
 
-The 15-second timer per stack is independent, meaning early stacks can expire if reload cycles are slow. Fast-reloading weapons maintain all three stacks more reliably than slow-reloading primaries.
+Weapons with high Impact damage proportion -- most shotguns, some pistols, impact-heavy rifles -- apply Impact status procs regularly through normal fire, generating energy income as a byproduct of dealing damage.
 
 ## Stats per rank
 
-| Rank | Damage per Stack | Max Stacks | Max Total Damage | Stack Duration |
-|------|-----------------|-----------|-----------------|----------------|
-| 0 | +10% | 3 | +30% | 15s |
-| 1 | +20% | 3 | +60% | 15s |
-| 2 | +30% | 3 | +90% | 15s |
-| 3 | +40% | 3 | +120% | 15s |
-| 4 | +50% | 3 | +150% | 15s |
-| 5 | +60% | 3 | +180% | 15s |
+| Rank | Energy Regen per Stack | Max Stacks | Max Energy Regen | Stack Duration |
+|------|----------------------|-----------|-----------------|----------------|
+| 0 | 0.2/s | 3 | 0.6/s | 10s |
+| 1 | 0.4/s | 3 | 1.2/s | 10s |
+| 2 | 0.6/s | 3 | 1.8/s | 10s |
+| 3 | 0.8/s | 3 | 2.4/s | 10s |
+| 4 | 1.0/s | 3 | 3.0/s | 10s |
+| 5 | 1.2/s | 3 | 3.6/s | 10s |
 
 ## Acquisition
 
-Primary Exhilarate drops from Void Cascade Skirmish missions in the Zariman tileset at uncommon rarity. Zariman Ten-Zero content is accessible after completing Angels of the Zariman. Regular Skirmish participation yields Exhilarate drops over multiple sessions. Warframe.market provides an alternative for players who prefer direct platinum purchase over running multiple Zariman skirmishes.
+Primary Exhilarate drops from Void Cascade Skirmish missions in the Zariman tileset at uncommon rarity. Zariman Ten-Zero content is accessible after completing Angels of the Zariman. Regular Skirmish participation yields Exhilarate drops over multiple sessions. Warframe.market provides an alternative for players who prefer direct platinum purchase.
 
 ## Builds that use it
 
-Primary Exhilarate excels on rapid-fire primary weapons that deplete magazines quickly and reload frequently. Soma Prime builds that cycle through magazines at high fire rates reach maximum stacks within the first few engagement windows of a mission and maintain three stacks throughout active combat. High-fire-rate rifles and full-auto primaries with moderate magazine sizes provide the reload frequency needed to sustain maximum stack counts without dedicated reload management.
+Primary Exhilarate suits Impact-heavy primary weapon builds that frequently apply Impact status procs during combat. Shotguns with high Impact proportion (Tigris Prime, Hek, Arca Plasmor) apply Impact procs on most shots, generating consistent energy income through regular fire. Impact-boosted builds using Smite elemental mods or high-Impact weapon configurations maintain stack uptime through active combat engagement.
 
-Builds using reload-speed mods alongside Exhilarate reduce the downtime between stacks, ensuring that each stack is added quickly and that the 15-second window is refreshed before expiration. Frames with reload-boosting abilities - Wisp's Haste Mote, Trinity's Link synergy with reload speed - complement Exhilarate's stack maintenance.
+The energy recovery is supplemental -- 3.6 Energy/s at rank 5 provides roughly 216 Energy over a minute of sustained Impact proc application. Builds that regularly cast costly abilities (Molecular Prime, Rift Torrent, Absorb) benefit from the passive energy income reducing how often energy restore resources are needed. Frames that depend on Energy Siphon or Zenurik already can stack Primary Exhilarate's contribution on top for enhanced total energy recovery rates.
 
 ## Notes
 
-Each stack has its own independent 15-second timer. Adding a second stack does not reset the first stack's timer - both timers run concurrently. If the first stack expires before a fourth reload adds a replacement, the stack count temporarily drops from three to two until the next reload restores it. Weapons with small magazines that reload very frequently maintain more consistent stack uptime than large-magazine weapons with infrequent reload cycles. The damage bonus is additive with base damage mods like Serration, providing a straightforward damage multiplication during full-stack windows.
+Only Impact Status Effects from the primary weapon trigger Primary Exhilarate -- Impact procs from companions, melee weapons, or warframe abilities do not contribute. Each individual Impact proc is an independent trigger, so multi-pellet shotguns that apply several Impact procs per shot can add stacks rapidly. The 3-stack cap limits total simultaneous energy income to 3 stacks worth; additional Impact procs while at 3 stacks refresh existing stack timers rather than adding a fourth stack. At rank 5, achieving and maintaining 3 stacks provides energy income comparable to Zenurik's Energizing Dash bonus but without requiring a Focus school commitment.
 
 ## Sources
 
-- WFCD warframe-items dataset covers damage per stack scaling and reload trigger conditions for Primary Exhilarate.
-- Fandom wiki entry for Primary Exhilarate documents independent stack timer behavior and reload frequency interaction notes.
-
+- WFCD warframe-items dataset provides Energy Regen per stack values per rank for Primary Exhilarate on Impact Status Effect.
+- Fandom wiki entry for [Primary Exhilarate](https://warframe.fandom.com/wiki/Primary_Exhilarate) covers Impact status trigger conditions and stack accumulation behavior.

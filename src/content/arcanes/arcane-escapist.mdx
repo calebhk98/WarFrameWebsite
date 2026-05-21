@@ -33,40 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Escapist provides emergency escape mechanics when health reaches critical levels. This warframe arcane enables clutch survivability through repositioning and temporary stealth, crucial for aggressive playstyles that push into dangerous territory. The combination of teleport displacement and invisibility window gives frames a second chance to survive encounters that would otherwise result in a down state, making Escapist particularly valuable in solo content where revives are unavailable.
+Arcane Escapist is a stack-based survival arcane that builds charges through Mercy Kills and spends those charges to survive lethal damage. Each Mercy Kill on an enemy grants one stack of Escapist up to a maximum of 9 stacks. When the warframe would otherwise die, the arcane consumes 3 stacks and grants an invulnerability window instead, preventing death. At the maximum of 9 stacks, the arcane can prevent death up to 3 times before requiring more Mercy Kills to recharge.
 
-The trigger fires at the last health point, functioning as a last-resort mechanic rather than a proactive tool. At rank 5, the 45% trigger chance means nearly half of all near-death situations provide an escape opportunity. The 6-second invisibility duration provides enough time to reload, heal, or reposition before re-engaging.
+The stack mechanic creates an active resource loop: performing Mercy Kills during combat builds charges, and those charges serve as a death-prevention reserve for dangerous encounters later in the mission. Frames that can efficiently trigger Mercy Kills -- through low-health finishing mechanics or abilities that reduce enemies to finishable thresholds -- generate stacks more consistently.
 
 ## Effect
 
-When the warframe's health reaches zero or the last-hit threshold, Arcane Escapist checks its trigger chance. On success, the frame teleports a short fixed distance in a random direction and enters an invisibility state for the duration. The teleport ignores normal movement blockers, allowing escape through nearby walls or obstacles. The invisibility functions identically to other stealth mechanics: enemies cannot track the frame by sight during the window, though audio-based tracking or AoE attacks still reach the frame.
+Mercy Kills occur when a finisher is performed on an enemy with very low remaining health (typically triggered by the Parazon mercy prompt). Each Mercy Kill adds one Escapist stack displayed in the buff bar. Stacks persist until spent. When the warframe takes fatal damage and has 3 or more stacks available, Escapist automatically consumes 3 stacks and grants invulnerability for the rank-dependent duration. At rank 0, 2 seconds of invulnerability provides a minimal window; at rank 5, 12 seconds allows substantial recovery time.
 
-At rank 0, the 3-second window is sufficient for basic repositioning but may not allow full health recovery without external heals. At rank 5, 6 seconds provides meaningful recovery time alongside healing abilities, health restores, or Trinity Link support. The escape window allows use of abilities during invisibility, enabling frames to cast defensive or healing abilities before the window expires.
+With 9 stacks stored, the arcane can trigger three consecutive death-prevention events without any additional Mercy Kills. Each prevention costs exactly 3 stacks and the invulnerability duration does not stack from multiple events.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Invisibility Duration |
-|------|----------------|----------------------|
-| 0 | 15% | 3s |
-| 1 | 22% | 3.6s |
-| 2 | 30% | 4.2s |
-| 3 | 37% | 4.8s |
-| 4 | 41% | 5.4s |
-| 5 | 45% | 6s |
+| Rank | Stacks Consumed per Death Prevention | Invulnerability Duration | Max Stacks |
+|------|-------------------------------------|------------------------|-----------|
+| 0 | 3 | 2s | 9 |
+| 1 | 3 | 4s | 9 |
+| 2 | 3 | 6s | 9 |
+| 3 | 3 | 8s | 9 |
+| 4 | 3 | 10s | 9 |
+| 5 | 3 | 12s | 9 |
 
 ## Acquisition
 
-Arcane Escapist drops from Zariman Void Fissure at 4% and Void Cascade rotation B at 2%. Both sources provide access through standard Zariman Ten-Zero content, which becomes available after completing Angels of the Zariman. The 4% drop rate from Void Fissure runs means players accumulate copies over a moderate number of runs. Warframe.market offers direct purchase for players who prefer trading over farming.
+Arcane Escapist drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation B at 2%. Both sources are available after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
 
 ## Builds that use it
 
-Arcane Escapist excels on mobile, hit-and-run playstyle frames that operate at low health thresholds. Frames with no innate escape mechanics - Excalibur, Volt, Ember - benefit from the added safety net during aggressive pushes. Solo Steel Path content where enemy density and damage output is high rewards the insurance value of Escapist. Frames that rely on finishers or close-range combat and frequently take damage in melee range extract the most value because the trigger fires more regularly under sustained incoming damage. Pairing with burst-heal abilities (Harrow's Thurible, Nezha's Warding Halo heal on strip) maximizes the recovery value of the escape window.
+Arcane Escapist fits builds that regularly perform Mercy Kills as part of their combat routine. Frames using the Parazon system frequently, such as builds focused on Requiem execution chains on Kuva Liches or Sister of Parvos, generate Escapist stacks as a byproduct of their mechanic. Steel Path builds that push into high-enemy-density content can store 9 stacks during the early stages of a survival mission and spend them on death-prevention during scaling difficulty spikes.
+
+The arcane is less useful in content where Mercy Kills rarely occur, such as boss-only encounters or missions with few eligible enemies. Frames that can reliably keep 9 stacks loaded enter dangerous content with an effective 3-death buffer.
 
 ## Notes
 
-The teleport direction is random and cannot be aimed. In enclosed corridors or small rooms, the teleport may not provide substantial displacement. Enemies that use area-of-effect attacks continue damaging the frame through the invisibility window if the frame remains within the AoE radius. The trigger only fires once per health drop event; rapid consecutive hits that reduce health to zero without Escapist firing do not chain-trigger. The arcane does not protect against instant-kill or execution mechanics in certain mission types.
+Mercy Kill eligibility is determined by the Parazon mercy prompt appearing over an enemy, not by arbitrary health threshold. Not all enemies are mercy-eligible. The 3-stack cost is fixed regardless of rank; rank only affects the invulnerability duration. The 9-stack cap limits total stored death preventions to 3. Stacks do not reset on down state if the death was prevented by Escapist itself -- the invulnerability bypasses the down state entirely, preserving remaining stacks. Invulnerability from Escapist and abilities such as Rhino Iron Skin do not stack.
 
 ## Sources
 
-- WFCD warframe-items dataset documents trigger conditions and invisibility duration scaling for Arcane Escapist.
-- Fandom wiki entry for Arcane Escapist provides additional context on teleport behavior and solo play applications.
+- WFCD warframe-items dataset provides invulnerability duration per rank and the 9-stack maximum for Arcane Escapist.
+- Fandom wiki entry for [Arcane Escapist](https://warframe.fandom.com/wiki/Arcane_Escapist) covers Mercy Kill trigger conditions and the 3-stack consumption mechanic.

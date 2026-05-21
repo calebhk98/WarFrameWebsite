@@ -32,40 +32,46 @@ updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Theorem Contagion spreads toxin contamination from operator void blasts to nearby enemies, converting the operator's Void Blast ability into a combined damage and status tool. Void Blast is triggered by the operator sliding into enemies or using the designated void ability key; Contagion converts each blast into a toxin proc broadcast that affects multiple targets simultaneously rather than relying on individual hit detection.
+Theorem Contagion is part of the Theorem-Residual arcane pairing system introduced with the Necramech and Isolation Vault content. While Residual arcanes (Residual Boils, Residual Malodor, Residual Shock, Residual Viremia) create elemental zones from Kitgun kills, Theorem Contagion activates when the player stands inside those Residual zones. Standing in any Residual Arcane zone causes orbiting globes to spawn around the player every 2 seconds. Each globe autonomously seeks and strikes the nearest enemy within 15 meters, dealing 150 flat damage and applying a vulnerability debuff that increases the target's damage taken from that globe's elemental type.
 
-Toxin damage bypasses shields and deals damage directly to enemy health, making Theorem Contagion particularly effective against Corpus enemies and shielded elite units. The operator's Void Blast originates from a mobile, difficult-to-target entity, allowing players to apply toxin procs from positioning that warframe attacks might not reach.
+At rank 5, each globe strike increases the target's vulnerability to the globe's element by 200% for 6 seconds. Multiple globes orbiting simultaneously generate multiple strikes per second against nearby enemies, layering vulnerability debuffs rapidly.
 
 ## Effect
 
-Each Void Blast from the operator triggers the contagion spread. Nearby enemies within a fixed radius receive toxin status procs along with void damage calculated as a percentage of the operator's base void damage. At rank 0, 4 enemies at 50% void damage receive procs; at rank 5, 8 enemies at 250% void damage are affected. The toxin proc duration follows standard toxin mechanics and stacks with additional procs from subsequent void blasts.
+While standing inside a zone created by any Residual Arcane, Theorem Contagion generates one orbiting globe every 2 seconds. Each globe targets the nearest enemy within 15 meters and strikes that enemy for 150 damage. The strike applies a vulnerability debuff that increases the enemy's susceptibility to the globe's specific damage type by the rank-dependent percentage for 6 seconds.
 
-Operator void damage scales with Focus school bonuses and amp modding, making stronger operators deal more absolute toxin damage through Contagion than weaker operators using the same arcane.
+At rank 0, each globe strike increases enemy vulnerability to its damage type by 25% for 6 seconds. At rank 5, each globe strike increases vulnerability by 200% for 6 seconds. The damage type of each globe matches the Residual Arcane zone the player was standing in when the globe spawned -- Residual Boils zones produce Heat globes, Residual Malodor zones produce Cold globes, Residual Shock zones produce Electricity globes, and Residual Viremia zones produce Toxin globes.
+
+Globes persist for 30 seconds after the player leaves the Residual zone, continuing to seek and strike enemies during that window. Multiple Residual zones of different types generate globes with different elemental types if the player passes through consecutive zones.
 
 ## Stats per rank
 
-| Rank | Enemies Affected | Void Damage | Notes |
-|------|-----------------|-------------|-------|
-| 0 | 4 | 50% | Small group coverage |
-| 1 | 5 | 100% | Moderate spread |
-| 2 | 6 | 150% | Good area coverage |
-| 3 | 7 | 200% | Strong group toxin |
-| 4 | 7 | 225% | High-damage spread |
-| 5 | 8 | 250% | Maximum coverage |
+| Rank | Vulnerability per Globe Strike | Globe Duration After Leaving Zone | Damage per Strike |
+|------|-------------------------------|----------------------------------|-------------------|
+| 0 | +25% | 30s | 150 |
+| 1 | +50% | 30s | 150 |
+| 2 | +75% | 30s | 150 |
+| 3 | +100% | 30s | 150 |
+| 4 | +150% | 30s | 150 |
+| 5 | +200% | 30s | 150 |
 
 ## Acquisition
 
-Theorem Contagion drops from Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade runs encounter Contagion as part of the Theorem arcane series. The Theorem series arcanes (Contagion, Infection, Demulcent) are often farmed together as they share Zariman drop sources. Warframe.market provides direct purchase options for targeted acquisition.
+Theorem Contagion drops from various Necralisk Isolation Vault bounties and Deimos-adjacent content at uncommon rarity. The arcane is accessible through Entrati standing after completing Heart of Deimos. Warframe.market provides direct purchase options for targeted acquisition.
 
 ## Builds that use it
 
-Theorem Contagion benefits operator-active builds where Void Blast is used intentionally rather than incidentally. Unairu school builds that use void blast for armor stripping (Caustic Strike) apply Contagion procs during the same action without additional effort. Madurai school builds that void sling into enemy groups can trigger Contagion through blast contact with multiple enemies simultaneously. Zenurik builds focused on energy restoration can trigger Contagion through incidental void blasts during energy restoration dashes. High-amp-damage builds amplify Contagion's 250% void damage multiplier through operator-specific amp upgrades.
+Theorem Contagion is designed for the Theorem-Residual pairing system -- it provides no benefit unless paired with at least one Residual arcane that creates elemental zones. A Kitgun build using Residual Shock (Electricity zone creator) paired with Theorem Contagion in the operator slot generates Electricity globes while the player stands in the Shock zone. Those globes apply a +200% Electricity vulnerability debuff to nearby enemies, amplifying all subsequent Electricity damage against debuffed targets significantly.
+
+The strongest setups use multiple Residual arcanes to create overlapping zones of different elements. A player with two Residual arcanes can alternate zone types, building globes of mixed elements that apply vulnerability debuffs of multiple damage types simultaneously. Running Kitgun builds through Necramech content and Isolation Vaults generates consistent zone coverage from the Residual kills, keeping Theorem Contagion globes actively orbiting throughout the engagement.
+
+The 30-second globe persistence after leaving a zone means players can generate a stock of orbiting globes inside a Residual zone and then move to engage enemies outside the zone, maintaining globe activity during the 30-second window.
 
 ## Notes
 
-Void Blast contact requires the operator to physically intersect with enemies during the slide attack or void ability activation. Void Blast has limited range; Contagion spreads from the blast point outward, not from the operator position. The spread radius is fixed and does not benefit from warframe or operator Range mods. Toxin procs from Contagion stack with toxin procs from weapon or companion sources on the same target. Void damage from Contagion bypasses enemy armor calculations, making it consistently effective against armored units.
+Theorem Contagion globes seek the nearest enemy within 15 meters at the moment of strike -- the targeting updates each time a globe fires, not when the globe spawns. If no enemy is within 15 meters, the globe does not fire but continues orbiting until a target enters range or the globe expires. The vulnerability debuff from each globe strike is specific to that globe's elemental type; a Residual Boils Heat globe increases Heat vulnerability while a Residual Malodor Cold globe increases Cold vulnerability on the same target. The 6-second debuff duration from each strike allows rapid globe accumulation to maintain continuous vulnerability windows on tanky or high-health targets. Globes spawn at a rate of one per 2 seconds while inside the zone, creating up to 15 orbiting globes during a 30-second zone stay before the 30-second post-zone persistence begins.
 
 ## Sources
 
-- WFCD warframe-items dataset documents spread targets and void damage multipliers for Theorem Contagion.
-- Fandom wiki entry for Theorem Contagion provides context on void blast mechanics and the Theorem arcane series.
+- WFCD warframe-items dataset provides globe generation rate, base damage, vulnerability percentage per rank, and post-zone persistence duration for Theorem Contagion.
+- Fandom wiki entry for [Theorem Contagion](https://warframe.fandom.com/wiki/Theorem_Contagion) covers Residual-Theorem zone interaction mechanics and globe targeting behavior.

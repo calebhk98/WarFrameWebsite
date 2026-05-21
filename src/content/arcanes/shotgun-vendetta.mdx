@@ -32,38 +32,44 @@ updatedAt: '2026-05-20'
 ---
 ## Overview
 
-Shotgun Vendetta grants stacking reload speed bonuses on shotgun kills, rewarding consecutive kills with progressively faster reload cycles. The stacking mechanic creates a momentum system where early kills in an engagement enable faster reload during subsequent shots, reducing the total time lost to reloading as the combat sequence progresses. Shotguns with slow base reload speeds - which are typically the highest-damage variants - benefit the most from Vendetta's reload reduction during active combat.
+Shotgun Vendetta rewards point-blank shotgun kills with a simultaneous boost to both Multishot and Reload Speed for 15 seconds. The trigger condition requires the kill to occur within 5 meters of the target, so the arcane favors close-quarters shotgun play over long-range slug builds. The buff covers two distinct stats at once -- Multishot increases the average number of pellets per shot, and Reload Speed reduces the time lost between magazines -- making a single kill in close range translate into both higher damage output and faster cycling for the next 15 seconds.
 
-Shotguns in Warframe typically deal high per-shot damage at the cost of slow reload animations and small magazine sizes. Vendetta directly addresses the primary weakness of high-damage shotguns by reducing the time between shots when kills are being maintained, enabling sustained fire rates that approach those of faster-loading but lower-damage alternatives.
+At rank 5, a qualifying kill within 5 meters grants +180% Multishot and +75% Reload Speed for 15 seconds. Those 15 seconds give a wide window to chain follow-up shots against additional enemies before the buff expires.
 
 ## Effect
 
-Each shotgun kill checks and applies a reload speed stack. Up to three stacks accumulate independently, with each providing the per-rank reload speed bonus. At rank 0, each stack grants 25% reload speed (maximum 75% at three stacks); at rank 5, each stack grants 125% reload speed (maximum 375% at three stacks). Three active stacks at rank 5 enable near-instant reloads on even the slowest shotguns. Stacks persist for a fixed duration from each individual stack's trigger time; maintaining kill pace keeps all three stacks active throughout extended combat.
+On any shotgun kill where the target dies within 5 meters of the player, Shotgun Vendetta activates a 15-second buff granting both Multishot and Reload Speed bonuses. At rank 0, the buff provides +30% Multishot and +12.5% Reload Speed. At rank 5, the buff provides +180% Multishot and +75% Reload Speed.
+
+Multishot adds additional pellets to each shot fired -- a +180% Multishot bonus means each trigger pull fires roughly 2.8x the base pellet count, dramatically increasing damage per shell. Reload Speed accelerates the reload animation -- +75% Reload Speed cuts a 3-second reload to under 1.8 seconds. Both bonuses apply simultaneously during the 15-second window from the triggering kill. If another qualifying kill occurs before the buff expires, the 15-second timer resets from the new kill.
 
 ## Stats per rank
 
-| Rank | Reload Speed per Stack | Max Stacks | Max Total Bonus | Notes |
-|------|----------------------|-----------|-----------------|-------|
-| 0 | +25% | 3 | +75% | Mild reload improvement |
-| 1 | +50% | 3 | +150% | Moderate improvement |
-| 2 | +75% | 3 | +225% | Strong reload reduction |
-| 3 | +100% | 3 | +300% | Very fast reload |
-| 4 | +112% | 3 | +336% | Near-instant at max |
-| 5 | +125% | 3 | +375% | Near-instant reload |
+| Rank | Multishot Bonus | Reload Speed Bonus | Duration |
+|------|-----------------|--------------------|----------|
+| 0 | +30% | +12.5% | 15s |
+| 1 | +60% | +25% | 15s |
+| 2 | +90% | +37.5% | 15s |
+| 3 | +120% | +50% | 15s |
+| 4 | +150% | +62.5% | 15s |
+| 5 | +180% | +75% | 15s |
 
 ## Acquisition
 
-Shotgun Vendetta drops from Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Regular Void Cascade rotation rewards include Vendetta as a shotgun-focused arcane. Players running shotgun-primary builds often farm Zariman content because it offers multiple shotgun arcanes simultaneously. Warframe.market lists Vendetta at accessible plat values for direct purchase.
+Shotgun Vendetta drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
 
 ## Builds that use it
 
-Shotgun Vendetta excels on high-damage, slow-reloading shotguns like the Tigris Prime and Astilla Prime where reload speed is the primary DPS bottleneck. Kill-focused shotgun builds in mobile missions (extermination, capture) maintain constant kill pace and maximize three-stack uptime throughout the run. Defense and survival builds benefit from rapid stack building during initial enemy waves, entering later waves with maximum reload speed already sustained. Pairing with Primed Fast Hands (reload speed mod) creates compound reload reduction that effectively eliminates reload gaps at three stacks.
+Shotgun Vendetta is built for high-damage shotguns that close range quickly and chain kills in close quarters. Weapons like the Tigris Prime and Tenet Arca Plasmor deal massive per-shot damage but carry small magazines and slow reload animations. Vendetta's Multishot bonus multiplies the pellet count during the buff window, and the Reload Speed bonus reduces the downtime between shots -- both advantages are large at rank 5.
+
+The 5-meter kill requirement pairs naturally with Titania, Rhino, or any mobility frame that closes to melee range before firing. Builds using shotguns with high base status chance can exploit the extra pellets from Multishot to apply status procs faster during the buff window, extending the damage advantage to status-based procs as well as direct pellet damage.
+
+Pairing Shotgun Vendetta with Primed Fast Hands stacks reload speed bonuses, producing near-instant reloads on the slowest-reloading shotguns during the buff window. High-fire-rate shotguns with low magazine size -- Astilla, Exergis -- burn through magazines quickly and benefit from the reload speed component most in sustained combat.
 
 ## Notes
 
-Reload speed bonus is additive with Primed Fast Hands and other reload speed mods. The stacking works independently per stack, meaning the first stack triggers from one kill, the second from a subsequent kill, and the third from a third kill - maintaining three stacks requires three separate kills within each stack's individual duration. If kill pace drops below the stack refresh rate, stacks expire and DPS returns to base. Vendetta does not affect weapon switch speed or holster speed; only the actual reload animation is accelerated.
+The 5-meter kill proximity requirement must be met at the moment of the kill -- if the enemy is damaged at range and walks into the kill zone, the death location at the moment health reaches 0 determines whether the trigger activates. The Multishot buff is additive with Multishot mods (Hell's Chamber, Vigilante Armaments); it increases the total Multishot pool. The buff timer refreshes on each qualifying kill, so rapid point-blank kills maintain the Multishot and Reload Speed bonus continuously. The buff does not persist across weapon switches -- swapping to a primary or melee weapon during the 15-second window does not extend or retain the bonus when switching back to the shotgun.
 
 ## Sources
 
-- WFCD warframe-items dataset covers the stacking mechanic and reload speed scaling for Shotgun Vendetta.
-- Fandom wiki entry for Shotgun Vendetta documents kill pace requirements and reload interaction notes.
+- WFCD warframe-items dataset provides Multishot and Reload Speed values per rank and the 15-second buff duration for Shotgun Vendetta.
+- Fandom wiki entry for [Shotgun Vendetta](https://warframe.fandom.com/wiki/Shotgun_Vendetta) covers the 5-meter proximity kill trigger and buff refresh behavior.

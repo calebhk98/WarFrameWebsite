@@ -34,33 +34,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Arcane Blessing is a Warframe arcane that provides reactive group healing whenever the Tenno takes health damage. The arcane triggers on damage threshold events, granting a percentage chance to restore a health pool to both the player and nearby squadmates. Unlike utility arcanes tied to specific playstyles, Blessing is universally applicable - it provides value on every frame build simply by taking damage during normal gameplay. The healing scales from 50 health at rank 0 to 300 at rank 5, with trigger chance climbing from 10% to 35%. This makes Blessing a staple defensive arcane for coordinated squad play, particularly in endurance missions where consistent group sustain prevents wipes. The arcane is especially valuable for support frames or tank-oriented builds that intentionally draw aggro.
+Arcane Blessing permanently increases maximum health each time the warframe picks up a health orb, stacking up to 50 times. Each health orb pickup adds a flat health bonus to the warframe's maximum health pool. With 50 stacks fully built, the arcane provides a permanent bonus of up to 1200 maximum health at rank 5, significantly expanding the warframe's health buffer through routine health orb collection during missions.
 
-## Effect per rank
+Unlike one-time stat bonuses, Arcane Blessing requires active orb collection to build stacks. The stacks persist for the duration of the mission once accumulated, creating a progression arc where the warframe becomes progressively tankier as health orbs are collected. The bonus resets between missions.
 
-Arcane Blessing triggers whenever the Tenno takes health damage and heals a scaling amount based on rank. The trigger chance increases from 10% at rank 0 to 35% at rank 5, meaning higher ranks activate more frequently during intense combat. Healing values scale linearly: rank 0 restores 50 health per proc, increasing by 50 per rank to a maximum of 300 at rank 5. The healing applies to the Tenno and all allies within a fixed radius (approximately 15 meters), making it effective for squad healing without direct ability casts. Multiple Blessing procs cannot overlap; only one instance heals per damage event. The arcane's healing radius is smaller than Trinity's healing range but applies to all teammates without requiring ability usage, making it pure passive utility.
+## Effect
 
-| Rank | Trigger chance | Healing per proc | Squad range |
-|------|---------------:|----------------:|------------|
-| 0 | 10% | 50 | Yes |
-| 1 | 15% | 100 | Yes |
-| 2 | 20% | 150 | Yes |
-| 3 | 25% | 200 | Yes |
-| 4 | 30% | 250 | Yes |
-| 5 | 35% | 300 | Yes |
+Each health orb pickup adds one stack of Blessing's maximum health bonus. Stacks accumulate up to 50 and each stack adds the rank-dependent health value. At rank 0, each orb adds +4 max health (200 total at 50 stacks). At rank 5, each orb adds +24 max health (1200 total at 50 stacks). The health bonus applies to both the base maximum health and to Vitality-scaled health, providing proportionally larger absolute increases on high-health frames.
+
+Health orbs picked up beyond the 50-stack cap do not add further stacks but still restore health normally. The stacks display in the buff bar as a counter. Players who actively seek out health orbs through Equilibrium or who play in orb-dense environments accumulate stacks faster than players who rarely encounter health orbs.
+
+## Stats per rank
+
+| Rank | Max Health per Stack | Max Stacks | Total Max Health Bonus |
+|------|---------------------|-----------|----------------------|
+| 0 | +4 | 50 | +200 |
+| 1 | +8 | 50 | +400 |
+| 2 | +12 | 50 | +600 |
+| 3 | +16 | 50 | +800 |
+| 4 | +20 | 50 | +1000 |
+| 5 | +24 | 50 | +1200 |
 
 ## Acquisition
 
-Arcane Blessing is a rare drop exclusive to Lua/Circulus Survival runs on Rotation C, with an uncommon (10.2%) drop rate. This makes the arcane substantially rarer than Duviri-farmed varieties, requiring dedicated survival runs or coordination with farm squads. Each Rotation C cycle in Circulus demands approximately 20 minutes of survival time, making efficient farming dependent on squad survivability and damage. For solo players, this arcane is less accessible than others, as Lua Survival scaling demands specific warframe builds and defensive planning. Squad-based farming with support frames (Trinity, Protea, Octavia) dramatically reduces acquisition time by enabling consistent 20+ minute runs without team deaths. The arcane's rarity reflects its powerful passive utility; unlike Consequence or Nullifier which fill niche roles, Blessing is universally beneficial across all playstyles.
+Arcane Blessing drops from Lua Circulus Survival rotation C at a 10.2% uncommon rate. Circulus Survival on Lua is the sole source; the arcane is not available from Zariman, Eidolons, or other arcane drop pools. Rotation C requires reaching 20 minutes in a single Survival run. Warframe.market provides direct purchase for players who prefer platinum acquisition over dedicated Lua farming.
 
-## Best on
+## Builds that use it
 
-Arcane Blessing excels on support frames and defensive builds that already position themselves to draw fire. Rhino with Iron Skin and Stomp creates a healing field for the entire squad while tanking damage. Trinity Prime gains another layer of group sustain without competing with her energy-based healing abilities. Protea's Temporal Anchor can be coordinated with Blessing procs to create healing bursts during critical moments. Octavia provides passive support through Amp and Metronome while Blessing acts as an emergency group heal. The arcane is also valuable on DPS frames in coordinated squads, where the Blessing wearer draws enemy fire while dealing damage, creating a symbiotic tank/healer hybrid. Tank frames like Hildrun or Grendel benefit most, as their high health pools and armor ensure frequent damage hits that trigger Blessing procs.
+Arcane Blessing fits health-tank builds that accumulate health orbs naturally during gameplay. Inaros with Equilibrium equipped converts all energy orb pickups into health orbs, generating stacks rapidly in orb-dense content. Nekros with Desecrate looting health orbs from killed enemies stacks Blessing quickly in Survival or similar kill-heavy missions. Frames that run Arcane Pulse or Arcane Healing alongside Blessing on health-orb builds gain additional healing benefits from the same orb pickup events.
+
+The arcane is most impactful on frames where maximum health is already high -- the additional 1200 health at rank 5 is proportionally more meaningful on Inaros at 5000+ health than on low-health frames where 1200 points represents a larger fraction of total effective health.
 
 ## Notes
 
-Arcane Blessing heals only when the Tenno's health pool takes damage; invulnerability periods (Warding Halo, Prism, Null Star) do not trigger procs even if shields are damaged. The healing applies immediately upon trigger without delay, making it responsive to burst damage windows. Multiple squad members can equip Blessing independently; stacking versions do not interfere and can create overlapping heals during intense firefights. The 15-meter radius is fixed and cannot be extended by range mods or frame abilities. Unlike Trinity's Bless, this arcane's healing does not scale with ability strength or range mods; the healing values in the rank table are absolute. The arcane is particularly effective in Void Fissure endless missions where health damage accumulates steadily, triggering Blessing far more frequently than in typical star chart missions.
+Stacks reset at mission end and must be rebuilt at the start of each new mission. Players who die during a mission but are revived retain their stacks. Health orbs picked up during invulnerability phases (Iron Skin, Warding Halo) still count toward stack accumulation. The maximum health increase is flat, not percentage-based; it does not scale with Vitality or other health-multiplying mods. Overguard absorbs damage before health, so frames that maintain Overguard for extended periods take fewer health hits and collect fewer health orbs, potentially slowing stack accumulation.
 
 ## Sources
 
-Arcane Blessing acquisition and mechanical data derive from WFCD warframe-items and the WARFRAME Wiki. The arcane was introduced with a Lua lore update and has received no mechanical changes since implementation. Lua Survival drop tables remain consistent across seasonal cycles; the 10.2% Uncommon drop rate on Rotation C is the sole viable source for this arcane.
+- WFCD warframe-items dataset provides health-per-stack and maximum stack count values per rank for Arcane Blessing.
+- Fandom wiki entry for [Arcane Blessing](https://warframe.fandom.com/wiki/Arcane_Blessing) covers drop location and health orb stack accumulation mechanics.

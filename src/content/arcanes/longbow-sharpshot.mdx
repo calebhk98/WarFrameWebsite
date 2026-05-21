@@ -33,40 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Longbow Sharpshot is a legendary bow-specific arcane that grants massive critical chance and critical multiplier bonuses on charged shots. The dual bonus transforms moderate-crit bows into extreme damage dealers during the 10-second buff window, with both crit chance and multiplier scaling simultaneously. At rank 5, the +150% crit chance and x3.0 multiplier bonus enable even bows with 25% base crit to reach near-certain red crit territory during the window.
+Longbow Sharpshot rewards precision aim by granting a damage bonus to the next shot after landing a Headshot. Each headshot charges the next shot with additional damage, creating a momentum system where accurate fire builds into progressively stronger follow-up shots. For weapons where headshots are achievable -- sniper rifles, bows, and semi-automatic precision weapons -- Sharpshot provides a consistent damage multiplier that rewards targeting discipline.
 
-The charged shot trigger is inherent to bow mechanics - all bows require holding fire to reach maximum power - making Sharpshot compatible with any bow without requiring playstyle adjustments. Players who already aim for precise charged shots naturally activate Sharpshot's trigger on every well-timed release.
+At rank 5, a headshot grants +300% damage to the next shot. The follow-up shot deals four times its normal damage, making the headshot-then-next-shot sequence the primary combat pattern for weapons running Sharpshot.
 
 ## Effect
 
-Each charged shot from a bow weapon checks the Sharpshot trigger chance. On success, both critical chance and critical multiplier bonuses activate simultaneously for 10 seconds. At rank 0, +50% crit chance and x1.5 multiplier are meaningful improvements; at rank 5, +150% crit chance and x3.0 multiplier create extreme critical hit values. The multiplier bonus applies on top of existing Vital Sense and other critical multiplier mods, enabling bow weapons to reach crit multiplier values of 5x-8x during active windows.
+When the equipped weapon lands a headshot, the next shot from that weapon gains the listed damage bonus. At rank 0, +50% damage on the following shot provides a meaningful but modest boost. At rank 5, +300% bonus damage on the next shot effectively quadruples the output of that follow-up shot. The bonus applies once to the single next shot, then resets -- the player must land another headshot to charge the bonus again.
 
-The 10-second buff duration covers multiple charged shots at standard charge speeds, maintaining the bonus across sequential targets in a combat sequence.
+For high-damage-per-shot weapons, the +300% bonus represents an extreme burst: a shot dealing 10000 base damage becomes 40000 during the charged follow-up. Precision weapons that can reliably chain headshots in sequence maintain consistent elevated damage output through repeated Sharpshot cycles.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Crit Chance Bonus | Crit Multiplier Bonus | Duration |
-|------|----------------|-------------------|-----------------------|----------|
-| 0 | 10% | +50% | x1.5 | 10s |
-| 1 | 15% | +75% | x1.75 | 10s |
-| 2 | 20% | +100% | x2.0 | 10s |
-| 3 | 25% | +125% | x2.25 | 10s |
-| 4 | 27% | +137% | x2.625 | 10s |
-| 5 | 30% | +150% | x3.0 | 10s |
+| Rank | Next Shot Damage Bonus |
+|------|-----------------------|
+| 0 | +50% |
+| 1 | +100% |
+| 2 | +150% |
+| 3 | +200% |
+| 4 | +250% |
+| 5 | +300% |
 
 ## Acquisition
 
-Longbow Sharpshot is a legendary bow arcane dropping from Zariman Void Fissure at 5% and Void Cascade rotation B at 2%. The 5% drop rate from Void Fissure is among the higher rates for legendary arcanes, making Sharpshot more accessible than many comparable tier arcanes. Warframe.market lists Sharpshot at elevated plat values reflecting its power level and bow-specific niche.
+Longbow Sharpshot drops from Zariman Void Fissure rewards at 5% and Void Cascade rotation B at 2%. Access requires completing Angels of the Zariman. The 5% drop rate from Void Fissure is among the higher rates for Zariman weapon arcanes, making Sharpshot accessible through regular Zariman Void Fissure participation. Warframe.market lists Sharpshot for players preferring direct purchase.
 
 ## Builds that use it
 
-Longbow Sharpshot is essential for crit-focused bow builds. The Dread, Paris Prime, and Lenz with crit-focused modding reach guaranteed orange and red crits during Sharpshot windows, enabling single-shot eliminations on heavily armored enemies. Builds using Amalgam Serration (primary damage mod) alongside Sharpshot's crit bonus push bow damage to extreme single-hit values during the buff. Warframe abilities that immobilize enemies (Rhino Stomp, Vauban Bastille) create opportunity windows for multiple charged Sharpshot-buffed headshots during the stasis period.
+Longbow Sharpshot is most effective on precision weapons that can consistently land headshots -- the Tigris Prime fired at head level, sniper rifles with sufficient zoom, Paris Prime hitting precise aim points, and semi-auto rifles in controlled bursts. Headshot-capable builds that aim deliberately rather than spray create the headshot-to-bonus-shot cycle that maximizes Sharpshot value.
+
+Frames that immobilize enemies create stationary headshot opportunities: Rhino's Stomp, Vauban's Bastille, and Ivara's Sleep Arrow all provide windows where precise headshots can be landed reliably, making the bonus shot consistently available. Builds with high critical multiplier compound with Sharpshot's damage bonus, as the next-shot bonus applies to the weapon's total modified damage including critical hits.
 
 ## Notes
 
-The trigger fires on completing a charged shot, not on initiating the charge. Holding without releasing does not trigger Sharpshot; completing the charged release does. The 30% trigger chance at rank 5 means approximately one in three charged shots activates the buff. During a 10-second buff window, subsequent charged shots that would trigger Sharpshot simply refresh the duration rather than stacking additional crit chance. Crit chance above 100% produces orange crits (2x multiplier); above 200% produces red crits (3x multiplier) before Sharpshot's bonus is applied.
+The bonus applies to the next single shot fired after a headshot -- it does not persist for multiple shots or have a duration timer. If the player switches weapons after a headshot, the bonus may not transfer to the new weapon. Weapons that fire multiple projectiles per trigger pull (shotguns, multishot builds) apply the bonus damage to all pellets of the single next trigger pull. The headshot must be registered by the game's hit detection -- shots that clip non-critical areas of the enemy head model may not register as headshots depending on the enemy type and armor model.
 
 ## Sources
 
-- WFCD warframe-items dataset provides drop chance values and per-rank stat tables for Longbow Sharpshot.
-- Fandom wiki entry for Longbow Sharpshot documents charged shot mechanics and bow build synergies.
+- WFCD warframe-items dataset provides damage bonus values per rank for Longbow Sharpshot on Headshot.
+- Fandom wiki entry for [Longbow Sharpshot](https://warframe.fandom.com/wiki/Longbow_Sharpshot) covers headshot detection conditions and next-shot bonus behavior.

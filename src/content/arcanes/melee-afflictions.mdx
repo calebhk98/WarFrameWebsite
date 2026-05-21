@@ -33,43 +33,42 @@ updatedAt: "2026-05-20"
 ---
 ## Overview
 
-Melee Afflictions converts any status proc from a melee weapon into a full-spectrum status event, simultaneously applying every status type to the target when the arcane triggers. A single slash proc, heat proc, or viral proc can therefore cascade into a target being afflicted with cold, toxin, electricity, radiation, magnetic, blast, gas, and corrosive simultaneously. This transforms melee status weapons from selective proc tools into universal debuff applicators with no elemental build restrictions.
+Melee Afflictions amplifies status stacks on enemies when they are knocked down or flung by melee attacks. When a melee attack launches or slams an enemy into a knockdown or ragdoll state, all active Status Effects on that enemy instantly gain additional stacks beyond their current count. This rewards melee combat styles that combine status application with knockdown-inducing attacks, as the knockdown event multiplies the status accumulation that would otherwise only grow through repeated proc applications.
 
-The simultaneous application of multiple status types is particularly powerful against enemies with layered defenses. Corrosive strips armor while viral halves health. Cold reduces movement speed while heat panics and deals damage over time. A single Afflictions trigger creates an overlapping debuff field that leaves the target compromised across multiple defensive layers at once, regardless of which status type initially triggered the arcane.
+At rank 5, enemies receive 6 additional status stacks on each knockdown or fling. A Viral proc that had accumulated 2 stacks (25% health reduction) instantly jumps to 8 stacks on knockdown -- significantly increasing the status effect's impact.
 
 ## Effect
 
-Any status proc from the melee weapon triggers a chance check for Afflictions. On success, the target receives all status types simultaneously for the listed duration. At rank 0, a 10% trigger chance applies all statuses for 6 seconds - a rare but devastating event during high-status melee engagements. At rank 5, a 30% trigger chance with a 10-second duration activates roughly once in three status procs, providing frequent full-spectrum debuffing during sustained melee combat.
+When a melee attack knocks down or flings an enemy currently affected by one or more Status Effects, all active status effects on that enemy gain the listed number of additional stacks. At rank 0, +1 additional stack per knockdown/fling is a modest amplification. At rank 5, +6 additional stacks per knockdown/fling is a substantial stack injection that pushes status effects well beyond what normal repeated application would achieve in the same timeframe.
 
-The duration applies to all simultaneously applied statuses equally - they share the trigger duration rather than each running on its individual proc timer.
+The additional stacks apply to every active Status Effect on the target simultaneously. An enemy with Viral, Slash, and Heat all active receives +6 stacks to each of those three status types in a single knockdown event.
 
 ## Stats per rank
 
-| Rank | Trigger Chance | Status Duration | Notes |
-|------|----------------|-----------------|-------|
-| 0 | 10% | 6s | Occasional full-debuff event |
-| 1 | 15% | 7s | Increasing proc frequency |
-| 2 | 20% | 8s | Reliable combat disruption |
-| 3 | 25% | 9s | Strong status saturation |
-| 4 | 27% | 9.5s | Near-maximum coverage |
-| 5 | 30% | 10s | Maximum debuff uptime |
+| Rank | Additional Status Stacks on Knockdown/Fling |
+|------|---------------------------------------------|
+| 0 | +1 |
+| 1 | +2 |
+| 2 | +3 |
+| 3 | +4 |
+| 4 | +5 |
+| 5 | +6 |
 
 ## Acquisition
 
-Melee Afflictions drops from Zariman Void Fissure at 4% and Void Cascade rotation C at 2%. Rotation C is the deepest rotation in Void Cascade runs and requires extended farming sessions to reach consistently. The combination of rotation depth and moderate drop rate makes Afflictions one of the rarer melee arcanes in the Zariman pool. Warframe.market provides a purchase route for players who prefer platinum acquisition over extended farming.
+Melee Afflictions drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation C at 2%. Rotation C is the deepest rotation in Void Cascade runs and requires extended farming sessions to reach consistently. Warframe.market provides a purchase route for players who prefer platinum acquisition over extended farming.
 
 ## Builds that use it
 
-Melee Afflictions pairs best with high-status-chance melee weapons that apply procs frequently. Condition Overload builds benefit significantly from Afflictions because the arcane's trigger inflates the status count across all types simultaneously, amplifying the per-status multiplier of Condition Overload to extreme values within a single trigger event. Any melee weapon with 80%+ status chance and a fast attack speed generates trigger checks at a high rate during sustained combat.
+Melee Afflictions is most effective on melee builds that combine high status chance with knockdown-inducing attacks. Heavy attacks with slam properties, polearms with ground slam augments, and weapons with innate knockdown procs (Impact status or knockdown-on-hit melee weapons) generate frequent knockdown events that trigger the stack amplification on status-afflicted enemies. Condition Overload builds that rely on status stack counts for damage scaling benefit from the explosive stack gain that a single knockdown event provides.
 
-Status-focused warframes that already debuff enemies through abilities - Saryn's Spores applying viral and toxin, Nidus's Virulence applying impact - set up combination stacks that Melee Afflictions then extends across all status types. The synergy between frame debuffs and the arcane's full-spectrum application creates layered debuff scenarios that compound across the melee weapon's damage calculation.
+Frames that apply status effects through abilities before initiating melee -- Saryn spreading Viral and Toxin via Spores, Nidus applying Impact via Virulence -- set up large status stacks on enemies that Melee Afflictions then multiplies further on each knockdown.
 
 ## Notes
 
-The "all status types" application includes status effects that behave differently on different enemy types - magnetic affects shields, corrosive affects armor, and toxin bypasses shields. The combined application means the arcane is effective against any faction regardless of their defensive profile. The simultaneous application counts as separate status events for arcanes or mods that trigger on specific status types (on-heat, on-cold), potentially chaining into additional arcane triggers. Enemies immune to specific status types resist those particular applications from Afflictions but still receive the remaining status types.
+The additional stacks trigger on knockdown or fling events from melee attacks specifically -- enemy launches from non-melee sources (ability knockdowns, weapon knockdowns) do not trigger Melee Afflictions. Each knockdown event on a status-affected enemy triggers the stack gain independently; enemies knocked down repeatedly accumulate stacks per knockdown event. Status effects that cap at a maximum stack count (some effects cap at 10 or 12 stacks) may reach their ceiling quickly with Melee Afflictions active, making further knockdowns redundant for those specific status types that are already capped.
 
 ## Sources
 
-- WFCD warframe-items dataset documents trigger chance and duration scaling for Melee Afflictions.
-- Fandom wiki entry for Melee Afflictions covers multi-status simultaneous application and Condition Overload interaction mechanics.
-
+- WFCD warframe-items dataset provides additional stack values per rank for knockdown/fling triggers in Melee Afflictions.
+- Fandom wiki entry for [Melee Afflictions](https://warframe.fandom.com/wiki/Melee_Afflictions) covers knockdown detection conditions and status stack amplification behavior.
