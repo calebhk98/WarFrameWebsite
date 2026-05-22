@@ -1,0 +1,50 @@
+name: Bug report
+description: Report a bug in the site, scripts, or tooling.
+title: "bug: <short summary>"
+labels:
+  - "kind:bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for any defect that is not a verifier
+        FAIL (use the verification template for those).
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: Describe the bug. Include stack traces if any.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: Describe the expected behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Numbered steps starting from a fresh clone.
+      placeholder: |
+        1. pnpm install
+        2. make import
+        3. pnpm dev
+        4. Open http://localhost:4321/warframes/ash
+        5. See the error
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Node version, pnpm version, browser if relevant.
+      placeholder: |
+        OS: Ubuntu 24.04
+        Node: 20.11.1
+        pnpm: 9.4.0
+        Browser: Firefox 126
+    validations:
+      required: true

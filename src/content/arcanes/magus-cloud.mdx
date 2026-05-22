@@ -1,0 +1,74 @@
+---
+slug: magus-cloud
+name: Magus Cloud
+type: operator
+maxRank: 5
+effect: "On Void Mode: +[range]% Void Sling Radius for 6s"
+perRankStats:
+  - rank: 0
+    stats: { range: 50 }
+  - rank: 1
+    stats: { range: 100 }
+  - rank: 2
+    stats: { range: 150 }
+  - rank: 3
+    stats: { range: 200 }
+  - rank: 4
+    stats: { range: 250 }
+  - rank: 5
+    stats: { range: 300 }
+drops:
+  - source: "Eidolon Hydrolyst capture"
+    chance: 4.0
+  - source: "Zariman Void Fissure rewards"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Cloud"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Cloud increases the Void Sling Radius when the operator enters Void Mode. Void Mode is the operator's stealth state accessed by holding the Void Mode input. When Void Mode activates, the subsequent Void Sling gains an expanded radius for 6 seconds -- the distance the operator travels per Void Sling is extended during this window, allowing longer single-sling movements for repositioning, traversal, or closing distance.
+
+At rank 5, entering Void Mode grants +300% Void Sling Radius for 6 seconds. This triples the base Void Sling travel distance, enabling the operator to cover substantially more ground per Void Sling during the Void Mode window.
+
+## Effect
+
+Activating Void Mode triggers the Magus Cloud bonus, applying the listed Void Sling Radius increase for 6 seconds. Any Void Slings performed during this window travel farther than the base radius allows. At rank 0, +50% Void Sling Radius modestly extends single-sling coverage. At rank 5, +300% Void Sling Radius allows the operator to traverse areas in fewer slings, reaching distant objectives or enemies more rapidly.
+
+The 6-second window is limited; operators who enter Void Mode and immediately Void Sling extract the full radius bonus on that sling and any remaining slings within the 6-second timer. Void Mode entry that is maintained without immediately Void Slinging reduces the time available for enhanced-radius slings.
+
+## Stats per rank
+
+| Rank | Void Sling Radius Bonus | Duration |
+|------|------------------------|----------|
+| 0 | +50% | 6s |
+| 1 | +100% | 6s |
+| 2 | +150% | 6s |
+| 3 | +200% | 6s |
+| 4 | +250% | 6s |
+| 5 | +300% | 6s |
+
+## Acquisition
+
+Magus Cloud drops from Eidolon Hydrolyst capture at 4% and Zariman Void Fissure missions at 2%. The Hydrolyst source requires completing full Eidolon hunts -- capturing (not killing) the Eidolon Hydrolyst during Tridolon chains provides the 4% drop. Zariman Void Fissure provides a lower-rate alternative accessible after Angels of the Zariman. Warframe.market offers purchase options for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Magus Cloud is primarily a mobility arcane for operators who rely on Void Sling for rapid traversal. Operators in open-world environments (Plains of Eidolon, Cambion Drift, Zariman) where large distances must be covered between objectives benefit from the extended sling radius reducing the number of slings required to cross terrain. Eidolon hunt operators who need to reposition quickly between Eidolon limb positions use the extended radius to close distance in fewer actions, saving time during the hunt phases.
+
+Focus school builds using Madurai's Void Sling-based damage (Void Strike charges, sling-impact interactions) benefit from the extended radius if the sling radius affects damage area or enemy collision during the sling trajectory.
+
+## Notes
+
+Void Sling Radius refers to the travel distance of the Void Sling action, not the impact area at the endpoint. The +300% radius at rank 5 extends how far the operator travels per sling input, not how large the destination impact zone is. Void Mode must be actively entered (held input) to trigger Magus Cloud -- the operator must be in Void Mode stealth state, not simply drifting in standard operator movement. The 6-second window begins when Void Mode activates; the timer runs regardless of whether Void Slings are performed during the window.
+
+## Sources
+
+- WFCD warframe-items dataset provides Void Sling Radius values per rank and the Void Mode trigger for Magus Cloud.
+- Fandom wiki entry for [Magus_Cloud](https://warframe.fandom.com/wiki/Magus_Cloud) covers Void Mode activation conditions and Void Sling radius interaction behavior.

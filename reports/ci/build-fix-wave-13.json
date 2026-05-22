@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-20T22:40:00Z",
+  "errors_found": 2,
+  "files_deleted": 0,
+  "files_fixed": 0,
+  "ci_after": "pass",
+  "notes": "Two intermittent build failures observed: (1) 'Cannot find module dist/pages/missions/_slug_.astro.mjs' — transient race in Astro's parallel static-build pipeline; resolved automatically on clean rebuild. (2) UnknownContentCollectionError for syndicates/red-veil.mdx — also transient, resolved on next clean build. No source files required modification. typecheck: 0 errors, 1 hint. Vitest: 53/53 pass. Playwright e2e: 24/24 pass (with pre-built dist + preview server)."
+}

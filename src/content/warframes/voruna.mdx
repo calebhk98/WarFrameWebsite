@@ -1,0 +1,199 @@
+---
+slug: voruna
+name: Voruna
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 455
+shield: 270
+armor: 200
+energy: 100
+sprintSpeed: 0.95
+passive:
+  name: Pack Tactics
+  description: >-
+    Voruna never fights alone. In mission, hold abilities to call upon each
+    wolf's unique passive power, providing buffs and defensive mechanics that
+    adapt to the playstyle.
+abilities:
+  - name: Shroud of Dynar
+    key: "1"
+    energyCost: 0
+    description: >-
+      Tap to shroud with invisibility and increased speed. Invisibility ends on
+      attack, granting melee buffs and slash status effects. Hold to increase
+      parkour velocity instead.
+    stats: {}
+  - name: Fangs of Raksh
+    key: "2"
+    energyCost: 0
+    description: >-
+      Tap to apply 5 random status effects at 10 stacks each on hit. Spreading
+      effects on kill. Hold to gain status effect resistance instead.
+    stats: {}
+  - name: Lycath's Hunt
+    key: "3"
+    energyCost: 0
+    description: >-
+      Tap to convert melee kills to health orbs and headshots to energy orbs.
+      Hold to increase heavy attack efficiency instead.
+    stats: {}
+  - name: Ulfrun's Descent
+    key: "4"
+    energyCost: 0
+    description: >-
+      Tap to charge toward enemies with 5 brutal wolf pack attacks. Hold to
+      summon Ulfrun as a shield that can absorb fatal damage.
+    stats: {}
+acquisition:
+  source: Lua Conjunction Survival or Archimedean Yonta trade
+  blueprintLocations:
+    - "Lua/Yuvarium (Survival), Rotation C"
+    - "Lua/Circulus (Survival), Rotation C"
+    - "Archimedean Yonta, Chrysalith (trade Lua Thrax Plasm)"
+  cost:
+    credits: 25000
+    platinum: 375
+  buildTimeHours: 72
+  note: >-
+    Components drop from Lua Conjunction Survival missions. Blueprint locations
+    vary by rotation. Lua Thrax Plasm is required to craft all components.
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Voruna"
+    accessedAt: "2026-05-19"
+    title: "Voruna -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Voruna is a wolf-pack themed warframe introduced in Update 32.2: Lua's Prey, released November 30, 2022. She embodies the symbiotic relationship between a hunter and her animal companions, with four distinct wolf allies--Dynar, Raksh, Lycath, and Ulfrun--each providing unique tactical abilities and passive bonuses.
+
+Unlike most warframes with fixed ability kits, Voruna's design emphasizes flexibility through her wolf pack system. Each of her four abilities operates in dual-mode: activating (tap) deploys the wolf for offensive or utility action, while holding the ability button instead calls upon that wolf's passive defensive blessing. This architecture makes Voruna uniquely adaptable to both aggressive melee builds and defensive support roles, depending on mission requirements and enemy composition.
+
+Her wolf-pack aesthetic draws inspiration from predatory teamwork and primal hunter-gatherer aesthetics, positioning her within Warframe's broader progression of frame archetypes that prioritize synergy and companion mechanics. She particularly excels in survival-type missions where her status effect synergies and sustained damage output shine against armor-heavy foes.
+
+## Abilities
+
+<AbilityCard
+  name="Shroud of Dynar"
+  key="1"
+  energyCost={0}
+  description="Tap to veil yourself in invisibility and accelerated speed; the shroud ends on attack but leaves melee strikes with amplified critical damage, status chance, and slash effects for a brief window. Hold to summon Dynar's guardian passive, boosting parkour velocity instead."
+/>
+
+Shroud of Dynar is Voruna's opening engagement tool and provides the stealth setup many melee-focused builds require. Unlike permanent invisibility frames, the mechanic forces commitment: invisibility breaks on the first attack, but the subsequent buff window ensures aggressive follow-up strikes are rewarded with high critical and status scaling. Melee kills during this window extend the buff once per cast, allowing skilled players to chain engagements. The held passive (parkour velocity) provides utility in traversal-heavy tilesets without sacrificing offensive capability. Pairing this ability with heavy-hitting melee weapons and critical mods like Organ Shatter or Blood Rush exploits the brief but powerful buff window.
+
+<AbilityCard
+  name="Fangs of Raksh"
+  key="2"
+  energyCost={0}
+  description="Tap to savage enemies with 5 random status effects applied at 10 stacks each per hit; killing affected enemies spreads their status effects to nearby targets. Hold to invoke Raksh's passive resistance to status effects instead."
+/>
+
+Fangs of Raksh provides powerful crowd control through status effect proliferation. The 10-stack application per target means even a single cast can trigger all five applied effects simultaneously on high-armor enemies affected by armor-strip mods. This creates a ripple effect: a single kill spreads all accumulated status effects to nearby units, turning one cast into exponential crowd control as corpses detonate other nearby enemies. The held passive (status resistance) is underrated in high-difficulty content where toxin clouds, magnetic procs, and other environmental status threats accumulate. This wolf is essential for status-dependent melee builds using mods like Condition Overload, which scales damage multiplicatively per unique status effect on the target.
+
+<AbilityCard
+  name="Lycath's Hunt"
+  key="3"
+  energyCost={0}
+  description="Tap to hunt with Lycath: melee kills drop health orbs, headshots drop energy orbs, and duration extends when enemies carry 5+ status effects. Hold to summon Lycath's passive, which grants increased heavy attack efficiency instead."
+/>
+
+Lycath's Hunt is Voruna's sustain ability. The dual orb drop (health on melee, energy on headshot) creates decision-making: pure melee builds lean into health orbs and weapon-heavy DPS, while ability-spam builds prioritize headshot mechanics for energy return. The status-effect duration extension is subtle but powerful: frames running Fangs of Raksh can maintain Lycath's Hunt indefinitely in dense enemy clusters, transforming the ability into a pseudo-indefinite resource loop. The held passive (heavy attack efficiency) synergizes with Condition Overload weapons and combo-scaling heavy melee, allowing sustained off-ability damage when ability resources are depleted. This wolf is Voruna's self-sufficiency engine.
+
+<AbilityCard
+  name="Ulfrun's Descent"
+  key="4"
+  energyCost={0}
+  description="Tap to drop to all fours and charge with 5 synchronized wolf-pack lunges that lock onto enemies; the alpha wolf Ulfrun leads attacks, dealing extra damage to status-affected targets. Lethal strikes double the damage of remaining charges. Hold to invoke Ulfrun's passive: sacrifice absorption, letting the wolf die in place of Voruna."
+/>
+
+Ulfrun's Descent is Voruna's ultimate execute move. The stacked lunge mechanic creates explosive burst damage: five sequential locks onto the same or different targets, each amplified by status effects, mean a single cast can clear entire enemy clusters if setup correctly. Lethal kills doubling remaining charge damage rewards aggressive play and headshot marksmanship. The scaling on status-affected enemies (pairs directly with Fangs of Raksh) makes Ulfrun's Descent the payoff ability: stack status effects, then unleash maximum damage. The held passive (Ulfrun sacrifice absorption) is a lifesaver in endurance runs, functioning as a temporary invulnerability: Ulfrun blocks one lethal hit, then retreats until the next cast. Smart players toggle between tap and hold mid-combat based on threat assessment.
+
+## Passive
+
+**Pack Tactics**: Voruna never fights alone. Hold any ability to invoke its respective wolf's passive power instead of the active effect. Each wolf provides a unique defensive or utility benefit: Dynar grants movement speed, Raksh offers status resistance, Lycath increases heavy attack efficiency, and Ulfrun provides hit absorption. This mechanic ensures Voruna always has viable options whether enemies are within casting range or not. The dual-mode design is the frame's signature innovation--every ability slot contains both a tap action (combat ability) and a hold action (passive buff), eliminating dead ability slots and rewarding adaptive play.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 455 |
+| Shield | 270 |
+| Armor | 200 |
+| Energy | 100 |
+| Sprint Speed | 0.95x |
+| Mastery Rank | 0 |
+
+Voruna's stats reflect her status as an unvaulted modern warframe with above-average health and armor values but moderate shield and energy pools. The 455 health is notably high for a mobility-focused frame; armor at 200 provides inherent damage mitigation against ballistic threats. Energy at 100 is tight (most high-level players will mod for higher capacity), but her zero-cost ability system means energy management is less critical than for ability-spam frames. Sprint speed at 0.95 is slightly below baseline, a minor tradeoff for tankiness. These stats skew defensive compared to squishy DPS frames like Mesa or Nova, positioning Voruna as a mid-range frame that survives up-close melee engagement through gear and ability synergy rather than raw dodging.
+
+## Acquisition
+
+Voruna's acquisition is locked behind Lua Conjunction Survival missions introduced in Update 32.2. There are three pathways to obtaining her:
+
+1. **Mission Drops**: Yuvarium and Circulus, both Lua tilesets in Survival mode, drop her blueprint and three components across rotations A/B/C. Rotation C is the primary source (rarest drops). The uncommon blueprint (0.1224%) drops from Circulus Survival Rotation C more frequently than the rare (0.0682%) from Yuvarium, making Circulus the faster grind if farming blueprints specifically.
+
+2. **Archimedean Yonta Trade**: The Chrysalith NPC on Zariman offers Voruna blueprints and components in exchange for Lua Thrax Plasm, a resource also found in Yuvarium and Circulus. This trade route bypasses RNG but requires grinding Thrax Plasm instead.
+
+3. **Market Purchase**: Players with 375 platinum can buy Voruna directly from the in-game Market, bypassing all farming.
+
+Component farming spans approximately 20-30 mission runs per component for average RNG; build time is 72 hours per component plus 72 hours for the main frame after assembly. Resource bottleneck: Lua Thrax Plasm (50 per component, 3 components = 150 total), which also drops from Yuvarium/Circulus but at similar RNG rates.
+
+## Playstyle
+
+Voruna is a **melee-hybrid damage frame** that excels in mid-to-high-difficulty Survival and Disruption missions. Her ideal playstyle unfolds in phases:
+
+**Phase 1: Engagement Setup** -- Enter combat using Shroud of Dynar (tap) to go invisible, close distance, and land the first melee hit. The brief melee buff window that follows the invisibility break is your initiation advantage. Tap Fangs of Raksh to stack 5 status effects on priority targets.
+
+**Phase 2: Sustained Crowd Control** -- Cycle hold actions (Dynar for dodging, Raksh for status resistance against environmental threats) as needed. Use Lycath's Hunt (tap) on high-health enemies to sustain health/energy orbs. Melee kills extend all ability durations, so aggressive play is self-reinforcing.
+
+**Phase 3: Burst Damage** -- When facing tanked armor enemies or high-priority targets, deploy Ulfrun's Descent (tap) after stacking status effects with Fangs of Raksh. The five synchronized charges, each enhanced by status effects, delete targets. If forced into a defensive position, hold Ulfrun's Descent to enable Ulfrun's sacrifice passive and block incoming fatal damage.
+
+**Modding Philosophy**: Build for status-effect capacity (Fangs of Raksh applies 5 random types, so melee weapons should have elemental diversity), melee critical/status damage (for Shroud and Lycath buffs), and duration (to maintain status stacks across targets). Example mods: Condition Overload (multiplies damage per status effect), Organ Shatter (crits during Shroud buff window), Weeping Wounds (scales melee status), Blood Rush (crits on heavy attacks, synergizes with Lycath's heavy attack passive). A status-heavy coil weapon with high impact/puncture procs multiplied by Condition Overload can solo high-level content with Voruna's setup.
+
+**Mission Matchups**: Excels in Survival (status effects scale with spawn density). Viable in Disruption (melee sustain and high burst for demolyst targets). Weaker in pure ranged environments (Corpus spy, Void Cascade) where melee engagement is punished. Performs well in Endless Fissure missions where Void Fissure AoE cc doesn't disable melee engagements.
+
+## Recommended builds
+
+Voruna supports three primary build archetypes:
+
+**Condition Overload Melee**: Stack five different elemental damage types on melee (Heat, Cold, Electric, Toxin, Magnetic) using mods like Molten Impact, Shattered Impact, Voltaic Strike, and Toxic Rain. Condition Overload multiplies damage by 1.2x per unique status effect, reaching 2.4x at five stacks. Voruna's Fangs of Raksh applies five status effects per cast, triggering Condition Overload's maximum multiplier immediately. Pair with Organ Shatter for crits during Shroud buff and Weeping Wounds to maintain status scaling on the next melee swing.
+
+**Heavy Attack Efficiency**: Equip a Zaw with Exodia Contagion or other heavy-attack-centric augments. Lycath's Hold passive increases heavy attack efficiency, enabling infinite combo scaling builds where heavy attacks rebuild the combo counter instead of draining it. Pair with Bloodhound Step or similar melee chain mods to convert heavy attacks into mobility tools and apply status effects passively.
+
+**Defensive Support**: Focus Raksh's status resistance passive and Ulfrun's sacrifice absorption. Use Primed Vitality, Adaptation, and Rolling Guard to survive armor-stripping endgame content. Fangs of Raksh's spread mechanic crowd-controls allies' targets, so support this playstyle with high-range melee (using Reach or Whirlwind mods) and aura mods like Corrosive Projection or Growing Power to buff nearby teammates. Less damage-focused but much safer for endo-farming Void Fissures.
+
+## Synergies
+
+**Melee Weapons**: Dual-stat weapons with high status chance (Nikana Prime, Pennant, Carving Mantis) synergize with all four ability setups. Spinning-style nikanas enable near-permanent AoE via melee range mods while maintaining single-target precision for headshots with Lycath's Hunt.
+
+**Mods**: Condition Overload is Voruna's signature mod synergy; Fangs of Raksh applies 5 stacks in a single cast, triggering the multiplier instantly. Primed Flow extends energy pool (important for casting Ulfrun's Descent repeatedly). Adaptation scales Voruna's armor further against varied damage types.
+
+**Companion**: Panzer Vulpaphyla or Kubrow provide additional survival and apply status effects (Vulpaphyla's heal on status effects pairs with Fangs of Raksh's proliferation). Sentinel weapons are less important than a status-spreading companion.
+
+**Subsume Targets**: Voruna's lack of hard CC (no stun, no sleep) means Helminth subsumes for CC are valuable. Sourcing Roar (from Rhino) or Thermal Sunder (from Xaku) adds utility without conflicting with her core kit's identity.
+
+## Lore
+
+Voruna was introduced in Update 32.2: Lua's Prey (November 30, 2022) alongside the opening of new tilesets on Lua. The frame's lore centers on four spectral wolf companions named by the community during the annual "Quest to Conquer Cancer" charity event. Each wolf represents an aspect of primal pack hunting:
+
+**Dynar** embodies invisibility and speed--the scout who locates prey.
+**Raksh** represents fanged aggression and status effects--the striker who applies venom.
+**Lycath** symbolizes endurance and sustenance--the hunter who secures resources.
+**Ulfrun** is the alpha matriarch--the leader who orchestrates the final kill.
+
+Voruna's description--"Four beasts, one heart"--emphasizes the unity between Tenno and wolf companions as a single tactical entity. The frame's release on Lua aligns with the broader Zariman expansion, exploring the Void's outer regions and ancient Orokin spaces where feral, primal aesthetics contrast with the technological sterility of earlier tilesets. Lore-wise, Voruna represents a return to animalistic, ancestral combat forms rather than high-tech exoskeletons--a shift echoed in later warframe releases emphasizing elemental and organic theming.
+
+## Sources
+
+- **WFCD warframe-items JSON** (`https://github.com/WFCD/warframe-items`): All numeric stats (health, shield, armor, energy, sprint speed) cross-checked against WFCD 1.756.0, accessed 2026-05-19. Ability descriptions and acquisition data sourced directly from the JSON schema.
+
+- **WARFRAME Wiki** (`https://warframe.fandom.com/wiki/Voruna`): Lore context, update history, patch notes, and flavor text from the official wiki page, accessed 2026-05-19. Playstyle guidance inferred from community discussion and ability mechanics as documented on the wiki.

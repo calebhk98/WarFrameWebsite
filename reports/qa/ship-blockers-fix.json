@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "report_date": "2026-05-21",
+    "fixer": "ship-blockers-fix",
+    "source_audit": "reports/qa/wide-audit-final-v4.json",
+    "scope": "8 ship-blocking files identified in v4 audit"
+  },
+  "files_fixed": [
+    {
+      "file": "src/content/weapons/jai.mdx",
+      "defects_addressed": [
+        "Wrong content type: Jai is a Zaw Component, not a standalone weapon. Rewrote body to explicitly document it as a Zaw strike component, explaining zero standalone stats, assembly system, Hok acquisition, and component-level role. H2 order fixed to canonical Overview/Stats/Acquisition/Variants/Recommended builds/Notes.",
+        "Non-standard H2 order (Synergies and combinations, Variants and Prime status removed; replaced with canonical set).",
+        "Generic boilerplate body replaced with Jai-specific content about the Zaw system, Ostron Standing acquisition, assembly workflow, and arcane slot usage."
+      ],
+      "word_count_after": 638,
+      "word_count_pass": true
+    },
+    {
+      "file": "src/content/weapons/corinth-prime.mdx",
+      "defects_addressed": [
+        "Stats-in-prose body removed. Stats table now correctly presents all numeric values sourced directly from WFCD warframe-items.",
+        "Fabricated zero statusChance in body ('0.0%') removed. Body now correctly references 9% status chance matching frontmatter statusChance=0.09.",
+        "Acquisition section corrected: removed generic 'alternative acquisition methods include mission rewards' and 'Market (credit purchase)' inaccuracies. Corinth Prime is Void Relic only.",
+        "Variants section corrected: removed 'Vandal, Wraith, or Prime' speculative text. Corinth Prime is the Prime; no Vandal/Wraith exist.",
+        "WFCD data note: damage values corrected -- WFCD Buckshot attack shows impact 25.2, slash 27.0, puncture 37.8. Frontmatter updated accordingly."
+      ],
+      "word_count_after": 536,
+      "word_count_pass": true
+    },
+    {
+      "file": "src/content/weapons/heliocor.mdx",
+      "defects_addressed": [
+        "Fabricated zero statusChance in body ('0.0%') removed. Body now correctly references 12% status chance matching frontmatter statusChance=0.12.",
+        "Generic boilerplate body ('fills a specific niche', 'Proper mod selection transforms') replaced with Heliocor-specific content including hammer mechanic, scanner system, Synoid Heliocor variant, and Cephalon Simaris synthesis integration.",
+        "Variants section corrected: removed speculative 'Vandal, Wraith, or Prime' text; added accurate Synoid Heliocor variant from Cephalon Suda.",
+        "Word count increased from 495 to 516 (was 5 words short of 500-word floor)."
+      ],
+      "word_count_after": 516,
+      "word_count_pass": true
+    },
+    {
+      "file": "src/content/weapons/hikou.mdx",
+      "defects_addressed": [
+        "Stats-in-prose body removed. Body no longer restates numeric damage, crit, or status values as prose sentences.",
+        "Stats table added with accurate per-pellet values from WFCD warframe-items.",
+        "H2 order fixed to canonical Overview/Stats/Acquisition/Variants/Recommended builds/Notes (removed non-standard 'Synergies and combinations' and 'Variants and Prime status' H2s).",
+        "Acquisition section corrected: specific blueprint locations added (Market 15,000 credits; Duviri Endless Tier 6 rare drop) instead of 'Consult the official Warframe Wiki'.",
+        "category corrected from 'Secondary' to 'Throwing' per WFCD weapon type.",
+        "Damage values corrected from frontmatter (WFCD shows impact 2.6, puncture 15.6, slash 7.8)."
+      ],
+      "word_count_after": 646,
+      "word_count_pass": true
+    },
+    {
+      "file": "src/content/weapons/akstiletto-prime.mdx",
+      "defects_addressed": [
+        "Stats-in-prose body removed. Body no longer restates fire rate, damage, crit, or status values as prose sentences.",
+        "Stats table added with accurate values from WFCD warframe-items.",
+        "H2 order fixed to canonical Overview/Stats/Acquisition/Variants/Recommended builds/Notes (removed non-standard 'Damage and Performance', 'Mod Recommendations', 'Builds and Synergies', 'Performance Notes', 'Lore', 'Sources' H2s; added required 'Variants' H2).",
+        "Damage distribution corrected: frontmatter had puncture 10.8 and slash 3.6; WFCD shows slash 10.8, puncture 3.6. Frontmatter corrected."
+      ],
+      "word_count_after": 612,
+      "word_count_pass": true
+    },
+    {
+      "file": "src/content/weapons/keratinos.mdx",
+      "defects_addressed": [
+        "Word count increased from 425 to 550 (was 75 words short of 500-word floor).",
+        "Substantive content added: Father/Necralisk acquisition details, heavy attack range mechanic, damage-type analysis against faction armor, additional build path detail for Viral proc stacking.",
+        "Category corrected from 'Melee' to 'Claws' per weapon type.",
+        "Acquisition section corrected from vague 'Market or dropped via mission rewards' to accurate 'Father (Entrati) in the Necralisk, Neutral standing tier'."
+      ],
+      "word_count_after": 550,
+      "word_count_pass": true
+    },
+    {
+      "file": "src/content/resources/cortege-stock.mdx",
+      "defects_addressed": [
+        "Word count increased from 230 to 482 (was 70 words short of 300-word floor).",
+        "Fabricated guaranteed-drop claim removed ('drop is guaranteed upon completing necramech encounters with full squad configuration').",
+        "Accurate acquisition documented: Blueprint from NecraLoid (Loid) at Clearance Modus; crafting ingredients from WFCD component data (1x Damaged Necramech Weapon Stock, 10x Cabochon Embolos, 80x Tempered Bapholite, 250x Hexenon).",
+        "Non-standard H2 'Best locations' removed; H2 order corrected to canonical Overview/Where it drops/Used for/Tips/Notes.",
+        "dropSources corrected to reflect the crafting-component nature (blueprint from Loid; ingredients from Cambion Drift)."
+      ],
+      "word_count_after": 482,
+      "word_count_pass": true
+    },
+    {
+      "file": "src/content/resources/damaged-necramech-weapon-stock.mdx",
+      "defects_addressed": [
+        "Word count increased from 235 to 515 (was 65 words short of 300-word floor).",
+        "Fabricated 'Void creature equipment' dropSource removed.",
+        "Vague 'Weapon stabilization systems' usedFor replaced with actual crafted components (Cortege Stock, Damaged Necramech Weapon Barrel, Damaged Necramech Weapon Pod, Damaged Necramech Weapon Receiver).",
+        "Accurate drop locations added from WFCD: Isolation Vault and Arcana Isolation Vault Rotation C, all level tiers, 3% drop chance each. Loid as alternative purchase source.",
+        "Substantive WFCD-sourced content added about specific drop rates, farming approach, and ingredient role in Necramech weapon assembly chain."
+      ],
+      "word_count_after": 515,
+      "word_count_pass": true
+    }
+  ],
+  "template_literals_scan": {
+    "pattern_searched": "{name.replace( and {slug.replace( in src/content/weapons/",
+    "results_found": 0,
+    "status": "clean"
+  },
+  "ci_results": {
+    "typecheck": "pass",
+    "build": "pass -- 1693 pages built",
+    "test": "pass -- 53/53 tests passed (6 test files)"
+  },
+  "summary": {
+    "files_fixed": 8,
+    "files_targeted": 8,
+    "bulk_template_literals_remaining": 0,
+    "ci": "pass",
+    "shippable": "yes -- weapons and resources collections blocker files all resolved"
+  }
+}

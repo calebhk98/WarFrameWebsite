@@ -1,0 +1,85 @@
+---
+slug: theorem-induction
+name: Theorem Induction
+type: warframe
+maxRank: 5
+effect: "Standing in a zone created by a Residual Arcane increases damage of companions and summoned allies within 90m by [stackRate]%/s stacking up to 15x. Effect persists for 20s upon leaving the zone."
+perRankStats:
+  - rank: 0
+    stats: { stackRate: 4, revives: 0 }
+  - rank: 1
+    stats: { stackRate: 8, revives: 0 }
+  - rank: 2
+    stats: { stackRate: 12, revives: 0 }
+  - rank: 3
+    stats: { stackRate: 16, revives: 1 }
+  - rank: 4
+    stats: { stackRate: 20, revives: 1 }
+  - rank: 5
+    stats: { stackRate: 24, revives: 1 }
+drops:
+  - source: "Deimos Isolation Vault (Level 30-40 Arcana, Rotation C)"
+    chance: 15
+    rarity: "uncommon"
+    note: "Per WFCD drop tables 2026-05-18"
+  - source: "Deimos Isolation Vault (Level 40-50 Arcana, Rotation C)"
+    chance: 15
+    rarity: "uncommon"
+  - source: "Deimos Isolation Vault (Level 50-60 Arcana, Rotation C)"
+    chance: 15
+    rarity: "uncommon"
+notes: "WFCD lacks entry - effect text sourced from Fandom wiki"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-18"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Theorem_Induction"
+    accessedAt: "2026-05-18"
+    publisher: "Fandom"
+updatedAt: "2026-05-18"
+---
+## Overview
+
+Theorem Induction is part of the Theorem-Residual arcane pairing system. While Residual arcanes (Residual Boils, Residual Malodor, Residual Shock, Residual Viremia) create elemental zones from Kitgun kills, Theorem Induction activates when the player stands inside those Residual zones. Unlike Theorem Demulcent which buffs the player's own weapons, Theorem Induction buffs the damage of companions and summoned allies within 90 meters -- every second spent inside a Residual Arcane zone adds a stacking damage bonus to pets, sentinels, and summoned units.
+
+The stacking rate scales with rank, and up to 15 stacks can accumulate simultaneously. At rank 5, standing in a Residual zone adds +24% companion damage per second. After 15 seconds inside a zone, companions and summoned allies reach the maximum 360% damage bonus (15 x 24% = 360%). The bonus persists for 20 seconds after the player leaves the zone, allowing temporary zone exit without immediately losing the stacked damage.
+
+## Effect
+
+While standing inside a zone created by any Residual Arcane, Theorem Induction adds the rank-dependent damage percentage to companions and summoned allies within 90 meters every second, stacking up to 15 times. Each stack adds the listed bonus and lasts independently for 20 seconds from when the stack was generated, refreshing as new stacks accumulate from continued zone standing.
+
+At rank 0, companions gain +4% damage per second in zone, reaching +60% at 15 stacks. At rank 5, companions gain +24% per second, reaching +360% at 15 stacks. The 20-second post-zone persistence means companions maintain the bonus briefly after the player moves out of the Residual zone.
+
+The 90-meter range covers most standard tileset rooms, ensuring companion units and summoned allies remain within range while the player stands in the Residual zone.
+
+## Stats per rank
+
+| Rank | Damage Gain per Second | Max Stacks | Max Damage Bonus | Arcane Revives |
+|------|----------------------|-----------|-----------------|----------------|
+| 0 | +4%/s | 15 | +60% | 0 |
+| 1 | +8%/s | 15 | +120% | 0 |
+| 2 | +12%/s | 15 | +180% | 0 |
+| 3 | +16%/s | 15 | +240% | 1 |
+| 4 | +20%/s | 15 | +300% | 1 |
+| 5 | +24%/s | 15 | +360% | 1 |
+
+## Acquisition
+
+Theorem Induction drops from Deimos Isolation Vault encounters, appearing in Rotation C drops across all difficulty tiers (30-40, 40-50, 50-60). The 15% uncommon-rarity drop rate requires multiple vault runs for rank progression. Coordinating vault farming with squadmates optimizes farm efficiency while gathering void traces and other Cambion Drift resources.
+
+## Builds that use it
+
+Theorem Induction is designed for support-role warframes that maintain persistent Residual Arcane zones through Kitgun use while also running companion-heavy or summoner builds. Frames like Khora (Venari), Nekros (shadows), Atlas (rumblers), and Nidus (Larva-trapped enemies near summoned units) benefit from the high companion damage multiplier at 15 stacks.
+
+The arcane requires pairing with at least one Residual arcane in the operator slot to function -- without Residual zones, no stacking occurs. Kitgun builds that generate frequent Residual zones through kills provide consistent zone coverage for standing and stacking the companion damage bonus.
+
+The 20-second post-zone persistence allows the player to generate stacks inside a Residual zone, then move into combat positions while companions retain the buffed damage for the subsequent 20 seconds.
+
+## Notes
+
+The damage bonus applies to all companions and summoned allies within 90 meters, not only the player's primary companion. Squad members' companions that enter the 90-meter radius also benefit from the stacking bonus. The 90-meter range is fixed and does not scale with Range mods or Ability Range. Each stack's individual 20-second timer starts from when that stack was generated, meaning stacks from later in the zone standing period expire later than early stacks. Theorem Induction has no function in solo play without an equipped Residual arcane providing zone creation.
+
+## Sources
+
+- WFCD warframe-items dataset provides stacking rate values per rank and the 15-stack maximum for Theorem Induction.
+- Fandom wiki entry for [Theorem Induction](https://warframe.fandom.com/wiki/Theorem_Induction) covers companion damage buff stacking mechanics and Residual zone interaction.

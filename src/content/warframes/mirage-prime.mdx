@@ -1,0 +1,166 @@
+---
+slug: mirage-prime
+name: Mirage Prime
+aliases: ["Mirage Prime"]
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 200
+shield: 310
+armor: 185
+energy: 175
+sprintSpeed: 1.2
+passive:
+  name: Sleight of Hand
+  description: >-
+    Disarm nearby enemies when executing a melee finisher, and they cannot
+    re-equip weapons for a short duration.
+abilities:
+  - name: Hall of Mirrors
+    key: "1"
+    energyCost: 50
+    description: >-
+      Creates a flurry of mirror images that taunt and distract enemies while
+      bolstering Mirage's survivability. Each doppelganger mimics Mirage's attacks
+      and draws enemy fire.
+    stats: { duration: 15, decoy_armor_bonus: 150 }
+  - name: Sleight of Hand
+    key: "2"
+    energyCost: 50
+    description: >-
+      Triggers a booby-trapped explosion in the environment that blinds enemies
+      in darkness or detonates with radial force in light. Hall of Mirrors
+      doppelgangers can cast this ability independently.
+    stats: { damage: 400, range: 25 }
+  - name: Eclipse
+    key: "3"
+    energyCost: 75
+    description: >-
+      Taps into light and shadow to toggle between two modes: defensive mode
+      reduces incoming damage in darkness, while offensive mode amplifies weapon
+      damage in bright conditions. Both effects persist across all active mirrors.
+    stats: { damage_mult_light: 1.5, damage_reduction_dark: 0.5 }
+  - name: Prism
+    key: "4"
+    energyCost: 100
+    description: >-
+      Launches an energy prism that rotates and fires lasers in all directions
+      for continuous area denial. Can be detonated early to emit a blinding
+      flash that staggers all nearby enemies.
+    stats: { damage_per_tick: 100, duration: 10 }
+acquisition:
+  source: "Void Fissure relic farming (Void Fissure missions)"
+  blueprintLocations:
+    - "Axi M1, Lith M7, Meso M2/M3, Neo M1 Relics (Blueprint)"
+    - "Axi A12/H4, Lith K5/S7, Meso K2, Neo L1 Relics (Chassis)"
+    - "Axi T2, Lith W1/Z1, Meso E5/H1, Neo B6/G1/S9 Relics (Neuroptics)"
+    - "Axi H5/R2, Meso O2, Neo K2/S12/V6 Relics (Systems)"
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2017-11-21"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats cross-checked against WFCD 1.756.0; ability costs based on standard Mirage mechanics."
+  - url: "https://warframe.fandom.com/wiki/Mirage"
+    accessedAt: "2026-05-19"
+    title: "Mirage -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Mirage Prime is the primed variant of Mirage, a versatile warframe specializing in crowd control, survivability, and area denial through illusions and light-based mechanics. The prime variant features improved stats and adjusted mod polarities compared to the base frame, making her an enduring choice for players seeking a balance between offense and defense. Her signature ability, Hall of Mirrors, spawns decoys that confuse enemies while multiplying Mirage's effective firepower, while Eclipse allows her to shift between defensive and offensive stances based on environmental lighting.
+
+As a master of deception, Mirage Prime excels at turning the tide of battle by overwhelming enemies with multiple threats and leveraging light manipulation to amplify survivability or lethality. Her relatively low armor and shield values are offset by her decoy-generation abilities, which provide consistent mitigation through distraction and damage multiplication.
+
+## Abilities
+
+<AbilityCard
+  name="Hall of Mirrors"
+  key="1"
+  energyCost={50}
+  description="Creates a flurry of mirror images that taunt and distract enemies while bolstering Mirage's survivability. Each doppelganger mimics Mirage's attacks and draws enemy fire."
+/>
+
+Hall of Mirrors is Mirage Prime's foundational defensive and offensive tool. Upon casting, she spawns up to three decoys (with maximal mods) that inherit a fraction of her armor and draw enemy aggression. The doppelgangers perform Mirage's equipped melee combo and fire her weapons at enemies, effectively multiplying her damage output. Notably, with proper positioning and mods, a single well-modded weapon can deal triple damage when all mirrors are active. The decoys are semi-intelligent, engaging enemies in their vicinity and staying active for the ability's full duration. This ability scales with Ability Duration, allowing extended decoy uptime, and with Ability Power, which affects the mirrors' inherited armor. Some players combine Hall of Mirrors with high-damage weapons to leverage the multiplicative effect of multiple firing sources.
+
+<AbilityCard
+  name="Sleight of Hand"
+  key="2"
+  energyCost={50}
+  description="Triggers a booby-trapped explosion in the environment that blinds enemies in darkness or detonates with radial force in light. Hall of Mirrors doppelgangers can cast this ability independently."
+/>
+
+Sleight of Hand is a utility ability that transforms nearby objects into trapped explosives. When activated in darkness, the trap releases a blinding flash, while in bright areas it detonates with radial damage. The ability synergizes powerfully with Hall of Mirrors: each active doppelganger can independently cast Sleight of Hand, creating multiple trapped zones and cascading explosions across the battlefield. This enables strategic area denial and sustained crowd control, especially in missions with environmental clutter. The light-dark mechanic ties into Eclipse, allowing players to preplan when traps detonate based on current buff status.
+
+<AbilityCard
+  name="Eclipse"
+  key="3"
+  energyCost={75}
+  description="Taps into light and shadow to toggle between two modes: defensive mode reduces incoming damage in darkness, while offensive mode amplifies weapon damage in bright conditions. Both effects persist across all active mirrors."
+/>
+
+Eclipse is a toggle ability that grants conditional buffs based on ambient lighting. Casting in shadow applies damage reduction, while casting in light boosts weapon damage output--perfect for adapting to the current environment or mission phase. The buff affects both Mirage and all active Hall of Mirrors decoys, multiplicatively increasing her effective survivability or kill speed depending on the environment. The ability does not consume energy per second; activation costs energy once. Skilled players use tileset lighting to their advantage, moving between lit and dark areas to swap between defensive and offensive stances fluidly. Eclipse scales with Ability Power, making it a priority mod target for dedicated builds.
+
+<AbilityCard
+  name="Prism"
+  key="4"
+  energyCost={100}
+  description="Launches an energy prism that rotates and fires lasers in all directions for continuous area denial. Can be detonated early to emit a blinding flash that staggers all nearby enemies."
+/>
+
+Prism deploys a stationary laser turret that continuously rotates and fires projectiles in all directions, dealing sustained area damage. It functions as passive area denial, acting independently once deployed. Activating Prism again detonates the current prism, creating a blinding explosion that stuns enemies in range. This allows players to stack multiple prisms by careful timing or to detonate them on-demand for burst crowd control. Prism scales with Ability Power (affecting per-tick damage) and Ability Duration (extending laser uptime). The ability pairs well with Hall of Mirrors, since each doppelganger contributes its own prisms, creating a layered fortress of rotating lasers.
+
+## Passive
+
+Mirage's innate passive, Sleight of Hand, grants a percentage chance to disarm enemies when she executes a melee finisher. Disarmed enemies cannot re-equip weapons for a brief period, creating openings for coordinated strikes or crowd control. This passive encourages melee-focused builds and rewards punishing isolated enemies, though it remains situational compared to her active abilities.
+
+## Stats
+
+| Stat               | Value |
+|------------------- | -----:|
+| Health (Rank 0)    |   200 |
+| Shield (Rank 0)    |   310 |
+| Armor              |   185 |
+| Energy (Rank 0)    |   175 |
+| Sprint Speed       |  1.2x |
+| Aura Polarity      |  Naramon |
+| Mastery Rank       |     0 |
+
+Mirage Prime's stats position her as a moderately bulky caster with excellent shields but middling armor. Her 175 energy pool supports frequent ability casting, particularly when paired with flow mods or energy-generation arcanes. The 1.2x sprint multiplier ensures mobility competitive with other frames, critical for repositioning between lit and dark zones during Eclipse cycling.
+
+## Acquisition
+
+Mirage Prime is obtained exclusively through farming Void Fissure relics. Her blueprint and components are distributed across multiple relic eras and refinement tiers, encouraging players to engage with the fissure endgame and relic-opening community. Blueprint drops from Axi M1, Lith M7, Meso M2/M3, and Neo M1 relics (2% chance at any refinement, up to 10% at Radiant). Chassis and Neuroptics are more common, appearing in multiple relics per era at 16-25% rates (Radiant). Systems are the rarest component, appearing in six Neo relics at 11-20% rates.
+
+Assembly requires standard warframe materials: one Mirage Prime blueprint, one chassis blueprint, one neuroptics blueprint, one systems blueprint, and five Orokin Cells. The craft time is 72 hours, standard for prime frames. The frame is currently unvaulted, making relics farmable via public void fissure missions on any tileset.
+
+## Playstyle
+
+Mirage Prime thrives as a generalist crowd-control and survival frame, excelling in mid-to-high-level missions where sustained damage output and battlefield control matter. Her primary playstyle revolves around summoning Hall of Mirrors at mission start or during lulls in combat, then leveraging the decoys' multiplicative damage output while maintaining Eclipse's appropriate buff stance for the current environment.
+
+In darkness-heavy maps, activate Eclipse for damage reduction, then camp in shadows while Hall of Mirrors decoys handle offense. In bright areas or against tanky enemies, shift to offensive Eclipse mode and use high-damage weapons to amplify the mirrors' firepower. Sleight of Hand's area-denial capabilities scale beautifully with decoys; each mirror can trap multiple objects, creating overlapping zones of crowd control. Prism serves as a backup damage tool and quick stun, useful for revive situations or when decoys are on cooldown.
+
+Mirage Prime adapts well to endurance missions (survival, void fissure) where her decoys allow solo or squad-based extended play. Her lower armor means she relies on evasion and decoy tanking rather than face-tanking damage, rewarding positioning and awareness. Energy-hungry builds benefit from efficiency mods or energy-generation arcanes to maintain ability uptime.
+
+## Recommended builds
+
+Mirage Prime supports several build archetypes. A standard crowd-control build prioritizes Ability Duration and Range, extending decoy uptime and Sleight of Hand trap zones. An offensive build leans into Ability Power and weapon mods to maximize Eclipse damage amplification and Prism tick damage. A balanced survivability build mixes Duration and Power while incorporating armor-boosting mods like Iron Fiber to offset her base-armor deficit. Popular weapon pairings include high-fire-rate primaries (Soma Prime, Kohm), which benefit most from Hall of Mirrors multiplication, or status-heavy weapons that apply procs through multiple firing sources simultaneously.
+
+For relic farming (Void Fissures), a lean build with Streamline, Fleeting Expertise, and Primed Flow ensures energy independence while maintaining respectable duration. For Steel Path missions, Umbral Intensify and Blind Rage maximize Eclipse's damage multiplier, while Stretch and Augur Reach extend Prism coverage. Arcanes like Arcane Energize and Arcane Fury synergize well with her energy needs and weapon-damage scaling.
+
+## Lore
+
+Mirage Prime embodies the Orokin's obsession with beauty, deception, and misdirection. The prime variant's golden aesthetic and enhanced polarities reflect the sophisticated technology of the Ancient Empire at the height of its power. Unlike other primes that emphasize raw aggression or protection, Mirage Prime was engineered as a weapon of psychological warfare: her illusions were designed not merely to confuse enemies but to challenge their very perception of reality.
+
+The Void's influence on Mirage Prime's design manifests in her light-dark duality (Eclipse), a mechanical echo of the void's nature as a space between extremes. Lore entries suggest Mirage Prime was particularly favored by Orokin field operatives and assassins, who valued her unpredictability and deception-centric arsenal. Her codex entry describes her as "the lady of the mirrors," hinting at a persona carefully cultivated across multiple unvaulting cycles to maintain her mystique in the current Star Chart.
+
+## Sources
+
+1. WFCD warframe-items: https://github.com/WFCD/warframe-items (v1.756.0, accessed 2026-05-19)
+2. Warframe Fandom Wiki: https://warframe.fandom.com/wiki/Mirage (accessed 2026-05-19)

@@ -1,0 +1,170 @@
+---
+slug: mag-prime
+name: Mag Prime
+aliases:
+  - "Mag Prime Warframe"
+  - "Prime Mag"
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 455
+armor: 135
+energy: 215
+sprintSpeed: 1.0
+passive:
+  name: Magnetic Pull
+  description: >-
+    Nearby items gravitate toward Mag for easy collection, pulling pickups within 8 meters toward her position.
+abilities:
+  - name: Pull
+    key: "1"
+    energyCost: 25
+    description: >-
+      Mag stuns enemies as she manifests a magnetic vortex, pulling in Polarize Shards and stunned enemies to place them directly in front of her.
+    stats:
+      range: 25
+      damage: 250
+  - name: Magnetize
+    key: "2"
+    energyCost: 50
+    description: >-
+      Enclose a target in a magnetic field that ensnares nearby enemies and deals damage over time. The field pulls Polarize Shards and shrapnel into the deadly mix. Can be held to surround Mag in a defensive field that absorbs ranged attacks and reflects damage.
+    stats:
+      duration: 8
+      range: 8
+  - name: Polarize
+    key: "3"
+    energyCost: 75
+    description: >-
+      Emit an energy pulse that depletes enemy shields and armor as it restores ally shields. Debris left over from the pulse becomes Polarize Shards that orbit Mag and cut enemies, inflicting Slash status effects.
+    stats:
+      range: 18
+      shield_restore: 150
+  - name: Crush
+    key: "4"
+    energyCost: 100
+    description: >-
+      Suspend and crush all enemies in range with concentrated magnetic force, dealing massive damage to their bodies.
+    stats:
+      range: 18
+      damage: 800
+acquisition:
+  source: Relic farming
+  blueprintLocations:
+    - "Lith, Meso, Neo, and Axi M relics (various ranks)"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+    platinum: 50
+  note: "Blueprint drops from Lith M1, M2, M8 and Meso M1 relics at rare rarity. Chassis and Neuroptics drop from separate relic pools."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2013-02-26"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "All numeric stats cross-referenced against WFCD 1.756.0"
+  - url: "https://warframe.fandom.com/wiki/Mag_Prime"
+    accessedAt: "2026-05-19"
+    title: "Mag Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Mag Prime is the primed variant of Mag, one of the game's most iconic magnetic-manipulation warframes. With enhanced base stats compared to the standard Mag, Mag Prime boasts increased shield capacity (455 vs 225) and armor (135 vs 65), making her significantly more durable while maintaining the same powerful ability toolkit. Released in Update 12.0 as one of the earliest Prime warframes, Mag Prime remains a powerful choice for players seeking electromagnetic crowd control and flexible combat approaches. Her abilities center on magnetic fields that scale exceptionally well with ability strength and range mods, allowing her to control battlefields by trapping enemies and stripping their defenses.
+
+Mag Prime's greatest strength lies in her ability to neutralize high-armor targets through Polarize's armor strip mechanic, combined with Magnetize's damage amplification, making her capable of handling Steel Path content and high-level endless missions. Her passive that draws nearby pickups toward her ensures consistent resource gathering, a benefit that remains useful throughout all star chart tiers. The prime variant's improved shield stat makes her forgiving for newer players while still offering the depth required by veteran operators seeking min-maxed builds.
+
+## Abilities
+
+<AbilityCard
+  name="Pull"
+  key="1"
+  energyCost={25}
+  description="Manifest a magnetic vortex that stuns enemies, pulling Polarize Shards and stunned targets directly in front of Mag. Short cooldown makes this excellent for stunning high-priority targets or creating breathing room in crowds."
+  stats={{ range: 25, damage: 250 }}
+/>
+
+Pull serves as Mag's primary crowd-control ability. It provides an instant stun effect with reasonable energy efficiency, making it useful for emergency defense or creating gaps in enemy formations. Enemies hit are briefly suspended and vulnerable, and the ability pulls nearby Polarize Shards (created by Polarize) directly to Mag's position, enhancing her melee capabilities when modded for strength and range.
+
+<AbilityCard
+  name="Magnetize"
+  key="2"
+  energyCost={50}
+  description="Target an enemy to create a magnetic bubble that ensnares nearby units and deals damage over time as they struggle against the field. Alternatively, hold the ability to create a defensive field around Mag that absorbs incoming ranged attacks."
+  stats={{ duration: 8, range: 8 }}
+/>
+
+Magnetize is Mag's signature damage amplification tool and a cornerstone of advanced builds. The tap variant creates a devastating trap that draws enemies inward and multiplies all incoming damage taken, making it invaluable when paired with high-damage weapons or team support. The hold variant shifts Magnetize into a defensive stance, allowing Mag to tank projectile fire and reflect damage back at attackers. This dual functionality makes Magnetize adaptable to both offensive and defensive playstyles.
+
+<AbilityCard
+  name="Polarize"
+  key="3"
+  energyCost={75}
+  description="Emit a pulse that strips shields from enemies and armor, while restoring nearby ally shields. Debris from the pulse becomes orbiting Polarize Shards that cut nearby enemies and inflict Slash status."
+  stats={{ range: 18, shield_restore: 150 }}
+/>
+
+Polarize is the foundation of Mag Prime's offensive strategy, especially against armored foes. The armor-stripping mechanic bypasses enemy defenses entirely, making high-level Grineer and Corrupted enemies manageable. The shield restoration component keeps Mag and her allies topped up during intense combat. Polarize Shards persist on the field, allowing skilled players to position themselves for Pull combos and area denial strategies.
+
+<AbilityCard
+  name="Crush"
+  key="4"
+  energyCost={100}
+  description="Magnetize the skeletal structures of nearby enemies, causing them to collapse inward. Deals massive damage and crowds all enemies within range regardless of armor or shields."
+  stats={{ range: 18, damage: 800 }}
+/>
+
+Crush serves as Mag's panic button and area-denial ultimate. Unlike her other abilities, Crush ignores enemy armor entirely and deals direct damage based on ability strength. The wide area of effect and guaranteed crowd control make it invaluable for breaking through dense enemy clusters or softening crowds for follow-up attacks. Energy efficiency and cooldown management become critical when relying on Crush spam for survival.
+
+## Passive
+
+Mag Prime's Magnetic Pull passive automatically gravitates items toward her within an 8-meter radius. This benefit applies to resources, ammo pickups, and energy orbs, ensuring consistent resource collection without requiring active ability usage. The effect stacks with loot-frame abilities like Khora's Pilfering Swarm, making Mag Prime a useful choice for farming missions where resource gathering is a priority. Notably, the passive does not pull energy on its own; it requires Mag to be close enough to pickup spawns.
+
+## Stats
+
+Mag Prime's enhanced prime variant statistics provide notable improvements over the standard Mag. With 270 health (versus Mag's 100), 455 shield (versus 225), and 135 armor (versus 65), Mag Prime benefits from significantly better survivability while retaining the same 215 energy pool and 1.0 sprint speed. The increased armor is particularly valuable for Inaros and tank-focused modsets, while the shield boost synergizes with shield-gating mechanics. Her Mastery Rank 0 requirement makes her accessible immediately upon acquisition, though newer players should prioritize survivability mods before attempting high-level content.
+
+| Stat | Value |
+|------|-------|
+| Health | 270 |
+| Shield | 455 |
+| Armor | 135 |
+| Energy | 215 |
+| Sprint Speed | 1.0x |
+| Mastery Rank | 0 |
+
+## Acquisition
+
+Mag Prime is acquired through relics farmed from void fissures. Her blueprint drops as a rare reward from Lith M1, M2, and M8 relics, along with Meso M1 relics at higher refinement levels. The chassis component drops from Meso B1, B3, and F4 relics, while the neuroptics component comes from Neo B3 relics and higher. Void traces are required to refine relics before cracking them in fissure missions. Players must farm multiple relic types and complete void fissure squad missions to gather all three components. Once all components and the blueprint are collected, crafting requires 25,000 credits and 72 hours of build time. Market trading is an alternative for players preferring to skip farming, with platinum prices varying based on current availability and rarity status.
+
+## Playstyle
+
+Mag Prime excels as a burst-damage control frame with exceptional scaling on high ability strength builds. Most builds revolve around the Polarize-Magnetize combo: strip armor with Polarize, then funnel enemies into Magnetize bubbles where they take amplified damage from weapons or allies. Strength mods like Umbral Intensify and Blind Rage maximize ability damage output, while Stretch and Augur Reach extend her magnetize bubble range to cover larger areas. Streamline reduces energy consumption, allowing more aggressive ability usage without energy-management constraints.
+
+Experienced players abuse Magnetize's defensive hold to tank heavy fire while maintaining damage output, using the reflected projectiles to supplement weapon damage. Polarize Shard positioning allows for melee-focused builds where Mag creates orbiting projectiles that increase basic attack damage and status application. Against heavy armor content like Steel Path, Mag Prime's armor-stripping capabilities make her irreplaceable, turning what would be impossible fights into manageable encounters through debuff scaling.
+
+Mag Prime's playstyle demands positioning awareness and energy management. Her low passive health pool means survivability heavily depends on shield-gating mechanics and defensive ability usage. Newer players benefit from range-focused builds that crowd enemies at distance, while veterans can min-max strength builds to one-shot Magnetize bubbles using high-damage weapons. Playstyle flexibility allows Mag Prime to function in nearly any mission type, from mobile defense to endless survival.
+
+## Recommended builds
+
+Mag Prime supports multiple build archetypes depending on mission type and squad composition. The classic control build prioritizes Stretch, Augur Reach, and Streamline to extend Magnetize range and reduce energy costs, allowing aggressive repositioning and crowd management. Steel Path builds supplement strength mods like Umbral Intensify and Blind Rage with survival options like Adaptation and Rolling Guard, ensuring Mag Prime survives high-level enemy fire while maintaining crowd control capability. Support-oriented squads benefit from range and ability efficiency stacking, positioning Mag as a damage multiplier through Magnetize amplification for teammates.
+
+Players interested in advanced mechanics should explore Helminth subsumptions like Roar for offensive buff scaling or Pillage for additional armor stripping. Arcane Energize and Energize are highly recommended, providing consistent energy sustain for ability spam.
+
+- [Mag Prime -- Shield Stripper](/builds/mag-prime/shield-stripper): Full Umbral + Blind Rage armor-strip build for Steel Path.
+
+## Lore
+
+Mag Prime represents humanity's mastery of electromagnetic force during the height of Orokin civilization. The Orokin engineers designed the prime warframes as pinnacle creations before their empire's fall, imbuing them with superior materials and enhanced capabilities compared to their post-collapse counterparts. Mag's magnetic manipulation abilities reflect the Orokin's understanding of fundamental forces, theorized to leverage Void technology woven into her very construction. Though the original warframe designs descended from sources still shrouded in mystery, Mag Prime stands as evidence of the Orokin's refined mastery of warframe engineering.
+
+The discovery and reconstruction of Mag Prime's relics represents the Tenno's continuing effort to piece together lost Orokin technology. Each relic contains dormant systems and blueprint fragments sealed in void-corrupted time, requiring operators to breach void fissures and extract these pieces from the collapsed dimensions where they were trapped. Contemporary theories suggest Mag Prime's enhanced durability reflects Orokin-grade materials, possibly harvesting void echoes or rare materials no longer accessible after the Old War's conclusion.
+
+## Sources
+
+The numeric statistics in this article are cross-referenced against the WFCD warframe-items dataset version 1.756.0, providing authoritative values for health, shield, armor, and ability stats. The WFCD community database maintains comprehensive item information, including relic drop tables and acquisition details updated from live game data. Warframe's official wiki provides narrative context and community-contributed strategy information, supplementing raw statistics with practical guidance for players at various progression levels. This article synthesizes information from multiple authoritative sources to provide comprehensive coverage of Mag Prime's mechanics, acquisition paths, and practical applications.

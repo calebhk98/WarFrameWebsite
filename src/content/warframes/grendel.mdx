@@ -1,0 +1,197 @@
+---
+slug: grendel
+name: Grendel
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 1095
+shield: 95
+armor: 370
+energy: 175
+sprintSpeed: 0.95
+passive:
+  name: Hearty
+  description: Each enemy consumed grants bonus armor.
+abilities:
+  - name: Feast
+    key: "1"
+    energyCost: 0
+    description: >-
+      Swallow enemies whole and store them in Grendel's gut. Hold to vomit out stored
+      enemies, covering them in toxic bile that damages and slows nearby foes.
+    stats: {}
+  - name: Nourish
+    key: "2"
+    energyCost: 25
+    description: >-
+      Regenerate health as Grendel absorbs nourishment from stored enemies. Extends
+      viral damage and energy buff benefits to nearby allies.
+    stats: {}
+  - name: Pulverize
+    key: "3"
+    energyCost: 50
+    description: >-
+      Curl into a ball and roll forward, healing Grendel while knocking enemies aside.
+      Jump to slam into the ground and generate a damaging shockwave.
+    stats: {}
+  - name: Regurgitate
+    key: "4"
+    energyCost: 75
+    description: >-
+      Violently eject a single stored enemy as a toxic projectile. Nearby enemies are
+      slowed and suffer armor degradation from the acidic bile.
+    stats: {}
+acquisition:
+  source: Grendel Locator missions
+  blueprintLocations:
+    - "Grendel Blueprint -- Void Fissure missions (rotation B/C)"
+    - "Grendel Neuroptics -- Void Fissure Excavation"
+    - "Grendel Chassis -- Void Fissure Defense"
+    - "Grendel Systems -- Void Fissure Survival"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+    platinum: 325
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Grendel"
+    accessedAt: "2026-05-19"
+    title: "Grendel -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Grendel is a voracious warframe whose entire combat philosophy revolves around consuming enemies and converting them into survivability buffs. Introduced in Update 26.0 "The Old Blood," Grendel received a comprehensive rework in Update 32.2 that transformed him into a significantly more versatile and dynamic combatant. Unlike frames that leverage elemental damage or raw firepower, Grendel excels through enemy management and team utility, making him exceptionally valuable in both defensive and sustained-duration content.
+
+His playstyle centers on filling his stomach with enemies through Feast, then leveraging stored enemies to activate Nourish for area-wide buffs, or ejecting them defensively via Regurgitate. With no energy drain penalty for storing enemies and the ability to consume up to five targets simultaneously, Grendel occupies a unique niche as both a crowd-control and support-oriented frame.
+
+## Abilities
+
+<AbilityCard
+  name="Feast"
+  key="1"
+  energyCost={0}
+  description="Swallow enemies whole and store them in Grendel's gut. Hold to vomit out stored enemies, covering them in toxic bile that damages and slows nearby foes."
+/>
+
+Feast is the cornerstone of Grendel's kit. Tapping consumes a single enemy, up to a maximum of five simultaneously. Each enemy stored grants 250 armor to Grendel via his passive, meaning a full stomach of five enemies yields 1,250 bonus armor. Held Feast expels all stored enemies as projectiles wrapped in toxic bile, dealing damage scaled to enemy level and applying viral-like effects. This ability operates at zero energy cost, making it infinitely sustainable and encouraging aggressive engagement.
+
+The mechanic of rapid consumption synergizes powerfully with ability strength: higher strength increases the damage-over-time on expelled enemies and the self-heal from Nourish. Additionally, stored enemy auras are disabled while inside Grendel's stomach, neutralizing dangerous affixes like Ancient Healer overguard.
+
+<AbilityCard
+  name="Nourish"
+  key="2"
+  energyCost={25}
+  description="Regenerate health as Grendel absorbs nourishment from stored enemies. Extends viral damage and energy buff benefits to nearby allies."
+/>
+
+Nourish requires at least one enemy in Grendel's stomach to cast and has multiple activation states accessible by tapping or cycling through options before casting. This ability heals Grendel and applies a squad-wide buff corresponding to the held modifier: viral damage or energy regeneration. The viral modifier inflicts viral damage on all stored enemies, causing them to damage each other and spread the status. The energy modifier boosts energy gains from all sources for Grendel and squad mates.
+
+A single cast heals 200 health per second for 5 seconds, then decays to half that value for an additional 5 seconds, scaling with ability strength. The buff duration and range scale with duration and range mods respectively, making Nourish a potent team support tool in squad play.
+
+<AbilityCard
+  name="Pulverize"
+  key="3"
+  energyCost={50}
+  description="Curl into a ball and roll forward, healing Grendel while knocking enemies aside. Jump to slam into the ground and generate a damaging shockwave."
+/>
+
+Pulverize allows Grendel to shift into a compact, rolling form that knocks enemies away and provides healing independent of stored enemies. This synergizes with the rework that removed energy drain for stomach contents: Grendel can now freely use Pulverize as both a mobility tool and self-sustain option. The rolling motion deals damage to anything in the path, while jumping triggers an impact slam that generates an area shockwave.
+
+Pulverize becomes exceptionally powerful in Steel Path and endurance runs where survivability is critical. The healing output scales with ability strength, and the impact damage scales with both strength and enemy level. In combination with mods like Energized Armaments and the passive armor bonuses from Feast, Grendel becomes nearly unkillable during sustained engagements.
+
+<AbilityCard
+  name="Regurgitate"
+  key="4"
+  energyCost={75}
+  description="Violently eject a single stored enemy as a toxic projectile. Nearby enemies are slowed and suffer armor degradation from the acidic bile."
+/>
+
+Regurgitate expels one enemy from the stomach as a projectile, requiring at least one stored target. Unlike Feast's held expulsion, this ability fires a single enemy forward at high velocity, dealing massive damage and applying armor corrosion to nearby foes. The projectile damage scales with the level of the consumed enemy, making higher-level enemy consumption more rewarding.
+
+This ability shines as both an emergency damage tool and a crowd-control solution. The armor strip component makes it particularly effective against heavily-armored Grineer targets, converting Grendel from a pure support role into a viable damage dealer.
+
+## Passive
+
+**Hearty:** Each enemy consumed via Feast grants 250 bonus armor. With a maximum stomach capacity of five, Grendel can achieve 1,250 additional armor, stacking multiplicatively with base armor to create an exceptionally durable warframe. This passive incentivizes constant feeding and rewards aggressive playstyles where Grendel remains in close proximity to enemies.
+
+## Stats
+
+| Stat              | Value  |
+|-------------------|--------|
+| Health (Rank 0)   | 1095   |
+| Shield (Rank 0)   | 95     |
+| Armor             | 370    |
+| Energy (Rank 0)   | 175    |
+| Sprint Speed      | 0.95x  |
+| Mastery Requirement | 0     |
+
+Grendel's stat distribution heavily favors durability over traditional energy pools. His health is exceptional for a warframe, surpassing frames like Mag and Rhino. The armor value of 370 is respectable and becomes exceptional when supplemented by his passive armor stacking. The low shield value is offset by health scaling and the fact that armor provides more effective durability in endgame content where shield damage often bypasses shields entirely.
+
+## Acquisition
+
+Grendel requires completion of the Grendel Locator mission chain, a series of unique missions that dropped after Update 31.5. The mission set includes Defense, Excavation, and Survival variants that award blueprint components as rotation rewards.
+
+**Blueprint Components:**
+- **Grendel Blueprint** -- Void Fissure mission rotations (B/C reward). Drop chance ~8.33%.
+- **Grendel Neuroptics** -- Void Fissure Excavation. Drop chance ~8.33%.
+- **Grendel Chassis** -- Void Fissure Defense. Drop chance ~8.33%.
+- **Grendel Systems** -- Void Fissure Survival. Drop chance ~8.33%.
+
+Assembly requires 25,000 credits and a 72-hour build timer. Each component must be farmed separately, and the Void Fissure mission variety ensures players encounter different gameplay types during the grind.
+
+Unlike prime-eligible frames, Grendel has no prime variant and likely never will, making the base frame the only available version.
+
+## Playstyle
+
+Grendel functions best as a mid-range, high-survivability frame that relies on enemy proximity and active ability management. Unlike passive frames that leverage status immunity or damage reflection, Grendel demands constant engagement with enemies through Feast and Nourish cycling.
+
+**Early Game:** In Star Chart missions, Grendel's high health and armor quickly trivialize damage. Simply casting Feast on available enemies maintains full passive stacking, while occasional Pulverize casts provide healing overkill. Energy is rarely a concern due to Feast's zero cost and generous energy pools from Nourish.
+
+**Mid Game (Void Fissure / Sortie):** Grendel shines once enemies reach levels where armor becomes more valuable than raw health. The Nourish cycle--fill stomach with Feast, cast Nourish for heal and buffs, repeat--provides both personal survivability and squad support. Regurgitate becomes a viable damage tool for priority targets or dangerous eximus units.
+
+**Endgame (Steel Path / Arbitrations):** Grendel transitions into a pure survival and utility role. Constant Feast feeding maintains passive armor stacking, while Nourish spam keeps Grendel and squad mates topped off. Pulverize serves as both mobility and emergency sustain when enemies overwhelm the immediate area. The armor scaling from stacked enemies, combined with defensive mods like Adaptation and Overgrown, creates a frame that can survive indefinitely.
+
+## Recommended builds
+
+Grendel's versatility accommodates several build archetypes:
+
+**Tanky Support Build:** Prioritize ability strength and range with mods like Intensify, Blind Rage, Augur Reach, and Augur Message. This build maximizes Nourish's healing radius and buff effectiveness while maintaining energy efficiency on key abilities. Aura mods like Corrosive Projection or Mag Amplification provide team utility.
+
+**High Strength Nuker Build:** Stack strength mods (Blind Rage, Intensify, Augur Intensify) to maximize Regurgitate and Pulverize damage scaling. This approach sacrifices some survivability for significant burst damage against priority targets. Works well in content where burst-killing dangerous enemies matters more than pure tank.
+
+**Duration-Focused Support:** Maximize duration on Nourish with Continuity, Primed Continuity, and Primed Flow. This sustains buff uptime for squad mates while maintaining Grendel's personal survivability through extended heal duration and cheaper ability casts overall.
+
+**Balanced All-Around:** Use balanced strength/duration/range mods to achieve a jack-of-all-trades approach. This lets Grendel adapt to various content without hard commitments to single-stat builds.
+
+Aura recommendations include Corrosive Projection for armor stripping, Power Donation for team support, or a blank aura slot when running Adaptation in the exilus slot.
+
+## Synergies
+
+**Armor Stacking:** Grendel stacks armor from Feast and benefits heavily from armor-scaling mods like Ironclad Charge, Guardian Derision, and the Adaptation set. Using all three transforms Grendel into an unkillable tank in extended content.
+
+**Energy Efficiency:** Mods like Streamline and Primed Flow complement zero-cost Feast and low-cost Nourish cycles. Efficient rotations enable indefinite playtime without relying on energy orb drops.
+
+**Helminth Subsumption:** Grendel's own abilities are so core that subsumption rarely improves him, but taking another frame's Nourish-like ability or defensive boost can enhance squad survivability. Alternatively, subsume from Grendel to add his zero-cost Feast-like mechanic to other frames.
+
+**Squad Composition:** Grendel pairs well with glass-cannon DPS frames that benefit from his Nourish buffs (energy regeneration or viral damage aura). Rhino, Saryn, or Ash benefit significantly from consistent Nourish spam, making Grendel an exceptional squad support.
+
+## Lore
+
+Grendel is a warframe built with one singular purpose: consumption. The Orokin engineered him during the late stages of their civilization as a response to overwhelming Sentient invasion forces that multiplied through rapid reproduction. Rather than design a frame focused on killing, the Orokin created one focused on denial--a warframe that swallows enemies whole, preventing reinforcement and denying the Sentients' numerical advantage.
+
+In Warframe's narrative, Grendel operates under a simple philosophy: eat everything in sight. His quest line, introduced during The Old Blood update, positions him as an almost feral warframe, more instinct than intellect, guided entirely by insatiable appetite. The Tenno unlocking Grendel must navigate puzzle-like Void Fissure missions themed around his gluttony, defeating waves of high-level enemies while gathering components.
+
+The Update 32.2 rework solidified Grendel's story role: rather than a desperate measure against existential threats, he became the Tenno's answer to overwhelming enemy density. His stomach acts as a portable prison where enemies are neutralized indefinitely, freeing the Tenno to manage the broader battlefield.
+
+## Sources
+
+- **WFCD warframe-items (Primary):** Numeric stats cross-checked against version 1.756.0+. Health, shield, armor, energy, sprint speed, and ability availability verified against canonical WFCD entry.
+- **Warframe Fandom Wiki (Secondary):** Acquisition requirements, mission structure, and narrative context sourced from official wiki documentation of the Grendel Locator mission chain and Update 26.0 release notes.

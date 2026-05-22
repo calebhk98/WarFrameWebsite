@@ -1,0 +1,229 @@
+---
+slug: inaros
+name: Inaros
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 2110
+shield: 0
+armor: 240
+energy: 100
+sprintSpeed: 1.0
+passive:
+  name: Undying
+  description: >-
+    When Inaros takes lethal damage, he entombs himself in a sarcophagus and 
+    incarnates as sand to attack enemies, draining their lifeforce to revive himself.
+abilities:
+  - name: Desiccation
+    key: "1"
+    energyCost: 25
+    description: >-
+      Blast enemies with a wave of cursed sand that blinds and drains their health.
+      Enemies hit are marked for later harvesting by other abilities.
+    stats: { damage: 250, range: 25 }
+  - name: Sandstorm
+    key: "2"
+    energyCost: 50
+    description: >-
+      Become a whirling sandstorm that gathers nearby pickups and throws enemies.
+      Enemies marked by Desiccation are drained of shields and health while caught in the storm.
+    stats: { duration: 15, range: 20 }
+  - name: Scarab Shell
+    key: "3"
+    energyCost: 0
+    description: >-
+      Activate to form protective armor by draining Inaros' health. Activate again to stop early.
+      The protective layer reduces incoming damage and absorbs incoming status effects.
+    stats: { armor_multiplier: 2.5, status_immunity: true }
+  - name: Scarab Swarm
+    key: "4"
+    energyCost: 75
+    description: >-
+      Summon a swarm of scarabs to attack enemies with guaranteed Corrosive damage.
+      Damage scales with Inaros' health. Enemies killed while immersed in the swarm 
+      summon Swarm Kavats that fight alongside Inaros.
+    stats: { damage: 100, scaling: "health" }
+acquisition:
+  source: "Sands of Inaros quest (complete the quest to obtain all blueprint components)"
+  blueprintLocations:
+    - "Cephalon Simaris -- Sands of Inaros quest completion"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2020-07-14"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Inaros"
+    accessedAt: "2026-05-19"
+    title: "Inaros -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Inaros is the ancient sand-wielding warframe who commands the fearsome power of the desert itself. Introduced in Update 18.5 with the "Sands of Inaros" quest, this frame has undergone significant evolution, most notably with the 2024 rework that overhauled his third ability to introduce the Scarab Shell mechanic. Inaros remains a powerhouse for tanking and crowd control, trading shielding entirely for massive health pools and armor scaling. With health-based damage scaling and potent status effect immunity tools, Inaros excels at absorbing punishment while converting enemy vitality into his own survival.
+
+The 2024 rework transformed Inaros from a frame with occasional defensive capability into a true tank who can adapt his survivability on the fly. The shift from simple health drain to health-to-armor conversion via Scarab Shell represents a fundamental change in playstyle philosophy: Inaros no longer relies on killing everything immediately but rather on flexibly managing incoming damage through multiple defensive layers. His zero-shield design is intentional--Inaros is built to endure, not to scatter.
+
+## Abilities
+
+<AbilityCard
+  name="Desiccation"
+  key="1"
+  energyCost={25}
+  description="Blast enemies with a wave of cursed sand that blinds and drains their health. Enemies hit are marked for later harvesting by other abilities."
+  stats={{ damage: 250, range: 25 }}
+/>
+
+Desiccation is Inaros' primary crowd-control and marking tool. The ability fires a cone of sand that blinds all enemies within its range, leaving them vulnerable and unable to see Inaros or his allies for the duration. Beyond the utility, enemies struck by Desiccation take direct health drain and become marked--triggering synergies with both Sandstorm and Scarab Swarm. This marking system is central to Inaros' combo potential; a well-placed Desiccation softens groups while flagging them for more aggressive follow-ups.
+
+The energy cost is minimal at 25, encouraging frequent use. With mods like Narrow Minded and Stretch, the range can be expanded significantly, allowing Inaros to mark entire rooms at once. Conversely, players seeking raw damage can invest in Strength mods to amplify the health drain component, though Inaros is rarely built as a glass cannon.
+
+<AbilityCard
+  name="Sandstorm"
+  key="2"
+  energyCost={50}
+  description="Become a whirling sandstorm that gathers nearby pickups and throws enemies. Enemies marked by Desiccation are drained of shields and health while caught in the storm."
+  stats={{ duration: 15, range: 20 }}
+/>
+
+Sandstorm transforms Inaros into an mobile tornado of sand, pulling pickups toward him while flinging enemies outward. The ability scales with Duration, allowing Inaros to remain active for extended periods. Any enemy previously marked by Desiccation takes additional shield and health drain while caught in the sandstorm, synergizing directly with the first ability.
+
+In the post-2024 rework era, Sandstorm serves as both escape tool and engagement enabler. The knockback effect protects Inaros from melee pressure while he cycles through his kit. Enemies marked by Desiccation are immediately punished, creating a clean combo: mark with Desiccation (1), activate Sandstorm (2) to drain and reposition, then escape or switch targets. Augment mods like Elemental Sandstorm add elemental damage scaling, making this ability more viable in high-level content.
+
+<AbilityCard
+  name="Scarab Shell"
+  key="3"
+  energyCost={0}
+  description="Activate to form protective armor by draining Inaros' health. Activate again to stop early. The protective layer reduces incoming damage and absorbs incoming status effects."
+  stats={{ armor_multiplier: 2.5, status_immunity: true }}
+/>
+
+Scarab Shell is the signature ability introduced in Inaros' 2024 rework and represents the frame's evolution as a tank. Unlike traditional shield-based defenses, Scarab Shell converts Inaros' health directly into temporary armor buff. Activation is free (zero energy cost), but maintaining the shell costs health over time. Players can deactivate early to conserve health, making it a skill-based survival tool rather than a passive mechanic.
+
+The armor multiplier scales with Strength mods, allowing builds to achieve 250%+ effective health multiplication. Additionally, while the shell is active, Inaros becomes immune to status effects--a critical defensive layer in Steel Path and endgame content where status procs can cascade into rapid death. This immunity resets whenever the shell reforms, encouraging active management. High-armor builds (Umbral Vitality, Adaptation) combined with Scarab Shell create an exceptionally durable frame capable of surviving solo high-level missions.
+
+The zero-energy cost means Scarab Shell can be toggled constantly without resource pressure, rewarding skilled players who understand armor scaling. In contrast, careless activation drains health rapidly if left running unattended, punishing passive play.
+
+<AbilityCard
+  name="Scarab Swarm"
+  key="4"
+  energyCost={75}
+  description="Summon a swarm of scarabs to attack enemies with guaranteed Corrosive damage. Damage scales with Inaros' health. Enemies killed while immersed in the swarm summon Swarm Kavats that fight alongside Inaros."
+  stats={{ damage: 100, scaling: "health" }}
+/>
+
+Scarab Swarm is Inaros' ultimate ability and primary source of scaling damage. Upon activation, scarabs swarm a targeted area, applying guaranteed Corrosive damage to all enemies caught in their radius. The critical mechanic: damage scales directly with Inaros' health pool. This means high-health builds (Umbral Vitality rank 10, Adaptation, Primed Vigor) translate directly into swarm damage, rewarding tanky builds with offensive output.
+
+When enemies die while immersed in the swarm, they drop Swarm Kavats--temporary pets that inherit Inaros' modded damage and attack nearby foes. With enough strength scaling and kill efficiency, Inaros can spawn a small army of kavats that obliterate remaining enemies. Corrosive damage application synergizes with Desiccation's marked enemies, allowing Scarab Swarm to strip armor while swarming, creating a potent crowd-clear and armor-strip combo.
+
+The 75-energy cost is reasonable for an ultimate. With Streamline and Fleeting Expertise, energy efficiency becomes negligible. The duration of the swarm scales with Duration mods, potentially keeping scarabs active for 20+ seconds with proper investment.
+
+## Passive
+
+**Undying.** When Inaros takes lethal damage, he does not fall immediately. Instead, he entombs himself in a protective sarcophagus and transforms into sand to attack nearby enemies. While in this state, Inaros drains the lifeforce of all enemies around him, converting their health into his own. If he drains enough health to recover above zero, he revives and emerges from the sarcophagus ready to fight. If no enemies are nearby or he fails to drain sufficient health, Inaros falls to bleed-out state.
+
+This passive is one of the most generous second-chance mechanics in Warframe, granting Inaros a built-in revive that requires only nearby enemies and active player participation. In single-target boss fights, the passive becomes less reliable; in group missions with constant spawns, Undying turns near-death moments into offensive opportunities. Modding for armor (to reduce incoming damage that triggered the passive in the first place) and health (to survive longer in sand form) maximizes the passive's uptime.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 2110 |
+| Shield | 0 |
+| Armor | 240 |
+| Energy | 100 |
+| Sprint Speed | 1.0x |
+| Mastery Rank | 0 |
+| Aura Polarity | Naramon |
+
+Inaros has one of the highest health pools of any non-tank warframe, offset by zero shields. This design is deliberate: shields are reactive (regenerate on breaks), while health is permanent and scales with armor. Armor of 240 is moderate--not as high as Rhino or Vauban, but sufficient for base-level survival. The energy pool of 100 is average; most builds rely on Flowing Energy or energy generation mods rather than raw capacity.
+
+Sprint speed at 1.0x baseline matches most frames; Naramon polarity provides build flexibility for aura selection (Corrosive Projection for armor strip, Power Donation for a tank role, or Rejuvenation for slow passive healing).
+
+## Acquisition
+
+Inaros is obtained by completing the "Sands of Inaros" quest, an early-to-mid-game quest available after mastery rank 0 and some junction progression. The quest is solo-only and takes approximately 30-45 minutes depending on player skill and gear. Upon completion, Cephalon Simaris grants the Inaros blueprint and all three component blueprints (Neuroptics, Chassis, Systems), making Inaros one of the few frames where you can farm a full set in a single quest run.
+
+Construction requires 25,000 credits and 72 hours in the foundry (50 platinum to rush). No void fissure or relic grinding necessary--Inaros is pure quest-based acquisition, making him accessible to newer players once they reach the Europa/Venus junction gate.
+
+## Playstyle
+
+Inaros is a frontline tank and crowd-control specialist who thrives in sustained-combat environments where enemies continuously spawn. Unlike Hildryn or Protea, who require active energy cycling or specific playstyles, Inaros is exceptionally straightforward: build for health and armor, activate Scarab Shell to manage damage, mark enemies with Desiccation, and either swarm them or sandstorm through them.
+
+The playstyle rotates around resource management. Scarab Shell is free to toggle but drains health; Desiccation marks targets for follow-ups; Sandstorm provides crowd control and mobility; Scarab Swarm delivers scaling damage. A typical engagement:
+
+1. **Mark phase.** Cast Desiccation on grouped enemies (25 energy). The blind prevents return fire and marks targets.
+2. **Activate shell.** Toggle Scarab Shell (free, but health cost) to prepare for incoming damage.
+3. **Swarm or storm.** Depending on mission phase: cast Scarab Swarm for raw damage and kavat summons, or activate Sandstorm to reposition and drain marked targets.
+4. **Manage shell.** Deactivate and reactivate Scarab Shell as incoming damage ebbs and flows, or keep it running if enemies are sparse.
+5. **Revive on failure.** If lethal damage lands, Undying converts nearby enemies into healing--no Revive Station required.
+
+Against single-target bosses (e.g., Lephantis, Sisters of Parvos), Inaros is less optimal; crowd control and health-based damage scaling matter less when facing one enemy. In endless survival, mobile defense, or void fissure runs, Inaros becomes increasingly valuable as spawns accumulate and health scaling lets Scarab Swarm devastate entire waves.
+
+## Builds
+
+### Tank Survivalist (Steel Path / Endless Survival)
+
+This build prioritizes maximum effective health and armor stacking, turning Inaros into an unkillable fortress.
+
+**Mods:** Umbral Intensify (rank 10), Umbral Vitality (rank 10), Adaptation, Primed Vigor, Streamline, Fleeting Expertise, Stretch, Augur Message
+
+**Arcanes:** Arcane Energize, Arcane Blessing
+
+**Rationale:** Umbral Vitality stacks multiplicatively with Adaptation and Primed Vigor, yielding 3000+ effective health. Streamline + Fleeting Expertise ensure energy never bottlenecks. Adaptation converts incoming damage into armor buff, while Scarab Shell converts that high health into additional armor multiplier. The result is 300%+ effective health multiplication with proper Adaptation stacking. Arcane Energize sustains energy through long engagements; Arcane Blessing adds shield regen for allies.
+
+This build excels in solo endgame: Inaros survives indefinite damage through armor scaling, Desiccation keeps threats blinded, and Scarab Swarm eliminates anything that lives long enough to become problematic.
+
+### Health-Scaled Damage Dealer (Void Fissure / Axi Void Fissures)
+
+This build converts high health into offensive output via Scarab Swarm scaling, making Inaros a self-sufficient farmer.
+
+**Mods:** Umbral Intensify, Umbral Vitality, Power Drift, Primed Vigor, Streamline, Augur Reach, Augur Message, Strength build (620%+)
+
+**Arcanes:** Arcane Energize, Arcane Nullifier
+
+**Rationale:** Maximum Strength (620%+) amplifies Scarab Swarm damage scaling. High health from Vitality and Vigor ensures swarms deal 250+ damage per scarab hit. Augur Reach extends Desiccation and Sandstorm range for better crowd grouping. Power Drift adds final strength boost. Umbral Intensify serves dual purpose: boosts ability damage scaling and synergizes with Scarab Shell's armor multiplier. Arcane Nullifier protects against status effects during void fissure (complementing Scarab Shell's immunity).
+
+This build clears void fissure void-reactant missions in 8-10 minutes with consistent scaling.
+
+### Hybrid Utility (Public Void Fissure / Group Play)
+
+Balances survival, crowd control, and party support for squad-friendly endgame.
+
+**Mods:** Vitality, Strength build (300%+), Streamline, Fleeting Expertise, Augur Reach, Augur Message, Power Donation (aura), Natural Talent
+
+**Arcanes:** Arcane Energize, Arcane Blessing
+
+**Rationale:** Moderate strength and health provide both survivability and meaningful damage. Power Donation aura grants allies +25% damage, supporting group DPS. Augur Reach improves crowd-control range. Natural Talent speeds up ability cast, letting Inaros reposition faster between Desiccation casts. This build sacrifices peak tanking or peak damage for versatility, making it ideal for squads where Inaros isn't the primary carry but remains valuable.
+
+## Synergies
+
+**Strength-scaling synergy.** Inaros' entire kit benefits from Strength: Desiccation health drain increases, Scarab Swarm damage scales quadratically (health boost -> swarm damage), Scarab Shell armor multiplier improves. Unlike frames that split scaling between multiple stats, Inaros consolidates power into one axis, making Strength builds exceptionally clean. Augur mods (Intensify, Message) synergize perfectly.
+
+**Armor stacking synergy.** Adaptation procs scale with armor. Scarab Shell converts health to armor. Desiccation weakness (marked enemies) synergizes with Corrosive damage (Scarab Swarm guaranteed Corrosive). A high-armor Inaros with Adaptation runs negative armor loss on tanking, effectively healing through incoming fire.
+
+**Kavat synergy.** Swarm Kavats inherit Inaros' modded damage and benefit from Player Aura mods (Corrosive Projection). Spawning multiple Swarm Kavats creates a small army, especially in early-to-mid-game content. Augment mods like Negation Swarm further amplify the summon utility.
+
+**Energy regeneration synergy.** Energize procs (Zenurik focus, Arcane Energize, Trinity support) multiply the value of Streamline by allowing Inaros to spam Desiccation without stalling on energy. Each Desiccation into Sandstorm chain cycles energy through mods, making energy-hungry builds sustainable indefinitely.
+
+## Lore
+
+Inaros is a legend whispered across the desert planets--a warframe born from the sands themselves, said to command the ancient power of the Orokin ancients. Where most Warframes are weapons of war, Inaros is an entity of survival, a force that endures long after empires crumble. The Sands of Inaros quest tells of a warrior of legend, the "Fear-Eater," who hunted his prey across desolate wastelands and claimed dominion over the very earth beneath enemies' feet.
+
+The warframe's design echoes pharaonic iconography--mummified, wrapped in burial cloth, standing sentinel like the guardians of ancient tombs. Inaros does not move with the fluid grace of Mag or the explosive force of Saryn; instead, he walks with the inexorable weight of desert sand, slowly burying everything in his path. Enemies marked by Desiccation become trapped, devoured, consumed--a fate befitting a frame named for a being that feeds on the lifeforce of its prey.
+
+The 2024 rework that introduced Scarab Shell recontextualizes Inaros' relationship with his own body: no longer simply draining others, he now can transmute his own vitality into armor, a darker evolution reflecting millennia of existential threat from newer, faster Warframes. The sarcophagus passive--his resurrection through sand--echoes themes of death and rebirth, of a being that cannot be killed so long as enemies remain to feed upon.
+
+## Sources
+
+- [WFCD warframe-items repository](https://github.com/WFCD/warframe-items) -- Canonical numeric stats, ability descriptions, and component data. Last checked 2026-05-19.
+- [Inaros -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Inaros) -- Lore context, playstyle notes, and 2024 rework details. Last accessed 2026-05-19.

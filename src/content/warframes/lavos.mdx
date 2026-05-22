@@ -1,0 +1,161 @@
+---
+slug: lavos
+name: Lavos
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 540
+shield: 270
+armor: 575
+energy: 0
+sprintSpeed: 1.15
+passive:
+  name: Probiosis
+  description: >-
+    Energy and Universal Orbs grant Lavos status immunity for 10 seconds. Hold any ability to imbue the next cast with additional Elemental Damage and Status.
+abilities:
+  - name: Ophidian Bite
+    key: "1"
+    energyCost: 0
+    description: >-
+      Lash out with a toxic serpentine strike, consuming the target to heal Lavos. Hold to imbue all abilities with Toxin.
+    stats: { damage: "varies" }
+  - name: Vial Rush
+    key: "2"
+    energyCost: 0
+    description: >-
+      Dash forward, crashing through enemies and leaving an icy trail of broken vials. Hold to imbue the next ability cast with Cold.
+    stats: { range: "varies" }
+  - name: Transmutation Probe
+    key: "3"
+    energyCost: 0
+    description: >-
+      Launch a probe that converts Health and Energy Orbs into Universal Orbs that provide both, and ammo pickups into Universal Ammo Pickups. The probe shocks enemies in close proximity, reducing other ability cooldowns by 1.5s per shocked foe. Hold to imbue the next ability cast with Electricity.
+    stats: { duration: "varies" }
+  - name: Catalyze
+    key: "4"
+    energyCost: 0
+    description: >-
+      Catalyst Probes erupt from Lavos and douse combatants in a fiery gel. Damage is doubled for each element afflicting an enemy. Hold to imbue the next ability cast with Heat.
+    stats: { damage: "varies" }
+acquisition:
+  source: "Operation: Orphix Venom or Father (Entrati, Deimos)"
+  blueprintLocations:
+    - "Operation: Orphix Venom, Rotation C (rare drop, 5.56-5.77%)"
+    - "Operation: Orphix Venom, Rotation A (uncommon, 11.11%)"
+    - "Father (Entrati), Acquaintance rank (common purchase)"
+  cost:
+    credits: 25000
+    platinum: 325
+  buildTimeHours: 72
+  note: "Blueprint and component blueprints drop from Operation: Orphix Venom or can be purchased from Father at Entrati rank."
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Lavos"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Lavos is a revolutionary warframe that fundamentally breaks the energy-consumption paradigm. Unlike every other frame in the arsenal, **Lavos operates entirely on ability cooldowns and has zero energy in his pool**--his abilities recharge on independent timers rather than draining a shared energy resource. This core mechanic makes Lavos uniquely independent from energy restoration mods, energy pizzas, Trinity link support, and the entire energy economy that governs traditional warframe playstyles. Instead of managing energy bars, players manage cooldown timers and elemental imbue selections, creating a distinctive gameplay loop centered on tactical planning and status-effect chaining. With 540 health, 270 shields, and 575 armor, Lavos is surprisingly durable for a mobility and utility-focused frame, enabling him to survive mid-to-high-level content through active ability cycling and orb-based sustain rather than pure defensive stats.
+
+The defining feature of Lavos's arsenal is his **elemental imbue system**. By holding any ability button (1, 2, 3, or 4) before casting, players select one of four elemental states--Toxin, Cold, Electricity, or Heat--which imbues the next ability with that element's damage type and guaranteed status application. This mechanic transforms ability casting into a puzzle where each elemental choice stacks onto enemies, rewarding players for thoughtful sequencing. His passive, **Probiosis**, grants 10 seconds of status immunity whenever he or nearby teammates pick up Energy Orbs or Universal Orbs, encouraging orb-generation synergies and providing valuable survivability windows. The combination of cooldown-based abilities, elemental imbuing, and orb-interaction mechanics makes Lavos a frame for players who enjoy tactical elemental planning and independence from the constant energy-management pressure that dominates other warframes.
+
+Lavos excels in extended missions and endless survival or defense content where traditional energy regeneration becomes unstable or insufficient. His self-sustaining cooldown system never falters regardless of mission intensity--a player can cast abilities infinitely without energy starvation. Transmutation Probe's utility to convert ammo and energy pickups into universal variants ensures Lavos remains well-supplied in any environment. The frame's lack of an energy pool means he is immune to energy drain effects (Nullifiers, drain auras) that paralyze other frames, fundamentally changing how players approach endurance runs. Introduced in Update 29.6 during the Operation: Orphix Venom event, Lavos represents an entirely new design philosophy for warframe construction, liberating players from energy-bar management and enabling more fluid, aggressive ability spam strategies than frames like Saryn or Octavia that rely on energy efficiency and regeneration.
+
+## Abilities
+
+<AbilityCard
+  name="Ophidian Bite"
+  key="1"
+  energyCost={0}
+  description="Lash out with a toxic serpentine strike, consuming the target to heal Lavos. Hold to imbue all abilities with Toxin."
+/>
+
+Lavos channels the venom within and lashes out with a toxic serpentine strike that consumes the target and heals Lavos for damage dealt. The ability is straightforward on its surface--a single-target heal-on-hit attack with Toxin innate status application. However, its power emerges when held: by pressing and holding the ability button, players imbue all subsequent ability casts (including Vial Rush, Transmutation Probe, and Catalyze) with Toxin damage and guaranteed status effects until another imbue is selected. This encourages pre-engagement planning before high-intensity firefights, allowing players to layer Toxin procs across multiple ability casts in sequence, creating cascading status chains that amplify Lavos's total damage output dramatically. The life-steal component also provides direct sustain, particularly valuable when Probiosis's orb-based immunity is unavailable.
+
+<AbilityCard
+  name="Vial Rush"
+  key="2"
+  energyCost={0}
+  description="Dash forward, crashing through enemies and leaving an icy trail of broken vials. Hold to imbue the next ability cast with Cold."
+/>
+
+Vial Rush propels Lavos forward in a dash that damages and pushes through enemies while leaving behind icy trails that can explode on detonation. Unlike many other dash abilities, Vial Rush can be canceled early by jumping, providing tactical repositioning flexibility in tight corridors or when adjusting aim mid-dash. The ability innately applies Cold status to all enemies in the trail, and holding the button before cast imbues the next ability with the player's currently selected elemental state--allowing Vial Rush itself to deal Toxin, Electricity, or Heat damage depending on preparation. Experienced players chain multiple Vial Rush casts on the same enemy group to trigger Transmutation Probe's cooldown-reduction passive (1.5 seconds per shocked foe), accelerating the entire ability rotation.
+
+<AbilityCard
+  name="Transmutation Probe"
+  key="3"
+  energyCost={0}
+  description="Launch a probe that converts Health and Energy Orbs into Universal Orbs that provide both, and ammo pickups into Universal Ammo Pickups. The probe shocks enemies in close proximity, reducing other ability cooldowns by 1.5s per shocked foe. Hold to imbue the next ability cast with Electricity."
+/>
+
+Transmutation Probe is Lavos's most versatile ability and the cornerstone of his orb-generation economy and cooldown acceleration. The probe converts all Health Orbs and Energy Orbs dropped by enemies or pickups into Universal Orbs that restore both health and energy equally to any player nearby, allowing Lavos to act as a resource generator for the squad. The probe also converts all ammo pickups into universal ammunition usable by any weapon type, critical for players running multiple weapon types. Offensively, the probe detonates nearby enemies with electrical shock damage, and critically, **each electrocuted foe reduces the cooldown of Lavos's other abilities by 1.5 seconds**. This creates a powerful feedback loop: cast Transmutation Probe for shock damage and cooldown reduction, then immediately cast other imbued abilities while cooldowns are shortened, creating near-permanent ability uptime in crowded fights. The probe can be imbued with Heat, Cold, or Toxin before casting to add those elements to the shock effect, opening pathways for simultaneous multi-element application.
+
+<AbilityCard
+  name="Catalyze"
+  key="4"
+  energyCost={0}
+  description="Catalyst Probes erupt from Lavos and douse combatants in a fiery gel. Damage is doubled for each element afflicting an enemy. Hold to imbue the next ability cast with Heat."
+/>
+
+Catalyze erupts Catalyst Probes from Lavos that coat nearby enemies in a fiery alchemical gel. The ability's core mechanic--**doubling damage for each distinct status effect already afflicting a target**--makes it a powerful capstone ability that rewards elemental chaining. After imbuing Toxin on Ophidian Bite, Cold on Vial Rush, and Electricity on Transmutation Probe, Catalyze strikes enemies already bearing three different status effects and deals **8x base damage** compared to hitting unaffected targets. In well-modded builds with high-status-chance weapons or aggressive ability cycling, enemies can accumulate multiple stacks of each element, and Catalyze's multiplier scales to 16x, 32x, or beyond. Holding Catalyze before cast applies Heat imbue to the next ability cast, completing Lavos's four-element toolkit and allowing seamless rotation between all four elemental states.
+
+## Passive
+
+**Probiosis** is Lavos's defining passive and the key to his survivability. Whenever Lavos or nearby allies pick up an Energy Orb or Universal Orb, Lavos gains **10 seconds of status immunity**, protecting him from hostile elemental procs, radiation effects, and all enemy status ailments. This passive fundamentally changes how Lavos survives high-level content: instead of relying on high shields or armor, Lavos maintains survival windows by actively collecting orbs dropped by enemy kills. Transmutation Probe's conversion of Health and Energy Orbs into Universal variants ensures orb generation even in ammo-rich, orb-poor missions. The passive pairs synergistically with Arcane Energize (which drops additional orbs when energy pickups are collected) and mods like Equilibrium (health/energy drain to orb generation), creating an aggressive cycle of damage-collect-survive that feels distinct from traditional tanking. Players should view Probiosis not as a passive defensive layer but as an active reward system that encourages aggressive ability spam and frequent enemy kills to generate the orb drops needed for immunity uptime. A single well-timed Transmutation Probe cast in a dense pack of enemies can generate enough orbs to sustain Lavos through the next 30 seconds of escalating danger.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 540 |
+| Shield | 270 |
+| Armor | 575 |
+| Energy | 0 |
+| Sprint Speed | 1.15x |
+| Mastery Rank | 0 |
+| Ability Recharge (cooldown-based) | Self-sustaining |
+
+Lavos has zero energy in his pool and does not regenerate or consume energy--his abilities operate entirely on cooldown timers. This fundamental departure from the standard energy system means modding for energy efficiency, energy regeneration, or energy capacity provides no benefit to Lavos's ability casting. Instead, Lavos benefits from cooldown reduction (via Transmutation Probe's passive or external mods), ability strength to increase damage and status effect duration, and range to extend Vial Rush mobility and ability coverage areas.
+
+## Acquisition
+
+Lavos's blueprint drops as a rare reward from Operation: Orphix Venom (Rotation C), a limited-time event that recurs seasonally. The primary path to obtaining Lavos is through the Entrati family on Deimos. Once players unlock Entrati standing and reach the Acquaintance rank (relatively early), Father offers Lavos's blueprint, neuroptics, chassis, and systems for Phasic Cell currency, which drops during Operation: Orphix Venom runs. The blueprints are non-tradable, requiring each player to farm or trade for the components independently.
+
+The build cost is moderate: 25,000 credits, three Orokin Cells (farmed from Void Fissure void containers or enemy drops on late-game planets like Ceres and Deimos), and standard mid-tier materials like Plastids and Rubedo. Construction takes 72 hours on the foundry, standard for frames released in Update 29.6 and later. New players typically acquire Lavos in the mid-to-late star chart phase once they unlock Deimos, around Mastery Rank 7-10.
+
+## Playstyle
+
+Lavos thrives in mission types where elemental status chaining provides tactical value. In extermination and elimination missions, pre-plan which elements to imbue based on expected enemy factions, then systematically layer procs across ability casts to maximize Catalyze's damage multiplier. In survival and defense missions, Transmutation Probe's orb conversion provides indefinite sustain, and the cooldown-reduction component allows aggressive ability spamming without energy starvation. For vault runs and puzzle-heavy missions, Vial Rush's dash mobility and early cancellation allow precise navigation, while elemental imbues can be swapped mid-mission to fit newly encountered enemy types.
+
+The cooldown-based identity means Lavos struggles against hard-cc enemies (nullifiers, shield-wave eximus units) that lock him in place and prevent ability casting--he has no armor-strip or defensive abilities like other tanks. However, in content with regular enemy spawns and open sightlines, Lavos's self-sustaining ability rotation and orb economy make him incredibly reliable. Pair Lavos with weapons that scale well with status effects (condition overload melee, multishot primaries) to amplify the damage from elemental chaining, or use him as a pure ability frame in content where weapon damage is secondary.
+
+Experienced Lavos players develop muscle memory for elemental sequencing: initiate with Transmutation Probe to gather shock procs and reduce ability cooldowns, chain Vial Rush to apply Cold while repositioning, layer additional elements with Ophidian Bite or Catalyze casts, then trigger Catalyze when three or more elements are active for maximum damage scaling. This rotation becomes second nature in extended engagements, transforming Lavos from a simple utility frame into a comprehensive damage engine that rivals ability-strength frames in raw output.
+
+## Builds
+
+For elemental-chain builds, focus on ability strength (Intensify, Augur Intensify) and range (Stretch, Augur Reach) to maximize Catalyze's damage multiplier and Vial Rush coverage. Equilibrium ensures constant orb generation from enemy drops, feeding Probiosis's immunity window.
+
+For a tanking variant, prioritize armor scaling (Steel Fiber, Umbral Vitality) and use Transmutation Probe aggressively to sustain through dangerous encounters. Transient Fortitude provides cooldown reduction, allowing rapid ability cycling and frequent Probe casts to keep enemies shocked and allies well-supplied with universal orbs.
+
+For endurance runs, load Primed Continuity for extended Transmutation Probe uptime and Zenurik focus school to further reduce ability cooldowns. This setup enables Lavos to solo 40+ minute survival missions without energy management concerns, a task that would drain most frames' energy pools in minutes.
+
+A full guide is available at [Lavos Elemental Damage Build](/builds/warframes/lavos/elemental-chain).
+
+## Lore
+
+Lavos is the master transmuter, a dark alchemist who discovered how to weaponize the four fundamental elements in harmonic resonance. He was introduced during the Operation: Orphix Venom event, a Sentient incursion on Deimos that required new warframe technology to combat the Orphix units. Unlike traditional warframes, which rely on Void energy channeled through an orokin power core, Lavos functions through pure alchemical transmutation--his abilities recharge through internal catalytic reactions rather than drawing from an external energy source.
+
+His design reflects a mastery of matter and form. The four serpents adorning his frame represent Toxin, Cold, Electricity, and Heat in constant flux, encouraging operators to learn the art of elemental manipulation. The Leverian codex entry describes Lavos through the eyes of a character named Javi, "the Crawling Serpent," suggesting Lavos may be a manifestation of an ancient alchemist whose knowledge transcended the Orokin age. His connection to Deimos and the Entrati family hints at a deeper lore connection to the Zariman and the remnants of Orokin experimentation, positioning Lavos as a warframe born not of standard Void engineering but of lost alchemical science.
+
+## Sources
+
+- [WFCD warframe-items repository](https://github.com/WFCD/warframe-items) -- numeric stats (health 540, shield 270, armor 575, zero energy pool), ability descriptions, acquisition drops.
+- [Lavos -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Lavos) -- lore, playstyle context, and historical patch notes documenting the frame's evolution and bug fixes since Update 29.6.

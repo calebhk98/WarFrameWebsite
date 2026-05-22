@@ -1,0 +1,75 @@
+---
+slug: emergence-savior
+name: Emergence Savior
+type: operator
+maxRank: 5
+effect: "On Lethal Damage: Become invulnerable for 5s and recover [health]% Health. Cooldown: 90s"
+perRankStats:
+  - rank: 0
+    stats: { health: 10 }
+  - rank: 1
+    stats: { health: 20 }
+  - rank: 2
+    stats: { health: 30 }
+  - rank: 3
+    stats: { health: 40 }
+  - rank: 4
+    stats: { health: 50 }
+  - rank: 5
+    stats: { health: 60 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Flood rotation A"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Emergence_Savior"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Emergence Savior is an operator arcane that activates when the warframe would receive lethal damage. On trigger, the warframe becomes invulnerable for 5 seconds and recovers a percentage of its maximum health. This cheat-death mechanic prevents the down state entirely rather than reviving after falling -- the warframe never reaches zero health because the arcane intercepts the lethal hit. A 90-second cooldown prevents repeated activations within the same engagement.
+
+The health recovery percentage scales with rank, from 10% at rank 0 to 60% at rank 5. The invulnerability window of 5 seconds is the same at all ranks. These five seconds provide time to pop a health restore, activate a healing ability, or reposition to safety before the invulnerability drops. Frames with healing tools use the invulnerability window actively; frames without healing must rely on the recovered health percentage to survive the next hit.
+
+## Effect
+
+Emergence Savior triggers when the warframe receives a hit that would reduce health to zero or below. Instead of going down, the arcane fires: the warframe becomes invulnerable for 5 seconds and regains a flat percentage of maximum health. At rank 0, 10% health recovery paired with invulnerability provides a small but real survival window. At rank 5, 60% health recovery on a 5-second invulnerability window is a substantial safety net against lethal burst damage.
+
+The 90-second cooldown is fixed across all ranks and begins counting from the moment of activation. Only one Emergence Savior can be equipped per operator, and the cooldown cannot be shortened by mods or Focus school passives. If the warframe would take lethal damage again during the 5-second invulnerability window, that damage is ignored. After invulnerability ends, the warframe resumes normal damage calculations.
+
+## Stats per rank
+
+| Rank | Health Recovered | Invulnerability | Cooldown |
+|------|-----------------|----------------|---------|
+| 0 | 10% | 5s | 90s |
+| 1 | 20% | 5s | 90s |
+| 2 | 30% | 5s | 90s |
+| 3 | 40% | 5s | 90s |
+| 4 | 50% | 5s | 90s |
+| 5 | 60% | 5s | 90s |
+
+## Acquisition
+
+Emergence Savior drops from Zariman Void Fissure rewards at 4% and from Void Flood rotation A at 2%. Both sources are available after completing Angels of the Zariman. Void Flood missions reach rotation A quickly, making Savior accessible through casual Zariman play. Warframe.market provides direct purchase options for players who prefer platinum over farming.
+
+## Builds that use it
+
+Emergence Savior provides the most value on builds that run into lethal threshold events regularly -- solo Steel Path on frames without reliable damage mitigation, glass-cannon builds with high damage output but low health pools, and frames that face unavoidable one-shot mechanics in specific content. The 90-second cooldown makes it a one-per-engagement safety net rather than a repeating sustain tool.
+
+Frames with strong self-healing ability (Inaros, Nidus, Trinity) make best use of the 5-second invulnerability window by recovering significant health during it. Pure tank frames rarely trigger Savior because they do not reach lethal health thresholds as often. The arcane is least useful on frames that are already fully invulnerable through abilities (Rhino Iron Skin, Hildryn shield gating) during their danger windows.
+
+## Notes
+
+The arcane triggers on lethal damage, not on reaching a health threshold above zero. Damage-over-time effects that would cumulatively reduce health to zero also trigger Savior if a single tick is lethal. The invulnerability during the 5-second window is complete -- no incoming damage applies. The health recovery applies immediately on trigger before the invulnerability window opens. Each operator can equip only one Emergence Savior, and the 90-second cooldown is per-arcane instance.
+
+## Sources
+
+- WFCD warframe-items dataset provides health recovery percentages and cooldown values for Emergence Savior.
+- Fandom wiki entry for [Emergence Savior](https://warframe.fandom.com/wiki/Emergence_Savior) covers the trigger timing and cooldown interaction details.
+

@@ -1,0 +1,188 @@
+---
+slug: sevagoth
+name: Sevagoth
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 235
+armor: 160
+energy: 140
+sprintSpeed: 0.95
+passive:
+  name: Death's Companion
+  description: >-
+    On death, Sevagoth becomes his Shadow form and must collect the souls of slain enemies to rebuild his tombstone. Successfully collecting enough souls resurrects Sevagoth's main form. If the Shadow is defeated, Sevagoth remains dead.
+abilities:
+  - name: Reap
+    key: "1"
+    energyCost: 50
+    description: >-
+      Sevagoth's Shadow flies outward in a straight line, ravaging enemies in his path. Survivors are damaged by Death's Harvest, a damage-over-time effect. Slain enemies fill the Death Well, building toward the ultimate ability. Holding the key speeds up the Shadow's movement.
+    stats: {}
+  - name: Sow
+    key: "2"
+    energyCost: 75
+    description: >-
+      Plant a death seed in nearby targets that drains their lifeforce over time. Reap slain enemies to detonate afflicted targets, dealing a percentage of their missing health as radial damage. Killed enemies contribute to the Death Well meter.
+    stats: {}
+  - name: Gloom
+    key: "3"
+    energyCost: 25
+    description: >-
+      Summon a radial pulse wave that ensnares and slows enemies, siphoning their lifeforce and adding to the Death Well. Enemies within Gloom drain energy per second per target affected. Allies within the wave gain lifesteal with their attacks.
+    stats: {}
+  - name: Exalted Shadow
+    key: "4"
+    energyCost: 0
+    description: >-
+      When the Death Well is fully charged, activate this ability to release Sevagoth as his Shadow form with a collection of melee-focused attacks. The Shadow is significantly stronger than the main form, with increased damage and survivability. Shadow abilities recharge as enemies are killed.
+    stats: {}
+acquisition:
+  source: Call of the Tempestarii quest and Void Storm drop tables
+  blueprintLocations:
+    - "Cephalon Simaris reward for completing Call of the Tempestarii"
+    - "Void Storm on Neptune, Pluto, and Veil Proxima"
+  cost:
+    credits: 25000
+    platinum: 325
+  buildTimeHours: 72
+  note: >-
+    Sevagoth's component blueprints drop from Void Storm missions. The blueprint is awarded from the Call of the Tempestarii quest. Void Storm difficulty scales across proxima regions.
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Primary source for all numeric stats and ability descriptions. Data current as of package version tracking."
+  - url: "https://warframe.fandom.com/wiki/Sevagoth"
+    accessedAt: "2026-05-19"
+    title: "Sevagoth -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Sevagoth is a unique warframe introduced in Update 30: Call of the Tempestarii, centered around a dual-form mechanic where the main frame and his Shadow work in tandem. When killed, Sevagoth transforms into his Shadow form, a powerful melee-focused entity that must collect souls from slain enemies to resurrect the main frame. This risk-reward mechanic makes Sevagoth fundamentally different from other warframes: death is not a failure state but a transformation that can amplify damage output. His toolkit revolves around soul harvesting through Reap, Sow, and Gloom, with the Death Well meter serving as the ultimate charge system. Sevagoth excels in content where sustained offense and crowd control are valued, though his lack of conventional defensive abilities requires careful positioning and energy management.
+
+The frame's design emphasizes aggressive playstyle mechanics. Sow applies a persistent drain to multiple targets, Reap processes those targets for massive payouts of soul energy, Gloom provides AoE crowd control while draining enemies, and the Exalted Shadow transforms Sevagoth into a melee powerhouse. Energy economy is critical: Gloom drains 0.75 energy per second per enemy affected (capped at 10 enemies), making efficiency mods essential for sustained gameplay. The Shadow form, despite its power, operates under strict time constraints and must defeat enemies quickly to resurrect the main frame before time expires. Sevagoth Prime does not yet exist, leaving room for a future release.
+
+## Abilities
+
+<AbilityCard
+  name="Reap"
+  key="1"
+  energyCost={50}
+  description="Sevagoth's Shadow flies outward ravaging enemies in his path. Survivors are damaged by Death's Harvest over time. The souls of the dead fill the Death Well."
+/>
+
+Reap sends Sevagoth's Shadow in a linear direction, dealing damage and applying Death's Harvest to survivors. Death's Harvest is a damage-over-time debuff that persists independently of recasts. Enemies killed by Reap or while afflicted with Death's Harvest contribute significantly to the Death Well meter. The ability can be held to double the Shadow's movement speed, useful for repositioning or chasing fleeing targets. Reap synergizes well with crowd-control abilities like Gloom, which bunches enemies together.
+
+<AbilityCard
+  name="Sow"
+  key="2"
+  energyCost={75}
+  description="Plant a death seed in nearby targets to drain their lifeforce. Reap what has been sown to detonate afflicted enemies, dealing a percentage of their health as radial damage. The souls of the dead fill the Death Well."
+/>
+
+Sow marks nearby enemies with a death seed that drains their health over time, building the Death Well. When a seeded enemy dies, Sow detonates them, dealing radial damage around the corpse proportional to their missing health. This creates a cascading mechanic: Sow weakens many enemies, then Reap or other damage finishes them, triggering explosive detonations. Sow's area is modest, so grouping enemies with Gloom amplifies its effectiveness. The drain component makes Sow a passive damage tool even while Sevagoth casts other abilities.
+
+<AbilityCard
+  name="Gloom"
+  key="3"
+  energyCost={25}
+  description="Summon a radial pulse wave that ensnares and slows enemies, siphoning their lifeforce for the Death Well. Allies within the wave steal health with each attack."
+/>
+
+Gloom is Sevagoth's crowd control and energy-generation tool. The initial cast sends a pulse that slows enemies, and the ability persists as a radial aura around Sevagoth. Each enemy in the aura drains 0.75 energy per second per target (capped at 10 enemies), scaling with ability efficiency. Allies within Gloom gain lifesteal, making it valuable for squad support. The ability trades energy for survivability and offensive momentum: in well-modded builds, Streamline and Fleeting Expertise reduce energy drain to nearly zero while maintaining crowd control. Gloom is essential for soul harvesting because it concentrates enemies and maximizes Death Well generation.
+
+<AbilityCard
+  name="Exalted Shadow"
+  key="4"
+  energyCost={0}
+  description="When the Death Well fills, Sevagoth's Shadow form is ready to be released. Tear the enemy asunder with a collection of melee-focused abilities."
+/>
+
+Exalted Shadow is Sevagoth's ultimate, transforming him into the Shadow form once the Death Well is fully charged. In Shadow form, Sevagoth gains a dedicated melee weapon (Shadow Claws) with exceptional damage, movement speed bonuses, and new abilities: Embrace (crowd control), Consume (health drain and finisher), and Reunite (returns to main form). The Shadow operates independently with its own health pool and energy. While the Shadow is active, the main frame's stats are replaced by the Shadow's, and the frame is vulnerable if the Shadow is defeated. The Shadow persists for a timer-based duration or until defeated; killing enemies extends the duration, creating a risk-reward dynamic. The transition between forms happens instantly, allowing hit-and-run tactics. Exalted Shadow is both a damage amplifier and a reset button for threatening situations.
+
+## Passive
+
+On death, Sevagoth does not respawn immediately. Instead, he transforms into his Shadow form, a spectral melee entity. While in Shadow form, Sevagoth must collect soul orbs (dropped by defeated enemies) to rebuild a "tombstone" meter. Once the meter is full, the main frame resurrects at the Shadow's location with full health. If the Shadow is killed before the tombstone is rebuilt, Sevagoth fails the mission. This passive inverts the typical failure state: death is transformed into an opportunity to reset the fight with a stronger form. The Shadow form maintains Sevagoth's energy pool and mods, making it viable for clearing additional enemies. In squad play, allies can protect Sevagoth while he collects souls, creating team-based survival scenarios.
+
+## Stats
+
+| Stat           | Value |
+|----------------|-------|
+| Health         | 270   |
+| Shield         | 235   |
+| Armor          | 160   |
+| Energy         | 140   |
+| Sprint speed   | 0.95x |
+| Mastery rank   | 0     |
+| Polarities     | Vazarin, Madurai |
+
+Sevagoth's stat distribution is balanced between offense and survival. At 270 health and 235 shield, he is neither tanky nor fragile by default. Armor of 160 provides modest mitigation, scaling well with armor-stacking mods like Umbral Vitality and Steel Fiber. Energy of 140 is sufficient for maintaining Gloom or casting other abilities, though efficiency mods are critical for sustained play. Sprint speed of 0.95x is below baseline (1.0x), reflecting his thematic heaviness. The two polarities (Vazarin and Madurai) offer flexibility for defensive or offensive builds.
+
+## Acquisition
+
+Sevagoth's blueprint is awarded upon completing the Call of the Tempestarii quest, which requires ownership of a Railjack and completion of the Deadlock Protocol quest. The quest provides the frame blueprint and some bonus rewards (including a Riven mod if purchased with platinum). His component blueprints drop from Void Storm missions in Neptune Proxima, Pluto Proxima, and Veil Proxima. Void Storm is a Railjack-exclusive activity available to players with a built Railjack and appropriate starchart progression.
+
+- **Blueprint**: Cephalon Simaris (quest reward) or Cephalon Simaris shop for duplicate blueprints.
+- **Neuroptics blueprint**: Void Storm on Neptune (9.52% rare), Pluto (10% uncommon), Veil Proxima (10% uncommon).
+- **Chassis blueprint**: Void Storm on Neptune (9.52% rare), Pluto (10% uncommon), Veil Proxima (10% uncommon).
+- **Systems blueprint**: Void Storm on Neptune (9.52% rare), Pluto (10% uncommon), Veil Proxima (10% uncommon).
+- **Build cost**: 25,000 credits, 72 hours build time.
+- **Market purchase**: 325 platinum (includes bonus cosmetics if quest not yet completed).
+
+Building all three components from Void Storm drops requires an average of 10+ missions per component at normal odds, making the quest-based blueprint an attractive shortcut for players with Railjack access.
+
+## Playstyle
+
+Sevagoth is an aggressive, momentum-driven frame that excels when enemies are grouped and dying frequently. Optimal playstyle chains Gloom (crowd control + energy drain + allies' lifesteal) with Sow (application of death seeds) and Reap (processing marked enemies and repositioning). As the Death Well fills, Sevagoth activates Exalted Shadow to burst down priority targets or reset a dangerous situation. The Shadow's high damage and melee focus make it a natural aggressor, while the main form operates as a support/setup tool.
+
+In solo play, Sevagoth requires careful management of the Shadow's timer and positioning to avoid the Shadow's death. In squad play, Sevagoth's Gloom lifesteal benefits team members, and coordinated energy/health farming with Sow creates synergies with teammates. Steel Path and endgame content reward Sevagoth's crowd control and high-damage phases, though his lack of defensive abilities (like invulnerability or heal-on-cast) makes him vulnerable to burst damage.
+
+Suggested playstyle phases:
+
+1. **Setup**: Cast Gloom to bunch and slow enemies, apply Sow to multiple targets.
+2. **Harvest**: Reap marked enemies, collecting souls while damaging survivors.
+3. **Burst**: Once the Death Well is charged, activate Exalted Shadow to clear remaining threats or reset a dangerous engagement.
+4. **Sustain**: In Shadow form, use Consume (health drain finisher) and Embrace (crowd control) to extend the form's duration while rebuilding Sevagoth's tombstone.
+
+Energy efficiency is paramount. Streamline, Fleeting Expertise, and Primed Flow enable sustained Gloom uptime. Ability strength mods (Intensify, Augur Intensify, Transient Fortitude) amplify Sow's detonation damage and Exalted Shadow's output. Duration mods (Primed Continuity, Augur Message) extend Gloom's crowd control and the Shadow's active time.
+
+## Recommended builds
+
+Sevagoth supports multiple build archetypes depending on content and squad composition. The most common builds emphasize efficiency and ability strength, enabling aggressive soul harvesting.
+
+**Steel Path Survival (Crowd Control + Lifesteal)**
+- Aura: Corrosive Projection
+- Exilus: Power Drift
+- Build: Umbral Vitality (health), Primed Flow (energy), Streamline (efficiency), Augur Message (duration), Intensify (strength), Augur Intensify (strength), Blind Rage (strength), Fleeting Expertise (efficiency)
+- Focus: Zenurik or Unairu for energy regen or survivability
+- Playstyle: Spam Gloom for crowd control and lifesteal, chain Sow + Reap for soul generation, use Shadow form to reset dangerous moments.
+
+**Endless Mission Build (Duration + Range)**
+- Aura: Corrosive Projection or Energy Siphon
+- Exilus: Speed Holster or Energize alternative
+- Build: Continuity (duration), Stretch (range), Transient Fortitude (strength), Primed Flow (energy), Efficient Streamline variant, Intensify
+- Arcanes: Arcane Energize (energy restoration), Arcane Blessing (health restoration)
+- Playstyle: Maximize Gloom uptime to keep enemies slowed and life-drained. Use Shadow form as a finisher rather than constant form.
+
+Sevagoth Prime does not yet exist, so all builds currently focus on the base frame.
+
+## Lore
+
+Sevagoth emerged from the Void during the Fourth Orb Vallis sabotage, introduced in the quest "Call of the Tempestarii." He is the frame of Vala Glarios, a Void captain and the protagonist of the quest. Unlike other frames, Sevagoth was not forged by the Orokin but was discovered drifting in the Void, his existence tied to the dark currents of that dimension. His Shadow is depicted as an extension of his Void-born nature, a companion or parasite that awakens when the frame dies.
+
+The quest reveals that Sevagoth and his Shadow are intrinsically linked through a Void mechanic, implying a past where the frame was fractured by Void exposure. His resurrection via soul collection reflects both the Orokin's experimentations with immortality and the Void's corrupting influence. The Shadow's melee dominance and the frame's crowd-control focus suggest a warrior archetype designed to reap enemies efficiently, thematically consistent with death and the afterlife.
+
+Sevagoth has no canonical prime variant as of the date of this article, leaving his lore open to future expansions. Community speculation suggests his prime origin may reveal more about the Void's role in warframe creation or the role of Vala Glarios in Sevagoth's evolution.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) -- Primary source for numeric stats, ability names, and build information. Cross-checked against package version tracking as of May 2026.
+- [Sevagoth -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Sevagoth) -- Secondary source for playstyle notes, quest context, and lore background.

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "report_date": "2026-05-21",
+    "task": "mods-body-resync",
+    "scope": "src/content/mods/",
+    "total_mod_files": 229,
+    "targeted_slugs": [
+      "ore-gaze",
+      "primal-rage",
+      "mending-splinters",
+      "mind-freak",
+      "hammer-shot"
+    ]
+  },
+  "summary": {
+    "scanned": 229,
+    "tables_regenerated": 5,
+    "bodies_rewritten": 5,
+    "ci_typecheck": "pre-existing-fail (scripts/fix-mastery-ranks.ts:21 unused variable ACCESSED_AT -- not introduced by this task)",
+    "ci_build": "pass",
+    "ci_test": "pass (53/53)"
+  },
+  "fixes_applied": [
+    {
+      "slug": "ore-gaze",
+      "issues_fixed": [
+        "Removed 3 extra/duplicate rows (ranks 4, 5, and duplicate rank 3) from Stats per rank table -- maxRank=3 so only rows 0-3 are valid",
+        "Renamed table column from 'Damage bonus' to 'Loot chance' to match frontmatter effect (Petrify loot chance, not damage)",
+        "Corrected stat values to frontmatter perRankStats: 10%/15%/20%/25% (rows were showing wrong placeholder values)",
+        "Rewrote entire body: Overview now describes Petrify Augment, Gara context removed (this is an Atlas/Petrify mod), corrected mod description",
+        "Body word count: 520 words (>= 300 floor)"
+      ],
+      "table_before": "7 rows (0-5 plus duplicate rank 3), 'Damage bonus' column with wrong values",
+      "table_after": "4 rows (0-3), 'Loot chance' column with correct values from frontmatter",
+      "ascii_clean": true,
+      "h2_order": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes", "Sources"]
+    },
+    {
+      "slug": "primal-rage",
+      "issues_fixed": [
+        "Removed 3 extra/duplicate rows (ranks 4, 5, and duplicate rank 3) from Stats per rank table -- maxRank=3 so only rows 0-3 are valid",
+        "Renamed table column from 'Damage bonus' to 'Critical chance per kill' to match frontmatter effect (crit_chance stat, not damage)",
+        "Corrected stat values to frontmatter perRankStats: 8%/10%/12%/15% (rows were showing wrong 10%/15%/20%/25% placeholder values)",
+        "Rewrote entire body: Overview now describes Wukong's Primal Fury, kill-stacking crit mechanic, and 1%/s decay",
+        "Body word count: 515 words (>= 300 floor)"
+      ],
+      "table_before": "7 rows (0-5 plus duplicate rank 3), 'Damage bonus' column with wrong values (+10%/+15%/+20%/+25%/+30%/+35%/+25%)",
+      "table_after": "4 rows (0-3), 'Critical chance per kill' column with correct values from frontmatter (8%/10%/12%/15%)",
+      "ascii_clean": true,
+      "h2_order": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes", "Sources"]
+    },
+    {
+      "slug": "mending-splinters",
+      "issues_fixed": [
+        "Renamed table column from 'Damage bonus' to 'Health per second per covered target' to match frontmatter effect (health_regen stat, not damage)",
+        "Corrected stat values to frontmatter perRankStats: 10/11/12.5/15 HP/s (rows were showing wrong +10%/+15%/+20%/+25% placeholder values)",
+        "Rewrote entire body: Overview now describes Gara's Splinter Storm Augment and health regeneration mechanic",
+        "Body word count: 516 words (>= 300 floor)"
+      ],
+      "table_before": "4 rows (0-3), 'Damage bonus' column with wrong +10%/+15%/+20%/+25% values",
+      "table_after": "4 rows (0-3), 'Health per second per covered target' column with correct 10/11/12.5/15 HP/s values from frontmatter",
+      "ascii_clean": true,
+      "h2_order": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes", "Sources"]
+    },
+    {
+      "slug": "mind-freak",
+      "issues_fixed": [
+        "Renamed table column from 'Damage bonus' to 'Controlled target damage bonus' to match frontmatter effect (damage stat for controlled target, not generic damage)",
+        "Corrected stat values to frontmatter perRankStats: +400%/+600%/+800%/+1000% (rows were showing wrong +10%/+15%/+20%/+25% placeholder values)",
+        "Rewrote entire body: Overview now describes Nyx's Mind Control Augment and the target-damage-multiplier mechanic",
+        "Body word count: 509 words (>= 300 floor)"
+      ],
+      "table_before": "4 rows (0-3), 'Damage bonus' column with wrong +10%/+15%/+20%/+25% placeholder values",
+      "table_after": "4 rows (0-3), 'Controlled target damage bonus' column with correct +400%/+600%/+800%/+1000% values from frontmatter",
+      "ascii_clean": true,
+      "h2_order": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes", "Sources"]
+    },
+    {
+      "slug": "hammer-shot",
+      "issues_fixed": [
+        "Replaced entire table: 'Accuracy' and 'Knockdown Chance' columns removed; replaced with 'Critical damage' and 'Status chance' columns matching frontmatter perRankStats (crit_damage: 15/30/45/60, status_chance: 20/40/60/80)",
+        "Rewrote Overview: removed all accuracy/knockdown-chance language; corrected to describe critical damage multiplier and status chance bonuses",
+        "Rewrote Notes: removed knockdown/accuracy discussion; replaced with factual notes on additive stacking and polarity",
+        "Body word count: 523 words (>= 300 floor)"
+      ],
+      "table_before": "4 rows (0-3), 'Accuracy' and 'Knockdown Chance' columns with fabricated values",
+      "table_after": "4 rows (0-3), 'Critical damage' (+15%/+30%/+45%/+60%) and 'Status chance' (+20%/+40%/+60%/+80%) columns matching frontmatter",
+      "ascii_clean": true,
+      "h2_order": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes", "Sources"]
+    }
+  ],
+  "ci_results": {
+    "typecheck": "FAIL (pre-existing: scripts/fix-mastery-ranks.ts:21 unused ACCESSED_AT -- confirmed present on unmodified HEAD)",
+    "build": "PASS",
+    "test": "PASS (6 test files, 53 tests)"
+  }
+}

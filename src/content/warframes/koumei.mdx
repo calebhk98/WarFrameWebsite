@@ -1,0 +1,156 @@
+---
+slug: koumei
+name: Koumei
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 344
+shield: 122
+armor: 444
+energy: 122
+sprintSpeed: 1.0
+passive:
+  name: Probability Engine
+  description: >-
+    Every few seconds, one of Koumei's weapons will inflict random Status Effects
+    for a brief duration. The chance to apply effects is rolled independently.
+abilities:
+  - name: Kumihimo
+    key: "1"
+    energyCost: 25
+    description: >-
+      Weave the threads of destiny. Enemies who touch the threads suffer a random
+      Elemental Status Effect. A roll of triple sixes creates threads that inflict
+      one of every Elemental Status Effect simultaneously.
+  - name: Omikuji
+    key: "2"
+    energyCost: 50
+    description: >-
+      Koumei glimpses a favorable future and the precise steps needed to reach it.
+      Complete the challenge to earn a Decree. Unlucky rolls add a debuff, but you
+      can hold the ability to reject the Omikuji. A roll of triple sixes grants a
+      Decree without a challenge.
+  - name: Omamori
+    key: "3"
+    energyCost: 75
+    description: >-
+      Surround yourself with Omamori Charms, each with a chance to have enemy
+      attacks heal you instead of damage you. The number of charms is determined
+      by Koumei's dice roll. A roll of triple sixes grants invulnerability for the
+      duration of the Omamori Charms.
+  - name: Bunraku
+    key: "4"
+    energyCost: 100
+    description: >-
+      Wield your foe's fate threads like the strings of marionettes. Koumei's dice
+      determine how many Status Effects foes in front of Koumei will suffer. A roll
+      of triple sixes causes further Status Effects over time and extends Bunraku
+      to enemies behind Koumei.
+acquisition:
+  source: "Shrine Defense on Earth (Saya's Visions)"
+  blueprintLocations:
+    - "Blueprint: Saya's Visions Shrine Defense on Earth (Rare)"
+    - "Chassis Blueprint: Saya's Visions Shrine Defense on Earth (Rare)"
+    - "Neuroptics Blueprint: Saya's Visions Shrine Defense on Earth (Rare)"
+    - "Systems Blueprint: Saya's Visions Shrine Defense on Earth (Rare)"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Koumei"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Koumei is a fate-channeling warframe introduced in Update 37.0 (October 2024) with the Five Fates update, centered around a dice-roll mechanic that determines ability outcomes. She weaves threads of destiny to manipulate probability itself, making her a unique strategic choice for players who enjoy high-variance gameplay and the thrill of unpredictable battles. Her design philosophy revolves around a luck-based system where better rolls unlock enhanced effects, adding an element of chance to every engagement that separates skilled players who can adapt on the fly from those relying on predictable ability rotations.
+
+With 344 health and 122 shields, Koumei is fragile by modern warframe standards, requiring careful positioning and energy management. However, her 444 armor--significantly above-average for her health pool--and her defensive ability toolkit provide substantial mitigation when played skillfully. The combination of armor-scaling defense, chance-based healing through Omamori, and status effect denial through immunity makes her viable in high-level content despite lower effective health. Her energy pool of 122 is moderate, supporting ability spam but rewarding tactical casting over continuous activation. Koumei's 1.0x sprint speed offers no mobility boost, meaning players must rely on clever ability usage and positioning rather than pure evasion, encouraging thoughtful movement and threat awareness.
+
+Koumei represents a marked departure from traditional warframe design, trading predictable ability chains for a chance-driven system that rewards quick thinking and adaptability. Her abilities scale with strength, duration, range, and efficiency, but the dice mechanic introduces inherent variance that no amount of modding can fully eliminate. This makes her particularly interesting for players who embrace run-specific adaptation and view randomness as a feature rather than a bug.
+
+## Abilities
+
+<AbilityCard
+  name="Kumihimo"
+  key="1"
+  energyCost={25}
+  description="Weave the threads of destiny. Enemies who touch the threads suffer a random Elemental Status Effect. A roll of triple sixes creates threads that inflict one of every Elemental Status Effect simultaneously."
+/>
+
+Kumihimo creates threads of fate that enemies cannot navigate without consequence. The threads inflict a random Elemental Status Effect (Heat, Cold, Electric, or Toxin) on contact. This ability is relatively low-cost and rewards range investment to create larger areas of denial. At maximum power, Kumihimo becomes a devastating crowd-control tool, especially when modded for range to span entire corridors. The iconic mechanic occurs on a triple-six roll: all four elemental effects trigger simultaneously on affected enemies, creating a near-guaranteed status-effect chain that can overwhelm enemy resistances and fragment armor. Kumihimo synergizes well with weapons that benefit from status application, as enemies primed by multiple status effects become vulnerable to finishers and more vulnerable to subsequent ability chains.
+
+<AbilityCard
+  name="Omikuji"
+  key="2"
+  energyCost={50}
+  description="Koumei glimpses a favorable future and the precise steps needed to reach it. Complete the challenge to earn a Decree. Unlucky rolls add a debuff, but you can hold the ability to reject the Omikuji. A roll of triple sixes grants a Decree without a challenge."
+/>
+
+Omikuji invokes a fortune-telling challenge where success grants a temporary buff called a Decree, while failure applies a debuff. The player can reject unfavorable rolls by holding the ability input, avoiding the debuff but losing the opportunity for a Decree. This ability adds a strategic layer where players must decide whether to accept temporary weakness for a potential buff or play conservatively. Better rolls unlock faster challenges or stronger decrees, making optimization possible through build tuning. A triple-six roll negates the challenge entirely and grants the Decree instantly, removing all risk. Decrees scale with ability strength and last until the next cast of Omikuji, creating a decision point each time the ability comes off cooldown: press your luck again or maintain your current buff? This high-stakes gamble appeals to players who enjoy risk management and reward the most skillful pilots.
+
+<AbilityCard
+  name="Omamori"
+  key="3"
+  energyCost={75}
+  description="Surround yourself with Omamori Charms, each with a chance to have enemy attacks heal you instead of damage you. The number of charms is determined by Koumei's dice roll. A roll of triple sixes grants invulnerability for the duration of the Omamori Charms."
+/>
+
+Omamori conjures protective charms that surround Koumei, each with a percentage chance to convert incoming damage into healing. The number of charms--and thus the total chance of healing--is determined by Koumei's dice roll, adding variance to defensive reliability. Modded for duration and strength, Omamori can sustain a solo player through medium-threat content by healing through sustained fire. A triple-six roll grants temporary invulnerability instead, making Omamori a potential life-save tool in desperate moments. When combined with Arcane Guardian or scaling armor mods, Omamori transforms Koumei into a deceptively durable frontline unit capable of prolonged endurance missions. The uncertainty means players must manage resource expenditure carefully--casting Omamori multiple times in succession to "reroll" until getting a high number is wasteful, but the risk-reward calculation keeps combat dynamic.
+
+<AbilityCard
+  name="Bunraku"
+  key="4"
+  energyCost={100}
+  description="Wield your foe's fate threads like the strings of marionettes. Koumei's dice determine how many Status Effects foes in front of Koumei will suffer. A roll of triple sixes causes further Status Effects over time and extends Bunraku to enemies behind Koumei."
+/>
+
+Bunraku weaponizes the threads of fate, inflicting Status Effects on enemies in front of Koumei based on her dice roll. More pips mean more simultaneous status effects, ranging from a single proc to all elemental types at once. The ability scales powerfully with strength and benefits from mods that increase status chance or duration. A triple-six roll extends effects in time and expands the attack cone to hit enemies behind Koumei, turning a frontal blast into a 360-degree assault. Bunraku is the most expensive ability at 100 energy but provides the best offensive output when rolls favor her. Pairing Bunraku with Kumihimo creates a setup where enemies are primed with multiple status effects, leading to fragile armor breakdowns and status-driven damage cascades. In group play, Bunraku's status effects soften priority targets before squad damage arrives, making Koumei a valuable support frame despite her personal damage output being conditional.
+
+## Passive
+
+Koumei's passive ensures that at least one of her equipped weapons automatically applies a random Status Effect at regular intervals, independent of the weapon's own status chance. This passive synergizes powerfully with the warframe's ability-focused design, as applying status effects improves engagement quality across all her tools. Equipping high-strength melee weapons or pistols that benefit from status amplification creates emergent synergies where the passive and the weapon's own proc chances multiply, stacking different effect types onto single targets. The passive is always active, requiring no energy or casting, making it an excellent complement to Koumei's randomness theme.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 344 |
+| Shield | 122 |
+| Armor | 444 |
+| Energy | 122 |
+| Sprint Speed | 1.0x |
+| Mastery Rank | 0 |
+
+## Acquisition
+
+All four component blueprints and the main blueprint drop exclusively from Shrine Defense missions on Earth (Saya's Visions node) at a 4.09% rare drop rate. Unlike older assassination frames, Koumei requires dedicated farming of a specific mission type rather than a boss elimination, making the farm more predictable but potentially longer depending on mission speed. The farm is gated behind progressing the star chart to Earth and unlocking access to Saya's Visions, typically achievable by Mastery Rank 1-2 players but accessible to anyone with Earth unlocked. The blueprint and component blueprints are non-tradable, requiring each player to farm independently. The crafting cost is reasonable for a modern frame: 25,000 credits plus standard early-game materials. The 72-hour build time is standard, giving players opportunity to run additional Shrine Defense runs while waiting for construction.
+
+## Playstyle
+
+Koumei excels in adaptive, dynamic gameplay where pilots embrace randomness and adjust tactics moment-to-moment. Rather than relying on a fixed rotation like most warframes, Koumei's best pilots consider available rolls, current threats, and engagement distance to optimally sequence abilities. Casting Kumihimo creates controlled space while dice reroll off-cooldown; Omikuji decisions become tactical gambles based on current enemy threat level and whether the active Decree is still useful; Omamori becomes a calculated defensive cast when enemy fire peaks; and Bunraku serves as either a crowd-control finisher or a desperation wipe against overwhelming numbers. The dice mechanic rewards quick decision-making and punishes passive ability spam, making Koumei demand active piloting.
+
+In endless missions, Koumei scales through status effect stacking and armor reduction, allowing her to remain viable into medium-to-high level content (150+) with proper modding and understanding of her role. She functions as a debuffer and crowd-controller rather than a high-damage dealer, supporting team DPS rather than solo-carrying missions. Paired with heavy-hitter warframes in void fissure defense or survival missions, Koumei's status effects and probability-based buffs amplify overall squad effectiveness significantly.
+
+## Recommended builds
+
+The standard Koumei build prioritizes ability strength (Intensify, Augur Intensify, Primed Power Strength) to maximize all dice bonuses, ability range (Stretch, Augur Reach) to expand ability coverage, and ability efficiency (Streamline, Primed Flow) to support ability spam. For survival missions, add duration mods (Primed Continuity, Augur Reach) to extend Decree uptime and Omamori healing duration. A sample build guide is available at [Koumei Status Debuffer](/builds/koumei/status-debuffer).
+
+For a defensive variant prioritizing Omamori uptime and armor scaling, equip Primed Vigor, Primed Steel Fiber, or Adaptation alongside defensive aura mods (Corrosive Projection). This transforms Koumei into a solo-capable tank capable of holding defensive positions in high-level missions. See [Koumei Defensive Tank](/builds/koumei/defensive-tank) for full details.
+
+## Lore
+
+Koumei is a Japanese-inspired warframe whose design draws from traditional divination, thread-craft, and fate-weaving mythology. The name and abilities reference Japanese cultural concepts: Kumihimo (traditional thread-braiding), Omikuji (fortune-telling papers), Omamori (protective charms), and Bunraku (puppet theater). She is described as both oracle and danger--to the virtuous, a guide to favorable futures; to the wicked, an instrument of chaotic retribution where luck itself becomes an enemy. Her introduction in the Five Fates update positioned her as a mysterious entity who channels probability itself, making her thematically distinct from the Orokin's usual deterministic weapon design. Unlike most warframes, which are products of Orokin engineering, Koumei's origins remain mysterious, with lore suggesting she may be something altogether different--perhaps a being of pure chance given physical form.
+
+The Five Fates update's narrative positions Koumei as connected to a sacred dream realm where fate and chance intersect, explaining her access to Fate Pearls and the Shrine Defense mission structure. Her connection to destiny and probability places her at odds with Zariman's timeline-manipulation theme and the void's underlying order, making her an intriguing addition to Warframe's lore tapestry.
+
+## Sources
+
+The complete information about Koumei comes from two primary sources. The WFCD warframe-items dataset provides all numeric stats, component drop rates, and ability mechanics. The Warframe wiki offers narrative context, lore connections, and player community insights regarding optimal usage in current endgame content. Both sources were accessed on May 19, 2026, ensuring accuracy against current game state.

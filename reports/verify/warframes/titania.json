@@ -1,0 +1,24 @@
+{
+  "pass": true,
+  "errors": [],
+  "warnings": [],
+  "word_count": 1001,
+  "checked_at": "2026-05-19T02:53:20.385573+00:00",
+  "citations": [
+    {
+      "field": "sources",
+      "url": "https://github.com/WFCD/warframe-items",
+      "accessed": true
+    },
+    {
+      "field": "sources",
+      "url": "https://warframe.fandom.com/wiki/Titania",
+      "accessed": true
+    },
+    {
+      "field": "masteryRank",
+      "wfcd_path": "Warframes.json#/Titania/masteryRank",
+      "value": 0
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+---
+// Base layout -- HTML shell, dark theme, sticky header, footer
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogType?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description = 'Warframe Codex -- comprehensive fan reference',
+  ogType = 'website',
+  ogImage,
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const siteOrigin = import.meta.env.SITE ?? 'https://calebhk98.github.io';
+const canonicalUrl = new URL(Astro.url.pathname, siteOrigin).href;
+const defaultOgImage = `${siteOrigin}${base}og-default.svg`;
+const resolvedOgImage = ogImage ?? defaultOgImage;
+const siteName = 'Warframe Codex';
+const fullTitle = `${title} -- ${siteName}`;
+---
+
+<!doctype html>
+<html lang="en" class="dark bg-[#f5f3ef] dark:bg-brand-black text-[#1a1a24] dark:text-brand-cream">
+  <head>
+    <script is:inline>
+      (function () {
+        var stored = typeof localStorage !== 'undefined' && localStorage.getItem('theme');
+        if (stored === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Security headers (inline enforcement for static hosting) -->
+    <!-- frame-ancestors omitted here: ignored in meta CSP per spec; enforced via HTTP header in _headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://cdn.warframestat.us https://wiki.warframe.com https://*.fandom.com data:; connect-src 'self' https://api.warframestat.us https://api.warframe.market; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self';" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0d0d12" />
+    <title>{fullTitle}</title>
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <link rel="manifest" href="/warframewebsite/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/warframewebsite/apple-touch-icon.svg" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="application/rss+xml" title={`${siteName} - Updates`} href={`${siteOrigin}${base}rss.xml`} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:image" content={resolvedOgImage} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={resolvedOgImage} />
+
+    <style>
+      /* Global focus-visible ring for all interactive elements */
+      :focus-visible {
+        outline: 2px solid #E89E3B;
+        outline-offset: 2px;
+        border-radius: 0.25rem;
+      }
+      /* Body text contrast: #E8DEC8 on #0A0A0F -- ratio ~13:1, exceeds WCAG AA */
+      /* Links: bump to #88DDFF for better contrast on dark backgrounds */
+      a:not([class]) {
+        color: #88DDFF;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      /* Light mode overrides */
+      :root:not(.dark) {
+        --bg-main: #f5f3ef;
+        --text-main: #1a1a24;
+      }
+      :root:not(.dark) body {
+        background-color: #f5f3ef;
+        color: #1a1a24;
+      }
+      :root:not(.dark) a:not([class]) {
+        color: #0057a8;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col bg-[#f5f3ef] dark:bg-brand-black text-[#1a1a24] dark:text-brand-cream">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded focus:bg-brand-orange focus:text-brand-black focus:font-semibold focus:outline-none"
+    >
+      Skip to main content
+    </a>
+    <Header />
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,73 @@
+---
+slug: primary-frostbite
+name: Primary Frostbite
+type: weapon
+maxRank: 5
+effect: "On Cold Status Effect: +[crit_multiplier]% Critical Damage and +[multishot]% Multishot for 12s. Stacks up to 40x."
+perRankStats:
+  - rank: 0
+    stats: { crit_multiplier: 0.5, multishot: 0.38 }
+  - rank: 1
+    stats: { crit_multiplier: 1, multishot: 0.75 }
+  - rank: 2
+    stats: { crit_multiplier: 1.5, multishot: 1.12 }
+  - rank: 3
+    stats: { crit_multiplier: 2, multishot: 1.5 }
+  - rank: 4
+    stats: { crit_multiplier: 2.5, multishot: 1.88 }
+  - rank: 5
+    stats: { crit_multiplier: 3, multishot: 2.25 }
+drops:
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
+sources:
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Primary_Frostbite
+    accessedAt: '2026-05-20'
+    publisher: Fandom
+updatedAt: '2026-05-20'
+---
+## Overview
+
+Primary Frostbite builds stacking Critical Damage and Multishot bonuses from Cold Status Effects applied by the primary weapon. Each Cold proc adds one stack lasting 12 seconds, accumulating up to 40 stacks. At full 40 stacks at rank 5, the weapon gains +120% Critical Damage and +90% Multishot -- both significant bonuses that compound with existing crit multiplier mods and base multishot.
+
+Cold procs are available through innate Cold damage on the weapon or through combined elemental pairings (Magnetic = Cold + Electric, Blast = Cold + Heat). High-status-chance primaries that apply Cold status regularly can build toward the 40-stack maximum during active combat.
+
+## Effect
+
+Each Cold Status Effect applied by the primary weapon adds one stack, with each stack providing the listed Critical Damage and Multishot bonus for 12 seconds. At rank 0, each stack provides +0.5% Critical Damage and +0.38% Multishot -- 40 stacks provide +20% Critical Damage and +15.2% Multishot. At rank 5, each stack provides +3% Critical Damage and +2.25% Multishot -- 40 stacks provide +120% Critical Damage and +90% Multishot.
+
+The 40-stack cap is reached over time through sustained Cold proc application. The 12-second stack duration means maintaining 40 stacks requires applying approximately 3-4 Cold procs per 12-second window at minimum to keep existing stacks from expiring while adding new ones.
+
+## Stats per rank
+
+| Rank | Crit Damage per Stack | Multishot per Stack | Max Stacks | Max Crit Damage | Max Multishot |
+|------|-----------------------|--------------------|-----------|----------------|--------------|
+| 0 | +0.5% | +0.38% | 40 | +20% | +15.2% |
+| 1 | +1% | +0.75% | 40 | +40% | +30% |
+| 2 | +1.5% | +1.12% | 40 | +60% | +44.8% |
+| 3 | +2% | +1.5% | 40 | +80% | +60% |
+| 4 | +2.5% | +1.88% | 40 | +100% | +75.2% |
+| 5 | +3% | +2.25% | 40 | +120% | +90% |
+
+## Acquisition
+
+Primary Frostbite drops from various Zariman Ten-Zero missions and Void Cascade content. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides an alternative acquisition path for players who prefer platinum-based purchase over farming.
+
+## Builds that use it
+
+Primary Frostbite is designed for Cold-element primary weapon builds with high status chance. Soma Prime with Cold and Toxin elemental mods generates Cold procs (through the Viral combination which retains Cold status chance) consistently during sustained fire, building Frostbite stacks throughout combat. High-status-chance shotguns with Cold element apply multiple Cold procs per shot through multi-pellet fire, reaching higher stack counts per engagement than single-projectile weapons.
+
+The Critical Damage bonus at 40 stacks pairs with existing Vital Sense and Primed Ravage critical multiplier mods, pushing total crit multiplier to extreme values on weapons with yellow or higher critical hit performance. The Multishot bonus at +90% adds nearly a full additional projectile per trigger pull, increasing the effective damage-per-shot significantly.
+
+## Notes
+
+Cold procs from companion weapons or warframe abilities do not trigger Primary Frostbite -- only the equipped primary weapon's Cold Status Effects count. Magnetic (Cold + Electric) and Blast (Cold + Heat) combined elemental damage generates independent Cold status procs alongside the combined element proc, both of which can trigger Frostbite. The 40-stack cap is high; most combat scenarios will not reach full stacks unless sustained Cold proc application continues for extended periods. The Critical Damage bonus adds to the critical multiplier formula; a weapon at 2x base crit multiplier with +120% additional Critical Damage gains substantially from the Frostbite stack maximum.
+
+## Sources
+
+- WFCD warframe-items dataset provides Critical Damage and Multishot per stack values and the 40-stack maximum for Primary Frostbite.
+- Fandom wiki entry for [Primary Frostbite](https://warframe.fandom.com/wiki/Primary_Frostbite) covers Cold Status proc trigger conditions and stack accumulation behavior.

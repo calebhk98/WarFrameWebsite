@@ -1,0 +1,243 @@
+---
+import Base from '../layouts/Base.astro';
+import {
+  nodePosArr,
+  nodeBySlug,
+  TYPE_COLOR,
+  EDGES,
+  SVG_W,
+  SVG_H,
+  NODE_R,
+} from '../lib/frame-graph-layout';
+import type { RelationshipType } from '../data/frame-relationships';
+
+const base = import.meta.env.BASE_URL;
+
+// Serialise for client script.
+const nodesJson = JSON.stringify(nodePosArr);
+const edgesJson = JSON.stringify(EDGES);
+const typeColorJson = JSON.stringify(TYPE_COLOR);
+---
+
+<Base
+  title="Frame Relationship Graph"
+  description="Interactive graph showing synergy, buff, subsume, and team-comp relationships between the most popular Warframes."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-6">
+      <nav class="mb-3 text-sm text-brand-cream/50">
+        <a href={`${base}warframes`} class="hover:text-brand-orange">Warframes</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Frame Graph</span>
+      </nav>
+      <h1 class="text-3xl font-bold text-brand-cream mb-3">Frame Relationship Graph</h1>
+      <p class="text-brand-cream/70 max-w-3xl leading-relaxed text-sm">
+        Warframes rarely operate as isolated units. Their kits interact through
+        direct buffs, complementary roles, Helminth subsume pairings, and
+        established team compositions that define the game's endgame meta.
+        This graph maps the most impactful relationships across the 25
+        most-played frames. Orange edges show one frame actively buffing
+        another -- Wisp Reservoirs boosting Mesa, Rhino Roar amplifying
+        Saryn's Spore scaling. Cyan edges mark role synergy, where two
+        frames cover different parts of a mission loop, such as Khora
+        corralling enemies into Nekros's Desecrate radius. Purple edges
+        highlight top Helminth subsume pairings -- the best ability to
+        borrow and the frame most improved by receiving it. Green edges
+        denote full 4-stack team compositions used in Eidolon hunts and
+        high-efficiency farming runs. Click any node to see all its
+        relationships in the detail panel. Filter by type using the
+        chips below. Keyboard: Tab to a node, Enter or Space to select,
+        arrow keys to navigate to adjacent nodes.
+      </p>
+    </header>
+
+    <!-- Filter chips -->
+    <div
+      class="flex flex-wrap gap-2 mb-6"
+      role="group"
+      aria-label="Filter edges by relationship type"
+      id="filter-bar"
+    >
+      {(['all', 'buffs', 'synergy', 'subsume-pair', 'team-comp'] as const).map((t) => (
+        <button
+          class="filter-chip px-3 py-1 rounded-full border text-xs font-semibold transition-all"
+          data-type={t}
+          aria-pressed={t === 'all' ? 'true' : 'false'}
+          style={t !== 'all' ? `border-color:${TYPE_COLOR[t as RelationshipType]};color:${TYPE_COLOR[t as RelationshipType]}` : ''}
+        >
+          {t === 'all' ? 'All' : t === 'buffs' ? 'Buffs' : t === 'synergy' ? 'Synergy' : t === 'subsume-pair' ? 'Subsume pair' : 'Team comp'}
+        </button>
+      ))}
+    </div>
+
+    <!-- Legend -->
+    <div class="flex flex-wrap gap-5 mb-6" aria-label="Edge color legend">
+      {(Object.entries(TYPE_COLOR) as [RelationshipType, string][]).map(([t, color]) => (
+        <div class="flex items-center gap-2 text-xs text-brand-cream/70">
+          <span
+            class="inline-block w-8 h-1 rounded"
+            style={`background-color:${color}`}
+            aria-hidden="true"
+          />
+          {t === 'buffs' ? 'Buffs' : t === 'synergy' ? 'Synergy' : t === 'subsume-pair' ? 'Subsume pair' : 'Team comp'}
+        </div>
+      ))}
+    </div>
+
+    <!-- Main layout -->
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- SVG graph -->
+      <div class="flex-1 overflow-x-auto">
+        <svg
+          role="img"
+          aria-labelledby="fg-title"
+          viewBox={`0 0 ${SVG_W} ${SVG_H}`}
+          class="w-full max-w-full rounded-lg border border-surface-3 bg-surface-2"
+          style="min-width:340px"
+          id="frame-graph-svg"
+        >
+          <title id="fg-title">
+            Warframe relationship graph -- 25 nodes showing buffs, synergy, subsume pairs, and team compositions
+          </title>
+          <defs>
+            <style>{`
+              .fg-node { cursor: pointer; }
+              .fg-node:focus { outline: none; }
+              .fg-circle { opacity: 0.85; transition: opacity 0.12s, stroke-width 0.12s; }
+              .fg-node:hover .fg-circle, .fg-node:focus .fg-circle { opacity: 1; stroke-width: 3; }
+              .fg-circle.selected { opacity: 1; stroke-width: 3; }
+              .fg-edge { transition: opacity 0.12s; }
+              .fg-edge.hidden { opacity: 0; pointer-events: none; }
+              .fg-label { pointer-events: none; font-family: ui-sans-serif, system-ui, sans-serif; }
+              #tooltip {
+                position: fixed; z-index: 50;
+                background: #1a1614; border: 1px solid #3a3330;
+                color: #e8e0d0; font-size: 12px; max-width: 240px;
+                padding: 6px 10px; border-radius: 6px;
+                pointer-events: none; display: none; line-height: 1.4;
+              }
+            `}</style>
+          </defs>
+
+          <!-- Edges rendered first (behind nodes) -->
+          {EDGES.map((rel, idx) => {
+            const from = nodeBySlug[rel.from];
+            const to = nodeBySlug[rel.to];
+            if (!from || !to) return null;
+            const color = TYPE_COLOR[rel.type];
+            const sw = 1 + (rel.strength - 1) * 0.4;
+            return (
+              <line
+                class="fg-edge"
+                data-idx={idx}
+                data-type={rel.type}
+                data-from={rel.from}
+                data-to={rel.to}
+                data-note={rel.note}
+                x1={from.cx}
+                y1={from.cy}
+                x2={to.cx}
+                y2={to.cy}
+                stroke={color}
+                stroke-width={sw}
+                stroke-opacity="0.65"
+                aria-hidden="true"
+              />
+            );
+          })}
+
+          <!-- Nodes -->
+          {nodePosArr.map((node) => (
+            <g
+              class="fg-node"
+              data-slug={node.slug}
+              tabindex="0"
+              role="button"
+              aria-label={`${node.label} -- click to view relationships`}
+            >
+              <circle
+                class="fg-circle"
+                cx={node.cx}
+                cy={node.cy}
+                r={NODE_R}
+                fill="#2a2320"
+                stroke="#6b5c50"
+                stroke-width="1.5"
+              />
+              <text
+                class="fg-label"
+                x={node.cx}
+                y={node.cy - 4}
+                text-anchor="middle"
+                fill="#e8e0d0"
+                font-size="9"
+                font-weight="600"
+              >
+                {node.label.split(' ')[0]}
+              </text>
+              {node.label.split(' ').length > 1 && (
+                <text
+                  class="fg-label"
+                  x={node.cx}
+                  y={node.cy + 7}
+                  text-anchor="middle"
+                  fill="#a09080"
+                  font-size="8"
+                >
+                  {node.label.split(' ').slice(1).join(' ')}
+                </text>
+              )}
+            </g>
+          ))}
+        </svg>
+      </div>
+
+      <!-- Detail panel -->
+      <aside
+        id="frame-panel"
+        class="lg:w-80 rounded-lg border border-surface-3 bg-surface-2 p-5 self-start"
+        aria-live="polite"
+        aria-label="Selected frame relationship details"
+      >
+        <p id="panel-hint" class="text-brand-cream/40 text-sm">
+          Click a frame node to see its relationships.
+        </p>
+        <div id="panel-content" class="hidden">
+          <h2 id="panel-name" class="text-lg font-bold text-brand-cream mb-3">&#8203;</h2>
+          <div id="panel-outgoing" class="mb-4"></div>
+          <div id="panel-incoming"></div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Cross-links -->
+    <nav class="mt-8 flex flex-wrap gap-4 text-sm" aria-label="Related tools">
+      <a href={`${base}helminth-planner`} class="text-brand-orange hover:underline">
+        Helminth Planner &rarr;
+      </a>
+      <a href={`${base}compare-warframes`} class="text-brand-orange hover:underline">
+        Compare Warframes &rarr;
+      </a>
+      <a href={`${base}warframes`} class="text-brand-orange hover:underline">
+        All Warframes &rarr;
+      </a>
+      <a href={`${base}tier-list`} class="text-brand-orange hover:underline">
+        Tier List &rarr;
+      </a>
+    </nav>
+  </div>
+
+  <!-- Tooltip element (outside SVG, fixed-positioned) -->
+  <div id="tooltip" role="tooltip" aria-live="off"></div>
+</Base>
+
+<!-- Inject server data as window globals for the client module -->
+<script define:vars={{ nodesJson, edgesJson, typeColorJson }} is:inline>
+  window.NODES = JSON.parse(nodesJson);
+  window.EDGES = JSON.parse(edgesJson);
+  window.TYPE_COLOR = JSON.parse(typeColorJson);
+</script>
+<!-- Client interaction logic (separate module, processed by Vite) -->
+<script>
+  import '../scripts/frame-graph-client';
+</script>

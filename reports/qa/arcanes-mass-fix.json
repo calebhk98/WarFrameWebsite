@@ -1,0 +1,1490 @@
+{
+  "generated": "2026-05-21",
+  "total_files": 179,
+  "files_processed": 179,
+  "files_modified": 145,
+  "no_wfcd_match": 15,
+  "effect_fabricated": 75,
+  "effect_correct": 88,
+  "maxrank_fixed": 13,
+  "body_em_dash_fixed": 138,
+  "modifications": [
+    {
+      "slug": "akimbo-slip-shot",
+      "file": "akimbo-slip-shot.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 569
+    },
+    {
+      "slug": "arcane-acceleration",
+      "file": "arcane-acceleration.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 427
+    },
+    {
+      "slug": "arcane-aerial",
+      "file": "arcane-aerial.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 611
+    },
+    {
+      "slug": "arcane-affinity",
+      "file": "arcane-affinity.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 549
+    },
+    {
+      "slug": "arcane-agility",
+      "file": "arcane-agility.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 535
+    },
+    {
+      "slug": "arcane-awakening",
+      "file": "arcane-awakening.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 562
+    },
+    {
+      "slug": "arcane-barrier",
+      "file": "arcane-barrier.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 660
+    },
+    {
+      "slug": "arcane-battery",
+      "file": "arcane-battery.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 573
+    },
+    {
+      "slug": "arcane-bellicose",
+      "file": "arcane-bellicose.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 501
+    },
+    {
+      "slug": "arcane-blessing",
+      "file": "arcane-blessing.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 744
+    },
+    {
+      "slug": "arcane-bullet-jump",
+      "file": "arcane-bullet-jump.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 628
+    },
+    {
+      "slug": "arcane-camisado",
+      "file": "arcane-camisado.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 545
+    },
+    {
+      "slug": "arcane-cleanse-corpus",
+      "file": "arcane-cleanse-corpus.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 580
+    },
+    {
+      "slug": "arcane-cleanse-corrupted",
+      "file": "arcane-cleanse-corrupted.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 537
+    },
+    {
+      "slug": "arcane-cleanse-grineer",
+      "file": "arcane-cleanse-grineer.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 591
+    },
+    {
+      "slug": "arcane-cleanse-infested",
+      "file": "arcane-cleanse-infested.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 544
+    },
+    {
+      "slug": "arcane-coalescent",
+      "file": "arcane-coalescent.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 599
+    },
+    {
+      "slug": "arcane-crepuscular",
+      "file": "arcane-crepuscular.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 546
+    },
+    {
+      "slug": "arcane-defense",
+      "file": "arcane-defense.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 379
+    },
+    {
+      "slug": "arcane-deflection",
+      "file": "arcane-deflection.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "maxRank:3->5"
+      ],
+      "word_count": 773
+    },
+    {
+      "slug": "arcane-detoxifier",
+      "file": "arcane-detoxifier.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 381
+    },
+    {
+      "slug": "arcane-escapist",
+      "file": "arcane-escapist.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 585
+    },
+    {
+      "slug": "arcane-fortification",
+      "file": "arcane-fortification.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 725
+    },
+    {
+      "slug": "arcane-healing",
+      "file": "arcane-healing.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 637
+    },
+    {
+      "slug": "arcane-hot-shot",
+      "file": "arcane-hot-shot.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 571
+    },
+    {
+      "slug": "arcane-ice-storm",
+      "file": "arcane-ice-storm.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 580
+    },
+    {
+      "slug": "arcane-ice",
+      "file": "arcane-ice.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 462
+    },
+    {
+      "slug": "arcane-intention",
+      "file": "arcane-intention.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 549
+    },
+    {
+      "slug": "arcane-liquid",
+      "file": "arcane-liquid.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 515
+    },
+    {
+      "slug": "arcane-magus-cadence",
+      "file": "arcane-magus-cadence.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 615
+    },
+    {
+      "slug": "arcane-magus-firewall",
+      "file": "arcane-magus-firewall.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 569
+    },
+    {
+      "slug": "arcane-magus-glitch",
+      "file": "arcane-magus-glitch.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 575
+    },
+    {
+      "slug": "arcane-magus-husk",
+      "file": "arcane-magus-husk.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 611
+    },
+    {
+      "slug": "arcane-magus-melt",
+      "file": "arcane-magus-melt.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 583
+    },
+    {
+      "slug": "arcane-magus-replenish",
+      "file": "arcane-magus-replenish.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 557
+    },
+    {
+      "slug": "arcane-magus-revert",
+      "file": "arcane-magus-revert.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 631
+    },
+    {
+      "slug": "arcane-magus-vigor",
+      "file": "arcane-magus-vigor.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 592
+    },
+    {
+      "slug": "arcane-momentum",
+      "file": "arcane-momentum.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 724
+    },
+    {
+      "slug": "arcane-nullifier",
+      "file": "arcane-nullifier.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 663
+    },
+    {
+      "slug": "arcane-overdrive",
+      "file": "arcane-overdrive.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 605
+    },
+    {
+      "slug": "arcane-phantasm",
+      "file": "arcane-phantasm.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 690
+    },
+    {
+      "slug": "arcane-power-ramp",
+      "file": "arcane-power-ramp.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 581
+    },
+    {
+      "slug": "arcane-primary-charger",
+      "file": "arcane-primary-charger.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 668
+    },
+    {
+      "slug": "arcane-protection",
+      "file": "arcane-protection.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 466
+    },
+    {
+      "slug": "arcane-rage",
+      "file": "arcane-rage.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 405
+    },
+    {
+      "slug": "arcane-reaper",
+      "file": "arcane-reaper.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 571
+    },
+    {
+      "slug": "arcane-resistance",
+      "file": "arcane-resistance.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 382
+    },
+    {
+      "slug": "arcane-rise",
+      "file": "arcane-rise.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 511
+    },
+    {
+      "slug": "arcane-shield",
+      "file": "arcane-shield.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 445
+    },
+    {
+      "slug": "arcane-steadfast",
+      "file": "arcane-steadfast.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 579
+    },
+    {
+      "slug": "arcane-strike",
+      "file": "arcane-strike.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 413
+    },
+    {
+      "slug": "arcane-survival",
+      "file": "arcane-survival.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 481
+    },
+    {
+      "slug": "arcane-temperance",
+      "file": "arcane-temperance.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 561
+    },
+    {
+      "slug": "arcane-tempo",
+      "file": "arcane-tempo.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 725
+    },
+    {
+      "slug": "arcane-truncate",
+      "file": "arcane-truncate.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 641
+    },
+    {
+      "slug": "arcane-ultimatum",
+      "file": "arcane-ultimatum.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 395
+    },
+    {
+      "slug": "arcane-universal-fallout",
+      "file": "arcane-universal-fallout.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 582
+    },
+    {
+      "slug": "arcane-victory",
+      "file": "arcane-victory.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 395
+    },
+    {
+      "slug": "arcane-warmth",
+      "file": "arcane-warmth.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 382
+    },
+    {
+      "slug": "arcane",
+      "file": "arcane.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 603
+    },
+    {
+      "slug": "cascadia-accuracy",
+      "file": "cascadia-accuracy.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 562
+    },
+    {
+      "slug": "cascadia-empowered",
+      "file": "cascadia-empowered.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 464
+    },
+    {
+      "slug": "cascadia-flare",
+      "file": "cascadia-flare.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 410
+    },
+    {
+      "slug": "cascadia-overcharge",
+      "file": "cascadia-overcharge.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 416
+    },
+    {
+      "slug": "conjunction-voltage",
+      "file": "conjunction-voltage.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 566
+    },
+    {
+      "slug": "emergence-dissipate",
+      "file": "emergence-dissipate.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 552
+    },
+    {
+      "slug": "emergence-renewed",
+      "file": "emergence-renewed.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 570
+    },
+    {
+      "slug": "emergence-savior",
+      "file": "emergence-savior.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 636
+    },
+    {
+      "slug": "eternal-eradicate",
+      "file": "eternal-eradicate.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 630
+    },
+    {
+      "slug": "eternal-logistics",
+      "file": "eternal-logistics.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 595
+    },
+    {
+      "slug": "eternal-onslaught",
+      "file": "eternal-onslaught.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 660
+    },
+    {
+      "slug": "exodia-triumph",
+      "file": "exodia-triumph.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 598
+    },
+    {
+      "slug": "exodia-valor",
+      "file": "exodia-valor.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 634
+    },
+    {
+      "slug": "fractalized-reset",
+      "file": "fractalized-reset.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 559
+    },
+    {
+      "slug": "longbow-sharpshot",
+      "file": "longbow-sharpshot.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 543
+    },
+    {
+      "slug": "magus-accelerant",
+      "file": "magus-accelerant.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 545
+    },
+    {
+      "slug": "magus-aggress",
+      "file": "magus-aggress.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 489
+    },
+    {
+      "slug": "magus-cadence",
+      "file": "magus-cadence.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 554
+    },
+    {
+      "slug": "magus-cloud",
+      "file": "magus-cloud.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 586
+    },
+    {
+      "slug": "magus-destruct",
+      "file": "magus-destruct.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 530
+    },
+    {
+      "slug": "magus-drive",
+      "file": "magus-drive.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 568
+    },
+    {
+      "slug": "magus-firewall",
+      "file": "magus-firewall.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 636
+    },
+    {
+      "slug": "magus-glitch",
+      "file": "magus-glitch.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 552
+    },
+    {
+      "slug": "magus-husk",
+      "file": "magus-husk.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 573
+    },
+    {
+      "slug": "magus-melt",
+      "file": "magus-melt.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 581
+    },
+    {
+      "slug": "magus-nourish",
+      "file": "magus-nourish.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 599
+    },
+    {
+      "slug": "magus-overload",
+      "file": "magus-overload.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 612
+    },
+    {
+      "slug": "magus-replenish",
+      "file": "magus-replenish.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 572
+    },
+    {
+      "slug": "magus-revert",
+      "file": "magus-revert.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 612
+    },
+    {
+      "slug": "magus-vigor",
+      "file": "magus-vigor.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 596
+    },
+    {
+      "slug": "melee-afflictions",
+      "file": "melee-afflictions.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 611
+    },
+    {
+      "slug": "melee-animosity",
+      "file": "melee-animosity.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 624
+    },
+    {
+      "slug": "melee-doughty",
+      "file": "melee-doughty.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 669
+    },
+    {
+      "slug": "melee-duplicate",
+      "file": "melee-duplicate.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 699
+    },
+    {
+      "slug": "melee-exposure",
+      "file": "melee-exposure.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 584
+    },
+    {
+      "slug": "melee-fortification",
+      "file": "melee-fortification.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 588
+    },
+    {
+      "slug": "melee-fury",
+      "file": "melee-fury.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 476
+    },
+    {
+      "slug": "melee-retaliation",
+      "file": "melee-retaliation.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 624
+    },
+    {
+      "slug": "molt-augmented",
+      "file": "molt-augmented.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 567
+    },
+    {
+      "slug": "molt-efficiency",
+      "file": "molt-efficiency.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 588
+    },
+    {
+      "slug": "molt-reconstruct",
+      "file": "molt-reconstruct.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 591
+    },
+    {
+      "slug": "molt-vigor",
+      "file": "molt-vigor.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 591
+    },
+    {
+      "slug": "pax-bolt",
+      "file": "pax-bolt.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 599
+    },
+    {
+      "slug": "pax-charge",
+      "file": "pax-charge.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 569
+    },
+    {
+      "slug": "pax-seeker",
+      "file": "pax-seeker.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 557
+    },
+    {
+      "slug": "pax-soar",
+      "file": "pax-soar.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 585
+    },
+    {
+      "slug": "primary-blight",
+      "file": "primary-blight.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 600
+    },
+    {
+      "slug": "primary-crux",
+      "file": "primary-crux.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 442
+    },
+    {
+      "slug": "primary-deadhead",
+      "file": "primary-deadhead.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 370
+    },
+    {
+      "slug": "primary-dexterity",
+      "file": "primary-dexterity.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 440
+    },
+    {
+      "slug": "primary-exhilarate",
+      "file": "primary-exhilarate.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 588
+    },
+    {
+      "slug": "primary-frostbite",
+      "file": "primary-frostbite.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 661
+    },
+    {
+      "slug": "primary-merciless",
+      "file": "primary-merciless.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 374
+    },
+    {
+      "slug": "primary-obstruct",
+      "file": "primary-obstruct.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 543
+    },
+    {
+      "slug": "primary-plated-round",
+      "file": "primary-plated-round.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 663
+    },
+    {
+      "slug": "residual-boils",
+      "file": "residual-boils.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 570
+    },
+    {
+      "slug": "residual-malodor",
+      "file": "residual-malodor.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 535
+    },
+    {
+      "slug": "residual-shock",
+      "file": "residual-shock.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 554
+    },
+    {
+      "slug": "residual-viremia",
+      "file": "residual-viremia.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 540
+    },
+    {
+      "slug": "secondary-deadhead",
+      "file": "secondary-deadhead.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 374
+    },
+    {
+      "slug": "secondary-dexterity",
+      "file": "secondary-dexterity.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 553
+    },
+    {
+      "slug": "secondary-enervate",
+      "file": "secondary-enervate.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 521
+    },
+    {
+      "slug": "secondary-fortifier",
+      "file": "secondary-fortifier.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 557
+    },
+    {
+      "slug": "secondary-kinship",
+      "file": "secondary-kinship.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 541
+    },
+    {
+      "slug": "secondary-merciless",
+      "file": "secondary-merciless.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 379
+    },
+    {
+      "slug": "secondary-outburst",
+      "file": "secondary-outburst.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 542
+    },
+    {
+      "slug": "secondary-shiver",
+      "file": "secondary-shiver.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 552
+    },
+    {
+      "slug": "secondary-surge",
+      "file": "secondary-surge.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 557
+    },
+    {
+      "slug": "shotgun-vendetta",
+      "file": "shotgun-vendetta.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 553
+    },
+    {
+      "slug": "theorem-contagion",
+      "file": "theorem-contagion.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 536
+    },
+    {
+      "slug": "theorem-demulcent",
+      "file": "theorem-demulcent.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 492
+    },
+    {
+      "slug": "theorem-induction",
+      "file": "theorem-induction.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 482
+    },
+    {
+      "slug": "theorem-infection",
+      "file": "theorem-infection.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 478
+    },
+    {
+      "slug": "virtuos-forge",
+      "file": "virtuos-forge.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 548
+    },
+    {
+      "slug": "virtuos-forte",
+      "file": "virtuos-forte.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 606
+    },
+    {
+      "slug": "virtuos-fury",
+      "file": "virtuos-fury.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 642
+    },
+    {
+      "slug": "virtuos-ghost",
+      "file": "virtuos-ghost.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 570
+    },
+    {
+      "slug": "virtuos-null",
+      "file": "virtuos-null.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 352
+    },
+    {
+      "slug": "virtuos-shadow",
+      "file": "virtuos-shadow.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "maxRank:5->3"
+      ],
+      "word_count": 689
+    },
+    {
+      "slug": "virtuos-spike",
+      "file": "virtuos-spike.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 380
+    },
+    {
+      "slug": "virtuos-strike",
+      "file": "virtuos-strike.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "maxRank:5->3"
+      ],
+      "word_count": 748
+    },
+    {
+      "slug": "virtuos-surge",
+      "file": "virtuos-surge.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed",
+        "maxRank:5->3",
+        "effect:fabricated->wfcd",
+        "perRankStats:fixed_from_wfcd"
+      ],
+      "word_count": 569
+    },
+    {
+      "slug": "virtuos-tempo",
+      "file": "virtuos-tempo.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 418
+    },
+    {
+      "slug": "virtuos-trojan",
+      "file": "virtuos-trojan.mdx",
+      "wfcd_match": true,
+      "changes": [
+        "body:em_dash_fixed"
+      ],
+      "word_count": 408
+    },
+    {
+      "slug": "virtuos-undeniable",
+      "file": "virtuos-undeniable.mdx",
+      "wfcd_match": false,
+      "changes": [
+        "body:em_dash_fixed",
+        "notes:wfcd_missing_added"
+      ],
+      "word_count": 568
+    }
+  ],
+  "effect_fabrication_rate_pct": 46.0
+}

@@ -1,0 +1,236 @@
+// helminth-data-f-h.ts -- Helminth subsume data: Ember through Harrow Prime.
+// Source: https://warframe.fandom.com/wiki/Helminth#Subsumable_Abilities
+// Accessed: 2026-05-20
+
+import type { HelminthEntry } from './helminth-types';
+
+export const HELMINTH_DATA_F_H: readonly HelminthEntry[] = [
+  {
+    slug: 'ember',
+    name: 'Ember',
+    abilities: [
+      { key: '1', name: 'Fireball' },
+      { key: '2', name: 'Immolation' },
+      { key: '3', name: 'Fire Blast' },
+      { key: '4', name: 'Inferno' },
+    ],
+    subsumeAbility: 'Fire Blast',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'ember-prime',
+    name: 'Ember Prime',
+    abilities: [
+      { key: '1', name: 'Fireball' },
+      { key: '2', name: 'Immolation' },
+      { key: '3', name: 'Fire Blast' },
+      { key: '4', name: 'Inferno' },
+    ],
+    subsumeAbility: 'Fire Blast',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'equinox',
+    name: 'Equinox',
+    abilities: [
+      { key: '1', name: 'Metamorphosis' },
+      { key: '2', name: 'Rest & Rage' },
+      { key: '3', name: 'Pacify & Provoke' },
+      { key: '4', name: 'Mend & Maim' },
+    ],
+    subsumeAbility: 'Rest & Rage',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'equinox-prime',
+    name: 'Equinox Prime',
+    abilities: [
+      { key: '1', name: 'Metamorphosis' },
+      { key: '2', name: 'Rest & Rage' },
+      { key: '3', name: 'Pacify & Provoke' },
+      { key: '4', name: 'Mend & Maim' },
+    ],
+    subsumeAbility: 'Rest & Rage',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'excalibur',
+    name: 'Excalibur',
+    abilities: [
+      { key: '1', name: 'Slash Dash' },
+      { key: '2', name: 'Radial Blind' },
+      { key: '3', name: 'Radial Javelin' },
+      { key: '4', name: 'Exalted Blade' },
+    ],
+    subsumeAbility: 'Radial Blind',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'excalibur-prime',
+    name: 'Excalibur Prime',
+    abilities: [
+      { key: '1', name: 'Slash Dash' },
+      { key: '2', name: 'Radial Blind' },
+      { key: '3', name: 'Radial Javelin' },
+      { key: '4', name: 'Exalted Blade' },
+    ],
+    subsumeAbility: 'Radial Blind',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'frost',
+    name: 'Frost',
+    abilities: [
+      { key: '1', name: 'Freeze' },
+      { key: '2', name: 'Ice Wave' },
+      { key: '3', name: 'Snow Globe' },
+      { key: '4', name: 'Avalanche' },
+    ],
+    subsumeAbility: 'Ice Wave',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'frost-prime',
+    name: 'Frost Prime',
+    abilities: [
+      { key: '1', name: 'Freeze' },
+      { key: '2', name: 'Ice Wave' },
+      { key: '3', name: 'Snow Globe' },
+      { key: '4', name: 'Avalanche' },
+    ],
+    subsumeAbility: 'Ice Wave',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'gara',
+    name: 'Gara',
+    abilities: [
+      { key: '1', name: 'Shattered Lash' },
+      { key: '2', name: 'Vitrify' },
+      { key: '3', name: 'Splinter Storm' },
+      { key: '4', name: 'Spectrorage' },
+    ],
+    subsumeAbility: 'Splinter Storm',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'gara-prime',
+    name: 'Gara Prime',
+    abilities: [
+      { key: '1', name: 'Shattered Lash' },
+      { key: '2', name: 'Vitrify' },
+      { key: '3', name: 'Splinter Storm' },
+      { key: '4', name: 'Spectrorage' },
+    ],
+    subsumeAbility: 'Splinter Storm',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'garuda',
+    name: 'Garuda',
+    abilities: [
+      { key: '1', name: 'Dread Mirror' },
+      { key: '2', name: 'Blood Altar' },
+      { key: '3', name: 'Bloodletting' },
+      { key: '4', name: 'Seeking Talons' },
+    ],
+    subsumeAbility: 'Blood Altar',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'garuda-prime',
+    name: 'Garuda Prime',
+    abilities: [
+      { key: '1', name: 'Dread Mirror' },
+      { key: '2', name: 'Blood Altar' },
+      { key: '3', name: 'Bloodletting' },
+      { key: '4', name: 'Seeking Talons' },
+    ],
+    subsumeAbility: 'Blood Altar',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'gauss',
+    name: 'Gauss',
+    abilities: [
+      { key: '1', name: 'Mach Rush' },
+      { key: '2', name: 'Kinetic Plating' },
+      { key: '3', name: 'Thermal Sunder' },
+      { key: '4', name: 'Redline' },
+    ],
+    subsumeAbility: 'Thermal Sunder',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'gauss-prime',
+    name: 'Gauss Prime',
+    abilities: [
+      { key: '1', name: 'Mach Rush' },
+      { key: '2', name: 'Kinetic Plating' },
+      { key: '3', name: 'Thermal Sunder' },
+      { key: '4', name: 'Redline' },
+    ],
+    subsumeAbility: 'Thermal Sunder',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'grendel',
+    name: 'Grendel',
+    abilities: [
+      { key: '1', name: 'Feast' },
+      { key: '2', name: 'Nourish' },
+      { key: '3', name: 'Pulverize' },
+      { key: '4', name: 'Regurgitate' },
+    ],
+    subsumeAbility: 'Nourish',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'grendel-prime',
+    name: 'Grendel Prime',
+    abilities: [
+      { key: '1', name: 'Feast' },
+      { key: '2', name: 'Nourish' },
+      { key: '3', name: 'Pulverize' },
+      { key: '4', name: 'Regurgitate' },
+    ],
+    subsumeAbility: 'Nourish',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'gyre',
+    name: 'Gyre',
+    abilities: [
+      { key: '1', name: 'Arcsphere' },
+      { key: '2', name: 'Coil Horizon' },
+      { key: '3', name: 'Cathode Grace' },
+      { key: '4', name: 'Rotorswell' },
+    ],
+    subsumeAbility: 'Coil Horizon',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'harrow',
+    name: 'Harrow',
+    abilities: [
+      { key: '1', name: 'Condemn' },
+      { key: '2', name: 'Penance' },
+      { key: '3', name: 'Thurible' },
+      { key: '4', name: 'Covenant' },
+    ],
+    subsumeAbility: 'Thurible',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'harrow-prime',
+    name: 'Harrow Prime',
+    abilities: [
+      { key: '1', name: 'Condemn' },
+      { key: '2', name: 'Penance' },
+      { key: '3', name: 'Thurible' },
+      { key: '4', name: 'Covenant' },
+    ],
+    subsumeAbility: 'Thurible',
+    subsumeKey: '3',
+  },
+];

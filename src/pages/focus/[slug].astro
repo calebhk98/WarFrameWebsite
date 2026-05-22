@@ -1,0 +1,88 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+
+export async function getStaticPaths() {
+  const schools = await getCollection('focus-schools');
+  return schools.map((s) => ({ params: { slug: s.slug }, props: { entry: s } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+
+const tags: string[] = [
+  `Element: ${data.element}`,
+  `${data.nodes.length} nodes`,
+];
+
+const description = data.playstyle.slice(0, 160);
+---
+
+<Entity
+  title={data.name}
+  kind="focus"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+  collectionHref="/focus"
+  collectionLabel="Focus Schools"
+>
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-brand-cream mb-4">Nodes</h2>
+    <div class="space-y-3">
+      {data.nodes.map((node) => (
+        <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-semibold text-brand-cream">{node.name}</span>
+            <div class="flex items-center gap-2">
+              <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${
+                node.type === 'Active'
+                  ? 'bg-brand-orange/20 text-brand-orange border border-brand-orange/30'
+                  : 'bg-surface-3 text-brand-cream/60 border border-surface-3'
+              }`}>
+                {node.type}
+              </span>
+              <span class="text-xs text-brand-cream/40">
+                {node.cost.toLocaleString()} Focus
+              </span>
+            </div>
+          </div>
+          <p class="text-sm text-brand-cream/70 leading-relaxed">{node.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {data.waybounds.length > 0 && (
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-brand-cream mb-4">Waybounds</h2>
+      <div class="space-y-3">
+        {data.waybounds.map((wb) => (
+          <div class="rounded-lg border border-brand-orange/20 bg-brand-orange/5 p-4">
+            <span class="font-semibold text-brand-orange block mb-1">{wb.name}</span>
+            <p class="text-sm text-brand-cream/70 leading-relaxed">{wb.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {data.recommended_warframes.length > 0 && (
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-brand-cream mb-3">Recommended warframes</h2>
+      <div class="flex flex-wrap gap-2">
+        {data.recommended_warframes.map((slug) => (
+          <a
+            href={`/warframes/${slug}`}
+            class="text-sm px-3 py-1.5 rounded-lg bg-surface-2 border border-surface-3 text-brand-cream/80 hover:text-brand-orange hover:border-brand-orange/50 transition-colors"
+          >
+            {slug}
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <Content />
+</Entity>

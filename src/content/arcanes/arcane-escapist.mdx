@@ -1,0 +1,74 @@
+---
+slug: arcane-escapist
+name: Arcane Escapist
+type: warframe
+maxRank: 5
+effect: "On Mercy Kill: Gain a stack of Escapist, up to 9x. On taking fatal damage, consume 3 stacks to avoid death and become invulnerable for [duration]s."
+perRankStats:
+  - rank: 0
+    stats: { duration: 2 }
+  - rank: 1
+    stats: { duration: 4 }
+  - rank: 2
+    stats: { duration: 6 }
+  - rank: 3
+    stats: { duration: 8 }
+  - rank: 4
+    stats: { duration: 10 }
+  - rank: 5
+    stats: { duration: 12 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation B"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Escapist"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Escapist is a stack-based survival arcane that builds charges through Mercy Kills and spends those charges to survive lethal damage. Each Mercy Kill on an enemy grants one stack of Escapist up to a maximum of 9 stacks. When the warframe would otherwise die, the arcane consumes 3 stacks and grants an invulnerability window instead, preventing death. At the maximum of 9 stacks, the arcane can prevent death up to 3 times before requiring more Mercy Kills to recharge.
+
+The stack mechanic creates an active resource loop: performing Mercy Kills during combat builds charges, and those charges serve as a death-prevention reserve for dangerous encounters later in the mission. Frames that can efficiently trigger Mercy Kills -- through low-health finishing mechanics or abilities that reduce enemies to finishable thresholds -- generate stacks more consistently.
+
+## Effect
+
+Mercy Kills occur when a finisher is performed on an enemy with very low remaining health (typically triggered by the Parazon mercy prompt). Each Mercy Kill adds one Escapist stack displayed in the buff bar. Stacks persist until spent. When the warframe takes fatal damage and has 3 or more stacks available, Escapist automatically consumes 3 stacks and grants invulnerability for the rank-dependent duration. At rank 0, 2 seconds of invulnerability provides a minimal window; at rank 5, 12 seconds allows substantial recovery time.
+
+With 9 stacks stored, the arcane can trigger three consecutive death-prevention events without any additional Mercy Kills. Each prevention costs exactly 3 stacks and the invulnerability duration does not stack from multiple events.
+
+## Stats per rank
+
+| Rank | Stacks Consumed per Death Prevention | Invulnerability Duration | Max Stacks |
+|------|-------------------------------------|------------------------|-----------|
+| 0 | 3 | 2s | 9 |
+| 1 | 3 | 4s | 9 |
+| 2 | 3 | 6s | 9 |
+| 3 | 3 | 8s | 9 |
+| 4 | 3 | 10s | 9 |
+| 5 | 3 | 12s | 9 |
+
+## Acquisition
+
+Arcane Escapist drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation B at 2%. Both sources are available after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Arcane Escapist fits builds that regularly perform Mercy Kills as part of their combat routine. Frames using the Parazon system frequently, such as builds focused on Requiem execution chains on Kuva Liches or Sister of Parvos, generate Escapist stacks as a byproduct of their mechanic. Steel Path builds that push into high-enemy-density content can store 9 stacks during the early stages of a survival mission and spend them on death-prevention during scaling difficulty spikes.
+
+The arcane is less useful in content where Mercy Kills rarely occur, such as boss-only encounters or missions with few eligible enemies. Frames that can reliably keep 9 stacks loaded enter dangerous content with an effective 3-death buffer.
+
+## Notes
+
+Mercy Kill eligibility is determined by the Parazon mercy prompt appearing over an enemy, not by arbitrary health threshold. Not all enemies are mercy-eligible. The 3-stack cost is fixed regardless of rank; rank only affects the invulnerability duration. The 9-stack cap limits total stored death preventions to 3. Stacks do not reset on down state if the death was prevented by Escapist itself -- the invulnerability bypasses the down state entirely, preserving remaining stacks. Invulnerability from Escapist and abilities such as Rhino Iron Skin do not stack.
+
+## Sources
+
+- WFCD warframe-items dataset provides invulnerability duration per rank and the 9-stack maximum for Arcane Escapist.
+- Fandom wiki entry for [Arcane Escapist](https://warframe.fandom.com/wiki/Arcane_Escapist) covers Mercy Kill trigger conditions and the 3-stack consumption mechanic.

@@ -1,0 +1,185 @@
+---
+slug: garuda-prime
+name: Garuda Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 270
+armor: 420
+energy: 220
+sprintSpeed: 1
+passive:
+  name: Dread Talons
+  description: >-
+    Garuda's damage temporarily increases with each enemy she kills, reaching
+    a maximum bonus. Garuda's slashing talons serve as her melee weapon when
+    no melee weapon is equipped.
+abilities:
+  - name: Dread Mirror
+    key: "1"
+    energyCost: 25
+    description: >-
+      Rip the life force from an enemy and use it as a shield that captures
+      incoming damage. Significantly weakened enemies are killed instantly.
+      Charge to channel captured damage into an explosive projectile.
+    stats: {}
+  - name: Blood Altar
+    key: "2"
+    energyCost: 50
+    description: >-
+      Impale an enemy on an altar of talons and siphon their health for Garuda
+      and her allies. The targeted enemy remains trapped during the effect.
+    stats: {}
+  - name: Bloodletting
+    key: "3"
+    energyCost: 0
+    description: >-
+      Garuda sacrifices her own health to generate energy and clear all active
+      Status Effects from herself. A high-risk, high-reward ability for
+      aggressive builds.
+    stats: {}
+  - name: Seeking Talons
+    key: "4"
+    energyCost: 100
+    description: >-
+      Charge to expand the targeting area, then release to send Garuda's talons
+      careening toward each target in the area. Surviving enemies become prone
+      to Slash Status.
+    stats: {}
+acquisition:
+  source: "Void Relic refinement"
+  blueprintLocations:
+    - "Axi, Neo, Meso, and Lith relics (multiple variants)"
+  buildTimeHours: 72
+  note: "Blueprint obtainable from various Void Relics at different refinement levels."
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2020-07-14"
+  vaultedAt: "2024-05-28"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Garuda/Prime"
+    accessedAt: "2026-05-19"
+    title: "Garuda Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Garuda Prime is the primed variant of Garuda, the queen of gore designed to embody aggressive, high-risk gameplay through health sacrifice and life-steal mechanics. Released on July 14, 2020, Garuda Prime features enhanced stats compared to her vanilla counterpart while retaining the core identity of a frame built on drawing power from the enemies she faces. Her signature combat style revolves around ripping health from foes and channeling it into survivability and offensive power, making her a frame for players who embrace risk-reward playstyles.
+
+With 270 health, 270 shields, 420 armor, and 220 energy, Garuda Prime is moderately tanky by warframe standards but relies heavily on aggressive energy management through Bloodletting and careful use of her life-steal mechanics. Her Madurai aura polarity supports strength-focused builds. The vaulted status of her relics reflects Digital Extremes' Prime Vault rotation policy; however, relics already obtained remain tradable and can still be opened for her components.
+
+Garuda Prime represents a departure from traditional tank-and-nuke designs, instead asking players to manage health as a resource and convert it into battlefield advantage. Her visual design emphasizes predatory elegance: white, gold, and deep scarlet plumage, with sharper, more regal talons than her standard variant. For players seeking a frame that rewards aggressive positioning and strategic ability management, Garuda Prime delivers a satisfying, albeit demanding, experience.
+
+## Abilities
+
+<AbilityCard
+  name="Dread Mirror"
+  key="1"
+  energyCost="25"
+  description="Rip the life force from an enemy and use it as a shield that captures incoming damage. Significantly weakened enemies are killed instantly. Charge to channel captured damage into an explosive projectile."
+/>
+
+Dread Mirror is Garuda's primary defensive and offensive tool. When cast, she steals an enemy's health and converts it into a damage-absorbing shield, scaling with the amount stolen. Against low-health enemies (typically those below 20% health), the ability executes them outright, preventing damage regression and providing a satisfying crowd-control element. The charging mechanic allows Garuda to store captured damage and release it as a projectile, making the ability useful both for defense and area denial. High Ability Strength increases both the shield value and projectile damage, while Ability Duration extends how long the captured shield persists before dissipating.
+
+<AbilityCard
+  name="Blood Altar"
+  key="2"
+  energyCost="50"
+  description="Impale an enemy on an altar of talons and siphon their health for Garuda and her allies. The targeted enemy remains trapped during the effect."
+/>
+
+Blood Altar is Garuda's healing and support tool, channeled as a siphoning effect that drains health from a single target and distributes it to nearby allies. The impaled enemy is rendered immobile, effectively serving as crowd control while providing sustained healing. This ability encourages cooperative play and is particularly valuable in high-level missions where staying alive matters more than raw damage output. Strength increases per-tick healing, while Ability Range determines how far allies can be from the altar to receive the siphoned health. Duration extends the channel time, allowing for more total healing per activation.
+
+<AbilityCard
+  name="Bloodletting"
+  key="3"
+  energyCost="0"
+  description="Garuda sacrifices her own health to generate energy and clear all active Status Effects from herself. A high-risk, high-reward ability for aggressive builds."
+/>
+
+Bloodletting is the unique cornerstone of Garuda Prime's kit: a tool that trades health for energy and status immunity. There is no energy cost because the cost is paid in health--Garuda consumes a percentage of her maximum health to refill her energy pool and instantly remove all Status Effects (Toxin, Fire, Electricity, etc.). This creates a risk-reward dynamic where aggressive players can sustain their offense indefinitely if they manage health carefully. Bloodletting makes Garuda less reliant on traditional energy generation (Energize arcanes, Zenurik focus) and more reliant on smart positioning and ability sequencing. The conversion ratio scales with Ability Strength, making higher strength builds more energy-efficient. For solo content, Bloodletting's status-cleaning effect is invaluable against high-level Corpus and Grineer that stack elemental damage.
+
+<AbilityCard
+  name="Seeking Talons"
+  key="4"
+  energyCost="100"
+  description="Charge to expand the targeting area, then release to send Garuda's talons careening toward each target in the area. Surviving enemies become prone to Slash Status."
+/>
+
+Seeking Talons is Garuda's ultimate crowd-clearing ability, a channeled projectile attack that scales with both charge time (for area coverage) and Ability Strength (for damage per talon). Each target in the expanded area receives a talon strike, with surviving enemies inflicted with Slash Status (Bleed), enabling weapon-less kills against low-level enemies and priming high-level targets for finishers. The slash procs interact well with exodia-based melee attacks and can be amplified with Slash mods. Ability Range expands the initial targeting reticle, while Efficiency reduces the cost of sustained charging. At maximum strength, Seeking Talons delivers impressive AoE damage and is particularly effective against grouped, low-armor enemies like Infested.
+
+## Passive
+
+Garuda's passive, Dread Talons, grants her a stacking damage bonus that increases with each enemy kill, reaching a maximum multiplier. This creates a snowball mechanic where successful kills accelerate subsequent kills, rewarding aggressive play. Additionally, when no melee weapon is equipped, Garuda's talons become her melee option, allowing weapon-less play and reducing the need to spec for melee mods if a player prefers pure ability focus. The passive encourages a playstyle where continuous engagement against lesser enemies builds momentum for encounters with tougher targets.
+
+## Stats
+
+| Statistic | Value |
+|-----------|-------|
+| Mastery Rank | 0 |
+| Health | 270 |
+| Shield | 270 |
+| Armor | 420 |
+| Energy | 220 |
+| Sprint Speed | 1.0x |
+| Aura Polarity | Madurai |
+
+Garuda Prime's defensive profile places her in the medium-armor, medium-health bracket. Her 420 armor provides meaningful physical damage reduction without requiring heavy tanking mods, while her balanced health and shield pools demand player awareness. The 220 energy pool is modest compared to some frames but sufficient with Bloodletting's energy generation. Her 1.0x sprint speed is baseline, offering no mobility advantage or penalty.
+
+## Acquisition
+
+Garuda Prime's blueprint and components drop from Void Relics across multiple eras: Lith, Meso, Neo, and Axi. Specific relic names include C10, H9, K4, P8, P14, S12 (Meso and Lith variants), A8, C5, and N20 (Neo variants), and H6 (Axi variants). Each relic's refinement level (Intact, Exceptional, Flawless, Radiant) affects the drop chance. As of May 2024, Garuda Prime entered the Prime Vault, meaning her relics no longer appear in mission drop tables. However, previously obtained relics remain in player inventories and can still be opened or traded between players.
+
+To acquire Garuda Prime post-vault, players may:
+1. Farm her relics from players via the in-game Trading Post (requires credits and platinum for brokerage).
+2. Wait for a future Prime Resurgence event, which temporarily reissues vaulted prime relics.
+3. Trade for her fully-built components if other players are selling them.
+
+The build time is 72 hours once all components are in hand.
+
+## Playstyle
+
+Garuda Prime excels in aggressive, hit-and-run tactical gameplay where the player actively cycles between her abilities to maximize health-steal and energy generation. The core playstyle loop is as follows:
+
+**Opening Phase:** Cast Dread Mirror on a high-value target to generate a shield and establish initial survivability. Use the charged projectile variant against groups for area denial.
+
+**Sustained Combat:** Alternate Dread Mirror and Blood Altar to maintain both shields and healing. Blood Altar becomes increasingly valuable in team play, where the siphoned health benefits multiple players. Use Seeking Talons against dense enemy clusters to spread Slash Status and reduce incoming damage through crowd control.
+
+**Energy Management:** When energy approaches zero, cast Bloodletting to simultaneously refill energy and cleanse status effects. This creates a self-sustaining cycle that encourages aggressive, continuous play rather than defensive stalling.
+
+**End-Game Considerations:** In Steel Path and Void Fissures, Bloodletting's status immunity is critical for surviving elemental stacking. Melee synergies emerge when combining Seeking Talons' Slash procs with weapons like the Shikhandi (innate Slash weapon) or Gram Prime (high raw damage), enabling exodia-based finishes.
+
+Garuda Prime rewards frame knowledge and planning. Blind ability spam leads to energy starvation and death; thoughtful sequencing of health-steal and status-clearing creates a survivable, aggressive frame.
+
+## Recommended builds
+
+Garuda Prime's builds vary dramatically based on playstyle, but most high-level builds prioritize Ability Strength, Ability Duration, and Efficiency.
+
+**Strength-Heavy Build (Damage Focus):** Combines Umbral Intensify, Umbral Vitality, and Blind Rage to maximize Dread Mirror and Seeking Talons damage. Augment with Quick Thinking for a pseudo-invulnerability layer by converting overflow energy into health absorption. This build favors solo play and heavily damaged enemies.
+
+**Balanced Build (Survivability + Damage):** Pairs moderate strength (120-150%) with Transient Fortitude and Streamline for efficient ability cycling. Include Primed Flow or Flow for energy buffer, and Adaptation to reduce incoming damage types. Augment with Arcane Nullifier for status immunity uptime reduction (less reliance on Bloodletting).
+
+**Support Build (Team Play):** Focuses on Blood Altar's healing through Ability Duration (Primed Continuity, Constitution) and Ability Range (Augur Reach, Stretch). Reduce strength to lower energy drain while maintaining healing value per tick. Include aura mod Corrosive Projection for armor strip support. Pair with Arcane Energize to sustain team energy pools.
+
+All builds benefit from Madurai aura mods (Corrosive Projection, Power Donation) and exilus slots filled with mobility options (Sprint Boost, Power Drift) or utility (Thermal Sunder augment).
+
+## Lore
+
+Before Garuda Prime, the Orokin engineered Garuda as a frame embodying predatory elegance and violence. Her lore establishes her as a creature of instinct--a hunter who draws strength from bloodshed. The prime variant amplifies this aesthetic and power level, reflecting how Orokin prime technology represented the peak of pre-Void War civilization.
+
+Garuda's acquisition through Void Relic refinement connects her to the Zariman and the remnants of Orokin void technology that the Tenno now scavenge for power. Her passive damage increase and health-theft mechanics echo themes of predation and sacrifice central to Void Fissure lore. Unlike frames created for defense or support, Garuda Prime is a weapon--a tool designed for controlled violence and personal survival through dominance.
+
+The visual design--white, gold, and scarlet--evokes nobility tainted by bloodlust. Her talons and the visual effects of her abilities (the ripping motion of Dread Mirror, the impalement of Blood Altar) reinforce her identity as a frame for players who embrace risk-taking and aggressive positioning. In the Tenno's hands, Garuda Prime becomes a statement: that strength comes not from hiding behind shields or crowd control, but from direct, calculated violence.
+
+## Sources
+
+- **WFCD warframe-items:** Contains canonical warframe data including ability costs, scaling, stats, and prime component sources. Pinned version: latest stable release.
+- **Warframe Fandom Wiki:** Provides acquisition flavor, mission drops, and build guides from the community. Accessed May 19, 2026.

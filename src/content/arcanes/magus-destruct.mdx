@@ -1,0 +1,74 @@
+---
+slug: magus-destruct
+name: Magus Destruct
+type: operator
+maxRank: 5
+effect: "On Void Sling: Reduce Enemy Resistance to Puncture Damage by [damage]%."
+perRankStats:
+  - rank: 0
+    stats: { damage: 12 }
+  - rank: 1
+    stats: { damage: 25 }
+  - rank: 2
+    stats: { damage: 37 }
+  - rank: 3
+    stats: { damage: 50 }
+  - rank: 4
+    stats: { damage: 60 }
+  - rank: 5
+    stats: { damage: 65 }
+drops:
+  - source: "Eidolon Hydrolyst capture"
+    chance: 8.0
+  - source: "Zariman Void Fissure rewards"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Destruct"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Destruct reduces enemy resistance to Puncture damage after the operator performs a Void Sling. Each Void Sling applies a Puncture resistance reduction to enemies, making them take more damage from Puncture-type weapons during the debuff window. Operators who Void Sling into enemy groups prime those enemies for follow-up Puncture weapon fire from the warframe, linking operator mobility with warframe weapon effectiveness.
+
+At rank 5, Void Sling reduces enemy Puncture resistance by 65%. Weapons with Puncture damage -- particularly rifles with high Puncture proportion, bows firing piercing shots, and secondary weapons with Puncture elements -- deal significantly more effective damage against debuffed enemies during this window.
+
+## Effect
+
+Each Void Sling applies the Puncture resistance reduction to enemies in the sling's path or destination area. At rank 0, -12% Puncture resistance provides a modest damage increase for Puncture weapons against affected enemies. At rank 5, -65% Puncture resistance is a substantial debuff -- Puncture weapons that would normally deal 100 damage against armored enemies deal significantly more during the resistance reduction window.
+
+The debuff applies to enemies reached by the Void Sling event. Operators who Void Sling through enemy clusters apply the resistance reduction to affected targets, setting up the warframe's Puncture weapon fire after returning from operator mode.
+
+## Stats per rank
+
+| Rank | Puncture Resistance Reduction |
+|------|------------------------------|
+| 0 | -12% |
+| 1 | -25% |
+| 2 | -37% |
+| 3 | -50% |
+| 4 | -60% |
+| 5 | -65% |
+
+## Acquisition
+
+Magus Destruct drops from Eidolon Hydrolyst capture at 8% and Zariman Void Fissure rewards at 2%. The 8% drop rate from Hydrolyst capture makes Destruct one of the more accessible Eidolon-source operator arcanes. Capturing (not killing) the Hydrolyst at the end of a Tridolon hunt provides the drop. Warframe.market provides an alternative for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Magus Destruct benefits operator builds paired with Puncture-dominant warframe weapons. Operators who Void Sling into enemy groups to apply the resistance reduction, then immediately return to warframe mode to fire Puncture-heavy weapons, exploit both the operator mobility and the debuff window. Sniper Rifles with high Puncture proportions (Lanka, Vectis), rifles modded for Puncture combinations, and bows that deal piercing damage all benefit from the enemy resistance reduction applied before warframe weapon fire.
+
+The arcane is particularly useful in Corpus content where Puncture damage applies against robotic enemies and crewmen, making the resistance reduction more impactful against the armor and health types common in Corpus missions.
+
+## Notes
+
+The Puncture resistance reduction applies to the enemies' Puncture damage calculation, reducing the effective resistance they have against that damage type. The debuff duration is linked to the Void Sling event; the resistance reduction persists for a fixed window after the sling completes before expiring. Enemies affected by the reduction take increased Puncture damage from any source -- the warframe's weapons, companion attacks, and ability-applied Puncture damage all benefit during the window. Void Sling does not need to directly contact an enemy to apply the debuff in all configurations; the exact trigger range depends on the sling interaction radius.
+
+## Sources
+
+- WFCD warframe-items dataset provides Puncture resistance reduction values per rank and the Void Sling trigger for Magus Destruct.
+- Fandom wiki entry for [Magus Destruct](https://warframe.fandom.com/wiki/Magus_Destruct) covers Void Sling enemy interaction and Puncture debuff window behavior.

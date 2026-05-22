@@ -1,0 +1,67 @@
+---
+name: Virtuos Fury
+type: operator
+maxRank: 3
+effect: "On Status Effect: 20% chance for +[damage]% Damage for 4s"
+perRankStats:
+  - rank: 0
+    stats: { damage: 7.5 }
+  - rank: 1
+    stats: { damage: 15 }
+  - rank: 2
+    stats: { damage: 22.5 }
+  - rank: 3
+    stats: { damage: 30 }
+drops:
+  - source: "Eidolon Teralyst capture (Void Fissure)"
+    chance: 3.0
+    rarity: "uncommon"
+    note: "Eidolon capture void fissure reward"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Virtuos_Fury"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Virtuos Fury grants the operator's amp a 20% chance to increase damage for 4 seconds each time the amp applies a Status Effect to an enemy. The trigger is the Status Effect proc itself, not the hit -- the amp must successfully apply a status effect (such as Heat, Cold, Toxin, Electricity, or Viral procs) for the 4-second damage bonus to activate. At rank 3, the damage increase is +30% for 4 seconds.
+
+Because the 4-second window is short, consistent status proc generation is required to maintain the buff with any regularity. Amp configurations with high status chance on the amp prism applied to susceptible enemies generate status procs frequently enough to give Virtuos Fury meaningful uptime during sustained combat.
+
+## Effect
+
+Each time the operator's amp successfully applies a Status Effect to an enemy, Virtuos Fury checks a 20% trigger chance. On success, the operator's amp gains +damage% bonus to all subsequent amp hits for 4 seconds. At rank 0, the bonus is +7.5% damage. At rank 3, the bonus is +30% damage.
+
+The 20% trigger chance is fixed across all ranks. Only the damage bonus percentage scales with rank. The buff activates on successful status procs -- missing shots or shots that deal damage but fail to apply a status proc do not trigger the chance roll.
+
+## Stats per rank
+
+| Rank | Damage Bonus | Duration | Trigger Chance |
+|------|-------------|----------|----------------|
+| 0 | +7.5% | 4s | 20% on Status Effect |
+| 1 | +15% | 4s | 20% on Status Effect |
+| 2 | +22.5% | 4s | 20% on Status Effect |
+| 3 | +30% | 4s | 20% on Status Effect |
+
+## Acquisition
+
+Virtuos Fury drops from Eidolon Teralyst captures during Void Fissure hunts on the Plains of Eidolon. Players who run Eidolon hunts while a Void Fissure is active on the Plains receive arcane drops from the Eidolon capture at the end of each Teralyst kill. The arcane can also be traded with other players through standard trade channels or purchased from Warframe.market.
+
+## Builds that use it
+
+Virtuos Fury suits operator builds that pair amp use with elemental damage arcanes. Virtuos Forge or Virtuos Trojan convert Void Damage to elemental damage types that generate status procs more readily, providing more proc opportunities per second for Virtuos Fury's trigger. Amps with high status chance prisms in combination with elemental conversion arcanes generate consistent status proc opportunities.
+
+The +30% damage at rank 3 is modest compared to higher-tier operator arcanes, making Virtuos Fury most useful when paired with other status-generating arcanes or builds that convert amp damage types. In content where the operator engages groups of enemies with high-status-chance amps, the proc frequency gives the buff reasonable uptime for a minor damage amplification.
+
+## Notes
+
+The 20% trigger chance is per status proc, not per hit. A single amp shot that applies multiple status types simultaneously provides multiple independent trigger checks. The 4-second duration is brief relative to combat timelines, so the buff functions as a short burst bonus rather than a sustained damage multiplier. The damage bonus applies to the amp's damage output during the active window, not to the warframe's weapons. Void Cascade and Eidolon hunt operators who land regular elemental procs through converted Void Damage benefit from the trigger most consistently.
+
+## Sources
+
+- WFCD warframe-items dataset provides damage bonus values per rank and the 20% trigger chance for Virtuos Fury.
+- Fandom wiki entry for [Virtuos Fury](https://warframe.fandom.com/wiki/Virtuos_Fury) covers status proc trigger conditions and amp damage interaction.

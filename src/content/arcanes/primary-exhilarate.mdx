@@ -1,0 +1,73 @@
+---
+slug: primary-exhilarate
+name: Primary Exhilarate
+type: weapon
+maxRank: 5
+effect: "On Weapon Impact Status Effect: +[energy_regen] Energy Regen/s for 10s. Stacks up to 3x."
+perRankStats:
+  - rank: 0
+    stats: { energy_regen: 0.2 }
+  - rank: 1
+    stats: { energy_regen: 0.4 }
+  - rank: 2
+    stats: { energy_regen: 0.6 }
+  - rank: 3
+    stats: { energy_regen: 0.8 }
+  - rank: 4
+    stats: { energy_regen: 1 }
+  - rank: 5
+    stats: { energy_regen: 1.2 }
+drops:
+  - source: "Void Cascade Skirmish missions"
+    chance: 2.0
+    rarity: uncommon
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Primary_Exhilarate"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Primary Exhilarate generates Energy Regeneration stacks when the primary weapon inflicts Impact Status Effects. Each Impact proc adds one Energy Regen stack lasting 10 seconds, accumulating up to 3 stacks. With 3 stacks active, the warframe recovers energy continuously at the combined rate, supplementing energy economy during active primary weapon combat.
+
+At rank 5, each Impact Status proc adds +1.2 Energy/s for 10 seconds, up to 3 stacks for a total of +3.6 Energy/s at full stacks. Over 10 seconds at full stacks, this generates 36 Energy -- a meaningful supplemental income that reduces dependency on energy pads and Zenurik Focus for builds that apply Impact status consistently.
+
+## Effect
+
+Each Impact Status Effect applied by the primary weapon adds one Energy Regen stack. Stacks last 10 seconds each and accumulate to a maximum of 3. At rank 0, each stack provides +0.2 Energy/s -- 3 stacks provide +0.6 Energy/s. At rank 5, each stack provides +1.2 Energy/s -- 3 stacks provide +3.6 Energy/s. The stacks are independent; each has its own 10-second timer and each new Impact proc refreshes or adds a stack as available.
+
+Weapons with high Impact damage proportion -- most shotguns, some pistols, impact-heavy rifles -- apply Impact status procs regularly through normal fire, generating energy income as a byproduct of dealing damage.
+
+## Stats per rank
+
+| Rank | Energy Regen per Stack | Max Stacks | Max Energy Regen | Stack Duration |
+|------|----------------------|-----------|-----------------|----------------|
+| 0 | 0.2/s | 3 | 0.6/s | 10s |
+| 1 | 0.4/s | 3 | 1.2/s | 10s |
+| 2 | 0.6/s | 3 | 1.8/s | 10s |
+| 3 | 0.8/s | 3 | 2.4/s | 10s |
+| 4 | 1.0/s | 3 | 3.0/s | 10s |
+| 5 | 1.2/s | 3 | 3.6/s | 10s |
+
+## Acquisition
+
+Primary Exhilarate drops from Void Cascade Skirmish missions in the Zariman tileset at uncommon rarity. Zariman Ten-Zero content is accessible after completing Angels of the Zariman. Regular Skirmish participation yields Exhilarate drops over multiple sessions. Warframe.market provides an alternative for players who prefer direct platinum purchase.
+
+## Builds that use it
+
+Primary Exhilarate suits Impact-heavy primary weapon builds that frequently apply Impact status procs during combat. Shotguns with high Impact proportion (Tigris Prime, Hek, Arca Plasmor) apply Impact procs on most shots, generating consistent energy income through regular fire. Impact-boosted builds using Smite elemental mods or high-Impact weapon configurations maintain stack uptime through active combat engagement.
+
+The energy recovery is supplemental -- 3.6 Energy/s at rank 5 provides roughly 216 Energy over a minute of sustained Impact proc application. Builds that regularly cast costly abilities (Molecular Prime, Rift Torrent, Absorb) benefit from the passive energy income reducing how often energy restore resources are needed. Frames that depend on Energy Siphon or Zenurik already can stack Primary Exhilarate's contribution on top for enhanced total energy recovery rates.
+
+## Notes
+
+Only Impact Status Effects from the primary weapon trigger Primary Exhilarate -- Impact procs from companions, melee weapons, or warframe abilities do not contribute. Each individual Impact proc is an independent trigger, so multi-pellet shotguns that apply several Impact procs per shot can add stacks rapidly. The 3-stack cap limits total simultaneous energy income to 3 stacks worth; additional Impact procs while at 3 stacks refresh existing stack timers rather than adding a fourth stack. At rank 5, achieving and maintaining 3 stacks provides energy income comparable to Zenurik's Energizing Dash bonus but without requiring a Focus school commitment.
+
+## Sources
+
+- WFCD warframe-items dataset provides Energy Regen per stack values per rank for Primary Exhilarate on Impact Status Effect.
+- Fandom wiki entry for [Primary Exhilarate](https://warframe.fandom.com/wiki/Primary_Exhilarate) covers Impact status trigger conditions and stack accumulation behavior.

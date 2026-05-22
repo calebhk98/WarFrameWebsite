@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EntityCard from '../../components/EntityCard.astro';
+
+const base = import.meta.env.BASE_URL;
+const entries = await getCollection('conclave');
+const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<Base title="Conclave" description="Conclave PvP modes, syndicate ranks, and mechanics in Warframe">
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Conclave</h1>
+      <p class="text-brand-cream/60">
+        {sorted.length} entries -- PvP modes, syndicate progression, and Conclave mechanics
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {sorted.map((entry) => (
+        <EntityCard
+          href={`${base}conclave/${entry.slug}`}
+          name={entry.data.name}
+          tags={[entry.data.type]}
+        />
+      ))}
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,73 @@
+---
+slug: primary-obstruct
+name: Primary Obstruct
+type: weapon
+maxRank: 5
+effect: "On Weapon Magnetic Status Effect: Enemy weapons jam within 15m of target. Cooldown [cooldown]s."
+perRankStats:
+  - rank: 0
+    stats: { cooldown: 60 }
+  - rank: 1
+    stats: { cooldown: 50 }
+  - rank: 2
+    stats: { cooldown: 40 }
+  - rank: 3
+    stats: { cooldown: 30 }
+  - rank: 4
+    stats: { cooldown: 20 }
+  - rank: 5
+    stats: { cooldown: 10 }
+drops:
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
+sources:
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Primary_Obstruct
+    accessedAt: '2026-05-20'
+    publisher: Fandom
+updatedAt: '2026-05-20'
+---
+## Overview
+
+Primary Obstruct jams enemy weapons in a 15-meter radius around the target when the primary weapon inflicts a Magnetic Status Effect. Enemy weapons that are jammed cannot fire for the jam duration, temporarily neutralizing the offensive output of all armed enemies in the area around the Magnetic-proced target. The arcane has a cooldown that determines how frequently the jam effect can trigger, which decreases with rank.
+
+At rank 5, the cooldown is only 10 seconds, allowing Primary Obstruct to disable enemy weapons in a 15-meter area every 10 seconds throughout combat. Against Corpus or Grineer enemies with ranged weapons, this creates recurring windows where the player can engage enemies without incoming fire.
+
+## Effect
+
+When the primary weapon applies a Magnetic Status Effect to an enemy, all enemy weapons within 15 meters of that target jam. The jam prevents those enemies from firing for the duration of the weapon jam state. The Magnetic trigger can occur from weapons with natural Magnetic elemental damage (Cold + Electricity combination) or from weapons specifically modded for Magnetic output. After triggering, the cooldown timer must expire before the effect can trigger again.
+
+At rank 0, the 60-second cooldown allows Primary Obstruct to fire once per minute. At rank 5, the 10-second cooldown allows activation every 10 seconds -- roughly once per enemy combat engagement phase during active fighting.
+
+## Stats per rank
+
+| Rank | Cooldown | Weapon Jam Radius |
+|------|----------|-----------------|
+| 0 | 60s | 15m |
+| 1 | 50s | 15m |
+| 2 | 40s | 15m |
+| 3 | 30s | 15m |
+| 4 | 20s | 15m |
+| 5 | 10s | 15m |
+
+## Acquisition
+
+Primary Obstruct drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
+
+## Builds that use it
+
+Primary Obstruct is specialized for Magnetic-element primary weapon builds in content where enemy ranged fire is a meaningful threat. Corpus content featuring Crewmen, Moas, and Corpus Techs who rely on ranged weapons benefits most from the weapon jam effect, neutralizing their offensive output for the jam duration. Magnetic builds using Cold and Electricity elemental mods on high-status-chance primary weapons apply Magnetic procs consistently, triggering Primary Obstruct at its cooldown rate.
+
+Defensive playstyles in Defense or Survival missions where holding a position against incoming fire gains value from the periodic weapon jam -- preventing enemy fire during the jam window reduces the sustained DPS taken while defending the objective or life support. The 15-meter radius covers a useful area around the proced target, jamming nearby enemies simultaneously.
+
+## Notes
+
+Primary Obstruct requires a Magnetic Status proc specifically from the primary weapon -- the weapon must have Magnetic elemental damage for the proc to trigger the arcane. The weapon jam duration is separate from the cooldown; the cooldown governs how frequently the jam can trigger, not how long the jam lasts once activated. The jam radius is centered on the Magnetic-proced enemy, not on the player -- positioning shots to Magnetic proc a central enemy within a group maximizes the number of jammed weapons in the area. Enemies immune to Magnetic status (some boss types, Overguard enemies) do not trigger the arcane when hit.
+
+## Sources
+
+- WFCD warframe-items dataset provides cooldown values per rank and the 15-meter jam radius for Primary Obstruct on Magnetic Status.
+- Fandom wiki entry for [Primary Obstruct](https://warframe.fandom.com/wiki/Primary_Obstruct) covers Magnetic Status trigger conditions and weapon jam radius behavior.

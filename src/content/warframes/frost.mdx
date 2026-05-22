@@ -1,0 +1,188 @@
+---
+slug: frost
+name: Frost
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 455
+armor: 315
+energy: 100
+sprintSpeed: 0.95
+passive:
+  name: "Icy Body"
+  description: >-
+    Cold status effects from Frost's abilities last 100% longer. Frost gains 50 armor
+    for each enemy afflicted with cold status within affinity range.
+abilities:
+  - name: Freeze
+    key: "1"
+    energyCost: 25
+    description: >-
+      A frigid energy blast that freezes targets in their tracks, rendering them
+      immobile and vulnerable. Single-target crowd control with high accuracy.
+  - name: Ice Wave
+    key: "2"
+    energyCost: 50
+    description: >-
+      Sends a wave of razor-sharp crystallized ice toward enemies, dealing heavy damage
+      and freezing those in its path. Area-of-effect control in a directional pattern.
+  - name: Snow Globe
+    key: "3"
+    energyCost: 75
+    description: >-
+      Creates a protective sphere of frozen air that shields Frost and allies, absorbing
+      damage with brief invulnerability on cast. The globe scales with health and armor.
+  - name: Avalanche
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summons a treacherous landslide of ice that freezes and shatters all enemies
+      in radius. Affected enemies take heavy damage and are knocked down.
+acquisition:
+  source: "Market and Ceres (Exta) assassination"
+  blueprintLocations:
+    - "Market (375 platinum)"
+    - "Exta assassination on Ceres (component drops)"
+  cost:
+    credits: 25000
+    platinum: 375
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2017-12-12"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Frost"
+    accessedAt: "2026-05-19"
+    title: "Frost -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Frost is an ice-elemental warframe specializing in crowd control, area denial, and team protection through mastery of freeze-based abilities. Released on January 29, 2013, Frost ranks among the game's original warframes, representing fundamental elemental power alongside frames like Mag, Ember, and Volt. His toolkit excels at immobilizing enemy groups while simultaneously protecting objectives and teammates through defensive barriers. Frost thrives in defensive and survival-oriented missions where area control and crowd management determine mission success. With 270 health, 455 shields, and exceptional 315 armor, Frost provides moderate personal durability augmented by his passive armor stacking, enabling increasingly tanky gameplay as more enemies enter his cold-status aura.
+
+Frost's playstyle centers around maintaining freeze effects on multiple enemies simultaneously, leveraging his passive to convert crowd control into increasing armor values. Unlike offensive damage-focused frames, Frost's primary responsibility involves controlling enemy positioning and protecting allies through smart ability usage. His 0.95 sprint speed is marginally slower than the baseline, discouraging pure rushing tactics and promoting the methodical, positioning-oriented gameplay his kit naturally encourages. The frame functions as a moderately-armored controller whose durability scales multiplicatively as mission difficulty increases and enemy density surrounding him rises.
+
+## Abilities
+
+<AbilityCard
+  name="Freeze"
+  key="1"
+  energyCost={25}
+  description="A frigid energy blast that launches an icy projectile inflicting cold damage and freezing targets in their tracks."
+/>
+
+Freeze is Frost's signature opening tool and crowd-control anchor. Casting Freeze fires a projectile that explodes on impact, dealing cold damage to the primary target and a smaller area around it. The ability applies 10 cold status effects on impact, and if an enemy receives 10 stacks total from Freeze casts, they freeze in place for up to 15 seconds at rank 4.
+
+The ability becomes even more versatile when cast onto Snow Globe. Instead of entering the globe, Freeze detonates it from the outside, triggering a devastating explosion that damages all enemies inside and ragdolls them across the arena. This synergy is essential for recovering when enemies breach the globe or when you want to reposition it. Freeze also scales excellently with ability strength--higher power strength extends the freeze duration and increases the direct damage significantly, making it viable for both crowd control and burst damage roles.
+
+One critical mechanic: frozen enemies don't stop moving; they maintain their momentum but cannot act. This means aggressive Grineer can still slide into your position while frozen, requiring careful positioning. However, if a frozen enemy collides with obstacles fast enough, they shatter and take additional damage.
+
+<AbilityCard
+  name="Ice Wave"
+  key="2"
+  energyCost={50}
+  description="Sends a wave of razor-sharp ice shards that deals heavy cold damage and freezes enemies in a spreading cone."
+/>
+
+Ice Wave is Frost's area denial tool, casting a spreading wave of crystalline shards in front of him. The wave starts narrow and expands into a cone as it travels forward, following terrain elevation changes. At rank 4, it deals 700 cold damage and applies 6 cold status effects to all targets in its path over a 20-meter range.
+
+Unlike Freeze, Ice Wave doesn't instantly freeze on impact; instead, it relies on stacking cold status with repeated casts or combining with other cold sources. The wave's cone nature makes it exceptional against tightly grouped enemies or in narrow corridors where enemies cannot spread. It passes through Snow Globe, allowing you to clear trapped enemies from inside the globe without destroying it.
+
+Ice Wave's augment, Ice Wave Impedance, transforms the ability into a zone-denial tool by leaving frozen ground that applies cold to any enemy walking across it. This pairs exceptionally well with defensive builds, turning common chokepoints into icy gauntlets. The ability gains significant range and power from strength and range mods, scaling from excellent crowd control to devastating area sweeps.
+
+<AbilityCard
+  name="Snow Globe"
+  key="3"
+  energyCost={50}
+  description="Creates a protective sphere of frozen matter that grants invulnerability on cast and blocks most incoming fire."
+/>
+
+Snow Globe is arguably Frost's most iconic ability and the centerpiece of his defensive role. Upon casting, a sphere appears at Frost's location (or on terrain within range). For the first 2-4 seconds depending on rank, it grants full invulnerability to Frost and allies inside. Enemies within the sphere are inflicted with 10 cold status effects and violently pushed outward; if they hit obstacles, they take up to 50% of their maximum health as true damage.
+
+The globe's health is calculated using a unique formula that incorporates Frost's armor: Base Health + (5 x Armor) x (1 + Ability Strength). With high-ranked Steel Fiber and Intensify, a rank-4 globe can reach 8,450+ health before even accounting for absorbed damage. The globe absorbs enemy fire, converting some of it into additional health (up to 1,000,000 total combined health with multiple globes).
+
+Up to 4 Snow Globes can exist at once. Recasting creates a new globe and destroys the oldest. Casting a new globe inside an existing one merges their health and reactivates the invulnerability period. Enemies who approach from outside take 1 cold status effect every 0.33 seconds, stacking for eventual freezes. Frost's passive ensures these frozen enemies grant him armor, making the globe progressively more durable the longer enemies surround it.
+
+<AbilityCard
+  name="Avalanche"
+  key="4"
+  energyCost={100}
+  description="Summons a treacherous landslide of ice that instantly freezes and shatters all enemies in its radius."
+/>
+
+Avalanche is Frost's ultimate devastation tool, calling forth a massive avalanche that freezes all enemies in a 25-meter radius and applies permanent armor reduction. At rank 4, it deals 1,500 cold initial damage and 400 additional shatter damage to broken enemies, with a 60% armor strip that persists even after the freeze wears off.
+
+The armor reduction is Frost's highest single-target application of weakness, rivaling Corrosive Projection auras in effectiveness when stacked. With just two Corrosive Projection allies or one with an Icy Avalanche augment, you can achieve near-complete armor stripping, leaving armored targets as fragile as paper for high-damage weapons.
+
+Avalanche stuns and ragdolls enemies when cast, though enemies at the ability's edge may be staggered far enough to avoid the freeze. The ability hits through walls and elevation changes, making it invaluable for clearing rooms without line of sight. At lower ability duration builds, the freezes may be brief, but the armor strip remains permanent, shifting Avalanche's role toward supportive armor stripping rather than sustained crowd control.
+
+## Passive
+
+Frost's passive, Fortifying Freeze, grants him 50 armor per enemy inflicted with cold status within 15 meters. Additionally, all cold status effects applied by his abilities last twice as long. In high-enemy-density missions, Frost can accumulate armor bonuses reaching 2,000+ points, approaching the durability of heavily armored frames like Rhino or Valkyr.
+
+The doubled cold duration is subtle but powerful: enemy slows from Freeze and Ice Wave persist even as the freeze countdown expires, delaying their attacks. This duration scaling applies to all cold status effects, including those from weapon procs and ally abilities, making Frost a force multiplier for cold-heavy squads.
+
+## Stats
+
+| Stat             | Value       |
+|------------------|-------------|
+| Health           | 270 (370)   |
+| Shield           | 455 (555)   |
+| Armor            | 315         |
+| Energy           | 100 (150)   |
+| Sprint Speed     | 0.95x       |
+| Aura Polarity    | Vazarin     |
+| Exilus Polarity  | None        |
+
+Values in parentheses represent maxed-rank stats at level 30. Frost's high shield pool and solid armor make him naturally durable, but these stats are modest compared to later tanks. Mods like Steel Fiber and Vitality are essential to scale him into endgame survivability.
+
+## Acquisition
+
+Frost blueprints drop from Lech Kril and Captain Vor's assassination mission on Ceres. Both bosses must be defeated to collect all four blueprint components: main blueprint, neuroptics, systems, and chassis. The mission, Exta, is a void fissure that requires one void key per run.
+
+The full build costs 25,000 credits in the foundry and takes 72 hours to complete. At low mastery ranks, Frost is one of the first obtainable frames, making him an excellent stepping stone into mid-level play.
+
+Frost Prime, released August 31, 2013, provides a slightly better stat distribution (higher shields and energy) and a Vazarin aura polarity instead of Frost's Naramon. Frost Prime is currently unvaulted, making both variants readily accessible.
+
+## Playstyle
+
+Frost defines the defensive playstyle archetype. In objective-based missions like defense, excavation, or mobile defense, position Snow Globe over the objective and manage its health by casting Freeze on approaching enemies. As enemies accumulate around the globe, your passive armor stacking makes it progressively harder to break, creating a self-reinforcing loop.
+
+In survival or longer endurance runs, rotate between multiple Snow Globes. Once one globe is positioned over a chokepoint, place a second one at an escape route or where squad members hold position. The dual-globe setup forces enemies into predictable lanes where Ice Wave and Freeze can maintain crowd control.
+
+Use Avalanche as a reset button. When enemy pressure overwhelms a globe or when enemies breach your position, Avalanche wipes the arena and permanently strips remaining armor, giving teammates time to finish survivors with burst damage. The high energy cost (100) means you can cast it roughly every 25-30 seconds with standard energy economy mods like Streamline or Primed Flow.
+
+Against bosses or nullifier enemies, Frost's defensive tools become liability. Nullifiers instantly destroy Snow Globes, and boss-type enemies cannot be frozen. In these scenarios, treat Frost as a support frame: use Avalanche for armor stripping, Freeze for additional crowd control on adds, and rely on squadmates for primary damage output.
+
+## Builds
+
+Frost supports multiple distinct builds depending on mission context:
+
+- **Snow Globe Tank**: Maximize globe health using Steel Fiber (rank 8+), Intensify, and range mods like Augur Reach. Globe health scales directly with armor, making this the tankiest configuration. Sacrifice some range and duration for pure survivability.
+
+- **Control Crowd**: Balance ability strength, duration, and range to maintain overlapping freezes on large enemy groups. Use augments like Icy Avalanche to grant squad survivability while controlling the field.
+
+- **Armor Strip Support**: Emphasize Avalanche uptime with efficiency and strength. Icy Avalanche augment grants overguard to allies per enemy hit. This role supports high-damage teammates in Steel Path and endgame missions.
+
+See `/builds/warframes/frost/` for full build guides.
+
+## Lore
+
+Frost emerged in the early days of the Tenno's rise, during the original Old War. As detailed in Warframe lore, Frost represents the Tenno principle of cold and containment--holding enemies in place rather than overwhelming them with force. His mastery over temperature allowed the Tenno to create unbreachable zones of ice, turning frozen ground into tactical advantage.
+
+In the Prime universe, Frost Prime predates the original Frost and was vaulted after his twin release with Ember Prime. His return to the drop tables reflects community demand and the historical importance of the frame to Warframe's identity.
+
+The in-game codex entry describes Frost's philosophy: "When Frost steps onto the battlefield, enemies experience a chill. Frost's attacks control crowds, protect objectives, and increase survivability. Wield the biting cold." This mission statement has held true through numerous patches and reworks, cementing Frost as the archetypal defensive frame.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) -- canonical numeric stats and ability data.
+- [Frost -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Frost) -- lore, patch history, and detailed ability mechanics.

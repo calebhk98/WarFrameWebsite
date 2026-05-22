@@ -1,0 +1,108 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { getRelicEnumeration } from '../../lib/enumerations';
+
+const eraEntries = await getCollection('relics');
+const allRelics = getRelicEnumeration();
+
+const ERA_ORDER = ['lith', 'meso', 'neo', 'axi', 'requiem'] as const;
+
+const ERA_DESCRIPTIONS: Record<string, string> = {
+  lith: 'Entry-level relics from low-to-mid level missions. Fast Capture farms and Defection rotations.',
+  meso: 'Mid-tier relics from Io Defense and Taveuni Disruption. Strong Prime warframe components.',
+  neo: 'Higher-level relics from Hydron and Sanctuary Onslaught. Recent and high-value Prime parts.',
+  axi: 'Endgame relics from Mot Survival and Xini Interception. The newest and most valuable Prime items.',
+  requiem: 'Special relics for the Kuva Lich system. Contains Requiem mods from Kuva Siphon/Flood missions.',
+};
+
+const eraBySlug = Object.fromEntries(eraEntries.map((e) => [e.slug, e]));
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Relics" description="All void relics organised by era -- Lith, Meso, Neo, Axi, and Requiem">
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Relics</h1>
+      <p class="text-brand-cream/60">
+        {allRelics.length} void relics across 5 eras. Each era page covers drop locations,
+        refinement costs, and notable Prime parts.
+      </p>
+    </header>
+
+    <section class="mb-12">
+      <h2 class="text-sm uppercase tracking-widest text-brand-orange font-semibold mb-4 border-b border-surface-3 pb-2">
+        Era Pages
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {ERA_ORDER.map((era) => {
+          const entry = eraBySlug[era];
+          const description = ERA_DESCRIPTIONS[era] ?? '';
+          const href = entry ? `${base}relics/${era}` : '#';
+          const totalRelics = entry?.data.total_relics ?? 0;
+          return (
+            <a
+              href={href}
+              class="group block rounded-xl border border-surface-3 bg-surface-2 p-5 hover:border-brand-orange/50 hover:bg-surface-3 transition-colors"
+            >
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs uppercase tracking-widest text-brand-orange font-semibold">
+                  {era}
+                </span>
+                {totalRelics > 0 && (
+                  <span class="text-xs text-brand-cream/40">{totalRelics} relics</span>
+                )}
+              </div>
+              <h3 class="text-lg font-bold text-brand-cream mb-2 group-hover:text-brand-orange transition-colors capitalize">
+                {era.charAt(0).toUpperCase() + era.slice(1)} Era
+              </h3>
+              <p class="text-sm text-brand-cream/60 leading-relaxed">{description}</p>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-sm uppercase tracking-widest text-brand-orange font-semibold mb-4 border-b border-surface-3 pb-2">
+        All Relics by Era ({allRelics.length} total)
+      </h2>
+      {ERA_ORDER.map((era) => {
+        const eraRelics = allRelics.filter((r) => r.era === era);
+        const PREVIEW = 50;
+        const preview = eraRelics.slice(0, PREVIEW);
+        const eraEntry = eraBySlug[era];
+        return (
+          <section id={`era-${era}`} class="mb-10">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-sm font-semibold text-brand-cream capitalize">
+                {era} ({eraRelics.length})
+              </h3>
+              {eraEntry && (
+                <a
+                  href={`${base}relics/${era}`}
+                  class="text-xs text-brand-orange hover:underline"
+                >
+                  View {era} era guide
+                </a>
+              )}
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {preview.map((r) => (
+                <span class="text-xs px-2 py-1 rounded bg-surface-2 border border-surface-3 text-brand-cream/70">
+                  {r.name}
+                </span>
+              ))}
+            </div>
+            {eraRelics.length > PREVIEW && (
+              <p class="mt-3 text-xs text-brand-cream/40">
+                ... and {eraRelics.length - PREVIEW} more {era} relics.
+              </p>
+            )}
+          </section>
+        );
+      })}
+    </section>
+  </div>
+</Base>

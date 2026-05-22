@@ -1,0 +1,330 @@
+{
+  "batch_id": "20260519-wave6",
+  "checked_at": "2026-05-19T00:00:00Z",
+  "collection": "warframes",
+  "total_checked": 8,
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "slug": "gyre",
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "word_count": 1481,
+      "sources_count": 2,
+      "checked_at": "2026-05-19T00:00:00Z",
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Gyre/health",
+          "value": 270,
+          "file_line": 6
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Gyre/shield",
+          "value": 550,
+          "file_line": 7
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Gyre/armor",
+          "value": 105,
+          "file_line": 8
+        },
+        {
+          "field": "energy",
+          "wfcd_path": "Warframes.json#/Gyre/power",
+          "value": 190,
+          "file_line": 9,
+          "note": "MDX field 'energy' maps to WFCD field 'power'"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Gyre/sprintSpeed",
+          "value": 1.0,
+          "file_line": 10
+        }
+      ]
+    },
+    {
+      "slug": "harrow",
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "word_count": 1659,
+      "sources_count": 2,
+      "checked_at": "2026-05-19T00:00:00Z",
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Harrow/health",
+          "value": 270,
+          "file_line": 6
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Harrow/shield",
+          "value": 455,
+          "file_line": 7
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Harrow/armor",
+          "value": 185,
+          "file_line": 8
+        },
+        {
+          "field": "energy",
+          "wfcd_path": "Warframes.json#/Harrow/power",
+          "value": 100,
+          "file_line": 9
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Harrow/sprintSpeed",
+          "value": 1.0,
+          "file_line": 10
+        }
+      ]
+    },
+    {
+      "slug": "harrow-prime",
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "word_count": 1868,
+      "sources_count": 2,
+      "checked_at": "2026-05-19T00:00:00Z",
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Harrow Prime/health",
+          "value": 270,
+          "file_line": 6
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Harrow Prime/shield",
+          "value": 640,
+          "file_line": 7
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Harrow Prime/armor",
+          "value": 185,
+          "file_line": 8
+        },
+        {
+          "field": "energy",
+          "wfcd_path": "Warframes.json#/Harrow Prime/power",
+          "value": 140,
+          "file_line": 9
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Harrow Prime/sprintSpeed",
+          "value": 1.0,
+          "file_line": 10
+        }
+      ]
+    },
+    {
+      "slug": "helminth",
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "word_count": 1642,
+      "sources_count": 3,
+      "checked_at": "2026-05-19T00:00:00Z",
+      "citations": [
+        {
+          "field": "health",
+          "value": "unknown",
+          "file_line": 6,
+          "note": "Helminth is a system not a frame; WFCD has zero/null values — intentional per CLAUDE.md 'unknown' rule"
+        },
+        {
+          "field": "shield",
+          "value": "unknown",
+          "file_line": 7
+        },
+        {
+          "field": "armor",
+          "value": "unknown",
+          "file_line": 8
+        },
+        {
+          "field": "energy",
+          "value": "unknown",
+          "file_line": 9
+        }
+      ]
+    },
+    {
+      "slug": "hildryn",
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "word_count": 1567,
+      "sources_count": 2,
+      "checked_at": "2026-05-19T00:00:00Z",
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Hildryn/health",
+          "value": 180,
+          "file_line": 6
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Hildryn/shield",
+          "value": 1280,
+          "file_line": 7
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Hildryn/armor",
+          "value": 315,
+          "file_line": 8
+        },
+        {
+          "field": "energy",
+          "value": 0,
+          "file_line": 9,
+          "note": "Hildryn uses shields not energy (canon) — ACCEPTED EXCEPTION"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Hildryn/sprintSpeed",
+          "value": 1.0,
+          "file_line": 10
+        }
+      ]
+    },
+    {
+      "slug": "hildryn-prime",
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "word_count": 1528,
+      "sources_count": 2,
+      "checked_at": "2026-05-19T00:00:00Z",
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Hildryn Prime/health",
+          "value": 270,
+          "file_line": 6
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Hildryn Prime/shield",
+          "value": 1380,
+          "file_line": 7
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Hildryn Prime/armor",
+          "value": 315,
+          "file_line": 8
+        },
+        {
+          "field": "energy",
+          "value": 0,
+          "file_line": 9,
+          "note": "Hildryn Prime uses shields not energy (canon) — ACCEPTED EXCEPTION"
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Hildryn Prime/sprintSpeed",
+          "value": 1.05,
+          "file_line": 10
+        }
+      ]
+    },
+    {
+      "slug": "hydroid",
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "word_count": 1245,
+      "sources_count": 2,
+      "checked_at": "2026-05-19T00:00:00Z",
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Hydroid/health",
+          "value": 270,
+          "file_line": 6
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Hydroid/shield",
+          "value": 365,
+          "file_line": 7
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Hydroid/armor",
+          "value": 240,
+          "file_line": 8
+        },
+        {
+          "field": "energy",
+          "wfcd_path": "Warframes.json#/Hydroid/power",
+          "value": 140,
+          "file_line": 9
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Hydroid/sprintSpeed",
+          "value": 1.05,
+          "file_line": 10
+        }
+      ]
+    },
+    {
+      "slug": "hydroid-prime",
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "word_count": 1764,
+      "sources_count": 2,
+      "checked_at": "2026-05-19T00:00:00Z",
+      "citations": [
+        {
+          "field": "health",
+          "wfcd_path": "Warframes.json#/Hydroid Prime/health",
+          "value": 270,
+          "file_line": 6
+        },
+        {
+          "field": "shield",
+          "wfcd_path": "Warframes.json#/Hydroid Prime/shield",
+          "value": 550,
+          "file_line": 7
+        },
+        {
+          "field": "armor",
+          "wfcd_path": "Warframes.json#/Hydroid Prime/armor",
+          "value": 290,
+          "file_line": 8
+        },
+        {
+          "field": "energy",
+          "wfcd_path": "Warframes.json#/Hydroid Prime/power",
+          "value": 175,
+          "file_line": 9
+        },
+        {
+          "field": "sprintSpeed",
+          "wfcd_path": "Warframes.json#/Hydroid Prime/sprintSpeed",
+          "value": 1.05,
+          "file_line": 10
+        }
+      ]
+    }
+  ]
+}

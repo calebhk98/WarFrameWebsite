@@ -1,0 +1,74 @@
+---
+slug: longbow-sharpshot
+name: Longbow Sharpshot
+type: weapon
+maxRank: 5
+effect: "On Headshot: Gain +[damage]% damage on your next shot."
+perRankStats:
+  - rank: 0
+    stats: { damage: 50 }
+  - rank: 1
+    stats: { damage: 100 }
+  - rank: 2
+    stats: { damage: 150 }
+  - rank: 3
+    stats: { damage: 200 }
+  - rank: 4
+    stats: { damage: 250 }
+  - rank: 5
+    stats: { damage: 300 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 5.0
+  - source: "Void Cascade rotation B"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Longbow_Sharpshot"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Longbow Sharpshot rewards precision aim by granting a damage bonus to the next shot after landing a Headshot. Each headshot charges the next shot with additional damage, creating a momentum system where accurate fire builds into progressively stronger follow-up shots. For weapons where headshots are achievable -- sniper rifles, bows, and semi-automatic precision weapons -- Sharpshot provides a consistent damage multiplier that rewards targeting discipline.
+
+At rank 5, a headshot grants +300% damage to the next shot. The follow-up shot deals four times its normal damage, making the headshot-then-next-shot sequence the primary combat pattern for weapons running Sharpshot.
+
+## Effect
+
+When the equipped weapon lands a headshot, the next shot from that weapon gains the listed damage bonus. At rank 0, +50% damage on the following shot provides a meaningful but modest boost. At rank 5, +300% bonus damage on the next shot effectively quadruples the output of that follow-up shot. The bonus applies once to the single next shot, then resets -- the player must land another headshot to charge the bonus again.
+
+For high-damage-per-shot weapons, the +300% bonus represents an extreme burst: a shot dealing 10000 base damage becomes 40000 during the charged follow-up. Precision weapons that can reliably chain headshots in sequence maintain consistent elevated damage output through repeated Sharpshot cycles.
+
+## Stats per rank
+
+| Rank | Next Shot Damage Bonus |
+|------|-----------------------|
+| 0 | +50% |
+| 1 | +100% |
+| 2 | +150% |
+| 3 | +200% |
+| 4 | +250% |
+| 5 | +300% |
+
+## Acquisition
+
+Longbow Sharpshot drops from Zariman Void Fissure rewards at 5% and Void Cascade rotation B at 2%. Access requires completing Angels of the Zariman. The 5% drop rate from Void Fissure is among the higher rates for Zariman weapon arcanes, making Sharpshot accessible through regular Zariman Void Fissure participation. Warframe.market lists Sharpshot for players preferring direct purchase.
+
+## Builds that use it
+
+Longbow Sharpshot is most effective on precision weapons that can consistently land headshots -- the Tigris Prime fired at head level, sniper rifles with sufficient zoom, Paris Prime hitting precise aim points, and semi-auto rifles in controlled bursts. Headshot-capable builds that aim deliberately rather than spray create the headshot-to-bonus-shot cycle that maximizes Sharpshot value.
+
+Frames that immobilize enemies create stationary headshot opportunities: Rhino's Stomp, Vauban's Bastille, and Ivara's Sleep Arrow all provide windows where precise headshots can be landed reliably, making the bonus shot consistently available. Builds with high critical multiplier compound with Sharpshot's damage bonus, as the next-shot bonus applies to the weapon's total modified damage including critical hits.
+
+## Notes
+
+The bonus applies to the next single shot fired after a headshot -- it does not persist for multiple shots or have a duration timer. If the player switches weapons after a headshot, the bonus may not transfer to the new weapon. Weapons that fire multiple projectiles per trigger pull (shotguns, multishot builds) apply the bonus damage to all pellets of the single next trigger pull. The headshot must be registered by the game's hit detection -- shots that clip non-critical areas of the enemy head model may not register as headshots depending on the enemy type and armor model.
+
+## Sources
+
+- WFCD warframe-items dataset provides damage bonus values per rank for Longbow Sharpshot on Headshot.
+- Fandom wiki entry for [Longbow Sharpshot](https://warframe.fandom.com/wiki/Longbow_Sharpshot) covers headshot detection conditions and next-shot bonus behavior.

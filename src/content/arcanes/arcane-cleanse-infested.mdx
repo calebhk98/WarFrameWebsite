@@ -1,0 +1,66 @@
+---
+slug: arcane-cleanse-infested
+name: Arcane Cleanse Infested
+type: warframe
+maxRank: 5
+effect: "Against Infested: [chance]% chance to cleanse negative status"
+perRankStats:
+  - rank: 0
+    stats: { chance: 20 }
+  - rank: 5
+    stats: { chance: 100 }
+drops:
+  - source: "Void Cascade Infested waves"
+    chance: 2.0
+    rarity: "rare"
+    note: "Zariman Infested void cascade"
+notes: "WFCD lacks entry - effect text sourced from Fandom wiki"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Cleanse_Infested"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Cleanse Infested automatically removes negative status effects applied by Infested enemies, scaling from partial cleanse chance at lower ranks to complete immunity at rank 5. Infested enemies apply several highly disruptive status effects during combat: toxin (bypasses shields to damage health directly), poison from Venomous Eximus, and cold procs from Swarm Mutalist enemies. Cleanse Infested removes these procs before they can fully damage the warframe, which is particularly valuable against toxin stacks that compound rapidly without a cleanse source.
+
+Toxin is one of the most dangerous status effects in high-difficulty Infested content because it bypasses the warframe's shield layer entirely and damages health. Frames with high health but moderate armor - Nidus, Inaros - typically resist toxin better through raw health values, but frames with lower health pools face significant risk from stacked toxin ticks. Arcane Cleanse Infested eliminates this vulnerability passively in Infested content without requiring a Phoenix Renewal-style active ability or status-resistance mod.
+
+## Effect
+
+When the warframe receives a negative status effect from an Infested enemy, Cleanse Infested checks its cleanse chance and removes the status on success. At rank 0, a 20% chance removes one in five Infested status applications. At rank 5, 100% chance makes the warframe fully immune to all Infested-applied status effects.
+
+The cleanse activates immediately after status application and does not require player action. The 100% cleanse at rank 5 eliminates the brief window where the status could deal damage before cleansing, making the arcane functionally equivalent to full status immunity against Infested sources.
+
+## Stats per rank
+
+| Rank | Cleanse Chance | Notes |
+|------|----------------|-------|
+| 0 | 20% | Partial toxin relief |
+| 1 | 40% | Meaningful cleanse frequency |
+| 2 | 60% | Most procs cleansed |
+| 3 | 80% | Near-complete protection |
+| 4 | 90% | High-reliability immunity |
+| 5 | 100% | Full Infested status immunity |
+
+## Acquisition
+
+Arcane Cleanse Infested drops as a rare reward from Zariman Void Cascade waves featuring Infested enemies. The arcane is accessible after completing Angels of the Zariman and entering Zariman Ten-Zero content. Infested-wave Void Cascade runs provide the primary farming path. Warframe.market provides a purchase option for players who prefer direct acquisition over specifically farming Infested-wave rotations.
+
+## Builds that use it
+
+Arcane Cleanse Infested benefits frames that engage Infested in Steel Path, Deimos content, or Infested Railjack missions where toxin stacks from multiple enemies can overwhelm health pools. Frames without innate toxin resistance - non-Inaros, non-Nidus builds - benefit most, as their lower effective health against toxin bypass makes the cleanse more impactful per proc removed. High-shield frames that rely on shield health for survivability are particularly vulnerable to toxin's shield-bypass, making Cleanse Infested more protective for shield-centric frames than armor-tanking builds.
+
+## Notes
+
+The cleanse only affects status effects applied by Infested faction enemies. Grineer, Corpus, and Corrupted status effects are not cleared by this arcane. Repeated toxin applications from multiple Infested enemies generate multiple cleanse checks, each resolved independently at the listed chance. Infested-only content like Deimos open world, Infested salvage missions, and Infested Railjack segments provide the most consistent value for the arcane across a full mission.
+
+## Sources
+
+- WFCD warframe-items dataset documents the cleanse chance scaling for Arcane Cleanse Infested.
+- Fandom wiki entry for Arcane Cleanse Infested covers toxin bypass mechanics and Infested-specific status type behavior.
+

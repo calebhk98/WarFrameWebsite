@@ -1,0 +1,202 @@
+---
+slug: revenant-prime
+name: Revenant Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 825
+armor: 135
+energy: 175
+sprintSpeed: 1.1
+passive:
+  name: Supernova Blast
+  description: >-
+    When shields are fully depleted, Revenant unleashes a shockwave that
+    deals knockdown damage to nearby enemies.
+abilities:
+  - name: Enthrall
+    key: "1"
+    energyCost: 50
+    description: >-
+      Convert a target enemy into a zealous thrall under your command.
+      Enthralled enemies turn on their allies and spread the effect through
+      their attacks.
+    stats:
+      range: 40
+      duration: 60
+  - name: Mesmer Skin
+    key: "2"
+    energyCost: 25
+    description: >-
+      Become enveloped in Sentient energy, redirecting incoming damage while
+      stunning attackers. Enemies stunned by this ability can be enthralled
+      for free.
+    stats:
+      duration: 12
+      armor_bonus: 200
+  - name: Reave
+    key: "3"
+    energyCost: 75
+    description: >-
+      Dash through enemies as a wave of sentient force, stealing shields
+      and health from targets encountered. Enhanced effects apply to
+      enthralled enemies.
+    stats:
+      range: 15
+      health_leech: 0.25
+  - name: Danse Macabre
+    key: "4"
+    energyCost: 100
+    description: >-
+      Erupt with a multitude of Eidolon energy beams in a circle around
+      Revenant. The beams adapt their damage type to exploit enemy defenses,
+      and incoming damage is converted into beam output.
+    stats:
+      range: 28
+      duration: 8
+      damage: 400
+acquisition:
+  source: Void Fissure - Void Cascade (Relic)
+  blueprintLocations:
+    - "Void Cascade relic (Void Fissure missions)"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+    platinum: 165
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2019-10-29"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Revenant"
+    accessedAt: "2026-05-19"
+    title: "Revenant -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Revenant Prime is the prime variant of Revenant, a mid-to-endgame warframe specializing in crowd control and survivability through Sentient and Eidolon-inspired mechanics. Released in October 2019 as part of the Prime Vault rotation, Revenant Prime represents an evolution of the original frame with enhanced stats that amplify its defensive capabilities and ability range. The prime variant features improved shield capacity (825 vs the base 675) and health (270 vs 220), making it more resilient in extended combat.
+
+Revenant Prime's design centers on the concept of thralldom and spectral power derived from Void and Eidolon energy. The frame excels in missions requiring sustained survivability paired with crowd control, particularly in Void Fissure content where its theme aligns with endgame progression. Unlike frames focused on pure damage output, Revenant Prime converts the battlefield itself into an advantage by enlisting enemies as temporary allies while maintaining personal defensive barriers.
+
+The frame's distinctive naramon aura polarization supports efficiency-focused builds, pairing well with mods that enhance ability range, duration, and strength to maximize the effectiveness of enthrallment chains and defensive barriers.
+
+## Abilities
+
+<AbilityCard
+  name="Enthrall"
+  key="1"
+  energyCost={50}
+  description="Convert a target enemy into a zealous thrall under your command. Enthralled enemies turn on their allies and spread the effect through their attacks."
+/>
+
+Revenant's first ability converts a single target enemy into a thrall that turns on its allies. This is the foundation of Revenant Prime's crowd control strategy. Once enthralled, the target cannot be damaged by the player directly and instead fights alongside the warframe against its former faction. Crucially, when an enthralled enemy damages other enemies, the enthrall effect spreads to the newly damaged targets, creating chains of converted foes that multiply over time. When an enthralled enemy dies, it disintegrates into a damaging energy pillar that deals area damage to nearby enemies.
+
+Enthrall's effectiveness scales with ability range, determining how far the initial conversion can reach. With proper range mods, entire rooms of enemies can be progressively enthralled as the thrall horde spreads the effect organically. The ability's 50-energy cost makes it spammable, and the 60-second duration provides a substantial window for thralls to propagate. This ability pairs exceptionally well with Mesmer Skin, as stunned enemies from Mesmer Skin can be enthralled at zero energy cost, creating a powerful crowd-control loop.
+
+<AbilityCard
+  name="Mesmer Skin"
+  key="2"
+  energyCost={25}
+  description="Become enveloped in Sentient energy, redirecting incoming damage while stunning attackers. Enemies stunned by this ability can be enthralled for free."
+/>
+
+Revenant's second ability creates a protective shield of sentient energy that redirects incoming damage while simultaneously stunning all attackers. For a 25-energy cost, Mesmer Skin provides both offense and defense--reducing incoming damage while disabling enemies temporarily. The armor bonus from this ability significantly enhances Revenant Prime's already-respectable 135 base armor, resulting in substantial damage reduction when combined with armor-scaling mods.
+
+The stun duration and frequency make stunned enemies ideal candidates for free Enthrall applications, enabling the aforementioned crowd-control loop that makes Revenant Prime uniquely efficient at preventing damage through complete battlefield control. Mesmer Skin's relatively low energy cost encourages frequent reactivation, maintaining protection uptime in dangerous situations. The ability is particularly effective against groups of enemies that focus fire, as each attacker triggers the stun effect, providing a consistent crowd-control reset.
+
+<AbilityCard
+  name="Reave"
+  key="3"
+  energyCost={75}
+  description="Dash through enemies as a wave of sentient force, stealing shields and health from targets encountered. Enhanced effects apply to enthralled enemies."
+/>
+
+Revenant's third ability manifests as a short dash through enemies, leaching their shields and health into Revenant Prime's reserves. Costing 75 energy, Reave serves dual purposes: offensive movement and sustenance. The health and shield leech scales with ability strength and is substantially enhanced when used against enthralled enemies, providing a survival mechanism that rewards aggressive play and strategic use of enthrallment.
+
+Reave has limited range (approximately 15 meters of dash distance) but provides high mobility through tight spaces and cover, allowing repositioning during heavy fire. Against groups of enthralled enemies, Reave becomes an instant-heal tool that fills both health and shield pools, creating a sustaining cycle when combined with Enthrall chains. The ability's short cooldown and energy cost make it a go-to survival tool in prolonged missions where passive regeneration is insufficient.
+
+<AbilityCard
+  name="Danse Macabre"
+  key="4"
+  energyCost={100}
+  description="Erupt with a multitude of Eidolon energy beams in a circle around Revenant. The beams adapt their damage type to exploit enemy defenses, and incoming damage is converted into beam output."
+/>
+
+Revenant's ultimate fourth ability unleashes a spinning ring of Eidolon energy beams that sweep around the warframe in a full circle. This ability stands out for its unique mechanic: incoming damage during the cast is converted directly into increased beam output and damage, incentivizing the player to stay in dangerous situations rather than hide. The ability dynamically adapts its damage type to exploit enemy defenses, maximizing effectiveness against mixed-armor targets.
+
+At a base 100-energy cost, Danse Macabre can be maintained briefly for crowd control or paired with energy efficiency mods to sustain longer. The ability scales with ability range (increasing the beam circle radius) and ability strength (increasing damage output). Notably, enemies killed by Danse Macabre leave overshield pickups, providing temporary damage reduction for Revenant Prime and nearby allies. The ability synergizes powerfully with Mesmer Skin, as damage redirected by Mesmer Skin amplifies the beam output, creating a feedback loop where defensive play directly increases offensive output.
+
+## Passive
+
+Revenant Prime's passive ability triggers when shields are completely depleted, unleashing a 100-damage shockwave within 7.5 meters that knocks down affected enemies. This passive provides a final layer of survival, converting a dangerous situation (fully depleted shields) into a crowd-control reset. The knockdown effect interrupts incoming attacks and provides momentary breathing room, though it should not be relied upon as the primary defense since shield depletion leaves the frame vulnerable to health damage.
+
+The passive synergizes particularly well with the Mesmer Skin loop, as maintaining Mesmer Skin active prevents shield depletion from triggering the knockdown, allowing Revenant Prime to control when enemies are disabled. In chaotic situations where shields are depleted unexpectedly, the passive provides an automatic safety net that scales with enemy proximity.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health (rank 0) | 270 |
+| Shield (rank 0) | 825 |
+| Armor | 135 |
+| Energy | 175 |
+| Sprint Speed | 1.1x |
+| Aura Polarity | Naramon |
+| Mastery Rank Required | 0 |
+
+Revenant Prime's statline emphasizes survivability through high shield pools and moderate armor. The 175-energy base provides sufficient energy for 3-4 ability casts before needing regeneration, encouraging mod builds that enhance energy efficiency or pair with energy-sustaining pets and squad buffs. The naramon aura polarity aligns well with efficiency and strength mods commonly used in Revenant builds.
+
+## Acquisition
+
+Revenant Prime components drop from Void Fissure missions when players open Void Cascade relics during endless fissures. The blueprint requires 25,000 credits and 72 hours to build after obtaining all three components (blueprint, chassis, and neuroptics). The prime variant is currently available and unvaulted, making it accessible through active fissure participation.
+
+To farm Revenant Prime efficiently, target void fissure missions with high enemy density and regular players to increase your chances of obtaining the required relics. Trading for relic pieces is common in the player market if RNG proves uncooperative. The investment of time to gather components is worthwhile given the frame's utility in both casual and endgame content.
+
+## Playstyle
+
+Revenant Prime excels as a crowd-control-focused warframe in missions lasting 20+ minutes where converting enemies into allies provides exponential survival benefit. The core playstyle revolves around initiating encounters with Enthrall to begin building a thrall horde, using Mesmer Skin to stun attackers and enable free enthrall applications, and maintaining Reave for emergency healing. Danse Macabre serves as area denial and cleanup, particularly effective when Mesmer Skin redirects heavy incoming fire.
+
+Optimal play emphasizes positioning Revenant Prime at moderate range from enemies, close enough for Enthrall chains to propagate but distant enough to avoid immediate focus fire. As the thrall horde grows, the frame becomes increasingly unkillable--enemies kill each other while Reave sustains the warframe. Extended missions transform into passive survival scenarios where the converted enemy horde handles the majority of threats.
+
+Players should anticipate that Revenant Prime's strength scales dramatically with mission duration; short exterminate or capture missions may not provide sufficient time for the thrall system to establish dominance. Conversely, survival missions, void cascades, and mobile defense in void fissure content showcase Revenant Prime's design perfectly. The frame rewards patience and positioning awareness over raw mechanical reflexes.
+
+## Recommended builds
+
+Revenant Prime supports three primary build archetypes, each emphasizing different aspects of the kit:
+
+**Thrall Dominance Build** focuses on maximizing Enthrall range and duration, allowing maximum thrall spread and battlefield conversion. This build prioritizes range mods like Stretch and Augur Reach, paired with duration mods to extend thrall uptime. Ability strength remains moderate to maintain energy efficiency.
+
+**Spectral Damage Build** emphasizes Danse Macabre output by stacking ability strength and range. This variant uses umbral mods when available and pairs Danse Macabre with Mesmer Skin's damage-reflection mechanic to create explosive feedback loops. Efficiency is paired with strength to allow brief Danse Macabre sustain.
+
+**Balanced Survivability Build** distributes investment across range, duration, and strength to maintain thrall chains while preserving defensive capabilities. This generalist approach provides flexibility across diverse mission types and enemy compositions.
+
+All builds benefit from energy regeneration sources such as Arcane Energize, Zenurik focus school, or energy-restoring abilities from squad members. Helminth integration of energy-sustaining abilities like Pillage or Roar can enhance survivability further.
+
+- [Revenant Prime -- Mesmer Shield](/builds/revenant-prime/mesmer-shield): Thrall-sustained Mesmer charge loop build for indefinite endgame invulnerability.
+
+## Synergies
+
+Revenant Prime pairs exceptionally well with Squad Trinity, whose energy blessing sustains the warframe's ability spam while providing overshield to the entire team. Similarly, energy-focused focus schools like Zenurik provide substantial passive energy regeneration that enables higher ability uptime.
+
+Companion synergies favor frames that don't compete for enemy attention. Helstrum-equipped sentinels or non-aggressive pets allow Revenant Prime's thrall chains to operate uninterrupted. Warframe buffers like Wisp (for temporary damage buffs) and Chroma (for strength and element enhancement) amplify Danse Macabre's damage output.
+
+Relic farming groups benefit from Revenant Prime's crowd control, as enthralled enemies no longer pose threats to squishy team members and are guaranteed to die, providing consistent relic rewards without needing to manage enemy movement or eliminate them personally.
+
+## Lore
+
+Revenant Prime represents the Orokin-era prototype of Revenant, infused with enhanced Eidolon and Sentient essence. The frame's design emerged during the late Orokin period as a response to Sentient incursions, combining void-channeling principles with the Eidolon's adaptive energy systems. The use of enthrallment mechanics reflects ancient Orokin techniques for binding foreign consciousness and forcing behavioral compliance.
+
+The spectral and eidolon-themed aesthetics place Revenant Prime squarely within the mythology of the Void and the dimensional rifts underlying the Warframe universe. The frame's mechanics of damage conversion and crowd control through enthrallment draw parallels to the Eidolons' own abilities during endgame conflict in the Plains of Eidolon. Thematically, Revenant Prime embodies the convergence of Void knowledge, Eidolon power, and Sentient adaptation that characterized the Old War.
+
+## Sources
+
+- WFCD warframe-items database (accessed 2026-05-19) -- canonical source for all numeric stats including health, shields, armor, energy, sprint speed, and mastery rank requirements.
+- Warframe Fandom Wiki (accessed 2026-05-19) -- narrative and playstyle context, ability descriptions, and acquisition information.

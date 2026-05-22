@@ -1,0 +1,74 @@
+---
+slug: magus-nourish
+name: Magus Nourish
+type: operator
+maxRank: 5
+effect: "While An Operator: Restores [health_regen] Health/s to Warframe."
+perRankStats:
+  - rank: 0
+    stats: { health_regen: 10 }
+  - rank: 1
+    stats: { health_regen: 15 }
+  - rank: 2
+    stats: { health_regen: 20 }
+  - rank: 3
+    stats: { health_regen: 25 }
+  - rank: 4
+    stats: { health_regen: 30 }
+  - rank: 5
+    stats: { health_regen: 35 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 3.0
+  - source: "Archon Hunt void tier rewards"
+    chance: 1.5
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Nourish"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Nourish passively restores the warframe's health while the operator is active in operator mode. For every second the player remains in operator mode -- firing the amp, using Focus abilities, Void Slinging, or performing any other operator action -- the warframe accumulates health regeneration. This allows operators to use time spent in operator mode to also recover the warframe's health, turning operator engagements into a simultaneous combat and recovery phase.
+
+At rank 5, the warframe recovers 35 Health per second while the operator is active. Extended operator phases of 5-10 seconds can regenerate 175-350 Health during a single operator engagement, meaningfully restoring health pools before the warframe returns to direct combat.
+
+## Effect
+
+The health regeneration applies continuously for every second the player is in operator mode. The rate is flat and does not scale with the warframe's maximum health -- it provides the same absolute health restore per second regardless of frame. At rank 0, +10 Health/s during operator mode provides modest recovery over short operator engagements. At rank 5, +35 Health/s provides meaningful health restoration over operator phases that last several seconds.
+
+The regeneration is applied directly to the warframe's health pool, bypassing damage mitigation calculations. If the warframe's current health is at maximum, the regeneration is wasted. The arcane provides the most value when the warframe has sustained meaningful health loss before entering operator mode.
+
+## Stats per rank
+
+| Rank | Health Regeneration Rate |
+|------|-------------------------|
+| 0 | 10 Health/s |
+| 1 | 15 Health/s |
+| 2 | 20 Health/s |
+| 3 | 25 Health/s |
+| 4 | 30 Health/s |
+| 5 | 35 Health/s |
+
+## Acquisition
+
+Magus Nourish drops from Zariman Void Fissure rewards at 3% and Archon Hunt void-tier rewards at 1.5%. The Zariman Void Fissure source is the primary farming path, accessible after completing Angels of the Zariman. Archon Hunt void-tier drops provide supplemental copies for players who run weekly Archon Hunts. Warframe.market provides an alternative for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Magus Nourish benefits operator-active builds that spend significant time in operator mode during missions. Madurai school builds that cycle through Void Sling and amp sequences lasting 5-10 seconds per cycle generate 175-350 Health restoration per operator phase at rank 5, providing consistent passive health recovery without dedicated healing ability investment. Eidolon hunt operators who stay in operator mode for extended synovia targeting sequences recover substantial warframe health during each limb-break phase.
+
+The arcane is most effective when paired with warframe builds that have meaningful health pools worth regenerating -- Nidus, Inaros, and Nidus Prime builds with thousands of effective health benefit more in absolute terms from the flat regeneration than low-health caster frames.
+
+## Notes
+
+The health regeneration applies to the warframe specifically, not the operator. The operator's own health is managed separately through operator arcanes and Void Mode invulnerability. The regeneration is continuous and does not have an internal cooldown or trigger check -- it is a passive rate active for every second in operator mode. Warframes at full health do not bank excess regeneration; the rate simply does not contribute when the health bar is full. The arcane does not restore shields, only base health.
+
+## Sources
+
+- WFCD warframe-items dataset provides health regeneration rate values per rank for Magus Nourish while in operator mode.
+- Fandom wiki entry for [Magus Nourish](https://warframe.fandom.com/wiki/Magus_Nourish) covers operator-mode health regeneration behavior and warframe health pool interactions.

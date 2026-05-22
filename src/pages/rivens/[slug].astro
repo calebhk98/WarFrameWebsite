@@ -1,0 +1,39 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+import Callout from '../../components/Callout.astro';
+
+export async function getStaticPaths() {
+  const rivens = await getCollection('rivens');
+  return rivens.map((r) => ({ params: { slug: r.slug }, props: { entry: r } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const components = { Callout };
+
+const { data } = entry;
+
+const platStr = data.market_average_plat !== null
+  ? `~${data.market_average_plat}p avg`
+  : 'price unknown';
+
+const description = `${data.name} -- ${data.weapon_category} Riven, disposition ${data.disposition}, ${platStr}`;
+
+const tags: string[] = [
+  data.weapon_category,
+  `disp ${data.disposition}`,
+];
+---
+
+<Entity
+  title={data.name}
+  kind="riven"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+  collectionHref={`${import.meta.env.BASE_URL}rivens`}
+  collectionLabel="Riven Mods"
+>
+  <Content components={components} />
+</Entity>

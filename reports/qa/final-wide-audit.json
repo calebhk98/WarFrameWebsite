@@ -1,0 +1,58 @@
+{
+  "sampled": 25,
+  "fixed": 22,
+  "by_collection": {
+    "weapons": {
+      "files": ["mire","miter","mutalist-cernos","nagantaka","nami-skyla","nepheri","nikana","ninkondi"],
+      "issues_found": [
+        "Missing required H2 section '## Variants' (all 8)",
+        "H2 '## Recommended mods' should be '## Recommended builds' (all 8)",
+        "Non-ASCII em-dash in Lore body prose (all 8)"
+      ],
+      "fixed": 8,
+      "word_count_ok": true,
+      "sources_ok": true,
+      "ascii_clean_after_fix": true
+    },
+    "mods": {
+      "files": ["mach-crash","magnetized-discharge","mending-splinters","mind-freak","neutron-star","omikujis-fortune","parasitic-vitality","peaceful-provocation"],
+      "issues_found": [
+        "Stats-per-rank table contains duplicate row for rank 3 plus phantom rows 4 and 5 beyond maxRank=3 (all 8)",
+        "Non-ASCII em-dash in YAML title field (all 8)"
+      ],
+      "fixed": 8,
+      "word_count_ok": true,
+      "sources_ok": true,
+      "ascii_clean_after_fix": true
+    },
+    "resources": {
+      "files": ["pyrol","pyrus-essence","radian-sentirum","vessel-capillaries","vestan-moss"],
+      "issues_found": [
+        "Non-ASCII em-dash in YAML title field (all 5)",
+        "Body prose pluralization typos: 'Vessel Capillariess', 'Vestan Mosss', 'Radian Sentirums', 'Pyrols' (4 of 5)",
+        "Extremely generic/vague content (planets: 'Multiple locations', usedFor: 'Equipment crafting') -- flagged, not rewritten per audit scope"
+      ],
+      "fixed": 5,
+      "word_count_ok": true,
+      "sources_ok": true,
+      "ascii_clean_after_fix": true
+    },
+    "arcanes": {
+      "files": ["arcane-affinity","arcane-magus-cadence","cascadia-accuracy","eternal-eradicate"],
+      "issues_found": [
+        "arcane-magus-cadence missing required 'slug' frontmatter field"
+      ],
+      "fixed": 1,
+      "word_count_ok": true,
+      "sources_ok": true,
+      "ascii_clean_after_fix": true
+    }
+  },
+  "worst_issue": "All 8 weapon files missing required '## Variants' section and using '## Recommended mods' instead of '## Recommended builds', violating STYLE.md H2 order contract",
+  "ci": {
+    "typecheck": "pass",
+    "build": "pass",
+    "test": "pass (53/53)",
+    "overall": "pass"
+  }
+}

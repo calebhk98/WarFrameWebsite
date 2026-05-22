@@ -1,0 +1,415 @@
+---
+// drop-sim.astro -- Drop Chance Monte Carlo Simulator (F-016, issue #28).
+// Computes expected farming time for prime parts and other endgame drops.
+import Base from '../layouts/Base.astro';
+import { DROP_GROUPS, ALL_ENTRIES } from '../data/drop-tables';
+import type { DropEntry, DropGroup } from '../data/drop-tables';
+
+const base = import.meta.env.BASE_URL;
+
+interface ClientEntry { id: string; name: string; rarity_pct: number; context: string; }
+interface ClientGroup { category: string; label: string; entries: ClientEntry[]; }
+
+const clientGroups: ClientGroup[] = DROP_GROUPS.map((g: DropGroup) => ({
+  category: g.category,
+  label: g.label,
+  entries: g.entries.map((e: DropEntry) => ({
+    id: e.id,
+    name: e.name,
+    rarity_pct: e.rarity_pct,
+    context: e.context,
+  })),
+}));
+
+const groupsJson = JSON.stringify(clientGroups);
+const totalEntries = ALL_ENTRIES.length;
+---
+<Base
+  title="Drop Chance Simulator"
+  description="Monte Carlo simulator for Warframe drop rates. Find out how many runs you need for prime parts, Eidolon arcanes, and more."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+
+    <header class="mb-8">
+      <nav class="mb-4 text-sm text-brand-cream/50">
+        <a href={`${base}`} class="hover:text-brand-orange">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Drop Chance Simulator</span>
+      </nav>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Drop Chance Simulator</h1>
+          <p class="text-brand-cream/60">
+            Monte Carlo farming estimator -- {totalEntries} canonical drop tables covering
+            relic refinements, Eidolon arcanes, Lich/Sister weapon elements, Steel Path
+            acolytes, and Orokin Vault mods.
+          </p>
+        </div>
+        <nav class="flex gap-3 shrink-0" aria-label="Related tools">
+          <a href={`${base}relics`} class="text-sm text-brand-orange hover:underline">Relics &rarr;</a>
+          <a href={`${base}riven-planner`} class="text-sm text-brand-orange hover:underline">Riven Planner &rarr;</a>
+          <a href={`${base}tier-list`} class="text-sm text-brand-orange hover:underline">Tier List &rarr;</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <aside class="lg:col-span-1 space-y-4">
+        <fieldset class="rounded-xl border border-surface-3 bg-surface-2 p-5">
+          <legend class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide px-1">
+            1. Choose a drop
+          </legend>
+
+          <div class="mt-3">
+            <label for="sel-group" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">
+              Category
+            </label>
+            <select
+              id="sel-group"
+              class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+            >
+            </select>
+          </div>
+
+          <div class="mt-3">
+            <label for="sel-entry" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">
+              Specific drop
+            </label>
+            <select
+              id="sel-entry"
+              class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+            >
+            </select>
+          </div>
+
+          <div id="entry-context" class="mt-3 text-xs text-brand-cream/40 italic min-h-[2rem]"></div>
+        </fieldset>
+
+        <fieldset class="rounded-xl border border-surface-3 bg-surface-2 p-5">
+          <legend class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide px-1">
+            2. Configure simulation
+          </legend>
+
+          <div class="mt-3">
+            <label for="range-runs" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">
+              Runs per session (N): <span id="runs-display" class="text-brand-orange">10</span>
+            </label>
+            <input
+              id="range-runs"
+              type="range"
+              min="1"
+              max="200"
+              value="10"
+              step="1"
+              class="w-full accent-brand-orange"
+              aria-valuemin="1"
+              aria-valuemax="200"
+              aria-valuenow="10"
+            />
+            <div class="flex justify-between text-xs text-brand-cream/30 mt-1">
+              <span>1</span><span>200</span>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-2">
+              Trials (T): <span id="trials-display" class="text-brand-orange">1000</span>
+            </p>
+            <div class="flex gap-2 flex-wrap" role="group" aria-label="Number of trials">
+              {[10, 100, 1000, 10000].map((t) => (
+                <button
+                  data-trials={String(t)}
+                  class={`px-3 py-1 rounded text-xs font-semibold border transition-colors ${t === 1000 ? 'bg-brand-orange text-brand-black border-brand-orange' : 'border-surface-3 text-brand-cream/70 hover:text-brand-cream hover:border-brand-orange/50'}`}
+                >
+                  {t.toLocaleString()}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <button
+            id="btn-run"
+            class="mt-5 w-full py-2 rounded-lg bg-brand-orange text-brand-black font-semibold text-sm hover:bg-brand-orange/90 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange"
+          >
+            Run simulation
+          </button>
+        </fieldset>
+      </aside>
+
+      <section
+        id="results"
+        class="lg:col-span-2 rounded-xl border border-surface-3 bg-surface-2 p-6"
+        aria-live="polite"
+        aria-label="Simulation results"
+      >
+        <p class="text-brand-cream/30 text-sm text-center py-12">
+          Select a drop and click "Run simulation" to see Monte Carlo results.
+        </p>
+      </section>
+
+    </div>
+
+    <footer class="mt-6 text-xs text-brand-cream/25 border-t border-surface-3 pt-4">
+      Drop probabilities sourced from the Warframe Fandom Wiki and WFCD.
+      Figures are per-run/per-instance probabilities. Results are statistical
+      estimates -- actual drop counts will vary. Unofficial fan site.
+    </footer>
+
+  </div>
+</Base>
+
+<script define:vars={{ groupsJson }} is:inline>
+  // Monte Carlo drop simulator -- pure vanilla JS, no dependencies.
+  // All types are inferred; no TypeScript in inline scripts.
+
+  const GROUPS = JSON.parse(groupsJson);
+
+  // --- state ---
+  let selectedEntry = null;
+  let nRuns = 10;
+  let nTrials = 1000;
+
+  // --- helpers ---
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  function fmt2(n) { return n.toFixed(2); }
+
+  function percentile(sorted, p) {
+    const idx = Math.max(0, Math.ceil(sorted.length * p / 100) - 1);
+    return sorted[idx];
+  }
+
+  // --- simulation core ---
+  function simRunsToFirst(p) {
+    // Simulate geometric distribution: count runs until first success.
+    let count = 0;
+    while (Math.random() >= p) count++;
+    return count + 1;
+  }
+
+  function runMonteCarlo(pct, n, t) {
+    const p = pct / 100;
+    const successInN = new Array(t);
+    const runsToFirst = new Array(t);
+
+    for (let i = 0; i < t; i++) {
+      // Did at least one success occur in n runs?
+      let hit = false;
+      for (let r = 0; r < n; r++) {
+        if (Math.random() < p) { hit = true; break; }
+      }
+      successInN[i] = hit ? 1 : 0;
+      runsToFirst[i] = simRunsToFirst(p);
+    }
+
+    const hitCount = successInN.reduce((a, b) => a + b, 0);
+    const hitPct = (hitCount / t) * 100;
+    const expected = 1 / p;
+
+    const sorted = runsToFirst.slice().sort((a, b) => a - b);
+    const p10 = percentile(sorted, 10);
+    const p50 = percentile(sorted, 50);
+    const p90 = percentile(sorted, 90);
+
+    return { hitPct, expected, p10, p50, p90, sorted };
+  }
+
+  // --- histogram renderer ---
+  function buildHistogram(sorted, expected) {
+    const max = Math.min(sorted[sorted.length - 1], Math.ceil(expected * 5));
+    const buckets = Math.min(20, max);
+    const bucketSize = Math.max(1, Math.ceil(max / buckets));
+    const counts = new Array(buckets).fill(0);
+
+    for (const v of sorted) {
+      const idx = Math.min(buckets - 1, Math.floor((v - 1) / bucketSize));
+      counts[idx]++;
+    }
+
+    const maxCount = Math.max(...counts);
+    const barMaxWidth = 100;
+
+    const rows = counts.map((c, i) => {
+      const label = i === 0
+        ? `1-${bucketSize}`
+        : `${i * bucketSize + 1}-${(i + 1) * bucketSize}`;
+      const width = maxCount > 0 ? Math.round((c / maxCount) * barMaxWidth) : 0;
+      const pct = sorted.length > 0 ? ((c / sorted.length) * 100).toFixed(1) : '0.0';
+      return `<tr>
+        <td class="pr-3 text-xs text-brand-cream/50 whitespace-nowrap py-0.5">${esc(label)}</td>
+        <td class="w-full py-0.5">
+          <div class="h-4 bg-brand-orange/70 rounded-sm" style="width:${width}%" role="presentation"></div>
+        </td>
+        <td class="pl-2 text-xs text-brand-cream/50 whitespace-nowrap py-0.5">${pct}%</td>
+      </tr>`;
+    });
+
+    return `<table class="w-full border-collapse" aria-label="Runs-to-first-drop frequency histogram">
+      <caption class="text-xs text-brand-cream/40 text-left mb-1">Runs until first drop (${sorted.length.toLocaleString()} trials)</caption>
+      <tbody>${rows.join('')}</tbody>
+    </table>`;
+  }
+
+  // --- render results ---
+  function renderResults(entry, n, t) {
+    const panel = document.getElementById('results');
+    if (!panel) return;
+
+    panel.innerHTML = '<p class="text-brand-cream/40 text-sm text-center py-12">Running simulation...</p>';
+
+    // Defer to allow paint, then compute.
+    setTimeout(() => {
+      const { hitPct, expected, p10, p50, p90, sorted } = runMonteCarlo(entry.rarity_pct, n, t);
+      const ci95lo = Math.max(0, hitPct - 1.96 * Math.sqrt(hitPct * (100 - hitPct) / t));
+      const ci95hi = Math.min(100, hitPct + 1.96 * Math.sqrt(hitPct * (100 - hitPct) / t));
+      const histogram = buildHistogram(sorted, expected);
+
+      panel.innerHTML = `
+        <div class="space-y-6">
+          <div>
+            <h2 class="text-base font-semibold text-brand-cream mb-1">${esc(entry.name)}</h2>
+            <p class="text-xs text-brand-cream/40">${esc(entry.context)} &mdash; drop chance: <span class="text-brand-orange font-semibold">${entry.rarity_pct}%</span></p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="rounded-lg border border-surface-3 bg-surface-1 p-4">
+              <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">After ${n} runs</p>
+              <p class="text-2xl font-bold text-brand-orange">${fmt2(hitPct)}%</p>
+              <p class="text-xs text-brand-cream/30 mt-1">chance you have it</p>
+              <p class="text-xs text-brand-cream/25 mt-1">95% CI: ${fmt2(ci95lo)}-${fmt2(ci95hi)}%</p>
+            </div>
+            <div class="rounded-lg border border-surface-3 bg-surface-1 p-4">
+              <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Expected runs</p>
+              <p class="text-2xl font-bold text-brand-cream">${fmt2(expected)}</p>
+              <p class="text-xs text-brand-cream/30 mt-1">E[X] = 1/p to first drop</p>
+            </div>
+            <div class="rounded-lg border border-surface-3 bg-surface-1 p-4">
+              <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Percentiles</p>
+              <p class="text-sm text-brand-cream"><span class="text-brand-cream/40">10th:</span> <span class="font-semibold">${p10}</span> runs</p>
+              <p class="text-sm text-brand-cream"><span class="text-brand-cream/40">50th:</span> <span class="font-semibold">${p50}</span> runs</p>
+              <p class="text-sm text-brand-cream"><span class="text-brand-cream/40">90th:</span> <span class="font-semibold">${p90}</span> runs</p>
+            </div>
+          </div>
+
+          <div class="rounded-lg border border-surface-3 bg-surface-1 p-4">
+            <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Runs-to-first-drop distribution (${t.toLocaleString()} trials)</p>
+            ${histogram}
+          </div>
+
+          <div class="text-right">
+            <button id="btn-reset" class="text-xs text-brand-orange hover:underline">
+              Try a different drop &rarr;
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('btn-reset')?.addEventListener('click', resetPanel);
+    }, 0);
+  }
+
+  function resetPanel() {
+    const panel = document.getElementById('results');
+    if (!panel) return;
+    panel.innerHTML = '<p class="text-brand-cream/30 text-sm text-center py-12">Select a drop and click "Run simulation" to see Monte Carlo results.</p>';
+  }
+
+  // --- dropdown population ---
+  function populateGroups() {
+    const sel = document.getElementById('sel-group');
+    if (!sel) return;
+    sel.innerHTML = '';
+    for (const g of GROUPS) {
+      const o = document.createElement('option');
+      o.value = g.category;
+      o.textContent = g.label;
+      sel.appendChild(o);
+    }
+    populateEntries();
+  }
+
+  function populateEntries() {
+    const groupSel = document.getElementById('sel-group');
+    const entrySel = document.getElementById('sel-entry');
+    if (!groupSel || !entrySel) return;
+
+    const group = GROUPS.find((g) => g.category === groupSel.value);
+    entrySel.innerHTML = '';
+    if (!group) return;
+
+    for (const e of group.entries) {
+      const o = document.createElement('option');
+      o.value = e.id;
+      o.textContent = e.name;
+      entrySel.appendChild(o);
+    }
+    updateContext();
+  }
+
+  function updateContext() {
+    const groupSel = document.getElementById('sel-group');
+    const entrySel = document.getElementById('sel-entry');
+    const ctx = document.getElementById('entry-context');
+    if (!groupSel || !entrySel || !ctx) return;
+
+    const group = GROUPS.find((g) => g.category === groupSel.value);
+    const entry = group?.entries.find((e) => e.id === entrySel.value);
+    selectedEntry = entry ?? null;
+
+    if (entry) {
+      ctx.textContent = `${entry.context} (${entry.rarity_pct}% per run)`;
+    } else {
+      ctx.textContent = '';
+    }
+  }
+
+  // --- trials buttons ---
+  function setTrials(t) {
+    nTrials = t;
+    const display = document.getElementById('trials-display');
+    if (display) display.textContent = t.toLocaleString();
+    document.querySelectorAll('[data-trials]').forEach((btn) => {
+      const active = Number(btn.getAttribute('data-trials')) === t;
+      btn.className = active
+        ? 'px-3 py-1 rounded text-xs font-semibold border bg-brand-orange text-brand-black border-brand-orange transition-colors'
+        : 'px-3 py-1 rounded text-xs font-semibold border border-surface-3 text-brand-cream/70 hover:text-brand-cream hover:border-brand-orange/50 transition-colors';
+    });
+  }
+
+  // --- event wiring ---
+  document.getElementById('sel-group')?.addEventListener('change', () => {
+    populateEntries();
+    resetPanel();
+  });
+
+  document.getElementById('sel-entry')?.addEventListener('change', () => {
+    updateContext();
+    resetPanel();
+  });
+
+  document.getElementById('range-runs')?.addEventListener('input', (ev) => {
+    nRuns = Number(ev.target.value);
+    const display = document.getElementById('runs-display');
+    const slider = document.getElementById('range-runs');
+    if (display) display.textContent = String(nRuns);
+    if (slider) slider.setAttribute('aria-valuenow', String(nRuns));
+  });
+
+  document.querySelectorAll('[data-trials]').forEach((btn) => {
+    btn.addEventListener('click', () => setTrials(Number(btn.getAttribute('data-trials'))));
+  });
+
+  document.getElementById('btn-run')?.addEventListener('click', () => {
+    if (!selectedEntry) return;
+    renderResults(selectedEntry, nRuns, nTrials);
+  });
+
+  // --- init ---
+  populateGroups();
+</script>

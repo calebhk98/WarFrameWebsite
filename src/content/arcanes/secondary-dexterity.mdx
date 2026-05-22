@@ -1,0 +1,73 @@
+---
+slug: secondary-dexterity
+name: Secondary Dexterity
+type: weapon
+maxRank: 5
+effect: "On Melee Kill: +[damage]% Damage for 20s. Stacks up to 6x."
+perRankStats:
+  - rank: 0
+    stats: { damage: 10 }
+  - rank: 1
+    stats: { damage: 20 }
+  - rank: 2
+    stats: { damage: 30 }
+  - rank: 3
+    stats: { damage: 40 }
+  - rank: 4
+    stats: { damage: 50 }
+  - rank: 5
+    stats: { damage: 60 }
+drops:
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
+sources:
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Secondary_Dexterity
+    accessedAt: '2026-05-20'
+    publisher: Fandom
+updatedAt: '2026-05-20'
+---
+## Overview
+
+Secondary Dexterity builds stacking Secondary Weapon Damage from melee kills. Each melee kill adds one stack of Secondary Weapon Damage bonus lasting 20 seconds, up to a maximum of 6 stacks. The arcane rewards hybrid melee-secondary builds that cycle between clearing weaker enemies with melee and then engaging priority targets with the secondary weapon during the stacked damage window.
+
+At rank 5, each melee kill adds +60% Secondary Weapon Damage for 20 seconds, up to 6 stacks for a maximum of +360%. At full stacks, the secondary weapon deals over four times its normal damage during the active window.
+
+## Effect
+
+Each melee kill triggers one stack addition, applying the listed Secondary Weapon Damage bonus and starting a 20-second timer for that stack. Stacks accumulate to a maximum of 6. At rank 0, each stack provides +10% -- 6 stacks provide +60% Secondary Weapon Damage. At rank 5, each stack provides +60% -- 6 stacks provide +360% Secondary Weapon Damage. The 20-second per-stack duration is long, allowing melee kill bursts to build stacks that remain available through extended secondary weapon usage phases afterward.
+
+Each stack has an independent 20-second timer. Melee kills during the active window refresh individual stack timers or add new stacks up to the 6-stack cap.
+
+## Stats per rank
+
+| Rank | Damage per Stack | Max Stacks | Max Total Bonus | Stack Duration |
+|------|-----------------|-----------|-----------------|----------------|
+| 0 | +10% | 6 | +60% | 20s |
+| 1 | +20% | 6 | +120% | 20s |
+| 2 | +30% | 6 | +180% | 20s |
+| 3 | +40% | 6 | +240% | 20s |
+| 4 | +50% | 6 | +300% | 20s |
+| 5 | +60% | 6 | +360% | 20s |
+
+## Acquisition
+
+Secondary Dexterity drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
+
+## Builds that use it
+
+Secondary Dexterity suits hybrid melee-secondary builds where the player alternates between melee combat for kills and secondary weapon fire for specialized targets. Frames that chain melee kills quickly -- Atlas with Landslide, Valkyr in Hysteria, spin-attack builds -- reach 6 stacks within seconds, then pivot to secondary weapon fire against heavy enemies or priority targets during the full-stacked damage window.
+
+High-damage secondary weapons that benefit most from the percentage bonus include single-shot high-damage secondaries (Pyrana Prime in burst mode, Pandero Prime, Knell) that deliver the +360% bonus in concentrated shots. The 20-second stack duration is long enough to use the secondary extensively after building stacks through a melee burst phase, then return to melee to refresh stacks before the window expires.
+
+## Notes
+
+Melee kills from exalted weapons (Valkyr's Talons, Excalibur's Exalted Blade, Atlas's Landslide) count as melee kills for Secondary Dexterity's trigger. Each stack has an independent 20-second timer; stacks built at different times expire at different intervals. After reaching 6 stacks, additional melee kills refresh the timers on existing stacks rather than adding a seventh stack. The damage bonus applies to Secondary Weapon Damage specifically -- the equipped secondary weapon in the secondary weapon slot receives the bonus, not primary weapons or melee.
+
+## Sources
+
+- WFCD warframe-items dataset provides Secondary Weapon Damage values per stack per rank and the Melee Kill trigger for Secondary Dexterity.
+- Fandom wiki entry for [Secondary Dexterity](https://warframe.fandom.com/wiki/Secondary_Dexterity) covers melee kill trigger conditions and secondary weapon damage stacking behavior.

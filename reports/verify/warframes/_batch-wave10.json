@@ -1,0 +1,52 @@
+{
+  "pass": false,
+  "errors": [
+    "nezha-prime: shield=155 (MDX) vs WFCD.shield=135 — MISMATCH. Per AGENTS.md exception #23 (masteryRank discrepancy), trust MDX when research agent makes deliberate choice. However, shield=0 (Nidus canon) is noted exception. This appears unintended.",
+    "nyx: Builds heading is 'Recommended Builds' (title case) but STYLE.md requires sentence case 'Recommended builds'"
+  ],
+  "warnings": [
+    "nyx-prime: Nyx Prime's passive differs from standard Nyx passive description. MDX claims passive amplifies squad damage bonus but WFCD/Fandom may differ on mechanics.",
+    "nova-prime: Passive description differs from Nova (base) passive. Verify if intentional."
+  ],
+  "checked_at": "2026-05-19T00:00:00Z",
+  "word_counts": {
+    "nezha-prime": 1680,
+    "nidus": 1369,
+    "nidus-prime": 1303,
+    "nova": 1583,
+    "nova-prime": 1997,
+    "nyx": 2057,
+    "nyx-prime": 2290,
+    "oberon": 1698
+  },
+  "sections_verified": {
+    "nezha-prime": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Builds", "Synergies", "Lore", "Sources"],
+    "nidus": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Recommended builds", "Lore", "Sources"],
+    "nidus-prime": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Recommended builds", "Synergies", "Lore", "Sources"],
+    "nova": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Builds", "Synergies", "Lore", "Sources"],
+    "nova-prime": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Builds", "Synergies", "Lore", "Sources"],
+    "nyx": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Recommended Builds", "Synergies", "Lore", "Sources"],
+    "nyx-prime": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Recommended builds", "Lore", "Sources"],
+    "oberon": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Builds", "Synergies", "Lore", "Sources"]
+  },
+  "sources_verified": {
+    "nezha-prime": 2,
+    "nidus": 2,
+    "nidus-prime": 2,
+    "nova": 2,
+    "nova-prime": 2,
+    "nyx": 2,
+    "nyx-prime": 2,
+    "oberon": 2
+  },
+  "citations": [
+    {
+      "file": "nezha-prime.mdx",
+      "field": "shield",
+      "wfcd_path": "Warframes.json#/Nezha Prime/shield",
+      "mdx_value": 155,
+      "wfcd_value": 135,
+      "status": "MISMATCH"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "pass": true,
+  "errors": [],
+  "warnings": [],
+  "word_count": 1993,
+  "checked_at": "2026-05-19T02:53:20.386977+00:00",
+  "citations": [
+    {
+      "field": "sources",
+      "url": "https://github.com/WFCD/warframe-items",
+      "accessed": true
+    },
+    {
+      "field": "sources",
+      "url": "https://warframe.fandom.com/wiki/Trinity/Prime",
+      "accessed": true
+    },
+    {
+      "field": "masteryRank",
+      "wfcd_path": "Warframes.json#/Trinity Prime/masteryRank",
+      "value": 0
+    }
+  ]
+}

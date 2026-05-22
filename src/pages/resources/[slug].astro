@@ -1,0 +1,73 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+
+export async function getStaticPaths() {
+  const resources = await getCollection('resources');
+  return resources.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+
+const tags: string[] = [data.type];
+
+const description = `${data.name} is a ${data.type} resource${
+  data.planets.length > 0 ? ` found on ${data.planets.slice(0, 2).join(' and ')}` : ''
+}.`;
+---
+
+<Entity
+  title={data.name}
+  kind="resource"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+  collectionHref="/resources"
+  collectionLabel="Resources"
+>
+  {(data.planets.length > 0 || data.dropSources.length > 0) && (
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-brand-cream mb-3">Drop Locations</h2>
+      {data.planets.length > 0 && (
+        <div class="mb-3">
+          <p class="text-xs uppercase tracking-wide text-brand-cream/50 mb-2">Planets</p>
+          <div class="flex flex-wrap gap-2">
+            {data.planets.map((planet) => (
+              <span class="text-xs px-2 py-1 rounded-full bg-surface-2 border border-surface-3 text-brand-cream/70">
+                {planet}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+      {data.dropSources.length > 0 && (
+        <ul class="space-y-2">
+          {data.dropSources.map((src) => (
+            <li class="flex items-start gap-2 text-sm">
+              <span class="text-brand-orange shrink-0 mt-0.5">&#8227;</span>
+              <span class="text-brand-cream/80">{src}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  )}
+
+  {data.usedFor.length > 0 && (
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-brand-cream mb-3">Used In</h2>
+      <ul class="space-y-2">
+        {data.usedFor.map((use) => (
+          <li class="flex items-start gap-2 text-sm">
+            <span class="text-brand-orange shrink-0 mt-0.5">&#8227;</span>
+            <span class="text-brand-cream/80">{use}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <Content />
+</Entity>

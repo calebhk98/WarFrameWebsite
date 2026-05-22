@@ -1,0 +1,74 @@
+---
+slug: melee-exposure
+name: Melee Exposure
+type: melee
+maxRank: 5
+effect: "On Ability Cast: Gain [damage]% Corrosive Damage on Melee strikes for 25s. Stacks up to 240%."
+perRankStats:
+  - rank: 0
+    stats: { damage: 10 }
+  - rank: 1
+    stats: { damage: 20 }
+  - rank: 2
+    stats: { damage: 30 }
+  - rank: 3
+    stats: { damage: 40 }
+  - rank: 4
+    stats: { damage: 50 }
+  - rank: 5
+    stats: { damage: 60 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation A"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Melee_Exposure"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Melee Exposure adds Corrosive Damage to melee strikes each time the warframe casts an ability. Each ability cast stacks the listed percentage of Corrosive Damage bonus onto the melee weapon, with stacks lasting 25 seconds and accumulating up to a maximum of 240%. Frames that cast abilities frequently before engaging in melee build up high Corrosive Damage bonuses, adding armor-stripping potential to every melee strike.
+
+At rank 5, each ability cast adds +60% Corrosive Damage to melee for 25 seconds, up to a cap of 240%. After 4 ability casts, melee strikes deal an additional 240% Corrosive Damage -- a substantial elemental bonus that applies Corrosive status procs and strips armor on each melee hit.
+
+## Effect
+
+Each ability cast adds the listed Corrosive Damage percentage as a melee bonus, refreshing existing stacks' duration to 25 seconds and accumulating to the 240% maximum. At rank 0, each cast adds +10% Corrosive Damage, reaching the 240% cap after 24 casts. At rank 5, each cast adds +60% Corrosive Damage, reaching the 240% cap after 4 casts. The stacks persist for 25 seconds from the last ability cast; sustained ability usage maintains the Corrosive bonus throughout combat.
+
+Corrosive Damage is highly effective against armored enemies -- it applies Corrosive status procs that strip armor, making subsequent strikes from all damage types deal more effective damage. Melee builds that run Corrosive elemental mods compound with Exposure's flat Corrosive bonus.
+
+## Stats per rank
+
+| Rank | Corrosive Damage per Ability Cast | Maximum Stack | Duration per Stack |
+|------|----------------------------------|--------------|-------------------|
+| 0 | +10% | 240% | 25s |
+| 1 | +20% | 240% | 25s |
+| 2 | +30% | 240% | 25s |
+| 3 | +40% | 240% | 25s |
+| 4 | +50% | 240% | 25s |
+| 5 | +60% | 240% | 25s |
+
+## Acquisition
+
+Melee Exposure drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation A at 2%. Access requires completing Angels of the Zariman. Rotation A in Void Cascade appears in the first reward cycle, making Exposure accessible in shorter Void Cascade sessions. Warframe.market provides direct purchase options for players who prefer targeted acquisition over farming.
+
+## Builds that use it
+
+Melee Exposure benefits ability-active warframe builds that combine sustained ability casting with melee combat. Frames that cast multiple abilities per engagement -- Saryn's Spores-Molt-Toxin-Miasma rotation, Nidus's Larva-Virulence cycling, Octavia's Mallet-Resonator-Metronome combination -- accumulate Melee Exposure stacks rapidly, reaching the 240% Corrosive Damage cap within their normal ability rotation before engaging in melee.
+
+The +240% Corrosive Damage at rank 5 adds a powerful elemental boost to any melee weapon, making it particularly effective on builds running other elemental mods that would benefit from having Corrosive added without spending a mod slot directly. High-status-chance melee weapons benefit from the added Corrosive, applying Corrosive status procs on every hit during the ability-stacked window.
+
+## Notes
+
+The 240% cap is fixed regardless of rank -- higher ranks reach the cap faster through fewer ability casts rather than exceeding the cap. Stacks from multiple ability casts within the 25-second window stack additively until the 240% ceiling. If no abilities are cast for 25 seconds, all stacks expire simultaneously. The Corrosive Damage bonus is additive with elemental Corrosive from mods -- a weapon running Malignant Force and Melee Exposure accumulates total Corrosive from both sources.
+
+## Sources
+
+- WFCD warframe-items dataset provides Corrosive Damage per ability cast and the 240% maximum cap for Melee Exposure.
+- Fandom wiki entry for [Melee Exposure](https://warframe.fandom.com/wiki/Melee_Exposure) covers ability cast trigger conditions and Corrosive stack accumulation behavior.

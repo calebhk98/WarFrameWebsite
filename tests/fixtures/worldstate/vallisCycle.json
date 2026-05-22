@@ -1,0 +1,9 @@
+{
+  "id": "vallis-cycle-2026-05-18",
+  "activation": "2026-05-18T12:00:00.000Z",
+  "expiry": "2026-05-18T12:20:00.000Z",
+  "isWarm": false,
+  "state": "cold",
+  "timeLeft": "20m to warm",
+  "shortString": "20m to Warm"
+}

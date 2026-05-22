@@ -1,0 +1,178 @@
+---
+slug: gyre
+name: Gyre
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 550
+armor: 105
+energy: 190
+sprintSpeed: 1.0
+passive:
+  name: "Rotor Conductor"
+  description: >-
+    Gyre's abilities have a 10% chance to deal critical damage for each Electrical
+    status effect that affects the enemy.
+abilities:
+  - name: Arcsphere
+    key: "1"
+    energyCost: 25
+    description: >-
+      Launch a gyratory sphere that deals high damage on impact and periodically
+      shocks nearby enemies. Multiple hits increase damage output.
+    stats: { damage: 250, range: 25 }
+  - name: Coil Horizon
+    key: "2"
+    energyCost: 75
+    description: >-
+      Throw a gyratory sphere forward that implodes after a few seconds or on
+      manual trigger, containing and damaging enemies.
+    stats: { damage: 300, radius: 15 }
+  - name: Cathode Grace
+    key: "3"
+    energyCost: 50
+    description: >-
+      Gain a burst of increased critical chance and energy regeneration. Each kill
+      extends the duration. Casting has a cooldown.
+    stats: { critical_bonus: 0.5, energy_regen: 5 }
+  - name: Rotorswell
+    key: "4"
+    energyCost: 100
+    description: >-
+      Gyre's mechanisms spin at incredible speeds, generating an electrical field
+      that shocks nearby enemies. Critical hits trigger large electrical discharges
+      that chain to nearby foes.
+    stats: { damage_per_second: 150, chain_range: 20 }
+acquisition:
+  source: "Zariman Ten Zero bounty reward"
+  blueprintLocations:
+    - "Zariman Ten Zero (Level 50-55, 60-65, 70-75, 90-95, 110-115 bounties), Rotation C"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+  note: "Blueprint and components drop from Zariman bounties with approximately 13% drop chance per component."
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Stats cross-referenced against WFCD 1.756.0; energy field mapped from power value."
+  - url: "https://warframe.fandom.com/wiki/Gyre"
+    accessedAt: "2026-05-19"
+    title: "Gyre -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Gyre is an electricity-themed female Warframe introduced in Update 31.5: Angels of the Zariman on April 27, 2022. Her design fuses ballerina grace with Tesla coil mechanics and automaton aesthetics, embodying what Digital Extremes describes as "the embodiment of elegant theory." She trades raw tankiness for mobility and electrical offense, building power through critical damage multipliers on electrified enemies. Gyre operates best when enemies are consistently affected by electrical status, allowing her passive to scale her ability damage throughout a mission.
+
+Her release coincided with the Zariman Ten Zero tileset, where she became farmable through bounties. Her unique mechanic--rewarding coordinated electrical damage strategies--positioned her as a hybrid frame excelling at both crowd control and sustained damage output. Unlike purely defensive frames, Gyre rewards aggressive, electrical-focused playstyles.
+
+## Abilities
+
+<AbilityCard
+  name="Arcsphere"
+  key="1"
+  energyCost={25}
+  description="Launch a gyratory sphere that deals high damage on impact and periodically shocks nearby enemies. Multiple hits increase damage output."
+/>
+
+Arcsphere serves as Gyre's primary offensive ability. The sphere travels in a straight line before detonating, applying electrical status on impact and periodically shocking nearby enemies. The damage scales with the number of enemies hit on initial impact, making it more powerful in dense crowds. This ability resets Cathode Grace's cooldown if it kills an enemy, creating a loop potential for sustained ability spam in high-level content.
+
+<AbilityCard
+  name="Coil Horizon"
+  key="2"
+  energyCost={75}
+  description="Throw a gyratory sphere forward that implodes after a few seconds or on manual trigger, containing and damaging enemies."
+/>
+
+Coil Horizon is Gyre's subsumed Helminth ability, available for transfer to other frames. The sphere travels forward and implodes either automatically after its duration or when manually detonated, dealing area damage and stripping armor from caught enemies. Unlike Arcsphere's periodic shocks, Coil Horizon delivers concentrated burst damage, making it the preferred choice for single-target scenarios or burst phases against priority targets. The ability's 75 energy cost is relatively high, requiring energy management in longer missions.
+
+<AbilityCard
+  name="Cathode Grace"
+  key="3"
+  energyCost={50}
+  description="Gain a burst of increased critical chance and energy regeneration. Each kill extends the duration. Casting is on a cooldown."
+/>
+
+Cathode Grace is Gyre's survival and damage-scaling tool. When activated, it grants a significant critical chance bonus and steady energy regeneration for a limited duration. Each kill made by Gyre's abilities during the buff extends its timer, incentivizing aggressive play. The ability has an internal cooldown to prevent spam, but proper rotation management allows near-permanent uptime in high-density missions. This ability transforms Gyre from a basic crowd-control frame into a mobile, energy-positive platform.
+
+<AbilityCard
+  name="Rotorswell"
+  key="4"
+  energyCost={100}
+  description="Gyre's mechanisms spin at incredible speeds, generating an electrical field that shocks nearby enemies. Critical hits trigger large electrical discharges that chain to nearby foes."
+/>
+
+Rotorswell is Gyre's ultimate ability and the centerpiece of her kit. When activated, her chassis spins, creating a persistent electrical aura that damages nearby enemies. When Gyre lands a critical hit on any target (ability or weapon), a large electrical discharge chains from that target to nearby enemies, applying electrical status and triggering her passive. The 100 energy cost is substantial, but the chaining mechanic and electrical application make it invaluable for scaling her passive stacking in endurance runs.
+
+## Passive
+
+Gyre's passive ability, Rotor Conductor, grants her a 10% critical damage bonus per electrical status effect applied to each enemy. This passive encourages stacking electrical procs on targets before unleashing high-damage abilities. In practice, a single enemy with three electrical effects gains 30% critical damage from the passive alone--and that multiplier applies to all of Gyre's ability damage. The passive only applies to Gyre's own abilities, not to Helminth abilities or weapon damage, making it a frame-specific tool that rewards ability-focused builds.
+
+## Stats
+
+| Statistic      | Value |
+|----------------|-------|
+| Health         | 270   |
+| Shield         | 550   |
+| Armor          | 105   |
+| Energy         | 190   |
+| Sprint Speed   | 1.0   |
+| Aura Polarity  | Naramon |
+| Shield Polarity | Vazarin |
+
+Gyre's stat distribution emphasizes shields over health, reflecting her electrical nature and mobility focus. Her 550 shield pool at rank 0 is high, rivaling defensive frames, while her 105 armor is moderate--sufficient for scaling with Corrosive Projection but insufficient to tank Steel Path without additional mitigation. Her 190 energy pool requires careful management in long missions; reliance on Cathode Grace's energy regeneration is essential for sustaining ability spam.
+
+## Acquisition
+
+Gyre drops exclusively from Zariman Ten Zero bounties on all difficulty tiers, with components available in different bounty levels. The blueprint drops from the highest-tier bounties (Level 110-115) at approximately 13% chance. Chassis, Neuroptics, and Systems drop from mid-tier bounties with similar rates. Building the warframe requires 25,000 credits and consumes 72 hours of build time, standard for post-New War frames. She is also available for direct platinum purchase from the in-game Market for 325 platinum.
+
+The Gyre Automaton Helmet blueprint was initially exclusive to the Gyre Collection but was later added to Nightwave Cred Offerings, providing cosmetic variety without stat impact.
+
+## Playstyle
+
+Gyre's playstyle revolves around cycling her four abilities to maximize electrical status stacking and critical damage scaling. In typical gameplay, the player casts Rotorswell as a persistent area-control tool, uses Arcsphere to shock enemies and apply electrical procs, then leverages Cathode Grace to sustain energy and damage output. As enemy electrical procs accumulate, the passive multiplier grows, amplifying subsequent ability damage. Cathode Grace's kill-duration extension means each multi-kill extends the buff, enabling indefinite uptime in high-density packs.
+
+In endurance missions (Survival, Defense, Void Fissure) Gyre shines. Her electrical application provides crowd control without hard crowd-control ability reliance, and her energy regeneration keeps her ability-spam sustainable for extended periods. Rotorswell's chaining mechanic ensures electrical procs spread across rooms, creating runaway scaling in which early kills enable later kills, a hallmark of endurance-scaling frames.
+
+In single-target scenarios (boss fights, small squad contexts), Gyre's playstyle shifts. Coil Horizon becomes the primary damage ability, supported by weapon damage. Cathode Grace grants critical bonuses to weapon shots, and Rotorswell's chaining is less useful without dense packs. Solo-focused builds may substitute Rotorswell with a Helminth ability such as Roar (from Rhino) for raw damage scaling.
+
+Her 1.0 sprint speed is neutral, neither buffing nor penalizing traversal speed. This allows flexibility in choosing mobility tools--Dispatch Overdrive, Rush, or Arcane Guardian become valuable mods rather than redundant ones.
+
+## Builds
+
+Gyre supports multiple build archetypes, each targeting different mission types:
+
+**Electrical Scaling Build (endurance):** Umbral Intensify, Umbral Vitality, Primed Flow, Streamline, Stretch, Augur Reach, Power Drift, and Thermite Rounds (or other electrical augment). This stack maximizes ability strength, range, and efficiency, ensuring consistent electrical proc application and critical damage scaling. Arcane Energize is essential for sustaining ability spam.
+
+**Balanced Hybrid Build (general content):** Redirection, Primed Vigor, Streamline, Stretch, Continuity, Augur Reach, Umbral Intensify, and one flex slot. This build balances survivability (shields and health) with ability optimization, suitable for arbitrations and higher-level Star Chart content without endurance demands.
+
+**Elemental Hybrid (Steel Path survival):** Similar to scaling build but with electrical damage mods on equipped weapons to maximize passive procs from both abilities and gunfire. Weapon builds should emphasize critical chance to trigger Rotorswell's chaining discharge.
+
+## Synergies
+
+Gyre pairs effectively with electrical damage sources. Weapons with innate electrical damage or elemental mods amplify electrical proc density, meaning faster passive stacking. Frostbite and Voltaic Strike complement her kit by adding cold/electrical hybrid status. Abilities like Resonator (from Loki) or Pillage (from Hildryn) that also apply electrical effects stack multiplicatively with her passive.
+
+Coil Horizon's armor strip makes her compatible with frames that deal armor-scaling damage, such as Saryn or Ember. In organized squads, a single Gyre can enable armor-scaling damage dealers to perform optimally in high-level content. Her electrical crowd control is independent of hard disables, allowing squad synergy with Limbo, Xaku, or other control-focused frames.
+
+Helminth subsumption is strong for Gyre. Roar, Infusion (Phoenix Mark), or Ensnare extend her versatility. Roar in particular transforms Gyre into a mini-support frame, buffing the entire squad's damage output while her passive handles her own scaling.
+
+## Lore
+
+Gyre's introduction in Update 31.5 positioned her as one of the first frames designed post-introduction of the Zariman tileset. Thematically, her electrical machinery aesthetic tied into the Zariman's archaic Orokin technology and Void corruption mechanics. The in-game description frames her as "elegant theory," a reflection of both her ballerina-inspired animations and her theoretical, almost graceful control of electrical forces.
+
+Her release notes emphasized that her critical damage passive rewards "coordinated electrical strategies," suggesting a frame designed for players who synergize ability rotations and status application. Unlike purely mechanical frames, Gyre embodies the player's skill at ability sequencing--a hallmark of post-Revision 30 Warframe design philosophy.
+
+The Zariman Ten Zero bounty context implies Gyre was crafted for operations within the Void-touched tileset, her electrical abilities suited to both navigating Zariman hazards and eliminating Void Fissure enemies. Her inclusion in Railjack's Arcsphere ability (marked as a tactical tool for ship combat) suggests her design extended beyond traditional mission types, making her a versatile platform across game modes.
+
+Cosmetically, the Gyre Automaton Helmet--inspired by ballroom automata--became available through Nightwave, expanding her visual identity while maintaining thematic consistency. Her default skins emphasize purple and gold, evoking both high voltage and Orokin aesthetics, reinforcing her position as a post-War frame bridging Void and conventional Warframe technology.
+
+## Sources
+
+---

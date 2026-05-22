@@ -1,0 +1,196 @@
+[
+  {
+    "file": "acolytes.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes, Sources]"
+    ]
+  },
+  {
+    "file": "amalgam.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes, Sources]"
+    ]
+  },
+  {
+    "file": "cephalon.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes, Sources]"
+    ]
+  },
+  {
+    "file": "corpus.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes, Sources]"
+    ]
+  },
+  {
+    "file": "corrupted.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile, Locations, Strategy notes]"
+    ]
+  },
+  {
+    "file": "grineer.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes]"
+    ]
+  },
+  {
+    "file": "holdfasts.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes]"
+    ]
+  },
+  {
+    "file": "infested.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes]"
+    ]
+  },
+  {
+    "file": "kuva-lich.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes]",
+      "Non-ASCII at position 6586: '→' (U+2192)"
+    ]
+  },
+  {
+    "file": "murmur.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes, Sources]"
+    ]
+  },
+  {
+    "file": "narmer.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Lore, Notes, Sources]"
+    ]
+  },
+  {
+    "file": "new-loka.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Organization and presence, Philosophical alignment and ideology, Rewards and progression, Locations and syndicate infrastructure, Strategic notes, Sources]"
+    ]
+  },
+  {
+    "file": "nightwave.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Nightwave system mechanics, Rewards and seasonal offerings, Nora Night and narrative integration, Seasonal cycles and intermissions, Mechanical and strategic notes, Sources]"
+    ]
+  },
+  {
+    "file": "orokin.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage Profile, Locations, Lore, Strategy Tips, Sources]"
+    ]
+  },
+  {
+    "file": "ostron.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Lore, Notes, Sources]"
+    ]
+  },
+  {
+    "file": "perrin-sequence.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage Profile, Locations, Lore, Standing Ranks and Rewards, Strategy Tips]"
+    ]
+  },
+  {
+    "file": "red-veil.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage Profile, Locations, Lore, Standing Ranks and Rewards, Strategy Tips]"
+    ]
+  },
+  {
+    "file": "relay-syndicates.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage Profile, Locations, Lore, Strategy Tips]"
+    ]
+  },
+  {
+    "file": "scaldra.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Lore, Notes]",
+      "Non-ASCII at position 370: 'ö' (U+F6)"
+    ]
+  },
+  {
+    "file": "sentient.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Lore, Notes]"
+    ]
+  },
+  {
+    "file": "shadow-stalker.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage Profile, Locations, Lore, Strategy Tips]"
+    ]
+  },
+  {
+    "file": "solaris-united.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Lore, Notes]"
+    ]
+  },
+  {
+    "file": "stalker.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile, Locations, Lore, Strategy notes]"
+    ]
+  },
+  {
+    "file": "steel-meridian.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile, Locations, Lore, Strategy notes]"
+    ]
+  },
+  {
+    "file": "syndicate.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile, Locations, Lore, Strategy notes]"
+    ]
+  },
+  {
+    "file": "tenno.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile, Locations, Lore, Strategy notes]"
+    ]
+  },
+  {
+    "file": "tribunal.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile, Locations, Lore, Strategy notes]"
+    ]
+  },
+  {
+    "file": "ventkids.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes]"
+    ]
+  },
+  {
+    "file": "vox-solaris.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes]"
+    ]
+  },
+  {
+    "file": "warframe.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes]"
+    ]
+  },
+  {
+    "file": "wild.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes]"
+    ]
+  },
+  {
+    "file": "zariman-children.mdx",
+    "errors": [
+      "Heading order: Expected [overview, units, damage profile, locations, notes], found [Overview, Units, Damage profile (weakness / resistance), Locations, Notes]"
+    ]
+  }
+]

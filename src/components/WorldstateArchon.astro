@@ -1,0 +1,65 @@
+---
+import type { ArchonHunt } from '../lib/worldstate';
+
+interface Props {
+  archon: ArchonHunt | null;
+  fetchedAt: string;
+}
+
+const { archon, fetchedAt } = Astro.props;
+
+function formatExpiry(expiry: string): string {
+  const diff = new Date(expiry).getTime() - Date.now();
+  if (diff <= 0) return 'Expired';
+  const h = Math.floor(diff / 3_600_000);
+  const m = Math.floor((diff % 3_600_000) / 60_000);
+  return h > 0 ? `${h}h ${m}m` : `${m}m`;
+}
+---
+
+<section aria-labelledby="archon-heading" class="rounded-lg border border-surface-3 bg-surface-2 p-6">
+  <div class="flex items-center justify-between mb-4">
+    <h2 id="archon-heading" class="text-lg font-semibold text-brand-orange uppercase tracking-wide">
+      Archon Hunt
+    </h2>
+    <time datetime={fetchedAt} class="text-xs text-brand-cream/60">
+      Fetched {fetchedAt}
+    </time>
+  </div>
+
+  {!archon && (
+    <p class="text-brand-cream/60 text-sm italic">
+      Live data unavailable. Try refreshing during a connected session.
+    </p>
+  )}
+
+  {archon && (
+    <div>
+      <div class="flex flex-wrap gap-3 mb-4 text-sm">
+        <span class="px-2 py-1 rounded bg-surface-3 text-brand-cream font-semibold">
+          {archon.boss}
+        </span>
+        <span class="px-2 py-1 rounded bg-surface-3 text-brand-cream/70">
+          {archon.faction}
+        </span>
+        <span class="px-2 py-1 rounded bg-surface-3 text-brand-orange">
+          Expires: {formatExpiry(archon.expiry)}
+        </span>
+      </div>
+
+      <ol class="space-y-2" aria-label="Archon hunt missions">
+        {archon.missions.map((m, i) => (
+          <li class="rounded bg-surface-3 px-4 py-3 text-sm">
+            <span class="text-brand-cream/60 text-xs mr-2">Mission {i + 1}</span>
+            <span class="text-brand-cream font-medium">{m.typeKey ?? m.type}</span>
+            <span class="mx-2 text-brand-cream/50" aria-hidden="true">|</span>
+            <span class="text-brand-cream/70">{m.nodeKey ?? m.node}</span>
+            {m.modifier && (
+              <p class="mt-1 text-brand-orange text-xs">{m.modifier}</p>
+            )}
+          </li>
+        ))}
+      </ol>
+    </div>
+  )}
+</section>

@@ -1,0 +1,171 @@
+---
+slug: baruuk
+name: Baruuk
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 180
+shield: 270
+armor: 185
+energy: 200
+sprintSpeed: 1.2
+passive:
+  name: Restraint
+  description: >-
+    Each projectile dodged, each enemy lulled or disarmed, and each action taken in combat erodes Baruuk's restraint and fuels the storm within. As restraint diminishes, Baruuk gains up to 90% additional damage resistance, making him increasingly durable as the fight intensifies. This creates a playstyle where patience and evasion directly translate to survivability.
+abilities:
+  - name: Elude
+    key: "1"
+    energyCost: 25
+    description: >-
+      Baruuk enters a passive dodge stance that deflects all incoming projectiles while remaining stationary. Toggling the ability off ends the stance. While active, Elude prevents attacking but slowly erodes restraint with each bullet dodged, building toward Serene Storm.
+    stats: { range: 10 }
+  - name: Lull
+    key: "2"
+    energyCost: 50
+    description: >-
+      Projects a calming wave that slows all enemies in range until they fall asleep. Enemies awakened by damage become confused and disoriented, forgetting recent events. Lull synergizes with Desolate Hands and builds restraint erosion through crowd control.
+    stats: { duration: 8, range: 20 }
+  - name: Desolate Hands
+    key: "3"
+    energyCost: 75
+    description: >-
+      Summons orbiting spectral daggers that seek out and disarm enemy weapons, destroying them with small explosions. Daggers can be shared with allies and multiply in number as restraint erodes. When combined with Elude, the ability's range doubles.
+    stats: { count: 8, range: 15 }
+  - name: Serene Storm
+    key: "4"
+    energyCost: 100
+    description: >-
+      With restraint fully eroded, Baruuk channels the Desert Wind to deliver powerful radial strikes with enhanced fists and feet. Each moment spent in Serene Storm slowly restores restraint, creating a cycle between buildup and release. This exalted melee weapon scales with melee mods.
+    stats: { damage: 200, range: 12 }
+acquisition:
+  source: Vox Solaris standing
+  blueprintLocations:
+    - "Vox Solaris rank Agent (Blueprint)"
+    - "Vox Solaris rank Hand (Chassis, Neuroptics, Systems)"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+  note: "Baruuk components are purchased from Vox Solaris in Fortuna, unlocked after The War Within quest and access to Venus."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2022-12-14"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Baruuk"
+    accessedAt: "2026-05-19"
+    title: "Baruuk -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Baruuk is a frame defined by the philosophy of restraint and controlled fury. Introduced in Update 24.2 (The Profit-Taker), he emerged from the depths of Fortuna's Vox Solaris as a weapon against exploitation and greed. Unlike aggressive offensive frames, Baruuk plays the long game--accumulating restraint through evasion and crowd control before unleashing devastating power through Serene Storm. This unique mechanic makes him appealing to players who value patience, precision, and the satisfaction of controlling engagements through disruption rather than raw damage output.
+
+Baruuk combines exceptional survivability with crowd control, making him a staple choice for endless missions and high-level Steel Path content. His passive damage resistance scales with restraint erosion, meaning that frames following his intended playstyle--dodging, disarming, and lulling enemies--become exponentially harder to kill. When fully armed with appropriate mods, Baruuk functions as both a defensive juggernaut and a mobile disruptor capable of shutting down entire enemy formations.
+
+The frame's design reflects deep thematic coherence: a pacifist monk whose inner peace is a weapon, whose greatest strength emerges only when that peace is shattered. Few frames reward patient, methodical play as powerfully as Baruuk does.
+
+## Abilities
+
+<AbilityCard
+  name="Elude"
+  key="1"
+  energyCost="25"
+  description="Baruuk enters a passive dodge stance that deflects all incoming projectiles while remaining stationary. Toggling the ability off ends the stance. While active, Elude prevents attacking but slowly erodes restraint with each bullet dodged, building toward Serene Storm."
+  stats={{ range: 10 }}
+/>
+
+Elude is Baruuk's foundational defensive ability and the primary restraint-erosion tool. The ability does not negate energy drain from the Void Cascade tileset or certain procedural damage types; it is purely projectile-focused. Skilled players position themselves during Elude to let enemies deplete their ammunition while Baruuk's restraint meter fills. The modest energy cost encourages liberal use. The ability becomes noticeably stronger with range mods, as a larger hitbox captures more projectiles per cast.
+
+<AbilityCard
+  name="Lull"
+  key="2"
+  energyCost="50"
+  description="Projects a calming wave that slows all enemies in range until they fall asleep. Enemies awakened by damage become confused and disoriented, forgetting recent events. Lull synergizes with Desolate Hands and builds restraint erosion through crowd control."
+  stats={{ duration: 8, range: 20 }}
+/>
+
+Lull is Baruuk's primary crowd-control tool and energy-efficient restraint eroder. Sleeping enemies take reduced alarm time to awaken if hit, and the confusion debuff lasts several seconds post-awakening, rendering them temporarily harmless. In endless missions, Lull pairs exceptionally well with Desolate Hands: sleeping enemies cannot fire weapons, so disarming becomes trivial. The ability's duration scales with ability duration mods, making it viable even in high-level content when modded for strength and duration. Each unique enemy lulled contributes to restraint erosion independently.
+
+<AbilityCard
+  name="Desolate Hands"
+  key="3"
+  energyCost="75"
+  description="Summons orbiting spectral daggers that seek out and disarm enemy weapons, destroying them with small explosions. Daggers can be shared with allies and multiply in number as restraint erodes. When combined with Elude, the ability's range doubles."
+  stats={{ count: 8, range: 15 }}
+/>
+
+Desolate Hands is Baruuk's offense-disruption ability. The eight orbiting daggers fire at nearby enemies, destroying their weapons and causing them to become disarmed. The ability is particularly effective against high-damage gunners and heavily armed bosses, where weapon denial directly prevents lethal alpha strikes. Interestingly, Desolate Hands does not consume charges when assisting squad mates--allies benefit from active daggers without reducing Baruuk's total supply. When Elude is active simultaneously, the range doubles, allowing a single cast to cover nearly half a tile. Restraint erosion scales with the number of enemies disarmed, not just the number of daggers fired.
+
+<AbilityCard
+  name="Serene Storm"
+  key="4"
+  energyCost="100"
+  description="With restraint fully eroded, Baruuk channels the Desert Wind to deliver powerful radial strikes with enhanced fists and feet. Each moment spent in Serene Storm slowly restores restraint, creating a cycle between buildup and release. This exalted melee weapon scales with melee mods."
+  stats={{ damage: 200, range: 12 }}
+/>
+
+Serene Storm is Baruuk's ultimate expression: an exalted melee weapon conjured from the Desert Wind itself. Unlike other exalted weapons, Serene Storm is unique in that channeling it restores restraint over time, creating a defensive feedback loop. When restraint is fully depleted, Serene Storm becomes available and, while active, gradually refills the restraint meter. This allows players to phase between restraint depletion (via Elude, Lull, and Desolate Hands) and restraint recovery (via Serene Storm), maintaining optimal damage resistance at all times. The exalted fists scale with melee combo multipliers, critical mods, and status mods, making full melee builds extremely potent.
+
+## Passive
+
+Baruuk's passive ability transforms the restraint meter into a survivability powerhouse. As restraint erodes--whether through dodging projectiles, lulling enemies, disarming weapons, or performing other crowd-control actions--Baruuk gains cumulative damage resistance, up to a maximum of 90%. This incentivizes continuous activity rather than passive defense. At full restraint (meter empty), Baruuk gains no bonus, but every action toward restraint depletion stacks more protection. Consequently, an aggressive Baruuk who maintains low restraint becomes nearly invulnerable, while a passive Baruuk holding full restraint remains vulnerable. This inverts traditional damage-resistance design and rewards active, engaged play.
+
+## Stats
+
+| Stat          | Value |
+|---------------|------:|
+| Health        |   180 |
+| Shield        |   270 |
+| Armor         |   185 |
+| Energy        |   200 |
+| Sprint Speed  |   1.2 |
+
+Baruuk's stat spread is balanced toward mid-tier durability. His health is moderate relative to frames like Rhino or Inaros, but his armor value is the highest of any base warframe, providing 22.96% damage reduction (using the armor formula: reduction = armor / (300 + armor)). Combined with his passive, Baruuk achieves exceptional effective durability in prolonged engagements. The energy pool is standard and sufficient for regular ability casting.
+
+## Acquisition
+
+Baruuk is obtained through Vox Solaris standing in Fortuna on Venus. The frame's blueprint and components are purchased from the Vox Solaris vendor as players rank up:
+
+- **Blueprint** unlocks at rank Agent (Trusted with Vox Solaris)
+- **Chassis, Neuroptics, and Systems** unlock at rank Hand (Friend with Vox Solaris)
+
+Access to Fortuna requires completing The War Within quest and reaching Venus on the star chart. Vox Solaris standing is earned through bounties in the Vallis and by completing Profit-Taker Orb captures. The standing grind is moderate compared to earlier faction systems, typically requiring 10-15 hours of bounty farming for most players. The frame's construction cost is 25,000 credits and 72 hours of build time (reduced by rushing for 50 platinum).
+
+Baruuk Prime was released on December 14, 2022, and is currently unvaulted. The prime variant offers increased armor and shield compared to the base frame, making it even more durable.
+
+## Recommended Builds
+
+Baruuk's build flexibility allows multiple playstyles:
+
+**Tanky Restraint Control:** Stack ability duration and strength to maximize Lull uptime and passive damage resistance. Use Umbral mods (Umbral Intensify, Umbral Vitality) alongside Adaptation and Augur Mods. This build favors endless missions and Steel Path where sustain matters.
+
+**Serene Storm Melee:** Invest in melee damage, critical chance, and status chance. Equip Spoiled Strike, Primed Fury, and weeping wounds to make Serene Storm a primary damage dealer. Pair with Arcane Energize to offset energy drain from extended channeling.
+
+**Disarm Crowd Control:** Prioritize range and efficiency to keep Desolate Hands and Lull active. This build supports squad play by denying enemy firepower while allies clean up sleeping, disarmed foes.
+
+Build pages for Baruuk are linked below; consult them for specific mod loadouts, arcane recommendations, and playstyle guides.
+
+## Synergies
+
+Baruuk works well with several mod and ability synergies:
+
+- **Endless Lullaby augment mod:** Lull refreshes on kills without spending energy, enabling infinite crowd control in low-level content.
+- **Reactive Storm augment mod:** Serene Storm gains additional status chance and matches damage types to enemy weaknesses, scaling the exalted weapon's utility.
+- **Combination with Elude + Desolate Hands:** Doubling Desolate Hands range while enemies are stationary and asleep creates near-guaranteed weapon disarms.
+- **Arcane Energize:** Offsets restraint-building activities and sustains energy for rapid-fire ability usage.
+- **Void-fissure interaction:** In Void Fissure missions, Baruuk's restraint cycling provides consistent resistance against Void Cascade damage pulses.
+
+## Lore
+
+Baruuk emerged from deep within Fortuna's underground vaults as a symbol of Vox Solaris's resistance against the Corpus and their exploitation of the Venusian valleys. Before becoming a warframe, Baruuk was a sentinel of calm, a monk-like figure whose inner discipline manifested as restraint. The warframe embodies this philosophy: a frame that refuses violence until provoked beyond measure, then strikes with overwhelming force. The "Restraint" mechanic is thematic--Baruuk's power grows from patience, not aggression.
+
+In the lore of the Profit-Taker campaign, Baruuk is positioned as a moral counterbalance to the Corpus's greed and the player's quest for profit. His tranquility contrasts sharply with the desert's harshness and the Orb Mother's threat. This makes Baruuk narratively significant not just as a tool for farming, but as a philosophical statement about the cost of endless conflict and the strength that comes from mastering oneself rather than dominating others.
+
+## Sources

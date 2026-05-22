@@ -1,0 +1,183 @@
+---
+slug: limbo-prime
+name: Limbo Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 270
+armor: 135
+energy: 215
+sprintSpeed: 1.15
+passive:
+  name: Rift Walk
+  description: >-
+    Dodge to enter and exit the Rift. Entering leaves behind a small Rift portal lasting 5 seconds.
+    Energy slowly recharges in the Rift, and each enemy killed in there also gives 10 Energy.
+abilities:
+  - name: Banish
+    key: "1"
+    energyCost: 25
+    description: >-
+      Casts a wave of Rift energy that damages hostiles while pushing enemies and allies
+      out of Limbo's current plane of existence.
+    stats: { damage: 250, range: 50 }
+  - name: Stasis
+    key: "2"
+    energyCost: 50
+    description: >-
+      Freezes Rift-bound enemies in time. While active, enemy projectiles are arrested
+      in mid-air, resuming their trajectory when stasis ends.
+    stats: { duration: 15, range: 20 }
+  - name: Rift Surge
+    key: "3"
+    energyCost: 75
+    description: >-
+      Surges nearby Rift-bound enemies with Rift energy. When killed the Rift Surge is transferred
+      to a nearby enemy outside the rift. Surged enemies that leave the Rift perform a radial Banish.
+    stats: { damage: 250, range: 25 }
+  - name: Cataclysm
+    key: "4"
+    energyCost: 100
+    description: >-
+      A violent blast of Void energy tears open a pocket of rift plane which can sustain itself
+      for a short period before collapsing in another lethal blast.
+    stats: { damage: 600, range: 20 }
+acquisition:
+  source: Void Relic farming (Vaulted)
+  blueprintLocations:
+    - "Lith, Meso, Neo, and Axi relics (currently vaulted; available via Prime Resurgence)"
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2017-12-12"
+  vaultedAt: "2020-03-31"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Limbo/Prime"
+    accessedAt: "2026-05-19"
+    title: "Limbo Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Limbo Prime is the primed variant of Limbo, the master of the Rift--a parallel plane of existence that exists alongside the material world. As the golden rift walker, Limbo Prime offers higher shield capacity, armor, and energy capacity compared to the base Limbo, along with additional polarity slots for greater customization. This makes him particularly suited for support and crowd control in both casual and endgame content. Limbo Prime was released alongside Pyrana Prime and Destreza Prime on December 12, 2017, and entered the Prime Vault on March 31, 2020. He remains occasionally available during Prime Resurgence rotations.
+
+Limbo Prime's role as a Rift-based controller makes him unique in Warframe's arsenal. His ability to manipulate reality and protect allies from harm through strategic Rift management appeals to players who prefer methodical, positioning-based gameplay over raw damage output. The Rift itself becomes both shield and weapon, allowing for creative play patterns that reward understanding and positioning.
+
+## Abilities
+
+<AbilityCard
+  name="Banish"
+  key="1"
+  energyCost={25}
+  description="Casts a wave of Rift energy that damages hostiles while pushing enemies and allies out of Limbo's current plane of existence."
+  stats={{ damage: 250, range: 50 }}
+/>
+
+Banish serves as Limbo Prime's primary offensive tool and defensive utility. The ability damages and forcibly displaces targets, with enemies banished into the Rift becoming temporarily vulnerable to Rift Surge and Stasis. Banishing allies can protect them from incoming projectiles and melee attacks, making it invaluable during high-pressure situations. The ability's low energy cost makes it spammable for crowd control in early-mission phases.
+
+<AbilityCard
+  name="Stasis"
+  key="2"
+  energyCost={50}
+  description="Freezes Rift-bound enemies in time. While active, enemy projectiles are arrested in mid-air, resuming their trajectory when stasis ends."
+  stats={{ duration: 15, range: 20 }}
+/>
+
+Stasis is a powerful crowd control and defense mechanism that freezes all Rift-bound enemies in place, halting their attacks and abilities entirely. Projectiles fired before activation are frozen mid-flight and resume only after Stasis ends, allowing Limbo Prime to nullify incoming fire briefly. This ability is essential for survivability in high-level content where enemy damage becomes overwhelming. The ability's duration and range scale with Ability Duration and Ability Range mods respectively.
+
+<AbilityCard
+  name="Rift Surge"
+  key="3"
+  energyCost={75}
+  description="Surges nearby Rift-bound enemies with Rift energy. When killed the Rift Surge is transferred to a nearby enemy outside the rift. Surged enemies that leave the Rift perform a radial Banish."
+  stats={{ damage: 250, range: 25 }}
+/>
+
+Rift Surge amplifies Limbo Prime's crowd control potential by marking Rift-bound enemies with surging Rift energy. Surged enemies deal reduced damage to Limbo Prime and transfer the effect to other enemies when killed, creating a cascading control effect. When a surged enemy leaves the Rift (either through Rift Collapse or other means), it automatically performs a radial Banish, potentially trapping nearby enemies in the Rift as well. This creates powerful synergies with Cataclysm and Stasis.
+
+<AbilityCard
+  name="Cataclysm"
+  key="4"
+  energyCost={100}
+  description="A violent blast of Void energy tears open a pocket of rift plane which can sustain itself for a short period before collapsing in another lethal blast."
+  stats={{ damage: 600, range: 20 }}
+/>
+
+Cataclysm is Limbo Prime's ultimate ability and the cornerstone of his gameplay. It creates a large Rift sphere that automatically banishes all enemies within it and deals area damage. The sphere persists for its duration, during which enemies inside remain suspended in the Rift. When the duration expires or is manually cancelled, the Cataclysm collapses and deals additional damage to all affected enemies. Limbo Prime can move the Cataclysm by reactivating the ability while it's active, allowing for tactical repositioning. Combined with Stasis, Cataclysm becomes an impenetrable defensive dome.
+
+## Passive
+
+**Rift Walk** allows Limbo Prime to dodge-roll into and out of the Rift plane. When entering the Rift, a small Rift portal remains for 5 seconds, allowing allies to pass through it freely. Energy recharges slowly while in the Rift, and each enemy killed there grants 10 additional Energy. This passive fundamentally defines Limbo Prime's survival strategy--the Rift provides damage reduction through enemy separation and passive energy regeneration that sustains his ability spam. Mastering Rift Walk positioning is critical for survival in endgame content.
+
+## Stats
+
+| Stat           | Value |
+|----------------|-------|
+| Health         | 270   |
+| Shield         | 270   |
+| Armor          | 135   |
+| Energy         | 215   |
+| Sprint speed   | 1.15x |
+| Mastery rank   | 0     |
+
+Limbo Prime's stat distribution emphasizes balanced defense with higher shield and armor values compared to base Limbo. At 270 health and shield each with 135 armor, Limbo Prime can survive moderate burst damage in mid-level content. The 215 energy pool supports ability spam, though it benefits significantly from Ability Efficiency mods. His 1.15x sprint speed is slightly above average, allowing decent mobility when outside the Rift.
+
+## Acquisition
+
+Limbo Prime components dropped from Void Relics that have since been vaulted and removed from the standard drop tables as of March 31, 2020. Players seeking Limbo Prime must either trade for components with other players or wait for Prime Resurgence rotations when his relics become temporarily available.
+
+**Blueprint locations:**
+- Lith, Meso, Neo, and Axi era Void Relics (currently unavailable in standard missions)
+- Prime Resurgence rotations (periodic availability through Varzia)
+- Player trading
+
+**Build time:** 72 hours per component (Neuroptics, Chassis, Systems) plus 72 hours for the Prime Blueprint assembly.
+
+## Playstyle
+
+Limbo Prime excels as a utility-focused controller who manipulates space through the Rift mechanic. Effective Limbo Prime pilots maintain constant awareness of which enemies are Rift-bound and which remain in the material plane, toggling between offensive and defensive postures based on incoming threat levels.
+
+In early to mid-level missions, Limbo Prime uses Banish and Rift Surge to manage scattered enemies while maintaining mobility. His low energy costs allow liberal casting without resource management concerns. Against harder-hitting enemies, Stasis becomes the primary tool--a well-timed activation freezes incoming fire and provides breathing room for repositioning or team support.
+
+Cataclysm defines Limbo Prime's endgame identity. Placing a Cataclysm near objectives creates an impenetrable area denial tool. Combined with Stasis, enemies cannot attack from within or outside the sphere. This makes Limbo Prime invaluable for Defense missions, holding capture points, and protecting teammates during revives.
+
+The Rift Walk passive enables hit-and-run tactics. Limbo Prime can phase into the Rift to dodge chip damage, activate Cataclysm if under pressure, and return to cover behind allies. Energy regeneration in the Rift sustains ability casting indefinitely during lulls in combat.
+
+Limbo Prime's playstyle rewards patience and positioning over reflexive button-mashing. Inexperienced players struggle with the overhead of managing Rift states across the squad, but mastery yields tremendous defensive and control value that scales into Steel Path and endless content.
+
+## Builds
+
+Limbo Prime supports multiple viable build archetypes depending on mission context and playstyle preference.
+
+**Duration + Range Hybrid (Crowd Control Focus):** Prioritize Ability Duration mods like Primed Continuity and Primed Flow for sustained ability uptime, paired with Augur Reach and Range-boosting gear. This build maintains long Stasis freezes and wide Cataclysm coverage, ideal for Defense and Survival missions where holding ground matters. Sacrifice some Power Strength for duration to stretch freezes across defense windows.
+
+**Strength + Duration (Damage Focus):** Increase ability Strength through Umbral mods and Power Strength augments to maximize Cataclysm and Rift Surge damage output. Pair with Primed Continuity to maintain reasonable duration. This build excels in Exterminate and Void Fissure missions where killing speed complements crowd control. Requires aggressive casting and active Rift management.
+
+**Efficiency + Duration (Energy Sustain):** Stack Ability Efficiency mods like Streamline and Fleeting Expertise (ranked lower to preserve duration) to reduce ability costs. This enables nearly infinite casting through Rift Walk energy regeneration. Ideal for solo endless content where stopping to regenerate shields risks exposure.
+
+Limbo Prime's aura slot typically runs Corrosive Projection for enemy armor stripping or Energy Siphon for team support. His exilus slot accepts Power Drift for extra Strength or Cunning Drift for survivability, depending on build focus.
+
+## Lore
+
+Before the rise of the Tenno as elite warriors, Limbo was a Cephalon with an obsession that bordered on madness: the theoretical mathematics of a realm existing parallel to material reality. His research led him to a profound discovery--the Rift, a pocket dimension where physical laws bent to a more malleable logic. Through forbidden Orokin techniques, he engineered a Warframe capable of traversing this boundary, manifesting Rift energy in combat.
+
+Limbo Prime represents the refined, perfected version of this design, crafted when the Orokin still commanded unlimited resources and the deepest lore-crafting knowledge. The prime variant gleams with golden accents and features enhanced containment matrices, suggesting the Orokin invested significant effort into stabilizing Rift manipulations. The primed design proved so effective that Limbo became a favored choice among the Old War's elite operators.
+
+The philosophical implications of Limbo Prime's existence raise questions about reality itself. Is the Rift truly a separate plane, or merely a perspective shift? Does stepping into the Rift destroy the original body and manifest a copy, or is consciousness genuinely translated? Limbo Prime's very existence suggests the Orokin had answers--or at least accepted the uncertainty with the hubris characteristic of their civilization.
+
+## Builds
+
+Limbo Prime builds vary dramatically based on mission context and playstyle. See `/builds/warframes/limbo-prime/` for community-tested loadouts optimized for Defense, Survival, Void Fissure, and Steel Path gameplay.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) -- Canonical numeric stats and ability data.
+- [Limbo Prime -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Limbo/Prime) -- Lore, acquisition details, and community guides.

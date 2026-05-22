@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const amps = await getCollection('amps');
+const sorted = [...amps].sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base
+  title="Amps"
+  description="Popular Amp configurations for Operator combat in Warframe. Each Amp is a three-part build: Prism, Scaffold, and Brace."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Amps</h1>
+      <p class="text-brand-cream/60">
+        Amps are Operator weapons built from three components: a Prism (primary fire),
+        Scaffold (secondary fire), and Brace (passive bonus). Components are crafted at
+        the Quills (Cetus) and Vox Solaris (Fortuna) vendors.
+      </p>
+    </header>
+
+    <div class="overflow-x-auto mb-8">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="border-b border-surface-3">
+            <th class="text-left py-3 px-4 text-brand-cream/60 font-medium">Name</th>
+            <th class="text-left py-3 px-4 text-brand-cream/60 font-medium">Prism</th>
+            <th class="text-left py-3 px-4 text-brand-cream/60 font-medium">Scaffold</th>
+            <th class="text-left py-3 px-4 text-brand-cream/60 font-medium">Brace</th>
+            <th class="text-right py-3 px-4 text-brand-cream/60 font-medium">Crit chance</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sorted.map((amp) => (
+            <tr class="border-b border-surface-3/50 hover:bg-surface-2/50 transition-colors">
+              <td class="py-3 px-4">
+                <a
+                  href={`${base}amps/${amp.slug}`}
+                  class="font-medium text-brand-orange hover:underline"
+                >
+                  {amp.data.name}
+                </a>
+              </td>
+              <td class="py-3 px-4 text-brand-cream/80">{amp.data.prism}</td>
+              <td class="py-3 px-4 text-brand-cream/80">{amp.data.scaffold}</td>
+              <td class="py-3 px-4 text-brand-cream/80">{amp.data.brace}</td>
+              <td class="py-3 px-4 text-right text-brand-cream/80">
+                {(amp.data.criticalChance * 100).toFixed(0)}%
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <section class="rounded-lg border border-surface-3 bg-surface-2 p-6">
+      <h2 class="text-lg font-semibold text-brand-cream mb-3">Building an Amp</h2>
+      <div class="text-sm text-brand-cream/70 space-y-2 leading-relaxed">
+        <p>
+          Amps replace the basic Void Blast the Operator has after completing
+          The War Within. To build an Amp, visit the Quills syndicate in Cetus
+          or the Vox Solaris syndicate in Fortuna. Each offers different
+          component tiers gated behind their respective standing ranks.
+        </p>
+        <p>
+          A completed Amp occupies a slot in the Operator equipment loadout.
+          Players can own multiple Amps and switch between them from the Arsenal.
+          The Amp's three components determine its primary fire style, secondary
+          fire option, and passive stat bonuses.
+        </p>
+        <p>
+          For Eidolon hunting, the Amp is the primary tool for breaking Eidolon
+          Synovia shields, which are only vulnerable to Void damage. Higher-tier
+          Amp components deal significantly more Void damage per shot and reduce
+          the number of Operator sessions needed to break each Synovia.
+        </p>
+      </div>
+    </section>
+  </div>
+</Base>

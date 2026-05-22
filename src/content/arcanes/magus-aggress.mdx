@@ -1,0 +1,74 @@
+---
+slug: magus-aggress
+name: Magus Aggress
+type: operator
+maxRank: 5
+effect: "On Warframe Melee Transference: Heavy Blades deal +[crit_multiplier]% Critical Damage for 4 consecutive attacks. Cooldown 20s."
+perRankStats:
+  - rank: 0
+    stats: { crit_multiplier: 50 }
+  - rank: 1
+    stats: { crit_multiplier: 100 }
+  - rank: 2
+    stats: { crit_multiplier: 150 }
+  - rank: 3
+    stats: { crit_multiplier: 200 }
+  - rank: 4
+    stats: { crit_multiplier: 250 }
+  - rank: 5
+    stats: { crit_multiplier: 300 }
+drops:
+  - source: "Eidolon Hydrolyst capture"
+    chance: 6.0
+  - source: "Zariman Void Fissure rewards"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Aggress"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Aggress grants a Critical Damage bonus to Heavy Blade attacks when the warframe performs Warframe Melee Transference -- the action of switching to a melee weapon using the melee transference input. The next 4 consecutive Heavy Blade attacks gain elevated Critical Damage for the burst, then the arcane enters a 20-second cooldown before it can trigger again.
+
+At rank 5, Warframe Melee Transference triggers +300% Critical Damage on the next 4 Heavy Blade attacks. Critical hits during these 4 attacks deal four times the additional critical multiplier, substantially increasing burst damage potential during the empowered window.
+
+## Effect
+
+Performing Warframe Melee Transference -- drawing a Heavy Blade weapon via the melee transference action -- triggers the Magus Aggress bonus. The next 4 consecutive attacks with Heavy Blades deal the listed additional Critical Damage. At rank 0, +50% Critical Damage on 4 attacks provides a moderate burst enhancement. At rank 5, +300% Critical Damage on 4 attacks dramatically amplifies the damage of each critical hit in the burst sequence. After 4 attacks or a 20-second cooldown, the ability resets and can trigger again on the next Warframe Melee Transference.
+
+The cooldown prevents continuous activation -- the player must wait 20 seconds between empowered sequences, making Magus Aggress a burst-window arcane rather than a sustained damage modifier.
+
+## Stats per rank
+
+| Rank | Critical Damage Bonus | Empowered Attacks | Cooldown |
+|------|----------------------|------------------|---------|
+| 0 | +50% | 4 | 20s |
+| 1 | +100% | 4 | 20s |
+| 2 | +150% | 4 | 20s |
+| 3 | +200% | 4 | 20s |
+| 4 | +250% | 4 | 20s |
+| 5 | +300% | 4 | 20s |
+
+## Acquisition
+
+Magus Aggress drops from Eidolon Hydrolyst capture at 6% and Zariman Void Fissure rewards at 2%. The Hydrolyst source requires completing full Tridolon hunts -- capturing all three Eidolons. The 6% Hydrolyst drop rate makes Aggress moderately accessible through regular Eidolon hunt participation. Zariman Void Fissure provides an alternative source at lower rate. Warframe.market provides a direct purchase option for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Magus Aggress is specifically designed for Heavy Blade weapon builds that use Warframe Melee Transference as part of their combat pattern. Heavy Blade Zaws or standard Heavy Blades (Gram Prime, Galatine Prime, Pennant) equipped with high critical multiplier mods (Organ Shatter, Blood Rush at high combo) benefit most from the +300% Critical Damage burst, as the bonus stacks multiplicatively with existing critical multiplier values.
+
+Frames that regularly draw and put away melee weapons during combat -- switching between primary weapons and the Heavy Blade -- naturally generate Warframe Melee Transference events on each draw, triggering Aggress at the 20-second cadence. Heavy attack-focused builds that deliver high-damage heavy attacks within the 4-hit window use all 4 empowered attacks efficiently.
+
+## Notes
+
+Warframe Melee Transference specifically refers to drawing the melee weapon via the transference input, not general melee combat. The 4-attack window counts consecutive attacks from the Heavy Blade; switching away from the Heavy Blade mid-window may consume or reset the remaining empowered attacks depending on implementation. The 20-second cooldown begins after the 4th empowered attack completes, not from the trigger event. The Critical Damage bonus adds to the existing critical multiplier -- a weapon with 2x base critical multiplier during the Magus Aggress window at rank 5 effectively applies a 5x total multiplier on critical hits.
+
+## Sources
+
+- WFCD warframe-items dataset provides Critical Damage values per rank and the Warframe Melee Transference trigger for Magus Aggress.
+- Fandom wiki entry for [Magus Aggress](https://warframe.fandom.com/wiki/Magus_Aggress) covers the 4-attack window mechanics and Heavy Blade weapon compatibility.

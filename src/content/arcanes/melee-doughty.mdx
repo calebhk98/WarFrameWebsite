@@ -1,0 +1,74 @@
+---
+slug: melee-doughty
+name: Melee Doughty
+type: melee
+maxRank: 5
+effect: "Gain [crit_multiplier]x Critical Multiplier for every 10% Puncture Status chance on your Melee Weapon."
+perRankStats:
+  - rank: 0
+    stats: { crit_multiplier: 0.5 }
+  - rank: 1
+    stats: { crit_multiplier: 0.6 }
+  - rank: 2
+    stats: { crit_multiplier: 0.7 }
+  - rank: 3
+    stats: { crit_multiplier: 0.8 }
+  - rank: 4
+    stats: { crit_multiplier: 0.9 }
+  - rank: 5
+    stats: { crit_multiplier: 1 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation B"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Melee_Doughty"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Melee Doughty converts Puncture Status Chance on the melee weapon directly into Critical Multiplier. Each 10% of Puncture Status Chance on the weapon provides the listed Critical Multiplier bonus, creating a bridge between the weapon's damage type distribution and its critical hit damage. Weapons with high Puncture proportion gain significant Critical Multiplier through Doughty without requiring additional critical multiplier mods.
+
+At rank 5, every 10% Puncture Status Chance adds 1x Critical Multiplier. A weapon with 90% Puncture Status Chance gains +9x Critical Multiplier, dramatically increasing critical hit damage. Paired with existing Organ Shatter or Primed Organ Shatter, the total Critical Multiplier reaches extreme values that amplify each critical hit to devastating levels.
+
+## Effect
+
+The Critical Multiplier bonus is passive and scales with the weapon's Puncture Status Chance. At rank 0, each 10% Puncture Status Chance adds +0.5x Critical Multiplier. At rank 5, each 10% Puncture Status Chance adds +1x Critical Multiplier. The total bonus depends on the weapon's Puncture Status Chance value -- a weapon with 100% Puncture Status Chance at rank 5 gains +10x Critical Multiplier from Melee Doughty alone.
+
+Puncture Status Chance can be increased through mods -- Fever Strike converts status to Toxin at the cost of Puncture share, while Shattering Impact adds Puncture to impact. Melee weapons with naturally high Puncture proportion gain the most benefit from Doughty without requiring elemental combination mods that dilute Puncture share.
+
+## Stats per rank
+
+| Rank | Critical Multiplier per 10% Puncture Status Chance |
+|------|--------------------------------------------------|
+| 0 | +0.5x |
+| 1 | +0.6x |
+| 2 | +0.7x |
+| 3 | +0.8x |
+| 4 | +0.9x |
+| 5 | +1.0x |
+
+## Acquisition
+
+Melee Doughty drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation B at 2%. Access requires completing Angels of the Zariman. Rotation B in Void Cascade requires completing multiple reward rotations per run, so targeted farming involves extended Void Cascade sessions. Warframe.market provides a platinum purchase option for players who prefer to bypass the farming requirement.
+
+## Builds that use it
+
+Melee Doughty is designed for Puncture-dominant melee weapon builds. Rapier-class weapons (Destreza Prime, Fang Prime), which naturally have high Puncture proportion in their damage split, benefit most from converting that Puncture concentration directly into Critical Multiplier. Pure Puncture status weapon builds that use mods to maximize Puncture's share of the status chance reach higher Doughty multipliers per rank than weapons with more evenly split damage types.
+
+The arcane combines powerfully with Blood Rush, which also adds Critical Chance as combo multiplier increases. While Blood Rush builds Critical Chance through combo, Doughty adds Critical Multiplier through Puncture Status Chance -- together they push critical hits to extreme damage values in sustained melee combat.
+
+## Notes
+
+Puncture Status Chance is distinct from Puncture damage proportion -- it specifically refers to the weapon's chance to apply a Puncture status proc. High-Puncture weapons naturally have high Puncture Status Chance, but elemental mods that add non-Puncture damage types reduce the Puncture proportion and thus the Puncture Status Chance that feeds Melee Doughty's bonus. Maintaining high Puncture Status Chance requires careful mod selection that avoids diluting the Puncture status share. The Critical Multiplier from Doughty stacks additively with Critical Multiplier from mods like Organ Shatter.
+
+## Sources
+
+- WFCD warframe-items dataset provides Critical Multiplier per 10% Puncture Status Chance values per rank for Melee Doughty.
+- Fandom wiki entry for [Melee Doughty](https://warframe.fandom.com/wiki/Melee_Doughty) covers Puncture Status Chance calculation and critical multiplier stacking behavior.

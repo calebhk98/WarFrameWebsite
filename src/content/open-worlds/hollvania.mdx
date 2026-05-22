@@ -1,0 +1,115 @@
+---
+name: "Hollvania"
+location: "1999"
+faction_primary: "Scaldra"
+syndicate_hub: "Hollvania"
+features:
+  - bounties
+  - onslaught
+  - stalker-mode
+  - technocyte-coda-weapons
+  - hex-missions
+  - street-exploration
+  - infested-ruptures
+cycle: null
+resources_unique:
+  - "Coda Components"
+  - "Synastrea Receptors"
+  - "Avoidance Matrix"
+  - "Hollvania Credits"
+  - "Technocyte Sample"
+  - "Scaldra Cipher"
+  - "Meridian Cache"
+level_range:
+  min: 30
+  max: 55
+quests_associated:
+  - the-hex
+  - the-lotus-eaters
+sources:
+  - url: "https://warframe.fandom.com/wiki/Hollvania"
+    accessedAt: "2026-05-20"
+    title: "Hollvania -- WARFRAME Wiki"
+    publisher: "Fandom"
+  - url: "https://warframestat.us"
+    accessedAt: "2026-05-20"
+    title: "Warframe Status -- Live World State"
+    publisher: "warframestat.us"
+updatedAt: "2026-05-20"
+---
+
+import Callout from '../../components/Callout.astro';
+import LinkOutFandom from '../../components/LinkOutFandom.astro';
+
+## Overview
+
+Hollvania is Warframe's fifth open-world zone, introduced in the Warframe: 1999 update (Update 37.0) in December 2024. It is set in a fictionalized Central European city in the year 1999 during a technocyte outbreak that predates the Origin System's established timeline. The zone is narratively and mechanically distinct from every prior open world -- it is set in an alternate past rather than the game's present, features 1999-era aesthetics and enemy designs, and introduces entirely new game systems including Stalker Mode and the Technocyte Coda weapon family.
+
+Hollvania has no environmental cycle. Its rhythm is defined by the escalating Scaldra military presence, Infested rupture events that periodically break open city blocks, and the rotating bounty system run by The Hex -- a squad of resistance fighters who serve as both NPCs and optional party members.
+
+<LinkOutFandom name="Hollvania" />
+
+<Callout type="warn">Spoilers for Warframe: 1999 follow. The quest must be completed to access Hollvania.</Callout>
+
+## Hub -- Hollvania (Scaldra HQ area)
+
+The Hollvania hub differs from prior open worlds in that it is embedded within the city itself rather than a separate loading zone. The Hex's base of operations -- a repurposed building near the city center -- functions as the social shop and bounty board access point. Each Hex member occupies a role: Arthur serves as the primary combat frame liaison, Eleanor handles Stalker Mode systems, Aoi manages resource exchange, Kira oversees Coda weapon crafting, Leticia (Dante) handles mission intel and bounty tiering, and Sid runs the general store.
+
+The **Hollvania Credits** system governs most transactions in the zone. Credits are distinct from the standard in-game credits and are earned through bounties, Onslaught runs, and looting Scaldra supply caches across the city. Hex standing is the progression track gating access to Coda weapon blueprints, unique cosmetics, and Hollvania-specific augments.
+
+## Factions and syndicates
+
+**Scaldra** are the primary enemy faction -- a paramilitary organization that has taken control of Hollvania under the guise of containment response to the Technocyte outbreak. In practice they are a fascist occupying force with advanced late-20th-century military hardware adapted with Infested-derived enhancements. Their troop types include standard infantry, armored units, mortar crews, helicopter dropships, and augmented Infested-hybrid soldiers. Slash and Corrosive damage performs well against their Infested-hybrid units; standard anti-Ferrite loadouts work on their armored vehicles.
+
+**The Hex** are the player-allied faction of 1999-era resistance fighters. They serve a dual role: as quest NPCs with full voiced dialogue and character development, and as a standing faction that gates Hollvania progression. Hex standing is earned through bounties, Onslaught completions, and freeing civilian districts from Scaldra control.
+
+**The Infestation** appears as a secondary hazard on the map in the form of Infested Ruptures -- spontaneous outbreaks that create large Infested-held zones mid-city. These are cleared through bounty objectives or Onslaught events and are a persistent background threat rather than a named faction with their own standing track.
+
+## Bounties and activities
+
+The Hex bounty board offers five tiers of Hollvania-specific missions. Objectives are city-exploration flavored: escort civilian convoys, sabotage Scaldra military depots, intercept supply drops, clear Infested ruptures, and eliminate field commanders. Each bounty awards Hex standing, Hollvania Credits, and Coda resource components.
+
+**Onslaught** is Hollvania's primary endgame activity. Teams enter a designated city sector and hold it against escalating Scaldra and Infested waves without the possibility of retreat. Onslaught scales enemy level and density with each zone retained, and rewards are tied to both time survived and zone count. Coda weapon components and rare Synastrea Receptors drop at the highest Onslaught tiers.
+
+**Stalker Mode** is a system unique to Hollvania. Players who meet specific criteria can opt into Stalker Mode, which allows them to invade other players' Hollvania sessions as a PvE-adjacent challenge. Stalker Mode players control a powerful Stalker-class entity and earn unique cosmetics and credits for successful hunts. The system is opt-in and does not affect standard cooperative play.
+
+**Street exploration** throughout Hollvania involves interacting with historical 1999-era environmental details, finding hidden civilian caches, and uncovering Hex-tagged safehouses. These exploration points provide small credit and resource rewards and contribute to district liberation percentages that reduce Scaldra patrol density over time.
+
+**Infested Ruptures** are spontaneous events where the Technocyte strain breaks through the city's infrastructure and creates heavily Infested zones. Clearing a rupture before it reaches critical spread awards bonus resources and Hex standing, and contributes to the city's overall Scaldra-Infestation equilibrium.
+
+## Cycle
+
+Hollvania has no environmental cycle. Enemy patrol compositions and Infested Rupture frequency vary based on the current district control state, which is a persistent server-side variable influenced by all players' activity. As more players clear Scaldra strongholds and Infested Ruptures, the district control shifts; Scaldra can regain territory over time if left unchallenged.
+
+This persistent world state differs from the binary phase cycles of other open worlds and creates an ongoing community effort to maintain liberated districts. Warframestat.us tracks the current district state alongside the standard open-world timers.
+
+## Resources
+
+**Coda Components** are the crafting material for Technocyte Coda weapons -- Hollvania's unique weapon family. Each Coda weapon is built from multiple component types dropped from specific Scaldra unit types, Onslaught rotations, and bounty completions. Coda weapons cannot be obtained on the Market and must be crafted.
+
+**Synastrea Receptors** are rare Onslaught drops required for the highest-tier Coda weapon upgrades and certain Hex standing items. They function as the equivalent of Toroids or Cetus Wisps -- the bottleneck resource players target for extended endgame farming.
+
+**Hollvania Credits** are the zone's soft currency. Unlike standard in-game credits, Hollvania Credits are non-transferable and can only be spent with Hex vendors. They accumulate through all activities and are required for many Hex offerings.
+
+**Technocyte Samples** and **Scaldra Ciphers** are additional resources from enemy drops and cache looting, feeding secondary blueprint requirements and Hex bounty bonus conditions.
+
+## Unique mechanics
+
+**Technocyte Coda weapons** are Hollvania's exclusive weapon line. They resemble late-20th-century firearms and melee weapons aesthetically but operate with Warframe's standard modding and damage systems. Coda weapons have a secondary stat profile based on Technocyte integration, which improves as players complete Hollvania missions with the weapon equipped. Maxed Technocyte integration unlocks a unique alternate fire mode or passive effect for each Coda weapon type.
+
+**The Hex as party members** is a mechanic unique to Warframe: 1999. During specific mission types within Hollvania, Hex NPCs can be deployed as AI-controlled squad members. Their combat effectiveness is influenced by their personal relationship status, which advances through voiced dialogue sequences in the hub and during missions. Hex members at higher relationship tiers use stronger abilities and contribute more to objective completion.
+
+**Stalker Mode** introduces a PvP-adjacent dynamic without requiring traditional PvP consent or loadout matching. Stalker Mode players use a fixed loadout based on the iconic Stalker enemy and are matched against players at a level appropriate to their current Hollvania progress. The system is purely optional, and non-participating players never encounter Stalker Mode invaders.
+
+**1999 cosmetic system** introduced Warframe 1999-exclusive appearance items: weapon skins in retro-modern styles, Warframe skins with 1999 design language, and the Hollvania Fashion Frame collection. These are purchased with Hollvania Credits or earned through Onslaught milestones.
+
+## Lore
+
+Hollvania is set in an alternate 1999 where the Orokin's earliest Technocyte experiments leaked into Central Europe through an unspecified incident. The Scaldra moved in to contain the outbreak and exploit its military applications. The Hex formed as a grassroots resistance combining local civilians, soldiers who defected from the Scaldra, and the Tenno who were drawn to the temporal anomaly.
+
+The Warframe: 1999 narrative connects to the present-day Origin System through a Void rift that allows Arthur and the Hex to interact with the modern Tenno. The Lotus Eaters update (Update 38.0, March 2025) expanded the Hex arcs and introduced new story content that bridges the 1999 era with the events following The New War. Hollvania's lore positions the Technocyte strain's 1999 outbreak as a direct precursor to the Infestation the Origin System faces in the game's main timeline.
+
+## Sources
+
+- [Hollvania -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Hollvania)
+- [Warframestat.us live cycle timers](https://warframestat.us)

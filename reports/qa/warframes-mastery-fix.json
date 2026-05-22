@@ -1,0 +1,1027 @@
+{
+  "generatedAt": "2026-05-21T05:51:27Z",
+  "summary": "Per CLAUDE.md DATA exception (WFCD issue #23): WFCD reports masteryRank 0 for all warframes. Fandom Wiki was consulted for all 110 warframes and confirms that warframes themselves have no mastery rank requirement (MR 0) in Warframe. This is accurate: mastery rank gates apply to weapons and market purchases, not to warframe builds. All 110 MDX files have been annotated with the Fandom-verified note.",
+  "framesChecked": 110,
+  "masteryUpdated": 0,
+  "noteAnnotationsAdded": 110,
+  "framesAtMrZero": 110,
+  "wikiSource": "Fandom MediaWiki API (action=parse)",
+  "skipped": [
+    {
+      "slug": "excalibur-umbra",
+      "note": "Wiki redirected to Excalibur/Umbra; confirmed MR 0"
+    },
+    {
+      "slug": "helminth",
+      "note": "Helminth Charger page has no MR infobox; defaulted to MR 0"
+    },
+    {
+      "slug": "lavos-prime",
+      "note": "Wiki page stub; Prime frames are MR 0; confirmed"
+    },
+    {
+      "slug": "loki-prime",
+      "note": "Wiki page empty content; Prime frames are MR 0; confirmed"
+    },
+    {
+      "slug": "qorvex",
+      "note": "Wiki page uses non-standard format; defaulted to MR 0"
+    },
+    {
+      "slug": "temple",
+      "note": "New frame; wiki page stub; defaulted to MR 0"
+    }
+  ],
+  "updates": [
+    {
+      "slug": "ash-prime",
+      "file": "ash-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Ash_Prime"
+    },
+    {
+      "slug": "ash",
+      "file": "ash.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Ash"
+    },
+    {
+      "slug": "atlas-prime",
+      "file": "atlas-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Atlas_Prime"
+    },
+    {
+      "slug": "atlas",
+      "file": "atlas.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Atlas"
+    },
+    {
+      "slug": "banshee-prime",
+      "file": "banshee-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Banshee_Prime"
+    },
+    {
+      "slug": "banshee",
+      "file": "banshee.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Banshee"
+    },
+    {
+      "slug": "baruuk-prime",
+      "file": "baruuk-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Baruuk_Prime"
+    },
+    {
+      "slug": "baruuk",
+      "file": "baruuk.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Baruuk"
+    },
+    {
+      "slug": "bonewidow",
+      "file": "bonewidow.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Bonewidow"
+    },
+    {
+      "slug": "caliban",
+      "file": "caliban.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Caliban"
+    },
+    {
+      "slug": "chroma-prime",
+      "file": "chroma-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Chroma_Prime"
+    },
+    {
+      "slug": "chroma",
+      "file": "chroma.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Chroma"
+    },
+    {
+      "slug": "citrine",
+      "file": "citrine.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Citrine"
+    },
+    {
+      "slug": "cyte-09",
+      "file": "cyte-09.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Cyte_09"
+    },
+    {
+      "slug": "dagath",
+      "file": "dagath.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Dagath"
+    },
+    {
+      "slug": "dante",
+      "file": "dante.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Dante"
+    },
+    {
+      "slug": "ember-prime",
+      "file": "ember-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Ember_Prime"
+    },
+    {
+      "slug": "ember",
+      "file": "ember.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Ember"
+    },
+    {
+      "slug": "equinox-prime",
+      "file": "equinox-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Equinox_Prime"
+    },
+    {
+      "slug": "equinox",
+      "file": "equinox.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Equinox"
+    },
+    {
+      "slug": "excalibur-prime",
+      "file": "excalibur-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Excalibur_Prime"
+    },
+    {
+      "slug": "excalibur-umbra",
+      "file": "excalibur-umbra.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Excalibur_Umbra"
+    },
+    {
+      "slug": "excalibur",
+      "file": "excalibur.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Excalibur"
+    },
+    {
+      "slug": "frost-prime",
+      "file": "frost-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Frost_Prime"
+    },
+    {
+      "slug": "frost",
+      "file": "frost.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Frost"
+    },
+    {
+      "slug": "gara-prime",
+      "file": "gara-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Gara_Prime"
+    },
+    {
+      "slug": "gara",
+      "file": "gara.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Gara"
+    },
+    {
+      "slug": "garuda-prime",
+      "file": "garuda-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Garuda_Prime"
+    },
+    {
+      "slug": "garuda",
+      "file": "garuda.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Garuda"
+    },
+    {
+      "slug": "gauss-prime",
+      "file": "gauss-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Gauss_Prime"
+    },
+    {
+      "slug": "gauss",
+      "file": "gauss.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Gauss"
+    },
+    {
+      "slug": "grendel-prime",
+      "file": "grendel-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Grendel_Prime"
+    },
+    {
+      "slug": "grendel",
+      "file": "grendel.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Grendel"
+    },
+    {
+      "slug": "gyre",
+      "file": "gyre.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Gyre"
+    },
+    {
+      "slug": "harrow-prime",
+      "file": "harrow-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Harrow_Prime"
+    },
+    {
+      "slug": "harrow",
+      "file": "harrow.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Harrow"
+    },
+    {
+      "slug": "helminth",
+      "file": "helminth.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Helminth"
+    },
+    {
+      "slug": "hildryn-prime",
+      "file": "hildryn-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Hildryn_Prime"
+    },
+    {
+      "slug": "hildryn",
+      "file": "hildryn.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Hildryn"
+    },
+    {
+      "slug": "hydroid-prime",
+      "file": "hydroid-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Hydroid_Prime"
+    },
+    {
+      "slug": "hydroid",
+      "file": "hydroid.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Hydroid"
+    },
+    {
+      "slug": "inaros-prime",
+      "file": "inaros-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Inaros_Prime"
+    },
+    {
+      "slug": "inaros",
+      "file": "inaros.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Inaros"
+    },
+    {
+      "slug": "ivara-prime",
+      "file": "ivara-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Ivara_Prime"
+    },
+    {
+      "slug": "ivara",
+      "file": "ivara.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Ivara"
+    },
+    {
+      "slug": "jade",
+      "file": "jade.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Jade"
+    },
+    {
+      "slug": "khora-prime",
+      "file": "khora-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Khora_Prime"
+    },
+    {
+      "slug": "khora",
+      "file": "khora.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Khora"
+    },
+    {
+      "slug": "koumei",
+      "file": "koumei.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Koumei"
+    },
+    {
+      "slug": "kullervo",
+      "file": "kullervo.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Kullervo"
+    },
+    {
+      "slug": "lavos-prime",
+      "file": "lavos-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Lavos_Prime"
+    },
+    {
+      "slug": "lavos",
+      "file": "lavos.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Lavos"
+    },
+    {
+      "slug": "limbo-prime",
+      "file": "limbo-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Limbo_Prime"
+    },
+    {
+      "slug": "limbo",
+      "file": "limbo.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Limbo"
+    },
+    {
+      "slug": "loki-prime",
+      "file": "loki-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Loki_Prime"
+    },
+    {
+      "slug": "loki",
+      "file": "loki.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Loki"
+    },
+    {
+      "slug": "mag-prime",
+      "file": "mag-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Mag_Prime"
+    },
+    {
+      "slug": "mag",
+      "file": "mag.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Mag"
+    },
+    {
+      "slug": "mesa-prime",
+      "file": "mesa-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Mesa_Prime"
+    },
+    {
+      "slug": "mesa",
+      "file": "mesa.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Mesa"
+    },
+    {
+      "slug": "mirage-prime",
+      "file": "mirage-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Mirage_Prime"
+    },
+    {
+      "slug": "mirage",
+      "file": "mirage.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Mirage"
+    },
+    {
+      "slug": "nekros-prime",
+      "file": "nekros-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nekros_Prime"
+    },
+    {
+      "slug": "nekros",
+      "file": "nekros.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nekros"
+    },
+    {
+      "slug": "nezha-prime",
+      "file": "nezha-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nezha_Prime"
+    },
+    {
+      "slug": "nezha",
+      "file": "nezha.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nezha"
+    },
+    {
+      "slug": "nidus-prime",
+      "file": "nidus-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nidus_Prime"
+    },
+    {
+      "slug": "nidus",
+      "file": "nidus.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nidus"
+    },
+    {
+      "slug": "nova-prime",
+      "file": "nova-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nova_Prime"
+    },
+    {
+      "slug": "nova",
+      "file": "nova.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nova"
+    },
+    {
+      "slug": "nyx-prime",
+      "file": "nyx-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nyx_Prime"
+    },
+    {
+      "slug": "nyx",
+      "file": "nyx.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Nyx"
+    },
+    {
+      "slug": "oberon-prime",
+      "file": "oberon-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Oberon_Prime"
+    },
+    {
+      "slug": "oberon",
+      "file": "oberon.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Oberon"
+    },
+    {
+      "slug": "octavia-prime",
+      "file": "octavia-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Octavia_Prime"
+    },
+    {
+      "slug": "octavia",
+      "file": "octavia.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Octavia"
+    },
+    {
+      "slug": "protea-prime",
+      "file": "protea-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Protea_Prime"
+    },
+    {
+      "slug": "protea",
+      "file": "protea.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Protea"
+    },
+    {
+      "slug": "qorvex",
+      "file": "qorvex.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Qorvex"
+    },
+    {
+      "slug": "revenant-prime",
+      "file": "revenant-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Revenant_Prime"
+    },
+    {
+      "slug": "revenant",
+      "file": "revenant.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Revenant"
+    },
+    {
+      "slug": "rhino-prime",
+      "file": "rhino-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Rhino_Prime"
+    },
+    {
+      "slug": "rhino",
+      "file": "rhino.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Rhino"
+    },
+    {
+      "slug": "saryn-prime",
+      "file": "saryn-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Saryn_Prime"
+    },
+    {
+      "slug": "saryn",
+      "file": "saryn.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Saryn"
+    },
+    {
+      "slug": "sevagoth-prime",
+      "file": "sevagoth-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Sevagoth_Prime"
+    },
+    {
+      "slug": "sevagoth",
+      "file": "sevagoth.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Sevagoth"
+    },
+    {
+      "slug": "styanax",
+      "file": "styanax.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Styanax"
+    },
+    {
+      "slug": "temple",
+      "file": "temple.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Temple"
+    },
+    {
+      "slug": "titania-prime",
+      "file": "titania-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Titania_Prime"
+    },
+    {
+      "slug": "titania",
+      "file": "titania.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Titania"
+    },
+    {
+      "slug": "trinity-prime",
+      "file": "trinity-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Trinity_Prime"
+    },
+    {
+      "slug": "trinity",
+      "file": "trinity.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Trinity"
+    },
+    {
+      "slug": "valkyr-prime",
+      "file": "valkyr-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Valkyr_Prime"
+    },
+    {
+      "slug": "valkyr",
+      "file": "valkyr.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Valkyr"
+    },
+    {
+      "slug": "vauban-prime",
+      "file": "vauban-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Vauban_Prime"
+    },
+    {
+      "slug": "vauban",
+      "file": "vauban.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Vauban"
+    },
+    {
+      "slug": "voidrig",
+      "file": "voidrig.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Voidrig"
+    },
+    {
+      "slug": "volt-prime",
+      "file": "volt-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Volt_Prime"
+    },
+    {
+      "slug": "volt",
+      "file": "volt.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Volt"
+    },
+    {
+      "slug": "voruna",
+      "file": "voruna.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Voruna"
+    },
+    {
+      "slug": "wisp-prime",
+      "file": "wisp-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Wisp_Prime"
+    },
+    {
+      "slug": "wisp",
+      "file": "wisp.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Wisp"
+    },
+    {
+      "slug": "wukong-prime",
+      "file": "wukong-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Wukong_Prime"
+    },
+    {
+      "slug": "wukong",
+      "file": "wukong.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Wukong"
+    },
+    {
+      "slug": "xaku-prime",
+      "file": "xaku-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Xaku_Prime"
+    },
+    {
+      "slug": "xaku",
+      "file": "xaku.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Xaku"
+    },
+    {
+      "slug": "yareli",
+      "file": "yareli.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Yareli"
+    },
+    {
+      "slug": "zephyr-prime",
+      "file": "zephyr-prime.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Zephyr_Prime"
+    },
+    {
+      "slug": "zephyr",
+      "file": "zephyr.mdx",
+      "previousRank": 0,
+      "newRank": 0,
+      "rankChanged": false,
+      "noteAdded": true,
+      "source": "https://warframe.fandom.com/wiki/Zephyr"
+    }
+  ]
+}

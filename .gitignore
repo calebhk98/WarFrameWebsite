@@ -4,10 +4,13 @@ dist
 .output
 .vite
 
-# Data caches and imports (keep .gitkeep)
+# Data caches (gitignored entirely)
 data/cache
+
+# WFCD imports: track JSON outputs + .gitkeep, ignore other artefacts
 data/wfcd/*
 !data/wfcd/.gitkeep
+!data/wfcd/*.json
 
 # Logs
 *.log
@@ -23,3 +26,12 @@ pnpm-debug.log*
 .DS_Store
 coverage
 *.tsbuildinfo
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Lighthouse CI
+.lighthouseci/
+/lighthouse-report.json

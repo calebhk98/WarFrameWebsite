@@ -1,0 +1,74 @@
+---
+slug: magus-overload
+name: Magus Overload
+type: operator
+maxRank: 5
+effect: "On Void Sling: Stun robotic enemies for 3s, which then discharge Electricity Damage dealing [health]% of their Max Health to anyone within 25m."
+perRankStats:
+  - rank: 0
+    stats: { health: 15 }
+  - rank: 1
+    stats: { health: 30 }
+  - rank: 2
+    stats: { health: 45 }
+  - rank: 3
+    stats: { health: 60 }
+  - rank: 4
+    stats: { health: 75 }
+  - rank: 5
+    stats: { health: 80 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 3.0
+  - source: "Void Cascade bonus rewards"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Overload"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Overload stuns robotic enemies on Void Sling and then forces those stunned robots to discharge Electricity Damage in a 25-meter radius. Each stunned robot becomes a mobile electricity source, dealing percentage-of-max-health Electricity damage to any enemy within 25 meters of the robot during the 3-second stun window. Against Corpus robot clusters, this creates cascading area damage as multiple robots simultaneously discharge into the surrounding enemy group.
+
+At rank 5, each affected robot discharges Electricity dealing 80% of the robot's Max Health as damage to anything within 25 meters. A robot with 5000 Max Health discharges 4000 Electricity damage to all enemies in range during the stun -- turning the robot itself into a high-damage area weapon for 3 seconds.
+
+## Effect
+
+Void Sling through or near robotic enemies stuns them for 3 seconds. Each stunned robot immediately begins discharging Electricity Damage equal to the listed percentage of the robot's Max Health to all enemies (and potentially players) within 25 meters of the robot. The discharge is Electricity damage type, which applies Electricity status procs (chain electricity to nearby targets) alongside the direct damage.
+
+At rank 0, robots discharge 15% of their Max Health as Electricity. At rank 5, robots discharge 80% of Max Health. The 25-meter radius is large -- robotic enemies in a cluster all discharge simultaneously into each other and into nearby non-robotic enemies, creating explosive area denial in Corpus robot-heavy environments.
+
+## Stats per rank
+
+| Rank | Electricity Damage (% of Robot Max Health) | Stun Duration | Discharge Radius |
+|------|------------------------------------------|--------------|-----------------|
+| 0 | 15% | 3s | 25m |
+| 1 | 30% | 3s | 25m |
+| 2 | 45% | 3s | 25m |
+| 3 | 60% | 3s | 25m |
+| 4 | 75% | 3s | 25m |
+| 5 | 80% | 3s | 25m |
+
+## Acquisition
+
+Magus Overload drops from Zariman Void Fissure missions at 3% and Void Cascade bonus rewards at 2%. Both sources are available after completing Angels of the Zariman. Warframe.market provides a direct purchase path for players who prefer platinum acquisition over farming multiple Zariman sessions.
+
+## Builds that use it
+
+Magus Overload is specialized for Corpus content where robotic enemy types are present in high density. Void Cascade on Zariman features Corpus robotic enemies including MOAs and Coildrives, making the arcane particularly effective in its own farming environment. Corpus Void Fissures on planets like Europa, Pluto, and Eris feature dense robot spawns that Magus Overload can chain into catastrophic Electricity discharges across the enemy group.
+
+Operators who Void Sling aggressively through enemy clusters generate stuns across multiple robots simultaneously, triggering overlapping 25-meter discharge zones that deal percentage-of-max-health Electricity to all enemies in range. Since the damage is percentage-based on the robot's Max Health rather than a flat value, Magus Overload scales automatically to higher-level content where robotic enemies have larger health pools.
+
+## Notes
+
+The discharge affects enemies within 25 meters of each stunned robot, not within 25 meters of the operator or the Void Sling endpoint. Multiple stunned robots discharge independently, creating overlapping damage zones when several robots are stunned simultaneously. The Electricity damage type can apply Electricity status procs to non-robotic enemies in range, chaining electricity to additional targets beyond the primary zone. The discharge potentially deals damage to the operator and warframe if they are within 25 meters of a stunned robot, though this typically only matters in enclosed spaces where the discharge radius is large relative to room size.
+
+## Sources
+
+- WFCD warframe-items dataset provides Electricity damage percentage values per rank and the Void Sling trigger for Magus Overload.
+- Fandom wiki entry for [Magus Overload](https://warframe.fandom.com/wiki/Magus_Overload) covers robotic enemy stun mechanics and Electricity discharge radius behavior.

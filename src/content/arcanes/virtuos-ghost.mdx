@@ -1,0 +1,67 @@
+---
+slug: virtuos-ghost
+name: Virtuos Ghost
+type: operator
+maxRank: 3
+effect: "On Headshot: 40% chance for +[status_chance]% Status Chance for 12s"
+perRankStats:
+  - rank: 0
+    stats: { status_chance: 15 }
+  - rank: 1
+    stats: { status_chance: 30 }
+  - rank: 2
+    stats: { status_chance: 45 }
+  - rank: 3
+    stats: { status_chance: 60 }
+drops:
+  - source: "Eidolon Gantulyst capture (Void Fissure)"
+    chance: 3.0
+    rarity: "rare"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Virtuos_Ghost"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Virtuos Ghost grants the operator's amp a 40% chance to gain a Status Chance bonus for 12 seconds each time the amp lands a headshot. The bonus increases the amp's ability to apply status effects on subsequent hits during the 12-second window. At rank 3, a successful headshot gives +60% Status Chance for 12 seconds, substantially improving the probability that each amp hit applies a status proc during that window.
+
+The headshot trigger requires precise aim at enemy head hitboxes, which ties the arcane's activation to operator accuracy. Operators who consistently land headshots with their amp during combat get reliable 12-second buffs that improve status proc generation for elemental follow-up effects or for activating other arcanes that trigger on Status Effects.
+
+## Effect
+
+Each headshot landed by the operator's amp checks a 40% trigger chance. On success, the amp's Status Chance increases by the rank-dependent amount for 12 seconds. At rank 0, the bonus is +15% Status Chance. At rank 3, the bonus is +60% Status Chance. The 40% trigger chance is fixed across all ranks; only the Status Chance bonus percentage scales with rank.
+
+The Status Chance bonus applies to the amp's shots during the active window, increasing the probability that each subsequent hit generates a status proc. If the operator lands additional headshots during the 12-second window, the timer refreshes from the new headshot.
+
+## Stats per rank
+
+| Rank | Status Chance Bonus | Duration | Trigger Chance |
+|------|---------------------|----------|----------------|
+| 0 | +15% | 12s | 40% on Headshot |
+| 1 | +30% | 12s | 40% on Headshot |
+| 2 | +45% | 12s | 40% on Headshot |
+| 3 | +60% | 12s | 40% on Headshot |
+
+## Acquisition
+
+Virtuos Ghost drops as a rare reward from Eidolon Gantulyst captures during Void Fissure Eidolon hunts on the Plains of Eidolon. Capturing the Gantulyst -- the second Eidolon in the Tridolon chain -- provides Ghost at a 3% drop chance. The rare designation and Gantulyst-specific drop make Ghost one of the harder Virtuos arcanes to acquire through normal play. Warframe.market provides a purchase alternative for players who prefer direct acquisition.
+
+## Builds that use it
+
+Virtuos Ghost suits operator builds that pair accurate amp use with elemental conversion arcanes such as Virtuos Forge, Virtuos Surge, or Virtuos Trojan. The higher Status Chance during the buff window means more elemental status procs per shot, which in turn can trigger other arcanes that activate on Status Effects. Operators who consistently hit enemy head hitboxes with their amp maintain reliable headshot triggers, keeping the Status Chance bonus refreshed throughout sustained combat.
+
+High-accuracy amp prisms that fire focused projectiles rather than wide-spread beams land headshots more consistently, giving Virtuos Ghost more frequent trigger opportunities. In Eidolon hunt contexts, precision amp fire on Eidolon synovias benefits from the elevated Status Chance during the active window.
+
+## Notes
+
+The 40% trigger chance applies per headshot, not per hit. Shots that do not connect with a head hitbox do not trigger the roll. The 12-second buff window is long enough to cover multiple engagement cycles before expiring. Status Chance bonuses from Virtuos Ghost stack additively with other Status Chance sources from amp configuration mods. The arcane applies only to the operator's amp and does not affect the warframe's weapon Status Chance when the player returns to warframe mode.
+
+## Sources
+
+- WFCD warframe-items dataset provides Status Chance bonus values per rank and the 40% headshot trigger chance for Virtuos Ghost.
+- Fandom wiki entry for [Virtuos Ghost](https://warframe.fandom.com/wiki/Virtuos_Ghost) covers Eidolon Gantulyst acquisition and headshot trigger mechanics.

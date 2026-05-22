@@ -1,0 +1,9 @@
+{
+  "id": "cetus-cycle-2026-05-18",
+  "activation": "2026-05-18T12:00:00.000Z",
+  "expiry": "2026-05-18T13:30:00.000Z",
+  "isDay": true,
+  "state": "day",
+  "timeLeft": "1h 30m to night",
+  "shortString": "1h 30m to Night"
+}

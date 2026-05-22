@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-05-19T01:41:25.039840Z",
+  "collection": "warframes",
+  "batch": "wave3",
+  "total_files": 8,
+  "pass_count": 0,
+  "fail_count": 3,
+  "files": {
+    "caliban": {
+      "pass": false,
+      "errors": [
+        "missing sections: Acquisition, Recommended builds, Lore",
+        "word count: 383 < 800 (floor)"
+      ]
+    },
+    "chroma": {
+      "pass": false,
+      "errors": [
+        "energy: expected 175 (WFCD power field), got 200",
+        "missing sections: Acquisition, Recommended builds, Lore",
+        "word count: 518 < 800 (floor)"
+      ]
+    },
+    "chroma-prime": {
+      "pass": false,
+      "errors": [
+        "missing sections: Recommended builds"
+      ]
+    },
+    "citrine": {
+      "pass": false,
+      "errors": [
+        "missing sections: Acquisition, Recommended builds, Lore",
+        "word count: 436 < 800 (floor)"
+      ]
+    },
+    "cyte-09": {
+      "pass": false,
+      "errors": [
+        "missing sections: Acquisition, Recommended builds, Lore",
+        "word count: 477 < 800 (floor)"
+      ]
+    },
+    "dagath": {
+      "pass": false,
+      "errors": [
+        "missing sections: Acquisition, Recommended builds, Lore",
+        "word count: 335 < 800 (floor)"
+      ]
+    },
+    "dante": {
+      "pass": false,
+      "errors": [
+        "missing sections: Acquisition, Recommended builds, Lore",
+        "word count: 422 < 800 (floor)"
+      ]
+    },
+    "ember": {
+      "pass": false,
+      "errors": [
+        "shield: expected 270, got 135",
+        "missing sections: Acquisition, Recommended builds, Lore",
+        "word count: 471 < 800 (floor)"
+      ]
+    }
+  }
+}

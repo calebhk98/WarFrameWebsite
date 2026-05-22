@@ -1,0 +1,264 @@
+---
+// Fashion Frame Gallery -- curated community cosmetic showcase.
+// Vanilla JS filtering by tag and warframe slug. No React required.
+import Base from '../layouts/Base.astro';
+import { fashionShowcase } from '../data/fashion-showcase';
+import { getEntityImageUrl } from '../lib/wfcd-images';
+
+const base = import.meta.env.BASE_URL;
+
+const ALL_TAGS = ['minimalist', 'ornate', 'prime', 'tennocon', 'lore-accurate', 'deluxe'] as const;
+
+interface CardEntry extends Omit<typeof fashionShowcase[number], 'tags'> {
+  tags: readonly string[];
+  initial: string;
+  imageUrl: string | undefined;
+  frameHref: string;
+}
+
+const cards: CardEntry[] = fashionShowcase.map((entry) => ({
+  ...entry,
+  initial: entry.warframe.charAt(0).toUpperCase(),
+  imageUrl: getEntityImageUrl(entry.warframe, 'warframes'),
+  frameHref: `${base}warframes/${entry.warframe}`,
+}));
+
+const uniqueFrames = [...new Set(fashionShowcase.map((e) => e.warframe))].sort();
+const showcaseJson = JSON.stringify(cards);
+---
+
+<Base
+  title="Fashion Frame Gallery"
+  description="Curated community fashion-frame builds showcasing Warframe cosmetic combinations -- helmets, skins, syandanas, attachments, and palettes."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+
+    <header class="mb-8">
+      <nav class="mb-4 text-sm text-brand-cream/80">
+        <a href={`${base}warframes`} class="underline hover:text-brand-orange">Warframes</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Fashion Frame Gallery</span>
+      </nav>
+      <h1 class="text-3xl font-bold text-brand-cream mb-4">Fashion Frame Gallery</h1>
+      <div class="max-w-3xl text-brand-cream/70 text-sm leading-relaxed space-y-2">
+        <p>Fashion Frame is Warframe's true endgame -- the community-wide obsession with crafting the perfect cosmetic combination. The game's layered system lets players mix <strong class="text-brand-cream">Helmets</strong>, <strong class="text-brand-cream">Skins</strong>, <strong class="text-brand-cream">Syandanas</strong> (capes), <strong class="text-brand-cream">Attachments</strong> (chest, arm, leg plates), <strong class="text-brand-cream">Color Palettes</strong>, and <strong class="text-brand-cream">Sigils</strong> to build a look entirely their own.</p>
+        <p>From understated Orokin elegance to neon Tennocon spectacle, the range is staggering. Every Warframe carries its own silhouette, lore, and personality -- and the best fashion builds amplify those qualities. This gallery showcases standout builds spanning classic Primes, Tennogen creators, 1999-era newcomers, and deep lore-accurate recreations.</p>
+      </div>
+    </header>
+
+    <!-- Filter bar -->
+    <section aria-label="Filter fashion entries" class="mb-8 flex flex-col sm:flex-row gap-4 items-start sm:items-end">
+      <div>
+        <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-2">Filter by tag</p>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Tag filters">
+          {ALL_TAGS.map((tag) => (
+            <button
+              type="button"
+              data-tag={tag}
+              class="tag-chip px-3 py-1 rounded-full border border-surface-3 bg-surface-2 text-xs text-brand-cream/70 hover:border-brand-orange/50 hover:text-brand-cream transition-colors cursor-pointer"
+              aria-pressed="false"
+            >
+              {tag}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div class="sm:ml-auto flex flex-col gap-1">
+        <label for="frame-filter" class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide">
+          Filter by Warframe
+        </label>
+        <select
+          id="frame-filter"
+          class="rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="">-- All warframes --</option>
+          {uniqueFrames.map((slug) => (
+            <option value={slug}>{slug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</option>
+          ))}
+        </select>
+      </div>
+      <button
+        id="clear-filters"
+        type="button"
+        class="px-4 py-2 rounded-lg border border-surface-3 text-brand-cream/60 text-sm hover:border-brand-orange/50 hover:text-brand-cream transition-colors"
+      >
+        Clear filters
+      </button>
+    </section>
+
+    <p id="no-results" class="hidden text-center text-brand-cream/60 py-12 text-sm">
+      No entries match the selected filters. Try clearing a filter to broaden results.
+    </p>
+
+    <!-- Gallery grid -->
+    <div
+      id="fashion-grid"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+      aria-live="polite"
+      aria-label="Fashion frame showcase cards"
+    >
+      {cards.map((card) => (
+        <article
+          class="fashion-card rounded-lg border border-surface-3 bg-surface-2 flex flex-col overflow-hidden hover:border-brand-orange/40 transition-colors cursor-pointer"
+          data-warframe={card.warframe}
+          data-tags={card.tags.join(',')}
+          data-index={cards.indexOf(card)}
+          role="button"
+          tabindex="0"
+          aria-label={`Open details for ${card.title}`}
+        >
+          <!-- Thumbnail -->
+          <div class="relative h-36 bg-surface-3 flex items-center justify-center overflow-hidden">
+            {card.imageUrl ? (
+              <img
+                src={card.imageUrl}
+                alt={`${card.warframe} warframe`}
+                class="h-full w-full object-contain p-2"
+                loading="lazy"
+              />
+            ) : (
+              <span class="text-5xl font-bold text-brand-cream/20 select-none" aria-hidden="true">
+                {card.initial}
+              </span>
+            )}
+            <div class="absolute top-2 right-2 flex flex-wrap gap-1 justify-end">
+              {card.tags.slice(0, 2).map((tag) => (
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-brand-black/70 text-brand-orange font-semibold">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Card body -->
+          <div class="p-4 flex flex-col gap-2 flex-1">
+            <h2 class="font-semibold text-brand-cream text-base leading-snug">{card.title}</h2>
+            <dl class="text-xs text-brand-cream/60 space-y-0.5">
+              {([['Helmet', card.helmet], ['Skin', card.skin], ['Syandana', card.syandana]] as const).map(([k, v]) => (
+                <div class="flex gap-2"><dt class="text-brand-cream/40 shrink-0 w-16">{k}</dt><dd>{v}</dd></div>
+              ))}
+              <div class="flex gap-2"><dt class="text-brand-cream/40 shrink-0 w-16">Palette</dt><dd class="text-brand-orange/80">{card.color_palette}</dd></div>
+            </dl>
+            <p class="text-xs text-brand-cream/60 leading-relaxed line-clamp-3 mt-1">{card.description}</p>
+            <div class="mt-auto flex items-center justify-between pt-2">
+              <span class="text-xs text-brand-cream/40">by {card.submitter}</span>
+              <a
+                href={card.frameHref}
+                class="fashion-frame-link text-xs text-brand-orange hover:underline"
+              >
+                Frame info &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <footer class="mt-12 rounded-lg border border-surface-3 bg-surface-2 p-5 text-sm text-brand-cream/60 leading-relaxed">
+      <p><strong class="text-brand-cream">Tier list vs Fashion:</strong> The <a href={`${base}tier-list`} class="text-brand-orange hover:underline">Warframe Tier List</a> ranks frames by meta performance. This gallery is about something else -- the endgame of looking exactly right. Fashion Frame has its own winners.</p>
+    </footer>
+  </div>
+
+  <div id="fashion-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-black/80" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="relative bg-surface-2 border border-surface-3 rounded-xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+      <button id="modal-close" type="button" class="absolute top-3 right-3 text-brand-cream/50 hover:text-brand-cream text-2xl leading-none w-8 h-8 flex items-center justify-center rounded focus:outline-none focus:ring-2 focus:ring-brand-orange" aria-label="Close modal">
+        &times;
+      </button>
+      <div id="modal-body" class="p-6"></div>
+    </div>
+  </div>
+</Base>
+
+<script define:vars={{ showcaseJson, base }} is:inline>
+  const ENTRIES = JSON.parse(showcaseJson);
+
+  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function row(k, v, cls) { return `<div class="flex gap-2 text-xs"><dt class="text-brand-cream/40 w-16 shrink-0">${esc(k)}</dt><dd class="${cls||'text-brand-cream/70'}">${esc(v)}</dd></div>`; }
+
+  function buildModalHtml(e) {
+    const img = e.imageUrl
+      ? `<img src="${esc(e.imageUrl)}" alt="${esc(e.warframe)}" class="h-28 w-28 object-contain mx-auto mb-3" />`
+      : `<div class="h-28 w-28 flex items-center justify-center mx-auto mb-3 rounded bg-surface-3 text-5xl font-bold text-brand-cream/20">${esc(e.initial)}</div>`;
+    const tags = e.tags.map((t) => `<span class="text-[10px] px-2 py-0.5 rounded-full border border-surface-3 text-brand-orange">${esc(t)}</span>`).join('');
+    const attaches = Object.entries(e.attachments).filter(([,v])=>v).map(([k,v])=>row(k,v)).join('');
+    const src = e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer" class="text-brand-orange underline text-xs">Original post</a>` : '';
+    return `${img}<h2 id="modal-title" class="text-xl font-bold text-brand-cream mb-1">${esc(e.title)}</h2>
+<p class="text-xs text-brand-cream/40 mb-3">by ${esc(e.submitter)}</p>
+<div class="flex flex-wrap gap-1 mb-3">${tags}</div>
+<dl class="space-y-1 mb-3">${row('Helmet',e.helmet)}${row('Skin',e.skin)}${row('Syandana',e.syandana)}${row('Palette',e.color_palette,'text-brand-orange/80')}${attaches}</dl>
+<p class="text-sm text-brand-cream/70 leading-relaxed mb-4">${esc(e.description)}</p>
+<div class="flex items-center justify-between"><a href="${esc(e.frameHref)}" class="text-sm text-brand-orange hover:underline">Frame info &rarr;</a>${src}</div>`;
+  }
+
+  function openModal(index) {
+    const entry = ENTRIES[index];
+    if (!entry) return;
+    document.getElementById('modal-body').innerHTML = buildModalHtml(entry);
+    const modal = document.getElementById('fashion-modal');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('modal-close').focus();
+  }
+
+  function closeModal() {
+    document.getElementById('fashion-modal').classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  let activeTag = null;
+  let activeFrame = '';
+
+  function applyFilters() {
+    const cards = document.querySelectorAll('.fashion-card');
+    let visible = 0;
+    cards.forEach((card) => {
+      const tags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+      const frame = card.dataset.warframe ?? '';
+      const tagOk = !activeTag || tags.includes(activeTag);
+      const frameOk = !activeFrame || frame === activeFrame;
+      const show = tagOk && frameOk;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    document.getElementById('no-results').classList.toggle('hidden', visible > 0);
+  }
+
+  function clearChips() {
+    document.querySelectorAll('.tag-chip').forEach((b) => {
+      b.setAttribute('aria-pressed', 'false');
+      b.classList.remove('border-brand-orange', 'text-brand-orange');
+    });
+  }
+
+  document.querySelectorAll('.tag-chip').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const tag = btn.dataset.tag ?? '';
+      const same = activeTag === tag;
+      clearChips();
+      activeTag = same ? null : tag;
+      if (!same) { btn.setAttribute('aria-pressed', 'true'); btn.classList.add('border-brand-orange', 'text-brand-orange'); }
+      applyFilters();
+    });
+  });
+  document.getElementById('frame-filter').addEventListener('change', (e) => { activeFrame = e.target.value; applyFilters(); });
+  document.getElementById('clear-filters').addEventListener('click', () => {
+    activeTag = null; activeFrame = ''; clearChips(); document.getElementById('frame-filter').value = ''; applyFilters();
+  });
+  document.querySelectorAll('.fashion-frame-link').forEach((l) => l.addEventListener('click', (e) => e.stopPropagation()));
+
+  document.querySelectorAll('.fashion-card').forEach((card) => {
+    const idx = parseInt(card.dataset.index ?? '0', 10);
+    card.addEventListener('click', () => openModal(idx));
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(idx); }
+    });
+  });
+
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  document.getElementById('fashion-modal').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>

@@ -1,0 +1,129 @@
+---
+name: Itzal
+type: archwing
+masteryRank: 0
+health: 200
+shield: 220
+armor: 50
+energy: 220
+abilities:
+  - name: Arch Line
+    key: "1"
+    description: >-
+      Launches a tethered grappling hook. Hitting an enemy pulls them toward
+      Itzal; hooking a stationary surface pulls Itzal toward it at high speed.
+    stats: { range: 200 }
+  - name: Penumbra
+    key: "2"
+    description: >-
+      Activates a cloaking field that renders Itzal and stationary nearby
+      allies invisible to enemies.
+    stats: { radius: 12 }
+  - name: Cosmic Crush
+    key: "3"
+    description: >-
+      Forms a miniature black hole that sucks in all nearby objects before
+      rupturing in a massive shock wave that deals damage and stuns survivors.
+    stats: { damage: 600, radius: 12 }
+  - name: Fighter Escort
+    key: "4"
+    description: >-
+      Deploys autonomous combat drones that fight alongside Itzal. Each drone
+      detonates in a destructive blast when destroyed.
+    stats: { droneCount: 5 }
+acquisition:
+  source: Clan Dojo -- Tenno Lab research
+  blueprintLocations:
+    - "Clan Dojo Tenno Lab (requires Itzal research)"
+  buildTimeHours: 36
+  note: "Blueprint, Harness, Systems, and Wings all require separate Tenno Lab research."
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    title: "WFCD warframe-items -- Archwing.json"
+    publisher: "WFCD"
+    note: "Stats sourced from Archwing.json entry for Itzal."
+  - url: "https://warframe.fandom.com/wiki/Itzal"
+    accessedAt: "2026-05-20"
+    title: "Itzal -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+
+## Overview
+
+Itzal is Warframe's stealth Archwing, built for speed and evasion over durability. Its base health of 200 and armor of 50 are the lowest among all Archwings, a deliberate trade-off for its exceptional mobility tools and cloaking capabilities. Itzal's design philosophy mirrors that of stealth Warframes like Ash and Loki: avoid damage entirely rather than absorb it, and engage on your own terms.
+
+Introduced in Update 15.7 (December 2014), Itzal was created alongside the Centaur arch-melee to give players a maneuvering option after the relatively static Elytron and Odonata. Its grapple hook (Arch Line) fundamentally changed how Archwing navigation works, enabling the rapid directional pulls that speedrunners and traversal-focused players favor for crossing open-space mission areas quickly.
+
+The high energy pool of 220 mirrors the Warframes Itzal suits best: those who rotate between abilities constantly and depend on energy sustainability to keep the combat flow alive.
+
+## Abilities
+
+<AbilityCard
+  name="Arch Line"
+  key="1"
+  energyCost={25}
+  description="Fires a grappling tether. Against enemies it pulls the target to Itzal; against fixed surfaces it vaults Itzal toward the hook point."
+/>
+
+Arch Line is Itzal's defining mobility tool. The dual function -- crowd control against enemies and high-speed travel against structures -- makes it versatile in both combat and traversal. In Archwing Rush missions the surface-pull version acts as a speed burst, letting players slingshot between fixed structures to cover distance faster than boosting alone. Against large fighters or Crewship crew, the enemy-pull version drags targets out of formation and into Cosmic Crush range.
+
+<AbilityCard
+  name="Penumbra"
+  key="2"
+  energyCost={50}
+  description="Cloaks Itzal and nearby stationary allies, rendering all of them invisible and immune to enemy targeting while they hold position."
+/>
+
+Penumbra is a full invisibility cloak that breaks on movement. The stationary requirement means it functions as a repositioning and cooldown tool rather than a sustained combat cloak. When Itzal needs to wait for ability timers, recover health, or allow allies to heal, activating Penumbra while holding still removes all incoming fire. In stealth-objective Archwing missions, Penumbra enables bypassing enemy detection entirely.
+
+<AbilityCard
+  name="Cosmic Crush"
+  key="3"
+  energyCost={75}
+  description="Creates a gravitational singularity that pulls all nearby enemies toward a central point before detonating in a shockwave."
+/>
+
+Cosmic Crush is Itzal's primary area damage ability. The pull-then-detonate sequence concentrates scattered enemies into a single point before the explosion, dramatically increasing hit count on the shockwave. The ability pairs naturally with Arch Line: grapple a cluster of enemies in, then fire Cosmic Crush to finish the grouped targets simultaneously. The stun on surviving enemies after the detonation provides a brief window to clean up with primary weapons.
+
+<AbilityCard
+  name="Fighter Escort"
+  key="4"
+  energyCost={50}
+  description="Deploys a squad of autonomous combat drones that engage nearby enemies. Each drone explodes on destruction, dealing damage in a small radius."
+/>
+
+Fighter Escort provides persistent off-tank capability. The drones attack independently, drawing fire away from Itzal and dealing additional damage. The detonation-on-death mechanic means that enemies who destroy the drones receive a burst of additional damage in return. In prolonged engagements Fighter Escort sustains DPS while Itzal focuses on repositioning and ability rotations.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 200 |
+| Shield | 220 |
+| Armor | 50 |
+| Energy | 220 |
+| Mastery rank | 0 |
+
+## Acquisition
+
+All four Itzal blueprints (main, Harness, Systems, Wings) are researched in the Clan Dojo Tenno Lab alongside the Fluctus arch-gun research. Total crafting time is approximately 36 hours across all components. Resource requirements are standard Archwing materials: Orokin Cells, Control Modules, and common planetary resources. Rushing all components costs platinum.
+
+## Playstyle
+
+Itzal suits players who prefer high-mobility skirmishing. The core loop is: use Arch Line to close distance or reposition rapidly, engage with primary weapon fire, Cosmic Crush clustered enemies for burst clearance, and vanish with Penumbra when taking excessive fire. Fighter Escort provides passive DPS during ability cooldowns.
+
+The low defensive stats demand that Itzal players never hold still under fire. The frame rewards rotation between abilities and constant repositioning over the tank-and-shoot style that Elytron enables. In Archwing missions with time-pressure objectives -- Rush, mobile Interception -- Itzal's mobility advantage outweighs its fragility.
+
+## Modding notes
+
+Ability Strength increases Cosmic Crush damage; Ability Range extends the pull radius and Penumbra cloak area. Redirection is essential given the low base shield; Primed Vigor or Endurance Drift compensate for the low health. Rush is the most useful Archwing speed mod for Itzal since its design emphasizes constant movement. The high base energy of 220 makes energy efficiency mods less critical than on Elytron.
+
+## Lore
+
+Itzal is named after the Nahuatl word for shadow. Its visual design features dark, swept-back wings and minimal visible propulsion, visually distinguishing it from the more utilitarian Odonata and Amesha. The Orokin designed it as an infiltration and escort-denial platform -- the Fighter Escort drones recall autonomous Orokin Bailiff units, and the gravitational singularity of Cosmic Crush echoes the void-manipulation technology of the Reservoir.
+
+## Sources
+
+Stats from WFCD warframe-items Archwing.json. Ability descriptions from WFCD and cross-checked with [Itzal on the WARFRAME Wiki](https://warframe.fandom.com/wiki/Itzal). Build requirements from in-game Clan Dojo research.

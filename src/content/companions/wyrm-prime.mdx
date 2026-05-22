@@ -1,0 +1,102 @@
+---
+name: Wyrm Prime
+type: sentinel
+masteryRank: 0
+health: 450
+shield: 600
+armor: 150
+energy: 100
+abilities:
+  - name: Crowd Dispersion
+    description: >-
+      Releases an energy pulse that knocks back and staggers nearby enemies,
+      creating a brief safe zone around the sentinel and player when enemies
+      cluster too close.
+    isPassive: false
+  - name: Recharge
+    description: >-
+      Temporarily boosts the rate at which the player's shields regenerate,
+      providing additional defensive support during engagements.
+    isPassive: true
+modSlots:
+  - penjaga
+  - penjaga
+  - penjaga
+  - penjaga
+acquisition:
+  source: Void relic farming
+  blueprintLocations:
+    - "Axi W1 Relic (Blueprint)"
+    - "Neo W2 Relic (Blueprint)"
+  buildTimeHours: 24
+  cost:
+    credits: 15000
+  note: >-
+    Wyrm Prime's masteryReq field reads null in WFCD data (issue #23 pattern).
+    Mastery Rank 0 confirmed via Fandom Wiki. Polarity data also null in WFCD;
+    default penjaga loadout sourced from the Warframe Wiki.
+preceptWeapon: Prime Laser Rifle
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    title: "WFCD warframe-items -- Sentinels.json"
+    publisher: "WFCD"
+    note: "masteryReq and polarities fields are null in this dataset for Wyrm Prime."
+  - url: "https://warframe.fandom.com/wiki/Wyrm_Prime"
+    accessedAt: "2026-05-20"
+    title: "Wyrm Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+    note: "Source for MR 0 confirmation and polarity layout."
+updatedAt: "2026-05-20"
+---
+
+## Overview
+
+Wyrm Prime is the Prime variant of the Wyrm sentinel, notable for its unusual stat distribution that prioritizes shields over health. With a base shield of 600 -- the highest among Prime sentinels -- and moderate health of 450, Wyrm Prime absorbs damage through shield regeneration rather than raw health recovery. The Recharge precept amplifies this playstyle by boosting the player's own shield regeneration rate, making the sentinel useful for shield-tank builds.
+
+The Crowd Dispersion precept provides close-range crowd control, knocking back and staggering enemies who cluster near the sentinel. This defensive utility complements its shield-focused design by creating distance between the sentinel and enemies before they can deplete its shields through sustained contact damage.
+
+Wyrm Prime equips the Prime Laser Rifle as its weapon, providing consistent single-target beam damage against nearby enemies. Note that the WFCD dataset shows null for Wyrm Prime's polarities and masteryReq fields; polarity information in this page uses the Warframe Wiki as the authoritative source per the project's masteryRank exception rule.
+
+## Abilities and precepts
+
+**Crowd Dispersion** emits a radial knockback wave when enemies approach within close range of the sentinel. The pulse staggers and displaces multiple enemies simultaneously, interrupting their attack animations and creating a brief window where the player and sentinel take no contact damage. Against large groups, the knockback can push enemies into environmental hazards or simply buy time for the player to eliminate priority targets.
+
+**Recharge** applies a shield regeneration boost to the player, temporarily increasing the rate at which shields recover after taking damage. This precept activates periodically rather than continuously, providing bursts of accelerated recovery during brief pauses in incoming fire. Frames with high shield pools and fast regeneration mechanics benefit most from Recharge, as the boost compounds the existing regeneration cycle.
+
+The Prime Laser Rifle fires a continuous beam and benefits from beam-type modding. The weapon's sustained damage contributes to status proc accumulation on targeted enemies.
+
+## Stats
+
+| Stat | Value |
+|------|------:|
+| Health | 450 |
+| Shield | 600 |
+| Armor | 150 |
+| Energy | 100 |
+| Mastery Rank required | 0 |
+
+The shield-heavy stat distribution makes Wyrm Prime uniquely resilient against enemies that deal primarily energy-based or ranged damage, while the lower health pool means sustained physical damage can be more dangerous than for other sentinels with inverted stat ratios.
+
+## Acquisition
+
+Wyrm Prime components drop from Axi and Neo tier Void relics. Consult the [Warframe Wiki](https://warframe.fandom.com/wiki/Wyrm_Prime) for current relic assignments. Building requires 15,000 credits and 24 hours of Foundry time per component.
+
+## Recommended mods
+
+**Shield focus:** Link Shields transfers a percentage of the player's shield pool to the sentinel, synergizing with Wyrm Prime's high base shields. Recharge occupies the passive precept slot. Medi-Pet Kit covers health-based recovery.
+
+**Crowd control:** Crowd Dispersion fills the active precept slot for close-range enemy management.
+
+**Compatibility:** Wyrm Prime works best on frames with high shield pools and shield-regeneration mechanics, such as Mag or Hildryn. Frames that rely on health rather than shields gain less from the Recharge precept's boost.
+
+## Playstyle and synergies
+
+Wyrm Prime is a niche choice compared to Carrier Prime, best suited for shield-tank builds where the Recharge bonus complements existing shield regeneration. Frames that build around shield-gating mechanics benefit from the sentinel's passive shield support while the Crowd Dispersion precept handles close-range threats.
+
+In content where enemies deal primarily status-based damage that bypasses shields, Wyrm Prime's stat distribution becomes a liability compared to health-focused alternatives. Players should assess their chosen frame's defensive strategy before committing to Wyrm Prime.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) -- base stats (note: polarities and masteryReq null in WFCD dataset)
+- [Wyrm Prime -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Wyrm_Prime) -- polarity and mastery rank verification, precept mechanics

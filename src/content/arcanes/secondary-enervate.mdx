@@ -1,0 +1,73 @@
+---
+slug: secondary-enervate
+name: Secondary Enervate
+type: weapon
+maxRank: 5
+effect: "On Hit: Increase Critical Chance by 10%. Resets after [crit_chance] Big Critical Hit."
+perRankStats:
+  - rank: 0
+    stats: { crit_chance: 1 }
+  - rank: 1
+    stats: { crit_chance: 2 }
+  - rank: 2
+    stats: { crit_chance: 3 }
+  - rank: 3
+    stats: { crit_chance: 4 }
+  - rank: 4
+    stats: { crit_chance: 5 }
+  - rank: 5
+    stats: { crit_chance: 6 }
+drops:
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
+sources:
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Secondary_Enervate
+    accessedAt: '2026-05-20'
+    publisher: Fandom
+updatedAt: '2026-05-20'
+---
+## Overview
+
+Secondary Enervate builds Critical Chance on every hit with the secondary weapon, stacking until a "Big Critical Hit" (orange or red crit) is scored, at which point the accumulated bonus resets and the cycle begins again. Each non-big-crit hit adds 10% Critical Chance to the secondary weapon's current critical chance, allowing rapid accumulation toward orange and red crit territory. The reset condition on Big Critical Hits creates a natural rhythm: build up crit chance through regular hits, cash out as a high-tier critical, reset, repeat.
+
+At rank 5, the Critical Chance resets after 6 Big Critical Hits. Weapons that score Big Critical Hits frequently accumulate and reset more often, maintaining high average critical chance throughout sustained combat.
+
+## Effect
+
+Each hit from the secondary weapon increases the weapon's Critical Chance by a flat 10%. This stacks continuously with every subsequent hit until a Big Critical Hit (an orange-tier or higher critical) lands, at which point the Critical Chance bonus resets to zero. At rank 0, the bonus resets after 1 Big Critical Hit -- one orange crit per accumulation cycle. At rank 5, the bonus resets after 6 Big Critical Hits -- the weapon sustains the accumulated Critical Chance bonus through 6 big crits before resetting, maintaining higher average crit tiers for longer periods between resets.
+
+The 10% per hit accumulation is fixed across all ranks; only the number of Big Critical Hits before reset scales with rank.
+
+## Stats per rank
+
+| Rank | Big Crits Before Reset | Critical Chance per Hit |
+|------|----------------------|------------------------|
+| 0 | 1 | +10% |
+| 1 | 2 | +10% |
+| 2 | 3 | +10% |
+| 3 | 4 | +10% |
+| 4 | 5 | +10% |
+| 5 | 6 | +10% |
+
+## Acquisition
+
+Secondary Enervate drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
+
+## Builds that use it
+
+Secondary Enervate suits secondary weapons that fire multiple hits per second, accelerating Critical Chance accumulation rapidly before scoring a Big Critical Hit. Full-auto secondaries with moderate base critical chance -- Cycron, Atomos, Spira Prime -- fire many hits per second, building the +10% per hit stack toward the Big Critical Hit threshold quickly. At rank 5, the weapon sustains 6 Big Critical Hits before resetting, meaning the accumulated crit bonus remains active for a meaningful burst window before cycling back to zero.
+
+Builds with Blood Rush equivalents for secondaries (if available) or high base critical multiplier compound with the elevated Critical Chance during the accumulated stack window, pushing orange and red crits to high damage values during the active bonus phase.
+
+## Notes
+
+"Big Critical Hit" refers to an orange-tier or higher critical -- any critical hit where the critical tier exceeds the base yellow crit. The reset occurs after the specified number of Big Critical Hits, not on the next non-big crit. Weapons with base critical chance below 25% may never score orange crits naturally; Enervate's accumulation enables them to reach orange crit territory through the stacking bonus. The 10% per hit is additive with base critical chance from mods, not multiplicative -- a weapon with 30% base crit gains flat +10% per hit from Enervate toward its total critical chance.
+
+## Sources
+
+- WFCD warframe-items dataset provides Big Critical Hit reset counts per rank and the 10% per hit accumulation for Secondary Enervate.
+- Fandom wiki entry for [Secondary Enervate](https://warframe.fandom.com/wiki/Secondary_Enervate) covers Big Critical Hit definitions and accumulation reset behavior.

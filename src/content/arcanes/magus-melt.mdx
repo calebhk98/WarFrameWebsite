@@ -1,0 +1,62 @@
+---
+slug: magus-melt
+name: "Magus Melt"
+type: operator
+maxRank: 5
+effect: "On Void Sling: Increase Heat Damage in Operator Mode by 30% for 15s, stacking up to [max_stacks]x."
+perRankStats:
+  - rank: 0
+    stats: { max_stacks: 2 }
+  - rank: 5
+    stats: { max_stacks: 7 }
+drops: []
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Melt"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Melt increases operator heat damage by a stacking 30% bonus each time Void Sling is used, up to a maximum stack count that scales with rank. Each Sling adds one stack of the bonus, and each stack lasts independently for 15 seconds. The damage bonus compounds across active stacks - at 7 stacks, the operator deals 210% increased heat damage for the 15-second window of the final stack before the earliest stacks begin expiring.
+
+Operator amps that deal heat damage or have heat as a secondary component benefit directly from this stacking bonus. Heat damage in operator mode is relevant for amps with fire-type chambers or prisms, as well as for Magus Accelerant synergy where reduced enemy heat resistance combines with increased heat damage output for compounding effectiveness.
+
+## Effect
+
+Each Void Sling applies one stack of +30% heat damage, independent of previous stacks. At rank 0, the maximum of 2 stacks provides +60% heat damage at full build. At rank 5, the maximum of 7 stacks provides +210% heat damage when all stacks are fully active - each maintained for its 15-second individual timer.
+
+Maintaining maximum stacks requires Void Sling cadence within 15-second intervals. Operators who Sling 7 times in rapid succession reach maximum stacks, then must Sling at least once every 15 seconds to replace expiring stacks and maintain the damage ceiling.
+
+## Stats per rank
+
+| Rank | Max Stacks | Max Heat Bonus | Duration per Stack | Notes |
+|------|------------|----------------|--------------------|-------|
+| 0 | 2x | +60% | 15s | Low ceiling |
+| 1 | 3x | +90% | 15s | Moderate bonus |
+| 2 | 4x | +120% | 15s | Solid damage |
+| 3 | 5x | +150% | 15s | Strong output |
+| 4 | 6x | +180% | 15s | High heat bonus |
+| 5 | 7x | +210% | 15s | Maximum stacks |
+
+## Acquisition
+
+Magus Melt drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. The arcane may originate from Eidolon hunt reward pools or trading. Warframe.market provides direct platinum purchase for players who prefer to buy rather than farm.
+
+## Builds that use it
+
+Magus Melt suits operators running heat-damage amps or using Magus Accelerant in the second arcane slot for compounding effect. An operator who reduces enemy heat resistance with Magus Accelerant on each Sling while simultaneously building heat damage stacks with Magus Melt creates a feedback loop - each Sling both strips resistance and adds damage, maximizing heat output at full stacks. This combination suits Eidolon content where operators fire their amps frequently during limb phase rotations.
+
+Operators in Zariman content with heat-type amps benefit from Melt's stacking during extended void cascade runs where Void Sling frequency is high due to the mobility demands of the mission type.
+
+## Notes
+
+Each stack is an independent 15-second timer starting from when that specific Sling occurred - stacks do not share a single unified timer. This means the stack decay is not synchronized; an operator who reaches 7 stacks and then stops Slinging will see the earliest stack expire first at 15 seconds, then subsequent stacks expire one by one. The per-Sling stack application means players must track their Sling count to know their current bonus. The 30% per stack value is fixed across all ranks - only the maximum stack count scales with rank, not the per-stack damage value.
+
+## Sources
+
+- WFCD warframe-items dataset documents the Void Sling trigger condition, per-stack heat bonus value, and maximum stack scaling for Magus Melt.
+- Fandom wiki entry for Magus Melt covers heat damage type mechanics and independent stack timer behavior.

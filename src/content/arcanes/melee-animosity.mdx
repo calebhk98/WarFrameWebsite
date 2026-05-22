@@ -1,0 +1,74 @@
+---
+slug: melee-animosity
+name: Melee Animosity
+type: melee
+maxRank: 5
+effect: "On Melee Hit: Gain [crit_chance]% Critical Chance on your next Heavy Attack, up to [stat_1]%"
+perRankStats:
+  - rank: 0
+    stats: { crit_chance: 7, stat_1: 70 }
+  - rank: 1
+    stats: { crit_chance: 14, stat_1: 140 }
+  - rank: 2
+    stats: { crit_chance: 21, stat_1: 210 }
+  - rank: 3
+    stats: { crit_chance: 28, stat_1: 280 }
+  - rank: 4
+    stats: { crit_chance: 35, stat_1: 350 }
+  - rank: 5
+    stats: { crit_chance: 42, stat_1: 420 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation A"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Melee_Animosity"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Melee Animosity builds Critical Chance for the next Heavy Attack through regular melee hits. Each normal melee hit adds a stacking Critical Chance bonus that accumulates toward the next Heavy Attack, up to a cap. When the Heavy Attack is performed, all stacked Critical Chance applies to that single attack, delivering a charged critical hit. The arcane rewards the gameplay loop of building up through light attacks then unleashing a powered Heavy Attack.
+
+At rank 5, each melee hit adds +42% Critical Chance to the next Heavy Attack, stacking up to +420%. With 10 hits accumulated, the Heavy Attack fires with 420% additional critical chance on top of the weapon's base critical chance, guaranteeing red crits on virtually any weapon configuration.
+
+## Effect
+
+Each melee hit adds the listed Critical Chance bonus to a pending counter for the next Heavy Attack. The counter accumulates up to the listed maximum. When a Heavy Attack is performed, all accumulated Critical Chance applies to that Heavy Attack only, then the counter resets to zero. At rank 0, each hit adds +7% up to a cap of +70% -- 10 hits reach the maximum. At rank 5, each hit adds +42% up to +420% -- the cap is reached in 10 hits.
+
+The Heavy Attack consumes all stacked charges at once, delivering the accumulated Critical Chance as a one-time bonus. The player must build the stack again through normal hits before the next Heavy Attack receives the bonus.
+
+## Stats per rank
+
+| Rank | Critical Chance per Hit | Maximum Critical Chance |
+|------|------------------------|------------------------|
+| 0 | +7% | +70% |
+| 1 | +14% | +140% |
+| 2 | +21% | +210% |
+| 3 | +28% | +280% |
+| 4 | +35% | +350% |
+| 5 | +42% | +420% |
+
+## Acquisition
+
+Melee Animosity drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation A at 2%. Both sources are accessible after completing Angels of the Zariman. Rotation A in Void Cascade is the first rotation reached, making Animosity available in relatively short Void Cascade sessions. Warframe.market provides a direct purchase option for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Melee Animosity is purpose-built for Heavy Attack builds that follow a light-attack buildup pattern. Spin attack combos that hit multiple times rapidly build the Animosity counter quickly before the Heavy Attack is released. Polearm builds using Shimmering Blight or similar high-hit-count combos reach the 10-hit cap in seconds, then deliver a fully charged Heavy Attack with +420% Critical Chance at rank 5.
+
+Heavy Attack builds using Organ Shatter and Amalgam Organ Shatter for critical multiplier combine strongly with Animosity -- the guaranteed high critical chance from the stack translates directly into guaranteed high-multiplier red crits on the Heavy Attack. Builds on Valkyr, Atlas, or any frame with heavy melee investment use the buildup cycle as a consistent combat rhythm.
+
+## Notes
+
+The counter resets to zero after the Heavy Attack regardless of whether the Heavy Attack itself lands or connects. The counter persists between enemies -- building 8 stacks on one enemy and then performing the Heavy Attack against a different enemy still applies the full stack. The stack cap is fixed per rank; building additional hits beyond the cap does not increase the bonus beyond the listed maximum. The Critical Chance bonus applies to the Heavy Attack's base critical chance calculation before other multipliers; it does not multiply existing crit chance from mods.
+
+## Sources
+
+- WFCD warframe-items dataset provides Critical Chance per hit and maximum cap values per rank for Melee Animosity.
+- Fandom wiki entry for [Melee Animosity](https://warframe.fandom.com/wiki/Melee_Animosity) covers Heavy Attack consume mechanics and light-attack stack building behavior.

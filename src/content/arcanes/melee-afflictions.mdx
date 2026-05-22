@@ -1,0 +1,74 @@
+---
+slug: melee-afflictions
+name: Melee Afflictions
+type: melee
+maxRank: 5
+effect: "Enemies affected by Status Effects gain [max_stacks] additional stacks when they're knocked down or flung by melee attacks."
+perRankStats:
+  - rank: 0
+    stats: { max_stacks: 1 }
+  - rank: 1
+    stats: { max_stacks: 2 }
+  - rank: 2
+    stats: { max_stacks: 3 }
+  - rank: 3
+    stats: { max_stacks: 4 }
+  - rank: 4
+    stats: { max_stacks: 5 }
+  - rank: 5
+    stats: { max_stacks: 6 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation C"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Melee_Afflictions"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Melee Afflictions amplifies status stacks on enemies when they are knocked down or flung by melee attacks. When a melee attack launches or slams an enemy into a knockdown or ragdoll state, all active Status Effects on that enemy instantly gain additional stacks beyond their current count. This rewards melee combat styles that combine status application with knockdown-inducing attacks, as the knockdown event multiplies the status accumulation that would otherwise only grow through repeated proc applications.
+
+At rank 5, enemies receive 6 additional status stacks on each knockdown or fling. A Viral proc that had accumulated 2 stacks (25% health reduction) instantly jumps to 8 stacks on knockdown -- significantly increasing the status effect's impact.
+
+## Effect
+
+When a melee attack knocks down or flings an enemy currently affected by one or more Status Effects, all active status effects on that enemy gain the listed number of additional stacks. At rank 0, +1 additional stack per knockdown/fling is a modest amplification. At rank 5, +6 additional stacks per knockdown/fling is a substantial stack injection that pushes status effects well beyond what normal repeated application would achieve in the same timeframe.
+
+The additional stacks apply to every active Status Effect on the target simultaneously. An enemy with Viral, Slash, and Heat all active receives +6 stacks to each of those three status types in a single knockdown event.
+
+## Stats per rank
+
+| Rank | Additional Status Stacks on Knockdown/Fling |
+|------|---------------------------------------------|
+| 0 | +1 |
+| 1 | +2 |
+| 2 | +3 |
+| 3 | +4 |
+| 4 | +5 |
+| 5 | +6 |
+
+## Acquisition
+
+Melee Afflictions drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation C at 2%. Rotation C is the deepest rotation in Void Cascade runs and requires extended farming sessions to reach consistently. Warframe.market provides a purchase route for players who prefer platinum acquisition over extended farming.
+
+## Builds that use it
+
+Melee Afflictions is most effective on melee builds that combine high status chance with knockdown-inducing attacks. Heavy attacks with slam properties, polearms with ground slam augments, and weapons with innate knockdown procs (Impact status or knockdown-on-hit melee weapons) generate frequent knockdown events that trigger the stack amplification on status-afflicted enemies. Condition Overload builds that rely on status stack counts for damage scaling benefit from the explosive stack gain that a single knockdown event provides.
+
+Frames that apply status effects through abilities before initiating melee -- Saryn spreading Viral and Toxin via Spores, Nidus applying Impact via Virulence -- set up large status stacks on enemies that Melee Afflictions then multiplies further on each knockdown.
+
+## Notes
+
+The additional stacks trigger on knockdown or fling events from melee attacks specifically -- enemy launches from non-melee sources (ability knockdowns, weapon knockdowns) do not trigger Melee Afflictions. Each knockdown event on a status-affected enemy triggers the stack gain independently; enemies knocked down repeatedly accumulate stacks per knockdown event. Status effects that cap at a maximum stack count (some effects cap at 10 or 12 stacks) may reach their ceiling quickly with Melee Afflictions active, making further knockdowns redundant for those specific status types that are already capped.
+
+## Sources
+
+- WFCD warframe-items dataset provides additional stack values per rank for knockdown/fling triggers in Melee Afflictions.
+- Fandom wiki entry for [Melee Afflictions](https://warframe.fandom.com/wiki/Melee_Afflictions) covers knockdown detection conditions and status stack amplification behavior.

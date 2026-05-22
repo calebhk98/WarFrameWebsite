@@ -1,0 +1,66 @@
+{
+  "collection": "quests",
+  "slug": "a-man-of-few-words",
+  "verified_at": "2026-05-18T17:17:00Z",
+  "checks": [
+    {
+      "id": "file-exists",
+      "pass": true,
+      "detail": "File exists at /home/user/WarFrameWebsite/src/content/quests/a-man-of-few-words.mdx (9.7K)"
+    },
+    {
+      "id": "frontmatter-valid",
+      "pass": true,
+      "detail": "pnpm typecheck exit=0; 0 errors, 0 warnings, 0 hints"
+    },
+    {
+      "id": "word-count",
+      "pass": true,
+      "count": 1298,
+      "floor": 500
+    },
+    {
+      "id": "sources-count",
+      "pass": true,
+      "count": 2,
+      "floor": 2
+    },
+    {
+      "id": "section-order",
+      "pass": true,
+      "sections_found": [
+        "Overview",
+        "Prerequisites",
+        "Stages",
+        "Rewards",
+        "Lore",
+        "Tips",
+        "Sources"
+      ],
+      "detail": "Matches required order (Overview → Prerequisites → Stages → Rewards → Lore); Tips and Sources are permitted extras"
+    },
+    {
+      "id": "no-forbidden",
+      "pass": true,
+      "matches": []
+    },
+    {
+      "id": "no-emojis",
+      "pass": true,
+      "emoji_count": 0
+    },
+    {
+      "id": "wfcd-crossref",
+      "pass": true,
+      "detail": "Quest found in data/wfcd/Quests.json: name='A Man Of Few Words', uniqueName='/Lotus/Types/Keys/GetClemQuest/GetClemQuestKeyChain', slug='a-man-of-few-words', masterable=false, tradable=false"
+    },
+    {
+      "id": "state-md-entry",
+      "pass": true,
+      "detail": "Entry found in STATE.md under '## done.quests': - a-man-of-few-words :: src/content/quests/a-man-of-few-words.mdx"
+    }
+  ],
+  "overall": "PASS",
+  "errors": [],
+  "warnings": []
+}

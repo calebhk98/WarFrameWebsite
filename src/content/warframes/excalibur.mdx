@@ -1,0 +1,166 @@
+---
+slug: excalibur
+name: Excalibur
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 270
+armor: 240
+energy: 100
+sprintSpeed: 1
+passive:
+  name: Bladestorm Affinity
+  description: >-
+    Excalibur deals increased damage and attacks faster when wielding swords.
+abilities:
+  - name: Slash Dash
+    key: "1"
+    energyCost: 25
+    description: >-
+      Dash through enemies alongside a radial specter, inflicting slash damage.
+      All slashes trigger status procs and ricochet between nearby targets.
+  - name: Radial Blind
+    key: "2"
+    energyCost: 50
+    description: >-
+      Emit a bright flash of light that blinds all nearby enemies and leaves them
+      vulnerable to finishing moves for a short duration.
+  - name: Radial Javelin
+    key: "3"
+    energyCost: 75
+    description: >-
+      Launch radial javelins that impale nearby enemies with a spinning attack,
+      inflicting slash status and pinning targets in place.
+  - name: Exalted Blade
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summon a sword of pure light and immense power, gaining a melee exalted
+      weapon that scales with ability strength and melee mods.
+acquisition:
+  source: "Jackal assassination (Venus, Fossa)"
+  blueprintLocations:
+    - "Jackal assassination on Venus -- Fossa node"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2014-04-30"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Excalibur"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Excalibur epitomizes the warrior spirit, embodying the core principles of swordsmanship and martial excellence that defined the Orokin's approach to warframe design. As the iconic starter frame available to players from the tutorial onward, Excalibur has remained a mainstay of Warframe combat for over a decade, consistently relevant through both early progression and endgame content. His straightforward toolkit focuses on direct melee engagement, crowd control through radial effects, and an exalted melee weapon that rivals dedicated melee frames in output.
+
+With 270 health and 270 shields, Excalibur presents a balanced defensive profile suited to an aggressive playstyle. His armor of 240 provides meaningful resistance to physical damage types--significantly higher than many caster-focused frames--allowing him to sustain moderate incoming fire while maintaining momentum in combat. The 100-point energy pool supports ability spam during extended engagements, and an unmodified sprint speed of 1.0x is the baseline, neither accelerating nor hindering movement across tilesets. This symmetry in stats reflects Excalibur's design philosophy: a frame that demands player skill and positioning rather than relying on exceptional raw attributes.
+
+Excalibur's true strength lies in the interaction between his passive ability bonus to sword combat and his exalted melee weapon, Exalted Blade. When wielding swords, Excalibur gains both increased damage output and attack speed, creating a multiplicative scaling effect with properly modded sword weapons. This passive transforms sword-based melee builds into genuinely formidable damage dealers, enabling players to clear high-level content through pure melee damage rather than ability spam alone.
+
+## Abilities
+
+<AbilityCard
+  name="Slash Dash"
+  key="1"
+  energyCost={25}
+  description="Dash through enemies alongside a radial specter, inflicting slash damage. All slashes trigger status procs and ricochet between nearby targets."
+/>
+
+Excalibur's first ability launches him in a directional dash while striking all enemies in his path with a radial specter clone. The attack inflicts slash damage and applies slash status procs, triggering bleeds on hit. The damage scales with ability strength, and the radial component ensures that even enemies outside the direct path take damage. Slash Dash serves as both mobility tool and crowd-control utility, useful for repositioning while damaging dangerous enemies or clearing clusters of light units. The ability's low energy cost of 25 makes it spammable during extended missions, and modding for ability strength increases both the damage and proc frequency.
+
+In higher-level content, Slash Dash becomes less valuable as a primary damage source--endgame enemies require sustained melee damage or crowd control rather than hit-and-run tactics. However, the ability remains a reliable tool for stunning and briefly displacing dangerous units (elite heavy gunners, eximus enemies) long enough to reposition or apply finishing moves. The radial specter component scales multiplicatively with melee mods on Excalibur's equipped weapon, allowing creative builds where Slash Dash becomes a devastating opener before transitioning to Exalted Blade.
+
+<AbilityCard
+  name="Radial Blind"
+  key="2"
+  energyCost={50}
+  description="Emit a bright flash of light that blinds all nearby enemies and leaves them vulnerable to finishing moves for a short duration."
+/>
+
+The second ability emits a bright flash that blinds all enemies in range for a short duration. Blinded enemies cannot attack or react intelligently, making them vulnerable to finishing moves from Excalibur or squadmates. The blind effect provides valuable crowd control during overwhelming situations--particularly effective against fragile units that would otherwise saturate the screen with projectiles. Radial Blind has modest energy cost relative to the crowd control window it creates, making it a reliable panic button for players caught in crossfire.
+
+The ability's utility scales primarily with ability range and duration mods rather than strength. A properly modded Radial Blind can affect 30+ enemies simultaneously on mid-level missions, effectively stalling entire enemy reinforcements. However, blinded enemies are not frozen in place; they slowly become aware of Excalibur's position and resume attack patterns as the duration expires. In prolonged engagements against high-level enemies, the blind duration becomes insufficient to meaningfully interrupt advanced enemy tactics, limiting the ability's value in steel path and arbitration content.
+
+<AbilityCard
+  name="Radial Javelin"
+  key="3"
+  energyCost={75}
+  description="Launch radial javelins that impale nearby enemies with a spinning attack, inflicting slash status and pinning targets in place."
+/>
+
+The third ability summons spinning javelins that radiate outward, impaling enemies and inflicting slash status. Impaled enemies take additional damage and may be pinned temporarily, disrupting their attack patterns. The radial component ensures broad area coverage, making Radial Javelin useful for general crowd clearing and applying slash procs across large groups. The ability scales with both ability strength (damage per javelin) and ability range (area of effect), allowing builds to emphasize either focused single-target damage or area denial.
+
+Radial Javelin pairs particularly well with melee-focused builds because the status procs interact with Excalibur's passive sword damage bonus. Enemies struck by javelins take increased follow-up damage from subsequent melee swings, creating a damage amplification loop. The ability's moderate energy cost makes it viable for routine spam, but the damage per enemy decreases in very high-level content where armor scaling becomes prohibitive.
+
+<AbilityCard
+  name="Exalted Blade"
+  key="4"
+  energyCost={100}
+  description="Summon a sword of pure light and immense power, gaining a melee exalted weapon that scales with ability strength and melee mods."
+/>
+
+Excalibur's ultimate summmons a massive sword of pure light, granting him an exalted melee weapon that scales with ability strength, melee weapon mods, and physical damage mods. Unlike finisher-based ultimates, Exalted Blade is an autonomous weapon that Excalibur wields directly, combining the flexibility of a melee weapon with the power scaling of an ability. While active, Exalted Blade replaces Excalibur's normal melee weapon, disabling equipped mods but enabling scaling from specific ability buffs.
+
+The exalted weapon's damage scales multiplicatively with ability strength, melee damage mods (Organ Shatter, True Steel), and physical damage mods (Condition Overload, Blood Rush). A properly modded Exalted Blade build can achieve 10,000+ damage per swing on mid-to-high level enemies, making it competitive with dedicated melee frames. The ability's high energy cost (100 per cast) is offset by the sustained damage output and the fact that the weapon persists until toggled off, allowing Excalibur to maintain melee dominance across entire mission phases without recasting.
+
+## Passive
+
+Excalibur's passive grants increased damage and attack speed when wielding any sword-type melee weapon. This bonus scales with the sword's base damage and applies multiplicatively to all other damage modifiers, creating a powerful incentive to equip sword weapons over other melee categories. Frames pairing swords with high crit/status weapons (Nikana Prime, Skiajati, Tatsu) benefit disproportionately from the passive, turning ordinary sword builds into competitive endgame damage dealers.
+
+The passive encourages a cohesive playstyle where Excalibur transitions between ability usage and melee engagement seamlessly. Activating Exalted Blade leverages the passive automatically, further amplifying the exalted weapon's damage output. Players seeking maximum efficiency pair the passive with ability strength mods to amplify both the Exalted Blade's scaling and the basic sword bonus simultaneously.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 270 |
+| Shield | 270 |
+| Armor | 240 |
+| Energy | 100 |
+| Sprint Speed | 1.0x |
+| Mastery Rank | 0 |
+
+## Acquisition
+
+Excalibur's component blueprints -- Neuroptics, Chassis, and Systems -- each drop from the Jackal assassination on Fossa, Venus, with a 38.72% drop chance per component per Jackal kill. The main blueprint is purchasable from the in-game Market for 25,000 credits, making early acquisition straightforward even without repeated farming. Each of the three components requires a separate 72-hour build in the Foundry, followed by a further 72-hour assembly period for the complete warframe; rushing a single part costs 50 Platinum.
+
+Excalibur is also one of three starter warframes offered to new players during the Vor's Prize tutorial quest, alongside Mag and Volt. Players who select Excalibur at the start receive the complete frame immediately without needing to farm the Jackal, making him uniquely accessible among all warframes. For players who did not choose Excalibur as their starter, the Fossa node on Venus is available early in the star chart and the Jackal boss is tuned for new-player gear levels, keeping the farming commitment modest.
+
+## Playstyle
+
+Excalibur's playstyle revolves around aggressive melee engagement supplemented by radial crowd control and temporary damage buffs. Players activate Slash Dash to reposition and apply initial damage, then follow with Radial Blind or Radial Javelin to disable dangerous enemies before transitioning into sustained Exalted Blade attacks. The frame encourages a hit-and-run mobility pattern combined with occasional ability usage rather than constant spellcasting.
+
+For lower-level content (star chart missions), players can spam abilities freely without energy management concerns. Radial Blind and Radial Javelin provide sufficient crowd control to clear most enemy groups before they pose significant threats. As difficulty increases (sorties, void fissures, steel path), the playstyle shifts toward ability efficiency--using abilities selectively to disable priority targets or reset dangerous enemies while relying on melee damage for sustained output. In arbitrations and endgame missions, Excalibur transitions into a specialized melee role where Exalted Blade becomes the primary damage source and abilities serve purely as utility.
+
+Modding choices heavily influence optimal playstyle. Ability-strength-heavy builds maximize Exalted Blade damage and blind duration, creating a frame that can burst down dangerous enemies quickly. Ability-range builds expand the area of crowd control, allowing a single Radial Blind to protect against overwhelming numbers. Duration-focused builds extend blind windows and javelin stagger, emphasizing control over raw damage. Most effective endgame builds emphasize melee weapon scaling over raw ability stats, leveraging Excalibur's passive and exalted weapon synergies.
+
+## Builds
+
+Excalibur's flexibility supports multiple effective build archetypes. The Exalted Blade damage build emphasizes ability strength (Intensify, Augur Intensify) and melee damage scaling (Primed Organ Shatter, Blood Rush) to transform Exalted Blade into a damage machine capable of sustaining through arbitration-level content. A full guide is available at [Excalibur Exalted Blade Build](/builds/warframes/excalibur/exalted-blade).
+
+The crowd-control-focused build prioritizes ability range (Stretch, Augur Reach) and duration (Primed Continuity, Augur Artificer) to maximize Radial Blind's area and stagger effects from Radial Javelin. This build excels in endless missions where enemy volume becomes unmanageable and team survivability depends on consistent crowd control. See [Excalibur Control Build](/builds/warframes/excalibur/radial-control) for full loadout details.
+
+A hybrid melee build balances ability strength with melee weapon mods, allowing Exalted Blade to scale competitively while maintaining viable crowd control. This approach suits players who want flexibility across mission types without full specialization in either direction.
+
+## Lore
+
+Excalibur was among the original warframes engineered by the Orokin, designed to embody the warrior ideal--a frame for operators who valued martial skill and direct combat over magical finesse. The Orokin modeled Excalibur after ancient warrior philosophies, incorporating design elements inspired by legendary swordsmen and knights. The exalted blade itself was engineered as a manifestation of pure Orokin technology, a weapon that materializes from concentrated void energy channeled through the frame's power matrix.
+
+In-universe, Excalibur represents the straightforward application of force--the Orokin's answer to enemies that could not be dealt with through subterfuge, deception, or ranged superiority. The frame's design philosophy reflects the Orokin's confidence in their technological dominance: a warrior frame needed no tricks, only overwhelming power and martial prowess. This philosophy extends to the modern era; Excalibur remains the frame most new players encounter because the Lotus recognizes that a fundamentally sound combat platform requires no elaborate justification.
+
+Excalibur Prime, released years after the base frame, represents a refinement of the design with enhanced survivability and improved scaling. The prime variant's vaulting and subsequent unvaulting has made Excalibur Prime one of the most sought-after relics in void fissure farming, cementing the frame's lasting relevance and player attachment within the community.
+
+## Sources
+
+- WFCD warframe-items: https://github.com/WFCD/warframe-items
+- Warframe Wiki: https://warframe.fandom.com/wiki/Excalibur

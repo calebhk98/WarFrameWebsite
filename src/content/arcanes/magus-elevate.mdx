@@ -1,0 +1,80 @@
+---
+slug: magus-elevate
+name: Magus Elevate
+type: operator
+maxRank: 5
+effect: "On Transference In: 95% chance to restore [health] Health to Warframe."
+perRankStats:
+  - rank: 0
+    stats: { health: 50 }
+  - rank: 1
+    stats: { health: 100 }
+  - rank: 2
+    stats: { health: 150 }
+  - rank: 3
+    stats: { health: 200 }
+  - rank: 4
+    stats: { health: 250 }
+  - rank: 5
+    stats: { health: 300 }
+drops:
+  - source: "The Quills, Architect"
+    chance: 100
+    note: "Purchased from The Quills vendor with Standing."
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Elevate"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Magus Elevate is an Operator arcane that heals the warframe whenever the operator enters the warframe via Transference. This arcane converts the operator's reentry mechanic into a defensive tool, restoring 50 to 300 health (rank-dependent) with a 95% trigger probability. In extended missions where frequent operator transference occurs, Elevate provides passive healing that accumulates across multiple reactivations. The arcane's primary strength lies in its simplicity and guaranteed proc chance; operators switching back to warframes after void-mode activity or ability casting automatically trigger healing without additional input.
+
+Elevate is particularly valuable in missions requiring frequent operator usage, such as Zariman void cascades or eidolon hunts where operators swap between damage phases and warframe phases regularly. The arcane's flat healing amount scales poorly into extreme endgame (Steel Path level 200+), but remains effective as a sustainability tool for standard star chart and moderate endgame content. The 95% proc rate makes it nearly guaranteed, unlike probability-based arcanes that may fail at critical moments.
+
+## Effect
+
+On Transference In, there is a 95% chance to restore Health to the Warframe. The Health amount restored scales from 50 at rank 0 to 300 at rank 5. The trigger condition is entering the Warframe from the Operator state; exiting to Operator form does not trigger the arcane.
+
+## Stats per rank
+
+| Rank | Health Restored | Proc Chance | Notes |
+|------|-----------------|-------------|-------|
+| 0 | 50 | 95% | Minimal healing; early-game baseline. |
+| 1 | 100 | 95% | Doubled healing from rank 0. |
+| 2 | 150 | 95% | Practical mid-game healing per swap. |
+| 3 | 200 | 95% | Doubled healing from rank 1. |
+| 4 | 250 | 95% | Strong endgame healing; +1 Arcane Revive bonus. |
+| 5 | 300 | 95% | Maximum healing per transference; highest revive bonus. |
+
+Healing scales as an absolute value regardless of the warframe's maximum health, making the arcane more effective on low-health frames (Wisp, Volt, Saryn) than on tanks (Inaros, Grendel). Frequent operator swaps in gameplay result in continuous healing accumulation, potentially triggering multiple times per mission. The 95% proc rate means near-guaranteed healing unless the operator repeatedly swaps in rapid succession (unlikely in practical play).
+
+## Acquisition
+
+Magus Elevate is purchased from The Quills, the Cetus-based operator syndicate faction. Reaching Rank 2 (Architect) with The Quills requires approximately 4,000 Standing, achievable within the first few hours of Plains of Eidolon progression. The arcane is among the earliest operator arcanes most players acquire, making it accessible even to relatively new endgame players. Pre-ranked copies trade for 25--50 platinum on player markets, reflecting its common availability and entry-level role in operator progression.
+
+The minimal standing requirement and universal applicability make Elevate a standard inclusion in starter operator builds.
+
+## Best on
+
+Damage-focused warframes running operator-heavy builds benefit most from Magus Elevate's passive healing. Frames with poor defensive stats (Mesa, Volt, Saryn Prime) gain valuable sustain from frequent operator transference cycles, allowing longer survivability without relying on ability-based healing. Eidolon-hunting squads leverage Elevate to patch up damage between phases while operators alternate damage and support duties. Mobile mission builds (Capture, Exterminate) that require frequent operator swaps for puzzle-solving or void-cascade completion naturally trigger Elevate healing throughout encounters.
+
+Conversely, frames already carrying heavy defensive arcanes (Arcane Grace, Arcane Guardian) may deprioritize Elevate in favor of offensive or utility operator arcanes.
+
+## Builds that use it
+
+Zariman void cascade builds stack Magus Elevate alongside Magus Repair to layer operator-based healing from multiple sources. Eidolon hunting builds pair Elevate with focus schools (Zenurik energy, Madurai damage) to maintain warframe survivability across multiple phase cycles. Solo endgame runs use Elevate to sustain fragile damage frames through extended engagement. Support operator builds leverage Elevate as a passive sustainability tool while focusing other arcane slots on squad utility (Repair, Lockdown).
+
+## Notes
+
+Magus Elevate triggers only on successful Transference activation, not operator reentry cancellations or rapid swaps. Operators exiting Void Mode and re-entering the warframe both trigger the arcane, meaning gameplay cycles naturally activate healing multiple times per minute in active operator-heavy missions. The flat healing scaling means late-game missions (level 150+ enemies) require pairing Elevate with other healing sources to sustain. Rapid transference toggling (ability activation without leaving warframe) does not trigger the arcane, preventing abuse in farming scenarios.
+
+## Sources
+
+- WFCD warframe-items dataset documents all Magus Elevate mechanics and trigger conditions.
+- Fandom wiki provides eidolon-hunting guides and operator build recommendations for plains content.

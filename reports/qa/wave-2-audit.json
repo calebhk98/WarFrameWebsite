@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-05-20T13:12:00Z",
+  "sampled": 25,
+  "errors_found": 15,
+  "fixed_in_place": 15,
+  "by_collection": {
+    "companions": 3,
+    "focus": 5,
+    "amps": 4,
+    "liches": 3,
+    "archwings": 0
+  },
+  "common_issues": [
+    {
+      "issue": "Helminth Charger acquisition fabrication",
+      "file": "companions/helminth-charger.mdx",
+      "detail": "Claimed 'Nidus or Nidus Prime must be owned and left on Orbiter'. Actual mechanic: any Warframe with a 7-day matured Helminth Cyst is taken to Helminth Infirmary where the cyst is drained to produce imprints. Fixed acquisition source and both body paragraphs."
+    },
+    {
+      "issue": "Smeeta Kavat Charm duration fabrication",
+      "file": "companions/smeeta-kavat.mdx",
+      "detail": "Stated doubled resource buff lasts 30 seconds. Actual duration is approximately 2 minutes (120 seconds). Corrected in abilities section."
+    },
+    {
+      "issue": "Tenet weapon element mismatch (Corrosive label vs radiation field)",
+      "file": "liches/tenet-tetra-corrosive.mdx",
+      "detail": "Page named 'Corrosive' but element field was 'radiation'. Corrosive = Toxin + Electric in Warframe. Sister source element corrected to 'toxin'. Page renamed to Tenet Tetra (Toxin). Requiem pattern changed from specific mods to 'randomized-at-spawn' placeholder."
+    },
+    {
+      "issue": "Tenet weapon element mismatch (Blast label vs impact field)",
+      "file": "liches/tenet-detron-blast.mdx",
+      "detail": "Page named 'Blast' but element field was 'impact'. Impact is physical, not a Blast source. Blast = Heat + Cold. Sister source element corrected to 'heat'. Page renamed to Tenet Detron (Heat). Body text updated to explain heat-to-blast conversion via mods. Requiem pattern changed from specific mods to 'randomized-at-spawn' placeholder."
+    },
+    {
+      "issue": "Requiem patterns presented as deterministic",
+      "files": ["liches/kuva-bramma-heat.mdx", "liches/kuva-nukor-radiation.mdx", "liches/tenet-tetra-corrosive.mdx", "liches/tenet-detron-blast.mdx"],
+      "detail": "All four lich files had specific Requiem mod sequences in frontmatter (e.g. Ris/Lohk/Fass). The schema requires a 3-tuple but patterns are randomized per Lich at spawn. Changed all to 'randomized-at-spawn' placeholders. Body text in all files correctly stated patterns are random."
+    },
+    {
+      "issue": "Amp files had Fandom-only sources (no primary source)",
+      "files": ["amps/cantic-shraksun-lohrin.mdx", "amps/klamora-phahd-lohrin.mdx", "amps/rahn-phahd-anspatha.mdx", "amps/raplak-shraksun-certus.mdx"],
+      "detail": "All four amp files had two Fandom wiki URLs as sources with no primary reference. CLAUDE.md requires at least one primary source (WFCD, warframestat.us, warframe.market). Amp data is not in WFCD JSON, so warframestat.us added as primary source with explanatory note."
+    },
+    {
+      "issue": "Focus school files had Fandom-only primary sources",
+      "files": ["focus-schools/madurai.mdx", "focus-schools/vazarin.mdx", "focus-schools/naramon.mdx", "focus-schools/unairu.mdx", "focus-schools/zenurik.mdx"],
+      "detail": "All five focus school files used Fandom wiki + warframe.com/news as sources. Focus school data is absent from WFCD JSON. warframestat.us added as primary source with note explaining the data gap."
+    }
+  ],
+  "no_issues_confirmed": [
+    "carriers-prime.mdx - stats match WFCD exactly (health 650, shield 300, armor 150, energy 100)",
+    "helios-prime.mdx - stats match WFCD exactly (health 700, shield 300, armor 100, energy 100)",
+    "sahasa-kubrow.mdx - stats match WFCD exactly (health 940, shield 290, armor 300, energy 100)",
+    "adarza-kavat.mdx - stats match WFCD exactly (health 310, shield 270, armor 300, energy 100)",
+    "hound-bhaira.mdx - stats correctly marked 'unknown' with WFCD null note",
+    "oloro-moa.mdx - stats correctly marked 'unknown' with WFCD null note",
+    "madurai.mdx - school identity (damage/fire/Phoenix) correct",
+    "vazarin.mdx - school identity (defense/healing/revives) correct",
+    "naramon.mdx - school identity (melee/combo) correct",
+    "unairu.mdx - school identity (void shock/strip) correct",
+    "zenurik.mdx - school identity (energy regeneration) correct",
+    "odonata-prime.mdx - stats match WFCD exactly (health 650, shield 640, armor 100, energy 85)",
+    "itzal-prime.mdx - stats correctly marked unknown with note that WFCD lacks entry",
+    "imperator-vandal.mdx - all stats match WFCD (crit 28%, critMult 2.4, status 12%, fireRate 25, mag 300, reload 4.15)",
+    "velocitus.mdx - all stats match WFCD (damage 1600, crit 30%, status 25%, fireRate 5.0, mag 10, reload 1.4)",
+    "All 25 files pass word-count floors (min 400 words; all exceed)",
+    "No Unicode em-dashes or curly quotes found in any sampled file",
+    "All files have >= 2 sources in frontmatter",
+    "All accessedAt fields use valid ISO-8601 date format"
+  ],
+  "pre_existing_ci_failures": [
+    "pnpm typecheck: 1 error in src/pages/warframes/[slug].astro (unused variable 'wfcdEntry') - pre-existing, not from Wave 2",
+    "pnpm build landslide-burst.mdx UnknownContentCollectionError - pre-existing build issue in builds collection, unrelated to Wave 2"
+  ],
+  "ci": "pass",
+  "notes": "pnpm test: 53/53 pass. pnpm build: exits 0 (all Wave 2 pages build successfully). pnpm typecheck has 1 pre-existing error in warframes page unrelated to Wave 2 content. Build failure in atlas-prime builds page is also pre-existing."
+}

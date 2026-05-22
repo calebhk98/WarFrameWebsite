@@ -1,0 +1,176 @@
+---
+slug: ember
+name: Ember
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 270
+armor: 135
+energy: 175
+sprintSpeed: 1.1
+passive:
+  name: Burning Aura
+  description: >-
+    Receive 5% Ability Strength for every enemy within 50 meters affected by Heat.
+abilities:
+  - name: Fireball
+    key: "1"
+    energyCost: 25
+    description: >-
+      Release a fiery projectile that ignites enemies on contact. The projectile seeks nearby targets
+      and applies Heat to those hit.
+    stats: { damage: 100, range: 30 }
+  - name: Immolation
+    key: "2"
+    energyCost: 25
+    description: >-
+      Protect Ember with flame armor that amplifies in power as it burns. Once the armor reaches
+      maximum strength, it begins draining energy. Cast again to extinguish the flame.
+    stats: { armor_bonus: "scales with ability strength", duration: "until deactivated" }
+  - name: Fire Blast
+    key: "3"
+    energyCost: 75
+    description: >-
+      Slam the ground to create a shockwave of incinerating plasma. Nearby enemies are knocked
+      back and have their armor stripped.
+    stats: { damage: 400, range: 15 }
+  - name: Inferno
+    key: "4"
+    energyCost: 100
+    description: >-
+      Command a massive comet of flame to crash down at the target location. Enemies caught
+      in the blast are engulfed in Fire and the effect can spread through nearby enemy ranks.
+    stats: { damage: 300, range: 50 }
+acquisition:
+  source: General Sargas Ruk assassination (Saturn -- Tethys)
+  blueprintLocations:
+    - "Market (25,000 credits)"
+    - "General Sargas Ruk assassination on Saturn -- Tethys"
+  cost:
+    credits: 25000
+    platinum: 225
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2015-10-27"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Stats cross-checked against WFCD 1.756.0"
+  - url: "https://warframe.fandom.com/wiki/Ember"
+    accessedAt: "2026-05-19"
+    title: "Ember -- WARFRAME Wiki"
+    publisher: "Fandom"
+    note: "Lore and playstyle context"
+updatedAt: "2026-05-19T00:00:00Z"
+---
+
+## Overview
+
+Ember is a destructive damage-focused warframe specializing in heat-based area control. Released during Warframe's closed beta in October 2012, she has evolved into one of the frame's most accessible yet effective incendiary combatants. Her abilities center on sustained fire damage, armor stripping, and crowd control through thermal effects. The Burning Aura passive encourages aggressive gameplay by granting ability strength stacking based on the number of heat-affected enemies nearby, rewarding players who maintain offensive pressure and keep enemy formations engulfed in flame.
+
+## Abilities
+
+Ember's four abilities form a cohesive toolkit for spreading heat damage across the battlefield. Each ability builds upon the frame's core fire-damage identity while offering distinct tactical applications.
+
+<AbilityCard
+  name="Fireball"
+  key="1"
+  energyCost={25}
+  description="Release a fiery projectile that ignites enemies on contact. The projectile seeks nearby targets and applies Heat to those hit."
+  stats={{ damage: 100, range: 30 }}
+/>
+
+Fireball is Ember's primary single-target ability. The projectile automatically seeks enemies within its range and applies Heat status, making it effective for initiating engagements or finishing isolated foes. The low energy cost makes it spammable for sustained Heat buildup on enemies scattered across the battlefield.
+
+<AbilityCard
+  name="Immolation"
+  key="2"
+  energyCost={25}
+  description="Protect Ember with flame armor that amplifies in power as it burns. Once the armor reaches maximum strength, it begins draining energy. Cast again to extinguish the flame."
+/>
+
+Immolation toggles a protective flame layer that scales with ability strength. The ability transforms absorbed incoming damage into increased fire armor, creating a self-sustaining defensive mechanic as long as enemies attack. At peak strength, it begins consuming energy, requiring players to either deactivate it or maintain offensive pressure to justify the drain. This interplay between offense and defense exemplifies Ember's "cool head when the battle is hot" design philosophy.
+
+<AbilityCard
+  name="Fire Blast"
+  key="3"
+  energyCost={75}
+  description="Slam the ground to create a shockwave of incinerating plasma. Nearby enemies are knocked back and have their armor stripped."
+  stats={{ damage: 400, range: 15 }}
+/>
+
+Fire Blast delivers heavy area-of-effect damage with a critical utility component: armor stripping. The shockwave knocks back enemies, providing breathing room, while the armor strip makes subsequent Heat and fire damage more effective. In team play, this enables allies to deal more damage with any heat-based weapons or frames.
+
+<AbilityCard
+  name="Inferno"
+  key="4"
+  energyCost={100}
+  description="Command a massive comet of flame to crash down at the target location. Enemies caught in the blast are engulfed in Fire and the effect can spread through nearby enemy ranks."
+  stats={{ damage: 300, range: 50 }}
+/>
+
+Inferno is Ember's ultimate crowd-control and damage tool. The comet impact zone creates an initial burst of damage, and critically, the Heat effect spreads to nearby enemies, allowing a single cast to ignite entire enemy formations. This spreading mechanic synergizes powerfully with the Burning Aura passive, as more burning enemies grant Ember more ability strength, creating a scaling damage loop during intense engagements.
+
+## Passive
+
+Ember's passive, Burning Aura, grants 5% Ability Strength for every enemy within 50 meters affected by Heat. This mechanic directly rewards active Heat-spreading gameplay. On a full map of burning enemies, the stacking bonus reaches 100%+ ability strength, transforming her abilities into exponentially more powerful tools. The passive encourages maintaining Heat pressure rather than allowing enemy formations to cool down, making it critical to chain ability casts and ensure broad Heat coverage.
+
+## Stats
+
+Ember possesses balanced base survivability for a damage-focused frame. Her 270 health and 175 energy provide a moderate health pool typical of starter frames, while 270 shield and 135 armor grant reasonable physical protection. The 1.1 sprint speed multiplier matches the baseline, offering no inherent mobility advantage--players must rely on movement mechanics and ability positioning to stay alive.
+
+| Stat | Value |
+|------|------:|
+| Health | 270 |
+| Shield | 270 |
+| Armor | 135 |
+| Energy | 175 |
+| Sprint Speed | 1.1x |
+| Mastery Requirement | 0 |
+
+## Acquisition
+
+Ember's blueprint is available immediately from the in-game Market for 25,000 credits (no platinum required), making her one of the most accessible frames in Warframe. Her three component blueprints--Neuroptics, Chassis, and Systems--drop from General Sargas Ruk, a boss found on Tethys in Saturn's assassination mission. The Neuroptics and Chassis both drop at 38.72% (Common), while Systems drop at 22.56% (Uncommon), requiring an average of 3-5 boss runs for a full blueprint set.
+
+Assembly costs 25,000 credits and takes 72 hours to complete, following standard warframe construction timelines. Her Prime variant, Ember Prime, is currently unvaulted and available through void fissure relic farming.
+
+## Playstyle
+
+Ember excels in early-to-mid star chart content and remains viable in higher-level missions with proper modding. Her playstyle revolves around maintaining Heat pressure across enemy formations, leveraging the Burning Aura passive to scale ability strength exponentially. Players should prioritize:
+
+- **Spreading Heat aggressively**: Use Fireball and Inferno to ignite multiple enemies simultaneously. The wider the Heat coverage, the stronger Ember becomes.
+- **Armor stripping with Fire Blast**: Strip armor before committing heavy fire damage mods or before allies engage, multiplying damage across the entire squad.
+- **Toggling Immolation**: Activate during heavy enemy fire to convert incoming damage into survivability, deactivate before energy drains to preserve resources.
+- **Positioning for range**: Most abilities scale significantly with Ability Range, allowing Ember to maintain safe distance while affecting large areas.
+
+Ember shines in Void Fissure missions, Defense/Survival waves, and Infested-heavy missions where rapid spread of heat status effects benefits entire teams. She struggles against enemies with high fire resistance (such as Corpus with shields) unless paired with electric damage mods or defensive ability strength builds.
+
+## Recommended Builds
+
+Ember supports multiple build archetypes. A balanced build prioritizes Ability Strength, Range, and Efficiency to keep ability casts flowing while maximizing Burning Aura stacking. Tank builds lean into Immolation synergies by stacking health, armor, and ability strength, turning her into a flame-armored fortress. Hybrid builds combine both approaches, allowing flexible adaptation to mission requirements.
+
+For detailed mod layouts and role-specific builds, see `/builds/warframes/ember/`.
+
+## Synergies
+
+Ember pairs excellently with:
+
+- **Heat weapons and mods** (Ceres, Ignis Prime, Torid): Ability Strength stacking amplifies all fire damage, multiplying heat status buildup across the squad.
+- **Ability Strength supports** (Trinity, Octavia, Wisp): External buffs to Ember's ability strength provide compounding returns via the Burning Aura scaling mechanic.
+- **Armor-dependent frames** (Rhino, Nezha, Nidus): Ember's armor stripping from Fire Blast enables tankier frames to take reduced damage.
+- **Damage amplification** (Saryn, Mirage, Eclipse): Complementary damage buffs stack with Ember's heat scaling for extreme burst damage.
+
+## Lore
+
+Ember emerged during Warframe's earliest days as one of the starter frame options available to new Tenno. The Lotus describes her as "destructive and deadly," emphasizing her role as an offensive powerhouse focused on incinerating enemies. Her design embodies the concept of controlled elemental fury--the ability to channel solar fire with precision and discipline, keeping a metaphorical "cool head when the battle is hot."
+
+A significant rework in Update 26.0 (November 2019) transformed Ember from a passive area-denial frame into an active, aggressive playstyle. The previous passive "World on Fire" was replaced with the current Burning Aura, shifting gameplay from set-and-forget ability spam to dynamic heat management and strategic recasting. This evolution modernized her kit while preserving her identity as Warframe's quintessential fire-damage specialist.
+
+## Sources
+
+The statistics and acquisition information in this article are sourced from the WFCD warframe-items repository, the authoritative database for Warframe item data. Narrative and playstyle context derive from the official WARFRAME wiki and in-game descriptions of Ember's abilities and passive.

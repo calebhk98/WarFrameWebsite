@@ -1,0 +1,74 @@
+---
+slug: arcane-bellicose
+name: Arcane Bellicose
+type: warframe
+maxRank: 5
+effect: "Gain [ability_strength]% Ability Strength for every 250 Max Health up to [health]%."
+perRankStats:
+  - rank: 0
+    stats: { ability_strength: 1, health: 12 }
+  - rank: 1
+    stats: { ability_strength: 2, health: 24 }
+  - rank: 2
+    stats: { ability_strength: 3, health: 36 }
+  - rank: 3
+    stats: { ability_strength: 4, health: 48 }
+  - rank: 4
+    stats: { ability_strength: 5, health: 60 }
+  - rank: 5
+    stats: { ability_strength: 6, health: 72 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation B"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Bellicose"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Bellicose converts the warframe's maximum health stat into Ability Strength, linking the tank-oriented defensive stat to offensive ability scaling. Each 250 maximum health grants a percentage bonus to Ability Strength up to the rank-dependent cap. Frames that invest in health mods -- Vitality, Umbral Vitality, Health Conversion -- simultaneously push Bellicose's Ability Strength higher without requiring dedicated strength mods.
+
+At rank 5, each 250 maximum health grants +6% Ability Strength up to a cap of +72%. Reaching the cap requires 3000 maximum health. High-health frames like Inaros (over 5000 health with mods), Nidus, and Grendel can approach or exceed this threshold, gaining the maximum 72% bonus entirely from their health investment.
+
+## Effect
+
+The Ability Strength bonus from Arcane Bellicose applies passively and scales continuously with current maximum health. As health increases through Adaptation, Nidus mutation stacks, or temporary health bonuses, the Ability Strength bonus scales up proportionally until the cap is reached. The conversion is: Ability Strength bonus = (max health / 250) x ability_strength per rank, capped at the health value from perRankStats.
+
+At rank 0, 1% Ability Strength per 250 health provides a small bonus. A frame with 2500 health gains +10% Ability Strength at rank 0. At rank 5, 6% per 250 health with a +72% cap means a frame with 3000 health gains the full +72%. This bonus stacks additively with Intensify, Blind Rage, and other Ability Strength mods.
+
+## Stats per rank
+
+| Rank | Ability Strength per 250 Health | Maximum Bonus |
+|------|-------------------------------|--------------|
+| 0 | +1% | +12% |
+| 1 | +2% | +24% |
+| 2 | +3% | +36% |
+| 3 | +4% | +48% |
+| 4 | +5% | +60% |
+| 5 | +6% | +72% |
+
+## Acquisition
+
+Arcane Bellicose drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation B at 2%. Both sources are available after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Arcane Bellicose is purpose-built for high-health caster hybrids -- frames that invest in both health and Ability Strength to serve as self-sustaining damage dealers. Inaros builds using Devour and Sandstorm naturally accumulate health above 3000 with Vitality and Umbral Vitality mods, reaching Bellicose's +72% cap while also benefiting from the Ability Strength on Scarab Swarm and crowd-control abilities. Nidus builds that stack mutation levels temporarily increase effective max health and Bellicose bonus. Grendel builds using Feast and Pulverize get Ability Strength amplification that scales the damage of their abilities proportionally.
+
+Pairing Bellicose with Arcane Energize creates a dual-slot arcane setup covering both energy sustain and Ability Strength, freeing mod slots from strength mods toward survivability or utility.
+
+## Notes
+
+The Ability Strength bonus responds dynamically to current maximum health. Temporary health losses or reductions from Magnetic procs do not change maximum health and do not affect Bellicose. Corrosive armor strips do not affect health and do not reduce the Bellicose bonus. The cap means health above 3000 at rank 5 provides no additional Ability Strength -- investing in health beyond the cap threshold yields survivability benefits but no further Bellicose scaling. The bonus is additive with all other Ability Strength sources including Focus school passives.
+
+## Sources
+
+- WFCD warframe-items dataset provides Ability Strength per 250 health and cap values per rank for Arcane Bellicose.
+- Fandom wiki entry for [Arcane Bellicose](https://warframe.fandom.com/wiki/Arcane_Bellicose) covers health-to-strength conversion mechanics and tank-caster build integration.

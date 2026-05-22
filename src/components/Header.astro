@@ -1,0 +1,207 @@
+---
+// Header -- logo, nav links, Pagefind search input
+// Pagefind UI is wired via postbuild; the div is always rendered.
+const base = import.meta.env.BASE_URL;
+const currentPath = Astro.url.pathname;
+
+const primaryLinks = [
+  { href: `${base}warframes`, label: 'Warframes' },
+  { href: `${base}companions`, label: 'Companions' },
+  { href: `${base}archwings`, label: 'Archwings' },
+  { href: `${base}liches`, label: 'Liches' },
+  { href: `${base}quests`, label: 'Quests' },
+  { href: `${base}factions`, label: 'Factions' },
+  { href: `${base}builds`, label: 'Builds' },
+  { href: `${base}guides`, label: 'Guides' },
+  { href: `${base}focus`, label: 'Focus' },
+  { href: `${base}amps`, label: 'Amps' },
+  { href: `${base}necramechs`, label: 'Necramechs' },
+  { href: `${base}rivens`, label: 'Rivens' },
+  { href: `${base}conclave`, label: 'Conclave' },
+  { href: `${base}dojo`, label: 'Dojo' },
+  { href: `${base}railjack`, label: 'Railjack' },
+  { href: `${base}tier-list`, label: 'Tier List' },
+  { href: `${base}beginner`, label: 'Beginner' },
+  { href: `${base}worldstate`, label: 'Worldstate' },
+];
+---
+
+<header class="sticky top-0 z-50 bg-white/95 dark:bg-brand-black/95 backdrop-blur border-b border-gray-200 dark:border-surface-3">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+    <a href={base} class="text-brand-orange font-bold text-xl tracking-wide whitespace-nowrap shrink-0">
+      Warframe Codex
+    </a>
+
+    <nav aria-label="Primary navigation" class="hidden lg:flex flex-wrap gap-x-4 gap-y-1 text-sm">
+      {primaryLinks.map((link) => (
+        <a
+          href={link.href}
+          class="nav-link"
+          aria-current={currentPath.startsWith(link.href) ? 'page' : undefined}
+        >{link.label}</a>
+      ))}
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <button
+        id="theme-toggle"
+        aria-label="Toggle dark mode"
+        aria-pressed="true"
+        class="p-2 rounded hover:bg-surface-2 transition-colors shrink-0"
+        title="Toggle light/dark mode"
+      >
+        <svg
+          id="theme-icon-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+          class="text-brand-cream/80"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg
+          id="theme-icon-sun"
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+          class="text-brand-cream/80 hidden"
+        >
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+      <div
+        id="pagefind-search"
+        role="search"
+        aria-label="Search the site"
+        class="w-44 shrink-0 hidden sm:block"
+      ></div>
+      <button
+        id="mobile-menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation"
+        class="lg:hidden flex flex-col gap-1 p-2 rounded hover:bg-gray-100 dark:hover:bg-surface-2 transition-colors"
+      >
+        <span class="block w-5 h-0.5 bg-brand-cream/80"></span>
+        <span class="block w-5 h-0.5 bg-brand-cream/80"></span>
+        <span class="block w-5 h-0.5 bg-brand-cream/80"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav
+    id="mobile-menu"
+    aria-label="Mobile navigation"
+    class="lg:hidden hidden border-t border-gray-200 dark:border-surface-3 bg-white/95 dark:bg-brand-black/95"
+  >
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-1">
+      {primaryLinks.map((link) => (
+        <a
+          href={link.href}
+          class="nav-link py-2 border-b border-gray-200 dark:border-surface-3 last:border-0"
+          aria-current={currentPath.startsWith(link.href) ? 'page' : undefined}
+        >{link.label}</a>
+      ))}
+      <div
+        id="pagefind-search-mobile"
+        role="search"
+        aria-label="Search the site (mobile)"
+        class="w-full mt-2 sm:hidden"
+      ></div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .nav-link {
+    color: rgb(232 222 200 / 0.75);
+    transition: color 0.15s;
+    border-radius: 0.25rem;
+    outline: 2px solid transparent;
+  }
+  :root:not(.dark) .nav-link {
+    color: rgb(26 26 36 / 0.75);
+  }
+  .nav-link:hover {
+    color: #E89E3B;
+  }
+  .nav-link:focus-visible {
+    outline: 2px solid #E89E3B;
+    outline-offset: 2px;
+  }
+  .nav-link[aria-current='page'] {
+    color: #E89E3B;
+  }
+</style>
+
+<link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
+<script>
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('hidden') === false;
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+</script>
+<script>
+  function syncThemeIcons(isDark: boolean): void {
+    const moon = document.getElementById('theme-icon-moon');
+    const sun = document.getElementById('theme-icon-sun');
+    const btn = document.getElementById('theme-toggle');
+    if (moon) moon.classList.toggle('hidden', !isDark);
+    if (sun) sun.classList.toggle('hidden', isDark);
+    if (btn) btn.setAttribute('aria-pressed', String(isDark));
+  }
+
+  const isDark = document.documentElement.classList.contains('dark');
+  syncThemeIcons(isDark);
+
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const nowDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', nowDark ? 'dark' : 'light');
+      syncThemeIcons(nowDark);
+    });
+  }
+</script>
+<script define:vars={{ base }} is:inline>
+  function initPagefind() {
+    const win = window;
+    if (typeof win.PagefindUI === 'undefined') return;
+    new win.PagefindUI({ element: '#pagefind-search', showImages: false });
+    const mobileEl = document.getElementById('pagefind-search-mobile');
+    if (mobileEl) {
+      new win.PagefindUI({ element: '#pagefind-search-mobile', showImages: false });
+    }
+  }
+
+  const s = document.createElement('script');
+  s.src = base + 'pagefind/pagefind-ui.js';
+  s.addEventListener('load', initPagefind);
+  document.head.appendChild(s);
+</script>

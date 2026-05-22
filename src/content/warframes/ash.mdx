@@ -1,0 +1,145 @@
+---
+slug: ash
+name: Ash
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 455
+shield: 270
+armor: 105
+energy: 100
+sprintSpeed: 1.15
+passive:
+  name: Slash Affinities
+  description: >-
+    Slash Status Effects inflicted on enemies deal increased damage and persist longer
+    than normal, amplifying Ash's ability to bleed opponents over time.
+abilities:
+  - name: Shuriken
+    key: "1"
+    energyCost: 25
+    description: >-
+      Launches a spinning blade of pain, dealing high slash damage and impaling enemies
+      to nearby walls. The projectile can ricochet between multiple targets.
+  - name: Smoke Screen
+    key: "2"
+    energyCost: 50
+    description: >-
+      Drops a smoke bomb that stuns nearby enemies and obscures their vision, rendering
+      Ash invisible for a short duration. Damaged enemies take increased slash damage
+      when hit during invisibility.
+  - name: Teleport
+    key: "3"
+    energyCost: 75
+    description: >-
+      Teleports to a targeted enemy and performs a finishing move. If the finisher kills
+      the target, Ash recovers a percentage of the energy spent. Successful kills extend
+      the invisibility duration.
+  - name: Blade Storm
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summons fierce shadow clones to assault distant enemy groups. The clones inherit
+      Ash's melee weapon mods and can trigger slash procs. Casting again redirects the
+      clones to a new target location.
+acquisition:
+  source: "Flak Bombard assassination (Mars)"
+  blueprintLocations:
+    - "Flak Bombard assassination on Mars -- Olympus"
+  cost:
+    credits: 15000
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2014-11-25"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Ash"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Ash is a ninja-inspired warframe specializing in stealth, mobility, and surgical elimination of high-value targets. His toolkit revolves around invisibility, teleportation, and devastating melee finishers, making him exceptionally potent for assassination missions and stealth-focused play. Described by the Lotus as "the patron saint of the Orokin school of political assassination," Ash embodies lethal precision and evasive adaptability. As one of the original warframes released in Update 8, Ash remains highly versatile across a range of mission types, from exterminations to sorties to void fissures, particularly when modded for critical damage or ability strength.
+
+With 455 health and 270 shields, Ash prioritizes mobility and positioning over raw survivability. His moderate armor of 105 encourages an agile playstyle focused on hit-avoidance rather than tanking sustained fire. This defensive profile complements his ability toolkit perfectly--players should expect to dodge incoming damage while repositioning between Teleport chains and Smoke Screen evasions rather than standing in place absorbing hits. The frame's energy pool of 100 and sprint speed multiplier of 1.15x support rapid target rotation and battlefield repositioning, critical for an assassination-focused frame operating in high-threat environments.
+
+## Abilities
+
+<AbilityCard
+  name="Shuriken"
+  key="1"
+  energyCost={25}
+  description="Launches a spinning blade of pain, dealing high slash damage and impaling enemies to nearby walls. The projectile can ricochet between multiple targets."
+/>
+
+Ash's first ability launches spinning projectiles that deal slash damage and impale enemies to walls. The shuriken travels in an arc and can ricochet between nearby targets, making it useful for clearing clusters of light enemies or applying slash procs from a distance. Each cast scales with ability strength, and ricochets can trigger additional status effects if modded for status chance.
+
+<AbilityCard
+  name="Smoke Screen"
+  key="2"
+  energyCost={50}
+  description="Drops a smoke bomb that stuns nearby enemies and obscures their vision, rendering Ash invisible for a short duration. Damaged enemies take increased slash damage when hit during invisibility."
+/>
+
+The second ability creates a localized smoke cloud that stuns and obscures enemy vision. During the cloud's effect, Ash becomes invisible to enemies. This invisibility is fundamentally defensive but pairs well with his passive--enemies damaged while Ash is invisible take amplified slash damage on subsequent hits. Smoke Screen is a key tool for repositioning in high-level content or breaking line of sight to escape overwhelming fire.
+
+<AbilityCard
+  name="Teleport"
+  key="3"
+  energyCost={75}
+  description="Teleports to a targeted enemy and performs a finishing move. If the finisher kills the target, Ash recovers a percentage of the energy spent. Successful kills extend the invisibility duration."
+/>
+
+Teleport instantly moves Ash to a targeted enemy location and triggers a finisher animation. If the target dies from the finisher, Ash recovers energy, potentially allowing back-to-back casts against high-value targets. This ability is incredibly mobile and allows Ash to traverse large rooms quickly, especially useful in arena-style missions where spread enemies are common.
+
+<AbilityCard
+  name="Blade Storm"
+  key="4"
+  energyCost={100}
+  description="Summons fierce shadow clones to assault distant enemy groups. The clones inherit Ash's melee weapon mods and can trigger slash procs. Casting again redirects the clones to a new target location."
+/>
+
+Ash's ultimate summons shadow clones that assault distant enemy groups autonomously. The clones inherit all weapon mods from Ash's equipped melee weapon, making them scale with weapon builds. Blade Storm synergizes with high-damage melee setups and can apply weapon procs across multiple enemies simultaneously. Recasting redirects the clones to a new area, allowing tactical repositioning during longer engagements.
+
+## Passive
+
+Ash's passive amplifies all slash Status Effects he inflicts, increasing both their damage and duration. This encourages modding with slash-heavy weapons and slash-triggering abilities. Pairing the passive with weapons like the Nikana or Broken War ensures that enemies bleed longer and take more total damage over time, multiplying Ash's lethality in extended missions.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 455 |
+| Shield | 270 |
+| Armor | 105 |
+| Energy | 100 |
+| Sprint Speed | 1.15x |
+| Mastery Rank | 0 |
+
+## Acquisition
+
+Ash's blueprint drops from the Flak Bombard, a Grineer assault unit found on Mars (Olympus node). The Flak Bombard spawns as a tileset boss enemy, requiring consistent mission farming to obtain all four component blueprints. Like most assassination drops, the blueprint and component blueprints are non-trading, requiring each player to farm their own copy. The crafting cost is relatively modest: 15,000 credits plus standard Grineer-era materials including Alloy Plate, Neural Sensors, and Void Key. The full frame takes 72 hours to build once all materials are gathered. New players typically farm Ash during early star chart progression around Mastery Rank 2-5 on Mars, making it an accessible early acquisition for players building their starter frame arsenal.
+
+## Recommended builds
+
+For stealth and assassination, pair Ash with ability-strength mods (Intensify, Augur Intensify) to maximize Blade Storm damage and extend Smoke Screen invisibility. A full guide is available in the [Ash Stealth Build](/builds/ash/stealth-assassination).
+
+For a mobility-focused variation, invest in ability duration (Primed Continuity, Augur Reach) to stretch Smoke Screen invulnerability and Teleport energy recovery. See [Ash Mobility Build](/builds/ash/mobile-rush) for full details.
+
+## Synergies
+
+Ash pairs exceptionally well with crit-focused melee weapons like the Nikana Prime, Redeemer Prime, or Guandao Prime. His passive slash amplification stacks multiplicatively with weapon slash damage mods. The shadow clones in Blade Storm inherit all weapon mods, effectively doubling the dps output of a high-crit setup. Additionally, Ash synergizes strongly with Life Strike, a melee arcane that heals on finisher kills--Teleport's guaranteed finisher makes it a reliable life-steal trigger.
+
+For survivability in endgame, pair Ash with Arcane Energize to sustain ability spam and Arcane Guardian for armor scaling. Zenurik focus school further boosts energy regeneration when using operator void mode.
+
+## Lore
+
+Ash was engineered by the Orokin as an assassin, designed to eliminate high-priority targets with surgical precision. His ninja-inspired aesthetic reflects his role as a lone operative, striking from shadows and vanishing before retaliation. The warframe embodies the philosophy of stealth and swift death--a tool for covert missions where collateral damage and noise must be minimized. In the lore, Ash represents the cutting edge of Orokin weapon design, a frame built for operators who prize skill and strategy over brute force.
+
+Ash Prime, released much later, represents an evolved iteration with enhanced shields and armor, suggesting the Orokin refined his design as they uncovered new technologies. The prime variant remains one of the most sought-after primes in the game due to its superior stats and continued relevance in high-level content.

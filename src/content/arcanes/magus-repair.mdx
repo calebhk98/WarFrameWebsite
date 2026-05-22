@@ -1,0 +1,76 @@
+---
+slug: magus-repair
+name: Magus Repair
+type: operator
+maxRank: 5
+effect: "On Void Mode: Heal Warframes within 30m by [heal]% Health/s."
+perRankStats:
+  - rank: 0
+    stats: { heal: 5 }
+  - rank: 1
+    stats: { heal: 10 }
+  - rank: 2
+    stats: { heal: 15 }
+  - rank: 3
+    stats: { heal: 20 }
+  - rank: 4
+    stats: { heal: 22 }
+  - rank: 5
+    stats: { heal: 25 }
+drops:
+  - source: "Vox Solaris, Shadow"
+    chance: 100
+    note: "Purchased from Vox Solaris vendor with Standing."
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Repair"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Magus Repair is an Operator arcane that enables the operator to serve as a dedicated healer during Void Mode, restoring nearby warframes' health on a per-second basis. Unlike conventional healing abilities that trigger on specific conditions or consume energy, Repair provides passive regeneration as long as the operator remains in the invisible void state. This transforms the operator into a defensive support element, particularly valuable in squad-focused endless missions where sustained healing output matters more than burst mitigation. The arcane's 30-meter radius covers most standard tileset rooms, allowing operators to position themselves defensively while maintaining allied health.
+
+Repair's strength lies in its compatibility with other void-mode arcanes (Magus Replenish, Magus Lockdown) and its independence from warframe ability cooldowns. Teams running low-survivability damage warframes (Saryn, Volt, Wisp) often designate one player's operator as the dedicated healer, freeing the warframe slot from support burden. The arcane was adjusted in Update 24.3.0 to prevent abuse, but remains the most accessible operator-level healing tool in the game.
+
+## Effects per rank
+
+| Rank | Healing Rate | Duration | Range | Notes |
+|------|--------------|----------|-------|-------|
+| 0 | +5%/s | Active per void mode | 30m | Low healing output; early-game baseline. |
+| 1 | +10%/s | Active per void mode | 30m | Doubled healing from rank 0. |
+| 2 | +15%/s | Active per void mode | 30m | Practical mid-game healing level. |
+| 3 | +20%/s | Active per void mode | 30m | Doubled healing from rank 1; strong endgame baseline. |
+| 4 | +22%/s | Active per void mode | 30m | Marginal improvement; +1 Arcane Revive bonus. |
+| 5 | +25%/s | Active per void mode | 30m | Maximum healing per second; highest revive bonus. |
+
+Healing is computed as a percentage of the warframe's maximum health, scaling with Vitality mods and other health-modifying augments. A warframe with 400 maximum health receiving 25%/s healing gains 100 health per second, compounding across squad members if multiple targets are in range. Void Mode duration limits healing uptime; operators must balance energy management against desired healing output.
+
+## Acquisition
+
+Magus Repair is purchased from Vox Solaris, the Venus-based operator syndicate faction. Reaching Rank 2 (Shadow) requires approximately 7,000 Standing with Vox Solaris, accessible after completing the Fortuna introduction and initial standing gains through bounties. Ranking up Vox Solaris to higher tiers unlocks additional operator arcanes and cosmetics, making Repair one of the first major standing sinks for new operator players. Pre-ranked copies trade for 40--80 platinum on player markets, depending on availability and rank level.
+
+The arcane's entry-level acquisition cost and widespread applicability make it accessible to most endgame players, contributing to its consistent value in squad content.
+
+## Best on
+
+Void Mode-focused operator builds that prioritize survivability and squad support benefit most from Magus Repair. Operators running Zenurik school gain movement-speed bonuses during Void Mode, enabling them to reposition while maintaining healing coverage on mobile squads. Support warframes (Trinity, Wisp, Saryn Prime) delegating healing to the operator can maximize their own damage or control output. Endless mission teams running high-difficulty Steel Path or elite Sanctuary Onslaught frequently field one player's operator as the dedicated healer with Repair and complementary arcanes.
+
+Damage-focused operator builds may deprioritize Repair in favor of offensive arcanes like Virtuos Strike, which directly scales amp output during focused engagements.
+
+## Builds that use it
+
+Zariman endless teams almost universally run Magus Repair as a core support tool, enabling sustained void cascade clears without dedicated warframe healers. Steel Path defense and survival builds employ Repair to extend run duration without requiring Trinity or Oberon on the squad. Solo endless missions pair Repair with Void Mode duration extensions (Magus Replenish, focus schools) to maintain continuous healing on heavily-damaged warframes. Wave-clear builds leverage Repair to allow squishier damage frames to survive longer in high-level fissures and interception missions.
+
+## Notes
+
+Magus Repair heals all warframes within 30 meters simultaneously, making it powerful in squad contexts and weak in solo play. The arcane only functions while the operator is actively in Void Mode; energy depletion stops healing immediately. Operator energy regeneration mods and focus school upgrades directly impact healing uptime by extending Void Mode availability. The arcane cannot revive downed warframes; it only restores health to currently-active units. Ability-based healing sources (Trinity, Oberon, Gauss) stack multiplicatively with Repair, allowing teams to layer healing redundancy.
+
+## Sources
+
+- WFCD warframe-items dataset documents all Magus Repair mechanics and squad interaction rules.
+- Fandom wiki provides operator progression guides and squad composition recommendations.

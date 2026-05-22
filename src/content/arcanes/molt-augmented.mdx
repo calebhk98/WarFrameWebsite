@@ -1,0 +1,62 @@
+---
+slug: molt-augmented
+name: "Molt Augmented"
+type: warframe
+maxRank: 5
+effect: "On Kill: +[strength]% Ability Strength. Stacks up to 250x. At max rank: +1 Arcane Revive."
+perRankStats:
+  - rank: 0
+    stats: { strength: 0.04 }
+  - rank: 5
+    stats: { strength: 0.24 }
+drops: []
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Molt_Augmented"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Molt Augmented stacks Ability Strength on each kill, accumulating up to 250 stacks. Each kill adds a small percentage of Ability Strength - 0.04% at rank 0, 0.24% at rank 5 - that compounds over time as the player eliminates enemies. At maximum rank, 250 stacks provide +60% Ability Strength (250 x 0.24%), a significant bonus that increases with mission duration and kill count. At maximum rank, the arcane also provides one Arcane Revive charge.
+
+The stacking mechanic rewards sustained combat engagement - players who continuously kill enemies throughout a mission accumulate more stacks and higher Ability Strength bonuses. The 250-stack cap means maximum benefit requires 250 kills while the arcane is equipped, achievable in Steel Path survival, defense, or endless fissure content. In shorter missions, the bonus grows proportionally with kills completed before extraction.
+
+## Effect
+
+Each kill during a mission adds one stack. At rank 5, each stack adds +0.24% Ability Strength, reaching a maximum of +60% at 250 stacks. The stacking is cumulative across the mission - stacks persist through deaths, operator phases, and mission transitions within a run, but reset on mission end.
+
+The Arcane Revive at rank 5 provides one emergency self-revive per mission, functioning identically to the consumable Arcane Revive item.
+
+## Stats per rank
+
+| Rank | Strength per Stack | Max Stacks | Max Total Strength | Notes |
+|------|--------------------|------------|-------------------|-------|
+| 0 | +0.04% | 250x | +10% | Low ceiling |
+| 1 | +0.08% | 250x | +20% | Moderate |
+| 2 | +0.12% | 250x | +30% | Solid bonus |
+| 3 | +0.16% | 250x | +40% | Strong |
+| 4 | +0.20% | 250x | +50% | High value |
+| 5 | +0.24% | 250x | +60% + Arcane Revive | Maximum |
+
+## Acquisition
+
+Molt Augmented drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. The arcane may originate from The New War quest content or later content drops. Warframe.market provides direct platinum purchase for players who prefer not to farm.
+
+## Builds that use it
+
+Molt Augmented suits Ability Strength-scaling warframes in endless mission types where kill count accumulates across long runs. Saryn in Survival and Defense accumulates stacks rapidly while Spore and Miasma clear enemies, providing increasing damage output as the Ability Strength bonus grows. Wisp in Defense benefits from the growing Strength bonus improving Reservoir health and damage bonuses for the squad. Octavia's Mallet and Resonator damage scales directly with Ability Strength, making the sustained bonus valuable in endless Defense or Survival contexts.
+
+The Arcane Revive at rank 5 adds solo survivability, allowing a second chance in high-level content without requiring a squadmate revive.
+
+## Notes
+
+Stacks persist through the full mission run including subsequent rotations in endless content - a 60-minute Survival with Saryn might accumulate thousands of kills and reach 250 stacks early, maintaining the cap for the remainder of the run. Stacks are lost on mission abort or failure and reset at mission end. The 0.24% per kill at rank 5 means the first 50 kills provide +12% Ability Strength, which combined with the final 200 kills compounds the total to the 60% cap. The Arcane Revive does not stack with consumable Arcane Revives beyond the total available charges.
+
+## Sources
+
+- WFCD warframe-items dataset documents the kill trigger condition, per-stack Ability Strength scaling, and 250-stack cap for Molt Augmented.
+- Fandom wiki entry for Molt Augmented covers stack accumulation behavior, mission-persistence of stacks, and the Arcane Revive bonus at rank 5.

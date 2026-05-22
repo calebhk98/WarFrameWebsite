@@ -1,0 +1,54 @@
+---
+// EntityCard -- tile for grid views across all collections
+interface Props {
+  href: string;
+  name: string;
+  tags?: string[];
+  // exactOptionalPropertyTypes: image may be absent or explicitly undefined
+  image?: string | undefined;
+}
+
+const { href, name, tags = [], image } = Astro.props;
+const initial = name.charAt(0).toUpperCase();
+---
+
+<a
+  href={href}
+  class="group block rounded-lg border border-gray-200 dark:border-surface-3 bg-white dark:bg-surface-2 hover:border-brand-orange/50 hover:bg-gray-50 dark:hover:bg-surface-3 transition-all duration-150 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-orange focus-visible:outline-offset-2"
+>
+  <div class="h-16 bg-gray-100 dark:bg-surface-3 flex items-center justify-center overflow-hidden">
+    {image ? (
+      <img
+        src={image}
+        alt={name}
+        width="64"
+        height="64"
+        class="object-contain h-full w-full group-hover:scale-105 transition-transform duration-150"
+        loading="lazy"
+      />
+    ) : (
+      <span
+        class="text-2xl font-bold text-brand-orange/50 select-none"
+        aria-hidden="true"
+      >
+        {initial}
+      </span>
+    )}
+  </div>
+
+  <div class="p-3">
+    <h3 class="text-gray-900 dark:text-brand-cream font-semibold text-sm group-hover:text-brand-orange transition-colors line-clamp-2">
+      {name}
+    </h3>
+
+    {tags.length > 0 && (
+      <div class="mt-2 flex flex-wrap gap-1">
+        {tags.slice(0, 3).map((tag) => (
+          <span class="text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-surface-3 text-gray-700 dark:text-brand-cream/80">
+            {tag}
+          </span>
+        ))}
+      </div>
+    )}
+  </div>
+</a>

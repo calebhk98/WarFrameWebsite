@@ -1,0 +1,73 @@
+---
+slug: arcane-magus-husk
+name: Magus Husk
+type: operator
+maxRank: 5
+effect: "On Transference Out: +[armor] Armor"
+perRankStats:
+  - rank: 0
+    stats: { armor: 50 }
+  - rank: 1
+    stats: { armor: 100 }
+  - rank: 2
+    stats: { armor: 150 }
+  - rank: 3
+    stats: { armor: 200 }
+  - rank: 4
+    stats: { armor: 250 }
+  - rank: 5
+    stats: { armor: 300 }
+drops:
+  - source: "Void Cascade on Zariman"
+    chance: 2.5
+    rarity: "uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Husk"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Husk grants a flat armor bonus to the warframe when the operator exits operator mode via Transference Out. Each return from operator mode to warframe mode applies the rank-dependent armor bonus. The timing of the bonus means it activates precisely when the warframe re-enters combat after an operator engagement -- providing a brief defensive layer as the player resumes warframe play.
+
+At rank 5, Transference Out grants +300 flat armor. This armor bonus persists for a fixed duration after the transference event and then expires, requiring another Transference Out cycle to refresh it.
+
+## Effect
+
+Transference Out is the action of pressing the transference key to return from operator mode back to the warframe. Each such event applies +armor to the warframe. At rank 0, +50 armor provides a minor defensive increment. At rank 5, +300 armor is substantial -- for a frame with 150 base armor, Magus Husk adds double the base armor value for the duration.
+
+The armor bonus duration is not explicitly listed in WFCD perRankStats for the current data; the bonus follows standard temporary armor buff conventions and expires after a fixed window. Frames that cycle in and out of operator mode frequently maintain the armor bonus more consistently than frames that remain in warframe mode for extended periods.
+
+## Stats per rank
+
+| Rank | Armor Bonus on Transference Out |
+|------|--------------------------------|
+| 0 | +50 |
+| 1 | +100 |
+| 2 | +150 |
+| 3 | +200 |
+| 4 | +250 |
+| 5 | +300 |
+
+## Acquisition
+
+Magus Husk drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero at 2.5%. The arcane is accessible after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Magus Husk benefits builds that cycle between operator and warframe mode regularly. Operator-active builds using Focus school abilities, Void Strike charging, or amp combat naturally perform multiple Transference Out events per mission, refreshing the armor bonus at each return to warframe. The arcane is most valuable on frames with moderate base armor where the +300 flat bonus represents a significant proportional increase to total armor and resulting damage reduction.
+
+Frames with zero base armor (Banshee, Nyx) gain no additional benefit from flat armor additions through the armor-to-DR formula compared to armored frames. Tanky frames with existing high armor compound the Husk bonus with existing Adaptation or Steel Fiber investments.
+
+## Notes
+
+Transference Out specifically means exiting operator mode back to the warframe. Entering operator mode does not trigger the bonus. The timing of the armor application is at the Transference Out moment, not a delayed buff. The flat +armor from Magus Husk applies additively with other armor bonuses from mods and temporary buff sources. Players who avoid frequent operator usage will refresh the bonus infrequently and may lose the defensive benefit during extended warframe combat phases.
+
+## Sources
+
+- WFCD warframe-items dataset provides flat armor values per rank on Transference Out for Magus Husk.
+- Fandom wiki entry for [Magus Husk](https://warframe.fandom.com/wiki/Magus_Husk) covers Transference Out trigger timing and armor bonus duration.

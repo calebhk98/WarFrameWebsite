@@ -1,0 +1,62 @@
+---
+slug: magus-cadence
+name: "Magus Cadence"
+type: operator
+maxRank: 5
+effect: "On Void Sling: +[speed]% Sprint Speed for 12s."
+perRankStats:
+  - rank: 0
+    stats: { speed: 15 }
+  - rank: 5
+    stats: { speed: 90 }
+drops: []
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Cadence"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Cadence grants the operator a sprint speed bonus for 12 seconds following each Void Sling, creating a movement acceleration loop where the operator gains sustained speed between Sling casts. In operator mode, movement speed determines how quickly the operator can close distance to targets, escape hazards, reposition behind cover, and reach Sling launch positions. Cadence compounds this base movement with a timed buff that covers the movement phases between each Sling.
+
+The 12-second window is long enough to cover multiple engagement transitions - the time from landing a Sling to firing the amp, repositioning to a new angle, and casting the next Sling. Operators who Sling frequently maintain the speed buff nearly continuously, as each subsequent Sling refreshes the 12-second timer before the previous buff expires.
+
+## Effect
+
+At rank 0, +15% sprint speed provides a moderate movement increase during the 12-second window following each Void Sling. At rank 5, +90% sprint speed nearly doubles the operator's base movement rate for the same 12-second window. This applies to sprinting movement - walking speed and Void Dash are separate systems unaffected by sprint modifiers.
+
+The buff timer begins on the Void Sling activation and refreshes on subsequent Slings within the window. Operators in active combat who Sling every few seconds maintain near-constant +90% speed bonus at rank 5, creating effectively permanent elevated sprint speed during combat phases.
+
+## Stats per rank
+
+| Rank | Sprint Speed Bonus | Duration | Notes |
+|------|--------------------|----------|-------|
+| 0 | +15% | 12s | Moderate bonus |
+| 1 | +30% | 12s | Solid movement gain |
+| 2 | +45% | 12s | Strong speed boost |
+| 3 | +60% | 12s | High mobility |
+| 4 | +75% | 12s | Near maximum speed |
+| 5 | +90% | 12s | Maximum sprint bonus |
+
+## Acquisition
+
+Magus Cadence drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. The arcane may originate from Eidolon hunt reward pools or Zariman void fissure drops. Warframe.market allows direct platinum purchase from other players.
+
+## Builds that use it
+
+Magus Cadence suits operators who prioritize fast ground movement through open areas - Eidolon hunt arenas, Plains of Eidolon traversal between Eidolon encounter points, and Zariman corridor movement between objectives. Operators using Void Sling for mobility rather than as a primary combat tool find Cadence converts their movement actions into sustained speed gains.
+
+Unairu school operators who spend significant ground time between Void Slings for armor strip rotations benefit from Cadence maintaining high base movement speeds during the approach and repositioning phases. Operators focused on capturing Eidolons quickly in night-cycle timed windows use Cadence to reduce traversal time between Teralyst, Gantulyst, and Hydrolyst encounters.
+
+## Notes
+
+The sprint speed bonus applies when the operator is in sprint state - it does not affect Void Dash propulsion distance or Void Sling travel distance. Operators who primarily navigate via Void Sling rather than ground movement will see less benefit from Cadence than operators who sprint between Sling casts. The 12-second window is generous enough that even slower Sling cadences maintain near-continuous uptime. The buff does not persist through transference back to warframe mode - returning to the warframe cancels the sprint speed bonus.
+
+## Sources
+
+- WFCD warframe-items dataset documents the Void Sling trigger condition and sprint speed scaling for Magus Cadence.
+- Fandom wiki entry for Magus Cadence covers sprint speed modifier mechanics and the 12-second buff timer behavior.

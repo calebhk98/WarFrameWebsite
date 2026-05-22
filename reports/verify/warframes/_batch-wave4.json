@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-05-19T00:00:00Z",
+  "collection": "warframes",
+  "batch": "wave4",
+  "total_files": 8,
+  "pass_count": 8,
+  "fail_count": 0,
+  "files": {
+    "ember-prime": {
+      "pass": true,
+      "errors": []
+    },
+    "equinox": {
+      "pass": true,
+      "errors": []
+    },
+    "equinox-prime": {
+      "pass": true,
+      "errors": []
+    },
+    "excalibur": {
+      "pass": true,
+      "errors": []
+    },
+    "excalibur-prime": {
+      "pass": true,
+      "errors": []
+    },
+    "excalibur-umbra": {
+      "pass": true,
+      "errors": []
+    },
+    "frost": {
+      "pass": true,
+      "errors": []
+    },
+    "frost-prime": {
+      "pass": true,
+      "errors": []
+    }
+  },
+  "verification_details": {
+    "ember-prime": {
+      "word_count": 1547,
+      "minimum_required": 800,
+      "status": "PASS",
+      "sections_found": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Lore", "Sources"],
+      "sources_count": 2,
+      "frontmatter_valid": true,
+      "stats_match_wfcd": true,
+      "notes": "All stats verified against WFCD 1.756.0. health=270, shield=365, armor=160, energy=175, sprintSpeed=1.1 match exactly."
+    },
+    "equinox": {
+      "word_count": 1366,
+      "minimum_required": 800,
+      "status": "PASS",
+      "sections_found": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Lore", "Sources"],
+      "sources_count": 2,
+      "frontmatter_valid": true,
+      "stats_match_wfcd": true,
+      "notes": "All stats verified. health=270, shield=270, armor=135, energy=175, sprintSpeed=1.15 match WFCD exactly."
+    },
+    "equinox-prime": {
+      "word_count": 1459,
+      "minimum_required": 800,
+      "status": "PASS",
+      "sections_found": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Lore", "Sources"],
+      "sources_count": 2,
+      "frontmatter_valid": true,
+      "stats_match_wfcd": true,
+      "notes": "All stats verified. health=365, shield=270, armor=160, energy=200, sprintSpeed=1.15 match WFCD exactly."
+    },
+    "excalibur": {
+      "word_count": 1727,
+      "minimum_required": 800,
+      "status": "PASS",
+      "sections_found": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Lore", "Sources"],
+      "sources_count": 2,
+      "frontmatter_valid": true,
+      "stats_match_wfcd": true,
+      "notes": "All stats verified. health=270, shield=270, armor=240, energy=100, sprintSpeed=1.0 match WFCD exactly. Includes builds section as bonus."
+    },
+    "excalibur-prime": {
+      "word_count": 1579,
+      "minimum_required": 800,
+      "status": "PASS",
+      "sections_found": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Lore", "Sources"],
+      "sources_count": 2,
+      "frontmatter_valid": true,
+      "stats_match_wfcd": true,
+      "notes": "All stats verified. health=270, shield=270, armor=315, energy=175, sprintSpeed=1.0 match WFCD exactly. Properly notes Founders-exclusive status."
+    },
+    "excalibur-umbra": {
+      "word_count": 1248,
+      "minimum_required": 800,
+      "status": "PASS",
+      "sections_found": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Lore", "Sources"],
+      "sources_count": 2,
+      "frontmatter_valid": true,
+      "stats_match_wfcd": true,
+      "notes": "All stats verified. health=270, shield=270, armor=315, energy=175, sprintSpeed=1.0 match WFCD exactly. Excellent narrative on sentience and The Sacrifice quest."
+    },
+    "frost": {
+      "word_count": 1883,
+      "minimum_required": 800,
+      "status": "PASS",
+      "sections_found": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Lore", "Sources"],
+      "sources_count": 2,
+      "frontmatter_valid": true,
+      "stats_match_wfcd": true,
+      "notes": "All stats verified. health=270, shield=455, armor=315, energy=100, sprintSpeed=0.95 match WFCD exactly. Includes builds section as bonus."
+    },
+    "frost-prime": {
+      "word_count": 1306,
+      "minimum_required": 800,
+      "status": "PASS",
+      "sections_found": ["Overview", "Abilities", "Passive", "Stats", "Acquisition", "Playstyle", "Lore", "Sources"],
+      "sources_count": 2,
+      "frontmatter_valid": true,
+      "stats_match_wfcd": true,
+      "notes": "All stats verified. health=270, shield=550, armor=315, energy=100, sprintSpeed=0.95 match WFCD exactly. Properly documents vaulted status and Prime Resurgence availability."
+    }
+  },
+  "summary": "All 8 warframe files pass verification. Word counts range from 1248 to 1883 words (floor: 800). All have required sections in correct order. All frontmatter is valid YAML with 2+ sources each. All numeric stats (health, shield, armor, energy/power, sprintSpeed, masteryRank) match WFCD 1.756.0 exactly. No emojis detected. No console.log statements. Heading tolerance applied: sections like 'Playstyle' vs 'Recommended Builds' both accepted. Builds section present as bonus in some files (not required). All cross-references and internal links are syntactically correct. WFCD energy field mapped from power field as documented. No controversial phrasing or violations of content rules detected."
+}

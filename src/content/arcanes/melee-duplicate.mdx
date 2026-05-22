@@ -1,0 +1,74 @@
+---
+slug: melee-duplicate
+name: Melee Duplicate
+type: melee
+maxRank: 5
+effect: "On Base Critical Hits: [chance]% chance for your attack to strike a second time"
+perRankStats:
+  - rank: 0
+    stats: { chance: 25 }
+  - rank: 1
+    stats: { chance: 40 }
+  - rank: 2
+    stats: { chance: 55 }
+  - rank: 3
+    stats: { chance: 70 }
+  - rank: 4
+    stats: { chance: 85 }
+  - rank: 5
+    stats: { chance: 100 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 3.0
+  - source: "Void Cascade rotation C"
+    chance: 1.5
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Melee_Duplicate"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Melee Duplicate gives melee attacks a chance to strike a second time on Base Critical Hits. When a melee attack scores a base yellow critical hit -- not an orange or red crit, specifically the first tier of critical hit -- the attack has the listed chance to immediately strike again, applying another full hit to the target. At rank 5, every Base Critical Hit guarantees a second strike, effectively doubling the attack count on all yellow critical hits.
+
+The trigger applies to any Base Critical Hit, meaning any melee attack (light attack, heavy attack, slam) that scores a yellow crit can trigger the duplicate. The second strike is a full repeat of the attack -- it can also independently critical hit, apply status procs, and trigger other on-hit effects.
+
+## Effect
+
+Each Base Critical Hit checks the Melee Duplicate trigger chance. On success, the attack strikes a second time against the same target. At rank 0, a 25% chance means one in four Base Critical Hits generates a second strike. At rank 5, 100% chance means every Base Critical Hit always generates a second strike with no check required -- every yellow crit automatically doubles the hit count.
+
+The second strike is an independent hit event. It checks for critical hits, status procs, and on-hit triggers separately from the first strike. The second strike can itself be a critical hit (potentially a higher-tier crit due to crit chance from Blood Rush or similar), creating chains where the Duplicate proc generates additional critical events.
+
+## Stats per rank
+
+| Rank | Duplicate Chance on Base Critical Hit |
+|------|--------------------------------------|
+| 0 | 25% |
+| 1 | 40% |
+| 2 | 55% |
+| 3 | 70% |
+| 4 | 85% |
+| 5 | 100% |
+
+## Acquisition
+
+Melee Duplicate drops from Zariman Void Fissure rewards at 3% and Void Cascade rotation C at 1.5%. Rotation C in Void Cascade is the least frequently reached rotation, requiring longer runs to access. Warframe.market provides a direct purchase route for players who prefer platinum acquisition over extended farming.
+
+## Builds that use it
+
+Melee Duplicate is strongest on builds where Base Critical Hits occur frequently -- weapons with 25-50% critical chance that regularly score yellow crits without reaching consistent orange or red crit territory without Blood Rush stacking. At 100% trigger rate at rank 5, every yellow crit produces a free second hit, doubling melee throughput during the yellow crit windows.
+
+Builds using Blood Rush that ramp from yellow to orange to red crits during sustained combat benefit from Duplicate during the early combat phase (before Blood Rush fully stacks) where yellow crits are the predominant crit tier. Spin attack builds on wide-sweeping melee weapons that generate many hits per swing trigger frequent crit checks, increasing the absolute number of Duplicate procs per second.
+
+## Notes
+
+"Base Critical Hits" specifically refers to yellow (tier 1) critical hits -- the first level of critical hit above a non-crit. Orange crits (tier 2) and red crits (tier 3) are not Base Critical Hits for Melee Duplicate's trigger. The second strike applies the weapon's full damage, including all mods, elemental damage, and status. The second strike does not consume combo counter -- it fires as a free additional attack. The second strike's crit check uses the same critical chance as the primary attack at the moment it fires.
+
+## Sources
+
+- WFCD warframe-items dataset provides duplicate trigger chance values per rank for Base Critical Hits on Melee Duplicate.
+- Fandom wiki entry for [Melee Duplicate](https://warframe.fandom.com/wiki/Melee_Duplicate) covers Base Critical Hit definition and the second strike's independent status/crit behavior.

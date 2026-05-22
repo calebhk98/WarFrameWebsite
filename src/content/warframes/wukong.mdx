@@ -1,0 +1,257 @@
+---
+slug: wukong
+name: Wukong
+aliases: ["Monkey King"]
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 455
+shield: 270
+armor: 265
+energy: 130
+sprintSpeed: 1.0
+passive:
+  name: Survival Instinct
+  description: >-
+    After suffering fatal damage, Wukong automatically invokes one of three
+    mastered survival techniques per mission, automatically reviving him and
+    granting temporary invulnerability.
+abilities:
+  - name: Celestial Twin
+    key: "1"
+    energyCost: 50
+    description: >-
+      Wukong sheds a part of himself to create an independent combat duplicate
+      that mirrors his loadout and shares ammo pools. The twin engages enemies
+      with melee when Wukong uses ranged weapons and vice versa. Reactivate to
+      command the twin to perform a coordinated strike on a designated target,
+      inflicting bonus damage.
+    stats: { range: 50 }
+  - name: Cloud Walker
+    key: "2"
+    energyCost: 25
+    description: >-
+      Evaporate into a cloud of mist and drift across the battlefield. Enemies
+      encountered are dazed and damaged. Wukong and his Celestial Twin are
+      healed during the ability duration. Movement is unimpeded by obstacles.
+    stats: { duration: 6, range: 20 }
+  - name: Defy
+    key: "3"
+    energyCost: 50
+    description: >-
+      Wukong and his Celestial Twin become temporarily invulnerable and taunt
+      nearby enemies to attack. All incoming damage is captured and stored,
+      then released in a single, devastating staff strike. Armor bonus is
+      granted proportional to damage absorbed.
+    stats: { duration: 4, range: 15 }
+  - name: Primal Fury
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summon an exalted iron staff and unleash devastating close-quarters
+      combat. Each hit deals heavy melee damage and stuns enemies. Hold the
+      ability to charge for increased damage. The staff respects all equipped
+      melee mods and scales with Wukong's power strength.
+    stats: { damage: 250, range: 5 }
+acquisition:
+  source: Tenno Lab (Dojo Research)
+  blueprintLocations:
+    - "Tenno Lab (Dojo Research)"
+    - "Market (275 platinum)"
+  cost:
+    credits: 25000
+    platinum: 0
+  buildTimeHours: 72
+  note: >-
+    Blueprint components (Chassis, Neuroptics, Systems) are researched in
+    the Dojo's Tenno Lab. Requires 15,000 credits, 1 Neurode, 1 Orokin Cell,
+    and 65 Alloy Plate per component. The full frame blueprint costs 35,000
+    credits and 1 Orokin Cell to build, resulting in a fully constructed frame
+    after 72 hours.
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2019-06-18"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats cross-checked against WFCD 1.756.0. Ability mechanics reflect post-Update 25.2 Celestial Twin overhaul and Defy rework."
+  - url: "https://warframe.fandom.com/wiki/Wukong"
+    accessedAt: "2026-05-19"
+    title: "Wukong -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Wukong embodies the archetype of the Monkey King: a warrior of exceptional durability combined with agile mobility and tactical versatility. His role as a self-sufficient combatant makes him an excellent choice for newer and experienced players alike. The frame excels at disrupting enemy formations through his twin's independent engagement, escaping danger via Cloud Walker, and surviving overwhelming odds through Defy and his passive invulnerability charges. Wukong's relatively low mastery requirement and straightforward ability kit have made him a staple introduction to advanced warframe mechanics.
+
+His playstyle evolved significantly in the post-2024 updates. The Celestial Twin now functions as a true companion that shares ammunition pools with Wukong, encouraging coordinated loadout building. Defy, following its rework, shifted from a simple damage redirect to a more nuanced invulnerability-and-counter mechanic that rewards positioning and timing. These changes transformed Wukong from a pure durability frame into a frame that rewards active engagement and tactical decision-making.
+
+## Abilities
+
+<AbilityCard
+  name="Celestial Twin"
+  key="1"
+  energyCost={50}
+  description="Wukong sheds a part of himself to create an independent combat duplicate that mirrors his loadout and shares ammo pools. The twin engages enemies with melee when Wukong uses ranged weapons and vice versa. Reactivate to command the twin to perform a coordinated strike on a designated target, inflicting bonus damage."
+/>
+
+Wukong's signature ability manifests a duplicate of himself to fight alongside him. The twin inherits Wukong's full loadout--weapons, mods, and equipment--and operates independently for up to two minutes (default duration). Critically, the twin shares an ammo pool with Wukong, meaning any ammunition picked up by either combatant feeds both.
+
+The twin's AI prioritizes targets Wukong is engaging and shifts weapon types based on context: if Wukong uses a ranged weapon, the twin favors melee, and vice versa. This creates a natural division of labor without micromanagement. Reactivating the ability commands the twin to assault a designated target with a coordinated melee strike that gains bonus damage scaling with Wukong's power strength.
+
+Energy cost is 50 at base, making the ability a moderate drain on Wukong's 130-energy pool. The ability synergizes powerfully with weapons that have high ammo efficiency (bows, single-fire rifles) and benefits from mods that improve companion survivability, such as Reinforced Bond or Power Strength-scaling mods.
+
+<AbilityCard
+  name="Cloud Walker"
+  key="2"
+  energyCost={25}
+  description="Evaporate into a cloud of mist and drift across the battlefield. Enemies encountered are dazed and damaged. Wukong and his Celestial Twin are healed during the ability duration. Movement is unimpeded by obstacles."
+/>
+
+An evasion and utility ability that transforms Wukong into a cloud of mist. During the transformation, Wukong moves unimpeded through terrain, becomes immune to environmental hazards, and damages any enemies he passes through, applying a daze effect that reduces their accuracy and fire rate.
+
+The ability grants healing to both Wukong and his Celestial Twin over its six-second duration, making it invaluable for sustain during extended engagements. The modest energy cost of 25 allows frequent use, and the daze effect provides crowd control when other abilities are on cooldown. The 20-meter range of the healing aura ensures the twin benefits even when separated from Wukong spatially.
+
+Cloud Walker serves dual purposes: as a mobility tool for repositioning, as a semi-invulnerability frame during high-damage moments, and as area denial against weaker enemies. Its speed makes it excellent for objective-focused missions where rapid transit between points is essential.
+
+<AbilityCard
+  name="Defy"
+  key="3"
+  energyCost={50}
+  description="Wukong and his Celestial Twin become temporarily invulnerable and taunt nearby enemies to attack. All incoming damage is captured and stored, then released in a single, devastating staff strike. Armor bonus is granted proportional to damage absorbed."
+/>
+
+Wukong's cornerstone defensive ability underwent a substantial rework to increase its tactical depth. Upon activation, both Wukong and his Celestial Twin enter a state of invulnerability for four seconds while taunting nearby enemies to direct fire at them. All incoming damage is captured and accumulated rather than reflected in real-time.
+
+At the end of the duration, Wukong releases all accumulated damage in a single staff strike that hits all nearby enemies and scales with the total damage absorbed. The resulting strike grants Wukong bonus armor proportional to the damage captured, with the multiplier governed by power strength mods. This creates a powerful feedback loop: higher damage intake yields higher armor, turning enemy aggression into a personal defense buff.
+
+The key mechanic adjustment post-2024 is the removal of automatic reflection; Defy now requires Wukong to time the ability's conclusion for maximum impact. Charging into a group of heavy hitters can result in an enormous damage spike and armor gain, while using Defy defensively yields smaller returns. The 50-energy cost is reasonable for the power scaling potential.
+
+Defy is Wukong's Helminth subsumable ability, meaning it can be transferred to other warframes. Its utility as a survivability tool makes it a valuable augment for frames lacking built-in defenses.
+
+<AbilityCard
+  name="Primal Fury"
+  key="4"
+  energyCost={100}
+  description="Summon an exalted iron staff and unleash devastating close-quarters combat. Each hit deals heavy melee damage and stuns enemies. Hold the ability to charge for increased damage. The staff respects all equipped melee mods and scales with Wukong's power strength."
+/>
+
+Wukong's exalted ability summons an iron staff and converts his weapon slots into a devastating melee weapon for the duration. The staff is a heavy melee weapon that scales fully with equipped melee mods, meaning crit chance, crit multiplier, status chance, and elemental damage mods all apply. Each hit stuns nearby enemies and deals 250-base damage (before mods).
+
+The ability can be charged by holding the activation key; holding increases the damage per hit. The staff maintains a five-meter effective range, making Primal Fury a close-quarters tool best used after Cloud Walker repositioning or Defy's armor buff. The 100-energy cost is steep but justified by the raw melee damage potential and crowd control.
+
+A critical strength of Primal Fury is its interaction with Wukong's armor. Because the frame has high armor (265 at base), damage reduction stacks multiplicatively with the bonus armor from Defy, making Wukong nearly unkillable when Primal Fury is used at the peak of a Defy damage bank. The ability also benefits from energy regeneration mods like Zenurik focus schools, reducing the overall energy pressure.
+
+## Passive
+
+Wukong's passive, Survival Instinct, grants him three automatic revives per mission without consuming a revive from the squad's shared pool. After suffering fatal damage, Wukong is automatically revived with invulnerability frames and full health. Each revive consumes one charge; the counter resets upon mission completion.
+
+This passive is functionally one of the strongest on any frame: it provides a genuine second (third, and fourth) chance in prolonged endurance runs and reduces the risk of cascading squad deaths in high-difficulty content. Combined with health-restoration mods and the healing from Cloud Walker, Wukong can sustain himself through scenarios that would quickly overwhelm other frames.
+
+## Stats
+
+Wukong's baseline statistics reflect a frame built for durability and sustained combat:
+
+| Stat | Value |
+|------|-------|
+| Health | 455 |
+| Shield | 270 |
+| Armor | 265 |
+| Energy | 130 |
+| Sprint Speed | 1.0x |
+| Aura Polarity | Madurai |
+
+The armor value of 265 is remarkable for a frame released in 2015 and remains competitive without mods. His health and shield pools are moderate; at rank 30, they reach 555 health and 370 shields. Energy is the frame's primary constraint--130 base energy limits ability spam without careful energy management or mods like Streamline and Primed Flow.
+
+Sprint speed of 1.0x is baseline, meaning Wukong is neither fast nor slow; his mobility instead comes from Cloud Walker, which is faster than sprinting and grants temporary invulnerability.
+
+## Acquisition
+
+Wukong's blueprint components--Chassis, Neuroptics, and Systems--are researched in the Tenno Lab within a player's dojo. Each component requires different materials: Neurodes, Alloy Plate, Circuits, and an Orokin Cell. The full frame blueprint is built from the three components and costs 35,000 credits and one Orokin Cell.
+
+Building times are the standard 72 hours per component plus 72 hours for the final frame assembly. Alternatively, Wukong can be purchased directly from the Market for 275 platinum, providing instant access for players unwilling to wait for dojo research.
+
+The frame is not locked behind any quest prerequisites, making him accessible to players immediately upon achieving the mastery rank to equip him (Mastery Rank 0, so technically anyone can build him). However, reaching the Tenno Lab requires clan participation, so new players without a dojo may need to join an established clan or purchase Wukong outright.
+
+## Playstyle
+
+Wukong is played as a self-sufficient, aggressive-yet-resilient combatant who leverages his Celestial Twin to overwhelm enemies and his defensive tools to endure sustained engagement.
+
+**Early-mission playstyle** focuses on Celestial Twin and straightforward gunplay. The twin handles a portion of damage output automatically, allowing Wukong to focus on positioning and looting. Cloud Walker provides escape when surrounded. This phase is straightforward and beginner-friendly.
+
+**Mid-to-high-difficulty playstyle** introduces Defy cycling as the core mechanic. Wukong charges into combat, allows enemies to concentrate fire, activates Defy to capture damage, then times the ability's conclusion to burst enemies and gain armor. The cycle repeats, with Cloud Walker used reactively for emergency sustain or repositioning. Primal Fury is held in reserve for crowd control or when high armor has been accumulated.
+
+**Endurance playstyle** treats all three damage-to-survivability systems as integrated tools: Celestial Twin augments Wukong's sustained DPS, Cloud Walker heals during high-pressure moments, and Defy builds cumulative armor that scales exponentially with mods like Umbral Intensify and Augur Message. Passive revives ensure mistakes are recoverable. This playstyle is mechanically intensive but rewards precise timing.
+
+Wukong does not excel at ranged crowd control like Saryn or Equinox, nor does he provide team buffs like Trinity. Instead, he is a selfish, independent frame designed to hold a tile and eliminate waves of enemies without assistance. This makes him ideal for solo void fissures, solo farming missions, and high-level solo endurance runs.
+
+## Builds
+
+### Survival-Focused Build
+
+For endless missions and high-level content where durability trumps raw damage output:
+
+**Mod Layout:**
+- Aura: Corrosive Projection (or Growing Power for more damage variety)
+- Exilus: Power Drift
+- Mods: Umbral Intensify, Umbral Vitality, Primed Continuity, Stretch, Primed Flow, Streamline, Augur Message, Blind Rage (rank 9)
+
+This build maximizes Defy's armor scaling and Primal Fury's damage while maintaining sufficient energy for ability rotation. Critical stats: 200% power strength, 135% duration, 130% range.
+
+### Balanced Celestial Twin Build
+
+For missions where Wukong and his twin share damage output:
+
+**Mod Layout:**
+- Aura: Corrosive Projection
+- Exilus: Handspring
+- Mods: Power Donation, Reinforced Bond, Primed Continuity, Stretch, Primed Flow, Streamline, Intensify, Adaptation
+
+This build balances Wukong's survivability with the twin's effectiveness, using power strength to boost both the twin's damage and Defy's returns. Reinforced Bond increases the twin's survivability significantly.
+
+### Cloud Walker Mobility Build
+
+For mobile farming and void cascade fissures:
+
+**Mod Layout:**
+- Aura: Corrosive Projection
+- Exilus: Cunning Drift
+- Mods: Primed Continuity, Stretch, Primed Flow, Streamline, Natural Talent, Power Strength, Fast Deflection, Augur Reach
+
+Emphasizes mobility and healing by extending Cloud Walker's duration and range while maintaining basic survivability. Energy regeneration from Zenurik focus helps offset the high casting cost.
+
+## Synergies
+
+Wukong's ability interactions create several powerful synergies:
+
+**Celestial Twin + Defy**: The twin inherits all mods, including those that boost companion survivability. Casting Defy affects both Wukong and the twin simultaneously, meaning coordinated damage capture--if both are absorbing hits, the total damage bank is nearly doubled, yielding massive armor gains.
+
+**Defy + Primal Fury**: Activating Primal Fury after accumulating armor from Defy creates a multiplicative defense multiplier. At high armor, the damage reduction per hit is so significant that Primal Fury can be used recklessly.
+
+**Cloud Walker + Health Sustain**: Mods like Regenerative Molt and Healing Return work alongside Cloud Walker's innate healing. Coupling them with a melee weapon that heals-on-hit creates self-sufficiency during extended combat.
+
+**Passive + High-Difficulty Scaling**: The three automatic revives interact powerfully with endless missions. Each revive is essentially a do-over for tactical mistakes, making Wukong one of the safest frames for pushing endurance records.
+
+Wukong's subsumable Defy is highly sought after for frames that lack defensive tools, such as Gauss, Nidus, and any frame building pure damage. Its general utility across the roster makes it valuable for team composition flexibility.
+
+## Lore
+
+Wukong is based on Sun Wukong, the Monkey King from the Chinese novel "Journey to the West." In Warframe's universe, Wukong is a Warframe designed to emulate the cunning, strength, and regenerative prowess of the mythological figure. His Celestial Twin mirrors the legendary duality and trickery of the original Monkey King, who could split himself into multiple bodies. The iron staff in Primal Fury recalls Sun Wukong's iconic ruyi bang , a legendary weapon capable of endless size transformation.
+
+The frame was released during Warframe's early years (November 2015) as one of the foundational frames available to new players. His accessibility and straightforward mechanics positioned him as an introduction to warframe gameplay without gate-keeping mechanics like advanced quests. Later updates, particularly the Celestial Twin rework in Update 25.2 (June 2019) and the 2024 Defy redesign, transformed Wukong from a simple frame into one with significant mechanical depth.
+
+The Warframe community has historically viewed Wukong as a "beginner frame" despite his power ceiling, partly due to his accessibility and partly due to the prevalence of more specialized frames for specific roles. However, dedicated Wukong players recognize the frame's exceptional survivability and self-sufficiency as advantages in endurance content and solo missions where team support is unavailable.
+
+Wukong Prime was released June 18, 2019, featuring enhanced stats and a unique cosmetic appearance. The base Wukong remains free via dojo research, maintaining his position as an accessible entry point to advanced frame mechanics for players at any progression level.
+
+## Sources
+
+- [WFCD warframe-items -- GitHub](https://github.com/WFCD/warframe-items)
+  Accessed 2026-05-19. Numeric stats and ability descriptions sourced from the canonical WFCD database version 1.756.0.
+
+- [Wukong -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Wukong)
+  Accessed 2026-05-19. Acquisition details, lore context, and playstyle notes. Fandom content licensed under CC-BY-SA 3.0.

@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-05-18T12:00:00.000Z",
+  "news": [
+    {
+      "id": "news-1",
+      "message": "Tennocon 2026 announcement",
+      "link": "https://www.warframe.com/news/tennocon-2026",
+      "date": "2026-05-10T15:00:00.000Z"
+    }
+  ],
+  "sortie": {
+    "id": "sortie-1",
+    "activation": "2026-05-18T00:00:00.000Z",
+    "expiry": "2026-05-19T00:00:00.000Z",
+    "boss": "General Sargas Ruk",
+    "faction": "Grineer",
+    "variants": [
+      {
+        "missionType": "Defense",
+        "modifier": "Eximus Stronghold",
+        "modifierDescription": "More Eximus enemies appear",
+        "node": "Cinxia (Ceres)"
+      }
+    ]
+  },
+  "fissures": [
+    {
+      "id": "fissure-1",
+      "activation": "2026-05-18T11:00:00.000Z",
+      "expiry": "2026-05-18T13:00:00.000Z",
+      "node": "Hepit (Void)",
+      "missionType": "Capture",
+      "enemy": "Corrupted",
+      "tier": "Lith",
+      "tierNum": 1,
+      "expired": false
+    }
+  ],
+  "invasions": [
+    {
+      "id": "invasion-1",
+      "activation": "2026-05-17T00:00:00.000Z",
+      "node": "Phorcys (Neptune)",
+      "desc": "Fight the Infested",
+      "attacker": {
+        "faction": "Grineer",
+        "reward": { "asString": "Orokin Cell" }
+      },
+      "defender": {
+        "faction": "Corpus",
+        "reward": { "asString": "Detonite Injector" }
+      },
+      "completion": 42.5,
+      "completed": false
+    }
+  ],
+  "cetusCycle": {
+    "id": "cetus-cycle-1",
+    "expiry": "2026-05-18T13:30:00.000Z",
+    "isDay": true,
+    "state": "day",
+    "timeLeft": "1h 30m to night"
+  },
+  "vallisCycle": {
+    "id": "vallis-cycle-1",
+    "expiry": "2026-05-18T12:20:00.000Z",
+    "isWarm": false,
+    "state": "cold",
+    "timeLeft": "20m to warm"
+  }
+}

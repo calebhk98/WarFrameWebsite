@@ -1,0 +1,70 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+
+export async function getStaticPaths() {
+  const missions = await getCollection('missions');
+  return missions.map((m) => ({ params: { slug: m.slug }, props: { entry: m } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+
+const tags: string[] = [
+  `Type: ${data.type}`,
+  `Faction: ${data.faction}`,
+  `${data.location}`,
+  `Levels ${data.levelRange.min}--${data.levelRange.max}`,
+];
+
+const description = data.notes
+  ? data.notes
+  : `${data.type} mission on ${data.location} against ${data.faction}. Levels ${data.levelRange.min}--${data.levelRange.max}.`;
+---
+
+<Entity
+  title={data.name}
+  kind="mission"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+>
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-brand-cream mb-3">Mission Info</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Type</p>
+        <p class="text-sm font-semibold text-brand-cream">{data.type}</p>
+      </div>
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Faction</p>
+        <p class="text-sm font-semibold text-brand-cream">{data.faction}</p>
+      </div>
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Location</p>
+        <p class="text-sm font-semibold text-brand-cream">{data.location}</p>
+      </div>
+      <div class="rounded-lg bg-surface-2 border border-surface-3 p-3">
+        <p class="text-xs text-brand-cream/50 uppercase tracking-wide mb-1">Enemy Level</p>
+        <p class="text-sm font-semibold text-brand-cream">{data.levelRange.min}--{data.levelRange.max}</p>
+      </div>
+    </div>
+  </section>
+
+  {data.rewards.length > 0 && (
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-brand-cream mb-3">Rewards</h2>
+      <ul class="space-y-1">
+        {data.rewards.map((reward) => (
+          <li class="flex items-start gap-2 text-sm">
+            <span class="text-brand-orange shrink-0 mt-0.5">&#8227;</span>
+            <span class="text-brand-cream/80">{reward}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <Content />
+</Entity>

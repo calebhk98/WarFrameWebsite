@@ -1,0 +1,171 @@
+---
+slug: zephyr
+name: Zephyr
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 455
+shield: 455
+armor: 105
+energy: 100
+sprintSpeed: 1.1
+passive:
+  name: Aero Agility
+  description: Zephyr moves faster and falls slower while airborne. Also gains 150% critical chance with weapons while airborne.
+abilities:
+  - name: Tail Wind
+    key: "1"
+    energyCost: 25
+    description: >-
+      Hold to hover in the air with reduced movement. Tap to dash forward, or aim down to dive bomb enemies below. Casting resets double/bullet jump.
+    stats: { damage: "varies" }
+  - name: Airburst
+    key: "2"
+    energyCost: 50
+    description: >-
+      Launch a burst of dense air. Hold to send enemies flying, tap to pull them toward the burst. Damage increases per enemy hit.
+    stats: { damage: "scales with power strength" }
+  - name: Turbulence
+    key: "3"
+    energyCost: 50
+    description: >-
+      Creates a wind shield around Zephyr, redirecting all incoming projectiles. Toggle ability that drains energy per second while active.
+    stats: { range: "scales with range mods" }
+  - name: Tornado
+    key: "4"
+    energyCost: 100
+    description: >-
+      Create deadly tornadoes that seek out and engulf enemies. Tornadoes deal the elemental damage type they absorb the most. Shoot engulfed enemies for extra damage. Hold for stationary tornadoes or tap for wandering ones.
+    stats: { damage: "converts to elemental", radius: "scales with range" }
+acquisition:
+  source: "Market purchase (Tenno lab via dojo research or market)"
+  blueprintLocations:
+    - "Market or Tenno Lab research in Clan Dojo"
+  cost:
+    credits: 25000
+    platinum: 275
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2018-03-20"
+  vaultedAt: "2021-08-10"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Zephyr"
+    accessedAt: "2026-05-19"
+    title: "Zephyr -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Zephyr is a wind-based warframe introduced in Update 12.0, embodying aerial supremacy and mobility. Named after the gentle west wind in Greek mythology, Zephyr excels in vertical movement and crowd control through wind-based attacks. Her kit emphasizes flight, evasion, and leveraging the skies as a tactical advantage. The frame rewards skilled pilots who master her mobility-centric abilities, though her defensive profile has been refined over numerous patches to enhance her survivability alongside her crowd control potential.
+
+Zephyr's core design revolves around air superiority through Tail Wind's unmatched movement, Turbulence's projectile protection, and Tornado's devastating area damage. Since her rework in Update 29.10, her passive grants significant airborne critical bonuses that synergize with her inherent mobility, transforming her from a pure mobility frame into a capable offensive platform for continuous aerial combat.
+
+## Abilities
+
+<AbilityCard
+  name="Tail Wind"
+  key="1"
+  energyCost={25}
+  description="Hold while airborne to hover with reduced movement. Tap to dash forward, or aim down to dive bomb enemies below. Casting resets double and bullet jump capabilities."
+/>
+
+Tail Wind is Zephyr's signature mobility tool and primary means of air control. When held, it places her in a hover state where she can reposition with reduced speed but precise control. Tapping initiates a forward dash that propels her rapidly through levels, enabling shortcuts and escape routes. Aiming down converts the ability into a dive bomb that deals scaling damage and launches airborne enemies on impact. The ability resets both double jump and bullet jump, allowing extended aerial traversal when combined with natural jumping mechanics.
+
+The hover state drains a small amount of energy per second but enables precise positioning for gunplay from angles unreachable by grounded players. The dash is energy-efficient for traversal, costing only 25 energy per activation, making it ideal for exploration and map navigation. Dive bomb damage scales with power strength mods, making it viable for low-level content when properly modded.
+
+<AbilityCard
+  name="Airburst"
+  key="2"
+  energyCost={50}
+  description="Launch a burst of dense air. Hold to send enemies flying, tap to pull them toward the burst. Damage increases per enemy hit."
+/>
+
+Airburst functions as a dual-mode crowd control ability with mechanics that invert based on cast type. Holding the ability sends enemies away from the cast point in a forceful knockback, useful for creating space or launching enemies into hazards. Tapping instead pulls nearby enemies toward a central vortex point, grouping them for follow-up attacks or area-damage abilities. The ability's damage scales with each additional enemy struck, incentivizing use against groups. Energy cost is halved while airborne, reducing the drain from 50 to 25 energy when cast mid-flight.
+
+Tactical use of Airburst's dual modes enables sophisticated crowd control patterns: pull enemies together, soften them with weapons or Tornado, then push hazardous units away. The damage scaling per enemy hit makes it competitive against moderately-leveled foes when power strength is invested, though endgame content may require augment mods for enhanced utility.
+
+<AbilityCard
+  name="Turbulence"
+  key="3"
+  energyCost={50}
+  description="Creates a wind shield redirecting all incoming projectiles. Drain effect while active. Scales with duration and range mods."
+/>
+
+Turbulence is a toggle ability that projects a spherical wind shield around Zephyr, deflecting all projectile attacks away from her and allies within range. It does not block instant-hit (hitscan) weapons or melee attacks, but redirects all physical and energy projectiles. The ability drains energy continuously while active, making duration mods essential for sustained use. Range mods expand the shield's protective radius, enabling squad protection in high-pressure scenarios.
+
+Turbulence excels against faction-heavy missions (Corpus and Grineer ranged units) and against boss enemies that favor projectile attacks. Combining Turbulence with mobility allows Zephyr to kite ranged enemies indefinitely in Survival or Defense missions, trivializing certain threat profiles. High-duration builds enable indefinite toggling with appropriate energy management or Energize arcanes.
+
+<AbilityCard
+  name="Tornado"
+  key="4"
+  energyCost={100}
+  description="Create deadly tornadoes that seek out and engulf enemies. Tornadoes convert to the elemental damage type they absorb most. Shoot engulfed enemies for extra damage."
+/>
+
+Tornado spawns one or more whirlwind vortexes that seek out and trap enemies, dealing continuous damage and ragdolling them. The ability has two cast modes: holding spawns stationary tornadoes at the aim point, while tapping creates wandering tornadoes that patrol the area seeking targets. Trapped enemies absorb incoming elemental effects (heat, cold, toxin, electric), and the tornadoes then convert their damage output to match the most abundant elemental type absorbed. Shooting trapped enemies within the tornado amplifies damage dealt.
+
+Power strength increases the tornado's damage and absorption efficiency, while range mods expand their patrol and capture radius. Duration extends how long tornadoes persist before dissipating. The ability's flexibility as a stationary damage field or roaming threat makes it versatile for both defensive crowd control (stationary placement on objectives) and aggressive sweeping (wandering mode for open-map hunts). Elemental conversion adds tactical depth: group elemental damage mods to force specific damage types through the tornadoes.
+
+## Passive
+
+Zephyr's passive, Aero Agility, provides two stacking bonuses while airborne. First, she moves faster and falls slower, granting both offensive and defensive benefits: increased rotation speed for strafing gunplay and reduced fall damage from high altitudes. Second, Zephyr gains 150% critical chance with all weapons (Primary, Secondary, Melee) while airborne, a significant offensive multiplier when combined with critical chance mods. This passive encourages maintaining altitude throughout missions, turning Tail Wind from a utility tool into a core damage platform.
+
+The critical chance bonus applies immediately upon leaving the ground, incentivizing hit-and-run aerial tactics. Combined with sniper rifles, bows, or other high-critical weapons, the passive enables glass-cannon playstyles where sustained airtime equals sustained critical hits. The enhanced movement speed enables precision aiming from unconventional angles, turning map geometry into an advantage.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 455 |
+| Shield | 455 |
+| Armor | 105 |
+| Energy | 100 |
+| Sprint Speed | 1.1x |
+| Mastery Rank | 0 |
+
+Zephyr's stat distribution prioritizes balanced survivability with modest armor and equal health/shield pools. The 1.1x sprint speed multiplier exceeds the baseline 1.0, offering improved ground mobility. Energy pool of 100 is modest compared to efficiency-focused frames like Trinity, requiring energy management during prolonged ability use or reliance on energy orbs and Energize arcanes. Armor scaling is limited, making armor-stripping effects from Corrosive Projection less threatening than on heavily-armored frames.
+
+## Acquisition
+
+Zephyr is available exclusively through Market purchase for 275 platinum, or through Tenno Lab research in an established Clan Dojo (requiring contribution of resources like neural sensors, plastids, and credits). The blueprint can also be obtained via dojo trading with clan members who have researched the blueprint. Assembly requires 72 hours of build time and costs 25,000 credits, standard for standard warframe recipes. Components drop from Vor and Lech Kril on Mars (Lech Kril provides Chassis, Vor provides Neuroptics, and Systems are purchased via dojo), though direct purchase is faster for new players.
+
+Zephyr Prime, released in Update 22.16.4 alongside Tiberon Prime and Kronen Prime, offers superior stats and Prime-exclusive visual customization. Prime acquisition requires Void Fissure farming (Lith, Meso, Neo, Axi relics). Zephyr Prime was vaulted in August 2021 but returns periodically via Prime Vault reopenings, typically every 1-2 years.
+
+## Playstyle
+
+Zephyr thrives in hit-and-run aerial combat, leveraging her passive critical bonus and Tail Wind mobility to engage from unexpected angles. Pilots should maintain altitude whenever possible, using Tail Wind's hover and dash to strafe enemy positions while firing from elevated vantage points. Turbulence provides reactive protection against projectile barrages, enabling aggressive positioning without cover reliance. Tornado functions as both offensive area denial (stationary placement on objectives) and hunting tool (wandering mode in open maps like Plains of Eidolon).
+
+Effective Zephyr gameplay demands map awareness and ability timing: predicting enemy positions to place Tornadoes ahead of their movement, using Airburst to group scattered targets before elemental conversion, and managing energy through toggle discipline on Turbulence. Her low armor makes defensive builds (Vitality, Adaptation) valuable, and her energy pool favors efficiency mods (Streamline, Fleeting Expertise) to sustain ability spam. Weapon choice should emphasize critical scaling (Serration, Point Strike, Critical Delay) to amplify the passive airborne bonus.
+
+In squad play, Zephyr provides indirect support through Turbulence team protection and Tornado crowd control, though she lacks direct teammate buffs. Her playstyle suits solo-focused missions (Exterminate, Sabotage) and map-control scenarios (Defense, Interception) more than support-heavy endurance runs.
+
+## Recommended builds
+
+Zephyr's build diversity splits into three archetypes:
+
+**Critical Gunner:** Maximizes the passive airborne critical bonus with weapon mods (Serration, Point Strike, Critical Delay) and utility mods (Flow, Streamline). Prioritize Critical Chance mods to trigger red crits on every aerial shot. Pair with high-crit weapons like Latron Prime or Rubico Prime.
+
+**Tornado Dominator:** Invests in Tornado damage and range (Power Strength, Power Range, Duration) and pairs with elemental damage mods to exploit elemental conversion. Stationary Tornado placement creates zones where enemies entering become high-priority targets. Supplement with Vitality and Adaptation for survivability.
+
+**Air Controller:** Balances mobility (natural Tail Wind efficiency) with Turbulence uptime (Duration, Efficiency) and Airburst crowd control (Range, Strength). This hybrid approach suits Void Fissure and Index play where adaptability trumps specialization, enabling reactive ability use across mission types.
+
+All three benefit from Zenurik's Energy Siphon to offset ability drain, and from helminth subsumes (Roar for damage, Vial Rush for repositioning).
+
+## Lore
+
+Zephyr's codex entry describes her as a frame modeled after wind itself, capable of achieving feats of flight and maneuverability that defy conventional Warframe design logic. Her namesake derives from Zephyrus, the personification of the west wind in Greek mythology, aligning with her aeronautical identity and gentle-yet-destructive nature. In-game flavor text emphasizes her affinity with the sky and her role as a pathfinder among the Tenno, scouting dangerous territory and reporting back to squad members.
+
+Her design philosophy--introduced by designer Jade--prioritized verticality as a core mechanic, predating later frames like Titania and Wisp that also emphasize flight. The frame's evolution across dozens of patches reflects developer commitment to maintaining her unique identity while ensuring competitive viability. Her rework in Update 29.10 balanced the community's conflicting desires: rewarding skilled pilots who mastered her mobility while ensuring her damage output remained competitive against more straightforward frames. The introduction of the Aero Agility passive marked a philosophical shift toward rewarding player investment in altitude maintenance rather than punishing playstyle diversity.
+
+## Sources
+
+- **Primary reference:** WFCD `warframe-items` JSON, accessed 2026-05-19. Stats verified against build version in repository.
+- **Secondary reference:** Warframe Fandom wiki page for Zephyr, accessed 2026-05-19. Ability descriptions, lore context, and acquisition methods cross-referenced for accuracy.

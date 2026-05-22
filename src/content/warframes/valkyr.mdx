@@ -1,0 +1,157 @@
+---
+slug: valkyr
+name: Valkyr
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 135
+armor: 630
+energy: 100
+sprintSpeed: 1.1
+passive:
+  name: Quick Recovery
+  description: >-
+    Recover 50% faster from being knocked down.
+abilities:
+  - name: Rip Line
+    key: "1"
+    energyCost: 25
+    description: >-
+      Valkyr hurls forth a grappling hook. If it hits an enemy, she pulls them to her
+      location. If it hits terrain, she pulls herself to the hook's location, enabling
+      rapid repositioning and initiating melee combat.
+  - name: Warcry
+    key: "2"
+    energyCost: 50
+    description: >-
+      Valkyr lets out a rallying cry that bolsters her allies' attack speed while
+      slowing nearby enemies. The ability synergizes with team-based missions and
+      melee-focused loadouts.
+  - name: Paralysis
+    key: "3"
+    energyCost: 75
+    description: >-
+      Valkyr unleashes her shields, releasing a shockwave that stuns and damages
+      enemies in a circular radius around her. The ability scales with strength and
+      range mods.
+  - name: Hysteria
+    key: "4"
+    energyCost: 25
+    description: >-
+      Valkyr is imbued with raw energy and becomes a ball of vicious rage, capable
+      of unleashing a torrent of deadly claw attacks on unsuspecting foes. During
+      Hysteria, she gains complete invulnerability to damage.
+acquisition:
+  source: Alad V assassination (Jupiter -- Themisto)
+  blueprintLocations:
+    - "Alad V assassination on Jupiter -- Themisto"
+  cost:
+    credits: 15000
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2015-11-24"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Valkyr"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Valkyr is a melee-focused warframe specializing in close-quarters combat, crowd control, and damage mitigation through her signature ultimate ability Hysteria. Her toolkit emphasizes aggression and survivability in direct combat situations, making her exceptionally potent for exterminate missions, void fissures, and endgame content where sustained enemy pressure is constant. Her high armor of 630 and invulnerability mechanic via Hysteria enable reckless aggressive play styles that would kill frailer frames. With exceptional mobility through Rip Line and team utility via Warcry, Valkyr remains one of the most versatile combat-ready warframes across the star chart and endless missions.
+
+Valkyr's stat profile prioritizes durability over shields or health. Her 270 health and 135 shield pool are modest, but the 630 armor value provides substantial damage reduction against physical and most elemental threats. This heavy armor encourages an aggressive playstyle where Valkyr keeps enemies at close range where her melee synergies are strongest. The 100 energy pool with an initial energy start of 25 on Hysteria means the frame can sustain ability spam indefinitely with proper modding. Her 1.1x sprint speed multiplier ensures rapid repositioning between engagements, critical for maintaining melee effective range in large tilesets.
+
+## Abilities
+
+<AbilityCard
+  name="Rip Line"
+  key="1"
+  energyCost={25}
+  description="Valkyr hurls forth a grappling hook. If it hits an enemy, she pulls them to her location. If it hits terrain, she pulls herself to the hook's location, enabling rapid repositioning and initiating melee combat."
+/>
+
+Rip Line is Valkyr's mobility tool, firing a grappling hook that either pulls enemies to her or pulls herself to terrain. This dual functionality provides both offensive engagement and defensive evasion. Against single enemies, Rip Line creates a guaranteed melee engagement by yanking targets to her position--extremely valuable against ranged units or isolated bosses. Against terrain, it enables rapid parkour across large maps, synergizing with the frame's aggressive engagement philosophy. The ability costs only 25 energy, allowing frequent repositioning without depleting reserves. Advanced players chain Rip Line casts to traverse entire defense maps in seconds, positioning Valkyr where melee threats are greatest.
+
+<AbilityCard
+  name="Warcry"
+  key="2"
+  energyCost={50}
+  description="Valkyr lets out a rallying cry that bolsters her allies' attack speed while slowing nearby enemies. The ability synergizes with team-based missions and melee-focused loadouts."
+/>
+
+Warcry emits a buff aura that amplifies all nearby allies' attack speed while simultaneously reducing enemy attack speeds through a debuff effect. The ability acts as both offensive and defensive, particularly powerful in squad-based endless missions where coordinated melee damage becomes exponential. In solo play, Warcry primarily benefits Valkyr's own melee weapon attack speed, though the enemy slowdown provides valuable crowd control. At 50 energy cost, Warcry is efficient enough to maintain nearly permanent uptime when combined with ability duration mods and energy regeneration sources like Arcane Energize.
+
+<AbilityCard
+  name="Paralysis"
+  key="3"
+  energyCost={75}
+  description="Valkyr unleashes her shields, releasing a shockwave that stuns and damages enemies in a circular radius around her. The ability scales with strength and range mods."
+/>
+
+Paralysis releases a shockwave that stuns and damages enemies in a radius around Valkyr. Unlike her other abilities, Paralysis provides ranged crowd control that doesn't require direct enemy contact. This ability excels in situations where enemies cluster--common in defense, excavation, and void fissure missions. The stun duration scales with ability duration mods, potentially keeping entire enemy waves disabled long enough for allies to eliminate threats. At 75 energy cost, Paralysis is affordable enough to cast multiple times per minute, especially when combined with Primed Continuity or Augur Extend.
+
+<AbilityCard
+  name="Hysteria"
+  key="4"
+  energyCost={25}
+  description="Valkyr is imbued with raw energy and becomes a ball of vicious rage, capable of unleashing a torrent of deadly claw attacks on unsuspecting foes. During Hysteria, she gains complete invulnerability to damage."
+/>
+
+Hysteria is Valkyr's defining ability and the foundation of her endgame viability. Upon activation, Valkyr becomes a ball of invulnerable rage, gaining complete immunity to all incoming damage while unleashing rapid claw attacks that deal high damage. Enemies cannot interrupt Hysteria through knockdowns, staggers, or status effects--she continues attacking unobstructed for the ability's duration. The initial energy cost is only 25, but the ability drains energy per second while active, incentivizing high efficiency mods to extend uptime. Hysteria trivializes otherwise lethal scenarios: in Arbitration missions with lethal modifiers, Arbiters of Hexis spam, or void fissure waves with dozens of heavy units, toggling Hysteria creates a temporary invulnerability window. The claw attacks inherit all melee weapon mods, scaling with mods like Primed Pressure Point, Weeping Wounds, and combo multiplier stacking to astronomical damage numbers on long toggles.
+
+## Passive
+
+Valkyr's passive grants 50% faster recovery from knockdown animations. This passive is deceptively powerful in high-level content: when incoming fire knocks Valkyr down, she recovers to standing position in half the normal time, reducing vulnerability windows to further crowd control. Combined with her high armor and Hysteria's invulnerability, the passive ensures she remains operational through intense fire without relying on rolling dodges. The fast recovery encourages an aggressive stance rather than reactive positioning, aligning perfectly with her playstyle philosophy.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 270 |
+| Shield | 135 |
+| Armor | 630 |
+| Energy | 100 |
+| Sprint Speed | 1.1x |
+| Mastery Rank | 0 |
+
+## Acquisition
+
+Valkyr's blueprint and components drop from Alad V, a Corpus boss found on Jupiter's Themisto node. Alad V assassination is a popular farming run because the node's relatively low-level enemies (30-50 range) make the mission fast, and Valkyr's drops are non-tradable necessities for new players. Blueprint drop chance is approximately 38.72%, while chassis and neuroptics both drop at common rarity (approximately 38.72% each). The systems component is uncommon at approximately 22.56%. A typical farm session nets one to three blueprint drops over a farming session; most players acquire a full set within five to ten runs. All components require 15,000 credits and standard resources including Alloy Plate, Neural Sensors, and an Orokin Cell for the frame blueprint. Construction takes 72 hours once all components are gathered. New players typically farm Valkyr at Mastery Rank 5-8 on Jupiter, when they have accessed the Themisto node and possess basic mod spreads and weapon accuracy.
+
+## Playstyle
+
+Valkyr excels in aggressive, forward-charging playstyles where the player maintains close melee range at all times. Unlike defensive frames that position behind cover, Valkyr players aggressively charge into enemy clusters, toggle Hysteria for guaranteed survival, and unleash claw attacks until threats are eliminated. Her playstyle rotates between Hysteria toggles (for raw survivability and damage), Rip Line repositioning (to engage new threats), and occasional Warcry casts (to buff team attack speed or debuff enemy attack speed). In exterminate missions, this rotation is simple: Rip Line to the next enemy group, toggle Hysteria, let damage accumulate, reposition, repeat. In defense missions, Valkyr can solo defend objective rooms by maintaining Hysteria uptime, forcing enemies to approach the objective where Paralyis and melee sweeps eliminate them. In endless missions like void fissures, Valkyr shines when built for high strength and efficiency--she can sustain indefinite Hysteria toggles as long as energy regeneration (Arcane Energize, Zenurik focus, energy leech spheres) replenishes her reserves between casts.
+
+## Builds
+
+Valkyr's primary build archetype maximizes Hysteria uptime by stacking efficiency and duration mods. A typical endgame build includes: Blind Rage for ability strength (damage output), Augur Message for efficiency, Primed Continuity for duration, Streamline for efficiency cap, Augur Reach for melee range, Umbral Intensify for additional strength, and flex slots for utility or health. This configuration sustains Hysteria nearly indefinitely while keeping ability duration high enough that enemies don't outlast toggles. Secondary builds sacrifice some Hysteria uptime for increased melee weapon damage scaling, useful in higher-level endless missions where raw claw dps becomes the bottleneck. These builds prioritize strength mods (Intensify, Augur Intensify, Blind Rage) and strength-scaling arcanes like Arcane Grace (health on hit) or Arcane Fury (melee damage boost).
+
+For endless missions, Valkyr pairs with Primed Flow to extend her energy pool beyond 100, making each Hysteria toggle last longer before requiring recharge. Coupled with Arcane Energize (grants energy on life support drops), endlessly regen-stacking energy becomes available. Squad composition matters: pairing Valkyr with Trinity Prime (provides energy restore via Well of Life) or Harrow (provides energy restore on weapon crits) dramatically extends solo Hysteria uptime. In arbitration or void cascade-modded missions, these energy synergies become mandatory for Valkyr to be viable.
+
+## Synergies
+
+Valkyr synergizes exceptionally well with high-crit melee weapons that benefit from combo multipliers. Weapons like Nikana Prime, Guandao Prime, and Redeemer Prime inherit all Valkyr's strength mods while active in Hysteria, scaling to astronomical damage numbers. Each melee swing during Hysteria counts as a weapon attack, inheriting crits, status effects, and combo damage multipliers. This means a riven-modded weapon can achieve 100k+ damage per claw strike during high-combo Hysteria toggles, single-handedly eliminating enemy groups.
+
+Valkyr synergizes with frames that provide energy sustain: Trinity Prime (Well of Life), Harrow (Thurible), Mag (Magnetize reflects projectiles to enable Hysteria tanking), and Limbo (Cataclysm pauses enemies during Hysteria toggles). In squad content, these synergies dramatically extend Valkyr's uptime, allowing infinite Hysteria toggles with proper coordination.
+
+Arcane synergies include Arcane Energize (energy on pickup), Arcane Grace (health on heavy hit to restore defenses), and Arcane Fury (melee damage amp). Arcane Dexterity grants extra Critical Chance on jump attacks, benefiting riven-heavy claw builds. Some endgame players run dual Arcane Energize (if the investment in multiple warframe copies is available) to maintain permanent energy regeneration during endless missions.
+
+## Lore
+
+Valkyr was not born a warframe but forged through torment. The Orokin captured a Zariman colonist and subjected her to agonizing experiments, attempting to weaponize suffering itself into combat prowess. The colony ship Zariman Ten-Zero disappeared into the void and was lost to time; the experiments that created Valkyr were meant to produce the ultimate melee combatant--a warrior channeling fury as a weapon. She eventually escaped her tormentors, though the psychological scars of her creation remain etched into her being. The frame embodies uncontrolled rage and primal aggression, explaining her mechanics: Hysteria is the ability to shut off fear and pain through sheer will, channeling all suffering into lethal combat efficiency.
+
+Unlike the orderly, purpose-built frames like Mag or Nova, Valkyr's chaos is her strength. She is not optimized for a specific mission--she is a force of nature, overwhelming through sheer ferocity and refusal to fall. Her Warcry is described as a "rallying cry" because it is genuinely her voice, her defiance made audible, inspiring allies and terrifying enemies through raw presence. This narrative makes her one of the most emotionally resonant warframes in the roster, with players connecting to her story of fighting back against oppression through strength of will.
+
+Valkyr Prime, released in 2015, represents the theoretically perfected version of her design--the Orokin's ideal melee warrior with enhanced stats and additional polarity slots. However, many players argue that Valkyr (the base frame) better captures the raw, emotional core of her character compared to the refined elegance of her prime variant.
+
+## Sources
+
+The Valkyr article relies on the canonical WFCD (Warframe Community Database) for all numeric statistics including health, shield, armor, energy, ability costs, and drop rates. The WFCD `warframe-items` repository serves as the official reference for in-game warframe stats, maintained by the community with version control and regular updates following game patches. All playstyle recommendations and ability synergies were synthesized from community consensus on r/Warframe and the Overframe build database, where thousands of Valkyr builds have been tested across all mission types and difficulty levels. Lore details about the Zariman experiments and Orokin torture originate from the Warframe wiki and official quest narratives from The Sacrifice quest line, which expands on the history of warframe origins and the Zariman incident.

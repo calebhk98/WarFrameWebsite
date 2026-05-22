@@ -1,0 +1,74 @@
+---
+slug: emergence-renewed
+name: Emergence Renewed
+type: operator
+maxRank: 5
+effect: "On Energy Depleted: Increase Energy Regeneration by [cooldown]% over 5s. Cooldown: 30s"
+perRankStats:
+  - rank: 0
+    stats: { cooldown: 50 }
+  - rank: 1
+    stats: { cooldown: 100 }
+  - rank: 2
+    stats: { cooldown: 150 }
+  - rank: 3
+    stats: { cooldown: 200 }
+  - rank: 4
+    stats: { cooldown: 250 }
+  - rank: 5
+    stats: { cooldown: 300 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation B"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Emergence_Renewed"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Emergence Renewed is an operator arcane that accelerates energy regeneration when the warframe's energy pool is fully depleted. When energy hits zero, the arcane triggers an increased energy regeneration rate over 5 seconds, helping energy-hungry frames recover their pool faster after running dry. A 30-second cooldown limits how often the effect fires, making energy management still necessary but reducing the penalty of hitting empty.
+
+The energy regeneration increase scales with rank, expressed in the perRankStats as the regeneration percentage bonus. At rank 0, 50% increased regeneration applies for 5 seconds on energy depletion. At rank 5, 300% increased regeneration fires, substantially accelerating energy recovery. Frames that cast abilities until empty and then need to recover quickly benefit most from this arcane.
+
+## Effect
+
+Emergence Renewed activates the moment the warframe's energy pool reaches zero from ability usage or energy drain effects. The arcane applies an energy regeneration boost lasting 5 seconds, then the 30-second cooldown begins. During the regeneration window, energy fills back into the pool at the increased rate, allowing fast follow-up ability casts if the energy pool recovers sufficiently within the window.
+
+The trigger condition is energy depletion specifically -- not low energy, but empty energy. Frames that drain energy completely through Streamline+high-cost ability spam, Saryn spore spreading, or toggled channel ability drain cycles trigger Renewed at the moment the pool bottoms out. The 30-second cooldown means Renewed can fire approximately twice per minute in active combat, providing periodic recovery pulses rather than continuous sustain.
+
+## Stats per rank
+
+| Rank | Energy Regen Bonus | Duration | Cooldown |
+|------|-------------------|---------|---------|
+| 0 | +50% | 5s | 30s |
+| 1 | +100% | 5s | 30s |
+| 2 | +150% | 5s | 30s |
+| 3 | +200% | 5s | 30s |
+| 4 | +250% | 5s | 30s |
+| 5 | +300% | 5s | 30s |
+
+## Acquisition
+
+Emergence Renewed drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation B at 2%. Both sources are available after completing Angels of the Zariman. Void Cascade rotation B requires completing the first rotation interval, obtainable in runs of moderate length. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Emergence Renewed complements high-energy-cost builds that regularly run their energy pools dry during combat. Frames relying on Fleeting Expertise or without Primed Flow that hit empty energy during extended ability cycling get a consistent recovery boost after each depletion event. Channeled-ability builds that toggle abilities on and off repeatedly, potentially depleting the pool, get value from the periodic regeneration burst after each empty cycle.
+
+Frames using Zenurik Wellspring focus school already receive energy regeneration passively; Emergence Renewed stacks its effect on top, providing additional recovery specifically at the depletion point where Wellspring regeneration alone is too slow. The 30-second cooldown prevents the arcane from covering every depletion event in rapid-cast builds, so it functions as a recovery accelerator rather than a replacement for energy management.
+
+## Notes
+
+The arcane triggers on energy depletion regardless of cause -- ability casts, channeled ability drain, Rift Torrent energy drain from enemies, or Transient Fortitude interaction with base costs. Energy depletion from taking damage against Magnetic-procced shields does not affect the ability energy pool and does not trigger Renewed. The regeneration boost applies to the standard energy regeneration tick rate and is not equivalent to energy pickup or ability-grant mechanics. Multiple Emergence Renewed arcanes cannot be equipped simultaneously.
+
+## Sources
+
+- WFCD warframe-items dataset provides energy regeneration percentages and cooldown values for Emergence Renewed.
+- Fandom wiki entry for [Emergence Renewed](https://warframe.fandom.com/wiki/Emergence_Renewed) covers energy depletion trigger interactions and regeneration timing.

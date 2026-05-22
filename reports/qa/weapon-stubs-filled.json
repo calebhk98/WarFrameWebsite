@@ -1,0 +1,512 @@
+{
+  "generated_at": "2026-05-21",
+  "stubs_filled": 70,
+  "total_stubs": 70,
+  "avg_words": 662,
+  "ci_typecheck": "pass",
+  "ci_build": "pass",
+  "ci_test": "pass",
+  "all_bodies_500_plus": true,
+  "sources_min_2": true,
+  "ascii_only": true,
+  "section_order": [
+    "Overview",
+    "Stats",
+    "Acquisition",
+    "Variants",
+    "Recommended builds",
+    "Notes"
+  ],
+  "details": [
+    {
+      "slug": "redeemer-prime",
+      "file": "src/content/weapons/redeemer-prime.mdx",
+      "body_word_count": 617,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "riot-848",
+      "file": "src/content/weapons/riot-848.mdx",
+      "body_word_count": 631,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "ripkas",
+      "file": "src/content/weapons/ripkas.mdx",
+      "body_word_count": 649,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "rubico",
+      "file": "src/content/weapons/rubico.mdx",
+      "body_word_count": 568,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "ruhang",
+      "file": "src/content/weapons/ruhang.mdx",
+      "body_word_count": 665,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "ruvox",
+      "file": "src/content/weapons/ruvox.mdx",
+      "body_word_count": 646,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sampotes",
+      "file": "src/content/weapons/sampotes.mdx",
+      "body_word_count": 651,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sancti-castanas",
+      "file": "src/content/weapons/sancti-castanas.mdx",
+      "body_word_count": 673,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sancti-magistar",
+      "file": "src/content/weapons/sancti-magistar.mdx",
+      "body_word_count": 681,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sancti-tigris",
+      "file": "src/content/weapons/sancti-tigris.mdx",
+      "body_word_count": 668,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sarofang",
+      "file": "src/content/weapons/sarofang.mdx",
+      "body_word_count": 654,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sarpa",
+      "file": "src/content/weapons/sarpa.mdx",
+      "body_word_count": 654,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "scindo",
+      "file": "src/content/weapons/scindo.mdx",
+      "body_word_count": 660,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "scourge-prime",
+      "file": "src/content/weapons/scourge-prime.mdx",
+      "body_word_count": 665,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "scourge",
+      "file": "src/content/weapons/scourge.mdx",
+      "body_word_count": 643,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "secura-dual-cestra",
+      "file": "src/content/weapons/secura-dual-cestra.mdx",
+      "body_word_count": 670,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "secura-lecta",
+      "file": "src/content/weapons/secura-lecta.mdx",
+      "body_word_count": 684,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "secura-penta",
+      "file": "src/content/weapons/secura-penta.mdx",
+      "body_word_count": 664,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "seekalla",
+      "file": "src/content/weapons/seekalla.mdx",
+      "body_word_count": 665,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "seer",
+      "file": "src/content/weapons/seer.mdx",
+      "body_word_count": 661,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sepfahn",
+      "file": "src/content/weapons/sepfahn.mdx",
+      "body_word_count": 664,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sepulcrum",
+      "file": "src/content/weapons/sepulcrum.mdx",
+      "body_word_count": 649,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "serro",
+      "file": "src/content/weapons/serro.mdx",
+      "body_word_count": 655,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "shaku",
+      "file": "src/content/weapons/shaku.mdx",
+      "body_word_count": 651,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "shedu",
+      "file": "src/content/weapons/shedu.mdx",
+      "body_word_count": 661,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sheev",
+      "file": "src/content/weapons/sheev.mdx",
+      "body_word_count": 669,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "shtung",
+      "file": "src/content/weapons/shtung.mdx",
+      "body_word_count": 662,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sibear",
+      "file": "src/content/weapons/sibear.mdx",
+      "body_word_count": 668,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sicarus",
+      "file": "src/content/weapons/sicarus.mdx",
+      "body_word_count": 655,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sigma-octantis",
+      "file": "src/content/weapons/sigma-octantis.mdx",
+      "body_word_count": 691,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "silva-aegis-prime",
+      "file": "src/content/weapons/silva-aegis-prime.mdx",
+      "body_word_count": 702,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "silva-aegis",
+      "file": "src/content/weapons/silva-aegis.mdx",
+      "body_word_count": 679,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "simulor",
+      "file": "src/content/weapons/simulor.mdx",
+      "body_word_count": 651,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sirocco",
+      "file": "src/content/weapons/sirocco.mdx",
+      "body_word_count": 656,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "skana-prime",
+      "file": "src/content/weapons/skana-prime.mdx",
+      "body_word_count": 684,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "skiajati",
+      "file": "src/content/weapons/skiajati.mdx",
+      "body_word_count": 673,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "slaytra",
+      "file": "src/content/weapons/slaytra.mdx",
+      "body_word_count": 661,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "snipetron",
+      "file": "src/content/weapons/snipetron.mdx",
+      "body_word_count": 653,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sobek",
+      "file": "src/content/weapons/sobek.mdx",
+      "body_word_count": 649,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "soma",
+      "file": "src/content/weapons/soma.mdx",
+      "body_word_count": 666,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sonicor",
+      "file": "src/content/weapons/sonicor.mdx",
+      "body_word_count": 650,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "spectra-vandal",
+      "file": "src/content/weapons/spectra-vandal.mdx",
+      "body_word_count": 674,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "spectra",
+      "file": "src/content/weapons/spectra.mdx",
+      "body_word_count": 655,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "spira",
+      "file": "src/content/weapons/spira.mdx",
+      "body_word_count": 656,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sporothrix",
+      "file": "src/content/weapons/sporothrix.mdx",
+      "body_word_count": 663,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "stahlta",
+      "file": "src/content/weapons/stahlta.mdx",
+      "body_word_count": 658,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "staticor",
+      "file": "src/content/weapons/staticor.mdx",
+      "body_word_count": 645,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "steflos",
+      "file": "src/content/weapons/steflos.mdx",
+      "body_word_count": 650,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "stradavar-prime",
+      "file": "src/content/weapons/stradavar-prime.mdx",
+      "body_word_count": 675,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "stradavar",
+      "file": "src/content/weapons/stradavar.mdx",
+      "body_word_count": 653,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "stropha",
+      "file": "src/content/weapons/stropha.mdx",
+      "body_word_count": 677,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "strun-prime",
+      "file": "src/content/weapons/strun-prime.mdx",
+      "body_word_count": 671,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "strun-wraith",
+      "file": "src/content/weapons/strun-wraith.mdx",
+      "body_word_count": 676,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "strun",
+      "file": "src/content/weapons/strun.mdx",
+      "body_word_count": 653,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "stubba",
+      "file": "src/content/weapons/stubba.mdx",
+      "body_word_count": 648,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "stug",
+      "file": "src/content/weapons/stug.mdx",
+      "body_word_count": 660,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sun-moon",
+      "file": "src/content/weapons/sun-moon.mdx",
+      "body_word_count": 682,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "supra-vandal",
+      "file": "src/content/weapons/supra-vandal.mdx",
+      "body_word_count": 677,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "syam",
+      "file": "src/content/weapons/syam.mdx",
+      "body_word_count": 666,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sybaris",
+      "file": "src/content/weapons/sybaris.mdx",
+      "body_word_count": 665,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "sydon",
+      "file": "src/content/weapons/sydon.mdx",
+      "body_word_count": 664,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "synapse",
+      "file": "src/content/weapons/synapse.mdx",
+      "body_word_count": 654,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "synoid-gammacor",
+      "file": "src/content/weapons/synoid-gammacor.mdx",
+      "body_word_count": 670,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "synoid-heliocor",
+      "file": "src/content/weapons/synoid-heliocor.mdx",
+      "body_word_count": 694,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "synoid-simulor",
+      "file": "src/content/weapons/synoid-simulor.mdx",
+      "body_word_count": 665,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "talons",
+      "file": "src/content/weapons/talons.mdx",
+      "body_word_count": 644,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "tatsu-prime",
+      "file": "src/content/weapons/tatsu-prime.mdx",
+      "body_word_count": 700,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "tatsu",
+      "file": "src/content/weapons/tatsu.mdx",
+      "body_word_count": 681,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "tekko-prime",
+      "file": "src/content/weapons/tekko-prime.mdx",
+      "body_word_count": 697,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    },
+    {
+      "slug": "tekko",
+      "file": "src/content/weapons/tekko.mdx",
+      "body_word_count": 672,
+      "passes_500_floor": true,
+      "frontmatter_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-05-19T00:41:04.784743",
+  "collection": "syndicates",
+  "batch": "all",
+  "total_files": 18,
+  "pass_count": 18,
+  "fail_count": 0,
+  "files": {
+    "arbiters-of-hexis": {
+      "pass": true,
+      "errors": []
+    },
+    "cephalon-simaris": {
+      "pass": true,
+      "errors": []
+    },
+    "cephalon-suda": {
+      "pass": true,
+      "errors": []
+    },
+    "conclave": {
+      "pass": true,
+      "errors": []
+    },
+    "entrati": {
+      "pass": true,
+      "errors": []
+    },
+    "holdfasts": {
+      "pass": true,
+      "errors": []
+    },
+    "kahls-garrison": {
+      "pass": true,
+      "errors": []
+    },
+    "necraloid": {
+      "pass": true,
+      "errors": []
+    },
+    "new-loka": {
+      "pass": true,
+      "errors": []
+    },
+    "nightwave": {
+      "pass": true,
+      "errors": []
+    },
+    "ostron": {
+      "pass": true,
+      "errors": []
+    },
+    "perrin-sequence": {
+      "pass": true,
+      "errors": []
+    },
+    "red-veil": {
+      "pass": true,
+      "errors": []
+    },
+    "solaris-united": {
+      "pass": true,
+      "errors": []
+    },
+    "steel-meridian": {
+      "pass": true,
+      "errors": []
+    },
+    "the-hex": {
+      "pass": true,
+      "errors": []
+    },
+    "vent-kids": {
+      "pass": true,
+      "errors": []
+    },
+    "vox-solaris": {
+      "pass": true,
+      "errors": []
+    }
+  }
+}

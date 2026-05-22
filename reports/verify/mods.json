@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-05-21T23:50:00Z",
+  "collection": "mods",
+  "totalFiles": 229,
+  "totalErrors": 30,
+  "errorSummary": {
+    "h2_order_missing_overview": 28,
+    "non_ascii_characters": 2,
+    "schema": 0,
+    "polarity": 0,
+    "rarity": 0,
+    "type": 0,
+    "word_count": 0,
+    "sources_count": 0,
+    "sources_dates": 0
+  },
+  "criticalFindings": [
+    {
+      "category": "H2 Order (STYLE.md violation)",
+      "count": 28,
+      "issue": "First H2 section uses 'Effects per Rank' instead of required 'Overview'",
+      "requiredOrder": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes"],
+      "affectedFiles": [
+        "abating-link.mdx",
+        "abundant-mutation.mdx",
+        "accumulating-whipclaw.mdx",
+        "aegis-gale.mdx",
+        "afterburner.mdx",
+        "airburst-rounds.mdx",
+        "ambush.mdx",
+        "antimatter-mine.mdx",
+        "assimilate.mdx",
+        "augmented-sonar.mdx",
+        "axios-javelineers.mdx",
+        "balefire-surge.mdx",
+        "ballistic-bullseye.mdx",
+        "beguiling-lantern.mdx",
+        "biting-frost.mdx",
+        "blazing-pillage.mdx",
+        "blending-talons.mdx",
+        "blinding-reave.mdx",
+        "blood-forge.mdx",
+        "calm-frenzy.mdx",
+        "capacitance.mdx",
+        "cataclysmic-continuum.mdx",
+        "cataclysmic-gate.mdx",
+        "catapult.mdx",
+        "cathode-current.mdx",
+        "celestial-stomp.mdx",
+        "champions-blessing.mdx",
+        "chaos-sphere.mdx"
+      ]
+    },
+    {
+      "category": "Non-ASCII Characters (STYLE.md violation)",
+      "count": 2,
+      "issue": "Files contain Unicode right single quotation mark (U+2019) instead of ASCII apostrophe",
+      "affectedFiles": [
+        {
+          "file": "antimatter-absorb.mdx",
+          "position": 247,
+          "character": "''' (U+2019)"
+        },
+        {
+          "file": "prey-of-dynar.mdx",
+          "position": 160,
+          "character": "''' (U+2019)"
+        }
+      ]
+    }
+  ],
+  "schemaValidation": {
+    "status": "PASS",
+    "details": "All files have valid frontmatter with required fields: name, slug, polarity, rarity, drain, maxRank, type, effect"
+  },
+  "enumValidation": {
+    "polarities": "PASS",
+    "rarities": "PASS",
+    "modTypes": "PASS"
+  },
+  "contentValidation": {
+    "wordCount": "PASS (all >= 300 words)",
+    "sources": "PASS (all files have >= 2 sources with accessedAt dates in ISO format)"
+  },
+  "wfcdSpotCheck": {
+    "note": "WFCD data appears incomplete in Mods.json - Serration only has 4 ranks in levelStats but file correctly declares maxRank: 10",
+    "wfcdSerration": {
+      "baseDrain": 2,
+      "polarity": "madurai",
+      "rarity": "Uncommon",
+      "levelStatsCount": 4
+    },
+    "fileSerration": {
+      "drain": 4,
+      "polarity": "madurai",
+      "rarity": "uncommon",
+      "maxRank": 10,
+      "perRankStatsCount": 11
+    },
+    "recommendation": "WFCD source data for Mods.json may need refresh; file values appear canonical per game mechanics"
+  },
+  "sampled": ["serration", "streamline", "split-chamber", "point-blank", "rolling-guard"],
+  "verifyDate": "2026-05-21",
+  "notes": "Verification checks: (1) Zod schema parses all frontmatter, (2) word_count >= 300 for all, (3) sources >= 2 with ISO accessedAt, (4) H2 order per STYLE.md, (5) ASCII-only content, (6) polarity/rarity/type enums valid, (7) perRankStats structure validated"
+}

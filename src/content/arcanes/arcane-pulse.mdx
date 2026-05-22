@@ -1,0 +1,91 @@
+---
+slug: arcane-pulse
+name: Arcane Pulse
+type: warframe
+maxRank: 5
+effect: "On Health Pickup: [chance]% chance to restore [health] Health to allies within [range]m. [cooldown]s cooldown"
+perRankStats:
+  - rank: 0
+    stats: { chance: 60, health: 50, range: 25, cooldown: 15 }
+  - rank: 1
+    stats: { chance: 60, health: 100, range: 25, cooldown: 15 }
+  - rank: 2
+    stats: { chance: 60, health: 150, range: 25, cooldown: 15 }
+  - rank: 3
+    stats: { chance: 60, health: 200, range: 25, cooldown: 15 }
+  - rank: 4
+    stats: { chance: 60, health: 250, range: 25, cooldown: 15 }
+  - rank: 5
+    stats: { chance: 60, health: 300, range: 25, cooldown: 15 }
+drops:
+  - source: "Eidolon Gantulyst capture"
+    chance: 0.0529
+    note: "Per WFCD drop tables."
+  - source: "Zariman Void Skirmish rotation C"
+    chance: 0.0282
+    note: "Per WFCD drop tables."
+  - source: "Venus/Vesper Strait Skirmish rotation C"
+    chance: 0.0345
+    note: "Per WFCD drop tables."
+  - source: "Duviri Endless Tier 1/3/9"
+    chance: 0.0067
+    note: "Rare legendary drop from Duviri Endless content."
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Pulse"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Arcane Pulse is a rare warframe arcane that transforms health pickups into area-of-effect healing events, turning individual healing actions into squad-wide utility. The 60% trigger chance ensures reliable proc frequency during sustained combat; players collecting health drops consistently maintain party healing output independent of frame choice or ability kit. Unlike pure support arcanes tied to ability usage or frame mechanics, Pulse enables all frames to contribute to squad survivability through passive health-pickup interaction.
+
+Pulse's primary strength lies in decoupling healing from ability slots: support-oriented frames gain offensive capability by equipping Pulse alongside damage-dealing arcanes, while damage-dealers with Pulse equipped provide unexpected healing value. The 25-meter radius enables healing teammates across large indoor spaces and enables squad coverage in open-world missions. The 15-second cooldown prevents chain-triggering during rapid pickup collection while maintaining uptime across sustained team engagements.
+
+## Effect
+
+Arcane Pulse activates whenever the warframe collects a health pickup (dropped by enemies or spawned by items). The 60% base trigger chance means three in five health pickups activate Pulse; in high-enemy-density missions, Pulse procs multiple times per minute. Each proc restores a flat health value to all allies within 25 meters, regardless of their maximum health. Unlike percentage-based healing, Pulse's fixed values provide identical restoration to Inaros (4000 max health) and Wisp (100 max health), making it proportionally more valuable for squishy frames.
+
+The 15-second internal cooldown prevents multiple Pulse triggers from the same collection event but allows multiple overlapping procs from different health pickups. Squad members standing 25 meters away automatically receive healing without requiring proximity to the health drop source. The arcane applies globally to all team members, enabling squad-wide sustain from a single equipped warframe.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Health Restored | Radius | Cooldown | Notes |
+|------|----------------|-----------------|--------|----------|-------|
+| 0 | 60% | 50 | 25m | 15s | Minimal healing per proc. |
+| 1 | 60% | 100 | 25m | 15s | Doubled healing from Rank 0. |
+| 2 | 60% | 150 | 25m | 15s | Moderate healing for support roles. |
+| 3 | 60% | 200 | 25m | 15s | Strong squad healing per proc. |
+| 4 | 60% | 250 | 25m | 15s | Powerful per-proc restoration. |
+| 5 | 60% | 300 | 25m | 15s | Maximum healing; +1 Arcane Revive. |
+
+## Acquisition
+
+Arcane Pulse drops primarily from Eidolon Gantulyst encounters with roughly 5% drop chance per capture, making it one of the rarest primary eidolon drops. Consistent tridolon hunters farm Gantulysts for Pulse within 20--25 farming sessions. Zariman Void Skirmish rotation C and Venus Vesper Strait rotation C offer 2.8% and 3.5% alternate sources respectively at lower difficulty but longer mission duration. Duviri Endless provides rare legendary drops (0.67%) for extreme-difficulty farming routes.
+
+Ranking to tier 5 takes 120 hours of mastering. Pulse's universal utility and moderate drop rate keep trading post prices accessible for players building support-oriented loadouts.
+
+## Best on
+
+Arcane Pulse excels on support-oriented warframes with healing-enabling abilities: Trinity (Health Conversion, Blessing synergies), Oberon (Renewal stacking), Protea (health-scaling abilities), and Wisp (healing motes) all benefit from Pulse's supplementary restoration. Tank-focused frames (Rhino, Wukong, Nidus) pair Pulse with high-damage primaries to enable self-healing during sustained combat. Damage-dealer frames (Mesa, Saryn, Equinox) equip Pulse as an unexpected utility layer that enables squad sustain without sacrificing offensive ability slots.
+
+Frames with limited healing tools benefit most from Pulse because the arcane provides squad-wide restoration independent of frame mechanics. Conversely, frames already equipped with dedicated healing abilities (Trinity Blessing, Restoration) provide diminishing returns because the arcane complements rather than amplifies existing healing systems.
+
+## Builds that use it
+
+Support-oriented builds universally pair Pulse with Range and Duration mods to maximize team coverage and healing uptime. Solo infinite survival builds use Pulse to maintain personal health during extended engagements without relying on frame-specific healing abilities. Squad healing builds layer Pulse with Trinity's Blessing and Oberon's Renewal to create overlapping restoration windows. Hybrid offense-support builds pair Pulse with damage-dealing arcanes (Fury, Velocity) to enable balanced team contribution.
+
+All-healing squad compositions (Trinity, Oberon, Wisp, Pulse-equipped frame) create overlapping restoration networks that maintain squad health at permanent maximum despite incoming damage. Hybrid tanks use Pulse to enable offensive builds that provide healing feedback through passive arcane interaction rather than ability slot dedication.
+
+## Notes
+
+Arcane Pulse's health restoration is fixed-value rather than percentage-based; all teammates receive identical healing regardless of maximum health or current health percentage. The 15-second cooldown resets per unique health pickup collected; rapid collection of multiple drops within the cooldown window still triggers only once. Enemies also drop health pickups via enemy mod interactions (Augur Mods, Arcane Healing helmets); these player-triggered drops do not activate Pulse because Pulse requires warframe collection. The 25-meter radius enables healing across large indoor spaces and line-of-sight obstacles do not block the healing effect.
+
+## Sources
+
+- WFCD warframe-items dataset documents trigger mechanics and healing value scaling per rank.
+- Fandom wiki for Arcane Pulse provides support frame synergies and squad healing strategies.

@@ -1,0 +1,74 @@
+---
+slug: arcane-magus-glitch
+name: Magus Glitch
+type: operator
+maxRank: 5
+effect: "On Transference Static: [chance]% chance to negate Transference Static."
+perRankStats:
+  - rank: 0
+    stats: { chance: 17 }
+  - rank: 1
+    stats: { chance: 34 }
+  - rank: 2
+    stats: { chance: 51 }
+  - rank: 3
+    stats: { chance: 68 }
+  - rank: 4
+    stats: { chance: 85 }
+  - rank: 5
+    stats: { chance: 102 }
+drops:
+  - source: "Void Cascade on Zariman"
+    chance: 2.5
+    rarity: "uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Glitch"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Glitch negates Transference Static when it would affect the operator. Transference Static is a debuff applied by certain enemies (notably Sentient units) that disrupts operator transference, forcing a cooldown before the operator can return to their warframe or switch to operator mode. Magus Glitch provides a passive chance to resist each Transference Static application, reducing how often this mechanic disrupts operator-warframe cycling.
+
+At rank 5, the 102% resistance chance provides effective immunity to Transference Static from external sources. Players who frequently use operator mode in Sentient-heavy content (Eidolon hunts, Orphix missions, Sentient invasions) benefit from uninterrupted transference cycling.
+
+## Effect
+
+Each Transference Static application checks against the Magus Glitch resistance chance. On success, the proc is negated and does not apply the Static debuff. At rank 0, 17% resistance negates roughly one in six Static applications -- reducing disruption frequency modestly. At rank 5, 102% is functionally 100% immunity; Transference Static from enemy sources cannot apply to the operator.
+
+The resistance functions passively without any trigger input from the player. No action is required to activate or maintain the negation chance.
+
+## Stats per rank
+
+| Rank | Transference Static Resistance |
+|------|-----------------------------:|
+| 0 | 17% |
+| 1 | 34% |
+| 2 | 51% |
+| 3 | 68% |
+| 4 | 85% |
+| 5 | 102% (immune) |
+
+## Acquisition
+
+Magus Glitch drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero at 2.5%. The arcane is accessible after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Magus Glitch is most valuable in content where Transference Static occurs frequently. Eidolon hunts involve Sentient units that apply Static to disrupt operator engagement with Eidolon synovias; rank 5 Glitch provides complete immunity during the hunt. Orphix missions with Sentient enemies applying Static benefit from Glitch preventing the cycling disruption that limits operator combat time. Players who run Madurai Void Strike and rely on rapid operator transference timing find Glitch preserves that timing against Static-applying enemies.
+
+The arcane has negligible value in content without Sentient or Static-applying enemies, such as standard Grineer, Corpus, or Infested missions.
+
+## Notes
+
+Transference Static specifically prevents the operator from entering or exiting operator mode for its duration. Magus Glitch negates the proc before it applies, not after -- a successfully negated Static leaves no debuff to clear. The 102% at rank 5 exceeds the normal 100% cap by design; values above 100% effectively guarantee resistance against all incoming procs of the covered type. Magus Glitch only covers Transference Static, not other operator debuffs or enemy abilities that interact with operator mode.
+
+## Sources
+
+- WFCD warframe-items dataset provides Transference Static resistance chance per rank for Magus Glitch.
+- Fandom wiki entry for [Magus Glitch](https://warframe.fandom.com/wiki/Magus_Glitch) covers Transference Static mechanics and Sentient encounter context.
+

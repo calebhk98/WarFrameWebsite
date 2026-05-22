@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-05-20T06:00:00Z",
+  "sampled": 30,
+  "files_with_errors": 12,
+  "files_fixed_in_place": 12,
+  "issues_by_type": {
+    "wrong_stat_value": 18,
+    "wrong_damage_type": 2,
+    "invented_stat_field": 2,
+    "wrong_acquisition": 2,
+    "yaml_syntax_error": 1,
+    "wrong_tileset_label": 1,
+    "wrong_damage_type_saryn_spores": 1,
+    "arcane_revive_rank_wrong": 3
+  },
+  "examples": [
+    {
+      "file": "src/content/mods/galvanized-aptitude.mdx",
+      "issue": "Completely wrong mod: file invented an 'accuracy' stat that does not exist. Actual effect is Status Chance + On Kill Direct Damage per Status Type. drain was 7 (should be 2), maxRank was 5 (should be 10), all perRankStats wrong.",
+      "fix": "Corrected drain to 2, maxRank to 10, effect string, and all 11 rank stat entries using WFCD Mods.json data. Rewrote body sections to remove all accuracy references."
+    },
+    {
+      "file": "src/content/weapons/nikana-prime.mdx",
+      "issue": "All three damage values wrong (impact/puncture/slash shown as 18/22/32 instead of 9.9/178.2/9.9), masteryRank wrong (11 vs 12), statusChance wrong (0.16 vs 0.28). WFCD Melee.json is authoritative.",
+      "fix": "Corrected damage.impact to 9.9, damage.puncture to 178.2, damage.slash to 9.9, masteryRank to 12, statusChance to 0.28. Updated body damage section accordingly."
+    },
+    {
+      "file": "src/content/weapons/kuva-nukor.mdx",
+      "issue": "Base elemental damage listed as electricity (wrong) -- WFCD shows radiation. criticalChance wrong (0.16 vs 0.07), criticalMultiplier wildly wrong (1.3 vs 5.0), statusChance wrong (0.40 vs 0.50), magazine wrong (40 vs 77), reload wrong (1.8 vs 2.0).",
+      "fix": "Corrected elemental type to radiation, criticalChance to 0.07, criticalMultiplier to 5.0, statusChance to 0.50, magazine to 77, reload to 2.0. Updated all body text references to electricity to radiation."
+    },
+    {
+      "file": "src/content/weapons/laetum.mdx",
+      "issue": "All stats fabricated: masteryRank 7 (should be 14), criticalChance 0.20 (0.22), criticalMultiplier 2.0 (2.2), statusChance 0.25 (0.22), fireRate 11.67 (2.5), magazine 30 (12), damage values all wrong (5.4/4.1/5.2 vs 64/96/0).",
+      "fix": "Corrected all frontmatter stats from WFCD Secondary.json. Updated stat table in body."
+    },
+    {
+      "file": "src/content/weapons/ignis-wraith.mdx",
+      "issue": "criticalChance 0 (should be 0.17), criticalMultiplier 1.0 (should be 2.5), magazine listed as infinite/drain-based (WFCD says 200), reload listed as N/A (WFCD says 1.7s), credits cost 15000 (WFCD says 30000), acquisition source entirely wrong (WFCD shows Clan Dojo research + Railjack Veil Proxima caches).",
+      "fix": "Corrected criticalChance to 0.17, criticalMultiplier to 2.5, magazine to 200, reload added at 1.7, credits to 30000. Rewrote acquisition source to Clan Dojo Chem Lab / Railjack."
+    },
+    {
+      "file": "src/content/weapons/soma-prime.mdx",
+      "issue": "Magazine wrong (100 vs 200 per WFCD), reload time wrong (2.4s vs 3.0s per WFCD).",
+      "fix": "Corrected magazine to 200, reload to 3.0. Updated stat table and two body text occurrences."
+    },
+    {
+      "file": "src/content/mods/blood-rush.mdx",
+      "issue": "drain: 6 in frontmatter and stat table; WFCD reports baseDrain: 4.",
+      "fix": "Corrected drain to 4 in frontmatter and all table rows."
+    },
+    {
+      "file": "src/content/mods/condition-overload.mdx",
+      "issue": "drain: 7 (WFCD says 10). Body text claims 'six distinct status types' -- Warframe has 13+ damage status types (heat, cold, electric, toxin, blast, gas, magnetic, radiation, viral, corrosive, slash, puncture, impact, etc.).",
+      "fix": "Corrected drain to 10 in frontmatter and stat table. Rewrote body paragraph to remove the six-types false claim."
+    },
+    {
+      "file": "src/content/builds/saryn-prime/spore-spread.mdx",
+      "issue": "File claims Saryn's Spores deal 'toxin damage'. Saryn Spores deal Corrosive damage (not toxin). Frontmatter playstyle, strengths, and body prose all used incorrect damage type.",
+      "fix": "Changed all 'toxin damage' references for Spores to 'Corrosive damage'. Updated strengths bullet to correctly describe Corrosive armor strip."
+    },
+    {
+      "file": "src/content/missions/arbitration.mdx",
+      "issue": "YAML syntax error: name field was `Arbitration (Void Cascade)\"` with a stray trailing double-quote breaking YAML parsing.",
+      "fix": "Corrected to `name: \"Arbitration\"` -- valid quoted YAML string."
+    },
+    {
+      "file": "src/content/missions/netracells.mdx",
+      "issue": "Body text says 'Zariman tileset' but frontmatter correctly identifies location as Deimos. Netracells are on the Deimos Cambion Drift tileset, not the Zariman.",
+      "fix": "Corrected body text to 'Deimos Cambion Drift tileset'."
+    },
+    {
+      "file": "src/content/arcanes/arcane-energize.mdx",
+      "issue": "Stat table showed Arcane Revive unlocking at rank 4, but WFCD confirms it unlocks at rank 3.",
+      "fix": "Updated rank 3 table row note to show Arcane Revive unlocked. Also applied same fix to arcane-grace.mdx and arcane-guardian.mdx which had the same error."
+    }
+  ],
+  "ci": "pass"
+}

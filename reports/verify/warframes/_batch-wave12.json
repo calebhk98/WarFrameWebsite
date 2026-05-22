@@ -1,0 +1,52 @@
+{
+  "pass": true,
+  "checked_at": "2026-05-19T02:48:08.223Z",
+  "files": {
+    "rhino": {
+      "pass": true,
+      "errors": [],
+      "wordCount": 1788
+    },
+    "rhino-prime": {
+      "pass": true,
+      "errors": [],
+      "wordCount": 1576
+    },
+    "saryn": {
+      "pass": true,
+      "errors": [],
+      "wordCount": 1703
+    },
+    "saryn-prime": {
+      "pass": true,
+      "errors": [],
+      "wordCount": 1969
+    },
+    "sevagoth": {
+      "pass": true,
+      "errors": [],
+      "wordCount": 1803
+    },
+    "sevagoth-prime": {
+      "pass": true,
+      "errors": [],
+      "wordCount": 2107
+    },
+    "styanax": {
+      "pass": true,
+      "errors": [],
+      "wordCount": 1809
+    },
+    "temple": {
+      "pass": true,
+      "errors": [],
+      "wordCount": 1162
+    }
+  },
+  "summary": {
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "total_errors": 0
+  }
+}

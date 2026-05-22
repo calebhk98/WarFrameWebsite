@@ -1,0 +1,161 @@
+---
+slug: protea-prime
+name: Protea Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 455
+armor: 185
+energy: 200
+sprintSpeed: 1.2
+passive:
+  name: Overtime
+  description: Every 4th ability cast grants +50% Ability Strength for the next cast.
+abilities:
+  - name: Grenade Fan
+    key: "1"
+    energyCost: 25
+    description: >-
+      Tap to deploy grenades in an arc that create a slashing, staggering swirl of
+      shrapnel. Hold to reconfigure grenades as overcharging shield satellites that
+      protect Protea, allies, and companions, with doubled minimum Shield Gate
+      invincibility when shields break.
+    stats: {}
+  - name: Blaze Artillery
+    key: "2"
+    energyCost: 50
+    description: >-
+      Deploy an artillery unit to blast plasma charges at enemies. Each enemy hit
+      increases the power of subsequent plasma attacks, scaling with repeated strikes.
+    stats: {}
+  - name: Dispensary
+    key: "3"
+    energyCost: 35
+    description: >-
+      Deploy a device that generates three pickups after a short delay: an empowered
+      health orb, a universal ammo pack, and an energy orb. Refreshes on subsequent
+      casts to maintain supply.
+    stats: {}
+  - name: Temporal Anchor
+    key: "4"
+    energyCost: 100
+    description: >-
+      Drop a Temporal Anchor which rewinds Protea after a short duration, triggering
+      a temporal implosion. Damage scales based on harm dealt between anchor drop and
+      rewind. Everything expended in that time is returned. Dying while active rewinds
+      Protea to the anchor, though she is knocked down.
+    stats: {}
+acquisition:
+  source: Void Fissure missions (relic farming)
+  blueprintLocations:
+    - "Lith W4, Meso V10, Meso W4, Neo C6 relics (blueprint)"
+    - "Axi P7, Axi P8, Neo P7 relics (chassis)"
+    - "Axi S16, Axi T12, Neo D9, Neo P6 relics (neuroptics)"
+    - "Axi P9, Lith P9, Meso P15 relics (systems)"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2024-05-01"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Protea/Prime"
+    accessedAt: "2026-05-19"
+    title: "Protea Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Protea Prime is the primed variant of Protea, the time-wielding support and utility warframe introduced in Update 29.5. This polished prime iteration retains her signature arsenal of grenades, artillery, and resource generation while offering enhanced baseline statistics. Protea Prime fulfills a unique role as both a dedicated support frame through her Dispensary ability and a defensive/offensive hybrid through her crowd control and rewind mechanics. Her archetype as a time-manipulator with resource-focused abilities makes her indispensable in endless missions and content requiring sustained team support.
+
+## Abilities
+
+<AbilityCard
+  name="Grenade Fan"
+  key="1"
+  energyCost="25"
+  description="Deploy grenades in an arc with dual modes: tap for shrapnel vortex, hold for shield satellites. The satellite configuration protects allies and companions while doubling Shield Gate invincibility."
+/>
+
+Grenade Fan is Protea's primary tool for crowd control and team protection. The tap version (Shrapnel Vortex) creates a slashing swirl that staggers enemies in a cone, useful for momentary breathing room. The hold variant (Shield Satellites) redefines team survivability: each grenade converts to a miniature shield generator orbiting nearby allies. This mode is the core of support-heavy builds, where stacking strength mods maximizes both shield generation and the critical Shield Gate buff. Shield Gate is Warframe's hidden invincibility mechanic that grants 1.5 seconds of damage immunity when shields break; the satellites double this to 3 seconds, transforming the ability into one of the game's most powerful defensive tools.
+
+<AbilityCard
+  name="Blaze Artillery"
+  key="2"
+  energyCost="50"
+  description="Deploy an artillery unit that blasts plasma charges at enemies. Each hit increases subsequent plasma attack power, creating scaling damage potential."
+/>
+
+Blaze Artillery summons a deployable turret that fires homing plasma charges. Unlike most Warframe turrets, this one has a scaling mechanic: with each enemy hit, the next volley deals more damage. In high-enemy-density missions, this stacking can become substantial. Duration mods extend the turret lifetime, while power strength increases both initial damage and the per-hit scaling rate. The turret targets independently, making it effective even when Protea is busy casting other abilities. Positioning matters significantly; deploying it where it has line-of-sight to groups maximizes uptime and stacking damage.
+
+<AbilityCard
+  name="Dispensary"
+  key="3"
+  energyCost="35"
+  description="Summon a device that generates three pickups: a health orb, an ammo pack, and an energy orb. Recasting refreshes the supply, maintaining resource flow."
+/>
+
+Dispensary is Protea's signature support ability and one of the most efficient energy and ammo generation tools in the game. A single cast drops a small drone that, after a brief delay, generates the three pickups simultaneously. Unlike Nekros or Hydroid farm abilities that depend on enemy kills, Dispensary operates on a timer and works in any mission type, including non-combat scenarios. Recasting before the drone despawns allows overlapping coverage, creating near-permanent resource generation for the squad. This ability scales minimally with mods (range affects pickup radius, strength affects generation frequency very slightly), making Dispensary build-agnostic. A four-player squad with a Protea often has zero energy or ammo concerns.
+
+<AbilityCard
+  name="Temporal Anchor"
+  key="4"
+  energyCost="100"
+  description="Drop an anchor and rewind to it after a duration, triggering temporal implosion. Damage scales with harm taken during the rewind window. Dying auto-rewinds Protea to safety."
+/>
+
+Temporal Anchor is Protea's most mechanically complex and utility-focused ability. Upon cast, she places an invisible anchor at her feet. After 4-8 seconds (depending on duration mods), the frame automatically rewinds to the anchor's position, triggering a temporal implosion that damages nearby enemies. The implosion damage is proportional to the total damage Protea absorbed between anchor placement and rewind, making it scale with incoming fire. Additionally, all pickups consumed (energy, ammo, health orbs used) and status effects applied are reversed and restored. The passive invulnerability during rewind means Protea cannot die while an anchor is active--she simply warps back, though knocked down. This makes the ability a panic button for survival and a tool for resetting dangerous positioning without consequences. In practice, Temporal Anchor enables aggressive play by guaranteeing a safe exit from overwhelming fire.
+
+## Passive
+
+Overtime grants +50% Ability Strength every 4th ability cast. This passive encourages varied ability rotations rather than ability spam: casting all four powers in sequence triggers the buff on the next ability, creating a 20% average strength boost across a varied rotation. The passive pairs well with abilities that benefit from strength scaling, particularly Grenade Fan's shield satellites and Blaze Artillery's damage stacking.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 270 |
+| Shield | 455 |
+| Armor | 185 |
+| Energy | 200 |
+| Sprint Speed | 1.2x |
+| Polarity Slots | Madurai, Naramon, Naramon |
+| Aura Polarity | Madurai |
+
+Protea Prime's stat allocation reflects her support role. The 455 shields are the second-highest among warframes, providing immediate burst mitigation before armor scales in. The 185 armor is respectable but not exceptional; her shields and Grenade Fan satellites shoulder the primary defense. Energy capacity of 200 is moderate--sufficient for spamming Dispensary and occasional Temporal Anchors, though builds benefit from Primed Flow or energy regeneration. Sprint speed of 1.2x matches most warframes and supports aggressive repositioning.
+
+## Acquisition
+
+Protea Prime is farmed through Void Fissure relics. Each component (Blueprint, Chassis, Neuroptics, Systems) drops from different relic combinations across the Lith, Meso, Neo, and Axi tiers. Blueprint comes from Lith and Meso relics, making it the quickest component to obtain. Chassis and Systems are rarer drops from Axi relics. Neuroptics split across Axi and Neo relics. A complete set typically requires 15-25 fissure runs depending on refinement and luck. The marketplace price for a full set hovers around 200-250 platinum for all unbuililt parts combined.
+
+Construction requires 25,000 credits, 5 Orokin Cells (farmed from Void Fissure endless modes or Void Cascade), and 72 hours build time. Each component requires additional construction resources (neural sensors, control modules, plastids, etc.) not listed in the main frame cost. Consult the in-game market or the wiki's component crafting page for exact resource breakdowns.
+
+## Playstyle
+
+Protea Prime plays as a hybrid support-DPS frame optimized for team survival and resource sustenance in endless missions. The core playstyle loops around Dispensary: cast once every 20-30 seconds to ensure constant team ammo and energy, freeing squadmates from hunting pickups. Layer Grenade Fan's shield satellites for additional crowd defense, using the hold mode reactively when allies take damage spikes. Blaze Artillery provides independent scaling damage, deployed and left to work while Protea manages other duties.
+
+Temporal Anchor serves as both offense and survival: drop it before engaging a heavy enemy group to guarantee a rewind escape if overwhelmed, or use it mid-combat to reset position and trigger damage. The rewind also refreshes Dispensary pickups if allies consumed them mid-window, creating a full supply reset.
+
+In endless survival, a well-built Protea often enables the squad to run indefinitely without leaving for supplies. In defenses and excavations, her resource generation frees players to focus on offense rather than pickup management. In lower-level content, she trivializes resource scarcity entirely. Her weakness is single-target DPS--none of her abilities excel at burst-killing lone high-armor enemies--making her less suited for assassination-focused missions, though she still contributes through shield support and crowd control.
+
+## Builds
+
+Protea Prime excels in support-first builds emphasizing efficiency, range, and strength. A typical endless-mission loadout pairs Corrosive Projection aura with strength-scaling mods like Umbral Intensify and Augur Strength, extended range via Stretch and Augur Reach, and efficiency mods like Streamline and Primed Flow. Arcane Energize keeps energy stable despite frequent casting. For more aggressive builds, substitute pure strength for a hybrid approach: reduce range slightly, add Blind Rage, and rely on higher ability damage from Blaze Artillery and rewind scaling. Steel Path variants shift toward tankiness, layering armor-scaling effects and Temporal Anchor rewinds to outlast enemy damage.
+
+Custom builds leveraging Helminth subsumes of Roar or Electrical Ledge can amplify damage output without sacrificing the core support loop. Condition Overload on melee synergizes well with Grenade Fan's crowd control, enabling a melee-hybrid variant for players preferring active combat alongside support duty.
+
+## Lore
+
+Behold the child of two fathers. Protea Prime once fulfilled Parvos Granum's vision of a time-wielding guardian crafted to serve the Grinum Void. Now, in her primed form, she upholds the Tenno ideal of defending the defenseless. The prime variant reflects the duality of her design: a frame engineered for conquest repurposed for solidarity. Her Odalisk classification--a reference to Parvos Granum's private security forces--speaks to her origin as a luxury warframe for the wealthy, yet her mechanics of shared resources and team protection align her with Tenno values. The temporal mechanics binding her arsenal echo the Void's nature, manipulation of time as a tool for survival rather than domination.
+
+## Sources
+
+The Warframe community maintains extensive build guides and strategic discussions on Protea Prime across Overframe and Reddit. Her role as an enabler for endless missions has made her a staple recommendation for new and veteran players alike. Tier lists frequently rank her among the top support frames, particularly for survival, excavation, and void fissure missions where resource management defines success. Her playstyle encourages teamwork and squad synergy, making her a popular choice in cooperative endgame content.

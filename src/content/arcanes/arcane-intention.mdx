@@ -1,0 +1,74 @@
+---
+slug: arcane-intention
+name: Arcane Intention
+type: warframe
+maxRank: 5
+effect: "Gain +[health] Max Health per active channeled ability."
+perRankStats:
+  - rank: 0
+    stats: { health: 40 }
+  - rank: 1
+    stats: { health: 80 }
+  - rank: 2
+    stats: { health: 120 }
+  - rank: 3
+    stats: { health: 160 }
+  - rank: 4
+    stats: { health: 200 }
+  - rank: 5
+    stats: { health: 250 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation B"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Intention"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Intention increases maximum health for each active channeled ability the warframe is maintaining. Channeled abilities are toggled abilities that drain energy continuously while active -- Nekros's Desecrate, Valkyr's Hysteria, Saryn's Spores in certain modes, and similar sustained-drain abilities. Each active channeled ability adds a flat maximum health bonus, making the arcane scale with how many channeled abilities the frame keeps active simultaneously.
+
+At rank 5, each active channeled ability adds +250 maximum health. Frames with access to two simultaneous channeled abilities (Nekros with Desecrate and Soul Survivor, Valkyr with Hysteria augmented) gain +500 maximum health while both are active.
+
+## Effect
+
+The maximum health bonus applies passively whenever a channeled ability is toggled on and actively draining energy. The bonus increments by the rank-dependent health value per ability, applying and removing in real time as abilities are toggled. Activating a channeled ability immediately increases maximum health; deactivating it removes the corresponding bonus immediately.
+
+At rank 0, each channeled ability adds +40 maximum health. At rank 5, each adds +250 maximum health. Frames that maintain multiple channeled abilities simultaneously stack the bonus across all active channels. The health bonus is additive with Vitality and other maximum health sources.
+
+## Stats per rank
+
+| Rank | Max Health per Channeled Ability |
+|------|--------------------------------|
+| 0 | +40 |
+| 1 | +80 |
+| 2 | +120 |
+| 3 | +160 |
+| 4 | +200 |
+| 5 | +250 |
+
+## Acquisition
+
+Arcane Intention drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation B at 2%. Both sources are available after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Arcane Intention is most effective on frames that sustain one or more channeled abilities throughout combat. Nekros with Desecrate toggled gains a permanent health bonus while farming. Valkyr during Hysteria activation maintains the bonus for the full Hysteria duration. Frames using ability-drain augments that convert non-channeled abilities into channeled ones (Warding Halo with duration mod adjustments, Saryn's Spore builds that maintain drain) benefit depending on their ability configurations.
+
+The arcane is least effective on frames with no channeled abilities, where it provides no benefit. Frames with access to two simultaneous channeled abilities effectively double the arcane's contribution compared to single-channel frames.
+
+## Notes
+
+The definition of "channeled ability" for Arcane Intention follows the game's internal ability classification -- abilities with sustained energy drain while toggled on. One-shot abilities with a brief energy cost do not qualify regardless of their animation length. The health bonus removal is instantaneous when a channeled ability is deactivated; any current health above the new maximum is capped to the new maximum immediately. Channeled abilities that become free through Fleeting Expertise at maximum efficiency do not lose their channeled status and still contribute to Intention's bonus.
+
+## Sources
+
+- WFCD warframe-items dataset provides maximum health per channeled ability values per rank for Arcane Intention.
+- Fandom wiki entry for [Arcane Intention](https://warframe.fandom.com/wiki/Arcane_Intention) covers channeled ability classification and health bonus timing.

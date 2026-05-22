@@ -1,0 +1,67 @@
+---
+slug: residual-shock
+name: Residual Shock
+type: companion
+maxRank: 3
+effect: "On Kitgun Kill: 20% chance to spawn an electrified spike for [damage]s, dealing 200 Electricity Damage to enemies within 10m. Standing in the area applies Electricity Damage to Theorem Arcanes."
+perRankStats:
+  - rank: 0
+    stats: { damage: 3 }
+  - rank: 1
+    stats: { damage: 6 }
+  - rank: 2
+    stats: { damage: 9 }
+  - rank: 3
+    stats: { damage: 12 }
+drops:
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
+sources:
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Residual_Shock
+    accessedAt: '2026-05-20'
+    publisher: Fandom
+updatedAt: '2026-05-20'
+---
+## Overview
+
+Residual Shock is a companion arcane from the Residual-Theorem set that spawns an electrified spike on Kitgun kills. When a Kitgun kill is secured, there is a 20% chance that an electrified spike appears at the kill location. The spike deals 200 Electricity Damage to all enemies within 10 meters for the rank-dependent duration. Standing in the spike area activates Electricity Damage type for Theorem Arcanes, enabling the Theorem set mechanic based on elemental type proximity.
+
+At rank 3, the electrified spike persists for 12 seconds, providing sustained area Electricity Damage and Theorem Arcane activation for that duration.
+
+## Effect
+
+On each Kitgun kill, the 20% trigger chance is checked. On success, an electrified spike spawns at the kill location. The spike deals 200 Electricity Damage to all enemies within 10 meters continuously while it persists. Electricity Damage applies Electricity status procs (chain electricity to nearby targets) on proc, adding additional area chain damage beyond the spike's direct output. Standing in the spike zone activates Electricity Damage type for Theorem Arcanes -- this is the set link between Residual Shock and Theorem arcanes that use elemental damage type as an activation condition.
+
+At rank 0, spikes last 3 seconds. At rank 3, spikes last 12 seconds, providing a longer denial and Theorem activation window per trigger.
+
+## Stats per rank
+
+| Rank | Spike Duration | Electricity Damage | Spike Radius |
+|------|--------------|-------------------|------------|
+| 0 | 3s | 200 | 10m |
+| 1 | 6s | 200 | 10m |
+| 2 | 9s | 200 | 10m |
+| 3 | 12s | 200 | 10m |
+
+## Acquisition
+
+Residual Shock drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Players building Residual-Theorem arcane sets farm Zariman content for all Residual series arcanes together. Warframe.market provides direct purchase for targeted acquisition.
+
+## Builds that use it
+
+Residual Shock is designed for the Residual-Theorem arcane pairing system. Kitgun-primary builds with high kill rates trigger the 20% spike spawn frequently, placing electrified zones throughout active combat areas. Standing in the spike zones activates Electricity Damage type for any equipped Theorem Arcanes, enabling Theorem arcane interactions that respond to Electricity Damage type.
+
+The 200 Electricity Damage in a 10-meter radius complements Kitgun combat by providing persistent area damage around kill locations, dealing additional Electricity to enemies moving through prior kill zones. Electricity's chain proc behavior -- shocking the initial target and chaining to nearby enemies -- adds further area coverage beyond the direct spike radius.
+
+## Notes
+
+The 20% trigger chance is fixed across all ranks; only the spike duration scales with rank. Multiple spikes from different Kitgun kills can exist simultaneously, creating overlapping damage zones in active combat areas. The 200 Electricity Damage value is fixed and does not scale with weapon stats, companion mods, or player stats -- it is a flat zone damage value per tick. The Electricity Damage type activation for Theorem Arcanes requires the warframe to physically stand within the 10-meter spike radius; moving outside the zone deactivates the Electricity type for Theorem purposes.
+
+## Sources
+
+- WFCD warframe-items dataset provides spike duration values per rank and the 20% trigger chance for Residual Shock.
+- Fandom wiki entry for [Residual Shock](https://warframe.fandom.com/wiki/Residual_Shock) covers electrified spike mechanics and the Theorem Arcane Electricity type interaction.

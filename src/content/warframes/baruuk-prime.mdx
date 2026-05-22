@@ -1,0 +1,172 @@
+---
+slug: baruuk-prime
+name: Baruuk Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 180
+shield: 365
+armor: 240
+energy: 200
+sprintSpeed: 1.2
+passive:
+  name: Variable Restraint
+  description: >-
+    Each action Baruuk takes--dodging projectiles, pacifying enemies--erodes his restraint and builds an internal storm. As restraint diminishes, Baruuk gains up to 90% damage resistance.
+abilities:
+  - name: Elude
+    key: "1"
+    energyCost: 0
+    description: >-
+      Activates a passive dodge state that blocks all incoming projectiles. Does not affect melee attacks. Deactivates after duration or when player attacks; can be manually toggled off.
+    stats: { duration: 12 }
+  - name: Lull
+    key: "2"
+    energyCost: 50
+    description: >-
+      Baruuk emits a calming wave that slows nearby enemies. Enemies take damage-induced sleep. Waking sleepers become disoriented and forget recent events, losing their memory of allies and tactics.
+    stats: { range: 20, slowPct: 0.66 }
+  - name: Desolate Hands
+    key: "3"
+    energyCost: 25
+    description: >-
+      Summons orbiting spectral daggers that seek and destroy enemy weapons, detonating on impact. Range doubles when Elude is active, creating a powerful defensive and offensive synergy.
+    stats: { range: 20, damage: 150 }
+  - name: Serene Storm
+    key: "4"
+    energyCost: 50
+    description: >-
+      Baruuk unleashes his inner desert wind, entering an aggressive combat stance. Punches and kicks deal radial damage and restore restraint. While active, he is immune to disarm and gains enhanced melee speed and damage.
+    stats: { damage: 350, range: 18 }
+acquisition:
+  source: "Void Relic refinement"
+  blueprintLocations:
+    - "Meso Void Relics"
+    - "Neo Void Relics"
+    - "Axi Void Relics"
+  cost: {}
+  buildTimeHours: 72
+  note: "Prime parts obtained through void fissure missions and relic cracking."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2022-12-14"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Baruuk"
+    accessedAt: "2026-05-19"
+    title: "Baruuk -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Baruuk Prime is the primed variant of Baruuk, a contemplative warrior monk who channels inner discipline into devastating combat prowess. Released in December 2022, Baruuk Prime emphasizes crowd control through pacification and selective disarmament, with an active combat mode that rewards precise restraint management. His design revolves around maintaining a balance between defensive passivity and offensive fury--a unique mechanic that appeals to players seeking both tactical depth and elegant combat flow.
+
+Unlike aggressive damage dealers, Baruuk Prime excels at controlling engagement ranges and dictating the pace of battle. His abilities reward patient gameplay, making him excellent for steel path survival missions and challenging endless content. The prime variant features increased durability compared to the base frame, with higher armor and shields that grant survivability in late-game missions.
+
+## Abilities
+
+<AbilityCard
+  name="Elude"
+  key="1"
+  energyCost="0"
+  description="Activates a stance that dodges all incoming projectiles. Does not affect melee attacks. Deactivate by attacking or toggling the ability again."
+  stats={{ duration: "12s" }}
+/>
+
+Elude is a cornerstone of Baruuk's defensive playstyle. While active, all firearms projectiles pass through or miss entirely, providing near-total protection from ranged threats. However, activation is a commitment--attacking cancels the buff, forcing players to choose between offense and defense on each engagement. Pairing Elude with Desolate Hands creates a devastating combination: the doubled weapon-destruction range turns Baruuk into a crowd-control engine.
+
+<AbilityCard
+  name="Lull"
+  key="2"
+  energyCost="50"
+  description="Emit a calming wave that slows enemies and puts them to sleep. Waking sleepers become disoriented and forget recent combat history."
+  stats={{ range: "20m", slowAmount: "66%" }}
+/>
+
+Lull is Baruuk's primary crowd-control tool. The initial slow effect applies instantly to all enemies in radius; those affected will gradually fall asleep over the next few seconds. Damage wakes sleepers, but they wake confused and disorientated, creating a tactical window for repositioning or target elimination. Combining Lull with Elude allows Baruuk to safely pacify entire rooms without risk, though wake-induced confusion is brief.
+
+<AbilityCard
+  name="Desolate Hands"
+  key="3"
+  energyCost="25"
+  description="Summon orbiting spectral daggers that hunt and destroy enemy weapons, detonating on impact."
+  stats={{ range: "20m", damage: "150" }}
+/>
+
+Desolate Hands spawns a ring of homing daggers around Baruuk that seek nearby enemy weapons and destroy them in small explosions. The ability requires line of sight between daggers and targets. When paired with Elude, the range doubles to 40 meters--a synergy that makes Baruuk one of the most effective disarmament-focused frames in the game. The disarm effect is permanent per weapon destroyed, meaning waves of enemies become progressively less threatening.
+
+<AbilityCard
+  name="Serene Storm"
+  key="4"
+  energyCost="50"
+  description="Unleash Baruuk's inner storm. He enters an aggressive stance, gaining enhanced melee speed and damage while punching and kicking in wide arcs. Active duration restores restraint."
+  stats={{ damage: "350", range: "18m", attackSpeed: "2.0x" }}
+/>
+
+Serene Storm is Baruuk's active combat mode--a transformation that turns the contemplative monk into a whirlwind of fists and feet. Melee strikes hit in wide radial arcs, deal scaling damage, and restore the restraint bar. While in Serene Storm, Baruuk gains immunity to disarm effects and cannot be knocked down. This ability is where restraint erosion pays off: the more abilities used beforehand, the stronger Serene Storm's damage scaling becomes.
+
+## Passive
+
+Baruuk's passive ability, Variable Restraint, forms the thematic core of his kit. As Baruuk casts abilities or dodges attacks (via Elude), his restraint bar depletes. Lower restraint increases damage resistance up to a maximum of 90%. This mechanic inverts traditional power progression: the more aggressively Baruuk plays, the less defensively potent he becomes. However, Serene Storm reverses the relationship, restoring restraint with each strike--creating a natural cycle of defense and offense.
+
+This passive encourages a playstyle of careful ability use, precise timing, and deliberate engagement. Players who maintain high restraint rely on Elude and Lull for survival; those who burn restraint gain offensive power in Serene Storm. Builds vary widely depending on whether a player prioritizes restraint sustainability or active combat.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health (Rank 0) | 180 |
+| Shield (Rank 0) | 365 |
+| Armor | 240 |
+| Energy (Rank 0) | 200 |
+| Sprint Speed | 1.2x |
+| Mastery Requirement | 0 |
+
+Baruuk Prime's stat profile favors sustain over raw offense. The 240 armor rating grants significant physical damage reduction even without mods, making him durable enough for solo endgame content. Energy at 200 supports his ability rotation; combined with high shield values, Baruuk Prime tanks hits well compared to frames of similar power budget.
+
+## Acquisition
+
+Baruuk Prime's components drop from void fissure missions across Meso, Neo, and Axi tier void relics. Farm relics by running void fissure missions or as mission rewards on high-level star chart nodes. Crack relics in void fissure squads to obtain Prime parts. Blueprint assembly follows standard warframe crafting: 72 hours build time in the foundry.
+
+The prime variant remains unvaulted and is actively farmable. Relic drop chances are low (typically 5-15% per rarity tier), so farming Baruuk Prime requires persistence and multiple relic runs.
+
+## Playstyle
+
+Baruuk Prime defines a control-oriented playstyle that rewards patience and precision over mechanical reflexes. In early mission phases, toggle Elude to handle ranged threats while using Desolate Hands to disarm dangerous enemies. Lull rounds up scattered targets into sleep--another pause in enemy pressure. This methodical approach builds restraint, eventually triggering Serene Storm for burst damage phases.
+
+In steel path endless missions, cyclic play is essential: maintain Elude defensively, build restraint through healing or passive ability use, then burn restraint in Serene Storm for short damage bursts. Managing restraint actively--knowing when to spend it and when to recover--separates effective Baruuk players from those who struggle.
+
+Baruuk Prime excels in survival, defense, and disruption missions where ranged threats dominate. He struggles against fast melee units (Ancient Healers, Juggernauts) that break his Elude and force early Serene Storm usage. Building around strength to amplify Serene Storm damage or efficiency to extend Elude uptime are both viable approaches.
+
+## Builds
+
+Baruuk Prime supports multiple build archetypes:
+
+- **Elude Tank:** Maximize duration and efficiency to keep projectile dodge permanent. Pairs well with Adaptation and Nidus Parasitic Link for hybrid resistances.
+- **Serene Storm Damage:** Stack strength and attack speed to turn Serene Storm into a lethal room-clearer. Combo counter mods amplify scaling.
+- **Balanced Control:** Mix strength, range, and efficiency to balance all four abilities. Recommended for endgame versatility.
+
+Aura mods like Corrosive Projection or Adaptation scale well with Baruuk's toolkit. Augment mods for his abilities (if available in the game version) further specialize builds.
+
+## Synergies
+
+Baruuk Prime pairs effectively with support frames that extend ability uptime or restore energy. Trinity (for energy restoration during Elude phases) and Harrow (for defensive scaling) enable longer ability-spam rotations. Companion frames equipped with healing auras benefit Baruuk's survivability passive indirectly.
+
+In squad play, Baruuk Prime's disarm and sleep effects reduce pressure on allies, making him a strong team-wide debuffer. His high armor naturally synergizes with Embark Auras and other passive buffs.
+
+## Lore
+
+Baruuk is a warrior monk who sought isolation from the war, meditating within the Zariman's walls to achieve perfect inner calm. The prime variant emerged through the void--a reflection of Baruuk's true self, untethered by the constraints of his mortal meditation. Prime warframes canonically represent idealized forms, and Baruuk Prime embodies restraint mastery: the ability to channel fury deliberately rather than surrender to it.
+
+His story intertwines with the Zariman's history and the nature of the Void itself. Baruuk's philosophy--that restraint is strength--contrasts with the aggressive, acquisitive nature of most warframes, positioning him as a unique spiritual figure within the Tenno arsenal.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) -- Numeric stats and ability definitions.
+- [Baruuk -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Baruuk) -- Lore context and playstyle notes.

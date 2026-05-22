@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-05-19T00:41:04.784805",
+  "collection": "factions",
+  "batch": "new",
+  "total_files": 10,
+  "pass_count": 10,
+  "fail_count": 0,
+  "files": {
+    "amalgam": {
+      "pass": true,
+      "errors": []
+    },
+    "cephalon": {
+      "pass": true,
+      "errors": []
+    },
+    "corpus": {
+      "pass": true,
+      "errors": []
+    },
+    "corrupted": {
+      "pass": true,
+      "errors": []
+    },
+    "entrati": {
+      "pass": true,
+      "errors": []
+    },
+    "grineer": {
+      "pass": true,
+      "errors": []
+    },
+    "holdfasts": {
+      "pass": true,
+      "errors": []
+    },
+    "infested": {
+      "pass": true,
+      "errors": []
+    },
+    "kuva-lich": {
+      "pass": true,
+      "errors": []
+    },
+    "lotus": {
+      "pass": true,
+      "errors": []
+    }
+  }
+}

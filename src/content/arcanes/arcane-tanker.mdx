@@ -1,0 +1,76 @@
+---
+slug: arcane-tanker
+name: Arcane Tanker
+type: warframe
+maxRank: 5
+effect: "On Archgun Equipped: +[armor] Armor for 60s."
+perRankStats:
+  - rank: 0
+    stats: { armor: 200 }
+  - rank: 1
+    stats: { armor: 400 }
+  - rank: 2
+    stats: { armor: 600 }
+  - rank: 3
+    stats: { armor: 800 }
+  - rank: 4
+    stats: { armor: 1000 }
+  - rank: 5
+    stats: { armor: 1200 }
+drops:
+  - source: "Arbitrations, Rotation A"
+    chance: 5.0
+    note: "Per WFCD drop tables."
+  - source: "Arbitrations, Rotation C"
+    chance: 5.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Tanker"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Arcane Tanker is a Warframe arcane that grants substantial armor bonuses whenever the warframe equips an Archgun, persisting for 60 seconds after equipment. The flat armor addition (200--1200 depending on rank) transforms fragile damage-focused frames into mobile tanks during Archgun phase, enabling fearless positioning during high-mobility missions (Railjack, Archwing, open-world bosses). Unlike armor-scaling abilities that require ability-casting, Tanker provides automatic defense simply through equipment selection, making it universally applicable across all warframe types.
+
+Tanker's primary strength lies in its simplicity and guarantee: equipping an Archgun automatically triggers the buff without conditional triggers or probability mechanics. Archgun-heavy mission types (Empyrean, Eidolon Archgun phases) leverage Tanker to enable fragile frame choices during dangerous mobility phases. The 60-second duration provides persistent armor even after unequipping the Archgun, allowing bonus carry-through into subsequent phases or mission transitions.
+
+## Effects per rank
+
+| Rank | Armor Bonus | Duration | Trigger | Notes |
+|------|-------------|----------|---------|-------|
+| 0 | +200 | 60s | On Archgun equip | Modest armor increase; early-game baseline. |
+| 1 | +400 | 60s | On Archgun equip | Doubled armor from rank 0. |
+| 2 | +600 | 60s | On Archgun equip | Practical mid-game armor boost. |
+| 3 | +800 | 60s | On Archgun equip | Strong endgame armor scaling. |
+| 4 | +1000 | 60s | On Archgun equip | Significant boost; +1 Arcane Revive bonus. |
+| 5 | +1200 | 60s | On Archgun equip | Maximum armor; highest revive bonus. |
+
+Armor scales damage reduction multiplicatively based on armor-to-incoming-damage ratios. A warframe with 100 base armor receiving 1200 bonus reaches 1300 total armor, providing approximately 87% damage reduction against physical damage. High-armor frames (Valkyr, Rhino) stacking Tanker reach near-immunity levels to most incoming projectile damage. The 60-second duration extends beyond typical Archgun deployment cycles, creating passive armor buff carry-through into post-Archgun combat phases.
+
+## Acquisition
+
+Arcane Tanker is obtained through Arbitrations, the high-level endless mission variant available after star-chart completion. Players must reach rotation A or C (requiring 10+ minutes of mission engagement minimum) to access Tanker drops. The 5% drop chance from each qualifying rotation tier means dedicated farming requires significant time investment; average 10--15 Arbitration runs per Tanker drop. Alternatively, pre-ranked Tanker copies trade for 80--140 platinum on player markets, reflecting moderate demand from Archgun-focused builds.
+
+## Best on
+
+Fragile damage frames (Wisp, Volt, Saryn) pair Tanker with Archgun phases to gain survivability during high-mobility encounters. Archgun-heavy mission types (Railjack Empyrean, Archon Hunt phases) employ Tanker to reduce squishy-frame reliance, enabling broader warframe choice. Open-world boss encounters (Eidolons, Archon bosses) leverage Tanker to enable unarmored frames to survive Archgun-centric combat phases. Mobility-focused builds (Nova, Loki) use Tanker as the primary survivability tool during Archgun deployment, converting mobility into survivability through passive armor.
+
+Tank-focused frames (Rhino, Hildryn, Grendel) may deprioritize Tanker, preferring to use arcane slots for offense or utility given their already-high base armor pools.
+
+## Builds that use it
+
+Railjack Empyrean builds employ Arcane Tanker to enable fragile DPS frames during Archgun waves, expanding squad composition flexibility. Archon Hunt runs use Tanker to provide mid-phase armor boosts during Archgun-required encounters. Open-world farming builds leverage Tanker to enable low-armor farming frames to survive boss encounter Archgun phases without switching to dedicated tank frames. Eidolon-hunting builds pair Tanker with team role diversification, allowing pure-damage operators to gain survivability during Archgun phases without dedicating a squad slot to tanking.
+
+## Notes
+
+Arcane Tanker's trigger is automatic on Archgun equipment; no proc chance or condition applies. The 60-second buff persists independently of Archgun active usage, enabling passive armor carry-through into subsequent phases or ability-casting cycles. Multiple Tanker stacks do not occur; only one active buff per warframe at a time. Armor calculation uses the existing armor formula: damage reduction equals armor divided by (armor + 300), creating exponential returns on high-armor values. High-armor frames (Valkyr with 600 base armor) stacking Tanker reach values where most physical damage barely scratches the warframe.
+
+## Sources
+
+- WFCD warframe-items dataset documents all Arbitration mechanics and Arcane Tanker drop rates.
+- Fandom wiki provides Archgun and Railjack engagement guides with survivability recommendations.

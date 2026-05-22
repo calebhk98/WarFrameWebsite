@@ -1,0 +1,68 @@
+[
+  {
+    "file": "cephalon-simaris.mdx",
+    "errors": [
+      "Heading order: Expected [overview, standing rewards, daily cap and grind notes, recommended order to rank, notes], found [Overview, Standing acquisition and synthesis, Daily cap and standing mechanics, Rewards and offerings, How to earn standing efficiently, Neutrality and strategic advantage, Notes]"
+    ]
+  },
+  {
+    "file": "cephalon-suda.mdx",
+    "errors": [
+      "Heading order: Expected [overview, standing rewards, daily cap and grind notes, recommended order to rank, notes], found [Overview, Standing and daily cap, Ranks and progression, Offerings and rewards, How to earn standing, Faction alignments and strategy, Notes]"
+    ]
+  },
+  {
+    "file": "conclave.mdx",
+    "errors": [
+      "Heading order: Expected [overview, standing rewards, daily cap and grind notes, recommended order to rank, notes], found [Overview, Standing and daily cap, Ranks and progression, Offerings and rewards, How to earn standing, PvP game modes, Notes]"
+    ]
+  },
+  {
+    "file": "entrati.mdx",
+    "errors": [
+      "Heading order: Expected [overview, standing rewards, daily cap and grind notes, recommended order to rank, notes], found [Overview, Standing and daily cap, Ranks and progression, Offerings and rewards, How to earn standing, Strategy tips, Notes]"
+    ]
+  },
+  {
+    "file": "holdfasts.mdx",
+    "errors": [
+      "Heading order: Expected [overview, standing rewards, daily cap and grind notes, recommended order to rank, notes], found [Overview, Standing and daily cap, Ranks and progression, Offerings and rewards, How to earn standing, Strategy tips, Notes]"
+    ]
+  },
+  {
+    "file": "kahls-garrison.mdx",
+    "errors": [
+      "Heading order: Expected [overview, standing rewards, daily cap and grind notes, recommended order to rank, notes], found [Overview, Standing and progression, Ranks and unlocks, Offerings and rewards, How to earn Stock and progress, Strategy tips, Sources]"
+    ]
+  },
+  {
+    "file": "necraloid.mdx",
+    "errors": [
+      "Heading order: Expected [overview, standing rewards, daily cap and grind notes, recommended order to rank, notes], found [Overview, Standing and daily cap, Ranks and clearances, Offerings and rewards, How to earn standing, Strategy tips, Sources]"
+    ]
+  },
+  {
+    "file": "perrin-sequence.mdx",
+    "errors": [
+      "Non-ASCII at position 1780: '−' (U+2212)"
+    ]
+  },
+  {
+    "file": "red-veil.mdx",
+    "errors": [
+      "Non-ASCII at position 1763: '−' (U+2212)"
+    ]
+  },
+  {
+    "file": "the-hex.mdx",
+    "errors": [
+      "Heading order: Expected [overview, standing rewards, daily cap and grind notes, recommended order to rank, notes], found [Overview, Standing and daily cap, Ranks and progression, Offerings and rewards, How to earn standing, Notable mechanics and lore context, Notes]"
+    ]
+  },
+  {
+    "file": "vent-kids.mdx",
+    "errors": [
+      "Heading order: Expected [overview, standing rewards, daily cap and grind notes, recommended order to rank, notes], found [Overview, Standing and daily cap, Ranks and progression, Offerings and rewards, How to earn standing, Alignment with Solaris culture, Notes]"
+    ]
+  }
+]

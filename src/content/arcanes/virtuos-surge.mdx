@@ -1,0 +1,67 @@
+---
+slug: virtuos-surge
+name: Virtuos Surge
+type: operator
+maxRank: 3
+effect: "On Hit: Converts [damage]% Void Damage to Electricity Damage."
+perRankStats:
+  - rank: 0
+    stats: { damage: 24 }
+  - rank: 1
+    stats: { damage: 48 }
+  - rank: 2
+    stats: { damage: 72 }
+  - rank: 3
+    stats: { damage: 98 }
+drops:
+  - source: "Zariman void cascade"
+    chance: 2.5
+    rarity: "uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Virtuos_Surge"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Virtuos Surge converts a percentage of the operator amp's Void Damage output into Electricity Damage on each hit. The conversion shifts the damage type composition of the amp, replacing Void Damage with Electricity Damage at the listed percentage. At rank 3, 98% of Void Damage converts to Electricity -- effectively making the amp deal Electricity rather than Void Damage at near-total conversion.
+
+Electricity Damage generates Electricity status procs on enemies, which chain electricity to additional nearby targets. This chain effect makes Virtuos Surge valuable in group enemy scenarios where a single amp hit can spread Electricity procs to surrounding enemies without requiring direct hits on each target.
+
+## Effect
+
+On each amp hit, Virtuos Surge converts the listed percentage of that shot's Void Damage into Electricity Damage. At rank 0, 24% of Void Damage becomes Electricity Damage. At rank 3, 98% of Void Damage becomes Electricity Damage, leaving only 2% as Void type. The converted Electricity Damage follows standard Electricity damage rules including status procs and enemy vulnerability interactions.
+
+Electricity status procs from the converted damage chain to up to 3 nearby enemies within a short radius of the target, dealing Electricity Damage to each chained target. High-status-chance amp configurations combined with the Electricity conversion generate Electricity chains frequently during sustained amp fire.
+
+## Stats per rank
+
+| Rank | Void to Electricity Conversion |
+|------|-------------------------------|
+| 0 | 24% |
+| 1 | 48% |
+| 2 | 72% |
+| 3 | 98% |
+
+## Acquisition
+
+Virtuos Surge drops as an uncommon reward from Zariman Void Cascade missions. The arcane is accessible after completing Angels of the Zariman. Regular Void Cascade participation provides Surge drops naturally over time. Warframe.market provides a purchase option for players who prefer direct platinum acquisition over farming.
+
+## Builds that use it
+
+Virtuos Surge suits operator builds aimed at generating Electricity status procs through amp fire. The Electricity chain from status procs allows a single high-status-chance amp shot to spread Electricity damage and procs across multiple nearby enemies, amplifying the effective area covered per shot. Builds using Residual Shock (which creates Electricity zones from Kitgun kills) pair with Virtuos Surge to extend Electricity coverage through operator amp fire.
+
+Operators in Zariman Void Cascade who engage groups of enemies during zone maintenance benefit from the chain Electricity procs, which apply multiple simultaneous debuffs from each amp hit. High-fire-rate amp prisms sustain continuous Electricity proc attempts against packed enemy groups.
+
+## Notes
+
+Virtuos Surge and Virtuos Forge perform the same function with different target elements -- Surge converts Void to Electricity; Forge converts Void to Heat. Both operate identically in terms of percentage conversion mechanics. The remaining Void Damage at rank 3 (2%) still interacts as Void type and does not chain like Electricity. Enemies with innate resistance to Electricity receive reduced effective output from the converted component. The Electricity chain from status procs can be blocked by walls and physical obstacles between enemies.
+
+## Sources
+
+- WFCD warframe-items dataset provides conversion percentage values per rank for Virtuos Surge.
+- Fandom wiki entry for [Virtuos Surge](https://warframe.fandom.com/wiki/Virtuos_Surge) covers Electricity Damage conversion mechanics and status chain behavior.

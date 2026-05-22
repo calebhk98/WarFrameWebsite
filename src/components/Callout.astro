@@ -1,0 +1,30 @@
+---
+// Callout -- informational, warning, or tip block for MDX content
+interface Props {
+  type?: 'info' | 'warn' | 'tip' | 'spoiler';
+}
+
+const { type = 'info' } = Astro.props;
+
+const styles: Record<string, string> = {
+  info: 'border-brand-purple/50 bg-brand-purple/10 text-brand-cream/90',
+  warn: 'border-brand-orange/50 bg-brand-orange/10 text-brand-cream/90',
+  tip: 'border-green-600/50 bg-green-900/20 text-brand-cream/90',
+  spoiler: 'border-surface-3 bg-surface-3 text-brand-cream/30 hover:text-brand-cream/90 transition-colors cursor-pointer',
+};
+
+const labels: Record<string, string> = {
+  info: 'Note',
+  warn: 'Warning',
+  tip: 'Tip',
+  spoiler: 'Spoiler',
+};
+
+const style = styles[type] ?? styles['info']!;
+const label = labels[type] ?? 'Note';
+---
+
+<aside class={`my-4 rounded-lg border-l-4 px-4 py-3 text-sm leading-relaxed ${style}`}>
+  <span class="font-semibold uppercase tracking-wide text-xs mr-2">{label}:</span>
+  <slot />
+</aside>

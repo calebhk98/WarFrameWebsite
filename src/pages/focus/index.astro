@@ -1,0 +1,76 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const schools = await getCollection('focus-schools');
+const sorted = [...schools].sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base
+  title="Focus Schools"
+  description="The five Operator Focus schools in Warframe: Madurai, Vazarin, Naramon, Unairu, and Zenurik."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Focus Schools</h1>
+      <p class="text-brand-cream/60">
+        The Focus system unlocks Operator abilities. Each of the five schools
+        emphasizes a different combat role. Focus points are earned through
+        Convergence Orbs during missions.
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      {sorted.map((school) => (
+        <a
+          href={`${base}focus/${school.slug}`}
+          class="group rounded-lg border border-surface-3 bg-surface-2 hover:border-brand-orange/50 hover:bg-surface-3 p-6 transition-all"
+        >
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-xs uppercase tracking-widest text-brand-orange font-semibold">
+              {school.data.element !== 'none' ? school.data.element : 'physical'}
+            </span>
+          </div>
+          <h2 class="text-xl font-bold text-brand-cream group-hover:text-brand-orange transition-colors mb-2">
+            {school.data.name}
+          </h2>
+          <p class="text-sm text-brand-cream/60 leading-relaxed">
+            {school.data.playstyle}
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            {school.data.recommended_warframes.slice(0, 3).map((slug) => (
+              <span class="text-xs px-2 py-1 rounded-full bg-surface-3 border border-surface-3 text-brand-cream/50">
+                {slug}
+              </span>
+            ))}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <section class="rounded-lg border border-surface-3 bg-surface-2 p-6">
+      <h2 class="text-lg font-semibold text-brand-cream mb-3">How Focus works</h2>
+      <div class="text-sm text-brand-cream/70 space-y-2 leading-relaxed">
+        <p>
+          Focus is unlocked after completing The Second Dream. During missions,
+          Convergence Orbs appear periodically. Collecting an orb activates a
+          45-second window during which affinity earned is converted to Focus
+          points at a set rate.
+        </p>
+        <p>
+          Focus points are spent on individual school node trees. Each school
+          has one or two Active nodes (usable during Operator combat) and
+          several Passive nodes that apply automatically. Waybound nodes, once
+          fully unlocked, become permanent account-wide upgrades that work in
+          any school.
+        </p>
+        <p>
+          Only one Focus school can be active at a time. The active school
+          determines which Operator abilities are available.
+        </p>
+      </div>
+    </section>
+  </div>
+</Base>

@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Mag Prime",
+    "slug": "mag-prime",
+    "type": "Warframe",
+    "masteryRank": 0,
+    "health": 100,
+    "shield": 450,
+    "armor": 65,
+    "energy": 175,
+    "sprintSpeed": 1.1,
+    "description": "Mag Prime sample fixture entry.",
+    "category": "Warframes"
+  },
+  {
+    "name": "Ash",
+    "slug": "ash",
+    "type": "Warframe",
+    "masteryRank": 0,
+    "health": 100,
+    "shield": 75,
+    "armor": 65,
+    "energy": 150,
+    "sprintSpeed": 1.15,
+    "description": "Ash sample fixture entry.",
+    "category": "Warframes"
+  },
+  {
+    "name": "Nezha",
+    "slug": "nezha",
+    "type": "Warframe",
+    "masteryRank": 4,
+    "health": 100,
+    "shield": 100,
+    "armor": 175,
+    "energy": 125,
+    "sprintSpeed": 1.15,
+    "description": "Nezha sample fixture entry.",
+    "category": "Warframes"
+  }
+]

@@ -1,0 +1,207 @@
+---
+slug: mirage
+name: Mirage
+aliases: ["Mirage Prime"]
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 200
+shield: 200
+armor: 105
+energy: 175
+sprintSpeed: 1.2
+passive:
+  name: Sleight Of Hand
+  description: >-
+    Sliding lasts 60% longer and acrobatic maneuvers are 40% faster, enabling Mirage to reposition rapidly and evade incoming fire with graceful evasion.
+abilities:
+  - name: Hall of Mirrors
+    key: "1"
+    energyCost: 25
+    description: >-
+      Mirage creates an entourage of doppelgangers to confuse and distract the enemy. The clones mirror her weapon attacks and ability casts, multiplying offensive output.
+    stats: { clones: 3, duration: 6 }
+  - name: Sleight of Hand
+    key: "2"
+    energyCost: 50
+    description: >-
+      Booby trap nearby objects while conjuring an irresistible jewel that bursts with radial blind when touched in darkness, or a radial explosion in light.
+    stats: { trapRadius: 8, jewelDamage: 200 }
+  - name: Eclipse
+    key: "3"
+    energyCost: 50
+    description: >-
+      Tap to temporarily reduce incoming damage in shadows; hold to boost weapon damage in light. The effect adapts to environmental brightness in real time.
+    stats: { duration: 7, damageReduction: 0.4, damageBonus: 0.5 }
+  - name: Prism
+    key: "4"
+    energyCost: 100
+    description: >-
+      Fire an energy prism that shoots lasers in all directions. Activate again to detonate the prism, blinding nearby foes and causing massive radial damage.
+    stats: { damage: 400, range: 15, blindChance: 1.0 }
+acquisition:
+  source: "Cephalon Simaris, Complete Hidden Messages"
+  blueprintLocations:
+    - "Cephalon Simaris, Complete Hidden Messages quest reward"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+  note: "Mirage's components are acquired by completing Cephalon Simaris's hidden message quests on the Void."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2015-12-22"
+  vaultedAt: "2022-05-11"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Mirage"
+    accessedAt: "2026-05-19"
+    title: "Mirage -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Mirage is a deception-focused warframe whose signature ability, Hall of Mirrors, creates illusory clones that fire alongside her weaponry. Introduced in Update 14, she excels at multiplying damage output and overwhelming enemies through misdirection. Her versatile toolkit combines offensive mirroring with crowd control via Eclipse and Sleight of Hand, making her a powerhouse in both defense-heavy and damage-dealing scenarios. The frame's passive grants exceptional mobility, allowing rapid repositioning during combat.
+
+Mirage Prime, her vaulted prime variant, was released in December 2015 and vaulted again in May 2022. The base Mirage remains a highly accessible and rewarding frame for players seeking high damage output with intricate ability synergies.
+
+## Abilities
+
+<AbilityCard
+  name="Hall of Mirrors"
+  key="1"
+  energyCost={25}
+  description="Mirage creates an entourage of doppelgangers to confuse and distract the enemy."
+  stats={{ clones: 3, duration: "6s" }}
+/>
+
+Hall of Mirrors summons three clones of Mirage that replicate her weapon attacks, melee combos, and ability casts. The clones inherit all modded damage bonuses and can trigger status effects and procs. This is the foundation of Mirage's damage scaling--pairing it with high-damage weapons creates exponential offensiveness. Each clone fires synchronously with your equipped weapon, effectively quadrupling your dps (one original plus three clones). Ability strength increases the number of clones; ability duration extends their uptime. The clones also benefit from Eclipse's damage buff, making this combination one of the game's most powerful.
+
+<AbilityCard
+  name="Sleight of Hand"
+  key="2"
+  energyCost={50}
+  description="Booby trap nearby objects while conjuring an irresistible jewel that bursts with radial blind when touched in darkness, or a radial explosion in light."
+  stats={{ trapRadius: "8m", jewelDamage: "200" }}
+/>
+
+Sleight of Hand traps nearby interactive objects (ammo crates, pickups, destructibles) with proximity mines and spawns a jewel that detonates when enemies approach. In darkness, the jewel blinds foes; in light, it explodes for impact damage. When Hall of Mirrors is active, multiple jewels spawn, turning this ability into a powerful area denial tool. The trap mechanic scales with ability strength, and the light/dark mechanic ties directly into Eclipse's damage framework.
+
+<AbilityCard
+  name="Eclipse"
+  key="3"
+  energyCost={50}
+  description="(TAP) Temporarily reduce the damage Mirage takes from enemies. (HOLD) Temporarily increase Mirage's weapon damage."
+  stats={{ duration: "7s", damageReduction: "40%", damageBonus: "50%" }}
+/>
+
+Eclipse is Mirage's signature versatility ability. Tapping grants a defensive buff that reduces incoming damage in shadowed areas; holding the button provides a damage boost in bright light. The ability samples environmental brightness in real-time--standing near light sources (explosions, sun, lamps) triggers the damage buff; shadows grant defense. Ability strength scales both effects; ability duration extends uptime. Pair Eclipse's damage buff with Hall of Mirrors' clones for massive scaling--four entities (you plus clones) each applying 50% bonus damage compounds multiplicatively.
+
+<AbilityCard
+  name="Prism"
+  key="4"
+  energyCost={100}
+  description="Fires an energy prism that shoots lasers in all directions. Activating again detonates the prism, blinding nearby foes."
+  stats={{ damage: "400", range: "15m", blindChance: "100%" }}
+/>
+
+Prism deploys a stationary energy prism that automatically fires lasers at nearby enemies in a 360-degree pattern. Activate the ability again to detonate the prism, causing a radial explosion that blinds all targets in range. This is Mirage's premier crowd control tool, particularly effective in Defense missions. The lasers scale with ability strength; the detonation range scales with ability range. In combination with Hall of Mirrors, you gain additional prisms from your clones, creating overlapping fields of fire.
+
+## Passive
+
+Mirage's passive grants extended sliding duration (60% longer) and accelerated acrobatic maneuvers (40% faster). This translates to superior parkour efficiency, faster bullet-jump chains, and prolonged invulnerability frames during slide-dodges. The mobility bonus is among the game's most practical passives, enabling hit-and-run playstyles and rapid repositioning in high-level content.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 200 |
+| Shield | 200 |
+| Armor | 105 |
+| Energy | 175 |
+| Sprint Speed | 1.2x |
+| Mastery Rank | 0 |
+| Aura Polarity | Naramon |
+
+## Acquisition
+
+Mirage's blueprints and components are obtained exclusively from **Cephalon Simaris** via the **Hidden Messages** quest chain on the Void. Unlike most warframes, she does not drop from assassination missions but rather from environmental challenges and scanning puzzles scattered across the Void tileset.
+
+### Build Requirements
+
+- **Neuroptics Blueprint** (Cephalon Simaris reward)
+- **Chassis Blueprint** (Cephalon Simaris reward)
+- **Systems Blueprint** (Cephalon Simaris reward)
+- **Build Cost:** 25,000 credits per component
+- **Build Time:** 72 hours (full frame)
+
+The acquisition path is unique and emphasizes exploration and puzzle-solving rather than enemy farming, making Mirage an appealing grind for players seeking variety.
+
+## Playstyle
+
+Mirage excels as a **multiplicative damage dealer** whose strength scales exponentially with weapon selection and mod synergy. The core playstyle revolves around three pillars:
+
+1. **Cloning for Damage Scaling:** Hall of Mirrors is your primary damage multiplier. Equip any high-damage weapon (Kuva Bramma, Zariman beam rifle, Incarnon weapons) and your three clones will fire in perfect synchrony. This turns single-target weapons into area-denial tools and area weapons into room-clearers.
+
+2. **Eclipse for Adaptive Offense:** Toggle Eclipse's hold mode in well-lit areas to gain the 50% damage buff, which stacks multiplicatively with your weapon mods and Hall of Mirrors. In shadow, tap Eclipse for survival. This adaptability makes Mirage viable across all mission types--from endless Void Fissures to Steel Path assassinations.
+
+3. **Sleight of Hand and Prism for Control:** While Hall of Mirrors handles raw dps, Sleight of Hand and Prism provide crowd control. Sleight traps chokepoints and objective areas; Prism creates overlapping laser fields that blind and suppress enemy advances. In Defense or Excavation missions, these abilities let you lock down entire rooms.
+
+The frame's high energy pool (175) and passive mobility make her forgiving in chaotic environments. Her low armor means you must prioritize crowd control and evasion over tanking--rely on Eclipse's defensive mode, slide-dodging through fire, and maintaining distance.
+
+## Builds
+
+Mirage supports multiple build archetypes, each optimized for different mission types and enemy levels:
+
+### High-Damage Infinite Mirror Build (Steel Path)
+
+This build maximizes Hall of Mirrors clones, ability strength, and duration to create a perpetual defensive screen while your weapon dps scales through the roof.
+
+**Mod Priority:** Umbral Intensify (ability strength), Primed Flow (energy sustain), Streamline (efficiency), Transient Fortitude (strength + cost), Chronologic Continuity (duration), Blind Rage (strength).
+
+**Playstyle:** Activate Hall of Mirrors, position behind cover, and rain fire. The clones tank most incoming damage while you maintain distance. Tap Eclipse defensively when threatened; recast Hall as it expires (typically every 6-8 seconds with duration mods).
+
+### Eclipse Support Build (Endless Missions)
+
+This variant balances strength and duration to keep Eclipse active, sharing its damage buff with allies while maintaining Hall of Mirrors.
+
+**Mod Priority:** Corrosive Projection (aura), Primed Vigor (shields), Umbral Intensify, Augur Message (range for Prism), Overextended (range), Blind Rage (strength).
+
+**Playstyle:** Lead with Prism to control space, toggle Eclipse to buff allies, and use Hall of Mirrors selectively when the squad needs raw damage. This setup turns Mirage into a utility frame rather than pure dps.
+
+### Sleight of Hand Trap Build (Defense)
+
+This niche build focuses on crowd control and trap placement, with Sleight of Hand covering objective areas.
+
+**Mod Priority:** Pilfering Swarm (if subsumed), Power Strength, Ability Range, Cunning Drift, Primed Flow.
+
+**Playstyle:** Deploy Sleight traps around the objective and manually detonate prisms to lock down approach vectors. Activate Hall of Mirrors when enemies breach your trap perimeter. This build excels in Void Fissure Defense where enemy density and level scaling test your control tools.
+
+## Synergies
+
+**Hall of Mirrors + Eclipse:** The frame's signature synergy. Eclipse's 50% damage buff multiplicatively stacks with all four entities (you plus three clones), resulting in 1.5^4 = 5.06x total damage scaling. This is among the highest damage multipliers in the game and the foundation of Mirage's endgame viability.
+
+**Hall of Mirrors + High-Multishot Weapons:** Weapons with inherent multishot (Kohm, Zariman beams, Kuva Bramma) generate exponential bullet counts through Hall clones. A Kuva Bramma firing 2 pellets per shot becomes 8 pellets (2 x 4 entities) with Hall active.
+
+**Sleight of Hand + Zenurik Focus:** The Zenurik focus school's Energizing Dash proc grants energy to nearby allies. Sleight's jewels proc frequently in crowded areas, stacking energy refunds that enable indefinite ability spam.
+
+**Prism + Lull Augment (Limbo):** If a squadmate brings Limbo to freeze time, Prism's laser spam becomes uninterruptible, creating guaranteed area denial.
+
+**Hall of Mirrors + Helminth Subsume:** Subsuming Roar or Rhino's Stomp adds survivability or crowd control without losing Hall's core function.
+
+## Lore
+
+Mirage was introduced as the "Master of Illusions" during Warframe's expansion into more complex ability mechanics. In-universe, she is a trickster warframe whose origins trace to the Orokin's experimentation with sensory deception. Her doppelgangers are not mere holograms but semi-tangible echoes that can interact with the physical world--firing weapons, triggering traps, and damaging enemies directly. This blurs the line between illusion and reality, fitting her theatrical aesthetic.
+
+Her prime variant, Mirage Prime, was introduced alongside the Vaulted Relic system and represents her "golden era" appearance. The prime form retains all core mechanics but features enhanced visuals and slightly improved stats. Lore-wise, Mirage Prime is the older, more refined version of the warframe--a master of her craft from the height of the Orokin's warframe engineering.
+
+The Hidden Messages quest, which gates her acquisition, frames Mirage as a puzzle-keeper guarding Void secrets. This narrative choice emphasizes her role as a mysterious figure who reveals herself only to those patient and observant enough to uncover her hidden messages.
+
+## Sources
+
+- **WFCD warframe-items:** https://github.com/WFCD/warframe-items (accessed 2026-05-19)
+- **Warframe Wiki:** https://warframe.fandom.com/wiki/Mirage (accessed 2026-05-19)

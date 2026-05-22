@@ -1,0 +1,81 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const builds = await getCollection('builds');
+  return builds.map((build) => ({
+    params: { slug: build.slug },
+    props: { build },
+  }));
+}
+
+const { build } = Astro.props;
+const { Content } = await build.render();
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title={build.data.name} description={build.data.playstyle}>
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <nav class="mb-6 text-sm text-brand-cream/50">
+      <a href={`${base}builds`} class="hover:text-brand-orange">Builds</a>
+      <span class="mx-2">/</span>
+      <span class="text-brand-cream/80">{build.data.name}</span>
+    </nav>
+
+    <header class="mb-8">
+      <div class="flex flex-wrap items-center gap-3 mb-2">
+        <h1 class="text-3xl font-bold text-brand-cream">{build.data.name}</h1>
+        <span class="text-xs px-2 py-0.5 rounded bg-surface-3 text-brand-cream/50 uppercase tracking-wide">
+          {build.data.entityType}
+        </span>
+      </div>
+      <p class="text-brand-cream/60 mb-1">{build.data.playstyle}</p>
+      <a href={`${base}warframes/${build.data.forEntity}`} class="text-sm text-brand-orange hover:underline">
+        View {build.data.forEntity} &rarr;
+      </a>
+    </header>
+
+    {(build.data.strengths.length > 0 || build.data.weaknesses.length > 0) && (
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+        {build.data.strengths.length > 0 && (
+          <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+            <h2 class="text-sm font-semibold text-brand-cream mb-2 uppercase tracking-wide">Strengths</h2>
+            <ul class="space-y-1">
+              {build.data.strengths.map((s) => (
+                <li class="text-sm text-brand-cream/70 flex gap-2"><span class="text-green-400 shrink-0">+</span>{s}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {build.data.weaknesses.length > 0 && (
+          <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+            <h2 class="text-sm font-semibold text-brand-cream mb-2 uppercase tracking-wide">Weaknesses</h2>
+            <ul class="space-y-1">
+              {build.data.weaknesses.map((w) => (
+                <li class="text-sm text-brand-cream/70 flex gap-2"><span class="text-red-400 shrink-0">-</span>{w}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    )}
+
+    <div class="rounded-lg border border-surface-3 bg-surface-2 p-5 mb-8">
+      <h2 class="text-sm font-semibold text-brand-cream mb-3 uppercase tracking-wide">Mod Loadout</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+        {build.data.mods.map((mod) => (
+          <div class="rounded bg-surface-3 px-3 py-2">
+            <p class="text-xs text-brand-cream/40 uppercase">{mod.slot}</p>
+            <p class="text-sm text-brand-cream">{mod.modSlug}</p>
+            <p class="text-xs text-brand-orange">Rank {mod.rank}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="prose prose-invert prose-sm max-w-none">
+      <Content />
+    </div>
+  </div>
+</Base>

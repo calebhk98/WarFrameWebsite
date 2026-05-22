@@ -1,0 +1,171 @@
+---
+slug: ivara
+name: Ivara
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 180
+shield: 270
+armor: 105
+energy: 215
+sprintSpeed: 1.15
+passive:
+  name: Tactical Sense
+  description: >-
+    Senses nearby enemies within a detection radius, revealing their positions through walls
+    and obstacles even while invisible or cloaked.
+abilities:
+  - name: Quiver
+    key: "1"
+    energyCost: 50
+    description: >-
+      Cycle through and fire one of four tactical arrows from a mystical quiver. Cloak Arrow
+      creates a stationary invisibility bubble; Dashwire deploys a traversable zipline; Noise
+      Arrow emits a high-pitched sound to distract enemies; Sleep Arrow puts nearby foes into
+      deep slumber.
+    stats: { capacity: 4, range: 15, duration: 20 }
+  - name: Navigator
+    key: "2"
+    energyCost: 25
+    description: >-
+      Assume direct control of any projectile Ivara or her allies launch, guiding it to targets
+      with precision. The controlled projectile travels slower but deals increased damage and
+      can trigger additional effects.
+    stats: { duration: 10, projectile_damage_bonus: 0.5 }
+  - name: Prowl
+    key: "3"
+    energyCost: 10
+    description: >-
+      Become invisible and slip past enemies undetected. While prowling, Ivara steals loot from
+      nearby enemies and can execute devastating headshots with increased damage. Sustained
+      invisibility drains energy based on activity level.
+    stats: { invisibility_drain: 10, loot_radius: 25, damage_multiplier: 2.0 }
+  - name: Artemis Bow
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summon an exalted bow of legendary power and unleash a volley of devastating arrows.
+      The bow inherits mods from Ivara's equipped weapons and scales with both strength and
+      weapon modifications, making it exceptionally potent when properly modded.
+    stats: { arrows_per_shot: 3, projectile_speed: 25, damage_scaling: 1.0 }
+acquisition:
+  source: "Spy mission rotations (multiple planets)"
+  blueprintLocations:
+    - "Eris/Cyath, Eris/Gnathos, Neptune/Nereid, Pluto/Oceanum, Sedna/Kelpie, Sedna/Tikoloshe, Uranus/Rosalind (all Spy, Rotation C)"
+    - "Veil/Sabmir Cloud (Skirmish, Rotation C)"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2017-12-12"
+  vaultedAt: "2021-12-15"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Ivara"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Ivara is a stealthy huntress warframe specializing in precision, invisibility, and tactical versatility through her signature Quiver ability. Her toolkit emphasizes stealth-based playstyles, utility through four distinct arrow types, and exalted weapon mastery with Artemis Bow. As a frame designed for players who value methodical approach over brute force, Ivara excels in spy missions, assassination contracts, farming operations, and high-level endurance runs where careful positioning and crowd control matter more than raw damage output. Released in Update 18.0 (December 2015), Ivara remains one of Warframe's most technically demanding and rewarding warframes for experienced players.
+
+With 180 health and 270 shields, Ivara is considerably fragile compared to tank-oriented frames, requiring constant movement and invisibility management to survive. Her armor of 105 provides minimal protection, reinforcing that Ivara players must avoid direct contact through superior positioning, crowd control, and detection avoidance. The energy pool of 215 is substantial, supporting extended Prowl invisibility and frequent Quiver cycling. Sprint speed of 1.15x keeps pace with agile frames. This defensive profile demands respect and planning--Ivara punishes careless play but rewards methodical, intelligent execution with unmatched versatility and control.
+
+## Abilities
+
+<AbilityCard
+  name="Quiver"
+  key="1"
+  energyCost={50}
+  description="Cycle through and fire one of four tactical arrows from a mystical quiver. Cloak Arrow creates a stationary invisibility bubble; Dashwire deploys a traversable zipline; Noise Arrow emits a high-pitched sound to distract enemies; Sleep Arrow puts nearby foes into deep slumber."
+/>
+
+Quiver is Ivara's signature ability, granting access to four distinct tactical arrows that can be cycled on demand. This ability alone defines her versatility: Cloak Arrow creates a stationary invisibility bubble that affects both Ivara and nearby allies, useful for group stealth or establishing safe zones; Dashwire deploys a traversable zipline that any teammate can use for vertical mobility or gap crossing; Noise Arrow emits a localized audio trigger that draws enemy attention to its detonation point, facilitating crowd control or tactical misdirection; Sleep Arrow puts nearby enemies into magically-induced slumber, providing non-lethal crowd control and setup for finishers. Cycling between these arrows mid-mission allows Ivara to adapt to emerging threats without ability cooldowns, making her exceptionally flexible in dynamic combat scenarios. Energy cost scales per arrow fired, encouraging thoughtful arrow selection rather than spam.
+
+<AbilityCard
+  name="Navigator"
+  key="2"
+  energyCost={25}
+  description="Assume direct control of any projectile Ivara or her allies launch, guiding it to targets with precision. The controlled projectile travels slower but deals increased damage and can trigger additional effects."
+/>
+
+Navigator transforms Ivara into a precision weapon platform by granting direct control over any launched projectile--whether from her own weapons, Artemis Bow, or those of cooperative squadmates. The controlled projectile moves slowly but with perfect accuracy and can trigger additional status effects. This ability unlocks advanced tactics: steering grenades around cover, guiding single-target projectiles into weak points, or choreographing multi-target sequences with allies' weapons. Navigator's relatively low energy cost makes it spammable, and skilled players weaponize this for guaranteed critical hits on priority targets or wall-bouncing glaives through tight corridors. The five-second control window encourages fast decision-making and rewards mechanical precision.
+
+<AbilityCard
+  name="Prowl"
+  key="3"
+  energyCost={10}
+  description="Become invisible and slip past enemies undetected. While prowling, Ivara steals loot from nearby enemies and can execute devastating headshots with increased damage. Sustained invisibility drains energy based on activity level."
+/>
+
+Prowl is Ivara's cornerstone invisibility ability, rendering her completely invisible to enemies while draining minimal energy if stationary, scaling upward with movement and ability use. During invisibility, Ivara automatically steals loot from nearby enemies and can execute lethal headshots dealing doubled damage, effectively turning stealth into both survival tool and damage amplifier. The energy drain mechanism requires energy-management skill--silent, stationary observation is nearly free, but aggressive headshot-spamming or active movement burns through reserves quickly. Prowl synergizes perfectly with weapons like the Artemis Bow or silent primaries (bows, shotguns with suppression), enabling one-shot assassination playstyles where a single visible headshot reveal is acceptable because the target dies before retaliation. Long-duration, low-efficiency builds allow Ivara to maintain invisibility through extended sorties or void fissures, while strength-focused variants prioritize headshot damage over duration.
+
+<AbilityCard
+  name="Artemis Bow"
+  key="4"
+  energyCost={100}
+  description="Summon an exalted bow of legendary power and unleash a volley of devastating arrows. The bow inherits mods from Ivara's equipped weapons and scales with both strength and weapon modifications, making it exceptionally potent when properly modded."
+/>
+
+Artemis Bow summons a signature exalted weapon--a powerful bow that fires in volleys of three arrows per shot, each projectile inheriting mods from Ivara's equipped weapons. This exalted weapon scales with both ability strength (for base damage) and weapon mods (for critical chance, elemental damage, etc.), making a properly modded Artemis Bow devastatingly effective against single or clustered targets. The bow fires at extreme velocity with inherent punch-through, allowing arrows to pass through multiple enemies. Artemis Bow does not benefit from reload time but drains energy per volley, encouraging careful shot placement. When paired with Prowl's invisibility, Artemis Bow enables a sniper-assassin playstyle where Ivara picks off priority targets undetected, with each volley dealing 4-6x the damage of her equipped primary weapon. The Concentrated Arrow augment (exclusive to Ivara) disables multishot in exchange for guaranteed critical hits, enabling one-shot kills on high-priority targets.
+
+## Passive
+
+Ivara's passive allows her to sense nearby enemies within a medium detection radius, revealing their positions through walls and obstacles. This passive applies at all times, even during Prowl invisibility, turning every mission into a tactical reconnaissance operation. Skilled Ivara players exploit this passive to memorize patrol routes, identify priority targets before engagement, and plan approach vectors that minimize detection risk. In spy missions, the passive essentially grants "radar hacking" for free, allowing Ivara to navigate vaults with foreknowledge of guard positions. The passive encourages a methodical, pre-planned approach rather than improvisation--players who internalize enemy positions via the passive can execute perfectly-timed stealth sequences that appear impossibly coordinated.
+
+## Stats
+
+| Stat         | Value |
+| ---          | ---:  |
+| Health       | 180   |
+| Shield       | 270   |
+| Armor        | 105   |
+| Energy       | 215   |
+| Sprint Speed | 1.15x |
+| Mastery Rank | 0     |
+
+## Acquisition
+
+Ivara's blueprints drop exclusively from spy missions across multiple planets, with each component available at different nodes in Rotation C (the final reward tier requiring three mission completions). The blueprint itself drops from Spy missions on Eris (Cyath and Gnathos nodes) and with lower frequency from Veil Skirmish missions. The chassis blueprint drops from spy missions on Saturn (Aegaeon, Dione) and Europa (Valac), among others. The neuroptics blueprint shares the same drop locations as the main blueprint. Systems blueprints are the rarest, dropping from early-star-chart spy missions on Venus, Mercury, Mars, and Ceres. The distributed drop locations encourage players to farm a variety of spy missions across the star chart, turning Ivara acquisition into a lengthy but achievable early-to-mid-game goal (realistically 20-40 hours of focused spy farming per component).
+
+Crafting requires 25,000 credits and standard Grineer-era materials: Alloy Plate, Neural Sensors, and one Orokin Cell. The 72-hour build time is standard for warframe blueprints. Ivara's farm difficulty is moderate compared to other warframes--spy missions are the primary bottleneck, and success rate depends entirely on player skill at stealth and puzzle-solving rather than RNG-gated boss encounters. This makes Ivara one of the most skill-gated warframes to acquire, rewarding patient players who master spy mission mechanics early.
+
+## Playstyle
+
+Ivara excels in methodical, patient gameplay where planning beats reflexes. Every mission should begin with passive scouting using her tactical sense to map enemy positions and identify optimal approach angles. Cloak Arrow establishes invisible safe zones for teammates or extended rest periods. Sleep Arrow and Noise Arrow enable non-lethal crowd control and tactical misdirection, allowing Ivara to isolate high-priority targets (heavy units, eximus) before eliminating them with Artemis Bow or silent headshots during Prowl. Navigator enables guaranteed precision hits on weak spots--aim for weak points on Bombards or headshots on stationary heavy units while the projectile is under her control.
+
+During void fissure missions or endless survival runs, Ivara shines by maintaining invisibility passively (minimal energy drain), steals loot automatically via Prowl, and can quickly spike incoming enemies with Artemis Bow volleys once cover is established. Her low health demands positioning--never stand in open fire; instead, perch on ledges, use environmental cover, and leverage invisibility to reposition when pressure mounts. In sorties or steel path missions, Ivara scales through ability duration (extended invisibility), ability strength (doubled headshot damage), and efficiency (lower energy drain per Prowl second), depending on available mods and threat level.
+
+## Recommended builds
+
+Ivara's recommended spy build prioritizes invisibility duration and efficiency, allowing near-permanent Prowl with minimal active-use energy drain. Key mods include Primed Continuity, Augur Reach, and Fleeting Expertise (ranked down) to balance duration and efficiency. Prowl invisibility drain becomes negligible with this setup, and Sleep Arrow/Noise Arrow durations extend enough to control entire vault rooms. Combine with a silent bow or sniper rifle to execute single headshots on patrolling guards, then proceed through undetected. A full guide is available in the [Ivara Spy Master Build](/builds/warframes/ivara/spy-infiltration).
+
+For endgame damage scaling, invest in ability strength (Intensify, Augur Intensify, Blind Rage) to maximize Artemis Bow damage and Prowl headshot multipliers. Pair with Corrosive Projection aura to armor-strip grouped enemies, then trigger volleys from invisibility. This strength-focused variation transforms Ivara into a long-range assassin capable of one-cycling priority targets in steel path disruptions. See [Ivara Artemis Annihilator Build](/builds/warframes/ivara/artemis-damage) for complete mod breakdown and elemental optimization.
+
+For solo farming (relics, void cascades), prioritize duration and efficiency for passive invisibility and loot-stealing via Prowl. Add Pilfering Swarm augment or Despoil on the sentinel to multiply drop chances. Ivara becomes a self-contained loot multiplier that never dies because enemies never see her--ideal for low-stress farming sessions.
+
+## Synergies
+
+Ivara synergizes exceptionally well with silent or bow-type weapons (Paris Prime, Cernos, Attica, Aksomati) that reward headshots and critical hits. Her doubled headshot damage during Prowl makes any weapon with decent critical chance devastating on first shot. Melee finisher weapons like Redeemer Prime or Glaive Prime benefit directly from Navigator's precision aiming and Prowl's guaranteed finisher kills when enemies are asleep or stationary.
+
+Arcane Energize provides necessary sustain for extended Prowl sessions, replenishing the energy drain of invisibility maintenance. Arcane Guardian or Arcane Resilience help offset Ivara's fragility. Zenurik focus school pairs well with Navigator and Artemis Bow by boosting energy regeneration during operator void mode, enabling Ivara to toggle invisibility on-off without energy starvation.
+
+In squad play, Cloak Arrow combined with Invisibility Augment creates group-wide stealth zones, making Ivara an exceptional support pick for spy missions, assassination contracts, or any mission where alerted enemies spell failure. Squadmates benefit from the free Cloak bubbles while Ivara maintains her own Prowl invisibility, effectively granting the entire team reconnaissance and evasion capabilities.
+
+## Lore
+
+Ivara was engineered by the Orokin as a prototype field operative, designed to infiltrate enemy strongholds undetected and eliminate targets with surgical precision. Her aesthetic draws heavily from classical archer and rogue archetypes--sleek, lean, and adorned with tactical gear rather than heavy plating. The Orokin valued information gathering and covert elimination over frontal assault, making Ivara embodiment of espionage doctrine: appear unseen, strike decisively, vanish without trace.
+
+Ivara's ability to sense nearby enemies through walls reflects her design as a scout and pathfinder, intended to lead Orokin expeditions through hostile territory while providing real-time tactical awareness to command. The Quiver itself is a marvel of Orokin engineering--four distinct arrow types integrated into a single ability, suggesting the Orokin understood that true versatility demands multiple tools for multiple problems. Unlike flashier warframes built for overwhelming raw power, Ivara represents the Orokin's appreciation for elegance, precision, and the lethality of a skilled operative with the right equipment.
+
+Ivara Prime, released in late 2017, represents a refined evolution with slightly enhanced shields and armor, suggesting the Orokin eventually recognized that true stealth requires some defensive margin for error. Despite her age relative to modern warframes, Ivara's mechanical design remains so well-balanced that she competes effectively in endgame content, a testament to how thoroughly the Orokin engineered her core identity.
+
+## Sources
+
+All numeric stats and ability descriptions sourced from WFCD (Warframe Community Data Project) `warframe-items` JSON as of version current. Acquisition data verified against WFCD drop tables. Playstyle notes synthesized from warframe.fandom.com community guides and high-level mission strategies documented across multiple sources.

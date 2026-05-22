@@ -1,0 +1,60 @@
+---
+slug: pax-seeker
+name: "Pax Seeker"
+type: kitgun
+maxRank: 3
+effect: "On Headshot Kill: [projectiles] projectile(s) burst from the target and seek the heads of nearby enemies."
+perRankStats:
+  - rank: 0
+    stats: { projectiles: 1 }
+  - rank: 3
+    stats: { projectiles: 4 }
+drops: []
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Pax_Seeker"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Pax Seeker triggers on headshot kills with the equipped Kitgun, launching homing projectiles from the slain enemy's head position that seek the heads of nearby living enemies. The projectiles travel autonomously toward the nearest unshielded enemy heads after the initial kill, converting one headshot kill into a chain damage event that can eliminate or weaken multiple enemies in the surrounding area. At rank 3, four projectiles burst per headshot kill, each independently homing to a separate nearby enemy head.
+
+The mechanic rewards precision aiming in two ways: the headshot kill itself earns the arcane proc, and the seeker projectiles that follow continue applying headshot-class damage to nearby targets without additional aiming. This is particularly effective in groups of enemies where killing one headshot target launches projectiles into the cluster, potentially triggering additional headshot kills that produce additional seeker bursts.
+
+## Effect
+
+At rank 0, one projectile per headshot kill seeks a nearby enemy head. At rank 3, four projectiles per headshot kill seek the heads of up to four nearby enemies simultaneously. The projectiles are homing and do not require manual aim - they launch from the killed target's position and navigate to the nearest enemy heads in range.
+
+Seeker projectiles that land headshots on their targets can also trigger additional Pax Seeker procs, potentially chaining through groups of clustered enemies.
+
+## Stats per rank
+
+| Rank | Projectiles per Kill | Notes |
+|------|---------------------|-------|
+| 0 | 1 | Single seeker |
+| 1 | 2 | Dual seekers |
+| 2 | 3 | Triple spread |
+| 3 | 4 | Quad burst |
+
+## Acquisition
+
+Pax Seeker is obtained through Ventkid-related content on the Orb Vallis, Venus, through standing rewards, blueprint crafting, or trading. The WFCD dataset does not document specific drop tables for this arcane. Community drop tables and the in-game Ventkid market offer current sourcing information. Warframe.market provides direct platinum purchase from other players for immediate access.
+
+## Builds that use it
+
+Pax Seeker suits precise Kitgun builds that land frequent headshot kills in dense enemy groups. High-accuracy Kitgun chambers - Rattleguts or Tombfinger configurations with tight spread - facilitate the headshot kills that trigger Seeker. Players who engage grouped infantry enemies in Grineer defense missions, Corpus tile-set survival, or Infested Defense where enemies cluster tightly see the most chain-killing benefit from the four seeker projectiles.
+
+Warframes with crowd-control abilities that group enemies together enhance Seeker's effectiveness: Vauban's Bastille, Zephyr's Tornado, or Limbo's Stasis condense enemies into positions where each seeker kill can immediately proc another headshot from the projectile chain.
+
+## Notes
+
+Seeker projectiles from Pax Seeker deal damage based on the Kitgun's damage values - the projectiles are extensions of the equipped weapon's damage profile and benefit from applicable weapon mods. If seeker projectiles land headshots on their own targets, they can trigger additional Pax Seeker procs from those secondary kills, creating chain reactions in dense enemy groups. The headshot requirement on the initial kill means miss shots and body shots do not trigger Seeker - precision is required for the proc. In open-area content where enemies are spread out, fewer targets may fall within the seekers' homing radius after each kill.
+
+## Sources
+
+- WFCD warframe-items dataset documents the headshot kill trigger and projectile count scaling for Pax Seeker.
+- Fandom wiki entry for Pax Seeker covers the homing projectile behavior, headshot-targeting mechanic, and chain-kill proc potential from secondary seeker headshots.

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "invasion-001",
+    "activation": "2026-05-17T00:00:00.000Z",
+    "node": "Phorcys (Neptune)",
+    "desc": "Help the Grineer fight the Corpus",
+    "attacker": {
+      "faction": "Grineer",
+      "reward": { "asString": "Orokin Cell x3" }
+    },
+    "defender": {
+      "faction": "Corpus",
+      "reward": { "asString": "Detonite Injector" }
+    },
+    "completion": 42.5,
+    "completed": false,
+    "eta": "12h"
+  },
+  {
+    "id": "invasion-002",
+    "activation": "2026-05-17T06:00:00.000Z",
+    "node": "Mantle (Earth)",
+    "desc": "Help the Corpus fight the Infested",
+    "attacker": {
+      "faction": "Corpus",
+      "reward": { "asString": "Mutagen Mass" }
+    },
+    "defender": {
+      "faction": "Infested",
+      "reward": { "asString": "" }
+    },
+    "completion": 78.1,
+    "completed": false,
+    "eta": "6h"
+  }
+]

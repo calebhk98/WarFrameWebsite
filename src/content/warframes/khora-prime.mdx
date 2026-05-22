@@ -1,0 +1,160 @@
+---
+slug: khora-prime
+name: Khora Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 365
+shield: 365
+armor: 345
+energy: 175
+sprintSpeed: 1.05
+passive:
+  name: Feline Instinct
+  description: >-
+    Khora and Venari move 25% faster when not in combat and gain increased
+    awareness of nearby enemies. Venari's attacks trigger chain reactions on
+    weakened targets.
+abilities:
+  - name: Whipclaw
+    key: "1"
+    energyCost: 25
+    description: >-
+      Strike enemies with a deafening whip that sends them reeling. Damage is
+      boosted by stats on the equipped whip weapon. Cracks can damage enemies
+      trapped in Strangledome.
+  - name: Ensnare
+    key: "2"
+    energyCost: 50
+    description: >-
+      Bind a target in living metal, entangling nearby enemies who stray close.
+      Whipclaw refreshes the trap, allowing it to capture additional enemies.
+      Ensnared foes take increased damage.
+  - name: Venari
+    key: "3"
+    energyCost: 0
+    description: >-
+      Command the kavat Venari to switch between Attack, Protect, and Heal
+      postures. If Venari falls in combat, this ability instantly revives her.
+      Venari fights independently, applying status effects.
+  - name: Strangledome
+    key: "4"
+    energyCost: 100
+    description: >-
+      Weave a dome of living chain around Khora, ensnaring all enemies within
+      and strangling them over time. Enemies outside attempt to destroy the dome
+      by shooting trapped targets. Whipclaw cracks damage all trapped foes.
+acquisition:
+  source: "Void Fissure relic farm (Prime relics)"
+  blueprintLocations:
+    - "Lith, Meso, Neo, Axi relics (various)"
+  cost:
+    platinum: 165
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2019-10-08"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    publisher: "WFCD"
+    note: "Version 1.756.0"
+  - url: "https://warframe.fandom.com/wiki/Khora"
+    accessedAt: "2026-05-19"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Khora Prime is a damage-focused warframe whose kit revolves around offense, crowd control, and independent pet synergy through her companion Venari. Unlike purely defensive frames, Khora builds her arsenal around precision strikes, crowd confinement, and leveraging her kavat's autonomous aggression to amplify overall team damage output. With respectable health (365), shields (365), and exceptional armor (345), she balances offensive capability with meaningful survivability. Her relatively high energy pool (175) allows sustained ability spam without immediate energy starvation, making her viable for endurance content and coordinated squad play. The prime variant--released in October 2019--refines the original frame with enhanced stats and polished animations, making her one of the most elegant frames aesthetically and functionally.
+
+Khora excels in missions where crowd control and single-target burst combine into dominant strategies: excavation runs (Whipclaw + Ensnare synergy crushes grouped enemies), kuva survival (her dome traps high-priority threats while Venari hunts stragglers), corpus void fissure disruption (magnetic eximus units trapped, enemies unable to escape containment), and arbitrations (dome setup prevents overwhelming waves). Her armor value (345) is among the highest in the game, providing substantial damage reduction when paired with appropriate mods. However, her low mobility (sprint speed 1.05x is below average) and reliance on positioning within dome range means careless players will struggle in open-tileset missions. Khora demands tactical awareness: where to place the dome, when to refresh Ensnare on priority targets, and how to balance Venari's autonomous hunting with personal ability spam.
+
+## Abilities
+
+<AbilityCard
+  name="Whipclaw"
+  key="1"
+  energyCost={25}
+  description="Strike enemies with a deafening whip that sends them reeling. Damage is boosted by stats on the equipped whip weapon. Cracks can damage enemies trapped in Strangledome."
+/>
+
+Whipclaw is Khora's primary weapon, a deafening melee strike that sends enemies staggering backward and applies physical damage scaling with her equipped whip weapon mods. The ability is fundamentally different from most frame abilities: its damage pool is determined entirely by weapon mods on whatever whip the player has equipped (or unarmed if no whip is present). This design creates unique itemization complexity--a Khora player must invest in whip weapons as seriously as any other weapon slot, treating the weapon mods as part of her ability arsenal. In Strangledome-trapped enemies, Whipclaw cracks propagate through the dome and damage all contained targets, creating satisfying multi-enemy damage scenarios. The 25-energy cost is trivial, encouraging liberal casting. Whipclaw benefits from melee attack speed mods and weapon-specific critical/status scaling, making it the signature mechanic that separates Khora builds from generic frames.
+
+<AbilityCard
+  name="Ensnare"
+  key="2"
+  energyCost={50}
+  description="Bind a target in living metal, entangling nearby enemies who stray close. Whipclaw refreshes the trap, allowing it to capture additional enemies. Ensnared foes take increased damage."
+/>
+
+Ensnare binds a single target in living metal, immobilizing it and pulling nearby enemies into the trap zone. Any foe within the radius becomes entangled and suffers increased damage from all sources until the ability expires. Refreshing the trap with another Whipclaw cast extends the duration indefinitely, allowing Khora to chain entangle across a group of enemies. The 50-energy cost reflects its utility; in organized squads, a dedicated Khora player can maintain Ensnare on three to five priority targets through careful ability rotations. Ensnared enemies cannot move, reload weapons, or activate abilities, making this the frame's primary crowd-control tool. Ability range mods determine the initial target acquisition range and the nearby-enemy pull radius, making efficiency vs. range optimization a core modding decision.
+
+<AbilityCard
+  name="Venari"
+  key="3"
+  energyCost={0}
+  description="Command the kavat Venari to switch between Attack, Protect, and Heal postures. If Venari falls in combat, this ability instantly revives her. Venari fights independently, applying status effects."
+/>
+
+Venari is not an activated ability in the traditional sense; instead, holding the ability button cycles through three stances: Attack (offensive), Protect (defensive shield generator), and Heal (support). Venari persists independently for the mission duration unless killed in combat, at which point casting the ability instantly revives her with no energy cost or cooldown. This unique mechanic makes Khora's companion exceptionally durable compared to other pet-based frames. In Attack mode, Venari aggressively hunts nearby enemies, applying status effects from her melee weapon and generating pressure on scattered targets while Khora maintains Strangledome and Whipclaw. In Protect mode, Venari follows Khora and generates a shield that absorbs damage for nearby allies, doubling overshield capacity--a powerful passive defense. In Heal mode, Venari restores health to nearby players, providing a backup sustain tool if squad energy is low. The zero-energy cost means cycling stances is free, enabling dynamic playstyle adaptation mid-mission.
+
+<AbilityCard
+  name="Strangledome"
+  key="4"
+  energyCost={100}
+  description="Weave a dome of living chain around Khora, ensnaring all enemies within and strangling them over time. Enemies outside attempt to destroy the dome by shooting trapped targets. Whipclaw cracks damage all trapped foes."
+/>
+
+Strangledome is Khora's ultimate ability, weaving a hemispherical dome of living chain around her position. Any enemy within the dome at cast time and during the duration takes slow and strangulation damage over time; importantly, enemies outside the dome attempt to destroy it by shooting trapped targets, adding tactical depth. This invites a playstyle where Khora positions the dome to protect specific objects (defense targets, excavators) or to contain dangerous high-threat enemies (Bombards, Heavy Gunners, ancient enemies). Whipclaw casts crack the dome, damaging all contained enemies simultaneously--combining this with Ensnare creates scenarios where five to ten trapped enemies all take Whipclaw damage at once, clearing packed rooms instantly. The 100-energy cost is substantial but justified by the ability's utility; ability efficiency mods (Streamline, Primed Continuity) and energy-sustain mods (Primed Flow, energy-conversion mods) are essential for sustaining repeated dome casts. In endless missions, managing energy to maintain dome uptime is the core gameplay loop.
+
+## Passive
+
+Khora's passive, Feline Instinct, grants 25% increased movement speed to both her and Venari while outside active combat, and increases Khora's awareness (minimap detection range) of approaching enemies. Additionally, Venari's melee attacks trigger chain reactions on weakened targets, propagating status effects and crowd control across grouped foes. This passive directly supports her playstyle: the movement speed buff enables repositioning between dome placements without sacrificing offensive tempo, and Venari's chain-reaction mechanic means her autonomous aggression synergizes with Ensnare and Strangledome crowd control. Unlike many passive abilities that require no active play, Feline Instinct subtly rewards dynamic repositioning and encourages players to move between dome placements rather than static defense.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 365 |
+| Shield | 365 |
+| Armor | 345 |
+| Energy | 175 |
+| Sprint Speed | 1.05x |
+| Mastery Rank | 0 |
+
+Khora Prime's stats emphasize balanced durability: matched health and shield pools (365 each) means both defensive layers contribute equally to survival, scaling identically with vigor and blessing mods. Her armor value (345) ranks among the highest in the game, rivaling pure-tank frames like Rhino and Wukong. When modded for protection (Steel Fiber, Primed Armor), this translates to 75%+ damage reduction--survival on par with much bulkier-seeming frames. Her energy pool (175) is high enough to sustain ability spam in moderate-length missions but requires energy-efficiency scaling (Streamline, Primed Continuity, Aura mods) for hour-long endurance content. The sprint speed multiplier (1.05x) is slightly above baseline (1.0x), offering marginal mobility that does not support hit-and-run playstyles; instead, positioning and dome placement dominate movement decisions.
+
+## Acquisition
+
+Khora Prime components drop from void fissure relics, making her acquisition dependent on relic farming and void fissure participation. The blueprint drops from Axi fissures (highest rarity), while Neuroptics, Systems, and Chassis components spread across Lith, Meso, Neo, and Axi era relics. Unlike quest-locked frames or assassination-farmable variants, Khora Prime requires coordinated void fissure runs or trading with other players--both valid acquisition paths depending on player preference. The prime blueprint requires credits (25,000), plastids, alloy plates, and neural sensors; total craft time is 72 hours. New players should expect two to four weeks of casual relic farming to accumulate all components if pursuing solo farming. Alternatively, trading platinum for relics from other players or ready-built components significantly accelerates acquisition.
+
+## Playstyle
+
+Khora's core gameplay loop centers on dome placement, crowd control maintenance, and Whipclaw ability spam to clear trapped enemy groups. The fundamental rotation depends on mission context: in high-density spawns (excavation, defense, disruption), cast Strangledome as enemies approach, immediately cast Ensnare on dangerous priority targets (Bombards, Heavy Gunners, nullifiers), then spam Whipclaw to damage all trapped enemies simultaneously. This creates satisfying multi-enemy clear scenarios where a single dome and three to four Whipclaw casts delete entire waves. Between dome recasts (every 10-20 seconds depending on duration mods), Khora switches focus to weapon damage or allows Venari to hunt stragglers, freeing up energy for the next dome sequence. This is not a passive frame--success demands active engagement, positioning awareness, and energy management.
+
+Venari's autonomous hunting is crucial to Khora's overall damage output and aggression. In Attack mode, Venari applies status effects (bleed, heat, toxin from her equipped weapon) to scattered enemies, creating pressure on targets outside the dome or during dome downtime. In higher-level content, Protect mode's shield generation significantly extends Khora's effective health, allowing her to stay close to dome centers without immediate lethal threats. Learning when to cycle Venari's stances in response to squad energy, damage phases, and enemy positioning separates novice Khora players from experienced ones. A Khora player in organized squads should communicate dome placements to allies (place it around defense targets or excavators for maximum squad benefit) and coordinate Whipclaw timing with allies' burst damage windows.
+
+Energy management is the binding constraint on Khora's offense. Her 175 base pool supports roughly eight to ten dome casts plus ability spam if modded for efficiency; in endurance missions, sustaining this requires Primed Flow (increased pool), Streamline (reduced costs), Primed Continuity (longer ability durations means fewer recasts), and energy-generating aura mods (Energy Conversion, Corrosive Projection for squad synergy). A well-modded Khora can sustain indefinite dome uptime and Ensnare refreshes, becoming an unkillable crowd-control anchor that denies entire rooms to enemy advancement. In solo endless missions, this transforms hour-long survival runs into methodical dome-and-whip cycles where boredom becomes the real enemy, not opponent difficulty.
+
+## Recommended builds
+
+For high-threat crowd control and dome-spam focus in endurance content, invest in ability duration (Primed Continuity, Augur Reach) to extend dome lifetime and Ensnare duration, paired with ability efficiency (Streamline, Primed Flow) to sustain repeated dome casts. Add power-strength mods (Intensify) for crowd-control radius and strangulation damage scaling. See the [Khora Prime Crowd Control Build](/builds/warframes/khora-prime/dome-spam) for a complete loadout.
+
+For balanced offense combining Whipclaw weapon damage with crowd control, invest in melee-attack-speed mods, weapon elemental mods (to scale whip damage), and ability range (Power Strength affects Ensnare radius and dome size). Pair with a high-crit-chance whip weapon (Lesion, Sibear, Atterax Prime) to convert Whipclaw into burst-damage ability.
+
+- [Khora Prime -- Strangledome Farm](/builds/khora-prime/strangledome-farm): Pilfering Strangledome resource duplication build for dedicated farming runs.
+
+## Synergies
+
+Khora synergizes exceptionally well with single-target damage dealers in organized squads. Trapping dangerous enemies with Ensnare and containing mixed groups in Strangledome allows teammates to focus fire on high-priority targets (Bombards, nullifiers, eximus units) without worrying about adds. In farming-focused missions (excavation, resource extraction), her crowd control accelerates mission completion by preventing enemy disruption of collection objectives. With frames like Hydroid or Nekros that also provide crowd control or resource-multiplication mechanics, Khora's dome becomes a force multiplier--trapped enemies die faster, generating more loot when Desecration or Pilfering Swarm is applied. Venari's autonomous aggression also scales well with support buffs from energy-sustain frames (Trinity, Harrow) or damage amplification (Rhino, Volt), making Khora an ideal third or fourth pick in coordinated four-player endurance runs.
+
+## Lore
+
+Khora Prime represents the Orokin's evolution of predatory hunter design, refining the original Khora frame toward elegance and lethal precision. In-universe, she embodies the principle of organized aggression: where other predatory frames (Titania, Saryn) spread chaos through toxins or swarms, Khora dominates through controlled confinement and synchronized strikes. Her relationship with Venari--a kavat companion with autonomous agency--adds narrative depth; the two fight as a unit, suggesting Orokin-era mastery over biological and technological synthesis. The golden accents of the prime variant and refined armor plating imply Orokin craftsmanship at its apex, suggesting that this iteration was engineered specifically for high-level void combat and containment operations during the Old War. Lore-wise, Khora Prime is the perfected predator: relentless, focused, and nearly impossible to escape once ensnared.
+
+## Sources
+
+The WFCD warframe-items database provides all canonical stats, ability descriptions, and relic drop locations. The Fandom wiki page for Khora includes detailed ability mechanics explanations, fashion endgame screenshots, and community-maintained build guides. Both sources align on stat values as of May 2026.

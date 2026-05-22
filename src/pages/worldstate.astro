@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+import WorldstateSortie from '../components/WorldstateSortie.astro';
+import WorldstateArchon from '../components/WorldstateArchon.astro';
+import WorldstateFissures from '../components/WorldstateFissures.astro';
+import WorldstateInvasions from '../components/WorldstateInvasions.astro';
+import WorldstateNightwave from '../components/WorldstateNightwave.astro';
+import WorldstateCycles from '../components/WorldstateCycles.astro';
+import {
+  getSorties,
+  getArchonHunt,
+  getFissures,
+  getInvasions,
+  getCetusCycle,
+  getVallisCycle,
+  getCambionCycle,
+  getZarimanCycle,
+  getNightwave,
+} from '../lib/worldstate';
+import type { Sortie, ArchonHunt, Fissure, Invasion } from '../lib/worldstate';
+import type { DayNightCycle, WarmColdCycle, CambionCycle, ZarimanCycle, Nightwave } from '../lib/worldstate';
+
+const fetchedAt = new Date().toISOString();
+const fetchedLabel = new Date(fetchedAt).toUTCString();
+
+let sortie: Sortie | null = null;
+let archon: ArchonHunt | null = null;
+let fissures: Fissure[] = [];
+let invasions: Invasion[] = [];
+let cetus: DayNightCycle | null = null;
+let vallis: WarmColdCycle | null = null;
+let cambion: CambionCycle | null = null;
+let zariman: ZarimanCycle | null = null;
+let nightwave: Nightwave | null = null;
+
+try {
+  const [sorties, archonResult, fissureResult, invasionResult] = await Promise.allSettled([
+    getSorties(),
+    getArchonHunt(),
+    getFissures(),
+    getInvasions(),
+  ]);
+  if (sorties.status === 'fulfilled') sortie = sorties.value[0] ?? null;
+  if (archonResult.status === 'fulfilled') archon = archonResult.value;
+  if (fissureResult.status === 'fulfilled') fissures = fissureResult.value;
+  if (invasionResult.status === 'fulfilled') invasions = invasionResult.value;
+} catch {
+  // individual errors handled via allSettled above
+}
+
+try {
+  const [cetusResult, vallisResult, cambionResult, zarimanResult, nightwaveResult] =
+    await Promise.allSettled([
+      getCetusCycle(),
+      getVallisCycle(),
+      getCambionCycle(),
+      getZarimanCycle(),
+      getNightwave(),
+    ]);
+  if (cetusResult.status === 'fulfilled') cetus = cetusResult.value;
+  if (vallisResult.status === 'fulfilled') vallis = vallisResult.value;
+  if (cambionResult.status === 'fulfilled') cambion = cambionResult.value;
+  if (zarimanResult.status === 'fulfilled') zariman = zarimanResult.value;
+  if (nightwaveResult.status === 'fulfilled') nightwave = nightwaveResult.value;
+} catch {
+  // individual errors handled via allSettled above
+}
+
+const normalFissures = fissures.filter((f) => !f.isHard && !f.isStorm);
+const steelFissures = fissures.filter((f) => f.isHard === true);
+---
+
+<Base
+  title="Worldstate"
+  description="Current Warframe worldstate -- sorties, fissures, invasions, nightwave, and open world cycles"
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Worldstate</h1>
+      <p class="text-brand-cream/60">
+        Live worldstate snapshot generated at build time from
+        <a
+          href="https://warframestat.us"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-brand-orange underline underline-offset-2 hover:text-brand-orange/80"
+        >warframestat.us</a>.
+        Deploy a new build to refresh.
+      </p>
+      <p class="text-xs text-brand-cream/60 mt-1">
+        Data fetched: <time datetime={fetchedAt}>{fetchedLabel}</time>
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <WorldstateSortie sortie={sortie} fetchedAt={fetchedAt} />
+      <WorldstateArchon archon={archon} fetchedAt={fetchedAt} />
+      <WorldstateFissures fissures={normalFissures} steel={false} fetchedAt={fetchedAt} />
+      <WorldstateFissures fissures={steelFissures} steel={true} fetchedAt={fetchedAt} />
+      <WorldstateInvasions invasions={invasions} fetchedAt={fetchedAt} />
+      <WorldstateNightwave nightwave={nightwave} fetchedAt={fetchedAt} />
+    </div>
+
+    <div class="mt-6">
+      <WorldstateCycles
+        cetus={cetus}
+        vallis={vallis}
+        cambion={cambion}
+        zariman={zariman}
+        fetchedAt={fetchedAt}
+      />
+    </div>
+
+    <p class="mt-6 text-xs text-brand-cream/60">
+      Worldstate data is fetched at build time and cached in
+      <code class="font-mono text-brand-cream/70">data/cache/</code>.
+      Source: <a href="https://warframestat.us" target="_blank" rel="noopener noreferrer" class="text-brand-orange underline underline-offset-2 hover:text-brand-orange/80">warframestat.us</a>.
+    </p>
+  </div>
+</Base>

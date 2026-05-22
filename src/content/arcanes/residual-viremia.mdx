@@ -1,0 +1,67 @@
+---
+slug: residual-viremia
+name: Residual Viremia
+type: companion
+maxRank: 3
+effect: "On Kitgun Kill: 20% chance to create pool of toxic blood for [damage]s, dealing 40 Toxin Damage/s. Standing in the area applies the Toxin Damage to Theorem Arcanes."
+perRankStats:
+  - rank: 0
+    stats: { damage: 3 }
+  - rank: 1
+    stats: { damage: 6 }
+  - rank: 2
+    stats: { damage: 9 }
+  - rank: 3
+    stats: { damage: 12 }
+drops:
+  - source: Various
+    chance: 1.0
+    rarity: uncommon
+sources:
+  - url: https://github.com/WFCD/warframe-items
+    accessedAt: '2026-05-20'
+    publisher: WFCD
+  - url: https://warframe.fandom.com/wiki/Residual_Viremia
+    accessedAt: '2026-05-20'
+    publisher: Fandom
+updatedAt: '2026-05-20'
+---
+## Overview
+
+Residual Viremia is a companion arcane from the Residual-Theorem set that creates a pool of toxic blood on Kitgun kills. When a Kitgun kill is secured, there is a 20% chance that a toxic blood pool spawns at the kill location. The pool deals 40 Toxin Damage per second to all enemies in contact with it for the rank-dependent duration. Standing in the pool activates Toxin Damage type for Theorem Arcanes, synergizing with the Theorem arcane set mechanic based on elemental type proximity.
+
+At rank 3, the toxic pool persists for 12 seconds, providing sustained area Toxin Damage and Theorem Arcane activation for that duration.
+
+## Effect
+
+On each Kitgun kill, the 20% trigger chance is checked. On success, a toxic blood pool spawns at the kill location. The pool deals 40 Toxin Damage per second to all enemies within the pool area continuously for the duration. Toxin Damage bypasses shields and deals direct health damage -- enemies with shields still take the full 40 Toxin/s to their health pool. Standing in the pool activates Toxin Damage type for Theorem Arcanes, enabling the set link between Residual Viremia and Theorem arcanes that use elemental damage type as an activation condition.
+
+At rank 0, pools last 3 seconds. At rank 3, pools last 12 seconds, providing a longer area denial and Theorem activation window per trigger.
+
+## Stats per rank
+
+| Rank | Pool Duration | Toxin Damage Rate | Theorem Type Activation |
+|------|-------------|------------------|------------------------|
+| 0 | 3s | 40 Toxin/s | Toxin Damage |
+| 1 | 6s | 40 Toxin/s | Toxin Damage |
+| 2 | 9s | 40 Toxin/s | Toxin Damage |
+| 3 | 12s | 40 Toxin/s | Toxin Damage |
+
+## Acquisition
+
+Residual Viremia drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Players building Residual-Theorem arcane sets farm Zariman content for all Residual series arcanes together, as the full set synergizes most effectively when multiple Residual types are active. Warframe.market provides direct purchase for targeted acquisition.
+
+## Builds that use it
+
+Residual Viremia is designed for the Residual-Theorem arcane pairing system. Kitgun-primary builds with high kill rates trigger the 20% pool spawn frequently, placing toxic zones across active combat areas. Standing in the pool zones activates Toxin Damage type for any equipped Theorem Arcanes, enabling the Theorem arcane interaction that uses elemental damage type as a condition.
+
+The 40 Toxin Damage/s from the pool bypasses shields, making it effective against Corpus enemies who rely heavily on shields for defense. Pools placed in choke points or objective areas deal consistent Toxin to enemies who pass through, adding damage over time to standard weapon fire without requiring additional player action.
+
+## Notes
+
+The 20% trigger chance is fixed across all ranks; only the pool duration scales with rank. Multiple pools from different Kitgun kills can overlap, creating areas of compounding 40 Toxin/s per overlapping pool. The 40 Toxin Damage/s is fixed and does not scale with weapon stats, companion mods, or player ability modifiers -- it is a flat zone damage rate. The Toxin Damage type activation for Theorem Arcanes requires the warframe to physically stand within the pool area; moving outside deactivates the Toxin type for Theorem purposes. Toxin Damage bypasses all enemy shields when dealing damage through the pool area.
+
+## Sources
+
+- WFCD warframe-items dataset provides pool duration values per rank and the 20% trigger chance for Residual Viremia.
+- Fandom wiki entry for [Residual Viremia](https://warframe.fandom.com/wiki/Residual_Viremia) covers toxic blood pool mechanics and the Theorem Arcane Toxin type interaction.

@@ -1,0 +1,213 @@
+---
+// riven-planner.astro -- Riven Roll Probability and Stat Value Planner.
+// Calculates roll probability for target stat combos and previews scaled values.
+import Base from '../layouts/Base.astro';
+import { RIVEN_STATS, KUVA_COST_SCHEDULE, NEGATIVE_ROLL_CHANCE } from '../data/riven-stats';
+import type { WeaponCategory, RivenStat } from '../data/riven-stats';
+
+const base = import.meta.env.BASE_URL;
+const CATEGORIES: readonly WeaponCategory[] = ['Rifle','Shotgun','Pistol','Melee','Sniper','Bow','Archgun'];
+const DISPOSITIONS: readonly number[] = [0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95,1.0,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,1.55];
+interface ClientStat { key:string; label:string; positiveBase:number; negativeBase:number; unit:string; categories:readonly string[]; }
+const statsForClient: ClientStat[] = RIVEN_STATS.map((s: RivenStat) => ({ key:s.key, label:s.label, positiveBase:s.positiveBase, negativeBase:s.negativeBase, unit:s.unit, categories:s.categories as readonly string[] }));
+const statsJson = JSON.stringify(statsForClient);
+const kuvaJson = JSON.stringify(KUVA_COST_SCHEDULE);
+const negChanceJson = JSON.stringify(NEGATIVE_ROLL_CHANCE);
+---
+<Base title="Riven Roll Planner" description="Calculate Riven mod roll probability and preview stat values for any weapon category and disposition.">
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <nav class="mb-4 text-sm text-brand-cream/50">
+        <a href={`${base}`} class="hover:text-brand-orange">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Riven Roll Planner</span>
+      </nav>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Riven Roll Planner</h1>
+          <p class="text-brand-cream/60">Calculate roll probability and preview stat values for any Riven mod.</p>
+        </div>
+        <nav class="flex gap-3 shrink-0" aria-label="Related tools">
+          <a href={`${base}tier-list`} class="text-sm text-brand-orange hover:underline">Tier List &rarr;</a>
+          <a href={`${base}beginner`} class="text-sm text-brand-orange hover:underline">Beginner Hub &rarr;</a>
+          <a href={`${base}weapons`} class="text-sm text-brand-orange hover:underline">Weapons &rarr;</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="flex flex-col sm:flex-row gap-4 mb-6 items-end">
+      <div class="w-full sm:w-48">
+        <label for="sel-category" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Weapon Category</label>
+        <select id="sel-category" class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange">
+          {CATEGORIES.map((c) => <option value={c}>{c}</option>)}
+        </select>
+      </div>
+      <div class="w-full sm:w-48">
+        <label for="sel-disp" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Disposition</label>
+        <select id="sel-disp" class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange">
+          {DISPOSITIONS.map((d) => <option value={String(d)} selected={d === 1.0}>{d.toFixed(2)}x</option>)}
+        </select>
+      </div>
+    </div>
+
+    <div class="flex gap-2 mb-6" role="tablist" aria-label="Planner mode">
+      <button id="tab-prob" role="tab" aria-selected="true" aria-controls="panel-prob" class="px-4 py-2 rounded-lg text-sm font-semibold bg-brand-orange text-brand-black">Probability Calculator</button>
+      <button id="tab-preview" role="tab" aria-selected="false" aria-controls="panel-preview" class="px-4 py-2 rounded-lg text-sm font-semibold border border-surface-3 text-brand-cream/70 hover:text-brand-cream">Stat Value Preview</button>
+    </div>
+
+    <div id="panel-prob" role="tabpanel" aria-labelledby="tab-prob">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+        <div>
+          <label for="sel-stat1" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Positive Stat 1</label>
+          <select id="sel-stat1" class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"><option value="">-- Choose stat --</option></select>
+        </div>
+        <div>
+          <label for="sel-stat2" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Positive Stat 2</label>
+          <select id="sel-stat2" class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"><option value="">-- Choose stat --</option></select>
+        </div>
+        <div>
+          <label for="sel-neg" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Negative Stat <span class="font-normal text-brand-cream/30 normal-case">(optional)</span></label>
+          <select id="sel-neg" class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"><option value="">-- Any / none --</option></select>
+        </div>
+      </div>
+      <div id="prob-result" role="region" aria-live="polite" aria-label="Probability results" class="rounded-lg border border-surface-3 bg-surface-2 p-5">
+        <p class="text-brand-cream/30 text-sm text-center py-4">Select two positive stats above to calculate roll probability.</p>
+      </div>
+    </div>
+
+    <div id="panel-preview" role="tabpanel" aria-labelledby="tab-preview" class="hidden">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label for="sel-preview-stat" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Stat to Preview</label>
+          <select id="sel-preview-stat" class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"><option value="">-- Choose stat --</option></select>
+        </div>
+        <div>
+          <label for="sel-quality" class="block text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Roll Quality</label>
+          <select id="sel-quality" class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange">
+            <option value="god">God Roll (100-110%)</option>
+            <option value="average" selected>Average (90-110%)</option>
+            <option value="bad">Bad Roll (90-95%)</option>
+          </select>
+        </div>
+      </div>
+      <div id="preview-result" role="region" aria-live="polite" aria-label="Stat value preview" class="rounded-lg border border-surface-3 bg-surface-2 p-5">
+        <p class="text-brand-cream/30 text-sm text-center py-4">Choose a stat above to preview its value range.</p>
+      </div>
+      <div class="mt-6">
+        <h2 class="text-sm font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">Stat Pool for <span id="pool-cat-label">Rifle</span></h2>
+        <div id="pool-table" class="overflow-x-auto"></div>
+      </div>
+    </div>
+  </div>
+</Base>
+
+<script define:vars={{ statsJson, kuvaJson, negChanceJson }} is:inline>
+  const STATS = JSON.parse(statsJson);
+  const KUVA = JSON.parse(kuvaJson);
+  const NEG = JSON.parse(negChanceJson);
+  const RFACTOR = { god:[1.0,1.1], average:[0.9,1.1], bad:[0.9,0.95] };
+
+  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function fmt(n) { return n % 1 === 0 ? String(n) : n.toFixed(1); }
+  function cat() { return document.getElementById('sel-category').value; }
+  function disp() { return parseFloat(document.getElementById('sel-disp').value); }
+  function eligible(c) { return STATS.filter((s) => s.categories.includes(c)); }
+
+  function buildOptions(id, stats, placeholder, exc1, exc2) {
+    const sel = document.getElementById(id);
+    const cur = sel.value;
+    sel.innerHTML = `<option value="">${esc(placeholder)}</option>`;
+    for (const s of stats) {
+      if (s.key === exc1 || s.key === exc2) continue;
+      const o = document.createElement('option');
+      o.value = s.key; o.textContent = s.label;
+      if (s.key === cur) o.selected = true;
+      sel.appendChild(o);
+    }
+  }
+
+  function kuvaEst(prob) {
+    if (prob <= 0) return { rolls:0, kuva:0 };
+    const rolls = Math.ceil(1 / prob);
+    const cap = KUVA[KUVA.length-1] ?? 3500;
+    let kuva = 0;
+    for (let i = 0; i < rolls; i++) kuva += (KUVA[i] ?? cap);
+    return { rolls, kuva };
+  }
+
+  function calcProb() {
+    const s1 = document.getElementById('sel-stat1').value;
+    const s2 = document.getElementById('sel-stat2').value;
+    const neg = document.getElementById('sel-neg').value;
+    const el = eligible(cat());
+    const panel = document.getElementById('prob-result');
+    if (!s1 || !s2) { panel.innerHTML = '<p class="text-brand-cream/30 text-sm text-center py-4">Select two positive stats above to calculate roll probability.</p>'; return; }
+    const n = el.length;
+    const pCombo = n < 2 ? 0 : 1 / ((n*(n-1))/2);
+    const pFull = neg ? pCombo * NEG * (1/n) : pCombo;
+    const { rolls:rC, kuva:kC } = kuvaEst(pCombo);
+    const { rolls:rF, kuva:kF } = kuvaEst(pFull);
+    const lbl = (k) => el.find((s) => s.key === k)?.label ?? k;
+    const negRow = neg ? `<div><p class="text-xs text-brand-cream/50">+ exact negative chance</p><p class="text-lg font-bold text-brand-orange">${(pFull*100).toFixed(3)}%</p><p class="text-xs text-brand-cream/40">~${rF} rolls | ~${kF.toLocaleString()} Kuva</p></div>` : '';
+    panel.innerHTML = `<div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div class="space-y-1"><p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Target combo</p><p class="text-sm text-brand-cream">+${esc(lbl(s1))}</p><p class="text-sm text-brand-cream">+${esc(lbl(s2))}</p>${neg?`<p class="text-sm text-red-400">-${esc(lbl(neg))}</p>`:''}<p class="text-xs text-brand-cream/40 mt-1">Eligible stats for ${esc(cat())}: ${n}</p></div><div class="space-y-3"><div><p class="text-xs text-brand-cream/50">2-positive combo chance</p><p class="text-lg font-bold text-brand-orange">${(pCombo*100).toFixed(2)}%</p><p class="text-xs text-brand-cream/40">~${rC} rolls | ~${kC.toLocaleString()} Kuva</p></div>${negRow}</div></div><p class="text-xs text-brand-cream/30 border-t border-surface-3 pt-3 mt-2">Kuva: 900 roll 1, then 1000/1200/1750/2500, capped 3500. Uniform distribution assumed.</p>`;
+  }
+
+  function calcPreview() {
+    const key = document.getElementById('sel-preview-stat').value;
+    const q = document.getElementById('sel-quality').value;
+    const d = disp();
+    const panel = document.getElementById('preview-result');
+    if (!key) { panel.innerHTML = '<p class="text-brand-cream/30 text-sm text-center py-4">Choose a stat above to preview its value range.</p>'; return; }
+    const stat = STATS.find((s) => s.key === key);
+    if (!stat) return;
+    const [fMin,fMax] = RFACTOR[q] ?? [0.9,1.1];
+    const round = (v) => Math.round(v * 10) / 10;
+    const posMin = round(stat.positiveBase * d * fMin);
+    const posMax = round(stat.positiveBase * d * fMax);
+    const negMin = round(stat.negativeBase * d * fMin);
+    const negMax = round(stat.negativeBase * d * fMax);
+    panel.innerHTML = `<div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div><p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Positive roll range</p><p class="text-2xl font-bold text-brand-orange">${fmt(posMin)}${stat.unit} - ${fmt(posMax)}${stat.unit}</p><p class="text-xs text-brand-cream/40">Base ${stat.positiveBase}${stat.unit} at disp 1.0</p></div><div><p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-1">Negative roll range</p><p class="text-2xl font-bold text-red-400">-${fmt(negMin)}${stat.unit} to -${fmt(negMax)}${stat.unit}</p><p class="text-xs text-brand-cream/40">Base ${stat.negativeBase}${stat.unit} at disp 1.0</p></div></div><p class="text-xs text-brand-cream/30 border-t border-surface-3 pt-3 mt-3">Formula: base x disposition (${d.toFixed(2)}) x roll factor ${(fMin*100).toFixed(0)}-${(fMax*100).toFixed(0)}%.</p>`;
+  }
+
+  function renderPool() {
+    const el = eligible(cat());
+    const lbl = document.getElementById('pool-cat-label');
+    if (lbl) lbl.textContent = cat();
+    const tbl = document.getElementById('pool-table');
+    if (!tbl) return;
+    const rows = el.map((s) => `<tr class="border-t border-surface-3"><td class="py-2 pr-4 text-sm text-brand-cream">${esc(s.label)}</td><td class="py-2 pr-4 text-sm text-brand-orange">+${s.positiveBase}${s.unit}</td><td class="py-2 text-sm text-red-400">-${s.negativeBase}${s.unit}</td></tr>`).join('');
+    tbl.innerHTML = `<table class="w-full text-left"><thead><tr><th class="pb-2 text-xs font-semibold text-brand-cream/50 uppercase tracking-wide pr-4">Stat</th><th class="pb-2 text-xs font-semibold text-brand-cream/50 uppercase tracking-wide pr-4">Positive (disp 1.0)</th><th class="pb-2 text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Negative</th></tr></thead><tbody>${rows}</tbody></table>`;
+  }
+
+  function refreshAll() {
+    const el = eligible(cat());
+    const s1 = document.getElementById('sel-stat1').value;
+    const s2 = document.getElementById('sel-stat2').value;
+    buildOptions('sel-stat1', el, '-- Choose stat --', s2, '');
+    buildOptions('sel-stat2', el, '-- Choose stat --', s1, '');
+    buildOptions('sel-neg', el, '-- Any / none --', '', '');
+    buildOptions('sel-preview-stat', el, '-- Choose stat --', '', '');
+    calcProb(); calcPreview(); renderPool();
+  }
+
+  function switchTab(active) {
+    for (const id of ['prob','preview']) {
+      const isActive = id === active;
+      const btn = document.getElementById(`tab-${id}`);
+      const pnl = document.getElementById(`panel-${id}`);
+      if (btn) { btn.setAttribute('aria-selected', String(isActive)); btn.className = isActive ? 'px-4 py-2 rounded-lg text-sm font-semibold bg-brand-orange text-brand-black' : 'px-4 py-2 rounded-lg text-sm font-semibold border border-surface-3 text-brand-cream/70 hover:text-brand-cream'; }
+      if (pnl) pnl.classList.toggle('hidden', !isActive);
+    }
+  }
+
+  document.getElementById('tab-prob').addEventListener('click', () => switchTab('prob'));
+  document.getElementById('tab-preview').addEventListener('click', () => switchTab('preview'));
+  document.getElementById('sel-category').addEventListener('change', refreshAll);
+  document.getElementById('sel-disp').addEventListener('change', () => { calcProb(); calcPreview(); });
+  document.getElementById('sel-stat1').addEventListener('change', () => { buildOptions('sel-stat2', eligible(cat()), '-- Choose stat --', document.getElementById('sel-stat1').value, ''); calcProb(); });
+  document.getElementById('sel-stat2').addEventListener('change', () => { buildOptions('sel-stat1', eligible(cat()), '-- Choose stat --', document.getElementById('sel-stat2').value, ''); calcProb(); });
+  document.getElementById('sel-neg').addEventListener('change', calcProb);
+  document.getElementById('sel-preview-stat').addEventListener('change', calcPreview);
+  document.getElementById('sel-quality').addEventListener('change', calcPreview);
+  refreshAll();
+</script>

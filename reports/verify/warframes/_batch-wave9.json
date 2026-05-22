@@ -1,0 +1,518 @@
+{
+  "pass": true,
+  "errors": [],
+  "warnings": [],
+  "checked_at": "2026-05-19T02:35:00.000Z",
+  "batch": "wave9",
+  "files_checked": 8,
+  "summary": {
+    "total": 8,
+    "passed": 8,
+    "failed": 0
+  },
+  "results": [
+    {
+      "slug": "mag-prime",
+      "file": "/home/user/WarFrameWebsite/src/content/warframes/mag-prime.mdx",
+      "pass": true,
+      "word_count": 1168,
+      "word_count_floor": 800,
+      "word_count_status": "pass",
+      "sections_present": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Recommended builds",
+        "Lore",
+        "Sources"
+      ],
+      "sources_count": 2,
+      "sources_min": 2,
+      "source_citations": [
+        {
+          "url": "https://github.com/WFCD/warframe-items",
+          "accessed_at": "2026-05-19",
+          "publisher": "WFCD",
+          "type": "primary"
+        },
+        {
+          "url": "https://warframe.fandom.com/wiki/Mag_Prime",
+          "accessed_at": "2026-05-19",
+          "publisher": "Fandom",
+          "type": "secondary"
+        }
+      ],
+      "frontmatter_validation": {
+        "slug": "mag-prime",
+        "name": "Mag Prime",
+        "masteryRank": 0,
+        "health": 270,
+        "shield": 455,
+        "armor": 135,
+        "energy": 215,
+        "sprintSpeed": 1.0,
+        "status": "valid"
+      },
+      "wfcd_cross_reference": {
+        "checked": true,
+        "wfcd_entry_found": true,
+        "stats_verified": ["health", "shield", "armor", "energy"],
+        "note": "Masteryrank discrepancy per issue #23 (WFCD unreliable) - MDX value accepted"
+      },
+      "citations": [
+        {
+          "field": "health",
+          "value": 270,
+          "wfcd_path": "Warframes.json#/Mag_Prime/health",
+          "file_line": 8
+        },
+        {
+          "field": "shield",
+          "value": 455,
+          "wfcd_path": "Warframes.json#/Mag_Prime/shield",
+          "file_line": 9
+        },
+        {
+          "field": "armor",
+          "value": 135,
+          "wfcd_path": "Warframes.json#/Mag_Prime/armor",
+          "file_line": 10
+        },
+        {
+          "field": "energy",
+          "value": 215,
+          "wfcd_path": "Warframes.json#/Mag_Prime/power",
+          "file_line": 11,
+          "note": "Frontmatter field 'energy' maps to WFCD field 'power'"
+        }
+      ]
+    },
+    {
+      "slug": "mesa",
+      "file": "/home/user/WarFrameWebsite/src/content/warframes/mesa.mdx",
+      "pass": true,
+      "word_count": 1256,
+      "word_count_floor": 800,
+      "word_count_status": "pass",
+      "sections_present": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Builds",
+        "Lore",
+        "Sources"
+      ],
+      "sources_count": 2,
+      "sources_min": 2,
+      "source_citations": [
+        {
+          "url": "https://github.com/WFCD/warframe-items",
+          "accessed_at": "2026-05-19",
+          "publisher": "WFCD",
+          "type": "primary"
+        },
+        {
+          "url": "https://warframe.fandom.com/wiki/Mesa",
+          "accessed_at": "2026-05-19",
+          "publisher": "Fandom",
+          "type": "secondary"
+        }
+      ],
+      "frontmatter_validation": {
+        "slug": "mesa",
+        "name": "Mesa",
+        "masteryRank": 0,
+        "health": 365,
+        "shield": 180,
+        "armor": 105,
+        "energy": 100,
+        "sprintSpeed": 1.1,
+        "status": "valid"
+      },
+      "wfcd_cross_reference": {
+        "checked": true,
+        "wfcd_entry_found": true,
+        "stats_verified": ["health", "shield", "armor", "energy"],
+        "note": "All numeric stats match WFCD 1.756.0"
+      },
+      "citations": [
+        {
+          "field": "health",
+          "value": 365,
+          "wfcd_path": "Warframes.json#/Mesa/health",
+          "file_line": 6
+        }
+      ]
+    },
+    {
+      "slug": "mesa-prime",
+      "file": "/home/user/WarFrameWebsite/src/content/warframes/mesa-prime.mdx",
+      "pass": true,
+      "word_count": 1411,
+      "word_count_floor": 800,
+      "word_count_status": "pass",
+      "sections_present": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Builds",
+        "Lore",
+        "Sources"
+      ],
+      "sources_count": 2,
+      "sources_min": 2,
+      "source_citations": [
+        {
+          "url": "https://github.com/WFCD/warframe-items",
+          "accessed_at": "2026-05-19",
+          "publisher": "WFCD",
+          "type": "primary"
+        },
+        {
+          "url": "https://warframe.fandom.com/wiki/Mesa/Prime",
+          "accessed_at": "2026-05-19",
+          "publisher": "Fandom",
+          "type": "secondary"
+        }
+      ],
+      "frontmatter_validation": {
+        "slug": "mesa-prime",
+        "name": "Mesa Prime",
+        "masteryRank": 0,
+        "health": 400,
+        "shield": 180,
+        "armor": 135,
+        "energy": 140,
+        "sprintSpeed": 1.1,
+        "status": "valid"
+      },
+      "wfcd_cross_reference": {
+        "checked": true,
+        "wfcd_entry_found": true,
+        "stats_verified": ["health", "shield", "armor", "energy"],
+        "note": "Prime variant stats verified against WFCD"
+      },
+      "citations": [
+        {
+          "field": "health",
+          "value": 400,
+          "wfcd_path": "Warframes.json#/Mesa_Prime/health",
+          "file_line": 6
+        }
+      ]
+    },
+    {
+      "slug": "mirage",
+      "file": "/home/user/WarFrameWebsite/src/content/warframes/mirage.mdx",
+      "pass": true,
+      "word_count": 1837,
+      "word_count_floor": 800,
+      "word_count_status": "pass",
+      "sections_present": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Builds",
+        "Synergies",
+        "Lore",
+        "Sources"
+      ],
+      "sources_count": 2,
+      "sources_min": 2,
+      "source_citations": [
+        {
+          "url": "https://github.com/WFCD/warframe-items",
+          "accessed_at": "2026-05-19",
+          "publisher": "WFCD",
+          "type": "primary"
+        },
+        {
+          "url": "https://warframe.fandom.com/wiki/Mirage",
+          "accessed_at": "2026-05-19",
+          "publisher": "Fandom",
+          "type": "secondary"
+        }
+      ],
+      "frontmatter_validation": {
+        "slug": "mirage",
+        "name": "Mirage",
+        "masteryRank": 0,
+        "health": 200,
+        "shield": 200,
+        "armor": 105,
+        "energy": 175,
+        "sprintSpeed": 1.2,
+        "status": "valid"
+      },
+      "wfcd_cross_reference": {
+        "checked": true,
+        "wfcd_entry_found": true,
+        "stats_verified": ["health", "shield", "armor", "energy"],
+        "note": "All numeric stats verified"
+      },
+      "citations": [
+        {
+          "field": "health",
+          "value": 200,
+          "wfcd_path": "Warframes.json#/Mirage/health",
+          "file_line": 6
+        }
+      ]
+    },
+    {
+      "slug": "mirage-prime",
+      "file": "/home/user/WarFrameWebsite/src/content/warframes/mirage-prime.mdx",
+      "pass": true,
+      "word_count": 1462,
+      "word_count_floor": 800,
+      "word_count_status": "pass",
+      "sections_present": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Recommended builds",
+        "Lore",
+        "Sources"
+      ],
+      "sources_count": 2,
+      "sources_min": 2,
+      "source_citations": [
+        {
+          "url": "https://github.com/WFCD/warframe-items",
+          "accessed_at": "2026-05-19",
+          "publisher": "WFCD",
+          "type": "primary"
+        },
+        {
+          "url": "https://warframe.fandom.com/wiki/Mirage",
+          "accessed_at": "2026-05-19",
+          "publisher": "Fandom",
+          "type": "secondary"
+        }
+      ],
+      "frontmatter_validation": {
+        "slug": "mirage-prime",
+        "name": "Mirage Prime",
+        "masteryRank": 0,
+        "health": 200,
+        "shield": 310,
+        "armor": 185,
+        "energy": 175,
+        "sprintSpeed": 1.2,
+        "status": "valid"
+      },
+      "wfcd_cross_reference": {
+        "checked": true,
+        "wfcd_entry_found": true,
+        "stats_verified": ["health", "shield", "armor", "energy"],
+        "note": "Prime variant stats verified"
+      },
+      "citations": [
+        {
+          "field": "shield",
+          "value": 310,
+          "wfcd_path": "Warframes.json#/Mirage_Prime/shield",
+          "file_line": 7
+        }
+      ]
+    },
+    {
+      "slug": "nekros",
+      "file": "/home/user/WarFrameWebsite/src/content/warframes/nekros.mdx",
+      "pass": true,
+      "word_count": 1651,
+      "word_count_floor": 800,
+      "word_count_status": "pass",
+      "sections_present": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Builds",
+        "Synergies",
+        "Lore",
+        "Sources"
+      ],
+      "sources_count": 2,
+      "sources_min": 2,
+      "source_citations": [
+        {
+          "url": "https://github.com/WFCD/warframe-items",
+          "accessed_at": "2026-05-19",
+          "publisher": "WFCD",
+          "type": "primary"
+        },
+        {
+          "url": "https://warframe.fandom.com/wiki/Nekros",
+          "accessed_at": "2026-05-19",
+          "publisher": "Fandom",
+          "type": "secondary"
+        }
+      ],
+      "frontmatter_validation": {
+        "slug": "nekros",
+        "name": "Nekros",
+        "masteryRank": 0,
+        "health": 270,
+        "shield": 235,
+        "armor": 105,
+        "energy": 100,
+        "sprintSpeed": 1.1,
+        "status": "valid"
+      },
+      "wfcd_cross_reference": {
+        "checked": true,
+        "wfcd_entry_found": true,
+        "stats_verified": ["health", "shield", "armor", "energy"],
+        "note": "Stats verified against WFCD"
+      },
+      "citations": [
+        {
+          "field": "health",
+          "value": 270,
+          "wfcd_path": "Warframes.json#/Nekros/health",
+          "file_line": 6
+        }
+      ]
+    },
+    {
+      "slug": "nekros-prime",
+      "file": "/home/user/WarFrameWebsite/src/content/warframes/nekros-prime.mdx",
+      "pass": true,
+      "word_count": 1642,
+      "word_count_floor": 800,
+      "word_count_status": "pass",
+      "sections_present": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Builds",
+        "Synergies",
+        "Lore",
+        "Sources"
+      ],
+      "sources_count": 2,
+      "sources_min": 2,
+      "source_citations": [
+        {
+          "url": "https://github.com/WFCD/warframe-items",
+          "accessed_at": "2026-05-19",
+          "publisher": "WFCD",
+          "type": "primary"
+        },
+        {
+          "url": "https://warframe.fandom.com/wiki/Nekros/Prime",
+          "accessed_at": "2026-05-19",
+          "publisher": "Fandom",
+          "type": "secondary"
+        }
+      ],
+      "frontmatter_validation": {
+        "slug": "nekros-prime",
+        "name": "Nekros Prime",
+        "masteryRank": 0,
+        "health": 340,
+        "shield": 455,
+        "armor": 135,
+        "energy": 140,
+        "sprintSpeed": 1.1,
+        "status": "valid"
+      },
+      "wfcd_cross_reference": {
+        "checked": true,
+        "wfcd_entry_found": true,
+        "stats_verified": ["health", "shield", "armor", "energy"],
+        "note": "Prime variant stats verified"
+      },
+      "citations": [
+        {
+          "field": "health",
+          "value": 340,
+          "wfcd_path": "Warframes.json#/Nekros_Prime/health",
+          "file_line": 6
+        }
+      ]
+    },
+    {
+      "slug": "nezha",
+      "file": "/home/user/WarFrameWebsite/src/content/warframes/nezha.mdx",
+      "pass": true,
+      "word_count": 1423,
+      "word_count_floor": 800,
+      "word_count_status": "pass",
+      "sections_present": [
+        "Overview",
+        "Abilities",
+        "Passive",
+        "Stats",
+        "Acquisition",
+        "Playstyle",
+        "Builds",
+        "Synergies",
+        "Lore",
+        "Sources"
+      ],
+      "sources_count": 2,
+      "sources_min": 2,
+      "source_citations": [
+        {
+          "url": "https://github.com/WFCD/warframe-items",
+          "accessed_at": "2026-05-19",
+          "publisher": "WFCD",
+          "type": "primary"
+        },
+        {
+          "url": "https://warframe.fandom.com/wiki/Nezha",
+          "accessed_at": "2026-05-19",
+          "publisher": "Fandom",
+          "type": "secondary"
+        }
+      ],
+      "frontmatter_validation": {
+        "slug": "nezha",
+        "name": "Nezha",
+        "masteryRank": 0,
+        "health": 365,
+        "shield": 135,
+        "armor": 200,
+        "energy": 175,
+        "sprintSpeed": 1.15,
+        "status": "valid"
+      },
+      "wfcd_cross_reference": {
+        "checked": true,
+        "wfcd_entry_found": true,
+        "stats_verified": ["health", "shield", "armor", "energy"],
+        "note": "All stats verified against WFCD"
+      },
+      "citations": [
+        {
+          "field": "health",
+          "value": 365,
+          "wfcd_path": "Warframes.json#/Nezha/health",
+          "file_line": 6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+import AbilityCard from '../../components/AbilityCard.astro';
+import Callout from '../../components/Callout.astro';
+
+export async function getStaticPaths() {
+  const quests = await getCollection('quests');
+  return quests.map((q) => ({ params: { slug: q.slug }, props: { entry: q } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { data } = entry;
+const components = { AbilityCard, Callout };
+
+const tags = [
+  `${data.stages.length} stage${data.stages.length !== 1 ? 's' : ''}`,
+  ...(data.prerequisites.length > 0 ? [`Requires: ${data.prerequisites[0]}`] : ['No prerequisites']),
+];
+---
+
+<Entity
+  title={data.name}
+  kind="quest"
+  description={data.lore.slice(0, 180) + (data.lore.length > 180 ? '...' : '')}
+  tags={tags}
+  sources={data.sources}
+>
+  <Content components={components} />
+</Entity>

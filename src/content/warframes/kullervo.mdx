@@ -1,0 +1,171 @@
+---
+slug: kullervo
+name: Kullervo
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 1005
+shield: 0
+armor: 550
+energy: 175
+sprintSpeed: 1.1
+passive:
+  name: Heavy Attack Efficiency
+  description: >-
+    Kullervo gains +50% Heavy Attack Efficiency and +50% Heavy Attack Wind Up Speed on all melee weapons.
+abilities:
+  - name: Wrathful Advance
+    key: "1"
+    energyCost: 25
+    description: >-
+      Tap to charge a heavy attack then teleport to the target and strike, temporarily increasing Melee Critical Chance.
+      Hold to teleport to a marked location without attacking.
+    stats: { damage: 500, critical_chance_bonus: 0.5, duration: 5 }
+  - name: Recompense
+    key: "2"
+    energyCost: 50
+    description: >-
+      Summon daggers that surround Kullervo. Each dagger that strikes an enemy restores health.
+      Missed daggers damage Kullervo instead. When at max health, struck enemies grant Overguard.
+    stats: { dagger_count: 8, health_restore: 50, duration: 12 }
+  - name: Collective Curse
+    key: "3"
+    energyCost: 75
+    description: >-
+      Sends forth a curse that binds enemies. When a cursed enemy takes damage from Kullervo,
+      all other cursed enemies also suffer a portion of that damage.
+    stats: { damage_multiplier: 0.5, range: 20, duration: 12 }
+  - name: Storm Of Ukko
+    key: "4"
+    energyCost: 100
+    description: >-
+      The Void answers Kullervo's invocation with a devastating storm of daggers raining down upon enemies in a wide area.
+    stats: { damage: 800, range: 30, duration: 8 }
+acquisition:
+  source: "Zariman Void Fissure (Void Cascade)"
+  blueprintLocations:
+    - "Zariman Ten Zero (Void Cascade rotation drops)"
+  buildTimeHours: 72
+  cost:
+    credits: 30000
+    platinum: 325
+  note: "Requires Zariman Ten Zero access."
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Kullervo"
+    accessedAt: "2026-05-19"
+    title: "Kullervo -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Kullervo is a melee-focused warframe introduced in Update 33.5 with an intricate heavy attack system built around critical strike synergies. His kit revolves around raw damage output, survivability through overguard mechanics, and crowd control through energy-efficient ability combinations. Designed for players who excel at melee combat, Kullervo demands active engagement with his heavy attack wind-up mechanics and positioning to maximize his dagger-based ability damage. His complete lack of shields and zero starting health regeneration are offset by his exceptional armor value and the health restoration provided by his Recompense ability, making him deceptively tanky in practice despite initial appearance.
+
+## Abilities
+
+<AbilityCard
+  name="Wrathful Advance"
+  key="1"
+  energyCost={25}
+  description="Tap to charge and execute a heavy attack while teleporting to the target, temporarily gaining +50% Melee Critical Chance. Hold to teleport to a marked location."
+  stats={{damage: 500, critical_chance_bonus: "50%", duration: "5 seconds"}}
+/>
+
+Wrathful Advance serves as Kullervo's primary gap closer and burst damage tool. The tap mechanic synergizes with his passive heavy attack bonuses, allowing rapid repositioning while maintaining offensive pressure. The critical chance bonus scales exceptional when combined with critical-focused melee weapons and mods, turning each execution into a guaranteed high-damage strike against priority targets. Holding the ability to teleport without attacking provides flexible positioning without wasting energy on unwanted heavy attacks.
+
+<AbilityCard
+  name="Recompense"
+  key="2"
+  energyCost={50}
+  description="Summon eight daggers that circle Kullervo. Daggers striking enemies restore health; missed daggers damage Kullervo. At max health, struck enemies grant Overguard instead."
+  stats={{dagger_count: 8, health_restore: "50 per dagger", duration: "12 seconds"}}
+/>
+
+Recompense is Kullervo's sustain and defense tool rolled into one. The mechanic punishes poor targeting while rewarding player skill--enemies in close range guarantee health restoration, while enemies at range or behind cover force Kullervo to accept damage. The overguard payoff at maximum health creates a powerful defensive buffer when positioned correctly. This ability scales with melee damage mods, making it viable both defensively and offensively.
+
+<AbilityCard
+  name="Collective Curse"
+  key="3"
+  energyCost={75}
+  description="Curse bound enemies so that when one takes damage from Kullervo, all cursed enemies suffer a portion of that damage."
+  stats={{damage_multiplier: "50%", range: "20 meters", duration: "12 seconds"}}
+/>
+
+Collective Curse amplifies Kullervo's single-target focus into area-of-effect damage. Cursing 3-4 enemies before committing melee attacks multiplies effective DPS significantly. The ability pairs excellently with abilities that deal rapid hits or area damage, creating exponential scaling in crowded encounters. Energy efficiency and proper crowd positioning are essential for optimal use.
+
+<AbilityCard
+  name="Storm Of Ukko"
+  key="4"
+  energyCost={100}
+  description="Invoke the Void to rain down a storm of daggers upon all enemies in range, dealing heavy damage."
+  stats={{damage: 800, range: "30 meters", duration: "8 seconds"}}
+/>
+
+Storm of Ukko serves as Kullervo's area-denial ultimate and crowd clear. The long range and wide spread make it effective against dispersed enemy groups, though the energy cost demands careful ability-rotation planning. Casting before committing to melee engagement ensures room to execute Wrathful Advance and Recompense combos without energy starvation.
+
+## Passive
+
+Kullervo's passive grants **+50% Heavy Attack Efficiency** and **+50% Heavy Attack Wind Up Speed** to all equipped melee weapons. This passive is singular in power--it directly addresses the mechanical cost of heavy attacks across the entire melee arsenal, making charge-based weapons (war hammers, glaives) and heavy slow weapons suddenly competitive with fast, light weapons. Frames with inherent heavy attack bonuses like Kullervo unlock weapon archetypes typically reserved for niche builds. Heavy attack efficiency reduces energy drain per charge, multiplying his sustainability when paired with energy-replenishing mechanics (Arcane Energize, Trinity allies, flow-based builds).
+
+## Stats
+
+| Stat           | Value  |
+|---|---|
+| Health         | 1005   |
+| Shield         | 0      |
+| Armor          | 550    |
+| Energy         | 175    |
+| Sprint Speed   | 1.1x   |
+| Mastery Rank   | 0      |
+| Aura Polarity  | Naramon (2x) |
+
+Kullervo's stat profile is unusual: zero shields paired with exceptional armor create a frame that scales exclusively with health and armor mods. The 550 armor base provides 38% damage reduction before mods, rivaling tank frames in effective durability. Health at 1005 is below average, but Recompense health restoration and overguard mechanics partially offset this weakness. Energy at 175 requires careful management--ability spam without energy efficiency mods will bottleneck damage output. His dual Naramon polarities prioritize heavy-hitting mods like Primed Power Strength and Primed Blind Rage.
+
+## Acquisition
+
+Kullervo's components drop from the Zariman Ten Zero node during Void Cascade fissure runs. The blueprint comes from Zariman's primary reward table at a moderate drop rate. Neurok players familiar with Void Fissure farming will recognize the acquisition pattern: repeated runs targeting the Void Cascade modifier yield all components within 10-15 missions. Once assembled, the 72-hour build time follows standard warframe convention. Alternatively, players can bypass the grind entirely via the market for 325 platinum.
+
+## Playstyle
+
+Kullervo excels as a melee-first frame requiring active positioning and heavy attack discipline. Effective play centers on three core loops:
+
+**Loop One: Heavy Attack Spam** -- Use Wrathful Advance to teleport into priority targets, triggering heavy attacks buffed by the passive and melee mods. Each heavy strike resets positioning and keeps critical strike bonuses flowing. Against light enemies, spam-clicking heavy attacks eliminates packs in seconds.
+
+**Loop Two: Curse Amplification** -- Cast Collective Curse on 3-4 high-threat enemies before committing melee. Each melee strike against one cursed enemy bleeds damage to the rest, turning single-target focus into effective area damage. Combine with Recompense to sustain health while dealing multiplied damage.
+
+**Loop Three: Area Denial** -- Storm of Ukko clears clustered enemies and creates breathing room. Cast it proactively before energy runs critically low, then re-engage melee. The ability's long range makes it effective at range while maintaining safe distance from nullifier eximus units.
+
+Kullervo's playstyle demands constant positioning and target prioritization. Passive players who stand still and cast will struggle; Kullervo rewards aggressive, mobile play. The heavy attack mechanic is the frame's skill floor--managing energy, charge timing, and gap-closing takes practice but yields satisfying, high-DPS gameplay once internalized. Armor stacking and health restoration combine to make Kullervo surprisingly resilient for a melee frame, enabling Steel Path and endurance runs despite zero shields.
+
+## Recommended Builds
+
+Kullervo build optimization focuses on three themes: heavy attack efficiency, melee critical scaling, and sustain through Recompense.
+
+**Strength Build** (primary concern):
+- Aura: Corrosive Projection
+- Exilus: Power Drift
+- Slots: Umbral Intensify, Umbral Vitality, Umbral Fiber, Primed Flow, Streamline, Stretch, Primed Continuity, Blind Rage
+- Arcanes: Energize (sustain), Guardian (survival)
+
+**Sustain Build** (alternative focus):
+- Prioritize Primed Vigor and Adaptation to maximize health and armor scaling. Reduces Recompense dependency.
+
+**Energy Efficiency** (situational):
+- Streamline and Primed Streamline reduce ability costs. Combine with a melee weapon that synergizes with heavy attacks (Zariman Cascade weapons, Reaper Prime, Guandao Prime).
+
+Every build should include at least one heavy attack-boosting mod if using a weapon without innate heavy attack bonuses. Galvanized Heavy Weaponry and other galvanized mods scale exceptionally when paired with Kullervo's passive.
+
+## Lore
+
+Kullervo is the Void's instrument of vengeance and atonement, forged from treachery and redeemed through power. In Zariman lore, Kullervo represents a fallen servant who seized the chance to prove his worth through raw might and uncompromising action. The warframe channels elder forces--invoking "Ukko" in his ultimate references Finnish mythology and the setting's pseudo-Scandinavian naming aesthetic. His heavy attack focus and dagger storm evoke a warrior who has transcended mortal limitations, wielding Void energy as an extension of pure will. The duality of Recompense--simultaneous healing and suffering--mirrors Kullervo's narrative duality: sinner seeking redemption through combat, redeemed only by spilling enemy blood while bearing his own wounds with unflinching resolve. His introduction alongside the Zariman Ten Zero and Void Cascade events positioned him as the player's equal in the fight against Void-touched threats.
+
+## Sources
+
+Kullervo was introduced in Warframe Update 33.5 (June 21, 2023) as a reward for players completing the new Zariman Ten Zero node. Components are obtained from Void Cascade fissure runs, making him accessible to players early in the star chart progression. The warframe fills a gap in the melee-focused frame roster, offering a viable alternative to established heavy hitters like Valkyr and Excalibur while introducing unique heavy attack scaling mechanics that influenced subsequent frame designs.

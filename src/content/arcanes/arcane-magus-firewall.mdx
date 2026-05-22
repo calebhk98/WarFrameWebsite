@@ -1,0 +1,74 @@
+---
+slug: arcane-magus-firewall
+name: Magus Firewall
+type: operator
+maxRank: 5
+effect: "On Void Mode: Generate Void Particles every 1s up to 6 particles, each granting 12.5% Damage Reduction for [damage]s. Taking damage consumes a particle."
+perRankStats:
+  - rank: 0
+    stats: { damage: 10 }
+  - rank: 1
+    stats: { damage: 20 }
+  - rank: 2
+    stats: { damage: 30 }
+  - rank: 3
+    stats: { damage: 40 }
+  - rank: 4
+    stats: { damage: 50 }
+  - rank: 5
+    stats: { damage: 60 }
+drops:
+  - source: "Void Cascade on Zariman"
+    chance: 2.5
+    rarity: "uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Firewall"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Firewall is an operator arcane that generates Void Particles while the operator is in Void Mode (the operator's stealth state accessed by holding the Void Mode input). While Void Mode is active, one Void Particle generates every second up to a maximum of 6. Each particle provides 12.5% Damage Reduction to the warframe. When the warframe takes damage, one particle is consumed. The particle duration per rank determines how long each generated particle persists before expiring naturally.
+
+The combined maximum of 6 particles grants up to 75% Damage Reduction (6 x 12.5%) while all particles are active. Maintaining Void Mode for 6 seconds generates a full stack of 6 particles before the operator exits operator mode.
+
+## Effect
+
+Void Mode engagement begins particle generation at a rate of 1 particle per second. Each of the 6 maximum particles grants 12.5% Damage Reduction independently. When the warframe receives a hit, one particle is consumed and its 12.5% contribution is removed. Particles expire after the rank-dependent duration if not consumed by damage. A full stack of 6 particles lasts until 6 incoming hits consume them, or until the particles' natural expiration time elapses.
+
+At rank 0, particles persist for 10 seconds after generation. At rank 5, they persist for 60 seconds, providing long-lasting protection from a single Void Mode engagement. Generating a fresh stack of 6 particles with 60-second duration requires only 6 seconds in Void Mode, after which particles persist for 60 more seconds with full DR coverage.
+
+## Stats per rank
+
+| Rank | Particle Duration | Max Particles | DR per Particle | Max DR |
+|------|-----------------|--------------|----------------|-------|
+| 0 | 10s | 6 | 12.5% | 75% |
+| 1 | 20s | 6 | 12.5% | 75% |
+| 2 | 30s | 6 | 12.5% | 75% |
+| 3 | 40s | 6 | 12.5% | 75% |
+| 4 | 50s | 6 | 12.5% | 75% |
+| 5 | 60s | 6 | 12.5% | 75% |
+
+## Acquisition
+
+Magus Firewall drops as an uncommon reward from Void Cascade missions on Zariman Ten-Zero at 2.5%. The arcane is accessible after completing Angels of the Zariman. Regular Void Cascade participation accumulates copies over multiple sessions. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Magus Firewall rewards builds that enter Void Mode regularly during combat. Operator-active builds using Void Mode for repositioning and the Invisible State bonuses can pre-stack particles before transitioning back to warframe mode, entering combat with the maximum 75% DR buffer. Frames with no innate damage mitigation benefit most from the 75% DR while particles are active, as the buff applies regardless of frame archetype.
+
+The arcane pairs naturally with Focus school abilities that reward Void Mode usage -- Madurai for Void Strike charges, Unairu for passive armor stripping while in Void Mode -- since all these mechanics share the same Void Mode activation trigger.
+
+## Notes
+
+Particles generate only while actively in Void Mode; exiting operator mode pauses generation. Re-entering Void Mode resumes generation up to the 6-particle cap. Particles consumed by incoming damage are lost permanently until new ones generate from subsequent Void Mode time. The 12.5% per particle is multiplicative with warframe armor damage reduction, providing effective DR on top of existing mitigation. At rank 5, the 60-second particle duration means a single 6-second Void Mode engagement provides protected coverage for a full minute of warframe combat before particles expire naturally.
+
+## Sources
+
+- WFCD warframe-items dataset provides particle duration per rank and the 12.5% per-particle DR value for Magus Firewall.
+- Fandom wiki entry for [Magus Firewall](https://warframe.fandom.com/wiki/Magus_Firewall) covers Void Mode particle generation timing and damage-consumption behavior.
+

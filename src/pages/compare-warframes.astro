@@ -1,0 +1,238 @@
+---
+// compare-warframes.astro -- client-side warframe stat comparator.
+// Picks 2-3 warframes from dropdowns and renders stats side-by-side
+// with normalized bar visualizations. No React; vanilla JS.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { toWarframeIndexEntry } from '../data/warframes-index';
+import type { WarframeIndexEntry } from '../data/warframes-index';
+
+const base = import.meta.env.BASE_URL;
+
+const rawFrames = await getCollection('warframes');
+const sorted = [...rawFrames].sort((a, b) =>
+  a.data.name.localeCompare(b.data.name),
+);
+const warframesIndex: WarframeIndexEntry[] = sorted.map(toWarframeIndexEntry);
+const warframesJson = JSON.stringify(warframesIndex);
+---
+
+<Base
+  title="Compare Warframes"
+  description="Compare two or three Warframe stats side by side with bar visualizations"
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <nav class="mb-4 text-sm text-brand-cream/80">
+        <a href={`${base}warframes`} class="underline hover:text-brand-orange">Warframes</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Compare</span>
+      </nav>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Compare Warframes</h1>
+          <p class="text-brand-cream/60">
+            Select two or three warframes to view their stats side by side.
+          </p>
+        </div>
+        <a
+          href={`${base}compare`}
+          class="text-sm text-brand-orange hover:underline shrink-0"
+        >
+          Compare builds instead &rarr;
+        </a>
+      </div>
+    </header>
+
+    <!-- Selectors row -->
+    <div class="flex flex-col sm:flex-row gap-4 mb-4 items-end">
+      <div class="flex-1">
+        <label
+          for="select-a"
+          class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1"
+        >
+          Warframe A
+        </label>
+        <select
+          id="select-a"
+          class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="">-- Choose warframe --</option>
+          {sorted.map((w) => (
+            <option value={w.slug}>{w.data.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="flex-1">
+        <label
+          for="select-b"
+          class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1"
+        >
+          Warframe B
+        </label>
+        <select
+          id="select-b"
+          class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="">-- Choose warframe --</option>
+          {sorted.map((w) => (
+            <option value={w.slug}>{w.data.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="flex-1">
+        <label
+          for="select-c"
+          class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1"
+        >
+          Warframe C
+          <span class="text-brand-cream/70 font-normal normal-case">(optional)</span>
+        </label>
+        <select
+          id="select-c"
+          class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange"
+        >
+          <option value="">-- None --</option>
+          {sorted.map((w) => (
+            <option value={w.slug}>{w.data.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <button
+        id="reset-btn"
+        class="shrink-0 px-5 py-2 rounded-lg border border-surface-3 text-brand-cream/60 text-sm hover:border-brand-orange/50 hover:text-brand-cream transition-colors"
+      >
+        Reset
+      </button>
+    </div>
+
+    <!-- Comparison grid -->
+    <div
+      id="compare-grid"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"
+      aria-live="polite"
+    >
+    </div>
+
+    <p id="compare-hint" class="text-center text-brand-cream/70 text-sm py-16">
+      Choose at least two warframes above to start comparing.
+    </p>
+  </div>
+</Base>
+
+<script define:vars={{ warframesJson, base }} is:inline>
+  const FRAMES = JSON.parse(warframesJson);
+  const STAT_KEYS = ['health', 'shield', 'armor', 'energy', 'sprintSpeed'];
+  const STAT_LABELS = { health: 'Health', shield: 'Shield', armor: 'Armor', energy: 'Energy', sprintSpeed: 'Sprint Speed' };
+
+  function esc(str) {
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function numVal(v) { return typeof v === 'number' ? v : null; }
+
+  function statMaxes(frames) {
+    const maxes = {};
+    for (const k of STAT_KEYS) {
+      maxes[k] = Math.max(1, ...frames.map((f) => numVal(f[k]) ?? 0));
+    }
+    return maxes;
+  }
+
+  function renderStatRow(key, frame, maxes, isBest) {
+    const val = frame[key];
+    const label = STAT_LABELS[key];
+    const display = val === 'unknown' ? 'Unknown' : String(val);
+    const pct = val === 'unknown' ? 0 : Math.round(((numVal(val) ?? 0) / maxes[key]) * 100);
+    const barColor = isBest ? 'bg-brand-orange' : 'bg-surface-3';
+    const badge = isBest ? '<span class="ml-1 text-[10px] font-bold text-brand-orange uppercase">best</span>' : '';
+    return `<div class="flex flex-col gap-0.5">
+      <div class="flex items-center justify-between text-xs">
+        <span class="text-brand-cream/80">${esc(label)}</span>
+        <span class="text-brand-cream font-medium">${esc(display)}${badge}</span>
+      </div>
+      <div class="h-2 rounded bg-surface-3 overflow-hidden" role="presentation" aria-hidden="true">
+        <div class="h-full rounded ${barColor} transition-all" style="width:${pct}%"></div>
+      </div>
+    </div>`;
+  }
+
+  function renderCard(frame, maxes, bestMap) {
+    const frameUrl = `${base}warframes/${esc(frame.slug)}`;
+    const statsHtml = STAT_KEYS.map((k) =>
+      renderStatRow(k, frame, maxes, bestMap[k] === frame.slug)
+    ).join('');
+    const abilityKeys = { '1':'1', '2':'2', '3':'3', '4':'4', passive:'P' };
+    const abilitiesHtml = frame.abilities
+      .filter((a) => a.key !== 'passive')
+      .map((a) => `<li class="flex items-center gap-2 text-xs text-brand-cream/70">
+        <span class="shrink-0 w-5 h-5 flex items-center justify-center rounded bg-surface-3 text-brand-orange font-bold text-[10px]">${esc(abilityKeys[a.key] ?? a.key)}</span>
+        <span>${esc(a.name)}</span>
+      </li>`).join('');
+    const mrBadge = `<span class="text-xs px-2 py-0.5 rounded bg-surface-3 text-brand-cream/80">MR${esc(String(frame.masteryRank))}</span>`;
+
+    return `<article class="rounded-lg border border-surface-3 bg-surface-2 p-5 flex flex-col gap-4">
+      <header>
+        <div class="flex items-start justify-between gap-2 mb-1">
+          <h2 class="font-semibold text-brand-cream text-base leading-snug">
+            <a href="${frameUrl}" class="hover:text-brand-orange transition-colors">${esc(frame.name)}</a>
+          </h2>
+          ${mrBadge}
+        </div>
+      </header>
+      <section aria-label="Stats for ${esc(frame.name)}">
+        <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-2">Stats</p>
+        <div class="flex flex-col gap-2">${statsHtml}</div>
+      </section>
+      <section aria-label="Abilities for ${esc(frame.name)}">
+        <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-2">Abilities</p>
+        <ul class="space-y-1">${abilitiesHtml}</ul>
+      </section>
+    </article>`;
+  }
+
+  function buildBestMap(frames, maxes) {
+    const best = {};
+    for (const k of STAT_KEYS) {
+      let topVal = -1;
+      let topSlug = null;
+      for (const f of frames) {
+        const v = numVal(f[k]) ?? -1;
+        if (v > topVal) { topVal = v; topSlug = f.slug; }
+      }
+      if (topVal >= 0) best[k] = topSlug;
+    }
+    return best;
+  }
+
+  function refresh() {
+    const slugA = document.getElementById('select-a').value;
+    const slugB = document.getElementById('select-b').value;
+    const slugC = document.getElementById('select-c').value;
+    const selected = [slugA, slugB, slugC].filter(Boolean)
+      .map((s) => FRAMES.find((f) => f.slug === s)).filter(Boolean);
+    const grid = document.getElementById('compare-grid');
+    const hint = document.getElementById('compare-hint');
+    if (selected.length < 2) { grid.innerHTML = ''; hint.style.display = ''; return; }
+    hint.style.display = 'none';
+    grid.className = selected.length === 3
+      ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6'
+      : 'grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6';
+    const maxes = statMaxes(selected);
+    const bestMap = buildBestMap(selected, maxes);
+    grid.innerHTML = selected.map((f) => renderCard(f, maxes, bestMap)).join('');
+  }
+
+  document.getElementById('select-a').addEventListener('change', refresh);
+  document.getElementById('select-b').addEventListener('change', refresh);
+  document.getElementById('select-c').addEventListener('change', refresh);
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    document.getElementById('select-a').value = '';
+    document.getElementById('select-b').value = '';
+    document.getElementById('select-c').value = '';
+    refresh();
+  });
+</script>

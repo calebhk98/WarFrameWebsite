@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL;
+const builds = await getCollection('builds');
+const sorted = [...builds].sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const entityTypeLabel: Record<string, string> = {
+  warframe: 'Warframe',
+  weapon: 'Weapon',
+};
+---
+
+<Base title="Builds" description="Curated mod loadouts and build guides for Warframes and weapons">
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-2">
+        <h1 class="text-3xl font-bold text-brand-cream">Builds</h1>
+        <a
+          href={`${base}compare`}
+          class="text-sm text-brand-orange hover:underline whitespace-nowrap"
+        >
+          Compare builds side-by-side &rarr;
+        </a>
+      </div>
+      <p class="text-brand-cream/60">{sorted.length} build{sorted.length !== 1 ? 's' : ''} -- optimised mod loadouts for Warframes and weapons</p>
+    </header>
+
+    {sorted.length === 0 && (
+      <p class="text-brand-cream/40 text-center py-16">No builds indexed yet.</p>
+    )}
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {sorted.map((build) => (
+        <a
+          href={`${base}builds/${build.slug}`}
+          class="group rounded-lg border border-surface-3 bg-surface-2 hover:border-brand-orange/50 hover:bg-surface-3 p-5 transition-all"
+        >
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h2 class="font-semibold text-brand-cream group-hover:text-brand-orange transition-colors text-sm leading-snug">
+              {build.data.name}
+            </h2>
+            <span class="text-xs shrink-0 px-2 py-0.5 rounded bg-surface-3 text-brand-cream/50">
+              {entityTypeLabel[build.data.entityType] ?? build.data.entityType}
+            </span>
+          </div>
+          <p class="text-xs text-brand-cream/50 line-clamp-2">{build.data.playstyle}</p>
+          {build.data.strengths.length > 0 && (
+            <div class="mt-3 flex flex-wrap gap-1">
+              {build.data.strengths.slice(0, 2).map((s) => (
+                <span class="text-xs px-1.5 py-0.5 rounded bg-brand-orange/10 text-brand-orange/80">{s}</span>
+              ))}
+            </div>
+          )}
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,176 @@
+---
+slug: equinox-prime
+name: Equinox Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 365
+shield: 270
+armor: 160
+energy: 200
+sprintSpeed: 1.15
+passive:
+  name: Dual Nature
+  description: >-
+    10% of Health Orbs are converted into Energy, and 10% of Energy Orbs are
+    converted into Health. This passive enables flexible resource management
+    across both Day and Night forms.
+abilities:
+  - name: Metamorphosis
+    key: "1"
+    energyCost: 0
+    description: >-
+      Equinox switches between Day-Form and Night-Form, gaining bonus Shields
+      and Armor in Night-Form or bonus Damage and sprint Speed in Day-Form.
+      This stance switch is the core mechanic that redefines all other abilities.
+  - name: Rest & Rage
+    key: "2"
+    energyCost: 50
+    description: >-
+      In Night-Form, targets are put to sleep, rendering them immobile. In
+      Day-Form, targets become more vulnerable to damage, amplifying incoming
+      harm from all sources.
+  - name: Pacify & Provoke
+    key: "3"
+    energyCost: 75
+    description: >-
+      In Night-Form, reduces damage inflicted by nearby enemies, providing
+      defensive support. In Day-Form, increases Ability Strength of nearby
+      allies, enhancing their abilities and damage.
+  - name: Mend & Maim
+    key: "4"
+    energyCost: 100
+    description: >-
+      In Night-Form, allies' Shields are replenished each time a nearby enemy is
+      killed, providing scaling teamwide protection. In Day-Form, enemies are
+      inflicted with Slash Status Effect. Deactivating either form casts either
+      healing (Night) or a wave of slashing force (Day).
+acquisition:
+  source: "Void Relic Refinement"
+  blueprintLocations:
+    - "Axi K5, T3, and T4 Relics (Uncommon, 11%)"
+    - "Lith P4 and S13 Relics (Uncommon, 11%)"
+    - "Meso A2 Relic (Uncommon, 11%)"
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2017-08-15"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "All numeric stats extracted from WFCD 1.756.0 canonical database."
+  - url: "https://warframe.fandom.com/wiki/Equinox"
+    accessedAt: "2026-05-19"
+    title: "Equinox -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Equinox Prime is the primed variant of Equinox, a warframe built on the principle of duality. She embodies the equilibrium between Day and Night, with each form unlocking radically different tactical advantages. Day-Form emphasizes aggressive support--amplified ability strength for allies and vulnerability-inducing crowd control. Night-Form prioritizes defense--reduced enemy damage output and regenerative shields for the squad. This fundamental duality makes Equinox Prime exceptionally versatile, capable of pivoting between offense and defense based on squad composition and mission demand.
+
+With 365 health, 270 shield, and 160 armor at rank 0, Equinox Prime is moderately tanky but relies on her defensive abilities--particularly in Night-Form--to sustain through harder content. Her energy pool of 200 allows for sustained ability use, and her passive conversion system ensures she never runs dry as long as orbs are dropping. At mastery rank 0, Equinox Prime is accessible to new players, though her dual-form mechanics reward experience and frame knowledge.
+
+## Abilities
+
+<AbilityCard
+  name="Metamorphosis"
+  key="1"
+  energyCost={0}
+  description="Switch between Day-Form and Night-Form. Night-Form grants +50% Shields and +100% Armor. Day-Form grants +50% Ability Strength and +25% Sprint Speed. No energy cost--recast instantly."
+/>
+
+Metamorphosis is the cornerstone of Equinox Prime's identity. A zero-energy toggle, it redefines the behavior of every other ability on the frame. Swapping forms mid-mission lets you adapt instantly: facing armor-heavy Grineer? Switch to Night-Form for defensive utility. Carrying allies through a endless survival? Flip to Day-Form to amplify their builds. Experienced players toggle forms multiple times per mission, treating Metamorphosis as a state machine rather than a once-per-cast ability.
+
+<AbilityCard
+  name="Rest & Rage"
+  key="2"
+  energyCost={50}
+  description="Night-Form: sleep nearby targets for up to 12 seconds. Day-Form: increase vulnerability by 20-50%, causing enemies to take amplified damage."
+/>
+
+Rest & Rage is Equinox's crowd-control anchor. In Night-Form, the sleep duration scales with Ability Duration; enemies asleep remain immobile and non-threatening, making it invaluable for survivals and defense missions where you need to buy time. Sleeping enemies take no action but also grant no loot drops until woken. In Day-Form, vulnerability scales with Ability Strength; a well-modded Day-Form with strength mods turns every enemy into a fragile target, multiplying the damage of squad mates by 20-50%. This asymmetry--defensive crowd control vs. offensive buff--forces meaningful tactical choices.
+
+<AbilityCard
+  name="Pacify & Provoke"
+  key="3"
+  energyCost={75}
+  description="Night-Form: reduce nearby enemy damage output by 25-50%. Day-Form: increase nearby allies' Ability Strength by +50-100%."
+/>
+
+Pacify & Provoke shifts Equinox from a selfish frame into a squad cornerstone. Night-Form's damage reduction is a flat percentage applied to all enemies in range, scaling with Ability Strength; a Night-Form Equinox in a high-level survival significantly blunts incoming damage to the entire squad. Day-Form's buff is an inverse--allies' abilities hit harder. This is where Equinox shines in coordinated teams: slap it on Saryn Prime for spore amplification, on a Mirage for her multishot buff, or on any damage-dealer frame for raw scaling. The range is moderate (around 15 meters at base), so positioning matters.
+
+<AbilityCard
+  name="Mend & Maim"
+  key="4"
+  energyCost={100}
+  description="Night-Form: each nearby enemy killed restores shields to Equinox and allies (30-60 shields per kill). Day-Form: cast a 30m wave of Slash damage; if held, enemies take Slash status. Deactivate to trigger the buff."
+/>
+
+Mend & Maim is the ultimate ability and Equinox's most powerful tool. In Night-Form, it's a healing passive on steroids--every enemy death within range triggers an automatic shield restoration, scaling with both Ability Strength and the number of enemies killed. In endless missions with high kill volume (survival, excavation), this passive can restore 1000+ shields per second to the entire squad. In Day-Form, it's an offensive wave. Charge it to apply Slash status to a massive area, or tap for immediate damage. Deactivation triggers the effect, allowing flexible timing. High-level Night-Form Equinox runs are effectively immortal if enemies keep dying; the frame becomes a walking shield battery.
+
+## Passive
+
+Equinox Prime's passive is unassuming but powerful in endurance. Every Health Orb dropped by enemies converts 10% of its value into Energy; every Energy Orb converts 10% into Health. On its surface, this is a quality-of-life feature--you never run dry on resources as long as orbs are spawning. In practice, it enables lazy playstyles. Paired with her ability kit (Mend & Maim's shield regen, Pacify & Provoke's damage reduction), Equinox can sustain indefinitely in long missions without external support. Squad mates benefit from this passive too: if you're running a Trinity or Harrow, Equinox's orb conversion means fewer energy-starved moments overall.
+
+## Stats
+
+| Stat            | Value |
+|-----------------|-------|
+| Health          | 365   |
+| Shield          | 270   |
+| Armor           | 160   |
+| Energy          | 200   |
+| Sprint Speed    | 1.15x |
+| Mastery Rank    | 0     |
+
+These stats place Equinox Prime in the mid-range for tankiness. The armor-to-health ratio is moderate; she's neither paper-thin nor a tank. The 200 energy pool is generous, supporting sustained ability spam. Her sprint speed multiplier of 1.15x is standard, making her mobile without being exceptional. The deciding factor is her abilities: Night-Form's armor bonus pushes her effective tankiness upward, while her passive and Mend & Maim make her effectively immortal in high-kill scenarios.
+
+## Acquisition
+
+Equinox Prime was released on August 15, 2017, and remains unvaulted as of this writing. Her components drop from a broad range of Void Relics, making her comparatively farmable relative to other primes:
+
+- **Blueprint:** Drops from Axi K5, T3, T4 (Uncommon, 11% each); Lith P4, S13 (Uncommon, 11% each); Meso A2 (Uncommon, 11%).
+- **Chassis, Systems, Neuroptics:** Distributed across Lith, Meso, Neo, and Axi relics.
+
+Most players farm Axi relics on high-level void fissure missions (Void Cascade) or endless missions (survival/excavation) to accumulate the parts. With four components (Blueprint + 3 parts) and drop chances around 11-13% per relic, expect 15-30 void fissure runs for a complete set. Radiant relic refinement increases drop chances to ~16-17%, cutting the grind by ~20%.
+
+Once the blueprint and parts are in hand, construction takes 72 hours and costs 25,000 credits.
+
+## Playstyle
+
+Equinox Prime excels in two distinct playstyles, each tied to her form:
+
+### Night-Form: The Tank
+
+Stack Duration and Strength. Wear Primed Continuity, Primed Flow, Blind Rage, Stretching, and an aura like Corrosive Projection. Night-Form grants you and allies 50% damage reduction from Pacify & Provoke, plus up to ~3000 shields per second from Mend & Maim in high-kill scenarios. You become a walking fortress--unkillable as long as enemies spawn. Rest & Rage's sleep extends to 20+ seconds, crowd-controlling entire rooms. This playstyle demands patience: you're not the damage dealer, you're the enabler and tank.
+
+### Day-Form: The Supporter
+
+Stack Strength and Range. Wear Blind Rage, Augur Reach, Intensify, and Augments that boost her offensive capabilities. Day-Form turns every ability into a damage multiplier. Pacify & Provoke buffs squad mates' abilities by 50-100%, Strength-stacking. Rest & Rage applies vulnerability. Mend & Maim's wave applies Slash and Status. You're not carrying the kill count yourself; you're weaponizing your squad. Pair with a nuke frame (Saryn, Mirage, Mesa) and watch your buffed ally's damage skyrocket.
+
+### Hybrid: The Swiss Army Knife
+
+Many experienced Equinox players run a balanced build: moderate Duration, high Strength, decent Range. Equip her with a good primary (Soma Prime, Braton Prime) and toggle forms based on circumstance. Phase 1 of Void Cascade? Stay Day-Form, buff allies, clear adds yourself. Phase 2 wipe-incoming? Flip Night-Form, tank, heal. This flexibility is Equinox's greatest strength and steepest learning curve. New players often undershoot her potential by committing entirely to one form; veterans abuse the zero-energy toggle to cover every tactical gap.
+
+## Builds
+
+Equinox Prime benefits from a vast range of build variations depending on mission type and squad composition. See `/builds/warframes/equinox-prime/` for detailed loadouts including specific mods, arcanes, and tactical notes for Steel Path, void fissures, endless survival, and squad support scenarios.
+
+## Lore
+
+Equinox emerged from the Void, born of conflict between light and shadow. Unlike most Warframes forged for a singular purpose, Equinox was engineered to embody duality--a tool for Tenno who walk the thin line between offense and defense, aggression and mercy. The Orokin sought a frame capable of adapting to any battlefield by transcending binary thinking: neither purely a striker nor purely a sentinel, but both, simultaneously, at will.
+
+Equinox Prime represents a refinement of this vision. Her priming emphasizes the grace inherent in duality: she moves with poise, her forms flowing seamlessly into one another. The relationship between Day and Night is not opposition but complementarity. Where base Equinox is functional, Prime Equinox embodies philosophy--the eternal balance, the turning of seasons, the rhythm of day yielding to night and night to day.
+
+In the hands of a skilled Tenno, Equinox Prime is not merely a frame, but a statement: dominance requires not specialization, but adaptability. Not extremism, but equilibrium.
+
+## Sources
+
+This guide synthesizes data from the WFCD `warframe-items` database (version 1.756.0), which is the canonical source for all numeric stats including health, shield, armor, energy, and ability costs. Narrative context and playstyle recommendations are drawn from the official Warframe Wiki and community consensus from players with extensive Equinox Prime experience across endurance, PvE, and squad-focused gameplay.
+
+For the most current drop tables, relic distributions, and acquisition paths, consult the WFCD repository directly.

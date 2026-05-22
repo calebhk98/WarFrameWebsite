@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-05-20T13:26:00Z",
+  "commit": "eb76ce1",
+  "playwright": {
+    "total": 40,
+    "passed": 40,
+    "failed": 0,
+    "failures": []
+  },
+  "lighthouse": {
+    "/": {
+      "performance": 100,
+      "a11y": 95,
+      "bp": 96,
+      "seo": 100
+    },
+    "/warframes/saryn-prime/": {
+      "performance": 100,
+      "a11y": 96,
+      "bp": 96,
+      "seo": 100
+    },
+    "/worldstate/": {
+      "performance": 100,
+      "a11y": 92,
+      "bp": 96,
+      "seo": 100
+    },
+    "/compare/": {
+      "performance": 100,
+      "a11y": 95,
+      "bp": 96,
+      "seo": 100
+    },
+    "/build-calculator/": {
+      "performance": 100,
+      "a11y": 96,
+      "bp": 96,
+      "seo": 100
+    }
+  },
+  "static_artifacts": {
+    "manifest": true,
+    "sw": true,
+    "sitemap_urls": 489,
+    "rss_valid": true,
+    "robots": true,
+    "images_in_detail_pages": true
+  },
+  "ship_readiness": "with_caveats",
+  "caveats": [
+    "/worldstate/ a11y score 92 (not < 80, but below ideal 100): two residual color-contrast failures on small metadata text (text-brand-cream/40 on bg-brand-black, ratio 3.11 vs required 4.5) and a link-in-text-block contrast issue for brand-orange links inside brand-cream/60 prose. These are design-level issues affecting secondary/supplementary text only; no interactive controls or primary content is affected. Fixed the real aria-prohibited-attr bug (progress bar divs now carry role=progressbar with aria-valuenow/min/max); score improved from 86 to 92.",
+    "Remaining color-contrast issues are on the worldstate page only (timestamp metadata text and source attribution link). No other pages exhibit scores below 80 on any Lighthouse category.",
+    "sitemap-0.xml contains 489 URLs (exceeds the 400 minimum required).",
+    "All 40 Playwright tests pass; 53 Vitest unit tests pass; typecheck clean (0 errors)."
+  ]
+}

@@ -1,0 +1,203 @@
+---
+slug: oberon
+name: Oberon
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 365
+shield: 270
+armor: 185
+energy: 175
+sprintSpeed: 1.0
+passive:
+  name: Renewal Link
+  description: Allied Companions receive health-link, armor-link, and shield-link matching Oberon's stats. Companions gain one instant revive per mission.
+abilities:
+  - name: Smite
+    key: "1"
+    energyCost: 50
+    description: >-
+      Focuses divine energy on a target, damaging it and radiating destructive force outward to nearby enemies. Smite also applies a magnetic proc to affected targets, disarming and disorienting them.
+    stats: { damage: 300, range: 25 }
+  - name: Hallowed Ground
+    key: "2"
+    energyCost: 25
+    description: >-
+      Sanctifies an area with righteous fire, creating a persistent zone that damages enemies standing within it and grants Oberon and allies protection from status effects while occupying the consecrated ground.
+    stats: { damage_per_second: 50, duration: 30, range: 12 }
+  - name: Renewal
+    key: "3"
+    energyCost: 5
+    description: >-
+      Channels healing waves of energy outward from Oberon to all nearby allies, regenerating their health over time. This ability drains energy while channeled, scaling with ability strength.
+    stats: { health_per_second: 50, range: 15 }
+  - name: Reckoning
+    key: "4"
+    energyCost: 100
+    description: >-
+      Swiftly lifts enemies into the air and hurls them down with conviction. Enemies killed by Reckoning spawn health orbs, and the ability reduces armor on affected targets, amplifying damage taken.
+    stats: { damage: 400, armor_reduction: 0.5, range: 18 }
+acquisition:
+  source: "Oberon components drop from cache locations on Earth and Saturn during Void Fissure missions"
+  blueprintLocations:
+    - "Oberon Blueprint dropped by Eximus enemies (retired source)"
+    - "Oberon Neuroptics from Earth cache missions (Bendar Cluster, Iota Temple, Korm's Belt, Ogal Cluster, Sover Strait)"
+    - "Oberon Chassis from Saturn cache missions (Kasio's Rest, Lupal Pass, Mordo Cluster, Nodo Gap, Vand Cluster)"
+    - "Oberon Systems from Earth cache missions"
+    - "Railjack Grineer Point of Interest rewards and Skirmish Bonus tables"
+  buildTimeHours: 72
+  cost: { credits: 30000 }
+  note: "Components also available from Railjack Grineer missions. Blueprint drops from Railjack rewards."
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2019-12-03"
+  vaultedAt: "2020-05-26"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Oberon"
+    accessedAt: "2026-05-19"
+    title: "Oberon -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Oberon is a versatile support and control warframe whose mastery of nature's fury and divine healing makes him a formidable ally in any squad. Introduced in Update 11.5, he remains one of the game's foundational frames, offering a unique blend of offensive damage, defensive utility, and sustained healing. His kit emphasizes protecting allies while damaging enemies, with particular strength in crowd control and status effect immunity. Oberon Prime was released in December 2019 and entered the vault in May 2020, making him a sought-after collectible for veteran players.
+
+Oberon's design philosophy centers on divine punishment and natural balance. His abilities encourage aggressive play while maintaining squad survivability through Renewal healing and status immunity from Hallowed Ground. With proper modding, Oberon can serve as a primary healer, a crowd control platform, or a damage-focused frame without sacrificing his support capabilities.
+
+## Abilities
+
+<AbilityCard
+  name="Smite"
+  key="1"
+  energyCost={50}
+  description="Focuses divine energy on a targeted enemy, dealing radiant damage and triggering a magnetic proc. The impact radiates outward, damaging nearby enemies and applying the proc effect to them as well."
+  stats={{ damage: 300, range: 25 }}
+/>
+
+Smite serves as Oberon's primary single-target and modest area-of-effect damage tool. The ability targets one enemy but creates a blast that catches surrounding targets within its 25-meter range. The magnetic proc disarms enemies, removing their weapons temporarily and preventing ranged attacks. This makes Smite particularly effective against heavy gunners, bombards, and other high-damage units. In group missions, Smite becomes a form of crowd control and threat reduction alongside its damage output.
+
+<AbilityCard
+  name="Hallowed Ground"
+  key="2"
+  energyCost={25}
+  description="Creates a sanctified zone of holy fire that damages enemies standing within it. Allies standing on Hallowed Ground gain immunity to status effects, providing essential protection in hazardous missions."
+  stats={{ damage_per_second: 50, duration: 30, range: 12 }}
+/>
+
+Hallowed Ground is Oberon's signature defensive and crowd control ability. It creates a persistent ground effect lasting 30 seconds that damages enemies entering it, with area denial forming a core part of Oberon's squad support. The status effect immunity granted to allies is invaluable during toxin clouds, radiation procs, and poison damage from ancient disruptors. By casting Hallowed Ground before anticipated damage phases, Oberon can protect the team from status-heavy enemy encounters. The ability scales with ability range and strength, making it essential for any Oberon build.
+
+<AbilityCard
+  name="Renewal"
+  key="3"
+  energyCost={5}
+  description="Channels healing energy outward to nearby allies, regenerating health over time. Energy drains continuously while active, scaling with ability strength and duration."
+  stats={{ health_per_second: 50, range: 15 }}
+/>
+
+Renewal is Oberon's primary tool for sustained squad healing, making him indispensable in survival missions and high-damage content. Unlike instant-heal abilities, Renewal channels continuously, draining 5 energy per cast (plus energy per second while channeled) to maintain the healing aura. Allies within the 15-meter range receive steady regeneration, with the healing rate scaling directly from ability strength. Combined with Hallowed Ground's status immunity, Renewal allows Oberon to keep even squishy frames alive through overwhelming enemy fire. The ability's energy efficiency makes it suitable for long-duration missions when paired with appropriate mods and focus schools.
+
+<AbilityCard
+  name="Reckoning"
+  key="4"
+  energyCost={100}
+  description="Rapidly lifts all enemies in range into the air before hurling them down with divine force. Killed enemies drop health orbs, and Reckoning reduces armor on all affected targets."
+  stats={{ damage: 400, armor_reduction: 0.5, range: 18 }}
+/>
+
+Reckoning serves as Oberon's primary area damage and crowd control ultimate ability. It lifts all enemies within 18 meters, suspending them helplessly before slamming them back to earth. The 400-damage impact scales with ability strength, and importantly, Reckoning reduces enemy armor by 50%, making it essential for armor-heavy factions like the Grineer. When enemies die from Reckoning, they spawn health orbs, providing sustain for Oberon and his allies. The ability's crowd control displacement makes it valuable for defensive missions, protecting objectives from chargers and melee rushes.
+
+## Passive
+
+Oberon's passive grants allied Companions (Sentinels, Kubrows, and Kavats) health-link, armor-link, and shield-link equal to his own stats. If a Companion has taken fatal damage, they receive one instant revive per mission at no energy cost. This passive is exceptionally strong for pets, as Oberon's high armor (185) and health (365) are shared directly with the Companion, making even fragile pets surprisingly durable. The automatic revive acts as an extra layer of protection, allowing players to bring valuable Companions into dangerous content without fear of permanent loss within a mission.
+
+## Stats
+
+| Statistic      | Value  |
+|----------------|--------|
+| Health         | 365    |
+| Shield         | 270    |
+| Armor          | 185    |
+| Energy         | 175    |
+| Sprint Speed   | 1.0x   |
+| Mastery Rank   | 0      |
+| Aura Polarity  | Madurai |
+
+Oberon's stat distribution reflects a balanced frame with emphasis on durability. His 365 health is moderate-to-high for a support frame, while 185 armor provides meaningful damage reduction. The 175 energy capacity is standard, allowing sustained ability casting with efficiency mods. His sprint speed matches baseline, without multiplicative bonuses. The Madurai aura polarity allows use of damage-boosting auras like Power Donation or Corrosive Projection, supporting Oberon's damage contribution while maintaining support viability.
+
+## Acquisition
+
+Oberon's components scatter across multiple sources, reflecting his historical evolution. The frame blueprint originally dropped from Eximus enemies but was moved to Railjack missions with Corpus Proxima's release. Component blueprints now drop primarily from cache locations:
+
+- **Neuroptics** drop from Earth cache missions (Bendar Cluster, Iota Temple, Korm's Belt, Ogal Cluster, Sover Strait) at 10% chance per cache.
+- **Chassis** drops from Saturn cache missions (Kasio's Rest, Lupal Pass, Mordo Cluster, Nodo Gap, Vand Cluster) at 10% chance per cache.
+- **Systems** drop from Earth cache missions, also at 10% chance per cache.
+- **Blueprint** is obtained from Railjack Grineer mission rewards and Skirmish Bonus tables.
+
+Construction requires 30,000 Credits and an Orokin Cell, taking 72 hours in the foundry. New players can obtain all components from early planetary cache missions, making Oberon an accessible early-game frame despite the scattered drop locations.
+
+Oberon Prime was vaulted on May 26, 2020, after its initial release in December 2019. Prime owners can access the higher-damage, higher-stat variant through relics if the Prime remains unvaulted, or wait for eventual Prime Vault return.
+
+## Playstyle
+
+Oberon excels as a jack-of-all-trades support frame capable of filling multiple roles depending on build direction. His playstyle emphasizes defensive positioning while dealing consistent damage through ability use.
+
+**In defensive missions** (Mobile Defense, Excavation), Oberon's Hallowed Ground becomes invaluable, protecting objective zones from status procs while dealing area damage. Positioning near the objective allows his Renewal healing to cover the entire squad, with Reckoning available to clear enemies approaching the defense point.
+
+**In survival and endless content**, Oberon's healing scales the mission viability dramatically. A strength-modded Renewal and two Hallowed Ground casts per area create overlapping protection, while Smite and Reckoning provide offense. Energy efficiency determines sustainability; Streamline and Fleeting Expertise keep Renewal castable indefinitely in well-modded builds.
+
+**In offensive missions** (Exterminate, Void Fissures), Oberon pivots toward crowd control and damage. Reckoning's armor reduction enables squad damage by stripping enemy defenses, while Hallowed Ground protects the squad during enemy rushes. Smite serves as a ranged opener against dangerous targets.
+
+**Against status-heavy enemies** (poison ancients, toxin units, radiation eximus), Hallowed Ground becomes a mission-critical ability. The status immunity grants Oberon's squad unparalleled protection, converting otherwise dangerous enemy abilities into negligible threats.
+
+Oberon's energy economy improves with proper modding. Coupled with focus schools like Zenurik's Energizing Dash or reliable energy restoration mods, Renewal becomes sustainable even in long-duration missions. His Companion passive encourages pet usage, particularly Kubrows and Kavats, which benefit from Oberon's armor contribution.
+
+## Builds
+
+Oberon's versatility supports multiple viable build archetypes:
+
+**Support/Healer Build** -- Maximizes Renewal healing through ability strength (Umbral Intensify, Blind Rage, Power Strength mods). Energy efficiency (Streamline, Fleeting Expertise) ensures channeling sustainability. Hallowed Ground maintains squad protection between heals.
+
+**Control Build** -- Emphasizes ability range and crowd control. Overextended and Augur Reach extend Hallowed Ground and Reckoning range, controlling vast areas. Moderate strength scales ability effects adequately while prioritizing coverage.
+
+**Balanced Build** -- Distributes mods across strength, range, and efficiency for well-rounded performance. Corrosive Projection aura supports squad damage while maintaining Oberon's abilities at functional levels across all situations.
+
+**Companion-Focused Build** -- Stacks armor and health to maximize companion stats through Oberon's passive. Additional mods support Renewal healing and Hallowed Ground protection, keeping pets alive in high-level content.
+
+Each build benefits from Oberon Prime's higher base stats, particularly increased energy and armor, though standard Oberon performs admirably with appropriate modding.
+
+## Synergies
+
+Oberon synergizes strongly with frames and abilities that amplify his support role:
+
+**Nourish augment** (Renewal expansion) increases ally damage while healing, scaling Oberon's usefulness in offense-focused squads. The augment requires an augment slot but rewards aggressive positioning near allies.
+
+**Zenurik focus school** Energizing Dash provides constant energy regeneration, allowing continuous Renewal channeling without energy starvation. This synergy transforms Oberon into an infinite healer, limited only by energy drain while channeling.
+
+**Trinity Prime** (if available) combines force field protection with Oberon's status immunity, creating nearly invulnerable squads in low-level content or coordinated raids.
+
+**Warframes with survivability tools** (Warding Halo Warding, Blessing) stack with Hallowed Ground status immunity, eliminating nearly all status threats and creating oppressive defensive positions.
+
+**Melee-focused squads** benefit immensely from Reckoning's armor reduction, which amplifies all squad melee damage against stripped targets. Hallowed Ground protects melee combatants during engagement.
+
+**Companion users** dramatically benefit from Oberon's passive, with Oberon Prime's higher stats translating to substantially tougher pets. The passive revive synergizes with Companion-focused builds that otherwise struggle to keep pets alive.
+
+## Lore
+
+Oberon represents divine judgment and nature's wrath in warframe form. As one of the foundational frames, his lore ties directly to Orokin history and the primal forces of nature. The frame embodies renewal and reckoning, balance and judgment. His design draws inspiration from classical themes of judgment deities and nature guardians, manifested through godlike abilities to heal, protect, and punish.
+
+Within the broader Warframe narrative, Oberon stands alongside foundational frames like Mag and Loki as an anchor of the Tenno's arsenal. His capabilities emphasize the Tenno's role as both protectors and warriors, capable of preserving life while devastating foes. The introduction of Oberon Prime in 2019 expanded his lore presence, representing a perfected Orokin iteration of the original frame.
+
+## Sources
+
+References and additional information about Oberon:
+
+1. **WFCD warframe-items** (https://github.com/WFCD/warframe-items) -- Primary data source for all numeric stats, ability effects, and acquisition information. Pinned version 1.756.0+ is canonical for Oberon's current stats.
+
+2. **WARFRAME Wiki -- Oberon** (https://warframe.fandom.com/wiki/Oberon) -- Comprehensive resource documenting Oberon's history, changes, augments, and community strategies. Accessed 2026-05-19 for narrative context and playstyle information.

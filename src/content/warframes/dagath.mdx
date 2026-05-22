@@ -1,0 +1,155 @@
+---
+slug: dagath
+name: Dagath
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 566
+shield: 150
+armor: 125
+energy: 175
+sprintSpeed: 1.1
+passive:
+  name: "Mournful Soul"
+  description: >-
+    There is a percentage chance that Energy and Health Orbs will be more effective on Dagath.
+abilities:
+  - name: Wyrd Scythes
+    key: "1"
+    energyCost: 25
+    description: >-
+      Wyrd Scythes surround Dagath and seek out nearby enemies. Those struck are slowed and
+      suffer Viral Damage with a guaranteed Status Effect. The scythes also spread Doom and extend its duration.
+    stats: { damage: 300, range: 30 }
+  - name: Doom
+    key: "2"
+    energyCost: 50
+    description: >-
+      Condemn nearby enemies to their doom. A portion of the damage Dagath deals is revisited upon them
+      by a Wyrd Scythe. They also suffer Viral Damage.
+    stats: { range: 25, duration: 15 }
+  - name: Grave Spirit
+    key: "3"
+    energyCost: 75
+    description: >-
+      Supercharge Dagath's weapons with extra Critical Damage. The effects are doubled on Doomed enemies.
+      Escape fatal blows by briefly assuming a spectral form.
+    stats: { crit_bonus: 150 }
+  - name: "Rakhali's Cavalry"
+    key: "4"
+    energyCost: 100
+    description: >-
+      Phantom Kaithe charge forth, inflicting Viral Damage upon all in their path. Their attack strips
+      the defenses of Doomed enemies.
+    stats: { damage: 600, range: 40 }
+acquisition:
+  source: "Zariman Ten Zero -- Void Cascade"
+  blueprintLocations:
+    - "Zariman Ten Zero (Void Cascade rotation C)"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+    platinum: 375
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Dagath"
+    accessedAt: "2026-05-19"
+    title: "Dagath -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19T00:00:00Z"
+---
+
+## Overview
+
+Dagath is a grief-driven Warframe whose theme centers on sorrow, malice, and the vindication of wronged spirits. Never underestimate the power and wrath of sullen sadness--Dagath's arsenal of spectral abilities allows the player to curse enemies while commanding phantom forces to overwhelm opposition. With strong armor and health scaling, Dagath survives prolonged engagements while her Doom mechanic amplifies damage dealt across the squad, making her effective in both offensive and supportive roles.
+
+## Abilities
+
+<AbilityCard
+  name="Wyrd Scythes"
+  key="1"
+  energyCost={25}
+  description="Wyrd Scythes surround Dagath and seek out nearby enemies. Those struck are slowed and suffer Viral Damage with a guaranteed Status Effect. The scythes also spread Doom and extend its duration."
+/>
+
+Wyrd Scythes serve as Dagath's primary area denial tool, automatically seeking nearby foes and applying both crowd control and status effects. The scythes refresh Doom on affected enemies and extend the ability's duration, creating a synergy loop where successful usage extends the debuff window. This allows aggressive play--maintaining high uptime on Doom to maximize damage output from other abilities.
+
+<AbilityCard
+  name="Doom"
+  key="2"
+  energyCost={50}
+  description="Condemn nearby enemies to their doom. A portion of the damage Dagath deals is revisited upon them by a Wyrd Scythe. They also suffer Viral Damage."
+/>
+
+Doom is Dagath's signature debuff. All damage dealt by Dagath to Doomed enemies is reflected back onto them via spectral scythes. This transforms weapon dps into a form of feedback damage, rewarding aggressive playstyles and weapon choices that emphasize high individual hit damage. The Viral Status Effect pairs well with Dagath's damage profile and can be stacked for crowd control.
+
+<AbilityCard
+  name="Grave Spirit"
+  key="3"
+  energyCost={75}
+  description="Supercharge Dagath's weapons with extra Critical Damage. The effects are doubled on Doomed enemies. Escape fatal blows by briefly assuming a spectral form."
+/>
+
+Grave Spirit is an offensive buff that dramatically increases critical output--particularly against Doomed enemies where the bonus is doubled. The defensive component provides a brief escape tool: when health would be depleted, Dagath becomes untargetable for a short duration, allowing repositioning and recovery. This dual-purpose ability supports both aggressive weapon usage and emergency survivability.
+
+<AbilityCard
+  name="Rakhali's Cavalry"
+  key="4"
+  energyCost={100}
+  description="Phantom Kaithe charge forth, inflicting Viral Damage upon all in their path. Their attack strips the defenses of Doomed enemies."
+/>
+
+Rakhali's Cavalry summons phantom cavalry units that charge across the map, dealing area Viral Damage and stripping armor and shields from all targets--especially from Doomed enemies where the effect is enhanced. As Dagath's ultimate ability, it provides both offensive crowd control and defensive support by removing enemy resistances.
+
+## Passive
+
+Dagath's passive increases the potency of Energy and Health orbs, making resource management easier during prolonged missions. This supports aggressive playstyles where maintaining high usage of her energy-intensive abilities requires consistent resource collection.
+
+## Stats
+
+| Stat | Value |
+|------|------:|
+| Health | 566 |
+| Shield | 150 |
+| Armor | 125 |
+| Energy | 175 |
+| Sprint Speed | 1.1x |
+| Mastery Requirement | 0 |
+
+Dagath has one of the highest base health values among Warframes, paired with solid armor. Her energy pool of 175 supports ability usage without constant efficiency modding, though dedicated ability spam builds benefit from energy management mods. The 1.1x sprint speed multiplier is standard across most modern frames.
+
+## Acquisition
+
+Dagath can be farmed from the Zariman Ten Zero's Void Cascade node. All three blueprint components (Neuroptics, Chassis, Systems) and the frame blueprint itself drop from rotation C, making this a longer farm than typical void fissure content. The node is accessible once the Zariman Ten Zero has been unlocked through the Zariman quest line.
+
+The market blueprint option costs 375 platinum, providing a shortcut for players who prefer purchasing over extended farming sessions.
+
+## Recommended Builds
+
+Dagath benefits from builds that emphasize weapon damage and ability efficiency. Her high armor and health make her suitable for tanky builds that prioritize survivability while maintaining weapon damage through critical chance and damage mods. Ability duration extends her Doom uptime, while ability range increases the radius of her crowd control abilities.
+
+Builds focusing on Grave Spirit's critical bonus synergize well with crit-based weapons and crit-scaling mods. Conversely, builds that maximize Doom's reflection damage work best with single-target, high-damage weapons where the feedback effect is most pronounced.
+
+## Synergies
+
+Dagath's Doom mechanic pairs exceptionally well with high-damage single-target weapons such as bows, sniper rifles, and heavy melees. Each precise hit is amplified by the reflection effect, turning careful targeting into major team damage. Viral-stacking abilities benefit from her consistent application of the status effect through Wyrd Scythes and Doom.
+
+Support mods like Growing Power, Harsh Lantern, and on-hit procs from weapons chain Dagath's buffs to the entire squad, multiplying her team effectiveness beyond personal weapon damage. Builds leveraging status duration and spread work synergistically with her high armor, allowing extended debuff windows and defensive repositioning.
+
+Dagath synergizes powerfully with frames that amplify critical damage or status effects, such as Mirage for damage multiplication or Octavia for ability strength scaling. Her Viral application primes enemies for secondary damage types from teammates, allowing coordinated squads to chain status effects into crowd control cascades. The reflection mechanics of Doom reward weapon selection and precise targeting over spray-and-pray playstyles, encouraging mastery of single-target weapons and deliberate engagement positioning.
+
+## Lore
+
+Dagath embodies grief and vindication. The lore describes her as a manifestation of sorrow and the wrath of wronged spirits--phantoms bound to exact vengeance on those who destroyed them. Her phantom cavalry and spectral scythes are extensions of this theme: manifestations of spiritual malice that haunt her enemies.
+
+The frame's color palette and design reflect a somber aesthetic, with pale spectral accents and dark robing suggesting mourning attire. Her name, Dagath, carries connotations of finality and death, reinforcing her identity as an embodiment of dark themes within the Warframe roster.
+
+## Sources
+
+- **WFCD warframe-items**: https://github.com/WFCD/warframe-items -- canonical source for all numeric stats as of version 1.756.0 or later.
+- **Warframe Wiki**: https://warframe.fandom.com/wiki/Dagath -- narrative and lore context, acquisition details, and community guides.

@@ -1,0 +1,242 @@
+---
+// build-calculator.astro -- interactive mod selector with live stat computation.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { toWarframeIndexEntry } from '../data/warframes-index';
+import type { WarframeIndexEntry } from '../data/warframes-index';
+import { toModIndexEntry } from '../data/mods-index';
+import type { ModIndexEntry } from '../data/mods-index';
+
+const base = import.meta.env.BASE_URL;
+
+const rawFrames = await getCollection('warframes');
+const sortedFrames = [...rawFrames].sort((a, b) => a.data.name.localeCompare(b.data.name));
+const warframesIndex: WarframeIndexEntry[] = sortedFrames.map(toWarframeIndexEntry);
+
+const rawMods = await getCollection('mods');
+const sortedMods = [...rawMods.filter((m) => m.data.type === 'warframe')].sort(
+  (a, b) => a.data.name.localeCompare(b.data.name),
+);
+const modsIndex: ModIndexEntry[] = sortedMods.map(toModIndexEntry);
+
+const warframesJson = JSON.stringify(warframesIndex);
+const modsJson = JSON.stringify(modsIndex);
+
+const SLOT_COUNT = 8;
+const MAX_CAPACITY = 60;
+const SLOT_POLARITIES: readonly string[] = ['madurai','naramon','vazarin','madurai','naramon','vazarin','naramon','madurai'];
+const POL_SYM: Record<string, string> = { madurai:'V', naramon:'-', vazarin:'D', zenurik:'Z', unairu:'I', penjaga:'P', umbra:'U', exilus:'E', none:'O' };
+---
+
+<Base title="Build Calculator" description="Interactive Warframe mod selector with live stat computation">
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-6">
+      <nav class="mb-4 text-sm text-brand-cream/80">
+        <a href={`${base}builds`} class="underline hover:text-brand-orange">Builds</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Build Calculator</span>
+      </nav>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Build Calculator</h1>
+          <p class="text-brand-cream/60">Select a warframe and mods to see computed stats live.</p>
+        </div>
+        <div class="flex gap-3 shrink-0">
+          <a href={`${base}compare`} class="text-sm text-brand-orange hover:underline">Compare builds &rarr;</a>
+          <a href={`${base}compare-warframes`} class="text-sm text-brand-orange hover:underline">Compare warframes &rarr;</a>
+          <a href={`${base}modular-builder`} class="text-sm text-brand-orange hover:underline">Modular Builder &rarr;</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="mb-6 space-y-4">
+      <div class="flex flex-col sm:flex-row gap-4 items-end">
+        <div class="flex-1 max-w-xs">
+          <label for="frame-select" class="block text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-1">Base Warframe</label>
+          <select id="frame-select" class="w-full rounded-lg bg-surface-2 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange">
+            <option value="">-- Choose warframe --</option>
+            {sortedFrames.map((w) => <option value={w.slug}>{w.data.name}</option>)}
+          </select>
+        </div>
+        <button id="reset-btn" class="shrink-0 px-5 py-2 rounded-lg border border-surface-3 text-brand-cream/60 text-sm hover:border-brand-orange/50 hover:text-brand-cream transition-colors">Reset</button>
+        <button id="share-btn" class="shrink-0 px-5 py-2 rounded-lg bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-sm hover:bg-brand-orange/30 transition-colors">Share</button>
+      </div>
+      <div>
+        <div class="flex items-center justify-between text-xs text-brand-cream/80 mb-1">
+          <span class="font-semibold uppercase tracking-wide">Mod Capacity</span>
+          <span id="drain-label">0 / {MAX_CAPACITY}</span>
+        </div>
+        <div class="h-3 rounded bg-surface-3 overflow-hidden" role="progressbar" aria-label="Mod capacity used" aria-valuemin={0} aria-valuemax={MAX_CAPACITY} aria-valuenow={0} id="drain-bar-wrap">
+          <div id="drain-bar" class="h-full rounded bg-brand-orange transition-all" style="width:0%"></div>
+        </div>
+        <p class="text-[11px] text-brand-cream/70 mt-1">Supercharged frame: 60 capacity. Polarity match halves drain; mismatch adds 25%.</p>
+      </div>
+    </div>
+
+    <div id="base-stats" class="mb-6 rounded-lg border border-surface-3 bg-surface-2 p-4 hidden">
+      <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">Base Stats</p>
+      <div id="base-stats-grid" class="grid grid-cols-2 sm:grid-cols-5 gap-3"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2">
+        <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">Mod Slots</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="slots-grid">
+          {SLOT_POLARITIES.map((pol, idx) => (
+            <div class="rounded-lg border border-surface-3 bg-surface-2 p-3">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="inline-flex items-center justify-center w-6 h-6 rounded text-xs font-bold bg-surface-3 text-brand-orange" title={pol} data-slot-polarity={pol} id={`slot-pol-${idx}`}>{POL_SYM[pol] ?? 'O'}</span>
+                <label for={`slot-${idx}`} class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide">Slot {idx + 1}</label>
+                <span id={`slot-drain-${idx}`} class="ml-auto text-xs text-brand-cream/70"></span>
+              </div>
+              <select id={`slot-${idx}`} data-slot={idx} class="w-full rounded-lg bg-surface-3 border border-surface-3 text-brand-cream px-3 py-2 text-sm focus:outline-none focus:border-brand-orange">
+                <option value="">-- Empty --</option>
+                {sortedMods.map((m) => <option value={m.slug}>{m.data.name}</option>)}
+              </select>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-semibold text-brand-cream/80 uppercase tracking-wide mb-3">Computed Stats</p>
+        <div id="computed-stats" class="rounded-lg border border-surface-3 bg-surface-2 p-4 space-y-3" aria-live="polite" aria-label="Computed build statistics">
+          <p class="text-brand-cream/70 text-sm text-center py-4" id="computed-hint">Select a warframe and mods to see results.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>
+
+<script define:vars={{ warframesJson, modsJson, SLOT_COUNT, MAX_CAPACITY, SLOT_POLARITIES, base }} is:inline>
+  const FRAMES = JSON.parse(warframesJson);
+  const MODS = JSON.parse(modsJson);
+
+  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function findFrame(slug) { return FRAMES.find((f) => f.slug === slug); }
+  function findMod(slug) { return MODS.find((m) => m.slug === slug); }
+  function effectValue(mod, stat) { const fx = mod.effects.find((e) => e.stat === stat); return fx ? fx.value : 0; }
+
+  function slotDrain(mod, slotPolarity) {
+    if (!mod) return 0;
+    if (mod.polarity === slotPolarity) return Math.ceil(mod.drain / 2);
+    if (mod.polarity !== 'none' && slotPolarity !== 'none') return Math.ceil(mod.drain * 1.25);
+    return mod.drain;
+  }
+
+  function compute() {
+    const frameSlug = document.getElementById('frame-select').value;
+    const frame = findFrame(frameSlug);
+    const slotMods = Array.from({ length: SLOT_COUNT }, (_, i) => {
+      const slug = document.getElementById(`slot-${i}`).value;
+      return slug ? findMod(slug) : null;
+    });
+
+    let totalDrain = 0;
+    for (let i = 0; i < SLOT_COUNT; i++) {
+      const mod = slotMods[i];
+      const d = slotDrain(mod, SLOT_POLARITIES[i]);
+      totalDrain += d;
+      const lbl = document.getElementById(`slot-drain-${i}`);
+      if (lbl) lbl.textContent = mod ? `${d} drain` : '';
+    }
+
+    const pct = Math.min(100, Math.round((totalDrain / MAX_CAPACITY) * 100));
+    const bar = document.getElementById('drain-bar');
+    const barWrap = document.getElementById('drain-bar-wrap');
+    const drainLabel = document.getElementById('drain-label');
+    if (bar) { bar.style.width = `${pct}%`; bar.className = `h-full rounded transition-all ${totalDrain > MAX_CAPACITY ? 'bg-red-500' : 'bg-brand-orange'}`; }
+    if (barWrap) barWrap.setAttribute('aria-valuenow', String(totalDrain));
+    if (drainLabel) drainLabel.textContent = `${totalDrain} / ${MAX_CAPACITY}`;
+
+    const basePanel = document.getElementById('base-stats');
+    const baseGrid = document.getElementById('base-stats-grid');
+    if (frame && basePanel && baseGrid) {
+      basePanel.classList.remove('hidden');
+      const fields = [['Health','health'],['Shield','shield'],['Armor','armor'],['Energy','energy'],['Sprint','sprintSpeed']];
+      baseGrid.innerHTML = fields.map(([lbl, key]) => {
+        const v = frame[key];
+        return `<div class="text-center"><p class="text-xs text-brand-cream/40 mb-0.5">${esc(lbl)}</p><p class="font-semibold text-brand-cream">${esc(v === 'unknown' ? 'Unknown' : String(v))}</p></div>`;
+      }).join('');
+    } else if (basePanel) { basePanel.classList.add('hidden'); }
+
+    const panel = document.getElementById('computed-stats');
+    const hint = document.getElementById('computed-hint');
+    if (!frame) { if (hint) hint.style.display = ''; return; }
+    if (hint) hint.style.display = 'none';
+
+    const bonuses = { strength: 0, range: 0, duration: 0, efficiency: 0, health: 0, armor: 0, energy: 0 };
+    for (const mod of slotMods) {
+      if (!mod) continue;
+      for (const key of Object.keys(bonuses)) { bonuses[key] += effectValue(mod, key); }
+    }
+
+    const effMult = Math.max(0.25, 1 + bonuses.efficiency / 100);
+    const strMult = 1 + bonuses.strength / 100;
+    const rngMult = 1 + bonuses.range / 100;
+    const durMult = 1 + bonuses.duration / 100;
+    const baseH = typeof frame.health === 'number' ? frame.health : 300;
+    const baseS = typeof frame.shield === 'number' ? frame.shield : 300;
+    const baseA = typeof frame.armor === 'number' ? frame.armor : 0;
+    const baseE = typeof frame.energy === 'number' ? frame.energy : 100;
+    const baseSp = typeof frame.sprintSpeed === 'number' ? frame.sprintSpeed : 1;
+    const finalArmor = Math.round(baseA * (1 + bonuses.armor / 100));
+    const dmgRed = finalArmor / (finalArmor + 300);
+    const effHP = Math.round((baseH * (1 + bonuses.health / 100)) / (1 - dmgRed));
+    const finalE = Math.round(baseE * (1 + bonuses.energy / 100));
+
+    function fmtPct(mult) { return `${Math.round(mult * 100)}%`; }
+    function sgn(n) { return n >= 0 ? '+' : ''; }
+
+    const rows = [
+      ['Effective Health', `${effHP} HP`, 'Includes armor damage reduction'],
+      ['Effective Shield', `${Math.round(baseS)} HP`, 'Base shield'],
+      ['Power Strength', fmtPct(strMult), `${sgn(bonuses.strength)}${Math.round(bonuses.strength)}% from mods`],
+      ['Power Range', fmtPct(rngMult), `${sgn(bonuses.range)}${Math.round(bonuses.range)}% from mods`],
+      ['Power Duration', fmtPct(durMult), `${sgn(bonuses.duration)}${Math.round(bonuses.duration)}% from mods`],
+      ['Power Efficiency', fmtPct(effMult), `${sgn(bonuses.efficiency)}${Math.round(bonuses.efficiency)}% (min 25%)`],
+      ['Energy Max', String(finalE), `Base ${baseE}`],
+      ['Sprint Speed', String(baseSp), 'Sprint mods not tracked'],
+    ];
+
+    if (panel) {
+      panel.innerHTML = rows.map(([lbl, val, note]) =>
+        `<div class="flex flex-col gap-0.5"><div class="flex items-center justify-between gap-2"><span class="text-xs text-brand-cream/50">${esc(lbl)}</span><span class="text-sm font-semibold text-brand-cream">${esc(val)}</span></div><p class="text-[11px] text-brand-cream/30">${esc(note)}</p></div>`
+      ).join('');
+    }
+  }
+
+  function loadFromUrl() {
+    const param = new URLSearchParams(window.location.search).get('build');
+    if (!param) return;
+    try {
+      const d = JSON.parse(atob(param));
+      if (d.frame) document.getElementById('frame-select').value = d.frame;
+      if (Array.isArray(d.slots)) {
+        d.slots.forEach((slug, i) => { const el = document.getElementById(`slot-${i}`); if (el && slug) el.value = slug; });
+      }
+    } catch (_) { /* malformed -- ignore */ }
+  }
+
+  function shareUrl() {
+    const frameSlug = document.getElementById('frame-select').value;
+    const slots = Array.from({ length: SLOT_COUNT }, (_, i) => document.getElementById(`slot-${i}`).value);
+    const url = `${window.location.origin}${window.location.pathname}?build=${btoa(JSON.stringify({ frame: frameSlug, slots }))}`;
+    navigator.clipboard.writeText(url).catch(() => {});
+    const btn = document.getElementById('share-btn');
+    if (btn) { btn.textContent = 'Copied!'; setTimeout(() => { btn.textContent = 'Share'; }, 2000); }
+  }
+
+  function reset() {
+    document.getElementById('frame-select').value = '';
+    for (let i = 0; i < SLOT_COUNT; i++) { const el = document.getElementById(`slot-${i}`); if (el) el.value = ''; }
+    history.replaceState(null, '', window.location.pathname);
+    compute();
+  }
+
+  document.getElementById('frame-select').addEventListener('change', compute);
+  document.getElementById('reset-btn').addEventListener('click', reset);
+  document.getElementById('share-btn').addEventListener('click', shareUrl);
+  for (let i = 0; i < SLOT_COUNT; i++) { document.getElementById(`slot-${i}`).addEventListener('change', compute); }
+  loadFromUrl();
+  compute();
+</script>

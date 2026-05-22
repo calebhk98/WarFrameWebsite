@@ -1,0 +1,74 @@
+---
+slug: arcane-hot-shot
+name: Arcane Hot Shot
+type: warframe
+maxRank: 5
+effect: "Gain [crit_chance]% weapon Critical Chance for 10s, when using abilities to inflict Heat Status effect on enemies. Maximum 50x stacks."
+perRankStats:
+  - rank: 0
+    stats: { crit_chance: 1 }
+  - rank: 1
+    stats: { crit_chance: 2 }
+  - rank: 2
+    stats: { crit_chance: 3 }
+  - rank: 3
+    stats: { crit_chance: 4 }
+  - rank: 4
+    stats: { crit_chance: 5 }
+  - rank: 5
+    stats: { crit_chance: 6 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation C"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Hot_Shot"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Hot Shot builds stacking weapon Critical Chance each time the warframe uses an ability to inflict Heat status on enemies. Each ability-applied Heat proc adds +crit_chance% weapon Critical Chance lasting 10 seconds, stacking up to 50 times. Frames that apply Heat status through abilities continuously -- Ember's Fireball and World on Fire, Gara's Shattered Lash with heat element, or any frame using abilities with heat damage -- rapidly accumulate stacks and maintain elevated weapon critical chance throughout combat.
+
+At rank 5, each Heat proc adds +6% weapon Critical Chance, for a maximum of +300% at 50 stacks. Full stacks convert weapons from moderate to extreme crit probability, enabling yellow-to-red crit thresholds on weapons that could not achieve those values through mods alone.
+
+## Effect
+
+Each time a warframe ability applies a Heat status effect to an enemy, one stack of Hot Shot's Critical Chance bonus is added, refreshing or extending the 10-second duration. Stacks are additive; each stack contributes the rank-dependent percentage independently to the total weapon Critical Chance. At rank 0, each Heat proc adds +1% (maximum +50% at 50 stacks). At rank 5, each Heat proc adds +6% (maximum +300% at 50 stacks).
+
+The bonus applies to all weapons equipped during the buff window. Switching weapons during active stacks retains the bonus on the newly equipped weapon. Only ability-sourced Heat procs count -- weapon-applied Heat does not build stacks.
+
+## Stats per rank
+
+| Rank | Crit Chance per Stack | Max Stacks | Maximum Bonus |
+|------|----------------------|-----------|--------------|
+| 0 | +1% | 50 | +50% |
+| 1 | +2% | 50 | +100% |
+| 2 | +3% | 50 | +150% |
+| 3 | +4% | 50 | +200% |
+| 4 | +5% | 50 | +250% |
+| 5 | +6% | 50 | +300% |
+
+## Acquisition
+
+Arcane Hot Shot drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation C at 2%. Both sources are available after completing Angels of the Zariman. Rotation C requires extended Void Cascade runs. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Arcane Hot Shot is purpose-built for Ember builds that sustain continuous Heat status application. Ember's World on Fire and Inferno cast Heat procs on nearby enemies continuously; combined with Hot Shot, this generates stacks at high frequency reaching maximum stacks rapidly. Chroma with heat breath abilities applies consistent Heat status while buffing the squad. Lavos with Heat elemental infusion on abilities applies Heat procs on each cast without energy cost, making him a highly efficient Hot Shot stack generator.
+
+Weapon builds that pair Hot Shot with high-crit-chance primaries (Lanka, Rubico Prime) use the accumulated crit chance to push into red-crit territory consistently during active ability periods.
+
+## Notes
+
+Only ability-applied Heat status increments the stacks -- weapon Heat damage that applies Heat procs does not trigger Hot Shot. Abilities that deal Heat damage in area (Ember World on Fire affecting multiple enemies simultaneously) add one stack per proc event, not per enemy hit. The 10-second duration resets on each new stack addition; the timer shown in the buff indicator corresponds to the most recent stack's 10-second window. When the oldest stacks expire, the total bonus decreases by the per-stack amount rather than dropping to zero entirely.
+
+## Sources
+
+- WFCD warframe-items dataset provides Critical Chance per stack, max stacks, and duration for Arcane Hot Shot.
+- Fandom wiki entry for [Arcane Hot Shot](https://warframe.fandom.com/wiki/Arcane_Hot_Shot) covers ability-Heat proc qualification and Ember build synergies.

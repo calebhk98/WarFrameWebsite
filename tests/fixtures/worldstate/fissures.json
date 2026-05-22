@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fissure-lith-1",
+    "activation": "2026-05-18T11:00:00.000Z",
+    "expiry": "2026-05-18T13:00:00.000Z",
+    "node": "Hepit (Void)",
+    "missionType": "Capture",
+    "enemy": "Corrupted",
+    "tier": "Lith",
+    "tierNum": 1,
+    "expired": false,
+    "isStorm": false,
+    "isHard": false
+  },
+  {
+    "id": "fissure-meso-1",
+    "activation": "2026-05-18T10:30:00.000Z",
+    "expiry": "2026-05-18T12:30:00.000Z",
+    "node": "Io (Jupiter)",
+    "missionType": "Defense",
+    "enemy": "Corpus",
+    "tier": "Meso",
+    "tierNum": 2,
+    "expired": false,
+    "isStorm": false,
+    "isHard": true
+  },
+  {
+    "id": "fissure-axi-1",
+    "activation": "2026-05-18T09:00:00.000Z",
+    "expiry": "2026-05-18T11:00:00.000Z",
+    "node": "Xini (Eris)",
+    "missionType": "Interception",
+    "enemy": "Infested",
+    "tier": "Axi",
+    "tierNum": 4,
+    "expired": false,
+    "isStorm": true,
+    "isHard": false
+  }
+]

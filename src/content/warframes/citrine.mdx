@@ -1,0 +1,153 @@
+---
+slug: citrine
+name: Citrine
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 400
+shield: 270
+armor: 265
+energy: 130
+sprintSpeed: 1
+passive:
+  name: Geoluminesence
+  description: >-
+    Citrine emits a healing aura granting health regeneration to herself and nearby allies. Picking up health orbs increases the healing output.
+abilities:
+  - name: Fractured Blast
+    key: "1"
+    energyCost: 25
+    description: >-
+      Launches a crystal blast that inflicts Slash status and staggers enemies. Affected enemies gain an increased chance of dropping health and energy orbs.
+    stats: { damage: 250, range: 25 }
+  - name: Preserving Shell
+    key: "2"
+    energyCost: 50
+    description: >-
+      Generates a crystalline protective shell around Citrine and nearby allies. The shell gradually decays but strengthens with each kill and assist nearby.
+    stats: { duration: 8, range: 8 }
+  - name: Prismatic Gem
+    key: "3"
+    energyCost: 75
+    description: >-
+      Deploys a crystalline gem that autonomously shoots prismatic beams at enemies taking weapon damage. Beams inflict Heat, Cold, Toxin, and Electricity status.
+    stats: { damage: 800, range: 18 }
+  - name: Crystallize
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summons crystal fractals that rush forward and paralyze enemies with crystalline growths. Hitting the growths deals increased critical damage.
+    stats: { damage: 500, range: 20 }
+acquisition:
+  source: Mars Defense
+  blueprintLocations:
+    - "Tyana Pass Defense (Mars), Rotation C"
+  buildTimeHours: 72
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Citrine"
+    accessedAt: "2026-05-19"
+    title: "Citrine -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19T00:00:00Z"
+---
+
+## Overview
+
+Citrine is a support-oriented warframe released in Update 32.3 (February 2023) with a focus on crystalline defense and elemental synergy. Her kit centers around creating protective barriers, summoning offensive crystal constructs, and generating resource droplets for her team. She excels in group content where her aura and shell can sustain squadmates through high-damage encounters. Unlike pure damage frames, Citrine trades raw offense for survivability and utility, making her particularly valuable in endurance runs and defensive missions.
+
+The warframe's aesthetic draws inspiration from gemstones and mineral formations, with crystalline armor and a color palette dominated by cool blues and purples. Her design reflects a guardian archetype, reinforced by her lore as the protector of the Zariman colonists Belric and Rania during the Old War.
+
+## Abilities
+
+<AbilityCard
+  name="Fractured Blast"
+  key="1"
+  energyCost={25}
+  description="Launches a spinning crystal blade that inflicts Slash status and staggers enemies on impact. Affected enemies drop health and energy orbs more frequently."
+/>
+
+Fractured Blast serves as Citrine's primary single-target opener. The ability scales with power strength and range mods, making it suitable for triggering slash procs on priority targets. The increased orb drop chance synergizes with her passive, creating a self-sustaining resource loop when combined with team kills.
+
+<AbilityCard
+  name="Preserving Shell"
+  key="2"
+  energyCost={50}
+  description="Creates a crystalline barrier around Citrine and allies within range. The shell absorbs damage and decays over time but regenerates with each kill or assist nearby."
+/>
+
+Preserving Shell is the cornerstone of Citrine's defensive playstyle. The shield strength scales with power strength, and duration scaling extends its active window. Importantly, kills and assists within range fully refresh the shield's strength, making it exceptionally powerful in squad play where teammates contribute to upkeep. The ability excels against burst-damage enemies where raw health pools fail.
+
+<AbilityCard
+  name="Prismatic Gem"
+  key="3"
+  energyCost={75}
+  description="Deploys a stationary gem construct that fires prismatic beams at enemies taking damage from Citrine's team. Beams apply Heat, Cold, Toxin, and Electricity procs."
+/>
+
+Prismatic Gem provides passive damage and status application without requiring Citrine's direct engagement. The gem benefits from power strength (for beam damage) and range (for targeting distance). Its ability to apply four distinct elemental statuses simultaneously makes it a valuable primer for secondary-damage roles or group elemental chains. Placing the gem in optimal positions maximizes coverage across common enemy groupings.
+
+<AbilityCard
+  name="Crystallize"
+  key="4"
+  energyCost={100}
+  description="Summons crystal fractals that charge forward and paralyze enemies with crystalline growths. The growths can be shot for guaranteed critical damage."
+/>
+
+Crystallize combines crowd control with damage scaling. The crystal fractals seek enemies within range, making it reliable for scattered groups. The paralyze effect pins targets in place, allowing the squad to reposition or focus fire. The growth hitpoints scale with power strength, and shooting them grants critical multiplier benefits for high-damage weapons, particularly sniper rifles and crit-scaling melees.
+
+## Passive
+
+Citrine's passive, Geoluminesence, emits a continuous health regeneration aura affecting her and allies within 50 meters. The base regeneration stands at 5 health per second, but picking up health orbs increases this value significantly, stacking up to a maximum. This passive is foundational to Citrine's role; the regeneration allows squads to sustain through moderate, continuous damage without relying on dedicated healing frames. The orb-pickup mechanic synergizes elegantly with Fractured Blast and Preserving Shell, creating a loop where offense generates resources that improve defense.
+
+## Stats
+
+| Stat           | Value    |
+|----------------|----------|
+| Health         | 400      |
+| Shield         | 270      |
+| Armor          | 265      |
+| Energy         | 130      |
+| Sprint Speed   | 1.0x     |
+| Mastery Rank   | 0        |
+| Polarities     | Madurai, Vazarin |
+
+Citrine's bulk is respectable for a support frame, with high armor offset by relatively low shields. The 130 energy pool is modest, requiring efficiency mods to maintain ability cycling in long missions. Her armor scales well with scaling modifiers, making her tanky without investing heavily in health-only builds.
+
+## Acquisition
+
+Citrine blueprints drop from the Tyana Pass Defense mission on Mars, available in Rotation C. All three component blueprints (Neuroptics, Chassis, Systems) share the same mission and rotation, requiring extended Defense runs to farm all parts. The mission is locked behind Heart of Deimos quest completion, which also gates access to Zariman content. Construction requires 72 hours and a market purchase or in-game farming of resources including Orokin Cells.
+
+Because Citrine does not have a Prime variant, the standard version remains the only acquisitionpath. This makes her farmable consistently year-round without vault concerns, though Rotation C spawn rates mean efficient farming benefits from resource boosters and squad coordination.
+
+## Recommended Builds
+
+Citrine's versatility supports multiple build archetypes:
+
+**Support Shield Strength:** Prioritize power strength, duration, and range to maximize Preserving Shell's protective value. A full squad in the shell's radius with continuous refresh becomes nearly unkillable, particularly in endless Defense and Survival missions.
+
+**Ability Duration:** Extended duration on Preserving Shell and Crystallize paralyze time allows for more forgiving ability management, useful in lower-to-mid star chart content where enemy density does not require constant recasts.
+
+**Balanced Efficiency:** Moderate efficiency (around 130-150%) with power strength and range balances Citrine's modest energy pool, allowing consistent four-ability cycling while maintaining reasonable cooldown windows.
+
+## Synergies
+
+Citrine pairs exceptionally well with ability-damage weapons and frames. Her Prismatic Gem provides consistent status priming, which secondary-weapon users or status-focused frames exploit for cascading procs. Frames like Saryn or Mirage benefit from her elemental application on grouped enemies.
+
+Her shield-building nature synergizes with link-based builds and aura mods that convert shields to additional survivability. Squad compositions featuring external damage (crit-focused weapons, raw-damage frames) leverage her crowd control and resource generation without competing for damage scalars.
+
+## Lore
+
+During the Old War, Citrine served as guardian Warframe to Belric and Rania, two residents of the Zariman colony ship. When the Sentients invaded Deimos and the Infestation threatened the moon, the couple activated a biological counter-measure, releasing plague spores across the colonized region. Rather than retreating, Citrine chose sacrifice, transmuting Belric and Rania's bodies into crystalline matrices to preserve them and contain the outbreak.
+
+After Deimos returned to Martian orbit centuries later, void-touched smugglers discovered that separating the crystallized remains would create a Void tunnel linking the two together--a living monument to the couple's bond. From the Void tunnel emerged Citrine's remnants, a new Warframe bearing the crystalline nature of her sacrifice. Her kit mirrors this narrative: her abilities generate fractals and gems from the same crystalline legacy, and her guardian role persists as a protective aura extending that sacrifice to modern squadmates.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) (accessed 2026-05-19)
+- [Citrine -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Citrine) (accessed 2026-05-19)

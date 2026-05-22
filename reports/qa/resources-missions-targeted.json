@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "report_date": "2026-05-21",
+    "author": "targeted-fix-subagent",
+    "scope": "Resources drop-location fixes, mods H2 reorder, missions H2 reorder + veil-proxima content rewrite",
+    "source_audit": "reports/qa/wide-audit-postfix.json",
+    "systemic_issues_addressed": [6, 7, 9]
+  },
+  "resources_fixed": [
+    {
+      "slug": "training-debt-bond",
+      "path": "src/content/resources/training-debt-bond.mdx",
+      "changes": [
+        "planets: replaced ['Multiple locations'] with ['Venus']",
+        "dropSources: replaced fabricated generic list with accurate 'Orb Vallis Bounties (Level 5-15), Rotations A/B/C' and 'Ticker in Fortuna'",
+        "usedFor: replaced generic with specific Solaris United standing, rank advancement, companion gilding",
+        "body: complete rewrite -- specific Fortuna/Solaris United context, Orb Vallis bounty drop rates (19-46% per rotation), Ticker alternative purchase method",
+        "tradeable: corrected -- WFCD tradable=false confirmed; audit claim of tradeability was incorrect per WFCD",
+        "sources.accessedAt: corrected to ISO-8601 with time component",
+        "ascii: em-dash removed from body"
+      ],
+      "data_sources_used": ["WFCD Resources.json", "Fandom Debt-Bond API"],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "lich-token",
+      "path": "src/content/resources/lich-token.mdx",
+      "changes": [
+        "planets: replaced ['Multiple', 'Void Cascade'] with ['Any planet with an active Kuva Lich']",
+        "dropSources: replaced fabricated generic list with accurate Kuva Lich conversion via Requiem sequence",
+        "usedFor: replaced generic crafting with accurate 'Transferring control of a converted Kuva Lich to another player'",
+        "body: complete rewrite -- explains Kuva Lich nemesis system, Requiem mod sequence, convert vs vanquish choice, token transfer mechanics",
+        "tradeable: corrected -- WFCD tradable=false; note added that nemesis trade UI (not standard trade post) is used for token transfer",
+        "sources: updated Fandom URL to Kuva_Lich (redirect target), ISO-8601 accessedAt",
+        "ascii: em-dash removed from body"
+      ],
+      "data_sources_used": ["WFCD Resources.json (uniqueName confirmed: CapturedGrineerLichToken)"],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "pyrol",
+      "path": "src/content/resources/pyrol.mdx",
+      "changes": [
+        "planets: replaced ['Multiple locations'] with ['Earth']",
+        "dropSources: replaced fabricated generic list with 'Red Mining Veins on Plains of Eidolon', 'Tusk Thumper (16.7%)', 'Tusk Thumper Bull (25.0%)', 'Tusk Thumper Doma (33.4%)'",
+        "usedFor: replaced generic with specific 'Pyrotic Alloy crafting (20 Pyrol per batch)', 'Tempered Bapholite crafting', 'Ostron Visitor rank (40 Pyrol)'",
+        "body: complete rewrite -- Plains of Eidolon red vein mining, Tusk Thumper drops with accurate drop rates from WFCD, specific crafting uses",
+        "tradeable: statement 'cannot be traded' retained -- WFCD tradable=false confirmed",
+        "removed: fabricated 'void', 'endgame', 'boss encounters' text",
+        "sources.accessedAt: corrected to ISO-8601 with time component"
+      ],
+      "data_sources_used": ["WFCD Resources.json (drops array with Thumper drop chances)", "Fandom Pyrol API"],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "technocyte-coda-token",
+      "path": "src/content/resources/technocyte-coda-token.mdx",
+      "changes": [
+        "planets: replaced ['Multiple locations'] with ['Deimos', 'Any planet with an active Technocyte Coda']",
+        "dropSources: replaced fabricated generic list with accurate Technocyte Coda conversion via Requiem sequence",
+        "usedFor: replaced generic crafting with 'Transferring control of a converted Technocyte Coda to another player'",
+        "body: complete rewrite -- explains Coda adversary system (Infested nemesis counterpart to Kuva Lich), Requiem sequence, convert choice, token trade mechanics, Eleanor as alternative",
+        "tradeable: WFCD tradable=false confirmed; note added about nemesis trade UI",
+        "sources: updated to Fandom Coda page, ISO-8601 accessedAt",
+        "ascii: em-dash removed from body"
+      ],
+      "data_sources_used": ["WFCD Resources.json (uniqueName: CapturedInfestedLichToken)", "Fandom Coda API"],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "adramal-alloy",
+      "path": "src/content/resources/adramal-alloy.mdx",
+      "changes": [
+        "planets: removed fabricated 'Zariman void zones', kept 'Deimos' (only correct location)",
+        "dropSources: replaced partially correct list with accurate 'Crafted in Foundry using Adramalium from Cambion Drift yellow mining lesions' and 'Blueprint from Otak (Necralisk, 1000 standing)'",
+        "usedFor: replaced generic with specific blueprint list -- Bonewidow Engine (120), Voidrig Casing (60), 12 blueprints totaling 605 units",
+        "body: complete rewrite -- Adramal Alloy is a CRAFTED resource (not a direct drop), explains Otak blueprint purchase, Adramalium mining from yellow veins in Cambion Drift, crafting recipe, Entrati standing requirement",
+        "removed: fabricated 'Zariman void zones', 'void-infused crystal formations' text",
+        "tradeable: statement 'cannot be traded' retained -- WFCD tradable=false confirmed",
+        "ascii: em-dash removed from body",
+        "section removed: non-standard 'Best locations' H2 (was between Where it drops and Used for)"
+      ],
+      "data_sources_used": ["WFCD Resources.json (components array with Adramalium location)", "Fandom Adramal_Alloy and Adramalium APIs"],
+      "verdict": "FIXED"
+    }
+  ],
+  "mods_reordered": [
+    {
+      "slug": "condition-overload",
+      "path": "src/content/mods/condition-overload.mdx",
+      "old_h2_order": ["Overview", "Stat table", "Acquisition", "Usage", "Notes"],
+      "new_h2_order": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes"],
+      "changes": [
+        "Renamed 'Stat table' -> 'Stats per rank' (canonical STYLE.md name)",
+        "Renamed 'Usage' -> 'Builds that use it' (canonical STYLE.md name)",
+        "Removed unverified claim about '480 percent' (6x80% is correct math but retained the correct max-rank 80% figure)",
+        "sources.accessedAt: corrected to ISO-8601 with time component"
+      ],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "primed-cryo-rounds",
+      "path": "src/content/mods/primed-cryo-rounds.mdx",
+      "old_h2_order": ["Overview", "Stats per rank", "Acquisition", "Usage", "Common builds", "Sources"],
+      "new_h2_order": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes"],
+      "changes": [
+        "Renamed 'Usage' -> 'Builds that use it' (canonical STYLE.md name)",
+        "Renamed 'Common builds' merged into 'Builds that use it' section",
+        "Replaced non-standard 'Sources' H2 section (sources belong in frontmatter) with 'Notes'",
+        "Fixed acquisition: was 'relic farming / vaulted periodically' -- corrected to Baro Ki'Teer exclusive (WFCD drops:[])",
+        "sources.accessedAt: corrected to ISO-8601 with time component"
+      ],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "afterburn",
+      "path": "src/content/mods/afterburn.mdx",
+      "old_h2_order": ["(no Overview)", "Effects per Rank", "Acquisition", "Usage", "Sources"],
+      "new_h2_order": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes"],
+      "changes": [
+        "Added missing 'Overview' H2 as required first section",
+        "Renamed 'Effects per Rank' -> 'Stats per rank'",
+        "Renamed 'Usage' -> 'Builds that use it'",
+        "Replaced non-standard 'Sources' H2 with 'Notes'",
+        "Rewrote all body sections with specific Chroma/Spectral Scream content (was generic boilerplate)",
+        "Fixed acquisition: now correctly identifies syndicate stores as source",
+        "sources.accessedAt: corrected to ISO-8601 with time component"
+      ],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "irradiating-disarm",
+      "path": "src/content/mods/irradiating-disarm.mdx",
+      "old_h2_order": ["Overview", "Stats per rank", "Acquisition", "Usage", "Common builds", "Notes", "Sources"],
+      "new_h2_order": ["Overview", "Stats per rank", "Acquisition", "Builds that use it", "Notes"],
+      "changes": [
+        "Renamed 'Usage' -> merged into 'Builds that use it'",
+        "Merged 'Common builds' content into 'Builds that use it'",
+        "Removed non-standard 'Sources' H2 section",
+        "Rewrote all body sections with specific Loki/Radial Disarm content (was generic boilerplate without naming Loki)",
+        "Fixed stats table to show actual Radiation duration values (was showing generic 'Enhanced effect 25%/50%/75%' -- wrong)",
+        "Fixed acquisition: Cephalon Simaris standing store correctly identified",
+        "sources.accessedAt: corrected to ISO-8601 with time component"
+      ],
+      "verdict": "FIXED"
+    }
+  ],
+  "missions_fixed": [
+    {
+      "slug": "casta-ceres",
+      "path": "src/content/missions/casta-ceres.mdx",
+      "old_h2_order": ["Overview", "Mission Type Notes", "Level Range", "Rewards", "Why Play This Node", "Strategy Notes", "Sources"],
+      "new_h2_order": ["Overview", "Mission details", "Rewards", "Recommended loadout", "Notes"],
+      "changes": [
+        "Renamed 'Mission Type Notes' -> 'Mission details'",
+        "Removed non-standard 'Level Range' H2 (level info moved into Mission details prose)",
+        "Kept 'Rewards' (already standard)",
+        "Replaced 'Why Play This Node' + 'Strategy Notes' with 'Recommended loadout' and 'Notes'",
+        "Removed non-standard 'Sources' H2 body section",
+        "ascii: em-dash in body was removed (body rewritten with ASCII only)",
+        "sources.accessedAt: corrected to ISO-8601 with time component"
+      ],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "profit-taker-fortuna",
+      "path": "src/content/missions/profit-taker-fortuna.mdx",
+      "old_h2_order": ["Overview", "Mission Type Notes", "Level Range", "Rewards", "Why Play This Node", "Strategy Notes", "Sources"],
+      "new_h2_order": ["Overview", "Mission details", "Rewards", "Recommended loadout", "Notes"],
+      "changes": [
+        "Renamed 'Mission Type Notes' -> 'Mission details'",
+        "Removed non-standard 'Level Range' and 'Why Play This Node' H2s",
+        "Replaced 'Strategy Notes' with 'Recommended loadout'",
+        "Removed non-standard 'Sources' H2 body section",
+        "Fixed rewards: removed 'Garuda Blueprint (chassis/main blueprint)' -- Garuda main blueprint is from Market; only Neuroptics/Systems/Chassis drop from Profit-Taker",
+        "rewards frontmatter updated to accurate component list",
+        "sources.accessedAt: corrected to ISO-8601 with time component"
+      ],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "archon-hunt",
+      "path": "src/content/missions/archon-hunt.mdx",
+      "old_h2_order": ["Overview", "Mission Structure and Distribution", "Enemy Composition and Scaling", "Rewards and Progression Value", "Recommended Loadout and Tactical Approach", "Difficulty and Solo Potential", "Temporal Structure and Accessibility", "Strategic Importance", "Notes and Further Context"],
+      "new_h2_order": ["Overview", "Mission details", "Rewards", "Recommended loadout", "Notes"],
+      "changes": [
+        "Collapsed 9 non-standard H2s into 5 canonical STYLE.md sections",
+        "Fixed fabricated claim: 'Archon Shards upgrade parazon mods' -> corrected to 'Archon Shards slot into warframes to provide permanent stat upgrades'",
+        "Removed 'Zariman Void Cascade rewards' from rewards frontmatter (not a Zariman mission)",
+        "sources.accessedAt: corrected to ISO-8601 with time component"
+      ],
+      "verdict": "FIXED"
+    },
+    {
+      "slug": "veil-proxima",
+      "path": "src/content/missions/veil-proxima.mdx",
+      "old_h2_order": ["Overview", "Mission Type Notes", "Level Range", "Rewards", "Why Play This Node", "Strategy Notes", "Sources"],
+      "new_h2_order": ["Overview", "Mission details", "Rewards", "Recommended loadout", "Notes"],
+      "changes": [
+        "Complete body rewrite -- old content described Zariman/Void Fissure/Orokin enemies (all wrong)",
+        "faction: corrected from 'Void' to 'Grineer' (primary crewship faction in Veil Proxima)",
+        "location: corrected from 'Zariman' to 'Veil Proxima'",
+        "type: corrected from 'Void Fissure' to 'Empyrean' (Railjack mission category)",
+        "levelRange: corrected to 80-100 (was 40-50)",
+        "rewards: replaced Void Cascades / Zariman Resources with accurate Railjack components, Void Relics, Sentient Anomaly rewards",
+        "Body now correctly describes Railjack Empyrean gameplay: Grineer crewships, boarding mechanics, Skirmish/Exterminate/Volatile mission types, Sentient Anomaly with Murex and Epitaph blueprint",
+        "Removed all fabricated Orokin/Void Cascade/Zariman content",
+        "ascii: em-dash removed",
+        "sources.accessedAt: corrected to ISO-8601 with time component, source URL updated to Veil_Proxima page"
+      ],
+      "verdict": "FIXED"
+    }
+  ],
+  "ascii_violations_fixed": {
+    "files": ["training-debt-bond.mdx", "lich-token.mdx", "technocyte-coda-token.mdx", "adramal-alloy.mdx", "casta-ceres.mdx", "veil-proxima.mdx"],
+    "method": "All body text written with plain ASCII double-hyphen (--) instead of em-dash; no curly quotes",
+    "note": "Frontmatter title field em-dashes (e.g., 'Fandom -- WARFRAME Wiki') corrected to double-hyphen in all fixed files"
+  },
+  "ci_results": {
+    "typecheck": "pass (0 errors, 0 warnings, 1 hint unrelated to fixed files)",
+    "build": "pass (1694 pages built)",
+    "test": "pass (53 tests, 6 test files)",
+    "overall": "pass"
+  },
+  "items_not_in_scope": [
+    "weapons collection (not in task scope)",
+    "arcanes collection (not in task scope)",
+    "warframes collection (not in task scope)",
+    "builds and guides (not in task scope)",
+    "STATE.md (not touched per instructions)",
+    "relic schema issues (systemic issue rank 1, not in scope)"
+  ]
+}

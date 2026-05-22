@@ -1,0 +1,74 @@
+---
+slug: arcane-power-ramp
+name: Arcane Power Ramp
+type: warframe
+maxRank: 5
+effect: "On Ability Cast: Next Ability cast gains +[ability_strength]% Ability Strength, stacking up to 4x. Resets when the same ability is recast consecutively."
+perRankStats:
+  - rank: 0
+    stats: { ability_strength: 2 }
+  - rank: 1
+    stats: { ability_strength: 3 }
+  - rank: 2
+    stats: { ability_strength: 4.5 }
+  - rank: 3
+    stats: { ability_strength: 6 }
+  - rank: 4
+    stats: { ability_strength: 7.5 }
+  - rank: 5
+    stats: { ability_strength: 9 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation C"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Power_Ramp"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Power Ramp grants stacking Ability Strength on each ability cast, with the next ability cast consuming all accumulated stacks to deliver a boosted output. Each cast adds a stack up to the 4x maximum, and the following ability cast uses that bonus and resets the counter. The arcane rewards sequential ability casting rather than single-ability spam: alternating between different abilities builds stacks, while casting the same ability consecutively resets the stacks to zero.
+
+The stacking-then-consume cycle creates a rhythm in ability rotations. Frames that alternate between two or more abilities naturally build stacks on each cast and then unleash the accumulated bonus on a priority ability. At rank 5, each stack provides +9% Ability Strength, for a maximum of +36% on a fully stacked consume.
+
+## Effect
+
+Each ability cast adds one stack of Power Ramp, up to a maximum of 4 stacks. When the next ability is cast after stacking, all stacks are consumed and the bonus Ability Strength applies to that single cast. Casting the same ability consecutively resets all accumulated stacks to zero without granting the bonus -- the arcane specifically penalizes single-ability repetition to encourage rotational casting.
+
+At rank 0, each stack provides +2% Ability Strength, for a maximum of +8% on a 4-stack consume. At rank 5, each stack provides +9% Ability Strength, for a maximum of +36% on a fully loaded cast. The Ability Strength bonus is additive with other Ability Strength sources and scales ability damage, healing values, and buff magnitudes proportionally.
+
+## Stats per rank
+
+| Rank | Ability Strength per Stack | Max Stacks | Max Bonus on Consume |
+|------|--------------------------|-----------|---------------------|
+| 0 | +2% | 4x | +8% |
+| 1 | +3% | 4x | +12% |
+| 2 | +4.5% | 4x | +18% |
+| 3 | +6% | 4x | +24% |
+| 4 | +7.5% | 4x | +30% |
+| 5 | +9% | 4x | +36% |
+
+## Acquisition
+
+Arcane Power Ramp drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation C at 2%. Both sources are accessible after completing Angels of the Zariman. Rotation C in Void Cascade requires extended runs to reach; supplementing with Void Fissure sessions covering Power Ramp drops improves overall acquisition rate. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Arcane Power Ramp fits rotational ability builds that naturally cast multiple different abilities in sequence. Frames with four distinct active abilities used in defined rotations -- casting 1, 2, 3, 4 in cycles -- build to 4 stacks before a priority cast and deliver the maximum bonus to the most impactful ability in the rotation. Frames like Nova (1 for slow, 4 for Molecular Prime on priority) and Nidus (1 for Virulence, 2 for Larva alternation) fit this pattern well.
+
+Builds that supplement Power Ramp with high base Ability Strength extract more absolute value from the percentage bonus. A frame with 200% base Ability Strength gains +72% effective Ability Strength on a maxed consume at rank 5, versus +36% on a frame at 100% base strength.
+
+## Notes
+
+The stack reset condition is consecutive casts of the same ability -- casting Ability 1 twice in a row resets stacks, but casting 1 then 2 then 1 does not. The stack count persists between combat encounters as long as the player does not cast the same ability twice consecutively. The bonus is consumed and applied on the ability cast itself, not on ability damage hitting enemies. Passive abilities and abilities with no active key input do not count toward stack building or consumption.
+
+## Sources
+
+- WFCD warframe-items dataset provides Ability Strength per-rank values and the 4x max stack count for Arcane Power Ramp.
+- Fandom wiki entry for [Arcane Power Ramp](https://warframe.fandom.com/wiki/Arcane_Power_Ramp) covers stacking rules and the consecutive-cast reset mechanic.

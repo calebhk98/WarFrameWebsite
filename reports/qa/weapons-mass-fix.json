@@ -1,0 +1,5346 @@
+{
+  "files_processed": 589,
+  "files_modified": 2,
+  "empty_stubs": 70,
+  "defect_rate_pct": 75.1,
+  "no_wfcd_match": 5,
+  "wfcd_weapons_loaded": 603,
+  "details": [
+    {
+      "slug": "acceltra-prime",
+      "file": "src/content/weapons/acceltra-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "acceltra",
+      "file": "src/content/weapons/acceltra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ack-brunt",
+      "file": "src/content/weapons/ack-brunt.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "acrid",
+      "file": "src/content/weapons/acrid.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "aegrit",
+      "file": "src/content/weapons/aegrit.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "aeolak",
+      "file": "src/content/weapons/aeolak.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "afentis",
+      "file": "src/content/weapons/afentis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "afuris-prime",
+      "file": "src/content/weapons/afuris-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "afuris",
+      "file": "src/content/weapons/afuris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "agkuza",
+      "file": "src/content/weapons/agkuza.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akarius-prime",
+      "file": "src/content/weapons/akarius-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akarius",
+      "file": "src/content/weapons/akarius.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akbolto-prime",
+      "file": "src/content/weapons/akbolto-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akbolto",
+      "file": "src/content/weapons/akbolto.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akbronco-prime",
+      "file": "src/content/weapons/akbronco-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akbronco",
+      "file": "src/content/weapons/akbronco.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akjagara-prime",
+      "file": "src/content/weapons/akjagara-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akjagara",
+      "file": "src/content/weapons/akjagara.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "aklato",
+      "file": "src/content/weapons/aklato.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "aklex-prime",
+      "file": "src/content/weapons/aklex-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "aklex",
+      "file": "src/content/weapons/aklex.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akmagnus-prime",
+      "file": "src/content/weapons/akmagnus-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akmagnus",
+      "file": "src/content/weapons/akmagnus.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "aksomati-prime",
+      "file": "src/content/weapons/aksomati-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "aksomati",
+      "file": "src/content/weapons/aksomati.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akstiletto-prime",
+      "file": "src/content/weapons/akstiletto-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akstiletto",
+      "file": "src/content/weapons/akstiletto.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akvasto-prime",
+      "file": "src/content/weapons/akvasto-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akvasto",
+      "file": "src/content/weapons/akvasto.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "akzani",
+      "file": "src/content/weapons/akzani.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "alternox",
+      "file": "src/content/weapons/alternox.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "amanata",
+      "file": "src/content/weapons/amanata.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ambassador",
+      "file": "src/content/weapons/ambassador.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "amesha",
+      "file": "src/content/weapons/amesha.mdx",
+      "changes": [],
+      "errors": [
+        "no WFCD entry found for slug 'amesha'"
+      ],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": false
+    },
+    {
+      "slug": "amphis",
+      "file": "src/content/weapons/amphis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "amprex",
+      "file": "src/content/weapons/amprex.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "angstrum",
+      "file": "src/content/weapons/angstrum.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "anku",
+      "file": "src/content/weapons/anku.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ankyros-prime",
+      "file": "src/content/weapons/ankyros-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ankyros",
+      "file": "src/content/weapons/ankyros.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "arca-plasmor",
+      "file": "src/content/weapons/arca-plasmor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "arca-scisco",
+      "file": "src/content/weapons/arca-scisco.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "arca-titron",
+      "file": "src/content/weapons/arca-titron.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "argo-vel",
+      "file": "src/content/weapons/argo-vel.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "argonak",
+      "file": "src/content/weapons/argonak.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "arum-spinosa",
+      "file": "src/content/weapons/arum-spinosa.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "astilla-prime",
+      "file": "src/content/weapons/astilla-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "astilla",
+      "file": "src/content/weapons/astilla.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "athodai",
+      "file": "src/content/weapons/athodai.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "atomos",
+      "file": "src/content/weapons/atomos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "atterax",
+      "file": "src/content/weapons/atterax.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "attica",
+      "file": "src/content/weapons/attica.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ax-52",
+      "file": "src/content/weapons/ax-52.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "azima",
+      "file": "src/content/weapons/azima.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "azothane",
+      "file": "src/content/weapons/azothane.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "balla",
+      "file": "src/content/weapons/balla.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "ballistica-prime",
+      "file": "src/content/weapons/ballistica-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ballistica",
+      "file": "src/content/weapons/ballistica.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "basmu",
+      "file": "src/content/weapons/basmu.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "battacor",
+      "file": "src/content/weapons/battacor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "baza-prime",
+      "file": "src/content/weapons/baza-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "baza",
+      "file": "src/content/weapons/baza.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "bo-prime",
+      "file": "src/content/weapons/bo-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "bo",
+      "file": "src/content/weapons/bo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "boar-prime",
+      "file": "src/content/weapons/boar-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "boar",
+      "file": "src/content/weapons/boar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "boltace",
+      "file": "src/content/weapons/boltace.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "bolto",
+      "file": "src/content/weapons/bolto.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "boltor-prime",
+      "file": "src/content/weapons/boltor-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "boltor",
+      "file": "src/content/weapons/boltor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "brakk",
+      "file": "src/content/weapons/brakk.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "braton-prime",
+      "file": "src/content/weapons/braton-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "braton-vandal",
+      "file": "src/content/weapons/braton-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "braton",
+      "file": "src/content/weapons/braton.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "broken-scepter",
+      "file": "src/content/weapons/broken-scepter.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "broken-war",
+      "file": "src/content/weapons/broken-war.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "bronco-prime",
+      "file": "src/content/weapons/bronco-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "bronco",
+      "file": "src/content/weapons/bronco.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "bubonico",
+      "file": "src/content/weapons/bubonico.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "burston-prime",
+      "file": "src/content/weapons/burston-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "burston",
+      "file": "src/content/weapons/burston.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "buzlok",
+      "file": "src/content/weapons/buzlok.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cadus",
+      "file": "src/content/weapons/cadus.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cantare",
+      "file": "src/content/weapons/cantare.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "carmine-penta",
+      "file": "src/content/weapons/carmine-penta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cassowar",
+      "file": "src/content/weapons/cassowar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "castanas",
+      "file": "src/content/weapons/castanas.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "catabolyst",
+      "file": "src/content/weapons/catabolyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "caustacyst",
+      "file": "src/content/weapons/caustacyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cedo-prime",
+      "file": "src/content/weapons/cedo-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cedo",
+      "file": "src/content/weapons/cedo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "centaur",
+      "file": "src/content/weapons/centaur.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ceramic-dagger",
+      "file": "src/content/weapons/ceramic-dagger.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cerata",
+      "file": "src/content/weapons/cerata.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cernos-prime",
+      "file": "src/content/weapons/cernos-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cernos",
+      "file": "src/content/weapons/cernos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cestra",
+      "file": "src/content/weapons/cestra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ceti-lacera",
+      "file": "src/content/weapons/ceti-lacera.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cinta",
+      "file": "src/content/weapons/cinta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cobra-crane-prime",
+      "file": "src/content/weapons/cobra-crane-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cobra-crane",
+      "file": "src/content/weapons/cobra-crane.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-bassocyst",
+      "file": "src/content/weapons/coda-bassocyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-catabolyst",
+      "file": "src/content/weapons/coda-catabolyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-caustacyst",
+      "file": "src/content/weapons/coda-caustacyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-hema",
+      "file": "src/content/weapons/coda-hema.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-hirudo",
+      "file": "src/content/weapons/coda-hirudo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-mire",
+      "file": "src/content/weapons/coda-mire.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-motovore",
+      "file": "src/content/weapons/coda-motovore.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-pathocyst",
+      "file": "src/content/weapons/coda-pathocyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-pox",
+      "file": "src/content/weapons/coda-pox.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-sporothrix",
+      "file": "src/content/weapons/coda-sporothrix.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-synapse",
+      "file": "src/content/weapons/coda-synapse.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "coda-tysis",
+      "file": "src/content/weapons/coda-tysis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "convectrix",
+      "file": "src/content/weapons/convectrix.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "corinth-prime",
+      "file": "src/content/weapons/corinth-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "corinth",
+      "file": "src/content/weapons/corinth.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "corufell",
+      "file": "src/content/weapons/corufell.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cronus",
+      "file": "src/content/weapons/cronus.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cyanex",
+      "file": "src/content/weapons/cyanex.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "cyath",
+      "file": "src/content/weapons/cyath.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "cycron",
+      "file": "src/content/weapons/cycron.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "daikyu",
+      "file": "src/content/weapons/daikyu.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dakra-prime",
+      "file": "src/content/weapons/dakra-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dark-dagger",
+      "file": "src/content/weapons/dark-dagger.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dark-split-sword",
+      "file": "src/content/weapons/dark-split-sword.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dark-sword",
+      "file": "src/content/weapons/dark-sword.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dehtat",
+      "file": "src/content/weapons/dehtat.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "dera-vandal",
+      "file": "src/content/weapons/dera-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dera",
+      "file": "src/content/weapons/dera.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "despair",
+      "file": "src/content/weapons/despair.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "destreza-prime",
+      "file": "src/content/weapons/destreza-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "destreza",
+      "file": "src/content/weapons/destreza.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "detron",
+      "file": "src/content/weapons/detron.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dex-dakra",
+      "file": "src/content/weapons/dex-dakra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dex-furis",
+      "file": "src/content/weapons/dex-furis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dex-nikana",
+      "file": "src/content/weapons/dex-nikana.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dex-sybaris",
+      "file": "src/content/weapons/dex-sybaris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dokrahm",
+      "file": "src/content/weapons/dokrahm.mdx",
+      "changes": [
+        "criticalMultiplier: 1.0 -> 0"
+      ],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dorrclave",
+      "file": "src/content/weapons/dorrclave.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dragon-nikana",
+      "file": "src/content/weapons/dragon-nikana.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "drakgoon",
+      "file": "src/content/weapons/drakgoon.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dread",
+      "file": "src/content/weapons/dread.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-cestra",
+      "file": "src/content/weapons/dual-cestra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-cleavers",
+      "file": "src/content/weapons/dual-cleavers.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-coda-torxica",
+      "file": "src/content/weapons/dual-coda-torxica.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-ether",
+      "file": "src/content/weapons/dual-ether.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-heat-swords",
+      "file": "src/content/weapons/dual-heat-swords.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-ichor",
+      "file": "src/content/weapons/dual-ichor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-kamas-prime",
+      "file": "src/content/weapons/dual-kamas-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-kamas",
+      "file": "src/content/weapons/dual-kamas.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-keres-prime",
+      "file": "src/content/weapons/dual-keres-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-keres",
+      "file": "src/content/weapons/dual-keres.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-raza",
+      "file": "src/content/weapons/dual-raza.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-skana",
+      "file": "src/content/weapons/dual-skana.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-toxocyst",
+      "file": "src/content/weapons/dual-toxocyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-viciss",
+      "file": "src/content/weapons/dual-viciss.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-zoren-prime",
+      "file": "src/content/weapons/dual-zoren-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "dual-zoren",
+      "file": "src/content/weapons/dual-zoren.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "edun",
+      "file": "src/content/weapons/edun.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "efv-5-jupiter",
+      "file": "src/content/weapons/efv-5-jupiter.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "efv-8-mars",
+      "file": "src/content/weapons/efv-8-mars.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ekhein",
+      "file": "src/content/weapons/ekhein.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ekwana-ii-jai",
+      "file": "src/content/weapons/ekwana-ii-jai.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ekwana-ii-ruhang",
+      "file": "src/content/weapons/ekwana-ii-ruhang.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ekwana-jai-ii",
+      "file": "src/content/weapons/ekwana-jai-ii.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ekwana-jai",
+      "file": "src/content/weapons/ekwana-jai.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ekwana-ruhang-ii",
+      "file": "src/content/weapons/ekwana-ruhang-ii.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ekwana-ruhang",
+      "file": "src/content/weapons/ekwana-ruhang.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "elytron",
+      "file": "src/content/weapons/elytron.mdx",
+      "changes": [],
+      "errors": [
+        "no WFCD entry found for slug 'elytron'"
+      ],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": false
+    },
+    {
+      "slug": "embolist",
+      "file": "src/content/weapons/embolist.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "endura",
+      "file": "src/content/weapons/endura.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "epitaph-prime",
+      "file": "src/content/weapons/epitaph-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "epitaph",
+      "file": "src/content/weapons/epitaph.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ether-daggers",
+      "file": "src/content/weapons/ether-daggers.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ether-reaper",
+      "file": "src/content/weapons/ether-reaper.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ether-sword",
+      "file": "src/content/weapons/ether-sword.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "euphona-prime",
+      "file": "src/content/weapons/euphona-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "evensong",
+      "file": "src/content/weapons/evensong.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "exergis",
+      "file": "src/content/weapons/exergis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "falcor",
+      "file": "src/content/weapons/falcor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "fang-prime",
+      "file": "src/content/weapons/fang-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "fang",
+      "file": "src/content/weapons/fang.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "felarx",
+      "file": "src/content/weapons/felarx.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ferrox",
+      "file": "src/content/weapons/ferrox.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "flux-rifle",
+      "file": "src/content/weapons/flux-rifle.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "fragor-prime",
+      "file": "src/content/weapons/fragor-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "fragor",
+      "file": "src/content/weapons/fragor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "fulmin-prime",
+      "file": "src/content/weapons/fulmin-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "fulmin",
+      "file": "src/content/weapons/fulmin.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "furax-wraith",
+      "file": "src/content/weapons/furax-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "furax",
+      "file": "src/content/weapons/furax.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "furis",
+      "file": "src/content/weapons/furis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "fusilai",
+      "file": "src/content/weapons/fusilai.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "galatine-prime",
+      "file": "src/content/weapons/galatine-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "galatine",
+      "file": "src/content/weapons/galatine.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "galvacord",
+      "file": "src/content/weapons/galvacord.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "gammacor",
+      "file": "src/content/weapons/gammacor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "gazal-machete",
+      "file": "src/content/weapons/gazal-machete.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ghoulsaw",
+      "file": "src/content/weapons/ghoulsaw.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "glaive-prime",
+      "file": "src/content/weapons/glaive-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "glaive",
+      "file": "src/content/weapons/glaive.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "glaxion-vandal",
+      "file": "src/content/weapons/glaxion-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "glaxion",
+      "file": "src/content/weapons/glaxion.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "gorgon-wraith",
+      "file": "src/content/weapons/gorgon-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "gorgon",
+      "file": "src/content/weapons/gorgon.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "gotva-prime",
+      "file": "src/content/weapons/gotva-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "grakata",
+      "file": "src/content/weapons/grakata.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "gram-prime",
+      "file": "src/content/weapons/gram-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "gram",
+      "file": "src/content/weapons/gram.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "grimoire",
+      "file": "src/content/weapons/grimoire.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "grinlok",
+      "file": "src/content/weapons/grinlok.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "guandao-prime",
+      "file": "src/content/weapons/guandao-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "guandao",
+      "file": "src/content/weapons/guandao.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "gunsen-prime",
+      "file": "src/content/weapons/gunsen-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "gunsen",
+      "file": "src/content/weapons/gunsen.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "halikar-wraith",
+      "file": "src/content/weapons/halikar-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "halikar",
+      "file": "src/content/weapons/halikar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "harmony",
+      "file": "src/content/weapons/harmony.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "harpak",
+      "file": "src/content/weapons/harpak.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hate",
+      "file": "src/content/weapons/hate.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "heat-dagger",
+      "file": "src/content/weapons/heat-dagger.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "heat-sword",
+      "file": "src/content/weapons/heat-sword.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hek",
+      "file": "src/content/weapons/hek.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "heliocor",
+      "file": "src/content/weapons/heliocor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hema",
+      "file": "src/content/weapons/hema.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hespar",
+      "file": "src/content/weapons/hespar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "higasa",
+      "file": "src/content/weapons/higasa.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hikou-prime",
+      "file": "src/content/weapons/hikou-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hikou",
+      "file": "src/content/weapons/hikou.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hind",
+      "file": "src/content/weapons/hind.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hirudo",
+      "file": "src/content/weapons/hirudo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hystrix-prime",
+      "file": "src/content/weapons/hystrix-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "hystrix",
+      "file": "src/content/weapons/hystrix.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ignis-wraith",
+      "file": "src/content/weapons/ignis-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ignis",
+      "file": "src/content/weapons/ignis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "innodem",
+      "file": "src/content/weapons/innodem.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "itzal",
+      "file": "src/content/weapons/itzal.mdx",
+      "changes": [],
+      "errors": [
+        "no WFCD entry found for slug 'itzal'"
+      ],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": false
+    },
+    {
+      "slug": "jai-ii",
+      "file": "src/content/weapons/jai-ii.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "jai",
+      "file": "src/content/weapons/jai.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "jat-kittag",
+      "file": "src/content/weapons/jat-kittag.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "jat-kusar",
+      "file": "src/content/weapons/jat-kusar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "javlok",
+      "file": "src/content/weapons/javlok.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "jaw-sword",
+      "file": "src/content/weapons/jaw-sword.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "jayap",
+      "file": "src/content/weapons/jayap.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kama",
+      "file": "src/content/weapons/kama.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "karak-wraith",
+      "file": "src/content/weapons/karak-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "karak",
+      "file": "src/content/weapons/karak.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "karyst-prime",
+      "file": "src/content/weapons/karyst-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "karyst",
+      "file": "src/content/weapons/karyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kaszas",
+      "file": "src/content/weapons/kaszas.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "keratinos",
+      "file": "src/content/weapons/keratinos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kesheg",
+      "file": "src/content/weapons/kesheg.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kestrel",
+      "file": "src/content/weapons/kestrel.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "knell-prime",
+      "file": "src/content/weapons/knell-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "knell",
+      "file": "src/content/weapons/knell.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "knux",
+      "file": "src/content/weapons/knux.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kogake-prime",
+      "file": "src/content/weapons/kogake-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kogake",
+      "file": "src/content/weapons/kogake.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kohm",
+      "file": "src/content/weapons/kohm.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kohmak",
+      "file": "src/content/weapons/kohmak.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "komorex",
+      "file": "src/content/weapons/komorex.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kompressa",
+      "file": "src/content/weapons/kompressa.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "korb",
+      "file": "src/content/weapons/korb.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "korrudo",
+      "file": "src/content/weapons/korrudo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "korumm",
+      "file": "src/content/weapons/korumm.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kraken",
+      "file": "src/content/weapons/kraken.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kreska",
+      "file": "src/content/weapons/kreska.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "krohkur",
+      "file": "src/content/weapons/krohkur.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kronen-prime",
+      "file": "src/content/weapons/kronen-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kronen",
+      "file": "src/content/weapons/kronen.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kronsh",
+      "file": "src/content/weapons/kronsh.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "kroostra",
+      "file": "src/content/weapons/kroostra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kulstar",
+      "file": "src/content/weapons/kulstar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kunai",
+      "file": "src/content/weapons/kunai.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-brakk",
+      "file": "src/content/weapons/kuva-brakk.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-bramma",
+      "file": "src/content/weapons/kuva-bramma.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-chakkhurr",
+      "file": "src/content/weapons/kuva-chakkhurr.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-drakgoon",
+      "file": "src/content/weapons/kuva-drakgoon.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-hek",
+      "file": "src/content/weapons/kuva-hek.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-hind",
+      "file": "src/content/weapons/kuva-hind.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-karak",
+      "file": "src/content/weapons/kuva-karak.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-kohm",
+      "file": "src/content/weapons/kuva-kohm.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-kraken",
+      "file": "src/content/weapons/kuva-kraken.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-nukor",
+      "file": "src/content/weapons/kuva-nukor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-ogris",
+      "file": "src/content/weapons/kuva-ogris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-quartakk",
+      "file": "src/content/weapons/kuva-quartakk.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-seer",
+      "file": "src/content/weapons/kuva-seer.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-shildeg",
+      "file": "src/content/weapons/kuva-shildeg.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-sobek",
+      "file": "src/content/weapons/kuva-sobek.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-tonkor",
+      "file": "src/content/weapons/kuva-tonkor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-twin-stubbas",
+      "file": "src/content/weapons/kuva-twin-stubbas.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kuva-zarr",
+      "file": "src/content/weapons/kuva-zarr.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "kwath",
+      "file": "src/content/weapons/kwath.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "lacera",
+      "file": "src/content/weapons/lacera.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "laetum",
+      "file": "src/content/weapons/laetum.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "laka",
+      "file": "src/content/weapons/laka.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "lanka",
+      "file": "src/content/weapons/lanka.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "lato-prime",
+      "file": "src/content/weapons/lato-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "lato-vandal",
+      "file": "src/content/weapons/lato-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "lato",
+      "file": "src/content/weapons/lato.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "latron-prime",
+      "file": "src/content/weapons/latron-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "latron-wraith",
+      "file": "src/content/weapons/latron-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "latron",
+      "file": "src/content/weapons/latron.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "lecta",
+      "file": "src/content/weapons/lecta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "lenz",
+      "file": "src/content/weapons/lenz.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "lesion",
+      "file": "src/content/weapons/lesion.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "lex-prime",
+      "file": "src/content/weapons/lex-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "lex",
+      "file": "src/content/weapons/lex.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "machete-wraith",
+      "file": "src/content/weapons/machete-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "machete",
+      "file": "src/content/weapons/machete.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "magistar",
+      "file": "src/content/weapons/magistar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "magnus-prime",
+      "file": "src/content/weapons/magnus-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "magnus",
+      "file": "src/content/weapons/magnus.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mara-detron",
+      "file": "src/content/weapons/mara-detron.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "marelok",
+      "file": "src/content/weapons/marelok.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "masseter-prime",
+      "file": "src/content/weapons/masseter-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "masseter",
+      "file": "src/content/weapons/masseter.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mewan",
+      "file": "src/content/weapons/mewan.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "mios",
+      "file": "src/content/weapons/mios.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mire",
+      "file": "src/content/weapons/mire.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "miter",
+      "file": "src/content/weapons/miter.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mk1-bo",
+      "file": "src/content/weapons/mk1-bo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mk1-braton",
+      "file": "src/content/weapons/mk1-braton.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mk1-furax",
+      "file": "src/content/weapons/mk1-furax.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mk1-furis",
+      "file": "src/content/weapons/mk1-furis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mk1-kunai",
+      "file": "src/content/weapons/mk1-kunai.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mk1-paris",
+      "file": "src/content/weapons/mk1-paris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mk1-strun",
+      "file": "src/content/weapons/mk1-strun.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mutalist-cernos",
+      "file": "src/content/weapons/mutalist-cernos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "mutalist-quanta",
+      "file": "src/content/weapons/mutalist-quanta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nagantaka-prime",
+      "file": "src/content/weapons/nagantaka-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nagantaka",
+      "file": "src/content/weapons/nagantaka.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nami-skyla-prime",
+      "file": "src/content/weapons/nami-skyla-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nami-skyla",
+      "file": "src/content/weapons/nami-skyla.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nami-solo",
+      "file": "src/content/weapons/nami-solo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nataruk",
+      "file": "src/content/weapons/nataruk.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nepheri",
+      "file": "src/content/weapons/nepheri.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nikana-prime",
+      "file": "src/content/weapons/nikana-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nikana",
+      "file": "src/content/weapons/nikana.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ninkondi-prime",
+      "file": "src/content/weapons/ninkondi-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ninkondi",
+      "file": "src/content/weapons/ninkondi.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "nukor",
+      "file": "src/content/weapons/nukor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "obex",
+      "file": "src/content/weapons/obex.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ocucor",
+      "file": "src/content/weapons/ocucor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "odonata-prime",
+      "file": "src/content/weapons/odonata-prime.mdx",
+      "changes": [],
+      "errors": [
+        "no WFCD entry found for slug 'odonata-prime'"
+      ],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": false
+    },
+    {
+      "slug": "odonata",
+      "file": "src/content/weapons/odonata.mdx",
+      "changes": [],
+      "errors": [
+        "no WFCD entry found for slug 'odonata'"
+      ],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": false
+    },
+    {
+      "slug": "ogris",
+      "file": "src/content/weapons/ogris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ohma",
+      "file": "src/content/weapons/ohma.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "okina-prime",
+      "file": "src/content/weapons/okina-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "okina",
+      "file": "src/content/weapons/okina.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "onorix",
+      "file": "src/content/weapons/onorix.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "onos",
+      "file": "src/content/weapons/onos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ooltha",
+      "file": "src/content/weapons/ooltha.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "opticor-vandal",
+      "file": "src/content/weapons/opticor-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "opticor",
+      "file": "src/content/weapons/opticor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "orthos-prime",
+      "file": "src/content/weapons/orthos-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "orthos",
+      "file": "src/content/weapons/orthos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "orvius",
+      "file": "src/content/weapons/orvius.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pandero-prime",
+      "file": "src/content/weapons/pandero-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pandero",
+      "file": "src/content/weapons/pandero.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pangolin-prime",
+      "file": "src/content/weapons/pangolin-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pangolin-sword",
+      "file": "src/content/weapons/pangolin-sword.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "panthera-prime",
+      "file": "src/content/weapons/panthera-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "panthera",
+      "file": "src/content/weapons/panthera.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "paracesis",
+      "file": "src/content/weapons/paracesis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "paracyst",
+      "file": "src/content/weapons/paracyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "paris-prime",
+      "file": "src/content/weapons/paris-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "paris",
+      "file": "src/content/weapons/paris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pathocyst",
+      "file": "src/content/weapons/pathocyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pennant",
+      "file": "src/content/weapons/pennant.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "penta",
+      "file": "src/content/weapons/penta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "perigale",
+      "file": "src/content/weapons/perigale.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "peye",
+      "file": "src/content/weapons/peye.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "phage",
+      "file": "src/content/weapons/phage.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "phantasma-prime",
+      "file": "src/content/weapons/phantasma-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "phantasma",
+      "file": "src/content/weapons/phantasma.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "phenmor",
+      "file": "src/content/weapons/phenmor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "plague-akwin",
+      "file": "src/content/weapons/plague-akwin.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "plague-bokwin",
+      "file": "src/content/weapons/plague-bokwin.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "plague-keewar",
+      "file": "src/content/weapons/plague-keewar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "plague-kripath",
+      "file": "src/content/weapons/plague-kripath.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "plasma-sword",
+      "file": "src/content/weapons/plasma-sword.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "plinx",
+      "file": "src/content/weapons/plinx.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pox",
+      "file": "src/content/weapons/pox.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "praedos",
+      "file": "src/content/weapons/praedos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-angstrum",
+      "file": "src/content/weapons/prisma-angstrum.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-dual-cleavers",
+      "file": "src/content/weapons/prisma-dual-cleavers.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-gorgon",
+      "file": "src/content/weapons/prisma-gorgon.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-grakata",
+      "file": "src/content/weapons/prisma-grakata.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-grinlok",
+      "file": "src/content/weapons/prisma-grinlok.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-lenz",
+      "file": "src/content/weapons/prisma-lenz.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-machete",
+      "file": "src/content/weapons/prisma-machete.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-obex",
+      "file": "src/content/weapons/prisma-obex.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-ohma",
+      "file": "src/content/weapons/prisma-ohma.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-skana",
+      "file": "src/content/weapons/prisma-skana.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-tetra",
+      "file": "src/content/weapons/prisma-tetra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-twin-gremlins",
+      "file": "src/content/weapons/prisma-twin-gremlins.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prisma-veritux",
+      "file": "src/content/weapons/prisma-veritux.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "proboscis-cernos",
+      "file": "src/content/weapons/proboscis-cernos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prova-vandal",
+      "file": "src/content/weapons/prova-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "prova",
+      "file": "src/content/weapons/prova.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pulmonars",
+      "file": "src/content/weapons/pulmonars.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pupacyst",
+      "file": "src/content/weapons/pupacyst.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "purgator-1",
+      "file": "src/content/weapons/purgator-1.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pyrana-prime",
+      "file": "src/content/weapons/pyrana-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "pyrana",
+      "file": "src/content/weapons/pyrana.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "quanta-vandal",
+      "file": "src/content/weapons/quanta-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "quanta",
+      "file": "src/content/weapons/quanta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "quartakk",
+      "file": "src/content/weapons/quartakk.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "quassus-prime",
+      "file": "src/content/weapons/quassus-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "quassus",
+      "file": "src/content/weapons/quassus.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "quatz",
+      "file": "src/content/weapons/quatz.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "quellor",
+      "file": "src/content/weapons/quellor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "rabvee",
+      "file": "src/content/weapons/rabvee.mdx",
+      "changes": [
+        "criticalMultiplier: 1.0 -> 0"
+      ],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "rakta-ballistica",
+      "file": "src/content/weapons/rakta-ballistica.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "rakta-cernos",
+      "file": "src/content/weapons/rakta-cernos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "rakta-dark-dagger",
+      "file": "src/content/weapons/rakta-dark-dagger.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "rathbone",
+      "file": "src/content/weapons/rathbone.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "rauta",
+      "file": "src/content/weapons/rauta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "reaper-prime",
+      "file": "src/content/weapons/reaper-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "reconifex",
+      "file": "src/content/weapons/reconifex.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "redeemer-prime",
+      "file": "src/content/weapons/redeemer-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "redeemer",
+      "file": "src/content/weapons/redeemer.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "riot-848",
+      "file": "src/content/weapons/riot-848.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ripkas",
+      "file": "src/content/weapons/ripkas.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "rubico-prime",
+      "file": "src/content/weapons/rubico-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "rubico",
+      "file": "src/content/weapons/rubico.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ruhang-ii",
+      "file": "src/content/weapons/ruhang-ii.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ruhang",
+      "file": "src/content/weapons/ruhang.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "rumblejack",
+      "file": "src/content/weapons/rumblejack.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "ruvox",
+      "file": "src/content/weapons/ruvox.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sampotes",
+      "file": "src/content/weapons/sampotes.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sancti-castanas",
+      "file": "src/content/weapons/sancti-castanas.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sancti-magistar",
+      "file": "src/content/weapons/sancti-magistar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sancti-tigris",
+      "file": "src/content/weapons/sancti-tigris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sarofang",
+      "file": "src/content/weapons/sarofang.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sarpa",
+      "file": "src/content/weapons/sarpa.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "scindo-prime",
+      "file": "src/content/weapons/scindo-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "scindo",
+      "file": "src/content/weapons/scindo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "scoliac",
+      "file": "src/content/weapons/scoliac.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "scourge-prime",
+      "file": "src/content/weapons/scourge-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "scourge",
+      "file": "src/content/weapons/scourge.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "secura-dual-cestra",
+      "file": "src/content/weapons/secura-dual-cestra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "secura-lecta",
+      "file": "src/content/weapons/secura-lecta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "secura-penta",
+      "file": "src/content/weapons/secura-penta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "seekalla",
+      "file": "src/content/weapons/seekalla.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "seer",
+      "file": "src/content/weapons/seer.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sepfahn",
+      "file": "src/content/weapons/sepfahn.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": true,
+      "wfcd_match": false
+    },
+    {
+      "slug": "sepulcrum",
+      "file": "src/content/weapons/sepulcrum.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "serro",
+      "file": "src/content/weapons/serro.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "shaku",
+      "file": "src/content/weapons/shaku.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "shedu",
+      "file": "src/content/weapons/shedu.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sheev",
+      "file": "src/content/weapons/sheev.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "shtung",
+      "file": "src/content/weapons/shtung.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sibear",
+      "file": "src/content/weapons/sibear.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sicarus-prime",
+      "file": "src/content/weapons/sicarus-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sicarus",
+      "file": "src/content/weapons/sicarus.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sigma-octantis",
+      "file": "src/content/weapons/sigma-octantis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "silva-aegis-prime",
+      "file": "src/content/weapons/silva-aegis-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "silva-aegis",
+      "file": "src/content/weapons/silva-aegis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "simulor",
+      "file": "src/content/weapons/simulor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sirocco",
+      "file": "src/content/weapons/sirocco.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "skana-prime",
+      "file": "src/content/weapons/skana-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "skana",
+      "file": "src/content/weapons/skana.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "skiajati",
+      "file": "src/content/weapons/skiajati.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "slaytra",
+      "file": "src/content/weapons/slaytra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "snipetron-vandal",
+      "file": "src/content/weapons/snipetron-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "snipetron",
+      "file": "src/content/weapons/snipetron.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sobek",
+      "file": "src/content/weapons/sobek.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "soma-prime",
+      "file": "src/content/weapons/soma-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "soma",
+      "file": "src/content/weapons/soma.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sonicor",
+      "file": "src/content/weapons/sonicor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "spectra-vandal",
+      "file": "src/content/weapons/spectra-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "spectra",
+      "file": "src/content/weapons/spectra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "spira-prime",
+      "file": "src/content/weapons/spira-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "spira",
+      "file": "src/content/weapons/spira.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sporothrix",
+      "file": "src/content/weapons/sporothrix.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "stahlta",
+      "file": "src/content/weapons/stahlta.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "staticor",
+      "file": "src/content/weapons/staticor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "steflos",
+      "file": "src/content/weapons/steflos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "stradavar-prime",
+      "file": "src/content/weapons/stradavar-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "stradavar",
+      "file": "src/content/weapons/stradavar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "stropha",
+      "file": "src/content/weapons/stropha.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "strun-prime",
+      "file": "src/content/weapons/strun-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "strun-wraith",
+      "file": "src/content/weapons/strun-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "strun",
+      "file": "src/content/weapons/strun.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "stubba",
+      "file": "src/content/weapons/stubba.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "stug",
+      "file": "src/content/weapons/stug.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sun-moon",
+      "file": "src/content/weapons/sun-moon.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "supra-vandal",
+      "file": "src/content/weapons/supra-vandal.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "supra",
+      "file": "src/content/weapons/supra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "syam",
+      "file": "src/content/weapons/syam.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sybaris-prime",
+      "file": "src/content/weapons/sybaris-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sybaris",
+      "file": "src/content/weapons/sybaris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "sydon",
+      "file": "src/content/weapons/sydon.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "synapse",
+      "file": "src/content/weapons/synapse.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "synoid-gammacor",
+      "file": "src/content/weapons/synoid-gammacor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "synoid-heliocor",
+      "file": "src/content/weapons/synoid-heliocor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "synoid-simulor",
+      "file": "src/content/weapons/synoid-simulor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "talons",
+      "file": "src/content/weapons/talons.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tatsu-prime",
+      "file": "src/content/weapons/tatsu-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tatsu",
+      "file": "src/content/weapons/tatsu.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tekko-prime",
+      "file": "src/content/weapons/tekko-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tekko",
+      "file": "src/content/weapons/tekko.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": true,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "telos-akbolto",
+      "file": "src/content/weapons/telos-akbolto.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "telos-boltace",
+      "file": "src/content/weapons/telos-boltace.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "telos-boltor",
+      "file": "src/content/weapons/telos-boltor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-agendus",
+      "file": "src/content/weapons/tenet-agendus.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-arca-plasmor",
+      "file": "src/content/weapons/tenet-arca-plasmor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-cycron",
+      "file": "src/content/weapons/tenet-cycron.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-detron",
+      "file": "src/content/weapons/tenet-detron.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-diplos",
+      "file": "src/content/weapons/tenet-diplos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-envoy",
+      "file": "src/content/weapons/tenet-envoy.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-exec",
+      "file": "src/content/weapons/tenet-exec.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-ferrox",
+      "file": "src/content/weapons/tenet-ferrox.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-flux-rifle",
+      "file": "src/content/weapons/tenet-flux-rifle.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-glaxion",
+      "file": "src/content/weapons/tenet-glaxion.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-grigori",
+      "file": "src/content/weapons/tenet-grigori.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-livia",
+      "file": "src/content/weapons/tenet-livia.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-plinx",
+      "file": "src/content/weapons/tenet-plinx.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-spirex",
+      "file": "src/content/weapons/tenet-spirex.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenet-tetra",
+      "file": "src/content/weapons/tenet-tetra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenora-prime",
+      "file": "src/content/weapons/tenora-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tenora",
+      "file": "src/content/weapons/tenora.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tetra",
+      "file": "src/content/weapons/tetra.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tiberon-prime",
+      "file": "src/content/weapons/tiberon-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tiberon",
+      "file": "src/content/weapons/tiberon.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tigris-prime",
+      "file": "src/content/weapons/tigris-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tigris",
+      "file": "src/content/weapons/tigris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tipedo-prime",
+      "file": "src/content/weapons/tipedo-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tipedo",
+      "file": "src/content/weapons/tipedo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tonbo",
+      "file": "src/content/weapons/tonbo.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tonkor",
+      "file": "src/content/weapons/tonkor.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "torid",
+      "file": "src/content/weapons/torid.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "trumna-prime",
+      "file": "src/content/weapons/trumna-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "trumna",
+      "file": "src/content/weapons/trumna.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "twin-basolk",
+      "file": "src/content/weapons/twin-basolk.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "twin-grakatas",
+      "file": "src/content/weapons/twin-grakatas.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "twin-gremlins",
+      "file": "src/content/weapons/twin-gremlins.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "twin-kohmak",
+      "file": "src/content/weapons/twin-kohmak.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "twin-krohkur",
+      "file": "src/content/weapons/twin-krohkur.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "twin-rogga",
+      "file": "src/content/weapons/twin-rogga.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "twin-vipers-wraith",
+      "file": "src/content/weapons/twin-vipers-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "twin-vipers",
+      "file": "src/content/weapons/twin-vipers.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "tysis",
+      "file": "src/content/weapons/tysis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vargeet-ii-jai",
+      "file": "src/content/weapons/vargeet-ii-jai.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vargeet-ii-ruhang",
+      "file": "src/content/weapons/vargeet-ii-ruhang.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vargeet-jai-ii",
+      "file": "src/content/weapons/vargeet-jai-ii.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vargeet-jai",
+      "file": "src/content/weapons/vargeet-jai.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vargeet-ruhang-ii",
+      "file": "src/content/weapons/vargeet-ruhang-ii.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vargeet-ruhang",
+      "file": "src/content/weapons/vargeet-ruhang.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vastilok",
+      "file": "src/content/weapons/vastilok.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vasto-prime",
+      "file": "src/content/weapons/vasto-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vasto",
+      "file": "src/content/weapons/vasto.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vaykor-hek",
+      "file": "src/content/weapons/vaykor-hek.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vaykor-marelok",
+      "file": "src/content/weapons/vaykor-marelok.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vaykor-sydon",
+      "file": "src/content/weapons/vaykor-sydon.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vectis-prime",
+      "file": "src/content/weapons/vectis-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vectis",
+      "file": "src/content/weapons/vectis.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "veldt",
+      "file": "src/content/weapons/veldt.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "velox-prime",
+      "file": "src/content/weapons/velox-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "velox",
+      "file": "src/content/weapons/velox.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "venato",
+      "file": "src/content/weapons/venato.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "venka-prime",
+      "file": "src/content/weapons/venka-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "venka",
+      "file": "src/content/weapons/venka.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "verdilac",
+      "file": "src/content/weapons/verdilac.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vericres",
+      "file": "src/content/weapons/vericres.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "veritux",
+      "file": "src/content/weapons/veritux.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vesper-77",
+      "file": "src/content/weapons/vesper-77.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "viper-wraith",
+      "file": "src/content/weapons/viper-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "viper",
+      "file": "src/content/weapons/viper.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vitrica",
+      "file": "src/content/weapons/vitrica.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "volnus-prime",
+      "file": "src/content/weapons/volnus-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "volnus",
+      "file": "src/content/weapons/volnus.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vulkar-wraith",
+      "file": "src/content/weapons/vulkar-wraith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "vulkar",
+      "file": "src/content/weapons/vulkar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "war",
+      "file": "src/content/weapons/war.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "wolf-sledge",
+      "file": "src/content/weapons/wolf-sledge.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "xoris",
+      "file": "src/content/weapons/xoris.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zakti-prime",
+      "file": "src/content/weapons/zakti-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zakti",
+      "file": "src/content/weapons/zakti.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zarr",
+      "file": "src/content/weapons/zarr.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zenistar",
+      "file": "src/content/weapons/zenistar.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zenith",
+      "file": "src/content/weapons/zenith.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zhuge-prime",
+      "file": "src/content/weapons/zhuge-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zhuge",
+      "file": "src/content/weapons/zhuge.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zylok-prime",
+      "file": "src/content/weapons/zylok-prime.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zylok",
+      "file": "src/content/weapons/zylok.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    },
+    {
+      "slug": "zymos",
+      "file": "src/content/weapons/zymos.mdx",
+      "changes": [],
+      "errors": [],
+      "stub": false,
+      "modular": false,
+      "wfcd_match": true
+    }
+  ],
+  "files_modified_total": 442,
+  "files_modified_second_pass": 2,
+  "no_wfcd_match_slugs": [
+    "amesha",
+    "elytron",
+    "itzal",
+    "odonata-prime",
+    "odonata"
+  ],
+  "no_wfcd_match_note": "These are Archwing frames (not weapons) filed under weapons collection; WFCD Archwing.json has them as frames without weapon stats",
+  "modular_weapons": 13,
+  "ci_result": "typecheck=pass, build=pass, tests=53/53 pass",
+  "corrections_applied": [
+    "criticalChance: corrected from 0 or wrong value to WFCD value",
+    "criticalMultiplier: corrected from 0/1 or wrong value to WFCD value",
+    "statusChance (procChance): corrected from 0 or wrong value to WFCD value",
+    "masteryRank: corrected from 0 to WFCD masteryRank (weapons do not have the warframe MR exception)",
+    "type: corrected arch-melee misclassification (kaszas type was already correct)",
+    "damage.impact/puncture/slash: corrected from 0/wrong to WFCD values",
+    "fireRate, magazine, reload: corrected where WFCD had values"
+  ]
+}

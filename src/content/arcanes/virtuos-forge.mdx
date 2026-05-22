@@ -1,0 +1,67 @@
+---
+slug: virtuos-forge
+name: Virtuos Forge
+type: operator
+maxRank: 3
+effect: "On Hit: Converts [damage]% Void Damage to Heat Damage."
+perRankStats:
+  - rank: 0
+    stats: { damage: 24 }
+  - rank: 1
+    stats: { damage: 48 }
+  - rank: 2
+    stats: { damage: 72 }
+  - rank: 3
+    stats: { damage: 98 }
+drops:
+- source: Various
+  chance: 1.0
+  rarity: uncommon
+sources:
+- url: https://github.com/WFCD/warframe-items
+  accessedAt: '2026-05-20'
+  publisher: WFCD
+- url: https://warframe.fandom.com/wiki/Virtuos_Forge
+  accessedAt: '2026-05-20'
+  publisher: Fandom
+updatedAt: '2026-05-20'
+---
+## Overview
+
+Virtuos Forge converts a percentage of the operator amp's Void Damage output into Heat Damage on each hit. Rather than adding a separate damage component, the arcane shifts a portion of the existing Void Damage into the Heat element, changing the damage type distribution of each amp shot. At rank 3, 98% of Void Damage converts to Heat Damage -- at near-maximum conversion, the amp's output is almost entirely Heat rather than Void.
+
+This conversion matters for content where Heat Damage is advantageous or where Void Damage is less effective. Heat status effects apply a burning damage-over-time and a panic reaction that briefly interrupts enemy actions. Virtuos Forge enables the operator to deliver consistent Heat procs through their amp without relying on a specific amp configuration that natively generates Heat output.
+
+## Effect
+
+On each amp hit, Virtuos Forge converts the listed percentage of that shot's Void Damage into Heat Damage. At rank 0, 24% of Void Damage becomes Heat Damage. At rank 3, 98% of Void Damage becomes Heat Damage -- effectively converting the amp's primary damage type. The unconverted remainder (2% at rank 3) stays as Void Damage.
+
+Heat Damage converted from Void Damage can apply Heat status procs on enemies, following standard status chance rules from the amp's stats. Enemy armor class interactions apply to the converted Heat Damage as they would to any Heat-type hit.
+
+## Stats per rank
+
+| Rank | Void to Heat Conversion |
+|------|------------------------|
+| 0 | 24% |
+| 1 | 48% |
+| 2 | 72% |
+| 3 | 98% |
+
+## Acquisition
+
+Virtuos Forge drops from various Zariman Ten-Zero missions and Void Cascade content at uncommon rarity. The arcane is accessible through standard Zariman progression after completing Angels of the Zariman. Warframe.market provides direct purchase options for targeted acquisition.
+
+## Builds that use it
+
+Virtuos Forge fits operator builds aiming to apply Heat status procs through amp fire. The conversion to Heat enables the operator to soften enemies for follow-up attacks from the warframe's primary weapon or abilities that exploit Heat-affected targets. Builds using Residual Boils (which creates Heat zones from Kitgun kills) pair with Virtuos Forge to extend Heat coverage through operator fire as well.
+
+High-status-chance amp configurations generate Heat procs more frequently with the Void-to-Heat conversion active. The arcane is useful in Void Cascade missions where the operator actively engages enemies and wants elemental procs beyond raw Void Damage.
+
+## Notes
+
+The damage conversion is a direct percentage shift from Void to Heat -- it does not create extra damage, only changes the type composition of each hit. Enemies with innate resistance to Heat Damage will find the converted output less effective than pure Void Damage would be. The remaining Void Damage (2% at rank 3) still applies as Void type. Multiple hits per second from high-fire-rate amp prisms generate more status proc attempts from the converted Heat Damage component per unit time.
+
+## Sources
+
+- WFCD warframe-items dataset provides conversion percentage values per rank for Virtuos Forge.
+- Fandom wiki entry for [Virtuos Forge](https://warframe.fandom.com/wiki/Virtuos_Forge) covers Heat Damage conversion mechanics and elemental interaction behavior.

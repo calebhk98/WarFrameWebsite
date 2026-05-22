@@ -1,0 +1,24 @@
+{
+  "pass": true,
+  "errors": [],
+  "warnings": [],
+  "word_count": 1204,
+  "checked_at": "2026-05-19T02:53:20.386080+00:00",
+  "citations": [
+    {
+      "field": "sources",
+      "url": "https://github.com/WFCD/warframe-items",
+      "accessed": true
+    },
+    {
+      "field": "sources",
+      "url": "https://warframe.fandom.com/wiki/Titania/Prime",
+      "accessed": true
+    },
+    {
+      "field": "masteryRank",
+      "wfcd_path": "Warframes.json#/Titania Prime/masteryRank",
+      "value": 0
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+---
+slug: voidrig
+name: Voidrig
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 1400
+shield: 850
+armor: 385
+energy: 175
+sprintSpeed: 1
+passive:
+  name: Void Stalker
+  description: >-
+    Voidrig is innately attuned to the void, granting passive armor scaling and
+    enhanced durability in hostile environments. The mech's frame resonates with
+    void energy, strengthening its structural integrity.
+abilities:
+  - name: Necraweb
+    key: "1"
+    energyCost: 25
+    description: >-
+      Hurl a canister of graviton fluids to create a wide mire that significantly
+      slows enemies. The canister can be shot mid-air to detonate and create a fiery blast.
+    stats: { slow_duration: 8, area_radius: 12 }
+  - name: Storm Shroud
+    key: "2"
+    energyCost: 50
+    description: >-
+      Swathe the Necramech in a powerful electrical field that greatly enhances
+      survivability. Enemies striking the shroud suffer damage and status effects.
+    stats: { duration: 12, damage_reflection: 100 }
+  - name: Gravemines
+    key: "3"
+    energyCost: 75
+    description: >-
+      Launch a pattern of charged mines around you. Each detonates in a violent
+      blast when touched, dealing heat damage in a three-meter radius with guaranteed heat proc.
+    stats: { mine_damage: 400, explosion_radius: 3 }
+  - name: Guard Mode
+    key: "4"
+    energyCost: 50
+    description: >-
+      Assume a stationary stance to deploy maximum firepower and gain increased
+      structural integrity. Grants damage reduction and high sustained damage output.
+    stats: { channeled_drain: 5, damage_multiplier: 1.5, duration: 20 }
+acquisition:
+  source: Heart of Deimos quest reward and Necraloid syndicate
+  blueprintLocations:
+    - "Heart of Deimos quest completion (free blueprints)"
+    - "Necraloid syndicate standing (2000-5000 standing per blueprint)"
+  cost:
+    credits: 25000
+  buildTimeHours: 72
+  note: "Components obtained through mining, fishing, and bounties in the Cambion Drift."
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Voidrig"
+    accessedAt: "2026-05-19"
+    title: "Voidrig -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Voidrig is a Necramech, an advanced exosuit piloted by the Operator to engage in high-intensity combat across the Cambion Drift and other hostile environments. Unlike standard Warframes which represent the Tenno's direct combat manifestation, Necramechs are mechanized suits designed for sustained firepower and heavily armored deployment. Voidrig is the first Necramech most players encounter, obtained through the Heart of Deimos quest. The mech excels as a frontline combatant with a balanced kit combining crowd control, defensive capabilities, and raw offensive power.
+
+Voidrig's designation emphasizes electrical and explosive warfare. The design prioritizes accessibility to new players entering Necramech combat, with moderate energy costs and straightforward ability mechanics. Its armor-plated construction and electrical systems reflect the influence of Entrati void-tech engineering. Standing at the forefront of Necramech design, Voidrig represents the pinnacle of crafted combat technology available to the Tenno without extended grind requirements.
+
+## Abilities
+
+<AbilityCard
+  name="Necraweb"
+  key="1"
+  energyCost={25}
+  description="Hurl a canister of graviton fluids to create a wide mire that significantly slows enemies. The canister can be shot mid-air to detonate and create a fiery blast."
+/>
+
+Voidrig hurls a pressurized canister filled with graviton fluid across the battlefield. Upon impact, the fluid spreads in a wide radius, creating a dense mire that slows all enemies within the effect zone by approximately fifty percent. This slow persists for several seconds, allowing squadmates to position or regroup. Alternatively, players can shoot the canister while it is mid-air to trigger an early detonation, creating a fiery conflagration that deals explosive damage. This dual-purpose mechanic makes Necraweb flexible for both crowd control and offensive application. The ability costs moderate energy and has a low cooldown, making it spammable for sustained area denial.
+
+<AbilityCard
+  name="Storm Shroud"
+  key="2"
+  energyCost={50}
+  description="Swathe the Necramech in a powerful electrical field that greatly enhances survivability. Enemies striking the shroud suffer damage and status effects."
+/>
+
+Upon activation, Voidrig becomes enveloped in a powerful electrical field lasting approximately twelve seconds. This field grants temporary invulnerability against incoming damage and reflects harm back to attackers, making Storm Shroud a powerful defensive tool. Enemies that strike the shroud suffer electrical status procs, further controlling the battlefield. The ability scales with duration mods, allowing players to extend the protective window significantly. Storm Shroud synergizes well with aggressive playstyles where the player positions themselves in enemy clusters to punish melee attackers.
+
+<AbilityCard
+  name="Gravemines"
+  key="3"
+  energyCost={75}
+  description="Launch a pattern of charged mines around you. Each detonates in a violent blast when touched, dealing heat damage in a three-meter radius with guaranteed heat proc."
+/>
+
+Voidrig launches a pattern of charged mines in all directions, covering the immediate surrounding area. Each mine detonates upon any enemy contact, triggering a violent heat explosion affecting a three-meter radius. The mines guarantee heat status procs, making this ability valuable for stripping armor on high-level enemies. With proper modding for range and efficiency, Gravemines becomes a potent tool for both area denial and status application. The ability scales well with strength and range modifications.
+
+<AbilityCard
+  name="Guard Mode"
+  key="4"
+  energyCost={50}
+  description="Assume a stationary stance to deploy maximum firepower and gain increased structural integrity. Grants damage reduction and high sustained damage output."
+/>
+
+Voidrig transitions into a stationary but heavily fortified stance, deploying its integrated weapon systems at maximum capacity. While channeling, the mech gains significant damage reduction and amplifies all outgoing weapon damage. This mode drains energy per second while active, requiring energy management. Guard Mode excels during objective defense or when holding a chokepoint against waves of enemies. The channeled nature allows players to toggle the ability on and off as energy permits, making it a flexible component of tactical gameplay.
+
+## Passive
+
+Voidrig benefits from passive mechanical enhancements granting armor scaling and void attunement. The mech's innate resistance to void energy and environmental hazards makes it suitable for Deimos missions where void corruption is prevalent. The passive does not provide numerical multipliers but represents the mech's engineering integrity and environmental adaptation.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 1400 |
+| Shield | 850 |
+| Armor | 385 |
+| Energy | 175 |
+| Sprint Speed | 1.0x |
+| Mastery Rank Requirement | 0 |
+
+Voidrig's stat distribution favors durability and sustained engagement. The health and armor values provide reasonable survivability for mid-tier missions, while the energy pool supports active ability cycling. The sprint speed matches baseline Warframe movement. At mastery rank zero, Voidrig is accessible immediately to new players, making it an excellent introduction to Necramech mechanics.
+
+## Acquisition
+
+Voidrig blueprints are obtainable through two primary pathways. Players completing the Heart of Deimos quest receive the Voidrig blueprint, all component blueprints, and the weapon blueprint directly in their inbox upon quest completion. This represents the intended progression route for most players.
+
+Alternatively, players may purchase blueprints from Necraloid, the syndicate vendor in the Necralisk on Deimos. Each blueprint costs between 2000 and 5000 standing with Necraloid, allowing repeat crafting or alternative acquisition. Component blueprints (Capsule, Engine, Casing, Weapon Pod) must be obtained through either quest completion or syndicate standing. Construction requires specific crafting materials gathered through mining, fishing, and bounties in the Cambion Drift, promoting engagement with the open-world activities.
+
+Build time for the full mech is 72 hours, reduced to 24 hours per component if built separately. Players may skip the build timer using fifty platinum per component. Entrati faction standing accelerates crafting and reduces material costs, making standing progression valuable for efficient acquisition.
+
+## Playstyle
+
+Voidrig operates as an aggressive, mobile frontline combatant capable of both offense and defense. The mech's moderate energy pool and low-cost abilities enable aggressive ability cycling without extended downtime. Typical engagement patterns involve opening with Necraweb to slow enemy advances, then either sustaining fire in Guard Mode or cycling Storm Shroud for defensive windows while allies deal supplementary damage.
+
+Necraweb's crowd control makes it suitable for protecting objectives or managing enemy waves. The ability's mid-air detonation mechanic rewards careful positioning and timing. Storm Shroud functions as an emergency defensive tool, turning Voidrig into a temporary damage absorber during critical moments. Gravemines provide area denial and status application against armored units, particularly valuable in high-level Void Fissures or Steel Path variants.
+
+Guard Mode represents Voidrig's peak damage output, sacrificing mobility for raw firepower. Experienced players use Guard Mode tactically, activating during enemy concentration phases and deactivating to reposition. The stationarity requires team coordination, with squadmates managing flanking threats while the Voidrig operator focuses forward-facing targets.
+
+Energy management defines Voidrig gameplay. Ability rotation prioritizes crowd control first (Necraweb), sustain second (Storm Shroud), and area denial third (Gravemines), with Guard Mode used opportunistically. Mods providing energy efficiency and regeneration substantially improve endurance. The mech benefits from weapons with high sustained damage output, favoring rifles and autocannons over single-shot arms.
+
+## Builds
+
+Voidrig's build diversity stems from three primary archetypes: crowd-control, survivalist, and damage-dealer configurations.
+
+**Crowd Control Build** prioritizes Necraweb and Gravemines with maximum range, duration, and strength. Mods like Augur Reach and Stretch extend ability coverage, while Blind Rage and Primed Continuity sustain duration. This build excels in missions requiring enemy positioning control, such as Defense or Mobile Defense.
+
+**Survivalist Build** maximizes Storm Shroud's protective window and the mech's armor/health scaling. Adaptation, Reinforced Armor, and Gladiator Aegis combine to provide stacking damage reduction. This configuration suits endless survival missions and Steel Path content where durability matters most.
+
+**Damage Build** stacks Guard Mode damage amplification with weapon modifications favoring crit and elemental procs. Blind Rage, Overextend, and Primed Flow provide strength and energy. This build transforms Guard Mode into a turret-like damage platform capable of eliminating high-priority threats.
+
+Exalted Arquebex, Voidrig's integrated weapon system available through specific mods, further augments Guard Mode's lethality, turning the ability into a formidable boss-fighting platform. Proper build crafting unlocks Voidrig's potential across the entire star chart.
+
+## Lore
+
+Voidrig represents the Entrati collective's response to the Sentient threat and the Zariman incident. The Necramech project emerged from research into void-based engineering, leveraging knowledge derived from the Old War and post-Orokin artifact analysis. Voidrig's electrical systems and graviton weaponry draw from reverse-engineered Orokin technology, refined through generations of Entrati tinkering.
+
+The mech's introduction during the Heart of Deimos questline coincides with the Tenno's deeper integration with Void mechanics. Voidrig serves as the player's introduction to Necramech combat, preparing operators for the Zariman expedition and subsequent void-touched encounters. The design philosophy emphasizes reliability and adaptability, contrasting with Bonewidow's melee-focused specialization.
+
+Lore implications suggest Voidrig draws power from the void itself, resonating at frequencies imperceptible to standard biological organisms. The Necramech's armor composition includes void-infused alloys, enhancing both durability and energy affinity. Loid, the Necraloid vendor, indicates Voidrig modifications are active research subjects, with prototype systems seeing field testing through player deployment.
+
+The Voidrig serves narratively as the bridge between Tenno Warframe combat and the corrupted void environments of Deimos. Its accessibility at mastery rank zero reflects the Entrati's desire to equip Tenno with adequate void-combat training immediately upon voidsplitting ritual completion.
+
+## Sources
+
+- WFCD warframe-items provides the canonical stat baseline for all numeric values, including health (1400), armor (385), shield (850), energy (175), and sprint speed (1.0).
+- The Warframe Wiki documents quest acquisition pathways, Necraloid syndicate interactions, and contextual lore regarding Necramech development within the Entrati faction narrative.

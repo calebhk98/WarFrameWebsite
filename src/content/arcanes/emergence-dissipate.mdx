@@ -1,0 +1,74 @@
+---
+slug: emergence-dissipate
+name: Emergence Dissipate
+type: operator
+maxRank: 5
+effect: "WHILE IN VOID SLING: Press to dissipate the endpoint in a 10m radius. Enemies hit create a short lived Void Mote that replenishes [energy] Energy on pick up."
+perRankStats:
+  - rank: 0
+    stats: { energy: 5 }
+  - rank: 1
+    stats: { energy: 6 }
+  - rank: 2
+    stats: { energy: 7 }
+  - rank: 3
+    stats: { energy: 8 }
+  - rank: 4
+    stats: { energy: 9 }
+  - rank: 5
+    stats: { energy: 10 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation A"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Emergence_Dissipate"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Emergence Dissipate is an operator arcane that activates during Void Sling. While mid-Void-Sling, the player can press a dedicated input to dissipate the Void Sling endpoint in a 10-meter radius burst. Enemies struck by the dissipation explosion spawn short-lived Void Motes at their location. Each Void Mote restores Energy to the warframe when picked up. At rank 5, each Void Mote restores 10 Energy on pickup.
+
+The mechanic turns each Void Sling into a potential energy recovery event. By dissipating at a position surrounded by enemies, the operator can spawn multiple Void Motes simultaneously -- one per enemy hit in the 10-meter radius -- generating a field of energy pickups for the warframe to collect on return.
+
+## Effect
+
+While the operator is in the middle of a Void Sling trajectory, pressing the dissipate input cancels the Sling at the current position and triggers the 10-meter radius burst. All enemies within 10 meters of the dissipation point are hit and each spawn a Void Mote at their location. The Void Motes persist for a short duration before expiring; the warframe must move through them or the operator must re-enter warframe mode near them to collect the energy.
+
+At rank 0, each Void Mote restores 5 Energy. At rank 5, each Void Mote restores 10 Energy. In a dense enemy cluster with 8 enemies in range, a rank 5 dissipate could generate up to 80 Energy from a single Void Sling dissipation, substantially restoring the warframe's energy pool.
+
+## Stats per rank
+
+| Rank | Energy per Void Mote | Dissipate Radius |
+|------|---------------------|-----------------|
+| 0 | 5 | 10m |
+| 1 | 6 | 10m |
+| 2 | 7 | 10m |
+| 3 | 8 | 10m |
+| 4 | 9 | 10m |
+| 5 | 10 | 10m |
+
+## Acquisition
+
+Emergence Dissipate drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation A at 2%. Zariman Ten-Zero content is accessible after completing Angels of the Zariman. Rotation A drops appear in the first rotation of Void Cascade runs, making Dissipate one of the most frequently encountered Emergence arcanes during standard Zariman play. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Emergence Dissipate suits operator builds that use Void Sling actively for mobility and combat positioning. The energy recovery value scales with enemy density -- missions where enemies cluster in groups allow dissipation into large clusters for maximum Void Mote generation. Zariman Void Cascade with its frequent dense enemy spawns is an ideal environment, as the arcane's Zariman drop source and the enemy density coincide.
+
+Warframe builds that rely on sustained ability usage and have limited energy economy benefit most from the supplemental energy generation. Frames that frequently drain their energy pool through channeled abilities, high-cost ability rotations, or ability-intensive combat phases use Dissipate's Void Mote energy as a combat recovery tool that does not require Energy Siphon aura slots or Trinity alliance.
+
+## Notes
+
+The dissipation input must be pressed while in the active Void Sling trajectory -- after initiating a Void Sling but before the operator reaches the endpoint. Pressing the input at the endpoint or after landing does not trigger the dissipation effect. The 10-meter dissipation radius is centered on the operator's position at the moment of the input press, not the original Sling destination. Void Motes persist for a short time before expiring; collecting them promptly after dissipating into an enemy group maximizes energy recovery. The Void Motes are visible to squadmates who can also collect them, potentially sharing energy recovery across the team.
+
+## Sources
+
+- WFCD warframe-items dataset provides Energy-per-Void-Mote values per rank and the 10-meter dissipate radius for Emergence Dissipate.
+- Fandom wiki entry for [Emergence Dissipate](https://warframe.fandom.com/wiki/Emergence_Dissipate) covers Void Sling dissipation mechanics and Void Mote behavior.

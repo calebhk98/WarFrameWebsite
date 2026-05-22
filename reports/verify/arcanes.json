@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-05-21T23:44:25.250262Z",
+  "total_files": 179,
+  "errors_found": 2,
+  "errors": [
+    {
+      "file": "arcane-detoxifier.mdx",
+      "slug": "arcane-detoxifier",
+      "issues": [
+        "Contains non-ASCII characters"
+      ]
+    },
+    {
+      "file": "arcane-impetus.mdx",
+      "slug": "arcane-impetus",
+      "issues": [
+        "Contains non-ASCII characters"
+      ]
+    }
+  ]
+}

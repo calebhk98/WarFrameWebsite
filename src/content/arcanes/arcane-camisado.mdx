@@ -1,0 +1,74 @@
+---
+slug: arcane-camisado
+name: Arcane Camisado
+type: warframe
+maxRank: 5
+effect: "Attacks from summoned minions increase Ability Strength by [ability_strength]% up to [ability_strength_2]% on the next Ability Cast."
+perRankStats:
+  - rank: 0
+    stats: { ability_strength: 1, ability_strength_2: 10 }
+  - rank: 1
+    stats: { ability_strength: 2, ability_strength_2: 20 }
+  - rank: 2
+    stats: { ability_strength: 3, ability_strength_2: 30 }
+  - rank: 3
+    stats: { ability_strength: 4, ability_strength_2: 40 }
+  - rank: 4
+    stats: { ability_strength: 5, ability_strength_2: 50 }
+  - rank: 5
+    stats: { ability_strength: 6, ability_strength_2: 60 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation C"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Camisado"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Camisado builds stacking Ability Strength from summoned minion attacks, then delivers that bonus to the next ability cast. Each attack from a summoned minion adds +ability_strength% Ability Strength up to the rank-dependent cap. When the player casts an ability, all accumulated stacks are consumed and the bonus applies to that cast. The mechanic rewards frames that actively field minions -- the minions generate Ability Strength while attacking, and the player can time ability casts to use the accumulated bonus.
+
+At rank 5, each minion attack adds +6% Ability Strength up to a cap of +60%. Building to the cap requires 10 minion attacks. Frames running multiple minions simultaneously accumulate stacks faster than frames with a single summoned unit.
+
+## Effect
+
+Each attack landed by a summoned minion (Nekros Shadows of the Dead, Nidus Larva with enemy grab, Khora Venari, pet companions with attack commands) adds one increment of Ability Strength. Stacks accumulate silently until the player casts a warframe ability, at which point all stacks are consumed and the bonus fires. The stacks are visible in the buff display as a counter. After consumption the counter resets to zero and minion attacks begin rebuilding it.
+
+At rank 0, each attack adds +1% up to +10% cap -- a small bonus. At rank 5, each attack adds +6% up to +60% cap, providing a meaningful Ability Strength boost on priority ability casts. The bonus applies to the ability's damage, healing, buff magnitude, and area scaling.
+
+## Stats per rank
+
+| Rank | Ability Strength per Minion Attack | Maximum Bonus |
+|------|-----------------------------------|--------------|
+| 0 | +1% | +10% |
+| 1 | +2% | +20% |
+| 2 | +3% | +30% |
+| 3 | +4% | +40% |
+| 4 | +5% | +50% |
+| 5 | +6% | +60% |
+
+## Acquisition
+
+Arcane Camisado drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation C at 2%. Both sources are available after completing Angels of the Zariman. Void Cascade rotation C requires extended runs. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Arcane Camisado is purpose-built for summoner-caster hybrid builds. Nekros using Shadows of the Dead to field multiple shadow copies gets continuous minion attack procs that build Camisado stacks rapidly during sustained combat, providing a Ability Strength bonus on the next Desecrate or Terrify cast. Nidus builds using Ravenous to spawn Maggots field persistent minion attackers that accumulate stacks between Virulence casts. Khora builds with Venari in attack mode get constant Venari attack procs building toward the cap before casting Strangledome.
+
+The arcane is least useful on frames without summoning abilities and on frames that cast abilities faster than minions can accumulate stacks.
+
+## Notes
+
+Companion pets (Kavat, Kubrow, Robotic companions) in attack mode are not categorized as summoned minions for Camisado's trigger -- only abilities that specifically summon temporary combat units qualify. Stacks persist between ability casts until consumed; the player can build stacks over multiple minion attack rounds before consuming them on a single high-priority ability. The bonus does not extend beyond the consuming cast; after the ability fires, the buff ends and stack accumulation restarts. The cap of +60% at rank 5 is the maximum possible even with continued minion attacks beyond 10.
+
+## Sources
+
+- WFCD warframe-items dataset provides Ability Strength per minion attack and cap values per rank for Arcane Camisado.
+- Fandom wiki entry for [Arcane Camisado](https://warframe.fandom.com/wiki/Arcane_Camisado) covers minion qualification rules and summoner build interactions.

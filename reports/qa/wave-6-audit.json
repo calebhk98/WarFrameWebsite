@@ -1,0 +1,103 @@
+{
+  "timestamp": "2026-05-20T17:30:00.000Z",
+  "sampled": 30,
+  "fixed": 15,
+  "by_collection": {
+    "necramechs": 0,
+    "rivens": 0,
+    "conclave": 1,
+    "dojo": 1,
+    "railjack": 0,
+    "arcanes": 13
+  },
+  "common_issues": [
+    {
+      "issue": "Unicode em-dash (U+2014) used instead of ASCII double-hyphen",
+      "affected_files": 6,
+      "collections": ["arcanes"],
+      "severity": "fail",
+      "details": "All 6 sampled arcane files (arcane-magus-cadence, virtuos-fury, exodia-triumph, arcane-cleanse-grineer, arcane-aerial, arcane-truncate) used Unicode em-dashes in bullet list descriptions. STYLE.md requires ASCII only. Fixed in-place by replacing U+2014 with '--'."
+    },
+    {
+      "issue": "slug field in frontmatter not present in arcaneSchema",
+      "affected_files": 6,
+      "collections": ["arcanes"],
+      "severity": "schema-violation",
+      "details": "All 6 sampled arcane files had a 'slug:' key in frontmatter. The arcaneSchema (src/content/schemas/arcanes.ts) does not define a slug field. Astro derives the slug from the filename automatically. The extra field was removed from all 6 files."
+    },
+    {
+      "issue": "Wrong H2 heading: 'Best on' should be 'Builds that use it'",
+      "affected_files": 6,
+      "collections": ["arcanes"],
+      "severity": "fail",
+      "details": "STYLE.md specifies the arcane page section order as: Overview, Effect, Stats per rank, Acquisition, Builds that use it, Notes. All 6 arcane files used 'Best on' instead. Renamed to 'Builds that use it' in all 6 files."
+    },
+    {
+      "issue": "Body word count below 300-word floor",
+      "affected_files": 5,
+      "collections": ["arcanes"],
+      "severity": "fail",
+      "details": "5 of 6 arcane files had insufficient body word counts: virtuos-fury (235), exodia-triumph (177), arcane-cleanse-grineer (178), arcane-aerial (195), arcane-truncate (188). arcane-magus-cadence was 283 (17 short). All 6 were rewritten with substantive content and now range from 575 to 626 words."
+    },
+    {
+      "issue": "Sources section body was plain text instead of Markdown links",
+      "affected_files": 6,
+      "collections": ["arcanes"],
+      "severity": "style-violation",
+      "details": "All 6 arcane files had a '## Sources' section containing single plain-text lines like 'WFCD data accessed 2026-05-20; Fandom verification via Zariman mission pages.' instead of proper Markdown link syntax. STYLE.md requires Markdown link syntax. Fixed to use '- [Title](url)' format."
+    },
+    {
+      "issue": "Wrong schema type: oro.mdx had type: 'weapon' instead of type: 'mode'",
+      "affected_files": 1,
+      "collections": ["conclave"],
+      "severity": "fail",
+      "details": "oro.mdx described Oro as the scoring mechanic/resource in Conclave modes. The conclaveSchema enum is ['mode', 'weapon', 'syndicate-rank']. Oro is not a weapon -- it is used as the scoring object within Annihilation mode variants. Corrected to type: 'mode'."
+    },
+    {
+      "issue": "Body word count marginally below 400-word floor",
+      "affected_files": 1,
+      "collections": ["dojo"],
+      "severity": "fail",
+      "details": "chem-lab.mdx had 398 words, 2 short of the 400-word dojo floor. A substantive sentence about the need to complete the full research tree was added to the Purpose section, bringing the count to 422 words."
+    }
+  ],
+  "factual_accuracy_notes": [
+    {
+      "file": "voidrig.mdx",
+      "check": "Ability 3 name",
+      "finding": "File says 'Gravemines' -- CORRECT. The audit brief incorrectly suggested 'Gravimag'; Gravimag is an arch-gun attachment item, not a Voidrig ability. Voidrig ability 3 is indeed Gravemines.",
+      "action": "No change required."
+    },
+    {
+      "file": "bonewidow.mdx",
+      "check": "All 4 ability names",
+      "finding": "Meathook / Shield Maiden / Firing Line / Exalted Ironbride -- all correct per game canon.",
+      "action": "No change required."
+    },
+    {
+      "file": "ghost-clan.mdx",
+      "check": "Clan tier member cap",
+      "finding": "'maximum of 10 members' -- CORRECT per game data (Ghost 1-10).",
+      "action": "No change required."
+    },
+    {
+      "file": "moon-clan.mdx",
+      "check": "Clan tier member cap",
+      "finding": "'maximum membership of 1000 players' -- CORRECT per game data (Moon 301-1000).",
+      "action": "No change required."
+    },
+    {
+      "file": "railjack-overview.mdx",
+      "check": "Intrinsic tree count and names",
+      "finding": "5 trees (Tactical, Gunnery, Piloting, Engineering, Command) each capping at rank 10 -- CORRECT.",
+      "action": "No change required."
+    },
+    {
+      "file": "conclave collection",
+      "check": "Mode validity",
+      "finding": "Annihilation, Team Annihilation, Capture the Cephalon are real Conclave modes. Lunaro is correctly presented as a separate sport mode, not a combat mode. Oro is correctly described as a scoring mechanic within mode variants, not a standalone mode.",
+      "action": "No change required (other than type fix on oro.mdx)."
+    }
+  ],
+  "ci": "pass"
+}

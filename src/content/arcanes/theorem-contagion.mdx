@@ -1,0 +1,77 @@
+---
+slug: theorem-contagion
+name: Theorem Contagion
+type: operator
+maxRank: 5
+effect: "Standing in a zone created by a Residual Arcane creates a globe that orbits the player every 2s. The globes will strike the nearest enemy within 15m dealing 150 damage increasing their vulnerability to the globe's damage type by [damage]% for 6s. Globes will persist for 30s upon leaving the zone."
+perRankStats:
+  - rank: 0
+    stats: { damage: 25 }
+  - rank: 1
+    stats: { damage: 50 }
+  - rank: 2
+    stats: { damage: 75 }
+  - rank: 3
+    stats: { damage: 100 }
+  - rank: 4
+    stats: { damage: 150 }
+  - rank: 5
+    stats: { damage: 200 }
+drops:
+- source: Various
+  chance: 1.0
+  rarity: uncommon
+sources:
+- url: https://github.com/WFCD/warframe-items
+  accessedAt: '2026-05-20'
+  publisher: WFCD
+- url: https://warframe.fandom.com/wiki/Theorem_Contagion
+  accessedAt: '2026-05-20'
+  publisher: Fandom
+updatedAt: '2026-05-20'
+---
+## Overview
+
+Theorem Contagion is part of the Theorem-Residual arcane pairing system introduced with the Necramech and Isolation Vault content. While Residual arcanes (Residual Boils, Residual Malodor, Residual Shock, Residual Viremia) create elemental zones from Kitgun kills, Theorem Contagion activates when the player stands inside those Residual zones. Standing in any Residual Arcane zone causes orbiting globes to spawn around the player every 2 seconds. Each globe autonomously seeks and strikes the nearest enemy within 15 meters, dealing 150 flat damage and applying a vulnerability debuff that increases the target's damage taken from that globe's elemental type.
+
+At rank 5, each globe strike increases the target's vulnerability to the globe's element by 200% for 6 seconds. Multiple globes orbiting simultaneously generate multiple strikes per second against nearby enemies, layering vulnerability debuffs rapidly.
+
+## Effect
+
+While standing inside a zone created by any Residual Arcane, Theorem Contagion generates one orbiting globe every 2 seconds. Each globe targets the nearest enemy within 15 meters and strikes that enemy for 150 damage. The strike applies a vulnerability debuff that increases the enemy's susceptibility to the globe's specific damage type by the rank-dependent percentage for 6 seconds.
+
+At rank 0, each globe strike increases enemy vulnerability to its damage type by 25% for 6 seconds. At rank 5, each globe strike increases vulnerability by 200% for 6 seconds. The damage type of each globe matches the Residual Arcane zone the player was standing in when the globe spawned -- Residual Boils zones produce Heat globes, Residual Malodor zones produce Cold globes, Residual Shock zones produce Electricity globes, and Residual Viremia zones produce Toxin globes.
+
+Globes persist for 30 seconds after the player leaves the Residual zone, continuing to seek and strike enemies during that window. Multiple Residual zones of different types generate globes with different elemental types if the player passes through consecutive zones.
+
+## Stats per rank
+
+| Rank | Vulnerability per Globe Strike | Globe Duration After Leaving Zone | Damage per Strike |
+|------|-------------------------------|----------------------------------|-------------------|
+| 0 | +25% | 30s | 150 |
+| 1 | +50% | 30s | 150 |
+| 2 | +75% | 30s | 150 |
+| 3 | +100% | 30s | 150 |
+| 4 | +150% | 30s | 150 |
+| 5 | +200% | 30s | 150 |
+
+## Acquisition
+
+Theorem Contagion drops from various Necralisk Isolation Vault bounties and Deimos-adjacent content at uncommon rarity. The arcane is accessible through Entrati standing after completing Heart of Deimos. Warframe.market provides direct purchase options for targeted acquisition.
+
+## Builds that use it
+
+Theorem Contagion is designed for the Theorem-Residual pairing system -- it provides no benefit unless paired with at least one Residual arcane that creates elemental zones. A Kitgun build using Residual Shock (Electricity zone creator) paired with Theorem Contagion in the operator slot generates Electricity globes while the player stands in the Shock zone. Those globes apply a +200% Electricity vulnerability debuff to nearby enemies, amplifying all subsequent Electricity damage against debuffed targets significantly.
+
+The strongest setups use multiple Residual arcanes to create overlapping zones of different elements. A player with two Residual arcanes can alternate zone types, building globes of mixed elements that apply vulnerability debuffs of multiple damage types simultaneously. Running Kitgun builds through Necramech content and Isolation Vaults generates consistent zone coverage from the Residual kills, keeping Theorem Contagion globes actively orbiting throughout the engagement.
+
+The 30-second globe persistence after leaving a zone means players can generate a stock of orbiting globes inside a Residual zone and then move to engage enemies outside the zone, maintaining globe activity during the 30-second window.
+
+## Notes
+
+Theorem Contagion globes seek the nearest enemy within 15 meters at the moment of strike -- the targeting updates each time a globe fires, not when the globe spawns. If no enemy is within 15 meters, the globe does not fire but continues orbiting until a target enters range or the globe expires. The vulnerability debuff from each globe strike is specific to that globe's elemental type; a Residual Boils Heat globe increases Heat vulnerability while a Residual Malodor Cold globe increases Cold vulnerability on the same target. The 6-second debuff duration from each strike allows rapid globe accumulation to maintain continuous vulnerability windows on tanky or high-health targets. Globes spawn at a rate of one per 2 seconds while inside the zone, creating up to 15 orbiting globes during a 30-second zone stay before the 30-second post-zone persistence begins.
+
+## Sources
+
+- WFCD warframe-items dataset provides globe generation rate, base damage, vulnerability percentage per rank, and post-zone persistence duration for Theorem Contagion.
+- Fandom wiki entry for [Theorem Contagion](https://warframe.fandom.com/wiki/Theorem_Contagion) covers Residual-Theorem zone interaction mechanics and globe targeting behavior.

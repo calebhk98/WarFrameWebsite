@@ -1,0 +1,185 @@
+---
+slug: wisp
+name: Wisp
+aliases: ["Wisp Prime"]
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 180
+armor: 185
+energy: 200
+sprintSpeed: 1.2
+passive:
+  name: Dimensional Phantom
+  description: >-
+    While airborne, Wisp becomes invisible to enemies and can pass through obstacles
+    undetected. This ethereal form allows her to scout dangerous territory and reposition
+    without threat of immediate engagement.
+abilities:
+  - name: Reservoirs
+    key: "1"
+    energyCost: 25
+    description: >-
+      Summon a floating Reservoir filled with beneficial Motes. Choose between Vitality Mote
+      (healing and maximum health), Haste Mote (movement and attack speed), or Shock Mote
+      (crowd control via stun). Reservoirs persist and aid both Wisp and allies.
+    stats:
+      vitality_mote_health_bonus: "+25%"
+      haste_mote_speed_bonus: "+25%"
+      shock_mote_stun_range: "20m"
+  - name: Wil-O-Wisp
+    key: "2"
+    energyCost: 50
+    description: >-
+      Project a spectral decoy that confuses enemies and draws their fire. Reactivate to dash
+      to its location. Hold the ability to accelerate the decoy and chain-dash multiple times,
+      leaving enemies disoriented in your wake.
+    stats:
+      decoy_duration: "8s"
+      teleport_range: "25m"
+  - name: Breach Surge
+    key: "3"
+    energyCost: 75
+    description: >-
+      Tear open a dimensional breach that overwhelms nearby enemies and causes them to emit
+      volatile Surge sparks when hit. Can also target a Reservoir to gain doubled surge range
+      and teleport to the Reservoir's location for repositioning.
+    stats:
+      base_range: "15m"
+      boosted_range: "30m"
+      spark_damage_scaling: "scales_with_power_strength"
+  - name: Sol Gate
+    key: "4"
+    energyCost: 100
+    description: >-
+      Open a portal to the sun itself, unleashing a catastrophic beam of solar plasma on all
+      enemies in view. Hold fire to double damage output at the cost of doubled energy drain.
+      Enemies struck become increasingly vulnerable to repeated exposure.
+    stats:
+      damage_base: "3000"
+      damage_doubled: "6000"
+      vulnerability_stacking: "per_hit"
+acquisition:
+  source: The Ropalolyst assassination (Jupiter -- Ropalolyst)
+  blueprintLocations:
+    - "The Ropalolyst assassination on Jupiter"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+  note: "All four components drop from The Ropalolyst with 22.56%, 25.81%, 25.81%, and 25.81% chances respectively."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2020-09-16"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Core numeric stats and ability data from WFCD 1.756.0+"
+  - url: "https://warframe.fandom.com/wiki/Wisp"
+    accessedAt: "2026-05-19"
+    title: "Wisp -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Wisp is an ethereal and mysterious support warframe who exists partially between the material and immaterial planes. She channels the power of the void itself to protect and empower her allies, drawing heavily on burst mobility, invisibility, and strategic area control. Her signature mechanic--the Reservoir system--allows her to distribute three distinct support motes (Vitality, Haste, and Shock) that teammates can grab, making her invaluable in both cooperative and solo missions. With blazingly fast sprint speed (20% above baseline) and the ability to vanish while airborne, Wisp excels at rapid repositioning, crowd control through her Reservoirs, and dealing explosive damage with Sol Gate.
+
+## Abilities
+
+<AbilityCard
+  name="Reservoirs"
+  key="1"
+  energyCost={25}
+  description="Summon a floating Reservoir filled with beneficial Motes. Choose Vitality Mote for healing, Haste Mote for speed and attack buffs, or Shock Mote for stun and crowd control. Reservoirs benefit Wisp and nearby allies."
+/>
+
+Reservoirs are Wisp's defining mechanic. Each Reservoir persists on the battlefield independently, allowing squadmates to pick them up and enjoy the buff benefits without requiring Wisp to maintain line-of-sight. The Vitality Mote restores health and increases maximum health, the Haste Mote accelerates movement speed and melee attack speed, and the Shock Mote stuns nearby enemies and can be detonated. Energy cost is extremely low, allowing Wisp to maintain multiple Reservoirs simultaneously. Experienced players chain Reservoirs throughout a mission to provide layered support coverage.
+
+<AbilityCard
+  name="Wil-O-Wisp"
+  key="2"
+  energyCost={50}
+  description="Project a spectral decoy that confuses enemies and draws their fire. Reactivate to teleport to it. Hold to accelerate and chain-teleport multiple times."
+/>
+
+Wil-O-Wisp is a powerful mobility and evasion tool. The decoy spreads enemy attention, allowing Wisp to slip past dangerous engagements. The instant-reactivation teleport has a generous range and low energy cost, making it an essential escape or repositioning button. Chain-casting by holding the ability input allows skilled players to cover massive ground quickly, making Wisp one of the fastest-moving frames in the game.
+
+<AbilityCard
+  name="Breach Surge"
+  key="3"
+  energyCost={75}
+  description="Open a dimensional breach that overwhelms nearby enemies and causes them to release volatile Surge sparks when damaged. Can target a Reservoir to teleport there and double surge range."
+/>
+
+Breach Surge combines offense and utility. The base effect creates an area that weakens enemies and triggers dangerous sparks whenever they take damage. If Wisp targets a Reservoir (either her own or a teammate's), she gains a doubled range and teleports directly to the Reservoir location, opening up engaging combination plays. This ability scales significantly with Power Strength and Range mods.
+
+<AbilityCard
+  name="Sol Gate"
+  key="4"
+  energyCost={100}
+  description="Open a portal to the sun and unleash a devastating beam of solar plasma. Hold fire to double damage and energy cost. Struck enemies grow increasingly vulnerable to repeated hits."
+/>
+
+Sol Gate is Wisp's high-damage ultimate, dealing catastrophic single-target or multi-target damage depending on positioning. The vulnerability stacking mechanic rewards sustained fire on priority targets, making it excellent for bosses or heavily-armored enemies. The ability consumes a full-body animation, so positioning and timing are crucial to avoid becoming locked down during dangerous phases.
+
+## Passive
+
+**Dimensional Phantom.** While airborne, Wisp fades from enemy sight and becomes invisible. This passive is consistently active during jumps and slides, making Wisp exceptionally slippery and allowing her to scout ahead or reposition without triggering alarms. Combined with her above-average sprint speed, this passive enables aggressive hit-and-run tactics or careful stealth approaches depending on mission type.
+
+## Stats
+
+| Stat              | Value |
+|-------------------|-------|
+| Health            | 270   |
+| Shield            | 180   |
+| Armor             | 185   |
+| Energy            | 200   |
+| Sprint Speed      | 1.2x  |
+| Mastery Rank Req. | 0     |
+
+Wisp has moderate health and shield pools balanced by her high armor and passive evasion. Her 200 energy capacity supports sustained ability casting, especially when chain-casting Reservoirs. The sprint speed bonus of 1.2x is the second-highest base sprint speed among warframes, rivaled only by a handful of dedicated mobility frames.
+
+## Acquisition
+
+Wisp's blueprint and components drop from **The Ropalolyst**, an assassination target on Jupiter. The Ropalolyst is an ice-element sentinel-style boss fought in a large arena with environmental hazards. All four components (Blueprint, Neuroptics, Chassis, Systems) drop from the same fight with roughly equal probability (~23-26% each), and three Orokin Cells are required to build the full warframe.
+
+The fight is accessible to players with basic Mastery Rank 5+ gear and benefits from cold or magnetic damage to exploit the Ropalolyst's elemental weakness. Solo runs are viable, though the boss has high health and can deal significant damage to unprepared squads. Running the mission multiple times is normal when farming Wisp; expect 8--12 runs on average to collect all components.
+
+## Playstyle
+
+Wisp is a **support-first frame** whose mission impact depends on building for range, strength, and energy efficiency. A typical mission rotation involves:
+
+1. **Reservoir placement.** Upon entering a combat zone, pre-place two or three Reservoirs in defensible positions (corners, elevated terrain) so teammates can grab them as needed.
+2. **Mobility defense.** Use Wil-O-Wisp and Breach Surge to stay mobile, avoid incoming fire, and reposition Reservoirs to new threat axes.
+3. **Crowd control and damage.** When priority targets appear or the team is overwhelmed, deploy Breach Surge for soft crowd control and Sol Gate for hard damage.
+4. **Support synchronization.** In group missions, maintain awareness of teammate locations and adjust Reservoir placement and ability usage to maximize coverage.
+
+Wisp scales well from early-game (Mastery Rank 0 unlock) through endgame content (Steel Path, high-level Void Fissures). Her support role is passive-friendly--allies benefit from her Reservoirs without needing to coordinate ability casts--but reward-rich for coordinated squads that understand her toolkit. In solo play, Wisp excels in Survival, Defense, and Excavation missions where her mobility and crowd control shine against dense enemy waves.
+
+## Recommended builds
+
+Wisp's mod loadout varies by intended playstyle, but high-priority mods include:
+
+- **Range-heavy build:** Augur Reach, Stretch, Augur Secrets for maximum Reservoir coverage and Breach Surge radius, enabling the full team to benefit simultaneously.
+- **Strength-focused build:** Umbral Intensify, Blind Rage, Augur Strength for maximum damage scaling on Sol Gate and Surge spark damage.
+- **Efficiency build:** Fleeting Expertise, Streamline, Primed Flow to sustain high-frequency ability spam and maintain multiple Reservoirs.
+- **Hybrid builds:** Balance range, strength, and efficiency to suit specific mission types (e.g., heavy range + strength for Void Fissure disruption, efficiency-heavy for long Survival runs).
+
+Wisp's relatively small mod capacity (aura + exilus + 8 slots) demands careful prioritization. Most players prioritize range and strength over duration, since Reservoirs are permanent and Wil-O-Wisp teleports have short durations anyway. Helminth subsumes (e.g., Roar, Dispensary, or Thermal Sunder) can further customize her support role.
+
+## Lore
+
+Wisp is a mysterious entity--not a traditional Tenno warframe, but rather a being that exists in the spaces between dimensions. She was introduced during the Jovian Concord event, arriving on the Zariman with cryptic purpose and ethereal grace. Unlike warframes built from the void by the Orokin, Wisp channels interdimensional energies, suggesting she may be a natural phenomenon or a remnant of older, more esoteric technology. Her Reservoirs and phase-shifting abilities hint at mastery over rifts and barriers that most Tenno cannot perceive.
+
+According to lore fragments, Wisp navigates spaces where normal physics break down. Her solar gate--a literal portal to stellar radiation--suggests contact with forces beyond normal warframe engineering. The Ropalolyst, her source, is itself a hybrid of Orokin and Sentient tech, underscoring Wisp's unique origins. Her passive invisibility while airborne feels less like a technological feature and more like an inherent property of her partially non-corporeal form.
+
+In-game dialogue and lore teasers position Wisp as an observer or guardian of dimensional stability, always present but rarely directly intervening. Her recruitment dialogue remains sparse and mysterious, reflecting her enigmatic nature. The Warframe community speculates that she may be connected to larger, unrevealed lore elements around the Zariman, the Void, and the true nature of Tenno resurrection.
+
+## Sources
+
+- **WFCD warframe-items:** Core numeric stats (health, shield, armor, energy, sprint speed, mastery rank) and ability descriptions extracted from WFCD 1.756.0+. Accessed 2026-05-19.
+- **Warframe Fandom Wiki:** Lore context, acquisition location details, and ability synergy notes. Accessed 2026-05-19.

@@ -1,0 +1,388 @@
+---
+// dojo-planner.astro -- Clan Dojo Planner: room build queue, research planner,
+// aggregated resource summary with clan-tier multipliers, and time estimator.
+import Base from '../layouts/Base.astro';
+import { DOJO_ROOMS, RESEARCH_ITEMS, CLAN_TIERS } from '../data/dojo-rooms';
+
+const base = import.meta.env.BASE_URL;
+
+const roomsJson     = JSON.stringify(DOJO_ROOMS);
+const researchJson  = JSON.stringify(RESEARCH_ITEMS);
+const tiersJson     = JSON.stringify(CLAN_TIERS);
+
+const coreRooms  = DOJO_ROOMS.filter((r) => r.category === 'core');
+const researchRooms = DOJO_ROOMS.filter((r) => r.category === 'research');
+const utilityRooms  = DOJO_ROOMS.filter((r) => r.category === 'utility');
+const decoRooms     = DOJO_ROOMS.filter((r) => r.category === 'decoration');
+
+const tennoItems  = RESEARCH_ITEMS.filter((i) => i.labSlug === 'tenno-lab');
+const energyItems = RESEARCH_ITEMS.filter((i) => i.labSlug === 'energy-lab');
+const chemItems   = RESEARCH_ITEMS.filter((i) => i.labSlug === 'chem-lab');
+const bioItems    = RESEARCH_ITEMS.filter((i) => i.labSlug === 'bio-lab');
+---
+
+<Base
+  title="Clan Dojo Planner"
+  description="Plan your Warframe Clan Dojo room layout and research costs. Select rooms, choose clan tier, and get aggregated resource totals and time estimates."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+
+    <header class="mb-6">
+      <nav class="mb-4 text-sm text-brand-cream/50">
+        <a href={`${base}`} class="hover:text-brand-orange">Home</a>
+        <span class="mx-2">/</span>
+        <a href={`${base}dojo`} class="hover:text-brand-orange">Dojo</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Dojo Planner</span>
+      </nav>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 class="text-3xl font-bold text-brand-cream mb-2">Clan Dojo Planner</h1>
+          <p class="text-brand-cream/60 max-w-2xl leading-relaxed">
+            The Clan Dojo is a customisable headquarters built and maintained
+            collectively by clan members. Construction spans five clan tiers --
+            Ghost through Moon -- with resource costs scaling from 1x up to 100x
+            to reflect each tier's member cap. Rooms unlock in chains: labs require
+            the Oracle, the Dry Dock unlocks Railjack. Every resource is pooled from
+            contributions, so larger clans split the load -- but the totals are
+            steep. Use this planner to queue rooms and research items, choose your
+            clan tier, and see exactly which resources your clan needs to gather
+            before the first construction drone touches a wall.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-3 shrink-0 text-sm">
+          <a href={`${base}dojo`} class="text-brand-orange hover:underline">All Dojo Entries &rarr;</a>
+          <a href={`${base}progression`} class="text-brand-orange hover:underline">Clan Progression &rarr;</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Clan tier selector -->
+    <section aria-labelledby="tier-heading" class="mb-8 rounded-lg border border-surface-3 bg-surface-2 p-5">
+      <h2 id="tier-heading" class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">
+        Clan Tier
+      </h2>
+      <div class="flex flex-wrap gap-3" role="radiogroup" aria-label="Clan tier">
+        {CLAN_TIERS.map((tier, i) => (
+          <label class="cursor-pointer">
+            <input
+              type="radio"
+              name="clan-tier"
+              value={tier.slug}
+              data-multiplier={tier.multiplier}
+              data-max-members={tier.maxMembers}
+              checked={i === 0}
+              class="sr-only"
+            />
+            <span
+              class:list={[
+                'tier-btn inline-flex flex-col items-center px-5 py-2.5 rounded-lg border text-sm font-semibold transition-colors',
+                i === 0
+                  ? 'border-brand-orange bg-brand-orange/20 text-brand-orange'
+                  : 'border-surface-3 text-brand-cream/60 hover:border-brand-orange/50 hover:text-brand-cream',
+              ]}
+              data-tier={tier.slug}
+            >
+              <span>{tier.name}</span>
+              <span class="text-[11px] font-normal opacity-70">x{tier.multiplier} / {tier.maxMembers} members</span>
+            </span>
+          </label>
+        ))}
+      </div>
+    </section>
+
+    <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+
+      <!-- Left: room + research selectors -->
+      <div class="xl:col-span-2 space-y-6">
+
+        <!-- Rooms -->
+        <section aria-labelledby="rooms-heading">
+          <h2 id="rooms-heading" class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">
+            Rooms -- click to add to build queue
+          </h2>
+
+          {[
+            { label: 'Core', rooms: coreRooms },
+            { label: 'Research Labs', rooms: researchRooms },
+            { label: 'Utility', rooms: utilityRooms },
+            { label: 'Decoration', rooms: decoRooms },
+          ].map(({ label, rooms }) => (
+            <div class="mb-4">
+              <p class="text-[11px] font-semibold text-brand-cream/30 uppercase tracking-widest mb-2">{label}</p>
+              <div class="flex flex-wrap gap-2">
+                {rooms.map((room) => (
+                  <button
+                    class="room-btn px-3 py-1.5 rounded border border-surface-3 text-brand-cream/70 text-sm hover:border-brand-orange/60 hover:text-brand-cream transition-colors"
+                    data-slug={room.slug}
+                    data-name={room.name}
+                    aria-label={`Add ${room.name} to build queue`}
+                  >
+                    {room.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))}
+        </section>
+
+        <!-- Research items -->
+        <section aria-labelledby="research-heading">
+          <h2 id="research-heading" class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">
+            Research -- click to add to research queue
+          </h2>
+
+          {[
+            { label: 'Tenno Lab', items: tennoItems },
+            { label: 'Energy Lab', items: energyItems },
+            { label: 'Chem Lab', items: chemItems },
+            { label: 'Bio Lab', items: bioItems },
+          ].map(({ label, items }) => (
+            <div class="mb-4">
+              <p class="text-[11px] font-semibold text-brand-cream/30 uppercase tracking-widest mb-2">{label}</p>
+              <div class="flex flex-wrap gap-2">
+                {items.map((item) => (
+                  <button
+                    class="research-btn px-3 py-1.5 rounded border border-surface-3 text-brand-cream/70 text-sm hover:border-brand-orange/60 hover:text-brand-cream transition-colors"
+                    data-slug={item.slug}
+                    data-name={item.name}
+                    aria-label={`Add ${item.name} research to queue`}
+                  >
+                    {item.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))}
+        </section>
+
+        <!-- Queues -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+            <div class="flex items-center justify-between mb-3">
+              <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Build Queue</p>
+              <button id="clear-rooms" class="text-xs text-brand-cream/40 hover:text-brand-orange transition-colors">Clear</button>
+            </div>
+            <ul id="room-queue" class="space-y-1 text-sm min-h-[48px]" aria-label="Room build queue">
+              <li class="text-brand-cream/30 text-xs italic queue-placeholder">No rooms added yet.</li>
+            </ul>
+          </div>
+          <div class="rounded-lg border border-surface-3 bg-surface-2 p-4">
+            <div class="flex items-center justify-between mb-3">
+              <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Research Queue</p>
+              <button id="clear-research" class="text-xs text-brand-cream/40 hover:text-brand-orange transition-colors">Clear</button>
+            </div>
+            <ul id="research-queue" class="space-y-1 text-sm min-h-[48px]" aria-label="Research queue">
+              <li class="text-brand-cream/30 text-xs italic queue-placeholder">No research added yet.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Time estimator -->
+        <section aria-labelledby="time-heading" class="rounded-lg border border-surface-3 bg-surface-2 p-5">
+          <h2 id="time-heading" class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide mb-3">
+            Time Estimator
+          </h2>
+          <div class="flex flex-wrap gap-5 items-end mb-4">
+            <div>
+              <label for="hours-per-day" class="block text-xs text-brand-cream/60 mb-1">Active hours / day</label>
+              <input
+                id="hours-per-day"
+                type="number"
+                min="1" max="24"
+                value="8"
+                class="w-20 rounded bg-surface-3 border border-surface-3 text-brand-cream px-3 py-1.5 text-sm focus:outline-none focus:border-brand-orange"
+              />
+            </div>
+            <div>
+              <label for="member-count" class="block text-xs text-brand-cream/60 mb-1">Contributing members</label>
+              <input
+                id="member-count"
+                type="number"
+                min="1" max="1000"
+                value="10"
+                class="w-24 rounded bg-surface-3 border border-surface-3 text-brand-cream px-3 py-1.5 text-sm focus:outline-none focus:border-brand-orange"
+              />
+            </div>
+          </div>
+          <p id="time-estimate" class="text-brand-cream/70 text-sm" aria-live="polite">
+            Add rooms or research to see an estimate.
+          </p>
+        </section>
+
+      </div>
+
+      <!-- Right: resource summary -->
+      <div>
+        <div class="sticky top-4">
+          <div class="flex items-center justify-between mb-3">
+            <p class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Resource Summary</p>
+            <div class="flex gap-2">
+              <button
+                id="share-btn"
+                class="px-3 py-1 rounded border border-surface-3 text-brand-cream/50 text-xs hover:border-brand-orange/50 hover:text-brand-orange transition-colors"
+              >
+                Share URL
+              </button>
+              <button
+                id="reset-all"
+                class="px-3 py-1 rounded border border-surface-3 text-brand-cream/50 text-xs hover:border-brand-orange/50 hover:text-brand-orange transition-colors"
+              >
+                Reset All
+              </button>
+            </div>
+          </div>
+          <div
+            id="resource-summary"
+            class="rounded-lg border border-surface-3 bg-surface-2 p-4 space-y-2 min-h-[120px]"
+            aria-live="polite"
+            aria-label="Aggregated resource requirements"
+          >
+            <p class="text-brand-cream/30 text-sm text-center py-6">
+              Select rooms or research to see required resources.
+            </p>
+          </div>
+          <p class="text-[11px] text-brand-cream/30 mt-2">
+            Costs shown are for <span id="tier-label">Ghost</span> tier (x<span id="tier-mult">1</span>).
+            Resources must be contributed by clan members.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</Base>
+
+<script define:vars={{ roomsJson, researchJson, tiersJson }} is:inline>
+  const ROOMS    = JSON.parse(roomsJson);
+  const RESEARCH = JSON.parse(researchJson);
+  const TIERS    = JSON.parse(tiersJson);
+  const roomMap     = Object.fromEntries(ROOMS.map((r) => [r.slug, r]));
+  const researchMap = Object.fromEntries(RESEARCH.map((r) => [r.slug, r]));
+  let activeTier = TIERS[0];
+  let roomQueue = [], researchQueue = [];
+
+  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function $id(id) { return document.getElementById(id); }
+
+  function applyTierUI() {
+    document.querySelectorAll('.tier-btn').forEach((btn) => {
+      const on = btn.dataset.tier === activeTier.slug;
+      btn.classList.toggle('border-brand-orange', on);
+      btn.classList.toggle('bg-brand-orange/20', on);
+      btn.classList.toggle('text-brand-orange', on);
+      btn.classList.toggle('border-surface-3', !on);
+      btn.classList.toggle('text-brand-cream/60', !on);
+    });
+  }
+
+  function refreshSummary() {
+    const mult = activeTier.multiplier;
+    const totals = {};
+    for (const slug of roomQueue) {
+      const room = roomMap[slug];
+      if (!room) continue;
+      for (const rc of room.resourcesToBuild)
+        totals[rc.resourceName] = (totals[rc.resourceName] || 0) + rc.qty * mult;
+    }
+    for (const slug of researchQueue) {
+      const item = researchMap[slug];
+      if (!item) continue;
+      totals['Credits'] = (totals['Credits'] || 0) + item.credits * mult;
+      for (const rc of item.resourcesToBuild)
+        totals[rc.resourceName] = (totals[rc.resourceName] || 0) + rc.qty * mult;
+    }
+    const panel = $id('resource-summary');
+    panel.innerHTML = Object.keys(totals).length === 0
+      ? '<p class="text-brand-cream/30 text-sm text-center py-6">Select rooms or research to see required resources.</p>'
+      : Object.entries(totals).sort((a,b) => a[0].localeCompare(b[0]))
+          .map(([n,q]) => `<div class="flex items-center justify-between gap-2 text-sm"><span class="text-brand-cream/70">${esc(n)}</span><span class="font-semibold text-brand-cream">${q.toLocaleString()}</span></div>`).join('');
+    $id('tier-label').textContent = activeTier.name;
+    $id('tier-mult').textContent = String(mult);
+    refreshTime();
+  }
+
+  function refreshTime() {
+    let hrs = 0;
+    for (const s of roomQueue)     { const r = roomMap[s];     if (r) hrs += r.timeHours; }
+    for (const s of researchQueue) { const r = researchMap[s]; if (r) hrs += r.timeHours; }
+    const el = $id('time-estimate');
+    if (hrs === 0) { el.textContent = 'Add rooms or research to see an estimate.'; return; }
+    const hpd = Math.max(1, Number($id('hours-per-day').value) || 8);
+    const days = hrs / hpd;
+    const weeks = Math.ceil(days / 7);
+    const mem = Math.max(1, Number($id('member-count').value) || 10);
+    el.textContent = `${roomQueue.length} room(s) + ${researchQueue.length} research item(s) = ${hrs} build-hours. At ${hpd}h/day with ${mem} member(s): approx ${days.toFixed(1)} days (${weeks} week${weeks !== 1 ? 's' : ''}).`;
+  }
+
+  function renderQueue(listId, queue, map, kind) {
+    const ul = $id(listId);
+    if (queue.length === 0) { ul.innerHTML = `<li class="text-brand-cream/30 text-xs italic">No ${kind === 'room' ? 'rooms' : 'research'} added yet.</li>`; return; }
+    ul.innerHTML = queue.map((slug) => {
+      const lbl = (map[slug] || {}).name || slug;
+      return `<li class="flex items-center justify-between gap-2"><span class="text-brand-cream/80">${esc(lbl)}</span><button class="remove-btn text-brand-cream/30 hover:text-red-400 text-xs px-1 transition-colors" data-kind="${esc(kind)}" data-slug="${esc(slug)}" aria-label="Remove ${esc(lbl)}">x</button></li>`;
+    }).join('');
+  }
+
+  function refreshAll() {
+    renderQueue('room-queue', roomQueue, roomMap, 'room');
+    renderQueue('research-queue', researchQueue, researchMap, 'research');
+    refreshSummary();
+  }
+
+  // Tier radios
+  document.querySelectorAll('input[name="clan-tier"]').forEach((r) => r.addEventListener('change', () => {
+    if (!r.checked) return;
+    activeTier = TIERS.find((t) => t.slug === r.value) || TIERS[0];
+    applyTierUI(); refreshSummary();
+  }));
+
+  // Add to queues
+  document.querySelectorAll('.room-btn').forEach((b) => b.addEventListener('click', () => {
+    if (!roomQueue.includes(b.dataset.slug)) { roomQueue.push(b.dataset.slug); refreshAll(); }
+  }));
+  document.querySelectorAll('.research-btn').forEach((b) => b.addEventListener('click', () => {
+    if (!researchQueue.includes(b.dataset.slug)) { researchQueue.push(b.dataset.slug); refreshAll(); }
+  }));
+
+  // Remove (delegated)
+  $id('room-queue').addEventListener('click', (e) => { const b = e.target.closest('.remove-btn'); if (!b) return; roomQueue = roomQueue.filter((s) => s !== b.dataset.slug); refreshAll(); });
+  $id('research-queue').addEventListener('click', (e) => { const b = e.target.closest('.remove-btn'); if (!b) return; researchQueue = researchQueue.filter((s) => s !== b.dataset.slug); refreshAll(); });
+
+  // Clear / reset
+  $id('clear-rooms').addEventListener('click', () => { roomQueue = []; refreshAll(); });
+  $id('clear-research').addEventListener('click', () => { researchQueue = []; refreshAll(); });
+  $id('reset-all').addEventListener('click', () => {
+    roomQueue = []; researchQueue = []; activeTier = TIERS[0];
+    const r = document.querySelector('input[name="clan-tier"]'); if (r) r.checked = true;
+    applyTierUI(); history.replaceState(null,'',window.location.pathname); refreshAll();
+  });
+
+  // Share URL
+  $id('share-btn').addEventListener('click', () => {
+    const p = new URLSearchParams();
+    if (activeTier.slug !== 'ghost') p.set('tier', activeTier.slug);
+    if (roomQueue.length) p.set('rooms', roomQueue.join(','));
+    if (researchQueue.length) p.set('research', researchQueue.join(','));
+    const url = window.location.origin + window.location.pathname + (p.toString() ? '?' + p : '');
+    navigator.clipboard.writeText(url).catch(() => {});
+    const btn = $id('share-btn'); btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = 'Share URL'; }, 2000);
+  });
+
+  $id('hours-per-day').addEventListener('input', refreshTime);
+  $id('member-count').addEventListener('input', refreshTime);
+
+  // Load from URL
+  (function () {
+    const p = new URLSearchParams(window.location.search);
+    const t = p.get('tier'), rm = p.get('rooms'), re = p.get('research');
+    if (t) {
+      const found = TIERS.find((x) => x.slug === t);
+      if (found) { activeTier = found; const r = document.querySelector(`input[value="${t}"]`); if (r) r.checked = true; applyTierUI(); }
+    }
+    if (rm) roomQueue = rm.split(',').filter((s) => s && roomMap[s]);
+    if (re) researchQueue = re.split(',').filter((s) => s && researchMap[s]);
+    if (roomQueue.length || researchQueue.length) refreshAll();
+  })();
+</script>

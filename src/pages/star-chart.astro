@@ -1,0 +1,297 @@
+---
+import Base from '../layouts/Base.astro';
+import { PLANETS, JUNCTIONS, FACTION_COLORS, factionColor } from '../data/star-chart';
+
+const base = import.meta.env.BASE_URL;
+
+// Serialize planet data for the client-side panel script.
+const planetsJson = JSON.stringify(
+  PLANETS.map((p) => ({
+    slug: p.slug,
+    name: p.name,
+    faction: p.faction,
+    level_range_min: p.level_range_min,
+    level_range_max: p.level_range_max,
+    junction_from: p.junction_from,
+    special_features: p.special_features,
+    node_count_estimate: p.node_count_estimate,
+  })),
+);
+
+const factionColorsJson = JSON.stringify(FACTION_COLORS);
+const factionList = Object.entries(FACTION_COLORS);
+
+// Lookup map: slug -> planet for SVG rendering
+const planetMap = Object.fromEntries(PLANETS.map((p) => [p.slug, p]));
+
+const SVG_W = 1200;
+const SVG_H = 600;
+const RADIUS = 22;
+---
+
+<Base
+  title="Star Chart"
+  description="Interactive Star Chart showing all 18 planetary locations in the Warframe Origin System with faction control, level ranges, and junction paths."
+>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-6">
+      <nav class="mb-3 text-sm text-brand-cream/50">
+        <a href={`${base}missions`} class="hover:text-brand-orange">Missions</a>
+        <span class="mx-2">/</span>
+        <span class="text-brand-cream/80">Star Chart</span>
+      </nav>
+      <h1 class="text-3xl font-bold text-brand-cream mb-3">Star Chart</h1>
+      <p class="text-brand-cream/70 max-w-3xl leading-relaxed">
+        The Origin System is the solar system in which Warframe takes place. Eighteen distinct
+        planetary locations -- from the scorched surface of Mercury to the frozen wastes of
+        Sedna -- form a web of interconnected nodes unlocked through Junctions. Each location
+        is controlled by one of the game's major factions, whose enemy level scales as you
+        progress outward. Mercury and Earth serve as the tutorial gateway; the mid-game planets
+        -- Ceres, Jupiter, Saturn -- introduce harder tile sets and assassination targets that
+        unlock key warframe blueprints. The outer planets (Pluto, Sedna, Eris) demand fully
+        modded loadouts and reward endgame materials such as Orokin Cells and Tellurium. The
+        Void and Kuva Fortress are special territories that sit outside the normal radial
+        progression but require completing prior junctions to access. Hover or focus any planet
+        to preview its details; click to pin the side panel.
+      </p>
+    </header>
+
+    <!-- Legend -->
+    <div class="flex flex-wrap gap-4 mb-6" aria-label="Faction color legend">
+      {factionList.map(([faction, color]) => (
+        <div class="flex items-center gap-2 text-sm text-brand-cream/80">
+          <span
+            class="inline-block w-4 h-4 rounded-full border border-white/20"
+            style={`background-color:${color}`}
+            aria-hidden="true"
+          />
+          {faction}
+        </div>
+      ))}
+    </div>
+
+    <!-- Main layout: SVG + side panel -->
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- SVG Star Chart -->
+      <div class="flex-1 overflow-x-auto">
+        <svg
+          role="img"
+          aria-labelledby="star-chart-title"
+          viewBox={`0 0 ${SVG_W} ${SVG_H}`}
+          class="w-full max-w-full rounded-lg border border-surface-3 bg-surface-2"
+          style="min-width:600px"
+          id="star-chart-svg"
+        >
+          <title id="star-chart-title">
+            Warframe Origin System Star Chart -- 18 planetary locations with junction connections
+          </title>
+          <defs>
+            <style>{`
+              .planet-group { cursor: pointer; }
+              .planet-group:hover .planet-circle,
+              .planet-group:focus .planet-circle { stroke-width: 3; opacity: 1; }
+              .planet-circle { opacity: 0.85; transition: opacity 0.15s, stroke-width 0.15s; }
+              .planet-circle.selected { stroke-width: 3; opacity: 1; }
+              .planet-label { pointer-events: none; font-family: ui-sans-serif, system-ui, sans-serif; }
+              .junction-line { stroke: #555; stroke-width: 1.5; stroke-dasharray: 4 3; }
+            `}</style>
+          </defs>
+
+          <!-- Junction lines -->
+          {JUNCTIONS.map((edge) => {
+            const from = planetMap[edge.from];
+            const to = planetMap[edge.to];
+            if (!from || !to) return null;
+            return (
+              <line
+                class="junction-line"
+                x1={from.cx}
+                y1={from.cy}
+                x2={to.cx}
+                y2={to.cy}
+                aria-hidden="true"
+              />
+            );
+          })}
+
+          <!-- Planet nodes -->
+          {PLANETS.map((planet) => (
+            <g
+              class="planet-group"
+              data-slug={planet.slug}
+              tabindex="0"
+              role="button"
+              aria-label={`${planet.name} -- ${planet.faction} territory, levels ${planet.level_range_min}-${planet.level_range_max}`}
+            >
+              <circle
+                class="planet-circle"
+                cx={planet.cx}
+                cy={planet.cy}
+                r={RADIUS}
+                fill={factionColor(planet.faction)}
+                stroke="#fff"
+                stroke-width="1.5"
+              />
+              <text
+                class="planet-label"
+                x={planet.cx}
+                y={planet.cy + RADIUS + 14}
+                text-anchor="middle"
+                fill="#e8e0d0"
+                font-size="11"
+              >
+                {planet.name}
+              </text>
+              <text
+                class="planet-label"
+                x={planet.cx}
+                y={planet.cy + RADIUS + 25}
+                text-anchor="middle"
+                fill="#a09080"
+                font-size="9"
+              >
+                {planet.level_range_min}-{planet.level_range_max}
+              </text>
+            </g>
+          ))}
+        </svg>
+      </div>
+
+      <!-- Side panel -->
+      <aside
+        id="planet-panel"
+        class="lg:w-72 rounded-lg border border-surface-3 bg-surface-2 p-5 self-start"
+        aria-live="polite"
+        aria-label="Selected planet details"
+      >
+        <p id="panel-hint" class="text-brand-cream/40 text-sm">
+          Click a planet to see its details.
+        </p>
+        <div id="panel-content" class="hidden">
+          <h2 id="panel-name" class="text-xl font-bold text-brand-cream mb-1" aria-label="Planet name">&#8203;</h2>
+          <p id="panel-faction" class="text-sm mb-3"></p>
+          <dl class="space-y-2 text-sm">
+            <div>
+              <dt class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Level range</dt>
+              <dd id="panel-levels" class="text-brand-cream/80"></dd>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Approx. nodes</dt>
+              <dd id="panel-nodes" class="text-brand-cream/80"></dd>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Junction from</dt>
+              <dd id="panel-junction" class="text-brand-cream/80"></dd>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold text-brand-cream/50 uppercase tracking-wide">Notable features</dt>
+              <ul id="panel-features" class="list-disc list-inside text-brand-cream/70 space-y-0.5"></ul>
+            </div>
+          </dl>
+          <a
+            id="panel-missions-link"
+            href="#"
+            class="mt-4 inline-block text-brand-orange hover:underline text-sm"
+          >
+            Browse missions &rarr;
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</Base>
+
+<script define:vars={{ planetsJson, factionColorsJson, base }} is:inline>
+  /** @type {Array<{slug:string,name:string,faction:string,level_range_min:number,level_range_max:number,junction_from:string|null,special_features:string[],node_count_estimate:number}>} */
+  const PLANETS_DATA = JSON.parse(planetsJson);
+  const FACTION_COLORS_DATA = JSON.parse(factionColorsJson);
+
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function findPlanet(slug) {
+    return PLANETS_DATA.find(function(p) { return p.slug === slug; });
+  }
+
+  function factionColor(faction) {
+    return FACTION_COLORS_DATA[faction] || '#666666';
+  }
+
+  function showPanel(planet) {
+    var hint = document.getElementById('panel-hint');
+    var content = document.getElementById('panel-content');
+    var nameEl = document.getElementById('panel-name');
+    var factionEl = document.getElementById('panel-faction');
+    var levelsEl = document.getElementById('panel-levels');
+    var nodesEl = document.getElementById('panel-nodes');
+    var junctionEl = document.getElementById('panel-junction');
+    var featuresEl = document.getElementById('panel-features');
+    var linkEl = document.getElementById('panel-missions-link');
+
+    if (!hint || !content || !nameEl || !factionEl || !levelsEl || !nodesEl || !junctionEl || !featuresEl || !linkEl) {
+      return;
+    }
+
+    hint.style.display = 'none';
+    content.classList.remove('hidden');
+
+    nameEl.textContent = planet.name;
+    factionEl.style.color = factionColor(planet.faction);
+    factionEl.textContent = planet.faction + ' territory';
+    levelsEl.textContent = planet.level_range_min + ' - ' + planet.level_range_max;
+    nodesEl.textContent = String(planet.node_count_estimate);
+
+    if (planet.junction_from) {
+      var fromPlanet = findPlanet(planet.junction_from);
+      junctionEl.textContent = fromPlanet ? fromPlanet.name : planet.junction_from;
+    } else {
+      junctionEl.textContent = 'Starting location';
+    }
+
+    featuresEl.innerHTML = planet.special_features
+      .map(function(f) { return '<li>' + escHtml(f) + '</li>'; })
+      .join('');
+
+    var missionAnchor = '#planet-' + planet.name.toLowerCase().replace(/\s+/g, '-');
+    linkEl.href = base + 'missions/' + missionAnchor;
+  }
+
+  function clearSelected() {
+    var circles = document.querySelectorAll('.planet-circle');
+    circles.forEach(function(c) { c.classList.remove('selected'); });
+  }
+
+  function handlePlanetActivate(slug) {
+    var planet = findPlanet(slug);
+    if (!planet) return;
+    clearSelected();
+    var group = document.querySelector('[data-slug="' + slug + '"]');
+    if (group) {
+      var circle = group.querySelector('.planet-circle');
+      if (circle) circle.classList.add('selected');
+    }
+    showPanel(planet);
+  }
+
+  var groups = document.querySelectorAll('.planet-group');
+  groups.forEach(function(group) {
+    var slug = group.getAttribute('data-slug');
+    if (!slug) return;
+
+    group.addEventListener('click', function() {
+      handlePlanetActivate(slug);
+    });
+
+    group.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        handlePlanetActivate(slug);
+      }
+    });
+  });
+</script>

@@ -1,0 +1,187 @@
+---
+slug: hydroid
+name: Hydroid
+aliases: ["The Pirate", "Hydroid Prime"]
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 365
+armor: 240
+energy: 140
+sprintSpeed: 1.05
+passive:
+  name: Tentacle Swarm Passive
+  description: >-
+    Hydroid's passive grants increased damage output from water-based abilities.
+    Hydroid also moves faster when traversing through water and liquid surfaces.
+abilities:
+  - name: Tempest Barrage
+    key: "1"
+    energyCost: 50
+    description: >-
+      Summon a tempest to rain down upon a target area, striking all enemies
+      within the radius with elemental fury.
+    stats:
+      damage: 300
+      range: 22
+      duration: 6
+  - name: Tidal Surge
+    key: "2"
+    energyCost: 75
+    description: >-
+      Crash through enemies in a ferocious wall of water that knocks them down
+      and applies Corrosive Status to affected targets.
+    stats:
+      damage: 200
+      range: 15
+      speed: 10
+  - name: Plunder
+    key: "3"
+    energyCost: 50
+    description: >-
+      Plunder armor from nearby enemies and convert it into Corrosive damage
+      for your abilities. Enemies affected by Corrosive Status give greater
+      armor theft.
+    stats:
+      range: 18
+      armor_strip: 0.35
+      damage_bonus: 1.5
+  - name: Tentacle Swarm
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summon a creature from the depths. Watery tentacles emerge from nearby
+      surfaces to grab and crush enemies, dealing heavy damage over time.
+    stats:
+      damage: 400
+      range: 20
+      duration: 12
+acquisition:
+  source: Void Fissure Lith/Meso/Neo Relic drops (Hydroid Prime)
+  blueprintLocations:
+    - "Market (50,000 credits)"
+    - "Void Fissure relics (Hydroid Prime)"
+  cost:
+    credits: 30000
+    platinum: 225
+  buildTimeHours: 72
+  note: "Hydroid Prime is the prime variant; base Hydroid is available through relics or market blueprint."
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2017-12-12"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats cross-checked against WFCD 1.756.0"
+  - url: "https://warframe.fandom.com/wiki/Hydroid"
+    accessedAt: "2026-05-19"
+    title: "Hydroid -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Hydroid is a water-manipulating Warframe who commands the destructive power of aqueous forces and oceanic predators. After his 2023 rework, Hydroid shifted from a crowd-control specialist focused on area denial to a versatile damage dealer with strong armor-stripping mechanics and dynamic movement capabilities. His new kit emphasizes mobility through Tidal Surge, armor theft via Plunder, and summon-based crowd control with Tentacle Swarm, making him viable in both star chart and Void Fissure content. Hydroid excels as a solo farmer and utility frame for coordinated squads seeking corrosive damage amplification and enemy disruption.
+
+With a balanced stat spread of 270 health, 365 shield, and 240 armor, Hydroid is resilient enough for mid-level play and becomes increasingly tanky with proper modding. His Naramon aura polarity and 140 energy pool accommodate a range of build orientations, from ability-spam setups with energy efficiency mods to weapon-focused configurations augmented by Plunder's corrosive scaling.
+
+## Abilities
+
+<AbilityCard
+  name="Tempest Barrage"
+  key="1"
+  energyCost={50}
+  description="Summon a tempest to rain down upon a target area, striking all enemies within the radius with elemental fury."
+  stats={{damage: 300, range: 22, duration: 6}}
+/>
+
+Tempest Barrage rains projectiles on a targeted location, dealing flat elemental damage on impact. The ability's damage scales with Ability Power mods and benefits from Plunder armor-theft stacks. Its 22-meter range makes it effective for crowd suppression in mid-range engagements, and the 6-second duration means multiple pulses can stack if cast into dense packs. Paired with ability duration, Tempest Barrage becomes a reliable way to damage enemies without requiring direct line of sight.
+
+<AbilityCard
+  name="Tidal Surge"
+  key="2"
+  energyCost={75}
+  description="Crash through enemies in a ferocious wall of water that knocks them down and applies Corrosive Status to affected targets."
+  stats={{damage: 200, range: 15, speed: 10}}
+/>
+
+Tidal Surge transforms Hydroid into a mobile water projectile that travels forward, knocking down all enemies in its path and inflicting Corrosive Status. This ability scales with movement speed mods and Strength, making it excellent for repositioning while dealing damage and priming targets for Plunder's armor theft. The knockdown effect chains well into Plunder or Tentacle Swarm for guaranteed crowd control combinations. Unlike old Undertow, Tidal Surge keeps Hydroid in the action rather than stationary.
+
+<AbilityCard
+  name="Plunder"
+  key="3"
+  energyCost={50}
+  description="Plunder armor from nearby enemies and convert it into Corrosive damage for your abilities. Enemies affected by Corrosive Status give greater armor theft."
+  stats={{range: 18, armor_strip: 0.35, damage_bonus: 1.5}}
+/>
+
+Plunder is Hydroid's defining ability post-rework. It strips 35% of nearby enemies' armor and grants a damage multiplier to his subsequent abilities. Enemies already inflicted with Corrosive Status yield more armor theft, incentivizing ability chaining with Tidal Surge first. The stolen armor translates into a 1.5x damage bonus for Tempest Barrage and Tentacle Swarm, encouraging mid-mission rotations between Plunder and offensive abilities. This mechanic removes the need for external armor-strip frames and solves Hydroid's scaling problem in high-level content.
+
+<AbilityCard
+  name="Tentacle Swarm"
+  key="4"
+  energyCost={100}
+  description="Summon a creature from the depths. Watery tentacles emerge from nearby surfaces to grab and crush enemies, dealing heavy damage over time."
+  stats={{damage: 400, range: 20, duration: 12}}
+/>
+
+Tentacle Swarm summons multiple tentacles in a 20-meter radius that persist for 12 seconds, automatically attacking nearby enemies with high single-target damage. The ability scales with Duration and Strength, making it the centerpiece of duration-focused builds. Tentacles prioritize grabbed enemies, pulling them toward the player for guaranteed melee finisher opportunities or Plunder procs. In tight corridors and high-enemy-density zones like void fissures, Tentacle Swarm creates a self-sustaining damage field that handles wave-based threat clearing.
+
+## Passive
+
+Hydroid's passive grants him innate utility when traversing water tiles and liquid surfaces, increasing his movement speed in those environments. More importantly, his passive amplifies damage from water-based mechanics and synergizes with Corrosive Status effects applied by Tidal Surge, encouraging aggressive playstyle rotations that cycle through all four abilities to maximize the passive's conditional bonuses.
+
+## Stats
+
+| Stat | Value |
+|------|------:|
+| Health | 270 |
+| Shield | 365 |
+| Armor | 240 |
+| Energy | 140 |
+| Sprint Speed | 1.05x |
+| Mastery Rank | 0 |
+
+Hydroid's 1.05x sprint multiplier is below average, but his shield pool of 365 provides reliable protection when shields are restored via Arcane Energize or Rapid Resilience. The 240 armor is respectable for non-tanky frames and scales reasonably with Steel Fiber. His 140 energy pool requires efficiency mods (Streamline, Primed Flow) to sustain aggressive ability spam, especially on high-duration builds.
+
+## Acquisition
+
+Hydroid's components drop from Void Fissure relics (Hydroid Prime preferred for higher stats) or via Market blueprint purchase. The base blueprint costs 50,000 credits from the in-game Market. Building requires three void components (Neuroptics, Chassis, Systems), an Orokin Cell, and 30,000 credits for assembly. Build time is 72 hours, reducible via platinum rush.
+
+For newer players: Void Fissure relics are the most resource-efficient path. Run public or squad Fissure missions and collect relic drops; any squad member's relic share can award prime components. Hydroid Prime is stronger and only slightly harder to farm than base Hydroid.
+
+## Playstyle
+
+Hydroid's post-rework playstyle is mission-adaptive and reward-focused. In low-level star chart runs, cycle Tidal Surge for mobility and knockdown, then alternate Tempest Barrage and Tentacle Swarm for passive crowd control. Plunder becomes mandatory at level 40+ content; open engagements with Tidal Surge to apply Corrosive Status, cast Plunder immediately after to lock in armor theft, then unleash Tempest Barrage or Tentacle Swarm into the debuffed enemies.
+
+In Void Fissure missions (Lith/Meso/Neo/Axi), Hydroid shines as a solo farmer and squad buffer. Plant Tentacle Swarm in high-traffic zones, Plunder nearby clusters for armor stripping, then use Tidal Surge to chase stragglers and reposition. The ability synergy loop (Tidal Surge -> Plunder -> damage abilities) ensures consistent damage scaling and relic drops.
+
+For endless missions (Void Fissure Endless, Survival, Disruption), Hydroid's survivability drops around minute 15-20 without Blessing or Trinity support. Prioritize range and duration mods to keep Tentacle Swarm active at all times, supplement with Primed Vigor and Umbral Vitality if squad lacks dedicated support, and ensure weapon competency for independent scaling past 30 minutes.
+
+## Builds
+
+Hydroid supports three primary build archetypes:
+
+### Spore Corruption Build (Control Focus)
+Maximize Ability Range and Duration to keep Tentacle Swarm and Tempest Barrage active across large zones. Pair with Ammo Mutation mods on your primary weapon and Despoil Augment (if available) to convert corpse kills into free casts. This build excels in packed Void Fissure rotations where tentacle uptime equals guaranteed damage.
+
+### Armor Strip Build (Scaling Focus)
+Prioritize Ability Strength and Range to maximize Plunder's armor theft and radius. Use Corrosive-modded weapons or Tidal Surge's guaranteed Corrosive procs as setup. This build is mandatory for Steel Path and high-level void fissures where armor stripping determines survival.
+
+### Hybrid/Solo Build (Balanced)
+Mod for moderate Strength, Range, and Duration with Streamline for energy efficiency. Use this against mixed-level star chart content where tentacles handle crowds and Plunder provides fallback armor strip. Supplement with a strong secondary weapon (Atomos, Kuva Nukor) for independent scaling.
+
+## Lore
+
+Hydroid is an Orokin-era Warframe created to harness the primal power of the ocean and command its creatures. The lore surrounding his development suggests ties to Orokin water-harvesting technology and bio-engineering of aquatic predators, making him a master of liquids both defensive and offensive. In the Warframe mythos, Hydroid represents the Tenno's dominion over elemental forces--specifically the adaptability and relentless pressure of water itself.
+
+Unlike frames focused on singular combat doctrine, Hydroid evolved through multiple tactical iterations. His 2023 rework brought him closer to his Orokin-age purpose: a tactical asset capable of manipulating battlefield terrain through water summoning and ally armor bolstering (via Plunder's damage buff). Some lore interpretations suggest Hydroid's connection to the ocean is spiritual rather than merely mechanical, explaining his affinity for water movement and drowning-based finishers in game canon.
+
+## Sources
+
+- **WFCD warframe-items**: https://github.com/WFCD/warframe-items (Numeric stats sourced here; version 1.756.0)
+- **WARFRAME Wiki**: https://warframe.fandom.com/wiki/Hydroid (Narrative and ability mechanics; accessed 2026-05-19)

@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EntityCard from '../../components/EntityCard.astro';
+
+const base = import.meta.env.BASE_URL;
+const syndicates = await getCollection('syndicates');
+const sorted = [...syndicates].sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<Base title="Syndicates" description="All 18 syndicates -- standing, rewards, and tier offerings">
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-brand-cream mb-2">Syndicates</h1>
+      <p class="text-brand-cream/60">{sorted.length} syndicates -- standing system, tier rewards</p>
+    </header>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {sorted.map((s) => (
+        <EntityCard
+          href={`${base}syndicates/${s.slug}`}
+          name={s.data.name}
+          tags={[
+            s.data.type,
+            ...(s.data.faction ? [s.data.faction] : []),
+          ]}
+        />
+      ))}
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,149 @@
+---
+slug: cyte-09
+name: Cyte-09
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 225
+shield: 135
+armor: 150
+energy: 180
+sprintSpeed: 1.1
+passive:
+  name: Weak Point Mastery
+  description: >-
+    Killing enemies on their Weak Points increases Cyte-09's Weak Point Critical Chance, stacking up to 300% for the duration of the current mission.
+abilities:
+  - name: Seek
+    key: "1"
+    energyCost: 25
+    description: >-
+      Plant an antenna that projects a forward wave scan. Detected enemies take increased Weak Point Damage, and become visible through walls. Weapons gain Punch Through.
+    stats: {}
+  - name: Resupply
+    key: "2"
+    energyCost: 50
+    description: >-
+      Throw two Elemental Ammo Packs that instantly refill the active weapon's magazine, while granting the weapon an additional instance of the selected Elemental Damage and Status Effect. Hold to select the Elemental Damage type. Sniper Rifles gain extra damage.
+    stats: {}
+  - name: Evade
+    key: "3"
+    energyCost: 75
+    description: >-
+      Jump backwards and become invisible for a short duration. Killing enemies on their Weak Points extends the duration and heals Cyte-09.
+    stats: {}
+  - name: Neutralize
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summon the Neutralizer, Cyte-09's exalted Sniper Rifle. Bullets ricochet off Weak Points to seek out other nearby Weak Points. Alt fire lobs a Cold grenade that completely freezes enemies.
+    stats: {}
+acquisition:
+  source: "The Hex quest blueprint, Hollvania bounties for components"
+  blueprintLocations:
+    - "The Hex quest (main blueprint)"
+    - "Hollvania (Level 55-60), Rotation C (Chassis)"
+    - "Hollvania (Level 65-70), Rotation C (Neuroptics)"
+    - "Hollvania (Level 75-80), Rotation C (Systems)"
+  cost:
+    credits: 25000
+    platinum: 370
+  buildTimeHours: 72
+prime:
+  available: false
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Cyte-09"
+    accessedAt: "2026-05-19"
+    title: "Cyte-09 -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Cyte-09 is a stealth-precision hybrid Warframe that transforms players into a tactical operative balanced between evasion and firepower. Created by the Orokin as a solution to sensitive elimination problems, this frame was lost during the Orokin's collapse. Rediscovered and reintroduced in Update 38.0 (Warframe: 1999), Cyte-09 represents a martial archetype that rewards precise targeting and weak-point awareness. The frame excels in middle-range engagements where accuracy determines success, combining invisibility, weapon augmentation, threat detection, and an exalted sniper rifle into a cohesive toolkit for surgical strikes against priority targets.
+
+## Abilities
+
+<AbilityCard
+  name="Seek"
+  key="1"
+  energyCost={25}
+  description="Plant an antenna that projects a forward wave scan. Detected enemies take increased Weak Point Damage, and become visible through walls. Weapons gain Punch Through."
+/>
+
+Seek is Cyte-09's opening engagement tool, providing both tactical intelligence and damage amplification. The antenna's forward scan reveals enemy positions through solid cover and applies a debuff that makes weak points deal significantly more damage. The weapon punch-through bonus ensures follow-up shots can chain through multiple targets. This ability pairs well with the passive, as marked weak points become high-value targets for stacking critical chance bonuses.
+
+<AbilityCard
+  name="Resupply"
+  key="2"
+  energyCost={50}
+  description="Throw two Elemental Ammo Packs that instantly refill the active weapon's magazine, while granting the weapon an additional instance of the selected Elemental Damage and Status Effect. Hold to select the Elemental Damage type. Sniper Rifles gain extra damage."
+/>
+
+Resupply solves the ammunition and elemental flexibility problem inherent to sniper rifles and other low-magazine weapons. Casting instantly refills the magazine and allows players to switch between four elemental damage types (Heat, Cold, Electric, Toxin) mid-mission without reloading. Sniper Rifles receive a damage multiplier, making this ability synergize perfectly with Neutralize. The ability's strength lies in enabling sustained precision damage without traditional ammunition scarcity constraints.
+
+<AbilityCard
+  name="Evade"
+  key="3"
+  energyCost={75}
+  description="Jump backwards and become invisible for a short duration. Killing enemies on their Weak Points extends the duration and heals Cyte-09."
+/>
+
+Evade provides both evasion and healing in a single package, encouraging aggressive play rewarded by precision kills. The backwards jump repositions Cyte-09 away from incoming fire while the invisibility window allows repositioning or setup for the next shot. Weak-point kills refresh the invisibility duration, enabling chain invisibility windows if the player maintains accuracy. This ability makes Cyte-09 unexpectedly tanky despite moderate armor; the healing component ensures survivability even in higher-level content when playing precisely.
+
+<AbilityCard
+  name="Neutralize"
+  key="4"
+  energyCost={100}
+  description="Summon the Neutralizer, Cyte-09's exalted Sniper Rifle. Bullets ricochet off Weak Points to seek out other nearby Weak Points. Alt fire lobs a Cold grenade that completely freezes enemies."
+/>
+
+Neutralize is Cyte-09's ultimate ability, summoning an exalted sniper rifle that consolidates the frame's identity around weak-point gameplay. Fired bullets ricochet off weak points to automatically seek additional nearby weak points, creating a chaining damage effect. The alternate fire delivers crowd control through freeze grenades, enabling tactical flexibility. The rifle's infinite ammo (while summoned) and innate high damage make it a primary damage source rather than a situational tool. Synergy with Resupply's elemental buffs and the passive's stacking critical chance creates exponential damage scaling through the ability's duration.
+
+## Passive
+
+Cyte-09's passive mechanic drives the entire kit's design philosophy. Each weak-point kill grants a stacking bonus to Weak Point Critical Chance, reaching up to 300% by the end of a mission. This encourages a playstyle centered on accuracy and targeting vulnerable spots rather than spray-and-pray approaches. The passive compounds with mods like Critical Damage, Headshot multipliers, and Neutralize's ricochet mechanic to create scenarios where single shots eliminate entire groups. The reward for precision makes Cyte-09 deeply engaging for players who enjoy skill expression through aim and positioning.
+
+## Stats
+
+| Stat | Value |
+|------|-------|
+| Health | 225 |
+| Shield | 135 |
+| Armor | 150 |
+| Energy | 180 |
+| Sprint Speed | 1.1x |
+| Polarity 1 | Madurai |
+| Polarity 2 | Vazarin |
+
+Cyte-09 possesses modest defenses compared to tanky frames, reflecting the glass-cannon nature of a stealth-focused operator. The 150 armor value provides some mitigation, and the 135 shield pool grants breathing room during evasion ability downtime. The 180 energy pool supports sustained ability casting without excessive energy efficiency investment. The 1.1x sprint speed multiplier, standard for most frames, enables normal mobility across star chart nodes. Two polarity slots--Madurai and Vazarin--suit both offensive mods (Serration, Intensify) and survivability mods (Vitality, Adaptation).
+
+## Acquisition
+
+Cyte-09 enters the game through the Warframe: 1999 questline. The main blueprint drops from completing the introductory Hex quest, unlocking access to the Hex faction and Hollvania bounties. Component blueprints (Chassis, Neuroptics, Systems) drop exclusively from rotation C of Hollvania bounties across three difficulty tiers. Each component has roughly a 12% drop chance, making the full set farmable but time-intensive. Players require 72 hours of real-time build time and 25,000 Credits to assemble the complete warframe. The platinum market cost (370 Platinum) reflects the frame's mid-tier acquisition complexity.
+
+The frame's introduction tied to a limited-time event quest and subsequent bounty grinding ensures new players engage with late-game content and factions. Veteran players appreciated the stealth-damage hybrid kit for endgame farming and Steel Path missions where precision rewards high-level play.
+
+## Recommended Builds
+
+Cyte-09 supports multiple build archetypes, each emphasizing different kit elements. A Weak Point Offense build stacks Critical Chance, Critical Damage, and Headshot mods to leverage both the passive and Neutralize's ricochet mechanic. A Survival Hybrid build incorporates armor mods (Steel Fiber, Adaptation) alongside energy efficiency to sustain ability spam while maintaining Evade's healing uptime. A Sniper-Focused Exalted build maximizes Neutralize's damage through Serration, Split Chamber, and elemental mods combined with Resupply's ammo management and elemental buffs. Each playstyle is viable depending on mission type and squad composition.
+
+## Synergies
+
+Cyte-09 pairs well with utility frames that amplify precision damage or provide crowd control, leaving Cyte-09 free to focus on weak-point elimination. Banshee amplifies headshot damage, maximizing Neutralize's ricochet chains. Trinity or Harrow provide energy sustainability and survivability during high-level endurance runs. Mirage's Hall of Mirrors synergizes with the frame's single-target focus by creating fake threat sources. Conversely, Cyte-09 functions excellently in solo content where high-difficulty enemies reward precision, particularly in Void Fissure missions and Zariman vaults where weak-point hacking and assassination-style gameplay shine.
+
+## Lore
+
+Cyte-09 emerged from the Orokin's golden age as a specialized weapon for covert operations. The designation "Cyte" (an abbreviation of "Cyte-series") paired with the number "09" suggests a production line of similar frames, though Cyte-09 alone survived the Old War's chaos. The Orokin codex entry--"Move like a shadow, strike with force"--indicates the frame was purpose-built for elimination of high-value targets, combining stealth and damage in ways few other frames achieve. Unlike typical Warframes deployed for territorial control or mass casualty operations, Cyte-09 represented precision engineering: a single operative capable of systematic, undetectable removal of threats.
+
+The frame's disappearance during the Orokin collapse remains unexplained, with only the batch name and fragmented blueprints surviving in hidden Zariman vaults. The Tenno's rediscovery of Cyte-09 in Update 38.0 reintroduced a lost piece of Orokin military technology, adding another layer to the ongoing lore of Orokin-era weapons slowly returning to circulation. The frame's association with The Hex faction, an ancient Orokin secret society obsessed with weak-point science, deepens the connection between its design philosophy and the broader narrative of Orokin experimentation and control.
+
+## Sources
+
+- [WFCD warframe-items](https://github.com/WFCD/warframe-items) -- Canonical numeric stats and blueprint drop rates, accessed 2026-05-19.
+- [Cyte-09 -- WARFRAME Wiki](https://warframe.fandom.com/wiki/Cyte-09) -- Ability descriptions, acquisition methods, and lore flavor, accessed 2026-05-19.

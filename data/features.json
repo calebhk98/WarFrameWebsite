@@ -1,0 +1,130 @@
+[
+  {
+    "id": "F-001",
+    "title": "Build Comparator",
+    "priority": "P0",
+    "description": "Side-by-side comparison tool for warframe builds at /compare. Allows players to evaluate stat differences across loadouts.",
+    "status": "shipped",
+    "evidence": "src/pages/compare.astro"
+  },
+  {
+    "id": "F-002",
+    "title": "Helminth Subsume Planner",
+    "priority": "P0",
+    "description": "Interactive planner at /helminth-planner for choosing which warframe abilities to subsume and infuse. Covers all 50+ subsumed abilities.",
+    "status": "shipped",
+    "evidence": "src/pages/helminth-planner.astro"
+  },
+  {
+    "id": "F-003",
+    "title": "Build Calculator",
+    "priority": "P0",
+    "description": "Stat calculator at /build-calculator that computes effective HP, DPS, and other derived stats from mod selections. WFCD data-backed.",
+    "status": "shipped",
+    "evidence": "src/pages/build-calculator.astro"
+  },
+  {
+    "id": "F-004",
+    "title": "Damage Type Chart",
+    "priority": "P0",
+    "description": "Reference chart at /damage-types showing all 15 damage types, their status procs, and faction-specific modifiers (Grineer, Corpus, Infested, Corrupted).",
+    "status": "shipped",
+    "evidence": "src/pages/damage-types.astro"
+  },
+  {
+    "id": "F-005",
+    "title": "Star Chart Visualization",
+    "priority": "P0",
+    "description": "Interactive star chart at /star-chart visualizing all planets, nodes, and mission types. Helps new players navigate the progression path.",
+    "status": "shipped",
+    "evidence": "src/pages/star-chart.astro"
+  },
+  {
+    "id": "F-006",
+    "title": "Riven Roll Planner",
+    "priority": "P0",
+    "description": "Riven mod roll planner at /riven-planner showing expected stat ranges per disposition and kuva cost per reroll cycle.",
+    "status": "shipped",
+    "evidence": "src/pages/riven-planner.astro"
+  },
+  {
+    "id": "F-007",
+    "title": "Modular Weapon Builder",
+    "priority": "P0",
+    "description": "Modular weapon assembly tool at /modular-builder for Kitguns, Zaws, and Moa companions. Computes final stats from chosen components.",
+    "status": "shipped",
+    "evidence": "src/pages/modular-builder.astro"
+  },
+  {
+    "id": "F-008",
+    "title": "Market Price Ticker",
+    "priority": "P0",
+    "description": "Live platinum price ticker at /market sourcing warframe.market data via the shared fetch token-bucket. Shows buy/sell spreads for tradeable items.",
+    "status": "shipped",
+    "evidence": "src/pages/market.astro"
+  },
+  {
+    "id": "F-009",
+    "title": "Light/Dark Theme Toggle",
+    "priority": "P0",
+    "description": "Persistent light/dark mode toggle in the site header. Preference stored in localStorage; respects prefers-color-scheme on first visit.",
+    "status": "shipped",
+    "evidence": "src/components/Header.astro"
+  },
+  {
+    "id": "F-010",
+    "title": "PWA Installable + Offline",
+    "priority": "P0",
+    "description": "Progressive Web App manifest and service worker enabling installation on mobile/desktop and offline access to cached content pages.",
+    "status": "shipped",
+    "evidence": "dist/manifest.webmanifest"
+  },
+  {
+    "id": "F-011",
+    "title": "Live Worldstate Widget",
+    "priority": "P0",
+    "description": "Live worldstate dashboard at /worldstate showing current sorties, void fissures, invasions, and Arbitrations via warframestat.us polling.",
+    "status": "shipped",
+    "evidence": "src/pages/worldstate.astro"
+  },
+  {
+    "id": "F-012",
+    "title": "Frame Relationship Graph",
+    "priority": "P1",
+    "description": "Interactive graph visualizing synergies between warframes — e.g. which frames pair well for disruption, ESO, or endurance runs. Nodes are frames, edges are synergy tags.",
+    "status": "shipped",
+    "evidence": "src/pages/frame-graph.astro"
+  },
+  {
+    "id": "F-013",
+    "title": "What To Do At MR X Recommender",
+    "priority": "P1",
+    "description": "Personalized progression recommender that takes a mastery rank input and surfaces the most impactful quests, weapons, and frames to unlock next. Driven by WFCD masteryReq data.",
+    "status": "shipped",
+    "evidence": "src/pages/progression.astro"
+  },
+  {
+    "id": "F-014",
+    "title": "Fashion-Frame Gallery",
+    "priority": "P2",
+    "description": "Community-facing gallery of colour-palette and skin combinations for each warframe. Submissions stored as static JSON; no server-side rendering required.",
+    "status": "shipped",
+    "evidence": "src/pages/fashion.astro"
+  },
+  {
+    "id": "F-015",
+    "title": "Clan Dojo Planner",
+    "priority": "P2",
+    "description": "Tool for planning dojo room layouts and tracking research resource costs. Renders room adjacency as an editable graph with running material totals.",
+    "status": "shipped",
+    "evidence": "src/pages/dojo-planner.astro"
+  },
+  {
+    "id": "F-016",
+    "title": "Drop Chance Monte Carlo (Relic Refinement Sim)",
+    "priority": "P2",
+    "description": "Statistical simulator for relic refinement drop probabilities. Runs Monte Carlo trials to show expected runs to obtain a given prime part at each refinement tier.",
+    "status": "shipped",
+    "evidence": "src/pages/drop-sim.astro"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "pass": true,
+  "errors": [],
+  "warnings": [],
+  "word_count": 2086,
+  "checked_at": "2026-05-19T02:53:20.386537+00:00",
+  "citations": [
+    {
+      "field": "sources",
+      "url": "https://github.com/WFCD/warframe-items",
+      "accessed": true
+    },
+    {
+      "field": "sources",
+      "url": "https://warframe.fandom.com/wiki/Trinity",
+      "accessed": true
+    },
+    {
+      "field": "masteryRank",
+      "wfcd_path": "Warframes.json#/Trinity/masteryRank",
+      "value": 0
+    }
+  ]
+}

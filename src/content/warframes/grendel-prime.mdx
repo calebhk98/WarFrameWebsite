@@ -1,0 +1,200 @@
+---
+slug: grendel-prime
+name: Grendel Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 1095
+shield: 95
+armor: 400
+energy: 200
+sprintSpeed: 0.95
+passive:
+  name: Consume
+  description: >-
+    Each enemy consumed grants 250 bonus armor, rewarding aggressive feeding
+    and conversion of enemies into personal defenses.
+abilities:
+  - name: Feast
+    key: "1"
+    energyCost: 25
+    description: >-
+      Swallow enemies whole and store them in Grendel Prime's gut. Hold to vomit
+      out stored enemies, covering them in toxic bile that damages and weakens
+      those nearby.
+    stats: {}
+  - name: Nourish
+    key: "2"
+    energyCost: 50
+    description: >-
+      Regenerate health while absorbing nourishment from enemies in the gut.
+      Stored enemies deal viral damage to those attacking or being attacked by
+      Grendel Prime, and energy sources provide more energy to the entire squad.
+    stats: {}
+  - name: Pulverize
+    key: "3"
+    energyCost: 75
+    description: >-
+      Curl into a ball and roll across the battlefield, healing continuously.
+      Jump to slam into the ground and generate a damaging shockwave that knocks
+      enemies over.
+    stats: {}
+  - name: Regurgitate
+    key: "4"
+    energyCost: 100
+    description: >-
+      Violently expel a bile-soaked enemy from the gut as a toxic projectile.
+      Nearby enemies are slowed and suffer armor dissolution from the bile,
+      leaving them vulnerable to follow-up damage.
+    stats: {}
+acquisition:
+  source: "Void Fissure Relic rewards"
+  blueprintLocations:
+    - "Axi G14 Relic (Rare drop)"
+    - "Axi G11 Relic (Rare drop, Vaulted)"
+    - "Market (purchase relics or built frame for 10,000 Credits)"
+  buildTimeHours: 72
+  cost:
+    credits: 25000
+    platinum: 0
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2023-10-18"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Grendel/Prime"
+    accessedAt: "2026-05-19"
+    title: "Grendel Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19T00:00:00Z"
+---
+
+## Overview
+
+Grendel Prime is the primed variant of the ravenous Grendel, embodying raw consumption and gluttony as core mechanics. Released in Update 34.0 alongside Zylok Prime and Masseter Prime, Grendel Prime represents Digital Extremes' design philosophy of creating thematically coherent warframes where the core mechanic drives both survival and gameplay progression.
+
+The frame embodies hunger itself--literally devouring enemies and converting them into armor, health, and energy for both himself and his squad. With increased armor and energy compared to the base Grendel, the Prime variant excels at aggressive, tank-focused playstyles where eating enemies becomes both the offense and defense.
+
+Ballas's description in the Codex captures the essence: "We are losing this war, you say... Let us have monsters. The law of club and belly, hunger and smoke." Grendel Prime embodies this design mandate--not a refined warrior, but a primal beast whose very presence transforms combat through consumption.
+
+## Abilities
+
+<AbilityCard
+  name="Feast"
+  key="1"
+  energyCost={25}
+  description="Swallow enemies whole and store them in Grendel Prime's gut. Hold to vomit out stored enemies, covering them in toxic bile."
+/>
+
+Feast is Grendel Prime's signature ability and core mechanic. Unlike traditional crowd control, consuming an enemy stores them, preventing their actions while building the stored enemy list. Each consumed enemy contributes to the passive armor bonus (250 per enemy) and affects Nourish's viral damage output and energy efficiency. Maximum storable enemies depends on Grendel Prime's stats and mods, creating a scaling incentive to feed continuously.
+
+The vomit release mechanic converts stored enemies into projectiles covered in corrosive bile, devastating grouped enemies and stripping armor in the area. This makes Feast both a survival tool and offensive weapon--feeding keeps Grendel Prime safe while vomiting deals area damage.
+
+<AbilityCard
+  name="Nourish"
+  key="2"
+  energyCost={50}
+  description="Regenerate health as Grendel Prime absorbs nourishment from enemies in the gut. While he digests, enemies that attack or are attacked by Grendel Prime suffer Viral Damage."
+/>
+
+Nourish transforms consumption into survivability. While active and enemies remain in the gut, Grendel Prime regenerates health per second--the more enemies stored, the faster the regeneration. This creates an incentive to maintain a full stomach rather than immediately vomiting enemies out.
+
+The passive viral damage component applies to all incoming and outgoing attacks, spreading status procs throughout the team. Energy drops from defeated enemies restore double their normal value to Grendel Prime and provide enhanced energy restoration to nearby squadmates, creating squad-wide sustainability. Nourish can be subsumed into other frames, making it one of Grendel Prime's most sought-after abilities.
+
+<AbilityCard
+  name="Pulverize"
+  key="3"
+  energyCost={75}
+  description="Grendel Prime curls into a ball and rolls, healing over time. Jumping slams into the ground and generates a damaging shockwave."
+/>
+
+Pulverize is Grendel Prime's utility and mobility tool. Rolling provides movement immunity frames and continuous area-of-effect knockdown, functioning as crowd control while healing and dealing damage. This is particularly valuable in endless mission scaling, where the healing from Pulverize combined with Nourish creates a defensive wall.
+
+Jumping initiates a slam mechanic, generating a shockwave that damages and knocks back enemies in range. The shockwave scales with ability strength and can be chained repeatedly for controlled area denial. Pulverize synergizes with Nourish's viral effects, as enemies knocked down spend more time being attacked and spreading status.
+
+<AbilityCard
+  name="Regurgitate"
+  key="4"
+  energyCost={100}
+  description="Violently puke out a bile-soaked enemy from Grendel Prime's gut, turning the consumed into a toxic projectile. Nearby enemies are slowed and have their armor dissolved."
+/>
+
+Regurgitate is the forced expulsion of stored enemies at range. Unlike holding Feast to vomit, Regurgitate is a directed ability that launches a single enemy as a projectile with guaranteed armor strip in the impact area. This is the primary way to clear stored enemies if they are not longer beneficial to maintain.
+
+The armor dissolution effect synergizes perfectly with weapons and abilities that deal physical or corrosive damage. Regurgitate scales with the size and toughness of stored enemies, making fights with heavy units more rewarding--consuming a bombard or ancient healer and regurgitating it becomes a powerful tactical tool.
+
+## Passive
+
+Grendel Prime's passive ability grants 250 bonus armor per enemy stored in his gut. This seemingly simple mechanic is central to his design: feeding becomes both survival and empowerment. A fully fed Grendel Prime with 5 stored enemies gains 1,250 bonus armor, transforming him into an unkillable tank. This passive reward for aggressive play encourages constant feeding rather than hoarding enemies.
+
+The passive stacks without diminishing returns and persists until the enemy is vomited or digested, creating dramatic moment-to-moment power shifts as Grendel Prime gorges and empties his stomach. Combined with his high base armor of 400, Grendel Prime reaches armor values that rival dedicated tank frames.
+
+## Stats
+
+| Stat              | Value       |
+|-------------------|-------------|
+| Health (Rank 0)   | 1,095       |
+| Health (Rank 30)  | 1,295       |
+| Shield (Rank 0)   | 95          |
+| Shield (Rank 30)  | 95          |
+| Armor             | 400         |
+| Energy (Rank 0)   | 200         |
+| Energy (Rank 30)  | 250         |
+| Sprint Speed      | 0.95x       |
+| Mastery Rank      | 0           |
+| Aura Polarity     | Naramon     |
+
+Grendel Prime trades shields for exceptional armor and above-average health, reflecting his role as a physical tank rather than shield tank. The 0.95 sprint speed multiplier is the only drawback--slightly slower than baseline--but this minimal penalty is offset by the utility of rolling through Pulverize for fast repositioning. Energy scaling from rank 0 to 30 provides 50 base energy, supporting extended ability spam in high-level content.
+
+## Acquisition
+
+Grendel Prime enters the Void Relic system as a prime warframe, with components spread across Axi (blueprint), Lith/Neo (systems), Lith/Meso (chassis), and Axi/Meso/Neo (neuroptics) relics. Players farm these relics through Void Fissure missions and crack them for components.
+
+The blueprint drops from Axi G14 as a Rare (unvaulted) and from vaulted Axi G11. Systems drop from Axi G14 (Rare) and vaulted Axi relics. Chassis drops from Lith G13 (Uncommon, unvaulted) and vaulted Lith/Neo relics. Neuroptics drop from Axi/Neo/Meso relics at Common rarity, making them the easiest component to farm.
+
+Once components are obtained, the full frame blueprint costs 25,000 Credits and takes 72 hours to build. Component blueprints cost 15,000 Credits each and take 12 hours, requiring specific resources including Tellurium (chassis), Argon Crystals (neuroptics), Nitain Extract (systems), and Orokin Cells (main blueprint).
+
+Alternatively, players can purchase the entire frame from the Market for platinum if they lack the time or resources to farm relics and build components.
+
+## Playstyle
+
+Grendel Prime's playstyle revolves around aggressive feeding and armor stacking--treat Feast as both crowd control and defensive mechanism rather than a niche tool. Optimal play cycles between Feast (consuming 2-4 enemies per cast) and Pulverize (rolling to health-recovery while maintaining stored enemies), only vomiting or regurgitating when the full-gut armor bonus is no longer needed or enemies in storage offer no tactical value. Every stored enemy grants 250 bonus armor, meaning a 5-enemy gut transforms Grendel Prime's 400 base armor into 1,650 effective armor--rivaling dedicated tanks like Rhino while maintaining offensive presence. Feed aggressively at mission start to reach 4-5 stored enemies by 30 seconds elapsed, then maintain that level throughout the first 10 minutes, cycling small Feast casts to refresh the supply as enemies are consumed.
+
+Nourish channels create passive healing loops while stored enemies remain in the gut, incentivizing sustained feeding over periodic vomiting. Cast Nourish during reload windows, between Pulverize cooldowns, or when squad health drops--the longer Nourish remains active, the higher the healing per tick (scaling with stored enemy count). This synergizes perfectly with Pulverize's continuous healing during roll phases: activate Nourish, then enter Pulverize's rolling state for 5-8 seconds while health regenerates, exit and reposition, repeat. Store high-health enemies (Bombards, Ancient Healers, Eximus units) when available--regurgitating them later creates devastating armor-strip AOE effects that enable weapons to shred armored targets. Never vomit indiscriminately; each consumed enemy is a multiplier to defense, so optimize your stomach contents by prioritizing heavy units over trash.
+
+Regurgitate is the primary tool for clearing storage when tactical reload is necessary. Launch stored heavy units at elite concentrations to strip armor in a large area, enabling follow-up weapon damage (especially corrosive/slash). The armor dissolution effect lasts several seconds, creating windows where you and the squad deal full damage to previously-tanky targets. Pulverize's slam mechanic chains perfectly with Regurgitate: after regurgitating an armor-stripped group, immediately engage Pulverize to roll through and perform slam knockdowns, resetting enemies while they're vulnerable. This combo is core to endless mission survival--you become offense, defense, and crowd control in a single 15-second sequence.
+
+## Recommended Builds
+
+Grendel Prime's optimal builds depend on mission type and squad composition. The tank build maximizes armor and health for solo or support roles, while the farm build prioritizes Nourish's squad benefits and ability efficiency for group play.
+
+For tank-focused survival, stack Vitality, Steel Fiber, and Adaptation to reach armor values exceeding 600. Energy builds support Feast spam through Transient Fortitude and Streamline, allowing continuous feeding and passive armor stacking. Exilus mods like Agility Drift provide sprint speed to compensate for the 0.95 base multiplier.
+
+In cooperative missions, build around Nourish through ability efficiency mods (Streamline, Fleeting Expertise) to maximize energy sharing with the squad. Power Strength increases the viral damage and armor strip effects, making Regurgitate devastating against grouped enemies. Umbral mods offer the best scaling for both offensive and defensive needs when building for endless mission endgame.
+
+Recommended Builds pages (coming soon) will showcase complete loadouts with companion selections and aura choices optimized for Steel Path, endless Void Fissures, and squad-focused farming setups.
+
+## Synergies
+
+Grendel Prime synergizes with any frame that benefits from extended survival and area denial. Trinity Prime pairs exceptionally well, as Grendel Prime's passive energy generation from Nourish amplifies Trinity's Energy Vampire return to the entire squad. Khora's whip augment and Hydroid's Pilfering Swarm both scale with enemies defeated, making them powerful with Grendel Prime in farming scenarios where his storage mechanic isolates and groups enemies.
+
+Masseter Prime (Grendel Prime's signature melee) gains an exclusive interaction: heavy attacks grant crowd control immunity while wielding it, turning Grendel Prime into a melee tank with guaranteed crowd control avoidance. Zylok Prime (his signature secondary) complements his status-heavy playstyle with high crit and status chance.
+
+Helminth subsumption of Nourish into other frames creates powerful hybrid builds--Lavos and Equinox both benefit from the viral damage and energy generation. Conversely, replacing Grendel Prime's own Feast with powerful subsumes from frames like Saryn (Spores) or Wisp (Motes) creates hybrid builds that trade Grendel Prime's core mechanic for specific team roles.
+
+## Lore
+
+Grendel Prime represents the mythological archetype of the devouring beast. Ballas, the Orokin architect, frames Grendel Prime's creation as a deliberate pivot away from "genteel" warframe design toward monstrosity itself. The lore describes him as a product of the Tenno's own hunger for victory--a literal manifestation of appetite and gluttony.
+
+The Codex passages invoke Beowulf's Grendel, the Anglo-Saxon monster of uncontrollable hunger and primal power. Digital Extremes weaponized this myth, creating a warframe whose mechanics directly embody his legend. Every ability reinforces the devouring theme: Feast literally consumes, Nourish extracts sustenance, Pulverize crushes through sheer mass, and Regurgitate expels the consumed as weaponized waste.
+
+Grendel Prime's prime variant emphasizes this nature further--the refined, perfected form of consumption itself. His release in Update 34.0 came alongside the Sisters of Parvos expansion, positioning him as a tool for the Tenno's ongoing war effort. The prime design maintains Grendel's monstrous aesthetic while polishing his abilities, creating a frame that is both mechanically distinct and thematically cohesive.
+
+## Sources
+
+- WFCD warframe-items repository: `https://github.com/WFCD/warframe-items`
+- WARFRAME Wiki Grendel Prime page: `https://warframe.fandom.com/wiki/Grendel/Prime`

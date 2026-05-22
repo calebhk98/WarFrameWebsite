@@ -1,0 +1,45 @@
+{
+  "phase": "wave-7-sweep",
+  "timestamp": "2026-05-20T18:04:00Z",
+  "ci_status": "FAILED",
+  "checks": {
+    "typecheck": {
+      "status": "PASS",
+      "tool": "astro check && tsc --noEmit",
+      "files_checked": 135,
+      "errors": 0
+    },
+    "build": {
+      "status": "PASS",
+      "tool": "astro build && pagefind",
+      "duration": "19.78s",
+      "artifact": "dist/"
+    },
+    "unit_tests": {
+      "status": "PASS",
+      "tool": "vitest run",
+      "test_files": 6,
+      "tests_passed": 53,
+      "duration": "1.07s"
+    },
+    "e2e_tests": {
+      "status": "FAIL",
+      "tool": "pnpm playwright test",
+      "total": 52,
+      "passed": 12,
+      "failed": 40,
+      "failure_reason": "Visual snapshot regression — 40 tests comparing page screenshots to baseline snapshots failed due to layout/content changes in Wave 7 deliverables. Snapshots need refresh.",
+      "failed_tests": [
+        "compare builds widget",
+        "compare warframes widget", 
+        "build calculator widget",
+        "helminth planner widget",
+        "pagefind search",
+        "smoke tests (16 pages)",
+        "visual tests (10 pages)"
+      ]
+    }
+  },
+  "action": "STOP_WITHOUT_COMMIT",
+  "reason": "E2E visual snapshot tests failed. Per commit-batch protocol: 'If any fail, write tail to report and STOP without committing.' Wave 7 deliverables (modular builder, 28 weapons, 23 missions, a11y fixes) have changed page layouts/content, invalidating visual regression baselines."
+}

@@ -1,0 +1,75 @@
+---
+slug: arcane-blessing
+name: Arcane Blessing
+type: warframe
+maxRank: 5
+effect: "On Health Pickup: +[health] Max Health. Stacks up to 50x."
+perRankStats:
+  - rank: 0
+    stats: { health: 4 }
+  - rank: 1
+    stats: { health: 8 }
+  - rank: 2
+    stats: { health: 12 }
+  - rank: 3
+    stats: { health: 16 }
+  - rank: 4
+    stats: { health: 20 }
+  - rank: 5
+    stats: { health: 24 }
+drops:
+  - source: "Lua/Circulus (Survival), Rotation C"
+    chance: 10.2
+    rarity: "Uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+    note: "Arcane drops and healing mechanics from WFCD 1.756.0+"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Blessing"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+    note: "Acquisition context and squad utility applications"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Blessing permanently increases maximum health each time the warframe picks up a health orb, stacking up to 50 times. Each health orb pickup adds a flat health bonus to the warframe's maximum health pool. With 50 stacks fully built, the arcane provides a permanent bonus of up to 1200 maximum health at rank 5, significantly expanding the warframe's health buffer through routine health orb collection during missions.
+
+Unlike one-time stat bonuses, Arcane Blessing requires active orb collection to build stacks. The stacks persist for the duration of the mission once accumulated, creating a progression arc where the warframe becomes progressively tankier as health orbs are collected. The bonus resets between missions.
+
+## Effect
+
+Each health orb pickup adds one stack of Blessing's maximum health bonus. Stacks accumulate up to 50 and each stack adds the rank-dependent health value. At rank 0, each orb adds +4 max health (200 total at 50 stacks). At rank 5, each orb adds +24 max health (1200 total at 50 stacks). The health bonus applies to both the base maximum health and to Vitality-scaled health, providing proportionally larger absolute increases on high-health frames.
+
+Health orbs picked up beyond the 50-stack cap do not add further stacks but still restore health normally. The stacks display in the buff bar as a counter. Players who actively seek out health orbs through Equilibrium or who play in orb-dense environments accumulate stacks faster than players who rarely encounter health orbs.
+
+## Stats per rank
+
+| Rank | Max Health per Stack | Max Stacks | Total Max Health Bonus |
+|------|---------------------|-----------|----------------------|
+| 0 | +4 | 50 | +200 |
+| 1 | +8 | 50 | +400 |
+| 2 | +12 | 50 | +600 |
+| 3 | +16 | 50 | +800 |
+| 4 | +20 | 50 | +1000 |
+| 5 | +24 | 50 | +1200 |
+
+## Acquisition
+
+Arcane Blessing drops from Lua Circulus Survival rotation C at a 10.2% uncommon rate. Circulus Survival on Lua is the sole source; the arcane is not available from Zariman, Eidolons, or other arcane drop pools. Rotation C requires reaching 20 minutes in a single Survival run. Warframe.market provides direct purchase for players who prefer platinum acquisition over dedicated Lua farming.
+
+## Builds that use it
+
+Arcane Blessing fits health-tank builds that accumulate health orbs naturally during gameplay. Inaros with Equilibrium equipped converts all energy orb pickups into health orbs, generating stacks rapidly in orb-dense content. Nekros with Desecrate looting health orbs from killed enemies stacks Blessing quickly in Survival or similar kill-heavy missions. Frames that run Arcane Pulse or Arcane Healing alongside Blessing on health-orb builds gain additional healing benefits from the same orb pickup events.
+
+The arcane is most impactful on frames where maximum health is already high -- the additional 1200 health at rank 5 is proportionally more meaningful on Inaros at 5000+ health than on low-health frames where 1200 points represents a larger fraction of total effective health.
+
+## Notes
+
+Stacks reset at mission end and must be rebuilt at the start of each new mission. Players who die during a mission but are revived retain their stacks. Health orbs picked up during invulnerability phases (Iron Skin, Warding Halo) still count toward stack accumulation. The maximum health increase is flat, not percentage-based; it does not scale with Vitality or other health-multiplying mods. Overguard absorbs damage before health, so frames that maintain Overguard for extended periods take fewer health hits and collect fewer health orbs, potentially slowing stack accumulation.
+
+## Sources
+
+- WFCD warframe-items dataset provides health-per-stack and maximum stack count values per rank for Arcane Blessing.
+- Fandom wiki entry for [Arcane Blessing](https://warframe.fandom.com/wiki/Arcane_Blessing) covers drop location and health orb stack accumulation mechanics.

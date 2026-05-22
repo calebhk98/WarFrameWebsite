@@ -1,0 +1,97 @@
+{
+  "phase": 0,
+  "verifier_run_at": "2026-05-18T16:41:50Z",
+  "checks": [
+    {
+      "id": "files-present",
+      "pass": true,
+      "detail": "All required root files present: package.json, pnpm-lock.yaml, astro.config.mjs, tailwind.config.ts, tsconfig.json, vitest.config.ts, STATE.md, README.md, .gitignore, .github/workflows/ci.yml"
+    },
+    {
+      "id": "directory-structure",
+      "pass": true,
+      "detail": "All 25 .gitkeep directories present: src/content/{warframes,weapons,mods,quests,factions,syndicates,relics,arcanes,missions,resources,builds}, src/content/guides/{farming,strategy,paths}, src/components, src/lib, data/{wfcd,enumerations}, docs, scripts, tests, reports/{verify,qa}, .github/ISSUE_TEMPLATE"
+    },
+    {
+      "id": "package-json-config",
+      "pass": true,
+      "detail": "name: warframe-website, type: module, Node >=20, packageManager: pnpm@10.33.0. Scripts include dev/build/preview/typecheck/test/lint. Dependencies include astro, @astrojs/mdx, @astrojs/tailwind, tailwindcss, zod. DevDependencies include vitest, typescript, @testing-library/dom, @types/node, pagefind"
+    },
+    {
+      "id": "tsconfig-strict",
+      "pass": true,
+      "detail": "Extends astro/tsconfigs/strictest with strict: true, noEmit: true, baseUrl: ., path alias ~/* for src/*, no allowJs=false or skipLibCheck that would weaken strictness"
+    },
+    {
+      "id": "config-collections",
+      "pass": true,
+      "detail": "All 12 collections defined in src/content/config.ts with placeholder Zod schema: warframes, weapons, mods, quests, factions, syndicates, relics, arcanes, missions, resources, builds, guides. No any types or @ts-ignore directives found"
+    },
+    {
+      "id": "gitignore",
+      "pass": true,
+      "detail": "Ignores node_modules, dist, .astro, .output, .vite, data/cache, data/wfcd/* (preserves .gitkeep), logs, env files (except .env.example), .DS_Store, coverage, *.tsbuildinfo"
+    },
+    {
+      "id": "ci-workflow",
+      "pass": true,
+      "detail": "ci.yml triggers on push+PR, uses ubuntu-latest, enables corepack, setup-node@v4 with node-version 20 and cache: pnpm, runs pnpm install --frozen-lockfile, pnpm typecheck, pnpm test, pnpm build"
+    },
+    {
+      "id": "state-md",
+      "pass": true,
+      "detail": "phase: 0:scaffold-complete, queue.phases lists 1:docs, 2:data, 3:enumeration, 4:content, 5:pages, 6:polish, 7:closeout, 8:improvement"
+    },
+    {
+      "id": "pnpm-install",
+      "pass": true,
+      "detail": "exit code 0. Lockfile up-to-date, dependencies already present. Warning about build scripts (esbuild, sharp) is expected in Phase 0"
+    },
+    {
+      "id": "pnpm-typecheck",
+      "pass": true,
+      "detail": "exit code 0. astro check + tsc --noEmit: 0 errors, 0 warnings, 0 hints on 6 Astro files"
+    },
+    {
+      "id": "pnpm-test",
+      "pass": true,
+      "detail": "exit code 0. Vitest run: 1 test file passed (tests/smoke.test.ts), 1 test passed, duration 282ms"
+    },
+    {
+      "id": "pnpm-build",
+      "pass": true,
+      "detail": "exit code 0. Built 1 page in 1.11s. dist/index.html exists (391 bytes). Tailwind warning about no utility classes is expected with no content yet"
+    },
+    {
+      "id": "github-main-branch",
+      "pass": true,
+      "detail": "main branch exists at sha 0390816b0fe63add907c40d72d58e1299e773afa (scaffold bootstrap commit)"
+    },
+    {
+      "id": "github-feature-branch",
+      "pass": true,
+      "detail": "claude/warframe-website-setup-gvaG9 branch exists at sha 6979cf437a4d9263c1615390c603dd5b5a4b0d41 (EditorConfig commit)"
+    },
+    {
+      "id": "github-draft-pr",
+      "pass": true,
+      "detail": "PR #1 open=true, draft=true. Title: 'Warframe fan site — work in progress'. Mergeable_state: clean. Head: 6979cf4, Base: 0390816"
+    },
+    {
+      "id": "github-phase-issues",
+      "pass": true,
+      "detail": "Found 8 of 9 expected phase issues (phases 1-8). All open with phase:N labels. Phase 0 checklist completed in body of PR #1"
+    },
+    {
+      "id": "github-ci-status",
+      "pass": true,
+      "detail": "Two check-runs on PR #1: both 'build' job, both status=completed, both conclusion=success. Run times 2026-05-18T16:39:25Z-45Z and 16:39:35Z-05Z"
+    }
+  ],
+  "overall": "PASS",
+  "errors": [],
+  "warnings": [
+    "Tailwind CSS reports no utility classes detected in source (expected in Phase 0 with placeholder content)",
+    "pnpm shows ignored build scripts for esbuild and sharp (expected; use pnpm approve-builds to allow if needed in later phases)"
+  ]
+}

@@ -1,0 +1,74 @@
+---
+slug: arcane-awakening
+name: Arcane Awakening
+type: warframe
+maxRank: 5
+effect: "On Reload: 60% chance for +[damage]% Damage to Pistols for 24s"
+perRankStats:
+  - rank: 0
+    stats: { damage: 25 }
+  - rank: 1
+    stats: { damage: 50 }
+  - rank: 2
+    stats: { damage: 75 }
+  - rank: 3
+    stats: { damage: 100 }
+  - rank: 4
+    stats: { damage: 125 }
+  - rank: 5
+    stats: { damage: 150 }
+drops:
+  - source: "Void Fissure endless rotations"
+    chance: 1.5
+    rarity: "uncommon"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Awakening"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Awakening boosts pistol weapon damage on reload, rewarding disciplined magazine management with a significant secondary weapon damage bonus. The reload trigger fires on completing any pistol reload, giving a 60% chance to apply the damage buff for 24 seconds. The long 24-second duration allows players to maintain the bonus across multiple magazine cycles rather than needing to reload constantly to sustain the effect.
+
+At rank 5, Arcane Awakening provides a 60% chance for +150% damage to pistols lasting 24 seconds. The damage bonus applies to the base damage of the pistol before other multiplicative modifiers, meaning it stacks additively with other damage mods and multiplicatively with elemental combinations.
+
+## Effect
+
+Each pistol reload completion checks the 60% trigger chance. On success, the +damage% bonus applies to all pistol damage for 24 seconds. At rank 0, a 25% damage bonus on trigger provides a meaningful DPS increase during the buff window. At rank 5, +150% damage effectively multiplies pistol output substantially when combined with other damage mods.
+
+The 24-second duration is long enough to persist across most engagement scenarios without constant reloading. Only one instance of the buff is active at a time; reloading during an active buff refreshes the duration on success rather than stacking the bonus above the rank value.
+
+## Stats per rank
+
+| Rank | Trigger Chance | Pistol Damage Bonus | Duration |
+|------|----------------|--------------------|---------| 
+| 0 | 60% | +25% | 24s |
+| 1 | 60% | +50% | 24s |
+| 2 | 60% | +75% | 24s |
+| 3 | 60% | +100% | 24s |
+| 4 | 60% | +125% | 24s |
+| 5 | 60% | +150% | 24s |
+
+## Acquisition
+
+Arcane Awakening drops as an uncommon reward from Void Fissure endless mission rotations. Endless Void Fissure content -- Survival, Defense, Interception -- provides Awakening through rotation reward pools. The arcane is accessible earlier in progression than Zariman-exclusive arcanes, requiring only standard Void Fissure participation. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Arcane Awakening is a strong secondary weapon arcane for pistol-primary combat builds. Secondaries with high base damage that already run Hornet Strike, Barrel Diffusion, and other pistol-specific mods benefit from the 24-second window covering most engagement phases between reloads. Lex Prime, Rattleguts Kitgun, and Akstiletto Prime builds gain substantial damage during the buff window. Builds with faster reload speed (Trick Mag, Primed Slip Magazine) trigger Awakening more frequently per minute, improving overall uptime.
+
+Secondary weapons with limited magazine capacity reload frequently and generate more trigger opportunities per mission than high-capacity magazines. A 6-round magazine secondary that empties and reloads every 3-4 seconds maintains near-constant 60% chance uptime, versus a 30-round magazine that only triggers every 10+ seconds.
+
+## Notes
+
+The trigger fires on reload completion, not on reload start. A reload cancelled mid-animation (by bullet jumping or switching weapons) does not trigger Awakening. The damage bonus applies to all damage types from the pistol including elemental combinations -- it is a base damage modifier. Dual-wielded pistol pairs (Aklex Prime, Akstiletto Prime) treat the pair as one pistol for trigger purposes; either weapon completing a reload checks the trigger. The 60% trigger chance is fixed at all ranks; only the damage bonus scales.
+
+## Sources
+
+- WFCD warframe-items dataset provides pistol damage bonus and duration values per rank for Arcane Awakening.
+- Fandom wiki entry for [Arcane Awakening](https://warframe.fandom.com/wiki/Arcane_Awakening) covers reload trigger timing and damage calculation interaction.
+

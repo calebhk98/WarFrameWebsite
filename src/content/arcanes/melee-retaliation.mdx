@@ -1,0 +1,62 @@
+---
+slug: melee-retaliation
+name: "Melee Retaliation"
+type: melee
+maxRank: 5
+effect: "Gain [damage]% Melee Damage for every 200 current Shields, up to 420%. Bonus halved for Overshields."
+perRankStats:
+  - rank: 0
+    stats: { damage: 5 }
+  - rank: 5
+    stats: { damage: 30 }
+drops: []
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Melee_Retaliation"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Melee Retaliation scales melee damage output with the warframe's current shield total, rewarding shield-preserving combat patterns with increased melee damage. Each 200 shields currently active adds a damage bonus per rank - 5% per 200 shields at rank 0, 30% per 200 shields at rank 5 - up to a maximum of 420% bonus regardless of total shields. Overshields count at half effectiveness, incentivizing builds that maintain normal shields at high values rather than relying on overshield generation.
+
+This creates a combat design where the player is rewarded for not taking shield damage during melee engagements. Frames with high base shields and shield regeneration mechanics - Hildryn, Harrow, Revenant - can sustain the full bonus across extended fights by keeping their shields topped. Frames with rapid shield regen (Arcane Aegis, Shield Gate mechanics) can recover the bonus quickly after taking hits.
+
+## Effect
+
+The damage bonus is calculated dynamically based on current shield health at the time of the melee hit. At rank 5, a frame with 2800 current shields (14 groups of 200) would gain +420% melee damage from the 14 x 30% stacking - reaching the 420% cap with exactly 2800 current shields. The overshield halving means shields beyond the normal maximum contribute only half the per-group bonus, making overshield-focused builds less efficient at reaching the damage cap.
+
+At rank 0, reaching the 420% cap requires 16,800 current shields (84 groups of 200 x 5% = 420%), which is not achievable in practice - making rank 0 significantly weaker in absolute terms than rank 5 where the cap is reachable with attainable shield values.
+
+## Stats per rank
+
+| Rank | Damage per 200 Shields | Shields Needed for Cap | Notes |
+|------|------------------------|------------------------|-------|
+| 0 | +5% | 16,800 | Cap unreachable in practice |
+| 1 | +10% | 8,400 | Still very high |
+| 2 | +15% | 5,600 | Possible with shield builds |
+| 3 | +20% | 4,200 | Achievable on high-shield frames |
+| 4 | +25% | 3,360 | Within reach |
+| 5 | +30% | 2,800 | Achievable on Hildryn and similar |
+
+## Acquisition
+
+Melee Retaliation drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. Warframe.market provides direct platinum purchase for players who prefer to buy rather than farm.
+
+## Builds that use it
+
+Melee Retaliation suits shield-tank warframes with naturally high shield values who also engage in melee combat. Hildryn with her large shield pool and Pillage ability to strip and restore shields maintains high current-shield values during combat, enabling Retaliation to sustain near its damage cap during active melee. Revenant with Mesmer Skin-based shield interactions and Harrow with Covenant-based shield generation similarly benefit from high sustained shield values.
+
+Shield Gate builds - frames that deliberately manage shield total to trigger Shield Gate immunity frequently - have the tradeoff of regularly depleting shields, which temporarily reduces Retaliation's bonus. Builds that combine rapid shield regeneration with Retaliation recover the damage bonus quickly after each Shield Gate event.
+
+## Notes
+
+The bonus is calculated from current shields, not maximum shields - damage taken reduces the bonus in real time. After a Shield Gate event strips current shields to zero, the Retaliation bonus drops to zero until shields recover. Frames that rely on Overshields as their primary defensive layer see only half the per-200-shields bonus for the overshield portion, making the arcane more efficient on frames that maintain normal shields at high values than on frames where overshields dominate the shield total. The 420% cap is a hard ceiling - shields above the cap threshold contribute no additional bonus.
+
+## Sources
+
+- WFCD warframe-items dataset documents the per-200-shield damage scaling and 420% cap for Melee Retaliation.
+- Fandom wiki entry for Melee Retaliation covers shield calculation mechanics, the overshield halving rule, and damage bonus application to melee attacks.

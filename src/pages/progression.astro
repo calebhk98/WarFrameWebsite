@@ -1,0 +1,157 @@
+---
+import Base from '../layouts/Base.astro';
+import { progressionTracks } from '../data/progression-tracks';
+
+const base = import.meta.env.BASE_URL;
+
+const tracksJson = JSON.stringify(progressionTracks);
+const defaultMr = 5;
+---
+
+<Base
+  title="What to Do at MR X -- Mastery Rank Progression Guide"
+  description="Interactive Mastery Rank recommender for Warframe. Pick your current MR and get personalised goals: frames, weapons, quests, activities, mods, and resources."
+>
+  <div class="max-w-4xl mx-auto px-4 py-10">
+
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-brand-cream mb-3">
+        What to Do at MR X
+      </h1>
+      <p class="text-brand-cream/70 text-base leading-relaxed max-w-2xl mb-2">
+        Mastery Rank (MR) is Warframe's character-progression metric. You earn
+        MR by levelling Warframes, weapons, companions, and K-Drives to rank 30
+        for the first time. Each new rank unlocks features, weapons, and content
+        that would otherwise be inaccessible -- from basic Clan research at MR 3
+        to the Helminth Chrysalis at MR 8 and Incarnon weapons at MR 10+.
+      </p>
+      <p class="text-brand-cream/70 text-base leading-relaxed max-w-2xl mb-2">
+        But knowing which items to chase next is half the battle. The game
+        never tells you "at MR 7 you should be farming the Second Dream quest,
+        stacking Serration, and banking Orokin Cells." This tool does.
+        Select your current Mastery Rank below to load a personalised set of
+        six goal tracks: frames, weapons, quests, key activities, critical mods,
+        and resources to stockpile. Each recommendation explains exactly why it
+        matters at your rank.
+      </p>
+      <p class="text-sm text-brand-cream/50 mt-2">
+        New to Warframe? Start at the
+        <a href={`${base}beginner`} class="text-brand-orange underline hover:text-brand-orange/80">Beginner Hub</a>
+        for starter frame selection and early-game fundamentals. Check the
+        <a href={`${base}tier-list`} class="text-brand-orange underline hover:text-brand-orange/80">Tier List</a>
+        once you reach MR 10+ to see which frames dominate the current meta.
+      </p>
+    </header>
+
+    <section aria-labelledby="mr-selector-heading" class="mb-8">
+      <h2 id="mr-selector-heading" class="text-lg font-semibold text-brand-cream mb-4">
+        Your Current Mastery Rank
+      </h2>
+      <div class="rounded-lg border border-surface-3 bg-surface-2 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <label for="mr-input" class="text-brand-cream font-medium shrink-0 text-sm uppercase tracking-wide">
+          Mastery Rank
+        </label>
+        <div class="flex items-center gap-4 flex-1">
+          <input
+            id="mr-slider"
+            type="range"
+            min="0"
+            max="30"
+            value={defaultMr}
+            class="flex-1 accent-brand-orange h-2 cursor-pointer"
+            aria-label="Mastery Rank slider"
+          />
+          <input
+            id="mr-input"
+            type="number"
+            min="0"
+            max="30"
+            value={defaultMr}
+            class="w-16 rounded border border-surface-3 bg-surface-1 text-brand-cream text-center text-lg font-bold py-1 focus:outline-none focus:border-brand-orange"
+            aria-label="Mastery Rank number input"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="recommendations-panel"
+      aria-live="polite"
+      aria-label="Personalised recommendations for selected Mastery Rank"
+      class="space-y-6"
+    >
+      <div id="milestone-banner" class="rounded-lg border border-brand-orange/40 bg-brand-orange/10 px-5 py-4 flex gap-3 items-start">
+        <span class="text-brand-orange font-bold text-sm uppercase tracking-wide shrink-0 mt-0.5">Next Milestone</span>
+        <p id="milestone-text" class="text-brand-cream/80 text-sm leading-relaxed"></p>
+      </div>
+
+      <div id="band-label" class="text-xs text-brand-cream/40 uppercase tracking-widest font-semibold"></div>
+
+      <div id="sections-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-5"></div>
+    </div>
+
+  </div>
+</Base>
+
+<script define:vars={{ tracksJson, base, defaultMr }}>
+  const tracks = JSON.parse(tracksJson);
+
+  const sliderEl = document.getElementById('mr-slider');
+  const inputEl = document.getElementById('mr-input');
+  const milestoneText = document.getElementById('milestone-text');
+  const bandLabel = document.getElementById('band-label');
+  const sectionsGrid = document.getElementById('sections-grid');
+
+  function findTrack(mr) {
+    return tracks.find((t) => mr >= t.mr_min && mr <= t.mr_max) ?? tracks[0];
+  }
+
+  function buildItemHtml(item) {
+    const nameHtml = item.link
+      ? `<a href="${base}${item.link}" class="font-semibold text-brand-orange hover:underline text-sm">${item.name}</a>`
+      : `<span class="font-semibold text-brand-cream text-sm">${item.name}</span>`;
+    return `<li class="flex flex-col gap-0.5 py-1.5 border-b border-surface-3 last:border-0">
+      ${nameHtml}
+      <span class="text-xs text-brand-cream/60">${item.why}</span>
+    </li>`;
+  }
+
+  function buildSectionHtml(section) {
+    const itemsHtml = section.items.map(buildItemHtml).join('');
+    return `<div class="rounded-lg border border-surface-3 bg-surface-2 overflow-hidden">
+      <div class="bg-brand-purple/20 border-b border-surface-3 px-4 py-2.5">
+        <h3 class="text-brand-cream font-semibold text-sm uppercase tracking-wide">${section.title}</h3>
+      </div>
+      <ul class="px-4 py-1 divide-y divide-surface-3 list-none m-0">${itemsHtml}</ul>
+    </div>`;
+  }
+
+  function render(mr) {
+    const track = findTrack(mr);
+    milestoneText.textContent = `MR ${track.nextMilestone.mr}: ${track.nextMilestone.label}`;
+    bandLabel.textContent = track.label + ' -- ' + track.tagline;
+    sectionsGrid.innerHTML = track.sections.map(buildSectionHtml).join('');
+  }
+
+  function syncFromSlider() {
+    const mr = parseInt(sliderEl.value, 10);
+    inputEl.value = String(mr);
+    render(mr);
+  }
+
+  function syncFromInput() {
+    let mr = parseInt(inputEl.value, 10);
+    if (isNaN(mr)) return;
+    if (mr < 0) mr = 0;
+    if (mr > 30) mr = 30;
+    inputEl.value = String(mr);
+    sliderEl.value = String(mr);
+    render(mr);
+  }
+
+  sliderEl.addEventListener('input', syncFromSlider);
+  inputEl.addEventListener('input', syncFromInput);
+  inputEl.addEventListener('change', syncFromInput);
+
+  render(defaultMr);
+</script>

@@ -1,0 +1,100 @@
+---
+slug: melee-influence
+name: "Glaive Prime -- Melee Influence"
+forEntity: glaive-prime
+entityType: weapon
+purpose: status-melee-aoe
+mods:
+  - { slot: slot-1, modSlug: primed-pressure-point, rank: 10 }
+  - { slot: slot-2, modSlug: blood-rush, rank: 10 }
+  - { slot: slot-3, modSlug: weeping-wounds, rank: 10 }
+  - { slot: slot-4, modSlug: organ-shatter, rank: 10 }
+  - { slot: slot-5, modSlug: condition-overload, rank: 10 }
+  - { slot: slot-6, modSlug: berserker-fury, rank: 5 }
+  - { slot: slot-7, modSlug: primed-reach, rank: 10 }
+  - { slot: slot-8, modSlug: true-steel, rank: 10 }
+arcanes:
+  - { slot: arcane-1, slug: melee-influence, rank: 5 }
+  - { slot: arcane-2, slug: arcane-fury, rank: 5 }
+playstyle: >-
+  Maintain combo counter at 3x or higher to activate Blood Rush's critical
+  chance scaling and Weeping Wounds' status chance scaling simultaneously.
+  Throw the Glaive Prime with the alt-fire input to trigger Melee Influence
+  procs: Electric status applies to all enemies hit by the ricocheting glaive.
+  Condition Overload scales damage multiplicatively with each unique status
+  type on targets. Arcane Fury adds attack speed on melee critical hits.
+strengths:
+  - "Melee Influence arcane propagates Electric procs across all enemies hit by the thrown glaive"
+  - "Blood Rush and Weeping Wounds scale simultaneously with combo counter"
+  - "Primed Reach extends glaive throw range and melee swing hitbox"
+  - "Condition Overload multiplies damage per unique status type -- synergizes with Electric plus Viral combinations"
+weaknesses:
+  - "Requires combo counter maintenance; dropping combo resets Blood Rush and Weeping Wounds benefits"
+  - "Thrown glaive can be interrupted by Nullifier bubbles, removing the thrown projectile"
+  - "Heavy mod investment required for Primed versions"
+sources:
+  - url: "https://overframe.gg/build/glaive-prime"
+    accessedAt: "2026-05-21"
+    title: "Glaive Prime Builds -- Overframe"
+    publisher: "Overframe"
+  - url: "https://warframe.fandom.com/wiki/Glaive_Prime"
+    accessedAt: "2026-05-21"
+    title: "Glaive Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-21"
+---
+
+## Overview
+
+The Glaive Prime is a thrown melee weapon with a unique interaction: it can be thrown via the alt-fire input to ricochet between enemies in a radius, hitting multiple targets per throw. The Melee Influence arcane (listed in the arcanes collection under `melee-influence`) activates when a heavy attack or throw is triggered and applies Electric damage procs to all enemies hit by the weapon's trajectory. This interaction makes the Glaive Prime's thrown mode one of the most efficient status propagation tools in the melee category.
+
+Blood Rush at rank 10 scales critical chance with the current melee combo counter multiplier, adding a percentage of base critical chance per combo tier. At 3x combo, Blood Rush's contribution pushes the Glaive Prime's critical chance well above 100%, guaranteeing orange crits on every hit. Weeping Wounds at rank 10 similarly scales status chance with combo counter, ensuring high status proc rates per strike alongside the elevated crit chance.
+
+Condition Overload at rank 10 is the primary damage scaling mod. It adds a flat damage multiplier for each unique status type currently active on the target, up to a maximum of three unique types. With Electric from Melee Influence, Viral from a companion or secondary weapon priming, and Slash from Weeping Wounds' Slash proc chance, Condition Overload reaches its maximum multiplier rapidly against any enemy that has been hit by the glaive throw.
+
+Primed Reach at rank 10 extends both melee swing range and the glaive throw's ricochet range. A longer ricochet range allows the thrown glaive to chain between more distant enemies in a single throw, applying Melee Influence Electric procs to a larger group.
+
+## Loadout
+
+Primed Pressure Point at rank 10 is the foundational damage multiplier, adding 165% to the Glaive Prime's base physical damage. Combined with Blood Rush's critical scaling and Condition Overload's status-dependent multiplier, the total damage output per swing or throw is substantially higher than unmodded baseline.
+
+Blood Rush at rank 10 provides the combo-scaling critical chance. At maximum combo counter (12x), Blood Rush adds a large percentage of base crit chance, producing consistent orange or even red crits when the throw has built to that point. Berserker Fury at rank 5 adds attack speed scaling with critical hits; each crit from the glaive's auto-attacks triggers Berserker Fury, accelerating subsequent attacks.
+
+True Steel at rank 10 adds a flat critical chance bonus independent of combo, providing a foundation before Blood Rush scales fully. Without True Steel, the Glaive Prime's base critical chance is insufficient for Blood Rush to produce guaranteed crits at lower combo tiers. True Steel raises the baseline so even 1x combo produces reliable crits.
+
+Organ Shatter at rank 10 adds critical damage, which multiplies the value of each crit produced by Blood Rush and True Steel's contributions. At high combo tiers with elevated crit chance, the average damage per hit scales dramatically with Organ Shatter's critical multiplier bonus.
+
+Melee Influence at rank 5 as a weapon arcane activates on heavy attack or throw. The Electric proc it applies to all hit enemies does not require the weapon's swing arc to connect directly -- it triggers from the glaive passing near an enemy during the ricochet path. This allows Melee Influence to proc on enemies the physical glaive model does not physically contact.
+
+Arcane Fury at rank 5 adds 60% melee damage for 12 seconds on melee critical hit. Since Blood Rush guarantees crits at the combo counter levels this build operates at, Arcane Fury is essentially always active during sustained combat.
+
+## Playstyle
+
+Build the combo counter to 3x before committing to heavy attack or throw sequences. The Glaive Prime's standard melee swings build combo quickly with high attack speed from Berserker Fury. Once 3x is established, throw the glaive into a group of enemies to apply Melee Influence's Electric proc to all targets in the ricochet path. Immediately follow with melee strikes on individual targets, which now benefit from Condition Overload's Electric-plus-Slash combination.
+
+Maintain combo counter during throw sequences by landing follow-up melee strikes between throws. The throw itself consumes the glaive for the duration of the ricochet animation; during this window, use secondary or primary weapons to continue building combo using the "Hold Alt-Fire to detonate" mechanic if preferred.
+
+Against heavy single targets such as Eximus units, land three to four standard swings to establish Slash and Slash proc stacks, throw for Electric, then resume swinging with Condition Overload's three-stack multiplier active. This sequence can be completed within two to three seconds and represents peak damage output for the build.
+
+## Strengths and weaknesses
+
+The primary strength is area Electric proc application via throw and Melee Influence, which enables Condition Overload's maximum multiplier against entire groups in a single throw. No other melee weapon category can apply status to enemies outside normal swing range as efficiently as thrown weapons with Melee Influence.
+
+The combo counter dependency is the primary weakness. Losing the glaive to a Nullifier bubble resets the throw animation, and being crowd-controlled or knocked down during swing sequences drops combo. In missions with frequent Nullifiers or high crowd-control frequency (Arbitration drone zones), maintaining combo requires more deliberate positioning.
+
+## Alternatives
+
+Replacing True Steel with Gladiator Might adds a crit damage scaling bonus tied to set completion. A full Gladiator set provides stacking crit chance from combo. Gladiator Might plus Blood Rush together provide both a crit damage and crit chance buff from the same combo counter source, replacing True Steel as the baseline crit modifier.
+
+Replacing Berserker Fury with a second status chance mod (Cold Snap for example, in the mods collection as `cold-snap`) adds a third status type for Condition Overload's maximum stack without relying on a secondary primer. This reduces attack speed but adds reliability against targets where Electric plus Slash procs alone do not reach Condition Overload's third stack quickly.
+
+## Notes
+
+The Glaive Prime's throw can be detonated mid-flight by pressing the heavy attack button while the glaive is airborne. This detonation triggers a secondary area explosion in addition to the normal ricochet, applying damage in a radius at the point of detonation. In tight corridors, detonation can be more effective than allowing the full ricochet chain.
+
+Melee Influence Electric procs from the throw interact with the Faction Damage profile. Electric deals 150% damage to Corpus Robotic shields and 100% to other damage types, making the Glaive Prime with Melee Influence specifically effective in Corpus missions where the Electric procs deal bonus damage before being stripped by Condition Overload's Viral combination.
+
+## Sources
+
+- [Glaive Prime on the WARFRAME Wiki](https://warframe.fandom.com/wiki/Glaive_Prime)
+- [Overframe build database for Glaive Prime](https://overframe.gg/build/glaive-prime)

@@ -1,0 +1,74 @@
+---
+slug: arcane-rise
+name: Arcane Rise
+type: warframe
+maxRank: 5
+effect: "On Reload: 60% chance for +[damage]% Damage to Primary Weapons for 24s"
+perRankStats:
+  - rank: 0
+    stats: { damage: 25 }
+  - rank: 1
+    stats: { damage: 50 }
+  - rank: 2
+    stats: { damage: 75 }
+  - rank: 3
+    stats: { damage: 100 }
+  - rank: 4
+    stats: { damage: 125 }
+  - rank: 5
+    stats: { damage: 150 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation A"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Rise"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Rise grants a Primary Weapon Damage bonus on Reload. Each time the warframe reloads a primary weapon, a 60% chance check fires, and on success, all primary weapon damage increases for 24 seconds. The reload trigger is one of the most predictable and controllable arcane conditions -- every magazine depletion creates a trigger opportunity, and the player controls the timing of reloads.
+
+At rank 5, a successful reload triggers +150% Primary Weapon Damage for 24 seconds. With a 60% trigger chance, the majority of reloads activate the bonus, and the 24-second duration means that back-to-back reloads easily maintain the buff throughout extended combat. Primary weapons with moderate magazine sizes and fire rates cycle magazines frequently, generating high trigger uptime for Rise.
+
+## Effect
+
+Each primary weapon reload triggers a 60% chance check. On success, primary weapon damage increases by the listed percentage for 24 seconds. The bonus applies to all primary weapon damage output -- base damage multiplied by the bonus adds directly to total damage before further multiplicative scaling. At rank 0, +25% damage from a common reload event is a reliable bonus throughout combat. At rank 5, +150% damage represents a 2.5x multiplier on the weapon's base output that is active for most of a mission given the reload frequency and long duration.
+
+The 24-second duration is generous. Fast-firing primary weapons that deplete magazines in 5-10 seconds generate reload triggers more than twice before the buff expires, providing buffer against unlucky non-triggers and maintaining consistent uptime.
+
+## Stats per rank
+
+| Rank | Primary Weapon Damage Bonus | Duration |
+|------|---------------------------|----------|
+| 0 | +25% | 24s |
+| 1 | +50% | 24s |
+| 2 | +75% | 24s |
+| 3 | +100% | 24s |
+| 4 | +125% | 24s |
+| 5 | +150% | 24s |
+
+## Acquisition
+
+Arcane Rise drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation A at 2%. Access requires completing Angels of the Zariman to unlock Zariman Ten-Zero content. Rotation A in Void Cascade is the first rotation reached in each cycle, making the arcane available in most Void Cascade sessions without needing extended runs. Warframe.market offers Rise for platinum purchase for players preferring direct acquisition.
+
+## Builds that use it
+
+Arcane Rise fits any primary weapon build that reloads regularly. High fire rate primaries -- Soma Prime, Dex Sybaris, Braton Vandal -- empty magazines quickly, generating reload triggers at high frequency. The 60% trigger chance combined with the 24-second duration means sustained-fire builds maintain near-constant uptime of the damage bonus.
+
+Frames that enhance primary weapon output through abilities amplify Rise's contribution. Wisp's Motes boost primary fire rate which accelerates magazine depletion and reload frequency. Mirage's Hall of Mirrors multiplies primary shots, and the Rise damage bonus scales into each copy. The arcane is a consistent damage boost for any primary-focused build without requiring a specific trigger gimmick, making it broadly applicable across all primary weapon categories.
+
+## Notes
+
+The trigger activates on reload completion, not when reload begins. Canceling a reload mid-animation does not trigger the check. The damage bonus does not stack across multiple reload procs within the duration -- a second successful reload while the buff is active refreshes the 24-second timer rather than increasing the damage bonus further. Manual reloads triggered before magazine depletion also count as reload events for the trigger check. Primary weapons with very large magazines or long reload windows (Opticor, Vectis) generate fewer trigger opportunities per minute compared to fast-cycling primaries.
+
+## Sources
+
+- WFCD warframe-items dataset provides Primary Weapon Damage values per rank and the 60% trigger chance on Reload for Arcane Rise.
+- Fandom wiki entry for [Arcane Rise](https://warframe.fandom.com/wiki/Arcane_Rise) covers reload trigger conditions and primary weapon damage stacking behavior.

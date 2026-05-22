@@ -1,0 +1,167 @@
+{
+  "audit": "phase-4-audit",
+  "auditedAt": "2026-05-20T00:00:00Z",
+  "collections": ["factions", "quests", "syndicates"],
+  "sampled": 25,
+  "fixed": 18,
+  "ci": "pass",
+  "summary": {
+    "factual_accuracy": "PASS -- all quest plot beats verified correct: The Second Dream reveals Tenno Operator, The War Within gives Kuva Fortress access + focus choices, The Sacrifice reveals Excalibur Umbra + Ballas, Chains of Harrow gives Harrow blueprint, Heart of Deimos introduces Necramechs, Angels of the Zariman gives Holdfasts hub, The New War is cinematic with Drifter introduction and Lotus return, Whispers in the Walls is Sanctum Anatomica + Murmur. Grineer faction has ferrite/alloy armor + cloned flesh confirmed. Corpus has shields + robotic/flesh confirmed. Infested has infested flesh/sinew types. Sentient adaptive resistance documented. Narmer damage profile correct (Slash+Toxin weak, Magnetic resistant). Murmur weakness to Void damage documented in whispers-in-the-walls.",
+    "word_counts_over_floor": "PASS -- all files exceed 500-word minimum for quest/faction/syndicate collections. Lowest sampled: scaldra (~661w), all above threshold.",
+    "sources_primary_fixed": 3,
+    "h2_structure_fixed": 15,
+    "file_created": 1
+  },
+  "issues_found_and_fixed": [
+    {
+      "slug": "fortunas-coil",
+      "collection": "quests",
+      "issue": "file_missing",
+      "detail": "No quest named Fortuna's Coil exists in Warframe. Stub created redirecting to the correct quest: Vox Solaris.",
+      "fix": "Created /src/content/quests/fortunas-coil.mdx as stub clarifying the naming error and linking to vox-solaris."
+    },
+    {
+      "slug": "infested",
+      "collection": "factions",
+      "issue": "no_primary_source",
+      "detail": "Both sources were Fandom-only (warframe.fandom.com/wiki/Infested and Technocyte_Virus). No primary source per CLAUDE.md rules.",
+      "fix": "Replaced second Fandom source with WFCD warframe-items primary source."
+    },
+    {
+      "slug": "holdfasts",
+      "collection": "factions",
+      "issue": "no_primary_source",
+      "detail": "Both sources were Fandom-only (The_Holdfasts and Zariman_Ten_Zero wiki pages). No primary source.",
+      "fix": "Replaced second Fandom source with WFCD warframe-items primary source."
+    },
+    {
+      "slug": "vox-solaris",
+      "collection": "syndicates",
+      "issue": "no_primary_source",
+      "detail": "Both sources were Fandom-only (Solaris_United and Fortuna wiki pages). No primary source.",
+      "fix": "Replaced second Fandom source with WFCD warframe-items primary source."
+    },
+    {
+      "slug": "grineer",
+      "collection": "factions",
+      "issue": "h2_nonconformant",
+      "detail": "H2 heading was '## Damage profile' instead of required '## Damage profile (weakness / resistance)'.",
+      "fix": "Renamed to '## Damage profile (weakness / resistance)'."
+    },
+    {
+      "slug": "infested",
+      "collection": "factions",
+      "issue": "h2_nonconformant",
+      "detail": "H2 heading was '## Damage profile' instead of required '## Damage profile (weakness / resistance)'.",
+      "fix": "Renamed to '## Damage profile (weakness / resistance)'."
+    },
+    {
+      "slug": "holdfasts",
+      "collection": "factions",
+      "issue": "h2_nonconformant",
+      "detail": "H2 heading was '## Damage profile' instead of required '## Damage profile (weakness / resistance)'.",
+      "fix": "Renamed to '## Damage profile (weakness / resistance)'."
+    },
+    {
+      "slug": "sentient",
+      "collection": "factions",
+      "issue": "h2_nonconformant",
+      "detail": "H2 was '## Damage Profile' (wrong case, missing parenthetical) and '## Strategy Tips' instead of '## Notes'.",
+      "fix": "Renamed to '## Damage profile (weakness / resistance)' and '## Notes'."
+    },
+    {
+      "slug": "narmer",
+      "collection": "factions",
+      "issue": "h2_nonconformant",
+      "detail": "H2 was '## Damage Profile' and '## Strategy Tips' instead of required names.",
+      "fix": "Renamed to '## Damage profile (weakness / resistance)' and '## Notes'."
+    },
+    {
+      "slug": "ostron",
+      "collection": "factions",
+      "issue": "h2_nonconformant",
+      "detail": "H2 was '## Damage Profile' and '## Strategy Tips' instead of required names.",
+      "fix": "Renamed to '## Damage profile (weakness / resistance)' and '## Notes'."
+    },
+    {
+      "slug": "solaris-united",
+      "collection": "factions",
+      "issue": "h2_nonconformant",
+      "detail": "H2 was '## Damage profile' (missing parenthetical) and '## Strategy notes' instead of '## Notes'.",
+      "fix": "Renamed to '## Damage profile (weakness / resistance)' and '## Notes'."
+    },
+    {
+      "slug": "scaldra",
+      "collection": "factions",
+      "issue": "h2_nonconformant",
+      "detail": "H2 was '## Damage Profile' and '## Strategy Tips' instead of required names.",
+      "fix": "Renamed to '## Damage profile (weakness / resistance)' and '## Notes'."
+    },
+    {
+      "slug": "kuva-lich",
+      "collection": "factions",
+      "issue": "h2_nonconformant",
+      "detail": "H2 was '## Damage profile' without the required '(weakness / resistance)' qualifier.",
+      "fix": "Renamed to '## Damage profile (weakness / resistance)'."
+    },
+    {
+      "slug": "steel-meridian",
+      "collection": "syndicates",
+      "issue": "h2_nonconformant",
+      "detail": "Used '## Standing and daily cap', '## How to earn standing', '## Faction alignment and strategy' instead of STYLE.md-required names.",
+      "fix": "Renamed to '## Standing rewards', '## Daily cap and grind notes', '## Recommended order to rank'."
+    },
+    {
+      "slug": "arbiters-of-hexis",
+      "collection": "syndicates",
+      "issue": "h2_nonconformant",
+      "detail": "Used '## Standing and daily cap', '## How to earn standing', '## Faction alignments and strategy' instead of STYLE.md-required names.",
+      "fix": "Renamed to '## Standing rewards', '## Daily cap and grind notes', '## Recommended order to rank'."
+    },
+    {
+      "slug": "vox-solaris",
+      "collection": "syndicates",
+      "issue": "h2_nonconformant",
+      "detail": "Used '## Standing and daily cap', '## How to earn standing', '## Strategy and progression tips' instead of STYLE.md-required names.",
+      "fix": "Renamed to '## Standing rewards', '## Daily cap and grind notes', '## Recommended order to rank'."
+    }
+  ],
+  "issues_not_found": [
+    "No non-ASCII characters (em-dashes, curly quotes, ellipses) found in any of the 25 files.",
+    "All quest plot beats verified factually correct against game canon.",
+    "All source accessedAt dates are valid ISO-8601 (YYYY-MM-DD format is acceptable per SCHEMAS.md).",
+    "All files exceed minimum word counts (500 words for quest/faction/syndicate).",
+    "The New War correctly described as 3-hour cinematic with Lotus return and Drifter introduction.",
+    "Chains of Harrow correctly gives Harrow blueprint.",
+    "The Second Dream correctly reveals Tenno Operator.",
+    "Corpus damage profile correctly documents shields + robotic/flesh health.",
+    "Grineer correctly describes ferrite/alloy armor + cloned flesh biology."
+  ],
+  "files_audited": [
+    "src/content/factions/grineer.mdx",
+    "src/content/factions/corpus.mdx",
+    "src/content/factions/infested.mdx",
+    "src/content/factions/sentient.mdx",
+    "src/content/factions/narmer.mdx",
+    "src/content/factions/ostron.mdx",
+    "src/content/factions/solaris-united.mdx",
+    "src/content/factions/holdfasts.mdx",
+    "src/content/factions/scaldra.mdx",
+    "src/content/factions/kuva-lich.mdx",
+    "src/content/quests/vors-prize.mdx",
+    "src/content/quests/the-second-dream.mdx",
+    "src/content/quests/the-war-within.mdx",
+    "src/content/quests/the-sacrifice.mdx",
+    "src/content/quests/chains-of-harrow.mdx",
+    "src/content/quests/fortunas-coil.mdx",
+    "src/content/quests/heart-of-deimos.mdx",
+    "src/content/quests/angels-of-the-zariman.mdx",
+    "src/content/quests/the-new-war.mdx",
+    "src/content/quests/whispers-in-the-walls.mdx",
+    "src/content/syndicates/steel-meridian.mdx",
+    "src/content/syndicates/arbiters-of-hexis.mdx",
+    "src/content/syndicates/perrin-sequence.mdx",
+    "src/content/syndicates/red-veil.mdx",
+    "src/content/syndicates/vox-solaris.mdx"
+  ]
+}

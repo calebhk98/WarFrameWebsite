@@ -1,0 +1,62 @@
+---
+slug: magus-glitch
+name: "Magus Glitch"
+type: operator
+maxRank: 5
+effect: "On Transference Static: [chance]% chance to negate Transference Static."
+perRankStats:
+  - rank: 0
+    stats: { chance: 17 }
+  - rank: 5
+    stats: { chance: 102 }
+drops: []
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Magus_Glitch"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Magus Glitch negates Transference Static events, preventing the lockout penalty from applying when the chance roll succeeds. Transference Static is a mechanic that activates when the operator takes fatal damage or under certain Sentient-related conditions - it forces the operator back into the warframe and applies a temporary lockout that prevents immediate re-entry into operator mode. During this lockout, the player cannot use Transference until the Static timer expires, which can disrupt combat rotations that depend on rapid operator cycling.
+
+At maximum rank, the 102% chance effectively guarantees that every Transference Static event is negated - the lockout never applies. This removes a core hazard of playing aggressively in operator mode in Sentient-heavy content, allowing the operator to take risks without consequences of the normal Static lockout.
+
+## Effect
+
+Each Transference Static event triggers a chance check. On success, the Static is negated and no lockout is applied - the operator can immediately re-enter transference as if the Static event had not occurred. At rank 0, a 17% chance provides occasional negation. At rank 5, 102% chance provides complete immunity to Transference Static lockouts.
+
+The 102% value at rank 5 exceeds the 100% cap, which functions identically to 100% - every Static event is negated without fail. This makes the arcane a hard counter to the Transference Static mechanic when fully ranked.
+
+## Stats per rank
+
+| Rank | Negation Chance | Notes |
+|------|-----------------|-------|
+| 0 | 17% | Occasional prevention |
+| 1 | 34% | Partial resistance |
+| 2 | 51% | More often negated than not |
+| 3 | 68% | Strong resistance |
+| 4 | 85% | Near complete immunity |
+| 5 | 102% | Full Static immunity |
+
+## Acquisition
+
+Magus Glitch drop sources are not documented in the current WFCD dataset. Community drop tables, the in-game Codex, and Warframe.market provide current sourcing information. The arcane likely originates from Eidolon hunt reward pools, given its role as a counter to Sentient-encounter hazards. Warframe.market allows direct platinum purchase from other players for immediate access.
+
+## Builds that use it
+
+Magus Glitch suits operators who fight aggressively in Sentient-rich content where Transference Static triggers are common. Eidolon hunters who take the operator into dangerous positions during Teralyst, Gantulyst, and Hydrolyst limb-shooting phases risk frequent Static events from Eidolon attacks. Magus Glitch removes the lockout penalty from these events, allowing continuous operator cycling without the disruption of waiting for the Static timer to clear.
+
+Operators in Sentient-themed missions - Murex raids, Scarlet Spear content, or other Sentient encounter tiles - where Alad V-type Sentient enemies or roaming Sentient units deal operator-destabilizing damage benefit from Glitch as a passive protection that maintains operator availability throughout the encounter.
+
+## Notes
+
+Transference Static is distinct from normal operator damage - it is specifically the lockout event that occurs when Transference is disrupted. Magus Glitch targets only this lockout mechanism. Normal operator health depletion that forces return to warframe without a lockout is a separate system unaffected by Glitch. At rank 5, the arcane effectively removes Transference Static as a gameplay mechanic for the player, allowing unrestricted operator cycling in all content including Sentient encounters. The negation check fires at the moment of Static trigger, not during a cooldown period.
+
+## Sources
+
+- WFCD warframe-items dataset documents the Transference Static trigger condition and negation chance scaling for Magus Glitch.
+- Fandom wiki entry for Magus Glitch covers Transference Static mechanics and the lockout duration behavior that Glitch prevents.

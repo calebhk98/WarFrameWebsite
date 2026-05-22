@@ -1,0 +1,74 @@
+---
+slug: arcane-ice-storm
+name: Arcane Ice Storm
+type: warframe
+maxRank: 5
+effect: "On Enemy Frozen: Gain +2% Ability Strength and +2% Ability Duration for 15s. Stacks up to [max_stacks]x."
+perRankStats:
+  - rank: 0
+    stats: { max_stacks: 10 }
+  - rank: 1
+    stats: { max_stacks: 12 }
+  - rank: 2
+    stats: { max_stacks: 14 }
+  - rank: 3
+    stats: { max_stacks: 16 }
+  - rank: 4
+    stats: { max_stacks: 18 }
+  - rank: 5
+    stats: { max_stacks: 20 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation A"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Arcane_Ice_Storm"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Arcane Ice Storm provides stacking Ability Strength and Ability Duration each time the warframe freezes an enemy. Every enemy frozen by a Cold status effect triggers one stack, with each stack contributing +2% Ability Strength and +2% Ability Duration lasting 15 seconds. The stack cap scales with rank from 10 at rank 0 to 20 at rank 5. Frames that freeze enemies frequently through Cold-damage abilities or Cold-modded weapons build stacks rapidly and sustain them through continuous freeze application.
+
+At rank 5 with 20 stacks, the arcane provides +40% Ability Strength and +40% Ability Duration simultaneously. Both bonuses are significant for ability-centric builds, improving damage output and the time abilities remain active at once.
+
+## Effect
+
+Each enemy frozen by a Cold status proc (applied through weapons or abilities) adds one stack of Ice Storm's bonus, refreshing the 15-second timer on that stack. Stacks build independently with overlapping timers. As long as new freezes occur within 15-second windows, stacks remain active and accumulate toward the cap. When all stacks are active at the cap, both Ability Strength and Ability Duration are at their maximum bonus from Ice Storm.
+
+The bonus is +2% per stack at all ranks -- rank only affects the maximum number of stacks that can accumulate. At rank 0 with 10 stacks maximum, the bonuses cap at +20% Ability Strength and +20% Ability Duration. At rank 5 with 20 stacks, both cap at +40%.
+
+## Stats per rank
+
+| Rank | Bonus per Stack | Max Stacks | Max Ability Strength | Max Ability Duration |
+|------|----------------|-----------|---------------------|---------------------|
+| 0 | +2% / +2% | 10 | +20% | +20% |
+| 1 | +2% / +2% | 12 | +24% | +24% |
+| 2 | +2% / +2% | 14 | +28% | +28% |
+| 3 | +2% / +2% | 16 | +32% | +32% |
+| 4 | +2% / +2% | 18 | +36% | +36% |
+| 5 | +2% / +2% | 20 | +40% | +40% |
+
+## Acquisition
+
+Arcane Ice Storm drops from Zariman Void Fissure rewards at 4% and from Void Cascade rotation A at 2%. Both sources are available after completing Angels of the Zariman. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Arcane Ice Storm is most valuable on frames that apply Cold status consistently through abilities. Frost using Snow Globe and Freeze freezes enemies continuously during defense objective holding, building stacks without weapon interaction. Revenant using Mesmer Skin freeze-proc (when enemies with Sentient shards interact with cold ability damage) can maintain stacks. Volt with Cold-elemental modded weapons applies Cold procs on each shot hit, building stacks during sustained fire.
+
+Any frame that applies Cold damage in area during ability rotations benefits from the passive Ability Strength and Duration scaling as stack counts accumulate through normal play.
+
+## Notes
+
+Only enemies fully frozen by Cold status (the freeze proc) contribute stacks -- Cold-slowed enemies that have not fully frozen do not count. The full freeze state requires Cold status proc saturation past the slow threshold. Ability freeze effects from Frost's Freeze ability apply an instant freeze that does count. The 15-second stack duration per individual stack means pausing freeze application for 15 seconds causes stacks to expire one by one rather than all at once. The +2% per stack values are fixed at all ranks; only the max stack count scales.
+
+## Sources
+
+- WFCD warframe-items dataset provides the max stacks per rank and the +2%/+2% per-stack bonus for Arcane Ice Storm.
+- Fandom wiki entry for [Arcane Ice Storm](https://warframe.fandom.com/wiki/Arcane_Ice_Storm) covers enemy freeze qualification and ability buff stacking behavior.

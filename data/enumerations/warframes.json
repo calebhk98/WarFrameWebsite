@@ -1,0 +1,662 @@
+[
+  {
+    "slug": "ash",
+    "name": "Ash",
+    "sourceId": "/Lotus/Powersuits/Ninja/Ninja",
+    "isPrime": false
+  },
+  {
+    "slug": "ash-prime",
+    "name": "Ash Prime",
+    "sourceId": "/Lotus/Powersuits/Ninja/AshPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "atlas",
+    "name": "Atlas",
+    "sourceId": "/Lotus/Powersuits/Brawler/Brawler",
+    "isPrime": false
+  },
+  {
+    "slug": "atlas-prime",
+    "name": "Atlas Prime",
+    "sourceId": "/Lotus/Powersuits/Brawler/AtlasPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "banshee",
+    "name": "Banshee",
+    "sourceId": "/Lotus/Powersuits/Banshee/Banshee",
+    "isPrime": false
+  },
+  {
+    "slug": "banshee-prime",
+    "name": "Banshee Prime",
+    "sourceId": "/Lotus/Powersuits/Banshee/BansheePrime",
+    "isPrime": true
+  },
+  {
+    "slug": "baruuk",
+    "name": "Baruuk",
+    "sourceId": "/Lotus/Powersuits/Pacifist/Pacifist",
+    "isPrime": false
+  },
+  {
+    "slug": "baruuk-prime",
+    "name": "Baruuk Prime",
+    "sourceId": "/Lotus/Powersuits/Pacifist/BaruukPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "bonewidow",
+    "name": "Bonewidow",
+    "sourceId": "/Lotus/Powersuits/EntratiMech/ThanoTech",
+    "isPrime": false
+  },
+  {
+    "slug": "caliban",
+    "name": "Caliban",
+    "sourceId": "/Lotus/Powersuits/Sentient/Sentient",
+    "isPrime": false
+  },
+  {
+    "slug": "chroma",
+    "name": "Chroma",
+    "sourceId": "/Lotus/Powersuits/Dragon/Dragon",
+    "isPrime": false
+  },
+  {
+    "slug": "chroma-prime",
+    "name": "Chroma Prime",
+    "sourceId": "/Lotus/Powersuits/Dragon/ChromaPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "citrine",
+    "name": "Citrine",
+    "sourceId": "/Lotus/Powersuits/Geode/Geode",
+    "isPrime": false
+  },
+  {
+    "slug": "cyte-09",
+    "name": "Cyte-09",
+    "sourceId": "/Lotus/Powersuits/Frumentarius/Frumentarius",
+    "isPrime": false
+  },
+  {
+    "slug": "dagath",
+    "name": "Dagath",
+    "sourceId": "/Lotus/Powersuits/Dagath/Dagath",
+    "isPrime": false
+  },
+  {
+    "slug": "dante",
+    "name": "Dante",
+    "sourceId": "/Lotus/Powersuits/Pagemaster/Pagemaster",
+    "isPrime": false
+  },
+  {
+    "slug": "ember",
+    "name": "Ember",
+    "sourceId": "/Lotus/Powersuits/Ember/Ember",
+    "isPrime": false
+  },
+  {
+    "slug": "ember-prime",
+    "name": "Ember Prime",
+    "sourceId": "/Lotus/Powersuits/Ember/EmberPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "equinox",
+    "name": "Equinox",
+    "sourceId": "/Lotus/Powersuits/YinYang/YinYang",
+    "isPrime": false
+  },
+  {
+    "slug": "equinox-prime",
+    "name": "Equinox Prime",
+    "sourceId": "/Lotus/Powersuits/YinYang/EquinoxPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "excalibur",
+    "name": "Excalibur",
+    "sourceId": "/Lotus/Powersuits/Excalibur/Excalibur",
+    "isPrime": false
+  },
+  {
+    "slug": "excalibur-prime",
+    "name": "Excalibur Prime",
+    "sourceId": "/Lotus/Powersuits/Excalibur/ExcaliburPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "excalibur-umbra",
+    "name": "Excalibur Umbra",
+    "sourceId": "/Lotus/Powersuits/Excalibur/ExcaliburUmbra",
+    "isPrime": false
+  },
+  {
+    "slug": "frost",
+    "name": "Frost",
+    "sourceId": "/Lotus/Powersuits/Frost/Frost",
+    "isPrime": false
+  },
+  {
+    "slug": "frost-prime",
+    "name": "Frost Prime",
+    "sourceId": "/Lotus/Powersuits/Frost/FrostPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "gara",
+    "name": "Gara",
+    "sourceId": "/Lotus/Powersuits/Glass/Glass",
+    "isPrime": false
+  },
+  {
+    "slug": "gara-prime",
+    "name": "Gara Prime",
+    "sourceId": "/Lotus/Powersuits/Glass/GaraPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "garuda",
+    "name": "Garuda",
+    "sourceId": "/Lotus/Powersuits/Garuda/Garuda",
+    "isPrime": false
+  },
+  {
+    "slug": "garuda-prime",
+    "name": "Garuda Prime",
+    "sourceId": "/Lotus/Powersuits/Garuda/GarudaPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "gauss",
+    "name": "Gauss",
+    "sourceId": "/Lotus/Powersuits/Runner/Runner",
+    "isPrime": false
+  },
+  {
+    "slug": "gauss-prime",
+    "name": "Gauss Prime",
+    "sourceId": "/Lotus/Powersuits/Runner/GaussPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "grendel",
+    "name": "Grendel",
+    "sourceId": "/Lotus/Powersuits/Devourer/Devourer",
+    "isPrime": false
+  },
+  {
+    "slug": "grendel-prime",
+    "name": "Grendel Prime",
+    "sourceId": "/Lotus/Powersuits/Devourer/GrendelPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "gyre",
+    "name": "Gyre",
+    "sourceId": "/Lotus/Powersuits/Gyre/Gyre",
+    "isPrime": false
+  },
+  {
+    "slug": "harrow",
+    "name": "Harrow",
+    "sourceId": "/Lotus/Powersuits/Priest/Priest",
+    "isPrime": false
+  },
+  {
+    "slug": "harrow-prime",
+    "name": "Harrow Prime",
+    "sourceId": "/Lotus/Powersuits/Priest/HarrowPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "helminth",
+    "name": "Helminth",
+    "sourceId": "/Lotus/Powersuits/PowersuitAbilities/Helminth",
+    "isPrime": false
+  },
+  {
+    "slug": "hildryn",
+    "name": "Hildryn",
+    "sourceId": "/Lotus/Powersuits/IronFrame/IronFrame",
+    "isPrime": false
+  },
+  {
+    "slug": "hildryn-prime",
+    "name": "Hildryn Prime",
+    "sourceId": "/Lotus/Powersuits/IronFrame/IronFramePrime",
+    "isPrime": true
+  },
+  {
+    "slug": "hydroid",
+    "name": "Hydroid",
+    "sourceId": "/Lotus/Powersuits/Pirate/Pirate",
+    "isPrime": false
+  },
+  {
+    "slug": "hydroid-prime",
+    "name": "Hydroid Prime",
+    "sourceId": "/Lotus/Powersuits/Pirate/HydroidPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "inaros",
+    "name": "Inaros",
+    "sourceId": "/Lotus/Powersuits/Sandman/Sandman",
+    "isPrime": false
+  },
+  {
+    "slug": "inaros-prime",
+    "name": "Inaros Prime",
+    "sourceId": "/Lotus/Powersuits/Sandman/InarosPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "ivara",
+    "name": "Ivara",
+    "sourceId": "/Lotus/Powersuits/Ranger/Ranger",
+    "isPrime": false
+  },
+  {
+    "slug": "ivara-prime",
+    "name": "Ivara Prime",
+    "sourceId": "/Lotus/Powersuits/Ranger/IvaraPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "jade",
+    "name": "Jade",
+    "sourceId": "/Lotus/Powersuits/Choir/Choir",
+    "isPrime": false
+  },
+  {
+    "slug": "khora",
+    "name": "Khora",
+    "sourceId": "/Lotus/Powersuits/Khora/Khora",
+    "isPrime": false
+  },
+  {
+    "slug": "khora-prime",
+    "name": "Khora Prime",
+    "sourceId": "/Lotus/Powersuits/Khora/KhoraPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "koumei",
+    "name": "Koumei",
+    "sourceId": "/Lotus/Powersuits/Koumei/Koumei",
+    "isPrime": false
+  },
+  {
+    "slug": "kullervo",
+    "name": "Kullervo",
+    "sourceId": "/Lotus/Powersuits/PaxDuviricus/PaxDuviricus",
+    "isPrime": false
+  },
+  {
+    "slug": "lavos",
+    "name": "Lavos",
+    "sourceId": "/Lotus/Powersuits/Alchemist/Alchemist",
+    "isPrime": false
+  },
+  {
+    "slug": "lavos-prime",
+    "name": "Lavos Prime",
+    "sourceId": "/Lotus/Powersuits/Alchemist/LavosPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "limbo",
+    "name": "Limbo",
+    "sourceId": "/Lotus/Powersuits/Magician/Magician",
+    "isPrime": false
+  },
+  {
+    "slug": "limbo-prime",
+    "name": "Limbo Prime",
+    "sourceId": "/Lotus/Powersuits/Magician/LimboPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "loki",
+    "name": "Loki",
+    "sourceId": "/Lotus/Powersuits/Loki/Loki",
+    "isPrime": false
+  },
+  {
+    "slug": "loki-prime",
+    "name": "Loki Prime",
+    "sourceId": "/Lotus/Powersuits/Loki/LokiPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "mag",
+    "name": "Mag",
+    "sourceId": "/Lotus/Powersuits/Mag/Mag",
+    "isPrime": false
+  },
+  {
+    "slug": "mag-prime",
+    "name": "Mag Prime",
+    "sourceId": "/Lotus/Powersuits/Mag/MagPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "mesa",
+    "name": "Mesa",
+    "sourceId": "/Lotus/Powersuits/Cowgirl/Cowgirl",
+    "isPrime": false
+  },
+  {
+    "slug": "mesa-prime",
+    "name": "Mesa Prime",
+    "sourceId": "/Lotus/Powersuits/Cowgirl/MesaPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "mirage",
+    "name": "Mirage",
+    "sourceId": "/Lotus/Powersuits/Harlequin/Harlequin",
+    "isPrime": false
+  },
+  {
+    "slug": "mirage-prime",
+    "name": "Mirage Prime",
+    "sourceId": "/Lotus/Powersuits/Harlequin/MiragePrime",
+    "isPrime": true
+  },
+  {
+    "slug": "nekros",
+    "name": "Nekros",
+    "sourceId": "/Lotus/Powersuits/Necro/Necro",
+    "isPrime": false
+  },
+  {
+    "slug": "nekros-prime",
+    "name": "Nekros Prime",
+    "sourceId": "/Lotus/Powersuits/Necro/NekrosPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "nezha",
+    "name": "Nezha",
+    "sourceId": "/Lotus/Powersuits/Nezha/Nezha",
+    "isPrime": false
+  },
+  {
+    "slug": "nezha-prime",
+    "name": "Nezha Prime",
+    "sourceId": "/Lotus/Powersuits/Nezha/NezhaPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "nidus",
+    "name": "Nidus",
+    "sourceId": "/Lotus/Powersuits/Infestation/Infestation",
+    "isPrime": false
+  },
+  {
+    "slug": "nidus-prime",
+    "name": "Nidus Prime",
+    "sourceId": "/Lotus/Powersuits/Infestation/InfestationPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "nova",
+    "name": "Nova",
+    "sourceId": "/Lotus/Powersuits/AntiMatter/Anti",
+    "isPrime": false
+  },
+  {
+    "slug": "nova-prime",
+    "name": "Nova Prime",
+    "sourceId": "/Lotus/Powersuits/AntiMatter/NovaPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "nyx",
+    "name": "Nyx",
+    "sourceId": "/Lotus/Powersuits/Jade/Jade",
+    "isPrime": false
+  },
+  {
+    "slug": "nyx-prime",
+    "name": "Nyx Prime",
+    "sourceId": "/Lotus/Powersuits/Jade/NyxPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "oberon",
+    "name": "Oberon",
+    "sourceId": "/Lotus/Powersuits/Paladin/Paladin",
+    "isPrime": false
+  },
+  {
+    "slug": "oberon-prime",
+    "name": "Oberon Prime",
+    "sourceId": "/Lotus/Powersuits/Paladin/PaladinPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "octavia",
+    "name": "Octavia",
+    "sourceId": "/Lotus/Powersuits/Bard/Bard",
+    "isPrime": false
+  },
+  {
+    "slug": "octavia-prime",
+    "name": "Octavia Prime",
+    "sourceId": "/Lotus/Powersuits/Bard/OctaviaPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "protea",
+    "name": "Protea",
+    "sourceId": "/Lotus/Powersuits/Odalisk/Odalisk",
+    "isPrime": false
+  },
+  {
+    "slug": "protea-prime",
+    "name": "Protea Prime",
+    "sourceId": "/Lotus/Powersuits/Odalisk/ProteaPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "qorvex",
+    "name": "Qorvex",
+    "sourceId": "/Lotus/Powersuits/ConcreteFrame/ConcreteFrame",
+    "isPrime": false
+  },
+  {
+    "slug": "revenant",
+    "name": "Revenant",
+    "sourceId": "/Lotus/Powersuits/Revenant/Revenant",
+    "isPrime": false
+  },
+  {
+    "slug": "revenant-prime",
+    "name": "Revenant Prime",
+    "sourceId": "/Lotus/Powersuits/Revenant/RevenantPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "rhino",
+    "name": "Rhino",
+    "sourceId": "/Lotus/Powersuits/Rhino/Rhino",
+    "isPrime": false
+  },
+  {
+    "slug": "rhino-prime",
+    "name": "Rhino Prime",
+    "sourceId": "/Lotus/Powersuits/Rhino/RhinoPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "saryn",
+    "name": "Saryn",
+    "sourceId": "/Lotus/Powersuits/Saryn/Saryn",
+    "isPrime": false
+  },
+  {
+    "slug": "saryn-prime",
+    "name": "Saryn Prime",
+    "sourceId": "/Lotus/Powersuits/Saryn/SarynPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "sevagoth",
+    "name": "Sevagoth",
+    "sourceId": "/Lotus/Powersuits/Wraith/Wraith",
+    "isPrime": false
+  },
+  {
+    "slug": "sevagoth-prime",
+    "name": "Sevagoth Prime",
+    "sourceId": "/Lotus/Powersuits/Wraith/SevagothPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "styanax",
+    "name": "Styanax",
+    "sourceId": "/Lotus/Powersuits/Hoplite/Hoplite",
+    "isPrime": false
+  },
+  {
+    "slug": "temple",
+    "name": "Temple",
+    "sourceId": "/Lotus/Powersuits/Temple/Temple",
+    "isPrime": false
+  },
+  {
+    "slug": "titania",
+    "name": "Titania",
+    "sourceId": "/Lotus/Powersuits/Fairy/Fairy",
+    "isPrime": false
+  },
+  {
+    "slug": "titania-prime",
+    "name": "Titania Prime",
+    "sourceId": "/Lotus/Powersuits/Fairy/TitaniaPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "trinity",
+    "name": "Trinity",
+    "sourceId": "/Lotus/Powersuits/Trinity/Trinity",
+    "isPrime": false
+  },
+  {
+    "slug": "trinity-prime",
+    "name": "Trinity Prime",
+    "sourceId": "/Lotus/Powersuits/Trinity/TrinityPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "valkyr",
+    "name": "Valkyr",
+    "sourceId": "/Lotus/Powersuits/Berserker/Berserker",
+    "isPrime": false
+  },
+  {
+    "slug": "valkyr-prime",
+    "name": "Valkyr Prime",
+    "sourceId": "/Lotus/Powersuits/Berserker/ValkyrPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "vauban",
+    "name": "Vauban",
+    "sourceId": "/Lotus/Powersuits/Trapper/Trapper",
+    "isPrime": false
+  },
+  {
+    "slug": "vauban-prime",
+    "name": "Vauban Prime",
+    "sourceId": "/Lotus/Powersuits/Trapper/TrapperPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "voidrig",
+    "name": "Voidrig",
+    "sourceId": "/Lotus/Powersuits/EntratiMech/NechroTech",
+    "isPrime": false
+  },
+  {
+    "slug": "volt",
+    "name": "Volt",
+    "sourceId": "/Lotus/Powersuits/Volt/Volt",
+    "isPrime": false
+  },
+  {
+    "slug": "volt-prime",
+    "name": "Volt Prime",
+    "sourceId": "/Lotus/Powersuits/Volt/VoltPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "voruna",
+    "name": "Voruna",
+    "sourceId": "/Lotus/Powersuits/Werewolf/Werewolf",
+    "isPrime": false
+  },
+  {
+    "slug": "wisp",
+    "name": "Wisp",
+    "sourceId": "/Lotus/Powersuits/Wisp/Wisp",
+    "isPrime": false
+  },
+  {
+    "slug": "wisp-prime",
+    "name": "Wisp Prime",
+    "sourceId": "/Lotus/Powersuits/Wisp/WispPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "wukong",
+    "name": "Wukong",
+    "sourceId": "/Lotus/Powersuits/MonkeyKing/MonkeyKing",
+    "isPrime": false
+  },
+  {
+    "slug": "wukong-prime",
+    "name": "Wukong Prime",
+    "sourceId": "/Lotus/Powersuits/MonkeyKing/WukongPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "xaku",
+    "name": "Xaku",
+    "sourceId": "/Lotus/Powersuits/BrokenFrame/BrokenFrame",
+    "isPrime": false
+  },
+  {
+    "slug": "xaku-prime",
+    "name": "Xaku Prime",
+    "sourceId": "/Lotus/Powersuits/BrokenFrame/XakuPrime",
+    "isPrime": true
+  },
+  {
+    "slug": "yareli",
+    "name": "Yareli",
+    "sourceId": "/Lotus/Powersuits/Yareli/Yareli",
+    "isPrime": false
+  },
+  {
+    "slug": "zephyr",
+    "name": "Zephyr",
+    "sourceId": "/Lotus/Powersuits/Tengu/Tengu",
+    "isPrime": false
+  },
+  {
+    "slug": "zephyr-prime",
+    "name": "Zephyr Prime",
+    "sourceId": "/Lotus/Powersuits/Tengu/ZephyrPrime",
+    "isPrime": true
+  }
+]

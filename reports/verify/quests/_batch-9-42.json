@@ -1,0 +1,250 @@
+{
+  "collection": "quests",
+  "verified_at": "2026-05-18T17:38:05.149129+00:00",
+  "group_checks": {
+    "typecheck": {
+      "pass": true,
+      "exit": 0
+    },
+    "build": {
+      "pass": true,
+      "exit": 0
+    }
+  },
+  "files": [
+    {
+      "slug": "heart-of-deimos",
+      "pass": true,
+      "word_count": 982,
+      "sources_count": 15,
+      "checks_failed": []
+    },
+    {
+      "slug": "hidden-messages",
+      "pass": true,
+      "word_count": 935,
+      "sources_count": 9,
+      "checks_failed": []
+    },
+    {
+      "slug": "howl-of-the-kubrow",
+      "pass": true,
+      "word_count": 1118,
+      "sources_count": 10,
+      "checks_failed": []
+    },
+    {
+      "slug": "jade-shadows",
+      "pass": true,
+      "word_count": 1301,
+      "sources_count": 18,
+      "checks_failed": []
+    },
+    {
+      "slug": "mask-of-the-revenant",
+      "pass": true,
+      "word_count": 1123,
+      "sources_count": 8,
+      "checks_failed": []
+    },
+    {
+      "slug": "mutalist-alad-v-assassinate",
+      "pass": true,
+      "word_count": 1340,
+      "sources_count": 9,
+      "checks_failed": []
+    },
+    {
+      "slug": "natah",
+      "pass": true,
+      "word_count": 1284,
+      "sources_count": 11,
+      "checks_failed": []
+    },
+    {
+      "slug": "octavias-anthem",
+      "pass": true,
+      "word_count": 1542,
+      "sources_count": 13,
+      "checks_failed": []
+    },
+    {
+      "slug": "once-awake",
+      "pass": true,
+      "word_count": 1506,
+      "sources_count": 9,
+      "checks_failed": []
+    },
+    {
+      "slug": "patient-zero",
+      "pass": true,
+      "word_count": 1548,
+      "sources_count": 10,
+      "checks_failed": []
+    },
+    {
+      "slug": "rising-tide",
+      "pass": true,
+      "word_count": 1550,
+      "sources_count": 20,
+      "checks_failed": []
+    },
+    {
+      "slug": "sands-of-inaros",
+      "pass": true,
+      "word_count": 1439,
+      "sources_count": 13,
+      "checks_failed": []
+    },
+    {
+      "slug": "sayas-vigil",
+      "pass": true,
+      "word_count": 1617,
+      "sources_count": 12,
+      "checks_failed": []
+    },
+    {
+      "slug": "stolen-dreams",
+      "pass": true,
+      "word_count": 1464,
+      "sources_count": 11,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-archwing",
+      "pass": true,
+      "word_count": 1466,
+      "sources_count": 13,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-deadlock-protocol",
+      "pass": true,
+      "word_count": 1608,
+      "sources_count": 16,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-duviri-paradox",
+      "pass": true,
+      "word_count": 1634,
+      "sources_count": 16,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-glast-gambit",
+      "pass": true,
+      "word_count": 1606,
+      "sources_count": 12,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-hex-finale",
+      "pass": true,
+      "word_count": 944,
+      "sources_count": 9,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-hex",
+      "pass": true,
+      "word_count": 1052,
+      "sources_count": 22,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-jordas-precept",
+      "pass": true,
+      "word_count": 1049,
+      "sources_count": 12,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-limbo-theorem",
+      "pass": true,
+      "word_count": 960,
+      "sources_count": 11,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-lotus-eaters",
+      "pass": true,
+      "word_count": 1106,
+      "sources_count": 6,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-new-strange",
+      "pass": true,
+      "word_count": 1220,
+      "sources_count": 11,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-new-war",
+      "pass": true,
+      "word_count": 1093,
+      "sources_count": 23,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-sacrifice",
+      "pass": true,
+      "word_count": 1382,
+      "sources_count": 19,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-second-dream",
+      "pass": true,
+      "word_count": 1371,
+      "sources_count": 16,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-silver-grove",
+      "pass": true,
+      "word_count": 1289,
+      "sources_count": 11,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-war-within",
+      "pass": true,
+      "word_count": 1575,
+      "sources_count": 25,
+      "checks_failed": []
+    },
+    {
+      "slug": "the-waverider",
+      "pass": true,
+      "word_count": 1128,
+      "sources_count": 17,
+      "checks_failed": []
+    },
+    {
+      "slug": "veilbreaker",
+      "pass": true,
+      "word_count": 1180,
+      "sources_count": 13,
+      "checks_failed": []
+    },
+    {
+      "slug": "vors-prize",
+      "pass": true,
+      "word_count": 1411,
+      "sources_count": 15,
+      "checks_failed": []
+    },
+    {
+      "slug": "vox-solaris",
+      "pass": true,
+      "word_count": 1498,
+      "sources_count": 15,
+      "checks_failed": []
+    }
+  ],
+  "overall": "PASS",
+  "pass_count": 33,
+  "fail_count": 0
+}

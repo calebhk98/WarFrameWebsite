@@ -1,0 +1,162 @@
+---
+slug: gara-prime
+name: Gara Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 345
+shield: 270
+armor: 200
+energy: 175
+sprintSpeed: 1.15
+passive:
+  name: Prism
+  description: Gara has a chance to create a radial blind when she casts abilities, temporarily disorienting nearby enemies.
+abilities:
+  - name: Shattered Lash
+    key: "1"
+    energyCost: 25
+    description: Lash out with a stream of shattered glass, or hold to charge for an arcing strike. Damage scales with equipped mods on the ability itself.
+    stats: { damage: 100, range: 20 }
+  - name: Splinter Storm
+    key: "2"
+    energyCost: 50
+    description: Gara's armor splinters into a maelstrom of shattered glass that travels outward. Allies who contact the cloud gain fortification against incoming damage.
+    stats: { duration: 15, range: 15 }
+  - name: Spectrorage
+    key: "3"
+    energyCost: 75
+    description: Trap enemies in a carousel of mirrors, forcing them to attack visions of their true selves. Destroyed mirrors and the carousel collapse damage their attackers.
+    stats: { duration: 12, range: 12 }
+  - name: Mass Vitrify
+    key: "4"
+    energyCost: 100
+    description: Create an expanding ring of molten glass that slowly crystallizes enemies. When fully expanded, the ring hardens to block weapons fire and draws power from crystallized enemies. Use Shattered Lash to shatter the ring and send razor glass flying.
+    stats: { duration: 20, range: 20 }
+acquisition:
+  source: Void Relic farming (vaulted as of March 15, 2023)
+  blueprintLocations:
+    - "Lith G11, Meso G3, Neo G4, Axi G6, Axi G9 relics (various rarities)"
+    - "Prime Resurgence rotations (periodic availability)"
+  cost:
+    credits: 25000
+    platinum: 175
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2021-05-25"
+  vaultedAt: "2023-03-15"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+    note: "Numeric stats cross-checked against WFCD 1.756.0. Energy field corresponds to WFCD power field."
+  - url: "https://warframe.fandom.com/wiki/Gara/Prime"
+    accessedAt: "2026-05-19"
+    title: "Gara Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Gara Prime is the primed variant of Gara, a crystalline-themed warframe who commands shattered glass and mirrors as her primary weapons and defensive tools. Released on May 25, 2021, as part of Update 30.3, Gara Prime surpasses her base counterpart with higher health (345 vs. 270 base) and armor (200 vs. 160 base), making her a more resilient combatant. With a Mastery Rank requirement of 0, she is accessible to all players, though obtaining her components now requires player trading or periodic Prime Resurgence rotations since her vault placement on March 15, 2023.
+
+The prime variant represents the canonical "unbroken" form of Gara, stemming from her in-universe origin as a warframe crystallized in purity by Nihil's command. Her aesthetic is refined glass and geometric crystalline patterns, emphasizing both elegance and lethal sharpness. Gara Prime's toolkit revolves around creating and manipulating glass formations that punish enemy contact while providing defensive utility to the squad, making her a unique support-damage hybrid.
+
+## Abilities
+
+<AbilityCard
+  name="Shattered Lash"
+  key="1"
+  energyCost={25}
+  description="Lash out with a stream of shattered glass, or hold to charge for an arcing strike. Damage scales with equipped mods on the ability itself."
+/>
+
+Shattered Lash is Gara Prime's primary offensive ability and the key to activating her passive Prism effect. The tap-cast sends out a quick streak of glass shards, while holding the cast triggers a wider arcing strike that can catch multiple enemies. The ability's scaling with mods makes it synergistic with strength and ability-based builds. Shattered Lash's damage output scales independently of her statistics, making it more potent with ability-focused builds rather than pure stat stacking.
+
+<AbilityCard
+  name="Splinter Storm"
+  key="2"
+  energyCost={50}
+  description="Gara's armor splinters into a maelstrom of shattered glass. Allies who contact the cloud gain fortification against incoming damage."
+/>
+
+Splinter Storm expels crystalline shards in all directions, creating an expanding cloud that damages enemies and provides damage reduction to any squad member who passes through it. This ability serves dual purposes: it provides both offensive coverage and team-wide defensive support. The fortification effect is particularly valuable in high-level content, making Gara Prime an excellent squad support warframe beyond her raw damage output. The cloud persists for a duration, creating repeatable damage opportunities against stationary or slowed enemies.
+
+<AbilityCard
+  name="Spectrorage"
+  key="3"
+  energyCost={75}
+  description="Trap enemies in a carousel of mirrors, forcing them to attack visions of their true selves. Destroyed mirrors and the carousel collapse damage their attackers."
+/>
+
+Spectrorage is Gara Prime's crowd-control ability, freezing enemies in place by forcing them to assault holographic versions of themselves. Enemies that destroy mirrors take the reflected damage, and when the carousel collapses, all crystallized enemies and mirrors explode in a damaging wave. This ability excels at disabling priority threats and converting their aggression into damage sources. The mirror mechanic rewards aggressive enemy behavior, turning enemy damage output against them and making this ability particularly synergistic with tanky builds.
+
+<AbilityCard
+  name="Mass Vitrify"
+  key="4"
+  energyCost={100}
+  description="Create an expanding ring of molten glass that slowly crystallizes enemies. When fully expanded, the ring hardens to block weapons fire and scales power from crystallized enemies. Use Shattered Lash to shatter the ring and release razor glass."
+/>
+
+Mass Vitrify is Gara Prime's ultimate ability and her signature defensive and offensive tool. The expanding ring of molten glass slowly crystallizes enemies trapped within it, converting their presence into additional durability for the ring itself. Once the ring reaches full expansion, it becomes a physical barrier that blocks incoming projectile fire, protecting the squad. The interaction with Shattered Lash is crucial: striking the hardened ring with Lash shatters it, sending razor-sharp glass flying in all directions for massive area damage. This ability creates opportunities for dramatic turnarounds in high-pressure situations.
+
+## Passive
+
+Gara Prime's passive, Prism, grants her a chance to create a radial blind when casting any of her four main abilities. This blind effect disables enemies in the area, creating breathing room and enabling repositioning or burst damage windows. The passive triggers regularly during active gameplay, providing consistent utility without requiring energy expenditure. Prism synergizes well with ability-spam playstyles, where frequent casts generate consistent crowd control.
+
+## Stats
+
+| Stat              | Value  |
+|-------------------|--------|
+| Health (rank 0)   | 345    |
+| Shield (rank 0)   | 270    |
+| Armor             | 200    |
+| Energy (rank 0)   | 175    |
+| Sprint speed      | 1.15x  |
+| Mastery rank      | 0      |
+
+Gara Prime's stat distribution emphasizes moderate health and armor with solid shield capacity. Her sprint speed multiplier of 1.15x exceeds the baseline, granting superior mobility for repositioning. The 200 armor value is above average for warframes and scales particularly well with Umbral Vitality and armor-scaling mods. Her energy pool of 175 supports sustained ability casting when combined with efficiency mods or energy regeneration arcanes. These balanced stats enable flexible buildcraft: she can support pure damage builds, tank-oriented defensive builds, or hybrid control setups.
+
+## Acquisition
+
+Gara Prime was originally obtained by farming Void Relics in four different eras: Lith, Meso, Neo, and Axi. Her blueprint and component drops were distributed across these relics at various rarities. As of March 15, 2023, she entered the Prime Vault and was removed from standard relic drop tables.
+
+**Current acquisition methods:**
+
+- **Prime Resurgence rotations**: Digital Extremes periodically rotates vaulted primes back into the game through the Prime Resurgence system. When Gara Prime is active in a Prime Resurgence rotation, players can farm her relics from Zariman or other designated missions.
+- **Player trading**: Purchase her blueprint and components from other players through the in-game market using platinum. This is the most reliable method for players who do not wish to wait for her rotation or grind relics during an active window.
+
+Gara Prime requires 25,000 credits and 72 hours of build time to construct from her blueprint, the same as base Gara. The platinum cost for market acquisition is typically 175 per component or 500+ for a full set, though prices fluctuate based on availability and demand.
+
+## Recommended builds
+
+Gara Prime's flexible toolkit supports diverse playstyles. Her ability-scaling mechanics reward strength investment, while her durability enables tank-focused mod configurations. Squad support builds leverage Splinter Storm and Spectrorage for crowd control and damage mitigation, while solo glass-shard builds focus on ability spam with Shattered Lash and Mass Vitrify for burst damage.
+
+**Ability-focused builds** prioritize Ability Strength and Ability Duration, enabling Mass Vitrify to expand into formidable barriers and Spectrorage to lock down harder targets for longer. **Defensive builds** combine Umbral mods (Umbral Vitality, Umbral Fiber) with armor-stacking mods to maximize her survivability, supplemented by overshield arcanes like Arcane Guardian. **Tank builds** leverage her high armor to enable Adaptation or Augur Pads, turning damage mitigation into offensive opportunity through shield gating mechanics.
+
+Recommended mods include Serration-equivalent ability multipliers, efficiency mods like Fleeting Expertise, and duration extension via Primed Continuity. Popular arcanes include Arcane Energize for energy sustain and Arcane Guardian for armor scaling. Helminth subsumes can amplify her playstyle: Roar boosts ability damage output, while Pillage strips enemy armor and restores shields to the squad.
+
+## Playstyle
+
+Gara Prime excels as a control-oriented damage dealer who locks down enemies while providing squad-wide defensive utility. Her playstyle revolves around using Mass Vitrify to control space and convert enemy contact into defensive barriers, while Spectrorage disables threats. Shattered Lash serves as both an activation trigger for her passive Prism and a tool to shatter the Mass Vitrify ring for area damage.
+
+In squad missions, Gara Prime's Splinter Storm provides invaluable damage reduction to all nearby allies, making her a preferred choice for high-level endless missions. Her ability to crystallize and disable large enemy groups via Spectrorage and Mass Vitrify creates windows for teammates to reposition or apply their own abilities. Solo gameplay emphasizes aggressive Mass Vitrify ring expansion and repeated Shattered Lash strikes to maximize burst damage from ring shatters.
+
+Advanced players layer her mechanics: casting Spectrorage to immobilize priority targets, expanding Mass Vitrify to convert those targets into barrier strength, then shattering with Lash for explosive damage. This sequence scales with ability strength and duration, creating gameplay loops that reward optimized mod selections. Her lower energy costs on early abilities (Shattered Lash at 25 energy, Splinter Storm at 50 energy) enable frequent passive triggers without heavy efficiency investment.
+
+## Lore
+
+Gara Prime represents the canonical "true" form of Gara, forged in the crucible of Orokin mythology. According to warframe lore, Nihil--the Void creature imprisoned by the Sisters of Parvos--commanded the creation of Gara with the words: "Glass her, for her presumption!" This decree crystallized her into "glass most fine," binding her form in eternal purity. She became known as "The unbroken. Gara."--a warframe encased in geometric crystalline structures that serve as both armor and weapon.
+
+The visual design of Gara Prime reflects this origin: her frame is composed of sharp, faceted glass surfaces that refract light and glow with internal luminescence. Unlike most warframes, which are organic constructs, Gara's structure suggests an object of art and artifice, perfectly aligned with Orokin aesthetics. Her abilities--shattering glass, mirrors that trap enemies, and rings of molten crystal--all reinforce her thematic identity as a warrior made of weaponized glass.
+
+Within the Tenno arsenal, Gara Prime occupies a unique niche as a warframe whose mechanics directly reflect her lore: she manipulates the crystalline substances that comprise her form, turning them into tools of both offense and defense. Her release alongside the Astilla Prime (a crystalline shotgun) and Volnus Prime (a glass-edged melee weapon) solidified the crystal-warfare theme introduced in Update 30.3. The vaulting of Gara Prime in 2023 marked the end of an era for the crystalline warframe, though her canonical power remains undiminished in active gameplay.
+
+## Sources
+
+- **WFCD warframe-items**: Numeric stats sourced from the canonical WFCD warframe-items dataset (version 1.756.0). Cross-referenced against WFCD JSON entries for Gara Prime, including health, shield, armor, energy (power field), sprint speed, and all ability descriptions. Available at https://github.com/WFCD/warframe-items.
+- **Warframe Wiki**: Lore origin, acquisition history, vault status, and release date information sourced from the WARFRAME Wiki Gara Prime page (accessed May 19, 2026). Available at https://warframe.fandom.com/wiki/Gara/Prime.

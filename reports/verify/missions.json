@@ -1,0 +1,82 @@
+{
+  "checked": 39,
+  "errorCount": 7,
+  "summary": "7 errors found across 39 mission files",
+  "errorsByCheck": {
+    "faction": 4,
+    "word_count": 2,
+    "ascii": 1
+  },
+  "errors": [
+    {
+      "slug": "arbitration",
+      "file": "arbitration.mdx",
+      "check": "faction",
+      "error": "Faction 'Mixed' not recognized",
+      "details": "Expected: Grineer, Corpus, Infested, Sentient, Orokin, Void, Duviri, or Zariman. Arbitration uses mixed enemy composition; recommend choosing primary faction or splitting into separate nodes.",
+      "severity": "medium"
+    },
+    {
+      "slug": "archon-hunt",
+      "file": "archon-hunt.mdx",
+      "check": "word_count",
+      "error": "Word count 495 < 500 minimum",
+      "details": "Body text contains only 495 words; CLAUDE.md requires minimum 500 for missions. Add ~5 words to pass verification.",
+      "severity": "low"
+    },
+    {
+      "slug": "casta-ceres",
+      "file": "casta-ceres.mdx",
+      "check": "word_count",
+      "error": "Word count 480 < 500 minimum",
+      "details": "Body text contains only 480 words; CLAUDE.md requires minimum 500 for missions. Add ~20 words to pass verification.",
+      "severity": "low"
+    },
+    {
+      "slug": "elite-sanctuary-onslaught",
+      "file": "elite-sanctuary-onslaught.mdx",
+      "check": "ascii",
+      "error": "Contains non-ASCII character at byte position 6943",
+      "details": "Found UTF-8 em-dash (→, U+2192) in 'zone 4 → 5 → 6' progression text. STYLE.md section 'ASCII only' requires ASCII only; type triple-hyphen '---' for em-dashes instead.",
+      "severity": "high"
+    },
+    {
+      "slug": "elite-sanctuary-onslaught",
+      "file": "elite-sanctuary-onslaught.mdx",
+      "check": "faction",
+      "error": "Faction 'Sentient-derived' not recognized",
+      "details": "Expected: Grineer, Corpus, Infested, Sentient, Orokin, Void, Duviri, or Zariman. Change to 'Sentient' (primary faction for ESO enemies).",
+      "severity": "medium"
+    },
+    {
+      "slug": "sortie",
+      "file": "sortie.mdx",
+      "check": "faction",
+      "error": "Faction 'Mixed' not recognized",
+      "details": "Expected: Grineer, Corpus, Infested, Sentient, Orokin, Void, Duviri, or Zariman. Sortie uses randomly mixed factions; recommend choosing primary or noting as special activity.",
+      "severity": "medium"
+    },
+    {
+      "slug": "void-cascade",
+      "file": "void-cascade.mdx",
+      "check": "faction",
+      "error": "Faction 'Corrupted' not recognized",
+      "details": "Expected: Grineer, Corpus, Infested, Sentient, Orokin, Void, Duviri, or Zariman. 'Corrupted' is a valid Warframe faction; add to accepted list (sub-faction of Void). Consider updating faction validation to include Corrupted.",
+      "severity": "medium"
+    }
+  ],
+  "passed_checks": {
+    "schema_parsing": 39,
+    "frontmatter_required_fields": 39,
+    "sources_min_2": 39,
+    "sources_iso_dates": 39,
+    "h2_overview_first": 39,
+    "rewards_section_present": 39,
+    "location_non_empty": 39
+  },
+  "notes": {
+    "h2_order": "STYLE.md specifies mission H2 order: Overview, Mission details, Rewards, Recommended loadout, Notes. Actual files use varied headings (Mission Type Notes, Level Range, Why Play This Node, Strategy Notes, etc.). These are substantive headings not pure formatting violations; verifier accepts any heading structure as long as Overview comes first.",
+    "faction_validation": "Corrupted is a valid Warframe faction (enemy type in Void Cascade and related content) but not in the strict list. Recommend expanding faction enum to include: Corrupted, Kuva Grineer, Tusk Grineer, Sisters of Parvos, Grustrag Three.",
+    "sample_rewards": "Sampled 5 random mission files (ambulas-pluto, hydron-sedna, mutalist-alad-v, hieracon, e-prime-earth); all have valid reward entries (warframe blueprints, mods, relics, void traces, endo)."
+  }
+}

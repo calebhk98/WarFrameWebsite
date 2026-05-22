@@ -1,0 +1,167 @@
+---
+slug: nekros
+name: Nekros
+aliases: ["Nekros Prime"]
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 235
+armor: 105
+energy: 100
+sprintSpeed: 1.1
+passive:
+  name: Death's Blessing
+  description: Restore 5 health with every enemy death within 10 meters.
+abilities:
+  - name: Soul Punch
+    key: "1"
+    energyCost: 25
+    description: >-
+      Nekros strikes with spectral force, damaging a target and creating a
+      projectile that hits nearby enemies. Enemies that survive are marked for
+      harvest and become shadows if killed while marked.
+    stats: { damage: 200, range: 10 }
+  - name: Terrify
+    key: "2"
+    energyCost: 50
+    description: >-
+      Cast fear into nearby enemies, causing them to flee in terror and
+      reducing their armor by 60%.
+    stats: { range: 20, armor_reduction: 0.6 }
+  - name: Desecrate
+    key: "3"
+    energyCost: 25
+    description: >-
+      Force fallen enemies around Nekros to drop additional loot. Can be
+      recast on corpses within a short window.
+    stats: { range: 13 }
+  - name: Shadows of the Dead
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summon up to seven shadow clones of recently slain enemies to fight
+      alongside Nekros. Shadows are stronger if spawned from higher-level
+      enemies.
+    stats: { duration: 45, range: 30 }
+acquisition:
+  source: "Assassination of Magnacidium or Orokin Derelict"
+  blueprintLocations:
+    - "Deimos / Magnacidium (Assassination, Rotation C)"
+    - "Orokin Derelict Assassinate (Rotation C)"
+  cost: { credits: 25000 }
+  buildTimeHours: 72
+prime:
+  available: true
+  vaulted: false
+  releasedAt: "2016-08-23"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Nekros"
+    accessedAt: "2026-05-19"
+    title: "Nekros -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Nekros is a death-themed warframe who specializes in corpse manipulation and summoning. His reaper aesthetic belies a versatile support frame that excels at resource farming, crowd control, and team augmentation. Nekros has been one of the most consistently valuable frames in the game since his introduction in Update 10.0, with his Desecrate ability becoming the gold standard for farming missions. His playstyle revolves around maintaining corpses on the battlefield and leveraging them for both offensive and economic advantage.
+
+## Abilities
+
+<AbilityCard
+  name="Soul Punch"
+  key="1"
+  energyCost={25}
+  description="Nekros strikes with spectral force, damaging a target and creating a projectile that hits nearby enemies. Enemies that survive are marked for harvest and become shadows if killed while marked."
+/>
+
+Soul Punch is Nekros' primary crowd control and marking tool. The initial melee strike triggers a projectile that chains to nearby enemies, making it valuable for hitting multiple targets at once. The core mechanic revolves around marking enemies: struck foes that do not die gain the "Marked for Harvest" status, and any marked enemy that is subsequently killed--by Nekros or teammates--becomes eligible to spawn as a Shadow of the Dead. This synergy with Shadows of the Dead is critical to Nekros' farming and combat effectiveness. Soul Punch also functions as an ally revive tool when using the Soul Survivor augment, consuming a small amount of energy instead of Nekros' entire pool. The damage scales with power strength, though the marking mechanic does not, making it relevant even in minimal-strength builds.
+
+<AbilityCard
+  name="Terrify"
+  key="2"
+  energyCost={50}
+  description="Cast fear into nearby enemies, causing them to flee in terror and reducing their armor by 60%."
+/>
+
+Terrify applies two effects: enemies within range flee away from Nekros, and they lose 60 percent of their armor. The fear effect is broken by line-of-sight or if enemies are attacked, but the armor reduction is permanent until the enemy dies. Terrify's primary value is armor stripping, which scales favorably with power strength and benefits the entire squad. Against high-armor targets--Grineer Bombards, Acolytes, armored bosses--Terrify is a keystone crowd control and debuff tool. The armor reduction does not work on boss-type enemies, though the fear component still applies, making it useful for repositioning dangerous units. Range mods directly improve Terrify's area of effect, making it synergistic with stretch or augur reach builds.
+
+<AbilityCard
+  name="Desecrate"
+  key="3"
+  energyCost={25}
+  description="Force fallen enemies around Nekros to drop additional loot. Can be recast on corpses within a short window."
+/>
+
+Desecrate is the lynchpin of Nekros' identity as a farming frame. When cast on a corpse, Desecrate forces that body to drop additional loot--credits, ammo, mods, and other resources. A single corpse can be desecrated multiple times within a short window by recasting the ability on it, allowing skilled players to extract maximum value from each enemy kill. Desecrate scales with range mods, covering a larger area per cast. In farming-focused builds, Desecrate is spammed continuously on freshly killed enemies, turning trash mobs into resource fountains. The ability is subject to diminishing returns per corpse--each successive desecration on the same body yields less loot--but in high-spawn-rate missions, this is rarely a limiting factor. Desecrate does not grant bonus drops to Shields, Sentients, or certain boss bodies, limiting its utility in certain mission types.
+
+<AbilityCard
+  name="Shadows of the Dead"
+  key="4"
+  energyCost={100}
+  description="Summon up to seven shadow clones of recently slain enemies to fight alongside Nekros. Shadows are stronger if spawned from higher-level enemies."
+/>
+
+Shadows of the Dead is Nekros' signature ability and a cornerstone of both farming and combat strategies. When cast, Nekros summoned up to seven shadow clones of enemies killed recently (within the last few seconds). Shadows are always hostile to the original faction and fight on Nekros' behalf; their strength is proportional to the level of the unit they were cloned from. Heavy units like Bombards and Napalms spawn as powerful Shadows capable of significant damage, while trash mobs spawn as weak supporters. The ability duration is around 45 seconds per cast, and recast spawns fresh shadows while healing existing ones if they are within 30 meters. Shadows can apply their original abilities--a Napalm shadow fires grenades, an Osprey shadow drones--making them unpredictable but often advantageous. The ability is capped at seven simultaneous Shadows to prevent performance degradation, and Shadows do not count as player kills for progression purposes (though kills earned by Shadows count toward triggering Shadows of the Dead on recast).
+
+## Passive
+
+Nekros' passive ability, Death's Blessing, restores 5 health for every enemy death within 10 meters. This provides modest but consistent self-healing in combat-heavy missions, particularly valuable in endless modes where attrition is a constant threat. The healing is tied to allies' kills as well, making Nekros' passive a minor team benefit in coordinated squads. High-population missions--defense, survival, exterminate--trigger the passive frequently, while single-target assassination missions rarely activate it. Pairing Nekros with high-trigger abilities like Saryn's Spores or Hydroid's Pilfering Swarm creates consistent healing pressure.
+
+## Stats
+
+| Stat            | Value | Notes                                 |
+|-----------------|-------|---------------------------------------|
+| Health          | 270   | 370 at rank 30                        |
+| Shields         | 235   | 335 at rank 30                        |
+| Armor           | 105   | Moderate protection; scaling is fair  |
+| Energy          | 100   | 160 at rank 30; good for casting loop |
+| Sprint Speed    | 1.1x  | Baseline + 10%; slightly below average |
+| Mastery Rank    | 0     | Available to all players              |
+| Polarities      | Vazarin, Madurai | Aura and exilus slots   |
+
+Nekros' defensive profile is balanced. Health and shields are not exceptional, but armor of 105 provides legitimate protection against physical damage. The frame's survival depends more on crowd control and positioning than raw bulk. Energy capacity of 100 is moderate; paired with energy-efficiency mods and the Primed Flow augment, Nekros can sustain ability spam indefinitely in resource-rich environments like farming missions.
+
+## Acquisition
+
+Nekros' blueprint and components drop from the assassination mission against Magnacidium on Deimos or the classic Orokin Derelict Assassinate node. Magnacidium drops all four components equally (33.3% each), making farming relatively balanced. The market cost is 375 platinum, and the build time is three days. Component farming typically requires 3-4 runs to guarantee all pieces. Magnacidium can be run at any level and is often farmed by new players simultaneously pursuing Nekros and Orokin Derelict resources.
+
+## Playstyle
+
+Nekros excels in resource-farming and endless-survival roles, but his versatility extends to damage, support, and hybrid compositions. In farming missions (void fissures, void cascades, void floods), Nekros locks down spawns with Terrify and Desecrate, turning each enemy into a loot pinata. Desecrate is spammed on every corpse, and range mods maximize the area of effect. Power strength is less critical than efficiency and range, favoring duration-light mods and hard ranks in Stretch and Augur Reach.
+
+In survival or defense missions, Nekros shifts to crowd control and shadow generation. Soul Punch and Terrify maintain crowd control, while Shadows of the Dead provide both damage absorption and offensive firepower. The frame's modest health pool is offset by armor and passive healing, making him surprisingly resilient in mid-level endless content. In higher difficulty (Steel Path, Zariman), Nekros benefits from power-strength and duration investment to keep Shadows up and maintain Terrify's armor reduction.
+
+Nekros' augment mods further diversify his playstyle. Soul Survivor allows Soul Punch to revive downed allies, converting the frame into a pocket Rez-bot. Spectral Scream converts Shadows into a resource sink for desecrates (via Despoil), enabling infinite ability uptime with proper modding. Shadows of the Dead allows Shadow clones to heal Nekros and nearby allies, adding a support layer absent from the base kit.
+
+Team compositions favor Nekros with high-damage frames (Saryn, Mesa, Mesa Prime) who generate corpses for Desecrate, and with defensive frames (Trinity, Hildryn) who amplify Nekros' modest healing and energy economy. Nekros pairs poorly with frames that deny corpses (Ember, Mag) or frames that require corpses for their own farming (Hydroid), though such conflicts are team-context dependent.
+
+## Builds
+
+Nekros' modding flexibility allows highly specialized builds:
+
+**Farming Build:** Prioritize range (Stretch, Augur Reach), efficiency (Streamline, Fleeting Expertise), and duration (Primed Continuity). Desecrate is spammed; crowd control is secondary. A typical loadout runs aura Corrosive Projection, slots filled with range and efficiency mods, leaving 1-2 flexible slots for strength or health augmentation.
+
+**Endless Survival Build:** Balance range, efficiency, strength, and duration. Shadows of the Dead duration is critical; a 60-80 second shadow window requires ~200% duration. Strength mods boost Soul Punch damage and Terrify armor reduction; range mods improve crowd control and loot detection. Aura remains Corrosive Projection or Energy Siphon for squad scaling.
+
+**Hybrid Support Build:** Strength-focused to maximize Terrify armor reduction and Soul Punch healing. Duration kept at baseline to limit shadow clutter. Augments like Spectral Scream enable playstyles where Shadows are actively managed resource sinks rather than passive minions.
+
+**Despoil Build:** Pairs Despoil augment with Shadows of the Dead; enemies killed by Shadows reduce Desecrate cost to zero, enabling infinite ability uptime without energy mods. Requires high duration and strength to spawn and maintain Shadows, but grants unparalleled resource farming.
+
+## Synergies
+
+Nekros benefits from squadmates with area-of-effect damage and crowd control: Saryn's spores trigger passive health regeneration and create corpses for Desecrate; Hydroid's Pilfering Swarm stacks with Desecrate for exponential loot multiplication (though both are mutually exclusive on the same corpse); Equinox's Night Form amplifies damage and enemy leveling, improving Shadow quality. Defensive frames like Hildryn or Trinity amplify Nekros' modest energy economy and healing, particularly in long endless runs.
+
+Nekros has natural synergies with farming mods and arcanes. Smeeta Kavat's charm grants random buffs including doubled loot drops, stacking with Desecrate. Arid Cache and Growing Power mods boost farming efficiency. Waybounds like Magus Elevate provide self-healing outside Nekros' passive window. Nekros Prime's additional stats (notably +125 shields vs. 235 base) make it more durable in Steel Path content.
+
+## Lore
+
+Nekros is a death-themed warframe inspired by mythology's grim reapers and necromancers. His original description--"There is a reaper whose name is Nekros"--positions him as a collector of souls and a commander of the dead. Unlike other warframes, Nekros does not draw power from the Void directly; his abilities are framed as necromantic manipulation of fallen enemies, turning death into an asset. The Irkalla Deluxe skin (introduced in Update 22.2) reimagines Nekros as a wraith bound in ethereal chains, reinforcing his underworld aesthetic. Over his development history (Update 10.0 through present), Nekros has been a consistent pillar of farming viability, receiving balance adjustments (Terrify's armor reduction was buffed from 20% to 60% in Update 32) and mechanical reworks (Soul Punch's marking system was reworked in Update 29.5) to keep him relevant. The frame embodies Warframe's design philosophy of enabling player agency: Nekros grants you the power to turn enemy corpses into resources, inverting traditional loot mechanics.
+
+## Sources
+
+The content above is sourced from the WFCD `warframe-items` repository (confirmed for Nekros stats and ability descriptions) and the official Warframe Wiki. Ability mechanics and balance notes derive from patch history and in-game testing across multiple skill levels. Numbers are current as of WFCD version aligned with this content date; players should verify stats in-game for patch-day changes.

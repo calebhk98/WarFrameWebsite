@@ -1,0 +1,33 @@
+{
+  "collection": "warframes",
+  "total": 110,
+  "pass": 107,
+  "fail": 3,
+  "failures": [
+    {
+      "slug": "gara-prime",
+      "reasons": [
+        "H2 out of order: 'recommended builds' appears before 'playstyle' (should appear after)"
+      ]
+    },
+    {
+      "slug": "gauss",
+      "reasons": [
+        "H2 out of order: 'recommended builds' appears before 'playstyle' (should appear after)"
+      ]
+    },
+    {
+      "slug": "limbo-prime",
+      "reasons": [
+        "H2 duplicate: 'builds' appears twice (once before lore, once after)"
+      ]
+    }
+  ],
+  "schema_parse_errors": 0,
+  "word_floor_violations": 0,
+  "source_violations": 0,
+  "h2_order_violations": 3,
+  "ascii_violations": 0,
+  "mastery_violations": 0,
+  "stat_fabrications": 0
+}

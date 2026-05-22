@@ -1,0 +1,236 @@
+// helminth-data-n-r.ts -- Helminth subsume data: Nekros through Revenant Prime.
+// Source: https://warframe.fandom.com/wiki/Helminth#Subsumable_Abilities
+// Accessed: 2026-05-20
+
+import type { HelminthEntry } from './helminth-types';
+
+export const HELMINTH_DATA_N_R: readonly HelminthEntry[] = [
+  {
+    slug: 'nekros',
+    name: 'Nekros',
+    abilities: [
+      { key: '1', name: 'Soul Punch' },
+      { key: '2', name: 'Terrify' },
+      { key: '3', name: 'Desecrate' },
+      { key: '4', name: 'Shadows of the Dead' },
+    ],
+    subsumeAbility: 'Terrify',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'nekros-prime',
+    name: 'Nekros Prime',
+    abilities: [
+      { key: '1', name: 'Soul Punch' },
+      { key: '2', name: 'Terrify' },
+      { key: '3', name: 'Desecrate' },
+      { key: '4', name: 'Shadows of the Dead' },
+    ],
+    subsumeAbility: 'Terrify',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'nezha',
+    name: 'Nezha',
+    abilities: [
+      { key: '1', name: 'Fire Walker' },
+      { key: '2', name: 'Blazing Chakram' },
+      { key: '3', name: 'Warding Halo' },
+      { key: '4', name: 'Divine Spears' },
+    ],
+    subsumeAbility: 'Warding Halo',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'nezha-prime',
+    name: 'Nezha Prime',
+    abilities: [
+      { key: '1', name: 'Fire Walker' },
+      { key: '2', name: 'Blazing Chakram' },
+      { key: '3', name: 'Warding Halo' },
+      { key: '4', name: 'Divine Spears' },
+    ],
+    subsumeAbility: 'Warding Halo',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'nidus',
+    name: 'Nidus',
+    abilities: [
+      { key: '1', name: 'Virulence' },
+      { key: '2', name: 'Larva' },
+      { key: '3', name: 'Parasitic Link' },
+      { key: '4', name: 'Ravenous' },
+    ],
+    subsumeAbility: 'Larva',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'nidus-prime',
+    name: 'Nidus Prime',
+    abilities: [
+      { key: '1', name: 'Virulence' },
+      { key: '2', name: 'Larva' },
+      { key: '3', name: 'Parasitic Link' },
+      { key: '4', name: 'Ravenous' },
+    ],
+    subsumeAbility: 'Larva',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'nova',
+    name: 'Nova',
+    abilities: [
+      { key: '1', name: 'Null Star' },
+      { key: '2', name: 'Antimatter Drop' },
+      { key: '3', name: 'Wormhole' },
+      { key: '4', name: 'Molecular Prime' },
+    ],
+    subsumeAbility: 'Null Star',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'nova-prime',
+    name: 'Nova Prime',
+    abilities: [
+      { key: '1', name: 'Null Star' },
+      { key: '2', name: 'Antimatter Drop' },
+      { key: '3', name: 'Wormhole' },
+      { key: '4', name: 'Molecular Prime' },
+    ],
+    subsumeAbility: 'Null Star',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'nyx',
+    name: 'Nyx',
+    abilities: [
+      { key: '1', name: 'Mind Control' },
+      { key: '2', name: 'Psychic Bolts' },
+      { key: '3', name: 'Chaos' },
+      { key: '4', name: 'Absorb' },
+    ],
+    subsumeAbility: 'Psychic Bolts',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'nyx-prime',
+    name: 'Nyx Prime',
+    abilities: [
+      { key: '1', name: 'Mind Control' },
+      { key: '2', name: 'Psychic Bolts' },
+      { key: '3', name: 'Chaos' },
+      { key: '4', name: 'Absorb' },
+    ],
+    subsumeAbility: 'Psychic Bolts',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'oberon',
+    name: 'Oberon',
+    abilities: [
+      { key: '1', name: 'Smite' },
+      { key: '2', name: 'Hallowed Ground' },
+      { key: '3', name: 'Renewal' },
+      { key: '4', name: 'Reckoning' },
+    ],
+    subsumeAbility: 'Smite',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'oberon-prime',
+    name: 'Oberon Prime',
+    abilities: [
+      { key: '1', name: 'Smite' },
+      { key: '2', name: 'Hallowed Ground' },
+      { key: '3', name: 'Renewal' },
+      { key: '4', name: 'Reckoning' },
+    ],
+    subsumeAbility: 'Smite',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'octavia',
+    name: 'Octavia',
+    abilities: [
+      { key: '1', name: 'Mallet' },
+      { key: '2', name: 'Resonator' },
+      { key: '3', name: 'Metronome' },
+      { key: '4', name: 'Amp' },
+    ],
+    subsumeAbility: 'Resonator',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'octavia-prime',
+    name: 'Octavia Prime',
+    abilities: [
+      { key: '1', name: 'Mallet' },
+      { key: '2', name: 'Resonator' },
+      { key: '3', name: 'Metronome' },
+      { key: '4', name: 'Amp' },
+    ],
+    subsumeAbility: 'Resonator',
+    subsumeKey: '2',
+  },
+  {
+    slug: 'protea',
+    name: 'Protea',
+    abilities: [
+      { key: '1', name: 'Grenade Fan' },
+      { key: '2', name: 'Blaze Artillery' },
+      { key: '3', name: 'Dispensary' },
+      { key: '4', name: 'Temporal Anchor' },
+    ],
+    subsumeAbility: 'Dispensary',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'protea-prime',
+    name: 'Protea Prime',
+    abilities: [
+      { key: '1', name: 'Grenade Fan' },
+      { key: '2', name: 'Blaze Artillery' },
+      { key: '3', name: 'Dispensary' },
+      { key: '4', name: 'Temporal Anchor' },
+    ],
+    subsumeAbility: 'Dispensary',
+    subsumeKey: '3',
+  },
+  {
+    slug: 'qorvex',
+    name: 'Qorvex',
+    abilities: [
+      { key: '1', name: 'Chyrinka Pillar' },
+      { key: '2', name: 'Containment Wall' },
+      { key: '3', name: 'Disometric Guard' },
+      { key: '4', name: 'Crucible Blast' },
+    ],
+    subsumeAbility: 'Chyrinka Pillar',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'revenant',
+    name: 'Revenant',
+    abilities: [
+      { key: '1', name: 'Enthrall' },
+      { key: '2', name: 'Mesmer Skin' },
+      { key: '3', name: 'Reave' },
+      { key: '4', name: 'Danse Macabre' },
+    ],
+    subsumeAbility: 'Enthrall',
+    subsumeKey: '1',
+  },
+  {
+    slug: 'revenant-prime',
+    name: 'Revenant Prime',
+    abilities: [
+      { key: '1', name: 'Enthrall' },
+      { key: '2', name: 'Mesmer Skin' },
+      { key: '3', name: 'Reave' },
+      { key: '4', name: 'Danse Macabre' },
+    ],
+    subsumeAbility: 'Enthrall',
+    subsumeKey: '1',
+  },
+];

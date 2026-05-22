@@ -1,0 +1,39 @@
+---
+import { getCollection, render } from 'astro:content';
+import Entity from '../../layouts/Entity.astro';
+import Callout from '../../components/Callout.astro';
+
+export async function getStaticPaths() {
+  const mechs = await getCollection('necramechs');
+  return mechs.map((m) => ({ params: { slug: m.slug }, props: { entry: m } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const components = { Callout };
+
+const { data } = entry;
+
+const healthStr = typeof data.health === 'number' ? String(data.health) : data.health;
+const shieldStr = typeof data.shield === 'number' ? String(data.shield) : data.shield;
+const armorStr = typeof data.armor === 'number' ? String(data.armor) : data.armor;
+
+const description = `${data.name} -- Health ${healthStr}, Shield ${shieldStr}, Armor ${armorStr} -- Necramech`;
+
+const tags: string[] = [
+  'necramech',
+  `MR ${data.masteryRank}`,
+];
+---
+
+<Entity
+  title={data.name}
+  kind="necramech"
+  description={description}
+  tags={tags}
+  sources={data.sources}
+  collectionHref={`${import.meta.env.BASE_URL}necramechs`}
+  collectionLabel="Necramechs"
+>
+  <Content components={components} />
+</Entity>

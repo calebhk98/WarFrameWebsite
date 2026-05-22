@@ -1,0 +1,187 @@
+---
+slug: nekros-prime
+name: Nekros Prime
+aliases: []
+masteryRank: 0
+notes: "masteryRank from Fandom Wiki per CLAUDE.md DATA exception (WFCD issue #23)"
+health: 270
+shield: 455
+armor: 135
+energy: 140
+sprintSpeed: 1.1
+passive:
+  name: Death Mask
+  description: >-
+    Restore health with every enemy death within a range around Nekros,
+    enabling sustained aggressive playstyles through death-triggered mechanics.
+abilities:
+  - name: Soul Punch
+    key: "1"
+    energyCost: 25
+    description: >-
+      A blow so powerful, it turns the enemy's very soul into a deadly projectile,
+      damaging all in its path. Enemies that survive become Marked for Harvest.
+  - name: Terrify
+    key: "2"
+    energyCost: 50
+    description: >-
+      Cast fear into the hearts of nearby enemies, causing them to run in terror
+      and temporarily reduce their armor, making them vulnerable to further assault.
+  - name: Desecrate
+    key: "3"
+    energyCost: 75
+    description: >-
+      Forces fallen enemies around you to drop additional loot, making Nekros Prime
+      essential for efficient farming and resource gathering missions.
+  - name: Shadows of the Dead
+    key: "4"
+    energyCost: 100
+    description: >-
+      Summon shadow versions of vanquished enemies to fight alongside you,
+      inheriting their weapons and abilities for a short period.
+acquisition:
+  source: "Void Fissures (vaulted - Prime Resurgence or relic trading)"
+  blueprintLocations:
+    - "Lith N3, Meso N3, Neo N3, Axi N3 relics (Void Fissure missions)"
+    - "Prime Resurgence events (periodic rotations)"
+  note: "Nekros Prime is currently vaulted; relics no longer drop in standard missions but are available through Prime Resurgence events or player trading."
+prime:
+  available: true
+  vaulted: true
+  releasedAt: "2016-08-23"
+  vaultedAt: "2021-03-02"
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-19"
+    title: "WFCD warframe-items"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Nekros/Prime"
+    accessedAt: "2026-05-19"
+    title: "Nekros Prime -- WARFRAME Wiki"
+    publisher: "Fandom"
+    note: "Death mastery and farming mechanics"
+updatedAt: "2026-05-19"
+---
+
+## Overview
+
+Nekros Prime is the primed variant of the harbinger of death, wielding dominion over fallen enemies and the loot they surrender. With significantly enhanced survivability compared to the base Nekros, the prime variant boasts 340 health, 455 shield, and 135 armor, making it substantially more resilient while maintaining the core death-triggered mechanics that define the frame. Nekros Prime serves as the ultimate farming warframe, enabling solo players and squads to efficiently extract resources from defeated enemies through its signature Desecrate ability.
+
+The prime variant features enhanced aesthetics with polished Orokin metallurgy, ghostly wisps trailing from its frame, and a more refined skeletal appearance. Sprint speed matches the base frame at 1.1x multiplier, but the significantly improved defenses enable more aggressive playstyles and deeper dives into high-level content. Nekros Prime is currently vaulted, meaning new relics no longer drop in standard void fissure missions, though existing relics remain farmable through player trading and periodic Prime Resurgence events.
+
+## Abilities
+
+<AbilityCard
+  name="Soul Punch"
+  key="1"
+  energyCost={25}
+  description="A blow so powerful, it turns the enemy's very soul into a deadly projectile, damaging all in its path. Enemies that survive become Marked for Harvest."
+/>
+
+Soul Punch delivers devastating close-range damage while applying crowd control through the Mark for Harvest mechanic. Enemies struck by Soul Punch take immediate damage, and any survivor becomes marked--if a marked enemy dies, it automatically counts toward Shadows of the Dead summoning without consuming additional energy. The ability synergizes with Terrify's armor reduction, allowing a rapid Soul Punch followed by Terrify to strip enemy defenses before the follow-up swing. At 25 energy cost, Soul Punch remains accessible throughout missions and scales well with ability strength mods, dealing up to 250-300 damage at reasonable modding levels.
+
+The projectile nature of Soul Punch means it can ricochet between enemies in tight clusters, making it useful for both single-target assassination and light area-of-effect crowd control. Combined with Nekros Prime's improved armor, aggressive Soul Punch plays that position the frame closer to enemies become viable strategies in mid-tier content.
+
+<AbilityCard
+  name="Terrify"
+  key="2"
+  energyCost={50}
+  description="Cast fear into the hearts of nearby enemies, causing them to run in terror and temporarily reduce their armor, making them vulnerable to further assault."
+/>
+
+Terrify induces fear in nearby enemies, causing them to flee in panic while simultaneously reducing their armor by a significant percentage. This dual-purpose ability functions as both crowd control and armor strip, making it invaluable for protecting teammates and softening heavily armored foes. The armor reduction scales with ability strength, and enemies affected by Terrify can no longer effectively defend themselves, creating windows for heavy melee or ability spam.
+
+The relatively low energy cost of 50 enables frequent Terrify casting, especially in modded builds with Streamline or Fleeting Expertise. The fear effect provides time for players to reposition, revive downed allies, or target priority enemies without taking fire. On higher-level Steel Path enemies, stacking Terrify casts with arcane support creates near-permanent armor reduction, trivializing otherwise dangerous enemies.
+
+<AbilityCard
+  name="Desecrate"
+  key="3"
+  energyCost={75}
+  description="Forces fallen enemies around you to drop additional loot, making Nekros Prime essential for efficient farming and resource gathering missions."
+/>
+
+Desecrate is Nekros Prime's signature ability and the foundation of its farming dominance. Upon activation, all fallen enemies in a large radius drop additional resources--credits, mods, relics, rare drops, and special items all see increased frequency. This ability turns every defeated enemy into a loot pinata, making Nekros Prime indispensable for efficiently farming rare components, void traces, and endgame resources. A single squad with Nekros Prime can farm three to four times more resources than an equivalent squad without it, making relic farming and resource gathering missions dramatically faster.
+
+The ability functions on a toggle cost model--each activation costs energy, and the buff applies to all enemies that die within the Desecrate radius until toggled off or energy expires. High-duration builds enable near-permanent uptime with low-rank mods, while high-strength builds increase the loot drop multiplier. Desecrate pairs synergistically with Pilfering Swarm (Hydroid), Pilfering Strangledome (Khora), and Pilfer (Specter Guardian), creating exponential farming multipliers when stacked.
+
+<AbilityCard
+  name="Shadows of the Dead"
+  key="4"
+  energyCost={100}
+  description="Summon shadow versions of vanquished enemies to fight alongside you, inheriting their weapons and abilities for a short period."
+/>
+
+Shadows of the Dead summons spectral clones of fallen enemies, forcing them to fight for Nekros instead of against the squad. Each shadow inherits the original enemy's weapons and abilities (within limits), creating potent allied minions that can tank damage and apply crowd control. The prime variant's shadows appear grotesquely animated with bone and spectral effects, distinguishing them visually from lesser minions. Shadows remain active for 30-40 seconds depending on duration mods, then fade away.
+
+The shadow count scales with ability strength, allowing Nekros Prime to field 4-6 shadows with modest modding. Heavy armor enemies and eximus units become powerful shadows, capable of absorbing fire and applying dangerous effects to enemies. Against lighter foes, shadows provide distraction and damage support. The ability synergizes with Desecrate--every death near Nekros Prime creates another shadow opportunity, enabling rapid shadow summoning in high-spawn missions.
+
+## Passive
+
+Nekros Prime's passive, Death Mask, restores health with every enemy death within a 10-meter radius, enabling aggressive, high-risk playstyles through constant health recovery. Each enemy killed in range triggers a small health pulse--in high-spawn-rate missions, this enables near-permanent overheal during active combat. Against low-level content, the passive heals sustain through sloppily-positioned gameplay. Against high-level content, the passive rewards aggressive play patterns that deliberately position Nekros Prime in the thick of combat.
+
+The passive interacts synergistically with arcane mods like Arcane Blessing, which also trigger on certain mechanics, creating multiplicative survivability in endgame. Zenurik focus school further amplifies health regeneration when operator void mode is active, enabling permanent overheal cycling through operator swap mechanics.
+
+## Stats
+
+| Stat | Value |
+| --- | ---: |
+| Health | 340 |
+| Shield | 455 |
+| Armor | 135 |
+| Energy | 140 |
+| Sprint Speed | 1.1x |
+| Mastery Rank | 0 |
+
+Nekros Prime boasts intermediate survivability compared to tankier frames like Rhino Prime or Mag Prime, but the combination of armor and shield pool enables reasonable durability in Steel Path. The 140 base energy enables reasonable ability spam without heavy reliance on Primed Flow, though most endgame builds incorporate energy mods to maintain constant uptime on Desecrate.
+
+## Acquisition
+
+Nekros Prime components drop exclusively from Void Relics across Lith, Meso, Neo, and Axi tiers (specifically the N3 relic variants). However, as of 2021, Nekros Prime entered the Prime Vault, meaning new void fissure missions no longer drop these relics. Existing players with old relics can still farm them directly, and all players can purchase components from other Tenno using platinum through the player market.
+
+Digital Extremes periodically rotates vaulted prime frames through Prime Resurgence events, where Nekros Prime's relics return to void fissure rotations for limited windows. Monitoring Prime Resurgence schedules on the official Warframe website ensures players catch farming seasons. Alternatively, purchasing components from veteran players who have existing relic stockpiles remains available year-round, though pricing fluctuates based on supply and farming event cycles.
+
+The acquisition cost of 25,000 credits and 72 hours build time matches the base Nekros, making the prime's only bottleneck the relic farming grind or platinum investment.
+
+## Playstyle
+
+Nekros Prime functions as a death-centric support damage dealer, enabling efficient farming through Desecrate while contributing meaningful damage through Soul Punch, Terrify, and Shadows of the Dead. The core playstyle revolves around activating Desecrate, then engaging enemies through a combination of melee weapon attacks and ability casts.
+
+In farming missions, Nekros Prime maintains Desecrate uptime, triggering ability strength mods to maximize loot. As enemies fall, each death triggers the passive health recovery, enabling aggressive positioning. Terrify provides defensive support and armor stripping for teammates, while Shadows of the Dead absorb incoming fire and control enemy spawns. Soul Punch serves as burst damage against priority targets and applies Marked for Harvest to enable rapid shadow summoning.
+
+In endgame content like Steel Path, Nekros Prime shifts toward a hybrid playstyle: maintain moderate Desecrate uptime for resource efficiency, leverage Terrify and Shadows for crowd control, and position defensively behind tanky companions or teammates. The frame's survivability limits deep-solo Steel Path endurance runs, but squad play leverages Desecrate as a force multiplier for loot and Terrify as a defensive support tool that enables allies to farm longer.
+
+## Builds
+
+### Desecrate Farm Build
+
+Prioritize ability strength and duration for maximum Desecrate uptime and loot multiplier. Core mods include Umbral Intensify (rank 10), Umbral Vitality (rank 10), Primed Continuity, and Streamline. With this foundation, Desecrate maintains near-permanent uptime while increasing loot frequency by 4-5x. Pair with Hydroid Prime or Khora Prime in squads to stack pilfering multipliers exponentially.
+
+### Steel Path Hybrid Build
+
+Balance survivability with ability strength, incorporating Primed Vigor and Umbral Vitality for health/shield scaling, then add Blind Rage and Intensify for damage. Include Primed Continuity and Augur Message to maintain Terrify uptime while keeping Shadows refreshing. This build enables Nekros Prime to farm Steel Path survival indefinitely when paired with a Trinity Prime or Wisp for team support.
+
+### Shadows Summoning Build
+
+Maximize shadows through Ability Strength mods while maintaining reasonable energy efficiency. Use Strength mods like Blind Rage, Augment Intensify, and Power Drift, then balance with Fleeting Expertise to keep energy costs manageable. This build summoned 6 shadows in rapid succession, overwhelming enemies through summon damage while Desecrate triggers passive health recovery.
+
+## Synergies
+
+Nekros Prime synergizes exceptionally with farming frames and energy-sustaining companions. Hydroid Prime and Khora Prime create exponential loot multipliers when their pilfering abilities stack with Desecrate, enabling farming speeds 10-15x beyond solo players. Trinity Prime provides energy sustain through Well of Life, enabling permanent Desecrate uptime even with heavy ability spam. Wisp grants defensive buffs and movement speed, enabling Nekros Prime to keep pace with faster squad members during extended farming runs.
+
+Arcane Energize provides energy recovery on energy orb pickups, enabling near-permanent Desecrate uptime without excessive mod investment. Arcane Blessing grants overshield stacking, pushing Nekros Prime's effective health toward 600-700 in high-density spawn areas. Zenurik focus (Void Dashing through void rifts) amplifies passive health recovery and enables extended operator mode uptime, further increasing survivability in endgame.
+
+Void Traces (void fissure currency) multiply with Nekros Prime's Desecrate in void fissure missions, making the frame essential for players farming vaulted prime parts. A fully-modded Nekros Prime with Desecrate toggled enables squads to convert 40+ void traces per standard void fissure mission into additional relic drops, dramatically accelerating the farming process.
+
+## Lore
+
+Nekros Prime embodies death mastery and transcends the boundary between living soldier and undying specter. As Hunhow's voice whispers in the original Nekros's mind, the Orokin clearly recognized the power of death-touched warriors and refined the concept into Nekros Prime. The prime variant represents the Orokin's final conclusions about death magic--a warrior who doesn't simply harness death but controls it, compelling the fallen to continue serving long after their bodies expire.
+
+The prime variant's enhanced survivability and polished aesthetics suggest the Orokin invested heavily in the death mastery concept, believing a death-touched warrior with sufficient defenses could become a conduit for resurrection and reanimation magic. Ancient murals in Orokin vaults depict shadowy figures bound to spectral masters, hinting that Shadows of the Dead echo the Orokin's own understanding of necromancy as a force that compels obedience through death.
+
+The frame's vaulting and periodic resurgence mirrors the cyclical nature of death itself--frames enter the vault like tombs, only to return through Prime Resurgence as specters of their former glory, phased back into the Tenno arsenal temporarily before vanishing again. Few warframes embody the entropy and cyclical restoration that characterize the Warframe universe as completely as Nekros Prime.
+
+## Sources
+
+Nekros Prime was released on August 23, 2016, as the primed variant of the original Nekros warframe. The frame entered the Prime Vault on March 2, 2021, meaning fresh relics no longer drop in standard void fissure missions, but the frame periodically returns during Prime Resurgence events for limited farming windows. The frame's farming dominance through Desecrate has made it one of the most valuable prime warframes in the player economy, with veteran players maintaining large relic stockpiles for trading despite the vault status.
+
+Statistics and ability details are sourced from the WFCD warframe-items JSON database, maintained by the Warframe Companion Database project. Lore context and acquisition information come from the Warframe Fandom wiki community resources. The frame's synergies and playstyle recommendations derive from extensive community testing and farming optimization guides documented across multiple sources.

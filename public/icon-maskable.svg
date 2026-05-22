@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Safe zone: inner 80% (approx 410x410 centered) for maskable icons -->
+  <rect width="512" height="512" fill="#0a0a0f"/>
+  <text
+    x="256"
+    y="300"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="170"
+    font-weight="bold"
+    fill="#E89E3B"
+    text-anchor="middle"
+    letter-spacing="-8"
+  >WC</text>
+</svg>

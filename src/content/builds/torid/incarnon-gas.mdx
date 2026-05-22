@@ -1,0 +1,100 @@
+---
+slug: incarnon-gas
+name: "Torid Incarnon -- Gas Area"
+forEntity: torid
+entityType: weapon
+purpose: incarnon-gas-aoe
+mods:
+  - { slot: slot-1, modSlug: serration, rank: 10 }
+  - { slot: slot-2, modSlug: split-chamber, rank: 5 }
+  - { slot: slot-3, modSlug: heavy-caliber, rank: 10 }
+  - { slot: slot-4, modSlug: galvanized-aptitude, rank: 10 }
+  - { slot: slot-5, modSlug: galvanized-chamber, rank: 10 }
+  - { slot: slot-6, modSlug: vital-sense, rank: 5 }
+  - { slot: slot-7, modSlug: point-strike, rank: 5 }
+  - { slot: slot-8, modSlug: hunter-adrenaline, rank: 5 }
+arcanes:
+  - { slot: arcane-1, slug: primary-merciless, rank: 5 }
+  - { slot: arcane-2, slug: arcane-avenger, rank: 5 }
+playstyle: >-
+  Fire Torid grenades into enemy clusters; the grenades release Gas clouds on
+  impact and in flight. Incarnon form transforms the weapon into a direct-fire
+  Gas beam. Galvanized Aptitude scales with Gas and Toxin proc counts on
+  targets. Hunter Adrenaline converts received damage to energy, sustaining
+  Warframe abilities while Torid handles area clearing. Primary Merciless
+  stacks on kills from the Gas cloud area damage.
+strengths:
+  - "Gas damage has a unique area-of-effect proc that spreads Toxin to nearby enemies"
+  - "Incarnon form provides a direct-fire beam that complements the grenade arc playstyle"
+  - "Gas clouds persist in the air and on impact locations, dealing damage over time"
+  - "Galvanized Aptitude scales with Gas proc count for high sustained damage"
+weaknesses:
+  - "Gas damage type has limited faction coverage -- less effective against Infested who resist Toxin"
+  - "Grenade arc requires adjustment for specific engagement distances"
+  - "Hunter Adrenaline requires incoming damage to trigger energy generation -- unsuited to fully tanky frames"
+sources:
+  - url: "https://overframe.gg/build/torid"
+    accessedAt: "2026-05-21"
+    title: "Torid Builds -- Overframe"
+    publisher: "Overframe"
+  - url: "https://warframe.fandom.com/wiki/Torid"
+    accessedAt: "2026-05-21"
+    title: "Torid -- WARFRAME Wiki"
+    publisher: "Fandom"
+updatedAt: "2026-05-21"
+---
+
+## Overview
+
+The Torid is a grenade launcher primary weapon that fires arcing grenades, each releasing a Gas damage cloud that persists in the air along the grenade's flight path and at the impact location. Gas damage has a unique mechanic: Gas procs deal Toxin damage in an area around the proc'd enemy, spreading the proc to nearby enemies who share the status effect. This chain spreading makes the Torid particularly effective against densely packed enemy groups where the initial Gas cloud hits one enemy and the proc spreads Toxin damage-over-time to all surrounding targets.
+
+The Incarnon form for the Torid transforms the weapon into a continuous Gas damage beam, changing the engagement model from arc-fire to direct-aim. This transformation suits different encounter geometries: the grenade form works best in open areas with sufficient arc room, while the Incarnon beam form is more practical in corridor choke points where direct-line shots hit tightly packed groups.
+
+Gas damage is produced by combining Toxin and Heat elemental damage types. The Torid's base damage includes a Toxin component; the Incarnon evolution for Gas configures the Incarnon form to primarily deal Gas damage. Without additional Heat mods in the modset, the Torid's base form grenades deal Toxin and physical damage rather than Gas. The Gas cloud proc mechanic is active in both forms when the Incarnon evolution for Gas is selected.
+
+Hunter Adrenaline at rank 5 converts received damage to energy at a ratio of 2.5 health per 1 energy point. This mod suits frames that accept incoming damage as an energy source rather than avoiding all damage through mitigation. In Steel Path encounters where some ambient damage is unavoidable despite defensive tools, Hunter Adrenaline converts that damage into ability energy, sustaining the Warframe's active abilities alongside Arcane Energize.
+
+## Loadout
+
+Serration at rank 10 and Heavy Caliber at rank 10 together provide the maximum available base damage multiplier stack. Heavy Caliber's accuracy reduction applies to the grenade's flight trajectory calculation; since grenades are aimed by arc rather than by direct hit, the accuracy reduction does not significantly affect where the grenade lands relative to targeting at close-to-medium ranges. At extreme range, the spread may cause grenades to land short or wide.
+
+Split Chamber at rank 5 adds a second grenade to each shot at 90% probability. Two simultaneous grenades create two overlapping Gas clouds on impact, doubling the proc frequency on enemies within the cloud radius. In Incarnon beam form, multishot adds a second beam effect.
+
+Vital Sense at rank 5 and Point Strike at rank 5 add critical damage and critical chance respectively. The Torid has a moderate base critical chance; Point Strike raises it to reliable crit territory. Vital Sense multiplies the damage of those crits. In Incarnon beam form, the beam crits independently per tick, producing a high-frequency crit stream.
+
+Galvanized Aptitude at rank 10 scales with Gas and Toxin proc counts on the target. A Gas proc applies a Gas status and begins spreading Toxin to nearby enemies; the original target has Gas as an active status type and any Toxin procs from the spread also contribute. At two or three procs, Galvanized Aptitude's bonus reaches multiple stacks, substantially multiplying per-hit damage.
+
+Galvanized Chamber at rank 10 adds stacking multishot on kills. Gas cloud kills (which occur from Toxin damage-over-time spread) count as kills for Galvanized Chamber's stack increment. In groups where Gas procs kill multiple enemies simultaneously, Chamber stacks rise rapidly.
+
+Primary Merciless at rank 5 provides a kill-stacking damage multiplier. The Torid's area gas clouds generate multi-kill opportunities from single grenade shots, stacking Merciless rapidly in high-density encounters. At maximum Merciless stacks, the multiplier substantially elevates per-shot damage output.
+
+## Playstyle
+
+In standard grenade form, aim at the floor area 3 to 5 meters in front of enemy groups rather than directly at the enemies. The grenade's arc brings it to the target area, and the Gas cloud generated at impact and along the flight path covers the enemy group's position. This aiming method reduces the chance of the grenade bouncing off enemy geometry.
+
+In Incarnon beam form (after gauge fill), aim directly at the center of the densest visible enemy cluster and hold the trigger. The beam deals Gas damage per tick, applying Gas status procs continuously. Enemies that develop Gas proc will spread Toxin to neighbors, creating a chain reaction across the group while the beam continues to deal direct damage.
+
+Transition between forms based on encounter geometry. Open rooms with sufficient arc room use grenade form; narrow corridors with lined-up enemies use Incarnon beam form. The gauge for Incarnon transformation fills from hitting enemies with the standard grenade form and its Gas clouds counting as hits.
+
+## Strengths and weaknesses
+
+Gas spread mechanics give the Torid disproportionate effectiveness against Corpus Flesh enemies, who take bonus Toxin damage. Corpus engineers, scientists, and crewmen in Steel Path missions die rapidly from Toxin procs spreading from a single Gas cloud impact. In Corpus Spy vaults, a single well-placed grenade near a guard cluster eliminates the group without requiring line-of-sight.
+
+Infested enemies have natural Toxin resistance in several unit types, reducing Gas proc effectiveness against them. The Torid is not the optimal choice for Infested survival or defense missions; Saryn's Spores or Viral-applying weapons are more consistent against Infested.
+
+## Alternatives
+
+Replacing Hunter Adrenaline with Primed Shred adds punch-through and fire rate. Punch-through on the grenade form allows grenades to pass through enemies before detonating, potentially hitting additional targets in close-range encounters. Fire rate increases grenade output per second in sustained fire sequences.
+
+Replacing Heavy Caliber with Amalgam Serration (if available) provides both a damage bonus and a sprint speed increase. Sprint speed suits mobile play styles that need to reposition between grenade arcs without losing time.
+
+## Notes
+
+Gas procs spread Toxin to enemies within a small radius of the proc'd enemy. This spread radius is distinct from the Gas cloud's own impact radius. The combination means that a Gas cloud impact near a group can proc Gas on the first enemy hit, and that enemy's Gas proc then spreads Toxin to all neighbors within its own radius. In practice, this creates a cascading effect where a single grenade triggers Toxin procs on a much larger area than the grenade's own blast radius would suggest.
+
+The Torid Incarnon must have the Gas evolution selected in its evolution tree for Gas damage to appear in Incarnon form. Without the Gas selection, the Incarnon fires Toxin damage only, which does not have the area-spread proc mechanic. Check the weapon's evolution configuration before running missions with this build.
+
+## Sources
+
+- [Torid on the WARFRAME Wiki](https://warframe.fandom.com/wiki/Torid)
+- [Overframe build database for Torid](https://overframe.gg/build/torid)

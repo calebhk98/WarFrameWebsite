@@ -1,0 +1,4188 @@
+[
+  {
+    "slug": "acceltra",
+    "name": "Acceltra",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/SapientPrimary/SapientPrimaryWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "acceltra-prime",
+    "name": "Acceltra Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeAcceltra/PrimeAcceltraWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "ack-brunt",
+    "name": "Ack & Brunt",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerTylAxeAndBoar/RegorAxeShield",
+    "masteryRank": 3
+  },
+  {
+    "slug": "acrid",
+    "name": "Acrid",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Bio/AcidDartPistol",
+    "masteryRank": 7
+  },
+  {
+    "slug": "aegrit",
+    "name": "Aegrit",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/ThrowingWeapons/GrnVorStickyBomb/GrnVorStickyBomb",
+    "masteryRank": 11
+  },
+  {
+    "slug": "aeolak",
+    "name": "Aeolak",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnRifleErsatz/TnRifleErsatzWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "afentis",
+    "name": "Afentis",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnHopliteSpear/TnHopliteSpearGunWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "afuris",
+    "name": "Afuris",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/AkimboAutoPistols",
+    "masteryRank": 4
+  },
+  {
+    "slug": "afuris-prime",
+    "name": "Afuris Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeAfuris/PrimeAFurisWeapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "agkuza",
+    "name": "Agkuza",
+    "type": "arch-melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchSwordHook/ArchHookSwordWeapon",
+    "masteryRank": 3
+  },
+  {
+    "slug": "akarius",
+    "name": "Akarius",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/SapientPistol/SapientPistol",
+    "masteryRank": 8
+  },
+  {
+    "slug": "akarius-prime",
+    "name": "Akarius Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeAkarius/PrimeAkariusWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "akbolto",
+    "name": "Akbolto",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto",
+    "masteryRank": 8
+  },
+  {
+    "slug": "akbolto-prime",
+    "name": "Akbolto Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeAkbolto/PrimeAkBoltoWeapon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "akbronco",
+    "name": "Akbronco",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/AkimboShotGun",
+    "masteryRank": 2
+  },
+  {
+    "slug": "akbronco-prime",
+    "name": "Akbronco Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun",
+    "masteryRank": 10
+  },
+  {
+    "slug": "akjagara",
+    "name": "Akjagara",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/TigrisRedeemerSetPistol/TnoBladedPistols",
+    "masteryRank": 8
+  },
+  {
+    "slug": "akjagara-prime",
+    "name": "Akjagara Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeAkjagara/AkJagaraPrime",
+    "masteryRank": 12
+  },
+  {
+    "slug": "aklato",
+    "name": "Aklato",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/AkimboPistol",
+    "masteryRank": 3
+  },
+  {
+    "slug": "aklex",
+    "name": "Aklex",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/AkLexPistols",
+    "masteryRank": 4
+  },
+  {
+    "slug": "aklex-prime",
+    "name": "Aklex Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/AkLexPrimePistols",
+    "masteryRank": 15
+  },
+  {
+    "slug": "akmagnus",
+    "name": "Akmagnus",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/DualMagnus",
+    "masteryRank": 12
+  },
+  {
+    "slug": "akmagnus-prime",
+    "name": "Akmagnus Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/DualMagnusPrime",
+    "masteryRank": 15
+  },
+  {
+    "slug": "aksomati",
+    "name": "Aksomati",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/SomaSidearm/AkimboSomaPistols",
+    "masteryRank": 9
+  },
+  {
+    "slug": "aksomati-prime",
+    "name": "Aksomati Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeAksomati/PrimeAksomati",
+    "masteryRank": 12
+  },
+  {
+    "slug": "akstiletto",
+    "name": "Akstiletto",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/TennoUzi/TennoUzi",
+    "masteryRank": 8
+  },
+  {
+    "slug": "akstiletto-prime",
+    "name": "Akstiletto Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeAkstiletto/PrimeAkstiletto",
+    "masteryRank": 10
+  },
+  {
+    "slug": "akvasto",
+    "name": "Akvasto",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/DualVastos",
+    "masteryRank": 8
+  },
+  {
+    "slug": "akvasto-prime",
+    "name": "Akvasto Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/AkPrimeVasto/AkPrimeVastoPistol",
+    "masteryRank": 12
+  },
+  {
+    "slug": "akzani",
+    "name": "Akzani",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/HarlequinGun/HarlequinPistols",
+    "masteryRank": 4
+  },
+  {
+    "slug": "alternox",
+    "name": "Alternox",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/GyreRifle/GyreRifleWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "amanata",
+    "name": "Amanata",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Polearms/Naginata/ShrineMaidenNaginataWeapon",
+    "masteryRank": 2
+  },
+  {
+    "slug": "ambassador",
+    "name": "Ambassador",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpArSniper/CrpArSniperRifle",
+    "masteryRank": 10
+  },
+  {
+    "slug": "amesha",
+    "name": "Amesha",
+    "type": "arch-gun",
+    "sourceId": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
+    "masteryRank": 0
+  },
+  {
+    "slug": "amphis",
+    "name": "Amphis",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Staff/GrnStaff",
+    "masteryRank": 5
+  },
+  {
+    "slug": "amprex",
+    "name": "Amprex",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/ChainLightningGun/ChainLightningRifle",
+    "masteryRank": 10
+  },
+  {
+    "slug": "angstrum",
+    "name": "Angstrum",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/CorpusHandRocketLauncher",
+    "masteryRank": 4
+  },
+  {
+    "slug": "anku",
+    "name": "Anku",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Scythe/ParisScythe/ParisScythe",
+    "masteryRank": 3
+  },
+  {
+    "slug": "ankyros",
+    "name": "Ankyros",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Gauntlet/Gauntlet",
+    "masteryRank": 2
+  },
+  {
+    "slug": "ankyros-prime",
+    "name": "Ankyros Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Gauntlet/PrimeAnkyros/PrimeAnkyros",
+    "masteryRank": 8
+  },
+  {
+    "slug": "arca-plasmor",
+    "name": "Arca Plasmor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpShotgun/CrpShotgun",
+    "masteryRank": 10
+  },
+  {
+    "slug": "arca-scisco",
+    "name": "Arca Scisco",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/SniperPistol/CrpScopeGun",
+    "masteryRank": 10
+  },
+  {
+    "slug": "arca-titron",
+    "name": "Arca Titron",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/Hammer/CorpusHammerWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "argo-vel",
+    "name": "Argo & Vel",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/DaxDuviriMaceShieldWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "argonak",
+    "name": "Argonak",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/LaserAimRifle/LaserAimRifle",
+    "masteryRank": 7
+  },
+  {
+    "slug": "arum-spinosa",
+    "name": "Arum Spinosa",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/InfWarfan/InfWarfanWeapon",
+    "masteryRank": 11
+  },
+  {
+    "slug": "astilla",
+    "name": "Astilla",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnGlassShotgun/TnGlassShotgunGun",
+    "masteryRank": 10
+  },
+  {
+    "slug": "astilla-prime",
+    "name": "Astilla Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeAstilla/AstillaPrimeWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "athodai",
+    "name": "Athodai",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/TnJetTurbinePistolWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "atomos",
+    "name": "Atomos",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/HeatGun/GrnHeatGun",
+    "masteryRank": 5
+  },
+  {
+    "slug": "atterax",
+    "name": "Atterax",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerWhip/GrineerWhip",
+    "masteryRank": 5
+  },
+  {
+    "slug": "attica",
+    "name": "Attica",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnoPrmryXbow/TnoPrmryXbowWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "ax-52",
+    "name": "Ax-52",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Lasria/AK47/TC2024AK47Weapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "azima",
+    "name": "Azima",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/SundialGun/SundialPistol",
+    "masteryRank": 6
+  },
+  {
+    "slug": "azothane",
+    "name": "Azothane",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriTwoHandedKatana/DaxDuviriTwoHandedKatanaWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "balla",
+    "name": "Balla",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipOne",
+    "masteryRank": 0
+  },
+  {
+    "slug": "balla",
+    "name": "Balla",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipOne",
+    "masteryRank": 0
+  },
+  {
+    "slug": "ballistica",
+    "name": "Ballistica",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/AutomaticHandCrossbow/AutoCrossBow",
+    "masteryRank": 2
+  },
+  {
+    "slug": "ballistica-prime",
+    "name": "Ballistica Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeBallistica/PrimeBallistica",
+    "masteryRank": 14
+  },
+  {
+    "slug": "basmu",
+    "name": "Basmu",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Sentients/SentRifleNewWar/SentRifleNewWarGun",
+    "masteryRank": 11
+  },
+  {
+    "slug": "battacor",
+    "name": "Battacor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpSentExperimentRifle/CrpSentExperimentRifle",
+    "masteryRank": 10
+  },
+  {
+    "slug": "baza",
+    "name": "Baza",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnSMG/TnSMGWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "baza-prime",
+    "name": "Baza Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeBaza/PrimeBazaGun",
+    "masteryRank": 10
+  },
+  {
+    "slug": "bo",
+    "name": "Bo",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Staff/Staff",
+    "masteryRank": 0
+  },
+  {
+    "slug": "bo-prime",
+    "name": "Bo Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Staff/PrimeBo/PrimeBoWeapon",
+    "masteryRank": 5
+  },
+  {
+    "slug": "boar",
+    "name": "Boar",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Shotgun/FullAutoShotgun",
+    "masteryRank": 2
+  },
+  {
+    "slug": "boar-prime",
+    "name": "Boar Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Shotgun/PrimeBoar",
+    "masteryRank": 11
+  },
+  {
+    "slug": "boltace",
+    "name": "Boltace",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Tonfa/Boltonfa/Boltonfa",
+    "masteryRank": 4
+  },
+  {
+    "slug": "bolto",
+    "name": "Bolto",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/CrossBow",
+    "masteryRank": 7
+  },
+  {
+    "slug": "boltor",
+    "name": "Boltor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/BoltoRifle",
+    "masteryRank": 2
+  },
+  {
+    "slug": "boltor-prime",
+    "name": "Boltor Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeBoltor/PrimeBoltor",
+    "masteryRank": 13
+  },
+  {
+    "slug": "brakk",
+    "name": "Brakk",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrineerHandShotgun/GrineerHandCannon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "braton",
+    "name": "Braton",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/Rifle",
+    "masteryRank": 0
+  },
+  {
+    "slug": "braton-prime",
+    "name": "Braton Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/BratonPrime",
+    "masteryRank": 8
+  },
+  {
+    "slug": "braton-vandal",
+    "name": "Braton Vandal",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/VIPRifle",
+    "masteryRank": 4
+  },
+  {
+    "slug": "broken-scepter",
+    "name": "Broken Scepter",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnQueenSceptre/GrnQueenSceptreWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "broken-war",
+    "name": "Broken War",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoSmallSword",
+    "masteryRank": 10
+  },
+  {
+    "slug": "bronco",
+    "name": "Bronco",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/HandShotGun",
+    "masteryRank": 0
+  },
+  {
+    "slug": "bronco-prime",
+    "name": "Bronco Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+    "masteryRank": 4
+  },
+  {
+    "slug": "bubonico",
+    "name": "Bubonico",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/LongGuns/InfArmCannon/InfArmCannon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "burston",
+    "name": "Burston",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/BurstRifle",
+    "masteryRank": 0
+  },
+  {
+    "slug": "burston-prime",
+    "name": "Burston Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeBurston/PrimeBurston",
+    "masteryRank": 12
+  },
+  {
+    "slug": "buzlok",
+    "name": "Buzlok",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrnGorgSniperRifle/GrnGorgSniperRifle",
+    "masteryRank": 11
+  },
+  {
+    "slug": "cadus",
+    "name": "Cadus",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Staff/SingleStaff",
+    "masteryRank": 4
+  },
+  {
+    "slug": "cantare",
+    "name": "Cantare",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/TnChoirframeKunai/TnChoirframeKunai",
+    "masteryRank": 10
+  },
+  {
+    "slug": "carmine-penta",
+    "name": "Carmine Penta",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/GrenadeLauncher/CarminePenta",
+    "masteryRank": 6
+  },
+  {
+    "slug": "cassowar",
+    "name": "Cassowar",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Polearms/TnHalberdPolearm/TnHalberdPolearmWeapon",
+    "masteryRank": 5
+  },
+  {
+    "slug": "castanas",
+    "name": "Castanas",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/StickyBomb/StickyBombs",
+    "masteryRank": 3
+  },
+  {
+    "slug": "catabolyst",
+    "name": "Catabolyst",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/Pistols/InfBeamPistol/InfBeamPistol",
+    "masteryRank": 11
+  },
+  {
+    "slug": "caustacyst",
+    "name": "Caustacyst",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/InfEmbolistScythe/InfestedScythe",
+    "masteryRank": 7
+  },
+  {
+    "slug": "cedo",
+    "name": "Cedo",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnAlchemistShotgun/TnAlchemistShotgun",
+    "masteryRank": 8
+  },
+  {
+    "slug": "cedo-prime",
+    "name": "Cedo Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeCedo/PrimeCedoWeapon",
+    "masteryRank": 15
+  },
+  {
+    "slug": "centaur",
+    "name": "Centaur",
+    "type": "arch-melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Archwing/Melee/Archswordandshield/ArchSwordShield",
+    "masteryRank": 8
+  },
+  {
+    "slug": "ceramic-dagger",
+    "name": "Ceramic Dagger",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Dagger/CeramicDagger",
+    "masteryRank": 3
+  },
+  {
+    "slug": "cerata",
+    "name": "Cerata",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/Glaives/PunctureGlaive/PunctureGlaiveWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "cernos",
+    "name": "Cernos",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/AntlerBow/AntlerBow",
+    "masteryRank": 6
+  },
+  {
+    "slug": "cernos-prime",
+    "name": "Cernos Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/PrimeCernos/PrimeCernos",
+    "masteryRank": 12
+  },
+  {
+    "slug": "cestra",
+    "name": "Cestra",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun",
+    "masteryRank": 4
+  },
+  {
+    "slug": "ceti-lacera",
+    "name": "Ceti Lacera",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerMios/OperationsLacera",
+    "masteryRank": 12
+  },
+  {
+    "slug": "cinta",
+    "name": "Cinta",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/DaxDuviriAsymetricalBow/DaxDuviriAsymmetricalLongBowPlayerWeapon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "cobra-crane",
+    "name": "Cobra & Crane",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/PacifistShieldAndSword/PacifistShieldSword",
+    "masteryRank": 10
+  },
+  {
+    "slug": "cobra-crane-prime",
+    "name": "Cobra & Crane Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/PrimeCobraAndCrane/PrimeCobraAndCraneWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "coda-bassocyst",
+    "name": "Coda Bassocyst",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/1999InfShotgun/1999InfShotgunWeapon",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-catabolyst",
+    "name": "Coda Catabolyst",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaCatabolyst",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-caustacyst",
+    "name": "Coda Caustacyst",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaCaustacyst/CodaCaustacyst",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-hema",
+    "name": "Coda Hema",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaHema",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-hirudo",
+    "name": "Coda Hirudo",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaHirudo",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-mire",
+    "name": "Coda Mire",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaMire",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-motovore",
+    "name": "Coda Motovore",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/Melee/InfestedHammer/InfLichHammerWeapon",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-pathocyst",
+    "name": "Coda Pathocyst",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaPathocyst/CodaPathocyst",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-pox",
+    "name": "Coda Pox",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaPox",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-sporothrix",
+    "name": "Coda Sporothrix",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaSporothrix",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-synapse",
+    "name": "Coda Synapse",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaSynapse",
+    "masteryRank": 17
+  },
+  {
+    "slug": "coda-tysis",
+    "name": "Coda Tysis",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaTysis",
+    "masteryRank": 17
+  },
+  {
+    "slug": "convectrix",
+    "name": "Convectrix",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpSplitLaser/CrpSplitLaser",
+    "masteryRank": 7
+  },
+  {
+    "slug": "corinth",
+    "name": "Corinth",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnHeavyShotgun/TnHeavyShotgunGun",
+    "masteryRank": 8
+  },
+  {
+    "slug": "corinth-prime",
+    "name": "Corinth Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeCorinth/PrimeCorinth",
+    "masteryRank": 14
+  },
+  {
+    "slug": "corufell",
+    "name": "Corufell",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Archwing/Melee/ExaltedArchScythe/ExaltedAWScytheWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "cronus",
+    "name": "Cronus",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/CronusSword/CronusLongSword",
+    "masteryRank": 0
+  },
+  {
+    "slug": "cyanex",
+    "name": "Cyanex",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpSentAmalgPistol/CrpSentAmalgPistol",
+    "masteryRank": 8
+  },
+  {
+    "slug": "cyath",
+    "name": "Cyath",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipFour",
+    "masteryRank": 0
+  },
+  {
+    "slug": "cyath",
+    "name": "Cyath",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFour",
+    "masteryRank": 0
+  },
+  {
+    "slug": "cycron",
+    "name": "Cycron",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpChargeGun/CrpChargeGun",
+    "masteryRank": 8
+  },
+  {
+    "slug": "daikyu",
+    "name": "Daikyu",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/AsymetricalBow/AsymetricalBow",
+    "masteryRank": 10
+  },
+  {
+    "slug": "dakra-prime",
+    "name": "Dakra Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/CronusSword/PrimeCronusLongSword",
+    "masteryRank": 10
+  },
+  {
+    "slug": "dark-dagger",
+    "name": "Dark Dagger",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Dagger/DarkDagger",
+    "masteryRank": 2
+  },
+  {
+    "slug": "dark-split-sword",
+    "name": "Dark Split-Sword",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerHybridWeapon",
+    "masteryRank": 5
+  },
+  {
+    "slug": "dark-sword",
+    "name": "Dark Sword",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkLongSword",
+    "masteryRank": 8
+  },
+  {
+    "slug": "dehtat",
+    "name": "Dehtat",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipFive",
+    "masteryRank": 0
+  },
+  {
+    "slug": "dehtat",
+    "name": "Dehtat",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFive",
+    "masteryRank": 0
+  },
+  {
+    "slug": "dera",
+    "name": "Dera",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Energy/EnergyRifle",
+    "masteryRank": 4
+  },
+  {
+    "slug": "dera-vandal",
+    "name": "Dera Vandal",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Energy/DeraVandal",
+    "masteryRank": 7
+  },
+  {
+    "slug": "despair",
+    "name": "Despair",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/StalkerKunai",
+    "masteryRank": 4
+  },
+  {
+    "slug": "destreza",
+    "name": "Destreza",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/TnoRapier/TnoRapier",
+    "masteryRank": 7
+  },
+  {
+    "slug": "destreza-prime",
+    "name": "Destreza Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PRapier/DestrezaPrime",
+    "masteryRank": 10
+  },
+  {
+    "slug": "detron",
+    "name": "Detron",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CorpusHandShotgun/CorpusHandCannon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "dex-dakra",
+    "name": "Dex Dakra",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/DexTheSecond/DexTheSecond",
+    "masteryRank": 6
+  },
+  {
+    "slug": "dex-furis",
+    "name": "Dex Furis",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/DexFuris/DexFuris",
+    "masteryRank": 10
+  },
+  {
+    "slug": "dex-nikana",
+    "name": "Dex Nikana",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/Dex2023Nikana/Dex2023Nikana",
+    "masteryRank": 8
+  },
+  {
+    "slug": "dex-sybaris",
+    "name": "Dex Sybaris",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/DexTheThird/DexTheThird",
+    "masteryRank": 7
+  },
+  {
+    "slug": "dokrahm",
+    "name": "Dokrahm",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipEleven",
+    "masteryRank": 0
+  },
+  {
+    "slug": "dorrclave",
+    "name": "Dorrclave",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/TnDagathBladeWhip/TnDagathBladeWhip",
+    "masteryRank": 8
+  },
+  {
+    "slug": "dragon-nikana",
+    "name": "Dragon Nikana",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/LowKatana",
+    "masteryRank": 8
+  },
+  {
+    "slug": "drakgoon",
+    "name": "Drakgoon",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerFlakCannon/FlakCannon",
+    "masteryRank": 5
+  },
+  {
+    "slug": "dread",
+    "name": "Dread",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/StalkerBow",
+    "masteryRank": 5
+  },
+  {
+    "slug": "dual-cestra",
+    "name": "Dual Cestra",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/DualCorpusMinigun",
+    "masteryRank": 7
+  },
+  {
+    "slug": "dual-cleavers",
+    "name": "Dual Cleavers",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/DualCleaverWeapon",
+    "masteryRank": 5
+  },
+  {
+    "slug": "dual-coda-torxica",
+    "name": "Dual Coda Torxica",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/InfestedLich/Pistols/1999InfSporePistol/1999InfSporePistolWeapon",
+    "masteryRank": 17
+  },
+  {
+    "slug": "dual-ether",
+    "name": "Dual Ether",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualEtherSword",
+    "masteryRank": 8
+  },
+  {
+    "slug": "dual-heat-swords",
+    "name": "Dual Heat Swords",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualHeatSwords",
+    "masteryRank": 3
+  },
+  {
+    "slug": "dual-ichor",
+    "name": "Dual Ichor",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Axe/DualInfestedAxesWeapon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "dual-kamas",
+    "name": "Dual Kamas",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/DualKamas/DualKamas",
+    "masteryRank": 1
+  },
+  {
+    "slug": "dual-kamas-prime",
+    "name": "Dual Kamas Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/PrimeDualKamas/PrimeDualKamas",
+    "masteryRank": 8
+  },
+  {
+    "slug": "dual-keres",
+    "name": "Dual Keres",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/QuillSword/QuillDualSwords",
+    "masteryRank": 7
+  },
+  {
+    "slug": "dual-keres-prime",
+    "name": "Dual Keres Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeDualKeres/PrimeDualKeresWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "dual-raza",
+    "name": "Dual Raza",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Soma/SomaDualKamas",
+    "masteryRank": 6
+  },
+  {
+    "slug": "dual-skana",
+    "name": "Dual Skana",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualShortSword",
+    "masteryRank": 0
+  },
+  {
+    "slug": "dual-toxocyst",
+    "name": "Dual Toxocyst",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/Pistols/InfVomitGun/InfVomitGunWep",
+    "masteryRank": 11
+  },
+  {
+    "slug": "dual-viciss",
+    "name": "Dual Viciss",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Lasria/LasGooSickle/LasGooSicklePlayerWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "dual-zoren",
+    "name": "Dual Zoren",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Axe/DualAxeWeapon",
+    "masteryRank": 2
+  },
+  {
+    "slug": "dual-zoren-prime",
+    "name": "Dual Zoren Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeZoren/PrimeZorenAxeWeapon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "edun",
+    "name": "Edun",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Polearms/DaxDuviriPolearm/DaxDuviriPolearmWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "efv-5-jupiter",
+    "name": "Efv-5 Jupiter",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Lasria/LasGooAK/LasGooAKPlayerWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "efv-8-mars",
+    "name": "Efv-8 Mars",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Lasria/LasGooPistol/LasGooPistolPlayerWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "ekhein",
+    "name": "Ekhein",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Thanotech/EntSphereHammer/EntSphereHammer",
+    "masteryRank": 10
+  },
+  {
+    "slug": "ekwana-ii-jai",
+    "name": "Ekwana Ii Jai",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIStatusII",
+    "masteryRank": 0
+  },
+  {
+    "slug": "ekwana-ii-ruhang",
+    "name": "Ekwana Ii Ruhang",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIStatusII",
+    "masteryRank": 0
+  },
+  {
+    "slug": "ekwana-jai",
+    "name": "Ekwana Jai",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIStatusI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "ekwana-jai-ii",
+    "name": "Ekwana Jai Ii",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIIStatusI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "ekwana-ruhang",
+    "name": "Ekwana Ruhang",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIStatusI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "ekwana-ruhang-ii",
+    "name": "Ekwana Ruhang Ii",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIIStatusI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "elytron",
+    "name": "Elytron",
+    "type": "arch-gun",
+    "sourceId": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
+    "masteryRank": 0
+  },
+  {
+    "slug": "embolist",
+    "name": "Embolist",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/Pistols/InfestedPistol",
+    "masteryRank": 9
+  },
+  {
+    "slug": "endura",
+    "name": "Endura",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/ThreeLeaf/ThreeLeaf",
+    "masteryRank": 7
+  },
+  {
+    "slug": "epitaph",
+    "name": "Epitaph",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/TnWraitheSidearm/TnWraitheSidearmWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "epitaph-prime",
+    "name": "Epitaph Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeEpitaph/PrimeEpitaphSidearmWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "ether-daggers",
+    "name": "Ether Daggers",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/DualDagger/DualEtherDagger",
+    "masteryRank": 6
+  },
+  {
+    "slug": "ether-reaper",
+    "name": "Ether Reaper",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Scythe/EtherScytheWeapon",
+    "masteryRank": 4
+  },
+  {
+    "slug": "ether-sword",
+    "name": "Ether Sword",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/LongSword/EtherSword",
+    "masteryRank": 7
+  },
+  {
+    "slug": "euphona-prime",
+    "name": "Euphona Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/AllNew1hSG/AllNew1hSG",
+    "masteryRank": 14
+  },
+  {
+    "slug": "evensong",
+    "name": "Evensong",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/TnChoirBow/TnChoirBow",
+    "masteryRank": 10
+  },
+  {
+    "slug": "exergis",
+    "name": "Exergis",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpShapeBlast/CrpShapeBlastShotgun",
+    "masteryRank": 8
+  },
+  {
+    "slug": "falcor",
+    "name": "Falcor",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/Glaive/CrpGlaive/CrpGlaive",
+    "masteryRank": 8
+  },
+  {
+    "slug": "fang",
+    "name": "Fang",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/DualDagger/DualDagger",
+    "masteryRank": 0
+  },
+  {
+    "slug": "fang-prime",
+    "name": "Fang Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/DualDagger/FangPrimeDagger",
+    "masteryRank": 10
+  },
+  {
+    "slug": "felarx",
+    "name": "Felarx",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Zariman/LongGuns/PumpShotgun/ZarimanPumpShotgun",
+    "masteryRank": 14
+  },
+  {
+    "slug": "ferrox",
+    "name": "Ferrox",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/Spears/Railgun/CorpusRailgun",
+    "masteryRank": 14
+  },
+  {
+    "slug": "flux-rifle",
+    "name": "Flux Rifle",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Energy/CrpLaserRifle",
+    "masteryRank": 6
+  },
+  {
+    "slug": "fragor",
+    "name": "Fragor",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Hammer/HammerWeapon",
+    "masteryRank": 2
+  },
+  {
+    "slug": "fragor-prime",
+    "name": "Fragor Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/PrimeFragor/PrimeFragor",
+    "masteryRank": 12
+  },
+  {
+    "slug": "fulmin",
+    "name": "Fulmin",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnWispRifle/TnWispRifle",
+    "masteryRank": 8
+  },
+  {
+    "slug": "fulmin-prime",
+    "name": "Fulmin Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeFulmin/PrimeFulmin",
+    "masteryRank": 12
+  },
+  {
+    "slug": "furax",
+    "name": "Furax",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Fist/Fist",
+    "masteryRank": 5
+  },
+  {
+    "slug": "furax-wraith",
+    "name": "Furax Wraith",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Fist/FuraxWraith",
+    "masteryRank": 9
+  },
+  {
+    "slug": "furis",
+    "name": "Furis",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/AutoPistol",
+    "masteryRank": 2
+  },
+  {
+    "slug": "fusilai",
+    "name": "Fusilai",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/GlassKunai/GlassKunaiWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "galatine",
+    "name": "Galatine",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/GreatSword/TennoGreatSword",
+    "masteryRank": 3
+  },
+  {
+    "slug": "galatine-prime",
+    "name": "Galatine Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeGalatine/PrimeGalatine",
+    "masteryRank": 13
+  },
+  {
+    "slug": "galvacord",
+    "name": "Galvacord",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/Whips/CrpShockGrip/CrpShockGripWhipWeapon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "gammacor",
+    "name": "Gammacor",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSDroidArray",
+    "masteryRank": 2
+  },
+  {
+    "slug": "gazal-machete",
+    "name": "Gazal Machete",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/PersianMachete/DjinnMachete",
+    "masteryRank": 5
+  },
+  {
+    "slug": "ghoulsaw",
+    "name": "Ghoulsaw",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnGhoulSaw/GrnGhoulSawPlayer",
+    "masteryRank": 7
+  },
+  {
+    "slug": "glaive",
+    "name": "Glaive",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Glaives/LightGlaive/LightGlaiveWeapon",
+    "masteryRank": 1
+  },
+  {
+    "slug": "glaive-prime",
+    "name": "Glaive Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeGlaive/PrimeGlaiveWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "glaxion",
+    "name": "Glaxion",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpFreezeRay/CrpFreezeRayRifle",
+    "masteryRank": 8
+  },
+  {
+    "slug": "glaxion-vandal",
+    "name": "Glaxion Vandal",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpFreezeRay/Vandal/CrpFreezeRayVandalRifle",
+    "masteryRank": 12
+  },
+  {
+    "slug": "gorgon",
+    "name": "Gorgon",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/HeavyRifle",
+    "masteryRank": 3
+  },
+  {
+    "slug": "gorgon-wraith",
+    "name": "Gorgon Wraith",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/WraithGorgon/WraithGorgon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "gotva-prime",
+    "name": "Gotva Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrnOrokinRifle/GrnOrokinRifleWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "grakata",
+    "name": "Grakata",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/GrnAssaultRifle",
+    "masteryRank": 5
+  },
+  {
+    "slug": "gram",
+    "name": "Gram",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/GreatSword/GreatSword",
+    "masteryRank": 2
+  },
+  {
+    "slug": "gram-prime",
+    "name": "Gram Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeGram/PrimeGram",
+    "masteryRank": 14
+  },
+  {
+    "slug": "grimoire",
+    "name": "Grimoire",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Grimoire/TnDoppelgangerGrimoire",
+    "masteryRank": 10
+  },
+  {
+    "slug": "grimoire",
+    "name": "Grimoire",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Grimoire/TnGrimoire",
+    "masteryRank": 10
+  },
+  {
+    "slug": "grinlok",
+    "name": "Grinlok",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerLeverActionRifle/GLARifle",
+    "masteryRank": 7
+  },
+  {
+    "slug": "guandao",
+    "name": "Guandao",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Polearms/TnGuandaoPolearm/TnGuandaoPolearmWeapon",
+    "masteryRank": 4
+  },
+  {
+    "slug": "guandao-prime",
+    "name": "Guandao Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Polearms/PrimeGuandao/PrimeGuandaoWeapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "gunsen",
+    "name": "Gunsen",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Warfan/WarfanWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "gunsen-prime",
+    "name": "Gunsen Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Warfan/PrimeGunsen/PrimeGunsenWeapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "halikar",
+    "name": "Halikar",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnBoomerang/GrnBoomerang",
+    "masteryRank": 7
+  },
+  {
+    "slug": "halikar-wraith",
+    "name": "Halikar Wraith",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnBoomerang/HalikarWraithWeapon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "harmony",
+    "name": "Harmony",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Scythe/TnChoirScythe/TnChoirScythe",
+    "masteryRank": 10
+  },
+  {
+    "slug": "harpak",
+    "name": "Harpak",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrnHarpoonGun/GrnHarpoonGun",
+    "masteryRank": 7
+  },
+  {
+    "slug": "hate",
+    "name": "Hate",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Scythe/StalkerScytheWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "heat-dagger",
+    "name": "Heat Dagger",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Dagger/Dagger",
+    "masteryRank": 3
+  },
+  {
+    "slug": "heat-sword",
+    "name": "Heat Sword",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/HeatSword/HeatLongSword",
+    "masteryRank": 3
+  },
+  {
+    "slug": "hek",
+    "name": "Hek",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Shotgun/QuadShotgun",
+    "masteryRank": 4
+  },
+  {
+    "slug": "heliocor",
+    "name": "Heliocor",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Cephalon/Melee/Hammer/CephHammerWeapon",
+    "masteryRank": 9
+  },
+  {
+    "slug": "hema",
+    "name": "Hema",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/LongGuns/InfWFAccompanyingPri/InfestedBurstRifle",
+    "masteryRank": 7
+  },
+  {
+    "slug": "hespar",
+    "name": "Hespar",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/HeavyScythe/DuviriScythe/DuviriHeavyScytheWeapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "higasa",
+    "name": "Higasa",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/Gunbrella/ShrineMaidenGunbrellaWeapon",
+    "masteryRank": 2
+  },
+  {
+    "slug": "hikou",
+    "name": "Hikou",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/TennoStars",
+    "masteryRank": 2
+  },
+  {
+    "slug": "hikou-prime",
+    "name": "Hikou Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeThrowingStar/PrimeHikou",
+    "masteryRank": 4
+  },
+  {
+    "slug": "hind",
+    "name": "Hind",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/BurstRifle/GrnBurstRifle",
+    "masteryRank": 0
+  },
+  {
+    "slug": "hirudo",
+    "name": "Hirudo",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/InfWFAccompanyingSparring/InfestedKogake",
+    "masteryRank": 7
+  },
+  {
+    "slug": "hystrix",
+    "name": "Hystrix",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/QuillDartgun/QuillDartGunWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "hystrix-prime",
+    "name": "Hystrix Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeHystrix/PrimeHystrixWeapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "ignis",
+    "name": "Ignis",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Chemical/FlameThrower",
+    "masteryRank": 5
+  },
+  {
+    "slug": "ignis-wraith",
+    "name": "Ignis Wraith",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Chemical/FlameThrowerWraith",
+    "masteryRank": 9
+  },
+  {
+    "slug": "innodem",
+    "name": "Innodem",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Zariman/Melee/Dagger/ZarimanDaggerWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "itzal",
+    "name": "Itzal",
+    "type": "arch-gun",
+    "sourceId": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack",
+    "masteryRank": 0
+  },
+  {
+    "slug": "jai",
+    "name": "Jai",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "jai-ii",
+    "name": "Jai Ii",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedII",
+    "masteryRank": 0
+  },
+  {
+    "slug": "jat-kittag",
+    "name": "Jat Kittag",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerJetPoweredPolearm/GrineerJetPolearm",
+    "masteryRank": 5
+  },
+  {
+    "slug": "jat-kusar",
+    "name": "Jat Kusar",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnKusarigama/GrnKusarigamaWeapon",
+    "masteryRank": 11
+  },
+  {
+    "slug": "javlok",
+    "name": "Javlok",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrnFlameSpear/GrnFlameSpear",
+    "masteryRank": 7
+  },
+  {
+    "slug": "jaw-sword",
+    "name": "Jaw Sword",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/JawSword/JawLongSword",
+    "masteryRank": 0
+  },
+  {
+    "slug": "jayap",
+    "name": "Jayap",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleFive",
+    "masteryRank": 0
+  },
+  {
+    "slug": "kama",
+    "name": "Kama",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/DualKamas/SingleKama",
+    "masteryRank": 1
+  },
+  {
+    "slug": "karak",
+    "name": "Karak",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerM16Homage/GrineerM16Rifle",
+    "masteryRank": 1
+  },
+  {
+    "slug": "karak-wraith",
+    "name": "Karak Wraith",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerM16Homage/KarakWraith",
+    "masteryRank": 7
+  },
+  {
+    "slug": "karyst",
+    "name": "Karyst",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/KrisDagger/KrisDagger",
+    "masteryRank": 6
+  },
+  {
+    "slug": "karyst-prime",
+    "name": "Karyst Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKaryst/PrimeKrisDagger",
+    "masteryRank": 12
+  },
+  {
+    "slug": "kaszas",
+    "name": "Kaszas",
+    "type": "arch-melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchScythe/ArchScythe",
+    "masteryRank": 4
+  },
+  {
+    "slug": "keratinos",
+    "name": "Keratinos",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/InfTransformClaw/InfTransformClawsWeapon",
+    "masteryRank": 9
+  },
+  {
+    "slug": "kesheg",
+    "name": "Kesheg",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerHalberd/GrnHalberd",
+    "masteryRank": 7
+  },
+  {
+    "slug": "kestrel",
+    "name": "Kestrel",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Glaives/Boomerang/BoomerangWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "knell",
+    "name": "Knell",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/TnPriestPistolScope/TnPriestPistolWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "knell-prime",
+    "name": "Knell Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeKnell/PrimeKnellWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "knux",
+    "name": "Knux",
+    "type": "arch-melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Archwing/Melee/GrnArchHand/GrnArchHandWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "kogake",
+    "name": "Kogake",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/BrassKnuckles/BrassKnuckles",
+    "masteryRank": 2
+  },
+  {
+    "slug": "kogake-prime",
+    "name": "Kogake Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/PrimeKogake/KogakePrimeKnuckles",
+    "masteryRank": 10
+  },
+  {
+    "slug": "kohm",
+    "name": "Kohm",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrnSpark/GrnSparkRifle",
+    "masteryRank": 5
+  },
+  {
+    "slug": "kohmak",
+    "name": "Kohmak",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrnKohmPistol/GrnKohmPistol",
+    "masteryRank": 5
+  },
+  {
+    "slug": "komorex",
+    "name": "Komorex",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpSentAmlgSniper/CrpSentAmlgSniper",
+    "masteryRank": 8
+  },
+  {
+    "slug": "kompressa",
+    "name": "Kompressa",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/TnYareliPistol/TnYareliPistolWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "korb",
+    "name": "Korb",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleNine",
+    "masteryRank": 0
+  },
+  {
+    "slug": "korrudo",
+    "name": "Korrudo",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnSparring/GrnSpiderSparring/GrnSpiderSparring",
+    "masteryRank": 9
+  },
+  {
+    "slug": "korumm",
+    "name": "Korumm",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Archon/Melee/Trident/ArchonTridentPlayerWep",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kraken",
+    "name": "Kraken",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/GrineerPistol/GrnHeavyPistol",
+    "masteryRank": 0
+  },
+  {
+    "slug": "kreska",
+    "name": "Kreska",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/CrpVenusHatchet/CrpVenusHatchet",
+    "masteryRank": 6
+  },
+  {
+    "slug": "krohkur",
+    "name": "Krohkur",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/GrnEgyptSwdWeapon",
+    "masteryRank": 9
+  },
+  {
+    "slug": "kronen",
+    "name": "Kronen",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinner/TennoTonfa",
+    "masteryRank": 3
+  },
+  {
+    "slug": "kronen-prime",
+    "name": "Kronen Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinnerPrime/TonfaContestWinnerPrimeWeapon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kronsh",
+    "name": "Kronsh",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipSix",
+    "masteryRank": 0
+  },
+  {
+    "slug": "kronsh",
+    "name": "Kronsh",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipSix",
+    "masteryRank": 0
+  },
+  {
+    "slug": "kroostra",
+    "name": "Kroostra",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleSix",
+    "masteryRank": 0
+  },
+  {
+    "slug": "kulstar",
+    "name": "Kulstar",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrnTorpedoPistol/GrnTorpedoPistol",
+    "masteryRank": 5
+  },
+  {
+    "slug": "kunai",
+    "name": "Kunai",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/Kunai",
+    "masteryRank": 0
+  },
+  {
+    "slug": "kuva-brakk",
+    "name": "Kuva Brakk",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Brakk/KuvaBrakk",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kuva-bramma",
+    "name": "Kuva Bramma",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/Bows/GrnBow/GrnBowWeapon",
+    "masteryRank": 15
+  },
+  {
+    "slug": "kuva-chakkhurr",
+    "name": "Kuva Chakkhurr",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrnKuvaLichRifle/GrnKuvaLichRifleWeapon",
+    "masteryRank": 15
+  },
+  {
+    "slug": "kuva-drakgoon",
+    "name": "Kuva Drakgoon",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Drakgoon/KuvaDrakgoon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kuva-hek",
+    "name": "Kuva Hek",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Hek/KuvaHekWeapon",
+    "masteryRank": 15
+  },
+  {
+    "slug": "kuva-hind",
+    "name": "Kuva Hind",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Hind/KuvaHind",
+    "masteryRank": 15
+  },
+  {
+    "slug": "kuva-karak",
+    "name": "Kuva Karak",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Karak/KuvaKarak",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kuva-kohm",
+    "name": "Kuva Kohm",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Kohm/KuvaKohm",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kuva-kraken",
+    "name": "Kuva Kraken",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Kraken/KuvaKraken",
+    "masteryRank": 15
+  },
+  {
+    "slug": "kuva-nukor",
+    "name": "Kuva Nukor",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Nukor/KuvaNukor",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kuva-ogris",
+    "name": "Kuva Ogris",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Ogris/KuvaOgris",
+    "masteryRank": 15
+  },
+  {
+    "slug": "kuva-quartakk",
+    "name": "Kuva Quartakk",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Quartakk/KuvaQuartakk",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kuva-seer",
+    "name": "Kuva Seer",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Seer/KuvaSeer",
+    "masteryRank": 15
+  },
+  {
+    "slug": "kuva-shildeg",
+    "name": "Kuva Shildeg",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnKuvaLichScythe/GrnKuvaLichScytheWeapon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kuva-sobek",
+    "name": "Kuva Sobek",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Sobek/KuvaSobek",
+    "masteryRank": 15
+  },
+  {
+    "slug": "kuva-tonkor",
+    "name": "Kuva Tonkor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Tonkor/KuvaTonkor",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kuva-twin-stubbas",
+    "name": "Kuva Twin Stubbas",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Stubba/KuvaStubba",
+    "masteryRank": 13
+  },
+  {
+    "slug": "kuva-zarr",
+    "name": "Kuva Zarr",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Zarr/KuvaZarr",
+    "masteryRank": 15
+  },
+  {
+    "slug": "kwath",
+    "name": "Kwath",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleThree",
+    "masteryRank": 0
+  },
+  {
+    "slug": "lacera",
+    "name": "Lacera",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerMios/StalkerMios",
+    "masteryRank": 7
+  },
+  {
+    "slug": "laetum",
+    "name": "Laetum",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Zariman/Pistols/HeavyPistol/ZarimanHeavyPistol",
+    "masteryRank": 14
+  },
+  {
+    "slug": "laka",
+    "name": "Laka",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleTwo",
+    "masteryRank": 0
+  },
+  {
+    "slug": "lanka",
+    "name": "Lanka",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Energy/Railgun",
+    "masteryRank": 10
+  },
+  {
+    "slug": "lato",
+    "name": "Lato",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/Pistol",
+    "masteryRank": 0
+  },
+  {
+    "slug": "lato-prime",
+    "name": "Lato Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/LatoPrime",
+    "masteryRank": 14
+  },
+  {
+    "slug": "lato-vandal",
+    "name": "Lato Vandal",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/LatoVandal",
+    "masteryRank": 7
+  },
+  {
+    "slug": "latron",
+    "name": "Latron",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/SemiAutoRifle",
+    "masteryRank": 0
+  },
+  {
+    "slug": "latron-prime",
+    "name": "Latron Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/LatronPrime",
+    "masteryRank": 10
+  },
+  {
+    "slug": "latron-wraith",
+    "name": "Latron Wraith",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/WraithLatron/WraithLatron",
+    "masteryRank": 7
+  },
+  {
+    "slug": "lecta",
+    "name": "Lecta",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/Whip/CorpusWhipWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "lenz",
+    "name": "Lenz",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/Bow/Longbow/CrpBow",
+    "masteryRank": 8
+  },
+  {
+    "slug": "lesion",
+    "name": "Lesion",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/TipedoStaff/InfTipedoStaff",
+    "masteryRank": 9
+  },
+  {
+    "slug": "lex",
+    "name": "Lex",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/HeavyPistol",
+    "masteryRank": 3
+  },
+  {
+    "slug": "lex-prime",
+    "name": "Lex Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+    "masteryRank": 8
+  },
+  {
+    "slug": "machete",
+    "name": "Machete",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/Machete",
+    "masteryRank": 1
+  },
+  {
+    "slug": "machete-wraith",
+    "name": "Machete Wraith",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/WraithMacheteWeapon",
+    "masteryRank": 11
+  },
+  {
+    "slug": "magistar",
+    "name": "Magistar",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Maces/PaladinMace/PaladinMaceWeapon",
+    "masteryRank": 1
+  },
+  {
+    "slug": "magnus",
+    "name": "Magnus",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum",
+    "masteryRank": 10
+  },
+  {
+    "slug": "magnus-prime",
+    "name": "Magnus Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "mara-detron",
+    "name": "Mara Detron",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/VoidTrader/VTDetron",
+    "masteryRank": 9
+  },
+  {
+    "slug": "marelok",
+    "name": "Marelok",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrineerLeverActionPistol/GLAPistol",
+    "masteryRank": 7
+  },
+  {
+    "slug": "masseter",
+    "name": "Masseter",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/TnChiselKanabo/TnChiselKanabo",
+    "masteryRank": 8
+  },
+  {
+    "slug": "masseter-prime",
+    "name": "Masseter Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeMasseter/PrimeMasseter",
+    "masteryRank": 14
+  },
+  {
+    "slug": "mewan",
+    "name": "Mewan",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipThree",
+    "masteryRank": 0
+  },
+  {
+    "slug": "mewan",
+    "name": "Mewan",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipThree",
+    "masteryRank": 0
+  },
+  {
+    "slug": "mios",
+    "name": "Mios",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/Swords/Mios/Mios",
+    "masteryRank": 8
+  },
+  {
+    "slug": "mire",
+    "name": "Mire",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/Swords/Mire/MireSword",
+    "masteryRank": 5
+  },
+  {
+    "slug": "miter",
+    "name": "Miter",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerSawbladeGun/SawBladeGun",
+    "masteryRank": 6
+  },
+  {
+    "slug": "mk1-bo",
+    "name": "Mk1-Bo",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/MK1Series/MK1Bo",
+    "masteryRank": 0
+  },
+  {
+    "slug": "mk1-braton",
+    "name": "Mk1-Braton",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/StartingRifle",
+    "masteryRank": 0
+  },
+  {
+    "slug": "mk1-furax",
+    "name": "Mk1-Furax",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/MK1Series/MK1Furax",
+    "masteryRank": 0
+  },
+  {
+    "slug": "mk1-furis",
+    "name": "Mk1-Furis",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/MK1Series/MK1Furis",
+    "masteryRank": 0
+  },
+  {
+    "slug": "mk1-kunai",
+    "name": "Mk1-Kunai",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/MK1Series/MK1Kunai",
+    "masteryRank": 0
+  },
+  {
+    "slug": "mk1-paris",
+    "name": "Mk1-Paris",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/MK1Series/MK1Paris",
+    "masteryRank": 0
+  },
+  {
+    "slug": "mk1-strun",
+    "name": "Mk1-Strun",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/MK1Series/MK1Strun",
+    "masteryRank": 0
+  },
+  {
+    "slug": "mutalist-cernos",
+    "name": "Mutalist Cernos",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/Bow/InfCernosBow/InfCernos",
+    "masteryRank": 7
+  },
+  {
+    "slug": "mutalist-quanta",
+    "name": "Mutalist Quanta",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/LongGuns/InfCrpShockSwarm/InfCrpShockSwarmRifle",
+    "masteryRank": 2
+  },
+  {
+    "slug": "nagantaka",
+    "name": "Nagantaka",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/GarudaCrossbow/GarudaCrossbow",
+    "masteryRank": 9
+  },
+  {
+    "slug": "nagantaka-prime",
+    "name": "Nagantaka Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeNagantaka/PrimeNagantakaWeapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "nami-skyla",
+    "name": "Nami Skyla",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/CutlassPoignardSwords",
+    "masteryRank": 2
+  },
+  {
+    "slug": "nami-skyla-prime",
+    "name": "Nami Skyla Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeNamiSkyla/PrimeNamiSkyla",
+    "masteryRank": 11
+  },
+  {
+    "slug": "nami-solo",
+    "name": "Nami Solo",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/TennoCutlass",
+    "masteryRank": 6
+  },
+  {
+    "slug": "nataruk",
+    "name": "Nataruk",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/Omicrus/OmicrusPlayerWep",
+    "masteryRank": 0
+  },
+  {
+    "slug": "nepheri",
+    "name": "Nepheri",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Archon/Melee/DualDaggers/ArchonDualDaggersPlayerWep",
+    "masteryRank": 13
+  },
+  {
+    "slug": "nikana",
+    "name": "Nikana",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/Katana",
+    "masteryRank": 4
+  },
+  {
+    "slug": "nikana-prime",
+    "name": "Nikana Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKatana/PrimeNikana",
+    "masteryRank": 12
+  },
+  {
+    "slug": "ninkondi",
+    "name": "Ninkondi",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Nunchaku/Nunchaku/Nunchaku",
+    "masteryRank": 8
+  },
+  {
+    "slug": "ninkondi-prime",
+    "name": "Ninkondi Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/PrimeNinkondi/PrimeNikondi",
+    "masteryRank": 14
+  },
+  {
+    "slug": "nukor",
+    "name": "Nukor",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrineerMicrowavegun/GrnMicrowavePistol",
+    "masteryRank": 4
+  },
+  {
+    "slug": "obex",
+    "name": "Obex",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/KickAndPunch/KickPunchWeapon",
+    "masteryRank": 4
+  },
+  {
+    "slug": "ocucor",
+    "name": "Ocucor",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpSentExperimentPistol/CrpSentExperimentPistol",
+    "masteryRank": 8
+  },
+  {
+    "slug": "odonata",
+    "name": "Odonata",
+    "type": "arch-gun",
+    "sourceId": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack",
+    "masteryRank": 0
+  },
+  {
+    "slug": "odonata-prime",
+    "name": "Odonata Prime",
+    "type": "arch-gun",
+    "sourceId": "/Lotus/Powersuits/Archwing/PrimeJetPack/PrimeJetPack",
+    "masteryRank": 0
+  },
+  {
+    "slug": "ogris",
+    "name": "Ogris",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Chemical/RocketLauncher",
+    "masteryRank": 9
+  },
+  {
+    "slug": "ohma",
+    "name": "Ohma",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/CrpTonfa/CrpTonfa",
+    "masteryRank": 8
+  },
+  {
+    "slug": "okina",
+    "name": "Okina",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/TennoSai/TennoSais",
+    "masteryRank": 5
+  },
+  {
+    "slug": "okina-prime",
+    "name": "Okina Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeOkina/PrimeOkina",
+    "masteryRank": 12
+  },
+  {
+    "slug": "onorix",
+    "name": "Onorix",
+    "type": "arch-melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Archwing/Melee/Archaxe/ArchAxeWeapon",
+    "masteryRank": 1
+  },
+  {
+    "slug": "onos",
+    "name": "Onos",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Thanotech/EntratiWristGun/EntratiWristGunWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "ooltha",
+    "name": "Ooltha",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipTwo",
+    "masteryRank": 0
+  },
+  {
+    "slug": "ooltha",
+    "name": "Ooltha",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipTwo",
+    "masteryRank": 0
+  },
+  {
+    "slug": "opticor",
+    "name": "Opticor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpBFG/CrpBFG",
+    "masteryRank": 14
+  },
+  {
+    "slug": "opticor-vandal",
+    "name": "Opticor Vandal",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpBFG/Vandal/VandalCrpBFG",
+    "masteryRank": 14
+  },
+  {
+    "slug": "orthos",
+    "name": "Orthos",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Polearms/PolearmWeapon",
+    "masteryRank": 2
+  },
+  {
+    "slug": "orthos-prime",
+    "name": "Orthos Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "orvius",
+    "name": "Orvius",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Glaives/TeshinGlaive/TnTeshinGlaiveWep",
+    "masteryRank": 5
+  },
+  {
+    "slug": "pandero",
+    "name": "Pandero",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/TnBardPistol/TnBardPistolGun",
+    "masteryRank": 8
+  },
+  {
+    "slug": "pandero-prime",
+    "name": "Pandero Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimePandero/PanderoPrimeWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "pangolin-prime",
+    "name": "Pangolin Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimePangolinSword/PrimePangolinSword",
+    "masteryRank": 14
+  },
+  {
+    "slug": "pangolin-sword",
+    "name": "Pangolin Sword",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PangolinSword/PangolinLongSword",
+    "masteryRank": 3
+  },
+  {
+    "slug": "panthera",
+    "name": "Panthera",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/Miter/TnoMiter",
+    "masteryRank": 7
+  },
+  {
+    "slug": "panthera-prime",
+    "name": "Panthera Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimePanthera/PrimePanthera",
+    "masteryRank": 14
+  },
+  {
+    "slug": "paracesis",
+    "name": "Paracesis",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Orokin/BallasSword/BallasSwordWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "paracyst",
+    "name": "Paracyst",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/LongGuns/QuantaFullyInfested/InfQuantaRifle",
+    "masteryRank": 7
+  },
+  {
+    "slug": "paris",
+    "name": "Paris",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/HuntingBow",
+    "masteryRank": 0
+  },
+  {
+    "slug": "paris-prime",
+    "name": "Paris Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow",
+    "masteryRank": 8
+  },
+  {
+    "slug": "pathocyst",
+    "name": "Pathocyst",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/InfBoomerang/InfBoomerangWeapon",
+    "masteryRank": 9
+  },
+  {
+    "slug": "pennant",
+    "name": "Pennant",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/TnRailjackGreatKatana/TnRailJackGreatKatanaWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "penta",
+    "name": "Penta",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/GrenadeLauncher/GrenadeLauncher",
+    "masteryRank": 6
+  },
+  {
+    "slug": "perigale",
+    "name": "Perigale",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnQuadSniper/TnQuadSniper",
+    "masteryRank": 8
+  },
+  {
+    "slug": "peye",
+    "name": "Peye",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleOne",
+    "masteryRank": 0
+  },
+  {
+    "slug": "phage",
+    "name": "Phage",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/LongGuns/Tentacluster/InfestedShotgun",
+    "masteryRank": 11
+  },
+  {
+    "slug": "phantasma",
+    "name": "Phantasma",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/RevenantShotgun/RevenantShotgun",
+    "masteryRank": 9
+  },
+  {
+    "slug": "phantasma-prime",
+    "name": "Phantasma Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimePhantasma/PhantasmaPrimeShotgun",
+    "masteryRank": 14
+  },
+  {
+    "slug": "phenmor",
+    "name": "Phenmor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Zariman/LongGuns/SemiAutoRifle/ZarimanSemiAutoRifle",
+    "masteryRank": 14
+  },
+  {
+    "slug": "plague-akwin",
+    "name": "Plague Akwin",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleOne",
+    "masteryRank": 0
+  },
+  {
+    "slug": "plague-bokwin",
+    "name": "Plague Bokwin",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleTwo",
+    "masteryRank": 0
+  },
+  {
+    "slug": "plague-keewar",
+    "name": "Plague Keewar",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipTwo",
+    "masteryRank": 0
+  },
+  {
+    "slug": "plague-keewar",
+    "name": "Plague Keewar",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/PvPVariantInfestedTipTwo",
+    "masteryRank": 0
+  },
+  {
+    "slug": "plague-kripath",
+    "name": "Plague Kripath",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipOne",
+    "masteryRank": 0
+  },
+  {
+    "slug": "plague-kripath",
+    "name": "Plague Kripath",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/PvPVariantInfestedTipOne",
+    "masteryRank": 0
+  },
+  {
+    "slug": "plasma-sword",
+    "name": "Plasma Sword",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PlasmaSword/PlasmaLongSword",
+    "masteryRank": 4
+  },
+  {
+    "slug": "plinx",
+    "name": "Plinx",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpSonificBlastor/CrpBlastorWeapon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "pox",
+    "name": "Pox",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/Pistols/InfProximityStars/InfProximityStars",
+    "masteryRank": 9
+  },
+  {
+    "slug": "praedos",
+    "name": "Praedos",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Zariman/Melee/Tonfas/ZarimanTonfaWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "prisma-angstrum",
+    "name": "Prisma Angstrum",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/PrismaAngstrum",
+    "masteryRank": 8
+  },
+  {
+    "slug": "prisma-dual-cleavers",
+    "name": "Prisma Dual Cleavers",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaDualCleavers",
+    "masteryRank": 9
+  },
+  {
+    "slug": "prisma-gorgon",
+    "name": "Prisma Gorgon",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/VoidTraderGorgon/VTGorgon",
+    "masteryRank": 11
+  },
+  {
+    "slug": "prisma-grakata",
+    "name": "Prisma Grakata",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/VoidTrader/PrismaGrakata",
+    "masteryRank": 11
+  },
+  {
+    "slug": "prisma-grinlok",
+    "name": "Prisma Grinlok",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerLeverActionRifle/PrismaGrinlokWeapon",
+    "masteryRank": 11
+  },
+  {
+    "slug": "prisma-lenz",
+    "name": "Prisma Lenz",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/Bow/Longbow/PrismaLenz/PrismaLenzWeapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "prisma-machete",
+    "name": "Prisma Machete",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaMachete",
+    "masteryRank": 7
+  },
+  {
+    "slug": "prisma-obex",
+    "name": "Prisma Obex",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/KickAndPunch/PrismaObex",
+    "masteryRank": 10
+  },
+  {
+    "slug": "prisma-ohma",
+    "name": "Prisma Ohma",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/CrpTonfa/CrpPrismaTonfa",
+    "masteryRank": 12
+  },
+  {
+    "slug": "prisma-skana",
+    "name": "Prisma Skana",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/VoidTrader/PrismaSkana",
+    "masteryRank": 8
+  },
+  {
+    "slug": "prisma-tetra",
+    "name": "Prisma Tetra",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/PrismaCorpusUMP",
+    "masteryRank": 4
+  },
+  {
+    "slug": "prisma-twin-gremlins",
+    "name": "Prisma Twin Gremlins",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrineerBulbousSMG/Prisma/PrismaTwinGremlinsWeapon",
+    "masteryRank": 11
+  },
+  {
+    "slug": "prisma-veritux",
+    "name": "Prisma Veritux",
+    "type": "arch-melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Archwing/Melee/VoidTraderArchsword/VTArchSwordWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "proboscis-cernos",
+    "name": "Proboscis Cernos",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Bows/PrimeDerelictCernos/DerelictCernos",
+    "masteryRank": 15
+  },
+  {
+    "slug": "prova",
+    "name": "Prova",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/ClanTech/Energy/ElectroProd",
+    "masteryRank": 3
+  },
+  {
+    "slug": "prova-vandal",
+    "name": "Prova Vandal",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/ClanTech/Energy/VandalElectroProd",
+    "masteryRank": 8
+  },
+  {
+    "slug": "pulmonars",
+    "name": "Pulmonars",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/Nunchaku/InfNunchuck/InfNunchuck",
+    "masteryRank": 11
+  },
+  {
+    "slug": "pupacyst",
+    "name": "Pupacyst",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/Staff/InfStaff/InfStaff",
+    "masteryRank": 7
+  },
+  {
+    "slug": "purgator-1",
+    "name": "Purgator 1",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Lasria/LasGrenadeLauncher/LasrianNoxPlayerWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "pyrana",
+    "name": "Pyrana",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/SawnOffShotgun/TennoHandShotgun",
+    "masteryRank": 12
+  },
+  {
+    "slug": "pyrana-prime",
+    "name": "Pyrana Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimePyrana/PrimePyranaPistol",
+    "masteryRank": 13
+  },
+  {
+    "slug": "quanta",
+    "name": "Quanta",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpShockRifle/CrpShockRifle",
+    "masteryRank": 4
+  },
+  {
+    "slug": "quanta-vandal",
+    "name": "Quanta Vandal",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpShockRifle/QuantaVandal",
+    "masteryRank": 10
+  },
+  {
+    "slug": "quartakk",
+    "name": "Quartakk",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrnFourBarrelRifle/GrnFourBarrelRifleWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "quassus",
+    "name": "Quassus",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Warfan/TnBrokenFrameWarfan/TnBrokenFrameWarfanWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "quassus-prime",
+    "name": "Quassus Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Warfan/PrimeQuassus/PrimeQuassusWeapon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "quatz",
+    "name": "Quatz",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrnAmphisPistol/GrnAmphisPistol",
+    "masteryRank": 9
+  },
+  {
+    "slug": "quellor",
+    "name": "Quellor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnRailjackRifle/RailjackRifleGun",
+    "masteryRank": 12
+  },
+  {
+    "slug": "rabvee",
+    "name": "Rabvee",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipTen",
+    "masteryRank": 0
+  },
+  {
+    "slug": "rakta-ballistica",
+    "name": "Rakta Ballistica",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Syndicates/RedVeil/Pistols/RVBallistica",
+    "masteryRank": 6
+  },
+  {
+    "slug": "rakta-cernos",
+    "name": "Rakta Cernos",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Syndicates/RedVeil/Bows/RVCernos",
+    "masteryRank": 12
+  },
+  {
+    "slug": "rakta-dark-dagger",
+    "name": "Rakta Dark Dagger",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Syndicates/RedVeil/Melee/RVDarkDagger",
+    "masteryRank": 8
+  },
+  {
+    "slug": "rathbone",
+    "name": "Rathbone",
+    "type": "arch-melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchHammer/ArchHammer",
+    "masteryRank": 6
+  },
+  {
+    "slug": "rauta",
+    "name": "Rauta",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PaxDuviricusShotgun/PaxDuviricusShotgun",
+    "masteryRank": 8
+  },
+  {
+    "slug": "reaper-prime",
+    "name": "Reaper Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Scythe/ReaperWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "reconifex",
+    "name": "Reconifex",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnBeltFedRifle/TnBeltFedRifleWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "redeemer",
+    "name": "Redeemer",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Gunblade/TnoGunblade",
+    "masteryRank": 4
+  },
+  {
+    "slug": "redeemer-prime",
+    "name": "Redeemer Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Gunblade/RedeemerPrime/RedeemerPrimeWep",
+    "masteryRank": 10
+  },
+  {
+    "slug": "riot-848",
+    "name": "Riot-848",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/1999EntHybridPistolWeapon/1999EntHybridPistolWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "ripkas",
+    "name": "Ripkas",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerClaws/GrnClaws",
+    "masteryRank": 5
+  },
+  {
+    "slug": "rubico",
+    "name": "Rubico",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/FiveShotSniper/FiveShotSniper",
+    "masteryRank": 6
+  },
+  {
+    "slug": "rubico-prime",
+    "name": "Rubico Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/RubicoPrime/RubicoPrimeWeapon",
+    "masteryRank": 12
+  },
+  {
+    "slug": "ruhang",
+    "name": "Ruhang",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "ruhang-ii",
+    "name": "Ruhang Ii",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageII",
+    "masteryRank": 0
+  },
+  {
+    "slug": "rumblejack",
+    "name": "Rumblejack",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Operator/Melee/DrifterTazer/DrifterTazerPlayerWep",
+    "masteryRank": 8
+  },
+  {
+    "slug": "ruvox",
+    "name": "Ruvox",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Thanotech/EntFistIncarnon/EntFistIncarnon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "sampotes",
+    "name": "Sampotes",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Hammer/DaxDuviriHammer/DaxDuviriHammerWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "sancti-castanas",
+    "name": "Sancti Castanas",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Syndicates/NewLoka/Pistols/NLCastanas",
+    "masteryRank": 10
+  },
+  {
+    "slug": "sancti-magistar",
+    "name": "Sancti Magistar",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Syndicates/NewLoka/Melee/NLMagistar",
+    "masteryRank": 8
+  },
+  {
+    "slug": "sancti-tigris",
+    "name": "Sancti Tigris",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Syndicates/NewLoka/LongGuns/NLTigris",
+    "masteryRank": 12
+  },
+  {
+    "slug": "sarofang",
+    "name": "Sarofang",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Axe/WolfFrameAxeWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "sarpa",
+    "name": "Sarpa",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Gunblade/GunbladeAutomatic/TnoGunbladeAutomatic",
+    "masteryRank": 8
+  },
+  {
+    "slug": "scindo",
+    "name": "Scindo",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Axe/AxeWeapon",
+    "masteryRank": 2
+  },
+  {
+    "slug": "scindo-prime",
+    "name": "Scindo Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeScindo/PrimeScindoWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "scoliac",
+    "name": "Scoliac",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Infested/Melee/Whip/InfestedWhip/InfestedWhipWeapon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "scourge",
+    "name": "Scourge",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnPriestSpear/TnPriestSpearGun",
+    "masteryRank": 6
+  },
+  {
+    "slug": "scourge-prime",
+    "name": "Scourge Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeScourge/PrimeScourgeWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "secura-dual-cestra",
+    "name": "Secura Dual Cestra",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Syndicates/PerrinSequence/Pistols/PSDualCestra",
+    "masteryRank": 10
+  },
+  {
+    "slug": "secura-lecta",
+    "name": "Secura Lecta",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Syndicates/PerrinSequence/Melee/PSLecta",
+    "masteryRank": 8
+  },
+  {
+    "slug": "secura-penta",
+    "name": "Secura Penta",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Syndicates/PerrinSequence/LongGuns/PSPenta",
+    "masteryRank": 12
+  },
+  {
+    "slug": "seekalla",
+    "name": "Seekalla",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleFour",
+    "masteryRank": 0
+  },
+  {
+    "slug": "seer",
+    "name": "Seer",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/GrineerPistol/GrnScopedPistolPlayer",
+    "masteryRank": 0
+  },
+  {
+    "slug": "sepfahn",
+    "name": "Sepfahn",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipNine",
+    "masteryRank": 0
+  },
+  {
+    "slug": "sepulcrum",
+    "name": "Sepulcrum",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Thanotech/ThanoPistol/ThanotechPistol",
+    "masteryRank": 14
+  },
+  {
+    "slug": "serro",
+    "name": "Serro",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/Polearm/CorpusPolearm01/CorpusPolearmWeapon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "shaku",
+    "name": "Shaku",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Nunchaku/TnoNunchaku/TnoNunchaku",
+    "masteryRank": 10
+  },
+  {
+    "slug": "shedu",
+    "name": "Shedu",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Sentients/Shedu/SheduHeavyWeapon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "sheev",
+    "name": "Sheev",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrineerCombatKnife/GrineerCombatKnife",
+    "masteryRank": 5
+  },
+  {
+    "slug": "shtung",
+    "name": "Shtung",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleTen",
+    "masteryRank": 0
+  },
+  {
+    "slug": "sibear",
+    "name": "Sibear",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Hammer/IceHammer/IceHammer",
+    "masteryRank": 6
+  },
+  {
+    "slug": "sicarus",
+    "name": "Sicarus",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/BurstPistol",
+    "masteryRank": 3
+  },
+  {
+    "slug": "sicarus-prime",
+    "name": "Sicarus Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeSicarus/PrimeSicarusPistol",
+    "masteryRank": 14
+  },
+  {
+    "slug": "sigma-octantis",
+    "name": "Sigma & Octantis",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/SundialSwordBoard/SundialBoardSword",
+    "masteryRank": 10
+  },
+  {
+    "slug": "silva-aegis",
+    "name": "Silva & Aegis",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/MeleeContestWinnerOne/TennoSwordShield",
+    "masteryRank": 0
+  },
+  {
+    "slug": "silva-aegis-prime",
+    "name": "Silva & Aegis Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/PrimeSilvaAegis/PrimeSilvaAegis",
+    "masteryRank": 12
+  },
+  {
+    "slug": "simulor",
+    "name": "Simulor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Cephalon/Primary/CephPrimary/CephPrimary",
+    "masteryRank": 5
+  },
+  {
+    "slug": "sirocco",
+    "name": "Sirocco",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Operator/Pistols/DrifterPistol/DrifterPistolPlayerWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "skana",
+    "name": "Skana",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/LongSword/LongSword",
+    "masteryRank": 0
+  },
+  {
+    "slug": "skana-prime",
+    "name": "Skana Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/LongSword/SkanaPrime",
+    "masteryRank": 12
+  },
+  {
+    "slug": "skiajati",
+    "name": "Skiajati",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/UmbraKatana/UmbraKatana",
+    "masteryRank": 11
+  },
+  {
+    "slug": "slaytra",
+    "name": "Slaytra",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnSharbola/GrnSharbolaWeapon",
+    "masteryRank": 13
+  },
+  {
+    "slug": "snipetron",
+    "name": "Snipetron",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/SniperRifle",
+    "masteryRank": 0
+  },
+  {
+    "slug": "snipetron-vandal",
+    "name": "Snipetron Vandal",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/VandalSniperRifle",
+    "masteryRank": 5
+  },
+  {
+    "slug": "sobek",
+    "name": "Sobek",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Shotgun/DoubleBarrelShotgun",
+    "masteryRank": 7
+  },
+  {
+    "slug": "soma",
+    "name": "Soma",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/TennoAR",
+    "masteryRank": 6
+  },
+  {
+    "slug": "soma-prime",
+    "name": "Soma Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeSoma/PrimeSomaRifle",
+    "masteryRank": 7
+  },
+  {
+    "slug": "sonicor",
+    "name": "Sonicor",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpAirPistol/CrpAirPistolArray",
+    "masteryRank": 2
+  },
+  {
+    "slug": "spectra",
+    "name": "Spectra",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Energy/CrpLaserPistol",
+    "masteryRank": 4
+  },
+  {
+    "slug": "spectra-vandal",
+    "name": "Spectra Vandal",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CorpusModularPistol/Vandal/CrpLaserPistolVandal",
+    "masteryRank": 10
+  },
+  {
+    "slug": "spira",
+    "name": "Spira",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/LiDagger/LiDagger",
+    "masteryRank": 8
+  },
+  {
+    "slug": "spira-prime",
+    "name": "Spira Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeLiDagger/PrimeLiDagger",
+    "masteryRank": 10
+  },
+  {
+    "slug": "sporothrix",
+    "name": "Sporothrix",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/LongGuns/InfSniperRifle/InfSniperRifle",
+    "masteryRank": 13
+  },
+  {
+    "slug": "stahlta",
+    "name": "Stahlta",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpRubanRifle/CrpRubanRifle",
+    "masteryRank": 10
+  },
+  {
+    "slug": "staticor",
+    "name": "Staticor",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpElectroMag/CrpElectroMag",
+    "masteryRank": 10
+  },
+  {
+    "slug": "steflos",
+    "name": "Steflos",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnoLotusPodShotgun/TnoLotusPodShotgun",
+    "masteryRank": 8
+  },
+  {
+    "slug": "stradavar",
+    "name": "Stradavar",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TennoTommyGun/TennoTommyGunRifle",
+    "masteryRank": 8
+  },
+  {
+    "slug": "stradavar-prime",
+    "name": "Stradavar Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeStradavar/PrimeStradavarGun",
+    "masteryRank": 12
+  },
+  {
+    "slug": "stropha",
+    "name": "Stropha",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/Gunblade/CrpGunBlade/CrpGunbladeWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "strun",
+    "name": "Strun",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Shotgun/Shotgun",
+    "masteryRank": 1
+  },
+  {
+    "slug": "strun-prime",
+    "name": "Strun Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeStrun/PrimeStrunWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "strun-wraith",
+    "name": "Strun Wraith",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Shotgun/ShotgunVandal",
+    "masteryRank": 10
+  },
+  {
+    "slug": "stubba",
+    "name": "Stubba",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrnUzi/GrnUziWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "stug",
+    "name": "Stug",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrineerCrossbow/GrineerGooGun",
+    "masteryRank": 2
+  },
+  {
+    "slug": "sun-moon",
+    "name": "Sun & Moon",
+    "type": "melee",
+    "sourceId": "/Lotus/Types/Friendly/PlayerControllable/Weapons/DuviriDualSwordsWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "supra",
+    "name": "Supra",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Energy/CrpHeavyRifle",
+    "masteryRank": 12
+  },
+  {
+    "slug": "supra-vandal",
+    "name": "Supra Vandal",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/Machinegun/SupraVandal",
+    "masteryRank": 14
+  },
+  {
+    "slug": "syam",
+    "name": "Syam",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriKatana/DaxDuviriKatanaWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "sybaris",
+    "name": "Sybaris",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnoLeverAction/TnoLeverActionRifle",
+    "masteryRank": 5
+  },
+  {
+    "slug": "sybaris-prime",
+    "name": "Sybaris Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeSybaris/PrimeSybarisRifle",
+    "masteryRank": 12
+  },
+  {
+    "slug": "sydon",
+    "name": "Sydon",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnTrident/GrnTridentWeapon",
+    "masteryRank": 5
+  },
+  {
+    "slug": "synapse",
+    "name": "Synapse",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Infested/LongGuns/InfestedRifle",
+    "masteryRank": 11
+  },
+  {
+    "slug": "synoid-gammacor",
+    "name": "Synoid Gammacor",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSSynoidGammacor",
+    "masteryRank": 7
+  },
+  {
+    "slug": "synoid-heliocor",
+    "name": "Synoid Heliocor",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Syndicates/CephalonSuda/Melee/CSHeliocor",
+    "masteryRank": 11
+  },
+  {
+    "slug": "synoid-simulor",
+    "name": "Synoid Simulor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Syndicates/CephalonSuda/LongGuns/CSSimulor",
+    "masteryRank": 12
+  },
+  {
+    "slug": "talons",
+    "name": "Talons",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/ThrowingWeapons/U18ThrowingKnives/U18throwingknives",
+    "masteryRank": 8
+  },
+  {
+    "slug": "tatsu",
+    "name": "Tatsu",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/TnTwoHandedKatana/TnTwoHandedKatana",
+    "masteryRank": 7
+  },
+  {
+    "slug": "tatsu-prime",
+    "name": "Tatsu Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeTatsu/PrimeTatsuWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "tekko",
+    "name": "Tekko",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Gauntlet/BrawlerKnuckles/BrawlerKnuckles",
+    "masteryRank": 6
+  },
+  {
+    "slug": "tekko-prime",
+    "name": "Tekko Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/PrimeTekko/PrimeTekko",
+    "masteryRank": 12
+  },
+  {
+    "slug": "telos-akbolto",
+    "name": "Telos Akbolto",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Pistols/AHAkbolto",
+    "masteryRank": 11
+  },
+  {
+    "slug": "telos-boltace",
+    "name": "Telos Boltace",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Melee/AHBoltace",
+    "masteryRank": 11
+  },
+  {
+    "slug": "telos-boltor",
+    "name": "Telos Boltor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/LongGuns/AHBoltor",
+    "masteryRank": 12
+  },
+  {
+    "slug": "tenet-agendus",
+    "name": "Tenet Agendus",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/ShieldAndSword/CrpHammerShield/CrpHammerShield",
+    "masteryRank": 14
+  },
+  {
+    "slug": "tenet-arca-plasmor",
+    "name": "Tenet Arca Plasmor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEArcaPlasmor/CrpBEArcaPlasmor",
+    "masteryRank": 16
+  },
+  {
+    "slug": "tenet-cycron",
+    "name": "Tenet Cycron",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBECycron/CrpBECycron",
+    "masteryRank": 14
+  },
+  {
+    "slug": "tenet-detron",
+    "name": "Tenet Detron",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEDetron/CrpBEDetron",
+    "masteryRank": 16
+  },
+  {
+    "slug": "tenet-diplos",
+    "name": "Tenet Diplos",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpBriefcaseAkimbo/CrpBriefcaseAkimboPistol",
+    "masteryRank": 16
+  },
+  {
+    "slug": "tenet-envoy",
+    "name": "Tenet Envoy",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CrpBriefcaseLauncher/CrpBriefcaseLauncher",
+    "masteryRank": 16
+  },
+  {
+    "slug": "tenet-exec",
+    "name": "Tenet Exec",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/CrpBigSlash/CrpBigSlash",
+    "masteryRank": 16
+  },
+  {
+    "slug": "tenet-ferrox",
+    "name": "Tenet Ferrox",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEFerrox/CrpBEFerrox",
+    "masteryRank": 16
+  },
+  {
+    "slug": "tenet-flux-rifle",
+    "name": "Tenet Flux Rifle",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEFluxRifle/CrpBEFluxRifle",
+    "masteryRank": 16
+  },
+  {
+    "slug": "tenet-glaxion",
+    "name": "Tenet Glaxion",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEGlaxion/CrpBEGlaxion",
+    "masteryRank": 16
+  },
+  {
+    "slug": "tenet-grigori",
+    "name": "Tenet Grigori",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/CrpBriefcaseScythe/CrpBriefcaseScythe",
+    "masteryRank": 14
+  },
+  {
+    "slug": "tenet-livia",
+    "name": "Tenet Livia",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/CrpBriefcase2HKatana/CrpBriefcase2HKatana",
+    "masteryRank": 14
+  },
+  {
+    "slug": "tenet-plinx",
+    "name": "Tenet Plinx",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEPlinx/CrpBEPlinxWeapon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "tenet-spirex",
+    "name": "Tenet Spirex",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Corpus/Pistols/CrpIgniterPistol/CrpIgniterPistol",
+    "masteryRank": 14
+  },
+  {
+    "slug": "tenet-tetra",
+    "name": "Tenet Tetra",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBETetra/CrpBETetra",
+    "masteryRank": 16
+  },
+  {
+    "slug": "tenora",
+    "name": "Tenora",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnBardRifle/TnBardRifle",
+    "masteryRank": 10
+  },
+  {
+    "slug": "tenora-prime",
+    "name": "Tenora Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeTenora/TenoraPrimeWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "tetra",
+    "name": "Tetra",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/CorpusUMP",
+    "masteryRank": 3
+  },
+  {
+    "slug": "tiberon",
+    "name": "Tiberon",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/DrakeRifle/DrakeRifle",
+    "masteryRank": 10
+  },
+  {
+    "slug": "tiberon-prime",
+    "name": "Tiberon Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeTiberon/PrimeTiberonRifle",
+    "masteryRank": 14
+  },
+  {
+    "slug": "tigris",
+    "name": "Tigris",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/DoubleBarrelShotgun/TennoDoubleBarrelShotgun",
+    "masteryRank": 7
+  },
+  {
+    "slug": "tigris-prime",
+    "name": "Tigris Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeTigris/PrimeTigris",
+    "masteryRank": 13
+  },
+  {
+    "slug": "tipedo",
+    "name": "Tipedo",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Staff/MonkSpade/TnoMonkStaff",
+    "masteryRank": 3
+  },
+  {
+    "slug": "tipedo-prime",
+    "name": "Tipedo Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Staff/TipedoPrime/TipedoPrimeWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "tonbo",
+    "name": "Tonbo",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Polearms/FlowerPowerPolearm/FlowerPowerPolearmWep",
+    "masteryRank": 3
+  },
+  {
+    "slug": "tonkor",
+    "name": "Tonkor",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrnGrenadeLauncher/GrnGrenadeLauncher",
+    "masteryRank": 5
+  },
+  {
+    "slug": "torid",
+    "name": "Torid",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/ClanTech/Bio/BioWeapon",
+    "masteryRank": 4
+  },
+  {
+    "slug": "trumna",
+    "name": "Trumna",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Thanotech/ThanoRifle/ThanotechRifle",
+    "masteryRank": 13
+  },
+  {
+    "slug": "trumna-prime",
+    "name": "Trumna Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeTrumna/PrimeTrumnaWeapon",
+    "masteryRank": 15
+  },
+  {
+    "slug": "twin-basolk",
+    "name": "Twin Basolk",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnDualFireAxe/GrnDualFireAxe",
+    "masteryRank": 7
+  },
+  {
+    "slug": "twin-grakatas",
+    "name": "Twin Grakatas",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/TwinGrakatas",
+    "masteryRank": 9
+  },
+  {
+    "slug": "twin-gremlins",
+    "name": "Twin Gremlins",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerAkimboPistol",
+    "masteryRank": 5
+  },
+  {
+    "slug": "twin-kohmak",
+    "name": "Twin Kohmak",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrnDWUniques/GrnTwinKohmaks",
+    "masteryRank": 10
+  },
+  {
+    "slug": "twin-krohkur",
+    "name": "Twin Krohkur",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/DualGrnEgyptSwdWeapon",
+    "masteryRank": 10
+  },
+  {
+    "slug": "twin-rogga",
+    "name": "Twin Rogga",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/GrnQueenGuardDualPistol/GrnQueenGuardDualPistols",
+    "masteryRank": 9
+  },
+  {
+    "slug": "twin-vipers",
+    "name": "Twin Vipers",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Akimbo/AkimboViperPistols",
+    "masteryRank": 5
+  },
+  {
+    "slug": "twin-vipers-wraith",
+    "name": "Twin Vipers Wraith",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/WraithTwinVipers/WraithTwinVipers",
+    "masteryRank": 7
+  },
+  {
+    "slug": "tysis",
+    "name": "Tysis",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/Pistols/InfestedDartPistol/InfestedDartPistol",
+    "masteryRank": 9
+  },
+  {
+    "slug": "vargeet-ii-jai",
+    "name": "Vargeet Ii Jai",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritII",
+    "masteryRank": 0
+  },
+  {
+    "slug": "vargeet-ii-ruhang",
+    "name": "Vargeet Ii Ruhang",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageICritII",
+    "masteryRank": 0
+  },
+  {
+    "slug": "vargeet-jai",
+    "name": "Vargeet Jai",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "vargeet-jai-ii",
+    "name": "Vargeet Jai Ii",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIICritI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "vargeet-ruhang",
+    "name": "Vargeet Ruhang",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageICritI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "vargeet-ruhang-ii",
+    "name": "Vargeet Ruhang Ii",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIICritI",
+    "masteryRank": 0
+  },
+  {
+    "slug": "vastilok",
+    "name": "Vastilok",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Grineer/Melee/GunBlade/GrnGunBlade/GrnGunblade",
+    "masteryRank": 9
+  },
+  {
+    "slug": "vasto",
+    "name": "Vasto",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistol/RevolverPistol",
+    "masteryRank": 4
+  },
+  {
+    "slug": "vasto-prime",
+    "name": "Vasto Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol",
+    "masteryRank": 10
+  },
+  {
+    "slug": "vaykor-hek",
+    "name": "Vaykor Hek",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Syndicates/SteelMeridian/LongGuns/SMHek",
+    "masteryRank": 12
+  },
+  {
+    "slug": "vaykor-marelok",
+    "name": "Vaykor Marelok",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Syndicates/SteelMeridian/Pistols/SMMarelok",
+    "masteryRank": 10
+  },
+  {
+    "slug": "vaykor-sydon",
+    "name": "Vaykor Sydon",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Syndicates/SteelMeridian/Melee/SMSydon",
+    "masteryRank": 11
+  },
+  {
+    "slug": "vectis",
+    "name": "Vectis",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/Rifle/TennoSniperRifle",
+    "masteryRank": 2
+  },
+  {
+    "slug": "vectis-prime",
+    "name": "Vectis Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeVectis/PrimeVectisRifle",
+    "masteryRank": 14
+  },
+  {
+    "slug": "veldt",
+    "name": "Veldt",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/TnRevolverRifle/TnRevolverRifleGun",
+    "masteryRank": 8
+  },
+  {
+    "slug": "velox",
+    "name": "Velox",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/TnOdaliskSmg/TnOdaliskSmgPistol",
+    "masteryRank": 8
+  },
+  {
+    "slug": "velox-prime",
+    "name": "Velox Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeVelox/PrimeVeloxPistol",
+    "masteryRank": 13
+  },
+  {
+    "slug": "venato",
+    "name": "Venato",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Sentients/SentJointedScythe/SentJointedScytheWeapon",
+    "masteryRank": 9
+  },
+  {
+    "slug": "venka",
+    "name": "Venka",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Claws/TennoClaws",
+    "masteryRank": 4
+  },
+  {
+    "slug": "venka-prime",
+    "name": "Venka Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/PrimeVenKa/PrimeVenkaClaws",
+    "masteryRank": 14
+  },
+  {
+    "slug": "verdilac",
+    "name": "Verdilac",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Archon/Melee/Whip/ArchonWhipPlayerWep",
+    "masteryRank": 13
+  },
+  {
+    "slug": "vericres",
+    "name": "Vericres",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Warfan/TnMoonWarfan/MoonWarfanWeapon",
+    "masteryRank": 8
+  },
+  {
+    "slug": "veritux",
+    "name": "Veritux",
+    "type": "arch-melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Archwing/Melee/Archsword/ArchSwordWeapon",
+    "masteryRank": 0
+  },
+  {
+    "slug": "vesper-77",
+    "name": "Vesper 77",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Lasria/LasSilencedPistol/LasSilencedPistolWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "viper",
+    "name": "Viper",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol",
+    "masteryRank": 4
+  },
+  {
+    "slug": "viper-wraith",
+    "name": "Viper Wraith",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Grineer/Pistols/WraithSingleViper/WraithSingleViper",
+    "masteryRank": 4
+  },
+  {
+    "slug": "vitrica",
+    "name": "Vitrica",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/NWIIIOrokinSword/NWOrokinSword",
+    "masteryRank": 13
+  },
+  {
+    "slug": "volnus",
+    "name": "Volnus",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Hammer/GlassHammer/GlassHammer",
+    "masteryRank": 9
+  },
+  {
+    "slug": "volnus-prime",
+    "name": "Volnus Prime",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/PrimeVolnus/VolnusPrimeWeapon",
+    "masteryRank": 14
+  },
+  {
+    "slug": "vulkar",
+    "name": "Vulkar",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerSniperRifle/GrnSniperRifle",
+    "masteryRank": 3
+  },
+  {
+    "slug": "vulkar-wraith",
+    "name": "Vulkar Wraith",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrineerSniperRifle/VulkarWraith",
+    "masteryRank": 7
+  },
+  {
+    "slug": "war",
+    "name": "War",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoGreatSword",
+    "masteryRank": 10
+  },
+  {
+    "slug": "wolf-sledge",
+    "name": "Wolf Sledge",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/Hammer/ThrowingHammer",
+    "masteryRank": 7
+  },
+  {
+    "slug": "xoris",
+    "name": "Xoris",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Corpus/Melee/Glaive/CrpGhostCatcherGlaive/CrpGhostCatcherGlaive",
+    "masteryRank": 4
+  },
+  {
+    "slug": "zakti",
+    "name": "Zakti",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/TnGuandoPistol/TnGuandoPistolGun",
+    "masteryRank": 10
+  },
+  {
+    "slug": "zakti-prime",
+    "name": "Zakti Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeZakti/PrimeZaktiPistol",
+    "masteryRank": 14
+  },
+  {
+    "slug": "zarr",
+    "name": "Zarr",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Grineer/LongGuns/GrnCannon/GrnCannonWeapon",
+    "masteryRank": 7
+  },
+  {
+    "slug": "zenistar",
+    "name": "Zenistar",
+    "type": "melee",
+    "sourceId": "/Lotus/Weapons/Tenno/Melee/SunDialAxe/SundialAxeWeapon",
+    "masteryRank": 6
+  },
+  {
+    "slug": "zenith",
+    "name": "Zenith",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/LoginPrimary/SundialRifle",
+    "masteryRank": 10
+  },
+  {
+    "slug": "zhuge",
+    "name": "Zhuge",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/RepeatingCrossbow/RepeatingCrossbow",
+    "masteryRank": 10
+  },
+  {
+    "slug": "zhuge-prime",
+    "name": "Zhuge Prime",
+    "type": "primary",
+    "sourceId": "/Lotus/Weapons/Tenno/LongGuns/PrimeZhuge/PrimeZhugeCrossbow",
+    "masteryRank": 14
+  },
+  {
+    "slug": "zylok",
+    "name": "Zylok",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/ConclaveLeverPistol/ConclaveLeverPistol",
+    "masteryRank": 6
+  },
+  {
+    "slug": "zylok-prime",
+    "name": "Zylok Prime",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Tenno/Pistols/PrimeZylok/ZylokPrimePistol",
+    "masteryRank": 13
+  },
+  {
+    "slug": "zymos",
+    "name": "Zymos",
+    "type": "secondary",
+    "sourceId": "/Lotus/Weapons/Infested/Pistols/InfUzi/InfUziWeapon",
+    "masteryRank": 11
+  }
+]

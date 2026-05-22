@@ -1,0 +1,74 @@
+---
+slug: fractalized-reset
+name: Fractalized Reset
+type: weapon
+maxRank: 5
+effect: "On Ability Cast: +[reload_speed]% Reload Speed for 5s"
+perRankStats:
+  - rank: 0
+    stats: { reload_speed: 40 }
+  - rank: 1
+    stats: { reload_speed: 80 }
+  - rank: 2
+    stats: { reload_speed: 120 }
+  - rank: 3
+    stats: { reload_speed: 160 }
+  - rank: 4
+    stats: { reload_speed: 200 }
+  - rank: 5
+    stats: { reload_speed: 240 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation A"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Fractalized_Reset"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Fractalized Reset grants a Reload Speed bonus to the equipped weapon on Ability Cast. Every time the warframe activates an ability, the weapon gains accelerated reload speed for 5 seconds. The trigger links ability casting -- a near-universal combat action for ability-focused builds -- to weapon reload efficiency, allowing active ability users to maintain faster weapon cycling throughout combat.
+
+At rank 5, each ability cast triggers +240% Reload Speed for 5 seconds. A weapon with a 3-second base reload reduces to under 1 second during the buff window, enabling rapid re-engagement after magazine depletion for the duration of the bonus.
+
+## Effect
+
+Each ability cast triggers the Fractalized Reset bonus, applying the listed Reload Speed increase to the equipped weapon for 5 seconds. At rank 0, +40% Reload Speed provides a modest acceleration to reload animations. At rank 5, +240% Reload Speed cuts most reload animations to a fraction of their base duration, making weapon reload essentially seamless during the buff window after each ability activation.
+
+Ability-active builds that cast frequently maintain near-constant Reload Speed uptime, since ability casts during the 5-second window trigger fresh Fractalized Reset bonus windows. The bonus applies to any equipped weapon that has a reload mechanic -- rifles, shotguns, pistols in the secondary slot when Fractalized Reset is applied to a secondary weapon arcane slot.
+
+## Stats per rank
+
+| Rank | Reload Speed Bonus | Duration |
+|------|------------------|----------|
+| 0 | +40% | 5s |
+| 1 | +80% | 5s |
+| 2 | +120% | 5s |
+| 3 | +160% | 5s |
+| 4 | +200% | 5s |
+| 5 | +240% | 5s |
+
+## Acquisition
+
+Fractalized Reset drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation A at 2%. Both sources are available through standard Zariman Ten-Zero content after completing Angels of the Zariman. Void Cascade rotation A appears in the first reward cycle, making Fractalized Reset accessible in shorter Void Cascade sessions. Warframe.market provides direct purchase options for players seeking to bypass farming.
+
+## Builds that use it
+
+Fractalized Reset benefits ability-active builds that regularly cast warframe abilities during weapon combat. Frames that interleave ability casts with weapon fire -- casting a buff or utility ability then switching back to weapon fire, cycling through ability rotations between reload pauses -- naturally trigger Fractalized Reset on each ability activation. Builds on Nidus, Mesa, or Saryn that cast abilities in regular patterns maintain near-constant Reload Speed uptime given their high ability cast frequency.
+
+The arcane is most effective on weapons with relatively slow base reload speeds where the +240% bonus produces the largest absolute reduction in reload time. Sniper Rifles with 3-4 second reloads, pump-action shotguns, or any weapon where reload downtime noticeably interrupts combat cadence benefit most from Fractalized Reset's window.
+
+## Notes
+
+The trigger fires on any ability cast, including ability toggle activations and brief one-shot activations. Channeled ability toggles count at the moment of activation, not continuously during the drain. The 5-second duration is short; builds that cast infrequently may find the bonus expires before the next weapon reload is needed. Builds casting abilities at least every 5 seconds maintain near-continuous Reload Speed coverage. The Reload Speed bonus is additive with reload speed mods from the weapon configuration; both contributions stack to the total reload acceleration.
+
+## Sources
+
+- WFCD warframe-items dataset provides Reload Speed values per rank and the Ability Cast trigger for Fractalized Reset.
+- Fandom wiki entry for [Fractalized Reset](https://warframe.fandom.com/wiki/Fractalized_Reset) covers ability cast trigger conditions and reload speed calculation behavior.

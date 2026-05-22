@@ -1,0 +1,74 @@
+---
+slug: cascadia-accuracy
+name: Cascadia Accuracy
+type: weapon
+maxRank: 5
+effect: "On Roll: +[crit_chance]% Critical Chance on Weakpoint Hits for 4s"
+perRankStats:
+  - rank: 0
+    stats: { crit_chance: 50 }
+  - rank: 1
+    stats: { crit_chance: 100 }
+  - rank: 2
+    stats: { crit_chance: 150 }
+  - rank: 3
+    stats: { crit_chance: 200 }
+  - rank: 4
+    stats: { crit_chance: 250 }
+  - rank: 5
+    stats: { crit_chance: 300 }
+drops:
+  - source: "Zariman Void Fissure rewards"
+    chance: 4.0
+  - source: "Void Cascade rotation B"
+    chance: 2.0
+sources:
+  - url: "https://github.com/WFCD/warframe-items"
+    accessedAt: "2026-05-20"
+    publisher: "WFCD"
+  - url: "https://warframe.fandom.com/wiki/Cascadia_Accuracy"
+    accessedAt: "2026-05-20"
+    publisher: "Fandom"
+updatedAt: "2026-05-20"
+---
+## Overview
+
+Cascadia Accuracy is a weapon arcane that grants a Critical Chance bonus specifically to Weakpoint Hits after performing a Roll. Executing a roll (dodge roll) activates the bonus for 4 seconds, during which all hits that land on enemy weakpoints have elevated Critical Chance. The 4-second window is tight -- the player must quickly aim and land weakpoint shots after rolling to benefit from the boost.
+
+At rank 5, rolling activates +300% Critical Chance on Weakpoint Hits for 4 seconds. A weapon with 30% base critical chance reaches 330% critical chance on weakpoints during the window, guaranteeing orange and red crits on every weakpoint contact.
+
+## Effect
+
+Each roll (evasive dodge) triggers the Cascadia Accuracy bonus, applying the listed Critical Chance bonus to any shots or strikes that land on enemy weakpoints for 4 seconds. The bonus applies only to weakpoint hits -- shots that miss weakpoints or land on body armor do not receive the critical chance increase during the window. At rank 0, +50% Critical Chance on Weakpoint Hits provides a significant boost for weapons in the 20-50% base crit range, pushing them into reliable crit territory on weakpoints. At rank 5, +300% Critical Chance adds three times the weapon's base crit chance to weakpoint hits, generating consistent red crits on any weapon with moderate base crit.
+
+The 4-second window requires targeting discipline. Sniper Rifles, semi-auto weapons, and other precision weapons that consistently aim for weakpoints extract more value than spray weapons where weakpoint contact is inconsistent.
+
+## Stats per rank
+
+| Rank | Critical Chance on Weakpoint Hits | Duration |
+|------|---------------------------------|----------|
+| 0 | +50% | 4s |
+| 1 | +100% | 4s |
+| 2 | +150% | 4s |
+| 3 | +200% | 4s |
+| 4 | +250% | 4s |
+| 5 | +300% | 4s |
+
+## Acquisition
+
+Cascadia Accuracy drops from Zariman Void Fissure rewards at 4% and Void Cascade rotation B at 2%. Access requires completing Angels of the Zariman. Rotation B in Void Cascade provides drop opportunities mid-run, making the arcane available in standard Zariman Void Cascade sessions without requiring extreme endurance. Warframe.market provides direct purchase for players who prefer platinum acquisition.
+
+## Builds that use it
+
+Cascadia Accuracy suits precision weapon builds that aim for weakpoints consistently. Sniper Rifle builds on Zariman or Eidolon content roll to reposition between shots, generating Cascadia Accuracy windows that pair with high critical damage mods for maximum burst on weakpoints. Lanka builds for Eidolon limb shots benefit strongly -- roll to a new position, then deliver the fully charged shot to the exposed limb during the crit bonus window.
+
+Secondary precision weapons (Knell, Rubico Secondary builds) used in active dodge-and-shoot combat can maintain the roll cadence needed to keep Cascadia Accuracy refreshed. Frames with innate dodge speed or parkour bonuses roll more quickly, increasing the frequency at which the Cascadia Accuracy bonus window activates.
+
+## Notes
+
+The roll must be a player-executed dodge roll, not a knockdown recovery animation. The 4-second duration is short; the window begins at roll completion and requires immediate targeting of weakpoints to benefit. The crit chance bonus is additive with other crit chance sources from mods -- it does not multiply the result of other crit multipliers. At very high base critical chance values (60%+), the +300% bonus at rank 5 consistently produces red crits on weakpoints, shifting the value proposition entirely toward maximizing critical multiplier mods rather than adding more crit chance.
+
+## Sources
+
+- WFCD warframe-items dataset provides Critical Chance bonus values per rank on Roll for Cascadia Accuracy.
+- Fandom wiki entry for [Cascadia Accuracy](https://warframe.fandom.com/wiki/Cascadia_Accuracy) covers roll trigger conditions and weakpoint hit detection behavior.

@@ -1,0 +1,30 @@
+{
+  "payload": {
+    "items": [
+      {
+        "id": "item-1",
+        "url_name": "mag_prime_set",
+        "thumb": "items/images/en/thumbs/mag_prime_set.png",
+        "item_name": "Mag Prime Set"
+      },
+      {
+        "id": "item-2",
+        "url_name": "mag_prime_neuroptics",
+        "thumb": "items/images/en/thumbs/mag_prime_neuroptics.png",
+        "item_name": "Mag Prime Neuroptics"
+      },
+      {
+        "id": "item-3",
+        "url_name": "mag_prime_chassis",
+        "thumb": "items/images/en/thumbs/mag_prime_chassis.png",
+        "item_name": "Mag Prime Chassis"
+      },
+      {
+        "id": "item-4",
+        "url_name": "boltor_prime",
+        "thumb": "items/images/en/thumbs/boltor_prime.png",
+        "item_name": "Boltor Prime"
+      }
+    ]
+  }
+}

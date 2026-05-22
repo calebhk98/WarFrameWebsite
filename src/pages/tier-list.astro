@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL;
+
+interface TierEntry {
+  slug: string;
+  name: string;
+  reason: string;
+}
+
+interface TierRow {
+  tier: 'S' | 'A' | 'B' | 'C';
+  label: string;
+  entries: TierEntry[];
+}
+
+const warframeTiers: TierRow[] = [
+  {
+    tier: 'S',
+    label: 'Dominant -- meta-defining damage or utility',
+    entries: [
+      { slug: 'saryn-prime', name: 'Saryn Prime', reason: 'Spore-spread viral AoE clears entire tiles passively; best damage frame for Steel Path and ESO.' },
+      { slug: 'octavia-prime', name: 'Octavia Prime', reason: 'Mallet provides permanent CC and massive damage scaling; near-invincible with Metronome invisibility.' },
+      { slug: 'khora-prime', name: 'Khora Prime', reason: 'Strangledome + Whipclaw combo delivers top-tier single-target and AoE for farming and steel path.' },
+      { slug: 'mesa-prime', name: 'Mesa Prime', reason: 'Peacemaker shreds armor-stripped enemies; Shatter Shield gives 95% damage reduction.' },
+      { slug: 'protea-prime', name: 'Protea Prime', reason: 'Dispensary sustains ammo and energy for the squad; Temporal Anchor enables no-risk aggressive play.' },
+    ],
+  },
+  {
+    tier: 'A',
+    label: 'Strong -- excellent specialists or near-S generalists',
+    entries: [
+      { slug: 'wukong-prime', name: 'Wukong Prime', reason: 'Twin AI companion doubles kill speed; Cloud Walker provides near-infinite survivability.' },
+      { slug: 'revenant-prime', name: 'Revenant Prime', reason: 'Mesmer Skin grants practical immortality; Reave strips armor for the whole squad.' },
+      { slug: 'nova-prime', name: 'Nova Prime', reason: 'Molecular Prime slows or speeds enemies; invaluable for defense and mobile defense farming.' },
+      { slug: 'nekros-prime', name: 'Nekros Prime', reason: 'Desecrate is the best loot-boosting ability in the game; still mandatory for resource farms.' },
+      { slug: 'wisp-prime', name: 'Wisp Prime', reason: 'Reservoir buffs (health, speed, electric) are among the strongest passive team bonuses available.' },
+      { slug: 'rhino-prime', name: 'Rhino Prime', reason: 'Roar is the strongest multiplicative damage buff in the game; Iron Skin trivialises early-game content.' },
+    ],
+  },
+  {
+    tier: 'B',
+    label: 'Solid -- performs well with proper builds',
+    entries: [
+      { slug: 'harrow-prime', name: 'Harrow Prime', reason: 'Covenant buffs crits and restores shields; exceptional for organized squads but requires timing.' },
+      { slug: 'trinity-prime', name: 'Trinity Prime', reason: 'Energy Vampire is an unmatched energy battery for slow-casting frames.' },
+      { slug: 'mag-prime', name: 'Mag Prime', reason: 'Magnetize crushes Corpus; polarize provides team-wide armor stripping against Grineer.' },
+      { slug: 'nidus-prime', name: 'Nidus Prime', reason: 'Near-unkillable with full stacks; Parasitic Link enables powerful subsume builds.' },
+      { slug: 'garuda-prime', name: 'Garuda Prime', reason: 'Bloodletting keeps energy topped off; Seeking Talons delivers reliable status procs.' },
+      { slug: 'mirage-prime', name: 'Mirage Prime', reason: 'Hall of Mirrors multiplies weapon damage significantly; excellent for AOE weapon builds.' },
+    ],
+  },
+  {
+    tier: 'C',
+    label: 'Situational -- outclassed or requires niche setup',
+    entries: [
+      { slug: 'hydroid-prime', name: 'Hydroid Prime', reason: 'Pilfering Swarm was the gold standard before Nekros; still viable for loot but outclassed overall.' },
+      { slug: 'vauban-prime', name: 'Vauban Prime', reason: 'Bastille remains strong CC but damage output is lacking; relegated to niche defense missions.' },
+      { slug: 'oberon-prime', name: 'Oberon Prime', reason: 'Renewal healing is outclassed; Smite lacks the scaling of top damage frames.' },
+      { slug: 'limbo-prime', name: 'Limbo Prime', reason: 'Rift provides powerful passive defense and damage immunity, but Stasis divides squad opinion.' },
+    ],
+  },
+];
+
+const tierColors: Record<string, string> = {
+  S: 'bg-tier-s/20 border-tier-s text-tier-s',
+  A: 'bg-tier-a/10 border-tier-a text-tier-a',
+  B: 'bg-tier-b/10 border-tier-b text-tier-b',
+  C: 'bg-tier-c/20 border-tier-c text-brand-cream',
+};
+
+const tierBadge: Record<string, string> = {
+  S: 'bg-tier-s text-brand-black',
+  A: 'bg-tier-a text-brand-black',
+  B: 'bg-tier-b text-brand-cream',
+  C: 'bg-tier-c text-brand-cream/80',
+};
+---
+
+<Base title="Warframe Tier List" description="Community-sourced S/A/B/C tier ranking of Warframes for Steel Path and general content">
+  <div class="max-w-4xl mx-auto px-4 py-10">
+    <header class="mb-10">
+      <h1 class="text-3xl sm:text-4xl font-bold text-brand-cream mb-3">Warframe Tier List</h1>
+      <p class="text-brand-cream/60 text-lg mb-2">
+        Steel Path and general-content tier ranking. Primed variants shown where applicable.
+      </p>
+      <p class="text-sm text-brand-cream/70 mb-3">
+        Source: community consensus via <a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki" target="_blank" rel="noopener noreferrer" class="text-brand-orange underline">Warframe wiki</a> and high-level player discussion.
+        Ratings reflect the 2025 meta with Helminth subsumes available.
+      </p>
+      <p class="text-sm text-brand-cream/70">
+        Understanding which damage types to bring? See the
+        <a href={`${base}damage-types`} class="text-brand-orange underline">Damage Types reference</a>
+        for the full effectiveness matrix. Planning Riven mods? Use the
+        <a href={`${base}riven-planner`} class="text-brand-orange underline">Riven Roll Planner</a>
+        to calculate probability and stat value ranges.
+        Check current trade values on the
+        <a href={`${base}market`} class="text-brand-orange underline">Trade Price Ticker</a>.
+      </p>
+    </header>
+
+    <div class="space-y-8 mb-16">
+      {warframeTiers.map((row) => (
+        <section aria-label={`Tier ${row.tier}`}>
+          <div class={`flex items-center gap-3 rounded-t-lg border-l-4 px-4 py-3 ${tierColors[row.tier]}`}>
+            <span class={`w-9 h-9 rounded font-extrabold text-xl flex items-center justify-center shrink-0 ${tierBadge[row.tier]}`}>
+              {row.tier}
+            </span>
+            <p class="text-sm font-medium text-brand-cream">{row.label}</p>
+          </div>
+          <div class="border border-t-0 border-surface-3 rounded-b-lg divide-y divide-surface-3">
+            {row.entries.map((entry) => (
+              <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-4 py-3">
+                <a
+                  href={`${base}warframes/${entry.slug}`}
+                  class="font-semibold text-brand-cream hover:text-brand-orange transition-colors shrink-0 w-40"
+                >
+                  {entry.name}
+                </a>
+                <p class="text-sm text-brand-cream/60">{entry.reason}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    <section aria-labelledby="methodology-heading" class="rounded-lg border border-surface-3 bg-surface-2 p-6">
+      <h2 id="methodology-heading" class="text-lg font-semibold text-brand-cream mb-3">Methodology</h2>
+      <div class="text-sm text-brand-cream/70 space-y-2 leading-relaxed">
+        <p>
+          Tiers are assessed against Steel Path (SP) difficulty with a full mod budget, Primed mods included.
+          The list assumes the Helminth subsume system is available (Mastery Rank 8+).
+        </p>
+        <p>
+          <strong class="text-brand-cream">S tier</strong> frames win missions passively or provide game-breaking utility that makes them the strongest choice for any squad.
+          <strong class="text-brand-cream">A tier</strong> frames excel in their niche or are generalists that compete with S tier in the right hands.
+          <strong class="text-brand-cream">B tier</strong> frames require investment and knowledge but deliver strong results.
+          <strong class="text-brand-cream">C tier</strong> frames are outclassed but still functional with optimised builds.
+        </p>
+        <p>
+          This list does not represent Digital Extremes' view of balance. Game patches may shift rankings.
+          See the <a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki" target="_blank" rel="noopener noreferrer" class="text-brand-orange underline">Warframe wiki</a> and community hubs for the latest discussion.
+        </p>
+      </div>
+    </section>
+  </div>
+</Base>
