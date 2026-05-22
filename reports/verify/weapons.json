@@ -1,0 +1,210 @@
+{
+  "collection": "weapons",
+  "total": 608,
+  "pass": 575,
+  "fail": 33,
+  "failures": [
+    {
+      "file": "acrid.mdx",
+      "slug": "acrid",
+      "rule": 2,
+      "message": "Word count 226 < 500"
+    },
+    {
+      "file": "argo-vel.mdx",
+      "slug": "argo-vel",
+      "rule": 4,
+      "message": "H2 order violation: overview, stats, acquisition, variants, recommended builds, notes, stats, acquisition, variants, recommended builds, notes"
+    },
+    {
+      "file": "ax-52.mdx",
+      "slug": "ax-52",
+      "rule": 4,
+      "message": "H2 order violation: overview, stats, acquisition, variants, recommended builds, notes, stats, acquisition, variants, recommended builds, notes"
+    },
+    {
+      "file": "bo-prime.mdx",
+      "slug": "bo-prime",
+      "rule": 2,
+      "message": "Word count 218 < 500"
+    },
+    {
+      "file": "cassowar.mdx",
+      "slug": "cassowar",
+      "rule": 2,
+      "message": "Word count 215 < 500"
+    },
+    {
+      "file": "heliocor.mdx",
+      "slug": "heliocor",
+      "rule": 2,
+      "message": "Word count 495 < 500"
+    },
+    {
+      "file": "hikou-prime.mdx",
+      "slug": "hikou-prime",
+      "rule": 2,
+      "message": "Word count 412 < 500"
+    },
+    {
+      "file": "hystrix-prime.mdx",
+      "slug": "hystrix-prime",
+      "rule": 2,
+      "message": "Word count 412 < 500"
+    },
+    {
+      "file": "karyst-prime.mdx",
+      "slug": "karyst-prime",
+      "rule": 2,
+      "message": "Word count 406 < 500"
+    },
+    {
+      "file": "kronen-prime.mdx",
+      "slug": "kronen-prime",
+      "rule": 2,
+      "message": "Word count 233 < 500"
+    },
+    {
+      "file": "lanka.mdx",
+      "slug": "lanka",
+      "rule": 2,
+      "message": "Word count 290 < 500"
+    },
+    {
+      "file": "lato-prime.mdx",
+      "slug": "lato-prime",
+      "rule": 2,
+      "message": "Word count 220 < 500"
+    },
+    {
+      "file": "latron-prime.mdx",
+      "slug": "latron-prime",
+      "rule": 2,
+      "message": "Word count 412 < 500"
+    },
+    {
+      "file": "magnus-prime.mdx",
+      "slug": "magnus-prime",
+      "rule": 2,
+      "message": "Word count 267 < 500"
+    },
+    {
+      "file": "masseter-prime.mdx",
+      "slug": "masseter-prime",
+      "rule": 2,
+      "message": "Word count 406 < 500"
+    },
+    {
+      "file": "nagantaka-prime.mdx",
+      "slug": "nagantaka-prime",
+      "rule": 2,
+      "message": "Word count 412 < 500"
+    },
+    {
+      "file": "nami-skyla-prime.mdx",
+      "slug": "nami-skyla-prime",
+      "rule": 2,
+      "message": "Word count 226 < 500"
+    },
+    {
+      "file": "ninkondi-prime.mdx",
+      "slug": "ninkondi-prime",
+      "rule": 2,
+      "message": "Word count 406 < 500"
+    },
+    {
+      "file": "okina-prime.mdx",
+      "slug": "okina-prime",
+      "rule": 2,
+      "message": "Word count 406 < 500"
+    },
+    {
+      "file": "opticor-vandal.mdx",
+      "slug": "opticor-vandal",
+      "rule": 2,
+      "message": "Word count 465 < 500"
+    },
+    {
+      "file": "pandero-prime.mdx",
+      "slug": "pandero-prime",
+      "rule": 2,
+      "message": "Word count 412 < 500"
+    },
+    {
+      "file": "pangolin-prime.mdx",
+      "slug": "pangolin-prime",
+      "rule": 2,
+      "message": "Word count 406 < 500"
+    },
+    {
+      "file": "panthera-prime.mdx",
+      "slug": "panthera-prime",
+      "rule": 2,
+      "message": "Word count 412 < 500"
+    },
+    {
+      "file": "paris-prime.mdx",
+      "slug": "paris-prime",
+      "rule": 2,
+      "message": "Word count 412 < 500"
+    },
+    {
+      "file": "quartakk.mdx",
+      "slug": "quartakk",
+      "rule": 2,
+      "message": "Word count 385 < 500"
+    },
+    {
+      "file": "rubico-prime.mdx",
+      "slug": "rubico-prime",
+      "rule": 2,
+      "message": "Word count 316 < 500"
+    },
+    {
+      "file": "snipetron-vandal.mdx",
+      "slug": "snipetron-vandal",
+      "rule": 2,
+      "message": "Word count 325 < 500"
+    },
+    {
+      "file": "soma-prime.mdx",
+      "slug": "soma-prime",
+      "rule": 2,
+      "message": "Word count 415 < 500"
+    },
+    {
+      "file": "spira-prime.mdx",
+      "slug": "spira-prime",
+      "rule": 2,
+      "message": "Word count 257 < 500"
+    },
+    {
+      "file": "supra.mdx",
+      "slug": "supra",
+      "rule": 2,
+      "message": "Word count 299 < 500"
+    },
+    {
+      "file": "tonbo.mdx",
+      "slug": "tonbo",
+      "rule": 2,
+      "message": "Word count 207 < 500"
+    },
+    {
+      "file": "zenistar.mdx",
+      "slug": "zenistar",
+      "rule": 2,
+      "message": "Word count 221 < 500"
+    },
+    {
+      "file": "zhuge-prime.mdx",
+      "slug": "zhuge-prime",
+      "rule": 2,
+      "message": "Word count 374 < 500"
+    }
+  ],
+  "ruleViolationCounts": {
+    "rule-2": 31,
+    "rule-4": 2
+  }
+}

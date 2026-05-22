@@ -1,0 +1,41 @@
+{
+  "verification": {
+    "timestamp": "2026-05-21",
+    "collection": "resources",
+    "totalFiles": 221,
+    "errors": [],
+    "warnings": [],
+    "passed": true
+  },
+  "details": {
+    "resourcesByType": {
+      "component": 62,
+      "gem": 21,
+      "currency": 13,
+      "rare": 46,
+      "other": 13,
+      "plant": 21,
+      "common": 1,
+      "uncommon": 43,
+      "fish": 1
+    },
+    "wordCountStats": {
+      "min": 304,
+      "max": 579,
+      "avg": 394.1
+    },
+    "sourceStats": {
+      "min": 2,
+      "max": 2,
+      "avg": 2.0
+    },
+    "validationSummary": {
+      "zodSchemaValid": 221,
+      "wordCountValid": 221,
+      "sourcesValid": 221,
+      "dateFormatValid": 221,
+      "asciiValid": 221,
+      "typeValid": 221
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "axi.mdx",
+    "errors": [
+      "Heading order: Expected [overview, drop tables, refinement choices, where to farm, notes], found [Overview, Drop Locations, Refinement Costs, Notable Prime Parts in the Axi Era, Strategy, Sources]"
+    ]
+  },
+  {
+    "file": "lith.mdx",
+    "errors": [
+      "Heading order: Expected [overview, drop tables, refinement choices, where to farm, notes], found [Overview, Drop Locations, Refinement Costs, Notable Prime Parts in the Lith Era, Strategy, Sources]"
+    ]
+  },
+  {
+    "file": "meso.mdx",
+    "errors": [
+      "Heading order: Expected [overview, drop tables, refinement choices, where to farm, notes], found [Overview, Drop Locations, Refinement Costs, Notable Prime Parts in the Meso Era, Strategy, Sources]"
+    ]
+  },
+  {
+    "file": "neo.mdx",
+    "errors": [
+      "Heading order: Expected [overview, drop tables, refinement choices, where to farm, notes], found [Overview, Drop Locations, Refinement Costs, Notable Prime Parts in the Neo Era, Strategy, Sources]"
+    ]
+  },
+  {
+    "file": "requiem.mdx",
+    "errors": [
+      "Heading order: Expected [overview, drop tables, refinement choices, where to farm, notes], found [Overview, Drop Locations, Refinement Costs, Notable Requiem Mods and Their Uses, Strategy, Sources]"
+    ]
+  }
+]

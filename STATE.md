@@ -2113,22 +2113,69 @@ deferred-to-phase-4 strategy=author-decided-during-fan-out
 ## verified.guides
 
 ## failed.warframes
+- gara-prime retry:0
+- gauss retry:0
+- limbo-prime retry:0
 
 ## failed.weapons
+- acrid retry:0
+- argo-vel retry:0
+- ax-52 retry:0
+- bo-prime retry:0
+- cassowar retry:0
+- heliocor retry:0
+- hikou-prime retry:0
+- hystrix-prime retry:0
+- karyst-prime retry:0
+- kronen-prime retry:0
+- lanka retry:0
+- lato-prime retry:0
+- latron-prime retry:0
+- magnus-prime retry:0
+- masseter-prime retry:0
+- nagantaka-prime retry:0
+- nami-skyla-prime retry:0
+- ninkondi-prime retry:0
+- okina-prime retry:0
+- opticor-vandal retry:0
+- pandero-prime retry:0
+- pangolin-prime retry:0
+- panthera-prime retry:0
+- paris-prime retry:0
+- quartakk retry:0
+- rubico-prime retry:0
+- snipetron-vandal retry:0
+- soma-prime retry:0
+- spira-prime retry:0
+- supra retry:0
+- tonbo retry:0
+- zenistar retry:0
+- zhuge-prime retry:0
 
 ## failed.mods
+# 30 violations — slug breakdown in reports/verify/mods.json (criticalFindings array)
 
 ## failed.quests
 
 ## failed.factions
+# 32 raw violations, ~29 are verifier-rule false-positives (expected H2 list omits trailing Sources, uses lowercase). See reports/manager/wave-23-triage.md
 
 ## failed.syndicates
+# 11 raw violations, ~8 are verifier-rule false-positives. See reports/manager/wave-23-triage.md
 
 ## failed.relics
+- axi retry:0
+- lith retry:0
+- meso retry:0
+- neo retry:0
+- requiem retry:0
+# All 5 fail; mostly verifier-rule mismatch but real STYLE.md drift exists (Drop Tables vs Drop Locations naming)
 
 ## failed.arcanes
+# 2 raw violations are FALSE POSITIVES — em-dash in source-title strings quotes canonical Wiki page names; ASCII rule scope is slugs + entity name + prose, not source.title
 
 ## failed.missions
+# 7 violations — slug breakdown in reports/verify/missions.json
 
 ## failed.resources
 
